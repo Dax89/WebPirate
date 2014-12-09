@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/red-cross-icon.png</file>
+        <file>res/status-offline.png</file>
+    </qresource>
+</RCC>
