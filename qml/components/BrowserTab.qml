@@ -62,15 +62,19 @@ Item
         navigationbar.searchBar.url = "about:bookmarks";
     }
 
+    function manageSpecialUrl(url)
+    {
+        var specialurl = UrlHelper.specialUrl(url);
+
+        if(specialurl === "config")
+            settingsRequested();
+
+        loadDefault();
+    }
+
     function load(req) {
-        if(UrlHelper.isSpecialUrl(req)) {
-            var specialurl = UrlHelper.specialUrl(req);
-
-            if(specialurl === "config")
-                settingsRequested();
-
-            loadDefault();
-        }
+        if(UrlHelper.isSpecialUrl(req))
+            manageSpecialUrl(req);
         else if(req !== null)
         {
             state = "webbrowser";
@@ -156,6 +160,11 @@ Item
             }
 
             onUrlChanged: {
+                if(UrlHelper.isSpecialUrl(url.toString()))
+                    manageSpecialUrl(url.toString());
+                else
+                    browsertab.state = "webbrowser";
+
                 navigationbar.searchBar.url = url;
             }
 
