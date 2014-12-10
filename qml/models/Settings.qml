@@ -6,7 +6,7 @@ QtObject
     property ListModel searchengines: ListModel { }
     property ListModel useragents: ListModel { }
 
-    property var searchengine;  /* JSON Format of the Selected Search Engine */
+    property int searchengine;  /* Search Engine Index */
     property int useragent;     /* User Agent Index */
     property string homepage;   /* HomePage Url */
 }

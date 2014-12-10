@@ -51,11 +51,11 @@ ApplicationWindow
             SearchEngines.load(Database.instance(), settings.searchengines);
             UserAgents.load(Database.instance(), settings.useragents);
 
-            var se = Database.get("searchengine");
-            settings.searchengine = (se === false ? settings.searchengines.get(0) : JSON.parse(se));
-
             var hp = Database.get("homepage");
             settings.homepage = (hp === false ? "about:bookmarks" : hp);
+
+            var se = Database.get("searchengine");
+            settings.searchengine = (se === false ? 0 : se);
 
             var ua = Database.get("useragent");
             settings.useragent = (ua === false ? 0 : ua);

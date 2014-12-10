@@ -43,14 +43,7 @@ Dialog
                 id: cbsearchengines
                 label: qsTr("Search Engines")
                 width: parent.width
-                currentIndex: {
-                    for(var i = 0; i < settings.searchengines.count; i++) {
-                        if(settings.searchengines.get(i).name === settings.searchengine.name) {
-                            currentIndex = i;
-                            break;
-                        }
-                    }
-                }
+                currentIndex: settings.searchengine
 
                 menu: ContextMenu {
                     Repeater {
@@ -86,12 +79,12 @@ Dialog
 
     onDone: {
         if(result === DialogResult.Accepted) {
-            if(UrlHelper.isUrl(tfhomepage.text))
+            if(UrlHelper.isUrl(tfhomepage.text) || UrlHelper.isSpecialUrl(tfhomepage.text))
                 settings.homepage = UrlHelper.adjustUrl(tfhomepage.text);
 
-            settings.searchengine = settings.searchengines.get(cbsearchengines.currentIndex);
+            settings.searchengine = cbsearchengines.currentIndex;
             settings.useragent = cbuseragent.currentIndex;
-            Database.save();
+            Database.save(settings.homepage, settings.searchengine, settings.useragent);
         }
     }
 }
