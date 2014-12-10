@@ -4,7 +4,28 @@
 
 function instance()
 {
-    return Storage.LocalStorage.openDatabaseSync("WebPirate", "1.0", "UserSettings", 100000);
+    return openDatabase("1.1");
+}
+
+function checkDBUpgrade()
+{
+    var db = openDatabase("")
+
+    if(db.version === "1.0")
+    {
+        /* Drop Old "Preview" Database */
+        db.changeVersion("1.0", "1.1",
+                         function(tx) {
+                             tx.executeSql("DROP TABLE IF EXISTS BrowserSettings");
+                             tx.executeSql("DROP TABLE IF EXISTS Favorites");
+                             tx.executeSql("DROP TABLE IF EXISTS SearchEngines");
+                         });
+    }
+}
+
+function openDatabase(version)
+{
+    return Storage.LocalStorage.openDatabaseSync("WebPirate", version, "WebPirate Configuration", 5000000);  /* DB Size: 5MB */
 }
 
 function set(setting, value)
@@ -21,7 +42,7 @@ function get(setting)
     var db = instance();
     var res = false;
 
-    db.transaction(function(tx) {
+    db.readTransaction(function(tx) {
         var r = tx.executeSql("SELECT value FROM BrowserSettings WHERE name = ?;", [setting]);
 
         if(r.rows.length > 0)
@@ -33,6 +54,7 @@ function get(setting)
 
 function load()
 {
+    checkDBUpgrade();
     var db = instance();
 
     db.transaction(function(tx) {
@@ -43,6 +65,6 @@ function load()
 function save(homepage, searchengine, useragent)
 {
     set("homepage", homepage);
+    set("searchengine", searchengine);
     set("useragent", useragent);
-    set("searchengine", JSON.stringify(searchengine));
 }
