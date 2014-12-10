@@ -29,11 +29,10 @@
 */
 
 import QtQuick 2.0
-import QtQuick.LocalStorage 2.0
 import QtWebKit 3.0
 import Sailfish.Silica 1.0
 import "../components"
-import "../js/Settings.js" as Settings
+import "../models"
 
 Page
 {
@@ -47,11 +46,7 @@ Page
         id: tabview
         anchors.fill: parent
 
-        Component.onCompleted: {
-            Settings.load();
-            tabview.addTab(Settings.homepage);
-        }
-
-        onSettingsRequested: pageStack.push(Qt.resolvedUrl("SettingsPage.qml"));
+        Component.onCompleted: tabview.addTab(mainwindow.settings.homepage);
+        onSettingsRequested: pageStack.push(Qt.resolvedUrl("SettingsPage.qml"), {"settings": mainwindow.settings });
     }
 }

@@ -1,10 +1,13 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
+import "../models"
 import "../js/UrlHelper.js" as UrlHelper
-import "../js/Settings.js" as Settings
+import "../js/Database.js" as Database
 
 Dialog
 {
+    property Settings settings
+
     id: dlgsettings
     allowedOrientations: Orientation.All
     acceptDestinationAction: PageStackAction.Pop
@@ -18,7 +21,7 @@ Dialog
         DialogHeader
         {
             id: dlgheader
-            title: "Save Settings"
+            title: qsTr("Save Settings")
         }
 
         Column
@@ -30,19 +33,19 @@ Dialog
             TextField
             {
                 id: tfhomepage
-                label: "Home Page"
+                label: qsTr("Home Page")
                 width: parent.width
-                text: Settings.homepage
+                text: settings.homepage
             }
 
             ComboBox
             {
                 id: cbsearchengines
-                label: "Search Engines"
+                label: qsTr("Search Engines")
                 width: parent.width
                 currentIndex: {
-                    for(var i = 0; i < Settings.searchengines.length; i++) {
-                        if(Settings.searchengines[i].name === Settings.defaultsearchengine.name) {
+                    for(var i = 0; i < settings.searchengines.count; i++) {
+                        if(settings.searchengines.get(i).name === settings.searchengine.name) {
                             currentIndex = i;
                             break;
                         }
@@ -51,10 +54,10 @@ Dialog
 
                 menu: ContextMenu {
                     Repeater {
-                        model: Settings.searchengines
+                        model: settings.searchengines
 
                         MenuItem {
-                            text: Settings.searchengines[index].name
+                            text: name
                         }
                     }
                 }
@@ -63,17 +66,17 @@ Dialog
             ComboBox
             {
                 id: cbuseragent
-                label: "User Agent"
+                label: qsTr("User Agent")
                 width: parent.width
-                currentIndex: Settings.useragenttype
+                currentIndex: settings.useragent
 
                 menu: ContextMenu {
 
                     Repeater {
-                        model: Settings.useragents
+                        model: settings.useragents
 
                         MenuItem {
-                            text: Settings.useragents[index].type
+                            text: type
                         }
                     }
                 }
@@ -84,11 +87,11 @@ Dialog
     onDone: {
         if(result === DialogResult.Accepted) {
             if(UrlHelper.isUrl(tfhomepage.text))
-                Settings.homepage = UrlHelper.adjustUrl(tfhomepage.text);
+                settings.homepage = UrlHelper.adjustUrl(tfhomepage.text);
 
-            Settings.defaultsearchengine = Settings.searchengines[cbsearchengines.currentIndex];
-            Settings.useragenttype = cbuseragent.currentIndex;
-            Settings.save();
+            settings.searchengine = settings.searchengines.get(cbsearchengines.currentIndex);
+            settings.useragent = cbuseragent.currentIndex;
+            Database.save();
         }
     }
 }

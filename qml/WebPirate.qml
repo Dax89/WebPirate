@@ -30,13 +30,42 @@
 
 import QtQuick 2.0
 import Sailfish.Silica 1.0
+import "models"
 import "pages"
 import "cover"
+import "js/Database.js" as Database
+import "js/Favorites.js" as Favorites
+import "js/SearchEngines.js" as SearchEngines
+import "js/UserAgents.js" as UserAgents
 
 ApplicationWindow
 {
-    allowedOrientations: Orientation.All
+    Settings
+    {
+        id: settings
 
+        Component.onCompleted: {
+            Database.load();
+
+            Favorites.load(Database.instance(), settings.favorites);
+            SearchEngines.load(Database.instance(), settings.searchengines);
+            UserAgents.load(Database.instance(), settings.useragents);
+
+            var se = Database.get("searchengine");
+            settings.searchengine = (se === false ? settings.searchengines.get(0) : JSON.parse(se));
+
+            var hp = Database.get("homepage");
+            settings.homepage = (hp === false ? "about:bookmarks" : hp);
+
+            var ua = Database.get("useragent");
+            settings.useragent = (ua === false ? 0 : ua);
+        }
+    }
+
+    default property alias settings: settings
+
+    id: mainwindow
+    allowedOrientations: Orientation.All
     initialPage: Component { MainPage { } }
     cover: undefined
 }

@@ -24,10 +24,8 @@ OTHER_FILES += qml/WebPirate.qml \
     translations/*.ts \
     WebPirate.desktop \
     qml/js/UrlHelper.js \
-    qml/js/Settings.js \
     qml/js/SearchEngines.js \
     qml/js/Favorites.js \
-    qml/js/FavIcon.js \
     qml/components/TabView.qml \
     qml/components/SearchBar.qml \
     qml/components/NavigationBar.qml \
@@ -38,7 +36,12 @@ OTHER_FILES += qml/WebPirate.qml \
     qml/components/ConfirmDialog.qml \
     qml/components/BrowserTab.qml \
     qml/pages/SettingsPage.qml \
-    qml/pages/MainPage.qml
+    qml/pages/MainPage.qml \
+    qml/js/UserAgents.js \
+    qml/js/Database.js \
+    qml/models/Settings.qml \
+    qml/models/FavoritesModel.qml \
+    qml/pages/BookmarkPage.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line

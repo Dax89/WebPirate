@@ -1,7 +1,6 @@
 import QtQuick 2.0
 import QtWebKit 3.0
 import Sailfish.Silica 1.0
-import "../js/Settings.js" as Settings
 import "../js/UrlHelper.js" as UrlHelper
 
 Item
@@ -82,7 +81,7 @@ Item
             if(UrlHelper.isUrl(req))
                 webview.url = UrlHelper.adjustUrl(req);
             else
-                webview.url = Settings.defaultsearchengine.query + req;
+                webview.url = mainwindow.settings.searchengine.query + req;
         }
         else
             loadDefault();
@@ -117,7 +116,7 @@ Item
             /* Experimental WebView Features */
             experimental.preferences.webGLEnabled: true
             experimental.preferences.navigatorQtObjectEnabled: true;
-            experimental.userAgent: Settings.useragents[Settings.useragenttype].value
+            experimental.userAgent: mainwindow.settings.useragents.get(mainwindow.settings.useragent).value
             experimental.deviceWidth: width
             experimental.deviceHeight: height
 
@@ -147,6 +146,7 @@ Item
             onLoadingChanged: {
                 if(loadRequest.status === WebView.LoadStartedStatus) {
                     navigationbar.state = "loading";
+                    navigationbar.favorite = mainwindow.settings.favorites.contains(url.toString());
                 }
                 else if(loadRequest.status === WebView.LoadFailedStatus) {
                     loadfailed.offline = experimental.offline;

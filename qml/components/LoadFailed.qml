@@ -13,6 +13,7 @@ Rectangle
         id: imgerror
         anchors.centerIn: parent
         source: offline ? "qrc:///res/red-cross-icon.png" : "qrc:///res/red-cross-icon.png"
+        clip: true
     }
 
     Text

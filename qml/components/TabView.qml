@@ -116,7 +116,7 @@ Item
                             Text
                             {
                                 id: headertitle
-                                text: pages.get(index).tab.getTitle();
+                                text: pages.get(index).tab.getTitle()
                                 font.pixelSize: Theme.fontSizeSmall
                                 anchors.left: favicon.right
                                 anchors.right: parent.right

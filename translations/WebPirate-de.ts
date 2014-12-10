@@ -2,6 +2,21 @@
 <!DOCTYPE TS>
 <TS version="2.0">
 <context>
+    <name>BookmarkPage</name>
+    <message>
+        <source>Save Favorite</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Title</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Url</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>BrowserTab</name>
     <message>
         <source>New Tab</source>
@@ -24,6 +39,21 @@
     <message>
         <source>My Cover</source>
         <translation type="obsolete">Mein Cover</translation>
+    </message>
+</context>
+<context>
+    <name>FavoritesTab</name>
+    <message>
+        <source>Edit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Deleting Bookmark</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -57,6 +87,25 @@
     <message>
         <source>Item</source>
         <translation type="obsolete">Element</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsPage</name>
+    <message>
+        <source>Save Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Home Page</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Search Engines</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>User Agent</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

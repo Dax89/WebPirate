@@ -1,6 +1,7 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
-import "../js/Settings.js" as Settings
+import "../js/Database.js" as Database
+import "../js/Favorites.js" as Favorites
 
 Item
 {
@@ -9,6 +10,8 @@ Item
     signal stopRequested()
     signal forwardRequested()
     signal searchRequested(string searchquery)
+
+    property bool favorite: false
 
     property alias searchBar: searchbar
     property alias backButton: btnback
@@ -43,17 +46,28 @@ Item
         anchors.verticalCenter: navigationbar.verticalCenter
         anchors.left: btnback.right
 
-        onClicked: navigationbar.searchRequested(Settings.homepage);
+        onClicked: navigationbar.searchRequested(mainwindow.settings.homepage)
     }
 
     IconButton
     {
         id: btnbookmark
-        icon.source: "image://theme/icon-m-favorite"
         width: Theme.iconSizeMedium
         height: Theme.iconSizeMedium
+        icon.source: (favorite ? "image://theme/icon-m-favorite-selected" : "image://theme/icon-m-favorite")
         anchors.verticalCenter: navigationbar.verticalCenter
         anchors.left: btnhome.right
+
+        onClicked: {
+            if(!favorite) {
+                Favorites.add(Database.instance(), mainwindow.settings.favorites, webview.title, webview.url.toString());
+                navigationbar.favorite = true;
+            }
+            else {
+                Favorites.remove(Database.instance(), mainwindow.settings.favorites, webview.url.toString());
+                navigationbar.favorite = false;
+            }
+        }
     }
 
     SearchBar
@@ -75,9 +89,9 @@ Item
         anchors.right: btnforward.left
 
         onClicked: {
-            if(state === "loaded")
+            if(navigationbar.state === "loaded")
                 refreshRequested();
-            else if(state === "loading")
+            else if(navigationbar.state === "loading")
                 stopRequested();
         }
     }
