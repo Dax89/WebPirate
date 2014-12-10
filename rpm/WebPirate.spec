@@ -13,11 +13,11 @@ Name:       WebPirate
 %{!?qtc_make:%define qtc_make make}
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 Summary:    WebPirate
-Version:    1.0
+Version:    0.5
 Release:    1
 Group:      Qt/Qt
-License:    LICENSE
-URL:        http://example.org/
+License:    GPL3
+URL:        https://github.com/Dax89/WebPirate
 Source0:    %{name}-%{version}.tar.bz2
 Source100:  WebPirate.yaml
 Requires:   sailfishsilica-qt5 >= 0.10.9
@@ -28,7 +28,7 @@ BuildRequires:  pkgconfig(Qt5Quick)
 BuildRequires:  desktop-file-utils
 
 %description
-Short description of my SailfishOS Application
+A WebKit, tabbed, Web Browser for SailfishOS
 
 
 %prep
