@@ -2,6 +2,9 @@
 
 function adjustUrl(adjurl)
 {
+    if(isSpecialUrl(adjurl))
+        return adjurl;
+
     var regex = new RegExp("^(http|https)://")
 
     if(!regex.test(adjurl))
