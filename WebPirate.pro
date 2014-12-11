@@ -31,7 +31,6 @@ OTHER_FILES += qml/WebPirate.qml \
     qml/components/NavigationBar.qml \
     qml/components/LoadingBar.qml \
     qml/components/LoadFailed.qml \
-    qml/components/FavoritesTab.qml \
     qml/components/ConfirmDialog.qml \
     qml/components/BrowserTab.qml \
     qml/pages/SettingsPage.qml \
@@ -40,7 +39,8 @@ OTHER_FILES += qml/WebPirate.qml \
     qml/js/Database.js \
     qml/models/Settings.qml \
     qml/models/FavoritesModel.qml \
-    qml/pages/BookmarkPage.qml
+    qml/pages/BookmarkPage.qml \
+    qml/components/FavoritesView.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line

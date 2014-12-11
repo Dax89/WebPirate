@@ -23,4 +23,39 @@ ListModel
 
         return indexOf(url) !== -1;
     }
+
+    function fetchIcon(url, favorite)
+    {
+        var domainname = UrlHelper.domainName(url);
+        var req = new XMLHttpRequest();
+
+        favorite.icon = "image://theme/icon-m-favorite"
+
+        req.onreadystatechange = function() {
+            if((req.readyState === XMLHttpRequest.DONE) && (req.status === 200)) {
+                var regex = new RegExp("<link.*rel[ ]*=[ ]*[\\\"\\\'][ ]*shortcut[ ]+icon[ ]*[\\\"\\\'][^>]+>", "i");
+                var linktag = regex.exec(req.responseText);
+
+                if(linktag === null)
+                    return;
+
+                regex = new RegExp("href[ ]*=[ ]*[\\\"\\\']([^\\\"\\\']+)[\\\"\\\']", "i");
+                var link = regex.exec(linktag[0]);
+
+                if(link === null)
+                    return;
+
+                if(link[1].indexOf(domainname) === 0)
+                    favorite.icon = UrlHelper.adjustUrl(link[1]);
+                else
+                    favorite.icon = domainname + "/" + link[1];
+            }
+        }
+
+        if(domainname === null)
+            return;
+
+        req.open("GET", domainname);
+        req.send();
+    }
 }

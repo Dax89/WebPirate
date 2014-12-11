@@ -35,7 +35,7 @@
     </message>
 </context>
 <context>
-    <name>FavoritesTab</name>
+    <name>FavoritesView</name>
     <message>
         <source>Edit</source>
         <translation type="unfinished"></translation>

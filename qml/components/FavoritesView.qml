@@ -7,14 +7,14 @@ SilicaListView
 {
     signal urlRequested(string favoriteurl)
 
-    id: favoritestab
+    id: favoritesview
     clip: true
     model: mainwindow.settings.favorites
 
     delegate: ListItem {
         id: listitem
         contentHeight: Theme.itemSizeSmall
-        width: favoritestab.width
+        width: favoritesview.width
 
         menu: ContextMenu {
             MenuItem {
@@ -57,7 +57,7 @@ SilicaListView
             Label {
                 id: lbltitle;
                 height: parent.height
-                width: favoritestab.width - favicon.width
+                width: favoritesview.width - favicon.width
                 text: title
                 anchors.verticalCenter: parent.verticalCenter
                 verticalAlignment: Text.AlignVCenter

@@ -28,12 +28,12 @@ function load(db, favorites)
     });
 }
 
-function add(db, favorites, title, url)
+function add(db, favorites, title, url, icon)
 {
-    favorites.append({ "title": title, "url": url, "icon": "" });
+    favorites.append({ "title": title, "url": url, "icon": icon ? icon : "" });
 
     db.transaction(function(tx) {
-        tx.executeSql("INSERT OR REPLACE INTO Favorites (url, title, icon) VALUES (?, ?, ?);", [url, title, ""]);
+        tx.executeSql("INSERT OR REPLACE INTO Favorites (url, title, icon) VALUES (?, ?, ?);", [url, title, icon ? icon : "" ]);
     });
 }
 

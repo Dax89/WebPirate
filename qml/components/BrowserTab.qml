@@ -16,21 +16,21 @@ Item
         State {
             name: "favorites";
             PropertyChanges { target: webview; visible: false }
-            PropertyChanges { target: favoritestab; visible: true }
+            PropertyChanges { target: favoritesview; visible: true }
             PropertyChanges { target: loadfailed; visible: false }
         },
 
         State {
             name: "webbrowser";
             PropertyChanges { target: webview; visible: true }
-            PropertyChanges { target: favoritestab; visible: false }
+            PropertyChanges { target: favoritesview; visible: false }
             PropertyChanges { target: loadfailed; visible: false }
         },
 
         State {
             name: "loaderror";
             PropertyChanges { target: webview; visible: false }
-            PropertyChanges { target: favoritestab; visible: false }
+            PropertyChanges { target: favoritesview; visible: false }
             PropertyChanges { target: loadfailed; visible: true }
         } ]
 
@@ -93,9 +93,9 @@ Item
     {
         anchors.fill: parent
 
-        FavoritesTab
+        FavoritesView
         {
-            id: favoritestab
+            id: favoritesview
             width: parent.width
             height: parent.height - navigationbar.height
 
@@ -117,7 +117,8 @@ Item
 
             /* Experimental WebView Features */
             experimental.preferences.webGLEnabled: true
-            experimental.preferences.navigatorQtObjectEnabled: true;
+            experimental.preferences.navigatorQtObjectEnabled: true
+            experimental.preferences.developerExtrasEnabled: true
             experimental.userAgent: mainwindow.settings.useragents.get(mainwindow.settings.useragent).value
             experimental.deviceWidth: width
             experimental.deviceHeight: height
@@ -156,14 +157,19 @@ Item
                     navigationbar.state = "loaded";
                 }
                 else if (loadRequest.status === WebView.LoadSucceededStatus)  {
+                    var idx = mainwindow.settings.favorites.indexOf(url.toString())
                     navigationbar.state = "loaded";
-                    navigationbar.favorite = mainwindow.settings.favorites.contains(url.toString());
-                }
-            }
+                    navigationbar.favorite = (idx !== -1);
 
-            onIconChanged: {
-                if((icon !== "") && navigationbar.favorite)
-                    Favorites.setIcon(Database.instance(), mainwindow.settings.favorites, url.toString(), (icon !== "" ? icon.toString() : "image://theme/icon-m-favorite"));
+                    /* FIXME: Check Favicon
+                    if(navigationbar.favorite)
+                    {
+                        var favorite = mainwindow.settings.favorites.get(idx);
+                        mainwindow.settings.favorites.fetchIcon(url.toString(), favorite);
+                        Favorites.setIcon(Database.instance(), mainwindow.settings.favorites, url.toString(), favorite.icon);
+                    }
+                    */
+                }
             }
 
             onUrlChanged: {
