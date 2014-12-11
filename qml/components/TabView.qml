@@ -48,6 +48,7 @@ Item
         pages.append({ "tab": tab });
         currentIndex = (pages.count - 1);
         setOpacities();
+        setTabWidth();
     }
 
     function removeTab(idx)
@@ -62,6 +63,7 @@ Item
             currentIndex--;
 
         setOpacities();
+        setTabWidth();
     }
 
     Column
@@ -94,13 +96,22 @@ Item
                         height: header.height
                         color: (index === currentIndex ? Theme.secondaryColor : Theme.secondaryHighlightColor);
 
+                        /*
+                        PropertyAnimation on width {
+                            to: tabview.tabWidth
+                            duration: 500
+                            easing.type: Easing.InOutQuad
+                        }
+                        */
+
                         MouseArea
                         {
                             id: headermousearea
                             width: parent.width - btnclose.width
                             height: parent.height
 
-                            Image {
+                            Image
+                            {
                                 id: favicon
                                 width: headertitle.height
                                 height: headertitle.height
@@ -145,7 +156,7 @@ Item
                             icon.source: "image://theme/icon-close-vkb"
                             visible: pages.count > 1
 
-                            onClicked: removeTab(index);
+                            onClicked: tabview.removeTab(index)
                         }
                     }
                 }
@@ -158,7 +169,7 @@ Item
                     icon.source: "image://theme/icon-m-add"
                     anchors.rightMargin: Theme.paddingSmall
 
-                    onClicked: addTab();
+                    onClicked: tabview.addTab()
                 }
             }
 
