@@ -89,6 +89,19 @@ Item
             loadDefault();
     }
 
+    LinkPanel
+    {
+        id: linkpanel
+        anchors.fill: parent
+        visible: false;
+        z: 2
+
+        onOpenLinkRequested: browsertab.load(url)
+        onOpenTabRequested: tabview.addTab(url)
+        onAddToFavoritesRequested: Favorites.add(Database.instance(), mainwindow.settings.favorites, url, url)
+        onRemoveFromFavoritesRequested: Favorites.remove(Database.instance(), mainwindow.settings.favorites, url)
+    }
+
     Column
     {
         anchors.fill: parent
@@ -119,9 +132,20 @@ Item
             experimental.preferences.webGLEnabled: true
             experimental.preferences.navigatorQtObjectEnabled: true
             experimental.preferences.developerExtrasEnabled: true
+            experimental.userScripts: [Qt.resolvedUrl("../js/WebViewHelper.js")]
             experimental.userAgent: mainwindow.settings.useragents.get(mainwindow.settings.useragent).value
             experimental.deviceWidth: width
             experimental.deviceHeight: height
+
+            experimental.onMessageReceived: {
+                var data = JSON.parse(message.data);
+
+                if(data.type === "longpress")
+                {
+                    linkpanel.url = data.url;
+                    linkpanel.visible = true;
+                }
+            }
 
             experimental.certificateVerificationDialog: Item {
                 Component.onCompleted: {
@@ -189,6 +213,7 @@ Item
         NavigationBar
         {
             id: navigationbar
+            z: 1
             width: parent.width
             forwardButton.enabled: webview.canGoForward;
             backButton.enabled: webview.canGoBack;
@@ -199,5 +224,10 @@ Item
             onStopRequested: webview.stop();
             onSearchRequested: load(searchquery);
         }
+    }
+
+    onVisibleChanged: {
+        if(!visible)
+            linkpanel.visible = false;
     }
 }

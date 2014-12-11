@@ -72,6 +72,25 @@
     </message>
 </context>
 <context>
+    <name>LinkPanel</name>
+    <message>
+        <source>Open Link</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Open New Tab</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Remove From Favorites</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Add To Favorites</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>LoadFailed</name>
     <message>
         <source>You are in offline mode</source>

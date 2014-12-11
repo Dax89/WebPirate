@@ -41,7 +41,9 @@ OTHER_FILES += qml/WebPirate.qml \
     qml/models/Settings.qml \
     qml/models/FavoritesModel.qml \
     qml/pages/BookmarkPage.qml \
-    qml/components/FavoritesView.qml
+    qml/components/FavoritesView.qml \
+    qml/js/WebViewHelper.js \
+    qml/components/LinkPanel.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line
