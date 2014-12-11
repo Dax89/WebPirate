@@ -60,7 +60,7 @@ Item
 
         onClicked: {
             if(!favorite) {
-                Favorites.add(Database.instance(), mainwindow.settings.favorites, webview.title, webview.url.toString(), webview.icon.toString());
+                Favorites.add(Database.instance(), mainwindow.settings.favorites, webview.title, webview.url.toString(), icon.source.toString());
                 navigationbar.favorite = true;
             }
             else {
