@@ -14,7 +14,8 @@ TARGET = WebPirate
 
 CONFIG += sailfishapp
 
-SOURCES += src/WebPirate.cpp
+SOURCES += src/WebPirate.cpp \
+    src/webviewdb.cpp
 
 OTHER_FILES += qml/WebPirate.qml \
     qml/cover/CoverPage.qml \
@@ -49,4 +50,7 @@ TRANSLATIONS += translations/WebPirate-de.ts
 
 RESOURCES += \
     resources.qrc
+
+HEADERS += \
+    src/webviewdb.h
 

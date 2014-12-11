@@ -46,7 +46,7 @@ Page
         id: tabview
         anchors.fill: parent
 
-        Component.onCompleted: tabview.addTab(mainwindow.settings.homepage);
         onSettingsRequested: pageStack.push(Qt.resolvedUrl("SettingsPage.qml"), {"settings": mainwindow.settings });
+        Component.onCompleted: tabview.addTab(mainwindow.settings.homepage);
     }
 }

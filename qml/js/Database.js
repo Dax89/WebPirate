@@ -61,10 +61,3 @@ function load()
         tx.executeSql("CREATE TABLE IF NOT EXISTS BrowserSettings(name TEXT PRIMARY KEY, value TEXT)");
     });
 }
-
-function save(homepage, searchengine, useragent)
-{
-    set("homepage", homepage);
-    set("searchengine", searchengine);
-    set("useragent", useragent);
-}

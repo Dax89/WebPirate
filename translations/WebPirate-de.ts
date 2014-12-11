@@ -107,5 +107,9 @@
         <source>User Agent</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Wipe Data on Exit</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 </TS>

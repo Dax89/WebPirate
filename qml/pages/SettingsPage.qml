@@ -74,6 +74,32 @@ Dialog
                     }
                 }
             }
+
+            Row
+            {
+                width: parent.width
+                height: Theme.itemSizeSmall
+
+                Switch
+                {
+                    id: swclearonexit
+                    width: Theme.itemSizeSmall
+                    height: parent.height
+                    checked: settings.clearonexit
+
+                    onCheckedChanged: {
+                        settings.clearonexit = checked;
+                    }
+                }
+
+                Label
+                {
+                    height: parent.height
+                    width: parent.width - swclearonexit.width
+                    verticalAlignment: Text.AlignVCenter
+                    text: qsTr("Wipe Data on Exit");
+                }
+            }
         }
     }
 
@@ -84,7 +110,11 @@ Dialog
 
             settings.searchengine = cbsearchengines.currentIndex;
             settings.useragent = cbuseragent.currentIndex;
-            Database.save(settings.homepage, settings.searchengine, settings.useragent);
+
+            Database.set("homepage", settings.homepage);
+            Database.set("searchengine", settings.searchengine);
+            Database.set("useragent", settings.useragent);
+            Database.set("clearonexit", settings.clearonexit)
         }
     }
 }
