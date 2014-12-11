@@ -2,6 +2,8 @@ import QtQuick 2.0
 import QtWebKit 3.0
 import Sailfish.Silica 1.0
 import "../js/UrlHelper.js" as UrlHelper
+import "../js/Database.js" as Database
+import "../js/Favorites.js" as Favorites
 
 Item
 {
@@ -146,7 +148,6 @@ Item
             onLoadingChanged: {
                 if(loadRequest.status === WebView.LoadStartedStatus) {
                     navigationbar.state = "loading";
-                    navigationbar.favorite = mainwindow.settings.favorites.contains(url.toString());
                 }
                 else if(loadRequest.status === WebView.LoadFailedStatus) {
                     loadfailed.offline = experimental.offline;
@@ -156,7 +157,13 @@ Item
                 }
                 else if (loadRequest.status === WebView.LoadSucceededStatus)  {
                     navigationbar.state = "loaded";
+                    navigationbar.favorite = mainwindow.settings.favorites.contains(url.toString());
                 }
+            }
+
+            onIconChanged: {
+                if((icon !== "") && navigationbar.favorite)
+                    Favorites.setIcon(Database.instance(), mainwindow.settings.favorites, url.toString(), (icon !== "" ? icon.toString() : "image://theme/icon-m-favorite"));
             }
 
             onUrlChanged: {

@@ -42,17 +42,22 @@ SilicaListView
             anchors.fill: parent
             spacing: Theme.paddingSmall
 
-            FavIcon
+            Image
             {
-                id: imgfavicon;
+                id: favicon
+                cache: true
+                asynchronous: true
+                width: Theme.iconSizeSmall
+                height: Theme.iconSizeSmall
+                fillMode: Image.PreserveAspectFit
                 anchors.verticalCenter: parent.verticalCenter
-                site: url
+                source: (icon !== "") ? icon : "image://theme/icon-m-favorite"
             }
 
             Label {
                 id: lbltitle;
                 height: parent.height
-                width: favoritestab.width - imgfavicon.width
+                width: favoritestab.width - favicon.width
                 text: title
                 anchors.verticalCenter: parent.verticalCenter
                 verticalAlignment: Text.AlignVCenter
