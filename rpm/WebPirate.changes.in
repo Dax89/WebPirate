@@ -8,9 +8,6 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
-* Wed Dec 10 2014 Antonio Davide Trogu <trogu.davide@gmail.com> 0.5-1
-- First Public Release
-
 * Thu Dec 11 2014  Antonio Davide Trogu <trogu.davide@gmail.com> 0.6-1
 - Implemented Bookmark Support
 - Dropped Favicon Support on Bookmarks (needs more investigation)
@@ -18,3 +15,7 @@
 - Rewrited Settings Management
 - A lot of fixes
 - New Icon: Thanks to the OpenRepos user 'Moth' :)
+
+
+* Wed Dec 10 2014 Antonio Davide Trogu <trogu.davide@gmail.com> 0.5-1
+- First Public Release
