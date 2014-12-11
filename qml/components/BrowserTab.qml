@@ -83,7 +83,7 @@ Item
             if(UrlHelper.isUrl(req))
                 webview.url = UrlHelper.adjustUrl(req);
             else
-                webview.url = mainwindow.settings.searchengines[mainwindow.settings.searchengine].query + req;
+                webview.url = mainwindow.settings.searchengines.get(mainwindow.settings.searchengine).query + req;
         }
         else
             loadDefault();
