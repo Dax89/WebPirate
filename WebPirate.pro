@@ -32,7 +32,6 @@ OTHER_FILES += qml/WebPirate.qml \
     qml/components/LoadingBar.qml \
     qml/components/LoadFailed.qml \
     qml/components/FavoritesTab.qml \
-    qml/components/FavIcon.qml \
     qml/components/ConfirmDialog.qml \
     qml/components/BrowserTab.qml \
     qml/pages/SettingsPage.qml \
