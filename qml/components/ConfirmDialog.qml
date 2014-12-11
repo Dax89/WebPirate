@@ -14,15 +14,16 @@ Dialog
     {
         anchors.fill: parent
 
+        DialogHeader
+        {
+            id: dlgheader
+            title: qsTr("Yes");
+        }
+
         Column
         {
-            anchors.fill: parent
-
-            DialogHeader
-            {
-                id: dlgheader
-                title: qsTr("Yes");
-            }
+            anchors {top: dlgheader.bottom; bottom: parent.bottom }
+            width: parent.width
 
             Label
             {
