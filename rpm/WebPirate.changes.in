@@ -10,9 +10,10 @@
 
 * Fri Dec 12 2014  Antonio Davide Trogu <trogu.davide@gmail.com> 0.65-1
 - BUGFIX: Browser always deletes navigation history on close
-- Italian Localization available (I will update the package as more languages will becomes available)
 - Implemented Custom Search Engines support
 - Updated Icon: Thanks again, Moth :)
+- Italian Localization available
+- Dutch Localization available
 
 * Thu Dec 11 2014  Antonio Davide Trogu <trogu.davide@gmail.com> 0.65-1
 - Implemented Bookmark Support
