@@ -36,7 +36,7 @@
 
 #include <QtQuick>
 #include <sailfishapp.h>
-#include "webviewdb.h"
+#include "webviewdatabase.h"
 
 int main(int argc, char *argv[])
 {
@@ -44,10 +44,10 @@ int main(int argc, char *argv[])
     application->setApplicationName("WebPirate");
 
     /* WebView Database Class */
-    WebViewDB webviewdb;
+    WebViewDatabase webviewdb;
 
     QScopedPointer<QQuickView> view(SailfishApp::createView());
-    view->engine()->rootContext()->setContextProperty("webviewdb", &webviewdb);
+    view->engine()->rootContext()->setContextProperty("webviewdatabase", &webviewdb);
     view->setSource(SailfishApp::pathTo("qml/WebPirate.qml"));
     view->show();
 

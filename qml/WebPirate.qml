@@ -73,6 +73,6 @@ ApplicationWindow
 
     Component.onDestruction: {
         if(settings.clearonexit)
-            webviewdb.clearNavigationData();
+            webviewdatabase.clearNavigationData();
     }
 }

@@ -1,11 +1,11 @@
-#include "webviewdb.h"
+#include "webviewdatabase.h"
 
-WebViewDB::WebViewDB(QObject *parent): QObject(parent)
+WebViewDatabase::WebViewDatabase(QObject *parent): QObject(parent)
 {
 
 }
 
-void WebViewDB::clearNavigationData()
+void WebViewDatabase::clearNavigationData()
 {
     QDir datadir = QDir(QStandardPaths::writableLocation(QStandardPaths::DataLocation));
 
