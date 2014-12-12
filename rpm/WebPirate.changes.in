@@ -8,14 +8,19 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
-* Thu Dec 11 2014  Antonio Davide Trogu <trogu.davide@gmail.com> 0.6-1
+* Fri Dec 12 2014  Antonio Davide Trogu <trogu.davide@gmail.com> 0.65-1
+- BUGFIX: Browser always deletes navigation history on close
+- Italian Localization available (I will update the package as more languages will becomes available)
+- Implemented Custom Search Engines support
+- Updated Icon: Thanks again, Moth :)
+
+* Thu Dec 11 2014  Antonio Davide Trogu <trogu.davide@gmail.com> 0.65-1
 - Implemented Bookmark Support
 - Dropped Favicon Support on Bookmarks (needs more investigation)
 - Added an option that deletes cookies and navigation history when the browser is closed
 - Rewrited Settings Management
 - A lot of fixes
 - New Icon: Thanks to the OpenRepos user 'Moth' :)
-
 
 * Wed Dec 10 2014 Antonio Davide Trogu <trogu.davide@gmail.com> 0.5-1
 - First Public Release
