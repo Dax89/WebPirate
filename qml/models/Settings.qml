@@ -9,5 +9,5 @@ QtObject
     property int searchengine;  /* Search Engine Index */
     property int useragent;     /* User Agent Index */
     property string homepage;   /* HomePage Url */
-    property bool clearonexit;  /* Private mode On/Off */
+    property bool clearonexit;  /* Wipe UserData on exit */
 }

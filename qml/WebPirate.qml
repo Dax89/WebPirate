@@ -60,8 +60,7 @@ ApplicationWindow
             var ua = Database.get("useragent");
             settings.useragent = (ua === false ? 0 : ua);
 
-            var ce = Database.get("clearonexit");
-            settings.clearonexit = (ce === false ? false : true);
+            settings.clearonexit = parseInt(Database.get("clearonexit"));
         }
     }
 
