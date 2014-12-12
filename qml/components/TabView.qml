@@ -22,6 +22,9 @@ Item
 
     function setTabWidth()
     {
+        if(!pages.count)
+            return;
+
         var stdwidth = (headerrow.width - btnplus.width) / 2;
 
         if((pages.count * stdwidth) <= headerrow.width)
@@ -86,7 +89,7 @@ Item
                 Repeater
                 {
                     id: repeater
-                    model: pages.count
+                    model: pages
                     anchors { left: parent.left; top: parent.top; right: parent.right }
 
                     delegate: Rectangle {
@@ -96,13 +99,9 @@ Item
                         height: header.height
                         color: (index === currentIndex ? Theme.secondaryColor : Theme.secondaryHighlightColor);
 
-                        /*
-                        PropertyAnimation on width {
-                            to: tabview.tabWidth
-                            duration: 500
-                            easing.type: Easing.InOutQuad
+                        Behavior on width {
+                            NumberAnimation { duration: 100; easing.type: Easing.InOutQuad }
                         }
-                        */
 
                         MouseArea
                         {
@@ -119,7 +118,7 @@ Item
                                 anchors.left: parent.left
                                 anchors.leftMargin: Theme.paddingSmall
                                 anchors.verticalCenter: parent.verticalCenter
-                                source: pages.get(index).tab.getIcon()
+                                source: tab.getIcon()
                                 asynchronous: true
                                 smooth: true
                             }
@@ -127,7 +126,7 @@ Item
                             Text
                             {
                                 id: headertitle
-                                text: pages.get(index).tab.getTitle()
+                                text: tab.getTitle()
                                 font.pixelSize: Theme.fontSizeSmall
                                 anchors.left: favicon.right
                                 anchors.right: parent.right
