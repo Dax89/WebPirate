@@ -13,9 +13,8 @@ Dialog
     acceptDestinationAction: PageStackAction.Pop
     canAccept: true
 
-    SilicaFlickable
+    Column
     {
-        id: dlgcontainer
         anchors.fill: parent
 
         DialogHeader
@@ -24,31 +23,29 @@ Dialog
             title: qsTr("Save Settings")
         }
 
-        Column
+        SectionHeader
         {
-            anchors.top: dlgheader.bottom
-            anchors.bottom: parent.bottom
+            text: qsTr("General");
+        }
+
+        TextField
+        {
+            id: tfhomepage
+            label: qsTr("Home Page")
             width: parent.width
+            text: settings.homepage
+        }
 
-            SectionHeader
-            {
-                text: qsTr("General");
-            }
-
-            TextField
-            {
-                id: tfhomepage
-                label: qsTr("Home Page")
-                width: parent.width
-                text: settings.homepage
-            }
+        Row
+        {
+            width: parent.width
 
             ComboBox
             {
                 id: cbsearchengines
                 label: qsTr("Search Engines")
-                width: parent.width
                 currentIndex: settings.searchengine
+                width: parent.width
 
                 menu: ContextMenu {
                     Repeater {
@@ -59,56 +56,63 @@ Dialog
                         }
                     }
                 }
+
+                onPressAndHold: {
+                    var page = pageStack.push(Qt.resolvedUrl("SearchEnginesPage.qml"), {"settings": settings });
+                    page.defaultEngineChanged.connect(function(newindex) {
+                        cbsearchengines.currentIndex = newindex;
+                    });
+                }
             }
+        }
 
-            ComboBox
-            {
-                id: cbuseragent
-                label: qsTr("User Agent")
-                width: parent.width
-                currentIndex: settings.useragent
+        ComboBox
+        {
+            id: cbuseragent
+            label: qsTr("User Agent")
+            width: parent.width
+            currentIndex: settings.useragent
 
-                menu: ContextMenu {
+            menu: ContextMenu {
 
-                    Repeater {
-                        model: settings.useragents
+                Repeater {
+                    model: settings.useragents
 
-                        MenuItem {
-                            text: type
-                        }
+                    MenuItem {
+                        text: type
                     }
                 }
             }
+        }
 
-            SectionHeader
+        SectionHeader
+        {
+            text: qsTr("Privacy");
+        }
+
+        Row
+        {
+            width: parent.width
+            height: Theme.itemSizeSmall
+
+            Switch
             {
-                text: qsTr("Privacy");
+                id: swclearonexit
+                width: Theme.itemSizeSmall
+                height: parent.height
+                checked: settings.clearonexit
+
+                onCheckedChanged: {
+                    settings.clearonexit = checked;
+                }
             }
 
-            Row
+            Label
             {
-                width: parent.width
-                height: Theme.itemSizeSmall
-
-                Switch
-                {
-                    id: swclearonexit
-                    width: Theme.itemSizeSmall
-                    height: parent.height
-                    checked: settings.clearonexit
-
-                    onCheckedChanged: {
-                        settings.clearonexit = checked;
-                    }
-                }
-
-                Label
-                {
-                    height: parent.height
-                    width: parent.width - swclearonexit.width
-                    verticalAlignment: Text.AlignVCenter
-                    text: qsTr("Wipe Data on Exit");
-                }
+                height: parent.height
+                width: parent.width - swclearonexit.width
+                verticalAlignment: Text.AlignVCenter
+                text: qsTr("Wipe Data on Exit");
             }
         }
     }

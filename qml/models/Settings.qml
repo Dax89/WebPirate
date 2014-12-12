@@ -3,7 +3,7 @@ import QtQuick 2.0
 QtObject
 {
     property FavoritesModel favorites: FavoritesModel { }
-    property ListModel searchengines: ListModel { }
+    property SearchEngineModel searchengines: SearchEngineModel { }
     property ListModel useragents: ListModel { }
 
     property int searchengine;  /* Search Engine Index */

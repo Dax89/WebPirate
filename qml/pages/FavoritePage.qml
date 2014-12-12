@@ -16,42 +16,32 @@ Dialog
     acceptDestinationAction: PageStackAction.Pop
     canAccept: true
 
-    SilicaFlickable
+    Column
     {
-        id: dlgcontainer
         anchors.fill: parent
 
-        DialogHeader
-        {
-            id: dlgheader
-            title: qsTr("Save Favorite")
+        DialogHeader {
+            title: qsTr("Save")
         }
 
-        Column
+        TextField
         {
-            anchors.top: dlgheader.bottom
-            anchors.bottom: parent.bottom
+            id: tftitle
+            label: qsTr("Title")
             width: parent.width
+        }
 
-            TextField
-            {
-                id: tftitle
-                label: qsTr("Title")
-                width: parent.width
-            }
-
-            TextField
-            {
-                id: tfurl
-                label: qsTr("Url")
-                width: parent.width
-            }
+        TextField
+        {
+            id: tfurl
+            label: qsTr("Url")
+            width: parent.width
+            inputMethodHints: Qt.ImhNoAutoUppercase
         }
     }
 
     onDone: {
-        if(result === DialogResult.Accepted) {
+        if(result === DialogResult.Accepted)
             Favorites.replace(Database.instance(), settings.favorites, dlgbookmark.index, tftitle.text, tfurl.text);
-        }
     }
 }

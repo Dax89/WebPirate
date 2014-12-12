@@ -35,3 +35,28 @@ function add(db, searchengines, name, query)
         tx.executeSql("INSERT OR REPLACE INTO SearchEngines (name, query) VALUES (?, ?);", [name, query]);
     });
 }
+
+function replace(db, searchengines, index, name, query)
+{
+    db.transaction(function(tx) {
+        tx.executeSql("UPDATE SearchEngines SET name=?, query=? WHERE name=?;", [name, query, searchengines.get(index).name]);
+    });
+
+    var searchengine = searchengines.get(index);
+    searchengine.name = name;
+    searchengine.query = query;
+}
+
+function remove(db, searchengines, name)
+{
+    var idx = searchengines.indexOf(name);
+
+    if(idx === -1)
+        return;
+
+    searchengines.remove(idx);
+
+    db.transaction(function(tx) {
+        tx.executeSql("DELETE FROM SearchEngines WHERE name=?;", [name]);
+    });
+}

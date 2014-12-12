@@ -21,7 +21,7 @@ SilicaListView
                 id: miedit
                 text: qsTr("Edit");
 
-                onClicked: pageStack.push(Qt.resolvedUrl("../pages/BookmarkPage.qml"), {"settings": mainwindow.settings, "index": index, "title": title, "url": url });
+                onClicked: pageStack.push(Qt.resolvedUrl("../pages/FavoritePage.qml"), {"settings": mainwindow.settings, "index": index, "title": title, "url": url });
             }
 
             MenuItem {
