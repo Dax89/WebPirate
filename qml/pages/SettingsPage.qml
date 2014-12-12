@@ -30,6 +30,11 @@ Dialog
             anchors.bottom: parent.bottom
             width: parent.width
 
+            SectionHeader
+            {
+                text: qsTr("General");
+            }
+
             TextField
             {
                 id: tfhomepage
@@ -73,6 +78,11 @@ Dialog
                         }
                     }
                 }
+            }
+
+            SectionHeader
+            {
+                text: qsTr("Privacy");
             }
 
             Row

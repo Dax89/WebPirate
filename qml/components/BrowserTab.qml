@@ -130,6 +130,7 @@ Item
 
             /* Experimental WebView Features */
             experimental.preferences.webGLEnabled: true
+            experimental.preferences.pluginsEnabled: true
             experimental.preferences.navigatorQtObjectEnabled: true
             experimental.preferences.developerExtrasEnabled: true
             experimental.userScripts: [Qt.resolvedUrl("../js/WebViewHelper.js")]
