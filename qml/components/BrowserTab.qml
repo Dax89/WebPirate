@@ -127,6 +127,7 @@ Item
             id: webview
             width: parent.width
             height: parent.height - navigationbar.height
+            quickScroll: false
 
             /* Experimental WebView Features */
             experimental.preferences.webGLEnabled: true
