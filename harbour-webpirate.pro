@@ -10,20 +10,20 @@
 #   - translation filenames have to be changed
 
 # The name of your application
-TARGET = WebPirate
+TARGET = harbour-webpirate
 
 CONFIG += sailfishapp
 
-SOURCES += src/WebPirate.cpp \
+SOURCES += src/harbour-webpirate.cpp \
     src/webviewdatabase.cpp
 
-OTHER_FILES += qml/WebPirate.qml \
+OTHER_FILES += qml/harbour-webpirate.qml \
     qml/cover/CoverPage.qml \
-    rpm/WebPirate.changes.in \
-    rpm/WebPirate.spec \
-    rpm/WebPirate.yaml \
+    rpm/harbour-webpirate.changes.in \
+    rpm/harbour-webpirate.spec \
+    rpm/harbour-webpirate.yaml \
     translations/*.ts \
-    WebPirate.desktop \
+    harbour-webpirate.desktop \
     qml/js/UrlHelper.js \
     qml/js/SearchEngines.js \
     qml/js/Favorites.js \
@@ -51,8 +51,8 @@ OTHER_FILES += qml/WebPirate.qml \
 # to disable building translations every time, comment out the
 # following CONFIG line
 CONFIG += sailfishapp_i18n
-TRANSLATIONS += translations/WebPirate-it.ts \
-            translations/WebPirate-nl.ts \
+TRANSLATIONS += translations/harbour-webpirate-it.ts \
+            translations/harbour-webpirate-nl.ts \
 
 RESOURCES += \
     resources.qrc

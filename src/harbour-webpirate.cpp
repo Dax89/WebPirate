@@ -41,14 +41,14 @@
 int main(int argc, char *argv[])
 {
     QScopedPointer<QGuiApplication> application(SailfishApp::application(argc, argv));
-    application->setApplicationName("WebPirate");
+    application->setApplicationName("harbour-webpirate");
 
     /* WebView Database Class */
     WebViewDatabase webviewdb;
 
     QScopedPointer<QQuickView> view(SailfishApp::createView());
     view->engine()->rootContext()->setContextProperty("webviewdatabase", &webviewdb);
-    view->setSource(SailfishApp::pathTo("qml/WebPirate.qml"));
+    view->setSource(SailfishApp::pathTo("qml/harbour-webpirate.qml"));
     view->show();
 
     return application->exec();
