@@ -120,10 +120,6 @@
 <context>
     <name>SettingsPage</name>
     <message>
-        <source>Save Settings</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Home Page</source>
         <translation type="unfinished"></translation>
     </message>
@@ -145,6 +141,10 @@
     </message>
     <message>
         <source>Privacy</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Save Settings</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

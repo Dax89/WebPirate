@@ -13,106 +13,114 @@ Dialog
     acceptDestinationAction: PageStackAction.Pop
     canAccept: true
 
-    Column
+    SilicaFlickable
     {
         anchors.fill: parent
+        contentHeight: column.height + dlgheader.height
 
-        DialogHeader
+        Column
         {
-            id: dlgheader
-            title: qsTr("Save Settings")
-        }
-
-        SectionHeader
-        {
-            text: qsTr("General");
-        }
-
-        TextField
-        {
-            id: tfhomepage
-            label: qsTr("Home Page")
+            id: column
+            anchors.top: parent.top
             width: parent.width
-            text: settings.homepage
-        }
 
-        Row
-        {
-            width: parent.width
+            DialogHeader
+            {
+                id: dlgheader
+                title: qsTr("Save Settings")
+            }
+
+            SectionHeader
+            {
+                text: qsTr("General");
+            }
+
+            TextField
+            {
+                id: tfhomepage
+                label: qsTr("Home Page")
+                width: parent.width
+                text: settings.homepage
+            }
+
+            Row
+            {
+                width: parent.width
+
+                ComboBox
+                {
+                    id: cbsearchengines
+                    label: qsTr("Search Engines")
+                    currentIndex: settings.searchengine
+                    width: parent.width
+
+                    menu: ContextMenu {
+                        Repeater {
+                            model: settings.searchengines
+
+                            MenuItem {
+                                text: name
+                            }
+                        }
+                    }
+
+                    onPressAndHold: {
+                        var page = pageStack.push(Qt.resolvedUrl("SearchEnginesPage.qml"), {"settings": settings });
+                        page.defaultEngineChanged.connect(function(newindex) {
+                            cbsearchengines.currentIndex = newindex;
+                        });
+                    }
+                }
+            }
 
             ComboBox
             {
-                id: cbsearchengines
-                label: qsTr("Search Engines")
-                currentIndex: settings.searchengine
+                id: cbuseragent
+                label: qsTr("User Agent")
                 width: parent.width
+                currentIndex: settings.useragent
 
                 menu: ContextMenu {
+
                     Repeater {
-                        model: settings.searchengines
+                        model: settings.useragents
 
                         MenuItem {
-                            text: name
+                            text: type
                         }
                     }
                 }
-
-                onPressAndHold: {
-                    var page = pageStack.push(Qt.resolvedUrl("SearchEnginesPage.qml"), {"settings": settings });
-                    page.defaultEngineChanged.connect(function(newindex) {
-                        cbsearchengines.currentIndex = newindex;
-                    });
-                }
             }
-        }
 
-        ComboBox
-        {
-            id: cbuseragent
-            label: qsTr("User Agent")
-            width: parent.width
-            currentIndex: settings.useragent
+            SectionHeader
+            {
+                text: qsTr("Privacy");
+            }
 
-            menu: ContextMenu {
+            Row
+            {
+                width: parent.width
+                height: Theme.itemSizeSmall
 
-                Repeater {
-                    model: settings.useragents
+                Switch
+                {
+                    id: swclearonexit
+                    width: Theme.itemSizeSmall
+                    height: parent.height
+                    checked: settings.clearonexit
 
-                    MenuItem {
-                        text: type
+                    onCheckedChanged: {
+                        settings.clearonexit = checked;
                     }
                 }
-            }
-        }
 
-        SectionHeader
-        {
-            text: qsTr("Privacy");
-        }
-
-        Row
-        {
-            width: parent.width
-            height: Theme.itemSizeSmall
-
-            Switch
-            {
-                id: swclearonexit
-                width: Theme.itemSizeSmall
-                height: parent.height
-                checked: settings.clearonexit
-
-                onCheckedChanged: {
-                    settings.clearonexit = checked;
+                Label
+                {
+                    height: parent.height
+                    width: parent.width - swclearonexit.width
+                    verticalAlignment: Text.AlignVCenter
+                    text: qsTr("Wipe Data on Exit");
                 }
-            }
-
-            Label
-            {
-                height: parent.height
-                width: parent.width - swclearonexit.width
-                verticalAlignment: Text.AlignVCenter
-                text: qsTr("Wipe Data on Exit");
             }
         }
     }

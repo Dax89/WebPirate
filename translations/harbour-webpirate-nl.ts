@@ -121,7 +121,7 @@
     <name>SettingsPage</name>
     <message>
         <source>Save Settings</source>
-        <translation>Instellingen opslaan</translation>
+        <translation type="unfinished">Instellingen opslaan</translation>
     </message>
     <message>
         <source>Home Page</source>
