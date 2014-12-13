@@ -1,10 +1,11 @@
 [Desktop Entry]
 Type=Application
 X-Nemo-Application-Type=silica-qt5
-Icon=WebPirate
-Exec=WebPirate
-Name=WebPirate
+Icon=harbour-webpirate
+Exec=harbour-webpirate
+Name=Web Pirate
+
 # translation example:
 # your app name in German locale (de)
-Name[de]=WebPirate
+# Name[de]=Web Pirate
 
