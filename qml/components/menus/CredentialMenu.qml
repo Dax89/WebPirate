@@ -16,7 +16,7 @@ PopupMenu
         width: parent.width
         height: Theme.itemSizeSmall
 
-        MouseArea
+        BackgroundItem
         {
             width: parent.width / 2
             height: parent.height
@@ -39,7 +39,7 @@ PopupMenu
             }
         }
 
-        MouseArea
+        BackgroundItem
         {
             width: parent.width / 2
             height: parent.height
