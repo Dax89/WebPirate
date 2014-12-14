@@ -43,3 +43,30 @@ function store(db, settings, url, loginattribute, loginid, login, passwordattrib
                       [url, loginattribute, loginid, AES.enc(login, key), passwordattribute, passwordid, AES.enc(password, key)]);
     })
 }
+
+function compile(db, settings, url, webview)
+{
+    db.transaction(function(tx) {
+        var res = tx.executeSql("SELECT * FROM Credentials WHERE url=?;", [url]);
+
+        if(res.rows.length <= 0)
+            return;
+
+        var k = generateKey(settings);
+
+        for(var i = 0; i < res.rows.length; i++)
+        {
+            var row = res.rows[i];
+
+            if(row.loginattribute === "name")
+                webview.experimental.evaluateJavaScript("document.getElementsByName('" + row.loginid + "')[0].value = '" + AES.dec(row.login, k) + "'");
+            else if(row.loginattribute === "id")
+                webview.experimental.evaluateJavaScript("document.getElementById('" + row.loginid + "').value = '" + AES.dec(row.login, k) + "'");
+
+            if(row.passwordattribute === "name")
+                webview.experimental.evaluateJavaScript("document.getElementsByName('" + row.passwordid + "')[0].value = '" + AES.dec(row.password, k) + "'");
+            else if(row.passwordattribute === "id")
+                webview.experimental.evaluateJavaScript("document.getElementById('" + row.passwordid + "').value = '" + AES.dec(row.password, k) + "'");
+        }
+    });
+}

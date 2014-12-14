@@ -5,6 +5,7 @@ import "menus"
 import "../js/UrlHelper.js" as UrlHelper
 import "../js/Database.js" as Database
 import "../js/Favorites.js" as Favorites
+import "../js/Credentials.js" as Credentials
 
 Item
 {
@@ -133,6 +134,7 @@ Item
             /* Experimental WebView Features */
             experimental.preferences.webGLEnabled: true
             experimental.preferences.pluginsEnabled: true
+            experimental.preferences.javascriptEnabled: true
             experimental.preferences.navigatorQtObjectEnabled: true
             experimental.preferences.developerExtrasEnabled: true
             experimental.userScripts: [Qt.resolvedUrl("../js/WebViewHelper.js")]
@@ -201,6 +203,9 @@ Item
                     var idx = mainwindow.settings.favorites.indexOf(url.toString())
                     navigationbar.state = "loaded";
                     navigationbar.favorite = (idx !== -1);
+
+                    if(!UrlHelper.isSpecialUrl(url.toString()) && UrlHelper.isUrl(url.toString()))
+                        Credentials.compile(Database.instance(), mainwindow.settings, url.toString(), webview);
 
                     /* FIXME: Check Favicon
                     if(navigationbar.favorite)
