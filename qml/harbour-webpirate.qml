@@ -37,6 +37,7 @@ import "js/Database.js" as Database
 import "js/Favorites.js" as Favorites
 import "js/SearchEngines.js" as SearchEngines
 import "js/UserAgents.js" as UserAgents
+import "js/Credentials.js" as Credentials
 
 ApplicationWindow
 {
@@ -46,6 +47,7 @@ ApplicationWindow
 
         Component.onCompleted: {
             Database.load();
+            Credentials.createSchema(Database.instance());
 
             Favorites.load(Database.instance(), settings.favorites);
             SearchEngines.load(Database.instance(), settings.searchengines);

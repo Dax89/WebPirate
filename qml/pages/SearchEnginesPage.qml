@@ -32,7 +32,7 @@ Page
             title: qsTr("Search Engines")
         }
 
-        ListView
+        SilicaListView
         {
             id: lvsearchengines
             model: settings.searchengines

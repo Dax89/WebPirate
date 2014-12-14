@@ -20,6 +20,21 @@
     </message>
 </context>
 <context>
+    <name>CredentialMenu</name>
+    <message>
+        <source>Do you want to store the password?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Yes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>No</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>FavoritePage</name>
     <message>
         <source>Save</source>
@@ -50,7 +65,7 @@
     </message>
 </context>
 <context>
-    <name>LinkPanel</name>
+    <name>LinkMenu</name>
     <message>
         <source>Open Link</source>
         <translation type="unfinished"></translation>
@@ -145,6 +160,14 @@
     </message>
     <message>
         <source>Save Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Delete Personal Data</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Deleting personal data</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

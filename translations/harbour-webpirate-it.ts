@@ -20,6 +20,21 @@
     </message>
 </context>
 <context>
+    <name>CredentialMenu</name>
+    <message>
+        <source>Do you want to store the password?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Yes</source>
+        <translation type="unfinished">Si</translation>
+    </message>
+    <message>
+        <source>No</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>FavoritePage</name>
     <message>
         <source>Save</source>
@@ -50,22 +65,60 @@
     </message>
 </context>
 <context>
-    <name>LinkPanel</name>
+    <name>LinkMenu</name>
     <message>
         <source>Open Link</source>
-        <translation>Apri Link</translation>
+        <translation type="unfinished">Apri Link</translation>
     </message>
     <message>
         <source>Open New Tab</source>
-        <translation>Apri Nuova Scheda</translation>
+        <translation type="unfinished">Apri Nuova Scheda</translation>
     </message>
     <message>
         <source>Remove From Favorites</source>
-        <translation>Rimuovi dai Preferiti</translation>
+        <translation type="unfinished">Rimuovi dai Preferiti</translation>
     </message>
     <message>
         <source>Add To Favorites</source>
-        <translation>Aggiungi ai Preferiti</translation>
+        <translation type="unfinished">Aggiungi ai Preferiti</translation>
+    </message>
+</context>
+<context>
+    <name>LinkPanel</name>
+    <message>
+        <source>Open Link</source>
+        <translation type="obsolete">Apri Link</translation>
+    </message>
+    <message>
+        <source>Open New Tab</source>
+        <translation type="obsolete">Apri Nuova Scheda</translation>
+    </message>
+    <message>
+        <source>Remove From Favorites</source>
+        <translation type="obsolete">Rimuovi dai Preferiti</translation>
+    </message>
+    <message>
+        <source>Add To Favorites</source>
+        <translation type="obsolete">Aggiungi ai Preferiti</translation>
+    </message>
+</context>
+<context>
+    <name>LinkPopup</name>
+    <message>
+        <source>Open Link</source>
+        <translation type="obsolete">Apri Link</translation>
+    </message>
+    <message>
+        <source>Open New Tab</source>
+        <translation type="obsolete">Apri Nuova Scheda</translation>
+    </message>
+    <message>
+        <source>Remove From Favorites</source>
+        <translation type="obsolete">Rimuovi dai Preferiti</translation>
+    </message>
+    <message>
+        <source>Add To Favorites</source>
+        <translation type="obsolete">Aggiungi ai Preferiti</translation>
     </message>
 </context>
 <context>
@@ -146,6 +199,14 @@
     <message>
         <source>Privacy</source>
         <translation>Privacy</translation>
+    </message>
+    <message>
+        <source>Delete Personal Data</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Deleting personal data</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

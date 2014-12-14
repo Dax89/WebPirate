@@ -26,6 +26,11 @@ function onTouchStart(touchevent)
         currtouch = touchevent.touches[0];
         timerid = setTimeout(checkLongPress, 800, currtouch.clientX, currtouch.clientY, touchevent.target);
     }
+
+    var data = new Object
+    data.type = "touchstart";
+
+    navigator.qt.postMessage(JSON.stringify(data));
 }
 
 function onTouchEnd(touchevent)
@@ -47,6 +52,46 @@ function onTouchMove(touchevent)
     clearTimeout(timerid);
 }
 
+function onSubmit(event)
+{
+    var inputelements = event.target.getElementsByTagName("input");
+
+    var logindata = new Object
+    logindata.type = "submit";
+    logindata.formid = event.target.id;
+
+    for(var i = 0; i < inputelements.length; i++)
+    {
+        var input = inputelements[i];
+
+        if((input.id === null && input.name === null) || input.value === null || input.value.length === 0)
+            continue;
+
+        if(input.type === "text" || input.type === "email")
+        {
+            logindata.loginattribute = input.id ? "id" : "name";
+            logindata.loginid = input.id ? input.id : input.name;
+            logindata.login = input.value;
+
+            if(logindata.password)
+                break;
+        }
+        else if(input.type === "password")
+        {
+            logindata.passwordattribute = input.id ? "id" : "name";
+            logindata.passwordid = input.id ? input.id : input.name;
+            logindata.password = input.value;
+
+            if(logindata.login)
+                break;
+        }
+    }
+
+    if(logindata.loginid && logindata.login && logindata.passwordid && logindata.password)
+        navigator.qt.postMessage(JSON.stringify(logindata));
+}
+
 document.addEventListener("touchstart", onTouchStart, true);
 document.addEventListener("touchmove", onTouchMove, true);
 document.addEventListener("touchend", onTouchEnd, true);
+document.addEventListener("submit", onSubmit, true);

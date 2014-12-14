@@ -3,6 +3,7 @@ import Sailfish.Silica 1.0
 import "../models"
 import "../js/UrlHelper.js" as UrlHelper
 import "../js/Database.js" as Database
+import "../js/Credentials.js" as Credentials
 
 Dialog
 {
@@ -116,10 +117,38 @@ Dialog
 
                 Label
                 {
+                    id: lblwipedata
                     height: parent.height
                     width: parent.width - swclearonexit.width
                     verticalAlignment: Text.AlignVCenter
                     text: qsTr("Wipe Data on Exit");
+                }
+            }
+
+            Item
+            {
+                width: parent.width
+                height: Theme.itemSizeSmall
+
+                BackgroundItem
+                {
+                    id: bideletepersdata
+                    anchors.fill: parent
+
+                    RemorseItem { id: rideletepersdata }
+
+                    Label
+                    {
+                        anchors.fill: parent
+                        anchors.leftMargin: Theme.paddingLarge
+                        text: qsTr("Delete Personal Data");
+                        verticalAlignment: Text.AlignVCenter
+                    }
+
+                    onClicked: rideletepersdata.execute(bideletepersdata, qsTr("Deleting personal data"),
+                                                        function() {
+                                                            Credentials.clear(Database.instance());
+                                                        });
                 }
             }
         }

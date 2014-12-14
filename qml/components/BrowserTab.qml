@@ -1,6 +1,7 @@
 import QtQuick 2.0
 import QtWebKit 3.0
 import Sailfish.Silica 1.0
+import "menus"
 import "../js/UrlHelper.js" as UrlHelper
 import "../js/Database.js" as Database
 import "../js/Favorites.js" as Favorites
@@ -89,17 +90,17 @@ Item
             loadDefault();
     }
 
-    LinkPanel
-    {
-        id: linkpanel
-        anchors.fill: parent
-        visible: false;
-        z: 2
+    LinkMenu {
+        id: linkmenu
 
         onOpenLinkRequested: browsertab.load(url)
         onOpenTabRequested: tabview.addTab(url)
         onAddToFavoritesRequested: Favorites.add(Database.instance(), mainwindow.settings.favorites, url, url)
         onRemoveFromFavoritesRequested: Favorites.remove(Database.instance(), mainwindow.settings.favorites, url)
+    }
+
+    CredentialMenu {
+        id: credentialmenu
     }
 
     Column
@@ -142,10 +143,23 @@ Item
             experimental.onMessageReceived: {
                 var data = JSON.parse(message.data);
 
-                if(data.type === "longpress")
+                if(data.type === "touchstart")
                 {
-                    linkpanel.url = data.url;
-                    linkpanel.visible = true;
+                    linkmenu.hide();
+                    credentialmenu.hide();
+                }
+                else if(data.type === "longpress") {
+                    credentialmenu.hide();
+
+                    linkmenu.url = data.url;
+                    linkmenu.show();
+                }
+                else if(data.type === "submit") {
+                    linkmenu.hide();
+
+                    credentialmenu.url = url.toString();
+                    credentialmenu.logindata = data;
+                    credentialmenu.show();
                 }
             }
 
@@ -175,6 +189,7 @@ Item
             onLoadingChanged: {
                 if(loadRequest.status === WebView.LoadStartedStatus) {
                     navigationbar.state = "loading";
+                    linkmenu.hide();
                 }
                 else if(loadRequest.status === WebView.LoadFailedStatus) {
                     loadfailed.offline = experimental.offline;
@@ -229,7 +244,8 @@ Item
     }
 
     onVisibleChanged: {
-        if(!visible)
-            linkpanel.visible = false;
+        if(!visible) {
+            linkmenu.hide();
+        }
     }
 }

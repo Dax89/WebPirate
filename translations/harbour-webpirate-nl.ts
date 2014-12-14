@@ -20,6 +20,21 @@
     </message>
 </context>
 <context>
+    <name>CredentialMenu</name>
+    <message>
+        <source>Do you want to store the password?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Yes</source>
+        <translation type="unfinished">Ja</translation>
+    </message>
+    <message>
+        <source>No</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>FavoritePage</name>
     <message>
         <source>Save</source>
@@ -50,22 +65,60 @@
     </message>
 </context>
 <context>
-    <name>LinkPanel</name>
+    <name>LinkMenu</name>
     <message>
         <source>Open Link</source>
-        <translation>Link openen</translation>
+        <translation type="unfinished">Link openen</translation>
     </message>
     <message>
         <source>Open New Tab</source>
-        <translation>Nieuw tabblad openen</translation>
+        <translation type="unfinished">Nieuw tabblad openen</translation>
     </message>
     <message>
         <source>Remove From Favorites</source>
-        <translation>Verwijderen uit bladwijzers</translation>
+        <translation type="unfinished">Verwijderen uit bladwijzers</translation>
     </message>
     <message>
         <source>Add To Favorites</source>
-        <translation>Toevoegen aan bladwijzers</translation>
+        <translation type="unfinished">Toevoegen aan bladwijzers</translation>
+    </message>
+</context>
+<context>
+    <name>LinkPanel</name>
+    <message>
+        <source>Open Link</source>
+        <translation type="obsolete">Link openen</translation>
+    </message>
+    <message>
+        <source>Open New Tab</source>
+        <translation type="obsolete">Nieuw tabblad openen</translation>
+    </message>
+    <message>
+        <source>Remove From Favorites</source>
+        <translation type="obsolete">Verwijderen uit bladwijzers</translation>
+    </message>
+    <message>
+        <source>Add To Favorites</source>
+        <translation type="obsolete">Toevoegen aan bladwijzers</translation>
+    </message>
+</context>
+<context>
+    <name>LinkPopup</name>
+    <message>
+        <source>Open Link</source>
+        <translation type="obsolete">Link openen</translation>
+    </message>
+    <message>
+        <source>Open New Tab</source>
+        <translation type="obsolete">Nieuw tabblad openen</translation>
+    </message>
+    <message>
+        <source>Remove From Favorites</source>
+        <translation type="obsolete">Verwijderen uit bladwijzers</translation>
+    </message>
+    <message>
+        <source>Add To Favorites</source>
+        <translation type="obsolete">Toevoegen aan bladwijzers</translation>
     </message>
 </context>
 <context>
@@ -146,6 +199,14 @@
     <message>
         <source>Privacy</source>
         <translation>Privacy</translation>
+    </message>
+    <message>
+        <source>Delete Personal Data</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Deleting personal data</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

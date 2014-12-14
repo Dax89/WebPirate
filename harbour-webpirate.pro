@@ -42,11 +42,15 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/models/FavoritesModel.qml \
     qml/components/FavoritesView.qml \
     qml/js/WebViewHelper.js \
-    qml/components/LinkPanel.qml \
     qml/pages/SearchEnginesPage.qml \
     qml/pages/FavoritePage.qml \
     qml/pages/SearchEnginePage.qml \
-    qml/models/SearchEngineModel.qml
+    qml/models/SearchEngineModel.qml \
+    qml/js/Credentials.js \
+    qml/js/GibberishAES.js \
+    qml/components/menus/PopupMenu.qml \
+    qml/components/menus/LinkMenu.qml \
+    qml/components/menus/CredentialMenu.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line
