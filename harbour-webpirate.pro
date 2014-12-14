@@ -56,8 +56,9 @@ OTHER_FILES += qml/harbour-webpirate.qml \
 # following CONFIG line
 CONFIG += sailfishapp_i18n
 TRANSLATIONS += translations/harbour-webpirate.ts \
+            translations/harbour-webpirate-ca.ts \
             translations/harbour-webpirate-it.ts \
-            translations/harbour-webpirate-nl.ts \
+            translations/harbour-webpirate-nl_NL.ts \
             translations/harbour-webpirate-ru_RU.ts \
             translations/harbour-webpirate-sv_SE.ts
 

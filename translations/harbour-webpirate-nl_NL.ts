@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.0" language="nl_NL">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="nl_NL" version="2.0">
 <context>
     <name>BrowserTab</name>
     <message>
@@ -23,15 +21,15 @@
     <name>CredentialMenu</name>
     <message>
         <source>Do you want to store the password?</source>
-        <translation type="unfinished"></translation>
+        <translation>Wilt u het wachtwoord opslaan?</translation>
     </message>
     <message>
         <source>Yes</source>
-        <translation type="unfinished">Ja</translation>
+        <translation>Ja</translation>
     </message>
     <message>
         <source>No</source>
-        <translation type="unfinished"></translation>
+        <translation>Nee</translation>
     </message>
 </context>
 <context>
@@ -68,57 +66,19 @@
     <name>LinkMenu</name>
     <message>
         <source>Open Link</source>
-        <translation type="unfinished">Link openen</translation>
+        <translation>Link openen</translation>
     </message>
     <message>
         <source>Open New Tab</source>
-        <translation type="unfinished">Nieuw tabblad openen</translation>
+        <translation>Nieuw tabblad openen</translation>
     </message>
     <message>
         <source>Remove From Favorites</source>
-        <translation type="unfinished">Verwijderen uit bladwijzers</translation>
+        <translation>Verwijderen uit bladwijzers</translation>
     </message>
     <message>
         <source>Add To Favorites</source>
-        <translation type="unfinished">Toevoegen aan bladwijzers</translation>
-    </message>
-</context>
-<context>
-    <name>LinkPanel</name>
-    <message>
-        <source>Open Link</source>
-        <translation type="obsolete">Link openen</translation>
-    </message>
-    <message>
-        <source>Open New Tab</source>
-        <translation type="obsolete">Nieuw tabblad openen</translation>
-    </message>
-    <message>
-        <source>Remove From Favorites</source>
-        <translation type="obsolete">Verwijderen uit bladwijzers</translation>
-    </message>
-    <message>
-        <source>Add To Favorites</source>
-        <translation type="obsolete">Toevoegen aan bladwijzers</translation>
-    </message>
-</context>
-<context>
-    <name>LinkPopup</name>
-    <message>
-        <source>Open Link</source>
-        <translation type="obsolete">Link openen</translation>
-    </message>
-    <message>
-        <source>Open New Tab</source>
-        <translation type="obsolete">Nieuw tabblad openen</translation>
-    </message>
-    <message>
-        <source>Remove From Favorites</source>
-        <translation type="obsolete">Verwijderen uit bladwijzers</translation>
-    </message>
-    <message>
-        <source>Add To Favorites</source>
-        <translation type="obsolete">Toevoegen aan bladwijzers</translation>
+        <translation>Toevoegen aan bladwijzers</translation>
     </message>
 </context>
 <context>
@@ -173,10 +133,6 @@
 <context>
     <name>SettingsPage</name>
     <message>
-        <source>Save Settings</source>
-        <translation type="unfinished">Instellingen opslaan</translation>
-    </message>
-    <message>
         <source>Home Page</source>
         <translation>Startpagina</translation>
     </message>
@@ -201,12 +157,16 @@
         <translation>Privacy</translation>
     </message>
     <message>
+        <source>Save Settings</source>
+        <translation>Instellingen opslaan</translation>
+    </message>
+    <message>
         <source>Delete Personal Data</source>
-        <translation type="unfinished"></translation>
+        <translation>Persoonlijke gegevens verwijderen</translation>
     </message>
     <message>
         <source>Deleting personal data</source>
-        <translation type="unfinished"></translation>
+        <translation>Bezig met verwijderen van persoonlijke gegevens</translation>
     </message>
 </context>
 </TS>
