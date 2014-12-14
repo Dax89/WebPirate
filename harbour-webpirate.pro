@@ -55,10 +55,11 @@ OTHER_FILES += qml/harbour-webpirate.qml \
 # to disable building translations every time, comment out the
 # following CONFIG line
 CONFIG += sailfishapp_i18n
-TRANSLATIONS += translations/harbour-webpirate-it.ts \
+TRANSLATIONS += translations/harbour-webpirate.ts \
+            translations/harbour-webpirate-it.ts \
             translations/harbour-webpirate-nl.ts \
             translations/harbour-webpirate-ru_RU.ts \
-            translations/harbour-webpirate-sv_SE
+            translations/harbour-webpirate-sv_SE.ts
 
 RESOURCES += \
     resources.qrc
