@@ -57,6 +57,8 @@ OTHER_FILES += qml/harbour-webpirate.qml \
 CONFIG += sailfishapp_i18n
 TRANSLATIONS += translations/harbour-webpirate-it.ts \
             translations/harbour-webpirate-nl.ts \
+            translations/harbour-webpirate-ru_RU.ts \
+            translations/harbour-webpirate-sv_SE
 
 RESOURCES += \
     resources.qrc

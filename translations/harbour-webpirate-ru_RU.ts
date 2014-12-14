@@ -1,46 +1,46 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="it" version="2.0">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="ru_RU" version="2.0">
 <context>
     <name>BrowserTab</name>
     <message>
         <source>New Tab</source>
-        <translation>Nuova scheda</translation>
+        <translation>Новая вкладка</translation>
     </message>
     <message>
         <source>Accept Certificate from: </source>
-        <translation>Accettare certificato da:</translation>
+        <translation>Принять сертификат от:</translation>
     </message>
 </context>
 <context>
     <name>ConfirmDialog</name>
     <message>
         <source>Yes</source>
-        <translation>Si</translation>
+        <translation>Да</translation>
     </message>
 </context>
 <context>
     <name>CredentialMenu</name>
     <message>
         <source>Do you want to store the password?</source>
-        <translation>Vuoi salvare la password?</translation>
+        <translation>Вы хотите сохранить пароль?</translation>
     </message>
     <message>
         <source>Yes</source>
-        <translation>Si</translation>
+        <translation>Да</translation>
     </message>
     <message>
         <source>No</source>
-        <translation>No</translation>
+        <translation>Нет</translation>
     </message>
 </context>
 <context>
     <name>FavoritePage</name>
     <message>
         <source>Save</source>
-        <translation>Salva</translation>
+        <translation>Сохранить</translation>
     </message>
     <message>
         <source>Title</source>
-        <translation>Titolo</translation>
+        <translation>Название </translation>
     </message>
     <message>
         <source>Url</source>
@@ -51,122 +51,122 @@
     <name>FavoritesView</name>
     <message>
         <source>Edit</source>
-        <translation>Modifica</translation>
+        <translation>Редактировать</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Elimina</translation>
+        <translation>Удалить</translation>
     </message>
     <message>
         <source>Deleting Bookmark</source>
-        <translation>Rimozione preferito</translation>
+        <translation>Удаление закладки</translation>
     </message>
 </context>
 <context>
     <name>LinkMenu</name>
     <message>
         <source>Open Link</source>
-        <translation>Apri link</translation>
+        <translation>Открыть ссылку</translation>
     </message>
     <message>
         <source>Open New Tab</source>
-        <translation>Apri in una nuova scheda</translation>
+        <translation>Открыть новую вкладку</translation>
     </message>
     <message>
         <source>Remove From Favorites</source>
-        <translation>Rimuovi dai preferiti</translation>
+        <translation>Удалить из закладок</translation>
     </message>
     <message>
         <source>Add To Favorites</source>
-        <translation>Aggiungi ai preferiti</translation>
+        <translation>Добавить в закладки</translation>
     </message>
 </context>
 <context>
     <name>LoadFailed</name>
     <message>
         <source>You are in offline mode</source>
-        <translation>Sei in modalità non in linea</translation>
+        <translation>Вы в режиме &quot;offline mode&quot;</translation>
     </message>
 </context>
 <context>
     <name>SearchEnginePage</name>
     <message>
         <source>Save</source>
-        <translation>Salva</translation>
+        <translation>Сохранить</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Nome</translation>
+        <translation>Имя</translation>
     </message>
     <message>
         <source>Query</source>
-        <translation>Query</translation>
+        <translation>Запрос</translation>
     </message>
 </context>
 <context>
     <name>SearchEnginesPage</name>
     <message>
         <source>Set as Default</source>
-        <translation>Imposta come predefinito</translation>
+        <translation>Установить по умолчанию</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Elimina</translation>
+        <translation>Удалить</translation>
     </message>
     <message>
         <source>Search Engines</source>
-        <translation>Motori di ricerca</translation>
+        <translation>Поисковый движок</translation>
     </message>
     <message>
         <source>Add</source>
-        <translation>Aggiungi</translation>
+        <translation>Добавить</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Modifica</translation>
+        <translation>Править</translation>
     </message>
     <message>
         <source>Deleting Search Engine</source>
-        <translation>Rimozione motore di ricerca</translation>
+        <translation>Удаление поискового движка</translation>
     </message>
 </context>
 <context>
     <name>SettingsPage</name>
     <message>
         <source>Home Page</source>
-        <translation>Pagina iniziale</translation>
+        <translation>Домашняя страница</translation>
     </message>
     <message>
         <source>Search Engines</source>
-        <translation>Motori di ricerca</translation>
+        <translation>Поисковый движок</translation>
     </message>
     <message>
         <source>User Agent</source>
-        <translation>User Agent</translation>
+        <translation>Пользовательский вид</translation>
     </message>
     <message>
         <source>Wipe Data on Exit</source>
-        <translation>Cancella dati all&apos;uscita</translation>
+        <translation>Удалить данные при выходе</translation>
     </message>
     <message>
         <source>General</source>
-        <translation>Generali</translation>
+        <translation>Основные</translation>
     </message>
     <message>
         <source>Privacy</source>
-        <translation>Privacy</translation>
+        <translation>Конфиденциальность </translation>
     </message>
     <message>
         <source>Save Settings</source>
-        <translation>Salva impostazioni</translation>
+        <translation>Сохранить настройки</translation>
     </message>
     <message>
         <source>Delete Personal Data</source>
-        <translation>Cancella dati personali</translation>
+        <translation>Удалить персональные данные</translation>
     </message>
     <message>
         <source>Deleting personal data</source>
-        <translation>Rimozione dati personali</translation>
+        <translation>Удаление персональных данных</translation>
     </message>
 </context>
 </TS>
