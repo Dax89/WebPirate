@@ -147,6 +147,7 @@ Dialog
 
                     onClicked: rideletepersdata.execute(bideletepersdata, qsTr("Deleting personal data"),
                                                         function() {
+                                                            webviewdatabase.clearNavigationData();
                                                             Credentials.clear(Database.instance());
                                                         });
                 }
