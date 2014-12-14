@@ -44,6 +44,18 @@ function store(db, settings, url, loginattribute, loginid, login, passwordattrib
     })
 }
 
+function needsDialog(db, url)
+{
+    var r = true;
+
+    db.transaction(function(tx) {
+        var res = tx.executeSql("SELECT * FROM Credentials WHERE url=?", [url]);
+        r = res.rows.length <= 0;
+    });
+
+    return r;
+}
+
 function compile(db, settings, url, webview)
 {
     db.transaction(function(tx) {

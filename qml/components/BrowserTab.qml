@@ -159,9 +159,12 @@ Item
                 else if(data.type === "submit") {
                     linkmenu.hide();
 
-                    credentialmenu.url = url.toString();
-                    credentialmenu.logindata = data;
-                    credentialmenu.show();
+                    if((mainwindow.settings.clearonexit == false) && Credentials.needsDialog(Database.instance(), url.toString()))
+                    {
+                        credentialmenu.url = url.toString();
+                        credentialmenu.logindata = data;
+                        credentialmenu.show();
+                    }
                 }
             }
 
