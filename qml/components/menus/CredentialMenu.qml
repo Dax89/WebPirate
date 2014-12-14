@@ -60,7 +60,10 @@ PopupMenu
     }
 
     onVisibleChanged: {
-        credentialmenu.url = "";
-        credentialmenu.logindata = null;
+        if(visible === false)
+        {
+            credentialmenu.url = "";
+            credentialmenu.logindata = null;
+        }
     }
 }
