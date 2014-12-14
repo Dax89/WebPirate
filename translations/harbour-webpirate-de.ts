@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="nl_NL">
+<TS version="2.0" language="de">
 <context>
     <name>BrowserTab</name>
     <message>
         <source>New Tab</source>
-        <translation>Nieuw tabblad</translation>
+        <translation>Neuer Tab</translation>
     </message>
     <message>
         <source>Accept Certificate from: </source>
-        <translation>Certificaat accepteren van:</translation>
+        <translation>Akzeptiere Zertifikate von:</translation>
     </message>
 </context>
 <context>
@@ -23,22 +23,22 @@
     <name>CredentialMenu</name>
     <message>
         <source>Do you want to store the password?</source>
-        <translation>Wilt u het wachtwoord opslaan?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Yes</source>
-        <translation>Ja</translation>
+        <translation type="unfinished">Ja</translation>
     </message>
     <message>
         <source>No</source>
-        <translation>Nee</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>FavoritePage</name>
     <message>
         <source>Save</source>
-        <translation>Opslaan</translation>
+        <translation>Speichern</translation>
     </message>
     <message>
         <source>Title</source>
@@ -46,129 +46,129 @@
     </message>
     <message>
         <source>Url</source>
-        <translation>URL</translation>
+        <translation>Url</translation>
     </message>
 </context>
 <context>
     <name>FavoritesView</name>
     <message>
         <source>Edit</source>
-        <translation>Bewerken</translation>
+        <translation>Bearbeiten</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Verwijderen</translation>
+        <translation>Löschen</translation>
     </message>
     <message>
         <source>Deleting Bookmark</source>
-        <translation>Bezig met verwijderen van bladwijzer</translation>
+        <translation>Lesezeichen entfernen</translation>
     </message>
 </context>
 <context>
     <name>LinkMenu</name>
     <message>
         <source>Open Link</source>
-        <translation>Link openen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Open New Tab</source>
-        <translation>Nieuw tabblad openen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Remove From Favorites</source>
-        <translation>Verwijderen uit bladwijzers</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Add To Favorites</source>
-        <translation>Toevoegen aan bladwijzers</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>LoadFailed</name>
     <message>
         <source>You are in offline mode</source>
-        <translation>U bent in offline-modus</translation>
+        <translation>Sie benutzen den Offline Modus</translation>
     </message>
 </context>
 <context>
     <name>SearchEnginePage</name>
     <message>
         <source>Save</source>
-        <translation>Opslaan</translation>
+        <translation>Speichern</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Naam</translation>
+        <translation>Name</translation>
     </message>
     <message>
         <source>Query</source>
-        <translation>Opvragen</translation>
+        <translation>Abfrage</translation>
     </message>
 </context>
 <context>
     <name>SearchEnginesPage</name>
     <message>
         <source>Set as Default</source>
-        <translation>Instellen als standaard</translation>
+        <translation>Als Standard setzen</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Verwijderen</translation>
+        <translation>Löschen</translation>
     </message>
     <message>
         <source>Search Engines</source>
-        <translation>Zoekmachines</translation>
+        <translation>Suchmaschinen</translation>
     </message>
     <message>
         <source>Add</source>
-        <translation>Toevoegen</translation>
+        <translation>Hinzufügen</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Bewerken</translation>
+        <translation>Bearbeiten</translation>
     </message>
     <message>
         <source>Deleting Search Engine</source>
-        <translation>Bezig met verwijderen van zoekmachine</translation>
+        <translation>Suchmaschine löschen</translation>
     </message>
 </context>
 <context>
     <name>SettingsPage</name>
     <message>
         <source>Home Page</source>
-        <translation>Startpagina</translation>
+        <translation>Startseite</translation>
     </message>
     <message>
         <source>Search Engines</source>
-        <translation>Zoekmachines</translation>
+        <translation>Suchmaschinen</translation>
     </message>
     <message>
         <source>User Agent</source>
-        <translation>Gebruikersagent</translation>
+        <translation>User Agent</translation>
     </message>
     <message>
         <source>Wipe Data on Exit</source>
-        <translation>Data wissen bij afsluiten</translation>
+        <translation>Daten beim Beenden löschen</translation>
     </message>
     <message>
         <source>General</source>
-        <translation>Algemeen</translation>
+        <translation>Allgemein</translation>
     </message>
     <message>
         <source>Privacy</source>
-        <translation>Privacy</translation>
+        <translation>Privatssphäre</translation>
     </message>
     <message>
         <source>Save Settings</source>
-        <translation>Instellingen opslaan</translation>
+        <translation>Einstellungen speichern</translation>
     </message>
     <message>
         <source>Delete Personal Data</source>
-        <translation>Persoonlijke gegevens verwijderen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Deleting personal data</source>
-        <translation>Bezig met verwijderen van persoonlijke gegevens</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

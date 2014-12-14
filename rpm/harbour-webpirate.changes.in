@@ -15,7 +15,10 @@
 - When "Wipe on Exit" option is enabled, the Credential Dialog is not displayed
 - Added Swedish Localization
 - Added Russian Localization
+- Added Catalan Localization
+- Added German Localization (still not complete)
 - Updated Italian Localization
+- Updated Dutch Localization
 - Settings Page is not Flickable
 - Minor Fixes
 

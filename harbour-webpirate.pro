@@ -60,7 +60,8 @@ TRANSLATIONS += translations/harbour-webpirate.ts \
             translations/harbour-webpirate-it.ts \
             translations/harbour-webpirate-nl_NL.ts \
             translations/harbour-webpirate-ru_RU.ts \
-            translations/harbour-webpirate-sv_SE.ts
+            translations/harbour-webpirate-sv_SE.ts \
+            translations/harbour-webpirate-de.ts
 
 RESOURCES += \
     resources.qrc
