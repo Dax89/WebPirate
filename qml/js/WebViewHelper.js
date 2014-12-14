@@ -58,7 +58,6 @@ function onSubmit(event)
 
     var logindata = new Object
     logindata.type = "submit";
-    logindata.formid = event.target.id;
 
     for(var i = 0; i < inputelements.length; i++)
     {
