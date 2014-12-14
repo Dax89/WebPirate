@@ -33,7 +33,7 @@ PopupMenu
             onClicked: {
                 credentialmenu.hide();
 
-                Credentials.store(mainwindow.settings, credentialmenu.url, credentialmenu.logindata.formid,
+                Credentials.store(Database.instance(), mainwindow.settings, credentialmenu.url, credentialmenu.logindata.formid,
                                   credentialmenu.logindata.loginattribute, credentialmenu.logindata.loginid, credentialmenu.logindata.login,
                                   credentialmenu.logindata.passwordattribute, credentialmenu.logindata.passwordid, credentialmenu.logindata.password);
             }
