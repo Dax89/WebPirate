@@ -4,12 +4,12 @@
 
 function instance()
 {
-    return openDatabase("1.1");
+    return openDatabase("1.2");
 }
 
 function checkDBUpgrade()
 {
-    var db = openDatabase("")
+    var db = openDatabase("");
 
     if(db.version === "1.0")
     {
@@ -19,6 +19,17 @@ function checkDBUpgrade()
                              tx.executeSql("DROP TABLE IF EXISTS BrowserSettings");
                              tx.executeSql("DROP TABLE IF EXISTS Favorites");
                              tx.executeSql("DROP TABLE IF EXISTS SearchEngines");
+                         });
+
+        checkDBUpgrade();
+        return;
+    }
+
+    if((db.version === "") || (db.version === "1.1"))
+    {
+        db.changeVersion(db.version, "1.2",
+                         function(tx) {
+                             tx.executeSql("DROP TABLE IF EXISTS UserAgents");
                          });
     }
 }
