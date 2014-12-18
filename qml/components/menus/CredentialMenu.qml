@@ -10,9 +10,9 @@ PopupMenu
 
     id: credentialmenu
     title: qsTr("Do you want to store the password?")
-    model: 1
+    popupModel: 1
 
-    delegate: Row {
+    popupDelegate: Row {
         width: parent.width
         height: Theme.itemSizeSmall
 

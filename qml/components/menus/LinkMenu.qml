@@ -12,17 +12,18 @@ PopupMenu
     signal removeFromFavoritesRequested(string url)
 
     id: linkmenu
+    titleVisible: true
 
     onUrlChanged: {
         favorite = mainwindow.settings.favorites.contains(linkmenu.url);
         title = url;
     }
 
-    model: [ qsTr("Open Link"),
-             qsTr("Open New Tab"),
-             linkmenu.favorite ? qsTr("Remove From Favorites") : qsTr("Add To Favorites") ]
+    popupModel: [ qsTr("Open Link"),
+                  qsTr("Open New Tab"),
+                  linkmenu.favorite ? qsTr("Remove From Favorites") : qsTr("Add To Favorites") ]
 
-    delegate: ListItem {
+    popupDelegate: ListItem {
         width: parent.width
         height: Theme.itemSizeSmall
 
@@ -31,7 +32,7 @@ PopupMenu
             anchors.bottomMargin: Theme.paddingSmall
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
-            text: linkmenu.model[index]
+            text: linkmenu.popupModel[index]
         }
 
         onClicked: {

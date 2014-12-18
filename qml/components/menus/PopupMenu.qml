@@ -4,8 +4,10 @@ import Sailfish.Silica 1.0
 Rectangle
 {
     property alias title: lblheader.text
-    property alias model: listview.model
-    property alias delegate: listview.delegate
+    property alias popupModel: listview.model
+    property alias popupDelegate: listview.delegate
+
+    property bool titleVisible: true
 
     id: popupmenu
     anchors.bottom: parent.bottom
@@ -26,7 +28,7 @@ Rectangle
     onHeightChanged: visible = (height > 0 ? true : false);
 
     function show() {
-        height = listview.contentHeight + maheader.height;
+        height = (Theme.itemSizeSmall * Math.min(3, listview.count)) + (titleVisible ? maheader.height : 0);
     }
 
     function hide() {
@@ -42,6 +44,7 @@ Rectangle
             id: maheader
             width: parent.width
             height: Theme.itemSizeSmall
+            visible: titleVisible
 
             Label
             {
@@ -63,6 +66,8 @@ Rectangle
             width: parent.width
             height: parent.height
             clip: true
+
+            VerticalScrollDecorator { flickable: listview }
         }
     }
 }
