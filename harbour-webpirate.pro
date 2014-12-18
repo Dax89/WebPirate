@@ -50,7 +50,8 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/js/GibberishAES.js \
     qml/components/menus/PopupMenu.qml \
     qml/components/menus/LinkMenu.qml \
-    qml/components/menus/CredentialMenu.qml
+    qml/components/menus/CredentialMenu.qml \
+    qml/components/menus/ItemSelector.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line

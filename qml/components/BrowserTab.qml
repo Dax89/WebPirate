@@ -182,6 +182,17 @@ Item
                 }
             }
 
+            experimental.itemSelector: ItemSelector {
+                    titleVisible: false
+                    selectorModel: model;
+                    Component.onCompleted: show()
+
+                    onVisibleChanged: {
+                        if(!visible)
+                            webview.focus();
+                    }
+                }
+
             header: LoadingBar {
                 id: loadingbar
                 minimumValue: 0
