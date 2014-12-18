@@ -182,16 +182,7 @@ Item
                 }
             }
 
-            experimental.itemSelector: ItemSelector {
-                    titleVisible: false
-                    selectorModel: model;
-                    Component.onCompleted: show()
-
-                    onVisibleChanged: {
-                        if(!visible)
-                            webview.focus();
-                    }
-                }
+            experimental.itemSelector: ItemSelector { }
 
             header: LoadingBar {
                 id: loadingbar

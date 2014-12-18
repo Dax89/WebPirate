@@ -1,40 +1,49 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
 
-PopupMenu
+MouseArea
 {
-    property QtObject selectorModel
+    id: itemselector
+    property QtObject selectorModel: model
     property bool accepted: false
 
-    id: itemselector
+    anchors.fill: parent
+    onClicked: selectorModel.reject();
 
-    popupDelegate: ListItem {
-        highlighted: model.selected
-        enabled: model.enabled
+    PopupMenu
+    {
+        id: selectorpopup
+        visible: true
+        titleVisible: false
+        anchors.bottom: parent.bottom
+        anchors.left: parent.left
+        anchors.right: parent.right
 
-        Label {
-            anchors.fill: parent
-            anchors.bottomMargin: Theme.paddingSmall
-            horizontalAlignment: Text.AlignHCenter
-            verticalAlignment: Text.AlignVCenter
-            text: model.text
+        popupDelegate: ListItem {
+            highlighted: model.selected
+            enabled: model.enabled
+
+            Label {
+                anchors.fill: parent
+                anchors.bottomMargin: Theme.paddingSmall
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                text: model.text
+            }
+
+            onClicked: {
+                itemselector.accepted = true;
+                itemselector.selectorModel.accept(model.index);
+            }
         }
-
-        onClicked: {
-            itemselector.accepted = true;
-            itemselector.selectorModel.accept(model.index);
-            itemselector.hide();
-        }
-    }
-
-    onVisibleChanged: {
-        if(!visible && !accepted)
-            selectorModel.reject();
-        else if(visible)
-            accepted = false;
     }
 
     onSelectorModelChanged: {
-        popupModel = selectorModel.items;
+        selectorpopup.popupModel = itemselector.selectorModel.items;
+    }
+
+    Component.onCompleted: {
+        itemselector.accepted = false
+        selectorpopup.show();
     }
 }
