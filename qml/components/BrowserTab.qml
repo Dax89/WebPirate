@@ -171,7 +171,9 @@ Item
                 Component.onCompleted: show()
             }
 
-            experimental.itemSelector: ItemSelector { }
+            experimental.itemSelector: ItemSelector {
+                selectorModel: model
+            }
 
             header: LoadingBar {
                 id: loadingbar

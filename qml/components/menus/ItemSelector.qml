@@ -3,7 +3,7 @@ import Sailfish.Silica 1.0
 
 PopupMenu
 {
-    property QtObject selectorModel: model
+    property QtObject selectorModel
     property bool accepted: false
 
     id: itemselector
