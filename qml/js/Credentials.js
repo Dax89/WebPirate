@@ -33,27 +33,28 @@ function remove(db, url, loginid, passwordid)
     });
 }
 
-function store(db, settings, url, loginattribute, loginid, login, passwordattribute, passwordid, password)
+function store(db, settings, url, logindata)
 {
     var key = generateKey(settings);
 
     db.transaction(function(tx) {
-        tx.executeSql("DELETE FROM Credentials WHERE url=? AND loginid=? AND passwordid=?;", [url, loginid, passwordid]);
+        tx.executeSql("DELETE FROM Credentials WHERE url=? AND loginid=? AND passwordid=?;", [url, logindata.loginid, logindata.passwordid]);
         tx.executeSql("INSERT INTO Credentials (url, loginattribute, loginid, login, passwordattribute, passwordid, password) VALUES (?, ?, ?, ?, ?, ?, ?);",
-                      [url, loginattribute, loginid, AES.enc(login, key), passwordattribute, passwordid, AES.enc(password, key)]);
+                      [url, logindata.loginattribute, logindata.loginid, AES.enc(logindata.login, key), logindata.passwordattribute, logindata.passwordid,
+                       AES.enc(logindata.password, key)]);
     })
 }
 
-function needsDialog(db, settings, url, data)
+function needsDialog(db, settings, url, logindata)
 {
     var r = true;
     var key = generateKey(settings);
 
     db.transaction(function(tx) {
-        var res = tx.executeSql("SELECT * FROM Credentials WHERE url=? AND loginid=? AND passwordid=?;", [url, data.loginid, data.passwordid]);
+        var res = tx.executeSql("SELECT * FROM Credentials WHERE url=? AND loginid=? AND passwordid=?;", [url, logindata.loginid, logindata.passwordid]);
 
         if(res.rows.length > 0)
-            r = (data.login !== AES.dec(res.rows[0].login, key)) || (data.password !== AES.dec(res.rows[0].password, key));
+            r = (logindata.login !== AES.dec(res.rows[0].login, key)) || (logindata.password !== AES.dec(res.rows[0].password, key));
     });
 
     return r;

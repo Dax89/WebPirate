@@ -17,10 +17,7 @@ RequestMenu
     }
 
     onRequestAccepted: {
-        Credentials.store(Database.instance(), mainwindow.settings, credentialmenu.url,
-                          credentialmenu.logindata.loginattribute, credentialmenu.logindata.loginid, credentialmenu.logindata.login,
-                          credentialmenu.logindata.passwordattribute, credentialmenu.logindata.passwordid, credentialmenu.logindata.password);
-
+        Credentials.store(Database.instance(), mainwindow.settings, credentialmenu.url, logindata);
         clearData();
     }
 
