@@ -11,7 +11,7 @@ MouseArea
 
     function show() {
         mousearea.visible = true;
-        popupmenu.height = (Theme.itemSizeSmall * Math.min(3, listview.count)) + (titleVisible ? maheader.height : 0);
+        popupmenu.height = (Theme.itemSizeSmall * Math.min(3, listview.count)) + (titleVisible ? lblheader.height : 0);
     }
 
     function hide() {
@@ -47,23 +47,20 @@ MouseArea
         {
             anchors.fill: parent
 
-            MouseArea
+            Label
             {
-                id: maheader
+                id: lblheader
                 width: parent.width
                 height: Theme.itemSizeSmall
+                color: Theme.secondaryHighlightColor
+                font.family: Theme.fontFamilyHeading
+                font.pixelSize: Theme.fontSizeSmall
+                elide: Text.ElideRight
+                wrapMode: Text.WordWrap
+                verticalAlignment: Text.AlignVCenter
+                horizontalAlignment: Text.AlignHCenter
                 visible: titleVisible
-
-                Label
-                {
-                    id: lblheader
-                    anchors.fill: parent
-                    color: Theme.secondaryHighlightColor
-                    clip: true
-                    elide: Text.ElideRight
-                    verticalAlignment: Text.AlignVCenter
-                    horizontalAlignment: Text.AlignHCenter
-                }
+                clip: true
             }
 
             SilicaListView
