@@ -1,6 +1,7 @@
 .pragma library
 
 .import "GibberishAES.js" as AES
+.import "UrlHelper.js" as UrlHelper
 
 function createSchema(db)
 {
@@ -29,7 +30,7 @@ function clear(db)
 function remove(db, url, loginid, passwordid)
 {
     db.transaction(function(tx) {
-        tx.executeSql("DELETE FROM Credentials WHERE url=? AND loginid=? AND passswordid=?;", [url, loginid, passwordid]);
+        tx.executeSql("DELETE FROM Credentials WHERE url=? AND loginid=? AND passswordid=?;", [UrlHelper.urlPath(url), loginid, passwordid]);
     });
 }
 
@@ -38,9 +39,9 @@ function store(db, settings, url, logindata)
     var key = generateKey(settings);
 
     db.transaction(function(tx) {
-        tx.executeSql("DELETE FROM Credentials WHERE url=? AND loginid=? AND passwordid=?;", [url, logindata.loginid, logindata.passwordid]);
+        tx.executeSql("DELETE FROM Credentials WHERE url=? AND loginid=? AND passwordid=?;", [UrlHelper.urlPath(url), logindata.loginid, logindata.passwordid]);
         tx.executeSql("INSERT INTO Credentials (url, loginattribute, loginid, login, passwordattribute, passwordid, password) VALUES (?, ?, ?, ?, ?, ?, ?);",
-                      [url, logindata.loginattribute, logindata.loginid, AES.enc(logindata.login, key), logindata.passwordattribute, logindata.passwordid,
+                      [UrlHelper.urlPath(url), logindata.loginattribute, logindata.loginid, AES.enc(logindata.login, key), logindata.passwordattribute, logindata.passwordid,
                        AES.enc(logindata.password, key)]);
     })
 }
@@ -51,7 +52,7 @@ function needsDialog(db, settings, url, logindata)
     var key = generateKey(settings);
 
     db.transaction(function(tx) {
-        var res = tx.executeSql("SELECT * FROM Credentials WHERE url=? AND loginid=? AND passwordid=?;", [url, logindata.loginid, logindata.passwordid]);
+        var res = tx.executeSql("SELECT * FROM Credentials WHERE url=? AND loginid=? AND passwordid=?;", [UrlHelper.urlPath(url), logindata.loginid, logindata.passwordid]);
 
         if(res.rows.length > 0)
             r = (logindata.login !== AES.dec(res.rows[0].login, key)) || (logindata.password !== AES.dec(res.rows[0].password, key));
@@ -63,7 +64,7 @@ function needsDialog(db, settings, url, logindata)
 function compile(db, settings, url, webview)
 {
     db.transaction(function(tx) {
-        var res = tx.executeSql("SELECT * FROM Credentials WHERE url=?;", [url]);
+        var res = tx.executeSql("SELECT * FROM Credentials WHERE url=?;", [UrlHelper.urlPath(url)]);
 
         if(res.rows.length <= 0)
             return;

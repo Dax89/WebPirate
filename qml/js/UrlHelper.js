@@ -19,6 +19,16 @@ function domainName(url)
     return regex.exec(adjustUrl(url))[0];
 }
 
+function urlPath(url)
+{
+    var idx = url.indexOf("?");
+
+    if(idx !== -1)
+        return url.slice(0, idx);
+
+    return url;
+}
+
 function isUrl(url)
 {
     var regex = new RegExp("[-a-zA-Z0-9@:%._\\+~#=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%_\\+.~#?&//=]*)");
