@@ -11,18 +11,18 @@ RequestMenu
     id: credentialmenu
     title: qsTr("Do you want to store the password?")
 
+    function clearData() {
+        credentialmenu.url = "";
+        credentialmenu.logindata = null;
+    }
 
     onRequestAccepted: {
         Credentials.store(Database.instance(), mainwindow.settings, credentialmenu.url,
                           credentialmenu.logindata.loginattribute, credentialmenu.logindata.loginid, credentialmenu.logindata.login,
                           credentialmenu.logindata.passwordattribute, credentialmenu.logindata.passwordid, credentialmenu.logindata.password);
+
+        clearData();
     }
 
-    onVisibleChanged: {
-        if(visible === false)
-        {
-            credentialmenu.url = "";
-            credentialmenu.logindata = null;
-        }
-    }
+    onRequestRejected: clearData()
 }
