@@ -44,13 +44,16 @@ function store(db, settings, url, loginattribute, loginid, login, passwordattrib
     })
 }
 
-function needsDialog(db, url)
+function needsDialog(db, settings, url, data)
 {
     var r = true;
+    var key = generateKey(settings);
 
     db.transaction(function(tx) {
-        var res = tx.executeSql("SELECT * FROM Credentials WHERE url=?", [url]);
-        r = res.rows.length <= 0;
+        var res = tx.executeSql("SELECT * FROM Credentials WHERE url=? AND loginid=? AND passwordid=?;", [url, data.loginid, data.passwordid]);
+
+        if(res.rows.length > 0)
+            r = (data.login !== AES.dec(res.rows[0].login, key)) || (data.password !== AES.dec(res.rows[0].password, key));
     });
 
     return r;

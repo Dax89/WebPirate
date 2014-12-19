@@ -154,7 +154,7 @@ Item
                 else if(data.type === "submit") {
                     linkmenu.hide();
 
-                    if((mainwindow.settings.clearonexit == false) && Credentials.needsDialog(Database.instance(), url.toString()))
+                    if((mainwindow.settings.clearonexit == false) && Credentials.needsDialog(Database.instance(), mainwindow.settings, url.toString(), data))
                     {
                         credentialmenu.url = url.toString();
                         credentialmenu.logindata = data;
