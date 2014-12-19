@@ -145,12 +145,7 @@ Item
             experimental.onMessageReceived: {
                 var data = JSON.parse(message.data);
 
-                if(data.type === "touchstart")
-                {
-                    linkmenu.hide();
-                    credentialmenu.hide();
-                }
-                else if(data.type === "longpress") {
+                if(data.type === "longpress") {
                     credentialmenu.hide();
 
                     linkmenu.url = data.url;

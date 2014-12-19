@@ -26,11 +26,6 @@ function onTouchStart(touchevent)
         currtouch = touchevent.touches[0];
         timerid = setTimeout(checkLongPress, 800, currtouch.clientX, currtouch.clientY, touchevent.target);
     }
-
-    var data = new Object
-    data.type = "touchstart";
-
-    navigator.qt.postMessage(JSON.stringify(data));
 }
 
 function onTouchEnd(touchevent)

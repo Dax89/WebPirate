@@ -20,7 +20,7 @@
     <name>ConfirmDialog</name>
     <message>
         <source>Yes</source>
-        <translation>Да</translation>
+        <translation type="obsolete">Да</translation>
     </message>
 </context>
 <context>

@@ -13,13 +13,6 @@
     </message>
 </context>
 <context>
-    <name>ConfirmDialog</name>
-    <message>
-        <source>Yes</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
     <name>CredentialMenu</name>
     <message>
         <source>Do you want to store the password?</source>
