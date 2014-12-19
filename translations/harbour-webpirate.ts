@@ -8,7 +8,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Accept Certificate from: </source>
+        <source>Accept Certificate from:</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -23,14 +23,6 @@
     <name>CredentialMenu</name>
     <message>
         <source>Do you want to store the password?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Yes</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>No</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -87,6 +79,17 @@
     <name>LoadFailed</name>
     <message>
         <source>You are in offline mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>RequestMenu</name>
+    <message>
+        <source>Yes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>No</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

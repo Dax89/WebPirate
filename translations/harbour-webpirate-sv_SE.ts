@@ -9,7 +9,11 @@
     </message>
     <message>
         <source>Accept Certificate from: </source>
-        <translation>Acceptera certifikat från: </translation>
+        <translation type="obsolete">Acceptera certifikat från: </translation>
+    </message>
+    <message>
+        <source>Accept Certificate from:</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -27,11 +31,11 @@
     </message>
     <message>
         <source>Yes</source>
-        <translation>Ja</translation>
+        <translation type="obsolete">Ja</translation>
     </message>
     <message>
         <source>No</source>
-        <translation>Nej</translation>
+        <translation type="obsolete">Nej</translation>
     </message>
 </context>
 <context>
@@ -88,6 +92,17 @@
     <message>
         <source>You are in offline mode</source>
         <translation>Du är i frånkopplat läge</translation>
+    </message>
+</context>
+<context>
+    <name>RequestMenu</name>
+    <message>
+        <source>Yes</source>
+        <translation type="unfinished">Ja</translation>
+    </message>
+    <message>
+        <source>No</source>
+        <translation type="unfinished">Nej</translation>
     </message>
 </context>
 <context>

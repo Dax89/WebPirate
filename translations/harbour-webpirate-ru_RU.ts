@@ -9,7 +9,11 @@
     </message>
     <message>
         <source>Accept Certificate from: </source>
-        <translation>Принять сертификат от:</translation>
+        <translation type="obsolete">Принять сертификат от:</translation>
+    </message>
+    <message>
+        <source>Accept Certificate from:</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -27,11 +31,11 @@
     </message>
     <message>
         <source>Yes</source>
-        <translation>Да</translation>
+        <translation type="obsolete">Да</translation>
     </message>
     <message>
         <source>No</source>
-        <translation>Нет</translation>
+        <translation type="obsolete">Нет</translation>
     </message>
 </context>
 <context>
@@ -88,6 +92,17 @@
     <message>
         <source>You are in offline mode</source>
         <translation>Вы в режиме &quot;offline mode&quot;</translation>
+    </message>
+</context>
+<context>
+    <name>RequestMenu</name>
+    <message>
+        <source>Yes</source>
+        <translation type="unfinished">Да</translation>
+    </message>
+    <message>
+        <source>No</source>
+        <translation type="unfinished">Нет</translation>
     </message>
 </context>
 <context>

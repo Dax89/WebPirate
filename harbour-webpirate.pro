@@ -32,7 +32,6 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/components/NavigationBar.qml \
     qml/components/LoadingBar.qml \
     qml/components/LoadFailed.qml \
-    qml/components/ConfirmDialog.qml \
     qml/components/BrowserTab.qml \
     qml/pages/SettingsPage.qml \
     qml/pages/MainPage.qml \
@@ -51,7 +50,8 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/components/menus/PopupMenu.qml \
     qml/components/menus/LinkMenu.qml \
     qml/components/menus/CredentialMenu.qml \
-    qml/components/menus/ItemSelector.qml
+    qml/components/menus/ItemSelector.qml \
+    qml/components/menus/RequestMenu.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line

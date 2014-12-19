@@ -9,7 +9,11 @@
     </message>
     <message>
         <source>Accept Certificate from: </source>
-        <translation>Accepta el Certificat de:</translation>
+        <translation type="obsolete">Accepta el Certificat de:</translation>
+    </message>
+    <message>
+        <source>Accept Certificate from:</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -27,11 +31,11 @@
     </message>
     <message>
         <source>Yes</source>
-        <translation>Sí</translation>
+        <translation type="obsolete">Sí</translation>
     </message>
     <message>
         <source>No</source>
-        <translation>No</translation>
+        <translation type="obsolete">No</translation>
     </message>
 </context>
 <context>
@@ -88,6 +92,17 @@
     <message>
         <source>You are in offline mode</source>
         <translation>Esteu en mode fora de línia</translation>
+    </message>
+</context>
+<context>
+    <name>RequestMenu</name>
+    <message>
+        <source>Yes</source>
+        <translation type="unfinished">Sí</translation>
+    </message>
+    <message>
+        <source>No</source>
+        <translation type="unfinished">No</translation>
     </message>
 </context>
 <context>

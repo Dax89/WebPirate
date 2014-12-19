@@ -168,18 +168,12 @@ Item
                 }
             }
 
-            experimental.certificateVerificationDialog: Item {
-                Component.onCompleted: {
-                    var dlg = pageStack.push(Qt.resolvedUrl("ConfirmDialog.qml"), {"message": qsTr("Accept Certificate from: ") + webview.url + " ?" });
+            experimental.certificateVerificationDialog: RequestMenu {
+                title: qsTr("Accept Certificate from:") + " " + webview.url + " ?"
 
-                    dlg.accepted.connect(function() {
-                        model.accept();
-                    });
-
-                    dlg.rejected.connect(function() {
-                        model.reject();
-                    });
-                }
+                onRequestAccepted: model.accept()
+                onRequestRejected: model.reject()
+                Component.onCompleted: show()
             }
 
             experimental.itemSelector: ItemSelector { }
