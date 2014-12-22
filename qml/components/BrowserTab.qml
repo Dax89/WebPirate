@@ -8,7 +8,7 @@ import "../js/Favorites.js" as Favorites
 import "../js/Credentials.js" as Credentials
 
 Item
-{
+{    
     id: browsertab
     state: "favorites"
 
@@ -173,6 +173,11 @@ Item
 
             experimental.itemSelector: ItemSelector {
                 selectorModel: model
+            }
+
+            experimental.onDownloadRequested: {
+                webview.stop();
+                mainwindow.settings.downloadmanager.createDownload(downloadItem);
             }
 
             header: LoadingBar {

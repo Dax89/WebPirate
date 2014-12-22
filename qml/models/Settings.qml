@@ -8,6 +8,7 @@ QtObject
     property FavoritesModel favorites: FavoritesModel { }
     property SearchEngineModel searchengines: SearchEngineModel { }
     property ListModel useragents: ListModel { }
+    property DownloadManagerModel downloadmanager: DownloadManagerModel { }
 
     property int searchengine;  /* Search Engine Index */
     property int useragent;     /* User Agent Index */

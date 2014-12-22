@@ -37,20 +37,21 @@
 #include <QtQuick>
 #include <sailfishapp.h>
 #include "webviewdatabase.h"
+#include "defaultpaths.h"
 
 int main(int argc, char *argv[])
 {
     QScopedPointer<QGuiApplication> application(SailfishApp::application(argc, argv));
     application->setApplicationName("harbour-webpirate");
 
-    /* WebView Database Class */
     WebViewDatabase webviewdb;
+    DefaultPaths defaultpaths;
 
     QScopedPointer<QQuickView> view(SailfishApp::createView());
     view->engine()->rootContext()->setContextProperty("webviewdatabase", &webviewdb);
+    view->engine()->rootContext()->setContextProperty("defaultpaths", &defaultpaths);
     view->setSource(SailfishApp::pathTo("qml/harbour-webpirate.qml"));
     view->show();
 
     return application->exec();
 }
-

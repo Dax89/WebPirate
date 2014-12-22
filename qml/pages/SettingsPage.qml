@@ -19,6 +19,15 @@ Dialog
         anchors.fill: parent
         contentHeight: column.height + dlgheader.height
 
+        PullDownMenu
+        {
+            MenuItem
+            {
+                text: qsTr("Download Manager");
+                onClicked: pageStack.push(Qt.resolvedUrl("DownloadsPage.qml"), { "settings": settings });
+            }
+        }
+
         Column
         {
             id: column
@@ -44,33 +53,28 @@ Dialog
                 text: settings.homepage
             }
 
-            Row
+            ComboBox
             {
+                id: cbsearchengines
+                label: qsTr("Search Engines")
+                currentIndex: settings.searchengine
                 width: parent.width
 
-                ComboBox
-                {
-                    id: cbsearchengines
-                    label: qsTr("Search Engines")
-                    currentIndex: settings.searchengine
-                    width: parent.width
+                menu: ContextMenu {
+                    Repeater {
+                        model: settings.searchengines
 
-                    menu: ContextMenu {
-                        Repeater {
-                            model: settings.searchengines
-
-                            MenuItem {
-                                text: name
-                            }
+                        MenuItem {
+                            text: name
                         }
                     }
+                }
 
-                    onPressAndHold: {
-                        var page = pageStack.push(Qt.resolvedUrl("SearchEnginesPage.qml"), {"settings": settings });
-                        page.defaultEngineChanged.connect(function(newindex) {
-                            cbsearchengines.currentIndex = newindex;
-                        });
-                    }
+                onPressAndHold: {
+                    var page = pageStack.push(Qt.resolvedUrl("SearchEnginesPage.qml"), {"settings": settings });
+                    page.defaultEngineChanged.connect(function(newindex) {
+                        cbsearchengines.currentIndex = newindex;
+                    });
                 }
             }
 
