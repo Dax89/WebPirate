@@ -32,6 +32,8 @@ Item
         anchors.fill: parent
         model: actions
 
+        VerticalScrollDecorator { flickable: listview }
+
         delegate: Component {
             ListItem {
                 width: parent.width
