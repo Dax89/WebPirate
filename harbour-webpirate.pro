@@ -16,7 +16,6 @@ CONFIG += sailfishapp
 
 SOURCES += src/harbour-webpirate.cpp \
     src/webviewdatabase.cpp \
-    src/defaultpaths.cpp \
     src/downloadmanager/downloadmanager.cpp \
     src/downloadmanager/downloaditem.cpp
 
@@ -74,7 +73,6 @@ RESOURCES += \
 
 HEADERS += \
     src/webviewdatabase.h \
-    src/defaultpaths.h \
     src/downloadmanager/downloadmanager.h \
     src/downloadmanager/downloaditem.h
 

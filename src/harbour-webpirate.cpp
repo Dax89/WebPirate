@@ -38,7 +38,6 @@
 #include <sailfishapp.h>
 #include "webviewdatabase.h"
 #include "downloadmanager/downloadmanager.h"
-#include "defaultpaths.h"
 
 int main(int argc, char *argv[])
 {
@@ -49,11 +48,9 @@ int main(int argc, char *argv[])
     qmlRegisterType<DownloadManager>("WebPirate", 1, 0, "DownloadManager");
 
     WebViewDatabase webviewdb;
-    DefaultPaths defaultpaths;
 
     QScopedPointer<QQuickView> view(SailfishApp::createView());
     view->engine()->rootContext()->setContextProperty("webviewdatabase", &webviewdb);
-    view->engine()->rootContext()->setContextProperty("defaultpaths", &defaultpaths);
     view->setSource(SailfishApp::pathTo("qml/harbour-webpirate.qml"));
     view->show();
 
