@@ -15,6 +15,8 @@
 - Adjusted Pages in order to support Sailfish 1.1.2.27
 - When "Delete on Exit" is enabled, web browser's cache is deleted too
 - Minor Fixes
+- Updated Italian Localization
+- Updated Russian Localization
 
 * Sun Dec 14 2014 Antonio Davide Trogu <trogu.davide@gmail.com> 0.7-1
 - Renamed project to "harbour-webpirate"
@@ -30,8 +32,7 @@
 - Updated Dutch Localization
 - Settings Page is not Flickable
 - Minor Fixes
-- Updated Italian Localization
-- Updated Russian Localization
+
 
 * Fri Dec 12 2014 Antonio Davide Trogu <trogu.davide@gmail.com> 0.65-1
 - BUGFIX: Browser always deletes navigation history on close
