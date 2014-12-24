@@ -52,7 +52,6 @@ Rectangle
                         width: Theme.iconSizeSmall
                         height: Theme.iconSizeSmall
                         source: icon
-                        clip: true
                         fillMode: Image.PreserveAspectFit
                         anchors.verticalCenter: parent.verticalCenter
                     }
@@ -66,7 +65,6 @@ Rectangle
                         font.pixelSize: Theme.fontSizeExtraSmall
                         text: label
                         elide: Text.ElideRight
-                        clip: true
                     }
 
                     Rectangle
@@ -79,7 +77,6 @@ Rectangle
                         anchors.verticalCenter: parent.verticalCenter
                         radius: width * 0.5
                         visible: index == 1
-                        clip: true
 
                         Label
                         {
@@ -90,7 +87,6 @@ Rectangle
                             font.pixelSize: Theme.fontSizeExtraSmall
                             color: Theme.primaryColor
                             elide: Text.ElideRight
-                            clip: true
                         }
                     }
                 }
