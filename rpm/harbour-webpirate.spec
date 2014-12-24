@@ -17,7 +17,7 @@ Version:    0.8
 Release:    1
 Group:      Qt/Qt
 License:    GPL3
-URL:        https://github.com/Dax89/harbour-webpirate
+URL:        http://github.com/Dax89/harbour-webpirate
 Source0:    %{name}-%{version}.tar.bz2
 Source100:  harbour-webpirate.yaml
 Requires:   sailfishsilica-qt5 >= 0.10.9
@@ -28,7 +28,7 @@ BuildRequires:  pkgconfig(Qt5Quick)
 BuildRequires:  desktop-file-utils
 
 %description
-A WebKit, tabbed, Web Browser for SailfishOS
+Short description of my SailfishOS Application
 
 
 %prep
