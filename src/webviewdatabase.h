@@ -5,7 +5,6 @@
 #include <QObject>
 #include <QStandardPaths>
 #include <QDir>
-#include <QDebug>
 
 class WebViewDatabase : public QObject
 {
