@@ -9,21 +9,22 @@ Item
 
     id: sidebar
     visible: false
+    width: parent.width / 3
 
     signal favoritesRequested()
     signal downloadsRequested()
     signal settingsRequested()
 
-    function expand() {
-        width = parent.width / 3;
-    }
+    Behavior on visible {
+        NumberAnimation {
+            target: sidebar
+            property: "width"
+            from: sidebar.visible ? sidebar.width: 0
+            to: sidebar.visible ? 0 : sidebar.parent.width / 3
 
-    function collapse() {
-        width = 0;
-    }
-
-    Behavior on width {
-        NumberAnimation { duration: 100; easing.type: Easing.InOutQuad }
+            duration: 100;
+            easing.type: Easing.InOutQuad
+        }
     }
 
     SilicaListView {
@@ -47,6 +48,7 @@ Item
                         width: Theme.iconSizeSmall
                         height: Theme.iconSizeSmall
                         source: icon
+                        clip: true
                         fillMode: Image.PreserveAspectFit
                         anchors.verticalCenter: parent.verticalCenter
                     }
@@ -55,13 +57,38 @@ Item
                     {
                         id: lblaction
                         height: parent.height
-                        width: parent.width - imgaction.width
+                        //width: parent.width - imgaction.width - ((index == 1) ? circle.width : 0)
                         horizontalAlignment: Text.AlignLeft
                         verticalAlignment: Text.AlignVCenter
                         font.pixelSize: Theme.fontSizeExtraSmall
                         text: label
                         elide: Text.ElideRight
                         clip: true
+                    }
+
+                    Rectangle
+                    {
+                        id: circle
+                        width: Theme.iconSizeSmall
+                        height: Theme.iconSizeSmall
+                        color: Theme.secondaryHighlightColor
+                        anchors.leftMargin: Theme.paddingMedium
+                        anchors.verticalCenter: parent.verticalCenter
+                        radius: width * 0.5
+                        visible: index == 1
+                        clip: true
+
+                        Label
+                        {
+                            anchors.fill: parent
+                            verticalAlignment: Text.AlignVCenter
+                            horizontalAlignment: Text.AlignHCenter
+                            text: mainwindow.settings.downloadmanager.count
+                            font.pixelSize: Theme.fontSizeExtraSmall
+                            color: Theme.primaryColor
+                            elide: Text.ElideRight
+                            clip: true
+                        }
                     }
                 }
 
@@ -75,9 +102,5 @@ Item
                 }
             }
         }
-    }
-
-    onWidthChanged: {
-        visible = width > 0;
     }
 }
