@@ -18,7 +18,7 @@ Item
     property alias forwardButton: btnforward
 
     id: navigationbar
-    height: 60
+    height: visible ? 60 : 0
     state: "loaded";
 
     states: [ State { name: "loaded"; PropertyChanges { target: btnrefresh; icon.source: "image://theme/icon-m-refresh" } },

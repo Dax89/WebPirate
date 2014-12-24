@@ -169,6 +169,10 @@ Item
                 onRequestAccepted: model.accept()
                 onRequestRejected: model.reject()
                 Component.onCompleted: show()
+
+                onVisibleChanged: {
+                    navigationbar.visible = !visible;
+                }
             }
 
             experimental.itemSelector: ItemSelector {
