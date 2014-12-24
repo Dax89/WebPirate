@@ -14,14 +14,17 @@ SilicaWebView
 
     /* Experimental WebView Features */
     experimental.preferences.webGLEnabled: true
+    experimental.preferences.dnsPrefetchEnabled: true
     experimental.preferences.pluginsEnabled: true
     experimental.preferences.javascriptEnabled: true
     experimental.preferences.navigatorQtObjectEnabled: true
     experimental.preferences.developerExtrasEnabled: true
+    experimental.preferences.defaultFixedFontSize: Theme.fontSizeExtraSmall
+    experimental.preferences.defaultFontSize: Theme.fontSizeExtraSmall
     experimental.userScripts: [Qt.resolvedUrl("../js/WebViewHelper.js")]
     experimental.userAgent: mainwindow.settings.useragents.get(mainwindow.settings.useragent).value
-    experimental.deviceWidth: width
-    experimental.deviceHeight: height
+    experimental.deviceWidth: Screen.width
+    experimental.deviceHeight: Screen.height
 
     experimental.onMessageReceived: {
         var data = JSON.parse(message.data);
