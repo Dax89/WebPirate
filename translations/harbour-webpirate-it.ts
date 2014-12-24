@@ -114,6 +114,13 @@
     </message>
 </context>
 <context>
+    <name>FavoritesPage</name>
+    <message>
+        <source>Favorites</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>FavoritesView</name>
     <message>
         <source>Edit</source>

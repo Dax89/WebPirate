@@ -12,10 +12,18 @@ Dialog
     allowedOrientations: Orientation.All
     acceptDestinationAction: PageStackAction.Pop
 
+    PageHeader {
+        id: header
+        title: qsTr("Favorites")
+    }
+
     FavoritesView
     {
         id: favoritesview
-        anchors.fill: parent
+        anchors.top: header.bottom
+        anchors.left: parent.left
+        anchors.right: parent.right
+        anchors.bottom: parent.bottom
 
         onUrlRequested: {
             tabview.pages.get(tabview.currentIndex).tab.load(favoriteurl);
