@@ -114,13 +114,6 @@
     </message>
 </context>
 <context>
-    <name>FavoritesPage</name>
-    <message>
-        <source>Favorites</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
     <name>FavoritesView</name>
     <message>
         <source>Edit</source>
@@ -251,14 +244,6 @@
     <message>
         <source>Deleting personal data</source>
         <translation type="obsolete">S&apos;estan eliminant les dades personals</translation>
-    </message>
-    <message>
-        <source>Delete Cache</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Removing cache</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Removing personal data</source>

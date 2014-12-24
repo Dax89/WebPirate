@@ -95,13 +95,6 @@
     </message>
 </context>
 <context>
-    <name>FavoritesPage</name>
-    <message>
-        <source>Favorites</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
     <name>FavoritesView</name>
     <message>
         <source>Edit</source>
@@ -227,14 +220,6 @@
     </message>
     <message>
         <source>Save Settings</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Delete Cache</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Removing cache</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

@@ -92,7 +92,7 @@ Item
 
                 onClicked: {
                     if(index === 0)
-                        pageStack.push(Qt.resolvedUrl("../pages/FavoritesPage.qml"), { "settings": mainwindow.settings });
+                        pageStack.push(Qt.resolvedUrl("../pages/FavoritesPage.qml"), { "settings": mainwindow.settings, "tabview": tabview });
                     else if(index === 1)
                         pageStack.push(Qt.resolvedUrl("../pages/DownloadsPage.qml"), { "settings": mainwindow.settings });
                     else if(index === 2)
