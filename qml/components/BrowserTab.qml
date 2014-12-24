@@ -14,21 +14,21 @@ Item
     states: [
         State {
             name: "favorites";
-            PropertyChanges { target: webviewshader; visible: false; live: false }
+            PropertyChanges { target: container; visible: false; }
             PropertyChanges { target: favoritesview; visible: true }
             PropertyChanges { target: loadfailed; visible: false }
         },
 
         State {
             name: "webbrowser";
-            PropertyChanges { target: webviewshader; visible: true; live: true }
+            PropertyChanges { target: container; visible: true; }
             PropertyChanges { target: favoritesview; visible: false }
             PropertyChanges { target: loadfailed; visible: false }
         },
 
         State {
             name: "loaderror";
-            PropertyChanges { target: webviewshader; visible: false; live: false }
+            PropertyChanges { target: container; visible: false; }
             PropertyChanges { target: favoritesview; visible: false }
             PropertyChanges { target: loadfailed; visible: true }
         } ]
@@ -101,61 +101,65 @@ Item
         id: credentialmenu
     }
 
-    Column
+    FavoritesView
     {
-        anchors.fill: parent
+        id: favoritesview
+        anchors.left: parent.left
+        anchors.right: parent.right
+        anchors.top: parent.top
+        anchors.bottom: navigationbar.top
 
-        FavoritesView
+        onUrlRequested: load(favoriteurl);
+    }
+
+    LoadFailed
+    {
+        id: loadfailed
+        anchors.left: parent.left
+        anchors.right: parent.right
+        anchors.top: parent.top
+        anchors.bottom: navigationbar.top
+    }
+
+    Item
+    {
+        id: container
+        anchors.left: parent.left
+        anchors.right: parent.right
+        anchors.top: parent.top
+        anchors.bottom: navigationbar.top
+
+        BrowserWebView
         {
-            id: favoritesview
-            width: parent.width
-            height: parent.height - navigationbar.height
-
-            onUrlRequested: load(favoriteurl);
+            id: webview
+            anchors.fill: parent
         }
 
-        LoadFailed
+        ShaderEffectSource
         {
-            id: loadfailed
-            width: parent.width
-            height: parent.height - navigationbar.height
+            id: webviewshader
+            anchors.fill: webview
+            sourceItem: webview
+            hideSource: true
+            live: container.visible
         }
+    }
 
-        Item
-        {
-            id: container
-            width: parent.width
-            height: parent.height - navigationbar.height
+    NavigationBar
+    {
+        id: navigationbar
+        z: 1
+        anchors.bottom: parent.bottom
+        anchors.left: parent.left
+        anchors.right: parent.right
+        forwardButton.enabled: webview.canGoForward;
+        backButton.enabled: webview.canGoBack;
 
-            BrowserWebView
-            {
-                id: webview
-                anchors.fill: parent
-            }
-
-            ShaderEffectSource
-            {
-                id: webviewshader
-                anchors.fill: webview
-                sourceItem: webview
-                hideSource: true
-            }
-        }
-
-        NavigationBar
-        {
-            id: navigationbar
-            z: 1
-            width: parent.width
-            forwardButton.enabled: webview.canGoForward;
-            backButton.enabled: webview.canGoBack;
-
-            onForwardRequested: webview.goForward();
-            onBackRequested: webview.goBack();
-            onRefreshRequested: webview.reload();
-            onStopRequested: webview.stop();
-            onSearchRequested: load(searchquery);
-        }
+        onForwardRequested: webview.goForward();
+        onBackRequested: webview.goBack();
+        onRefreshRequested: webview.reload();
+        onStopRequested: webview.stop();
+        onSearchRequested: load(searchquery);
     }
 
     onVisibleChanged: {
