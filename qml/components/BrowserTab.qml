@@ -110,6 +110,11 @@ Item
         anchors.bottom: navigationbar.top
 
         onUrlRequested: load(favoriteurl);
+
+        onVisibleChanged: {
+            if(visible)
+                navigationbar.expand();
+        }
     }
 
     LoadFailed
@@ -119,6 +124,11 @@ Item
         anchors.right: parent.right
         anchors.top: parent.top
         anchors.bottom: navigationbar.top
+
+        onVisibleChanged: {
+            if(visible)
+                navigationbar.expand();
+        }
     }
 
     Item

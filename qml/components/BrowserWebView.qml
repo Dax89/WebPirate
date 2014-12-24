@@ -20,8 +20,6 @@ SilicaWebView
     experimental.preferences.javascriptEnabled: true
     experimental.preferences.navigatorQtObjectEnabled: true
     experimental.preferences.developerExtrasEnabled: true
-    experimental.preferences.defaultFixedFontSize: Theme.fontSizeTiny
-    experimental.preferences.defaultFontSize: Theme.fontSizeTiny
     experimental.userScripts: [Qt.resolvedUrl("../js/WebViewHelper.js")]
     experimental.userAgent: mainwindow.settings.useragents.get(mainwindow.settings.useragent).value
     experimental.deviceWidth: Screen.width
@@ -30,7 +28,13 @@ SilicaWebView
     experimental.onMessageReceived: {
         var data = JSON.parse(message.data);
 
-        if(data.type === "longpress") {
+        if(data.type === "touchmove") {
+            if(data.moveup)
+                navigationbar.collapse();
+            else if(data.movedown)
+                navigationbar.expand();
+        }
+        else if(data.type === "longpress") {
             credentialmenu.hide();
 
             linkmenu.url = data.url;
@@ -116,6 +120,4 @@ SilicaWebView
     }
 
     onTitleChanged: navigationbar.searchBar.title = title;
-    onMovementStarted: navigationbar.collapse();
-    onMovementEnded: contentY > 0 ? navigationbar.collapse() : navigationbar.expand();
 }
