@@ -250,7 +250,19 @@
     </message>
     <message>
         <source>Deleting personal data</source>
-        <translation>Удаление персональных данных</translation>
+        <translation type="obsolete">Удаление персональных данных</translation>
+    </message>
+    <message>
+        <source>Delete Cache</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Removing cache</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Removing personal data</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

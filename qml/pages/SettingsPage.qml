@@ -120,6 +120,35 @@ Dialog
                 }
             }
 
+            /*
+            Item
+            {
+                width: parent.width
+                height: Theme.itemSizeSmall
+
+                BackgroundItem
+                {
+                    id: bideletecache
+                    anchors.fill: parent
+
+                    RemorseItem { id: rideletecache }
+
+                    Label
+                    {
+                        anchors.fill: parent
+                        anchors.leftMargin: Theme.paddingLarge
+                        text: qsTr("Delete Cache")
+                        verticalAlignment: Text.AlignVCenter
+                    }
+
+                    onClicked: rideletecache.execute(bideletecache, qsTr("Removing cache"),
+                                                     function() {
+                                                         webviewdatabase.clearCache();
+                                                     });
+                }
+            }
+            */
+
             Item
             {
                 width: parent.width
@@ -140,8 +169,9 @@ Dialog
                         verticalAlignment: Text.AlignVCenter
                     }
 
-                    onClicked: rideletepersdata.execute(bideletepersdata, qsTr("Deleting personal data"),
+                    onClicked: rideletepersdata.execute(bideletepersdata, qsTr("Removing personal data"),
                                                         function() {
+                                                            webviewdatabase.clearCache();
                                                             webviewdatabase.clearNavigationData();
                                                             Credentials.clear(Database.instance());
                                                         });

@@ -250,7 +250,19 @@
     </message>
     <message>
         <source>Deleting personal data</source>
-        <translation>Raderar personlig data</translation>
+        <translation type="obsolete">Raderar personlig data</translation>
+    </message>
+    <message>
+        <source>Delete Cache</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Removing cache</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Removing personal data</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

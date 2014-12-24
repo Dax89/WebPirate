@@ -25,8 +25,14 @@ void WebViewDatabase::clearNavigationData()
 {
     QDir datadir = QDir(QStandardPaths::writableLocation(QStandardPaths::DataLocation));
 
-    if(!datadir.cd(".QtWebKit"))
-        return;
+    if(datadir.cd(".QtWebKit"))
+        datadir.removeRecursively();
+}
 
-    datadir.removeRecursively();
+void WebViewDatabase::clearCache()
+{
+    QDir cachedir = QDir(QStandardPaths::writableLocation(QStandardPaths::CacheLocation));
+
+    if(cachedir.cd(".QtWebKit"))
+        cachedir.removeRecursively();
 }

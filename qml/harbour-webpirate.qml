@@ -76,6 +76,7 @@ ApplicationWindow
     Component.onDestruction: {
         if(settings.clearonexit)
         {
+            webviewdatabase.clearCache();
             webviewdatabase.clearNavigationData();
             Credentials.clear(Database.instance());
         }

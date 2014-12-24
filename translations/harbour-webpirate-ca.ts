@@ -250,7 +250,19 @@
     </message>
     <message>
         <source>Deleting personal data</source>
-        <translation>S&apos;estan eliminant les dades personals</translation>
+        <translation type="obsolete">S&apos;estan eliminant les dades personals</translation>
+    </message>
+    <message>
+        <source>Delete Cache</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Removing cache</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Removing personal data</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

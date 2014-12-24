@@ -5,6 +5,7 @@
 #include <QObject>
 #include <QStandardPaths>
 #include <QDir>
+#include <QDebug>
 
 class WebViewDatabase : public QObject
 {
@@ -18,6 +19,7 @@ class WebViewDatabase : public QObject
 
     public slots:
         void clearNavigationData();
+        void clearCache();
 
     private:
         static const QString OLD_DB_NAME;
