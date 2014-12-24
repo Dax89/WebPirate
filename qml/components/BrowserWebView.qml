@@ -115,4 +115,12 @@ SilicaWebView
     onTitleChanged: {
         navigationbar.searchBar.title = title;
     }
+
+    onMovementStarted: {
+        navigationbar.visible = false;
+    }
+
+    onMovementEnded: {
+        navigationbar.visible = contentY > 0 ? false : true;
+    }
 }
