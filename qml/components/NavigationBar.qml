@@ -3,7 +3,7 @@ import Sailfish.Silica 1.0
 import "../js/Database.js" as Database
 import "../js/Favorites.js" as Favorites
 
-Item
+Rectangle
 {
     signal backRequested()
     signal refreshRequested()
@@ -17,9 +17,24 @@ Item
     property alias backButton: btnback
     property alias forwardButton: btnforward
 
+    function expand() {
+        height = 60;
+    }
+
+    function collapse() {
+        height = 0;
+    }
+
     id: navigationbar
-    height: visible ? 60 : 0
+    height: 60
+    visible: height > 0
     state: "loaded";
+    z: 1
+
+    gradient: Gradient {
+        GradientStop { position: 0.0; color: Theme.rgba(Theme.highlightDimmerColor, 1.0) }
+        GradientStop { position: 1.0; color: Theme.rgba(Theme.highlightDimmerColor, 0.9) }
+    }
 
     states: [ State { name: "loaded"; PropertyChanges { target: btnrefresh; icon.source: "image://theme/icon-m-refresh" } },
               State { name: "loading"; PropertyChanges { target: btnrefresh; icon.source: "image://theme/icon-m-reset" } } ]

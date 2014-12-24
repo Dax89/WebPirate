@@ -124,10 +124,7 @@ Item
     Item
     {
         id: container
-        anchors.left: parent.left
-        anchors.right: parent.right
-        anchors.top: parent.top
-        anchors.bottom: navigationbar.top
+        anchors.fill: parent
 
         BrowserWebView
         {
@@ -148,7 +145,6 @@ Item
     NavigationBar
     {
         id: navigationbar
-        z: 1
         anchors.bottom: parent.bottom
         anchors.left: parent.left
         anchors.right: parent.right

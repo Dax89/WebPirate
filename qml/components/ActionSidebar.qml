@@ -9,6 +9,7 @@ Rectangle
 
     id: sidebar
     visible: width > 0
+    z: 2
 
     gradient: Gradient {
         GradientStop { position: 0.0; color: Theme.rgba(Theme.highlightDimmerColor, 1.0) }
@@ -20,7 +21,7 @@ Rectangle
     }
 
     function expand() {
-        sidebar.width = parent.width / 4;
+        sidebar.width = parent.width * 0.35;
     }
 
     function collapse() {

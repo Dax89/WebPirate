@@ -20,8 +20,8 @@ SilicaWebView
     experimental.preferences.javascriptEnabled: true
     experimental.preferences.navigatorQtObjectEnabled: true
     experimental.preferences.developerExtrasEnabled: true
-    experimental.preferences.defaultFixedFontSize: Theme.fontSizeExtraSmall
-    experimental.preferences.defaultFontSize: Theme.fontSizeExtraSmall
+    experimental.preferences.defaultFixedFontSize: Theme.fontSizeTiny
+    experimental.preferences.defaultFontSize: Theme.fontSizeTiny
     experimental.userScripts: [Qt.resolvedUrl("../js/WebViewHelper.js")]
     experimental.userAgent: mainwindow.settings.useragents.get(mainwindow.settings.useragent).value
     experimental.deviceWidth: Screen.width
@@ -50,14 +50,10 @@ SilicaWebView
 
     experimental.certificateVerificationDialog: RequestMenu {
         title: qsTr("Accept Certificate from:") + " " + webview.url + " ?"
-
         onRequestAccepted: model.accept()
         onRequestRejected: model.reject()
+        onVisibleChanged: visible ? navigationbar.collapse() : navigationbar.expand()
         Component.onCompleted: show()
-
-        onVisibleChanged: {
-            navigationbar.visible = !visible;
-        }
     }
 
     experimental.itemSelector: ItemSelector {
@@ -119,15 +115,7 @@ SilicaWebView
         navigationbar.searchBar.url = url;
     }
 
-    onTitleChanged: {
-        navigationbar.searchBar.title = title;
-    }
-
-    onMovementStarted: {
-        navigationbar.visible = false;
-    }
-
-    onMovementEnded: {
-        navigationbar.visible = contentY > 0 ? false : true;
-    }
+    onTitleChanged: navigationbar.searchBar.title = title;
+    onMovementStarted: navigationbar.collapse();
+    onMovementEnded: contentY > 0 ? navigationbar.collapse() : navigationbar.expand();
 }

@@ -198,7 +198,7 @@ Item
             {
                 id: stack
                 height: parent.height
-                width: parent.width - (sidebar.visible ? sidebar.width : 0)
+                width: parent.width
             }
         }
     }
