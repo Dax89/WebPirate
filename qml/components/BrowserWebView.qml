@@ -10,7 +10,6 @@ import "../js/Credentials.js" as Credentials
 SilicaWebView
 {
     id: webview
-    quickScroll: false
 
     /* Experimental WebView Features */
     experimental.preferences.webGLEnabled: true
@@ -122,7 +121,6 @@ SilicaWebView
         navigationbar.searchBar.title = title;
     }
 
-    /*
     onMovementStarted: {
         navigationbar.visible = false;
     }
@@ -130,5 +128,4 @@ SilicaWebView
     onMovementEnded: {
         navigationbar.visible = contentY > 0 ? false : true;
     }
-    */
 }
