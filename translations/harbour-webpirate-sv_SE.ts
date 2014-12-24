@@ -2,6 +2,21 @@
 <!DOCTYPE TS>
 <TS version="2.0" language="sv_SE">
 <context>
+    <name>ActionSidebar</name>
+    <message>
+        <source>Favorites</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Downloads</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>BrowserTab</name>
     <message>
         <source>New Tab</source>
@@ -88,6 +103,13 @@
     <message>
         <source>Url</source>
         <translation>URL</translation>
+    </message>
+</context>
+<context>
+    <name>FavoritesPage</name>
+    <message>
+        <source>Favorites</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -221,10 +243,6 @@
     <message>
         <source>Deleting personal data</source>
         <translation>Raderar personlig data</translation>
-    </message>
-    <message>
-        <source>Download Manager</source>
-        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

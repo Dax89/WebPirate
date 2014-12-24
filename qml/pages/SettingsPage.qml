@@ -19,15 +19,6 @@ Dialog
         anchors.fill: parent
         contentHeight: column.height + dlgheader.height
 
-        PullDownMenu
-        {
-            MenuItem
-            {
-                text: qsTr("Download Manager");
-                onClicked: pageStack.push(Qt.resolvedUrl("DownloadsPage.qml"), { "settings": settings });
-            }
-        }
-
         Column
         {
             id: column

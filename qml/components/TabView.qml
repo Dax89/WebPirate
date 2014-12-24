@@ -8,8 +8,6 @@ Item
     onCurrentIndexChanged: setOpacities()
     Component.onCompleted: setOpacities()
 
-    signal settingsRequested()
-
     property ListModel pages: ListModel { }
     property real tabWidth: setTabWidth()
     property int currentIndex: 0
@@ -43,7 +41,6 @@ Item
     {
         var tab = tabcomponent.createObject(stack);
         tab.anchors.fill = stack
-        tab.settingsRequested.connect(settingsRequested);
 
         if(url)
             tab.load(url);
@@ -174,21 +171,38 @@ Item
 
             IconButton
             {
-                id: btnsettings
-                icon.source: "image://theme/icon-m-developer-mode"
+                id: btnsidebar
+                icon.source: "image://theme/icon-lock-more"
                 width: Theme.iconSizeMedium
                 height: Theme.iconSizeMedium
                 anchors { left: headerrow.right; top: parent.top; bottom: parent.bottom; right: parent.right }
 
-                onClicked: settingsRequested();
+                onClicked: {
+                    if(sidebar.visible)
+                        sidebar.collapse();
+                    else
+                        sidebar.expand();
+                }
             }
         }
 
-        Item
+        Row
         {
-            id: stack
             width: parent.width
             height: parent.height - header.height
+
+            ActionSidebar
+            {
+                id: sidebar
+                height: parent.height
+            }
+
+            Item
+            {
+                id: stack
+                height: parent.height
+                width: parent.width - sidebar.width
+            }
         }
     }
 }

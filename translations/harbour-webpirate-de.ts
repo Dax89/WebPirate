@@ -2,6 +2,21 @@
 <!DOCTYPE TS>
 <TS version="2.0" language="de">
 <context>
+    <name>ActionSidebar</name>
+    <message>
+        <source>Favorites</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Downloads</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>BrowserTab</name>
     <message>
         <source>New Tab</source>
@@ -84,6 +99,13 @@
     <message>
         <source>Url</source>
         <translation>Url</translation>
+    </message>
+</context>
+<context>
+    <name>FavoritesPage</name>
+    <message>
+        <source>Favorites</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -216,10 +238,6 @@
     </message>
     <message>
         <source>Deleting personal data</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Download Manager</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

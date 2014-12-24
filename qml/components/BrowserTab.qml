@@ -11,8 +11,6 @@ Item
     id: browsertab
     state: "favorites"
 
-    signal settingsRequested()
-
     states: [
         State {
             name: "favorites";
@@ -69,7 +67,7 @@ Item
         var specialurl = UrlHelper.specialUrl(url);
 
         if(specialurl === "config")
-            settingsRequested();
+            pageStack.push(Qt.resolvedUrl("../SettingsPage.qml"), {"settings": mainwindow.settings });
 
         loadDefault();
     }
