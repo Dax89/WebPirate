@@ -14,21 +14,21 @@ Item
     states: [
         State {
             name: "favorites";
-            PropertyChanges { target: webview; visible: false }
+            PropertyChanges { target: webviewshader; visible: false; live: false }
             PropertyChanges { target: favoritesview; visible: true }
             PropertyChanges { target: loadfailed; visible: false }
         },
 
         State {
             name: "webbrowser";
-            PropertyChanges { target: webview; visible: true }
+            PropertyChanges { target: webviewshader; visible: true; live: true }
             PropertyChanges { target: favoritesview; visible: false }
             PropertyChanges { target: loadfailed; visible: false }
         },
 
         State {
             name: "loaderror";
-            PropertyChanges { target: webview; visible: false }
+            PropertyChanges { target: webviewshader; visible: false; live: false }
             PropertyChanges { target: favoritesview; visible: false }
             PropertyChanges { target: loadfailed; visible: true }
         } ]
@@ -121,11 +121,25 @@ Item
             height: parent.height - navigationbar.height
         }
 
-        BrowserWebView
+        Item
         {
-            id: webview
+            id: container
             width: parent.width
             height: parent.height - navigationbar.height
+
+            BrowserWebView
+            {
+                id: webview
+                anchors.fill: parent
+            }
+
+            ShaderEffectSource
+            {
+                id: webviewshader
+                anchors.fill: webview
+                sourceItem: webview
+                hideSource: true
+            }
         }
 
         NavigationBar
