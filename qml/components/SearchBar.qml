@@ -34,7 +34,7 @@ Rectangle
         id: searchfield
         anchors.left: favicon.right
         anchors.right: searchbar.right
-        font.pixelSize: Theme.fontSizeExtraSmall
+        font.pixelSize: Theme.fontSizeSmall
         inputMethodHints: Qt.ImhNoAutoUppercase
         labelVisible: false
 
