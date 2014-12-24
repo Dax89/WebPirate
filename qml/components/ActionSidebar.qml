@@ -8,24 +8,23 @@ Rectangle
                                        QtObject { property string icon: "image://theme/icon-s-setting"; property string label: qsTr("Settings") } ]
 
     id: sidebar
-    visible: false
-    width: parent.width / 4
+    visible: width > 0
 
     gradient: Gradient {
         GradientStop { position: 0.0; color: Theme.rgba(Theme.highlightDimmerColor, 1.0) }
         GradientStop { position: 1.0; color: Theme.rgba(Theme.highlightDimmerColor, 0.9) }
     }
 
-    Behavior on visible {
-        NumberAnimation {
-            target: sidebar
-            property: "width"
-            from: sidebar.visible ? sidebar.width: 0
-            to: sidebar.visible ? 0 : sidebar.parent.width / 3
+    Behavior on width {
+        NumberAnimation { duration: 250; easing.type: Easing.InOutQuad }
+    }
 
-            duration: 100;
-            easing.type: Easing.InOutQuad
-        }
+    function expand() {
+        sidebar.width = parent.width / 4;
+    }
+
+    function collapse() {
+        sidebar.width = 0;
     }
 
     SilicaListView {
