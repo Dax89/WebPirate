@@ -24,10 +24,6 @@ Item
     states: [ State { name: "loaded"; PropertyChanges { target: btnrefresh; icon.source: "image://theme/icon-m-refresh" } },
               State { name: "loading"; PropertyChanges { target: btnrefresh; icon.source: "image://theme/icon-m-reset" } } ]
 
-    Behavior on height {
-        NumberAnimation { duration: 100; easing.type: Easing.InOutQuad }
-    }
-
     IconButton
     {
         id: btnback

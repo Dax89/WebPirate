@@ -10,8 +10,6 @@ import "../js/Credentials.js" as Credentials
 SilicaWebView
 {
     id: webview
-    width: parent.width
-    height: parent.height - navigationbar.height
     quickScroll: false
 
     /* Experimental WebView Features */
@@ -121,6 +119,7 @@ SilicaWebView
         navigationbar.searchBar.title = title;
     }
 
+    /*
     onMovementStarted: {
         navigationbar.visible = false;
     }
@@ -128,4 +127,5 @@ SilicaWebView
     onMovementEnded: {
         navigationbar.visible = contentY > 0 ? false : true;
     }
+    */
 }
