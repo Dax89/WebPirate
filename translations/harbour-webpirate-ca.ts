@@ -5,15 +5,15 @@
     <name>ActionSidebar</name>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Preferits</translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation type="unfinished"></translation>
+        <translation>Descàrregues</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Configuració</translation>
     </message>
 </context>
 <context>
@@ -22,27 +22,16 @@
         <source>New Tab</source>
         <translation>Nova pestanya</translation>
     </message>
-    <message>
-        <source>Accept Certificate from: </source>
-        <translation type="obsolete">Accepta el Certificat de:</translation>
-    </message>
 </context>
 <context>
     <name>BrowserWebView</name>
     <message>
         <source>Accept Certificate from:</source>
-        <translation type="unfinished"></translation>
+        <translation>Accepta el certificat de:</translation>
     </message>
     <message>
         <source>Downloading</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>ConfirmDialog</name>
-    <message>
-        <source>Yes</source>
-        <translation type="obsolete">Sí</translation>
+        <translation>S&apos;està descarregant</translation>
     </message>
 </context>
 <context>
@@ -51,51 +40,43 @@
         <source>Do you want to store the password?</source>
         <translation>Voleu desar la contrasenya?</translation>
     </message>
-    <message>
-        <source>Yes</source>
-        <translation type="obsolete">Sí</translation>
-    </message>
-    <message>
-        <source>No</source>
-        <translation type="obsolete">No</translation>
-    </message>
 </context>
 <context>
     <name>DownloadListItem</name>
     <message>
         <source>Restart</source>
-        <translation type="unfinished"></translation>
+        <translation>Reinicia</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Cancel·la</translation>
     </message>
     <message>
         <source>Completed:</source>
-        <translation type="unfinished"></translation>
+        <translation>Completades:</translation>
     </message>
     <message>
         <source>Speed:</source>
-        <translation type="unfinished"></translation>
+        <translation>Velocitat:</translation>
     </message>
     <message>
         <source>Completed</source>
-        <translation type="unfinished"></translation>
+        <translation>Completades</translation>
     </message>
     <message>
         <source>Error:</source>
-        <translation type="unfinished"></translation>
+        <translation>Error:</translation>
     </message>
 </context>
 <context>
     <name>DownloadsPage</name>
     <message>
         <source>Download Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Gestor de descàrregues</translation>
     </message>
     <message>
         <source>Delete completed Downloads</source>
-        <translation type="unfinished"></translation>
+        <translation>Elimina les descàrregues completades</translation>
     </message>
 </context>
 <context>
@@ -117,7 +98,7 @@
     <name>FavoritesPage</name>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Preferits</translation>
     </message>
 </context>
 <context>
@@ -165,11 +146,11 @@
     <name>RequestMenu</name>
     <message>
         <source>Yes</source>
-        <translation type="unfinished">Sí</translation>
+        <translation>Sí</translation>
     </message>
     <message>
         <source>No</source>
-        <translation type="unfinished">No</translation>
+        <translation>No</translation>
     </message>
 </context>
 <context>
@@ -241,20 +222,16 @@
         <translation>Privacitat</translation>
     </message>
     <message>
-        <source>Save Settings</source>
-        <translation type="unfinished">Desa la configuració</translation>
-    </message>
-    <message>
         <source>Delete Personal Data</source>
         <translation>Elimina les dades personals</translation>
     </message>
     <message>
-        <source>Deleting personal data</source>
-        <translation type="obsolete">S&apos;estan eliminant les dades personals</translation>
+        <source>Save Settings</source>
+        <translation>Desa la configuració</translation>
     </message>
     <message>
         <source>Removing personal data</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;estan eliminant les dades personals</translation>
     </message>
 </context>
 </TS>
