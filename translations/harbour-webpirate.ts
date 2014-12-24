@@ -7,6 +7,9 @@
         <source>New Tab</source>
         <translation type="unfinished"></translation>
     </message>
+</context>
+<context>
+    <name>BrowserWebView</name>
     <message>
         <source>Accept Certificate from:</source>
         <translation type="unfinished"></translation>

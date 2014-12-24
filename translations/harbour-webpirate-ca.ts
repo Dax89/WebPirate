@@ -11,6 +11,9 @@
         <source>Accept Certificate from: </source>
         <translation type="obsolete">Accepta el Certificat de:</translation>
     </message>
+</context>
+<context>
+    <name>BrowserWebView</name>
     <message>
         <source>Accept Certificate from:</source>
         <translation type="unfinished"></translation>

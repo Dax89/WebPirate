@@ -55,7 +55,8 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/components/menus/ItemSelector.qml \
     qml/components/menus/RequestMenu.qml \
     qml/pages/DownloadsPage.qml \
-    qml/components/items/DownloadListItem.qml
+    qml/components/items/DownloadListItem.qml \
+    qml/components/BrowserWebView.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line
