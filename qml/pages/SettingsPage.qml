@@ -28,7 +28,7 @@ Dialog
             DialogHeader
             {
                 id: dlgheader
-                title: qsTr("Save Settings")
+                acceptText: qsTr("Save Settings")
             }
 
             SectionHeader

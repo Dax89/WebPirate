@@ -230,7 +230,7 @@
     </message>
     <message>
         <source>Save Settings</source>
-        <translation>Einstellungen speichern</translation>
+        <translation type="unfinished">Einstellungen speichern</translation>
     </message>
     <message>
         <source>Delete Personal Data</source>

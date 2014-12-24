@@ -234,7 +234,7 @@
     </message>
     <message>
         <source>Save Settings</source>
-        <translation>Salva impostazioni</translation>
+        <translation type="unfinished">Salva impostazioni</translation>
     </message>
     <message>
         <source>Delete Personal Data</source>

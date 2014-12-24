@@ -234,7 +234,7 @@
     </message>
     <message>
         <source>Save Settings</source>
-        <translation>Desa la configuració</translation>
+        <translation type="unfinished">Desa la configuració</translation>
     </message>
     <message>
         <source>Delete Personal Data</source>

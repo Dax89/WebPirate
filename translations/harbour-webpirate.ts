@@ -214,15 +214,15 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Save Settings</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Delete Personal Data</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Deleting personal data</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Save Settings</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

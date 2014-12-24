@@ -234,7 +234,7 @@
     </message>
     <message>
         <source>Save Settings</source>
-        <translation>Spara inställningar</translation>
+        <translation type="unfinished">Spara inställningar</translation>
     </message>
     <message>
         <source>Delete Personal Data</source>

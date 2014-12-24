@@ -234,7 +234,7 @@
     </message>
     <message>
         <source>Save Settings</source>
-        <translation>Instellingen opslaan</translation>
+        <translation type="unfinished">Instellingen opslaan</translation>
     </message>
     <message>
         <source>Delete Personal Data</source>
