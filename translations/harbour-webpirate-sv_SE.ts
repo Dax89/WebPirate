@@ -33,6 +33,10 @@
         <source>Accept Certificate from:</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Downloading</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ConfirmDialog</name>

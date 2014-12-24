@@ -62,7 +62,12 @@ SilicaWebView
         selectorModel: model
     }
 
-    experimental.onDownloadRequested: mainwindow.settings.downloadmanager.createDownload(downloadItem.url);
+    experimental.onDownloadRequested: {
+        tabviewremorse.execute(qsTr("Downloading") + " " + downloadItem.suggestedFilename,
+                               function() {
+                                   mainwindow.settings.downloadmanager.createDownload(downloadItem.url);
+                               });
+    }
 
     header: LoadingBar {
         id: loadingbar

@@ -66,6 +66,8 @@ Item
         setTabWidth();
     }
 
+    RemorsePopup { id: tabviewremorse }
+
     Column
     {
         anchors.fill: parent
