@@ -175,10 +175,7 @@ Item
                 selectorModel: model
             }
 
-            experimental.onDownloadRequested: {
-                webview.stop();
-                mainwindow.settings.downloadmanager.createDownload(downloadItem);
-            }
+            experimental.onDownloadRequested: mainwindow.settings.downloadmanager.createDownload(downloadItem.url);
 
             header: LoadingBar {
                 id: loadingbar

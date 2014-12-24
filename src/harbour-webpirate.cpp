@@ -37,12 +37,16 @@
 #include <QtQuick>
 #include <sailfishapp.h>
 #include "webviewdatabase.h"
+#include "downloadmanager/downloadmanager.h"
 #include "defaultpaths.h"
 
 int main(int argc, char *argv[])
 {
     QScopedPointer<QGuiApplication> application(SailfishApp::application(argc, argv));
     application->setApplicationName("harbour-webpirate");
+
+    qmlRegisterType<DownloadItem>("WebPirate", 1, 0, "DownloadItem");
+    qmlRegisterType<DownloadManager>("WebPirate", 1, 0, "DownloadManager");
 
     WebViewDatabase webviewdb;
     DefaultPaths defaultpaths;

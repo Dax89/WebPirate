@@ -16,7 +16,9 @@ CONFIG += sailfishapp
 
 SOURCES += src/harbour-webpirate.cpp \
     src/webviewdatabase.cpp \
-    src/defaultpaths.cpp
+    src/defaultpaths.cpp \
+    src/downloadmanager/downloadmanager.cpp \
+    src/downloadmanager/downloaditem.cpp
 
 OTHER_FILES += qml/harbour-webpirate.qml \
     qml/cover/CoverPage.qml \
@@ -53,8 +55,8 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/components/menus/CredentialMenu.qml \
     qml/components/menus/ItemSelector.qml \
     qml/components/menus/RequestMenu.qml \
-    qml/models/DownloadManagerModel.qml \
-    qml/pages/DownloadsPage.qml
+    qml/pages/DownloadsPage.qml \
+    qml/components/items/DownloadListItem.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line
@@ -72,5 +74,7 @@ RESOURCES += \
 
 HEADERS += \
     src/webviewdatabase.h \
-    src/defaultpaths.h
+    src/defaultpaths.h \
+    src/downloadmanager/downloadmanager.h \
+    src/downloadmanager/downloaditem.h
 

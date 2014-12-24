@@ -35,7 +35,7 @@
     </message>
 </context>
 <context>
-    <name>DownloadsPage</name>
+    <name>DownloadListItem</name>
     <message>
         <source>Restart</source>
         <translation type="unfinished"></translation>
@@ -45,7 +45,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Download Manager</source>
+        <source>Completed:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -53,7 +53,18 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Completed:</source>
+        <source>Completed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Error:</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>DownloadsPage</name>
+    <message>
+        <source>Download Manager</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

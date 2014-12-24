@@ -1,5 +1,6 @@
 import QtQuick 2.0
 import QtSystemInfo 5.0
+import WebPirate 1.0
 
 QtObject
 {
@@ -8,7 +9,7 @@ QtObject
     property FavoritesModel favorites: FavoritesModel { }
     property SearchEngineModel searchengines: SearchEngineModel { }
     property ListModel useragents: ListModel { }
-    property DownloadManagerModel downloadmanager: DownloadManagerModel { }
+    property DownloadManager downloadmanager: DownloadManager { }
 
     property int searchengine;  /* Search Engine Index */
     property int useragent;     /* User Agent Index */
