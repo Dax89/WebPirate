@@ -1,7 +1,7 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
 
-Item
+Rectangle
 {
     property list<QtObject> actions: [ QtObject { property string icon: "image://theme/icon-s-favorite";  property string label: qsTr("Favorites") },
                                        QtObject { property string icon: "image://theme/icon-s-cloud-download"; property string label: qsTr("Downloads") },
@@ -9,7 +9,12 @@ Item
 
     id: sidebar
     visible: false
-    width: parent.width / 3
+    width: parent.width / 4
+
+    gradient: Gradient {
+        GradientStop { position: 0.0; color: Theme.rgba(Theme.highlightDimmerColor, 1.0) }
+        GradientStop { position: 1.0; color: Theme.rgba(Theme.highlightDimmerColor, 0.9) }
+    }
 
     Behavior on visible {
         NumberAnimation {
@@ -27,6 +32,7 @@ Item
         id: listview
         anchors.fill: parent
         model: actions
+        clip: true
 
         VerticalScrollDecorator { flickable: listview }
 
@@ -55,7 +61,6 @@ Item
                     {
                         id: lblaction
                         height: parent.height
-                        //width: parent.width - imgaction.width - ((index == 1) ? circle.width : 0)
                         horizontalAlignment: Text.AlignLeft
                         verticalAlignment: Text.AlignVCenter
                         font.pixelSize: Theme.fontSizeExtraSmall
