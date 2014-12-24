@@ -178,13 +178,7 @@ Item
                 width: Theme.iconSizeMedium
                 height: Theme.iconSizeMedium
                 anchors { left: headerrow.right; top: parent.top; bottom: parent.bottom; right: parent.right }
-
-                onClicked: {
-                    if(sidebar.visible)
-                        sidebar.collapse();
-                    else
-                        sidebar.expand();
-                }
+                onClicked: sidebar.visible = !sidebar.visible;
             }
         }
 
