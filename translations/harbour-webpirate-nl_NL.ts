@@ -5,15 +5,15 @@
     <name>ActionSidebar</name>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Bladwijzers</translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation type="unfinished"></translation>
+        <translation>Downloads</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Instellingen</translation>
     </message>
 </context>
 <context>
@@ -22,27 +22,16 @@
         <source>New Tab</source>
         <translation>Nieuw tabblad</translation>
     </message>
-    <message>
-        <source>Accept Certificate from: </source>
-        <translation type="obsolete">Certificaat accepteren van:</translation>
-    </message>
 </context>
 <context>
     <name>BrowserWebView</name>
     <message>
         <source>Accept Certificate from:</source>
-        <translation type="unfinished"></translation>
+        <translation>Certificaat accepteren van:</translation>
     </message>
     <message>
         <source>Downloading</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>ConfirmDialog</name>
-    <message>
-        <source>Yes</source>
-        <translation type="obsolete">Ja</translation>
+        <translation>Bezig met downloaden</translation>
     </message>
 </context>
 <context>
@@ -51,51 +40,43 @@
         <source>Do you want to store the password?</source>
         <translation>Wilt u het wachtwoord opslaan?</translation>
     </message>
-    <message>
-        <source>Yes</source>
-        <translation type="obsolete">Ja</translation>
-    </message>
-    <message>
-        <source>No</source>
-        <translation type="obsolete">Nee</translation>
-    </message>
 </context>
 <context>
     <name>DownloadListItem</name>
     <message>
         <source>Restart</source>
-        <translation type="unfinished"></translation>
+        <translation>Herstarten</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Annuleren</translation>
     </message>
     <message>
         <source>Completed:</source>
-        <translation type="unfinished"></translation>
+        <translation>Afgerond:</translation>
     </message>
     <message>
         <source>Speed:</source>
-        <translation type="unfinished"></translation>
+        <translation>Snelheid:</translation>
     </message>
     <message>
         <source>Completed</source>
-        <translation type="unfinished"></translation>
+        <translation>Afgerond</translation>
     </message>
     <message>
         <source>Error:</source>
-        <translation type="unfinished"></translation>
+        <translation>Fout:</translation>
     </message>
 </context>
 <context>
     <name>DownloadsPage</name>
     <message>
         <source>Download Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Downloadbeheerder</translation>
     </message>
     <message>
         <source>Delete completed Downloads</source>
-        <translation type="unfinished"></translation>
+        <translation>Afgeronde downloads verwijderen</translation>
     </message>
 </context>
 <context>
@@ -117,7 +98,7 @@
     <name>FavoritesPage</name>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Bladwijzers</translation>
     </message>
 </context>
 <context>
@@ -165,11 +146,11 @@
     <name>RequestMenu</name>
     <message>
         <source>Yes</source>
-        <translation type="unfinished">Ja</translation>
+        <translation>Ja</translation>
     </message>
     <message>
         <source>No</source>
-        <translation type="unfinished">Nee</translation>
+        <translation>Nee</translation>
     </message>
 </context>
 <context>
@@ -241,20 +222,16 @@
         <translation>Privacy</translation>
     </message>
     <message>
-        <source>Save Settings</source>
-        <translation type="unfinished">Instellingen opslaan</translation>
-    </message>
-    <message>
         <source>Delete Personal Data</source>
         <translation>Persoonlijke gegevens verwijderen</translation>
     </message>
     <message>
-        <source>Deleting personal data</source>
-        <translation type="obsolete">Bezig met verwijderen van persoonlijke gegevens</translation>
+        <source>Save Settings</source>
+        <translation>Instellingen opslaan</translation>
     </message>
     <message>
         <source>Removing personal data</source>
-        <translation type="unfinished"></translation>
+        <translation>Bezig met verwijderen van persoonlijke gegevens</translation>
     </message>
 </context>
 </TS>

@@ -5,15 +5,15 @@
     <name>ActionSidebar</name>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Favoriter</translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation type="unfinished"></translation>
+        <translation>Nedladdningar</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Inställningar</translation>
     </message>
 </context>
 <context>
@@ -22,27 +22,16 @@
         <source>New Tab</source>
         <translation>Ny flik</translation>
     </message>
-    <message>
-        <source>Accept Certificate from: </source>
-        <translation type="obsolete">Acceptera certifikat från: </translation>
-    </message>
 </context>
 <context>
     <name>BrowserWebView</name>
     <message>
         <source>Accept Certificate from:</source>
-        <translation type="unfinished"></translation>
+        <translation>Acceptera certifikat från: </translation>
     </message>
     <message>
         <source>Downloading</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>ConfirmDialog</name>
-    <message>
-        <source>Yes</source>
-        <translation type="obsolete">Ja</translation>
+        <translation>Nedladdning</translation>
     </message>
 </context>
 <context>
@@ -51,51 +40,43 @@
         <source>Do you want to store the password?</source>
         <translation>Vill du lagra lösenordet?</translation>
     </message>
-    <message>
-        <source>Yes</source>
-        <translation type="obsolete">Ja</translation>
-    </message>
-    <message>
-        <source>No</source>
-        <translation type="obsolete">Nej</translation>
-    </message>
 </context>
 <context>
     <name>DownloadListItem</name>
     <message>
         <source>Restart</source>
-        <translation type="unfinished"></translation>
+        <translation>Starta om</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Avbryt</translation>
     </message>
     <message>
         <source>Completed:</source>
-        <translation type="unfinished"></translation>
+        <translation>Slutförd:</translation>
     </message>
     <message>
         <source>Speed:</source>
-        <translation type="unfinished"></translation>
+        <translation>Hastighet:</translation>
     </message>
     <message>
         <source>Completed</source>
-        <translation type="unfinished"></translation>
+        <translation>Slutförd</translation>
     </message>
     <message>
         <source>Error:</source>
-        <translation type="unfinished"></translation>
+        <translation>Fel:</translation>
     </message>
 </context>
 <context>
     <name>DownloadsPage</name>
     <message>
         <source>Download Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Nedladdningshanterare</translation>
     </message>
     <message>
         <source>Delete completed Downloads</source>
-        <translation type="unfinished"></translation>
+        <translation>Ta bort slutförda nedladdningar</translation>
     </message>
 </context>
 <context>
@@ -117,7 +98,7 @@
     <name>FavoritesPage</name>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Favoriter</translation>
     </message>
 </context>
 <context>
@@ -165,11 +146,11 @@
     <name>RequestMenu</name>
     <message>
         <source>Yes</source>
-        <translation type="unfinished">Ja</translation>
+        <translation>Ja</translation>
     </message>
     <message>
         <source>No</source>
-        <translation type="unfinished">Nej</translation>
+        <translation>Nej</translation>
     </message>
 </context>
 <context>
@@ -241,20 +222,16 @@
         <translation>Sekretess</translation>
     </message>
     <message>
-        <source>Save Settings</source>
-        <translation type="unfinished">Spara inställningar</translation>
-    </message>
-    <message>
         <source>Delete Personal Data</source>
         <translation>Radera personlig data</translation>
     </message>
     <message>
-        <source>Deleting personal data</source>
-        <translation type="obsolete">Raderar personlig data</translation>
+        <source>Save Settings</source>
+        <translation>Spara inställningar</translation>
     </message>
     <message>
         <source>Removing personal data</source>
-        <translation type="unfinished"></translation>
+        <translation>Tar bort personlig data</translation>
     </message>
 </context>
 </TS>
