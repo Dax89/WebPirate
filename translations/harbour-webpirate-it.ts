@@ -1,19 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.0" language="it">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="it" version="2.0">
 <context>
     <name>ActionSidebar</name>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Preferiti</translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation type="unfinished"></translation>
+        <translation>Downloads</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Impostazioni</translation>
     </message>
 </context>
 <context>
@@ -22,27 +20,16 @@
         <source>New Tab</source>
         <translation>Nuova scheda</translation>
     </message>
-    <message>
-        <source>Accept Certificate from: </source>
-        <translation type="obsolete">Accettare certificato da:</translation>
-    </message>
 </context>
 <context>
     <name>BrowserWebView</name>
     <message>
         <source>Accept Certificate from:</source>
-        <translation type="unfinished"></translation>
+        <translation>Accettare certificato da:</translation>
     </message>
     <message>
         <source>Downloading</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>ConfirmDialog</name>
-    <message>
-        <source>Yes</source>
-        <translation type="obsolete">Si</translation>
+        <translation>Scaricando</translation>
     </message>
 </context>
 <context>
@@ -51,51 +38,43 @@
         <source>Do you want to store the password?</source>
         <translation>Vuoi salvare la password?</translation>
     </message>
-    <message>
-        <source>Yes</source>
-        <translation type="obsolete">Si</translation>
-    </message>
-    <message>
-        <source>No</source>
-        <translation type="obsolete">No</translation>
-    </message>
 </context>
 <context>
     <name>DownloadListItem</name>
     <message>
         <source>Restart</source>
-        <translation type="unfinished"></translation>
+        <translation>Riavvia</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Annulla</translation>
     </message>
     <message>
         <source>Completed:</source>
-        <translation type="unfinished"></translation>
+        <translation>Completato:</translation>
     </message>
     <message>
         <source>Speed:</source>
-        <translation type="unfinished"></translation>
+        <translation>Velocità</translation>
     </message>
     <message>
         <source>Completed</source>
-        <translation type="unfinished"></translation>
+        <translation>Completato</translation>
     </message>
     <message>
         <source>Error:</source>
-        <translation type="unfinished"></translation>
+        <translation>Errore:</translation>
     </message>
 </context>
 <context>
     <name>DownloadsPage</name>
     <message>
         <source>Download Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Download Manager</translation>
     </message>
     <message>
         <source>Delete completed Downloads</source>
-        <translation type="unfinished"></translation>
+        <translation>Rimozione download completati</translation>
     </message>
 </context>
 <context>
@@ -117,7 +96,7 @@
     <name>FavoritesPage</name>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Preferiti</translation>
     </message>
 </context>
 <context>
@@ -139,7 +118,7 @@
     <name>LinkMenu</name>
     <message>
         <source>Open Link</source>
-        <translation>Apri link</translation>
+        <translation>Apri collegamento</translation>
     </message>
     <message>
         <source>Open New Tab</source>
@@ -165,11 +144,11 @@
     <name>RequestMenu</name>
     <message>
         <source>Yes</source>
-        <translation type="unfinished">Si</translation>
+        <translation>Si</translation>
     </message>
     <message>
         <source>No</source>
-        <translation type="unfinished">No</translation>
+        <translation>No</translation>
     </message>
 </context>
 <context>
@@ -241,20 +220,16 @@
         <translation>Privacy</translation>
     </message>
     <message>
-        <source>Save Settings</source>
-        <translation type="unfinished">Salva impostazioni</translation>
-    </message>
-    <message>
         <source>Delete Personal Data</source>
         <translation>Cancella dati personali</translation>
     </message>
     <message>
-        <source>Deleting personal data</source>
-        <translation type="obsolete">Rimozione dati personali</translation>
+        <source>Save Settings</source>
+        <translation>Salva impostazioni</translation>
     </message>
     <message>
         <source>Removing personal data</source>
-        <translation type="unfinished"></translation>
+        <translation>Rimozione dati personali</translation>
     </message>
 </context>
 </TS>

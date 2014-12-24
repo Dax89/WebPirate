@@ -1,19 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.0" language="ru_RU">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="ru_RU" version="2.0">
 <context>
     <name>ActionSidebar</name>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Избранное</translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation type="unfinished"></translation>
+        <translation>Загрузки</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Настройки</translation>
     </message>
 </context>
 <context>
@@ -22,27 +20,16 @@
         <source>New Tab</source>
         <translation>Новая вкладка</translation>
     </message>
-    <message>
-        <source>Accept Certificate from: </source>
-        <translation type="obsolete">Принять сертификат от:</translation>
-    </message>
 </context>
 <context>
     <name>BrowserWebView</name>
     <message>
         <source>Accept Certificate from:</source>
-        <translation type="unfinished"></translation>
+        <translation>Принять сертификат от:</translation>
     </message>
     <message>
         <source>Downloading</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>ConfirmDialog</name>
-    <message>
-        <source>Yes</source>
-        <translation type="obsolete">Да</translation>
+        <translation>Загрузка</translation>
     </message>
 </context>
 <context>
@@ -51,51 +38,43 @@
         <source>Do you want to store the password?</source>
         <translation>Вы хотите сохранить пароль?</translation>
     </message>
-    <message>
-        <source>Yes</source>
-        <translation type="obsolete">Да</translation>
-    </message>
-    <message>
-        <source>No</source>
-        <translation type="obsolete">Нет</translation>
-    </message>
 </context>
 <context>
     <name>DownloadListItem</name>
     <message>
         <source>Restart</source>
-        <translation type="unfinished"></translation>
+        <translation>Перезагрузка</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Отмена</translation>
     </message>
     <message>
         <source>Completed:</source>
-        <translation type="unfinished"></translation>
+        <translation>Завершено:</translation>
     </message>
     <message>
         <source>Speed:</source>
-        <translation type="unfinished"></translation>
+        <translation>Скорость:</translation>
     </message>
     <message>
         <source>Completed</source>
-        <translation type="unfinished"></translation>
+        <translation>Завершено</translation>
     </message>
     <message>
         <source>Error:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ошибка:</translation>
     </message>
 </context>
 <context>
     <name>DownloadsPage</name>
     <message>
         <source>Download Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Менеджер загрузок</translation>
     </message>
     <message>
         <source>Delete completed Downloads</source>
-        <translation type="unfinished"></translation>
+        <translation>Удалить завершенные загрузки</translation>
     </message>
 </context>
 <context>
@@ -117,7 +96,7 @@
     <name>FavoritesPage</name>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Избранное</translation>
     </message>
 </context>
 <context>
@@ -165,11 +144,11 @@
     <name>RequestMenu</name>
     <message>
         <source>Yes</source>
-        <translation type="unfinished">Да</translation>
+        <translation>Да</translation>
     </message>
     <message>
         <source>No</source>
-        <translation type="unfinished">Нет</translation>
+        <translation>Нет</translation>
     </message>
 </context>
 <context>
@@ -241,20 +220,16 @@
         <translation>Конфиденциальность </translation>
     </message>
     <message>
-        <source>Save Settings</source>
-        <translation type="unfinished">Сохранить настройки</translation>
-    </message>
-    <message>
         <source>Delete Personal Data</source>
         <translation>Удалить персональные данные</translation>
     </message>
     <message>
-        <source>Deleting personal data</source>
-        <translation type="obsolete">Удаление персональных данных</translation>
+        <source>Save Settings</source>
+        <translation>Сохранить настройки</translation>
     </message>
     <message>
         <source>Removing personal data</source>
-        <translation type="unfinished"></translation>
+        <translation>Удаление персональных данных</translation>
     </message>
 </context>
 </TS>
