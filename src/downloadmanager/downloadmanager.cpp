@@ -25,3 +25,24 @@ void DownloadManager::createDownload(const QUrl &url)
     di->start();
     emit countChanged();
 }
+
+void DownloadManager::removeCompleted()
+{
+    int i = 0;
+
+    while(i < this->_downloadurls.count())
+    {
+        const QUrl& url = this->_downloadurls[i];
+
+        if(!this->_downloads[url]->completed())
+        {
+            i++;
+            continue;
+        }
+
+        this->_downloads.remove(url);
+        this->_downloadurls.removeAt(i);
+    }
+
+    emit countChanged();
+}

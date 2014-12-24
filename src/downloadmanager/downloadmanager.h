@@ -20,8 +20,9 @@ class DownloadManager : public QObject
         void countChanged();
 
     public slots:
-        void createDownload(const QUrl& url);
         DownloadItem* downloadItem(int index);
+        void createDownload(const QUrl& url);
+        void removeCompleted();
 
     private:
         QHash<QUrl, DownloadItem*> _downloads;

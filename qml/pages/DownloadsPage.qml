@@ -10,23 +10,35 @@ Page
     id: downloadpage
     allowedOrientations: Orientation.All
 
-    PageHeader {
-        id: pageheader
-        title: qsTr("Download Manager")
-    }
-
-    SilicaListView
+    SilicaFlickable
     {
-        anchors.top: pageheader.bottom
-        anchors.left: parent.left
-        anchors.right: parent.right
-        anchors.bottom: parent.bottom
-        model: settings.downloadmanager.count
+        anchors.fill: parent
 
-        delegate: DownloadListItem {
-            contentHeight: Theme.itemSizeLarge
-            width: parent.width
-            downloadItem: settings.downloadmanager.downloadItem(index)
+        PullDownMenu {
+            MenuItem {
+                text: qsTr("Delete completed Downloads")
+                onClicked: settings.downloadmanager.removeCompleted()
+            }
+        }
+
+        PageHeader {
+            id: pageheader
+            title: qsTr("Download Manager")
+        }
+
+        SilicaListView
+        {
+            anchors.top: pageheader.bottom
+            anchors.left: parent.left
+            anchors.right: parent.right
+            anchors.bottom: parent.bottom
+            model: settings.downloadmanager.count
+
+            delegate: DownloadListItem {
+                contentHeight: Theme.itemSizeLarge
+                width: parent.width
+                downloadItem: settings.downloadmanager.downloadItem(index)
+            }
         }
     }
 }

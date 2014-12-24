@@ -74,6 +74,10 @@
         <source>Download Manager</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Delete completed Downloads</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>FavoritePage</name>
