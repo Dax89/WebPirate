@@ -11,10 +11,6 @@ Item
     visible: false
     width: parent.width / 3
 
-    signal favoritesRequested()
-    signal downloadsRequested()
-    signal settingsRequested()
-
     Behavior on visible {
         NumberAnimation {
             target: sidebar
