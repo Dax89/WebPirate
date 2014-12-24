@@ -11,6 +11,8 @@ SilicaWebView
 {
     id: webview
 
+    VerticalScrollDecorator { flickable: webview }
+
     /* Experimental WebView Features */
     experimental.preferences.webGLEnabled: true
     experimental.preferences.dnsPrefetchEnabled: true
