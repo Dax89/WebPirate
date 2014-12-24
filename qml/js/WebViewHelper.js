@@ -27,7 +27,7 @@ function onTouchStart(touchevent)
     if(touchevent.touches.length === 1)
     {
         currtouch = touchevent.touches[0];
-        timerid = setTimeout(checkLongPress, 800, currtouch.clientX, currtouch.clientY, touchevent.target);
+        timerid = setTimeout(checkLongPress, 900, currtouch.clientX, currtouch.clientY, touchevent.target);
     }
 }
 
