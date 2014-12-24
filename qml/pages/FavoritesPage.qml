@@ -17,13 +17,6 @@ Dialog
         id: favoritesview
         anchors.fill: parent
 
-        /*
-        anchors.top: pageheader.bottom
-        anchors.left: parent.left
-        anchors.right: parent.right
-        anchors.bottom: parent.bottom
-        */
-
         onUrlRequested: {
             tabview.pages.get(tabview.currentIndex).tab.load(favoriteurl);
             favoritesdialog.accept();
