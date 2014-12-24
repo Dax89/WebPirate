@@ -25,7 +25,7 @@ Item
               State { name: "loading"; PropertyChanges { target: btnrefresh; icon.source: "image://theme/icon-m-reset" } } ]
 
     Behavior on height {
-        NumberAnimation { duration: 100; easing.type: Easing.InOutQuad }
+        NumberAnimation { duration: 250; easing.type: Easing.InOutQuad }
     }
 
     IconButton
