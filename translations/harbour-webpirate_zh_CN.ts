@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="de">
+<TS version="2.0" language="zh_CN">
 <context>
     <name>ActionSidebar</name>
     <message>
@@ -20,11 +20,7 @@
     <name>BrowserTab</name>
     <message>
         <source>New Tab</source>
-        <translation>Neuer Tab</translation>
-    </message>
-    <message>
-        <source>Accept Certificate from: </source>
-        <translation type="obsolete">Akzeptiere Zertifikate von:</translation>
+        <translation>新标签页</translation>
     </message>
 </context>
 <context>
@@ -39,21 +35,10 @@
     </message>
 </context>
 <context>
-    <name>ConfirmDialog</name>
-    <message>
-        <source>Yes</source>
-        <translation type="obsolete">Ja</translation>
-    </message>
-</context>
-<context>
     <name>CredentialMenu</name>
     <message>
         <source>Do you want to store the password?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Yes</source>
-        <translation type="obsolete">Ja</translation>
+        <translation>保存密码？</translation>
     </message>
 </context>
 <context>
@@ -87,7 +72,7 @@
     <name>DownloadsPage</name>
     <message>
         <source>Download Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>下载管理器</translation>
     </message>
     <message>
         <source>Delete completed Downloads</source>
@@ -98,15 +83,15 @@
     <name>FavoritePage</name>
     <message>
         <source>Save</source>
-        <translation>Speichern</translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>Title</source>
-        <translation>Titel</translation>
+        <translation>标题</translation>
     </message>
     <message>
         <source>Url</source>
-        <translation>Url</translation>
+        <translation>网址</translation>
     </message>
 </context>
 <context>
@@ -120,129 +105,129 @@
     <name>FavoritesView</name>
     <message>
         <source>Edit</source>
-        <translation>Bearbeiten</translation>
+        <translation>编辑</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Löschen</translation>
+        <translation>删除</translation>
     </message>
     <message>
         <source>Deleting Bookmark</source>
-        <translation>Lesezeichen entfernen</translation>
+        <translation>正在删除书签</translation>
     </message>
 </context>
 <context>
     <name>LinkMenu</name>
     <message>
         <source>Open Link</source>
-        <translation type="unfinished"></translation>
+        <translation>打开链接</translation>
     </message>
     <message>
         <source>Open New Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>在新标签页中打开</translation>
     </message>
     <message>
         <source>Remove From Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>从书签中删除</translation>
     </message>
     <message>
         <source>Add To Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>添加到书签</translation>
     </message>
 </context>
 <context>
     <name>LoadFailed</name>
     <message>
         <source>You are in offline mode</source>
-        <translation>Sie benutzen den Offline Modus</translation>
+        <translation>处于离线模式中</translation>
     </message>
 </context>
 <context>
     <name>RequestMenu</name>
     <message>
         <source>Yes</source>
-        <translation type="unfinished">Ja</translation>
+        <translation>是</translation>
     </message>
     <message>
         <source>No</source>
-        <translation type="unfinished"></translation>
+        <translation>否</translation>
     </message>
 </context>
 <context>
     <name>SearchEnginePage</name>
     <message>
         <source>Save</source>
-        <translation>Speichern</translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Name</translation>
+        <translation>名称</translation>
     </message>
     <message>
         <source>Query</source>
-        <translation>Abfrage</translation>
+        <translation>查询网址</translation>
     </message>
 </context>
 <context>
     <name>SearchEnginesPage</name>
     <message>
         <source>Set as Default</source>
-        <translation>Als Standard setzen</translation>
+        <translation>设为默认</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Löschen</translation>
+        <translation>删除</translation>
     </message>
     <message>
         <source>Search Engines</source>
-        <translation>Suchmaschinen</translation>
+        <translation>搜索引擎</translation>
     </message>
     <message>
         <source>Add</source>
-        <translation>Hinzufügen</translation>
+        <translation>添加</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Bearbeiten</translation>
+        <translation>编辑</translation>
     </message>
     <message>
         <source>Deleting Search Engine</source>
-        <translation>Suchmaschine löschen</translation>
+        <translation>正在删除搜索引擎</translation>
     </message>
 </context>
 <context>
     <name>SettingsPage</name>
     <message>
         <source>Home Page</source>
-        <translation>Startseite</translation>
+        <translation>主页</translation>
     </message>
     <message>
         <source>Search Engines</source>
-        <translation>Suchmaschinen</translation>
+        <translation>搜索引擎</translation>
     </message>
     <message>
         <source>User Agent</source>
-        <translation>User Agent</translation>
+        <translation>用户代理</translation>
     </message>
     <message>
         <source>Wipe Data on Exit</source>
-        <translation>Daten beim Beenden löschen</translation>
+        <translation>退出时清除记录</translation>
     </message>
     <message>
         <source>General</source>
-        <translation>Allgemein</translation>
+        <translation>常规设置</translation>
     </message>
     <message>
         <source>Privacy</source>
-        <translation>Privatssphäre</translation>
-    </message>
-    <message>
-        <source>Save Settings</source>
-        <translation type="unfinished">Einstellungen speichern</translation>
+        <translation>隐私设置</translation>
     </message>
     <message>
         <source>Delete Personal Data</source>
-        <translation type="unfinished"></translation>
+        <translation>删除个人记录</translation>
+    </message>
+    <message>
+        <source>Save Settings</source>
+        <translation>保存设置</translation>
     </message>
     <message>
         <source>Removing personal data</source>
