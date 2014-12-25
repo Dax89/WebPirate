@@ -1,4 +1,6 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="de" version="2.0">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.0" language="de">
 <context>
     <name>ActionSidebar</name>
     <message>
@@ -230,6 +232,14 @@
     <message>
         <source>Removing personal data</source>
         <translation>Private Daten werden entfernt</translation>
+    </message>
+    <message>
+        <source>Delete Navigation History</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Removing navigation history</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
