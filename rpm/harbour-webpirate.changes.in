@@ -11,6 +11,7 @@
 * Thu Dec 25 2014 Antonio Davide Trogu <trogu.davide@gmail.com> 0.8-1
 - Implemented Download Manager
 - Added a Sidebar in order to access Favorites, Downloads and Settings
+- Added Android and iPhone user agents
 - WebView's fonts are now bigger
 - Adjusted Pages in order to support Sailfish 1.1.2.27
 - When "Delete on Exit" is enabled, web browser's cache is deleted too
