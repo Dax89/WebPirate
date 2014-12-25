@@ -38,6 +38,7 @@ import "js/Favorites.js" as Favorites
 import "js/SearchEngines.js" as SearchEngines
 import "js/UserAgents.js" as UserAgents
 import "js/Credentials.js" as Credentials
+import "js/History.js" as History
 
 ApplicationWindow
 {
@@ -48,6 +49,7 @@ ApplicationWindow
         Component.onCompleted: {
             Database.load();
             Credentials.createSchema(Database.instance());
+            History.createSchema(Database.instance());
 
             Favorites.load(Database.instance(), settings.favorites);
             SearchEngines.load(Database.instance(), settings.searchengines);
@@ -79,6 +81,7 @@ ApplicationWindow
             webviewdatabase.clearCache();
             webviewdatabase.clearNavigationData();
             Credentials.clear(Database.instance());
+            History.clear(Database.instance());
         }
     }
 }

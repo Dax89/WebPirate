@@ -101,6 +101,16 @@ Item
         id: credentialmenu
     }
 
+    HistoryMenu {
+        id: historymenu
+        anchors.left: parent.left
+        anchors.right: parent.right
+        anchors.top: parent.top
+        anchors.bottom: navigationbar.top
+
+        onUrlRequested: browsertab.load(url)
+    }
+
     FavoritesView
     {
         id: favoritesview
@@ -166,6 +176,13 @@ Item
         onRefreshRequested: webview.reload();
         onStopRequested: webview.stop();
         onSearchRequested: load(searchquery);
+
+        searchBar.onTextChanged: {
+            if(webview.loading)
+                return;
+
+            historymenu.query = text
+        }
     }
 
     onVisibleChanged: {

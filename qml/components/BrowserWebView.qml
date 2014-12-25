@@ -6,6 +6,7 @@ import "../js/UrlHelper.js" as UrlHelper
 import "../js/Database.js" as Database
 import "../js/Favorites.js" as Favorites
 import "../js/Credentials.js" as Credentials
+import "../js/History.js" as History
 
 SilicaWebView
 {
@@ -81,6 +82,8 @@ SilicaWebView
     }
 
     onLoadingChanged: {
+        historymenu.hide();
+
         if(loadRequest.status === WebView.LoadStartedStatus) {
             navigationbar.state = "loading";
             navigationbar.expand();
@@ -98,7 +101,10 @@ SilicaWebView
             navigationbar.favorite = (idx !== -1);
 
             if(!UrlHelper.isSpecialUrl(url.toString()) && UrlHelper.isUrl(url.toString()))
+            {
                 Credentials.compile(Database.instance(), mainwindow.settings, url.toString(), webview);
+                History.store(Database.instance(), url.toString(), title);
+            }
 
             /* FIXME: Check Favicon
             if(navigationbar.favorite)

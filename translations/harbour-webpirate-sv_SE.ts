@@ -20,7 +20,7 @@
     <name>BrowserTab</name>
     <message>
         <source>New Tab</source>
-        <translation>Ny flik</translation>
+        <translation type="unfinished">Ny flik</translation>
     </message>
 </context>
 <context>

@@ -20,7 +20,7 @@
     <name>BrowserTab</name>
     <message>
         <source>New Tab</source>
-        <translation>Nova pestanya</translation>
+        <translation type="unfinished">Nova pestanya</translation>
     </message>
 </context>
 <context>

@@ -9,6 +9,7 @@ Rectangle
     property string title
     property string url
 
+    signal textChanged(string text)
     signal returnPressed(string searchquery)
 
     Image
@@ -53,6 +54,8 @@ Rectangle
             text = title;
             deselect();
         }
+
+        onTextChanged: searchbar.textChanged(text)
     }
 
     onUrlChanged: {

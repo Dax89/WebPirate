@@ -20,7 +20,7 @@
     <name>BrowserTab</name>
     <message>
         <source>New Tab</source>
-        <translation>新标签页</translation>
+        <translation type="unfinished">新标签页</translation>
     </message>
 </context>
 <context>

@@ -20,7 +20,7 @@
     <name>BrowserTab</name>
     <message>
         <source>New Tab</source>
-        <translation>Nieuw tabblad</translation>
+        <translation type="unfinished">Nieuw tabblad</translation>
     </message>
 </context>
 <context>
