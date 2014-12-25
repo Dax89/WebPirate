@@ -27,14 +27,12 @@ function onTouchStart(touchevent)
     if(touchevent.touches.length === 1)
     {
         currtouch = touchevent.touches[0];
-        timerid = setTimeout(checkLongPress, 900, currtouch.clientX, currtouch.clientY, touchevent.target);
+        timerid = setTimeout(checkLongPress, 1250, currtouch.clientX, currtouch.clientY, touchevent.target);
     }
 }
 
 function onTouchEnd(touchevent)
 {
-    lasty = touchevent.touches[0].clientY;
-
     if(islongpress)
     {
         islongpress = false;
@@ -43,6 +41,7 @@ function onTouchEnd(touchevent)
 
     currtouch = null;
     clearTimeout(timerid);
+    lasty = touchevent.touches[0].clientY;
 }
 
 function onTouchMove(touchevent)
