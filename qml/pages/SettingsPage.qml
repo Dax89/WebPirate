@@ -98,26 +98,16 @@ Dialog
                 width: parent.width
                 height: Theme.itemSizeSmall
 
-                Switch
+                TextSwitch
                 {
                     id: swclearonexit
-                    width: Theme.itemSizeSmall
+                    text: qsTr("Wipe Data on Exit")
+                    width: parent.width
                     height: parent.height
                     checked: settings.clearonexit
-
-                    onCheckedChanged: {
-                        settings.clearonexit = checked;
-                    }
+                    onClicked: settings.clearonexit = checked
                 }
 
-                Label
-                {
-                    id: lblwipedata
-                    height: parent.height
-                    width: parent.width - swclearonexit.width
-                    verticalAlignment: Text.AlignVCenter
-                    text: qsTr("Wipe Data on Exit");
-                }
             }
 
             /*
