@@ -1,82 +1,80 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.0" language="de_DE">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="de" version="2.0">
 <context>
     <name>ActionSidebar</name>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Favoriten</translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation type="unfinished"></translation>
+        <translation>Downloads</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Einstellungen</translation>
     </message>
 </context>
 <context>
     <name>BrowserTab</name>
     <message>
         <source>New Tab</source>
-        <translation type="unfinished">Neuer Tab</translation>
+        <translation>Neuer Tab</translation>
     </message>
 </context>
 <context>
     <name>BrowserWebView</name>
     <message>
         <source>Accept Certificate from:</source>
-        <translation type="unfinished"></translation>
+        <translation>Akzeptiere Zertifikat von:</translation>
     </message>
     <message>
         <source>Downloading</source>
-        <translation type="unfinished"></translation>
+        <translation>Herunterladen</translation>
     </message>
 </context>
 <context>
     <name>CredentialMenu</name>
     <message>
         <source>Do you want to store the password?</source>
-        <translation type="unfinished"></translation>
+        <translation>Passwort speichern?</translation>
     </message>
 </context>
 <context>
     <name>DownloadListItem</name>
     <message>
         <source>Restart</source>
-        <translation type="unfinished"></translation>
+        <translation>Neustart</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Abbruch</translation>
     </message>
     <message>
         <source>Completed:</source>
-        <translation type="unfinished"></translation>
+        <translation>Fertiggestellt:</translation>
     </message>
     <message>
         <source>Speed:</source>
-        <translation type="unfinished"></translation>
+        <translation>Geschwindigkeit</translation>
     </message>
     <message>
         <source>Completed</source>
-        <translation type="unfinished"></translation>
+        <translation>Fertiggestellt</translation>
     </message>
     <message>
         <source>Error:</source>
-        <translation type="unfinished"></translation>
+        <translation>Fehler:</translation>
     </message>
 </context>
 <context>
     <name>DownloadsPage</name>
     <message>
         <source>Download Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Download Manager</translation>
     </message>
     <message>
         <source>Delete completed Downloads</source>
-        <translation type="unfinished"></translation>
+        <translation>Lösche fertiggestellte Downloads</translation>
     </message>
 </context>
 <context>
@@ -98,7 +96,7 @@
     <name>FavoritesPage</name>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Favoriten</translation>
     </message>
 </context>
 <context>
@@ -113,44 +111,44 @@
     </message>
     <message>
         <source>Deleting Bookmark</source>
-        <translation>Lösche Lesezeichen</translation>
+        <translation>Lesezeichen entfernen</translation>
     </message>
 </context>
 <context>
     <name>LinkMenu</name>
     <message>
         <source>Open Link</source>
-        <translation type="unfinished"></translation>
+        <translation>Link öffnen</translation>
     </message>
     <message>
         <source>Open New Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Neuen Tab öffnen</translation>
     </message>
     <message>
         <source>Remove From Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Aus Favoriten entfernen</translation>
     </message>
     <message>
         <source>Add To Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Zu Favoriten hinzufügen</translation>
     </message>
 </context>
 <context>
     <name>LoadFailed</name>
     <message>
         <source>You are in offline mode</source>
-        <translation>Du bist im Offlinemodus</translation>
+        <translation>Sie benutzen den Offline Modus</translation>
     </message>
 </context>
 <context>
     <name>RequestMenu</name>
     <message>
         <source>Yes</source>
-        <translation type="unfinished"></translation>
+        <translation>Ja</translation>
     </message>
     <message>
         <source>No</source>
-        <translation type="unfinished"></translation>
+        <translation>Nein</translation>
     </message>
 </context>
 <context>
@@ -165,7 +163,7 @@
     </message>
     <message>
         <source>Query</source>
-        <translation>Anfrage</translation>
+        <translation>Abfrage</translation>
     </message>
 </context>
 <context>
@@ -192,7 +190,7 @@
     </message>
     <message>
         <source>Deleting Search Engine</source>
-        <translation>Lösche Suchmaschine</translation>
+        <translation>Suchmaschine löschen</translation>
     </message>
 </context>
 <context>
@@ -211,7 +209,7 @@
     </message>
     <message>
         <source>Wipe Data on Exit</source>
-        <translation>Lösche Daten beim Beenden</translation>
+        <translation>Daten beim Beenden löschen</translation>
     </message>
     <message>
         <source>General</source>
@@ -219,27 +217,19 @@
     </message>
     <message>
         <source>Privacy</source>
-        <translation>Privatsphäre</translation>
+        <translation>Privatssphäre</translation>
     </message>
     <message>
         <source>Delete Personal Data</source>
-        <translation type="unfinished"></translation>
+        <translation>Private Daten löschen</translation>
     </message>
     <message>
         <source>Save Settings</source>
-        <translation>Einstellungen Speichern</translation>
+        <translation>Einstellungen speichern</translation>
     </message>
     <message>
         <source>Removing personal data</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Delete Navigation History</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Removing navigation history</source>
-        <translation type="unfinished"></translation>
+        <translation>Private Daten werden entfernt</translation>
     </message>
 </context>
 </TS>
