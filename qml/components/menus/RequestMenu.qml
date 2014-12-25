@@ -8,6 +8,7 @@ PopupMenu
 
     id: requestmenu
     popupModel: 1
+    anchors.fill: parent
 
     popupDelegate: Row {
         width: parent.width

@@ -10,6 +10,7 @@ PopupMenu
     visible: true
     titleVisible: false
     onClicked: selectorModel.reject();
+    anchors.fill: parent
 
     popupDelegate: ListItem {
         highlighted: model.selected

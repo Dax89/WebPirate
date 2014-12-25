@@ -3,75 +3,61 @@ import Sailfish.Silica 1.0
 import "../../js/Database.js" as Database
 import "../../js/History.js" as History
 
-MouseArea
+PopupMenu
 {
     property string query
 
     signal urlRequested(string url)
 
-    function hide() {
-        historymenu.hide();
-        visible = false;
-    }
-
-    PopupMenu
-    {
-        id: historymenu
-        titleVisible: false
-        popupModel: ListModel { }
-
-        popupDelegate: ListItem {
-            width: parent.width
-            height: Theme.itemSizeSmall
-
-            Column {
-                anchors.fill: parent
-
-                Label {
-                    id: lbltitle
-                    width: parent.width
-                    height: parent.height / 2
-                    color: Theme.secondaryHighlightColor
-                    font.bold: true
-                    font.family: Theme.fontFamilyHeading
-                    font.pixelSize: Theme.fontSizeExtraSmall
-                    verticalAlignment: Text.AlignVCenter
-                    text: title
-                }
-
-                Label {
-                    id: lblurl
-                    width: parent.width
-                    height: parent.height / 2
-                    font.pixelSize: Theme.fontSizeExtraSmall
-                    verticalAlignment: Text.AlignVCenter
-                    text: url
-                }
-            }
-
-            onClicked: urlRequested(url)
-        }
-    }
-
-    visible: false
-    z: 10
-
-    onClicked: {
-        historymenu.popupModel.clear();
-        historymenu.hide();
-        visible = false
-    }
+    id: historymenu
+    titleVisible: false
+    popupModel: ListModel { }
 
     onQueryChanged: {
-        History.match(Database.instance(), query, historymenu.popupModel);
+        History.match(Database.instance(), query, popupModel);
 
-        if(historymenu.popupModel.count === 0)
+        if(popupModel.count === 0)
         {
             hide();
             return;
         }
 
-        visible = true;
-        historymenu.show();
+        show();
+    }
+
+    popupDelegate: ListItem {
+        width: parent.width
+        height: Theme.itemSizeSmall
+
+        Column {
+            anchors.fill: parent
+            anchors.leftMargin: Theme.paddingSmall
+            anchors.rightMargin: Theme.paddingSmall
+
+            Label {
+                id: lbltitle
+                width: parent.width
+                height: parent.height / 2
+                color: Theme.secondaryHighlightColor
+                font.bold: true
+                font.family: Theme.fontFamilyHeading
+                font.pixelSize: Theme.fontSizeExtraSmall
+                verticalAlignment: Text.AlignVCenter
+                elide: Text.ElideRight
+                text: title
+            }
+
+            Label {
+                id: lblurl
+                width: parent.width
+                height: parent.height / 2
+                font.pixelSize: Theme.fontSizeExtraSmall
+                verticalAlignment: Text.AlignVCenter
+                elide: Text.ElideRight
+                text: url
+            }
+        }
+
+        onClicked: urlRequested(url)
     }
 }

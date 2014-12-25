@@ -1,9 +1,11 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
+import "../components"
 import "../models"
 import "../js/UrlHelper.js" as UrlHelper
 import "../js/Database.js" as Database
 import "../js/Credentials.js" as Credentials
+import "../js/History.js" as History
 
 Dialog
 {
@@ -107,7 +109,6 @@ Dialog
                     checked: settings.clearonexit
                     onClicked: settings.clearonexit = checked
                 }
-
             }
 
             /*
@@ -139,32 +140,28 @@ Dialog
             }
             */
 
-            Item
+            SettingLabel
             {
                 width: parent.width
                 height: Theme.itemSizeSmall
+                labelText: qsTr("Delete Navigation History")
+                actionMessage: qsTr("Removing navigation history")
 
-                BackgroundItem
-                {
-                    id: bideletepersdata
-                    anchors.fill: parent
+                onActionRequested: History.clear(Database.instance())
+            }
 
-                    RemorseItem { id: rideletepersdata }
+            SettingLabel
+            {
+                width: parent.width
+                height: Theme.itemSizeSmall
+                labelText: qsTr("Delete Personal Data")
+                actionMessage: qsTr("Removing personal data")
 
-                    Label
-                    {
-                        anchors.fill: parent
-                        anchors.leftMargin: Theme.paddingLarge
-                        text: qsTr("Delete Personal Data");
-                        verticalAlignment: Text.AlignVCenter
-                    }
-
-                    onClicked: rideletepersdata.execute(bideletepersdata, qsTr("Removing personal data"),
-                                                        function() {
-                                                            webviewdatabase.clearCache();
-                                                            webviewdatabase.clearNavigationData();
-                                                            Credentials.clear(Database.instance());
-                                                        });
+                onActionRequested: {
+                    webviewdatabase.clearCache();
+                    webviewdatabase.clearNavigationData();
+                    Credentials.clear(Database.instance());
+                    History.clear(Database.instance());
                 }
             }
         }

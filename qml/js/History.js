@@ -32,6 +32,13 @@ function store(db, url, title)
     });
 }
 
+function remove(db, url)
+{
+    db.transaction(function(tx) {
+        tx.executeSql("DELETE FROM History WHERE url=?", [url]);
+    });
+}
+
 function match(db, query, model)
 {
     model.clear();

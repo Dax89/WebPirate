@@ -21,7 +21,6 @@ MouseArea
 
     id: mousearea
     visible: false
-    anchors.fill: parent
     z: 10
     onClicked: hide()
 

@@ -13,6 +13,7 @@ PopupMenu
 
     id: linkmenu
     titleVisible: true
+    anchors.fill: parent
 
     onUrlChanged: {
         favorite = mainwindow.settings.favorites.contains(linkmenu.url);

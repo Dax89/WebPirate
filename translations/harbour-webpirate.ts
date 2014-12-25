@@ -233,5 +233,13 @@
         <source>Removing personal data</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Delete Navigation History</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Removing navigation history</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 </TS>
