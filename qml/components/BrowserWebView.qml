@@ -83,6 +83,7 @@ SilicaWebView
     onLoadingChanged: {
         if(loadRequest.status === WebView.LoadStartedStatus) {
             navigationbar.state = "loading";
+            navigationbar.expand();
             linkmenu.hide();
         }
         else if(loadRequest.status === WebView.LoadFailedStatus) {
