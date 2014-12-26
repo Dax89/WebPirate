@@ -49,7 +49,7 @@ function match(db, query, model)
     var querywc = "%" + query + "%";
 
     db.transaction(function(tx) {
-        var res = tx.executeSql("SELECT * FROM History WHERE url LIKE ? OR title LIKE ? ORDER BY lastvisit DESC LIMIT 10", [querywc, querywc]);
+        var res = tx.executeSql("SELECT * FROM History WHERE url LIKE ? OR title LIKE ? ORDER BY lastvisit ASC LIMIT 10", [querywc, querywc]);
 
         for(var i = 0; i < res.rows.length; i++)
             model.append(res.rows[i]);
