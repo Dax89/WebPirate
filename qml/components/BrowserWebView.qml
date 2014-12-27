@@ -84,7 +84,7 @@ SilicaWebView
         maximumValue: 100
         width: webview.width
         value: webview.loadProgress
-        height: 4
+        hideWhenFinished: true
     }
 
     onLoadingChanged: {
