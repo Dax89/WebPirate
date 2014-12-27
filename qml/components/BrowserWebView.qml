@@ -78,15 +78,6 @@ SilicaWebView
                                });
     }
 
-    header: LoadingBar {
-        id: loadingbar
-        minimumValue: 0
-        maximumValue: 100
-        width: webview.width
-        value: webview.loadProgress
-        hideWhenFinished: true
-    }
-
     onLoadingChanged: {
         historymenu.hide();
         sidebar.collapse();

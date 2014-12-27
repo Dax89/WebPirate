@@ -141,6 +141,20 @@ Item
         }
     }
 
+    LoadingBar
+    {
+        id: loadingbar
+        z: 1
+        anchors.left: parent.left
+        anchors.top: parent.top
+        anchors.right: parent.right
+        minimumValue: 0
+        maximumValue: 100
+        width: webview.width
+        value: webview.loadProgress
+        hideWhenFinished: true
+    }
+
     Item
     {
         id: container
