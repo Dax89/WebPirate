@@ -42,35 +42,36 @@ MouseArea
 
         onHeightChanged: visible = (height > 0 ? true : false)
 
-        Column
+        Label
         {
-            anchors.fill: parent
+            id: lblheader
+            width: parent.width
+            height: Theme.itemSizeSmall
+            color: Theme.secondaryHighlightColor
+            font.family: Theme.fontFamilyHeading
+            font.pixelSize: Theme.fontSizeSmall
+            elide: Text.ElideRight
+            wrapMode: Text.WordWrap
+            verticalAlignment: Text.AlignVCenter
+            horizontalAlignment: Text.AlignHCenter
+            visible: titleVisible
+            clip: true
+        }
 
-            Label
+        SilicaListView
+        {
+            id: listview
+            clip: true
+
+            anchors
             {
-                id: lblheader
-                width: parent.width
-                height: Theme.itemSizeSmall
-                color: Theme.secondaryHighlightColor
-                font.family: Theme.fontFamilyHeading
-                font.pixelSize: Theme.fontSizeSmall
-                elide: Text.ElideRight
-                wrapMode: Text.WordWrap
-                verticalAlignment: Text.AlignVCenter
-                horizontalAlignment: Text.AlignHCenter
-                visible: titleVisible
-                clip: true
+                left: parent.left
+                top: lblheader.bottom
+                right: parent.right
+                bottom: parent.bottom
             }
 
-            SilicaListView
-            {
-                id: listview
-                width: parent.width
-                height: parent.height
-                clip: true
-
-                VerticalScrollDecorator { flickable: listview }
-            }
+            VerticalScrollDecorator { flickable: listview }
         }
     }
 }
