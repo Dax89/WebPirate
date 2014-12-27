@@ -11,7 +11,8 @@ MouseArea
 
     function show() {
         mousearea.visible = true;
-        popupmenu.height = (Theme.itemSizeSmall * Math.min(3, listview.count)) + (titleVisible ? lblheader.height : 0);
+        popupmenu.height = (Theme.itemSizeSmall * Math.min(3, listview.count)) + (titleVisible ? Theme.itemSizeSmall : 0);
+        focus = true;
     }
 
     function hide() {

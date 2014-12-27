@@ -94,7 +94,13 @@ function checkLongPress(x, y, target)
         data.url = target.href;
         data.isimage = false;
     }
-    else if(target.tagName === "IMG") {
+    else if(target.parentNode.tagName === 'A')
+    {
+        data.url = target.parentNode.href;
+        data.isimage = false;
+    }
+    else if(target.tagName === "IMG")
+    {
         data.url = target.src;
         data.isimage = true;
     }
@@ -113,7 +119,7 @@ function onTouchStart(touchevent)
     if(touchevent.touches.length === 1)
     {
         currtouch = touchevent.touches[0];
-        timerid = setTimeout(checkLongPress, 850, currtouch.clientX, currtouch.clientY, touchevent.target);
+        timerid = setTimeout(checkLongPress, 800, currtouch.clientX, currtouch.clientY, touchevent.target);
     }
 
     var data = new Object;
@@ -136,12 +142,16 @@ function onTouchEnd(touchevent)
 
 function onTouchMove(touchevent)
 {
-    islongpress = false;
-    currtouch = null;
+    if(islongpress)
+    {
+        islongpress = false;
+        touchevent.preventDefault();
+    }
+
     clearTimeout(timerid);
+    currtouch = null;
 
     var currenty = touchevent.touches[0].clientY;
-
     var data = new Object;
     data.type = "touchmove";
 
