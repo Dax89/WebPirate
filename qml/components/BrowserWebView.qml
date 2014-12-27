@@ -35,9 +35,6 @@ SilicaWebView
             else if(data.movedown)
                 navigationbar.expand();
         }
-        else if(data.type === "selectionchanged") {
-            selector.show(data.left, data.top, data.right, data.bottom);
-        }
         else if(data.type === "longpress") {
             credentialmenu.hide();
 
