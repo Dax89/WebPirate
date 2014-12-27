@@ -134,6 +134,14 @@
         <source>Add To Favorites</source>
         <translation>Lägg till i Favoriter</translation>
     </message>
+    <message>
+        <source>Save Link Destination</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Downloading Link</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>LoadFailed</name>

@@ -22,11 +22,11 @@ PopupMenu
 
     popupModel: [ qsTr("Open Link"),
                   qsTr("Open New Tab"),
-                  linkmenu.favorite ? qsTr("Remove From Favorites") : qsTr("Add To Favorites") ]
+                  linkmenu.favorite ? qsTr("Remove From Favorites") : qsTr("Add To Favorites"),
+                  qsTr("Save Link Destination")]
 
     popupDelegate: ListItem {
         width: parent.width
-        height: Theme.itemSizeSmall
 
         Label {
             anchors.fill: parent
@@ -49,6 +49,11 @@ PopupMenu
                     linkmenu.addToFavoritesRequested(linkmenu.url);
                 else
                     linkmenu.removeFromFavoritesRequested(linkmenu.url);
+            }
+            else if(index === 3) {
+                tabviewremorse.execute(qsTr("Downloading link"), function() {
+                    mainwindow.settings.downloadmanager.createDownload(linkmenu.url);
+                });
             }
         }
     }
