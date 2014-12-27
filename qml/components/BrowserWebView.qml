@@ -79,13 +79,12 @@ SilicaWebView
     }
 
     onLoadingChanged: {
-        historymenu.hide();
-        sidebar.collapse();
-
         if(loadRequest.status === WebView.LoadStartedStatus) {
             navigationbar.state = "loading";
             navigationbar.expand();
             linkmenu.hide();
+            sidebar.collapse();
+            historymenu.hide();
         }
         else if(loadRequest.status === WebView.LoadFailedStatus) {
             loadfailed.offline = experimental.offline;
