@@ -16,6 +16,7 @@ Item
             name: "favorites";
             PropertyChanges { target: container; visible: false; }
             PropertyChanges { target: favoritesview; visible: true }
+            PropertyChanges { target: loadingbar; visible: false }
             PropertyChanges { target: loadfailed; visible: false }
         },
 
@@ -30,6 +31,7 @@ Item
             name: "loaderror";
             PropertyChanges { target: container; visible: false; }
             PropertyChanges { target: favoritesview; visible: false }
+            PropertyChanges { target: loadingbar; visible: false }
             PropertyChanges { target: loadfailed; visible: true }
         } ]
 
