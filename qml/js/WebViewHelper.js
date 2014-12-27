@@ -3,17 +3,96 @@ var lasty;
 var islongpress = false;
 var currtouch = null;
 
+/*
+function getTextNodes(node)
+{
+    var textnodes = [];
+
+    if(node.nodeType === 3)
+        textnodes.push(node);
+    else
+    {
+        var children = node.childNodes;
+
+        for(var i = 0; i < children.length; i++)
+            textnodes.push.apply(textnodes, getTextNodes(children[i]));
+    }
+
+    return textnodes;
+}
+
+function clearSelection()
+{
+    var sel = window.getSelection();
+    sel.removeAllRanges();
+    return sel;
+}
+
+function selectText(element, start, end)
+{
+    var range = document.createRange();
+    range.selectNodeContents(element);
+
+    var foundstart = false;
+    var charcount = 0, endcharcount;
+    var textnodes = getTextNodes(element);
+
+    for(var i = 0, tn; (tn = textnodes[i++]); )
+    {
+        endcharcount = charcount + tn.length;
+
+        if(!foundstart && (start >= charcount) && (start < endcharcount || (start === endcharcount && i < textnodes.length)))
+        {
+            range.setStart(tn, start - charcount);
+            foundstart = true;
+        }
+
+        if(foundstart && (end < endcharcount))
+        {
+            range.setEnd(tn, end - charcount);
+            break;
+        }
+
+        charcount = endcharcount;
+    }
+
+    var sel = clearSelection();
+    sel.addRange(range);
+
+    var clientrects = range.getClientRects();
+
+    if(!clientrects.length)
+        return;
+
+    var data = new Object;
+    data.type = "selectionchanged";
+    data.left = clientrects[0].left;
+    data.top = clientrects[0].top;
+    data.right = clientrects[clientrects.length - 1].right;
+    data.bottom = clientrects[clientrects.length - 1].bottom;
+
+    navigator.qt.postMessage(JSON.stringify(data));
+}
+*/
+
 function checkLongPress(x, y, target)
 {
     islongpress = true;
+    var rect = target.getBoundingClientRect();
 
     var data = new Object;
     data.type = "longpress";
     data.x = x;
     data.y = y;
+    data.left = rect.left;
+    data.top = rect.top;
+    data.width = rect.width;
+    data.height = rect.height;
 
     if(target.tagName === "A")
         data.url = target.href;
+    else if(target.textContent)
+        data.text = target.innerText;
     else
         return;
 

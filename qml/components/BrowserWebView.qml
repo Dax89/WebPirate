@@ -23,8 +23,6 @@ SilicaWebView
     experimental.preferences.developerExtrasEnabled: true
     experimental.userScripts: [Qt.resolvedUrl("../js/WebViewHelper.js")]
     experimental.userAgent: mainwindow.settings.useragents.get(mainwindow.settings.useragent).value
-    experimental.deviceWidth: Screen.width
-    experimental.deviceHeight: Screen.height
 
     experimental.onMessageReceived: {
         var data = JSON.parse(message.data);
@@ -35,11 +33,19 @@ SilicaWebView
             else if(data.movedown)
                 navigationbar.expand();
         }
+        else if(data.type === "selectionchanged") {
+            selector.show(data.left, data.top, data.right, data.bottom);
+        }
         else if(data.type === "longpress") {
             credentialmenu.hide();
 
-            linkmenu.url = data.url;
-            linkmenu.show();
+            if(data.url) {
+                linkmenu.url = data.url;
+                linkmenu.show();
+            }
+            else if(data.text) {
+                pageStack.push(Qt.resolvedUrl("../pages/TextSelectionPage.qml"), { "text": data.text });
+            }
         }
         else if(data.type === "submit") {
             linkmenu.hide();

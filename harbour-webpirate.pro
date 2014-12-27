@@ -61,7 +61,8 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/pages/FavoritesPage.qml \
     qml/js/History.js \
     qml/components/menus/HistoryMenu.qml \
-    qml/components/SettingLabel.qml
+    qml/components/SettingLabel.qml \
+    qml/pages/TextSelectionPage.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line
