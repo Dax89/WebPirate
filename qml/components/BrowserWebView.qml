@@ -27,7 +27,9 @@ SilicaWebView
     experimental.onMessageReceived: {
         var data = JSON.parse(message.data);
 
-        if(data.type === "touchmove") {
+        if(data.type === "touchstart")
+            sidebar.collapse();
+        else if(data.type === "touchmove") {
             if(data.moveup)
                 navigationbar.collapse();
             else if(data.movedown)
@@ -89,6 +91,7 @@ SilicaWebView
 
     onLoadingChanged: {
         historymenu.hide();
+        sidebar.collapse();
 
         if(loadRequest.status === WebView.LoadStartedStatus) {
             navigationbar.state = "loading";
