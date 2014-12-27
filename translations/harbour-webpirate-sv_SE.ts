@@ -20,7 +20,7 @@
     <name>BrowserTab</name>
     <message>
         <source>New Tab</source>
-        <translation type="unfinished">Ny flik</translation>
+        <translation>Ny flik</translation>
     </message>
 </context>
 <context>
@@ -119,10 +119,6 @@
 <context>
     <name>LinkMenu</name>
     <message>
-        <source>Open Link</source>
-        <translation type="obsolete">Öppna länk</translation>
-    </message>
-    <message>
         <source>Open New Tab</source>
         <translation>Öppna ny flik</translation>
     </message>
@@ -136,27 +132,27 @@
     </message>
     <message>
         <source>Save Link Destination</source>
-        <translation type="unfinished"></translation>
+        <translation>Spara länkdestination</translation>
     </message>
     <message>
         <source>Copy Link</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopiera länk</translation>
     </message>
     <message>
         <source>Save Image</source>
-        <translation type="unfinished"></translation>
+        <translation>Spara bild</translation>
     </message>
     <message>
         <source>Downloading image</source>
-        <translation type="unfinished"></translation>
+        <translation>Laddar ner bild</translation>
     </message>
     <message>
         <source>Downloading link</source>
-        <translation type="unfinished"></translation>
+        <translation>Laddar ner länk</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation type="unfinished"></translation>
+        <translation>Öppna</translation>
     </message>
 </context>
 <context>
@@ -259,18 +255,18 @@
     </message>
     <message>
         <source>Delete Navigation History</source>
-        <translation type="unfinished"></translation>
+        <translation>Ta bort surfhistorik</translation>
     </message>
     <message>
         <source>Removing navigation history</source>
-        <translation type="unfinished"></translation>
+        <translation>Tar bort surfhistorik</translation>
     </message>
 </context>
 <context>
     <name>TextSelectionPage</name>
     <message>
         <source>Done</source>
-        <translation type="unfinished"></translation>
+        <translation>Klar</translation>
     </message>
 </context>
 </TS>

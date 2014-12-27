@@ -20,7 +20,7 @@
     <name>BrowserTab</name>
     <message>
         <source>New Tab</source>
-        <translation type="unfinished">Nuova scheda</translation>
+        <translation>Nuova scheda</translation>
     </message>
 </context>
 <context>
@@ -119,10 +119,6 @@
 <context>
     <name>LinkMenu</name>
     <message>
-        <source>Open Link</source>
-        <translation type="obsolete">Apri collegamento</translation>
-    </message>
-    <message>
         <source>Open New Tab</source>
         <translation>Apri in una nuova scheda</translation>
     </message>
@@ -136,27 +132,27 @@
     </message>
     <message>
         <source>Save Link Destination</source>
-        <translation type="unfinished"></translation>
+        <translation>Salva destinazione</translation>
     </message>
     <message>
         <source>Copy Link</source>
-        <translation type="unfinished"></translation>
+        <translation>Copia indirizzo</translation>
     </message>
     <message>
         <source>Save Image</source>
-        <translation type="unfinished"></translation>
+        <translation>Salva immagine</translation>
     </message>
     <message>
         <source>Downloading image</source>
-        <translation type="unfinished"></translation>
+        <translation>Download immagine</translation>
     </message>
     <message>
         <source>Downloading link</source>
-        <translation type="unfinished"></translation>
+        <translation>Download link</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation type="unfinished"></translation>
+        <translation>Apri</translation>
     </message>
 </context>
 <context>
@@ -259,18 +255,18 @@
     </message>
     <message>
         <source>Delete Navigation History</source>
-        <translation type="unfinished"></translation>
+        <translation>Cancella cronologia di navigazione</translation>
     </message>
     <message>
         <source>Removing navigation history</source>
-        <translation type="unfinished"></translation>
+        <translation>Rimozione cronologia di navigazione</translation>
     </message>
 </context>
 <context>
     <name>TextSelectionPage</name>
     <message>
         <source>Done</source>
-        <translation type="unfinished"></translation>
+        <translation>Fatto</translation>
     </message>
 </context>
 </TS>

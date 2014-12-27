@@ -20,7 +20,7 @@
     <name>BrowserTab</name>
     <message>
         <source>New Tab</source>
-        <translation type="unfinished">Nieuw tabblad</translation>
+        <translation>Nieuw tabblad</translation>
     </message>
 </context>
 <context>
@@ -119,10 +119,6 @@
 <context>
     <name>LinkMenu</name>
     <message>
-        <source>Open Link</source>
-        <translation type="obsolete">Link openen</translation>
-    </message>
-    <message>
         <source>Open New Tab</source>
         <translation>Nieuw tabblad openen</translation>
     </message>
@@ -136,27 +132,27 @@
     </message>
     <message>
         <source>Save Link Destination</source>
-        <translation type="unfinished"></translation>
+        <translation>Linkbestemming opslaan</translation>
     </message>
     <message>
         <source>Copy Link</source>
-        <translation type="unfinished"></translation>
+        <translation>Link kopiëren</translation>
     </message>
     <message>
         <source>Save Image</source>
-        <translation type="unfinished"></translation>
+        <translation>Afbeelding opslaan</translation>
     </message>
     <message>
         <source>Downloading image</source>
-        <translation type="unfinished"></translation>
+        <translation>Bezig met downloaden van afbeelding</translation>
     </message>
     <message>
         <source>Downloading link</source>
-        <translation type="unfinished"></translation>
+        <translation>Bezig met downloaden van link</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation type="unfinished"></translation>
+        <translation>Openen</translation>
     </message>
 </context>
 <context>
@@ -259,18 +255,18 @@
     </message>
     <message>
         <source>Delete Navigation History</source>
-        <translation type="unfinished"></translation>
+        <translation>Surfgeschiedenis wissen</translation>
     </message>
     <message>
         <source>Removing navigation history</source>
-        <translation type="unfinished"></translation>
+        <translation>Bezig met wissen van surfgeschiedenis</translation>
     </message>
 </context>
 <context>
     <name>TextSelectionPage</name>
     <message>
         <source>Done</source>
-        <translation type="unfinished"></translation>
+        <translation>Klaar</translation>
     </message>
 </context>
 </TS>
