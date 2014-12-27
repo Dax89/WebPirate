@@ -119,10 +119,6 @@
 <context>
     <name>LinkMenu</name>
     <message>
-        <source>Open Link</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Open New Tab</source>
         <translation type="unfinished"></translation>
     </message>
@@ -139,7 +135,23 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Downloading Link</source>
+        <source>Copy Link</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Save Image</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Downloading image</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Downloading link</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Open</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

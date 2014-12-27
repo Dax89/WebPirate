@@ -40,6 +40,7 @@ SilicaWebView
 
             if(data.url) {
                 linkmenu.url = data.url;
+                linkmenu.isimage = data.isimage;
                 linkmenu.show();
             }
             else if(data.text) {

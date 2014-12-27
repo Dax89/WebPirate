@@ -90,7 +90,14 @@ function checkLongPress(x, y, target)
     data.height = rect.height;
 
     if(target.tagName === "A")
+    {
         data.url = target.href;
+        data.isimage = false;
+    }
+    else if(target.tagName === "IMG") {
+        data.url = target.src;
+        data.isimage = true;
+    }
     else if(target.textContent)
         data.text = target.innerText;
     else
