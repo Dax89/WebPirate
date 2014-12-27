@@ -56,6 +56,10 @@ MouseArea
             horizontalAlignment: Text.AlignHCenter
             visible: titleVisible
             clip: true
+
+            onVisibleChanged: {
+                height = visible ? Theme.itemSizeSmall : 0;
+            }
         }
 
         SilicaListView
