@@ -170,7 +170,7 @@ Item
 
         ShaderEffectSource
         {
-            id: webviewshader
+            id: webviewsheader
             anchors.fill: webview
             sourceItem: webview
             hideSource: true
