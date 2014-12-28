@@ -167,15 +167,23 @@ Item
         {
             id: webview
             anchors.fill: parent
+
+            onCanRender: {
+                webviewrender.live = container.visible && renderstate;
+            }
         }
 
         ShaderEffectSource
         {
-            id: webviewsheader
+            id: webviewrender
             anchors.fill: webview
             sourceItem: webview
             hideSource: true
-            live: container.visible && !webview.loading
+            live: false
+        }
+
+        onVisibleChanged: {
+            webviewrender.live = visible;
         }
     }
 
