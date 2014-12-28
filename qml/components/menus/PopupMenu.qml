@@ -24,6 +24,10 @@ MouseArea
     z: 10
     onClicked: hide()
 
+    onTitleVisibleChanged: {
+        lblheader.visible = titleVisible
+    }
+
     Rectangle
     {
         id: popupmenu
@@ -54,7 +58,6 @@ MouseArea
             wrapMode: Text.WordWrap
             verticalAlignment: Text.AlignVCenter
             horizontalAlignment: Text.AlignHCenter
-            visible: titleVisible
             clip: true
 
             onVisibleChanged: {
