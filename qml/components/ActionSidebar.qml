@@ -91,6 +91,14 @@ Rectangle
                     }
                 }
 
+                Rectangle
+                {
+                    anchors { left: parent.left; bottom: parent.top; right: parent.right }
+                    height: 1
+                    color: Theme.secondaryColor
+                    visible: index > 0
+                }
+
                 onClicked: {
                     if(index === 0)
                         pageStack.push(Qt.resolvedUrl("../pages/FavoritesPage.qml"), { "settings": mainwindow.settings, "tabview": tabview });
