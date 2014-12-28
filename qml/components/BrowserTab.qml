@@ -147,6 +147,7 @@ Item
     {
         id: loadingbar
         z: 1
+        visible: false
         anchors.left: parent.left
         anchors.top: parent.top
         anchors.right: parent.right
@@ -174,7 +175,7 @@ Item
             anchors.fill: webview
             sourceItem: webview
             hideSource: true
-            live: container.visible
+            live: container.visible && !webview.loading
         }
     }
 
