@@ -20,7 +20,7 @@
     <name>BrowserTab</name>
     <message>
         <source>New Tab</source>
-        <translation type="unfinished">Новая вкладка</translation>
+        <translation>Новая вкладка</translation>
     </message>
 </context>
 <context>
@@ -119,10 +119,6 @@
 <context>
     <name>LinkMenu</name>
     <message>
-        <source>Open Link</source>
-        <translation type="obsolete">Открыть ссылку</translation>
-    </message>
-    <message>
         <source>Open New Tab</source>
         <translation>Открыть новую вкладку</translation>
     </message>
@@ -136,27 +132,27 @@
     </message>
     <message>
         <source>Save Link Destination</source>
-        <translation type="unfinished"></translation>
+        <translation>Сохранить ссылку назначения</translation>
     </message>
     <message>
         <source>Copy Link</source>
-        <translation type="unfinished"></translation>
+        <translation>Копировать ссылку</translation>
     </message>
     <message>
         <source>Save Image</source>
-        <translation type="unfinished"></translation>
+        <translation>Сохранить изображение</translation>
     </message>
     <message>
         <source>Downloading image</source>
-        <translation type="unfinished"></translation>
+        <translation>Загружаю изображение</translation>
     </message>
     <message>
         <source>Downloading link</source>
-        <translation type="unfinished"></translation>
+        <translation>Загружаю ссылку</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation type="unfinished"></translation>
+        <translation>Открыть</translation>
     </message>
 </context>
 <context>
@@ -259,18 +255,18 @@
     </message>
     <message>
         <source>Delete Navigation History</source>
-        <translation type="unfinished"></translation>
+        <translation>Удалить историю</translation>
     </message>
     <message>
         <source>Removing navigation history</source>
-        <translation type="unfinished"></translation>
+        <translation>Удаление истории</translation>
     </message>
 </context>
 <context>
     <name>TextSelectionPage</name>
     <message>
         <source>Done</source>
-        <translation type="unfinished"></translation>
+        <translation>Готово</translation>
     </message>
 </context>
 </TS>
