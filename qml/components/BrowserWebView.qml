@@ -12,8 +12,6 @@ SilicaWebView
 {
     id: webview
 
-    signal canRender(bool renderstate)
-
     VerticalScrollDecorator { flickable: webview }
 
     /* Experimental WebView Features */
@@ -82,8 +80,6 @@ SilicaWebView
 
     onLoadingChanged: {
         if(loadRequest.status === WebView.LoadStartedStatus) {
-            canRender(false);
-
             navigationbar.state = "loading";
             navigationbar.expand();
             linkmenu.hide();
@@ -91,8 +87,6 @@ SilicaWebView
             historymenu.hide();
         }
         else if(loadRequest.status === WebView.LoadFailedStatus) {
-            canRender(false);
-
             loadfailed.offline = experimental.offline;
             loadfailed.errorString = loadRequest.errorString;
             browsertab.state = "loaderror";
@@ -108,8 +102,6 @@ SilicaWebView
                 Credentials.compile(Database.instance(), mainwindow.settings, url.toString(), webview);
                 History.store(Database.instance(), url.toString(), title);
             }
-
-            canRender(true);
 
             /* FIXME: Check Favicon
             if(navigationbar.favorite)

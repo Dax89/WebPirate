@@ -29,7 +29,6 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/js/UrlHelper.js \
     qml/js/SearchEngines.js \
     qml/js/Favorites.js \
-    qml/components/TabView.qml \
     qml/components/SearchBar.qml \
     qml/components/NavigationBar.qml \
     qml/components/LoadingBar.qml \
@@ -62,7 +61,9 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/js/History.js \
     qml/components/menus/HistoryMenu.qml \
     qml/components/SettingLabel.qml \
-    qml/pages/TextSelectionPage.qml
+    qml/pages/TextSelectionPage.qml \
+    qml/components/tabview/TabView.qml \
+    qml/components/tabview/TabButton.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line

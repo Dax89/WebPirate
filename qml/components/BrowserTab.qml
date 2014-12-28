@@ -14,7 +14,7 @@ Item
     states: [
         State {
             name: "favorites";
-            PropertyChanges { target: container; visible: false; }
+            PropertyChanges { target: webview; visible: false; }
             PropertyChanges { target: favoritesview; visible: true }
             PropertyChanges { target: loadingbar; visible: false }
             PropertyChanges { target: loadfailed; visible: false }
@@ -22,14 +22,14 @@ Item
 
         State {
             name: "webbrowser";
-            PropertyChanges { target: container; visible: true; }
+            PropertyChanges { target: webview; visible: true; }
             PropertyChanges { target: favoritesview; visible: false }
             PropertyChanges { target: loadfailed; visible: false }
         },
 
         State {
             name: "loaderror";
-            PropertyChanges { target: container; visible: false; }
+            PropertyChanges { target: webview; visible: false; }
             PropertyChanges { target: favoritesview; visible: false }
             PropertyChanges { target: loadingbar; visible: false }
             PropertyChanges { target: loadfailed; visible: true }
@@ -105,22 +105,14 @@ Item
 
     HistoryMenu {
         id: historymenu
-        anchors.left: parent.left
-        anchors.right: parent.right
-        anchors.top: parent.top
-        anchors.bottom: navigationbar.top
-
+        anchors { left: parent.left; right: parent.right; top: parent.top; bottom: navigationbar.top }
         onUrlRequested: browsertab.load(url)
     }
 
     FavoritesView
     {
         id: favoritesview
-        anchors.left: parent.left
-        anchors.right: parent.right
-        anchors.top: parent.top
-        anchors.bottom: navigationbar.top
-
+        anchors { left: parent.left; right: parent.right; top: parent.top; bottom: navigationbar.top }
         onUrlRequested: load(favoriteurl);
 
         onVisibleChanged: {
@@ -132,10 +124,7 @@ Item
     LoadFailed
     {
         id: loadfailed
-        anchors.left: parent.left
-        anchors.right: parent.right
-        anchors.top: parent.top
-        anchors.bottom: navigationbar.top
+        anchors { left: parent.left; right: parent.right; top: parent.top; bottom: navigationbar.top }
 
         onVisibleChanged: {
             if(visible)
@@ -148,51 +137,23 @@ Item
         id: loadingbar
         z: 1
         visible: false
-        anchors.left: parent.left
-        anchors.top: parent.top
-        anchors.right: parent.right
+        anchors { left: parent.left; top: parent.top; right: parent.right }
         minimumValue: 0
         maximumValue: 100
-        width: webview.width
         value: webview.loadProgress
         hideWhenFinished: true
     }
 
-    Item
+    BrowserWebView
     {
-        id: container
+        id: webview
         anchors.fill: parent
-
-        BrowserWebView
-        {
-            id: webview
-            anchors.fill: parent
-
-            onCanRender: {
-                webviewrender.live = container.visible && renderstate;
-            }
-        }
-
-        ShaderEffectSource
-        {
-            id: webviewrender
-            anchors.fill: webview
-            sourceItem: webview
-            hideSource: true
-            live: false
-        }
-
-        onVisibleChanged: {
-            webviewrender.live = visible;
-        }
     }
 
     NavigationBar
     {
         id: navigationbar
-        anchors.bottom: parent.bottom
-        anchors.left: parent.left
-        anchors.right: parent.right
+        anchors { bottom: parent.bottom; left: parent.left; right: parent.right }
         forwardButton.enabled: webview.canGoForward;
         backButton.enabled: webview.canGoBack;
 
