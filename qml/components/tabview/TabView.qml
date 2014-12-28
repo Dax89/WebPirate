@@ -5,11 +5,11 @@ import ".."
 Item
 {
     property ListModel pages: ListModel { }
-    property real tabWidth: setTabWidth()
+    property real tabWidth: calculateTabWidth()
     property int currentIndex: 0
 
     id: tabview
-    onWidthChanged: setTabWidth()
+    onWidthChanged: calculateTabWidth()
     onCurrentIndexChanged: renderTab()
     Component.onCompleted: renderTab()
 
@@ -19,7 +19,7 @@ Item
         BrowserTab { }
     }
 
-    function setTabWidth()
+    function calculateTabWidth()
     {
         if(!pages.count)
             return;
@@ -58,7 +58,7 @@ Item
 
         pages.append({ "tab": tab });
         currentIndex = (pages.count - 1);
-        setTabWidth();
+        calculateTabWidth();
     }
 
     function removeTab(idx)
@@ -71,8 +71,10 @@ Item
 
         if(currentIndex > 0)
             currentIndex--;
+        else
+            renderTab();
 
-        setTabWidth();
+        calculateTabWidth();
     }
 
     RemorsePopup { id: tabviewremorse }
