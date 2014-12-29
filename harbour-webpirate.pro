@@ -12,12 +12,14 @@
 # The name of your application
 TARGET = harbour-webpirate
 
+QT += sql
 CONFIG += sailfishapp
 
 SOURCES += src/harbour-webpirate.cpp \
     src/webviewdatabase.cpp \
     src/downloadmanager/downloadmanager.cpp \
-    src/downloadmanager/downloaditem.cpp
+    src/downloadmanager/downloaditem.cpp \
+    src/webkitdatabase/webicondatabase.cpp
 
 OTHER_FILES += qml/harbour-webpirate.qml \
     qml/cover/CoverPage.qml \
@@ -83,5 +85,6 @@ RESOURCES += \
 HEADERS += \
     src/webviewdatabase.h \
     src/downloadmanager/downloadmanager.h \
-    src/downloadmanager/downloaditem.h
+    src/downloadmanager/downloaditem.h \
+    src/webkitdatabase/webicondatabase.h
 

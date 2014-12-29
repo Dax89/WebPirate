@@ -31,6 +31,7 @@
 #include <QtQuick>
 #include <sailfishapp.h>
 #include "webviewdatabase.h"
+#include "webkitdatabase/webicondatabase.h"
 #include "downloadmanager/downloadmanager.h"
 
 int main(int argc, char *argv[])
@@ -44,7 +45,11 @@ int main(int argc, char *argv[])
     WebViewDatabase webviewdb;
 
     QScopedPointer<QQuickView> view(SailfishApp::createView());
-    view->engine()->rootContext()->setContextProperty("webviewdatabase", &webviewdb);
+    QQmlEngine* engine = view->engine();
+
+    engine->addImageProvider(WebIconDatabase::FAVICON_PROVIDER, new WebIconDatabase());
+    engine->rootContext()->setContextProperty("webviewdatabase", &webviewdb);
+
     view->setSource(SailfishApp::pathTo("qml/harbour-webpirate.qml"));
     view->show();
 

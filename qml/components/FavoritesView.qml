@@ -45,13 +45,18 @@ SilicaListView
             Image
             {
                 id: favicon
-                cache: true
+                cache: false
                 asynchronous: true
                 width: Theme.iconSizeSmall
                 height: Theme.iconSizeSmall
                 fillMode: Image.PreserveAspectFit
                 anchors.verticalCenter: parent.verticalCenter
-                source: (icon !== "") ? icon : "image://theme/icon-m-favorite"
+                source: "image://favicons/" + url
+
+                onStatusChanged: {
+                    if(status === Image.Error)
+                        source = "image://theme/icon-m-favorite-selected";
+                }
             }
 
             Label {

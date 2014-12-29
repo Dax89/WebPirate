@@ -22,6 +22,7 @@ class WebViewDatabase : public QObject
 
     private:
         static const QString OLD_DB_NAME;
+        static const QString WEBKIT_DATABASE;
 };
 
 #endif // WEBVIEWDATABASE_H
