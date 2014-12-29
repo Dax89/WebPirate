@@ -7,7 +7,7 @@ Rectangle
     property alias title: tabtitle.text
 
     id: tabbutton
-    anchors { top: parent.top; bottom: parent.bottom }
+    anchors { top: headerrow.top; bottom: headerrow.bottom }
     width: tabview.tabWidth
     color: (index === currentIndex ? Theme.secondaryColor : Theme.secondaryHighlightColor);
 
