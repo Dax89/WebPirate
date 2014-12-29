@@ -1,6 +1,5 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
-import "../../js/Database.js" as Database
 import "../../js/History.js" as History
 
 PopupMenu
@@ -14,7 +13,7 @@ PopupMenu
     popupModel: ListModel { }
 
     onQueryChanged: {
-        History.match(Database.instance(), query, popupModel);
+        History.match(query, popupModel);
 
         if(popupModel.count === 0)
         {

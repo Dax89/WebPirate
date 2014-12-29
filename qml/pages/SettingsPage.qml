@@ -147,7 +147,7 @@ Dialog
                 labelText: qsTr("Delete Navigation History")
                 actionMessage: qsTr("Removing navigation history")
 
-                onActionRequested: History.clear(Database.instance())
+                onActionRequested: History.clear()
             }
 
             SettingLabel
@@ -161,7 +161,7 @@ Dialog
                     webviewdatabase.clearCache();
                     webviewdatabase.clearNavigationData();
                     Credentials.clear(Database.instance());
-                    History.clear(Database.instance());
+                    History.clear();
                 }
             }
         }

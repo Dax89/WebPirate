@@ -48,8 +48,8 @@ ApplicationWindow
 
         Component.onCompleted: {
             Database.load();
+            History.load();
             Credentials.createSchema(Database.instance());
-            History.createSchema(Database.instance());
 
             Favorites.load(Database.instance(), settings.favorites);
             SearchEngines.load(Database.instance(), settings.searchengines);
@@ -81,7 +81,7 @@ ApplicationWindow
             webviewdatabase.clearCache();
             webviewdatabase.clearNavigationData();
             Credentials.clear(Database.instance());
-            History.clear(Database.instance());
+            History.clear();
         }
     }
 }

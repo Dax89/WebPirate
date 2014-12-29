@@ -100,7 +100,7 @@ SilicaWebView
             if(!UrlHelper.isSpecialUrl(url.toString()) && UrlHelper.isUrl(url.toString()))
             {
                 Credentials.compile(Database.instance(), mainwindow.settings, url.toString(), webview);
-                History.store(Database.instance(), url.toString(), title);
+                History.store(url.toString(), title);
             }
 
             /* FIXME: Check Favicon
