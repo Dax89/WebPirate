@@ -1,4 +1,6 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="zh_CN" version="2.0">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.0" language="zh_CN">
 <context>
     <name>ActionSidebar</name>
     <message>
@@ -117,10 +119,6 @@
 <context>
     <name>LinkMenu</name>
     <message>
-        <source>Open Link</source>
-        <translation>打开链接</translation>
-    </message>
-    <message>
         <source>Open New Tab</source>
         <translation>在新标签页中打开</translation>
     </message>
@@ -131,6 +129,30 @@
     <message>
         <source>Add To Favorites</source>
         <translation>添加到书签</translation>
+    </message>
+    <message>
+        <source>Save Link Destination</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy Link</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Save Image</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Downloading image</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Downloading link</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Open</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -230,6 +252,21 @@
     <message>
         <source>Removing personal data</source>
         <translation>正在删除个人记录</translation>
+    </message>
+    <message>
+        <source>Delete Navigation History</source>
+        <translation>删除浏览历史</translation>
+    </message>
+    <message>
+        <source>Removing navigation history</source>
+        <translation>正在删除浏览历史</translation>
+    </message>
+</context>
+<context>
+    <name>TextSelectionPage</name>
+    <message>
+        <source>Done</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

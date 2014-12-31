@@ -5,7 +5,7 @@
     <name>ActionSidebar</name>
     <message>
         <source>Favorites</source>
-        <translation>Избранное</translation>
+        <translation>Закладки</translation>
     </message>
     <message>
         <source>Downloads</source>
@@ -98,7 +98,7 @@
     <name>FavoritesPage</name>
     <message>
         <source>Favorites</source>
-        <translation>Избранное</translation>
+        <translation>Закладки</translation>
     </message>
 </context>
 <context>

@@ -78,7 +78,7 @@ TRANSLATIONS += translations/harbour-webpirate.ts \
             translations/harbour-webpirate-nl_NL.ts \
             translations/harbour-webpirate-ru_RU.ts \
             translations/harbour-webpirate-sv_SE.ts \
-            translations/harbour-webpirate_zh_CN.ts
+            translations/harbour-webpirate-zh_CN.ts
 
 RESOURCES += \
     resources.qrc

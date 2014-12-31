@@ -119,10 +119,6 @@
 <context>
     <name>LinkMenu</name>
     <message>
-        <source>Open Link</source>
-        <translation type="obsolete">Link öffnen</translation>
-    </message>
-    <message>
         <source>Open New Tab</source>
         <translation>Neuen Tab öffnen</translation>
     </message>
