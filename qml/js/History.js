@@ -17,7 +17,7 @@ function load()
 
         tx.executeSql("CREATE TRIGGER IF NOT EXISTS delete_till_100 INSERT ON History WHEN (SELECT COUNT(*) FROM History) > 100 \
                        BEGIN \
-                         DELETE FROM History WHERE 'url' IN \
+                         DELETE FROM History WHERE url IN \
                          ( \
                            SELECT url FROM History ORDER BY lastvisit ASC LIMIT (SELECT COUNT(*) - 100 FROM History) \
                          ); \
