@@ -29,12 +29,6 @@ SilicaWebView
 
         if(data.type === "touchstart")
             sidebar.collapse();
-        else if(data.type === "touchmove") {
-            if(data.moveup)
-                navigationbar.collapse();
-            else if(data.movedown)
-                navigationbar.expand();
-        }
         else if(data.type === "longpress") {
             credentialmenu.hide();
 
@@ -115,4 +109,11 @@ SilicaWebView
     }
 
     onTitleChanged: navigationbar.searchBar.title = title;
+
+    onVerticalVelocityChanged: {
+        if(verticalVelocity < 0)
+            navigationbar.expand();
+        else if(verticalVelocity > 0)
+            navigationbar.collapse();
+    }
 }

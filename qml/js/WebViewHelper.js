@@ -1,5 +1,4 @@
 var timerid;
-var lasty;
 var islongpress = false;
 var currtouch = null;
 
@@ -114,8 +113,6 @@ function checkLongPress(x, y, target)
 
 function onTouchStart(touchevent)
 {
-    lasty = touchevent.touches[0].clientY;
-
     if(touchevent.touches.length === 1)
     {
         currtouch = touchevent.touches[0];
@@ -137,7 +134,6 @@ function onTouchEnd(touchevent)
 
     currtouch = null;
     clearTimeout(timerid);
-    lasty = touchevent.touches[0].clientY;
 }
 
 function onTouchMove(touchevent)
@@ -150,27 +146,6 @@ function onTouchMove(touchevent)
 
     clearTimeout(timerid);
     currtouch = null;
-
-    var currenty = touchevent.touches[0].clientY;
-    var data = new Object;
-    data.type = "touchmove";
-
-    if(currenty > lasty)
-    {
-        data.movedown = true;
-        data.moveup = false;
-
-        navigator.qt.postMessage(JSON.stringify(data));
-    }
-    else if(currenty < lasty)
-    {
-        data.movedown = false;
-        data.moveup = true;
-
-        navigator.qt.postMessage(JSON.stringify(data));
-    }
-
-    lasty = currenty;
 }
 
 function onSubmit(event)
