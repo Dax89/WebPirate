@@ -19,7 +19,8 @@ SOURCES += src/harbour-webpirate.cpp \
     src/webviewdatabase.cpp \
     src/downloadmanager/downloadmanager.cpp \
     src/downloadmanager/downloaditem.cpp \
-    src/webkitdatabase/webicondatabase.cpp
+    src/webkitdatabase/webicondatabase.cpp \
+    src/faviconprovider.cpp
 
 OTHER_FILES += qml/harbour-webpirate.qml \
     qml/cover/CoverPage.qml \
@@ -86,5 +87,6 @@ HEADERS += \
     src/webviewdatabase.h \
     src/downloadmanager/downloadmanager.h \
     src/downloadmanager/downloaditem.h \
-    src/webkitdatabase/webicondatabase.h
+    src/webkitdatabase/webicondatabase.h \
+    src/faviconprovider.h
 

@@ -2,33 +2,47 @@
 
 const QString WebIconDatabase::WEBKIT_DATABASE = ".QtWebKit";
 const QString WebIconDatabase::ICON_DATABASE = "WebpageIcons.db";
-const QString WebIconDatabase::FAVICON_PROVIDER = "favicons";
+const QString WebIconDatabase::PROVIDER_NAME = "favicons";
 
-WebIconDatabase::WebIconDatabase(): QQuickImageProvider(QQuickImageProvider::Image)
+QSqlDatabase WebIconDatabase::_db;
+int WebIconDatabase::_refcount = 0;
+
+WebIconDatabase::WebIconDatabase(QObject *parent): QObject(parent)
 {
-    this->_db = QSqlDatabase::addDatabase("QSQLITE");
-}
+    if(!this->_refcount)
+        this->_db = QSqlDatabase::addDatabase("QSQLITE");
 
-QImage WebIconDatabase::requestImage(const QString& id, QSize* size, const QSize&)
-{
-    QByteArray ba = this->queryIconPixmap(id);
-
-    if(ba.isEmpty())
-        return QImage();
-
-    QImage img = QImage::fromData(ba);
-
-    if(img.isNull())
-        return QImage();
-
-    *size = img.size();
-    return img;
+    this->_refcount++;
 }
 
 WebIconDatabase::~WebIconDatabase()
 {
-    if(this->_db.isOpen())
-        this->_db.close();
+    this->_refcount--;
+
+    if(!this->_refcount)
+    {
+        if(this->_db.isOpen())
+            this->_db.close();
+    }
+}
+
+bool WebIconDatabase::hasIcon(const QString &url)
+{
+    QString s = this->queryIconUrl(url);
+
+    if(s.isEmpty())
+        return false;
+
+    QByteArray b = this->queryIconPixmap(url);
+    return !b.isEmpty();
+}
+
+QString WebIconDatabase::provideIcon(const QString &url)
+{
+    if(this->hasIcon(url))
+        return QString("image://%1/%2").arg(WebIconDatabase::PROVIDER_NAME, url);
+
+    return "image://theme/icon-m-favorite-selected";
 }
 
 bool WebIconDatabase::open()
@@ -62,6 +76,26 @@ int WebIconDatabase::queryIconId(const QString &url)
         return -1;
 
     return q.value(0).toInt();
+}
+
+QString WebIconDatabase::queryIconUrl(const QString &url)
+{
+    int iconid = this->queryIconId(url);
+
+    if(iconid == -1)
+        return QString();
+
+    QSqlQuery q(this->_db);
+
+    if(!this->prepare(q, "SELECT url FROM IconInfo WHERE iconID = ?"))
+        return QString();
+
+    q.bindValue(0, iconid);
+
+    if(!this->execute(q) || !q.first())
+        return QString();
+
+    return q.value(0).toString();
 }
 
 QByteArray WebIconDatabase::queryIconPixmap(const QString &url)

@@ -51,12 +51,7 @@ SilicaListView
                 height: Theme.iconSizeSmall
                 fillMode: Image.PreserveAspectFit
                 anchors.verticalCenter: parent.verticalCenter
-                source: "image://favicons/" + url
-
-                onStatusChanged: {
-                    if(status === Image.Error)
-                        source = "image://theme/icon-m-favorite-selected";
-                }
+                source: mainwindow.settings.icondatabase.provideIcon(url)
             }
 
             Label {

@@ -4,34 +4,39 @@
 #include <QObject>
 #include <QDir>
 #include <QVariant>
+#include <QUrl>
 #include <QStandardPaths>
-#include <QQuickImageProvider>
 #include <QtSql/QSqlDatabase>
 #include <QtSql/QSqlQuery>
 #include <QtSql/QSqlError>
 #include <QDebug>
 
-class WebIconDatabase : public QQuickImageProvider
+class WebIconDatabase : public QObject
 {
+    Q_OBJECT
+
     public:
-        explicit WebIconDatabase();
-        QImage requestImage(const QString& id, QSize* size, const QSize&);
+        explicit WebIconDatabase(QObject* parent = 0);
+        QString queryIconUrl(const QString& url);
+        QByteArray queryIconPixmap(const QString& url);
         ~WebIconDatabase();
+
+    public slots:
+        QString provideIcon(const QString &url);
 
     private:
         bool open();
-        int queryIconId(const QString& url);
-        QByteArray queryIconPixmap(const QString& url);
-
-    private:
         bool prepare(QSqlQuery &queryobj, const QString& query);
         bool execute(QSqlQuery &queryobj);
+        bool hasIcon(const QString& url);
+        int queryIconId(const QString& url);
 
     private:
-        QSqlDatabase _db;
+        static QSqlDatabase _db;
+        static int _refcount;
 
     public:
-        static const QString FAVICON_PROVIDER;
+        static const QString PROVIDER_NAME;
 
     private:
         static const QString WEBKIT_DATABASE;

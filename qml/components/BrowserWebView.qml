@@ -102,15 +102,6 @@ SilicaWebView
                 Credentials.compile(Database.instance(), mainwindow.settings, url.toString(), webview);
                 History.store(url.toString(), title);
             }
-
-            /* FIXME: Check Favicon
-            if(navigationbar.favorite)
-            {
-                var favorite = mainwindow.settings.favorites.get(idx);
-                mainwindow.settings.favorites.fetchIcon(url.toString(), favorite);
-                Favorites.setIcon(Database.instance(), mainwindow.settings.favorites, url.toString(), favorite.icon);
-            }
-            */
         }
     }
 

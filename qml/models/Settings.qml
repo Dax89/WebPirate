@@ -10,6 +10,7 @@ QtObject
     property SearchEngineModel searchengines: SearchEngineModel { }
     property ListModel useragents: ListModel { }
     property DownloadManager downloadmanager: DownloadManager { }
+    property WebIconDatabase icondatabase: WebIconDatabase { }
 
     property int searchengine;  /* Search Engine Index */
     property int useragent;     /* User Agent Index */

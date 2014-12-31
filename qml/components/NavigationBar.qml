@@ -2,6 +2,7 @@ import QtQuick 2.0
 import Sailfish.Silica 1.0
 import "../js/Database.js" as Database
 import "../js/Favorites.js" as Favorites
+import "../js/UrlHelper.js" as UrlHelper
 
 Rectangle
 {
@@ -70,8 +71,8 @@ Rectangle
 
     IconButton
     {
-        id: btnbookmark
-        width: Theme.iconSizeMedium
+        id: btnfavorite
+        width: visible ? Theme.iconSizeMedium : 0
         height: Theme.iconSizeMedium
         icon.source: (favorite ? "image://theme/icon-m-favorite-selected" : "image://theme/icon-m-favorite")
         anchors.verticalCenter: navigationbar.verticalCenter
@@ -92,10 +93,13 @@ Rectangle
     SearchBar
     {
         id: searchbar
-        anchors.left: btnbookmark.right
+        anchors.left: btnfavorite.right
         anchors.right: btnrefresh.left
-
         onReturnPressed: navigationbar.searchRequested(searchquery);
+
+        onUrlChanged: {
+            btnfavorite.visible = !UrlHelper.isSpecialUrl(searchbar.url);
+        }
     }
 
     IconButton

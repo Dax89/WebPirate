@@ -1,6 +1,7 @@
 .pragma library
 
 .import QtQuick.LocalStorage 2.0 as Storage
+.import "UrlHelper.js" as UrlHelper
 
 function instance()
 {
@@ -39,6 +40,19 @@ function store(url, title)
     instance().transaction(function(tx) {
         tx.executeSql("INSERT OR REPLACE INTO History(url, title, lastvisit) VALUES(?, ?, DATETIME('now'))", [url, title]);
     });
+}
+
+function domainVisited(url)
+{
+    var visited = false;
+    var urlquery = "%" + UrlHelper.domainName(url) + "%";
+
+    instance().transaction(function(tx) {
+        var res = tx.executeSql("SELECT * FROM History WHERE url LIKE ? LIMIT 1", [urlquery]);
+        visited = res.rows.length > 0;
+    });
+
+    return visited;
 }
 
 function remove(url)
