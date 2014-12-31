@@ -1,7 +1,7 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
 
-Rectangle
+Item
 {
     property list<QtObject> actions: [ QtObject { property string icon: "image://theme/icon-s-favorite";  property string label: qsTr("Favorites") },
                                        QtObject { property string icon: "image://theme/icon-s-cloud-download"; property string label: qsTr("Downloads") },
@@ -10,11 +10,6 @@ Rectangle
     id: sidebar
     visible: width > 0
     z: 2
-
-    gradient: Gradient {
-        GradientStop { position: 0.0; color: Theme.rgba(Theme.highlightDimmerColor, 1.0) }
-        GradientStop { position: 1.0; color: Theme.rgba(Theme.highlightDimmerColor, 0.9) }
-    }
 
     Behavior on width {
         NumberAnimation { duration: 250; easing.type: Easing.InOutQuad }
