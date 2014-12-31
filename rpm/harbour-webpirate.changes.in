@@ -7,12 +7,25 @@
 
 # * date Author's Name <author's email> version-release
 # - Summary of changes
+* Wed Dec 31 2014 Antonio Davide Trogu <trogu.davide@gmail.com> 0.8.5-1
+- Implemented Navigation History
+- Implemented Clipboard Support
+- Implemented Download of Pictures and WebPages through a popup menu
+- Sidebar Improvements
+- Restored Favicon Support
+- Minor Fixes and Rendering Improvements
+- Updated Italian Localization
+- Updated Russian Localization
+- Updated Catalan Localization
+- Updated Swedish Localization
+- Updated Dutch Localization
+- Updated German Localization (not complete)
+- Updated Chinese Localization (not complete)
 
 * Thu Dec 25 2014 Antonio Davide Trogu <trogu.davide@gmail.com> 0.8-1
 - Implemented Download Manager
 - Added a Sidebar in order to access Favorites, Downloads and Settings
 - Added Android and iPhone user agents
-- WebView's fonts are now bigger
 - Adjusted Pages in order to support Sailfish 1.1.2.27
 - When "Delete on Exit" is enabled, web browser's cache is deleted too
 - Sensible performance improvements and smooth navigation experience

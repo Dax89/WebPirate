@@ -1,6 +1,6 @@
 Name: harbour-webpirate
 Summary: harbour-webpirate
-Version: 0.8
+Version: 0.8.5
 Release: 1
 # The contents of the Group field should be one of the groups listed here:
 # http://gitorious.org/meego-developer-tools/spectacle/blobs/master/data/GROUPS
@@ -12,7 +12,7 @@ License: GPL3
 Sources:
 - '%{name}-%{version}.tar.bz2'
 Description: |
-  Short description of my SailfishOS Application
+  A Tabbed WebBrowser for SailfishOS based on WebKit
 Configure: none
 # The qtc5 builder inserts macros to allow QtCreator to have fine
 # control over qmake/make execution

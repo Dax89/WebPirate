@@ -13,7 +13,7 @@ Name:       harbour-webpirate
 %{!?qtc_make:%define qtc_make make}
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 Summary:    harbour-webpirate
-Version:    0.8
+Version:    0.8.5
 Release:    1
 Group:      Qt/Qt
 License:    GPL3
@@ -28,7 +28,7 @@ BuildRequires:  pkgconfig(Qt5Quick)
 BuildRequires:  desktop-file-utils
 
 %description
-Short description of my SailfishOS Application
+A Tabbed WebBrowser for SailfishOS based on WebKit
 
 
 %prep
