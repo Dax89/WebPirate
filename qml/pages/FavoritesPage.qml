@@ -6,29 +6,46 @@ import "../models"
 
 Dialog
 {
-    property Settings settings
     property TabView tabview
 
     id: favoritesdialog
     allowedOrientations: Orientation.All
     acceptDestinationAction: PageStackAction.Pop
 
-    PageHeader {
-        id: header
-        title: qsTr("Favorites")
-    }
-
-    FavoritesView
+    SilicaFlickable
     {
-        id: favoritesview
-        anchors.top: header.bottom
-        anchors.left: parent.left
-        anchors.right: parent.right
-        anchors.bottom: parent.bottom
+        anchors.fill: parent
 
-        onUrlRequested: {
-            tabview.pages.get(tabview.currentIndex).tab.load(favoriteurl);
-            favoritesdialog.accept();
+        PullDownMenu
+        {
+            MenuItem
+            {
+                text: qsTr("Add Folder")
+                onClicked: pageStack.push(Qt.resolvedUrl("../pages/FavoritePage.qml"), { "model": favoritesview.model, "isFolder": true, "parentId": favoritesview.model.currentId });
+            }
+
+            MenuItem
+            {
+                text: qsTr("Add Favorite")
+                onClicked: pageStack.push(Qt.resolvedUrl("../pages/FavoritePage.qml"), { "model": favoritesview.model, "isFolder": false, "parentId": favoritesview.model.currentId });
+            }
+        }
+
+        PageHeader
+        {
+            id: header
+            title: qsTr("Favorites")
+        }
+
+        FavoritesView
+        {
+            id: favoritesview
+            anchors { top: header.bottom; left: parent.left; right: parent.right; bottom: parent.bottom }
+
+            onUrlRequested: {
+                tabview.pages.get(tabview.currentIndex).tab.load(favoriteurl);
+                favoritesdialog.accept();
+            }
         }
     }
 }

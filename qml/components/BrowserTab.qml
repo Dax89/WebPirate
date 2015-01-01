@@ -1,6 +1,7 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
 import "menus"
+import "quickgrid"
 import "../js/UrlHelper.js" as UrlHelper
 import "../js/Database.js" as Database
 import "../js/Favorites.js" as Favorites
@@ -9,13 +10,13 @@ import "../js/Credentials.js" as Credentials
 Item
 {    
     id: browsertab
-    state: "favorites"
+    state: "newtab"
 
     states: [
         State {
-            name: "favorites";
+            name: "newtab";
             PropertyChanges { target: webview; visible: false; }
-            PropertyChanges { target: favoritesview; visible: true }
+            PropertyChanges { target: quickgrid; visible: true }
             PropertyChanges { target: loadingbar; visible: false }
             PropertyChanges { target: loadfailed; visible: false }
         },
@@ -23,21 +24,21 @@ Item
         State {
             name: "webbrowser";
             PropertyChanges { target: webview; visible: true; }
-            PropertyChanges { target: favoritesview; visible: false }
+            PropertyChanges { target: quickgrid; visible: false }
             PropertyChanges { target: loadfailed; visible: false }
         },
 
         State {
             name: "loaderror";
             PropertyChanges { target: webview; visible: false; }
-            PropertyChanges { target: favoritesview; visible: false }
+            PropertyChanges { target: quickgrid; visible: false }
             PropertyChanges { target: loadingbar; visible: false }
             PropertyChanges { target: loadfailed; visible: true }
         } ]
 
     function getIcon()
     {
-        if(state == "favorites")
+        if(state == "newtab")
             return "image://theme/icon-m-tabs";
 
         return (webview.icon !== "" ? webview.icon : "image://theme/icon-s-group-chat");
@@ -59,9 +60,9 @@ Item
 
     function loadDefault()
     {
-        state = "favorites";
-        webview.url = "about:bookmarks";
-        navigationbar.searchBar.url = "about:bookmarks";
+        state = "newtab";
+        webview.url = "about:newtab";
+        navigationbar.searchBar.url = "about:newtab";
     }
 
     function manageSpecialUrl(url)
@@ -95,8 +96,8 @@ Item
 
         onOpenLinkRequested: browsertab.load(url)
         onOpenTabRequested: tabview.addTab(url)
-        onAddToFavoritesRequested: Favorites.add(Database.instance(), mainwindow.settings.favorites, url, url)
-        onRemoveFromFavoritesRequested: Favorites.remove(Database.instance(), mainwindow.settings.favorites, url)
+        onAddToFavoritesRequested: Favorites.addUrl(url, url)
+        onRemoveFromFavoritesRequested: Favorites.removeFromUrl(url)
     }
 
     CredentialMenu {
@@ -109,11 +110,10 @@ Item
         onUrlRequested: browsertab.load(url)
     }
 
-    FavoritesView
-    {
-        id: favoritesview
+    QuickGrid {
+        id: quickgrid
         anchors { left: parent.left; right: parent.right; top: parent.top; bottom: navigationbar.top }
-        onUrlRequested: load(favoriteurl);
+        //FIXME: onUrlRequested: load(favoriteurl);
 
         onVisibleChanged: {
             if(visible)
@@ -121,8 +121,7 @@ Item
         }
     }
 
-    LoadFailed
-    {
+    LoadFailed {
         id: loadfailed
         anchors { left: parent.left; right: parent.right; top: parent.top; bottom: navigationbar.top }
 

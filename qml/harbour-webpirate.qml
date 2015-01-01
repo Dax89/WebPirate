@@ -49,9 +49,10 @@ ApplicationWindow
         Component.onCompleted: {
             Database.load();
             History.load();
+            Favorites.load(Database.instance());
+
             Credentials.createSchema(Database.instance());
 
-            Favorites.load(Database.instance(), settings.favorites);
             SearchEngines.load(Database.instance(), settings.searchengines);
             UserAgents.load(Database.instance(), settings.useragents);
 

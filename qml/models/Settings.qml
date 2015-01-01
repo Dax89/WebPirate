@@ -5,8 +5,6 @@ import WebPirate 1.0
 QtObject
 {
     property DeviceInfo deviceinfo: DeviceInfo { }
-
-    property FavoritesModel favorites: FavoritesModel { }
     property SearchEngineModel searchengines: SearchEngineModel { }
     property ListModel useragents: ListModel { }
     property DownloadManager downloadmanager: DownloadManager { }

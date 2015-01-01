@@ -31,6 +31,9 @@ function checkDBUpgrade()
                          function(tx) {
                              tx.executeSql("DROP TABLE IF EXISTS UserAgents");
                          });
+
+        checkDBUpgrade();
+        return;
     }
 }
 

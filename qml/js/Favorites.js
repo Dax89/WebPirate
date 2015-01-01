@@ -1,79 +1,138 @@
 .pragma library
 
+.import QtQuick.LocalStorage 2.0 as Storage
+
 var defaultfavorites = [ { "title": "Jolla", "url": "https://jolla.com/" },
                          { "title": "Jolla Together", "url": "https://together.jolla.com/questions/" },
                          { "title": "Jolla Users", "url": "http://www.jollausers.com/" },
                          { "title": "Maemo Talk", "url": "http://talk.maemo.org/" },
                          { "title": "Sailfish OS", "url": "https://www.sailfishos.org/"} ];
 
-function load(db, favorites)
+function instance()
 {
-    var i = 0;
+    return Storage.LocalStorage.openDatabaseSync("Favorites", "1.0", "WebPirate Favorites", 5000000);  /* DB Size: 5MB */
+}
 
-    db.transaction(function(tx) {
-        tx.executeSql("CREATE TABLE IF NOT EXISTS Favorites (url TEXT PRIMARY KEY, title TEXT, icon TEXT)");
-        var res = tx.executeSql("SELECT * FROM Favorites;");
+function load(maindb)
+{
+    instance().transaction(function(tx) {
+        tx.executeSql("CREATE TABLE IF NOT EXISTS Favorites (favoriteid INTEGER PRIMARY KEY AUTOINCREMENT, parentid INTEGER, url TEXT UNIQUE ON CONFLICT REPLACE, title TEXT, isfolder INTEGER)");
+        tx.executeSql("CREATE TABLE IF NOT EXISTS FavoritesTree (parentid INTEGER, childid INTEGER, PRIMARY KEY(parentid, childid))");
+        migrate(maindb);
 
-        if(res.rows.length > 0)
-        {
-            for(i = 0; i < res.rows.length; i++)
-                favorites.append({ "title": res.rows[i].title, "url": res.rows[i].url, "icon": res.rows[i].icon });
-        }
-        else
+        var res = tx.executeSql("SELECT COUNT(*) FROM Favorites");
+
+        if(!res.rows[0]["COUNT(*)"])
         {
             /* Append Default Favorites, if needed */
-            for(i = 0; i < defaultfavorites.length; i++)
-                add(db, favorites, defaultfavorites[i].title, defaultfavorites[i].url);
+            for(var i = 0; i < defaultfavorites.length; i++)
+                addUrl(defaultfavorites[i].title, defaultfavorites[i].url, 0);
         }
     });
 }
 
-function add(db, favorites, title, url, icon)
+function contains(url)
 {
-    favorites.append({ "title": title, "url": url, "icon": icon ? icon : "" });
+    var exists = false;
 
-    db.transaction(function(tx) {
-        tx.executeSql("INSERT OR REPLACE INTO Favorites (url, title, icon) VALUES (?, ?, ?);", [url, title, icon ? icon : "" ]);
+    instance().transaction(function(tx) {
+        var res = tx.executeSql("SELECT COUNT(*) FROM Favorites WHERE url=?", [url]);
+        exists = res.rows[0]["COUNT(*)"] > 0;
+    });
+
+    return exists
+}
+
+function clear()
+{
+    instance().transaction(function(tx) {
+        tx.executeSql("DROP TABLE IF EXISTS Favorites");
+        tx.executeSql("DROP TABLE IF EXISTS FavoritesTree");
     });
 }
 
-function replace(db, favorites, index, title, url)
+function readChildren(parentid, model)
 {
-    db.transaction(function(tx) {
-        tx.executeSql("UPDATE Favorites SET url=?, title=?, icon='' WHERE url=? AND title=?;", [url, title, favorites.get(index).url, favorites.get(index).title]);
-    });
+    model.clear();
 
-    var favorite = favorites.get(index);
-    favorite.url = url;
-    favorite.title = title;
-    favorite.icon = "";
-}
+    instance().transaction(function(tx) {
+        var res = tx.executeSql("SELECT * FROM Favorites WHERE parentid = ?", [parentid]);
 
-function remove(db, favorites, url)
-{
-    var idx = favorites.indexOf(url);
-
-    if(idx === -1)
-        return;
-
-    favorites.remove(idx);
-
-    db.transaction(function(tx) {
-        tx.executeSql("DELETE FROM Favorites WHERE url= ?;", [url]);
+        for(var i = 0; i < res.rows.length; i++)
+            model.append(res.rows[i]);
     });
 }
 
-function setIcon(db, favorites, url, icon)
+function migrate(maindb) // Migrate Old Favorites Table to the new one
 {
-    var idx = favorites.indexOf(url);
+    maindb.transaction(function(tx) {
+        var res = tx.executeSql("SELECT COUNT(*) FROM sqlite_master WHERE type='table' AND name='Favorites'");
 
-    if(idx === -1)
-        return;
+        if(!res.rows[0]["COUNT(*)"])
+            return;
 
-    db.transaction(function(tx) {
-        tx.executeSql("UPDATE Favorites SET icon=? WHERE url=?;", [icon, url]);
+        res = tx.executeSql("SELECT url, title FROM Favorites");
+
+        for(var i = 0; i < res.rows.length; i++)
+            addUrl(res.rows[i].title, res.rows[i].url, 0);
+
+        tx.executeSql("DROP TABLE Favorites");
+    });
+}
+
+function addFolder(title, parentid)
+{
+    var nodeid;
+
+    instance().transaction(function(tx) {
+        var res = tx.executeSql("INSERT INTO Favorites (parentid, url, title, isfolder) VALUES (?, '', ?, ?);", [parentid, title, 1]);
+        nodeid = parseInt(res.insertId);
+
+        tx.executeSql("INSERT INTO FavoritesTree (parentid, childid) VALUES (?, ?)", [parentid, nodeid]);
     });
 
-    var favorite = favorites.get(idx);
-    favorite.icon = icon;
+    return nodeid;
+}
+
+function addUrl(title, url, parentid)
+{
+    var nodeid;
+
+    instance().transaction(function(tx) {
+        var res = tx.executeSql("INSERT INTO Favorites (parentid, url, title, isfolder) VALUES (?, ?, ?, 0);", [parentid, url, title]);
+        nodeid = parseInt(res.insertId);
+
+        tx.executeSql("INSERT INTO FavoritesTree (parentid, childid) VALUES (?, ?)", [parentid, nodeid]);
+    });
+
+    return nodeid;
+}
+
+function replace(id, title, url)
+{
+    instance().transaction(function(tx) {
+        tx.executeSql("UPDATE Favorites SET url=?, title=? WHERE favoriteid=?", [id, url, title]);
+    });
+}
+
+function removeFromUrl(url)
+{
+    instance().transaction(function(tx) {
+        var res = tx.excuteSql("SELECT favoriteid FROM Favorites WHERE url = ?", [url]);
+
+        if(res.rows.length > 0)
+            remove(res.rows[0]);
+    });
+}
+
+function remove(id)
+{
+    instance().transaction(function(tx) {
+        var res = tx.executeSql("SELECT * FROM FavoritesTree WHERE parentid = ?", [id]);
+
+        for(var i = 0; i < res.rows.length; i++)
+            remove(res.rows[i].id);
+
+        tx.executeSql("DELETE FROM Favorites WHERE favoriteid= ?", [id]);
+    });
 }

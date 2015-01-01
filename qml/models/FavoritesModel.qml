@@ -1,61 +1,67 @@
 import QtQuick 2.0
 import "../js/UrlHelper.js" as UrlHelper
+import "../js/Favorites.js" as Favorites
 
 ListModel
 {
+    property int currentId
+
     id: favorites
 
-    function indexOf(url)
+    function indexOf(favoriteid)
     {
         for(var i = 0; i < favorites.count; i++)
         {
-            if(url === favorites.get(i).url)
+            if(favoriteid === favorites.get(i).favoriteid)
                 return i;
         }
 
         return -1;
     }
 
-    function contains(url)
+    function addFolder(title, parentid)
     {
-        if((url.length === 0) || UrlHelper.isSpecialUrl(url) || !UrlHelper.isUrl(url))
-            return false;
+        var favoriteid = Favorites.addFolder(title, parentid);
 
-        return indexOf(url) !== -1;
+        if(currentId === parentid)
+            favorites.append({ "parentid": parentid, "favoriteid": favoriteid, "url": "", "title": title, "isfolder": 1 });
     }
 
-    function fetchIcon(url, favorite)
+    function addUrl(title, url, parentid)
     {
-        var domainname = UrlHelper.domainName(url);
-        var req = new XMLHttpRequest();
+        var favoriteid = Favorites.addUrl(title, url, parentid);
 
-        favorite.icon = "image://theme/icon-m-favorite"
+        if(currentId === parentid)
+            favorites.append({ "parentid": parentid, "favoriteid": favoriteid, "url": url, "title": title, "isfolder": 0 });
+    }
 
-        req.onreadystatechange = function() {
-            if((req.readyState === XMLHttpRequest.DONE) && (req.status === 200)) {
-                var regex = new RegExp("<link.*rel[ ]*=[ ]*[\\\"\\\'][ ]*shortcut[ ]+icon[ ]*[\\\"\\\'][^>]+>", "i");
-                var linktag = regex.exec(req.responseText);
+    function replace(favoriteid, title, url)
+    {
+        if(currentId === parentid)
+        {
+            var idx = indexOf(favoriteid);
 
-                if(linktag === null)
-                    return;
-
-                regex = new RegExp("href[ ]*=[ ]*[\\\"\\\']([^\\\"\\\']+)[\\\"\\\']", "i");
-                var link = regex.exec(linktag[0]);
-
-                if(link === null)
-                    return;
-
-                if(link[1].indexOf(domainname) === 0)
-                    favorite.icon = UrlHelper.adjustUrl(link[1]);
-                else
-                    favorite.icon = domainname + "/" + link[1];
+            if(idx !== -1)
+            {
+                var favorite = favorites.get(idx);
+                favorite.title = title;
+                favorite.url = url;
             }
         }
 
-        if(domainname === null)
-            return;
-
-        req.open("GET", domainname);
-        req.send();
+        Favorites.replace(favoriteid, title, url);
     }
+
+    function jumpTo(favoriteid)
+    {
+        currentId = favoriteid;
+        Favorites.readChildren(favoriteid, favorites);
+    }
+
+    function jumpToRoot()
+    {
+        jumpTo(0);
+    }
+
+    Component.onCompleted: jumpToRoot()
 }

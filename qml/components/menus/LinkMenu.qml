@@ -1,5 +1,6 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
+import "../../js/Favorites.js" as Favorites
 
 PopupMenu
 {
@@ -17,7 +18,7 @@ PopupMenu
     anchors.fill: parent
 
     onUrlChanged: {
-        favorite = mainwindow.settings.favorites.contains(linkmenu.url);
+        favorite = Favorites.contains(linkmenu.url);
         title = url;
     }
 

@@ -80,11 +80,11 @@ Rectangle
 
         onClicked: {
             if(!favorite) {
-                Favorites.add(Database.instance(), mainwindow.settings.favorites, webview.title, webview.url.toString(), icon.source.toString());
+                Favorites.addUrl(webview.title, webview.url.toString());
                 navigationbar.favorite = true;
             }
             else {
-                Favorites.remove(Database.instance(), mainwindow.settings.favorites, webview.url.toString());
+                Favorites.removeFromUrl(webview.url.toString());
                 navigationbar.favorite = false;
             }
         }

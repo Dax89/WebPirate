@@ -87,9 +87,8 @@ SilicaWebView
             navigationbar.state = "loaded";
         }
         else if (loadRequest.status === WebView.LoadSucceededStatus)  {
-            var idx = mainwindow.settings.favorites.indexOf(url.toString())
             navigationbar.state = "loaded";
-            navigationbar.favorite = (idx !== -1);
+            navigationbar.favorite = Favorites.contains(url.toString());
 
             if(!UrlHelper.isSpecialUrl(url.toString()) && UrlHelper.isUrl(url.toString()))
             {
