@@ -106,6 +106,4 @@ ListModel
     {
         jumpTo(0);
     }
-
-    Component.onCompleted: jumpToRoot()
 }

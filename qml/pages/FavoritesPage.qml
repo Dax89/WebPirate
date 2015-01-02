@@ -4,13 +4,14 @@ import "../components"
 import "../components/tabview"
 import "../models"
 
-Dialog
+Page
 {
+    property int folderId
     property TabView tabview
+    property Page rootPage
 
-    id: favoritesdialog
+    id: favoritespage
     allowedOrientations: Orientation.All
-    acceptDestinationAction: PageStackAction.Pop
 
     SilicaFlickable
     {
@@ -31,11 +32,7 @@ Dialog
             }
         }
 
-        PageHeader
-        {
-            id: header
-            title: qsTr("Favorites")
-        }
+        PageHeader { id: header }
 
         FavoritesView
         {
@@ -44,8 +41,12 @@ Dialog
 
             onUrlRequested: {
                 tabview.pages.get(tabview.currentIndex).tab.load(favoriteurl);
-                favoritesdialog.accept();
             }
         }
+    }
+
+    Component.onCompleted: {
+        favoritesview.model.jumpTo(folderId);
+        header.title = (folderId === 0 ? qsTr("Favorites") : favoritesview.model.currentFolder());
     }
 }

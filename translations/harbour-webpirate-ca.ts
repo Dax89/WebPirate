@@ -98,7 +98,7 @@
     <name>FavoritesPage</name>
     <message>
         <source>Favorites</source>
-        <translation>Preferits</translation>
+        <translation type="unfinished">Preferits</translation>
     </message>
     <message>
         <source>Add Folder</source>
@@ -125,7 +125,7 @@
     </message>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished">Preferits</translation>
+        <translation type="obsolete">Preferits</translation>
     </message>
     <message>
         <source>Deleting Favorite</source>

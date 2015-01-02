@@ -97,15 +97,15 @@
 <context>
     <name>FavoritesPage</name>
     <message>
-        <source>Favorites</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Add Folder</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Add Favorite</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Favorites</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -117,10 +117,6 @@
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Favorites</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

@@ -96,7 +96,7 @@ Item
 
                 onClicked: {
                     if(index === 0)
-                        pageStack.push(Qt.resolvedUrl("../pages/FavoritesPage.qml"), { "tabview": tabview });
+                        pageStack.push(Qt.resolvedUrl("../pages/FavoritesPage.qml"), { "folderId": 0, "tabview": tabview, "rootPage": pageStack.currentPage });
                     else if(index === 1)
                         pageStack.push(Qt.resolvedUrl("../pages/DownloadsPage.qml"), { "settings": mainwindow.settings });
                     else if(index === 2)
