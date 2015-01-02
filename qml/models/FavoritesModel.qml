@@ -19,6 +19,12 @@ ListModel
         return -1;
     }
 
+    function currentFolder()
+    {
+        var favorite = Favorites.get(currentId);
+        return favorite.title;
+    }
+
     function addFolder(title, parentid)
     {
         var favoriteid = Favorites.addFolder(title, parentid);
@@ -56,6 +62,15 @@ ListModel
     {
         currentId = favoriteid;
         Favorites.readChildren(favoriteid, favorites);
+    }
+
+    function jumpBack()
+    {
+        if(currentId === 0)
+            return;
+
+        var favorite = Favorites.get(currentId);
+        jumpTo(favorite.parentid);
     }
 
     function jumpToRoot()

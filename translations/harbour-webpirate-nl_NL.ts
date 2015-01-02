@@ -123,6 +123,10 @@
         <source>Deleting Bookmark</source>
         <translation>Bezig met verwijderen van bladwijzer</translation>
     </message>
+    <message>
+        <source>Favorites</source>
+        <translation type="unfinished">Bladwijzers</translation>
+    </message>
 </context>
 <context>
     <name>LinkMenu</name>

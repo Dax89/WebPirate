@@ -123,6 +123,10 @@
         <source>Deleting Bookmark</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Favorites</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>LinkMenu</name>

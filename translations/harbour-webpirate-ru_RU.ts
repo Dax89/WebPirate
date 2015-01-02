@@ -123,6 +123,10 @@
         <source>Deleting Bookmark</source>
         <translation>Удаление закладки</translation>
     </message>
+    <message>
+        <source>Favorites</source>
+        <translation type="unfinished">Закладки</translation>
+    </message>
 </context>
 <context>
     <name>LinkMenu</name>

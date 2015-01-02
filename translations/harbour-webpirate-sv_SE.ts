@@ -123,6 +123,10 @@
         <source>Deleting Bookmark</source>
         <translation>Tar bort bokmärke</translation>
     </message>
+    <message>
+        <source>Favorites</source>
+        <translation type="unfinished">Favoriter</translation>
+    </message>
 </context>
 <context>
     <name>LinkMenu</name>

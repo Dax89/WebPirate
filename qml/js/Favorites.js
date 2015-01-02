@@ -80,6 +80,20 @@ function migrate(maindb) // Migrate Old Favorites Table to the new one
     });
 }
 
+function get(favoriteid)
+{
+    var favorite = null;
+
+    instance().transaction(function(tx) {
+        var res = tx.executeSql("SELECT * FROM Favorites WHERE favoriteid=?", [favoriteid]);
+
+        if(res.rows.length)
+            favorite = res.rows[0];
+    });
+
+    return favorite;
+}
+
 function addFolder(title, parentid)
 {
     var nodeid;

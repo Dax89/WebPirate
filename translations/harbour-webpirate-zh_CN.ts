@@ -123,6 +123,10 @@
         <source>Deleting Bookmark</source>
         <translation>正在删除书签</translation>
     </message>
+    <message>
+        <source>Favorites</source>
+        <translation type="unfinished">收藏夹</translation>
+    </message>
 </context>
 <context>
     <name>LinkMenu</name>

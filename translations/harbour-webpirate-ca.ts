@@ -123,6 +123,10 @@
         <source>Deleting Bookmark</source>
         <translation>S&apos;està eliminant el marcador</translation>
     </message>
+    <message>
+        <source>Favorites</source>
+        <translation type="unfinished">Preferits</translation>
+    </message>
 </context>
 <context>
     <name>LinkMenu</name>
