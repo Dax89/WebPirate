@@ -121,11 +121,15 @@
     </message>
     <message>
         <source>Deleting Bookmark</source>
-        <translation>Tar bort bokmärke</translation>
+        <translation type="obsolete">Tar bort bokmärke</translation>
     </message>
     <message>
         <source>Favorites</source>
         <translation type="unfinished">Favoriter</translation>
+    </message>
+    <message>
+        <source>Deleting Favorite</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

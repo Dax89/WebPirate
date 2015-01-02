@@ -121,11 +121,15 @@
     </message>
     <message>
         <source>Deleting Bookmark</source>
-        <translation>Bezig met verwijderen van bladwijzer</translation>
+        <translation type="obsolete">Bezig met verwijderen van bladwijzer</translation>
     </message>
     <message>
         <source>Favorites</source>
         <translation type="unfinished">Bladwijzers</translation>
+    </message>
+    <message>
+        <source>Deleting Favorite</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

@@ -50,7 +50,12 @@ Dialog
         if(result === DialogResult.Accepted)
         {
             if(favoriteId !== -1)
-                model.replace(dlgbookmark.favoriteId, tftitle.text, UrlHelper.adjustUrl(tfurl.text));
+            {
+                if(isFolder)
+                    model.replaceFolder(dlgbookmark.favoriteId, model.currentId, tftitle.text);
+                else
+                    model.replaceUrl(dlgbookmark.favoriteId, model.currentId, tftitle.text, UrlHelper.adjustUrl(tfurl.text));
+            }
             else if(isFolder)
                 model.addFolder(tftitle.text, dlgbookmark.parentId);
             else

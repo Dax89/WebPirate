@@ -41,7 +41,23 @@ ListModel
             favorites.append({ "parentid": parentid, "favoriteid": favoriteid, "url": url, "title": title, "isfolder": 0 });
     }
 
-    function replace(favoriteid, title, url)
+    function replaceFolder(favoriteid, parentid, title)
+    {
+        if(currentId === parentid)
+        {
+            var idx = indexOf(favoriteid);
+
+            if(idx !== -1)
+            {
+                var favorite = favorites.get(idx);
+                favorite.title = title;
+            }
+        }
+
+        Favorites.replaceFolder(favoriteid, title);
+    }
+
+    function replaceUrl(favoriteid, parentid, title, url)
     {
         if(currentId === parentid)
         {
@@ -55,7 +71,20 @@ ListModel
             }
         }
 
-        Favorites.replace(favoriteid, title, url);
+        Favorites.replaceUrl(favoriteid, title, url);
+    }
+
+    function erase(favoriteid, parentid)
+    {
+        if(currentId === parentid)
+        {
+            var idx = indexOf(favoriteid);
+
+            if(idx !== -1)
+                favorites.remove(idx);
+        }
+
+        Favorites.remove(favoriteid);
     }
 
     function jumpTo(favoriteid)

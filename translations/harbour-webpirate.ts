@@ -120,11 +120,11 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Deleting Bookmark</source>
+        <source>Favorites</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Favorites</source>
+        <source>Deleting Favorite</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

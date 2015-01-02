@@ -36,7 +36,7 @@ function contains(url)
     var exists = false;
 
     instance().transaction(function(tx) {
-        var res = tx.executeSql("SELECT COUNT(*) FROM Favorites WHERE url=?", [url]);
+        var res = tx.executeSql("SELECT COUNT(*) FROM Favorites WHERE url = ? AND isfolder = 0", [url]);
         exists = res.rows[0]["COUNT(*)"] > 0;
     });
 
@@ -99,7 +99,7 @@ function addFolder(title, parentid)
     var nodeid;
 
     instance().transaction(function(tx) {
-        var res = tx.executeSql("INSERT INTO Favorites (parentid, url, title, isfolder) VALUES (?, '', ?, ?);", [parentid, title, 1]);
+        var res = tx.executeSql("INSERT INTO Favorites (parentid, url, title, isfolder) VALUES (?, NULL, ?, ?);", [parentid, title, 1]);
         nodeid = parseInt(res.insertId);
 
         tx.executeSql("INSERT INTO FavoritesTree (parentid, childid) VALUES (?, ?)", [parentid, nodeid]);
@@ -122,10 +122,17 @@ function addUrl(title, url, parentid)
     return nodeid;
 }
 
-function replace(id, title, url)
+function replaceFolder(id, title)
+{
+    instance().transaction(function(tx) {        
+        tx.executeSql("UPDATE Favorites SET title = ? WHERE favoriteid = ?", [title, id]);
+    });
+}
+
+function replaceUrl(id, title, url)
 {
     instance().transaction(function(tx) {
-        tx.executeSql("UPDATE Favorites SET url=?, title=? WHERE favoriteid=?", [id, url, title]);
+        tx.executeSql("UPDATE Favorites SET url = ?, title = ? WHERE favoriteid = ?", [url, title, id]);
     });
 }
 
@@ -142,11 +149,14 @@ function removeFromUrl(url)
 function remove(id)
 {
     instance().transaction(function(tx) {
+        var favorite = get(id);
         var res = tx.executeSql("SELECT * FROM FavoritesTree WHERE parentid = ?", [id]);
 
         for(var i = 0; i < res.rows.length; i++)
-            remove(res.rows[i].id);
+            remove(res.rows[i].childid);
 
-        tx.executeSql("DELETE FROM Favorites WHERE favoriteid= ?", [id]);
+        tx.executeSql("DELETE FROM Favorites WHERE favoriteid = ?", [id]);
+        tx.executeSql("DELETE FROM FavoritesTree WHERE parentid = ?", [id]);
+        tx.executeSql("DELETE FROM FavoritesTree WHERE parentid = ? AND childid = ?", [favorite.parentid, id]);
     });
 }

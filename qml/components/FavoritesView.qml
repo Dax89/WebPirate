@@ -6,6 +6,8 @@ import "../js/Favorites.js" as Favorites
 
 Item
 {
+    property alias model: favoritesview.model
+
     signal urlRequested(string favoriteurl)
 
     function needsBackButtun()
@@ -73,7 +75,7 @@ Item
                 MenuItem {
                     text: qsTr("Edit");
 
-                    onClicked: pageStack.push(Qt.resolvedUrl("../pages/FavoritePage.qml"), {"settings": mainwindow.settings,
+                    onClicked: pageStack.push(Qt.resolvedUrl("../pages/FavoritePage.qml"), {"model": favoritesmodel,
                                                                                             "favoriteId": favoriteid,
                                                                                             "parentId": parentid,
                                                                                             "isFolder": isfolder,
@@ -84,9 +86,9 @@ Item
                 MenuItem {
                     text: qsTr("Delete");
 
-                    onClicked: listitem.remorseAction(qsTr("Deleting Bookmark"),
+                    onClicked: listitem.remorseAction(qsTr("Deleting Favorite"),
                                                       function() {
-                                                          Favorites.remove(id);
+                                                          favoritesmodel.erase(favoriteid, parentid);
                                                       });
                 }
             }

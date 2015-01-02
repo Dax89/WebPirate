@@ -121,11 +121,15 @@
     </message>
     <message>
         <source>Deleting Bookmark</source>
-        <translation>正在删除书签</translation>
+        <translation type="obsolete">正在删除书签</translation>
     </message>
     <message>
         <source>Favorites</source>
         <translation type="unfinished">收藏夹</translation>
+    </message>
+    <message>
+        <source>Deleting Favorite</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
