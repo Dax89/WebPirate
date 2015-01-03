@@ -7,6 +7,7 @@ import "../js/Database.js" as Database
 import "../js/Favorites.js" as Favorites
 import "../js/Credentials.js" as Credentials
 import "../js/History.js" as History
+import "../js/UserAgents.js" as UserAgents
 
 SilicaWebView
 {
@@ -21,8 +22,8 @@ SilicaWebView
     experimental.preferences.javascriptEnabled: true
     experimental.preferences.navigatorQtObjectEnabled: true
     experimental.preferences.developerExtrasEnabled: true
-    experimental.userScripts: [Qt.resolvedUrl("../js/WebViewHelper.js")]
-    experimental.userAgent: mainwindow.settings.useragents.get(mainwindow.settings.useragent).value
+    experimental.userAgent: UserAgents.get(mainwindow.settings.useragent).value
+    experimental.userScripts: [ Qt.resolvedUrl("../js/WebViewHelper.js") ]
 
     experimental.onMessageReceived: {
         var data = JSON.parse(message.data);
@@ -37,9 +38,8 @@ SilicaWebView
                 linkmenu.isimage = data.isimage;
                 linkmenu.show();
             }
-            else if(data.text) {
+            else if(data.text)
                 pageStack.push(Qt.resolvedUrl("../pages/TextSelectionPage.qml"), { "text": data.text });
-            }
         }
         else if(data.type === "submit") {
             linkmenu.hide();

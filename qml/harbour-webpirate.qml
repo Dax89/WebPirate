@@ -50,11 +50,10 @@ ApplicationWindow
             Database.load();
             History.load();
             Favorites.load(Database.instance());
+            UserAgents.load(Database.instance());
+            SearchEngines.load(Database.instance(), settings.searchengines);
 
             Credentials.createSchema(Database.instance());
-
-            SearchEngines.load(Database.instance(), settings.searchengines);
-            UserAgents.load(Database.instance(), settings.useragents);
 
             var hp = Database.get("homepage");
             settings.homepage = (hp === false ? "about:bookmarks" : hp);

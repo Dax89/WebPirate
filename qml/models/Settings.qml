@@ -6,7 +6,6 @@ QtObject
 {
     property DeviceInfo deviceinfo: DeviceInfo { }
     property SearchEngineModel searchengines: SearchEngineModel { }
-    property ListModel useragents: ListModel { }
     property DownloadManager downloadmanager: DownloadManager { }
     property WebIconDatabase icondatabase: WebIconDatabase { }
 

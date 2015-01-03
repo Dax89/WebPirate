@@ -6,6 +6,7 @@ import "../js/UrlHelper.js" as UrlHelper
 import "../js/Database.js" as Database
 import "../js/Credentials.js" as Credentials
 import "../js/History.js" as History
+import "../js/UserAgents.js" as UserAgents
 
 Dialog
 {
@@ -81,10 +82,10 @@ Dialog
                 menu: ContextMenu {
 
                     Repeater {
-                        model: settings.useragents
+                        model: UserAgents.defaultuseragents
 
                         MenuItem {
-                            text: type
+                            text: UserAgents.get(index).type
                         }
                     }
                 }
