@@ -1,42 +1,24 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
+import "../js/SearchEngines.js" as SearchEngines
 
-Rectangle
+Item
 {
     id: searchbar
 
-    property alias icon: favicon.source
     property string title
     property string url
 
     signal textChanged(string text)
     signal returnPressed(string searchquery)
 
-    Image
-    {
-        id: favicon
-        anchors.left: searchbar.left
-        fillMode: Image.PreserveAspectFit
-
-        onSourceChanged: {
-            if(source.toString().length > 0) {
-                width = Theme.iconSizeSmall
-                height = Theme.iconSizeSmall
-            } else {
-                width = 0
-                height = 0
-            }
-        }
-    }
-
-    // @disable-check M301
     TextField
     {
         id: searchfield
-        anchors.left: favicon.right
-        anchors.right: searchbar.right
+        anchors { left: parent.left; right: parent.right }
         font.pixelSize: Theme.fontSizeSmall
         inputMethodHints: Qt.ImhNoAutoUppercase
+        placeholderText: qsTr("Search with") + " " + mainwindow.settings.searchengines.get(mainwindow.settings.searchengine).name
         labelVisible: false
 
         Keys.onReturnPressed: {
