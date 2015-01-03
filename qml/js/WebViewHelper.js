@@ -106,7 +106,17 @@ function checkLongPress(x, y, target)
     else if(target.textContent)
         data.text = target.innerText;
     else
-        return;
+    {
+        var style = window.getComputedStyle(target, null); // Try to get image from CSS
+
+        if(style.backgroundImage)
+        {
+            data.url = style.backgroundImage.slice(4, -1);
+            data.isimage = true;
+        }
+        else
+          return;
+    }
 
     navigator.qt.postMessage(JSON.stringify(data));
 }
@@ -116,11 +126,14 @@ function onTouchStart(touchevent)
     if(touchevent.touches.length === 1)
     {
         currtouch = touchevent.touches[0];
-        timerid = setTimeout(checkLongPress, 800, currtouch.clientX, currtouch.clientY, touchevent.target);
+        timerid = setTimeout(function() {
+            checkLongPress(currtouch.clientX, currtouch.clientY, touchevent.target)
+        }, 800);
     }
 
     var data = new Object;
-    data.type = "touchstart"
+    data.type = "touchstart";
+
     navigator.qt.postMessage(JSON.stringify(data));
 }
 
