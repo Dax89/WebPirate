@@ -171,6 +171,21 @@
     </message>
 </context>
 <context>
+    <name>QuickGridPage</name>
+    <message>
+        <source>Save</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Title</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Url</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>RequestMenu</name>
     <message>
         <source>Yes</source>
@@ -178,6 +193,13 @@
     </message>
     <message>
         <source>No</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SearchBar</name>
+    <message>
+        <source>Search with</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

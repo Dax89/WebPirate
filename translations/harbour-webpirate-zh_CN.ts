@@ -179,6 +179,28 @@
     </message>
 </context>
 <context>
+    <name>QuickGrid</name>
+    <message>
+        <source>Add</source>
+        <translation type="obsolete">添加</translation>
+    </message>
+</context>
+<context>
+    <name>QuickGridPage</name>
+    <message>
+        <source>Save</source>
+        <translation type="unfinished">保存</translation>
+    </message>
+    <message>
+        <source>Title</source>
+        <translation type="unfinished">标题</translation>
+    </message>
+    <message>
+        <source>Url</source>
+        <translation type="unfinished">网址</translation>
+    </message>
+</context>
+<context>
     <name>RequestMenu</name>
     <message>
         <source>Yes</source>
@@ -187,6 +209,13 @@
     <message>
         <source>No</source>
         <translation>否</translation>
+    </message>
+</context>
+<context>
+    <name>SearchBar</name>
+    <message>
+        <source>Search with</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

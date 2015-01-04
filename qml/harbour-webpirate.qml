@@ -36,6 +36,7 @@ import "cover"
 import "js/Database.js" as Database
 import "js/Favorites.js" as Favorites
 import "js/SearchEngines.js" as SearchEngines
+import "js/QuickGrid.js" as QuickGrid
 import "js/UserAgents.js" as UserAgents
 import "js/Credentials.js" as Credentials
 import "js/History.js" as History
@@ -52,6 +53,7 @@ ApplicationWindow
             Favorites.load(Database.instance());
             UserAgents.load(Database.instance());
             SearchEngines.load(Database.instance(), settings.searchengines);
+            QuickGrid.load(Database.instance(), settings.quickgridmodel, settings.quickgridmodel.maxitems);
 
             Credentials.createSchema(Database.instance());
 

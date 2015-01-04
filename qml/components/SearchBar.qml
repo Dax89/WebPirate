@@ -4,13 +4,18 @@ import "../js/SearchEngines.js" as SearchEngines
 
 Item
 {
-    id: searchbar
-
     property string title
     property string url
 
     signal textChanged(string text)
     signal returnPressed(string searchquery)
+
+    function clear() {
+        searchfield.text = "";
+    }
+
+    id: searchbar
+    height: searchfield.height
 
     TextField
     {

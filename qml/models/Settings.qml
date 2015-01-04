@@ -7,6 +7,7 @@ QtObject
     property DeviceInfo deviceinfo: DeviceInfo { }
     property SearchEngineModel searchengines: SearchEngineModel { }
     property DownloadManager downloadmanager: DownloadManager { }
+    property QuickGridModel quickgridmodel: QuickGridModel { }
     property WebIconDatabase icondatabase: WebIconDatabase { }
 
     property int searchengine;  /* Search Engine Index */

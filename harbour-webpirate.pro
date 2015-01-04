@@ -67,7 +67,12 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/pages/TextSelectionPage.qml \
     qml/components/tabview/TabView.qml \
     qml/components/tabview/TabButton.qml \
-    qml/components/quickgrid/QuickGrid.qml
+    qml/components/quickgrid/QuickGrid.qml \
+    qml/components/quickgrid/QuickGridItem.qml \
+    qml/components/quickgrid/QuickGridButton.qml \
+    qml/pages/QuickGridPage.qml \
+    qml/js/QuickGrid.js \
+    qml/models/QuickGridModel.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line

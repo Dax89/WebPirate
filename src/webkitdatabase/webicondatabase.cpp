@@ -65,12 +65,15 @@ int WebIconDatabase::queryIconId(const QString &url)
         return -1;
 
     QSqlQuery q(this->_db);
-    QString queryurl = QUrl(url).host().prepend("%").append("%");
+    QString host = QUrl(url).host();
+
+    if(host.isEmpty())
+        return -1;
 
     if(!this->prepare(q, "SELECT iconID FROM PageURL WHERE url LIKE ?"))
         return -1;
 
-    q.bindValue(0, queryurl);
+    q.bindValue(0, "%" + host + "%");
 
     if(!this->execute(q) || !q.first())
         return -1;

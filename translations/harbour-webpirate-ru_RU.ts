@@ -179,6 +179,28 @@
     </message>
 </context>
 <context>
+    <name>QuickGrid</name>
+    <message>
+        <source>Add</source>
+        <translation type="obsolete">Добавить</translation>
+    </message>
+</context>
+<context>
+    <name>QuickGridPage</name>
+    <message>
+        <source>Save</source>
+        <translation type="unfinished">Сохранить</translation>
+    </message>
+    <message>
+        <source>Title</source>
+        <translation type="unfinished">Название </translation>
+    </message>
+    <message>
+        <source>Url</source>
+        <translation type="unfinished">Url</translation>
+    </message>
+</context>
+<context>
     <name>RequestMenu</name>
     <message>
         <source>Yes</source>
@@ -187,6 +209,13 @@
     <message>
         <source>No</source>
         <translation>Нет</translation>
+    </message>
+</context>
+<context>
+    <name>SearchBar</name>
+    <message>
+        <source>Search with</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
