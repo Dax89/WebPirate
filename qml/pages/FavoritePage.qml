@@ -15,7 +15,7 @@ Dialog
     id: dlgbookmark
     allowedOrientations: Orientation.All
     acceptDestinationAction: PageStackAction.Pop
-    canAccept: true
+    canAccept: false
 
     Column
     {
