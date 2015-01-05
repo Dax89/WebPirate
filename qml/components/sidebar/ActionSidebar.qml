@@ -78,7 +78,7 @@ Item
             {
                 anchors { left: parent.left; right: parent.right }
                 icon: "image://theme/icon-m-about"
-                text: qsTr("About WebPirate")
+                text: qsTr("About Web Pirate")
 
                 onClicked: pageStack.push(Qt.resolvedUrl("../../pages/AboutPage.qml"));
             }
