@@ -80,7 +80,7 @@ Item
                 icon: "image://theme/icon-m-about"
                 text: qsTr("About Web Pirate")
 
-                onClicked: pageStack.push(Qt.resolvedUrl("../../pages/AboutPage.qml"));
+                onClicked: pageStack.push(Qt.resolvedUrl("../../pages/AboutPage.qml"), { "settings": mainwindow.settings });
             }
         }
     }

@@ -1,6 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="nl_NL">
+<TS version="2.1" language="nl_NL">
+<context>
+    <name>AboutPage</name>
+    <message>
+        <source>About Web Pirate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>A tabbed Web Browser for SailfishOS based on WebKit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>GitHub Repository</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Version</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Developer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Translators</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Catalan</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Chinese</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Dutch</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>French</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>German</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Russian</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Swedish</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
 <context>
     <name>ActionSidebar</name>
     <message>
@@ -24,7 +79,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>About WebPirate</source>
+        <source>About Web Pirate</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

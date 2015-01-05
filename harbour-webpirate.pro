@@ -74,7 +74,9 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/js/QuickGrid.js \
     qml/models/QuickGridModel.qml \
     qml/components/PopupMessage.qml \
-    qml/components/sidebar/SidebarItem.qml
+    qml/components/sidebar/SidebarItem.qml \
+    qml/pages/AboutPage.qml \
+    qml/components/AboutLabel.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line
