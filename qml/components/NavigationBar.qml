@@ -98,7 +98,7 @@ Rectangle
         onReturnPressed: navigationbar.searchRequested(searchquery);
 
         onUrlChanged: {
-            btnfavorite.visible = !UrlHelper.isSpecialUrl(searchbar.url);
+            btnfavorite.visible = (searchbar.url.length == 0) || !UrlHelper.isSpecialUrl(searchbar.url);
         }
     }
 
