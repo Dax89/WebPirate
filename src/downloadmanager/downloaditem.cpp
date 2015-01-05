@@ -1,5 +1,7 @@
 #include "downloaditem.h"
 
+const QString DownloadItem::DEFAULT_FILENAME = "download.html";
+
 DownloadItem::DownloadItem(QObject *parent): QObject(parent), _completed(false)
 {
 
@@ -7,10 +9,11 @@ DownloadItem::DownloadItem(QObject *parent): QObject(parent), _completed(false)
 
 DownloadItem::DownloadItem(const QUrl &url, QObject* parent): QObject(parent), _completed(false), _url(url), _progressvalue(0), _progresstotal(0), _downloadreply(NULL)
 {
+    QString downloadpath = QStandardPaths::writableLocation(QStandardPaths::DownloadLocation);
     connect(&this->_neworkmanager, SIGNAL(finished(QNetworkReply*)), this, SLOT(onDownloadFinished(QNetworkReply*)));
 
-    this->_filename = url.toString().split('/').last();
-    this->_file.setFileName(QStandardPaths::writableLocation(QStandardPaths::DownloadLocation) + "/" + this->_filename);
+    this->_filename = this->parseFileName(url, downloadpath);
+    this->_file.setFileName(QString("%1%2%3").arg(downloadpath, QDir::separator(), this->_filename));
     emit fileNameChanged();
 }
 
@@ -37,6 +40,35 @@ qint64 DownloadItem::progressValue() const
 qint64 DownloadItem::progressTotal() const
 {
     return this->_progresstotal;
+}
+
+QString DownloadItem::parseFileName(const QUrl& url, const QString& downloadpath)
+{
+    QRegExp regex(QRegExp("^[\\w\\-. ]+$"));
+    QString filename = url.toString().split('/').last();
+
+    if(filename.isEmpty() || !regex.exactMatch(filename))
+        filename = DownloadItem::DEFAULT_FILENAME;
+
+    this->checkConflicts(filename, downloadpath);
+    return filename;
+}
+
+void DownloadItem::checkConflicts(QString& filename, const QString& downloadpath)
+{
+    QDir dir(downloadpath);
+
+    if(!dir.exists(filename))
+        return;
+
+    uint i = 0;
+    QFileInfo fi(filename);
+
+    while(dir.exists(filename))
+    {
+        i++;
+        filename = QString("%1 (%2).%3").arg(fi.baseName()).arg(i).arg(fi.completeSuffix());
+    }
 }
 
 void DownloadItem::start()

@@ -8,6 +8,7 @@
 #include <QStringList>
 #include <QStandardPaths>
 #include <QFile>
+#include <QDir>
 
 class DownloadItem: public QObject
 {
@@ -28,6 +29,10 @@ class DownloadItem: public QObject
         qint64 progressValue() const;
         qint64 progressTotal() const;
 
+    private:
+        QString parseFileName(const QUrl& url, const QString& downloadpath);
+        void checkConflicts(QString& filename, const QString& downloadpath);
+
     signals:
         void speedChanged();
         void fileNameChanged();
@@ -46,6 +51,9 @@ class DownloadItem: public QObject
         void onDownloadError(QNetworkReply::NetworkError);
         void onDownloadFinished(QNetworkReply* reply);
         void onDownloadProgress(qint64 bytesreceived, qint64 bytestotal);
+
+    private:
+        static const QString DEFAULT_FILENAME;
 
     private:
         bool _completed;
