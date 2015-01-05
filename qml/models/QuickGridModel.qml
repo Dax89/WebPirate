@@ -16,4 +16,10 @@ ListModel
 
         QuickGrid.set(Database.instance(), index, title, url);
     }
+
+    function reset(index)
+    {
+        quickgridmodel.remove(index);
+        QuickGrid.reset(Database.instance(), index);
+    }
 }

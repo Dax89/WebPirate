@@ -56,9 +56,16 @@ Item
         QuickGridButton
         {
             id: btndelete
-            opacity: canEdit ? 1.0 : 0.0
+            opacity: (canEdit && url.length > 0) ? 1.0 : 0.0
             anchors { right: parent.right; bottom: parent.bottom; rightMargin: Theme.paddingSmall; bottomMargin: Theme.paddingSmall }
             icon.source: "image://theme/icon-close-vkb"
+
+            onClicked: {
+                tabviewremorse.execute(qsTr("Removing item"),
+                                       function() {
+                                           mainwindow.settings.quickgridmodel.reset(index);
+                                       });
+            }
         }
     }
 

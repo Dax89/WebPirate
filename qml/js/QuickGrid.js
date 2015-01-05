@@ -41,3 +41,10 @@ function set(db, id, title, url)
         tx.executeSql("INSERT OR REPLACE INTO QuickGrid (id, title, url) VALUES (?, ?, ?)", [id, title, url]);
     });
 }
+
+function reset(db, id)
+{
+    db.transaction(function(tx) {
+        tx.executeSql("DELETE FROM QuickGrid WHERE id = ?", [id]);
+    });
+}
