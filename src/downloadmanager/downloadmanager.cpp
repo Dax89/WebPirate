@@ -7,7 +7,7 @@ DownloadManager::DownloadManager(QObject *parent): QObject(parent)
 
 DownloadItem *DownloadManager::downloadItem(int index)
 {
-    return this->_downloads[this->_downloadurls[index]];
+    return this->_downloads[index];
 }
 
 qint64 DownloadManager::count() const
@@ -18,9 +18,7 @@ qint64 DownloadManager::count() const
 void DownloadManager::createDownload(const QUrl &url)
 {
     DownloadItem* di = new DownloadItem(url, this);
-
-    this->_downloadurls.append(url);
-    this->_downloads[url] = di;
+    this->_downloads.append(di);
 
     di->start();
     emit countChanged();
@@ -30,18 +28,17 @@ void DownloadManager::removeCompleted()
 {
     int i = 0;
 
-    while(i < this->_downloadurls.count())
+    while(i < this->_downloads.count())
     {
-        const QUrl& url = this->_downloadurls[i];
+        DownloadItem* di = this->_downloads[i];
 
-        if(!this->_downloads[url]->completed())
+        if(!di->completed())
         {
             i++;
             continue;
         }
 
-        this->_downloads.remove(url);
-        this->_downloadurls.removeAt(i);
+        this->_downloads.removeAt(i);
     }
 
     emit countChanged();

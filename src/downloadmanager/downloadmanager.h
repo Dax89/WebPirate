@@ -25,8 +25,7 @@ class DownloadManager : public QObject
         void removeCompleted();
 
     private:
-        QHash<QUrl, DownloadItem*> _downloads;
-        QList<QUrl> _downloadurls;
+        QList<DownloadItem*> _downloads;
 };
 
 #endif // DOWNLOADMANAGER_H
