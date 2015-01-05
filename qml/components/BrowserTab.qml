@@ -61,7 +61,6 @@ Item
     function loadDefault()
     {
         state = "newtab";
-        webview.url = "about:newtab";
         navigationbar.searchBar.url = "about:newtab";
     }
 
