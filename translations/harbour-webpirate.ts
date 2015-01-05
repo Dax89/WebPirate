@@ -171,6 +171,13 @@
     </message>
 </context>
 <context>
+    <name>QuickGridItem</name>
+    <message>
+        <source>Removing item</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>QuickGridPage</name>
     <message>
         <source>Save</source>
