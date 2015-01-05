@@ -79,6 +79,11 @@ Item
 
     RemorsePopup { id: tabviewremorse }
 
+    PopupMessage {
+        id: popupmessage
+        anchors { left: parent.left; top: parent.top; right: parent.right }
+    }
+
     Item
     {
         id: header

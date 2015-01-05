@@ -125,6 +125,13 @@
     </message>
 </context>
 <context>
+    <name>HistoryMenu</name>
+    <message>
+        <source>Link copied to clipboard</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>LinkMenu</name>
     <message>
         <source>Open New Tab</source>

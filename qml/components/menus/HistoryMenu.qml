@@ -58,5 +58,10 @@ PopupMenu
         }
 
         onClicked: urlRequested(url)
+
+        onPressAndHold: {
+            popupmessage.show(qsTr("Link copied to clipboard"));
+            Clipboard.text = url;
+        }
     }
 }
