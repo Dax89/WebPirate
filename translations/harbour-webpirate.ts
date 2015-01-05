@@ -15,6 +15,18 @@
         <source>Settings</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>General</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Change settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>About WebPirate</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>BrowserTab</name>
