@@ -138,17 +138,17 @@ Item
         id: container
         anchors { left: parent.left; top: header.bottom; right: parent.right; bottom: parent.bottom }
 
-        ActionSidebar
-        {
-            id: sidebar
-            anchors { left: parent.left; top: parent.top; bottom: parent.bottom }
-        }
-
         Item
         {
             id: stack
-            anchors{ left: sidebar.right; top: parent.top; bottom: parent.bottom }
+            anchors { top: parent.top; right: sidebar.left; bottom: parent.bottom }
             width: parent.width
+        }
+
+        ActionSidebar
+        {
+            id: sidebar
+            anchors { right: parent.right; top: parent.top; bottom: parent.bottom }
         }
     }
 
