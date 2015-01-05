@@ -47,7 +47,10 @@ Rectangle
 
             onPressAndHold: {
                 if(!editMode)
+                {
                     editMode = true;
+                    sidebar.collapse();
+                }
             }
 
             onClicked: {
@@ -59,6 +62,8 @@ Rectangle
 
                 if(url.length)
                     browsertab.load(url);
+
+                sidebar.collapse();
             }
         }
 
