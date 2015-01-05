@@ -28,7 +28,7 @@ Rectangle
     SilicaGridView
     {
         id: gridview
-        anchors { left: parent.left; top: searchbar.bottom; right: parent.right; bottom: parent.bottom; /*bottom: rectadd.top;*/ topMargin: Theme.paddingLarge; leftMargin: Theme.paddingMedium }
+        anchors { left: parent.left; top: searchbar.bottom; right: parent.right; bottom: parent.bottom; topMargin: Theme.paddingLarge; leftMargin: Theme.paddingMedium }
         cellWidth: Math.round(width / 3)
         cellHeight: cellWidth
         clip: true
@@ -57,32 +57,11 @@ Rectangle
                     return;
                 }
 
-                browsertab.load(url);
+                if(url.length)
+                    browsertab.load(url);
             }
         }
+
+        VerticalScrollDecorator { flickable: gridview }
     }
-
-    /*
-    Rectangle
-    {
-        id: rectadd
-        color: Theme.highlightDimmerColor
-        height: visible > 0 ? Theme.itemSizeSmall : 0
-        anchors { left: parent.left; right: parent.right; bottom: parent.bottom; }
-        visible: editMode
-
-        BackgroundItem
-        {
-            anchors.fill: parent
-
-            Label
-            {
-                anchors.fill: parent
-                horizontalAlignment: Text.AlignHCenter
-                verticalAlignment: Text.AlignVCenter
-                text: qsTr("Add")
-            }
-        }
-    }
-    */
 }

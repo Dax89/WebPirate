@@ -4,7 +4,6 @@ import Sailfish.Silica 1.0
 IconButton
 {
     id: btnedit
-    z: 1
     width: Theme.iconSizeSmall
     height: Theme.iconSizeSmall
     icon.fillMode: Image.PreserveAspectFit
