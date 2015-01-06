@@ -9,7 +9,7 @@ Item
 
     id: sidebar
     visible: false
-    width: visible ? parent.width * 0.60 : 0
+    width: visible ? parent.width * 0.55 : 0
     z: 2
 
     Behavior on width {
