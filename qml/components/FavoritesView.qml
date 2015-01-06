@@ -36,7 +36,7 @@ Item
                 MenuItem {
                     text: qsTr("Delete");
 
-                    onClicked: listitem.remorseAction(qsTr("Deleting Favorite"),
+                    onClicked: listitem.remorseAction(isfolder ? qsTr("Deleting Folder") : qsTr("Deleting Favorite"),
                                                       function() {
                                                           favoritesmodel.erase(favoriteid, parentid);
                                                       });
