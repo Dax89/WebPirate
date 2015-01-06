@@ -74,7 +74,6 @@ SilicaWebView
 
     onLoadingChanged: {
         if(loadRequest.status === WebView.LoadStartedStatus) {
-            navigationbar.state = "loading";
             navigationbar.expand();
             linkmenu.hide();
             sidebar.collapse();
@@ -84,10 +83,8 @@ SilicaWebView
             loadfailed.offline = experimental.offline;
             loadfailed.errorString = loadRequest.errorString;
             browsertab.state = "loaderror";
-            navigationbar.state = "loaded";
         }
         else if (loadRequest.status === WebView.LoadSucceededStatus)  {
-            navigationbar.state = "loaded";
             navigationbar.favorite = Favorites.contains(url.toString());
 
             if(!UrlHelper.isSpecialUrl(url.toString()) && UrlHelper.isUrl(url.toString()))

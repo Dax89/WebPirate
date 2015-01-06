@@ -155,6 +155,7 @@ Item
         anchors { bottom: parent.bottom; left: parent.left; right: parent.right }
         forwardButton.enabled: webview.canGoForward;
         backButton.enabled: webview.canGoBack;
+        state: (browsertab.state === "webbrowser" && webview.loading) ? "loading" : "loaded";
 
         onForwardRequested: webview.goForward();
         onBackRequested: webview.goBack();
