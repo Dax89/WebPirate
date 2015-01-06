@@ -7,6 +7,7 @@ Rectangle
     property real maximumValue: 100
     property real value: minimumValue
     property bool hideWhenFinished: false
+    property bool canDisplay: true
     property int barHeight: 4
 
     height: barHeight
@@ -17,7 +18,7 @@ Rectangle
                 height = 0;
                 visible = false;
             }
-            else {
+            else if(canDisplay) {
                 height = barHeight;
                 visible = true;
             }

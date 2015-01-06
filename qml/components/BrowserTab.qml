@@ -15,9 +15,9 @@ Item
     states: [
         State {
             name: "newtab";
-            PropertyChanges { target: webview; visible: false; }
+            PropertyChanges { target: webview; visible: false }
             PropertyChanges { target: quickgrid; visible: true }
-            PropertyChanges { target: loadingbar; visible: false }
+            PropertyChanges { target: loadingbar; visible: false; canDisplay: false }
             PropertyChanges { target: loadfailed; visible: false }
         },
 
@@ -26,13 +26,14 @@ Item
             PropertyChanges { target: webview; visible: true; }
             PropertyChanges { target: quickgrid; visible: false }
             PropertyChanges { target: loadfailed; visible: false }
+            PropertyChanges { target: loadingbar; canDisplay: true }
         },
 
         State {
             name: "loaderror";
             PropertyChanges { target: webview; visible: false; }
             PropertyChanges { target: quickgrid; visible: false }
-            PropertyChanges { target: loadingbar; visible: false }
+            PropertyChanges { target: loadingbar; visible: false; canDisplay: false }
             PropertyChanges { target: loadfailed; visible: true }
         } ]
 
@@ -61,6 +62,7 @@ Item
     function loadDefault()
     {
         state = "newtab";
+        webview.url = "about:newtab"
         navigationbar.searchBar.url = "about:newtab";
     }
 
