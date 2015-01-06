@@ -35,8 +35,8 @@ Item
         Image
         {
             id: imgicon
-            width: 64
-            height: 64
+            width: parent.width * 0.4
+            height: width
             cache: false
             visible: itemUrl.length > 0
             anchors.centerIn: parent
@@ -48,7 +48,7 @@ Item
             id: btnedit
             opacity: canEdit ? 1.0 : 0.0
             anchors { left: parent.left; bottom: parent.bottom; leftMargin: Theme.paddingSmall; bottomMargin: Theme.paddingSmall }
-            icon.source: "image://theme/icon-s-edit"
+            icon.source: "image://theme/icon-m-edit"
 
             onClicked: pageStack.push(Qt.resolvedUrl("../../pages/QuickGridPage.qml"), { "settings": mainwindow.settings, "index": index, "title": lbltitle.text, "url": itemUrl })
         }

@@ -112,7 +112,6 @@ Item
     QuickGrid {
         id: quickgrid
         anchors { left: parent.left; right: parent.right; top: parent.top; bottom: navigationbar.top }
-        //FIXME: onUrlRequested: load(favoriteurl);
 
         onVisibleChanged: {
             if(visible)

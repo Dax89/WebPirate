@@ -4,9 +4,9 @@ import Sailfish.Silica 1.0
 IconButton
 {
     id: btnedit
-    width: Theme.iconSizeSmall
-    height: Theme.iconSizeSmall
-    icon.fillMode: Image.PreserveAspectFit
+    width: quickgriditem.width * 0.25
+    height: width
+    icon { width: width; height: height; fillMode: Image.PreserveAspectFit }
     visible: opacity > 0
 
     Behavior on opacity {

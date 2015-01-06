@@ -25,50 +25,54 @@ Rectangle
         }
     }
 
-    SilicaGridView
+    Item
     {
-        id: gridview
         anchors { left: parent.left; top: searchbar.bottom; right: parent.right; bottom: parent.bottom; topMargin: Theme.paddingLarge; leftMargin: Theme.paddingMedium }
-        cellWidth: Math.round(width / 3)
-        cellHeight: cellWidth
-        clip: true
-        model: mainwindow.settings.quickgridmodel
 
-        delegate: ListItem {
-            contentWidth: gridview.cellWidth - Theme.paddingMedium
-            contentHeight: gridview.cellHeight - Theme.paddingMedium
+        SilicaGridView
+        {
+            id: gridview
+            anchors { top: parent.top; bottom: parent.bottom; horizontalCenter: parent.horizontalCenter }
+            width: parent.width
+            cellWidth: width / 3
+            cellHeight: cellWidth
+            model: mainwindow.settings.quickgridmodel
+            clip: true
 
-            QuickGridItem {
-                anchors.fill: parent
-                itemTitle: title
-                itemUrl: url
-                canEdit: editMode
-            }
+            delegate: ListItem {
+                contentWidth: gridview.cellWidth - Theme.paddingLarge
+                contentHeight: gridview.cellHeight - Theme.paddingLarge
 
-            onPressAndHold: {
-                if(!editMode)
-                {
-                    editMode = true;
+                QuickGridItem {
+                    anchors.fill: parent
+                    itemTitle: title
+                    itemUrl: url
+                    canEdit: editMode
+                }
+
+                onPressAndHold: {
+                    if(!editMode) {
+                        editMode = true;
+                        sidebar.collapse();
+                    }
+                }
+
+                onClicked: {
+                    if(editMode) {
+                        editMode = false;
+                        return;
+                    }
+
+                    if(url.length)
+                        browsertab.load(url);
+
                     sidebar.collapse();
                 }
             }
 
-            onClicked: {
-                if(editMode)
-                {
-                    editMode = false;
-                    return;
-                }
+            onVerticalVelocityChanged: sidebar.collapse();
 
-                if(url.length)
-                    browsertab.load(url);
-
-                sidebar.collapse();
-            }
+            VerticalScrollDecorator { flickable: gridview }
         }
-
-        onVerticalVelocityChanged: sidebar.collapse();
-
-        VerticalScrollDecorator { flickable: gridview }
     }
 }
