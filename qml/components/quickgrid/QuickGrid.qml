@@ -67,6 +67,8 @@ Rectangle
             }
         }
 
+        onVerticalVelocityChanged: sidebar.collapse();
+
         VerticalScrollDecorator { flickable: gridview }
     }
 }

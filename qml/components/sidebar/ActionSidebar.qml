@@ -8,7 +8,8 @@ Item
                                        QtObject { property string icon: "image://theme/icon-s-setting"; property string label: qsTr("Settings") } ]
 
     id: sidebar
-    visible: width > 0
+    visible: false
+    width: visible ? parent.width * 0.60 : 0
     z: 2
 
     Behavior on width {
@@ -16,11 +17,11 @@ Item
     }
 
     function expand() {
-        sidebar.width = parent.width * 0.60;
+        visible = true;
     }
 
     function collapse() {
-        sidebar.width = 0;
+        visible = false;
     }
 
     SilicaFlickable
