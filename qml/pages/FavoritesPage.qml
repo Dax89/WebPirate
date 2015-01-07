@@ -33,7 +33,7 @@ Page
         {
             MenuItem
             {
-                text: qsTr("Export")
+                text: qsTr("Export") + ((folderId === 0) ? "" : " '" + favoritesview.model.currentFolder() + "'")
             }
 
             MenuItem
