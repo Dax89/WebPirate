@@ -20,7 +20,9 @@ SOURCES += src/harbour-webpirate.cpp \
     src/downloadmanager/downloadmanager.cpp \
     src/downloadmanager/downloaditem.cpp \
     src/webkitdatabase/webicondatabase.cpp \
-    src/faviconprovider.cpp
+    src/favoritesmanager/favoritesmanager.cpp \
+    src/faviconprovider.cpp \
+    src/favoritesmanager/favoriteitem.cpp
 
 OTHER_FILES += qml/harbour-webpirate.qml \
     qml/cover/CoverPage.qml \
@@ -76,7 +78,8 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/components/PopupMessage.qml \
     qml/components/sidebar/SidebarItem.qml \
     qml/pages/AboutPage.qml \
-    qml/components/AboutLabel.qml
+    qml/components/AboutLabel.qml \
+    qml/pages/FilePicker.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line
@@ -98,5 +101,7 @@ HEADERS += \
     src/downloadmanager/downloadmanager.h \
     src/downloadmanager/downloaditem.h \
     src/webkitdatabase/webicondatabase.h \
-    src/faviconprovider.h
+    src/favoritesmanager/favoritesmanager.h \
+    src/faviconprovider.h \
+    src/favoritesmanager/favoriteitem.h
 

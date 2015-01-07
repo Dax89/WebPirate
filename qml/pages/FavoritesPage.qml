@@ -1,8 +1,10 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
+import WebPirate 1.0
 import "../components"
 import "../components/tabview"
 import "../models"
+import "../js/Favorites.js" as Favorites
 
 Page
 {
@@ -13,12 +15,40 @@ Page
     id: favoritespage
     allowedOrientations: Orientation.All
 
+    FavoritesManager
+    {
+        id: favoritesmanager
+
+        onParsingCompleted: {
+            Favorites.importFromRoot(favoritesmanager.root, folderId, favoritesview.model)
+            favoritesmanager.clearTree();
+        }
+    }
+
     SilicaFlickable
     {
         anchors.fill: parent
 
         PullDownMenu
         {
+            MenuItem
+            {
+                text: qsTr("Export")
+            }
+
+            MenuItem
+            {
+                text: (folderId === 0) ? qsTr("Import") : (qsTr("Import in") + " '" + favoritesview.model.currentFolder() + "'")
+
+                onClicked: {
+                    var page = pageStack.push(Qt.resolvedUrl("../pages/FilePicker.qml"), { "title": qsTr("Import Favorites") });
+
+                    page.fileSelected.connect(function(file) {
+                        favoritesmanager.importFile(file);
+                    });
+                }
+            }
+
             MenuItem
             {
                 text: qsTr("Add Folder")

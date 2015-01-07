@@ -175,6 +175,22 @@
         <source>Add Favorite</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Export</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Import</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Import in</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Import Favorites</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>FavoritesView</name>
@@ -196,6 +212,10 @@
     </message>
     <message>
         <source>Deleting Favorite</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Deleting Folder</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

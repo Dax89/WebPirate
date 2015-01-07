@@ -10,16 +10,16 @@ int WebIconDatabase::_refcount = 0;
 WebIconDatabase::WebIconDatabase(QObject *parent): QObject(parent)
 {
     if(!this->_refcount)
-        this->_db = QSqlDatabase::addDatabase("QSQLITE");
+        WebIconDatabase::_db = QSqlDatabase::addDatabase("QSQLITE");
 
     this->_refcount++;
 }
 
 WebIconDatabase::~WebIconDatabase()
 {
-    this->_refcount--;
+    WebIconDatabase::_refcount--;
 
-    if(!this->_refcount)
+    if(!WebIconDatabase::_refcount)
     {
         if(this->_db.isOpen())
             this->_db.close();

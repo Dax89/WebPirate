@@ -94,15 +94,30 @@ function get(favoriteid)
     return favorite;
 }
 
+function transactionAddFolder(tx, title, parentid)
+{
+    var res = tx.executeSql("INSERT INTO Favorites (parentid, url, title, isfolder) VALUES (?, NULL, ?, 1);", [parentid, title]);
+    var nodeid = parseInt(res.insertId);
+
+    tx.executeSql("INSERT INTO FavoritesTree (parentid, childid) VALUES (?, ?)", [parentid, nodeid]);
+    return nodeid;
+}
+
+function transactionAddUrl(tx, title, url, parentid)
+{
+    var res = tx.executeSql("INSERT INTO Favorites (parentid, url, title, isfolder) VALUES (?, ?, ?, 0);", [parentid, url, title]);
+    var nodeid = parseInt(res.insertId);
+
+    tx.executeSql("INSERT INTO FavoritesTree (parentid, childid) VALUES (?, ?)", [parentid, nodeid]);
+    return nodeid;
+}
+
 function addFolder(title, parentid)
 {
     var nodeid;
 
     instance().transaction(function(tx) {
-        var res = tx.executeSql("INSERT INTO Favorites (parentid, url, title, isfolder) VALUES (?, NULL, ?, ?);", [parentid, title, 1]);
-        nodeid = parseInt(res.insertId);
-
-        tx.executeSql("INSERT INTO FavoritesTree (parentid, childid) VALUES (?, ?)", [parentid, nodeid]);
+        nodeid = transactionAddFolder(tx, title, parentid);
     });
 
     return nodeid;
@@ -113,10 +128,7 @@ function addUrl(title, url, parentid)
     var nodeid;
 
     instance().transaction(function(tx) {
-        var res = tx.executeSql("INSERT INTO Favorites (parentid, url, title, isfolder) VALUES (?, ?, ?, 0);", [parentid, url, title]);
-        nodeid = parseInt(res.insertId);
-
-        tx.executeSql("INSERT INTO FavoritesTree (parentid, childid) VALUES (?, ?)", [parentid, nodeid]);
+        nodeid = transactionAddUrl(tx, title, url, parentid);
     });
 
     return nodeid;
@@ -159,4 +171,39 @@ function remove(id)
         tx.executeSql("DELETE FROM FavoritesTree WHERE parentid = ?", [id]);
         tx.executeSql("DELETE FROM FavoritesTree WHERE parentid = ? AND childid = ?", [favorite.parentid, id]);
     });
+}
+
+function importFromRoot(rootfolder, parentid, favoritesmodel)
+{
+    instance().transaction(function(tx) {
+        for(var i = 0; i < rootfolder.favorites.length; i++) {
+            var f = rootfolder.favorites[i];
+
+            if(f.isFolder) {
+                var folderid = importFolder(tx, f, parentid);
+                favoritesmodel.addFolderInView(f.title, folderid, parentid);
+            }
+            else {
+                var urlid = transactionAddUrl(tx, f.title, f.url, parentid);
+                favoritesmodel.addUrlInView(f.title, f.url, urlid, parentid);
+            }
+        }
+    });
+}
+
+function importFolder(tx, folder, parentid)
+{
+    var folderid = transactionAddFolder(tx, folder.title, parentid);
+
+    for(var i = 0; i < folder.favorites.length; i++)
+    {
+        var f = folder.favorites[i];
+
+        if(f.isFolder)
+            importFolder(tx, f, folderid);
+        else
+            transactionAddUrl(tx, f.title, f.url, folderid);
+    }
+
+    return folderid;
 }

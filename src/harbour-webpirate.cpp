@@ -32,6 +32,7 @@
 #include <sailfishapp.h>
 #include "webviewdatabase.h"
 #include "faviconprovider.h"
+#include "favoritesmanager/favoritesmanager.h"
 #include "downloadmanager/downloadmanager.h"
 
 int main(int argc, char *argv[])
@@ -39,9 +40,12 @@ int main(int argc, char *argv[])
     QScopedPointer<QGuiApplication> application(SailfishApp::application(argc, argv));
     application->setApplicationName("harbour-webpirate");
 
-    qmlRegisterType<DownloadItem>("WebPirate", 1, 0, "DownloadItem");
-    qmlRegisterType<DownloadManager>("WebPirate", 1, 0, "DownloadManager");
+    qmlRegisterType<DownloadItem>("WebPirate.Private", 1, 0, "DownloadItem");
+    qmlRegisterType<FavoriteItem>("WebPirate.Private", 1, 0, "FavoriteItem");
+
     qmlRegisterType<WebIconDatabase>("WebPirate", 1, 0, "WebIconDatabase");
+    qmlRegisterType<DownloadManager>("WebPirate", 1, 0, "DownloadManager");
+    qmlRegisterType<FavoritesManager>("WebPirate", 1, 0, "FavoritesManager");
 
     WebViewDatabase webviewdb;
 

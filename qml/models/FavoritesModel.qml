@@ -19,6 +19,16 @@ ListModel
         return -1;
     }
 
+    function addFolderInView(title, favoriteid, parentid)
+    {
+        favorites.append({ "parentid": parentid, "favoriteid": favoriteid, "url": "", "title": title, "isfolder": 1 });
+    }
+
+    function addUrlInView(title, url, favoriteid, parentid)
+    {
+        favorites.append({ "parentid": parentid, "favoriteid": favoriteid, "url": url, "title": title, "isfolder": 0 });
+    }
+
     function currentFolder()
     {
         var favorite = Favorites.get(currentId);
@@ -30,7 +40,7 @@ ListModel
         var favoriteid = Favorites.addFolder(title, parentid);
 
         if(currentId === parentid)
-            favorites.append({ "parentid": parentid, "favoriteid": favoriteid, "url": "", "title": title, "isfolder": 1 });
+            favorites.addFolderInView(title, favoriteid, parentid);
     }
 
     function addUrl(title, url, parentid)
@@ -38,7 +48,7 @@ ListModel
         var favoriteid = Favorites.addUrl(title, url, parentid);
 
         if(currentId === parentid)
-            favorites.append({ "parentid": parentid, "favoriteid": favoriteid, "url": url, "title": title, "isfolder": 0 });
+            favorites.addUrlInView(title, url, favoriteid, parentid);
     }
 
     function replaceFolder(favoriteid, parentid, title)
