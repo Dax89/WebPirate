@@ -16,7 +16,6 @@ Planned Features:
 -----
 - AdBlock
 - YouTube Playback
-- Navigation History Support
 - Cookie Management
 - Page's content reflow
 - Do you want more? Just ask! :)
