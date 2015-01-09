@@ -19,7 +19,7 @@ Rectangle
     property alias forwardButton: btnforward
 
     function expand() {
-        height = 60;
+        height = Theme.iconSizeMedium
     }
 
     function collapse() {
@@ -27,7 +27,7 @@ Rectangle
     }
 
     id: navigationbar
-    height: 60
+    height: Theme.iconSizeMedium
     visible: height > 0
     state: "loaded";
     z: 1
@@ -49,9 +49,7 @@ Rectangle
         id: btnback
         icon.source: "image://theme/icon-m-back"
         width: Theme.iconSizeMedium
-        height: Theme.iconSizeMedium
-        anchors.verticalCenter: navigationbar.verticalCenter
-        anchors.left: navigationbar.left
+        anchors { left: navigationbar.left; top: parent.top; bottom: parent.bottom }
         enabled: false
 
         onClicked: backRequested();
@@ -62,9 +60,7 @@ Rectangle
         id: btnhome
         icon.source: "image://theme/icon-m-home"
         width: Theme.iconSizeMedium
-        height: Theme.iconSizeMedium
-        anchors.verticalCenter: navigationbar.verticalCenter
-        anchors.left: btnback.right
+        anchors { left: btnback.right; top: parent.top; bottom: parent.bottom }
 
         onClicked: navigationbar.searchRequested(mainwindow.settings.homepage)
     }
@@ -73,10 +69,8 @@ Rectangle
     {
         id: btnfavorite
         width: visible ? Theme.iconSizeMedium : 0
-        height: Theme.iconSizeMedium
         icon.source: (favorite ? "image://theme/icon-m-favorite-selected" : "image://theme/icon-m-favorite")
-        anchors.verticalCenter: navigationbar.verticalCenter
-        anchors.left: btnhome.right
+        anchors { left: btnhome.right; top: parent.top; bottom: parent.bottom }
 
         onClicked: {
             if(!favorite) {
@@ -93,8 +87,7 @@ Rectangle
     SearchBar
     {
         id: searchbar
-        anchors.left: btnfavorite.right
-        anchors.right: btnrefresh.left
+        anchors { left: btnfavorite.right; right: btnrefresh.left }
         onReturnPressed: navigationbar.searchRequested(searchquery);
 
         onUrlChanged: {
@@ -107,9 +100,7 @@ Rectangle
         id: btnrefresh
         icon.source: "image://theme/icon-m-refresh"
         width: Theme.iconSizeMedium
-        height: Theme.iconSizeMedium
-        anchors.verticalCenter: navigationbar.verticalCenter
-        anchors.right: btnforward.left
+        anchors { right: btnforward.left; top: parent.top; bottom: parent.bottom }
 
         onClicked: {
             if(navigationbar.state === "loaded")
@@ -124,9 +115,7 @@ Rectangle
         id: btnforward
         icon.source: "image://theme/icon-m-forward"
         width: Theme.iconSizeMedium
-        height: Theme.iconSizeMedium
-        anchors.verticalCenter: navigationbar.verticalCenter
-        anchors.right: navigationbar.right
+        anchors { right: parent.right; top: parent.top; bottom: parent.bottom }
         enabled: false
 
         onClicked: forwardRequested();
