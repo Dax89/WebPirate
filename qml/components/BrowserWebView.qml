@@ -30,6 +30,8 @@ SilicaWebView
 
         if(data.type === "touchstart")
             sidebar.collapse();
+        else if(data.type === "newtab")
+            tabview.addTab(data.url);
         else if(data.type === "longpress") {
             credentialmenu.hide();
 

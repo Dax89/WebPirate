@@ -161,6 +161,20 @@ function onTouchMove(touchevent)
     currtouch = null;
 }
 
+function onClick(event)
+{
+    var target = event.target;
+
+    if((target.tagName === "A") && target.hasAttribute("target"))
+    {
+        var data = new Object;
+        data.type = "newtab";
+        data.url = target.href;
+
+        navigator.qt.postMessage(JSON.stringify(data));
+    }
+}
+
 function onSubmit(event)
 {
     var inputelements = event.target.getElementsByTagName("input");
@@ -202,4 +216,5 @@ function onSubmit(event)
 document.addEventListener("touchstart", onTouchStart, true);
 document.addEventListener("touchmove", onTouchMove, true);
 document.addEventListener("touchend", onTouchEnd, true);
+document.addEventListener("click", onClick, true);
 document.addEventListener("submit", onSubmit, true);
