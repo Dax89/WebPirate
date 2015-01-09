@@ -16,7 +16,7 @@ function instance()
 function load(maindb)
 {
     instance().transaction(function(tx) {
-        tx.executeSql("CREATE TABLE IF NOT EXISTS Favorites (favoriteid INTEGER PRIMARY KEY AUTOINCREMENT, parentid INTEGER, url TEXT UNIQUE ON CONFLICT REPLACE, title TEXT, isfolder INTEGER)");
+        tx.executeSql("CREATE TABLE IF NOT EXISTS Favorites (favoriteid INTEGER PRIMARY KEY AUTOINCREMENT, parentid INTEGER, url TEXT, title TEXT, isfolder INTEGER)");
         tx.executeSql("CREATE TABLE IF NOT EXISTS FavoritesTree (parentid INTEGER, childid INTEGER, PRIMARY KEY(parentid, childid))");
         migrate(maindb);
 
@@ -36,7 +36,7 @@ function contains(url)
     var exists = false;
 
     instance().transaction(function(tx) {
-        var res = tx.executeSql("SELECT COUNT(*) FROM Favorites WHERE url = ? AND isfolder = 0", [url]);
+        var res = tx.executeSql("SELECT COUNT(*) FROM Favorites WHERE url = ? AND isfolder = 0 LIMIT 1", [url]);
         exists = res.rows[0]["COUNT(*)"] > 0;
     });
 
