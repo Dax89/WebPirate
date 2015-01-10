@@ -41,6 +41,7 @@ Rectangle
         {
             id: lblmessage
             anchors.fill: parent
+            color: Theme.highlightDimmerColor
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
             wrapMode: Text.NoWrap
