@@ -29,9 +29,7 @@ PopupMenu
         height: Theme.itemSizeSmall
 
         Column {
-            anchors.fill: parent
-            anchors.leftMargin: Theme.paddingSmall
-            anchors.rightMargin: Theme.paddingSmall
+            anchors { fill: parent; leftMargin: Theme.paddingSmall; rightMargin: Theme.paddingSmall }
 
             Label {
                 id: lbltitle
