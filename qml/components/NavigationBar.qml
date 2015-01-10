@@ -87,7 +87,7 @@ Rectangle
     SearchBar
     {
         id: searchbar
-        anchors { left: btnfavorite.right; right: btnrefresh.left }
+        anchors { left: btnfavorite.right; right: btnrefresh.left; verticalCenter: parent.verticalCenter }
         onReturnPressed: navigationbar.searchRequested(searchquery);
 
         onUrlChanged: {
