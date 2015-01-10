@@ -172,7 +172,7 @@ function replaceUrl(id, title, url)
 function removeFromUrl(url)
 {
     instance().transaction(function(tx) {
-        var res = tx.excuteSql("SELECT favoriteid FROM Favorites WHERE url = ?", [url]);
+        var res = tx.executeSql("SELECT favoriteid FROM Favorites WHERE url = ?", [url]);
 
         if(res.rows.length > 0)
             remove(res.rows[0]);
