@@ -173,7 +173,7 @@ function remove(id)
     });
 }
 
-function importFromRoot(rootfolder, parentid, favoritesmodel)
+function doImport(rootfolder, parentid, favoritesmodel)
 {
     instance().transaction(function(tx) {
         for(var i = 0; i < rootfolder.favorites.length; i++) {

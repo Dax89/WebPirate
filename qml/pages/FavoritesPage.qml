@@ -23,7 +23,7 @@ Page
         id: favoritesmanager
 
         onParsingCompleted: {
-            Favorites.importFromRoot(favoritesmanager.root, folderId, favoritesview.model)
+            Favorites.doImport(favoritesmanager.root, folderId, favoritesview.model)
             favoritesmanager.clearTree();
         }
     }
