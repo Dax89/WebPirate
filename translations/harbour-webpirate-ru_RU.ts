@@ -276,6 +276,10 @@
         <source>Open</source>
         <translation>Открыть</translation>
     </message>
+    <message>
+        <source>Link copied</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>LoadFailed</name>

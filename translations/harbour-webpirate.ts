@@ -268,6 +268,10 @@
         <source>Open</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Link copied</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>LoadFailed</name>

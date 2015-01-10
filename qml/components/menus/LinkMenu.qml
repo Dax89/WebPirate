@@ -46,8 +46,10 @@ PopupMenu
                 linkmenu.openLinkRequested(linkmenu.url);
             else if(index === 1)
                 linkmenu.openTabRequested(linkmenu.url);
-            else if(index === 2)
+            else if(index === 2) {
                 Clipboard.text = linkmenu.url;
+                popupmessage.show(qsTr("Link copied to clipboard"));
+            }
             else if(index === 3) {
                 tabviewremorse.execute(isimage ? qsTr("Downloading image") : qsTr("Downloading link"), function() {
                     mainwindow.settings.downloadmanager.createDownload(linkmenu.url);
