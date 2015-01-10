@@ -25,6 +25,7 @@ Page
         onParsingCompleted: {
             Favorites.doImport(favoritesmanager.root, folderId, favoritesview.model)
             favoritesmanager.clearTree();
+            popupmessage.show(qsTr("Favorites imported successfully"))
         }
     }
 
