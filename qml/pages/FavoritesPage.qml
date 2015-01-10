@@ -15,6 +15,9 @@ Page
     id: favoritespage
     allowedOrientations: Orientation.All
 
+    RemorsePopup { id: remorsepopup }
+    PopupMessage { id: popupmessage; anchors { left: parent.left; top: parent.top; right: parent.right } }
+
     FavoritesManager
     {
         id: favoritesmanager
@@ -34,6 +37,14 @@ Page
             MenuItem
             {
                 text: qsTr("Export") + ((folderId === 0) ? "" : " '" + favoritesview.model.currentFolder() + "'")
+
+                onClicked: {
+                    remorsepopup.execute(qsTr("Exporting favorites"), function() {
+                        Favorites.doExport(favoritesmanager, folderId, (folderId === 0) ? qsTr("Favorites") : favoritesview.model.currentFolder());
+                        favoritesmanager.clearTree();
+                        popupmessage.show(qsTr("Favorites exported successfully"))
+                    });
+                }
             }
 
             MenuItem

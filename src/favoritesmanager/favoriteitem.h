@@ -18,12 +18,15 @@ class FavoriteItem : public QObject
         explicit FavoriteItem(QObject *parent = 0);
         explicit FavoriteItem(const QString& title, QObject *parent = 0);
         explicit FavoriteItem(const QString& title, const QString& url, QObject *parent = 0);
-        FavoriteItem* addFolder(const QString& title);
-        void addFavorite(const QString& title, const QString& url);
         QQmlListProperty<FavoriteItem> favorites();
+        const QList<FavoriteItem*>& favoritesList() const;
         const QString& title() const;
         const QString& url() const;
         bool isFolder() const;
+
+    public slots:
+        FavoriteItem* addFolder(const QString& title);
+        void addFavorite(const QString& title, const QString& url);
 
     private:
         static int favoritesCount(QQmlListProperty<FavoriteItem> *list);

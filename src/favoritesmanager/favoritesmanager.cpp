@@ -19,7 +19,7 @@ FavoritesManager::FavoritesManager(QObject *parent): QObject(parent), _root(NULL
     this->_folderendregex.setMinimal(true);
 }
 
-FavoriteItem* FavoritesManager::root() const
+FavoriteItem* FavoritesManager::root()
 {
     return this->_root;
 }
@@ -43,6 +43,38 @@ QString FavoritesManager::readFile(const QUrl &file)
     f.close();
 
     return data;
+}
+
+void FavoritesManager::writeHeader(QTextStream& ts)
+{
+    ts << "<!DOCTYPE NETSCAPE-Bookmark-file-1>" << endl;
+    ts << "<!-- This is an automatically generated file." << endl;
+    ts << "    It will be read and overwritten." << endl;
+    ts << "    DO NOT EDIT! -->" << endl;
+    ts << "<META HTTP-EQUIV=\"Content-Type\" CONTENT=\"text/html; charset=UTF-8\">" << endl;
+    ts << "<TITLE>Bookmarks</TITLE>" << endl;
+    ts << "<H1>Bookmarks</H1>" << endl;
+}
+
+void FavoritesManager::exportBookmarks(FavoriteItem* parentitem, QTextStream &ts, int level)
+{
+    QString indent = QString(" ").repeated(level * 4);
+    const QList<FavoriteItem*>& favorites = parentitem->favoritesList();
+
+    foreach(FavoriteItem* favorite, favorites)
+    {
+        if(favorite->isFolder())
+        {
+            ts << indent << "<DT><H3>" << favorite->title() << "</H3>" << endl;
+            ts << indent << "<DL><p>" << endl;
+
+            this->exportBookmarks(favorite, ts, level + 1);
+
+            ts << indent << "</DL><p>" << endl;
+        }
+        else
+            ts << indent << "<DT><A HREF=\"" << favorite->url() << "\">" << favorite->title() << "</A>" << endl;
+    }
 }
 
 void FavoritesManager::parseFavorite(FavoriteItem* parentfolder, const QString &data, int &currpos)
@@ -110,6 +142,29 @@ void FavoritesManager::importFile(const QUrl &file)
     this->parseFolder(this->_root, data, QString(), pos);
 
     emit parsingCompleted();
+}
+
+void FavoritesManager::createRoot()
+{
+    this->_root = new FavoriteItem(QString(), this);
+}
+
+void FavoritesManager::exportFile(const QString &foldername)
+{
+    QString documentspath = QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation);
+    QFile f(QString("%1%2%3_%4.html").arg(documentspath, QDir::separator(), foldername, QDateTime::currentDateTime().toString("dd_MM_yy__HH_mm_ss")));
+    f.open(QFile::WriteOnly | QFile::Truncate);
+
+    QTextStream ts(&f);
+    ts.setCodec("UTF-8");
+
+    this->writeHeader(ts);
+
+    ts << "<DL><p>" << endl;
+    this->exportBookmarks(this->_root, ts, 1);
+    ts << "</DL><p>" << endl;
+
+    f.close();
 }
 
 void FavoritesManager::clearTree()

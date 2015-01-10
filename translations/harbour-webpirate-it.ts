@@ -191,6 +191,14 @@
         <source>Import Favorites</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Exporting favorites</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Favorites exported successfully</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>FavoritesView</name>

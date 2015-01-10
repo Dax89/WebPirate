@@ -32,6 +32,11 @@ QQmlListProperty<FavoriteItem> FavoriteItem::favorites()
     return QQmlListProperty<FavoriteItem>(this, NULL, &FavoriteItem::favoritesCount, &FavoriteItem::favoriteAt);
 }
 
+const QList<FavoriteItem *> &FavoriteItem::favoritesList() const
+{
+    return this->_childfavorites;
+}
+
 const QString &FavoriteItem::title() const
 {
    return this->_title;

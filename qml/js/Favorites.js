@@ -40,7 +40,7 @@ function contains(url)
         exists = res.rows[0]["COUNT(*)"] > 0;
     });
 
-    return exists
+    return exists;
 }
 
 function clear()
@@ -206,4 +206,32 @@ function importFolder(tx, folder, parentid)
     }
 
     return folderid;
+}
+
+function doExport(favoritesmanager, folderid, foldername)
+{
+    instance().transaction(function(tx) {
+        favoritesmanager.createRoot();
+        exportFolder(tx, favoritesmanager.root, folderid);
+    });
+
+    favoritesmanager.exportFile(foldername);
+}
+
+function exportFolder(tx, foldernode, folderid)
+{
+    var res = tx.executeSql("SELECT * FROM Favorites WHERE parentid = ? ", [folderid]);
+
+    for(var i = 0; i < res.rows.length; i++)
+    {
+        var row = res.rows[i];
+
+        if(row.isfolder)
+        {
+            var folder = foldernode.addFolder(row.title);
+            exportFolder(tx, folder, row.favoriteid);
+        }
+        else
+            foldernode.addFavorite(row.title, row.url);
+    }
 }
