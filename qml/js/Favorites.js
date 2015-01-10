@@ -85,10 +85,7 @@ function get(favoriteid)
     var favorite = null;
 
     instance().transaction(function(tx) {
-        var res = tx.executeSql("SELECT * FROM Favorites WHERE favoriteid=?", [favoriteid]);
-
-        if(res.rows.length)
-            favorite = res.rows[0];
+        favorite = transactionGet(tx, favoriteid);
     });
 
     return favorite;
@@ -110,6 +107,30 @@ function transactionAddUrl(tx, title, url, parentid)
 
     tx.executeSql("INSERT INTO FavoritesTree (parentid, childid) VALUES (?, ?)", [parentid, nodeid]);
     return nodeid;
+}
+
+function transactionGet(tx, favoriteid)
+{
+    var favorite = null;
+    var res = tx.executeSql("SELECT * FROM Favorites WHERE favoriteid=?", [favoriteid]);
+
+    if(res.rows.length)
+        favorite = res.rows[0];
+
+    return favorite;
+}
+
+function transactionRemove(tx, favoriteid)
+{
+    var favorite = transactionGet(tx, favoriteid);
+    var res = tx.executeSql("SELECT * FROM FavoritesTree WHERE parentid = ?", [favoriteid]);
+
+    for(var i = 0; i < res.rows.length; i++)
+        transactionRemove(tx, res.rows[i].childid);
+
+    tx.executeSql("DELETE FROM Favorites WHERE favoriteid = ?", [favoriteid]);
+    tx.executeSql("DELETE FROM FavoritesTree WHERE parentid = ?", [favoriteid]);
+    tx.executeSql("DELETE FROM FavoritesTree WHERE parentid = ? AND childid = ?", [favorite.parentid, favoriteid]);
 }
 
 function addFolder(title, parentid)
@@ -161,15 +182,7 @@ function removeFromUrl(url)
 function remove(id)
 {
     instance().transaction(function(tx) {
-        var favorite = get(id);
-        var res = tx.executeSql("SELECT * FROM FavoritesTree WHERE parentid = ?", [id]);
-
-        for(var i = 0; i < res.rows.length; i++)
-            remove(res.rows[i].childid);
-
-        tx.executeSql("DELETE FROM Favorites WHERE favoriteid = ?", [id]);
-        tx.executeSql("DELETE FROM FavoritesTree WHERE parentid = ?", [id]);
-        tx.executeSql("DELETE FROM FavoritesTree WHERE parentid = ? AND childid = ?", [favorite.parentid, id]);
+        transactionRemove(tx, id);
     });
 }
 
