@@ -269,7 +269,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Link copied</source>
+        <source>Link copied to clipboard</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
