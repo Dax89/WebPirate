@@ -35,6 +35,7 @@ Item
             if(focus) {
                 text = url;
                 selectAll();
+                sidebar.collapse();
                 return;
             }
 
