@@ -44,11 +44,14 @@ qint64 DownloadItem::progressTotal() const
 
 QString DownloadItem::parseFileName(const QUrl& url, const QString& downloadpath)
 {
-    QRegExp regex(QRegExp("^[\\w\\-. ]+$"));
+    QRegExp regex(QRegExp("[_\\d\\w\\-\\. ]+\\.[_\\d\\w\\-\\. ]+"));
     QString filename = url.toString().split('/').last();
+    int idx = filename.indexOf(regex);
 
-    if(filename.isEmpty() || !regex.exactMatch(filename))
+    if(filename.isEmpty() || (idx == -1))
         filename = DownloadItem::DEFAULT_FILENAME;
+    else
+        filename = filename.mid(idx, regex.matchedLength());
 
     this->checkConflicts(filename, downloadpath);
     return filename;
