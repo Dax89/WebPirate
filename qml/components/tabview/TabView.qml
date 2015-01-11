@@ -152,10 +152,12 @@ Item
         }
     }
 
+    /*
     ShaderEffectSource
     {
         anchors.fill: container
         sourceItem: container
         hideSource: true
     }
+    */
 }
