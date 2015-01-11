@@ -14,6 +14,7 @@
 - Implemented a SpeedDial like view called "QuickGrid" (accessible via "about:newtab" url)
 - Implemented Clipboard support in navigation history (using long press)
 - Improved and simplified UserAgent management
+- Improved Download manager: Better filename recognition and filename collision detection
 - Improved Sidebar UI
 - BUGFIX: Open a new tab when clicking an url marked with target="_blank"
 - Minor Fixes
