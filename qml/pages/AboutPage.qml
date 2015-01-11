@@ -34,7 +34,7 @@ Page
     SilicaFlickable
     {
         anchors.fill: parent
-        contentHeight: pageheader.height + wplogo.height + wpswname.height + wpversion.height + wpinfo.height + wpdata.height
+        contentHeight: 1306
 
         PageHeader
         {
