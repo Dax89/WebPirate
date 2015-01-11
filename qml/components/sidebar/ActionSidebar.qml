@@ -56,6 +56,7 @@ Item
                 anchors { left: parent.left; right: parent.right }
                 icon: "image://theme/icon-s-cloud-download"
                 text: qsTr("Downloads")
+                circleVisible: true
 
                 onClicked: pageStack.push(Qt.resolvedUrl("../../pages/DownloadsPage.qml"), { "settings": mainwindow.settings });
             }
