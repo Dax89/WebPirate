@@ -5,55 +5,55 @@
     <name>AboutPage</name>
     <message>
         <source>About Web Pirate</source>
-        <translation type="unfinished"></translation>
+        <translation>Über Web Pirate</translation>
     </message>
     <message>
         <source>A tabbed Web Browser for SailfishOS based on WebKit</source>
-        <translation type="unfinished"></translation>
+        <translation>Web Browser mit Registernavigation für SailfishOS, basierend auf WebKit</translation>
     </message>
     <message>
         <source>GitHub Repository</source>
-        <translation type="unfinished"></translation>
+        <translation>GitHub Repository</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation type="unfinished"></translation>
+        <translation>Version</translation>
     </message>
     <message>
         <source>Developer</source>
-        <translation type="unfinished"></translation>
+        <translation>Entwickler</translation>
     </message>
     <message>
         <source>Translators</source>
-        <translation type="unfinished"></translation>
+        <translation>Übersetzer</translation>
     </message>
     <message>
         <source>Catalan</source>
-        <translation type="unfinished"></translation>
+        <translation>Katalanisch</translation>
     </message>
     <message>
         <source>Chinese</source>
-        <translation type="unfinished"></translation>
+        <translation>Chinesisch</translation>
     </message>
     <message>
         <source>Dutch</source>
-        <translation type="unfinished"></translation>
+        <translation>Niederländisch</translation>
     </message>
     <message>
         <source>French</source>
-        <translation type="unfinished"></translation>
+        <translation>Französisch</translation>
     </message>
     <message>
         <source>German</source>
-        <translation type="unfinished"></translation>
+        <translation>Deutsch</translation>
     </message>
     <message>
         <source>Russian</source>
-        <translation type="unfinished"></translation>
+        <translation>Russisch</translation>
     </message>
     <message>
         <source>Swedish</source>
-        <translation type="unfinished"></translation>
+        <translation>Schwedisch</translation>
     </message>
 </context>
 <context>
@@ -72,15 +72,15 @@
     </message>
     <message>
         <source>General</source>
-        <translation type="unfinished">Allgemein</translation>
+        <translation>Allgemein</translation>
     </message>
     <message>
         <source>Change settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Einstellungen ändern</translation>
     </message>
     <message>
         <source>About Web Pirate</source>
-        <translation type="unfinished"></translation>
+        <translation>Über Web Pirate</translation>
     </message>
 </context>
 <context>
@@ -112,7 +112,7 @@
     <name>DownloadListItem</name>
     <message>
         <source>Restart</source>
-        <translation>Neustart</translation>
+        <translation>Erneut laden</translation>
     </message>
     <message>
         <source>Cancel</source>
@@ -120,11 +120,11 @@
     </message>
     <message>
         <source>Completed:</source>
-        <translation>Fertiggestellt:</translation>
+        <translation>Fortschritt:</translation>
     </message>
     <message>
         <source>Speed:</source>
-        <translation>Geschwindigkeit</translation>
+        <translation>Geschwindigkeit:</translation>
     </message>
     <message>
         <source>Completed</source>
@@ -164,44 +164,44 @@
 <context>
     <name>FavoritesPage</name>
     <message>
-        <source>Favorites</source>
-        <translation type="unfinished">Favoriten</translation>
-    </message>
-    <message>
         <source>Add Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Ordner hinzufügen</translation>
     </message>
     <message>
         <source>Add Favorite</source>
-        <translation type="unfinished"></translation>
+        <translation>Favorit hinzufügen</translation>
+    </message>
+    <message>
+        <source>Favorites</source>
+        <translation>Favoriten</translation>
     </message>
     <message>
         <source>Export</source>
-        <translation type="unfinished"></translation>
+        <translation>Exportieren</translation>
     </message>
     <message>
         <source>Import</source>
-        <translation type="unfinished"></translation>
+        <translation>Importieren</translation>
     </message>
     <message>
         <source>Import in</source>
-        <translation type="unfinished"></translation>
+        <translation>Importieren in</translation>
     </message>
     <message>
         <source>Import Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Favoriten importieren</translation>
     </message>
     <message>
         <source>Exporting favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Favoriten werden exportiert</translation>
     </message>
     <message>
         <source>Favorites exported successfully</source>
-        <translation type="unfinished"></translation>
+        <translation>Favoriten erfolgreich exportiert</translation>
     </message>
     <message>
         <source>Favorites imported successfully</source>
-        <translation type="unfinished"></translation>
+        <translation>Favoriten erfolgreich importiert</translation>
     </message>
 </context>
 <context>
@@ -215,27 +215,19 @@
         <translation>Löschen</translation>
     </message>
     <message>
-        <source>Deleting Bookmark</source>
-        <translation type="obsolete">Lesezeichen entfernen</translation>
-    </message>
-    <message>
-        <source>Favorites</source>
-        <translation type="obsolete">Favoriten</translation>
-    </message>
-    <message>
         <source>Deleting Favorite</source>
-        <translation type="unfinished"></translation>
+        <translation>Favorit wird entfernt</translation>
     </message>
     <message>
         <source>Deleting Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Ordner wird gelöscht</translation>
     </message>
 </context>
 <context>
     <name>HistoryMenu</name>
     <message>
         <source>Link copied to clipboard</source>
-        <translation type="unfinished"></translation>
+        <translation>Link in Zwischenablage kopiert</translation>
     </message>
 </context>
 <context>
@@ -254,31 +246,31 @@
     </message>
     <message>
         <source>Save Link Destination</source>
-        <translation type="unfinished"></translation>
+        <translation>Ziel speichern</translation>
     </message>
     <message>
         <source>Copy Link</source>
-        <translation type="unfinished"></translation>
+        <translation>Link kopieren</translation>
     </message>
     <message>
         <source>Save Image</source>
-        <translation type="unfinished"></translation>
+        <translation>Bild speichern</translation>
     </message>
     <message>
         <source>Downloading image</source>
-        <translation type="unfinished"></translation>
+        <translation>Bild wird heruntergeladen</translation>
     </message>
     <message>
         <source>Downloading link</source>
-        <translation type="unfinished"></translation>
+        <translation>Ziel wird heruntergeladen</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation type="unfinished"></translation>
+        <translation>Öffnen</translation>
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation type="unfinished"></translation>
+        <translation>Link in Zwischenablage kopiert</translation>
     </message>
 </context>
 <context>
@@ -289,32 +281,25 @@
     </message>
 </context>
 <context>
-    <name>QuickGrid</name>
-    <message>
-        <source>Add</source>
-        <translation type="obsolete">Hinzufügen</translation>
-    </message>
-</context>
-<context>
     <name>QuickGridItem</name>
     <message>
         <source>Removing item</source>
-        <translation type="unfinished"></translation>
+        <translation>Eintrag wird entfernt</translation>
     </message>
 </context>
 <context>
     <name>QuickGridPage</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Speichern</translation>
+        <translation>Speichern</translation>
     </message>
     <message>
         <source>Title</source>
-        <translation type="unfinished">Titel</translation>
+        <translation>Titel</translation>
     </message>
     <message>
         <source>Url</source>
-        <translation type="unfinished">Url</translation>
+        <translation>Url</translation>
     </message>
 </context>
 <context>
@@ -332,7 +317,7 @@
     <name>SearchBar</name>
     <message>
         <source>Search with</source>
-        <translation type="unfinished"></translation>
+        <translation>Suchen mit</translation>
     </message>
 </context>
 <context>
@@ -362,7 +347,7 @@
     </message>
     <message>
         <source>Search Engines</source>
-        <translation>Suchmaschinen</translation>
+        <translation>Suchmaschine</translation>
     </message>
     <message>
         <source>Add</source>
@@ -385,7 +370,7 @@
     </message>
     <message>
         <source>Search Engines</source>
-        <translation>Suchmaschinen</translation>
+        <translation>Suchmaschine</translation>
     </message>
     <message>
         <source>User Agent</source>
@@ -417,18 +402,18 @@
     </message>
     <message>
         <source>Delete Navigation History</source>
-        <translation type="unfinished"></translation>
+        <translation>Verlauf löschen</translation>
     </message>
     <message>
         <source>Removing navigation history</source>
-        <translation type="unfinished"></translation>
+        <translation>Verlauf wird gelöscht</translation>
     </message>
 </context>
 <context>
     <name>TextSelectionPage</name>
     <message>
         <source>Done</source>
-        <translation type="unfinished"></translation>
+        <translation>Erledigt</translation>
     </message>
 </context>
 </TS>

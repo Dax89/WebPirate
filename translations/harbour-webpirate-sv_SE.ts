@@ -5,55 +5,55 @@
     <name>AboutPage</name>
     <message>
         <source>About Web Pirate</source>
-        <translation type="unfinished"></translation>
+        <translation>Om </translation>
     </message>
     <message>
         <source>A tabbed Web Browser for SailfishOS based on WebKit</source>
-        <translation type="unfinished"></translation>
+        <translation>En webbläsare med flikar för SailfishOS, baserad på WebKit</translation>
     </message>
     <message>
         <source>GitHub Repository</source>
-        <translation type="unfinished"></translation>
+        <translation>GitHub Repository</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation type="unfinished"></translation>
+        <translation>Version</translation>
     </message>
     <message>
         <source>Developer</source>
-        <translation type="unfinished"></translation>
+        <translation>Utvecklare</translation>
     </message>
     <message>
         <source>Translators</source>
-        <translation type="unfinished"></translation>
+        <translation>Översättare</translation>
     </message>
     <message>
         <source>Catalan</source>
-        <translation type="unfinished"></translation>
+        <translation>Katalanska</translation>
     </message>
     <message>
         <source>Chinese</source>
-        <translation type="unfinished"></translation>
+        <translation>Kinesiska</translation>
     </message>
     <message>
         <source>Dutch</source>
-        <translation type="unfinished"></translation>
+        <translation>Holländska</translation>
     </message>
     <message>
         <source>French</source>
-        <translation type="unfinished"></translation>
+        <translation>Franska</translation>
     </message>
     <message>
         <source>German</source>
-        <translation type="unfinished"></translation>
+        <translation>Tyska</translation>
     </message>
     <message>
         <source>Russian</source>
-        <translation type="unfinished"></translation>
+        <translation>Ryska</translation>
     </message>
     <message>
         <source>Swedish</source>
-        <translation type="unfinished"></translation>
+        <translation>Svenska</translation>
     </message>
 </context>
 <context>
@@ -72,15 +72,15 @@
     </message>
     <message>
         <source>General</source>
-        <translation type="unfinished">Allmänt</translation>
+        <translation>Allmänt</translation>
     </message>
     <message>
         <source>Change settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Ändra inställningar</translation>
     </message>
     <message>
         <source>About Web Pirate</source>
-        <translation type="unfinished"></translation>
+        <translation>Om </translation>
     </message>
 </context>
 <context>
@@ -164,44 +164,44 @@
 <context>
     <name>FavoritesPage</name>
     <message>
-        <source>Favorites</source>
-        <translation type="unfinished">Favoriter</translation>
-    </message>
-    <message>
         <source>Add Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Lägg till mapp</translation>
     </message>
     <message>
         <source>Add Favorite</source>
-        <translation type="unfinished"></translation>
+        <translation>Lägg till favorit</translation>
+    </message>
+    <message>
+        <source>Favorites</source>
+        <translation>Favoriter</translation>
     </message>
     <message>
         <source>Export</source>
-        <translation type="unfinished"></translation>
+        <translation>Exportera</translation>
     </message>
     <message>
         <source>Import</source>
-        <translation type="unfinished"></translation>
+        <translation>Importera</translation>
     </message>
     <message>
         <source>Import in</source>
-        <translation type="unfinished"></translation>
+        <translation>Importera i</translation>
     </message>
     <message>
         <source>Import Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Importera favoriter</translation>
     </message>
     <message>
         <source>Exporting favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Exporterar favoriter</translation>
     </message>
     <message>
         <source>Favorites exported successfully</source>
-        <translation type="unfinished"></translation>
+        <translation>Favoriter exporterades korrekt</translation>
     </message>
     <message>
         <source>Favorites imported successfully</source>
-        <translation type="unfinished"></translation>
+        <translation>Favoriter importerades korrekt</translation>
     </message>
 </context>
 <context>
@@ -215,27 +215,19 @@
         <translation>Ta bort</translation>
     </message>
     <message>
-        <source>Deleting Bookmark</source>
-        <translation type="obsolete">Tar bort bokmärke</translation>
-    </message>
-    <message>
-        <source>Favorites</source>
-        <translation type="obsolete">Favoriter</translation>
-    </message>
-    <message>
         <source>Deleting Favorite</source>
-        <translation type="unfinished"></translation>
+        <translation>Tar bort favorit</translation>
     </message>
     <message>
         <source>Deleting Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Tar bort mapp</translation>
     </message>
 </context>
 <context>
     <name>HistoryMenu</name>
     <message>
         <source>Link copied to clipboard</source>
-        <translation type="unfinished"></translation>
+        <translation>Länk kopierad till Urklipp</translation>
     </message>
 </context>
 <context>
@@ -278,7 +270,7 @@
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation type="unfinished"></translation>
+        <translation>Länk kopierad till Urklipp</translation>
     </message>
 </context>
 <context>
@@ -289,32 +281,25 @@
     </message>
 </context>
 <context>
-    <name>QuickGrid</name>
-    <message>
-        <source>Add</source>
-        <translation type="obsolete">Lägg till</translation>
-    </message>
-</context>
-<context>
     <name>QuickGridItem</name>
     <message>
         <source>Removing item</source>
-        <translation type="unfinished"></translation>
+        <translation>Tar bort objekt</translation>
     </message>
 </context>
 <context>
     <name>QuickGridPage</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Spara</translation>
+        <translation>Spara</translation>
     </message>
     <message>
         <source>Title</source>
-        <translation type="unfinished">Namn</translation>
+        <translation>Namn</translation>
     </message>
     <message>
         <source>Url</source>
-        <translation type="unfinished">URL</translation>
+        <translation>URL</translation>
     </message>
 </context>
 <context>
@@ -332,7 +317,7 @@
     <name>SearchBar</name>
     <message>
         <source>Search with</source>
-        <translation type="unfinished"></translation>
+        <translation>Sök med</translation>
     </message>
 </context>
 <context>

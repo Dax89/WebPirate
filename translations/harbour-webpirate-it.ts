@@ -5,55 +5,55 @@
     <name>AboutPage</name>
     <message>
         <source>About Web Pirate</source>
-        <translation type="unfinished"></translation>
+        <translation>Riguardo Web Pirate</translation>
     </message>
     <message>
         <source>A tabbed Web Browser for SailfishOS based on WebKit</source>
-        <translation type="unfinished"></translation>
+        <translation>Un browser a schede per SailfishOS, basato su WebKit</translation>
     </message>
     <message>
         <source>GitHub Repository</source>
-        <translation type="unfinished"></translation>
+        <translation>Repository GitHub</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation type="unfinished"></translation>
+        <translation>Versione</translation>
     </message>
     <message>
         <source>Developer</source>
-        <translation type="unfinished"></translation>
+        <translation>Sviluppatore</translation>
     </message>
     <message>
         <source>Translators</source>
-        <translation type="unfinished"></translation>
+        <translation>Traduttori</translation>
     </message>
     <message>
         <source>Catalan</source>
-        <translation type="unfinished"></translation>
+        <translation>Catalano</translation>
     </message>
     <message>
         <source>Chinese</source>
-        <translation type="unfinished"></translation>
+        <translation>Cinese</translation>
     </message>
     <message>
         <source>Dutch</source>
-        <translation type="unfinished"></translation>
+        <translation>Olandese</translation>
     </message>
     <message>
         <source>French</source>
-        <translation type="unfinished"></translation>
+        <translation>Francese</translation>
     </message>
     <message>
         <source>German</source>
-        <translation type="unfinished"></translation>
+        <translation>Tedesco</translation>
     </message>
     <message>
         <source>Russian</source>
-        <translation type="unfinished"></translation>
+        <translation>Russo</translation>
     </message>
     <message>
         <source>Swedish</source>
-        <translation type="unfinished"></translation>
+        <translation>Svedese</translation>
     </message>
 </context>
 <context>
@@ -72,15 +72,15 @@
     </message>
     <message>
         <source>General</source>
-        <translation type="unfinished">Generali</translation>
+        <translation>Generali</translation>
     </message>
     <message>
         <source>Change settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Cambia Impostazioni</translation>
     </message>
     <message>
         <source>About Web Pirate</source>
-        <translation type="unfinished"></translation>
+        <translation>Riguardo Web Pirate</translation>
     </message>
 </context>
 <context>
@@ -164,44 +164,44 @@
 <context>
     <name>FavoritesPage</name>
     <message>
-        <source>Favorites</source>
-        <translation type="unfinished">Preferiti</translation>
-    </message>
-    <message>
         <source>Add Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Aggiungi cartella</translation>
     </message>
     <message>
         <source>Add Favorite</source>
-        <translation type="unfinished"></translation>
+        <translation>Aggiungi ai preferiti</translation>
+    </message>
+    <message>
+        <source>Favorites</source>
+        <translation>Preferiti</translation>
     </message>
     <message>
         <source>Export</source>
-        <translation type="unfinished"></translation>
+        <translation>Esporta</translation>
     </message>
     <message>
         <source>Import</source>
-        <translation type="unfinished"></translation>
+        <translation>Importa</translation>
     </message>
     <message>
         <source>Import in</source>
-        <translation type="unfinished"></translation>
+        <translation>Importa in</translation>
     </message>
     <message>
         <source>Import Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Importa preferiti</translation>
     </message>
     <message>
         <source>Exporting favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Esporto preferiti</translation>
     </message>
     <message>
         <source>Favorites exported successfully</source>
-        <translation type="unfinished"></translation>
+        <translation>Preferiti esportati con successo</translation>
     </message>
     <message>
         <source>Favorites imported successfully</source>
-        <translation type="unfinished"></translation>
+        <translation>Preferiti importati con successo</translation>
     </message>
 </context>
 <context>
@@ -215,27 +215,19 @@
         <translation>Elimina</translation>
     </message>
     <message>
-        <source>Deleting Bookmark</source>
-        <translation type="obsolete">Rimozione preferito</translation>
-    </message>
-    <message>
-        <source>Favorites</source>
-        <translation type="obsolete">Preferiti</translation>
-    </message>
-    <message>
         <source>Deleting Favorite</source>
-        <translation type="unfinished"></translation>
+        <translation>Elimina dai preferiti</translation>
     </message>
     <message>
         <source>Deleting Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Rimozione cartella</translation>
     </message>
 </context>
 <context>
     <name>HistoryMenu</name>
     <message>
         <source>Link copied to clipboard</source>
-        <translation type="unfinished"></translation>
+        <translation>Link copiato negli appunti</translation>
     </message>
 </context>
 <context>
@@ -278,7 +270,7 @@
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation type="unfinished"></translation>
+        <translation>Link copiato nella clipboard</translation>
     </message>
 </context>
 <context>
@@ -289,32 +281,25 @@
     </message>
 </context>
 <context>
-    <name>QuickGrid</name>
-    <message>
-        <source>Add</source>
-        <translation type="obsolete">Aggiungi</translation>
-    </message>
-</context>
-<context>
     <name>QuickGridItem</name>
     <message>
         <source>Removing item</source>
-        <translation type="unfinished"></translation>
+        <translation>Rimozione elemento</translation>
     </message>
 </context>
 <context>
     <name>QuickGridPage</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Salva</translation>
+        <translation>Salva</translation>
     </message>
     <message>
         <source>Title</source>
-        <translation type="unfinished">Titolo</translation>
+        <translation>Titolo</translation>
     </message>
     <message>
         <source>Url</source>
-        <translation type="unfinished">Url</translation>
+        <translation>Url</translation>
     </message>
 </context>
 <context>
@@ -332,7 +317,7 @@
     <name>SearchBar</name>
     <message>
         <source>Search with</source>
-        <translation type="unfinished"></translation>
+        <translation>Cerca con</translation>
     </message>
 </context>
 <context>

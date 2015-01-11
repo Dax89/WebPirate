@@ -5,55 +5,55 @@
     <name>AboutPage</name>
     <message>
         <source>About Web Pirate</source>
-        <translation type="unfinished"></translation>
+        <translation>Over WebPirate</translation>
     </message>
     <message>
         <source>A tabbed Web Browser for SailfishOS based on WebKit</source>
-        <translation type="unfinished"></translation>
+        <translation>Een op WebKit gebaseerde webbrowser met tabbladen voor SailfishOS</translation>
     </message>
     <message>
         <source>GitHub Repository</source>
-        <translation type="unfinished"></translation>
+        <translation>GitHub-pakketbron</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation type="unfinished"></translation>
+        <translation>Versie</translation>
     </message>
     <message>
         <source>Developer</source>
-        <translation type="unfinished"></translation>
+        <translation>Ontwikkelaar</translation>
     </message>
     <message>
         <source>Translators</source>
-        <translation type="unfinished"></translation>
+        <translation>Vertalers</translation>
     </message>
     <message>
         <source>Catalan</source>
-        <translation type="unfinished"></translation>
+        <translation>Cataleens</translation>
     </message>
     <message>
         <source>Chinese</source>
-        <translation type="unfinished"></translation>
+        <translation>Chinees</translation>
     </message>
     <message>
         <source>Dutch</source>
-        <translation type="unfinished"></translation>
+        <translation>Nederlands</translation>
     </message>
     <message>
         <source>French</source>
-        <translation type="unfinished"></translation>
+        <translation>Frans</translation>
     </message>
     <message>
         <source>German</source>
-        <translation type="unfinished"></translation>
+        <translation>Duits</translation>
     </message>
     <message>
         <source>Russian</source>
-        <translation type="unfinished"></translation>
+        <translation>Russisch</translation>
     </message>
     <message>
         <source>Swedish</source>
-        <translation type="unfinished"></translation>
+        <translation>Zweeds</translation>
     </message>
 </context>
 <context>
@@ -72,15 +72,15 @@
     </message>
     <message>
         <source>General</source>
-        <translation type="unfinished">Algemeen</translation>
+        <translation>Algemeen</translation>
     </message>
     <message>
         <source>Change settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Instellingen wijzigen</translation>
     </message>
     <message>
         <source>About Web Pirate</source>
-        <translation type="unfinished"></translation>
+        <translation>Over WebPirate</translation>
     </message>
 </context>
 <context>
@@ -164,44 +164,44 @@
 <context>
     <name>FavoritesPage</name>
     <message>
-        <source>Favorites</source>
-        <translation type="unfinished">Bladwijzers</translation>
-    </message>
-    <message>
         <source>Add Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Map toevoegen</translation>
     </message>
     <message>
         <source>Add Favorite</source>
-        <translation type="unfinished"></translation>
+        <translation>Bladwijzer toevoegen</translation>
+    </message>
+    <message>
+        <source>Favorites</source>
+        <translation>Bladwijzers</translation>
     </message>
     <message>
         <source>Export</source>
-        <translation type="unfinished"></translation>
+        <translation>Exporteren</translation>
     </message>
     <message>
         <source>Import</source>
-        <translation type="unfinished"></translation>
+        <translation>Importeren</translation>
     </message>
     <message>
         <source>Import in</source>
-        <translation type="unfinished"></translation>
+        <translation>Importeren naar</translation>
     </message>
     <message>
         <source>Import Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Bladwijzers importeren</translation>
     </message>
     <message>
         <source>Exporting favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Bezig met exporteren van bladwijzers</translation>
     </message>
     <message>
         <source>Favorites exported successfully</source>
-        <translation type="unfinished"></translation>
+        <translation>Bladwijzers succesvol geëxporteerd</translation>
     </message>
     <message>
         <source>Favorites imported successfully</source>
-        <translation type="unfinished"></translation>
+        <translation>Bladwijzers succesvol geïmporteerd</translation>
     </message>
 </context>
 <context>
@@ -215,27 +215,19 @@
         <translation>Verwijderen</translation>
     </message>
     <message>
-        <source>Deleting Bookmark</source>
-        <translation type="obsolete">Bezig met verwijderen van bladwijzer</translation>
-    </message>
-    <message>
-        <source>Favorites</source>
-        <translation type="obsolete">Bladwijzers</translation>
-    </message>
-    <message>
         <source>Deleting Favorite</source>
-        <translation type="unfinished"></translation>
+        <translation>Bezig met verwijderen van bladwijzer</translation>
     </message>
     <message>
         <source>Deleting Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Bezig met verwijderen van map</translation>
     </message>
 </context>
 <context>
     <name>HistoryMenu</name>
     <message>
         <source>Link copied to clipboard</source>
-        <translation type="unfinished"></translation>
+        <translation>Link gekopieerd naar klembord</translation>
     </message>
 </context>
 <context>
@@ -278,7 +270,7 @@
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation type="unfinished"></translation>
+        <translation>Link gekopieerd naar klembord</translation>
     </message>
 </context>
 <context>
@@ -289,32 +281,25 @@
     </message>
 </context>
 <context>
-    <name>QuickGrid</name>
-    <message>
-        <source>Add</source>
-        <translation type="obsolete">Toevoegen</translation>
-    </message>
-</context>
-<context>
     <name>QuickGridItem</name>
     <message>
         <source>Removing item</source>
-        <translation type="unfinished"></translation>
+        <translation>Bezig met verwijderen van item</translation>
     </message>
 </context>
 <context>
     <name>QuickGridPage</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Opslaan</translation>
+        <translation>Opslaan</translation>
     </message>
     <message>
         <source>Title</source>
-        <translation type="unfinished">Titel</translation>
+        <translation>Titel</translation>
     </message>
     <message>
         <source>Url</source>
-        <translation type="unfinished">URL</translation>
+        <translation>URL</translation>
     </message>
 </context>
 <context>
@@ -332,7 +317,7 @@
     <name>SearchBar</name>
     <message>
         <source>Search with</source>
-        <translation type="unfinished"></translation>
+        <translation>Zoeken met</translation>
     </message>
 </context>
 <context>
