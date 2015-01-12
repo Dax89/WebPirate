@@ -26,7 +26,7 @@ Page
                                                           readonly property string translators: "lewa"; },
 
                                                QtObject { readonly property string language: qsTr("Swedish");
-                                                          readonly property string translators: "eson, pljmn"; } ]
+                                                          readonly property string translators: "eson"; } ]
 
     id: aboutpage
     allowedOrientations: Orientation.All
@@ -58,7 +58,6 @@ Page
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
             font.bold: true
-            //font.pixelSize: Theme.fontSizeLarge
             text: "Web Pirate"
         }
 
@@ -75,10 +74,11 @@ Page
         Label
         {
             id: wpinfo
-            anchors { top: wpversion.bottom; left: parent.left; right: parent.right; topMargin: Theme.paddingLarge }
+            anchors { top: wpversion.bottom; left: parent.left; right: parent.right; leftMargin: Theme.paddingMedium; topMargin: Theme.paddingLarge; rightMargin: Theme.paddingMedium }
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
             font.pixelSize: Theme.fontSizeExtraSmall
+            wrapMode: Text.WordWrap
             text: qsTr("A tabbed Web Browser for SailfishOS based on WebKit")
         }
 
