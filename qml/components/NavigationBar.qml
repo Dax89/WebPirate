@@ -74,7 +74,7 @@ Rectangle
 
         onClicked: {
             if(!favorite) {
-                Favorites.addUrl(webview.title, webview.url.toString());
+                Favorites.addUrl(webview.title, webview.url.toString(), 0);
                 navigationbar.favorite = true;
             }
             else {

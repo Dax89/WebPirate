@@ -175,7 +175,7 @@ function removeFromUrl(url)
         var res = tx.executeSql("SELECT favoriteid FROM Favorites WHERE url = ?", [url]);
 
         if(res.rows.length > 0)
-            remove(res.rows[0]);
+            transactionRemove(tx, res.rows[0].favoriteid);
     });
 }
 
