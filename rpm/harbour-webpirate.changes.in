@@ -8,6 +8,13 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Mon Jan 12 2015 Antonio Davide Trogu <trogu.davide@gmail.com> 0.8.6-2
+- BUGFIX: Restored Favorite button functionality
+- Use the same database transaction when migrating from old Favorites DB to the new one
+- Adjusted About Page
+- Updated Chinese Localization
+- Updated Swedish Localization
+
 * Sun Jan 11 2015 Antonio Davide Trogu <trogu.davide@gmail.com> 0.8.6-1
 - Added Support for Folders, Import (HTML only) and Export (HTML only) in Favorites
 - Added Clipboard support for images stored in CSS Stylesheets
