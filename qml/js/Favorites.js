@@ -26,7 +26,7 @@ function load(maindb)
         {
             /* Append Default Favorites, if needed */
             for(var i = 0; i < defaultfavorites.length; i++)
-                addUrl(defaultfavorites[i].title, defaultfavorites[i].url, 0);
+                transactionAddUrl(tx, defaultfavorites[i].title, defaultfavorites[i].url, 0);
         }
     });
 }
