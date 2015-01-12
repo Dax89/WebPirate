@@ -332,7 +332,7 @@
     </message>
     <message>
         <source>Query</source>
-        <translation>Förfrågan</translation>
+        <translation>Söksträng</translation>
     </message>
 </context>
 <context>
