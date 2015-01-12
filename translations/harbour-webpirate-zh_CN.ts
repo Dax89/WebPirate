@@ -60,7 +60,7 @@
     <name>ActionSidebar</name>
     <message>
         <source>Favorites</source>
-        <translation>收藏</translation>
+        <translation>书签</translation>
     </message>
     <message>
         <source>Downloads</source>
@@ -185,7 +185,7 @@
     </message>
     <message>
         <source>Import in</source>
-        <translation type="unfinished"></translation>
+        <translation>导入到</translation>
     </message>
     <message>
         <source>Import Favorites</source>
