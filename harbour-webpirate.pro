@@ -79,7 +79,10 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/components/sidebar/SidebarItem.qml \
     qml/pages/AboutPage.qml \
     qml/components/AboutLabel.qml \
-    qml/pages/FilePicker.qml
+    qml/pages/FilePicker.qml \
+    qml/js/canvg/canvg.js \
+    qml/js/canvg/rgbcolor.js \
+    qml/js/canvg/StackBlur.js
 
 # to disable building translations every time, comment out the
 # following CONFIG line

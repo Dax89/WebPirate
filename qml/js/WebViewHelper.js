@@ -118,6 +118,10 @@ var __webpirate__ = {
         navigator.qt.postMessage(JSON.stringify(data));
     },
 
+    onDocumentLoaded: function(event) {
+        canvg(); /* Convert all SVG Images to canvas objects */
+    },
+
     onTouchStart: function(touchevent) {
         if(touchevent.touches.length === 1)
         {
@@ -206,6 +210,8 @@ var __webpirate__ = {
             navigator.qt.postMessage(JSON.stringify(logindata));
     }
 };
+
+window.onload = __webpirate__.onDocumentLoaded;
 
 document.addEventListener("touchstart", __webpirate__.onTouchStart, true);
 document.addEventListener("touchmove",  __webpirate__.onTouchMove, true);

@@ -23,7 +23,14 @@ SilicaWebView
     experimental.preferences.navigatorQtObjectEnabled: true
     experimental.preferences.developerExtrasEnabled: true
     experimental.userAgent: UserAgents.get(mainwindow.settings.useragent).value
-    experimental.userScripts: [ Qt.resolvedUrl("../js/WebViewHelper.js") ]
+    experimental.userScripts: [
+                                /* SVG Polyfill: From 'canvg' project */
+                                Qt.resolvedUrl("../js/canvg/rgbcolor.js"),
+                                Qt.resolvedUrl("../js/canvg/StackBlur.js"),
+                                Qt.resolvedUrl("../js/canvg/canvg.js"),
+
+                                /* Custom WebView Helper */
+                                Qt.resolvedUrl("../js/WebViewHelper.js") ]
 
     experimental.onMessageReceived: {
         var data = JSON.parse(message.data);
