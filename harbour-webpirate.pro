@@ -78,11 +78,14 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/components/PopupMessage.qml \
     qml/components/sidebar/SidebarItem.qml \
     qml/pages/AboutPage.qml \
-    qml/components/AboutLabel.qml \
     qml/pages/FilePicker.qml \
     qml/js/canvg/canvg.js \
     qml/js/canvg/rgbcolor.js \
-    qml/js/canvg/StackBlur.js
+    qml/js/canvg/StackBlur.js \
+    qml/js/YouTubeGrabber.js \
+    qml/pages/YouTubeSettingsPage.qml \
+    qml/pages/VideoPlayerPage.qml \
+    qml/components/InfoLabel.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line

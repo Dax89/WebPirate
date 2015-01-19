@@ -163,11 +163,18 @@ Item
         onStopRequested: webview.stop();
         onSearchRequested: load(searchquery);
 
-        searchBar.onTextChanged: {
-            if(webview.loading)
-                return;
+        searchBar.onFocusChanged: {
+            if(searchBar.focus === false)
+                historymenu.hide();
+        }
 
-            historymenu.query = text
+        searchBar.onTextChanged: {
+            if(webview.loading) {
+                historymenu.hide();
+                return;
+            }
+
+            historymenu.query = text;
         }
     }
 

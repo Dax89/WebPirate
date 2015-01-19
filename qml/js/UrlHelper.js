@@ -44,3 +44,9 @@ function specialUrl(url)
 {
     return url.split(":")[1];
 }
+
+function decode(url)
+{
+    var spaceencchar = new RegExp("[+]", "g");
+    return decodeURIComponent(url.replace(spaceencchar, "%20"));
+}

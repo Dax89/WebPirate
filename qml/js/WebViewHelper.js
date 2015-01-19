@@ -3,75 +3,6 @@ var __webpirate__ = {
     islongpress: false,
     currtouch: null,
 
-    /*
-    getTextNodes: function(node) {
-        var textnodes = [];
-
-        if(node.nodeType === 3)
-            textnodes.push(node);
-        else
-        {
-            var children = node.childNodes;
-
-            for(var i = 0; i < children.length; i++)
-                textnodes.push.apply(textnodes, getTextNodes(children[i]));
-        }
-
-        return textnodes;
-    },
-
-    clearSelection: function() {
-        var sel = window.getSelection();
-        sel.removeAllRanges();
-        return sel;
-    },
-
-    selectText: function(element, start, end) {
-        var range = document.createRange();
-        range.selectNodeContents(element);
-
-        var foundstart = false;
-        var charcount = 0, endcharcount;
-        var textnodes = getTextNodes(element);
-
-        for(var i = 0, tn; (tn = textnodes[i++]); )
-        {
-            endcharcount = charcount + tn.length;
-
-            if(!foundstart && (start >= charcount) && (start < endcharcount || (start === endcharcount && i < textnodes.length)))
-            {
-                range.setStart(tn, start - charcount);
-                foundstart = true;
-            }
-
-            if(foundstart && (end < endcharcount))
-            {
-                range.setEnd(tn, end - charcount);
-                break;
-            }
-
-            charcount = endcharcount;
-        }
-
-        var sel = clearSelection();
-        sel.addRange(range);
-
-        var clientrects = range.getClientRects();
-
-        if(!clientrects.length)
-            return;
-
-        var data = new Object;
-        data.type = "selectionchanged";
-        data.left = clientrects[0].left;
-        data.top = clientrects[0].top;
-        data.right = clientrects[clientrects.length - 1].right;
-        data.bottom = clientrects[clientrects.length - 1].bottom;
-
-        navigator.qt.postMessage(JSON.stringify(data));
-    }
-    */
-
     checkLongPress: function(x, y, target) {
         __webpirate__.islongpress = true;
         var rect = target.getBoundingClientRect();
@@ -118,8 +49,49 @@ var __webpirate__ = {
         navigator.qt.postMessage(JSON.stringify(data));
     },
 
-    onDocumentLoaded: function(event) {
+    checkYouTubeVideo: function() {
+        var location = document.location;
+
+        if((location.hostname.indexOf("www.youtube") !== 0) || (location.pathname !== "/watch") || (location.search.indexOf("?v=") !== 0))
+            return;
+
+        var ytplayer = document.getElementById("player-mole-container");
+
+        if(!ytplayer)
+            return;
+
+        while(ytplayer.firstChild)
+          ytplayer.removeChild(ytplayer.firstChild)
+
+        /* Remove this element so we can click the link */
+        var thbackground = document.getElementById("theater-background");
+
+        if(thbackground)
+            thbackground.parentNode.removeChild(thbackground);
+
+        ytplayer.className = "player-width player-height";
+        ytplayer.style.backgroundColor = "#1b1b1b";
+
+        var ytplay = document.createElement("A");
+        ytplay.href = "#";
+        ytplay.className = "player-width player-height";
+        ytplay.style.display = "block";
+        ytplay.style.background = "url(https://www.youtube.com/yt/brand/media/image/YouTube-icon-full_color.png) 50% 50% / 50% no-repeat";
+
+        ytplay.onclick = function() {
+            var data = new Object;
+            data.type = "youtube_play";
+            data.url = location.href;
+
+            navigator.qt.postMessage(JSON.stringify(data));
+        };
+
+        ytplayer.appendChild(ytplay);
+    },
+
+    polishDocument: function() {
         canvg(); /* Convert all SVG Images to canvas objects */
+        __webpirate__.checkYouTubeVideo();
     },
 
     onTouchStart: function(touchevent) {
@@ -210,8 +182,6 @@ var __webpirate__ = {
             navigator.qt.postMessage(JSON.stringify(logindata));
     }
 };
-
-window.onload = __webpirate__.onDocumentLoaded;
 
 document.addEventListener("touchstart", __webpirate__.onTouchStart, true);
 document.addEventListener("touchmove",  __webpirate__.onTouchMove, true);

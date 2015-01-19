@@ -8,6 +8,7 @@ import "../js/Favorites.js" as Favorites
 import "../js/Credentials.js" as Credentials
 import "../js/History.js" as History
 import "../js/UserAgents.js" as UserAgents
+import "../js/YouTubeGrabber.js" as YouTubeGrabber
 
 SilicaWebView
 {
@@ -23,8 +24,7 @@ SilicaWebView
     experimental.preferences.navigatorQtObjectEnabled: true
     experimental.preferences.developerExtrasEnabled: true
     experimental.userAgent: UserAgents.get(mainwindow.settings.useragent).value
-    experimental.userScripts: [
-                                /* SVG Polyfill: From 'canvg' project */
+    experimental.userScripts: [ /* SVG Polyfill: From 'canvg' project */
                                 Qt.resolvedUrl("../js/canvg/rgbcolor.js"),
                                 Qt.resolvedUrl("../js/canvg/StackBlur.js"),
                                 Qt.resolvedUrl("../js/canvg/canvg.js"),
@@ -59,6 +59,9 @@ SilicaWebView
                 credentialmenu.logindata = data;
                 credentialmenu.show();
             }
+        }
+        else if(data.type === "youtube_play") {
+            pageStack.push(Qt.resolvedUrl("../pages/YouTubeSettingsPage.qml"), {"videoUrl": data.url });
         }
     }
 
@@ -98,6 +101,7 @@ SilicaWebView
 
             if(!UrlHelper.isSpecialUrl(url.toString()) && UrlHelper.isUrl(url.toString()))
             {
+                webview.experimental.evaluateJavaScript("__webpirate__.polishDocument()");
                 Credentials.compile(Database.instance(), mainwindow.settings, url.toString(), webview);
                 History.store(url.toString(), title);
             }
@@ -105,10 +109,17 @@ SilicaWebView
     }
 
     onUrlChanged: {
-        if(UrlHelper.isSpecialUrl(url.toString()))
-            manageSpecialUrl(url.toString());
+        var stringurl = url.toString();
+
+        if(UrlHelper.isSpecialUrl(stringurl))
+            manageSpecialUrl(stringurl);
         else
+        {
             browsertab.state = "webbrowser";
+
+            if(YouTubeGrabber.isYouTubeVideo(stringurl))
+                webview.experimental.evaluateJavaScript("__webpirate__.checkYouTubeVideo()");
+        }
 
         navigationbar.searchBar.url = url;
     }

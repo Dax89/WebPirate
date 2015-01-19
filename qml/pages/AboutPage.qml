@@ -88,7 +88,7 @@ Page
             anchors { left: parent.left; top: wpinfo.bottom; right: parent.right; bottom: parent.bottom;
                       leftMargin: Theme.paddingMedium; topMargin: Theme.paddingSmall; rightMargin: Theme.paddingMedium; bottomMargin: Theme.paddingMedium }
 
-            AboutLabel
+            InfoLabel
             {
                 id: lbldev
                 anchors { left: parent.left; top: parent.top; topMargin: Theme.paddingMedium }
@@ -96,7 +96,7 @@ Page
                 text: "Antonio Davide Trogu"
             }
 
-            AboutLabel
+            InfoLabel
             {
                 id: lblrepository
                 anchors { left: parent.left; top: lbldev.bottom; topMargin: Theme.paddingMedium }
@@ -121,7 +121,7 @@ Page
                     anchors { left: parent.left; right: parent.right }
                     model: translatormodel
 
-                    delegate: AboutLabel {
+                    delegate: InfoLabel {
                         anchors { left: parent.left; right: parent.right; topMargin: Theme.paddingMedium }
                         title: language
                         text: translators
