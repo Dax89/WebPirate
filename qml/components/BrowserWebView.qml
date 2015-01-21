@@ -138,24 +138,27 @@ SilicaWebView
             tabheader.solidify();
     }
 
+    onAtYBeginningChanged: {
+        if(!visible)
+            return;
+
+        tabheader.evaporate();
+    }
+
     onVerticalVelocityChanged: {
         if(!visible)
             return;
 
-        if(verticalVelocity < 0)
+        if(verticalVelocity < 0 && !atYBeginning)
         {
             navigationbar.expand();
-
-            if(atYBeginning)
-                tabheader.evaporate();
-            else
-                tabheader.solidify();
+            tabheader.solidify();
         }
         else if(verticalVelocity > 0)
         {
             navigationbar.collapse();
 
-            if(contentY > tabheader.height) /* Keep TabHeader visibile a little bit */
+            if(contentY > Theme.itemSizeLarge) /* Keep TabHeader visibile a little bit */
                 tabheader.evaporate();
             else
                 tabheader.solidify();
