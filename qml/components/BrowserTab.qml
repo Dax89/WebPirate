@@ -113,22 +113,36 @@ Item
 
     QuickGrid {
         id: quickgrid
-        anchors { left: parent.left; right: parent.right; top: parent.top; bottom: navigationbar.top }
+        anchors { left: parent.left; right: parent.right }
+        y: tabheader.height
+        height: parent.height - tabheader.height - navigationbar.height
 
         onVisibleChanged: {
-            if(visible)
+            if(visible) {
+                tabheader.solidify();
                 navigationbar.expand();
+            }
         }
     }
 
     LoadFailed {
         id: loadfailed
-        anchors { left: parent.left; right: parent.right; top: parent.top; bottom: navigationbar.top }
+        anchors { left: parent.left; right: parent.right }
+        y: tabheader.height
+        height: parent.height - tabheader.height - navigationbar.height
 
         onVisibleChanged: {
-            if(visible)
+            if(visible) {
+                tabheader.solidify();
                 navigationbar.expand();
+            }
         }
+    }
+
+    BrowserWebView
+    {
+        id: webview
+        anchors.fill: parent
     }
 
     LoadingBar
@@ -136,17 +150,11 @@ Item
         id: loadingbar
         z: 1
         visible: false
-        anchors { left: parent.left; top: parent.top; right: parent.right }
+        anchors { left: parent.left; bottom: navigationbar.top; right: parent.right }
         minimumValue: 0
         maximumValue: 100
         value: webview.loadProgress
         hideWhenFinished: true
-    }
-
-    BrowserWebView
-    {
-        id: webview
-        anchors.fill: parent
     }
 
     NavigationBar

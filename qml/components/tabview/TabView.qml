@@ -87,56 +87,72 @@ Item
 
     Item
     {
-        id: header
-        anchors { left: parent.left;  right: parent.right; top: parent.top }
-        height: Theme.iconSizeMedium
+        id: tabcontainer
+        anchors { top: parent.top; bottom: parent.bottom; right: sidebar.left }
+        width: parent.width
 
-        Row
+        Rectangle
         {
-            id: headerrow
-            anchors { left: parent.left; right: btnsidebar.left; top: parent.top; bottom: parent.bottom }
-            spacing: 2
+            function solidify() {
+                tabheader.opacity = 1.0;
+            }
 
-            Repeater
+            function evaporate() {
+                tabheader.opacity = 0.0;
+            }
+
+            id: tabheader
+            anchors { left: parent.left;  right: parent.right; top: parent.top }
+            height: Theme.iconSizeMedium
+            color: Theme.rgba(Theme.highlightDimmerColor, 1.0)
+            visible: opacity > 0.0
+            z: 1
+
+            Behavior on opacity {
+                NumberAnimation { duration: 250; easing.type: Easing.InOutQuad }
+            }
+
+            Row
             {
-                id: repeater
-                model: pages
-                anchors { left: parent.left; top: parent.top; right: parent.right }
+                id: headerrow
+                anchors { left: parent.left; right: btnsidebar.left; top: parent.top; bottom: parent.bottom }
+                spacing: 2
 
-                delegate: TabButton {
-                    icon: tab.getIcon();
-                    title: tab.getTitle();
+                Repeater
+                {
+                    id: repeater
+                    model: pages
+                    anchors { left: parent.left; top: parent.top; right: parent.right }
+
+                    delegate: TabButton {
+                        icon: tab.getIcon();
+                        title: tab.getTitle();
+                    }
+                }
+
+                IconButton
+                {
+                    id: btnplus
+                    width: Theme.iconSizeMedium
+                    height: Theme.iconSizeMedium
+                    icon.source: "image://theme/icon-m-add"
+                    anchors.rightMargin: Theme.paddingSmall
+
+                    onClicked: tabview.addTab()
                 }
             }
 
             IconButton
             {
-                id: btnplus
+                id: btnsidebar
+                icon.source: "image://theme/icon-lock-more"
                 width: Theme.iconSizeMedium
                 height: Theme.iconSizeMedium
-                icon.source: "image://theme/icon-m-add"
-                anchors.rightMargin: Theme.paddingSmall
+                anchors { top: parent.top; bottom: parent.bottom; right: parent.right }
 
-                onClicked: tabview.addTab()
+                onClicked: sidebar.visible ? sidebar.collapse() : sidebar.expand();
             }
         }
-
-        IconButton
-        {
-            id: btnsidebar
-            icon.source: "image://theme/icon-lock-more"
-            width: Theme.iconSizeMedium
-            height: Theme.iconSizeMedium
-            anchors { top: parent.top; bottom: parent.bottom; right: parent.right }
-
-            onClicked: sidebar.visible ? sidebar.collapse() : sidebar.expand();
-        }
-    }
-
-    Item
-    {
-        id: container
-        anchors { left: parent.left; top: header.bottom; right: parent.right; bottom: parent.bottom }
 
         Item
         {
@@ -144,20 +160,11 @@ Item
             anchors { top: parent.top; right: sidebar.left; bottom: parent.bottom }
             width: parent.width
         }
-
-        ActionSidebar
-        {
-            id: sidebar
-            anchors { right: parent.right; top: parent.top; bottom: parent.bottom }
-        }
     }
 
-    /*
-    ShaderEffectSource
+    ActionSidebar
     {
-        anchors.fill: container
-        sourceItem: container
-        hideSource: true
+        id: sidebar
+        anchors { right: parent.right; top: parent.top; bottom: parent.bottom }
     }
-    */
 }

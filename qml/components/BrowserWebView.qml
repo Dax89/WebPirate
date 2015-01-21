@@ -86,6 +86,9 @@ SilicaWebView
     }
 
     onLoadingChanged: {
+        if(!visible)
+            return;
+
         if(loadRequest.status === WebView.LoadStartedStatus) {
             navigationbar.expand();
             linkmenu.hide();
@@ -99,6 +102,7 @@ SilicaWebView
         }
         else if (loadRequest.status === WebView.LoadSucceededStatus)  {
             navigationbar.favorite = Favorites.contains(url.toString());
+            tabheader.evaporate();
 
             if(!UrlHelper.isSpecialUrl(url.toString()) && UrlHelper.isUrl(url.toString()))
             {
@@ -129,10 +133,31 @@ SilicaWebView
 
     onTitleChanged: navigationbar.searchBar.title = title;
 
+    onVisibleChanged: {
+        if(!visible)
+            tabheader.solidify();
+    }
+
+    onContentYChanged: {
+        if(visible && contentY === 0)
+            tabheader.evaporate();
+    }
+
     onVerticalVelocityChanged: {
+        if(!visible)
+            return;
+
         if(verticalVelocity < 0)
+        {
             navigationbar.expand();
+
+            if(contentY > 0)
+                tabheader.solidify();
+        }
         else if(verticalVelocity > 0)
+        {
             navigationbar.collapse();
+            tabheader.evaporate();
+        }
     }
 }

@@ -18,6 +18,7 @@ Item
 
     function expand() {
         visible = true;
+        tabheader.solidify();
     }
 
     function collapse() {
