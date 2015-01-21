@@ -117,18 +117,15 @@ SilicaWebView
 
     onUrlChanged: {
         var stringurl = url.toString();
+        navigationbar.searchBar.url = stringurl;
 
         if(UrlHelper.isSpecialUrl(stringurl))
-            manageSpecialUrl(stringurl);
-        else
-        {
-            browsertab.state = "webbrowser";
+            return;
 
-            if(YouTubeGrabber.isYouTubeVideo(stringurl))
-                webview.experimental.evaluateJavaScript("__yt_webpirate__.convertVideo()");
-        }
+        browsertab.state = "webbrowser";
 
-        navigationbar.searchBar.url = url;
+        if(!loading && YouTubeGrabber.isYouTubeVideo(stringurl))
+            webview.experimental.evaluateJavaScript("__yt_webpirate__.convertVideo()");
     }
 
     onTitleChanged: navigationbar.searchBar.title = title;

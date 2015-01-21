@@ -63,7 +63,6 @@ Item
     {
         state = "newtab";
         webview.url = "about:newtab"
-        navigationbar.searchBar.url = "about:newtab";
     }
 
     function manageSpecialUrl(url)
