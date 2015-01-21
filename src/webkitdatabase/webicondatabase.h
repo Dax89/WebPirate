@@ -32,13 +32,13 @@ class WebIconDatabase : public QObject
         int queryIconId(const QString& url);
 
     private:
-        static QSqlDatabase _db;
         static int _refcount;
 
     public:
         static const QString PROVIDER_NAME;
 
     private:
+        static const QString CONNECTION_NAME;
         static const QString WEBKIT_DATABASE;
         static const QString ICON_DATABASE;
 };

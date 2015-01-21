@@ -1,16 +1,16 @@
 #include "webicondatabase.h"
 
+const QString WebIconDatabase::CONNECTION_NAME = "__wp__WebpageIcons";
 const QString WebIconDatabase::WEBKIT_DATABASE = ".QtWebKit";
 const QString WebIconDatabase::ICON_DATABASE = "WebpageIcons.db";
 const QString WebIconDatabase::PROVIDER_NAME = "favicons";
 
-QSqlDatabase WebIconDatabase::_db;
 int WebIconDatabase::_refcount = 0;
 
 WebIconDatabase::WebIconDatabase(QObject *parent): QObject(parent)
 {
     if(!this->_refcount)
-        WebIconDatabase::_db = QSqlDatabase::addDatabase("QSQLITE");
+        QSqlDatabase::addDatabase("QSQLITE", WebIconDatabase::CONNECTION_NAME);
 
     this->_refcount++;
 }
@@ -21,8 +21,13 @@ WebIconDatabase::~WebIconDatabase()
 
     if(!WebIconDatabase::_refcount)
     {
-        if(WebIconDatabase::_db.isOpen())
-            WebIconDatabase::_db.close();
+        QSqlDatabase db = QSqlDatabase::database(WebIconDatabase::CONNECTION_NAME, false);
+
+        if(db.isOpen())
+            db.close();
+
+        db = QSqlDatabase(); // Reset Database Reference
+        QSqlDatabase::removeDatabase(WebIconDatabase::CONNECTION_NAME);
     }
 }
 
@@ -47,7 +52,9 @@ QString WebIconDatabase::provideIcon(const QString &url)
 
 bool WebIconDatabase::open()
 {
-    if(this->_db.isOpen())
+    QSqlDatabase db = QSqlDatabase::database(WebIconDatabase::CONNECTION_NAME, false);
+
+    if(db.isOpen())
         return true;
 
     QDir dbpath = QDir(QStandardPaths::writableLocation(QStandardPaths::DataLocation));
@@ -55,8 +62,8 @@ bool WebIconDatabase::open()
     if(!dbpath.cd(WebIconDatabase::WEBKIT_DATABASE))
         return false;
 
-    this->_db.setDatabaseName(dbpath.absoluteFilePath(WebIconDatabase::ICON_DATABASE));
-    return this->_db.open();
+    db.setDatabaseName(dbpath.absoluteFilePath(WebIconDatabase::ICON_DATABASE));
+    return db.open();
 }
 
 int WebIconDatabase::queryIconId(const QString &url)
@@ -64,7 +71,8 @@ int WebIconDatabase::queryIconId(const QString &url)
     if(!this->open())
         return -1;
 
-    QSqlQuery q(this->_db);
+    QSqlDatabase db = QSqlDatabase::database(WebIconDatabase::CONNECTION_NAME, false);
+    QSqlQuery q(db);
     QString host = QUrl(url).host();
 
     if(host.isEmpty())
@@ -88,7 +96,8 @@ QString WebIconDatabase::queryIconUrl(const QString &url)
     if(iconid == -1)
         return QString();
 
-    QSqlQuery q(this->_db);
+    QSqlDatabase db = QSqlDatabase::database(WebIconDatabase::CONNECTION_NAME, false);
+    QSqlQuery q(db);
 
     if(!this->prepare(q, "SELECT url FROM IconInfo WHERE iconID = ?"))
         return QString();
@@ -108,7 +117,8 @@ QByteArray WebIconDatabase::queryIconPixmap(const QString &url)
     if(iconid == -1)
         return QByteArray();
 
-    QSqlQuery q(this->_db);
+    QSqlDatabase db = QSqlDatabase::database(WebIconDatabase::CONNECTION_NAME, false);
+    QSqlQuery q(db);
 
     if(!this->prepare(q, "SELECT data FROM IconData WHERE iconID = ?"))
         return QByteArray();
