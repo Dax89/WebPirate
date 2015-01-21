@@ -7,7 +7,7 @@ import "../js/Favorites.js" as Favorites
 Item
 {
     property alias model: favoritesmodel
-    signal urlRequested(string favoriteurl)
+    signal urlRequested(string favoriteurl, bool newtab)
 
     SilicaListView
     {
@@ -22,6 +22,26 @@ Item
             width: favoritesview.width
 
             menu: ContextMenu {
+                MenuItem {
+                    text: qsTr("Open")
+                    visible: !isfolder
+
+                    onClicked: {
+                        urlRequested(url, false)
+                        pageStack.pop(rootPage);
+                    }
+                }
+
+                MenuItem {
+                    text: qsTr("Open in New Tab")
+                    visible: !isfolder
+
+                    onClicked: {
+                        urlRequested(url, true)
+                        pageStack.pop(rootPage);
+                    }
+                }
+
                 MenuItem {
                     text: qsTr("Edit");
 
@@ -49,7 +69,7 @@ Item
                     return;
                 }
 
-                urlRequested(url);
+                urlRequested(url, true);
                 pageStack.pop(rootPage);
             }
 

@@ -222,6 +222,14 @@
         <source>Deleting Folder</source>
         <translation>正在删除文件夹</translation>
     </message>
+    <message>
+        <source>Open</source>
+        <translation type="unfinished">打开</translation>
+    </message>
+    <message>
+        <source>Open in New Tab</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>HistoryMenu</name>
@@ -451,7 +459,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Downloading video</source>
+        <source>Grabbing video</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

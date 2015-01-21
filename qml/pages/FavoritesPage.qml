@@ -82,7 +82,10 @@ Page
             anchors { top: header.bottom; left: parent.left; right: parent.right; bottom: parent.bottom }
 
             onUrlRequested: {
-                tabview.pages.get(tabview.currentIndex).tab.load(favoriteurl);
+                if(newtab)
+                    tabview.addTab(favoriteurl);
+                else
+                    tabview.pages.get(tabview.currentIndex).tab.load(favoriteurl);
             }
         }
     }

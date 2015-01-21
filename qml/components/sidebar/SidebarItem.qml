@@ -56,4 +56,6 @@ BackgroundItem
             }
         }
     }
+
+    onClicked: sidebar.collapse()
 }

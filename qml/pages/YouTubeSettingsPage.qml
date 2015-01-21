@@ -112,7 +112,7 @@ Page
                         text: qsTr("Download")
 
                         onClicked: {
-                            lvitem.remorseAction(qsTr("Downloading video"), function() {
+                            lvitem.remorseAction(qsTr("Grabbing video"), function() {
                                 settings.downloadmanager.createDownload(url);
                             });
                         }
