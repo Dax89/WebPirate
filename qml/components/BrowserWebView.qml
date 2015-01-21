@@ -102,7 +102,6 @@ SilicaWebView
         }
         else if (loadRequest.status === WebView.LoadSucceededStatus)  {
             navigationbar.favorite = Favorites.contains(url.toString());
-            tabheader.evaporate();
 
             if(!UrlHelper.isSpecialUrl(url.toString()) && UrlHelper.isUrl(url.toString()))
             {
@@ -138,11 +137,6 @@ SilicaWebView
             tabheader.solidify();
     }
 
-    onContentYChanged: {
-        if(visible && contentY === 0)
-            tabheader.evaporate();
-    }
-
     onVerticalVelocityChanged: {
         if(!visible)
             return;
@@ -151,13 +145,19 @@ SilicaWebView
         {
             navigationbar.expand();
 
-            if(contentY > 0)
+            if(atYBeginning)
+                tabheader.evaporate();
+            else
                 tabheader.solidify();
         }
         else if(verticalVelocity > 0)
         {
             navigationbar.collapse();
-            tabheader.evaporate();
+
+            if(contentY > tabheader.height) /* Keep TabHeader visibile a little bit */
+                tabheader.evaporate();
+            else
+                tabheader.solidify();
         }
     }
 }
