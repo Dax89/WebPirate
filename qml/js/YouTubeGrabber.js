@@ -80,13 +80,8 @@ function displayDuration(durationstr)
     return videoduration;
 }
 
-function grabVideo(url, ytvideosettings)
+function grabVideo(videoid, ytvideosettings)
 {
-    var videoid = grabVideoId(url);
-
-    if(!videoid)
-        return;
-
     var req = new XMLHttpRequest();
 
     req.onreadystatechange = function() {

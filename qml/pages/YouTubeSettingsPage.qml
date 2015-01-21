@@ -5,7 +5,7 @@ import "../js/YouTubeGrabber.js" as YouTubeGrabber
 
 Page
 {
-    property string videoUrl
+    property string videoId
     property ListModel videoTypes: ListModel { }
 
     property alias videoTitle: lbltitle.text
@@ -15,7 +15,7 @@ Page
 
     id: dlgytvideosettings
     allowedOrientations: Orientation.All
-    onVideoUrlChanged: YouTubeGrabber.grabVideo(videoUrl, dlgytvideosettings);
+    onVideoIdChanged: YouTubeGrabber.grabVideo(videoId, dlgytvideosettings);
 
     SilicaFlickable
     {

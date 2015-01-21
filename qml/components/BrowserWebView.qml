@@ -61,7 +61,7 @@ SilicaWebView
             }
         }
         else if(data.type === "youtube_play") {
-            pageStack.push(Qt.resolvedUrl("../pages/YouTubeSettingsPage.qml"), {"videoUrl": data.url });
+            pageStack.push(Qt.resolvedUrl("../pages/YouTubeSettingsPage.qml"), {"videoId": data.videoid });
         }
     }
 
