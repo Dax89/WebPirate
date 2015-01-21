@@ -102,6 +102,7 @@ SilicaWebView
         }
         else if (loadRequest.status === WebView.LoadSucceededStatus)  {
             navigationbar.favorite = Favorites.contains(url.toString());
+            tabheader.evaporate();
 
             if(!UrlHelper.isSpecialUrl(url.toString()) && UrlHelper.isUrl(url.toString()))
             {
