@@ -15,6 +15,12 @@ Label
         lblmptitle.opacity = 1.0;
     }
 
+    function restoreOpacity()
+    {
+        lblmptitle.opacity = 1.0;
+        timerdissolve.restart();
+    }
+
     id: lblmptitle
     visible: opacity > 0.0
     elide: Text.ElideRight

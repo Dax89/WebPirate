@@ -67,7 +67,16 @@ Page
         MouseArea
         {
             anchors { left: parent.left; top: parent.top; right: parent.right; bottom: mptoolbar.top }
-            onClicked: videoplayer.playbackState === MediaPlayer.PlayingState ? videoplayer.pause() : videoplayer.play()
+
+            onClicked: {
+                if(mptoolbar.opacity < 1.0) {
+                    mptoolbar.restoreOpacity();
+                    mptitle.restoreOpacity();
+                    return;
+                }
+
+                videoplayer.playbackState === MediaPlayer.PlayingState ? videoplayer.pause() : videoplayer.play()
+            }
         }
 
         MediaPlayerTitle

@@ -18,20 +18,22 @@ Rectangle
         toolbar.opacity = 1.0;
     }
 
-    function toolbarTouched()
+    function restoreOpacity()
     {
-        if(video.playbackState !== MediaPlayer.PlayingState)
-            return;
-
-        timerdissolve.restart();
         toolbar.opacity = 1.0;
+        timerdissolve.restart();
     }
 
     id: toolbar
     color: Theme.highlightDimmerColor
-    visible: opacity > 0.0
 
     Behavior on opacity { NumberAnimation { duration: 800; easing.type: Easing.Linear } }
+
+    MouseArea
+    {
+        anchors.fill: parent
+        onClicked: restoreOpacity()
+    }
 
     Timer
     {
@@ -50,9 +52,10 @@ Rectangle
         height: Theme.itemSizeSmall
         anchors { left: parent.left; verticalCenter: parent.verticalCenter }
         icon.source: video.playbackState === MediaPlayer.PlayingState ? "image://theme/icon-m-pause" : "image://theme/icon-m-play"
+        z: 1
 
         onClicked: {
-            toolbarTouched();
+            restoreOpacity();
             video.playbackState === MediaPlayer.PlayingState ? video.pause() : video.play();
         }
     }
@@ -70,7 +73,10 @@ Rectangle
         progressValue: video.position
 
         onSeekRequested: {
-            toolbarTouched();
+            restoreOpacity();
+
+            if(video.seekable)
+                video.seek(seekpos);
         }
     }
 }

@@ -15,7 +15,7 @@ Item
     signal seekRequested(int seekpos)
 
     id: mbprogressbar
-    height: 6
+    height: 18
 
     Label
     {
@@ -38,11 +38,6 @@ Item
             anchors.fill: parent
             barHeight: mbprogressbar.height
             z: 1
-
-            MouseArea
-            {
-                anchors.fill: parent
-            }
         }
 
         LoadingBar
@@ -51,6 +46,17 @@ Item
             anchors.fill: parent
             barColor: "yellow"
             barHeight: mbprogressbar.height
+        }
+
+        MouseArea
+        {
+            anchors.fill: parent
+            z: 2
+
+            onClicked: {
+                var seekpos = Math.floor(((videoprogress.maximumValue - videoprogress.minimumValue) / videoprogress.width) * mouse.x);
+                seekRequested(seekpos);
+            }
         }
     }
 
