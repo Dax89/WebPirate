@@ -13,6 +13,10 @@ Page
     property alias videoDuration: lblduration.text
     property alias videoThumbnail: imgthumbnail.source
 
+    function playVideo(videotitle, videourl) {
+        pageStack.replace(Qt.resolvedUrl("VideoPlayerPage.qml"), { "videoTitle": videotitle, "videoSource": videourl });
+    }
+
     id: dlgytvideosettings
     allowedOrientations: Orientation.All
     onVideoIdChanged: YouTubeGrabber.grabVideo(videoId, dlgytvideosettings);
@@ -93,12 +97,12 @@ Page
             delegate: ListItem {
                 contentWidth: lvvideotypes.width
                 contentHeight: Theme.itemSizeSmall
+                onClicked: playVideo(videoTitle, url)
 
                 menu: ContextMenu {
                     MenuItem {
                         text: qsTr("Play")
-
-                        onClicked: pageStack.replace(Qt.resolvedUrl("VideoPlayerPage.qml"), { "videoSource": url });
+                        onClicked: playVideo(videoTitle, url)
                     }
 
                     MenuItem {

@@ -10,7 +10,10 @@ Rectangle
     property bool canDisplay: true
     property int barHeight: 4
 
+    property alias barColor: progress.color
+
     height: barHeight
+    color: "transparent"
 
     onValueChanged: {
         if(hideWhenFinished) {

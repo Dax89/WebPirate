@@ -1,20 +1,23 @@
 import QtQuick 2.0
 import QtMultimedia 5.0
 import Sailfish.Silica 1.0
+import "../components/mediaplayer"
 
 Page
 {
-    property alias videoSource: video.source
+    property alias videoSource: videoplayer.source
+    property alias videoTitle: mptitle.text
 
     id: videoplayerpage
     allowedOrientations: Orientation.All
+    showNavigationIndicator: videoplayer.playbackState !== MediaPlayer.PlayingState
 
     states: [ State { name: "error";
                       PropertyChanges { target: lblmessage; visible: true }
-                      PropertyChanges { target: pcprogress; visible: false } },
+                      PropertyChanges { target: pcbusy; visible: false } },
               State { name: "loading"
                       PropertyChanges { target: lblmessage; visible: false }
-                      PropertyChanges { target: pcprogress; visible: true } } ]
+                      PropertyChanges { target: pcbusy; visible: true } } ]
 
     Rectangle
     {
@@ -26,7 +29,7 @@ Page
         {
             id: lblmessage
             anchors.centerIn: parent
-            text: video.errorString
+            text: videoplayer.errorString
             font.pixelSize: Theme.fontSizeLarge
             horizontalAlignment: Text.AlignHCenter
             wrapMode: Text.WordWrap
@@ -36,11 +39,17 @@ Page
 
     Video
     {
-        id: video
+        id: videoplayer
         anchors.fill: parent
+        autoPlay: true
+        onPlaybackStateChanged: {
+            var keep = videoplayer.playbackState !== MediaPlayer.PlayingState;
+            mptoolbar.keepVisible(keep);
+            mptitle.keepVisible(keep);
+        }
 
         onErrorChanged: {
-            videoplayerpage.state = (video !== MediaPlayer.NoError ? "" : "error");
+            videoplayerpage.state = (videoplayer !== MediaPlayer.NoError ? "" : "error");
         }
 
         onStatusChanged: {
@@ -49,7 +58,7 @@ Page
 
         BusyIndicator
         {
-            id: pcprogress
+            id: pcbusy
             anchors.centerIn: parent
             visible: false
             running: visible
@@ -57,41 +66,22 @@ Page
 
         MouseArea
         {
-            anchors { left: parent.left; top: parent.top; right: parent.right; bottom: toolbar.top }
-            onClicked: video.play();
+            anchors { left: parent.left; top: parent.top; right: parent.right; bottom: mptoolbar.top }
+            onClicked: videoplayer.playbackState === MediaPlayer.PlayingState ? videoplayer.pause() : videoplayer.play()
         }
 
-        Rectangle
+        MediaPlayerTitle
         {
-            id: toolbar
-            color: Theme.highlightDimmerColor
+            id: mptitle
+            anchors { left: parent.left; top: parent.top; right: parent.right; leftMargin: Theme.paddingMedium; topMargin: Theme.paddingMedium; rightMargin: Theme.paddingMedium }
+        }
+
+        MediaPlayerToolBar
+        {
+            id: mptoolbar
+            video: videoplayer
             height: Theme.itemSizeSmall
-            anchors { left: parent.left; bottom: parent.bottom; right: parent.right }
-
-            Row
-            {
-                anchors.fill: parent
-                spacing: Theme.paddingSmall
-
-                IconButton
-                {
-                    id: btnplaystop
-                    width: Theme.itemSizeSmall
-                    height: Theme.itemSizeSmall
-                    icon.source: video.playbackState === MediaPlayer.PlayingState ? "image://theme/icon-m-pause" : "image://theme/icon-m-play"
-                    onClicked: video.playbackState === MediaPlayer.PlayingState ? video.pause() : video.play()
-                }
-
-                ProgressBar
-                {
-                    id: pbbuffer
-                    anchors.verticalCenter: parent.verticalCenter
-                    width: parent.width - btnplaystop.width
-                    minimumValue: 0
-                    maximumValue: video.duration
-                    value: video.position
-                }
-            }
+            anchors { left: parent.left; bottom: parent.bottom; right: parent.right; }
         }
     }
 }

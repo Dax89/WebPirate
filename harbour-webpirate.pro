@@ -86,7 +86,10 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/pages/YouTubeSettingsPage.qml \
     qml/pages/VideoPlayerPage.qml \
     qml/components/InfoLabel.qml \
-    qml/js/helpers/YouTubeHelper.js
+    qml/js/helpers/YouTubeHelper.js \
+    qml/components/mediaplayer/MediaPlayerProgressBar.qml \
+    qml/components/mediaplayer/MediaPlayerToolBar.qml \
+    qml/components/mediaplayer/MediaPlayerTitle.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line

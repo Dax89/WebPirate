@@ -58,9 +58,8 @@ function pad(num, size)
     return s;
 }
 
-function displayDuration(durationstr)
+function displayDuration(duration)
 {
-    var duration = parseInt(durationstr);
     var numdays = Math.floor(duration / 86400);
     var numhours = Math.floor((duration % 86400) / 3600);
     var numminutes = Math.floor(((duration % 86400) % 3600) / 60);
@@ -101,7 +100,7 @@ function grabVideo(videoid, ytvideosettings)
                 else if(videoentry[0] === "iurl")
                     ytvideosettings.videoThumbnail = UrlHelper.decode(videoentry[1]);
                 else if(videoentry[0] === "length_seconds")
-                    ytvideosettings.videoDuration = displayDuration(videoentry[1]);
+                    ytvideosettings.videoDuration = displayDuration(parseInt(videoentry[1]));
                 else if(videoentry[0] === "url_encoded_fmt_stream_map")
                     decodeVideoTypes(videoentry[1], ytvideosettings.videoTypes);
             }
