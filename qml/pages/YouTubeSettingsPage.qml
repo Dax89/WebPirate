@@ -1,12 +1,14 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
 import "../components"
+import "../models"
 import "../js/YouTubeGrabber.js" as YouTubeGrabber
 
 Page
 {
     property string videoId
     property ListModel videoTypes: ListModel { }
+    property Settings settings
 
     property alias videoTitle: lbltitle.text
     property alias videoAuthor: lblauthor.text
@@ -95,6 +97,7 @@ Page
             clip: true
 
             delegate: ListItem {
+                id: lvitem
                 contentWidth: lvvideotypes.width
                 contentHeight: Theme.itemSizeSmall
                 onClicked: playVideo(videoTitle, url)
@@ -107,6 +110,12 @@ Page
 
                     MenuItem {
                         text: qsTr("Download")
+
+                        onClicked: {
+                            lvitem.remorseAction(qsTr("Downloading video"), function() {
+                                settings.downloadmanager.createDownload(url);
+                            });
+                        }
                     }
                 }
 

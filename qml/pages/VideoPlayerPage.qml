@@ -75,7 +75,7 @@ Page
                     return;
                 }
 
-                videoplayer.playbackState === MediaPlayer.PlayingState ? videoplayer.pause() : videoplayer.play()
+                videoplayer.playbackState === MediaPlayer.PlayingState ? videoplayer.pause() : videoplayer.play();
             }
         }
 

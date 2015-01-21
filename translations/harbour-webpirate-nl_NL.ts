@@ -450,5 +450,9 @@
         <source>Download</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Downloading video</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 </TS>
