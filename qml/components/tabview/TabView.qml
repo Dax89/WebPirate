@@ -157,8 +157,7 @@ Item
         Item
         {
             id: stack
-            anchors { top: parent.top; right: sidebar.left; bottom: parent.bottom }
-            width: parent.width
+            anchors.fill: parent
         }
     }
 
