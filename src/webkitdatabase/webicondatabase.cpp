@@ -21,8 +21,8 @@ WebIconDatabase::~WebIconDatabase()
 
     if(!WebIconDatabase::_refcount)
     {
-        if(this->_db.isOpen())
-            this->_db.close();
+        if(WebIconDatabase::_db.isOpen())
+            WebIconDatabase::_db.close();
     }
 }
 
