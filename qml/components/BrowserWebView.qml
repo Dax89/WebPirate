@@ -29,8 +29,9 @@ SilicaWebView
                                 Qt.resolvedUrl("../js/canvg/StackBlur.js"),
                                 Qt.resolvedUrl("../js/canvg/canvg.js"),
 
-                                /* Custom WebView Helper */
-                                Qt.resolvedUrl("../js/WebViewHelper.js") ]
+                                /* Custom WebView Helpers */
+                                Qt.resolvedUrl("../js/helpers/WebViewHelper.js"),
+                                Qt.resolvedUrl("../js/helpers/YouTubeHelper.js")]
 
     experimental.onMessageReceived: {
         var data = JSON.parse(message.data);
@@ -101,7 +102,9 @@ SilicaWebView
 
             if(!UrlHelper.isSpecialUrl(url.toString()) && UrlHelper.isUrl(url.toString()))
             {
-                webview.experimental.evaluateJavaScript("__webpirate__.polishDocument()");
+                webview.experimental.evaluateJavaScript("__webpirate__.polishDocument();
+                                                         __yt_webpirate__.convertVideo();");
+
                 Credentials.compile(Database.instance(), mainwindow.settings, url.toString(), webview);
                 History.store(url.toString(), title);
             }
@@ -118,7 +121,7 @@ SilicaWebView
             browsertab.state = "webbrowser";
 
             if(YouTubeGrabber.isYouTubeVideo(stringurl))
-                webview.experimental.evaluateJavaScript("__webpirate__.checkYouTubeVideo()");
+                webview.experimental.evaluateJavaScript("__yt_webpirate__.convertVideo()");
         }
 
         navigationbar.searchBar.url = url;

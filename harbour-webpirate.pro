@@ -46,7 +46,7 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/models/Settings.qml \
     qml/models/FavoritesModel.qml \
     qml/components/FavoritesView.qml \
-    qml/js/WebViewHelper.js \
+    qml/js/helpers/WebViewHelper.js \
     qml/pages/SearchEnginesPage.qml \
     qml/pages/FavoritePage.qml \
     qml/pages/SearchEnginePage.qml \
@@ -85,7 +85,8 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/js/YouTubeGrabber.js \
     qml/pages/YouTubeSettingsPage.qml \
     qml/pages/VideoPlayerPage.qml \
-    qml/components/InfoLabel.qml
+    qml/components/InfoLabel.qml \
+    qml/js/helpers/YouTubeHelper.js
 
 # to disable building translations every time, comment out the
 # following CONFIG line
