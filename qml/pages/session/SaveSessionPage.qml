@@ -64,8 +64,8 @@ Dialog
         delegate: PageItem {
             contentWidth: parent.width
             contentHeight: Theme.itemSizeSmall
-            title: tab.getTitle() + (index === tabView.currentIndex ? " (" + qsTr("Selected") + ")" : "" )
-            text: tab.getUrl()
+            itemTitle: tab.getTitle() + (index === tabView.currentIndex ? " (" + qsTr("Selected") + ")" : "" )
+            itemText: tab.getUrl()
         }
     }
 }

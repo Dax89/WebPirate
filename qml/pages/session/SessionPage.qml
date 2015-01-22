@@ -89,8 +89,8 @@ Dialog
         delegate: PageItem {
             contentWidth: parent.width
             contentHeight: Theme.itemSizeSmall
-            title: pagetitle + (current ? " (" + qsTr("Selected") + ")" : "" )
-            text: pageurl
+            itemTitle: pagetitle + (current ? " (" + qsTr("Selected") + ")" : "" )
+            itemText: pageurl
         }
     }
 }

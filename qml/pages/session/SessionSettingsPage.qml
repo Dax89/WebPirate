@@ -24,8 +24,8 @@ Page
             id: sessionitem
             contentWidth: parent.width
             contentHeight: Theme.itemSizeSmall
-            title: name // + (Sessions.startupId() === sessionid ? " (" + qsTr("Loads at startup")  + ")" : "")
-            text: qsTr("Tabs saved") + ": " + count
+            itemTitle: name // + (Sessions.startupId() === sessionid ? " (" + qsTr("Loads at startup")  + ")" : "")
+            itemText: qsTr("Tabs saved") + ": " + count
 
             onClicked: loadSession(sessionid)
 

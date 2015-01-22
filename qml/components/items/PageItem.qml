@@ -3,8 +3,8 @@ import Sailfish.Silica 1.0
 
 ListItem
 {
-    property alias title: lbltitle.text
-    property alias text: lbltext.text
+    property alias itemTitle: lbltitle.text
+    property alias itemText: lbltext.text
 
     Column
     {
