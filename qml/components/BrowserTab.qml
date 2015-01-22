@@ -17,6 +17,7 @@ Item
             name: "newtab";
             PropertyChanges { target: webview; visible: false }
             PropertyChanges { target: loadingbar; visible: false; canDisplay: false }
+            PropertyChanges { target: navigationbar; state: "loaded" }
             PropertyChanges { target: loader; active: true; source: Qt.resolvedUrl("quickgrid/QuickGrid.qml"); visible: true; }
         },
 
@@ -31,6 +32,7 @@ Item
             name: "loaderror";
             PropertyChanges { target: webview; visible: false; }
             PropertyChanges { target: loadingbar; visible: false; canDisplay: false }
+            PropertyChanges { target: navigationbar; state: "loaded" }
             PropertyChanges { target: loader; active: true; source: Qt.resolvedUrl("LoadError.qml"); visible: true; }
         } ]
 
@@ -154,7 +156,6 @@ Item
         anchors { bottom: parent.bottom; left: parent.left; right: parent.right }
         forwardButton.enabled: webview.canGoForward;
         backButton.enabled: webview.canGoBack;
-        state: (browsertab.state === "webbrowser" && webview.loading) ? "loading" : "loaded";
 
         onForwardRequested: webview.goForward();
         onBackRequested: webview.goBack();

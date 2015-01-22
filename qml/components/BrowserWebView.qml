@@ -91,6 +91,8 @@ SilicaWebView
         if(!visible)
             return;
 
+        navigationbar.state = webview.loading ? "loading" : "loaded";
+
         if(loadRequest.status === WebView.LoadStartedStatus) {
             navigationbar.solidify();
             linkmenu.hide();
