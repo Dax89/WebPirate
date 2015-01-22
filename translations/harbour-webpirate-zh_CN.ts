@@ -89,6 +89,10 @@
         <source>New Tab</source>
         <translation>新标签页</translation>
     </message>
+    <message>
+        <source>Load Error</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>BrowserWebView</name>

@@ -16,30 +16,27 @@ Item
         State {
             name: "newtab";
             PropertyChanges { target: webview; visible: false }
-            PropertyChanges { target: quickgrid; visible: true }
             PropertyChanges { target: loadingbar; visible: false; canDisplay: false }
-            PropertyChanges { target: loadfailed; visible: false }
+            PropertyChanges { target: loader; active: true; source: Qt.resolvedUrl("quickgrid/QuickGrid.qml"); visible: true; }
         },
 
         State {
             name: "webbrowser";
             PropertyChanges { target: webview; visible: true; }
-            PropertyChanges { target: quickgrid; visible: false }
-            PropertyChanges { target: loadfailed; visible: false }
             PropertyChanges { target: loadingbar; canDisplay: true }
+            PropertyChanges { target: loader; source: ""; visible: false; active: false }
         },
 
         State {
             name: "loaderror";
             PropertyChanges { target: webview; visible: false; }
-            PropertyChanges { target: quickgrid; visible: false }
             PropertyChanges { target: loadingbar; visible: false; canDisplay: false }
-            PropertyChanges { target: loadfailed; visible: true }
+            PropertyChanges { target: loader; active: true; source: Qt.resolvedUrl("LoadError.qml"); visible: true; }
         } ]
 
     function getIcon()
     {
-        if(state == "newtab")
+        if((state === "newtab") || (state === "loaderror"))
             return "image://theme/icon-m-tabs";
 
         return (webview.icon !== "" ? webview.icon : "image://theme/icon-s-group-chat");
@@ -54,7 +51,7 @@ Item
             return navigationbar.searchBar.url
 
         if(navigationbar.state == "loaderror")
-            return "Load Error";
+            return qsTr("Load Error");
 
         return qsTr("New Tab");
     }
@@ -71,8 +68,8 @@ Item
 
         if(specialurl === "config")
             pageStack.push(Qt.resolvedUrl("../SettingsPage.qml"), {"settings": mainwindow.settings });
-
-        loadDefault();
+        else
+            loadDefault();
     }
 
     function load(req) {
@@ -110,37 +107,23 @@ Item
         onUrlRequested: browsertab.load(url)
     }
 
-    QuickGrid {
-        id: quickgrid
+    Loader
+    {
+        id: loader
         anchors { left: parent.left; right: parent.right }
         y: tabheader.height
         height: parent.height - tabheader.height - navigationbar.height
 
-        onVisibleChanged: {
-            if(visible) {
-                tabheader.solidify();
-                navigationbar.solidify();
-            }
-        }
-    }
-
-    LoadFailed {
-        id: loadfailed
-        anchors { left: parent.left; right: parent.right }
-        y: tabheader.height
-        height: parent.height - tabheader.height - navigationbar.height
-
-        onVisibleChanged: {
-            if(visible) {
-                tabheader.solidify();
-                navigationbar.solidify();
-            }
+        onLoaded: {
+            tabheader.solidify();
+            navigationbar.solidify();
         }
     }
 
     BrowserWebView
     {
         id: webview
+        visible: false
         anchors.fill: parent
     }
 

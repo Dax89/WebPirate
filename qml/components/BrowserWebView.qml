@@ -122,7 +122,10 @@ SilicaWebView
         navigationbar.searchBar.url = stringurl;
 
         if(UrlHelper.isSpecialUrl(stringurl))
+        {
+            manageSpecialUrl(stringurl);
             return;
+        }
 
         browsertab.state = "webbrowser";
 
@@ -148,12 +151,10 @@ SilicaWebView
             if(contentY < -Theme.itemSizeExtraSmall) /* Catch Bounce effect and make TabHeader solid, if needed */
                 tabheader.solidify();
         }
-        else if(verticalVelocity > 0)
+        else if((verticalVelocity > 0) && (contentY > Theme.itemSizeLarge)) /* Keep Items visibile a little bit */
         {
             navigationbar.evaporate();
-
-            if(contentY > Theme.itemSizeLarge) /* Keep TabHeader visibile a little bit */
-                tabheader.evaporate();
+            tabheader.evaporate();
         }
     }
 }
