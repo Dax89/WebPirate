@@ -13,6 +13,7 @@ import "../js/YouTubeGrabber.js" as YouTubeGrabber
 SilicaWebView
 {
     id: webview
+    boundsBehavior: Flickable.DragAndOvershootBounds
 
     VerticalScrollDecorator { flickable: webview }
 
@@ -24,6 +25,7 @@ SilicaWebView
     experimental.preferences.navigatorQtObjectEnabled: true
     experimental.preferences.developerExtrasEnabled: true
     experimental.userAgent: UserAgents.get(mainwindow.settings.useragent).value
+
     experimental.userScripts: [ /* SVG Polyfill: From 'canvg' project */
                                 Qt.resolvedUrl("../js/canvg/rgbcolor.js"),
                                 Qt.resolvedUrl("../js/canvg/StackBlur.js"),
@@ -135,21 +137,16 @@ SilicaWebView
             tabheader.solidify();
     }
 
-    onAtYBeginningChanged: {
-        if(!visible)
-            return;
-
-        tabheader.evaporate();
-    }
-
     onVerticalVelocityChanged: {
         if(!visible)
             return;
 
-        if(verticalVelocity < 0 && !atYBeginning)
+        if(verticalVelocity < 0)
         {
             navigationbar.expand();
-            tabheader.solidify();
+
+            if(contentY < -Theme.itemSizeExtraSmall) /* Catch Bounce effect and make TabHeader solid, if needed */
+                tabheader.solidify();
         }
         else if(verticalVelocity > 0)
         {
@@ -157,8 +154,6 @@ SilicaWebView
 
             if(contentY > Theme.itemSizeLarge) /* Keep TabHeader visibile a little bit */
                 tabheader.evaporate();
-            else
-                tabheader.solidify();
         }
     }
 }
