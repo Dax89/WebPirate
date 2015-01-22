@@ -8,7 +8,7 @@ Rectangle
 
     id: tabbutton
     anchors { top: headerrow.top; bottom: headerrow.bottom }
-    width: tabview.tabWidth
+    width: tabheader.tabWidth
     color: (index === currentIndex ? Theme.secondaryColor : Theme.secondaryHighlightColor);
 
     Behavior on width {
