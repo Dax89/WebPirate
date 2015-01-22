@@ -18,12 +18,12 @@ Rectangle
     property alias backButton: btnback
     property alias forwardButton: btnforward
 
-    function expand() {
-        height = Theme.iconSizeMedium
+    function solidify() {
+        opacity = 1.0
     }
 
-    function collapse() {
-        height = 0;
+    function evaporate() {
+        opacity = 0.0;
     }
 
     id: navigationbar
@@ -40,7 +40,7 @@ Rectangle
     states: [ State { name: "loaded"; PropertyChanges { target: btnrefresh; icon.source: "image://theme/icon-m-refresh" } },
               State { name: "loading"; PropertyChanges { target: btnrefresh; icon.source: "image://theme/icon-m-reset" } } ]
 
-    Behavior on height {
+    Behavior on opacity {
         NumberAnimation { duration: 250; easing.type: Easing.InOutQuad }
     }
 

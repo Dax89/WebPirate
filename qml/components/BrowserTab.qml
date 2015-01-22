@@ -119,7 +119,7 @@ Item
         onVisibleChanged: {
             if(visible) {
                 tabheader.solidify();
-                navigationbar.expand();
+                navigationbar.solidify();
             }
         }
     }
@@ -133,7 +133,7 @@ Item
         onVisibleChanged: {
             if(visible) {
                 tabheader.solidify();
-                navigationbar.expand();
+                navigationbar.solidify();
             }
         }
     }

@@ -72,7 +72,7 @@ SilicaWebView
         title: qsTr("Accept Certificate from:") + " " + webview.url + " ?"
         onRequestAccepted: model.accept()
         onRequestRejected: model.reject()
-        onVisibleChanged: visible ? navigationbar.collapse() : navigationbar.expand()
+        onVisibleChanged: visible ? navigationbar.evaporate() : navigationbar.solidify()
         Component.onCompleted: show()
     }
 
@@ -92,7 +92,7 @@ SilicaWebView
             return;
 
         if(loadRequest.status === WebView.LoadStartedStatus) {
-            navigationbar.expand();
+            navigationbar.solidify();
             linkmenu.hide();
             sidebar.collapse();
             historymenu.hide();
@@ -143,14 +143,14 @@ SilicaWebView
 
         if(verticalVelocity < 0)
         {
-            navigationbar.expand();
+            navigationbar.solidify();
 
             if(contentY < -Theme.itemSizeExtraSmall) /* Catch Bounce effect and make TabHeader solid, if needed */
                 tabheader.solidify();
         }
         else if(verticalVelocity > 0)
         {
-            navigationbar.collapse();
+            navigationbar.evaporate();
 
             if(contentY > Theme.itemSizeLarge) /* Keep TabHeader visibile a little bit */
                 tabheader.evaporate();
