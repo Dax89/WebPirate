@@ -27,8 +27,8 @@ Rectangle
     }
 
     id: navigationbar
-    height: Theme.iconSizeMedium
-    visible: height > 0
+    height: opacity > 0.0 ? Theme.iconSizeMedium : 0
+    visible: opacity > 0.0
     state: "loaded";
     z: 1
 
