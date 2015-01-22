@@ -163,8 +163,8 @@ Item
         onStopRequested: webview.stop();
         onSearchRequested: load(searchquery);
 
-        searchBar.onActiveFocusChanged: {
-            if(!searchBar.activeFocus)
+        searchBar.onFocusChanged: {
+            if(!searchBar.focus)
                 historymenu.hide();
         }
 

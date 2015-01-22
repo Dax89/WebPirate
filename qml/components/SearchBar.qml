@@ -32,7 +32,7 @@ Item
         }
 
         onFocusChanged: {
-            if(activeFocus) {
+            if(focus) {
                 text = url;
                 selectAll();
                 sidebar.collapse();
