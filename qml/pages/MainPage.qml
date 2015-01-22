@@ -33,6 +33,7 @@ import QtWebKit 3.0
 import Sailfish.Silica 1.0
 import "../components/tabview"
 import "../models"
+import "../js/Sessions.js" as Sessions
 
 Page
 {
@@ -45,6 +46,14 @@ Page
     {
         id: tabview
         anchors.fill: parent
-        Component.onCompleted: tabview.addTab(mainwindow.settings.homepage);
+
+        Component.onCompleted: {
+            var sessionid = Sessions.startupId();
+
+            if(sessionid === -1)
+                tabview.addTab(mainwindow.settings.homepage);
+            else
+                Sessions.load(sessionid, tabview);
+        }
     }
 }

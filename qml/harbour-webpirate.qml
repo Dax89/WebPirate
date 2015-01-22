@@ -40,6 +40,7 @@ import "js/QuickGrid.js" as QuickGrid
 import "js/UserAgents.js" as UserAgents
 import "js/Credentials.js" as Credentials
 import "js/History.js" as History
+import "js/Sessions.js" as Sessions
 
 ApplicationWindow
 {
@@ -55,6 +56,7 @@ ApplicationWindow
             SearchEngines.load(Database.instance(), settings.searchengines);
             QuickGrid.load(Database.instance(), settings.quickgridmodel, settings.quickgridmodel.maxitems);
 
+            Sessions.createSchema();
             Credentials.createSchema(Database.instance());
 
             var hp = Database.get("homepage");

@@ -20,6 +20,9 @@ Item
 
     function renderTab()
     {
+        if(currentIndex === -1)
+            return;
+
         for(var i = 0; i < pages.count; i++)
         {
             var tab = pages.get(i).tab;
@@ -55,12 +58,23 @@ Item
         tab.parent = null /* Remove Parent Ownership */
         tab.destroy();    /* Destroy the tab immediately */
 
+        if(currentIndex === -1)
+            return;
+
         if(currentIndex > 0)
             currentIndex--;
         else
             renderTab();
 
         tabheader.calculateTabWidth();
+    }
+
+    function removeAllTabs()
+    {
+        currentIndex = -1;
+
+        while(pages.count)
+            removeTab(0);
     }
 
     RemorsePopup { id: tabviewremorse }

@@ -90,7 +90,12 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/components/mediaplayer/MediaPlayerProgressBar.qml \
     qml/components/mediaplayer/MediaPlayerToolBar.qml \
     qml/components/mediaplayer/MediaPlayerTitle.qml \
-    qml/components/tabview/TabHeader.qml
+    qml/components/tabview/TabHeader.qml \
+    qml/js/Sessions.js \
+    qml/pages/session/SaveSessionPage.qml \
+    qml/components/items/PageItem.qml \
+    qml/pages/session/SessionSettingsPage.qml \
+    qml/pages/session/SessionPage.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line

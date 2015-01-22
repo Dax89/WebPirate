@@ -64,6 +64,30 @@ Item
 
             SectionHeader
             {
+                id: sessionsection
+                text: qsTr("Sessions")
+            }
+
+            SidebarItem
+            {
+                anchors { left: parent.left; right: parent.right }
+                icon: "image://theme/icon-s-device-download"
+                text: qsTr("Save Session")
+
+                onClicked: pageStack.push(Qt.resolvedUrl("../../pages/session/SaveSessionPage.qml"), { "tabView": tabview });
+            }
+
+            SidebarItem
+            {
+                anchors { left: parent.left; right: parent.right }
+                icon: "image://theme/icon-s-device-upload"
+                text: qsTr("Load Session")
+
+                onClicked: pageStack.push(Qt.resolvedUrl("../../pages/session/SessionSettingsPage.qml"), { "tabView": tabview });
+            }
+
+            SectionHeader
+            {
                 id: settingssection
                 text: qsTr("Settings")
             }

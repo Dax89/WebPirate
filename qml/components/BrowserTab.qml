@@ -56,6 +56,14 @@ Item
         return qsTr("New Tab");
     }
 
+    function getUrl()
+    {
+        if(state === "webbrowser")
+            return webview.url.toString();
+
+        return "about:newtab";
+    }
+
     function loadDefault()
     {
         state = "newtab";
