@@ -120,7 +120,7 @@ Item
         id: loader
         anchors { left: parent.left; right: parent.right }
         y: tabheader.height
-        height: parent.height - tabheader.height - navigationbar.height
+        height: Screen.height - tabheader.height - navigationbar.height
 
         onLoaded: {
             tabheader.solidify();
@@ -132,7 +132,8 @@ Item
     {
         id: webview
         visible: false
-        anchors.fill: parent
+        anchors { left: parent.left; right: parent.right; top: parent.top }
+        height: Screen.height
     }
 
     LoadingBar
