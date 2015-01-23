@@ -91,6 +91,7 @@ SilicaWebView
         if(!visible)
             return;
 
+        browsertab.lastError = "";
         navigationbar.state = webview.loading ? "loading" : "loaded";
 
         if(loadRequest.status === WebView.LoadStartedStatus) {
@@ -100,8 +101,7 @@ SilicaWebView
             historymenu.hide();
         }
         else if(loadRequest.status === WebView.LoadFailedStatus) {
-            loadfailed.offline = experimental.offline;
-            loadfailed.errorString = loadRequest.errorString;
+            browsertab.lastError = loadRequest.errorString;
             browsertab.state = "loaderror";
         }
         else if (loadRequest.status === WebView.LoadSucceededStatus)  {

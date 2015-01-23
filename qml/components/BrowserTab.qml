@@ -8,9 +8,18 @@ import "../js/Favorites.js" as Favorites
 import "../js/Credentials.js" as Credentials
 
 Item
-{    
+{
+    property alias webView: webview
+    property string lastError: ""
+
     id: browsertab
     state: "newtab"
+
+    onVisibleChanged: {
+        if(!visible) {
+            linkmenu.hide();
+        }
+    }
 
     states: [
         State {
@@ -33,7 +42,7 @@ Item
             PropertyChanges { target: webview; visible: false; }
             PropertyChanges { target: loadingbar; visible: false; canDisplay: false }
             PropertyChanges { target: navigationbar; state: "loaded" }
-            PropertyChanges { target: loader; active: true; source: Qt.resolvedUrl("LoadError.qml"); visible: true; }
+            PropertyChanges { target: loader; active: true; source: Qt.resolvedUrl("LoadFailed.qml"); visible: true; }
         } ]
 
     function getIcon()
@@ -120,13 +129,18 @@ Item
     Loader
     {
         id: loader
-        anchors { left: parent.left; right: parent.right }
-        y: tabheader.height
-        height: (mainpage.isPortrait ? Screen.height : Screen.width) - tabheader.height - navigationbar.height
+        anchors { left: parent.left; top: parent.top; right: parent.right }
+        height: (mainpage.isPortrait ? Screen.height : Screen.width) - navigationbar.height
 
         onLoaded: {
             tabheader.solidify();
             navigationbar.solidify();
+
+            if(browsertab.state === "loaderror")
+            {
+                loader.item.offline = webview.experimental.offline;
+                loader.item.errorString = browsertab.lastError;
+            }
         }
     }
 
@@ -134,6 +148,7 @@ Item
     {
         id: webview
         visible: false
+        anchors.top: parent.top
         width: mainpage.isPortrait ? Screen.width : Screen.height
         height: mainpage.isPortrait ? Screen.height : Screen.width
     }
@@ -175,12 +190,6 @@ Item
             }
 
             historymenu.query = text;
-        }
-    }
-
-    onVisibleChanged: {
-        if(!visible) {
-            linkmenu.hide();
         }
     }
 }

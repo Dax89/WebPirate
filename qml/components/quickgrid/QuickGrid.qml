@@ -13,10 +13,18 @@ Rectangle
         GradientStop { position: 1.0; color: Theme.rgba(Theme.highlightDimmerColor, 0.7) }
     }
 
+    Rectangle
+    {
+        id: coverrectangle
+        anchors { left: parent.left; top: parent.top; right: parent.right }
+        color: Theme.rgba(Theme.highlightDimmerColor, 1.0)
+        height: tabheader.height
+    }
+
     SearchBar
     {
         id: searchbar
-        anchors { left: parent.left; top: parent.top; right: parent.right; topMargin: Theme.paddingLarge; leftMargin: Theme.paddingMedium; rightMargin: Theme.paddingMedium }
+        anchors { left: parent.left; top: coverrectangle.bottom; right: parent.right; topMargin: Theme.paddingLarge; leftMargin: Theme.paddingMedium; rightMargin: Theme.paddingMedium }
         onReturnPressed: browsertab.load(searchquery)
 
         onVisibleChanged: {

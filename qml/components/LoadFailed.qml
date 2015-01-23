@@ -19,10 +19,9 @@ Rectangle
     Text
     {
         id: txterror
-        anchors.top: imgerror.bottom
-        anchors.left: parent.left
-        anchors.right: parent.right
+        anchors { top: imgerror.bottom; left: parent.left; right: parent.right }
         text: offline ? qsTr("You are in offline mode") : errorString
         horizontalAlignment: Text.AlignHCenter
+        wrapMode: Text.WordWrap
     }
 }
