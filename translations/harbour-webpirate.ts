@@ -8,22 +8,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>GitHub Repository</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Version</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Developer</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Translators</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Catalan</source>
         <translation type="unfinished"></translation>
     </message>
@@ -52,7 +36,23 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>Version</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>A tabbed Web Browser for SailfishOS based on WebKit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Developer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>GitHub Repository</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Translators</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

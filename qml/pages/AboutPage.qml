@@ -34,95 +34,112 @@ Page
     SilicaFlickable
     {
         anchors.fill: parent
-        contentHeight: 1306
+        contentHeight: content.height
 
-        PageHeader
+        Column
         {
-            id: pageheader
-            title: qsTr("About Web Pirate")
-        }
+            id: content
+            width: parent.width
 
-        Image
-        {
-            id: wplogo
-            anchors { top: pageheader.bottom; horizontalCenter: parent.horizontalCenter }
-            width: 86
-            height: 86
-            source: "qrc:///harbour-webpirate.png"
-        }
-
-        Label
-        {
-            id: wpswname
-            anchors { top: wplogo.bottom; horizontalCenter: parent.horizontalCenter}
-            horizontalAlignment: Text.AlignHCenter
-            verticalAlignment: Text.AlignVCenter
-            font.bold: true
-            text: "Web Pirate"
-        }
-
-        Label
-        {
-            id: wpversion
-            anchors { top: wpswname.bottom; horizontalCenter: parent.horizontalCenter}
-            horizontalAlignment: Text.AlignHCenter
-            verticalAlignment: Text.AlignVCenter
-            font.pixelSize: Theme.fontSizeExtraSmall
-            text: qsTr("Version") + " " + settings.version
-        }
-
-        Label
-        {
-            id: wpinfo
-            anchors { top: wpversion.bottom; left: parent.left; right: parent.right; leftMargin: Theme.paddingMedium; topMargin: Theme.paddingLarge; rightMargin: Theme.paddingMedium }
-            horizontalAlignment: Text.AlignHCenter
-            verticalAlignment: Text.AlignVCenter
-            font.pixelSize: Theme.fontSizeExtraSmall
-            wrapMode: Text.WordWrap
-            text: qsTr("A tabbed Web Browser for SailfishOS based on WebKit")
-        }
-
-        Item
-        {
-            id: wpdata
-            anchors { left: parent.left; top: wpinfo.bottom; right: parent.right; bottom: parent.bottom;
-                      leftMargin: Theme.paddingMedium; topMargin: Theme.paddingSmall; rightMargin: Theme.paddingMedium; bottomMargin: Theme.paddingMedium }
-
-            InfoLabel
+            PageHeader
             {
-                id: lbldev
-                anchors { left: parent.left; top: parent.top; topMargin: Theme.paddingMedium }
-                title: qsTr("Developer")
-                text: "Antonio Davide Trogu"
+                id: pageheader
+                title: qsTr("About Web Pirate")
             }
 
-            InfoLabel
+            Image
             {
-                id: lblrepository
-                anchors { left: parent.left; top: lbldev.bottom; topMargin: Theme.paddingMedium }
-                title: qsTr("GitHub Repository")
-                text: "https://github.com/Dax89/harbour-webpirate";
+                id: wplogo
+                anchors.horizontalCenter: parent.horizontalCenter
+                width: 86
+                height: 86
+                source: "qrc:///harbour-webpirate.png"
             }
 
-            SectionHeader
+            Label
             {
-                id: sectionhdr
-                anchors { left: parent.left; top: lblrepository.bottom; right: parent.right }
-                text: qsTr("Translators")
+                id: wpswname
+                anchors.horizontalCenter: parent.horizontalCenter
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                font.bold: true
+                text: "Web Pirate"
+            }
+
+            Label
+            {
+                id: wpversion
+                anchors.horizontalCenter: parent.horizontalCenter
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                font.pixelSize: Theme.fontSizeExtraSmall
+                text: qsTr("Version") + " " + settings.version
+            }
+
+            Item
+            {
+                width: parent.width
+                height: Theme.paddingLarge + wpinfo.height
+
+                Label
+                {
+                    id: wpinfo
+                    anchors { left: parent.left; top: parent.top; right: parent.right; leftMargin: Theme.paddingSmall; topMargin: Theme.paddingLarge; rightMargin: Theme.paddingSmall }
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
+                    font.pixelSize: Theme.fontSizeExtraSmall
+                    wrapMode: Text.WordWrap
+                    text: qsTr("A tabbed Web Browser for SailfishOS based on WebKit")
+                }
+            }
+
+            Item
+            {
+                width: parent.width
+                height: Theme.paddingLarge + lbldev.height + lblrepository.height
+
+                InfoLabel
+                {
+                    id: lbldev
+                    anchors { left: parent.left; top: parent.top; right: parent.right; leftMargin: Theme.paddingSmall; topMargin: Theme.paddingLarge; rightMargin: Theme.paddingSmall }
+                    title: qsTr("Developer")
+                    text: "Antonio Davide Trogu"
+                }
+
+                InfoLabel
+                {
+                    id: lblrepository
+                    anchors { left: parent.left; top: lbldev.bottom; right: parent.right; leftMargin: Theme.paddingSmall; rightMargin: Theme.paddingSmall }
+                    title: qsTr("GitHub Repository")
+                    text: "https://github.com/Dax89/harbour-webpirate";
+                }
+            }
+
+            Item
+            {
+                width: parent.width
+                height: sectionhdr.height
+
+                SectionHeader
+                {
+                    id: sectionhdr
+                    width: parent.width
+                    anchors { left: parent.left; top: parent.top; right: parent.right; leftMargin: Theme.paddingSmall; rightMargin: Theme.paddingSmall }
+                    text: qsTr("Translators")
+                }
             }
 
             Column
             {
                 id: coltranslators
-                anchors { left: parent.left; top: sectionhdr.bottom; right: parent.right; bottom: parent.bottom }
+                width: parent.width
 
                 Repeater
                 {
-                    anchors { left: parent.left; right: parent.right }
                     model: translatormodel
 
                     delegate: InfoLabel {
-                        anchors { left: parent.left; right: parent.right; topMargin: Theme.paddingMedium }
+                        anchors { left: parent.left; right: parent.right; leftMargin: Theme.paddingSmall; topMargin: Theme.paddingMedium; rightMargin: Theme.paddingSmall }
                         title: language
                         text: translators
                     }
