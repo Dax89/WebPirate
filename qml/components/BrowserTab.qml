@@ -134,8 +134,8 @@ Item
     {
         id: webview
         visible: false
-        anchors { left: parent.left; right: parent.right; top: parent.top }
-        height: Screen.height
+        width: mainpage.isPortrait ? Screen.width : Screen.height
+        height: mainpage.isPortrait ? Screen.height : Screen.width
     }
 
     LoadingBar

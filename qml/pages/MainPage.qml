@@ -39,7 +39,7 @@ Page
 {
     property alias tabview: tabview
 
-    id: browserpage
+    id: mainpage
     allowedOrientations: Orientation.All
 
     TabView
