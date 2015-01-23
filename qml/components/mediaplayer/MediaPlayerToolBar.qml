@@ -26,6 +26,7 @@ Rectangle
 
     id: toolbar
     color: Theme.highlightDimmerColor
+    z: 1
 
     Behavior on opacity { NumberAnimation { duration: 800; easing.type: Easing.Linear } }
 

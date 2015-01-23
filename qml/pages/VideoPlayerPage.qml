@@ -11,7 +11,7 @@ Page
 
     id: videoplayerpage
     allowedOrientations: Orientation.All
-    showNavigationIndicator: videoplayer.playbackState !== MediaPlayer.PlayingState
+    showNavigationIndicator: lblmessage.visible || (videoplayer.playbackState !== MediaPlayer.PlayingState)
 
     states: [ State { name: "error";
                       PropertyChanges { target: lblmessage; visible: true }
@@ -22,14 +22,15 @@ Page
 
     Rectangle
     {
-        id: errorframe
+        id: blackframe
         anchors.fill: parent
         color: "black"
 
         Label
         {
             id: lblmessage
-            anchors.centerIn: parent
+            anchors { verticalCenter: parent.verticalCenter; horizontalCenter: parent.horizontalCenter }
+            width: parent.width
             text: videoplayer.errorString
             font.pixelSize: Theme.fontSizeLarge
             horizontalAlignment: Text.AlignHCenter
@@ -60,11 +61,9 @@ Page
         Image
         {
             id: imgthumbnail
-            width: videplayer.height / 2
-            height: videplayer.height / 2
             fillMode: Image.PreserveAspectFit
             anchors.centerIn: parent
-            visible: !videoplayer.hasVideo
+            visible: !lblmessage.visible && !videoplayer.hasVideo
         }
 
         BusyIndicator

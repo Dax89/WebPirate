@@ -1,4 +1,5 @@
 import QtQuick 2.0
+import QtMultimedia 5.0
 import Sailfish.Silica 1.0
 
 Label
@@ -26,6 +27,7 @@ Label
     elide: Text.ElideRight
     verticalAlignment: Text.AlignHCenter
     horizontalAlignment: Text.AlignRight
+    z: 1
 
     Behavior on opacity { NumberAnimation { duration: 800; easing.type: Easing.Linear } }
 

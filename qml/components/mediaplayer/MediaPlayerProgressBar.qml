@@ -14,6 +14,11 @@ Item
 
     signal seekRequested(int seekpos)
 
+    function reverseRgb(rgba)
+    {
+        return Qt.rgba(1.0 - rgba.r, 1.0 - rgba.g, 1.0 - rgba.b, 1.0);
+    }
+
     id: mbprogressbar
     height: 18
 
@@ -44,7 +49,7 @@ Item
         {
             id: bufferprogress
             anchors.fill: parent
-            barColor: "yellow"
+            barColor: reverseRgb(Theme.highlightColor)
             barHeight: mbprogressbar.height
         }
 
