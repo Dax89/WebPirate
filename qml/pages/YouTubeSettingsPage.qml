@@ -15,8 +15,8 @@ Page
     property alias videoDuration: lblduration.text
     property alias videoThumbnail: imgthumbnail.source
 
-    function playVideo(videotitle, videourl) {
-        pageStack.replace(Qt.resolvedUrl("VideoPlayerPage.qml"), { "videoTitle": videotitle, "videoSource": videourl });
+    function playVideo(videotitle, videourl, videothumbnail) {
+        pageStack.replace(Qt.resolvedUrl("VideoPlayerPage.qml"), { "videoTitle": videotitle, "videoSource": videourl, "videoThumbnail": videothumbnail });
     }
 
     id: dlgytvideosettings
@@ -100,12 +100,12 @@ Page
                 id: lvitem
                 contentWidth: lvvideotypes.width
                 contentHeight: Theme.itemSizeSmall
-                onClicked: playVideo(videoTitle, url)
+                onClicked: playVideo(videoTitle, url, videoThumbnail)
 
                 menu: ContextMenu {
                     MenuItem {
                         text: qsTr("Play")
-                        onClicked: playVideo(videoTitle, url)
+                        onClicked: playVideo(videoTitle, url, videoThumbnail)
                     }
 
                     MenuItem {

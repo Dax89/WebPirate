@@ -6,6 +6,7 @@ import "../components/mediaplayer"
 Page
 {
     property alias videoSource: videoplayer.source
+    property alias videoThumbnail: imgthumbnail.source
     property alias videoTitle: mptitle.text
 
     id: videoplayerpage
@@ -54,6 +55,16 @@ Page
 
         onStatusChanged: {
             videoplayerpage.state = (status === MediaPlayer.Loading || status === MediaPlayer.Buffering || status === MediaPlayer.Stalled) ? "loading" : "";
+        }
+
+        Image
+        {
+            id: imgthumbnail
+            width: videplayer.height / 2
+            height: videplayer.height / 2
+            fillMode: Image.PreserveAspectFit
+            anchors.centerIn: parent
+            visible: !videoplayer.hasVideo
         }
 
         BusyIndicator
