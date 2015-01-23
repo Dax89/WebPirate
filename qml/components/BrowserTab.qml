@@ -122,7 +122,7 @@ Item
         id: loader
         anchors { left: parent.left; right: parent.right }
         y: tabheader.height
-        height: Screen.height - tabheader.height - navigationbar.height
+        height: (mainpage.isPortrait ? Screen.height : Screen.width) - tabheader.height - navigationbar.height
 
         onLoaded: {
             tabheader.solidify();

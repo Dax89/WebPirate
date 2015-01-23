@@ -28,14 +28,15 @@ Item
     SilicaFlickable
     {
         id: options
-        clip: true
         anchors.fill: parent
+        contentHeight: column.height
 
         VerticalScrollDecorator { flickable: options }
 
         Column
         {
-            anchors.fill: parent
+            id: column
+            width: parent.width
 
             SectionHeader
             {

@@ -92,7 +92,7 @@ function grabVideo(videoid, ytvideosettings)
                 var videoentry = videoinfo[i].split("=");
 
                 if((videoentry[0] === "status") && (videoentry[1] === "fail"))
-                    break;
+                    break; //FIXME: (YouTube) Grab Error Message
                 else if(videoentry[0] === "author")
                     ytvideosettings.videoAuthor = UrlHelper.decode(videoentry[1]);
                 else if(videoentry[0] === "title")
