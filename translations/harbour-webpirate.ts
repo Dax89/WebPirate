@@ -94,6 +94,10 @@
         <source>Load Session</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Cover settings</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>BrowserTab</name>
@@ -114,6 +118,21 @@
     </message>
     <message>
         <source>Downloading</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>CoverSettingsPage</name>
+    <message>
+        <source>General Actions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Quick Grid Actions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cover Manager</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -159,6 +178,45 @@
     </message>
     <message>
         <source>Delete completed Downloads</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>EditCoverPage</name>
+    <message>
+        <source>Save</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Go to Previous Tab</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Go to Next Tab</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Add New Tab</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Close Tab</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Load Homepage</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Close Browser</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Wipe personal data</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Wipe personal data and exit</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

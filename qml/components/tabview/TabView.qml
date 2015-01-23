@@ -77,6 +77,16 @@ Item
             removeTab(0);
     }
 
+    function currentTab()
+    {
+        var item = pages.get(currentIndex);
+
+        if(!item)
+            return null;
+
+        return item.tab;
+    }
+
     RemorsePopup { id: tabviewremorse }
 
     PopupMessage {

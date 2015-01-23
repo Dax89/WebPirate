@@ -49,7 +49,6 @@ Item
                 anchors { left: parent.left; right: parent.right }
                 icon: "image://theme/icon-s-favorite"
                 text: qsTr("Favorites")
-
                 onClicked: pageStack.push(Qt.resolvedUrl("../../pages/FavoritesPage.qml"), { "folderId": 0, "tabview": tabview, "rootPage": pageStack.currentPage });
             }
 
@@ -59,7 +58,6 @@ Item
                 icon: "image://theme/icon-s-cloud-download"
                 text: qsTr("Downloads")
                 circleVisible: true
-
                 onClicked: pageStack.push(Qt.resolvedUrl("../../pages/DownloadsPage.qml"), { "settings": mainwindow.settings });
             }
 
@@ -74,7 +72,6 @@ Item
                 anchors { left: parent.left; right: parent.right }
                 icon: "image://theme/icon-s-device-download"
                 text: qsTr("Save Session")
-
                 onClicked: pageStack.push(Qt.resolvedUrl("../../pages/session/SaveSessionPage.qml"), { "tabView": tabview });
             }
 
@@ -83,7 +80,6 @@ Item
                 anchors { left: parent.left; right: parent.right }
                 icon: "image://theme/icon-s-device-upload"
                 text: qsTr("Load Session")
-
                 onClicked: pageStack.push(Qt.resolvedUrl("../../pages/session/SessionSettingsPage.qml"), { "tabView": tabview });
             }
 
@@ -98,8 +94,15 @@ Item
                 anchors { left: parent.left; right: parent.right }
                 icon: "image://theme/icon-s-setting"
                 text: qsTr("Change settings")
-
                 onClicked: pageStack.push(Qt.resolvedUrl("../../pages/SettingsPage.qml"), { "settings": mainwindow.settings });
+            }
+
+            SidebarItem
+            {
+                anchors { left: parent.left; right: parent.right }
+                icon: "image://theme/icon-m-device"
+                text: qsTr("Cover settings")
+                onClicked: pageStack.push(Qt.resolvedUrl("../../pages/cover/CoverSettingsPage.qml"), { "settings": mainwindow.settings });
             }
 
             SidebarItem
@@ -107,7 +110,6 @@ Item
                 anchors { left: parent.left; right: parent.right }
                 icon: "image://theme/icon-m-about"
                 text: qsTr("About Web Pirate")
-
                 onClicked: pageStack.push(Qt.resolvedUrl("../../pages/AboutPage.qml"), { "settings": mainwindow.settings });
             }
         }

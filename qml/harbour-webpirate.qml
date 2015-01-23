@@ -32,7 +32,6 @@ import QtQuick 2.0
 import Sailfish.Silica 1.0
 import "models"
 import "pages"
-import "cover"
 import "js/Database.js" as Database
 import "js/Favorites.js" as Favorites
 import "js/SearchEngines.js" as SearchEngines
@@ -60,7 +59,7 @@ ApplicationWindow
             Credentials.createSchema(Database.instance());
 
             var hp = Database.get("homepage");
-            settings.homepage = (hp === false ? "about:bookmarks" : hp);
+            settings.homepage = (hp === false ? "about:newtab" : hp);
 
             var se = Database.get("searchengine");
             settings.searchengine = (se === false ? 0 : se);
@@ -77,7 +76,7 @@ ApplicationWindow
     id: mainwindow
     allowedOrientations: Orientation.All
     initialPage: Component { MainPage { } }
-    cover: undefined
+    cover: null
 
     Component.onDestruction: {
         if(settings.clearonexit)

@@ -56,4 +56,20 @@ Page
                 Sessions.load(sessionid, tabview);
         }
     }
+
+    CoverActionList
+    {
+        enabled: mainpage.status === PageStatus.Active
+        iconBackground: true
+
+        CoverAction
+        {
+            iconSource: "image://theme/icon-cover-previous"
+        }
+
+        CoverAction
+        {
+            iconSource: "image://theme/icon-cover-next"
+        }
+    }
 }

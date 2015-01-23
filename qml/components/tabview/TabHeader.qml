@@ -30,7 +30,7 @@ Rectangle
     z: 1
     height: Theme.iconSizeMedium
     color: Theme.rgba(Theme.highlightDimmerColor, 1.0)
-    visible: opacity > 0.0
+    visible: (opacity > 0.0) && (Qt.application.state === Qt.ApplicationActive)
     onWidthChanged: calculateTabWidth()
 
     Behavior on opacity {
@@ -62,7 +62,6 @@ Rectangle
             height: Theme.iconSizeMedium
             icon.source: "image://theme/icon-m-add"
             anchors.rightMargin: Theme.paddingSmall
-
             onClicked: tabview.addTab()
         }
     }
@@ -74,7 +73,6 @@ Rectangle
         width: Theme.iconSizeMedium
         height: Theme.iconSizeMedium
         anchors { top: parent.top; bottom: parent.bottom; right: parent.right }
-
         onClicked: sidebar.visible ? sidebar.collapse() : sidebar.expand();
     }
 }

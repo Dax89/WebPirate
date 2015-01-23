@@ -11,7 +11,7 @@ Page
 
     id: videoplayerpage
     allowedOrientations: Orientation.All
-    showNavigationIndicator: lblmessage.visible || (videoplayer.playbackState !== MediaPlayer.PlayingState)
+    showNavigationIndicator: (Qt.application.state === Qt.ApplicationActive) && (lblmessage.visible || (videoplayer.playbackState !== MediaPlayer.PlayingState))
 
     states: [ State { name: "error";
                       PropertyChanges { target: lblmessage; visible: true }
@@ -98,9 +98,38 @@ Page
         MediaPlayerToolBar
         {
             id: mptoolbar
-            video: videoplayer
             height: Theme.itemSizeSmall
             anchors { left: parent.left; bottom: parent.bottom; right: parent.right; }
+        }
+    }
+
+    CoverActionList /* Media Player Cover Actions */
+    {
+        enabled: (videoplayerpage.status === PageStatus.Active) && !lblmessage.visible
+        iconBackground: true
+
+        CoverAction
+        {
+            iconSource: videoplayer.playbackState === MediaPlayer.PlayingState ? "image://theme/icon-cover-pause" : "image://theme/icon-cover-play"
+            onTriggered: videoplayer.playbackState === MediaPlayer.PlayingState ? videoplayer.pause() : videoplayer.play();
+        }
+
+        CoverAction
+        {
+            iconSource: "image://theme/icon-cover-cancel"
+            onTriggered: pageStack.pop()
+        }
+    }
+
+    CoverActionList /* Media Player Fallback Cover Actions */
+    {
+        enabled: (videoplayerpage.status === PageStatus.Active) && lblmessage.visible
+        iconBackground: true
+
+        CoverAction
+        {
+            iconSource: "image://theme/icon-cover-cancel"
+            onTriggered: pageStack.pop()
         }
     }
 }

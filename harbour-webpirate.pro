@@ -25,7 +25,6 @@ SOURCES += src/harbour-webpirate.cpp \
     src/favoritesmanager/favoriteitem.cpp
 
 OTHER_FILES += qml/harbour-webpirate.qml \
-    qml/cover/CoverPage.qml \
     rpm/harbour-webpirate.changes.in \
     rpm/harbour-webpirate.spec \
     rpm/harbour-webpirate.yaml \
@@ -95,7 +94,10 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/pages/session/SaveSessionPage.qml \
     qml/components/items/PageItem.qml \
     qml/pages/session/SessionSettingsPage.qml \
-    qml/pages/session/SessionPage.qml
+    qml/pages/session/SessionPage.qml \
+    qml/pages/cover/CoverSettingsPage.qml \
+    qml/components/items/CoverSection.qml \
+    qml/pages/cover/EditCoverPage.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line

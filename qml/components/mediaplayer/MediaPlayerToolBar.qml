@@ -4,8 +4,6 @@ import Sailfish.Silica 1.0
 
 Rectangle
 {
-    property Video video
-
     function keepVisible(keep)
     {
         if(!keep)
@@ -26,6 +24,7 @@ Rectangle
 
     id: toolbar
     color: Theme.highlightDimmerColor
+    visible: Qt.application.state === Qt.ApplicationActive
     z: 1
 
     Behavior on opacity { NumberAnimation { duration: 800; easing.type: Easing.Linear } }
@@ -52,12 +51,12 @@ Rectangle
         width: Theme.itemSizeSmall
         height: Theme.itemSizeSmall
         anchors { left: parent.left; verticalCenter: parent.verticalCenter }
-        icon.source: video.playbackState === MediaPlayer.PlayingState ? "image://theme/icon-m-pause" : "image://theme/icon-m-play"
+        icon.source: videoplayer.playbackState === MediaPlayer.PlayingState ? "image://theme/icon-m-pause" : "image://theme/icon-m-play"
         z: 1
 
         onClicked: {
             restoreOpacity();
-            video.playbackState === MediaPlayer.PlayingState ? video.pause() : video.play();
+            videoplayer.playbackState === MediaPlayer.PlayingState ? videoplayer.pause() : videoplayer.play();
         }
     }
 
@@ -68,16 +67,16 @@ Rectangle
         width: parent.width - btnplaystop.width
         bufferMinimum: 0
         bufferMaximum: 1.0
-        bufferValue: video.bufferProgress
+        bufferValue: videoplayer.bufferProgress
         progressMinimum: 0
-        progressMaximum: video.duration
-        progressValue: video.position
+        progressMaximum: videoplayer.duration
+        progressValue: videoplayer.position
 
         onSeekRequested: {
             restoreOpacity();
 
-            if(video.seekable)
-                video.seek(seekpos);
+            if(videoplayer.seekable)
+                videoplayer.seek(seekpos);
         }
     }
 }

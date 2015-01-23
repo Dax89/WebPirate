@@ -28,7 +28,7 @@ Rectangle
 
     id: navigationbar
     height: opacity > 0.0 ? Theme.iconSizeMedium : 0
-    visible: opacity > 0.0
+    visible: opacity > 0.0 && (Qt.application.state === Qt.ApplicationActive)
     state: "loaded";
     z: 1
 

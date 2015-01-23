@@ -23,7 +23,7 @@ Label
     }
 
     id: lblmptitle
-    visible: opacity > 0.0
+    visible: opacity > 0.0 && (Qt.application.state === Qt.ApplicationActive)
     elide: Text.ElideRight
     verticalAlignment: Text.AlignHCenter
     horizontalAlignment: Text.AlignRight
