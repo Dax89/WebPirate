@@ -142,7 +142,7 @@ Item
 
                 Item { readonly property int categoryId: generalCategoryId
                        readonly property string name: qsTr("Close Browser")
-                       readonly property string icon: "image://theme/icon-m-cancel"
+                       readonly property string icon: "image://theme/icon-m-close"
 
                        function execute() {
                            Qt.quit();
