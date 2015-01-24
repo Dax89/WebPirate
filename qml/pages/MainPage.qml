@@ -32,6 +32,7 @@ import QtQuick 2.0
 import QtWebKit 3.0
 import Sailfish.Silica 1.0
 import "../components/tabview"
+import "../components/items/cover"
 import "../models"
 import "../js/Sessions.js" as Sessions
 
@@ -57,19 +58,9 @@ Page
         }
     }
 
-    CoverActionList
+    PageCoverActions
     {
+        id: pagecoveractions
         enabled: mainpage.status === PageStatus.Active
-        iconBackground: true
-
-        CoverAction
-        {
-            iconSource: "image://theme/icon-cover-previous"
-        }
-
-        CoverAction
-        {
-            iconSource: "image://theme/icon-cover-next"
-        }
     }
 }

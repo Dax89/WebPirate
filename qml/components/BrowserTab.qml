@@ -12,13 +12,26 @@ Item
     property alias webView: webview
     property string lastError: ""
 
+    function searchRequested()
+    {
+        navigationbar.searchBar.forceActiveFocus();
+    }
+
     id: browsertab
     state: "newtab"
 
     onVisibleChanged: {
         if(!visible) {
             linkmenu.hide();
+            return;
         }
+
+        tabview.pageState = browsertab.state /* Notify TabView's page state */
+    }
+
+    onStateChanged: {
+        if(visible)
+            tabview.pageState = browsertab.state /* Notify TabView's page state */
     }
 
     states: [

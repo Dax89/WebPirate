@@ -122,17 +122,72 @@
     </message>
 </context>
 <context>
+    <name>CoverModel</name>
+    <message>
+        <source>Go to Previous Tab</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Go to Next Tab</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Add New Tab</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Close Tab</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Load Homepage</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Close Browser</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Search with</source>
+        <translation type="obsolete">Cerca con</translation>
+    </message>
+    <message>
+        <source>Reload Current Page</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Wipe personal data</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>CoverSettingsPage</name>
     <message>
         <source>General Actions</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Quick Grid Actions</source>
+        <source>Left</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Cover Manager</source>
+        <source>Right</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation type="obsolete">Salva</translation>
+    </message>
+    <message>
+        <source>Webpage Actions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cover Settings</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -185,39 +240,7 @@
     <name>EditCoverPage</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Salva</translation>
-    </message>
-    <message>
-        <source>Go to Previous Tab</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Go to Next Tab</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Add New Tab</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Close Tab</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Load Homepage</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Close Browser</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Wipe personal data</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Wipe personal data and exit</source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">Salva</translation>
     </message>
 </context>
 <context>

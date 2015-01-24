@@ -1,34 +1,74 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
 import "../../models"
+import "../../components/items/cover"
 
 Page
 {
     property Settings settings
-    property list<QtObject> coversettingsmodel: [ QtObject { readonly property string actionName: qsTr("General Actions") },
-                                                  QtObject { readonly property string actionName: qsTr("Quick Grid Actions") } ]
+    property list<QtObject> coversettingsmodel: [ QtObject { readonly property string actionName: qsTr("General Actions")
+                                                             readonly property int categoryId: settings.coveractions.generalCategoryId },
+
+                                                  QtObject { readonly property string actionName: qsTr("Webpage Actions")
+                                                             readonly property int categoryId: settings.coveractions.webPageCategoryId } ]
 
     id: coversettingspage
     allowedOrientations: Orientation.All
 
-    PageHeader { id: pageheader; title: qsTr("Cover Manager") }
-
-    SilicaListView
+    SilicaFlickable
     {
-        anchors { left: parent.left; top: pageheader.bottom; right: parent.right; bottom: parent.bottom }
-        model: coversettingsmodel
+        anchors.fill: parent
+        contentHeight: content.height
 
-        delegate: ListItem {
-            contentWidth: parent.width
-            contentHeight: Theme.itemSizeSmall
-            onClicked: pageStack.push(Qt.resolvedUrl("EditCoverPage.qml"))
+        Column
+        {
+            id: content
+            width: parent.width
 
-            Label
+            PageHeader { id: pageheader; title: qsTr("Cover Settings") }
+
+            Repeater
             {
-                anchors { left: parent.left; right: parent.right; verticalCenter: parent.verticalCenter; leftMargin: Theme.paddingSmall; rightMargin: Theme.paddingSmall }
-                verticalAlignment: Text.AlignVCenter
-                elide: Text.ElideRight
-                text: actionName
+                model: coversettingsmodel
+
+                delegate: Item {
+                    width: parent.width
+                    height: secthdr.height + leftcbx.height + rightcbx.height
+
+                    SectionHeader { id: secthdr; text: actionName }
+
+                    ComboBox {
+                        id: leftcbx
+                        anchors { left: parent.left; top: secthdr.bottom; right: parent.right }
+                        label: qsTr("Left") + ":"
+                        onCurrentIndexChanged: settings.coveractions.setLeftAction(categoryId, leftcbx.currentIndex)
+
+                        menu: CoverMenu {
+                            menuCategory: categoryId
+                            menuPosition: "left"
+
+                            Component.onCompleted: {
+                                leftcbx.currentIndex = settings.coveractions.selectedLeftAction(categoryId);
+                            }
+                        }
+                    }
+
+                    ComboBox {
+                        id: rightcbx
+                        anchors { left: parent.left; top: leftcbx.bottom; right: parent.right }
+                        label: qsTr("Right") + ":"
+                        onCurrentIndexChanged: settings.coveractions.setRightAction(categoryId, rightcbx.currentIndex)
+
+                        menu: CoverMenu {
+                            menuCategory: categoryId
+                            menuPosition: "right"
+
+                            Component.onCompleted: {
+                                rightcbx.currentIndex = settings.coveractions.selectedRightAction(categoryId);
+                            }
+                        }
+                    }
+                }
             }
         }
     }

@@ -6,7 +6,8 @@ import "../sidebar"
 Item
 {
     property ListModel pages: ListModel { }
-    property int currentIndex: 0
+    property int currentIndex: -1
+    property string pageState
 
     id: tabview
     onCurrentIndexChanged: renderTab()
@@ -48,6 +49,7 @@ Item
         pages.append({ "tab": tab });
         currentIndex = (pages.count - 1);
         tabheader.calculateTabWidth();
+        return tab;
     }
 
     function removeTab(idx)
