@@ -14,7 +14,7 @@ Item
 
     function searchRequested()
     {
-        navigationbar.searchBar.forceActiveFocus();
+        navigationbar.searchBar.triggerKeyboard();
     }
 
     id: browsertab

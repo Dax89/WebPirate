@@ -10,6 +10,10 @@ Item
     signal textChanged(string text)
     signal returnPressed(string searchquery)
 
+    function triggerKeyboard() {
+        searchfield.forceActiveFocus();
+    }
+
     function clear() {
         searchfield.text = "";
     }
