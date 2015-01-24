@@ -98,7 +98,8 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/pages/cover/CoverSettingsPage.qml \
     qml/components/items/cover/CoverMenu.qml \
     qml/models/cover/CoverModel.qml \
-    qml/components/items/cover/PageCoverActions.qml
+    qml/components/items/cover/PageCoverActions.qml \
+    qml/js/Cover.js
 
 # to disable building translations every time, comment out the
 # following CONFIG line

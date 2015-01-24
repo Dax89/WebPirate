@@ -2,6 +2,7 @@ import QtQuick 2.0
 import "../../js/Database.js" as Database
 import "../../js/Credentials.js" as Credentials
 import "../../js/History.js" as History
+import "../../js/Cover.js" as Cover
 
 Item
 {
@@ -10,41 +11,53 @@ Item
     readonly property int generalCategoryId: 0
     readonly property int webPageCategoryId: 1
 
-    property int _generalLeftAction: 0
-    property int _generalRightAction: 1
-    property int _webPageLeftAction: 0
-    property int _webPageRightAction: 1
+    property int generalLeftAction: 0
+    property int generalRightAction: 1
+    property int webPageLeftAction: 0
+    property int webPageRightAction: 1
 
     function selectedLeftAction(categoryid)
     {
         if(categoryid === webPageCategoryId)
-            return _webPageLeftAction;
+            return webPageLeftAction;
 
-        return _generalLeftAction;
+        return generalLeftAction;
     }
 
     function selectedRightAction(categoryid)
     {
         if(categoryid === webPageCategoryId)
-            return _webPageRightAction;
+            return webPageRightAction;
 
-        return _generalRightAction;
+        return generalRightAction;
     }
 
     function setLeftAction(categoryid, index)
     {
         if(categoryid === webPageCategoryId)
-            _webPageLeftAction = index;
+        {
+            webPageLeftAction = index;
+            Cover.save(Database.instance(), categoryid, webPageLeftAction, webPageRightAction);
+        }
         else
-            _generalLeftAction = index;
+        {
+            generalLeftAction = index;
+            Cover.save(Database.instance(), categoryid, generalLeftAction, generalRightAction);
+        }
     }
 
     function setRightAction(categoryid, index)
     {
         if(categoryid === webPageCategoryId)
-            _webPageRightAction = index;
+        {
+            webPageRightAction = index;
+            Cover.save(Database.instance(), categoryid, webPageLeftAction, webPageRightAction);
+        }
         else
-            _generalRightAction = index;
+        {
+            generalRightAction = index;
+            Cover.save(Database.instance(), categoryid, generalLeftAction, generalRightAction);
+        }
     }
 
     function executeLeftAction(tabview, categoryid)

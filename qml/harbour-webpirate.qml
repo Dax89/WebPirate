@@ -40,6 +40,7 @@ import "js/UserAgents.js" as UserAgents
 import "js/Credentials.js" as Credentials
 import "js/History.js" as History
 import "js/Sessions.js" as Sessions
+import "js/Cover.js" as Cover
 
 ApplicationWindow
 {
@@ -57,6 +58,15 @@ ApplicationWindow
 
             Sessions.createSchema();
             Credentials.createSchema(Database.instance());
+            Cover.createSchema(Database.instance());
+
+            var c = Cover.load(Database.instance(), settings.coveractions.generalCategoryId);
+            settings.coveractions.generalLeftAction = c.left;
+            settings.coveractions.generalRightAction = c.right;
+
+            c = Cover.load(Database.instance(), settings.coveractions.webPageCategoryId);
+            settings.coveractions.webPageLeftAction = c.left;
+            settings.coveractions.webPageRightAction = c.right;
 
             var hp = Database.get("homepage");
             settings.homepage = (hp === false ? "about:newtab" : hp);
