@@ -52,6 +52,8 @@ int main(int argc, char *argv[])
     QScopedPointer<QQuickView> view(SailfishApp::createView());
     QQmlEngine* engine = view->engine();
 
+    QObject::connect(engine, SIGNAL(quit()), application.data(), SLOT(quit()));
+
     engine->addImageProvider(WebIconDatabase::PROVIDER_NAME, new FaviconProvider());
     engine->rootContext()->setContextProperty("webviewdatabase", &webviewdb);
 
