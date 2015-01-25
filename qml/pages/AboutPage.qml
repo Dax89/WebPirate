@@ -29,7 +29,10 @@ Page
                                                           readonly property string translators: "eson"; },
 
                                                QtObject { readonly property string language: qsTr("Slovenian");
-                                                          readonly property string translators: "sponka"; } ]
+                                                          readonly property string translators: "sponka"; },
+
+                                               QtObject { readonly property string language: qsTr("Japanese");
+                                                          readonly property string translators: "rrijken"; } ]
 
     id: aboutpage
     allowedOrientations: Orientation.All
