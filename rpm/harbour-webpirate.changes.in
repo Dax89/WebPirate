@@ -19,6 +19,7 @@
 - Implemented integrated MediaPlayer
 - Implemented custom Cover Actions in QuickGrid, WebPages
 - Implemented Cover Actions in Media Player
+- Implemented Session Management
 - Improved UI responsiveness
 - The components are loaded on demand in order to reduce memory usage
 - BUGFIX: Removed a Segment Fault on exit
