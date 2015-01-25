@@ -12,8 +12,13 @@
 # The name of your application
 TARGET = harbour-webpirate
 
-QT += sql
+QT += sql dbus
 CONFIG += sailfishapp
+
+# Install D-Bus Service
+dbus_service.files = org.browser.WebPirate.service
+dbus_service.path = /usr/share/dbus-1/services
+INSTALLS += dbus_service
 
 SOURCES += src/harbour-webpirate.cpp \
     src/webviewdatabase.cpp \
@@ -22,12 +27,13 @@ SOURCES += src/harbour-webpirate.cpp \
     src/webkitdatabase/webicondatabase.cpp \
     src/favoritesmanager/favoritesmanager.cpp \
     src/faviconprovider.cpp \
-    src/favoritesmanager/favoriteitem.cpp
+    src/favoritesmanager/favoriteitem.cpp \
+    src/dbus/webpirateadaptor.cpp \
+    src/dbus/webpirateservice.cpp
 
 OTHER_FILES += qml/harbour-webpirate.qml \
     rpm/harbour-webpirate.changes.in \
     rpm/harbour-webpirate.spec \
-    rpm/harbour-webpirate.yaml \
     translations/*.ts \
     harbour-webpirate.desktop \
     qml/js/UrlHelper.js \
@@ -99,7 +105,9 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/components/items/cover/CoverMenu.qml \
     qml/models/cover/CoverModel.qml \
     qml/components/items/cover/PageCoverActions.qml \
-    qml/js/Cover.js
+    qml/js/Cover.js \
+    org.browser.WebPirate.service \
+    rpm/harbour-webpirate.yaml
 
 # to disable building translations every time, comment out the
 # following CONFIG line
@@ -124,5 +132,7 @@ HEADERS += \
     src/webkitdatabase/webicondatabase.h \
     src/favoritesmanager/favoritesmanager.h \
     src/faviconprovider.h \
-    src/favoritesmanager/favoriteitem.h
+    src/favoritesmanager/favoriteitem.h \
+    src/dbus/webpirateadaptor.h \
+    src/dbus/webpirateservice.h
 

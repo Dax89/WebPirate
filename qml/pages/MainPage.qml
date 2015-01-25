@@ -38,10 +38,20 @@ import "../js/Sessions.js" as Sessions
 
 Page
 {
-    property alias tabview: tabview
-
     id: mainpage
     allowedOrientations: Orientation.All
+
+    Connections
+    {
+        target: webpirateservice
+
+        onUrlRequested: {
+            tabview.addTab(url);
+
+            if(!mainwindow.applicationActive)
+                mainwindow.activate();
+        }
+    }
 
     TabView
     {
@@ -49,6 +59,12 @@ Page
         anchors.fill: parent
 
         Component.onCompleted: {
+            if(Qt.application.arguments.length > 1) /* Load requested page */
+            {
+                tabview.addTab(Qt.application.arguments[1]);
+                return;
+            }
+
             var sessionid = Sessions.startupId();
 
             if(sessionid === -1)

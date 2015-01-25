@@ -55,6 +55,10 @@
         <source>Swedish</source>
         <translation>Suec</translation>
     </message>
+    <message>
+        <source>Slovenian</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ActionSidebar</name>
