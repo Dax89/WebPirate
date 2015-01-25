@@ -52,18 +52,19 @@ Rectangle
 
     SilicaFlickable
     {
+        id: flick
         anchors { left: parent.left; top: searchbar.bottom; right: parent.right; bottom: parent.bottom; topMargin: Theme.paddingLarge }
-        contentHeight: quickgriditems.height
+        contentHeight: mainwindow.settings.quickgridmodel.count > 1 ? quickgriditems.height : parent.height
         onVerticalVelocityChanged: sidebar.collapse();
         clip: true
 
-        VerticalScrollDecorator { flickable: gridview }
+        VerticalScrollDecorator { flickable: flick }
 
         ViewPlaceholder
         {
             id: placeholder
             anchors.fill: parent
-            enabled: !editMode && (mainwindow.settings.quickgridmodel.count === 1);
+            enabled: !editMode && (mainwindow.settings.quickgridmodel.count === 1)
             text: qsTr("The QuickGrid is empty")
 
             MouseArea {
