@@ -6,6 +6,23 @@ Rectangle
 {
     property bool editMode: false
 
+    function enableEditMode()
+    {
+        if(editMode)
+            return;
+
+        editMode = true;
+        sidebar.collapse();
+    }
+
+    function disableEditMode()
+    {
+        if(!editMode)
+            return;
+
+        editMode = false;
+    }
+
     id: quickgrid
 
     gradient: Gradient {
@@ -33,54 +50,72 @@ Rectangle
         }
     }
 
-    Item
+    SilicaFlickable
     {
-        anchors { left: parent.left; top: searchbar.bottom; right: parent.right; bottom: parent.bottom; topMargin: Theme.paddingLarge; leftMargin: Theme.paddingMedium }
+        anchors { left: parent.left; top: searchbar.bottom; right: parent.right; bottom: parent.bottom; topMargin: Theme.paddingLarge }
+        contentHeight: quickgriditems.height
+        onVerticalVelocityChanged: sidebar.collapse();
+        clip: true
 
-        SilicaGridView
+        VerticalScrollDecorator { flickable: gridview }
+
+        ViewPlaceholder
         {
-            id: gridview
-            anchors { top: parent.top; bottom: parent.bottom; horizontalCenter: parent.horizontalCenter }
-            width: parent.width
-            cellWidth: width / 3
-            cellHeight: cellWidth
-            model: mainwindow.settings.quickgridmodel
-            clip: true
+            id: placeholder
+            anchors.fill: parent
+            enabled: !editMode && (mainwindow.settings.quickgridmodel.count === 1);
+            text: qsTr("The QuickGrid is empty")
 
-            delegate: ListItem {
-                contentWidth: gridview.cellWidth - Theme.paddingLarge
-                contentHeight: gridview.cellHeight - Theme.paddingLarge
-
-                QuickGridItem {
-                    anchors.fill: parent
-                    itemTitle: title
-                    itemUrl: url
-                    canEdit: editMode
-                }
+            MouseArea {
+                anchors.fill: parent
 
                 onPressAndHold: {
-                    if(!editMode) {
-                        editMode = true;
+                    placeholder.enabled = false;
+                    enableEditMode();
+                }
+            }
+        }
+
+        Flow
+        {
+            id: quickgriditems
+            visible: (editMode && mainwindow.settings.quickgridmodel.count === 1) || mainwindow.settings.quickgridmodel.count > 1
+            anchors { left: parent.left; top: parent.top; right: parent.right; leftMargin: Theme.paddingMedium; rightMargin: Theme.paddingMedium }
+            spacing: Theme.paddingMedium
+
+            Repeater
+            {
+                model: mainwindow.settings.quickgridmodel
+
+                delegate: QuickGridItem {
+                    id: quickitem
+                    width: (parent.width / 3) - quickgriditems.spacing
+                    height: width
+                    specialItem: special
+                    itemTitle: special ? "" : title
+                    itemUrl: special ? "" : url
+                    editEnabled: editMode
+
+                    onPressAndHold: enableEditMode();
+
+                    onClicked: {
+                        if(special) {
+                            mainwindow.settings.quickgridmodel.addEmpty();
+                            return;
+                        }
+
+                        if(editMode) {
+                            disableEditMode();
+                            return;
+                        }
+
+                        if(url && url.length)
+                            browsertab.load(url);
+
                         sidebar.collapse();
                     }
                 }
-
-                onClicked: {
-                    if(editMode) {
-                        editMode = false;
-                        return;
-                    }
-
-                    if(url.length)
-                        browsertab.load(url);
-
-                    sidebar.collapse();
-                }
             }
-
-            onVerticalVelocityChanged: sidebar.collapse();
-
-            VerticalScrollDecorator { flickable: gridview }
         }
     }
 }

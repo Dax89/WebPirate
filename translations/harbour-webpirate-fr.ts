@@ -386,6 +386,13 @@
     </message>
 </context>
 <context>
+    <name>QuickGrid</name>
+    <message>
+        <source>The QuickGrid is empty</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>QuickGridItem</name>
     <message>
         <source>Removing item</source>

@@ -1,16 +1,19 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
 
-Item
+BackgroundItem
 {
     property string itemUrl
     property alias itemTitle: lbltitle.text
-    property bool canEdit
+    property bool specialItem: false
+    property bool editEnabled
 
     id: quickgriditem
+    visible: specialItem ? editEnabled : true
 
     onItemUrlChanged: {
-        imgicon.source = mainwindow.settings.icondatabase.provideIcon(itemUrl);
+        if(!specialItem)
+            imgicon.source = mainwindow.settings.icondatabase.provideIcon(itemUrl);
     }
 
     Rectangle
@@ -24,7 +27,7 @@ Item
 
         Label
         {
-            visible: itemUrl.length === 0
+            visible: !specialItem && (itemUrl.length === 0)
             anchors.centerIn: parent
             text: index + 1
             font.pixelSize: Theme.fontSizeLarge
@@ -38,15 +41,16 @@ Item
             width: parent.width * 0.4
             height: width
             cache: false
-            visible: itemUrl.length > 0
+            visible: specialItem ? true : itemUrl.length > 0
             anchors.centerIn: parent
             fillMode: Image.PreserveAspectFit
+            source: specialItem ? "image://theme/icon-l-new" : ""
         }
 
         QuickGridButton
         {
             id: btnedit
-            opacity: canEdit ? 1.0 : 0.0
+            opacity: (!specialItem && editEnabled) ? 1.0 : 0.0
             anchors { left: parent.left; bottom: parent.bottom; leftMargin: Theme.paddingSmall; bottomMargin: Theme.paddingSmall }
             icon.source: "image://theme/icon-m-edit"
 
@@ -56,14 +60,20 @@ Item
         QuickGridButton
         {
             id: btndelete
-            opacity: (canEdit && url.length > 0) ? 1.0 : 0.0
+            opacity: (!specialItem && editEnabled) ? 1.0 : 0.0
             anchors { right: parent.right; bottom: parent.bottom; rightMargin: Theme.paddingSmall; bottomMargin: Theme.paddingSmall }
             icon.source: "image://theme/icon-close-vkb"
 
             onClicked: {
+                if(!itemTitle && !itemUrl) /* Do not trigger Remorse Timer if the item is empty */
+                {
+                    mainwindow.settings.quickgridmodel.remove(index);
+                    return;
+                }
+
                 tabviewremorse.execute(qsTr("Removing item"),
                                        function() {
-                                           mainwindow.settings.quickgridmodel.reset(index);
+                                           mainwindow.settings.quickgridmodel.remove(index);
                                        });
             }
         }

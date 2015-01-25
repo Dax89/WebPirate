@@ -54,7 +54,7 @@ ApplicationWindow
             Favorites.load(Database.instance());
             UserAgents.load(Database.instance());
             SearchEngines.load(Database.instance(), settings.searchengines);
-            QuickGrid.load(Database.instance(), settings.quickgridmodel, settings.quickgridmodel.maxitems);
+            QuickGrid.load(Database.instance(), settings.quickgridmodel);
 
             Sessions.createSchema();
             Credentials.createSchema(Database.instance());

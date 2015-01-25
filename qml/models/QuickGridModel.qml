@@ -4,8 +4,6 @@ import "../js/QuickGrid.js" as QuickGrid
 
 ListModel
 {
-    readonly property int maxitems: 9
-
     id: quickgridmodel
 
     function replace(index, title, url)
@@ -13,16 +11,12 @@ ListModel
         var item = quickgridmodel.get(index);
         item.title = title;
         item.url = url;
-
-        QuickGrid.set(Database.instance(), index, title, url);
     }
 
-    function reset(index)
+    function addEmpty()
     {
-        var item = quickgridmodel.get(index);
-        item.title = "";
-        item.url = "";
-
-        QuickGrid.reset(Database.instance(), index);
+        quickgridmodel.insert(quickgridmodel.count - 1, { "special": false, "title": "", "url": "" });
     }
+
+    Component.onDestruction: QuickGrid.save(Database.instance(), quickgridmodel)
 }

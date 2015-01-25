@@ -1,50 +1,26 @@
 .pragma library
 
-function load(db, quickgridmodel, maxitems)
+function load(db, quickgridmodel)
 {
     db.transaction(function(tx) {
         tx.executeSql("CREATE TABLE IF NOT EXISTS QuickGrid (id INTEGER PRIMARY KEY, title TEXT, url TEXT)");
+        var res = tx.executeSql("SELECT title, url FROM QuickGrid");
 
-        for(var i = 0; i < maxitems; i++)
-        {
-            var res = tx.executeSql("SELECT title, url FROM QuickGrid WHERE id = ?", [i]);
-            var object = new Object;
+        for(var i = 0; i < res.rows.length; i++)
+            quickgridmodel.append({ "special": false, "title": res.rows[i].title ? res.rows[i].title : "", "url": res.rows[i].url ? res.rows[i].url : "" });
+    });
 
-            if(res.rows.length === 0)
-            {
-                quickgridmodel.append({ "title": "", "url": "" });
-                continue;
-            }
+    quickgridmodel.append({ "special": true, "title": "", "url": "" });
+}
 
-            quickgridmodel.append(res.rows[0]);
+function save(db, quickgridmodel)
+{
+    db.transaction(function(tx) {
+        tx.executeSql("DELETE FROM QuickGrid");
+
+        for(var i = 0; i < quickgridmodel.count - 1; i++) {
+            var item = quickgridmodel.get(i);
+            tx.executeSql("INSERT INTO QuickGrid (id, title, url) VALUES (?, ?, ?)", [i, item.title, item.url]);
         }
-    });
-}
-
-function get(db, id)
-{
-    var data = null;
-
-    db.transaction(function(tx) {
-        var res = tx.executeSql("SELECT title, url FROM QuickGrid WHERE id = ?", [id]);
-
-        if(res.rows.length > 0)
-            data = res.rows[0];
-    });
-
-    return data;
-}
-
-function set(db, id, title, url)
-{
-    db.transaction(function(tx) {
-        tx.executeSql("INSERT OR REPLACE INTO QuickGrid (id, title, url) VALUES (?, ?, ?)", [id, title, url]);
-    });
-}
-
-function reset(db, id)
-{
-    db.transaction(function(tx) {
-        tx.executeSql("DELETE FROM QuickGrid WHERE id = ?", [id]);
     });
 }
