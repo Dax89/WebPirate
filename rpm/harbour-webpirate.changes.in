@@ -8,6 +8,22 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* ??? Jan ?? 2015 Antonio Davide Trogu <trogu.davide@gmail.com> 0.9-1
+- Added SVG Image support
+- Added YouTube playback support
+- Added more options in Favorites (available through long press)
+- The TabBar now becomes invisible if the WebPage is scrolled down
+- It is possible to open system links with WebPirate (more info here: https://github.com/Dax89/harbour-webpirate/issues/7)
+- QuickGrid: It is possible to have more (or less) than 9 elements
+- Implemented YouTube grabber
+- Implemented integrated MediaPlayer
+- Implemented custom Cover Actions in QuickGrid, WebPages
+- Implemented Cover Actions in Media Player
+- Improved UI responsiveness
+- The components are loaded on demand in order to reduce memory usage
+- BUGFIX: Removed a Segment Fault on exit
+- Minor Fixes
+
 * Mon Jan 12 2015 Antonio Davide Trogu <trogu.davide@gmail.com> 0.8.6-2
 - BUGFIX: Restored Favorite button functionality
 - Use the same database transaction when migrating from old Favorites DB to the new one
