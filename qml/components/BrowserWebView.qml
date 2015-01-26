@@ -150,7 +150,7 @@ SilicaWebView
         {
             navigationbar.solidify();
 
-            if(contentY < -Theme.itemSizeExtraSmall) /* Catch Bounce effect and make TabHeader solid, if needed */
+            if((Math.abs(verticalVelocity) > Screen.height) || (contentY < -Theme.itemSizeExtraSmall)) /* Catch Bounce effect and QuickScroll: make TabHeader solid, if needed */
                 tabheader.solidify();
         }
         else if((verticalVelocity > 0) && (contentY > Theme.itemSizeLarge)) /* Keep Items visibile a little bit */
