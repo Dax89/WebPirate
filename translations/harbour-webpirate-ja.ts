@@ -1,250 +1,250 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="ru_RU">
+<TS version="2.1" language="ja">
 <context>
     <name>AboutPage</name>
     <message>
         <source>About Web Pirate</source>
-        <translation>О Web Pirate</translation>
+        <translation>Web Pirateについて</translation>
     </message>
     <message>
         <source>Catalan</source>
-        <translation>Каталонский</translation>
+        <translation>カタロニア語</translation>
     </message>
     <message>
         <source>Chinese</source>
-        <translation>Китайский</translation>
+        <translation>中国語</translation>
     </message>
     <message>
         <source>Dutch</source>
-        <translation>Голландский</translation>
+        <translation>オランダ語</translation>
     </message>
     <message>
         <source>French</source>
-        <translation>Французский</translation>
+        <translation>フランス語</translation>
     </message>
     <message>
         <source>German</source>
-        <translation>Немецкий</translation>
+        <translation>ドイツ語</translation>
     </message>
     <message>
         <source>Russian</source>
-        <translation>Русский</translation>
+        <translation>ロシア語</translation>
     </message>
     <message>
         <source>Swedish</source>
-        <translation>Шведский</translation>
+        <translation>スウェーデン語</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation>Версия</translation>
+        <translation>バージョン</translation>
     </message>
     <message>
         <source>A tabbed Web Browser for SailfishOS based on WebKit</source>
-        <translation>Браузер с поддержкой вкладок для SailfishOS, основанный на WebKit</translation>
+        <translation>SailfishOSのためのWebKitをベースにしたウェブブラウザー</translation>
     </message>
     <message>
         <source>Developer</source>
-        <translation>Разработчик</translation>
+        <translation>デベロッパー</translation>
     </message>
     <message>
         <source>GitHub Repository</source>
-        <translation>GitHub Repository</translation>
+        <translation>GitHubリポジトリ</translation>
     </message>
     <message>
         <source>Translators</source>
-        <translation>Переводчики</translation>
+        <translation>翻訳者たち</translation>
     </message>
     <message>
         <source>Slovenian</source>
-        <translation>Словенский</translation>
+        <translation>スロベニア語</translation>
     </message>
     <message>
         <source>Japanese</source>
-        <translation>Японский</translation>
+        <translation>日本語</translation>
     </message>
 </context>
 <context>
     <name>ActionSidebar</name>
     <message>
         <source>Favorites</source>
-        <translation>Закладки</translation>
+        <translation>お気に入り</translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation>Загрузки</translation>
+        <translation>ダウンロード</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation>Настройки</translation>
+        <translation>設定</translation>
     </message>
     <message>
         <source>General</source>
-        <translation>Основные</translation>
+        <translation>ジェネラル</translation>
     </message>
     <message>
         <source>Change settings</source>
-        <translation>Изменить настройки </translation>
+        <translation>設定を変更</translation>
     </message>
     <message>
         <source>About Web Pirate</source>
-        <translation>О Web Pirate</translation>
+        <translation>Web Pirateについて</translation>
     </message>
     <message>
         <source>Sessions</source>
-        <translation>Сессии</translation>
+        <translation>セッション</translation>
     </message>
     <message>
         <source>Save Session</source>
-        <translation>Сохранить сессию</translation>
+        <translation>セッションの保存</translation>
     </message>
     <message>
         <source>Load Session</source>
-        <translation>Загрузить сессию</translation>
+        <translation>セッションを開く</translation>
     </message>
     <message>
         <source>Cover settings</source>
-        <translation>Настройки плиток</translation>
+        <translation>カバー設定</translation>
     </message>
 </context>
 <context>
     <name>BrowserTab</name>
     <message>
         <source>New Tab</source>
-        <translation>Новая вкладка</translation>
+        <translation>新しいタブを開く</translation>
     </message>
     <message>
         <source>Load Error</source>
-        <translation>Ошибка загрузки</translation>
+        <translation>ロードエラー</translation>
     </message>
 </context>
 <context>
     <name>BrowserWebView</name>
     <message>
         <source>Accept Certificate from:</source>
-        <translation>Принять сертификат от:</translation>
+        <translation>証明書を取得</translation>
     </message>
     <message>
         <source>Downloading</source>
-        <translation>Загрузка</translation>
+        <translation>ダウンロード中</translation>
     </message>
 </context>
 <context>
     <name>CoverModel</name>
     <message>
         <source>Go to Previous Tab</source>
-        <translation>Перейти к предыдущей вкладке </translation>
+        <translation>前のタブへ</translation>
     </message>
     <message>
         <source>Go to Next Tab</source>
-        <translation>Перейти к следующей вкладке</translation>
+        <translation>次のタブへ</translation>
     </message>
     <message>
         <source>Add New Tab</source>
-        <translation>Добавить новую вкладку</translation>
+        <translation>新しタブを追加</translation>
     </message>
     <message>
         <source>Close Tab</source>
-        <translation>Закрыть вкладку</translation>
+        <translation>タブを閉じる</translation>
     </message>
     <message>
         <source>Load Homepage</source>
-        <translation>Загрузить домашнюю страницу</translation>
+        <translation>ホームページへ</translation>
     </message>
     <message>
         <source>Close Browser</source>
-        <translation>Закрыть браузер</translation>
+        <translation>ブラウザーを閉じる</translation>
     </message>
     <message>
         <source>Reload Current Page</source>
-        <translation>Перезагрузить текущую страницу</translation>
+        <translation>このページを再読み込みする</translation>
     </message>
     <message>
         <source>Wipe personal data</source>
-        <translation>Очистить персональные данные</translation>
+        <translation>パーソナルデータを削除する</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Поиск</translation>
+        <translation>検索</translation>
     </message>
 </context>
 <context>
     <name>CoverSettingsPage</name>
     <message>
         <source>General Actions</source>
-        <translation>Основные действия</translation>
+        <translation>ジェネラルアクション</translation>
     </message>
     <message>
         <source>Left</source>
-        <translation>Левее</translation>
+        <translation>左</translation>
     </message>
     <message>
         <source>Right</source>
-        <translation>Правее</translation>
+        <translation>右</translation>
     </message>
     <message>
         <source>Webpage Actions</source>
-        <translation>Webpage Actions</translation>
+        <translation>ウェブページアクション</translation>
     </message>
     <message>
         <source>Cover Settings</source>
-        <translation>Настройки плиток</translation>
+        <translation>カバー設定</translation>
     </message>
 </context>
 <context>
     <name>CredentialMenu</name>
     <message>
         <source>Do you want to store the password?</source>
-        <translation>Вы хотите сохранить пароль?</translation>
+        <translation>パスワードを保存しますか？</translation>
     </message>
 </context>
 <context>
     <name>DownloadListItem</name>
     <message>
         <source>Restart</source>
-        <translation>Перезагрузка</translation>
+        <translation>再起動</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Отмена</translation>
+        <translation>キャンセル</translation>
     </message>
     <message>
         <source>Completed:</source>
-        <translation>Завершено:</translation>
+        <translation>完了</translation>
     </message>
     <message>
         <source>Speed:</source>
-        <translation>Скорость:</translation>
+        <translation>速度</translation>
     </message>
     <message>
         <source>Completed</source>
-        <translation>Завершено</translation>
+        <translation>完了</translation>
     </message>
     <message>
         <source>Error:</source>
-        <translation>Ошибка:</translation>
+        <translation>エラー</translation>
     </message>
 </context>
 <context>
     <name>DownloadsPage</name>
     <message>
         <source>Download Manager</source>
-        <translation>Менеджер загрузок</translation>
+        <translation>ダウンロードマネージャー</translation>
     </message>
     <message>
         <source>Delete completed Downloads</source>
-        <translation>Удалить завершенные загрузки</translation>
+        <translation>完了ダウンロードを消去する</translation>
     </message>
 </context>
 <context>
     <name>FavoritePage</name>
     <message>
         <source>Save</source>
-        <translation>Сохранить</translation>
+        <translation>セーブ</translation>
     </message>
     <message>
         <source>Title</source>
-        <translation>Название </translation>
+        <translation>タイトル</translation>
     </message>
     <message>
         <source>Url</source>
@@ -255,152 +255,152 @@
     <name>FavoritesPage</name>
     <message>
         <source>Add Folder</source>
-        <translation>Добавить папку</translation>
+        <translation>フォルダーを追加する</translation>
     </message>
     <message>
         <source>Add Favorite</source>
-        <translation>Добавить закладку</translation>
+        <translation>お気に入りに追加する</translation>
     </message>
     <message>
         <source>Favorites</source>
-        <translation>Закладки</translation>
+        <translation>お気に入り</translation>
     </message>
     <message>
         <source>Export</source>
-        <translation>Экспорт</translation>
+        <translation>エクスポート</translation>
     </message>
     <message>
         <source>Import</source>
-        <translation>Импорт</translation>
+        <translation>インポート</translation>
     </message>
     <message>
         <source>Import in</source>
-        <translation>Импорт в </translation>
+        <translation>にインポート</translation>
     </message>
     <message>
         <source>Import Favorites</source>
-        <translation>Импорт закладок</translation>
+        <translation>お気に入りをインポート</translation>
     </message>
     <message>
         <source>Exporting favorites</source>
-        <translation>Экспортирование закладок</translation>
+        <translation>お気に入りをエクスポート</translation>
     </message>
     <message>
         <source>Favorites exported successfully</source>
-        <translation>Экспорт закладок прошел успешно</translation>
+        <translation>お気に入りのエクスポート完了</translation>
     </message>
     <message>
         <source>Favorites imported successfully</source>
-        <translation>Импорт закладок прошел успешно</translation>
+        <translation>お気に入りのインポート完了</translation>
     </message>
 </context>
 <context>
     <name>FavoritesView</name>
     <message>
         <source>Edit</source>
-        <translation>Редактировать</translation>
+        <translation>編集</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Удалить</translation>
+        <translation>消去する</translation>
     </message>
     <message>
         <source>Deleting Favorite</source>
-        <translation>Удаление закладки</translation>
+        <translation>お気に入るを削除中</translation>
     </message>
     <message>
         <source>Deleting Folder</source>
-        <translation>Удаление папки</translation>
+        <translation>フォルダーを削除中</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation>Открыть</translation>
+        <translation>開く</translation>
     </message>
     <message>
         <source>Open in New Tab</source>
-        <translation>Открыть в новой вкладке</translation>
+        <translation>新しいタブに開く</translation>
     </message>
 </context>
 <context>
     <name>HistoryMenu</name>
     <message>
         <source>Link copied to clipboard</source>
-        <translation>Ссылка скопирована</translation>
+        <translation>クリップボードへリンクをコピー済み</translation>
     </message>
 </context>
 <context>
     <name>LinkMenu</name>
     <message>
         <source>Open New Tab</source>
-        <translation>Открыть новую вкладку</translation>
+        <translation>新しいタブを開く</translation>
     </message>
     <message>
         <source>Remove From Favorites</source>
-        <translation>Удалить из закладок</translation>
+        <translation>お気に入りから削除する</translation>
     </message>
     <message>
         <source>Add To Favorites</source>
-        <translation>Добавить в закладки</translation>
+        <translation>お気に入りに追加する</translation>
     </message>
     <message>
         <source>Save Link Destination</source>
-        <translation>Сохранить ссылку назначения</translation>
+        <translation>リンク先を保存</translation>
     </message>
     <message>
         <source>Copy Link</source>
-        <translation>Копировать ссылку</translation>
+        <translation>リンクをコピーする</translation>
     </message>
     <message>
         <source>Save Image</source>
-        <translation>Сохранить изображение</translation>
+        <translation>画像をセーブ</translation>
     </message>
     <message>
         <source>Downloading image</source>
-        <translation>Загружаю изображение</translation>
+        <translation>画像をダウンロード中</translation>
     </message>
     <message>
         <source>Downloading link</source>
-        <translation>Загружаю ссылку</translation>
+        <translation>リンクをダウンロード中</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation>Открыть</translation>
+        <translation>開く</translation>
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation>Ссылка скопирована</translation>
+        <translation>リンクをクリップボードにコピー</translation>
     </message>
 </context>
 <context>
     <name>LoadFailed</name>
     <message>
         <source>You are in offline mode</source>
-        <translation>Вы в режиме &quot;offline mode&quot;</translation>
+        <translation>オフラインモード中</translation>
     </message>
 </context>
 <context>
     <name>QuickGrid</name>
     <message>
         <source>The QuickGrid is empty</source>
-        <translation>The QuickGrid is empty</translation>
+        <translation>クイックグリッドに登録サイトが無</translation>
     </message>
 </context>
 <context>
     <name>QuickGridItem</name>
     <message>
         <source>Removing item</source>
-        <translation>Удаление пункта</translation>
+        <translation>アイテムを削除中</translation>
     </message>
 </context>
 <context>
     <name>QuickGridPage</name>
     <message>
         <source>Save</source>
-        <translation>Сохранить</translation>
+        <translation>セーブ</translation>
     </message>
     <message>
         <source>Title</source>
-        <translation>Название</translation>
+        <translation>タイトル</translation>
     </message>
     <message>
         <source>Url</source>
@@ -411,234 +411,236 @@
     <name>RequestMenu</name>
     <message>
         <source>Yes</source>
-        <translation>Да</translation>
+        <translation>はい</translation>
     </message>
     <message>
         <source>No</source>
-        <translation>Нет</translation>
+        <translation>いいえ</translation>
     </message>
 </context>
 <context>
     <name>SaveSessionPage</name>
     <message>
         <source>Save Session</source>
-        <translation>Сохранить сессию</translation>
+        <translation>セッションをセーブ</translation>
     </message>
     <message>
         <source>Session name</source>
-        <translation>Имя сессии</translation>
+        <translation>セッションの名前</translation>
     </message>
     <message>
         <source>Load at startup</source>
-        <translation>Загрузить при запуске</translation>
+        <translation>起動時にスタートアップ</translation>
     </message>
     <message>
         <source>Replace current session</source>
-        <translation>Заменить текущую сессию</translation>
+        <translation>利用中セッションを替える</translation>
     </message>
     <message>
         <source>Opened Tabs</source>
-        <translation>Открыть вкладки</translation>
+        <translation>利用中タブ</translation>
     </message>
     <message>
         <source>Selected</source>
-        <translation>Выбрано</translation>
+        <translation>選択した部分</translation>
     </message>
 </context>
 <context>
     <name>SearchBar</name>
     <message>
         <source>Search with</source>
-        <translation>Поиск с </translation>
+        <translation>で検索</translation>
     </message>
 </context>
 <context>
     <name>SearchEnginePage</name>
     <message>
         <source>Save</source>
-        <translation>Сохранить</translation>
+        <translation>セーブ</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Имя</translation>
+        <translation>ネーム</translation>
     </message>
     <message>
         <source>Query</source>
-        <translation>Запрос</translation>
+        <translation>クエリー</translation>
     </message>
 </context>
 <context>
     <name>SearchEnginesPage</name>
     <message>
         <source>Set as Default</source>
-        <translation>Установить по умолчанию</translation>
+        <translation>既定に設定</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Удалить</translation>
+        <translation>削除</translation>
     </message>
     <message>
         <source>Search Engines</source>
-        <translation>Поисковый движок</translation>
+        <translation>サーチエンジン</translation>
     </message>
     <message>
         <source>Add</source>
-        <translation>Добавить</translation>
+        <translation>追加</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Править</translation>
+        <translation>編集</translation>
     </message>
     <message>
         <source>Deleting Search Engine</source>
-        <translation>Удаление поискового движка</translation>
+        <translation>検索エンジン削除中</translation>
     </message>
 </context>
 <context>
     <name>SessionPage</name>
     <message>
         <source>Save Session</source>
-        <translation>Сохранить сессию</translation>
+        <translation>セッションを保存</translation>
     </message>
     <message>
         <source>Session name</source>
-        <translation>Название сессии</translation>
+        <translation>セッションネーム</translation>
     </message>
     <message>
         <source>Load at startup</source>
-        <translation>Загрузить при запуске</translation>
+        <translation>起動時にスタート</translation>
     </message>
     <message>
         <source>Replace current session</source>
-        <translation>Заменить текущую сессию</translation>
+        <translation>利用中セッションを替える</translation>
     </message>
     <message>
         <source>Opened Tabs</source>
-        <translation>Открытые вкладки</translation>
+        <translation>利用中タブ</translation>
     </message>
     <message>
         <source>Selected</source>
-        <translation>Выбрано</translation>
+        <translation>選択済み</translation>
     </message>
 </context>
 <context>
     <name>SessionSettingsPage</name>
     <message>
         <source>Session Manager</source>
-        <translation>Управление сессией</translation>
+        <translation>セッションマネージャー</translation>
     </message>
     <message>
         <source>Tabs saved</source>
-        <translation>Вкладки сохранены </translation>
+        <translation>保存済みタブ</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation>Открыть</translation>
+        <translation>開く</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Редактировать</translation>
+        <translation>編集</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Удалить</translation>
+        <translation>消去する</translation>
     </message>
     <message>
         <source>Deleting session</source>
-        <translation>Удаление сессии</translation>
+        <translation>セッションを削除中</translation>
     </message>
 </context>
 <context>
     <name>SettingsPage</name>
     <message>
         <source>Home Page</source>
-        <translation>Домашняя страница</translation>
+        <translation>ホームページ</translation>
     </message>
     <message>
         <source>Search Engines</source>
-        <translation>Поисковый движок</translation>
+        <translation>検索エンジン</translation>
     </message>
     <message>
         <source>User Agent</source>
-        <translation>Пользовательский вид</translation>
+        <translation>ユーザーエージェント</translation>
     </message>
     <message>
         <source>Wipe Data on Exit</source>
-        <translation>Удалить данные при выходе</translation>
+        <translation>終了時にデータを消去する</translation>
     </message>
     <message>
         <source>General</source>
-        <translation>Основные</translation>
+        <translation>ジェネラル
+	
+</translation>
     </message>
     <message>
         <source>Privacy</source>
-        <translation>Конфиденциальность </translation>
+        <translation>プライバシー</translation>
     </message>
     <message>
         <source>Delete Personal Data</source>
-        <translation>Удалить персональные данные</translation>
+        <translation>パーソナルデートを消去する</translation>
     </message>
     <message>
         <source>Save Settings</source>
-        <translation>Сохранить настройки</translation>
+        <translation>設定を保存する</translation>
     </message>
     <message>
         <source>Removing personal data</source>
-        <translation>Удаление персональных данных</translation>
+        <translation>パーソナルデートを削除中</translation>
     </message>
     <message>
         <source>Delete Navigation History</source>
-        <translation>Удалить историю</translation>
+        <translation>最近の履歴を消去する</translation>
     </message>
     <message>
         <source>Removing navigation history</source>
-        <translation>Удаление истории</translation>
+        <translation>最近の履歴を削除中</translation>
     </message>
 </context>
 <context>
     <name>TextSelectionPage</name>
     <message>
         <source>Done</source>
-        <translation>Готово</translation>
+        <translation>完了</translation>
     </message>
 </context>
 <context>
     <name>YouTubeSettingsPage</name>
     <message>
         <source>Author</source>
-        <translation>Автор</translation>
+        <translation>作者</translation>
     </message>
     <message>
         <source>Duration</source>
-        <translation>Продолжительность</translation>
+        <translation>デュレーション</translation>
     </message>
     <message>
         <source>Quality</source>
-        <translation>Качество</translation>
+        <translation>画質</translation>
     </message>
     <message>
         <source>Grabbed URLs</source>
-        <translation>Захват URL-адреса</translation>
+        <translation>グラブ済みUrl</translation>
     </message>
     <message>
         <source>Title</source>
-        <translation>Название</translation>
+        <translation>タイトル</translation>
     </message>
     <message>
         <source>YouTube Grabber</source>
-        <translation>Захват YouTube</translation>
+        <translation>ユーチューブグラバー</translation>
     </message>
     <message>
         <source>Play</source>
-        <translation>Играть</translation>
+        <translation>再生</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation>Скачать</translation>
+        <translation>ダウンロード</translation>
     </message>
     <message>
         <source>Grabbing video</source>
-        <translation>Grabbing video</translation>
+        <translation>ビデオをグラブ中</translation>
     </message>
 </context>
 </TS>

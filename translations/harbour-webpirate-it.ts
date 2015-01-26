@@ -8,26 +8,6 @@
         <translation>Riguardo Web Pirate</translation>
     </message>
     <message>
-        <source>A tabbed Web Browser for SailfishOS based on WebKit</source>
-        <translation>Un browser a schede per SailfishOS, basato su WebKit</translation>
-    </message>
-    <message>
-        <source>GitHub Repository</source>
-        <translation>Repository GitHub</translation>
-    </message>
-    <message>
-        <source>Version</source>
-        <translation>Versione</translation>
-    </message>
-    <message>
-        <source>Developer</source>
-        <translation>Sviluppatore</translation>
-    </message>
-    <message>
-        <source>Translators</source>
-        <translation>Traduttori</translation>
-    </message>
-    <message>
         <source>Catalan</source>
         <translation>Catalano</translation>
     </message>
@@ -56,12 +36,32 @@
         <translation>Svedese</translation>
     </message>
     <message>
+        <source>Version</source>
+        <translation>Versione</translation>
+    </message>
+    <message>
+        <source>A tabbed Web Browser for SailfishOS based on WebKit</source>
+        <translation>Un browser a schede per SailfishOS, basato su WebKit</translation>
+    </message>
+    <message>
+        <source>Developer</source>
+        <translation>Sviluppatore</translation>
+    </message>
+    <message>
+        <source>GitHub Repository</source>
+        <translation>Repository GitHub</translation>
+    </message>
+    <message>
+        <source>Translators</source>
+        <translation>Traduttori</translation>
+    </message>
+    <message>
         <source>Slovenian</source>
-        <translation type="unfinished"></translation>
+        <translation>Sloveno</translation>
     </message>
     <message>
         <source>Japanese</source>
-        <translation type="unfinished"></translation>
+        <translation>Giapponese</translation>
     </message>
 </context>
 <context>
@@ -92,19 +92,19 @@
     </message>
     <message>
         <source>Sessions</source>
-        <translation type="unfinished"></translation>
+        <translation>Sessioni</translation>
     </message>
     <message>
         <source>Save Session</source>
-        <translation type="unfinished"></translation>
+        <translation>Salva sessione</translation>
     </message>
     <message>
         <source>Load Session</source>
-        <translation type="unfinished"></translation>
+        <translation>Carica sessione</translation>
     </message>
     <message>
         <source>Cover settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Impostazioni Cover</translation>
     </message>
 </context>
 <context>
@@ -115,7 +115,7 @@
     </message>
     <message>
         <source>Load Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Errore di caricamento</translation>
     </message>
 </context>
 <context>
@@ -133,70 +133,62 @@
     <name>CoverModel</name>
     <message>
         <source>Go to Previous Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Vai alla scheda precedente</translation>
     </message>
     <message>
         <source>Go to Next Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Vai alla scheda successiva</translation>
     </message>
     <message>
         <source>Add New Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Apri nuova scheda</translation>
     </message>
     <message>
         <source>Close Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Chiudi scheda</translation>
     </message>
     <message>
         <source>Load Homepage</source>
-        <translation type="unfinished"></translation>
+        <translation>Carica Homepage</translation>
     </message>
     <message>
         <source>Close Browser</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Search with</source>
-        <translation type="obsolete">Cerca con</translation>
+        <translation>Chiudi browser</translation>
     </message>
     <message>
         <source>Reload Current Page</source>
-        <translation type="unfinished"></translation>
+        <translation>Aggiorna la pagina corrente</translation>
     </message>
     <message>
         <source>Wipe personal data</source>
-        <translation type="unfinished"></translation>
+        <translation>Cancella dati personali</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Cerca</translation>
     </message>
 </context>
 <context>
     <name>CoverSettingsPage</name>
     <message>
         <source>General Actions</source>
-        <translation type="unfinished"></translation>
+        <translation>Azioni generali</translation>
     </message>
     <message>
         <source>Left</source>
-        <translation type="unfinished"></translation>
+        <translation>Sinistra</translation>
     </message>
     <message>
         <source>Right</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Save</source>
-        <translation type="obsolete">Salva</translation>
+        <translation>Destra</translation>
     </message>
     <message>
         <source>Webpage Actions</source>
-        <translation type="unfinished"></translation>
+        <translation>Azioni pagina web</translation>
     </message>
     <message>
         <source>Cover Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Impostazioni Cover</translation>
     </message>
 </context>
 <context>
@@ -242,13 +234,6 @@
     <message>
         <source>Delete completed Downloads</source>
         <translation>Rimozione download completati</translation>
-    </message>
-</context>
-<context>
-    <name>EditCoverPage</name>
-    <message>
-        <source>Save</source>
-        <translation type="obsolete">Salva</translation>
     </message>
 </context>
 <context>
@@ -329,11 +314,11 @@
     </message>
     <message>
         <source>Open</source>
-        <translation type="unfinished">Apri</translation>
+        <translation>Apri</translation>
     </message>
     <message>
         <source>Open in New Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Apri in una nuova scheda</translation>
     </message>
 </context>
 <context>
@@ -397,7 +382,7 @@
     <name>QuickGrid</name>
     <message>
         <source>The QuickGrid is empty</source>
-        <translation type="unfinished"></translation>
+        <translation>La griglia è vuota</translation>
     </message>
 </context>
 <context>
@@ -437,27 +422,27 @@
     <name>SaveSessionPage</name>
     <message>
         <source>Save Session</source>
-        <translation type="unfinished"></translation>
+        <translation>Salva sessione</translation>
     </message>
     <message>
         <source>Session name</source>
-        <translation type="unfinished"></translation>
+        <translation>Nome sessione</translation>
     </message>
     <message>
         <source>Load at startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Carica all&apos;avvio</translation>
     </message>
     <message>
         <source>Replace current session</source>
-        <translation type="unfinished"></translation>
+        <translation>Sostituisci la sessione corrente</translation>
     </message>
     <message>
         <source>Opened Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Schede aperte</translation>
     </message>
     <message>
         <source>Selected</source>
-        <translation type="unfinished"></translation>
+        <translation>Selezionata</translation>
     </message>
 </context>
 <context>
@@ -513,54 +498,54 @@
     <name>SessionPage</name>
     <message>
         <source>Save Session</source>
-        <translation type="unfinished"></translation>
+        <translation>Salva sessione</translation>
     </message>
     <message>
         <source>Session name</source>
-        <translation type="unfinished"></translation>
+        <translation>Nome sessione</translation>
     </message>
     <message>
         <source>Load at startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Carica all&apos;avvio</translation>
     </message>
     <message>
         <source>Replace current session</source>
-        <translation type="unfinished"></translation>
+        <translation>Sostituisci la sessione corrente</translation>
     </message>
     <message>
         <source>Opened Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Schede aperte</translation>
     </message>
     <message>
         <source>Selected</source>
-        <translation type="unfinished"></translation>
+        <translation>Selezionata</translation>
     </message>
 </context>
 <context>
     <name>SessionSettingsPage</name>
     <message>
         <source>Session Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Gestore sessioni</translation>
     </message>
     <message>
         <source>Tabs saved</source>
-        <translation type="unfinished"></translation>
+        <translation>Schede salvate</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation type="unfinished">Apri</translation>
+        <translation>Apri</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="unfinished">Modifica</translation>
+        <translation>Modifica</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Elimina</translation>
+        <translation>Cancella</translation>
     </message>
     <message>
         <source>Deleting session</source>
-        <translation type="unfinished"></translation>
+        <translation>Rimozione sessione</translation>
     </message>
 </context>
 <context>
@@ -620,40 +605,40 @@
 <context>
     <name>YouTubeSettingsPage</name>
     <message>
-        <source>Title</source>
-        <translation type="unfinished">Titolo</translation>
-    </message>
-    <message>
         <source>Author</source>
-        <translation type="unfinished"></translation>
+        <translation>Autore</translation>
     </message>
     <message>
         <source>Duration</source>
-        <translation type="unfinished"></translation>
+        <translation>Durata</translation>
     </message>
     <message>
         <source>Quality</source>
-        <translation type="unfinished"></translation>
+        <translation>Qualità</translation>
     </message>
     <message>
         <source>Grabbed URLs</source>
-        <translation type="unfinished"></translation>
+        <translation>Link trovati</translation>
+    </message>
+    <message>
+        <source>Title</source>
+        <translation>Titolo</translation>
     </message>
     <message>
         <source>YouTube Grabber</source>
-        <translation type="unfinished"></translation>
+        <translation>YouTube Grabber</translation>
     </message>
     <message>
         <source>Play</source>
-        <translation type="unfinished"></translation>
+        <translation>Play</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished"></translation>
+        <translation>Scarica</translation>
     </message>
     <message>
         <source>Grabbing video</source>
-        <translation type="unfinished"></translation>
+        <translation>Download video</translation>
     </message>
 </context>
 </TS>

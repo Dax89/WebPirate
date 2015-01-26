@@ -8,26 +8,6 @@
         <translation>Over WebPirate</translation>
     </message>
     <message>
-        <source>A tabbed Web Browser for SailfishOS based on WebKit</source>
-        <translation>Een op WebKit gebaseerde webbrowser met tabbladen voor SailfishOS</translation>
-    </message>
-    <message>
-        <source>GitHub Repository</source>
-        <translation>GitHub-pakketbron</translation>
-    </message>
-    <message>
-        <source>Version</source>
-        <translation>Versie</translation>
-    </message>
-    <message>
-        <source>Developer</source>
-        <translation>Ontwikkelaar</translation>
-    </message>
-    <message>
-        <source>Translators</source>
-        <translation>Vertalers</translation>
-    </message>
-    <message>
         <source>Catalan</source>
         <translation>Cataleens</translation>
     </message>
@@ -56,12 +36,32 @@
         <translation>Zweeds</translation>
     </message>
     <message>
+        <source>Version</source>
+        <translation>Versie</translation>
+    </message>
+    <message>
+        <source>A tabbed Web Browser for SailfishOS based on WebKit</source>
+        <translation>Een op WebKit gebaseerde webbrowser met tabbladen voor SailfishOS</translation>
+    </message>
+    <message>
+        <source>Developer</source>
+        <translation>Ontwikkelaar</translation>
+    </message>
+    <message>
+        <source>GitHub Repository</source>
+        <translation>GitHub-pakketbron</translation>
+    </message>
+    <message>
+        <source>Translators</source>
+        <translation>Vertalers</translation>
+    </message>
+    <message>
         <source>Slovenian</source>
-        <translation type="unfinished"></translation>
+        <translation>Sloveens</translation>
     </message>
     <message>
         <source>Japanese</source>
-        <translation type="unfinished"></translation>
+        <translation>Japans</translation>
     </message>
 </context>
 <context>
@@ -92,19 +92,19 @@
     </message>
     <message>
         <source>Sessions</source>
-        <translation type="unfinished"></translation>
+        <translation>Sessies</translation>
     </message>
     <message>
         <source>Save Session</source>
-        <translation type="unfinished"></translation>
+        <translation>Sessie opslaan</translation>
     </message>
     <message>
         <source>Load Session</source>
-        <translation type="unfinished"></translation>
+        <translation>Sessie laden</translation>
     </message>
     <message>
         <source>Cover settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Miniatuurinstellingen</translation>
     </message>
 </context>
 <context>
@@ -115,7 +115,7 @@
     </message>
     <message>
         <source>Load Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Fout bij laden</translation>
     </message>
 </context>
 <context>
@@ -133,70 +133,62 @@
     <name>CoverModel</name>
     <message>
         <source>Go to Previous Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Ga naar vorig tabblad</translation>
     </message>
     <message>
         <source>Go to Next Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Ga naar volgend tabblad</translation>
     </message>
     <message>
         <source>Add New Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Nieuw tabblad toevoegen</translation>
     </message>
     <message>
         <source>Close Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Tabblad sluiten</translation>
     </message>
     <message>
         <source>Load Homepage</source>
-        <translation type="unfinished"></translation>
+        <translation>Startpagina laden</translation>
     </message>
     <message>
         <source>Close Browser</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Search with</source>
-        <translation type="obsolete">Zoeken met</translation>
+        <translation>Browser sluiten</translation>
     </message>
     <message>
         <source>Reload Current Page</source>
-        <translation type="unfinished"></translation>
+        <translation>Huidige pagina herladen</translation>
     </message>
     <message>
         <source>Wipe personal data</source>
-        <translation type="unfinished"></translation>
+        <translation>Persoonlijke gegevens verwijderen</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Zoeken</translation>
     </message>
 </context>
 <context>
     <name>CoverSettingsPage</name>
     <message>
         <source>General Actions</source>
-        <translation type="unfinished"></translation>
+        <translation>Algemene acties</translation>
     </message>
     <message>
         <source>Left</source>
-        <translation type="unfinished"></translation>
+        <translation>Links</translation>
     </message>
     <message>
         <source>Right</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Save</source>
-        <translation type="obsolete">Opslaan</translation>
+        <translation>Rechts</translation>
     </message>
     <message>
         <source>Webpage Actions</source>
-        <translation type="unfinished"></translation>
+        <translation>Webpagina-acties</translation>
     </message>
     <message>
         <source>Cover Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Miniatuurinstellingen</translation>
     </message>
 </context>
 <context>
@@ -242,13 +234,6 @@
     <message>
         <source>Delete completed Downloads</source>
         <translation>Afgeronde downloads verwijderen</translation>
-    </message>
-</context>
-<context>
-    <name>EditCoverPage</name>
-    <message>
-        <source>Save</source>
-        <translation type="obsolete">Opslaan</translation>
     </message>
 </context>
 <context>
@@ -329,11 +314,11 @@
     </message>
     <message>
         <source>Open</source>
-        <translation type="unfinished">Openen</translation>
+        <translation>Openen</translation>
     </message>
     <message>
         <source>Open in New Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Openen op nieuw tabblad</translation>
     </message>
 </context>
 <context>
@@ -397,7 +382,7 @@
     <name>QuickGrid</name>
     <message>
         <source>The QuickGrid is empty</source>
-        <translation type="unfinished"></translation>
+        <translation>De snelkiezer is leeg</translation>
     </message>
 </context>
 <context>
@@ -437,27 +422,27 @@
     <name>SaveSessionPage</name>
     <message>
         <source>Save Session</source>
-        <translation type="unfinished"></translation>
+        <translation>Sessie opslaan</translation>
     </message>
     <message>
         <source>Session name</source>
-        <translation type="unfinished"></translation>
+        <translation>Naam van sessie</translation>
     </message>
     <message>
         <source>Load at startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Laden bij opstarten</translation>
     </message>
     <message>
         <source>Replace current session</source>
-        <translation type="unfinished"></translation>
+        <translation>Huidige sessie vervangen</translation>
     </message>
     <message>
         <source>Opened Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Geopende tabbladen</translation>
     </message>
     <message>
         <source>Selected</source>
-        <translation type="unfinished"></translation>
+        <translation>Geselecteerd</translation>
     </message>
 </context>
 <context>
@@ -513,54 +498,54 @@
     <name>SessionPage</name>
     <message>
         <source>Save Session</source>
-        <translation type="unfinished"></translation>
+        <translation>Sessie opslaan</translation>
     </message>
     <message>
         <source>Session name</source>
-        <translation type="unfinished"></translation>
+        <translation>Naam van sessie</translation>
     </message>
     <message>
         <source>Load at startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Laden bij opstarten</translation>
     </message>
     <message>
         <source>Replace current session</source>
-        <translation type="unfinished"></translation>
+        <translation>Huidige sessie vervangen</translation>
     </message>
     <message>
         <source>Opened Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Geopende tabbladen</translation>
     </message>
     <message>
         <source>Selected</source>
-        <translation type="unfinished"></translation>
+        <translation>Geselecteerd</translation>
     </message>
 </context>
 <context>
     <name>SessionSettingsPage</name>
     <message>
         <source>Session Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Sessiebeheerder</translation>
     </message>
     <message>
         <source>Tabs saved</source>
-        <translation type="unfinished"></translation>
+        <translation>Opgeslagen tabbladen</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation type="unfinished">Openen</translation>
+        <translation>Openen</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="unfinished">Bewerken</translation>
+        <translation>Bewerken</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Verwijderen</translation>
+        <translation>Verwijderen</translation>
     </message>
     <message>
         <source>Deleting session</source>
-        <translation type="unfinished"></translation>
+        <translation>Bezig met verwijderen van sessie</translation>
     </message>
 </context>
 <context>
@@ -620,40 +605,40 @@
 <context>
     <name>YouTubeSettingsPage</name>
     <message>
-        <source>Title</source>
-        <translation type="unfinished">Titel</translation>
-    </message>
-    <message>
         <source>Author</source>
-        <translation type="unfinished"></translation>
+        <translation>Auteur</translation>
     </message>
     <message>
         <source>Duration</source>
-        <translation type="unfinished"></translation>
+        <translation>Duur</translation>
     </message>
     <message>
         <source>Quality</source>
-        <translation type="unfinished"></translation>
+        <translation>Kwaliteit</translation>
     </message>
     <message>
         <source>Grabbed URLs</source>
-        <translation type="unfinished"></translation>
+        <translation>Gegrepen URLs</translation>
+    </message>
+    <message>
+        <source>Title</source>
+        <translation>Titel</translation>
     </message>
     <message>
         <source>YouTube Grabber</source>
-        <translation type="unfinished"></translation>
+        <translation>YouTube-grijper</translation>
     </message>
     <message>
         <source>Play</source>
-        <translation type="unfinished"></translation>
+        <translation>Afspelen</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished"></translation>
+        <translation>Downloaden</translation>
     </message>
     <message>
         <source>Grabbing video</source>
-        <translation type="unfinished"></translation>
+        <translation>Bezig met grijpen van video</translation>
     </message>
 </context>
 </TS>
