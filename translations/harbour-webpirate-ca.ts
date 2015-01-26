@@ -8,26 +8,6 @@
         <translation>Quant a Web Pirate</translation>
     </message>
     <message>
-        <source>A tabbed Web Browser for SailfishOS based on WebKit</source>
-        <translation>Un navegador web amb pestanyes per a SailfishOS basat en WebKit</translation>
-    </message>
-    <message>
-        <source>GitHub Repository</source>
-        <translation>Repositori GitHub</translation>
-    </message>
-    <message>
-        <source>Version</source>
-        <translation>Versió</translation>
-    </message>
-    <message>
-        <source>Developer</source>
-        <translation>Desenvolupador</translation>
-    </message>
-    <message>
-        <source>Translators</source>
-        <translation>Traductors</translation>
-    </message>
-    <message>
         <source>Catalan</source>
         <translation>Catal</translation>
     </message>
@@ -56,11 +36,35 @@
         <translation>Suec</translation>
     </message>
     <message>
+        <source>Version</source>
+        <translation>Versió</translation>
+    </message>
+    <message>
+        <source>A tabbed Web Browser for SailfishOS based on WebKit</source>
+        <translation>Un navegador web amb pestanyes per a SailfishOS basat en WebKit</translation>
+    </message>
+    <message>
+        <source>Developer</source>
+        <translation>Desenvolupador</translation>
+    </message>
+    <message>
+        <source>GitHub Repository</source>
+        <translation>Repositori GitHub</translation>
+    </message>
+    <message>
+        <source>Translators</source>
+        <translation>Traductors</translation>
+    </message>
+    <message>
         <source>Slovenian</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Japanese</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Czech</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -156,10 +160,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Search with</source>
-        <translation type="obsolete">Cerca amb</translation>
-    </message>
-    <message>
         <source>Reload Current Page</source>
         <translation type="unfinished"></translation>
     </message>
@@ -185,10 +185,6 @@
     <message>
         <source>Right</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Save</source>
-        <translation type="obsolete">Desa</translation>
     </message>
     <message>
         <source>Webpage Actions</source>
@@ -245,13 +241,6 @@
     </message>
 </context>
 <context>
-    <name>EditCoverPage</name>
-    <message>
-        <source>Save</source>
-        <translation type="obsolete">Desa</translation>
-    </message>
-</context>
-<context>
     <name>FavoritePage</name>
     <message>
         <source>Save</source>
@@ -298,15 +287,15 @@
     </message>
     <message>
         <source>Exporting favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;estan exportant els preferits</translation>
     </message>
     <message>
         <source>Favorites exported successfully</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;han exportat els preferits correctament</translation>
     </message>
     <message>
         <source>Favorites imported successfully</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;han importat els preferits correctament</translation>
     </message>
 </context>
 <context>
@@ -383,7 +372,7 @@
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation type="unfinished">S&apos;ha copiat l&apos;enllaç al porta-retalls</translation>
+        <translation>S&apos;ha copiat l&apos;enllaç al porta-retalls</translation>
     </message>
 </context>
 <context>
@@ -620,36 +609,36 @@
 <context>
     <name>YouTubeSettingsPage</name>
     <message>
-        <source>Title</source>
-        <translation type="unfinished">Títol</translation>
-    </message>
-    <message>
         <source>Author</source>
-        <translation type="unfinished"></translation>
+        <translation>Autor</translation>
     </message>
     <message>
         <source>Duration</source>
-        <translation type="unfinished"></translation>
+        <translation>Durada</translation>
     </message>
     <message>
         <source>Quality</source>
-        <translation type="unfinished"></translation>
+        <translation>Qualitat</translation>
     </message>
     <message>
         <source>Grabbed URLs</source>
-        <translation type="unfinished"></translation>
+        <translation>URLs capturades</translation>
+    </message>
+    <message>
+        <source>Title</source>
+        <translation>Títol</translation>
     </message>
     <message>
         <source>YouTube Grabber</source>
-        <translation type="unfinished"></translation>
+        <translation>Capturador de YouTube</translation>
     </message>
     <message>
         <source>Play</source>
-        <translation type="unfinished"></translation>
+        <translation>Reprodueix</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished"></translation>
+        <translation>Descarrega</translation>
     </message>
     <message>
         <source>Grabbing video</source>

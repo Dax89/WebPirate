@@ -24,8 +24,8 @@
 - The components are loaded on demand in order to reduce memory usage
 - BUGFIX: Removed a Segment Fault on exit
 - Minor Fixes
-- Updated German, Italian, Dutch, Russian, Swedish localizations
-- Added Japanese localization
+- Updated German, Italian, Dutch, Russian, Swedish, Chinese (87%), French (81%), Catalan (69%) and Slovenian (61%) localizations
+- Added Japanese and Czech localizations
 
 * Mon Jan 12 2015 Antonio Davide Trogu <trogu.davide@gmail.com> 0.8.6-2
 - BUGFIX: Restored Favorite button functionality

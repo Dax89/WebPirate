@@ -13,6 +13,9 @@ Page
                                                QtObject { readonly property string language: qsTr("Chinese");
                                                           readonly property string translators: "gexc"; },
 
+                                               QtObject { readonly property string language: qsTr("Czech");
+                                                          readonly property string translators: "nodevel"; },
+
                                                QtObject { readonly property string language: qsTr("Dutch");
                                                           readonly property string translators: "Vistaus, pljmn"; },
 

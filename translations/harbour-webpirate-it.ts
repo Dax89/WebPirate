@@ -63,6 +63,10 @@
         <source>Japanese</source>
         <translation>Giapponese</translation>
     </message>
+    <message>
+        <source>Czech</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ActionSidebar</name>

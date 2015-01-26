@@ -1,67 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="sv_SE">
+<TS version="2.1" language="cs_CZ">
 <context>
     <name>AboutPage</name>
     <message>
         <source>About Web Pirate</source>
-        <translation>Om </translation>
+        <translation>O Web Pirate</translation>
     </message>
     <message>
         <source>Catalan</source>
-        <translation>Katalanska</translation>
+        <translation>Katalánština</translation>
     </message>
     <message>
         <source>Chinese</source>
-        <translation>Kinesiska</translation>
+        <translation>Čínština</translation>
     </message>
     <message>
         <source>Dutch</source>
-        <translation>Holländska</translation>
+        <translation>Holandština</translation>
     </message>
     <message>
         <source>French</source>
-        <translation>Franska</translation>
+        <translation>Francouzština</translation>
     </message>
     <message>
         <source>German</source>
-        <translation>Tyska</translation>
+        <translation>Němčina</translation>
     </message>
     <message>
         <source>Russian</source>
-        <translation>Ryska</translation>
+        <translation>Ruština</translation>
     </message>
     <message>
         <source>Swedish</source>
-        <translation>Svenska</translation>
+        <translation>Švédština</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation>Version</translation>
+        <translation>Verze</translation>
     </message>
     <message>
         <source>A tabbed Web Browser for SailfishOS based on WebKit</source>
-        <translation>En webbläsare med flikar för SailfishOS, baserad på WebKit</translation>
+        <translation>Panelový webový prohlížeč pro SailfishOS, založený na WebKitu</translation>
     </message>
     <message>
         <source>Developer</source>
-        <translation>Utvecklare</translation>
+        <translation>Autor</translation>
     </message>
     <message>
         <source>GitHub Repository</source>
-        <translation>GitHub Repository</translation>
+        <translation>Repozitář GitHub</translation>
     </message>
     <message>
         <source>Translators</source>
-        <translation>Översättare</translation>
+        <translation>Překladatelé</translation>
     </message>
     <message>
         <source>Slovenian</source>
-        <translation>Slovakiska</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Japanese</source>
-        <translation>Japanska</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Czech</source>
@@ -72,577 +72,577 @@
     <name>ActionSidebar</name>
     <message>
         <source>Favorites</source>
-        <translation>Favoriter</translation>
+        <translation>Záložky</translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation>Nedladdningar</translation>
+        <translation>Stahování</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation>Inställningar</translation>
+        <translation>Nastavení</translation>
     </message>
     <message>
         <source>General</source>
-        <translation>Allmänt</translation>
+        <translation>Obecné</translation>
     </message>
     <message>
         <source>Change settings</source>
-        <translation>Ändra inställningar</translation>
+        <translation>Změnit nastavení</translation>
     </message>
     <message>
         <source>About Web Pirate</source>
-        <translation>Om </translation>
+        <translation>O Web Pirate</translation>
     </message>
     <message>
         <source>Sessions</source>
-        <translation>Sessioner</translation>
+        <translation>Sezení</translation>
     </message>
     <message>
         <source>Save Session</source>
-        <translation>Spara session</translation>
+        <translation>Uložit sezení</translation>
     </message>
     <message>
         <source>Load Session</source>
-        <translation>Läs in session</translation>
+        <translation>Načíst sezení</translation>
     </message>
     <message>
         <source>Cover settings</source>
-        <translation>Omslagsinställningar</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>BrowserTab</name>
     <message>
         <source>New Tab</source>
-        <translation>Ny flik</translation>
+        <translation>Nový panel</translation>
     </message>
     <message>
         <source>Load Error</source>
-        <translation>Läsfel</translation>
+        <translation>Chyba načítání</translation>
     </message>
 </context>
 <context>
     <name>BrowserWebView</name>
     <message>
         <source>Accept Certificate from:</source>
-        <translation>Acceptera certifikat från: </translation>
+        <translation>Přijmout certifikát od:</translation>
     </message>
     <message>
         <source>Downloading</source>
-        <translation>Nedladdning</translation>
+        <translation>Stahuje se</translation>
     </message>
 </context>
 <context>
     <name>CoverModel</name>
     <message>
         <source>Go to Previous Tab</source>
-        <translation>Gå till föregående flik</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Go to Next Tab</source>
-        <translation>Gå till nästa flik</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Add New Tab</source>
-        <translation>Lägg till ny flik</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Close Tab</source>
-        <translation>Stäng flik</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Load Homepage</source>
-        <translation>Läs in hemsidan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Close Browser</source>
-        <translation>Stäng webbläsaren</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Reload Current Page</source>
-        <translation>Uppdatera aktuell sida</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Wipe personal data</source>
-        <translation>Ta bort personlig data</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Sök</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CoverSettingsPage</name>
     <message>
         <source>General Actions</source>
-        <translation>Allmänna åtgärder</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Left</source>
-        <translation>Vänster</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Right</source>
-        <translation>Höger</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Webpage Actions</source>
-        <translation>Webbsideåtgärder</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Cover Settings</source>
-        <translation>Omslagsinställningar</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CredentialMenu</name>
     <message>
         <source>Do you want to store the password?</source>
-        <translation>Vill du lagra lösenordet?</translation>
+        <translation>Chcete uložit heslo?</translation>
     </message>
 </context>
 <context>
     <name>DownloadListItem</name>
     <message>
         <source>Restart</source>
-        <translation>Starta om</translation>
+        <translation>Restartovat</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Avbryt</translation>
+        <translation>Zrušit</translation>
     </message>
     <message>
         <source>Completed:</source>
-        <translation>Slutförd:</translation>
+        <translation>Dokončeno:</translation>
     </message>
     <message>
         <source>Speed:</source>
-        <translation>Hastighet:</translation>
+        <translation>Rychlost:</translation>
     </message>
     <message>
         <source>Completed</source>
-        <translation>Slutförd</translation>
+        <translation>Dokončeno</translation>
     </message>
     <message>
         <source>Error:</source>
-        <translation>Fel:</translation>
+        <translation>Chyba:</translation>
     </message>
 </context>
 <context>
     <name>DownloadsPage</name>
     <message>
         <source>Download Manager</source>
-        <translation>Nedladdningshanterare</translation>
+        <translation>Správce stahování</translation>
     </message>
     <message>
         <source>Delete completed Downloads</source>
-        <translation>Ta bort slutförda nedladdningar</translation>
+        <translation>Vymazat dokončená stahování</translation>
     </message>
 </context>
 <context>
     <name>FavoritePage</name>
     <message>
         <source>Save</source>
-        <translation>Spara</translation>
+        <translation>Uložit</translation>
     </message>
     <message>
         <source>Title</source>
-        <translation>Namn</translation>
+        <translation>Název</translation>
     </message>
     <message>
         <source>Url</source>
-        <translation>URL</translation>
+        <translation>Adresa</translation>
     </message>
 </context>
 <context>
     <name>FavoritesPage</name>
     <message>
         <source>Add Folder</source>
-        <translation>Lägg till mapp</translation>
+        <translation>Přidat složku</translation>
     </message>
     <message>
         <source>Add Favorite</source>
-        <translation>Lägg till favorit</translation>
+        <translation>Přidat záložku</translation>
     </message>
     <message>
         <source>Favorites</source>
-        <translation>Favoriter</translation>
+        <translation>Záložky</translation>
     </message>
     <message>
         <source>Export</source>
-        <translation>Exportera</translation>
+        <translation>Exportovat</translation>
     </message>
     <message>
         <source>Import</source>
-        <translation>Importera</translation>
+        <translation>Importovat</translation>
     </message>
     <message>
         <source>Import in</source>
-        <translation>Importera i</translation>
+        <translation>Importovat v</translation>
     </message>
     <message>
         <source>Import Favorites</source>
-        <translation>Importera favoriter</translation>
+        <translation>Importovat záložky</translation>
     </message>
     <message>
         <source>Exporting favorites</source>
-        <translation>Exporterar favoriter</translation>
+        <translation>Export záložek</translation>
     </message>
     <message>
         <source>Favorites exported successfully</source>
-        <translation>Favoriter exporterades korrekt</translation>
+        <translation>Úspěšný export záložek</translation>
     </message>
     <message>
         <source>Favorites imported successfully</source>
-        <translation>Favoriter importerades korrekt</translation>
+        <translation>Úspěšný import záložek</translation>
     </message>
 </context>
 <context>
     <name>FavoritesView</name>
     <message>
         <source>Edit</source>
-        <translation>Redigera</translation>
+        <translation>Upravit</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Ta bort</translation>
+        <translation>Odstranit</translation>
     </message>
     <message>
         <source>Deleting Favorite</source>
-        <translation>Tar bort favorit</translation>
+        <translation>Odstraňování záložky</translation>
     </message>
     <message>
         <source>Deleting Folder</source>
-        <translation>Tar bort mapp</translation>
+        <translation>Odstraňování složky</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation>Öppna</translation>
+        <translation>Otevřít</translation>
     </message>
     <message>
         <source>Open in New Tab</source>
-        <translation>Öppna i ny flik</translation>
+        <translation>Otevřít v novém panelu</translation>
     </message>
 </context>
 <context>
     <name>HistoryMenu</name>
     <message>
         <source>Link copied to clipboard</source>
-        <translation>Länk kopierad till Urklipp</translation>
+        <translation>Odkaz zkopírován do schránky</translation>
     </message>
 </context>
 <context>
     <name>LinkMenu</name>
     <message>
         <source>Open New Tab</source>
-        <translation>Öppna ny flik</translation>
+        <translation>Otevřít nový panel</translation>
     </message>
     <message>
         <source>Remove From Favorites</source>
-        <translation>Ta bort från Favoriter</translation>
+        <translation>Odstranit ze záložek</translation>
     </message>
     <message>
         <source>Add To Favorites</source>
-        <translation>Lägg till i Favoriter</translation>
+        <translation>Přidat do záložek</translation>
     </message>
     <message>
         <source>Save Link Destination</source>
-        <translation>Spara länkdestination</translation>
+        <translation>Umístění uložení odkazu</translation>
     </message>
     <message>
         <source>Copy Link</source>
-        <translation>Kopiera länk</translation>
+        <translation>Kopírovat odkaz</translation>
     </message>
     <message>
         <source>Save Image</source>
-        <translation>Spara bild</translation>
+        <translation>Uložit obrázek</translation>
     </message>
     <message>
         <source>Downloading image</source>
-        <translation>Laddar ner bild</translation>
+        <translation>Stahování obrázku</translation>
     </message>
     <message>
         <source>Downloading link</source>
-        <translation>Laddar ner länk</translation>
+        <translation>Stahování odkazu</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation>Öppna</translation>
+        <translation>Otevřít</translation>
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation>Länk kopierad till Urklipp</translation>
+        <translation>Odkaz zkopírován do schránky</translation>
     </message>
 </context>
 <context>
     <name>LoadFailed</name>
     <message>
         <source>You are in offline mode</source>
-        <translation>Du är i frånkopplat läge</translation>
+        <translation>Jste v módu offline</translation>
     </message>
 </context>
 <context>
     <name>QuickGrid</name>
     <message>
         <source>The QuickGrid is empty</source>
-        <translation>Snabbstartfältet är tomt</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>QuickGridItem</name>
     <message>
         <source>Removing item</source>
-        <translation>Tar bort objekt</translation>
+        <translation>Odstraňování položky</translation>
     </message>
 </context>
 <context>
     <name>QuickGridPage</name>
     <message>
         <source>Save</source>
-        <translation>Spara</translation>
+        <translation>Uložit</translation>
     </message>
     <message>
         <source>Title</source>
-        <translation>Namn</translation>
+        <translation>Název</translation>
     </message>
     <message>
         <source>Url</source>
-        <translation>URL</translation>
+        <translation>Adresa</translation>
     </message>
 </context>
 <context>
     <name>RequestMenu</name>
     <message>
         <source>Yes</source>
-        <translation>Ja</translation>
+        <translation>Ano</translation>
     </message>
     <message>
         <source>No</source>
-        <translation>Nej</translation>
+        <translation>Ne</translation>
     </message>
 </context>
 <context>
     <name>SaveSessionPage</name>
     <message>
         <source>Save Session</source>
-        <translation>Spara session</translation>
+        <translation>Uložit sezení</translation>
     </message>
     <message>
         <source>Session name</source>
-        <translation>Sessionsnamn</translation>
+        <translation>Název sezení</translation>
     </message>
     <message>
         <source>Load at startup</source>
-        <translation>Läs in vid uppstart</translation>
+        <translation>Načíst při spuštění</translation>
     </message>
     <message>
         <source>Replace current session</source>
-        <translation>Ersätt aktuell session</translation>
+        <translation>Nahradit současné sezení</translation>
     </message>
     <message>
         <source>Opened Tabs</source>
-        <translation>Öppnade flikar</translation>
+        <translation>Otevřené panely</translation>
     </message>
     <message>
         <source>Selected</source>
-        <translation>Markerad</translation>
+        <translation>Vybrané</translation>
     </message>
 </context>
 <context>
     <name>SearchBar</name>
     <message>
         <source>Search with</source>
-        <translation>Sök med</translation>
+        <translation>Hledat s</translation>
     </message>
 </context>
 <context>
     <name>SearchEnginePage</name>
     <message>
         <source>Save</source>
-        <translation>Spara</translation>
+        <translation>Uložit</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Namn</translation>
+        <translation>Jméno</translation>
     </message>
     <message>
         <source>Query</source>
-        <translation>Söksträng</translation>
+        <translation>Dotaz</translation>
     </message>
 </context>
 <context>
     <name>SearchEnginesPage</name>
     <message>
         <source>Set as Default</source>
-        <translation>Ange som standard</translation>
+        <translation>Nastavit jako výchozí</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Ta bort</translation>
+        <translation>Odstranit</translation>
     </message>
     <message>
         <source>Search Engines</source>
-        <translation>Sökmotorer</translation>
+        <translation>Poskytovatelé vyhledávání</translation>
     </message>
     <message>
         <source>Add</source>
-        <translation>Lägg till</translation>
+        <translation>Přidat</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Redigera</translation>
+        <translation>Upravit</translation>
     </message>
     <message>
         <source>Deleting Search Engine</source>
-        <translation>Tar bort sökmotor</translation>
+        <translation>Odstraňování poskytovatele vyhledávání</translation>
     </message>
 </context>
 <context>
     <name>SessionPage</name>
     <message>
         <source>Save Session</source>
-        <translation>Spara session</translation>
+        <translation>Uložit sezení</translation>
     </message>
     <message>
         <source>Session name</source>
-        <translation>Sessionsnamn</translation>
+        <translation>Název sezení</translation>
     </message>
     <message>
         <source>Load at startup</source>
-        <translation>Läs in vid uppstart</translation>
+        <translation>Načíst při spuštení</translation>
     </message>
     <message>
         <source>Replace current session</source>
-        <translation>Ersätt aktuell session</translation>
+        <translation>Nahradit současné sezení</translation>
     </message>
     <message>
         <source>Opened Tabs</source>
-        <translation>Öppnade flikar</translation>
+        <translation>Otevřené panely</translation>
     </message>
     <message>
         <source>Selected</source>
-        <translation>Markerad</translation>
+        <translation>Vybrané</translation>
     </message>
 </context>
 <context>
     <name>SessionSettingsPage</name>
     <message>
         <source>Session Manager</source>
-        <translation>Sessionshanterare</translation>
+        <translation>Správce sezení</translation>
     </message>
     <message>
         <source>Tabs saved</source>
-        <translation>Flikar sparade</translation>
+        <translation>Panely uloženy</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation>Öppna</translation>
+        <translation>Otevřít</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Redigera</translation>
+        <translation>Upravit</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Ta bort</translation>
+        <translation>Smazat</translation>
     </message>
     <message>
         <source>Deleting session</source>
-        <translation>Tar bort session</translation>
+        <translation>Mažu sezení</translation>
     </message>
 </context>
 <context>
     <name>SettingsPage</name>
     <message>
         <source>Home Page</source>
-        <translation>Hemsida</translation>
+        <translation>Domovská stránka</translation>
     </message>
     <message>
         <source>Search Engines</source>
-        <translation>Sökmotorer</translation>
+        <translation>Poskytovatelé vyhledávání</translation>
     </message>
     <message>
         <source>User Agent</source>
-        <translation>Användaragent</translation>
+        <translation>Identifikátor prohlížeče</translation>
     </message>
     <message>
         <source>Wipe Data on Exit</source>
-        <translation>Ta bort surfdata vid avslut</translation>
+        <translation>Smazat data při ukončení</translation>
     </message>
     <message>
         <source>General</source>
-        <translation>Allmänt</translation>
+        <translation>Obecné</translation>
     </message>
     <message>
         <source>Privacy</source>
-        <translation>Sekretess</translation>
+        <translation>Soukromí</translation>
     </message>
     <message>
         <source>Delete Personal Data</source>
-        <translation>Radera personlig data</translation>
+        <translation>Vymazat soukromá data</translation>
     </message>
     <message>
         <source>Save Settings</source>
-        <translation>Spara inställningar</translation>
+        <translation>Uložit nastavení</translation>
     </message>
     <message>
         <source>Removing personal data</source>
-        <translation>Tar bort personlig data</translation>
+        <translation>Mazání soukromých dat</translation>
     </message>
     <message>
         <source>Delete Navigation History</source>
-        <translation>Ta bort surfhistorik</translation>
+        <translation>Vymazat historii prohlížení</translation>
     </message>
     <message>
         <source>Removing navigation history</source>
-        <translation>Tar bort surfhistorik</translation>
+        <translation>Mazání historie prohlížení</translation>
     </message>
 </context>
 <context>
     <name>TextSelectionPage</name>
     <message>
         <source>Done</source>
-        <translation>Klar</translation>
+        <translation>Dokončeno</translation>
     </message>
 </context>
 <context>
     <name>YouTubeSettingsPage</name>
     <message>
         <source>Author</source>
-        <translation>Upphovsman</translation>
+        <translation>Autor</translation>
     </message>
     <message>
         <source>Duration</source>
-        <translation>Varaktighet</translation>
+        <translation>Doba trvání</translation>
     </message>
     <message>
         <source>Quality</source>
-        <translation>Kvalitet</translation>
+        <translation>Kvalita</translation>
     </message>
     <message>
         <source>Grabbed URLs</source>
-        <translation>Hämtade URL:er</translation>
+        <translation>Získané adresy</translation>
     </message>
     <message>
         <source>Title</source>
-        <translation>Titel</translation>
+        <translation>Název</translation>
     </message>
     <message>
         <source>YouTube Grabber</source>
-        <translation>YouTube-hämtare</translation>
+        <translation>YouTube pomocník</translation>
     </message>
     <message>
         <source>Play</source>
-        <translation>Spela upp</translation>
+        <translation>Přehrát</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation>Ladda ner</translation>
+        <translation>Stáhnout</translation>
     </message>
     <message>
         <source>Grabbing video</source>
-        <translation>Hämtar video</translation>
+        <translation>Získávání videa</translation>
     </message>
 </context>
 </TS>

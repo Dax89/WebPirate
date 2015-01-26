@@ -8,26 +8,6 @@
         <translation>A propos de Web Pirate</translation>
     </message>
     <message>
-        <source>A tabbed Web Browser for SailfishOS based on WebKit</source>
-        <translation>Un navigateur Internet pour Sailfish avec onglet basé sur WebKit</translation>
-    </message>
-    <message>
-        <source>GitHub Repository</source>
-        <translation>Dépôt GitHub</translation>
-    </message>
-    <message>
-        <source>Version</source>
-        <translation>Version</translation>
-    </message>
-    <message>
-        <source>Developer</source>
-        <translation>Développeur</translation>
-    </message>
-    <message>
-        <source>Translators</source>
-        <translation>Traducteurs</translation>
-    </message>
-    <message>
         <source>Catalan</source>
         <translation>Catalan</translation>
     </message>
@@ -56,11 +36,35 @@
         <translation>Suédois</translation>
     </message>
     <message>
+        <source>Version</source>
+        <translation>Version</translation>
+    </message>
+    <message>
+        <source>A tabbed Web Browser for SailfishOS based on WebKit</source>
+        <translation>Un navigateur Internet pour Sailfish avec onglet basé sur WebKit</translation>
+    </message>
+    <message>
+        <source>Developer</source>
+        <translation>Développeur</translation>
+    </message>
+    <message>
+        <source>GitHub Repository</source>
+        <translation>Dépôt GitHub</translation>
+    </message>
+    <message>
+        <source>Translators</source>
+        <translation>Traducteurs</translation>
+    </message>
+    <message>
         <source>Slovenian</source>
-        <translation type="unfinished"></translation>
+        <translation>Slovène</translation>
     </message>
     <message>
         <source>Japanese</source>
+        <translation>Japonais</translation>
+    </message>
+    <message>
+        <source>Czech</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -92,15 +96,15 @@
     </message>
     <message>
         <source>Sessions</source>
-        <translation type="unfinished"></translation>
+        <translation>Sessions</translation>
     </message>
     <message>
         <source>Save Session</source>
-        <translation type="unfinished"></translation>
+        <translation>Enregistrer la session</translation>
     </message>
     <message>
         <source>Load Session</source>
-        <translation type="unfinished"></translation>
+        <translation>Charger la session</translation>
     </message>
     <message>
         <source>Cover settings</source>
@@ -156,20 +160,16 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Search with</source>
-        <translation type="obsolete">Rechercher avec</translation>
-    </message>
-    <message>
         <source>Reload Current Page</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Wipe personal data</source>
-        <translation type="unfinished"></translation>
+        <translation>Supprimer les données personnelles</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Rechercher</translation>
     </message>
 </context>
 <context>
@@ -180,15 +180,11 @@
     </message>
     <message>
         <source>Left</source>
-        <translation type="unfinished"></translation>
+        <translation>Gauche</translation>
     </message>
     <message>
         <source>Right</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Save</source>
-        <translation type="obsolete">Enregistrer</translation>
+        <translation>Droite</translation>
     </message>
     <message>
         <source>Webpage Actions</source>
@@ -242,13 +238,6 @@
     <message>
         <source>Delete completed Downloads</source>
         <translation>Supprimer les téléchargements terminés</translation>
-    </message>
-</context>
-<context>
-    <name>EditCoverPage</name>
-    <message>
-        <source>Save</source>
-        <translation type="obsolete">Enregistrer</translation>
     </message>
 </context>
 <context>
@@ -329,11 +318,11 @@
     </message>
     <message>
         <source>Open</source>
-        <translation type="unfinished">Ouvrir</translation>
+        <translation>Ouvrir</translation>
     </message>
     <message>
         <source>Open in New Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Ouvrir dans un nouvel onglet</translation>
     </message>
 </context>
 <context>
@@ -437,11 +426,11 @@
     <name>SaveSessionPage</name>
     <message>
         <source>Save Session</source>
-        <translation type="unfinished"></translation>
+        <translation>Enregistrer la session</translation>
     </message>
     <message>
         <source>Session name</source>
-        <translation type="unfinished"></translation>
+        <translation>Nom de la session</translation>
     </message>
     <message>
         <source>Load at startup</source>
@@ -513,11 +502,11 @@
     <name>SessionPage</name>
     <message>
         <source>Save Session</source>
-        <translation type="unfinished"></translation>
+        <translation>Enregistrer la session</translation>
     </message>
     <message>
         <source>Session name</source>
-        <translation type="unfinished"></translation>
+        <translation>Nom de la session</translation>
     </message>
     <message>
         <source>Load at startup</source>
@@ -540,7 +529,7 @@
     <name>SessionSettingsPage</name>
     <message>
         <source>Session Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Gérer les sessions</translation>
     </message>
     <message>
         <source>Tabs saved</source>
@@ -548,19 +537,19 @@
     </message>
     <message>
         <source>Open</source>
-        <translation type="unfinished">Ouvrir</translation>
+        <translation>Ouvrir</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="unfinished">Éditer</translation>
+        <translation>Éditer</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Supprimer</translation>
+        <translation>Supprimer</translation>
     </message>
     <message>
         <source>Deleting session</source>
-        <translation type="unfinished"></translation>
+        <translation>Supprimer la session</translation>
     </message>
 </context>
 <context>
@@ -620,24 +609,24 @@
 <context>
     <name>YouTubeSettingsPage</name>
     <message>
-        <source>Title</source>
-        <translation type="unfinished">Titre</translation>
-    </message>
-    <message>
         <source>Author</source>
-        <translation type="unfinished"></translation>
+        <translation>Auteur</translation>
     </message>
     <message>
         <source>Duration</source>
-        <translation type="unfinished"></translation>
+        <translation>Durée</translation>
     </message>
     <message>
         <source>Quality</source>
-        <translation type="unfinished"></translation>
+        <translation>Qualité</translation>
     </message>
     <message>
         <source>Grabbed URLs</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Title</source>
+        <translation>Titre</translation>
     </message>
     <message>
         <source>YouTube Grabber</source>
@@ -649,7 +638,7 @@
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished"></translation>
+        <translation>Télécharger</translation>
     </message>
     <message>
         <source>Grabbing video</source>

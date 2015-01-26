@@ -8,26 +8,6 @@
         <translation>关于 Web Pirate</translation>
     </message>
     <message>
-        <source>A tabbed Web Browser for SailfishOS based on WebKit</source>
-        <translation>SailfishOS 上基于 Webkit 的标签式网页浏览器</translation>
-    </message>
-    <message>
-        <source>GitHub Repository</source>
-        <translation>GitHub 源</translation>
-    </message>
-    <message>
-        <source>Version</source>
-        <translation>版本</translation>
-    </message>
-    <message>
-        <source>Developer</source>
-        <translation>开发者</translation>
-    </message>
-    <message>
-        <source>Translators</source>
-        <translation>翻译者</translation>
-    </message>
-    <message>
         <source>Catalan</source>
         <translation>Catalan</translation>
     </message>
@@ -56,11 +36,35 @@
         <translation>Swedish</translation>
     </message>
     <message>
+        <source>Version</source>
+        <translation>版本</translation>
+    </message>
+    <message>
+        <source>A tabbed Web Browser for SailfishOS based on WebKit</source>
+        <translation>SailfishOS 上基于 Webkit 的标签式网页浏览器</translation>
+    </message>
+    <message>
+        <source>Developer</source>
+        <translation>开发者</translation>
+    </message>
+    <message>
+        <source>GitHub Repository</source>
+        <translation>GitHub 源</translation>
+    </message>
+    <message>
+        <source>Translators</source>
+        <translation>翻译者</translation>
+    </message>
+    <message>
         <source>Slovenian</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Japanese</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Czech</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -92,19 +96,19 @@
     </message>
     <message>
         <source>Sessions</source>
-        <translation type="unfinished"></translation>
+        <translation>会话</translation>
     </message>
     <message>
         <source>Save Session</source>
-        <translation type="unfinished"></translation>
+        <translation>保存会话</translation>
     </message>
     <message>
         <source>Load Session</source>
-        <translation type="unfinished"></translation>
+        <translation>载入会话</translation>
     </message>
     <message>
         <source>Cover settings</source>
-        <translation type="unfinished"></translation>
+        <translation>封面设置</translation>
     </message>
 </context>
 <context>
@@ -115,7 +119,7 @@
     </message>
     <message>
         <source>Load Error</source>
-        <translation type="unfinished"></translation>
+        <translation>载入错误</translation>
     </message>
 </context>
 <context>
@@ -156,10 +160,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Search with</source>
-        <translation type="obsolete">搜索</translation>
-    </message>
-    <message>
         <source>Reload Current Page</source>
         <translation type="unfinished"></translation>
     </message>
@@ -185,10 +185,6 @@
     <message>
         <source>Right</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Save</source>
-        <translation type="obsolete">保存</translation>
     </message>
     <message>
         <source>Webpage Actions</source>
@@ -242,13 +238,6 @@
     <message>
         <source>Delete completed Downloads</source>
         <translation>删除已完成的下载</translation>
-    </message>
-</context>
-<context>
-    <name>EditCoverPage</name>
-    <message>
-        <source>Save</source>
-        <translation type="obsolete">保存</translation>
     </message>
 </context>
 <context>
@@ -329,11 +318,11 @@
     </message>
     <message>
         <source>Open</source>
-        <translation type="unfinished">打开</translation>
+        <translation>打开</translation>
     </message>
     <message>
         <source>Open in New Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>在新标签页中打开</translation>
     </message>
 </context>
 <context>
@@ -437,27 +426,27 @@
     <name>SaveSessionPage</name>
     <message>
         <source>Save Session</source>
-        <translation type="unfinished"></translation>
+        <translation>保存会话</translation>
     </message>
     <message>
         <source>Session name</source>
-        <translation type="unfinished"></translation>
+        <translation>会话名称</translation>
     </message>
     <message>
         <source>Load at startup</source>
-        <translation type="unfinished"></translation>
+        <translation>在启动时载入</translation>
     </message>
     <message>
         <source>Replace current session</source>
-        <translation type="unfinished"></translation>
+        <translation>替换当前会话</translation>
     </message>
     <message>
         <source>Opened Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>已打开的标签页</translation>
     </message>
     <message>
         <source>Selected</source>
-        <translation type="unfinished"></translation>
+        <translation>已选择</translation>
     </message>
 </context>
 <context>
@@ -513,34 +502,34 @@
     <name>SessionPage</name>
     <message>
         <source>Save Session</source>
-        <translation type="unfinished"></translation>
+        <translation>保存会话</translation>
     </message>
     <message>
         <source>Session name</source>
-        <translation type="unfinished"></translation>
+        <translation>会话名称</translation>
     </message>
     <message>
         <source>Load at startup</source>
-        <translation type="unfinished"></translation>
+        <translation>在启动时载入</translation>
     </message>
     <message>
         <source>Replace current session</source>
-        <translation type="unfinished"></translation>
+        <translation>替换当前会话</translation>
     </message>
     <message>
         <source>Opened Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>已打开的标签页</translation>
     </message>
     <message>
         <source>Selected</source>
-        <translation type="unfinished"></translation>
+        <translation>已选择</translation>
     </message>
 </context>
 <context>
     <name>SessionSettingsPage</name>
     <message>
         <source>Session Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>会话管理器</translation>
     </message>
     <message>
         <source>Tabs saved</source>
@@ -548,19 +537,19 @@
     </message>
     <message>
         <source>Open</source>
-        <translation type="unfinished">打开</translation>
+        <translation>打开</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="unfinished">编辑</translation>
+        <translation>编辑</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">删除</translation>
+        <translation>删除</translation>
     </message>
     <message>
         <source>Deleting session</source>
-        <translation type="unfinished"></translation>
+        <translation>正在删除会话</translation>
     </message>
 </context>
 <context>
@@ -620,40 +609,40 @@
 <context>
     <name>YouTubeSettingsPage</name>
     <message>
-        <source>Title</source>
-        <translation type="unfinished">标题</translation>
-    </message>
-    <message>
         <source>Author</source>
-        <translation type="unfinished"></translation>
+        <translation>作者</translation>
     </message>
     <message>
         <source>Duration</source>
-        <translation type="unfinished"></translation>
+        <translation>长度</translation>
     </message>
     <message>
         <source>Quality</source>
-        <translation type="unfinished"></translation>
+        <translation>质量</translation>
     </message>
     <message>
         <source>Grabbed URLs</source>
-        <translation type="unfinished"></translation>
+        <translation>抓取到的URL</translation>
+    </message>
+    <message>
+        <source>Title</source>
+        <translation>标题</translation>
     </message>
     <message>
         <source>YouTube Grabber</source>
-        <translation type="unfinished"></translation>
+        <translation>YouTube抓取器</translation>
     </message>
     <message>
         <source>Play</source>
-        <translation type="unfinished"></translation>
+        <translation>播放</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished"></translation>
+        <translation>下载</translation>
     </message>
     <message>
         <source>Grabbing video</source>
-        <translation type="unfinished"></translation>
+        <translation>正在抓取视频</translation>
     </message>
 </context>
 </TS>
