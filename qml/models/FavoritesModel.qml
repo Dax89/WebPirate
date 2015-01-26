@@ -1,4 +1,4 @@
-import QtQuick 2.0
+import QtQuick 2.1
 import "../js/UrlHelper.js" as UrlHelper
 import "../js/Favorites.js" as Favorites
 
