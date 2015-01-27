@@ -3,10 +3,6 @@ import Sailfish.Silica 1.0
 
 Item
 {
-    property list<QtObject> actions: [ QtObject { property string icon: "image://theme/icon-s-favorite";  property string label: qsTr("Favorites") },
-                                       QtObject { property string icon: "image://theme/icon-s-cloud-download"; property string label: qsTr("Downloads") },
-                                       QtObject { property string icon: "image://theme/icon-s-setting"; property string label: qsTr("Settings") } ]
-
     id: sidebar
     visible: false
     width: visible ? parent.width * 0.55 : 0
@@ -81,6 +77,22 @@ Item
                 icon: "image://theme/icon-s-device-upload"
                 text: qsTr("Load Session")
                 onClicked: pageStack.push(Qt.resolvedUrl("../../pages/session/SessionSettingsPage.qml"), { "tabView": tabview });
+            }
+
+            SectionHeader
+            {
+                id: extensionsection
+                text: qsTr("Extensions")
+            }
+
+            SidebarSwitch
+            {
+                anchors { left: parent.left; right: parent.right }
+                text: qsTr("Night Mode")
+
+                switchItem.onCheckedChanged: {
+                    tabview.nightMode = switchItem.checked;
+                }
             }
 
             SectionHeader

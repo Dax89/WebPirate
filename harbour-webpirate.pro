@@ -107,7 +107,9 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/components/items/cover/PageCoverActions.qml \
     qml/js/Cover.js \
     org.browser.WebPirate.service \
-    rpm/harbour-webpirate.yaml
+    rpm/harbour-webpirate.yaml \
+    qml/js/helpers/NightMode.js \
+    qml/components/sidebar/SidebarSwitch.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line

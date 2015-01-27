@@ -110,6 +110,14 @@
         <source>Cover settings</source>
         <translation>Cover Einstellungen</translation>
     </message>
+    <message>
+        <source>Night Mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Extensions</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>BrowserTab</name>

@@ -6,10 +6,12 @@ import "../sidebar"
 Item
 {
     property ListModel pages: ListModel { }
+    property bool nightMode: false
     property int currentIndex: -1
     property string pageState
 
     id: tabview
+    onNightModeChanged: tabview.currentTab().setNightMode(nightMode)
     onCurrentIndexChanged: renderTab()
     Component.onCompleted: renderTab()
 
@@ -30,6 +32,7 @@ Item
 
             if(i == currentIndex)
             {
+                tab.setNightMode(nightMode);
                 tab.visible = true;
                 continue;
             }

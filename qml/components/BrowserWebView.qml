@@ -33,7 +33,8 @@ SilicaWebView
 
                                 /* Custom WebView Helpers */
                                 Qt.resolvedUrl("../js/helpers/WebViewHelper.js"),
-                                Qt.resolvedUrl("../js/helpers/YouTubeHelper.js")]
+                                Qt.resolvedUrl("../js/helpers/YouTubeHelper.js"),
+                                Qt.resolvedUrl("../js/helpers/NightMode.js")]
 
     experimental.onMessageReceived: {
         var data = JSON.parse(message.data);
@@ -116,6 +117,8 @@ SilicaWebView
                 Credentials.compile(Database.instance(), mainwindow.settings, url.toString(), webview);
                 History.store(url.toString(), title);
             }
+
+            browsertab.setNightMode(tabview.nightMode);
         }
     }
 

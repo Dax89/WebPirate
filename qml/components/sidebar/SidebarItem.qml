@@ -8,6 +8,7 @@ BackgroundItem
     property alias text: lblaction.text
 
     height: Theme.itemSizeExtraSmall
+    onClicked: sidebar.collapse()
 
     Row
     {
@@ -56,6 +57,4 @@ BackgroundItem
             }
         }
     }
-
-    onClicked: sidebar.collapse()
 }

@@ -17,6 +17,14 @@ Item
         navigationbar.searchBar.triggerKeyboard();
     }
 
+    function setNightMode(nightmode)
+    {
+        if(state !== "webbrowser")
+            return;
+
+        webview.experimental.evaluateJavaScript("__wp_nightmode__.switchMode(" + nightmode + ")");
+    }
+
     id: browsertab
     state: "newtab"
 
