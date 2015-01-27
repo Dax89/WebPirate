@@ -48,7 +48,8 @@ Rectangle
     {
         id: btnback
         icon.source: "image://theme/icon-m-back"
-        width: Theme.iconSizeMedium
+        width: searchbar.editing ? 0 : Theme.iconSizeMedium
+        visible: width > 0
         anchors { left: navigationbar.left; top: parent.top; bottom: parent.bottom }
         enabled: false
 
@@ -59,7 +60,8 @@ Rectangle
     {
         id: btnhome
         icon.source: "image://theme/icon-m-home"
-        width: Theme.iconSizeMedium
+        width: searchbar.editing ? 0 : Theme.iconSizeMedium
+        visible: width > 0
         anchors { left: btnback.right; top: parent.top; bottom: parent.bottom }
 
         onClicked: navigationbar.searchRequested(mainwindow.settings.homepage)
@@ -68,7 +70,8 @@ Rectangle
     IconButton
     {
         id: btnfavorite
-        width: visible ? Theme.iconSizeMedium : 0
+        width: (!visible || searchbar.editing) ? 0 : Theme.iconSizeMedium
+        visible: width > 0
         icon.source: (favorite ? "image://theme/icon-m-favorite-selected" : "image://theme/icon-m-favorite")
         anchors { left: btnhome.right; top: parent.top; bottom: parent.bottom }
 
@@ -99,7 +102,8 @@ Rectangle
     {
         id: btnrefresh
         icon.source: "image://theme/icon-m-refresh"
-        width: Theme.iconSizeMedium
+        width: searchbar.editing ? 0 : Theme.iconSizeMedium
+        visible: width > 0
         anchors { right: btnforward.left; top: parent.top; bottom: parent.bottom }
 
         onClicked: {
@@ -114,7 +118,8 @@ Rectangle
     {
         id: btnforward
         icon.source: "image://theme/icon-m-forward"
-        width: Theme.iconSizeMedium
+        width: searchbar.editing ? 0 : Theme.iconSizeMedium
+        visible: width > 0
         anchors { right: parent.right; top: parent.top; bottom: parent.bottom }
         enabled: false
 

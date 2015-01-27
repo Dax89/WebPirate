@@ -7,6 +7,8 @@ Item
     property string title
     property string url
 
+    property alias editing: searchfield.focus
+
     signal textChanged(string text)
     signal returnPressed(string searchquery)
 
