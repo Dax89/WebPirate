@@ -44,6 +44,7 @@ Rectangle
         }
 
         onClicked: {
+            sidebar.collapse();
             tabview.currentIndex = index;
         }
     }
@@ -53,10 +54,9 @@ Rectangle
         id: btnclose
         width: Theme.iconSizeSmall
         height: Theme.iconSizeSmall
-        anchors {right: parent.right; rightMargin: Theme.paddingSmall; verticalCenter: headermousearea.verticalCenter }
+        anchors { right: parent.right; rightMargin: Theme.paddingSmall; verticalCenter: headermousearea.verticalCenter }
         icon.source: "image://theme/icon-close-vkb"
         visible: pages.count > 1
-
         onClicked: tabview.removeTab(index)
     }
 }
