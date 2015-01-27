@@ -52,6 +52,7 @@ Rectangle
             delegate: TabButton {
                 icon: tab.getIcon();
                 title: tab.getTitle();
+                loading: tab.state === "webbrowser" && tab.webView.loading
             }
         }
 

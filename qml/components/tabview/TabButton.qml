@@ -5,6 +5,7 @@ Rectangle
 {
     property alias icon: favicon.source
     property alias title: tabtitle.text
+    property bool loading: false
 
     id: tabbutton
     anchors { top: headerrow.top; bottom: headerrow.bottom }
@@ -20,21 +21,37 @@ Rectangle
         id: headermousearea
         anchors { left: parent.left; top: parent.top; right: btnclose.left; bottom: parent.bottom }
 
-        Image
+        Item
         {
-            id: favicon
+            id: indicator
             anchors { left: parent.left; leftMargin: Theme.paddingSmall; verticalCenter: parent.verticalCenter }
             width: tabtitle.height
             height: tabtitle.height
-            fillMode: Image.PreserveAspectFit
-            asynchronous: true
-            smooth: true
+
+            BusyIndicator
+            {
+                id: loadindicator
+                visible: loading
+                running: loading
+                anchors.fill: parent
+                size: BusyIndicatorSize.Small
+            }
+
+            Image
+            {
+                id: favicon
+                visible: !loading
+                anchors.fill: parent
+                fillMode: Image.PreserveAspectFit
+                asynchronous: true
+                smooth: true
+            }
         }
 
         Text
         {
             id: tabtitle
-            anchors { left: favicon.right; right: parent.right; verticalCenter: parent.verticalCenter; leftMargin: Theme.paddingSmall }
+            anchors { left: indicator.right; right: parent.right; verticalCenter: parent.verticalCenter; leftMargin: Theme.paddingSmall }
             font.pixelSize: Theme.fontSizeSmall
             verticalAlignment: Text.AlignVCenter
             horizontalAlignment: Text.AlignLeft
