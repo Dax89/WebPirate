@@ -31,6 +31,14 @@ function load(maindb)
     });
 }
 
+function deleteAll()
+{
+    instance().transaction(function(tx) {
+        tx.executeSql("DELETE FROM Favorites");
+        tx.executeSql("DELETE FROM FavoritesTree");
+    });
+}
+
 function contains(url)
 {
     var exists = false;

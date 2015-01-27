@@ -305,6 +305,14 @@
         <source>Favorites imported successfully</source>
         <translation>Favoriter importerades korrekt</translation>
     </message>
+    <message>
+        <source>Delete all Favorites</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Deleting all favorites</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>FavoritesView</name>

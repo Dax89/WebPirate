@@ -37,6 +37,19 @@ Page
         {
             MenuItem
             {
+                text: qsTr("Delete all Favorites")
+                visible: folderId === 0
+
+                onClicked: {
+                    remorsepopup.execute(qsTr("Deleting all favorites"), function() {
+                        favoritesview.model.clear();
+                        Favorites.deleteAll();
+                    });
+                }
+            }
+
+            MenuItem
+            {
                 text: qsTr("Export") + ((folderId === 0) ? "" : " '" + favoritesview.model.currentFolder() + "'")
 
                 onClicked: {
