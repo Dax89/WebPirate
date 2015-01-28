@@ -11,9 +11,14 @@ Rectangle
     anchors { top: headerrow.top; bottom: headerrow.bottom }
     width: tabheader.tabWidth
     color: (index === currentIndex ? Theme.secondaryColor : Theme.secondaryHighlightColor);
+    scale: headermousearea.pressed ? 1.05 : 1.0
 
     Behavior on width {
-        NumberAnimation { duration: 100; easing.type: Easing.InOutQuad }
+        NumberAnimation { duration: 50; easing.type: Easing.InOutQuad }
+    }
+
+    Behavior on scale {
+        NumberAnimation { properties: "scale"; duration: 50; easing.type: Easing.InOutElastic }
     }
 
     MouseArea

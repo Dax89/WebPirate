@@ -84,6 +84,10 @@ Rectangle
             anchors { left: parent.left; top: parent.top; right: parent.right; leftMargin: Theme.paddingMedium; rightMargin: Theme.paddingMedium }
             spacing: Theme.paddingMedium
 
+            add: Transition {
+                NumberAnimation { properties: "scale"; from: 1.2; to: 1.0; duration: 100; easing.type: Easing.OutInBounce }
+            }
+
             Repeater
             {
                 model: mainwindow.settings.quickgridmodel
