@@ -12,6 +12,14 @@ import "../js/YouTubeGrabber.js" as YouTubeGrabber
 
 SilicaWebView
 {
+    function setNightMode(nightmode)
+    {
+        if(browsertab.state !== "webbrowser")
+            return;
+
+        webview.experimental.evaluateJavaScript("__wp_nightmode__.switchMode(" + nightmode + ")");
+    }
+
     id: webview
     boundsBehavior: Flickable.DragAndOvershootBounds
 
@@ -118,7 +126,7 @@ SilicaWebView
                 History.store(url.toString(), title);
             }
 
-            browsertab.setNightMode(tabview.nightMode);
+            webview.setNightMode(tabview.nightMode);
         }
     }
 

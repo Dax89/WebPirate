@@ -11,7 +11,7 @@ Item
     property string pageState
 
     id: tabview
-    onNightModeChanged: tabview.currentTab().setNightMode(nightMode)
+    onNightModeChanged: tabview.currentTab().webView.setNightMode(nightMode)
     onCurrentIndexChanged: renderTab()
     Component.onCompleted: renderTab()
 
@@ -32,7 +32,7 @@ Item
 
             if(i == currentIndex)
             {
-                tab.setNightMode(nightMode);
+                tab.webView.setNightMode(nightMode);
                 tab.visible = true;
                 continue;
             }
