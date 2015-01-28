@@ -8,9 +8,10 @@ var __wp_nightmode__ = {
           return;
 
         var css = "html.__wp_nightmode__ { -webkit-filter: contrast(68%) brightness(108%) invert(); }" +
-                  "html.__wp_nightmode__ iframe { -webkit-filter: invert(); }" +
-                  "html.__wp_nightmode__ video { -webkit-filter: invert(); }" +
-                  "html.__wp_nightmode__ img { -webkit-filter: invert(); }" ;
+                  "html.__wp_nightmode__ iframe { -webkit-filter: invert(); }" + // Keep iframes normal
+                  "html.__wp_nightmode__ object { -webkit-filter: invert(); }" + // Keep Flash items normal
+                  "html.__wp_nightmode__ video { -webkit-filter: invert(); }" +  // Keep HTML5 Videos normal
+                  "html.__wp_nightmode__ img { -webkit-filter: invert(); }" ;    // Keep images normal
 
         var head = document.getElementsByTagName("head")[0];
         var style = document.createElement("style");
