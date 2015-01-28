@@ -1,6 +1,6 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
-import "../js/SearchEngines.js" as SearchEngines
+import "../../js/SearchEngines.js" as SearchEngines
 
 Item
 {
@@ -22,6 +22,10 @@ Item
 
     id: searchbar
     height: searchfield.height
+
+    Behavior on width {
+        NumberAnimation { duration: 500; easing.type: Easing.InOutElastic }
+    }
 
     TextField
     {

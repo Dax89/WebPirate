@@ -1,8 +1,8 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
-import "../js/Database.js" as Database
-import "../js/Favorites.js" as Favorites
-import "../js/UrlHelper.js" as UrlHelper
+import "../../js/Database.js" as Database
+import "../../js/Favorites.js" as Favorites
+import "../../js/UrlHelper.js" as UrlHelper
 
 Rectangle
 {
@@ -48,8 +48,8 @@ Rectangle
     {
         id: btnback
         icon.source: "image://theme/icon-m-back"
-        width: searchbar.editing ? 0 : Theme.iconSizeMedium
-        visible: width > 0
+        width: visible ? Theme.iconSizeMedium : 0
+        visible: !searchbar.editing
         anchors { left: navigationbar.left; top: parent.top; bottom: parent.bottom }
         enabled: false
 
@@ -60,8 +60,8 @@ Rectangle
     {
         id: btnhome
         icon.source: "image://theme/icon-m-home"
-        width: searchbar.editing ? 0 : Theme.iconSizeMedium
-        visible: width > 0
+        width: visible ? Theme.iconSizeMedium : 0
+        visible: !searchbar.editing
         anchors { left: btnback.right; top: parent.top; bottom: parent.bottom }
 
         onClicked: navigationbar.searchRequested(mainwindow.settings.homepage)
@@ -70,8 +70,8 @@ Rectangle
     IconButton
     {
         id: btnfavorite
-        width: (!visible || searchbar.editing) ? 0 : Theme.iconSizeMedium
-        visible: width > 0
+        width: visible ? Theme.iconSizeMedium : 0
+        visible: !searchbar.editing && ((searchbar.url.length == 0) || !UrlHelper.isSpecialUrl(searchbar.url))
         icon.source: (favorite ? "image://theme/icon-m-favorite-selected" : "image://theme/icon-m-favorite")
         anchors { left: btnhome.right; top: parent.top; bottom: parent.bottom }
 
@@ -92,18 +92,14 @@ Rectangle
         id: searchbar
         anchors { left: btnfavorite.right; right: btnrefresh.left; verticalCenter: parent.verticalCenter }
         onReturnPressed: navigationbar.searchRequested(searchquery);
-
-        onUrlChanged: {
-            btnfavorite.visible = (searchbar.url.length == 0) || !UrlHelper.isSpecialUrl(searchbar.url);
-        }
     }
 
     IconButton
     {
         id: btnrefresh
         icon.source: "image://theme/icon-m-refresh"
-        width: searchbar.editing ? 0 : Theme.iconSizeMedium
-        visible: width > 0
+        width: visible ? Theme.iconSizeMedium : 0
+        visible: !searchbar.editing
         anchors { right: btnforward.left; top: parent.top; bottom: parent.bottom }
 
         onClicked: {
@@ -118,8 +114,8 @@ Rectangle
     {
         id: btnforward
         icon.source: "image://theme/icon-m-forward"
-        width: searchbar.editing ? 0 : Theme.iconSizeMedium
-        visible: width > 0
+        width: visible ? Theme.iconSizeMedium : 0
+        visible: !searchbar.editing
         anchors { right: parent.right; top: parent.top; bottom: parent.bottom }
         enabled: false
 

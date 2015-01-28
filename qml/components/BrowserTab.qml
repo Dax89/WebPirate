@@ -1,5 +1,6 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
+import "navigationbar"
 import "menus"
 import "quickgrid"
 import "../js/UrlHelper.js" as UrlHelper

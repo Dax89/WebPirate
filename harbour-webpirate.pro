@@ -39,8 +39,8 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/js/UrlHelper.js \
     qml/js/SearchEngines.js \
     qml/js/Favorites.js \
-    qml/components/SearchBar.qml \
-    qml/components/NavigationBar.qml \
+    qml/components/navigationbar/SearchBar.qml \
+    qml/components/navigationbar/NavigationBar.qml \
     qml/components/LoadingBar.qml \
     qml/components/LoadFailed.qml \
     qml/components/BrowserTab.qml \
