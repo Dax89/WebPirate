@@ -20,7 +20,7 @@ Item
     }
 
     id: mbprogressbar
-    height: 18
+    height: 20
 
     Label
     {
