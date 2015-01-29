@@ -14,7 +14,7 @@ Page
                                                           readonly property string translators: "gexc"; },
 
                                                QtObject { readonly property string language: qsTr("Czech");
-                                                          readonly property string translators: "nodevel"; },
+                                                          readonly property string translators: "nodevel, Bobsikus"; },
 
                                                QtObject { readonly property string language: qsTr("Dutch");
                                                           readonly property string translators: "Vistaus, pljmn"; },
