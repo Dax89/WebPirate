@@ -8,6 +8,16 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Thu Jan 29 2015 Antonio Davide Trogu <trogu.davide@gmail.com> 0.9.1-1
+- Polished UI
+- Expand Search Bar when focused
+- Added menu that allows to delete all favorites
+- Fixed Tab Header behavior
+- Display Loading circle in tabs
+- Increased MediaPlayer progress bar's height
+- Implemented Night Mode
+- Updated all localizations, some are incomplete: Catalan (96%), Japanese (96%), French (79%) and Slovenian (59%)
+
 * Mon Jan 26 2015 Antonio Davide Trogu <trogu.davide@gmail.com> 0.9-1
 - Added SVG Image support
 - Added YouTube playback support

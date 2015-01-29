@@ -57,15 +57,15 @@
     </message>
     <message>
         <source>Slovenian</source>
-        <translation type="unfinished"></translation>
+        <translation>Slovinština</translation>
     </message>
     <message>
         <source>Japanese</source>
-        <translation type="unfinished"></translation>
+        <translation>Japonština</translation>
     </message>
     <message>
         <source>Czech</source>
-        <translation type="unfinished"></translation>
+        <translation>Čeština</translation>
     </message>
 </context>
 <context>
@@ -96,27 +96,27 @@
     </message>
     <message>
         <source>Sessions</source>
-        <translation>Sezení</translation>
+        <translation>Relace</translation>
     </message>
     <message>
         <source>Save Session</source>
-        <translation>Uložit sezení</translation>
+        <translation>Uložit relaci</translation>
     </message>
     <message>
         <source>Load Session</source>
-        <translation>Načíst sezení</translation>
+        <translation>Načíst relaci</translation>
     </message>
     <message>
         <source>Cover settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Nastavení obalu</translation>
     </message>
     <message>
         <source>Night Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Noční režim</translation>
     </message>
     <message>
         <source>Extensions</source>
-        <translation type="unfinished"></translation>
+        <translation>Doplňky</translation>
     </message>
 </context>
 <context>
@@ -145,62 +145,62 @@
     <name>CoverModel</name>
     <message>
         <source>Go to Previous Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Předchozí panel</translation>
     </message>
     <message>
         <source>Go to Next Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Následující panel</translation>
     </message>
     <message>
         <source>Add New Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Přidat nový panel</translation>
     </message>
     <message>
         <source>Close Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Zavřít panel</translation>
     </message>
     <message>
         <source>Load Homepage</source>
-        <translation type="unfinished"></translation>
+        <translation>Načíst domovskou stránku</translation>
     </message>
     <message>
         <source>Close Browser</source>
-        <translation type="unfinished"></translation>
+        <translation>Zavřít prohlížeč</translation>
     </message>
     <message>
         <source>Reload Current Page</source>
-        <translation type="unfinished"></translation>
+        <translation>Znovu načíst stránku</translation>
     </message>
     <message>
         <source>Wipe personal data</source>
-        <translation type="unfinished"></translation>
+        <translation>Vymazat soukromá data</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Hledat</translation>
     </message>
 </context>
 <context>
     <name>CoverSettingsPage</name>
     <message>
         <source>General Actions</source>
-        <translation type="unfinished"></translation>
+        <translation>Běžné akce</translation>
     </message>
     <message>
         <source>Left</source>
-        <translation type="unfinished"></translation>
+        <translation>Vlevo</translation>
     </message>
     <message>
         <source>Right</source>
-        <translation type="unfinished"></translation>
+        <translation>Vpravo</translation>
     </message>
     <message>
         <source>Webpage Actions</source>
-        <translation type="unfinished"></translation>
+        <translation>Webové akce</translation>
     </message>
     <message>
         <source>Cover Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Nastavení obalu</translation>
     </message>
 </context>
 <context>
@@ -299,19 +299,19 @@
     </message>
     <message>
         <source>Favorites exported successfully</source>
-        <translation>Úspěšný export záložek</translation>
+        <translation>Záložky úspěšně exportovány</translation>
     </message>
     <message>
         <source>Favorites imported successfully</source>
-        <translation>Úspěšný import záložek</translation>
+        <translation>Záložky úspěšně importovány</translation>
     </message>
     <message>
         <source>Delete all Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Vymazat všechny oblíbené</translation>
     </message>
     <message>
         <source>Deleting all favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Mažou se všechny oblíbené</translation>
     </message>
 </context>
 <context>
@@ -402,7 +402,7 @@
     <name>QuickGrid</name>
     <message>
         <source>The QuickGrid is empty</source>
-        <translation type="unfinished"></translation>
+        <translation>Rychlá volba je prázdná</translation>
     </message>
 </context>
 <context>
@@ -442,11 +442,11 @@
     <name>SaveSessionPage</name>
     <message>
         <source>Save Session</source>
-        <translation>Uložit sezení</translation>
+        <translation>Uložit relaci</translation>
     </message>
     <message>
         <source>Session name</source>
-        <translation>Název sezení</translation>
+        <translation>Název relaci</translation>
     </message>
     <message>
         <source>Load at startup</source>
@@ -469,7 +469,7 @@
     <name>SearchBar</name>
     <message>
         <source>Search with</source>
-        <translation>Hledat s</translation>
+        <translation>Hledat přes</translation>
     </message>
 </context>
 <context>
@@ -518,11 +518,11 @@
     <name>SessionPage</name>
     <message>
         <source>Save Session</source>
-        <translation>Uložit sezení</translation>
+        <translation>Uložit relaci</translation>
     </message>
     <message>
         <source>Session name</source>
-        <translation>Název sezení</translation>
+        <translation>Název relaci</translation>
     </message>
     <message>
         <source>Load at startup</source>
@@ -530,7 +530,7 @@
     </message>
     <message>
         <source>Replace current session</source>
-        <translation>Nahradit současné sezení</translation>
+        <translation>Nahradit současnou relaci</translation>
     </message>
     <message>
         <source>Opened Tabs</source>
@@ -545,7 +545,7 @@
     <name>SessionSettingsPage</name>
     <message>
         <source>Session Manager</source>
-        <translation>Správce sezení</translation>
+        <translation>Správce relací</translation>
     </message>
     <message>
         <source>Tabs saved</source>
@@ -565,7 +565,7 @@
     </message>
     <message>
         <source>Deleting session</source>
-        <translation>Mažu sezení</translation>
+        <translation>Mažu relaci</translation>
     </message>
 </context>
 <context>

@@ -65,7 +65,7 @@
     </message>
     <message>
         <source>Czech</source>
-        <translation type="unfinished"></translation>
+        <translation>Чешский</translation>
     </message>
 </context>
 <context>
@@ -112,11 +112,11 @@
     </message>
     <message>
         <source>Night Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Ночной режим</translation>
     </message>
     <message>
         <source>Extensions</source>
-        <translation type="unfinished"></translation>
+        <translation>Расширения</translation>
     </message>
 </context>
 <context>
@@ -307,11 +307,11 @@
     </message>
     <message>
         <source>Delete all Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Удалить все закладки</translation>
     </message>
     <message>
         <source>Deleting all favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Удаление всех закладок</translation>
     </message>
 </context>
 <context>

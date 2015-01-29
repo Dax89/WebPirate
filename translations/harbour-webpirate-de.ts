@@ -65,7 +65,7 @@
     </message>
     <message>
         <source>Czech</source>
-        <translation type="unfinished"></translation>
+        <translation>Tschechisch</translation>
     </message>
 </context>
 <context>
@@ -112,11 +112,11 @@
     </message>
     <message>
         <source>Night Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Nachtmodus</translation>
     </message>
     <message>
         <source>Extensions</source>
-        <translation type="unfinished"></translation>
+        <translation>Erweiterungen</translation>
     </message>
 </context>
 <context>
@@ -161,7 +161,7 @@
     </message>
     <message>
         <source>Load Homepage</source>
-        <translation>Hompage laden</translation>
+        <translation>Startseite laden</translation>
     </message>
     <message>
         <source>Close Browser</source>
@@ -307,11 +307,11 @@
     </message>
     <message>
         <source>Delete all Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Alle Favoriten löschen</translation>
     </message>
     <message>
         <source>Deleting all favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Favoriten werden gelöscht</translation>
     </message>
 </context>
 <context>
@@ -326,7 +326,7 @@
     </message>
     <message>
         <source>Deleting Favorite</source>
-        <translation>Favorit wird entfernt</translation>
+        <translation>Favorit wird gelöscht</translation>
     </message>
     <message>
         <source>Deleting Folder</source>

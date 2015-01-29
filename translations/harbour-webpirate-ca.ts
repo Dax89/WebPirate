@@ -57,11 +57,11 @@
     </message>
     <message>
         <source>Slovenian</source>
-        <translation type="unfinished"></translation>
+        <translation>Eslovè</translation>
     </message>
     <message>
         <source>Japanese</source>
-        <translation type="unfinished"></translation>
+        <translation>Japonès</translation>
     </message>
     <message>
         <source>Czech</source>
@@ -96,19 +96,19 @@
     </message>
     <message>
         <source>Sessions</source>
-        <translation type="unfinished"></translation>
+        <translation>Sessions</translation>
     </message>
     <message>
         <source>Save Session</source>
-        <translation type="unfinished"></translation>
+        <translation>Desa la sessió</translation>
     </message>
     <message>
         <source>Load Session</source>
-        <translation type="unfinished"></translation>
+        <translation>Carrega una sessió</translation>
     </message>
     <message>
         <source>Cover settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Configuració de portada</translation>
     </message>
     <message>
         <source>Night Mode</source>
@@ -127,7 +127,7 @@
     </message>
     <message>
         <source>Load Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Error de càrrega</translation>
     </message>
 </context>
 <context>
@@ -145,62 +145,62 @@
     <name>CoverModel</name>
     <message>
         <source>Go to Previous Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Vés a la pestanya anterior</translation>
     </message>
     <message>
         <source>Go to Next Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Vés a la pestanya següent</translation>
     </message>
     <message>
         <source>Add New Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Afegeix una pestanya nova</translation>
     </message>
     <message>
         <source>Close Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Tanca la pestanya</translation>
     </message>
     <message>
         <source>Load Homepage</source>
-        <translation type="unfinished"></translation>
+        <translation>Carrega la pàgina d&apos;inici</translation>
     </message>
     <message>
         <source>Close Browser</source>
-        <translation type="unfinished"></translation>
+        <translation>Tanca el navegador</translation>
     </message>
     <message>
         <source>Reload Current Page</source>
-        <translation type="unfinished"></translation>
+        <translation>Torna a carregar la pàgina actual</translation>
     </message>
     <message>
         <source>Wipe personal data</source>
-        <translation type="unfinished"></translation>
+        <translation>Neteja les dades personals</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Cerca</translation>
     </message>
 </context>
 <context>
     <name>CoverSettingsPage</name>
     <message>
         <source>General Actions</source>
-        <translation type="unfinished"></translation>
+        <translation>Accions generals</translation>
     </message>
     <message>
         <source>Left</source>
-        <translation type="unfinished"></translation>
+        <translation>Esquerre</translation>
     </message>
     <message>
         <source>Right</source>
-        <translation type="unfinished"></translation>
+        <translation>Dreta</translation>
     </message>
     <message>
         <source>Webpage Actions</source>
-        <translation type="unfinished"></translation>
+        <translation>Accions de pàgina web</translation>
     </message>
     <message>
         <source>Cover Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Configuració de portada</translation>
     </message>
 </context>
 <context>
@@ -334,11 +334,11 @@
     </message>
     <message>
         <source>Open</source>
-        <translation type="unfinished">Obre</translation>
+        <translation>Obre</translation>
     </message>
     <message>
         <source>Open in New Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Obre en una pestanya nova</translation>
     </message>
 </context>
 <context>
@@ -402,7 +402,7 @@
     <name>QuickGrid</name>
     <message>
         <source>The QuickGrid is empty</source>
-        <translation type="unfinished"></translation>
+        <translation>La reixeta és buida</translation>
     </message>
 </context>
 <context>
@@ -442,27 +442,27 @@
     <name>SaveSessionPage</name>
     <message>
         <source>Save Session</source>
-        <translation type="unfinished"></translation>
+        <translation>Desa la sessió</translation>
     </message>
     <message>
         <source>Session name</source>
-        <translation type="unfinished"></translation>
+        <translation>Nom de la sessió</translation>
     </message>
     <message>
         <source>Load at startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Carrega en iniciar</translation>
     </message>
     <message>
         <source>Replace current session</source>
-        <translation type="unfinished"></translation>
+        <translation>Substitueix la sessió actual</translation>
     </message>
     <message>
         <source>Opened Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Pestanyes obertes</translation>
     </message>
     <message>
         <source>Selected</source>
-        <translation type="unfinished"></translation>
+        <translation>Seleccionat</translation>
     </message>
 </context>
 <context>
@@ -518,54 +518,54 @@
     <name>SessionPage</name>
     <message>
         <source>Save Session</source>
-        <translation type="unfinished"></translation>
+        <translation>Desa la sessió</translation>
     </message>
     <message>
         <source>Session name</source>
-        <translation type="unfinished"></translation>
+        <translation>Nom de sessió</translation>
     </message>
     <message>
         <source>Load at startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Carrega en iniciar</translation>
     </message>
     <message>
         <source>Replace current session</source>
-        <translation type="unfinished"></translation>
+        <translation>Substitueix la sessió actual</translation>
     </message>
     <message>
         <source>Opened Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Pestanyes obertes</translation>
     </message>
     <message>
         <source>Selected</source>
-        <translation type="unfinished"></translation>
+        <translation>Seleccionat</translation>
     </message>
 </context>
 <context>
     <name>SessionSettingsPage</name>
     <message>
         <source>Session Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Gestor de sessions</translation>
     </message>
     <message>
         <source>Tabs saved</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;han desat les pestanyes</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation type="unfinished">Obre</translation>
+        <translation>Obre</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="unfinished">Edita</translation>
+        <translation>Edita</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Elimina</translation>
+        <translation>Elimina</translation>
     </message>
     <message>
         <source>Deleting session</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;està eliminant la sessió</translation>
     </message>
 </context>
 <context>
@@ -658,7 +658,7 @@
     </message>
     <message>
         <source>Grabbing video</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;està capturant el vídeo</translation>
     </message>
 </context>
 </TS>

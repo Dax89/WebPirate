@@ -17,5 +17,5 @@ QtObject
     property string homepage;   /* HomePage Url */
     property bool clearonexit;  /* Wipe UserData on exit */
 
-    readonly property string version: "0.9"
+    readonly property string version: "0.9.1"
 }

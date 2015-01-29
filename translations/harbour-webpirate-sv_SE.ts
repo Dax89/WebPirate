@@ -65,7 +65,7 @@
     </message>
     <message>
         <source>Czech</source>
-        <translation type="unfinished"></translation>
+        <translation>Tjeckiska</translation>
     </message>
 </context>
 <context>
@@ -108,15 +108,15 @@
     </message>
     <message>
         <source>Cover settings</source>
-        <translation>Omslagsinställningar</translation>
+        <translation>Miniatyrinställningar</translation>
     </message>
     <message>
         <source>Night Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Nattläge</translation>
     </message>
     <message>
         <source>Extensions</source>
-        <translation type="unfinished"></translation>
+        <translation>Tillägg</translation>
     </message>
 </context>
 <context>
@@ -200,7 +200,7 @@
     </message>
     <message>
         <source>Cover Settings</source>
-        <translation>Omslagsinställningar</translation>
+        <translation>Miniatyrinställningar</translation>
     </message>
 </context>
 <context>
@@ -307,11 +307,11 @@
     </message>
     <message>
         <source>Delete all Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Ta bort alla favoriter</translation>
     </message>
     <message>
         <source>Deleting all favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Tar bort alla favoriter</translation>
     </message>
 </context>
 <context>
