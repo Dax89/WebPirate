@@ -104,6 +104,7 @@ SilicaWebView
 
         if(loadRequest.status === WebView.LoadStartedStatus) {
             navigationbar.solidify();
+            tabheader.solidify();
             linkmenu.hide();
             sidebar.collapse();
             historymenu.hide();
