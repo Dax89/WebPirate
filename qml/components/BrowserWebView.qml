@@ -21,7 +21,6 @@ SilicaWebView
     }
 
     id: webview
-    boundsBehavior: Flickable.DragAndOvershootBounds
 
     VerticalScrollDecorator { flickable: webview }
 
@@ -115,7 +114,6 @@ SilicaWebView
         }
         else if (loadRequest.status === WebView.LoadSucceededStatus)  {
             navigationbar.favorite = Favorites.contains(url.toString());
-            tabheader.evaporate();
 
             if(!UrlHelper.isSpecialUrl(url.toString()) && UrlHelper.isUrl(url.toString()))
             {
@@ -161,7 +159,7 @@ SilicaWebView
         {
             navigationbar.solidify();
 
-            if((Math.abs(verticalVelocity) > Screen.height) || (contentY < -Theme.itemSizeExtraSmall)) /* Catch Bounce effect and QuickScroll: make TabHeader solid, if needed */
+            if((Math.abs(verticalVelocity) > Screen.height) || (contentY <= 0)) /* Catch Page's begin and QuickScroll: make TabHeader solid, if needed */
                 tabheader.solidify();
         }
         else if((verticalVelocity > 0) && (contentY > Theme.itemSizeLarge)) /* Keep Items visibile a little bit */

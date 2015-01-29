@@ -114,7 +114,7 @@ Item
         Item
         {
             id: stack
-            anchors.fill: parent
+            anchors { left: parent.left; right: parent.right; top: tabheader.bottom; bottom: parent.bottom }
         }
     }
 
