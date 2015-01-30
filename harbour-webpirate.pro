@@ -29,7 +29,8 @@ SOURCES += src/harbour-webpirate.cpp \
     src/faviconprovider.cpp \
     src/favoritesmanager/favoriteitem.cpp \
     src/dbus/webpirateadaptor.cpp \
-    src/dbus/webpirateservice.cpp
+    src/dbus/webpirateservice.cpp \
+    src/mime/mimedatabase.cpp
 
 OTHER_FILES += qml/harbour-webpirate.qml \
     rpm/harbour-webpirate.changes.in \
@@ -140,5 +141,6 @@ HEADERS += \
     src/faviconprovider.h \
     src/favoritesmanager/favoriteitem.h \
     src/dbus/webpirateadaptor.h \
-    src/dbus/webpirateservice.h
+    src/dbus/webpirateservice.h \
+    src/mime/mimedatabase.h
 

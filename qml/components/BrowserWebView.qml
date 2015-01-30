@@ -89,6 +89,15 @@ SilicaWebView
     }
 
     experimental.onDownloadRequested: {
+        var mime = mimedatabase.mimeFromUrl(downloadItem.url);
+        var mimeinfo = mime.split("/");
+
+        if(mimeinfo[0] === "video")
+        {
+            pageStack.push(Qt.resolvedUrl("../pages/VideoPlayerPage.qml"), { "videoSource": downloadItem.url });
+            return;
+        }
+
         tabviewremorse.execute(qsTr("Downloading") + " " + downloadItem.suggestedFilename,
                                function() {
                                    mainwindow.settings.downloadmanager.createDownload(downloadItem.url);

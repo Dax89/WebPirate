@@ -33,6 +33,7 @@
 #include "dbus/webpirateservice.h"
 #include "favoritesmanager/favoritesmanager.h"
 #include "downloadmanager/downloadmanager.h"
+#include "mime/mimedatabase.h"
 #include "webviewdatabase.h"
 #include "faviconprovider.h"
 
@@ -48,6 +49,7 @@ int main(int argc, char *argv[])
     qmlRegisterType<DownloadManager>("WebPirate", 1, 0, "DownloadManager");
     qmlRegisterType<FavoritesManager>("WebPirate", 1, 0, "FavoritesManager");
 
+    MimeDatabase mimedb;
     WebPirateService wpservice;
     WebViewDatabase webviewdb;
 
@@ -57,6 +59,7 @@ int main(int argc, char *argv[])
     QObject::connect(engine, SIGNAL(quit()), application.data(), SLOT(quit()));
 
     engine->addImageProvider(WebIconDatabase::PROVIDER_NAME, new FaviconProvider());
+    engine->rootContext()->setContextProperty("mimedatabase", &mimedb);
     engine->rootContext()->setContextProperty("webviewdatabase", &webviewdb);
     engine->rootContext()->setContextProperty("webpirateservice", &wpservice);
 
