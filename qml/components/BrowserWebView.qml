@@ -114,15 +114,16 @@ SilicaWebView
             browsertab.state = "loaderror";
         }
         else if (loadRequest.status === WebView.LoadSucceededStatus)  {
-            navigationbar.favorite = Favorites.contains(url.toString());
+            var stringurl = url.toString();
+            navigationbar.favorite = Favorites.contains(stringurl);
 
-            if(!UrlHelper.isSpecialUrl(url.toString()) && UrlHelper.isUrl(url.toString()))
+            if(!UrlHelper.isSpecialUrl(stringurl) && UrlHelper.isUrl(stringurl))
             {
                 webview.experimental.evaluateJavaScript("__webpirate__.polishDocument();
                                                          __yt_webpirate__.convertVideo();");
 
-                Credentials.compile(Database.instance(), mainwindow.settings, url.toString(), webview);
-                History.store(url.toString(), title);
+                Credentials.compile(Database.instance(), mainwindow.settings, stringurl, webview);
+                History.store(stringurl, title);
             }
 
             webview.setNightMode(tabview.nightMode);
