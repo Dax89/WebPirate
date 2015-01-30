@@ -2,7 +2,7 @@
 
 .import "UrlHelper.js" as UrlHelper
 
-var ytregex = new RegExp("www\\.youtube\\.[^/]+/watch\\?v\\=([^&]+)");
+var ytregex = new RegExp("[www|m]+\\.youtube\\.[^/]+.*/watch\\?v\\=([^&]+)");
 
 function isYouTubeVideo(url)
 {

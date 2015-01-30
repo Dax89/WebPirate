@@ -8,6 +8,33 @@ var __yt_webpirate__ = {
         navigator.qt.postMessage(JSON.stringify(data));
     },
 
+    grabPlayerElement: function() {
+        var ytplayercontainer = document.getElementById("player-mole-container"); /* Standard Version */
+
+        if(!ytplayercontainer) /* Try the mobile version */
+        {
+            var content = document.getElementById("content");
+            ytplayercontainer = content.querySelector("div > a > div").parentElement.parentElement;
+
+            if(!ytplayercontainer)
+                return null;
+
+            ytplayercontainer.style.width = "100%";
+            ytplayercontainer.style.height = "153px";
+            ytplayercontainer.style.maxWidth = "320px";
+        }
+        else
+            ytplayercontainer.className = "player-width player-height";
+
+        ytplayercontainer.style.backgroundColor = "#1b1b1b";
+
+        /* Clear Item */
+        while(ytplayercontainer.firstChild)
+            ytplayercontainer.removeChild(ytplayercontainer.firstChild);
+
+        return ytplayercontainer;
+    },
+
     createPlayer: function(videoid) {
         var ytplayer = document.createElement("div")
         ytplayer.id = "__wp_ytplayer__";
@@ -51,18 +78,15 @@ var __yt_webpirate__ = {
     },
 
     checkYouTubeVideo: function() {
-        var location = document.location;
+        var ytregex = new RegExp("[www|m]+\\.youtube\\.[^/]+.*/watch\\?v\\=([^&]+)");
 
-        if((location.hostname.indexOf("www.youtube") !== 0) || (location.pathname !== "/watch") || (location.search.indexOf("?v=") !== 0))
+        if(!ytregex.test(document.location.href))
             return false;
 
-        var ytplayercontainer = document.getElementById("player-mole-container");
+        var ytplayercontainer = __yt_webpirate__.grabPlayerElement();
 
         if(!ytplayercontainer)
             return false;
-
-        while(ytplayercontainer.firstChild)
-          ytplayercontainer.removeChild(ytplayercontainer.firstChild)
 
         // Remove this element so we can click the link
         var thbackground = document.getElementById("theater-background");
@@ -70,24 +94,20 @@ var __yt_webpirate__ = {
         if(thbackground)
             thbackground.parentNode.removeChild(thbackground);
 
-        ytplayercontainer.className = "player-width player-height";
-        ytplayercontainer.style.backgroundColor = "#1b1b1b";
-
-        var ytregex = new RegExp("www\\.youtube\\.[^/]+/watch\\?v\\=([^&]+)");
-        var cap = ytregex.exec(location.href);
-
-        if(!cap || (cap && !cap[1]))
-            return false;
-
+        var cap = ytregex.exec(document.location.href);
         var ytplayer = __yt_webpirate__.createPlayer(cap[1]);
-        ytplayer.className = "player-width player-height";
+        ytplayer.style.width = "100%";
+        ytplayer.style.height = "100%";
 
         ytplayercontainer.appendChild(ytplayer);
         return true;
     },
 
     convertVideo: function() {
-        if(!__yt_webpirate__.checkYouTubeVideo())
-            __yt_webpirate__.checkEmbeddedYouTubeVideo();
+        setTimeout(function() {
+            if(!__yt_webpirate__.checkYouTubeVideo())
+                __yt_webpirate__.checkEmbeddedYouTubeVideo();
+        }, 800);
     }
 }
+
