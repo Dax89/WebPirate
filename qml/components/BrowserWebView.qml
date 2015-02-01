@@ -171,7 +171,7 @@ SilicaWebView
     onTitleChanged: navigationbar.searchBar.title = title;
 
     onVisibleChanged: {
-        if(!visible)
+        if((Qt.application.state === Qt.ApplicationActive) && !visible)
             tabheader.solidify();
     }
 
