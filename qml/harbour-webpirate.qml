@@ -77,6 +77,7 @@ ApplicationWindow
             var ua = Database.get("useragent");
             settings.useragent = (ua === false ? 0 : ua);
 
+            settings.blockads = Database.get("blockads");
             settings.clearonexit = parseInt(Database.get("clearonexit"));
         }
     }
@@ -89,8 +90,7 @@ ApplicationWindow
     cover: null
 
     Component.onDestruction: {
-        if(settings.clearonexit)
-        {
+        if(settings.clearonexit) {
             webviewdatabase.clearCache();
             webviewdatabase.clearNavigationData();
             Credentials.clear(Database.instance());

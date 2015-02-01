@@ -1,5 +1,6 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
+import "../../js/Database.js" as Database
 
 Item
 {
@@ -83,6 +84,21 @@ Item
             {
                 id: extensionsection
                 text: qsTr("Extensions")
+            }
+
+            SidebarSwitch
+            {
+                anchors { left: parent.left; right: parent.right }
+                text: qsTr("Block Ads")
+
+                Component.onCompleted: {
+                    switchItem.checked = Database.get("blockads");
+                }
+
+                switchItem.onCheckedChanged: {
+                    mainwindow.settings.blockads = switchItem.checked;
+                    Database.set("blockads", switchItem.checked ? 1 : 0);
+                }
             }
 
             SidebarSwitch

@@ -20,6 +20,14 @@ SilicaWebView
         webview.experimental.evaluateJavaScript("__wp_nightmode__.switchMode(" + nightmode + ")");
     }
 
+    function blockAds()
+    {
+        if(browsertab.state !== "webbrowser")
+            return;
+
+        webview.experimental.evaluateJavaScript("__wp_adblock__.blockAds()");
+    }
+
     id: webview
 
     VerticalScrollDecorator { flickable: webview }
@@ -40,6 +48,7 @@ SilicaWebView
 
                                 /* Custom WebView Helpers */
                                 Qt.resolvedUrl("../js/helpers/WebViewHelper.js"),
+                                Qt.resolvedUrl("../js/helpers/AdBlock.js"),
                                 Qt.resolvedUrl("../js/helpers/YouTubeHelper.js"),
                                 Qt.resolvedUrl("../js/helpers/NightMode.js")]
 
@@ -134,6 +143,9 @@ SilicaWebView
                 Credentials.compile(Database.instance(), mainwindow.settings, stringurl, webview);
                 History.store(stringurl, title);
             }
+
+            if(mainwindow.settings.blockads)
+                webview.blockAds();
 
             webview.setNightMode(tabview.nightMode);
         }

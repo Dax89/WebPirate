@@ -118,6 +118,10 @@
         <source>Extensions</source>
         <translation>Extensies</translation>
     </message>
+    <message>
+        <source>Block Ads</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>BrowserTab</name>
