@@ -32,7 +32,7 @@ Rectangle
     z: 1
     height: Theme.iconSizeMedium
     color: Theme.rgba(Theme.highlightDimmerColor, 1.0)
-    visible: (opacity > 0.0) && (Qt.application.state === Qt.ApplicationActive)
+    visible: opacity > 0.0
     onWidthChanged: calculateTabWidth()
 
     Behavior on height {

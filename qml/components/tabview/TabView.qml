@@ -9,6 +9,8 @@ Item
     property int currentIndex: -1
     property string pageState
 
+    property alias header: tabheader
+
     id: tabview
     onCurrentIndexChanged: renderTab()
     Component.onCompleted: renderTab()

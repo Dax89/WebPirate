@@ -43,6 +43,18 @@ Page
 
     Connections
     {
+        target: Qt.application
+
+        onStateChanged: {
+            if((Qt.application.state !== Qt.ApplicationActive) && (tabview.pageState === "webbrowser"))
+                tabview.header.evaporate();
+            else
+                tabview.header.solidify();
+        }
+    }
+
+    Connections
+    {
         target: webpirateservice
 
         onUrlRequested: {
