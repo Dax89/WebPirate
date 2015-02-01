@@ -111,7 +111,8 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     rpm/harbour-webpirate.yaml \
     qml/js/helpers/NightMode.js \
     qml/components/sidebar/SidebarSwitch.qml \
-    qml/js/helpers/AdBlock.js
+    qml/js/helpers/AdBlock.js \
+    qml/js/helpers/ForcePixelRatio.js
 
 # to disable building translations every time, comment out the
 # following CONFIG line

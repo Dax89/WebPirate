@@ -47,6 +47,7 @@ SilicaWebView
                                 Qt.resolvedUrl("../js/canvg/canvg.js"),
 
                                 /* Custom WebView Helpers */
+                                Qt.resolvedUrl("../js/helpers/ForcePixelRatio.js"),
                                 Qt.resolvedUrl("../js/helpers/WebViewHelper.js"),
                                 Qt.resolvedUrl("../js/helpers/AdBlock.js"),
                                 Qt.resolvedUrl("../js/helpers/YouTubeHelper.js"),
