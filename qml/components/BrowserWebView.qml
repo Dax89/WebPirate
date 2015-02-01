@@ -147,7 +147,7 @@ SilicaWebView
             if(mainwindow.settings.blockads)
                 webview.blockAds();
 
-            webview.setNightMode(tabview.nightMode);
+            webview.setNightMode(mainwindow.settings.nightmode);
         }
     }
 

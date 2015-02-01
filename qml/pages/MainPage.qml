@@ -53,6 +53,12 @@ Page
         }
     }
 
+    Connections
+    {
+        target: settings
+        onNightmodeChanged: tabview.currentTab().webView.setNightMode(settings.nightmode)
+    }
+
     TabView
     {
         id: tabview

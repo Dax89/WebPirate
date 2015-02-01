@@ -107,7 +107,7 @@ Item
                 text: qsTr("Night Mode")
 
                 switchItem.onCheckedChanged: {
-                    tabview.nightMode = switchItem.checked;
+                    mainwindow.settings.nightmode = switchItem.checked;
                 }
             }
 
