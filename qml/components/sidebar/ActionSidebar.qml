@@ -92,7 +92,7 @@ Item
                 text: qsTr("Block Ads")
 
                 Component.onCompleted: {
-                    switchItem.checked = Database.get("blockads");
+                    switchItem.checked = mainwindow.settings.blockads;
                 }
 
                 switchItem.onCheckedChanged: {
