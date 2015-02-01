@@ -29,7 +29,6 @@ var __wp_adblock__ = {
     blockedSelectors: [ "script + ins",
                         "div[id^='dotnAd']",
                         "div[id^='meetic']",
-                        "div[id^='meetic']",
                         "div[id^='eadv']",
                         "div[class*='adv']",
                         "div[class$='fblikebox']",
