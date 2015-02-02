@@ -10,6 +10,7 @@
 
 * Mob Feb 02 2015 Antonio Davide Trogu <trogu.davide@gmail.com> 0.9.2-1
 - Implemented a simple AdBlocking system (more work on this in the next releases)
+- BUGFIX: Allow to open a website using the ip address
 - Adjusted the default User Agent in order to display mobile websites, if needed
 - YouTube grabber works in mobile version too
 - Always hide the Tab Header when the application is not active
