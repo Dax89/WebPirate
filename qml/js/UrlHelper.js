@@ -1,13 +1,16 @@
 .pragma library
 
+var domainregex = new RegExp("http[s]*://[a-zA-Z0-9-_]*[\\.]*[a-zA-Z0-9-_]+\\.[a-zA-Z0-9-_\\.]+");
+var urlregex = new RegExp("[-a-zA-Z0-9@:%._\\+~#=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%_\\+.~#?&//=]*)");
+var ipregex = new RegExp("[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}");
+var httpregex = new RegExp("^(http|https)://");
+
 function adjustUrl(adjurl)
 {
     if(isSpecialUrl(adjurl))
         return adjurl;
 
-    var regex = new RegExp("^(http|https)://")
-
-    if(!regex.test(adjurl))
+    if(!httpregex.test(adjurl))
         return "http://" + adjurl
 
     return adjurl
@@ -15,8 +18,7 @@ function adjustUrl(adjurl)
 
 function domainName(url)
 {
-    var regex = new RegExp("http[s]*://[a-zA-Z0-9-_]*[\\.]*[a-zA-Z0-9-_]+\\.[a-zA-Z0-9-_\\.]+");
-    return regex.exec(adjustUrl(url))[0];
+    return domainregex.exec(adjustUrl(url))[0];
 }
 
 function urlPath(url)
@@ -31,8 +33,7 @@ function urlPath(url)
 
 function isUrl(url)
 {
-    var regex = new RegExp("[-a-zA-Z0-9@:%._\\+~#=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%_\\+.~#?&//=]*)");
-    return regex.test(url);
+    return urlregex.test(url) || ipregex.test(url);
 }
 
 function isSpecialUrl(url)
