@@ -19,5 +19,5 @@ QtObject
     property bool blockads;          /* Block Ads */
     property bool nightmode: false;  /* Night Mode */
 
-    readonly property string version: "0.9.1"
+    readonly property string version: "0.9.2"
 }

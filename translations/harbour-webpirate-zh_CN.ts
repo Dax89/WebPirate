@@ -120,7 +120,7 @@
     </message>
     <message>
         <source>Block Ads</source>
-        <translation type="unfinished"></translation>
+        <translation>屏蔽广告</translation>
     </message>
 </context>
 <context>

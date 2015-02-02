@@ -120,7 +120,7 @@
     </message>
     <message>
         <source>Block Ads</source>
-        <translation type="unfinished"></translation>
+        <translation>Advertenties blokkeren</translation>
     </message>
 </context>
 <context>

@@ -120,7 +120,7 @@
     </message>
     <message>
         <source>Block Ads</source>
-        <translation type="unfinished"></translation>
+        <translation>Blokovat reklamy</translation>
     </message>
 </context>
 <context>
