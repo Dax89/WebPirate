@@ -6,13 +6,22 @@ PopupMenu
     property QtObject selectorModel
     property bool accepted: false
 
+    QtObject
+    {
+        property bool navigationWasVisible: true
+        id: itemselectorprivate
+    }
+
     id: itemselector
     visible: true
     titleVisible: false
     onClicked: selectorModel.reject();
-    anchors.fill: parent
+    width: Screen.width
+    height: Screen.height - tabheader.height
 
     popupDelegate: ListItem {
+        contentHeight: Theme.itemSizeSmall
+        contentWidth: parent.width
         highlighted: model.selected
         enabled: model.enabled
 
@@ -35,7 +44,15 @@ PopupMenu
     }
 
     Component.onCompleted: {
+        itemselectorprivate.navigationWasVisible = navigationbar.visible;
+        navigationbar.evaporate();
+
         itemselector.accepted = false
         itemselector.show();
+    }
+
+    Component.onDestruction: {
+        if(itemselectorprivate.navigationWasVisible)
+            navigationbar.solidify();
     }
 }

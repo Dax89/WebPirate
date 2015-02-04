@@ -25,32 +25,29 @@ MouseArea
     onClicked: hide()
 
     onTitleVisibleChanged: {
-        lblheader.visible = titleVisible
+        lblheader.visible = titleVisible;
     }
 
     Rectangle
     {
         id: popupmenu
-        anchors.bottom: parent.bottom
-        anchors.left: parent.left
-        anchors.right: parent.right
-
-        Behavior on height {
-            NumberAnimation { duration: 100; easing.type: Easing.InOutQuad }
-        }
+        visible: height > 0
+        anchors { left: parent.left; right: parent.right; bottom: parent.bottom }
 
         gradient: Gradient {
             GradientStop { position: 0.0; color: Theme.rgba(Theme.highlightDimmerColor, 1.0) }
             GradientStop { position: 1.0; color: Theme.rgba(Theme.highlightDimmerColor, 0.9) }
         }
 
-        onHeightChanged: visible = (height > 0 ? true : false)
+        Behavior on height {
+            NumberAnimation { duration: 100; easing.type: Easing.InOutQuad }
+        }
 
         Label
         {
             id: lblheader
             width: parent.width
-            height: Theme.itemSizeSmall
+            height: visible ? Theme.itemSizeSmall : 0;
             color: Theme.secondaryHighlightColor
             font.family: Theme.fontFamilyHeading
             font.pixelSize: Theme.fontSizeSmall
@@ -59,24 +56,13 @@ MouseArea
             verticalAlignment: Text.AlignVCenter
             horizontalAlignment: Text.AlignHCenter
             clip: true
-
-            onVisibleChanged: {
-                height = visible ? Theme.itemSizeSmall : 0;
-            }
         }
 
         SilicaListView
         {
             id: listview
+            anchors { left: parent.left; top: lblheader.bottom; right: parent.right; bottom: parent.bottom }
             clip: true
-
-            anchors
-            {
-                left: parent.left
-                top: lblheader.bottom
-                right: parent.right
-                bottom: parent.bottom
-            }
 
             VerticalScrollDecorator { flickable: listview }
         }
