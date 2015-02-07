@@ -124,6 +124,44 @@
     </message>
 </context>
 <context>
+    <name>AdBlockDownloader</name>
+    <message>
+        <source>Download</source>
+        <translation type="obsolete">ダウンロード</translation>
+    </message>
+</context>
+<context>
+    <name>AdBlockDownloaderPage</name>
+    <message>
+        <source>AdBlock Updater</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>State</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Download</source>
+        <translation type="unfinished">ダウンロード</translation>
+    </message>
+    <message>
+        <source>Ready</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Connecting</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Completed</source>
+        <translation type="unfinished">完了</translation>
+    </message>
+</context>
+<context>
     <name>AdBlockFilter</name>
     <message>
         <source>Save</source>

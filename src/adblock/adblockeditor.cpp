@@ -1,24 +1,35 @@
 #include "adblockeditor.h"
 
-AdBlockEditor::AdBlockEditor(QObject *parent): QObject(parent)
+AdBlockEditor::AdBlockEditor(QObject *parent): QObject(parent), _adblockmanager(NULL)
 {
 
 }
 
-void AdBlockEditor::loadFilters(AdBlockManager* adblockmanager)
+void AdBlockEditor::setManager(AdBlockManager *adblockmanager)
 {
-    this->_cssfile.setFileName(adblockmanager->cssFile());
-    this->_cssfile.open(QFile::ReadWrite);
+    this->_adblockmanager = adblockmanager;
+}
 
-    this->loadTable(adblockmanager->tableFile());
+void AdBlockEditor::loadFilters()
+{
+    this->loadTable(this->_adblockmanager->tableFile());
+}
+
+void AdBlockEditor::reload()
+{
+    this->_adblockmanager->rulesFileInstance().close();
+    this->_filters.clear();
+
+    this->loadFilters();
 }
 
 QStringList AdBlockEditor::readAllFilters()
 {
     QStringList filters;
+    QFile& cssfile = this->_adblockmanager->rulesFileInstance();
 
     for(int i = 0; i < this->_filters.length(); i++)
-        filters.append(this->_filters[i]->readFilter(this->_cssfile));
+        filters.append(this->_filters[i]->readFilter(cssfile));
 
     return filters;
 }
@@ -30,7 +41,7 @@ int AdBlockEditor::filtersCount() const
 
 QString AdBlockEditor::filter(int i)
 {
-    return this->_filters[i]->readFilter(this->_cssfile);
+    return this->_filters[i]->readFilter(this->_adblockmanager->rulesFileInstance());
 }
 
 void AdBlockEditor::setFilter(int i, const QString &s)
@@ -51,38 +62,39 @@ void AdBlockEditor::deleteFilter(int idx)
     emit filtersCountChanged();
 }
 
-void AdBlockEditor::saveFilters(AdBlockManager *adblockmanager)
+void AdBlockEditor::saveFilters()
 {
     QStringList filters = this->readAllFilters();
-    this->_cssfile.seek(0);   /* Move to begin */
-    this->_cssfile.resize(0); /* Clear CSS */
+    QFile& cssfile = this->_adblockmanager->rulesFileInstance();
+    cssfile.seek(0);   /* Move to begin */
+    cssfile.resize(0); /* Clear CSS */
 
-    QFile tablefile(adblockmanager->tableFile());
+    QFile tablefile(this->_adblockmanager->tableFile());
     tablefile.open(QFile::WriteOnly | QFile::Truncate);
     tablefile.write(QString("Count: %1\n").arg(filters.length()).toLatin1());
 
     for(int i = 0; i < filters.length(); i++)
     {
         const QString& f = filters.at(i);
-        tablefile.write(QString("[%1, %2]\n").arg(this->_cssfile.pos()).arg(f.length()).toLatin1());
+        tablefile.write(QString("[%1, %2]\n").arg(cssfile.pos()).arg(f.length()).toLatin1());
 
         if(i < (f.length() - 1))
-            this->_cssfile.write(QString("%1, ").arg(f).toLatin1());
+            cssfile.write(QString("%1, ").arg(f).toLatin1());
         else
-            this->_cssfile.write(f.toLatin1());
+            cssfile.write(f.toLatin1());
 
         if((i && i < (f.length() - 1)) && ((i % 4) == 0))
-            this->_cssfile.write("\n");
+            cssfile.write("\n");
     }
 
-    this->_cssfile.write("\n{\n  display: none !important;\n}\n");
+    cssfile.write("\n{\n  display: none !important;\n}\n");
     tablefile.close();
 }
 
 AdBlockEditor::~AdBlockEditor()
 {
-    if(this->_cssfile.isOpen())
-        this->_cssfile.close();
+    if(this->_adblockmanager->rulesFileInstance().isOpen())
+        this->_adblockmanager->rulesFileInstance().close();
 }
 
 void AdBlockEditor::loadTable(const QString &tablefile)

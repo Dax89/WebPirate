@@ -5,7 +5,6 @@
 #include <QDir>
 #include <QFile>
 #include <QStandardPaths>
-#include <QNetworkAccessManager>
 #include <QDebug>
 
 class AdBlockManager: public QObject
@@ -17,6 +16,7 @@ class AdBlockManager: public QObject
 
     public:
         explicit AdBlockManager(QObject *parent = 0);
+        QFile& rulesFileInstance();
         QString rulesFile() const;
         const QString& cssFile() const;
         const QString& tableFile() const;
@@ -31,20 +31,16 @@ class AdBlockManager: public QObject
         void enabledChanged();
         void rulesChanged();
 
-    public slots:
-        void saveFilters();
-        void downloadFilters();
+    public:
+        static const QString ADBLOCK_FOLDER;
+        static const QString CSS_FILENAME;
+        static const QString TABLE_FILENAME;
 
     private:
         bool _enabled;
         QString _rulesfile;
         QString _tablefile;
-        QNetworkAccessManager nam;
-
-    private:
-        static const QString ADBLOCK_FOLDER;
-        static const QString RULES_FILENAME;
-        static const QString TABLE_FILENAME;
+        QFile _rulefileinstance;
 };
 
 #endif // ADBLOCKMANAGER_H

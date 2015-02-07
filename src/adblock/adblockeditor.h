@@ -13,12 +13,14 @@ class AdBlockEditor : public QObject
     Q_OBJECT
 
     Q_PROPERTY(int filtersCount READ filtersCount NOTIFY filtersCountChanged)
+    Q_PROPERTY(AdBlockManager* manager WRITE setManager)
 
     private:
         typedef QPair<qint64, qint64> FilterPair;
 
     public:
         explicit AdBlockEditor(QObject *parent = 0);
+        void setManager(AdBlockManager* manager);
         int filtersCount() const;
         ~AdBlockEditor();
 
@@ -30,8 +32,9 @@ class AdBlockEditor : public QObject
         void setFilter(int i, const QString& s);
         void addFilter(const QString& s);
         void deleteFilter(int idx);
-        void saveFilters(AdBlockManager* adblockmanager);
-        void loadFilters(AdBlockManager* adblockmanager);
+        void saveFilters();
+        void loadFilters();
+        void reload();
 
     private:
         QStringList readAllFilters();
@@ -41,6 +44,7 @@ class AdBlockEditor : public QObject
 
     private:
         QFile _cssfile;
+        AdBlockManager* _adblockmanager;
         QList<AdBlockFilter*> _filters;
 };
 

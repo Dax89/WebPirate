@@ -33,7 +33,8 @@ SOURCES += src/harbour-webpirate.cpp \
     src/mime/mimedatabase.cpp \
     src/adblock/adblockmanager.cpp \
     src/adblock/adblockeditor.cpp \
-    src/adblock/adblockfilter.cpp
+    src/adblock/adblockfilter.cpp \
+    src/adblock/adblockdownloader.cpp
 
 OTHER_FILES += qml/harbour-webpirate.qml \
     rpm/harbour-webpirate.changes.in \
@@ -119,7 +120,8 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/pages/adblock/AdBlockPage.qml \
     adblock.css \
     adblock.table \
-    qml/pages/adblock/AdBlockFilter.qml
+    qml/pages/adblock/AdBlockFilter.qml \
+    qml/pages/adblock/AdBlockDownloaderPage.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line
@@ -154,5 +156,6 @@ HEADERS += \
     src/mime/mimedatabase.h \
     src/adblock/adblockmanager.h \
     src/adblock/adblockeditor.h \
-    src/adblock/adblockfilter.h
+    src/adblock/adblockfilter.h \
+    src/adblock/adblockdownloader.h
 

@@ -1,7 +1,7 @@
 #include "adblockmanager.h"
 
 const QString AdBlockManager::ADBLOCK_FOLDER = "AdBlock";
-const QString AdBlockManager::RULES_FILENAME = "adblock.css";
+const QString AdBlockManager::CSS_FILENAME = "adblock.css";
 const QString AdBlockManager::TABLE_FILENAME = "adblock.table";
 
 AdBlockManager::AdBlockManager(QObject *parent): QObject(parent), _enabled(false)
@@ -12,14 +12,23 @@ AdBlockManager::AdBlockManager(QObject *parent): QObject(parent), _enabled(false
         datadir.mkdir(AdBlockManager::ADBLOCK_FOLDER);
 
     datadir.cd(AdBlockManager::ADBLOCK_FOLDER);
-    this->_rulesfile = datadir.filePath(AdBlockManager::RULES_FILENAME);
+    this->_rulesfile = datadir.filePath(AdBlockManager::CSS_FILENAME);
     this->_tablefile = datadir.filePath(AdBlockManager::TABLE_FILENAME);
+    this->_rulefileinstance.setFileName(this->_rulesfile);
 
-    if(!datadir.exists(AdBlockManager::RULES_FILENAME))
+    if(!datadir.exists(AdBlockManager::CSS_FILENAME))
         this->createEmptyRulesFile();
 
     if(!datadir.exists(AdBlockManager::TABLE_FILENAME))
         this->createEmptyTableFile();
+}
+
+QFile& AdBlockManager::rulesFileInstance()
+{
+    if(!this->_rulefileinstance.isOpen())
+        this->_rulefileinstance.open(QFile::ReadWrite);
+
+    return this->_rulefileinstance;
 }
 
 QString AdBlockManager::rulesFile() const
@@ -67,17 +76,7 @@ void AdBlockManager::createEmptyRulesFile()
 void AdBlockManager::createEmptyTableFile()
 {
     QFile f(this->_tablefile);
-    f.open(QFile::ReadOnly);
-    f.write("Count: 0");
+    f.open(QFile::WriteOnly);
+    f.write("Count: 0\n");
     f.close();
-}
-
-void AdBlockManager::saveFilters()
-{
-
-}
-
-void AdBlockManager::downloadFilters()
-{
-
 }

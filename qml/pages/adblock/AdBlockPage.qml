@@ -15,12 +15,13 @@ Dialog
     id: adblockpage
     allowedOrientations: Orientation.All
     acceptDestinationAction: PageStackAction.Pop
-    onDone: adblockeditor.saveFilters(settings.adblockmanager)
+    onAccepted: adblockeditor.saveFilters()
 
     AdBlockEditor
     {
         id: adblockeditor
-        Component.onCompleted: adblockeditor.loadFilters(settings.adblockmanager)
+        manager: settings.adblockmanager
+        Component.onCompleted: adblockeditor.loadFilters()
     }
 
     SilicaFlickable
@@ -32,6 +33,13 @@ Dialog
             MenuItem
             {
                 text: qsTr("Update Filters")
+
+                onClicked: {
+                    var page = pageStack.push(Qt.resolvedUrl("AdBlockDownloaderPage.qml"), { "settings": settings });
+                    page.rulesDownloaded.connect(function() {
+                        adblockeditor.reload();
+                    });
+                }
             }
 
             MenuItem

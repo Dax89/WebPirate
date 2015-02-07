@@ -12,7 +12,7 @@ Dialog
     acceptDestinationAction: PageStackAction.Pop
     canAccept: tffilter.text.length > 0
 
-    onDone: {
+    onAccepted: {
         if(index === -1)
             adblockeditor.addFilter(tffilter.text);
         else
