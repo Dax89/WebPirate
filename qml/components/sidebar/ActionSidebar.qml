@@ -90,13 +90,14 @@ Item
             {
                 anchors { left: parent.left; right: parent.right }
                 text: qsTr("Block Ads")
+                onClicked: pageStack.push(Qt.resolvedUrl("../../pages/adblock/AdBlockPage.qml"), { "settings": mainwindow.settings });
 
                 Component.onCompleted: {
-                    switchItem.checked = mainwindow.settings.blockads;
+                    switchItem.checked = mainwindow.settings.adblockmanager.enabled;
                 }
 
                 switchItem.onCheckedChanged: {
-                    mainwindow.settings.blockads = switchItem.checked;
+                    mainwindow.settings.adblockmanager.enabled = switchItem.checked;
                     Database.set("blockads", switchItem.checked ? 1 : 0);
                 }
             }
@@ -105,6 +106,7 @@ Item
             {
                 anchors { left: parent.left; right: parent.right }
                 text: qsTr("Night Mode")
+                switchOnClick: true
 
                 switchItem.onCheckedChanged: {
                     mainwindow.settings.nightmode = switchItem.checked;

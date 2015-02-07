@@ -30,7 +30,10 @@ SOURCES += src/harbour-webpirate.cpp \
     src/favoritesmanager/favoriteitem.cpp \
     src/dbus/webpirateadaptor.cpp \
     src/dbus/webpirateservice.cpp \
-    src/mime/mimedatabase.cpp
+    src/mime/mimedatabase.cpp \
+    src/adblock/adblockmanager.cpp \
+    src/adblock/adblockeditor.cpp \
+    src/adblock/adblockfilter.cpp
 
 OTHER_FILES += qml/harbour-webpirate.qml \
     rpm/harbour-webpirate.changes.in \
@@ -112,7 +115,11 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/js/helpers/NightMode.js \
     qml/components/sidebar/SidebarSwitch.qml \
     qml/js/helpers/AdBlock.js \
-    qml/js/helpers/ForcePixelRatio.js
+    qml/js/helpers/ForcePixelRatio.js \
+    qml/pages/adblock/AdBlockPage.qml \
+    adblock.css \
+    adblock.table \
+    qml/pages/adblock/AdBlockFilter.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line
@@ -144,5 +151,8 @@ HEADERS += \
     src/favoritesmanager/favoriteitem.h \
     src/dbus/webpirateadaptor.h \
     src/dbus/webpirateservice.h \
-    src/mime/mimedatabase.h
+    src/mime/mimedatabase.h \
+    src/adblock/adblockmanager.h \
+    src/adblock/adblockeditor.h \
+    src/adblock/adblockfilter.h
 

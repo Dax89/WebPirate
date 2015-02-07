@@ -77,7 +77,7 @@ ApplicationWindow
             var ua = Database.get("useragent");
             settings.useragent = (ua === false ? 0 : ua);
 
-            settings.blockads = parseInt(Database.get("blockads"));
+            settings.adblockmanager.enabled = parseInt(Database.get("blockads"));
             settings.clearonexit = parseInt(Database.get("clearonexit"));
         }
     }

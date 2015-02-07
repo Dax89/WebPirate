@@ -3,13 +3,19 @@ import Sailfish.Silica 1.0
 
 BackgroundItem
 {
+    property bool switchOnClick: false
     property alias switchItem: switchitem
     property alias text: lblaction.text
 
     height: Theme.itemSizeExtraSmall
 
     onClicked: {
-        switchitem.checked = !switchItem.checked;
+        if(switchOnClick) {
+            switchitem.checked = !switchItem.checked;
+            return;
+        }
+
+        sidebar.collapse();
     }
 
     Row
