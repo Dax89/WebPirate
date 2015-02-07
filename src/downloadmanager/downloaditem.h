@@ -64,7 +64,7 @@ class DownloadItem: public QObject
         QString _filename;
         QString _downloadspeed;
         QTime _downloadtime;
-        QNetworkAccessManager _neworkmanager;
+        QNetworkAccessManager _networkmanager;
         QNetworkReply* _downloadreply;
 };
 

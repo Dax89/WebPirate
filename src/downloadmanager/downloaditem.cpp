@@ -10,7 +10,7 @@ DownloadItem::DownloadItem(QObject *parent): QObject(parent), _completed(false)
 DownloadItem::DownloadItem(const QUrl &url, QObject* parent): QObject(parent), _completed(false), _url(url), _progressvalue(0), _progresstotal(0), _downloadreply(NULL)
 {
     QString downloadpath = QStandardPaths::writableLocation(QStandardPaths::DownloadLocation);
-    connect(&this->_neworkmanager, SIGNAL(finished(QNetworkReply*)), this, SLOT(onDownloadFinished(QNetworkReply*)));
+    connect(&this->_networkmanager, SIGNAL(finished(QNetworkReply*)), this, SLOT(onDownloadFinished(QNetworkReply*)));
 
     this->_filename = this->parseFileName(url, downloadpath);
     this->_file.setFileName(QString("%1%2%3").arg(downloadpath, QDir::separator(), this->_filename));
@@ -88,7 +88,7 @@ void DownloadItem::start()
     this->_completed = false;
     emit completedChanged();
 
-    this->_downloadreply = this->_neworkmanager.get(request);
+    this->_downloadreply = this->_networkmanager.get(request);
     connect(this->_downloadreply, SIGNAL(readyRead()), this, SLOT(onNetworkReplyReadyRead()));
     connect(this->_downloadreply, SIGNAL(downloadProgress(qint64,qint64)), this, SLOT(onDownloadProgress(qint64,qint64)));
     connect(this->_downloadreply, SIGNAL(error(QNetworkReply::NetworkError)), this, SLOT(onDownloadError(QNetworkReply::NetworkError)));
