@@ -193,6 +193,13 @@
     </message>
 </context>
 <context>
+    <name>AlertDialog</name>
+    <message>
+        <source>Ok</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>BrowserTab</name>
     <message>
         <source>New Tab</source>
@@ -277,10 +284,25 @@
     </message>
 </context>
 <context>
+    <name>CredentialDialog</name>
+    <message>
+        <source>Do you want to store the password?</source>
+        <translation type="unfinished">Ali želite shraniti geslo?</translation>
+    </message>
+    <message>
+        <source>Yes</source>
+        <translation type="unfinished">Da</translation>
+    </message>
+    <message>
+        <source>No</source>
+        <translation type="unfinished">Ne</translation>
+    </message>
+</context>
+<context>
     <name>CredentialMenu</name>
     <message>
         <source>Do you want to store the password?</source>
-        <translation>Ali želite shraniti geslo?</translation>
+        <translation type="vanished">Ali želite shraniti geslo?</translation>
     </message>
 </context>
 <context>
@@ -472,6 +494,17 @@
     </message>
 </context>
 <context>
+    <name>PromptDialog</name>
+    <message>
+        <source>OK</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation type="obsolete">Prekliči</translation>
+    </message>
+</context>
+<context>
     <name>QuickGrid</name>
     <message>
         <source>The QuickGrid is empty</source>
@@ -501,14 +534,25 @@
     </message>
 </context>
 <context>
-    <name>RequestMenu</name>
+    <name>RequestDialog</name>
     <message>
         <source>Yes</source>
-        <translation>Da</translation>
+        <translation type="unfinished">Da</translation>
     </message>
     <message>
         <source>No</source>
-        <translation>Ne</translation>
+        <translation type="unfinished">Ne</translation>
+    </message>
+</context>
+<context>
+    <name>RequestMenu</name>
+    <message>
+        <source>Yes</source>
+        <translation type="vanished">Da</translation>
+    </message>
+    <message>
+        <source>No</source>
+        <translation type="vanished">Ne</translation>
     </message>
 </context>
 <context>

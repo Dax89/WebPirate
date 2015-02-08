@@ -200,6 +200,13 @@
     </message>
 </context>
 <context>
+    <name>AlertDialog</name>
+    <message>
+        <source>Ok</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>BrowserTab</name>
     <message>
         <source>New Tab</source>
@@ -284,10 +291,25 @@
     </message>
 </context>
 <context>
+    <name>CredentialDialog</name>
+    <message>
+        <source>Do you want to store the password?</source>
+        <translation type="unfinished">保存密码？</translation>
+    </message>
+    <message>
+        <source>Yes</source>
+        <translation type="unfinished">是</translation>
+    </message>
+    <message>
+        <source>No</source>
+        <translation type="unfinished">否</translation>
+    </message>
+</context>
+<context>
     <name>CredentialMenu</name>
     <message>
         <source>Do you want to store the password?</source>
-        <translation>保存密码？</translation>
+        <translation type="vanished">保存密码？</translation>
     </message>
 </context>
 <context>
@@ -479,6 +501,17 @@
     </message>
 </context>
 <context>
+    <name>PromptDialog</name>
+    <message>
+        <source>OK</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation type="obsolete">取消</translation>
+    </message>
+</context>
+<context>
     <name>QuickGrid</name>
     <message>
         <source>The QuickGrid is empty</source>
@@ -508,14 +541,25 @@
     </message>
 </context>
 <context>
-    <name>RequestMenu</name>
+    <name>RequestDialog</name>
     <message>
         <source>Yes</source>
-        <translation>是</translation>
+        <translation type="unfinished">是</translation>
     </message>
     <message>
         <source>No</source>
-        <translation>否</translation>
+        <translation type="unfinished">否</translation>
+    </message>
+</context>
+<context>
+    <name>RequestMenu</name>
+    <message>
+        <source>Yes</source>
+        <translation type="vanished">是</translation>
+    </message>
+    <message>
+        <source>No</source>
+        <translation type="vanished">否</translation>
     </message>
 </context>
 <context>

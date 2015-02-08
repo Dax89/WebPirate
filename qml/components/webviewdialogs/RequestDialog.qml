@@ -1,14 +1,14 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
+import "../dialogs"
 
-PopupMenu
+WebViewDialog
 {
     signal requestAccepted()
     signal requestRejected()
 
-    id: requestmenu
+    id: requestdialog
     popupModel: 1
-    anchors.fill: parent
 
     popupDelegate: Row {
         width: parent.width
@@ -29,7 +29,7 @@ PopupMenu
             }
 
             onClicked: {
-                requestmenu.hide();
+                requestdialog.hide();
                 requestAccepted();
             }
         }
@@ -49,7 +49,7 @@ PopupMenu
             }
 
             onClicked: {
-                requestmenu.hide();
+                requestdialog.hide();
                 requestRejected();
             }
         }

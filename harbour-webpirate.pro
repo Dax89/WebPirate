@@ -63,11 +63,7 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/models/SearchEngineModel.qml \
     qml/js/Credentials.js \
     qml/js/GibberishAES.js \
-    qml/components/menus/PopupMenu.qml \
     qml/components/menus/LinkMenu.qml \
-    qml/components/menus/CredentialMenu.qml \
-    qml/components/menus/ItemSelector.qml \
-    qml/components/menus/RequestMenu.qml \
     qml/pages/DownloadsPage.qml \
     qml/components/items/DownloadListItem.qml \
     qml/components/BrowserWebView.qml \
@@ -121,7 +117,14 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     adblock.css \
     adblock.table \
     qml/pages/adblock/AdBlockFilter.qml \
-    qml/pages/adblock/AdBlockDownloaderPage.qml
+    qml/pages/adblock/AdBlockDownloaderPage.qml \
+    qml/components/webviewdialogs/ItemSelector.qml \
+    qml/components/webviewdialogs/AlertDialog.qml \
+    qml/components/webviewdialogs/WebViewDialog.qml \
+    qml/components/dialogs/PopupDialog.qml \
+    qml/components/dialogs/CredentialDialog.qml \
+    qml/components/webviewdialogs/RequestDialog.qml \
+    qml/components/webviewdialogs/PromptDialog.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line

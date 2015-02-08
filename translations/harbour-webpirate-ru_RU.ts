@@ -200,6 +200,13 @@
     </message>
 </context>
 <context>
+    <name>AlertDialog</name>
+    <message>
+        <source>Ok</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>BrowserTab</name>
     <message>
         <source>New Tab</source>
@@ -284,10 +291,25 @@
     </message>
 </context>
 <context>
+    <name>CredentialDialog</name>
+    <message>
+        <source>Do you want to store the password?</source>
+        <translation type="unfinished">Вы хотите сохранить пароль?</translation>
+    </message>
+    <message>
+        <source>Yes</source>
+        <translation type="unfinished">Да</translation>
+    </message>
+    <message>
+        <source>No</source>
+        <translation type="unfinished">Нет</translation>
+    </message>
+</context>
+<context>
     <name>CredentialMenu</name>
     <message>
         <source>Do you want to store the password?</source>
-        <translation>Вы хотите сохранить пароль?</translation>
+        <translation type="vanished">Вы хотите сохранить пароль?</translation>
     </message>
 </context>
 <context>
@@ -479,6 +501,17 @@
     </message>
 </context>
 <context>
+    <name>PromptDialog</name>
+    <message>
+        <source>OK</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation type="obsolete">Отмена</translation>
+    </message>
+</context>
+<context>
     <name>QuickGrid</name>
     <message>
         <source>The QuickGrid is empty</source>
@@ -508,14 +541,25 @@
     </message>
 </context>
 <context>
-    <name>RequestMenu</name>
+    <name>RequestDialog</name>
     <message>
         <source>Yes</source>
-        <translation>Да</translation>
+        <translation type="unfinished">Да</translation>
     </message>
     <message>
         <source>No</source>
-        <translation>Нет</translation>
+        <translation type="unfinished">Нет</translation>
+    </message>
+</context>
+<context>
+    <name>RequestMenu</name>
+    <message>
+        <source>Yes</source>
+        <translation type="vanished">Да</translation>
+    </message>
+    <message>
+        <source>No</source>
+        <translation type="vanished">Нет</translation>
     </message>
 </context>
 <context>

@@ -200,6 +200,13 @@
     </message>
 </context>
 <context>
+    <name>AlertDialog</name>
+    <message>
+        <source>Ok</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>BrowserTab</name>
     <message>
         <source>New Tab</source>
@@ -284,10 +291,25 @@
     </message>
 </context>
 <context>
+    <name>CredentialDialog</name>
+    <message>
+        <source>Do you want to store the password?</source>
+        <translation type="unfinished">パスワードを保存しますか？</translation>
+    </message>
+    <message>
+        <source>Yes</source>
+        <translation type="unfinished">はい</translation>
+    </message>
+    <message>
+        <source>No</source>
+        <translation type="unfinished">いいえ</translation>
+    </message>
+</context>
+<context>
     <name>CredentialMenu</name>
     <message>
         <source>Do you want to store the password?</source>
-        <translation>パスワードを保存しますか？</translation>
+        <translation type="vanished">パスワードを保存しますか？</translation>
     </message>
 </context>
 <context>
@@ -479,6 +501,17 @@
     </message>
 </context>
 <context>
+    <name>PromptDialog</name>
+    <message>
+        <source>OK</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation type="obsolete">キャンセル</translation>
+    </message>
+</context>
+<context>
     <name>QuickGrid</name>
     <message>
         <source>The QuickGrid is empty</source>
@@ -508,14 +541,25 @@
     </message>
 </context>
 <context>
-    <name>RequestMenu</name>
+    <name>RequestDialog</name>
     <message>
         <source>Yes</source>
-        <translation>はい</translation>
+        <translation type="unfinished">はい</translation>
     </message>
     <message>
         <source>No</source>
-        <translation>いいえ</translation>
+        <translation type="unfinished">いいえ</translation>
+    </message>
+</context>
+<context>
+    <name>RequestMenu</name>
+    <message>
+        <source>Yes</source>
+        <translation type="vanished">はい</translation>
+    </message>
+    <message>
+        <source>No</source>
+        <translation type="vanished">いいえ</translation>
     </message>
 </context>
 <context>

@@ -200,6 +200,13 @@
     </message>
 </context>
 <context>
+    <name>AlertDialog</name>
+    <message>
+        <source>Ok</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>BrowserTab</name>
     <message>
         <source>New Tab</source>
@@ -284,10 +291,25 @@
     </message>
 </context>
 <context>
+    <name>CredentialDialog</name>
+    <message>
+        <source>Do you want to store the password?</source>
+        <translation type="unfinished">Wilt u het wachtwoord opslaan?</translation>
+    </message>
+    <message>
+        <source>Yes</source>
+        <translation type="unfinished">Ja</translation>
+    </message>
+    <message>
+        <source>No</source>
+        <translation type="unfinished">Nee</translation>
+    </message>
+</context>
+<context>
     <name>CredentialMenu</name>
     <message>
         <source>Do you want to store the password?</source>
-        <translation>Wilt u het wachtwoord opslaan?</translation>
+        <translation type="vanished">Wilt u het wachtwoord opslaan?</translation>
     </message>
 </context>
 <context>
@@ -479,6 +501,17 @@
     </message>
 </context>
 <context>
+    <name>PromptDialog</name>
+    <message>
+        <source>OK</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation type="obsolete">Annuleren</translation>
+    </message>
+</context>
+<context>
     <name>QuickGrid</name>
     <message>
         <source>The QuickGrid is empty</source>
@@ -508,14 +541,25 @@
     </message>
 </context>
 <context>
-    <name>RequestMenu</name>
+    <name>RequestDialog</name>
     <message>
         <source>Yes</source>
-        <translation>Ja</translation>
+        <translation type="unfinished">Ja</translation>
     </message>
     <message>
         <source>No</source>
-        <translation>Nee</translation>
+        <translation type="unfinished">Nee</translation>
+    </message>
+</context>
+<context>
+    <name>RequestMenu</name>
+    <message>
+        <source>Yes</source>
+        <translation type="vanished">Ja</translation>
+    </message>
+    <message>
+        <source>No</source>
+        <translation type="vanished">Nee</translation>
     </message>
 </context>
 <context>

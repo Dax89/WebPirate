@@ -9,20 +9,26 @@ MouseArea
 
     property bool titleVisible: true
 
+    signal ignoreDialog()
+
     function show() {
-        mousearea.visible = true;
+        popupdialog.visible = true;
         popupmenu.height = (Theme.itemSizeSmall * Math.min(3, listview.count)) + (titleVisible ? Theme.itemSizeSmall : 0);
     }
 
     function hide() {
-        mousearea.visible = false;
+        popupdialog.visible = false;
         popupmenu.height = 0;
     }
 
-    id: mousearea
+    id: popupdialog
     visible: false
     z: 10
-    onClicked: hide()
+
+    onClicked: {
+        ignoreDialog();
+        hide()
+    }
 
     onTitleVisibleChanged: {
         lblheader.visible = titleVisible;

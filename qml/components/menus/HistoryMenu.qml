@@ -1,9 +1,10 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
+import "../dialogs"
 import "../items/"
 import "../../js/History.js" as History
 
-PopupMenu
+PopupDialog
 {
     property string query
 
@@ -15,14 +16,7 @@ PopupMenu
 
     onQueryChanged: {
         History.match(query, popupModel);
-
-        if(popupModel.count === 0)
-        {
-            hide();
-            return;
-        }
-
-        show();
+        popupModel.count === 0 ? hide() : show();
     }
 
     popupDelegate: PageItem {

@@ -1,7 +1,9 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
 import "navigationbar"
+import "dialogs"
 import "menus"
+import "webviewdialogs"
 import "quickgrid"
 import "../js/UrlHelper.js" as UrlHelper
 import "../js/Database.js" as Database
@@ -130,8 +132,9 @@ Item
         onRemoveFromFavoritesRequested: Favorites.removeFromUrl(url)
     }
 
-    CredentialMenu {
-        id: credentialmenu
+    CredentialDialog {
+        id: credentialdialog
+        anchors { left: parent.left; right: parent.right; top: parent.top; bottom: navigationbar.top }
     }
 
     HistoryMenu {

@@ -1,23 +1,16 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
 
-PopupMenu
+WebViewDialog
 {
     property QtObject selectorModel
-    property bool accepted: false
-
-    QtObject
-    {
-        property bool navigationWasVisible: true
-        id: itemselectorprivate
-    }
 
     id: itemselector
     visible: true
     titleVisible: false
-    onClicked: selectorModel.reject();
     width: Screen.width
     height: Screen.height - tabheader.height
+    onClicked: selectorModel.reject();
 
     popupDelegate: ListItem {
         contentHeight: Theme.itemSizeSmall
@@ -33,26 +26,10 @@ PopupMenu
             text: model.text
         }
 
-        onClicked: {
-            itemselector.accepted = true;
-            itemselector.selectorModel.accept(model.index);
-        }
+        onClicked: itemselector.selectorModel.accept(model.index)
     }
 
     onSelectorModelChanged: {
         itemselector.popupModel = itemselector.selectorModel.items;
-    }
-
-    Component.onCompleted: {
-        itemselectorprivate.navigationWasVisible = navigationbar.visible;
-        navigationbar.evaporate();
-
-        itemselector.accepted = false
-        itemselector.show();
-    }
-
-    Component.onDestruction: {
-        if(itemselectorprivate.navigationWasVisible)
-            navigationbar.solidify();
     }
 }

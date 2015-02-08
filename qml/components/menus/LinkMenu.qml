@@ -1,8 +1,9 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
 import "../../js/Favorites.js" as Favorites
+import "../dialogs"
 
-PopupMenu
+PopupDialog
 {
     property string url;
     property bool favorite: false

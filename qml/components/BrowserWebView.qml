@@ -2,6 +2,7 @@ import QtQuick 2.1
 import QtWebKit 3.0
 import Sailfish.Silica 1.0
 import "menus"
+import "webviewdialogs"
 import "../js/UrlHelper.js" as UrlHelper
 import "../js/Database.js" as Database
 import "../js/Favorites.js" as Favorites
@@ -45,6 +46,33 @@ SilicaWebView
                                 Qt.resolvedUrl("../js/helpers/YouTubeHelper.js"),
                                 Qt.resolvedUrl("../js/helpers/NightMode.js")]
 
+    experimental.alertDialog: AlertDialog {
+        title: model.message
+        onOkPressed: model.dismiss()
+        onIgnoreDialog: model.dismiss()
+    }
+
+    experimental.confirmDialog: RequestDialog {
+        title: message
+        onRequestAccepted: model.accept()
+        onRequestRejected: model.reject()
+        onIgnoreDialog: model.reject()
+    }
+
+    experimental.promptDialog: Item { /* PromptDialog is particular: A dedicated page suits better */
+        Component.onCompleted: {
+            var dialog = pageStack.push(Qt.resolvedUrl("webviewdialogs/PromptDialog.qml"), { "title": message, "textField": defaultValue });
+
+            dialog.accepted.connect(function() {
+                model.accept(dialog.textField);
+            });
+
+            dialog.rejected.connect(function() {
+                model.reject();
+            });
+        }
+    }
+
     experimental.onMessageReceived: {
         var data = JSON.parse(message.data);
 
@@ -53,7 +81,7 @@ SilicaWebView
         else if(data.type === "newtab")
             tabview.addTab(data.url);
         else if(data.type === "longpress") {
-            credentialmenu.hide();
+            credentialdialog.hide();
 
             if(data.url) {
                 linkmenu.url = data.url;
@@ -68,9 +96,9 @@ SilicaWebView
 
             if((mainwindow.settings.clearonexit === false) && Credentials.needsDialog(Database.instance(), mainwindow.settings, url.toString(), data))
             {
-                credentialmenu.url = url.toString();
-                credentialmenu.logindata = data;
-                credentialmenu.show();
+                credentialdialog.url = url.toString();
+                credentialdialog.logindata = data;
+                credentialdialog.show();
             }
         }
         else if(data.type === "youtube_play") {
@@ -78,12 +106,10 @@ SilicaWebView
         }
     }
 
-    experimental.certificateVerificationDialog: RequestMenu {
+    experimental.certificateVerificationDialog: RequestDialog {
         title: qsTr("Accept Certificate from:") + " " + webview.url + " ?"
         onRequestAccepted: model.accept()
         onRequestRejected: model.reject()
-        onVisibleChanged: visible ? navigationbar.evaporate() : navigationbar.solidify()
-        Component.onCompleted: show()
     }
 
     experimental.itemSelector: ItemSelector {
