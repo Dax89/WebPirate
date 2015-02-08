@@ -13,13 +13,14 @@ class AdBlockEditor : public QObject
     Q_OBJECT
 
     Q_PROPERTY(int filtersCount READ filtersCount NOTIFY filtersCountChanged)
-    Q_PROPERTY(AdBlockManager* manager WRITE setManager)
+    Q_PROPERTY(AdBlockManager* manager READ manager WRITE setManager)
 
     private:
         typedef QPair<qint64, qint64> FilterPair;
 
     public:
         explicit AdBlockEditor(QObject *parent = 0);
+        AdBlockManager* manager();
         void setManager(AdBlockManager* manager);
         int filtersCount() const;
         ~AdBlockEditor();

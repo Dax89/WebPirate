@@ -5,6 +5,11 @@ AdBlockEditor::AdBlockEditor(QObject *parent): QObject(parent), _adblockmanager(
 
 }
 
+AdBlockManager *AdBlockEditor::manager()
+{
+    return this->_adblockmanager;
+}
+
 void AdBlockEditor::setManager(AdBlockManager *adblockmanager)
 {
     this->_adblockmanager = adblockmanager;
