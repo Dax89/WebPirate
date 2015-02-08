@@ -4,7 +4,7 @@ import Sailfish.Silica 1.0
 Dialog
 {
     property alias title: lbltitle.text
-    property alias textField: taprompt.text
+    property alias textField: tfprompt.text
 
     id: promptdialog
     allowedOrientations: Orientation.All
@@ -35,7 +35,7 @@ Dialog
 
             TextField
             {
-                id: taprompt
+                id: tfprompt
                 width: parent.width
             }
         }

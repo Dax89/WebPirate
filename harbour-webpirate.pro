@@ -124,7 +124,8 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/components/dialogs/PopupDialog.qml \
     qml/components/dialogs/CredentialDialog.qml \
     qml/components/webviewdialogs/RequestDialog.qml \
-    qml/components/webviewdialogs/PromptDialog.qml
+    qml/components/webviewdialogs/PromptDialog.qml \
+    qml/components/webviewdialogs/AuthenticationDialog.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line

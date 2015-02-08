@@ -46,6 +46,12 @@ SilicaWebView
                                 Qt.resolvedUrl("../js/helpers/YouTubeHelper.js"),
                                 Qt.resolvedUrl("../js/helpers/NightMode.js")]
 
+    experimental.certificateVerificationDialog: RequestDialog {
+        title: qsTr("Accept Certificate from:") + " " + webview.url + " ?"
+        onRequestAccepted: model.accept()
+        onRequestRejected: model.reject()
+    }
+
     experimental.alertDialog: AlertDialog {
         title: model.message
         onOkPressed: model.dismiss()
@@ -70,6 +76,15 @@ SilicaWebView
             dialog.rejected.connect(function() {
                 model.reject();
             });
+        }
+    }
+
+    experimental.authenticationDialog: Item { /* AuthenticationDialog is particular: A dedicated page suits better */
+        Component.onCompleted: {
+            if(pageStack.busy)
+                pageStack.completeAnimation();
+
+            pageStack.push(Qt.resolvedUrl("webviewdialogs/AuthenticationDialog.qml"), { "authenticationModel": model })
         }
     }
 
@@ -104,12 +119,6 @@ SilicaWebView
         else if(data.type === "youtube_play") {
             pageStack.push(Qt.resolvedUrl("../pages/YouTubeSettingsPage.qml"), {"videoId": data.videoid, "settings": mainwindow.settings });
         }
-    }
-
-    experimental.certificateVerificationDialog: RequestDialog {
-        title: qsTr("Accept Certificate from:") + " " + webview.url + " ?"
-        onRequestAccepted: model.accept()
-        onRequestRejected: model.reject()
     }
 
     experimental.itemSelector: ItemSelector {
