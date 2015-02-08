@@ -124,7 +124,11 @@
     </message>
     <message>
         <source>Block Ads</source>
-        <translation>Blokovat reklamy</translation>
+        <translation type="vanished">Blokovat reklamy</translation>
+    </message>
+    <message>
+        <source>Ad Block</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

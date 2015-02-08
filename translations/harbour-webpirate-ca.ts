@@ -124,7 +124,11 @@
     </message>
     <message>
         <source>Block Ads</source>
-        <translation>Bloca els anuncis</translation>
+        <translation type="vanished">Bloca els anuncis</translation>
+    </message>
+    <message>
+        <source>Ad Block</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

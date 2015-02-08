@@ -17,6 +17,7 @@ Features
 Planned Features
 -----
 
+- File Upload Support
 - Cookie Management
 - Page's content reflow
 - Do you want more? Just ask! :)

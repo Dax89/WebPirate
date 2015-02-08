@@ -124,7 +124,11 @@
     </message>
     <message>
         <source>Block Ads</source>
-        <translation>Blocca Banner</translation>
+        <translation type="vanished">Blocca Banner</translation>
+    </message>
+    <message>
+        <source>Ad Block</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

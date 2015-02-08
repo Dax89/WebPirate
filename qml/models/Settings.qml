@@ -20,5 +20,5 @@ QtObject
     property bool clearonexit;       /* Wipe UserData on exit */
     property bool nightmode: false;  /* Night Mode */
 
-    readonly property string version: "0.9.2"
+    readonly property string version: "0.9.3"
 }

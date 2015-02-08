@@ -123,7 +123,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Block Ads</source>
+        <source>Ad Block</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
