@@ -82,9 +82,6 @@ void AdBlockEditor::saveFilters()
             cssfile.write(QString("%1, ").arg(f).toLatin1());
         else
             cssfile.write(f.toLatin1());
-
-        if((i && i < (f.length() - 1)) && ((i % 4) == 0))
-            cssfile.write("\n");
     }
 
     cssfile.write("\n{\n  display: none !important;\n}\n");
