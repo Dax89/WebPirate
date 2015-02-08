@@ -13,6 +13,7 @@
 - BUGFIX: CredentialDialog does not save passwords
 - BUGFIX: NavigationBar overlaps ComboBox items
 - Implemented: AlertDialog, ConfirmDialog, PromptDialog and AuthenticationDialog
+- Reimplemented Javascript Dialog Framework
 - Disable device pixel ratio hack on tagesschau.de
 - Reorganized Source Code
 - Minor Fixes
