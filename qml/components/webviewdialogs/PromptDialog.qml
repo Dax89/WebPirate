@@ -3,6 +3,7 @@ import Sailfish.Silica 1.0
 
 Dialog
 {
+    property var promptModel
     property alias title: lbltitle.text
     property alias textField: tfprompt.text
 
@@ -10,6 +11,8 @@ Dialog
     allowedOrientations: Orientation.All
     acceptDestinationAction: PageStackAction.Pop
     canAccept: true
+    onAccepted: promptModel.accept(tfprompt.text)
+    onRejected: promptModel.reject()
 
     SilicaFlickable
     {

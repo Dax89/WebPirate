@@ -67,15 +67,10 @@ SilicaWebView
 
     experimental.promptDialog: Item { /* PromptDialog is particular: A dedicated page suits better */
         Component.onCompleted: {
-            var dialog = pageStack.push(Qt.resolvedUrl("webviewdialogs/PromptDialog.qml"), { "title": message, "textField": defaultValue });
+            if(pageStack.busy)
+                pageStack.completeAnimation();
 
-            dialog.accepted.connect(function() {
-                model.accept(dialog.textField);
-            });
-
-            dialog.rejected.connect(function() {
-                model.reject();
-            });
+            pageStack.push(Qt.resolvedUrl("webviewdialogs/PromptDialog.qml"), { "promptModel": model, "title": message, "textField": defaultValue });
         }
     }
 
