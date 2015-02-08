@@ -69,7 +69,7 @@
     </message>
     <message>
         <source>Spanish</source>
-        <translation type="unfinished"></translation>
+        <translation>Spanish</translation>
     </message>
 </context>
 <context>
@@ -123,19 +123,8 @@
         <translation>扩展</translation>
     </message>
     <message>
-        <source>Block Ads</source>
-        <translation type="vanished">屏蔽广告</translation>
-    </message>
-    <message>
         <source>Ad Block</source>
         <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>AdBlockDownloader</name>
-    <message>
-        <source>Download</source>
-        <translation type="obsolete">下载</translation>
     </message>
 </context>
 <context>
@@ -324,23 +313,16 @@
 <context>
     <name>CredentialDialog</name>
     <message>
-        <source>Do you want to store the password?</source>
-        <translation type="unfinished">保存密码？</translation>
-    </message>
-    <message>
         <source>Yes</source>
-        <translation type="unfinished">是</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>No</source>
-        <translation type="unfinished">否</translation>
+        <translation type="unfinished"></translation>
     </message>
-</context>
-<context>
-    <name>CredentialMenu</name>
     <message>
         <source>Do you want to store the password?</source>
-        <translation type="vanished">保存密码？</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -537,10 +519,6 @@
         <source>OK</source>
         <translation type="unfinished"></translation>
     </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="obsolete">取消</translation>
-    </message>
 </context>
 <context>
     <name>QuickGrid</name>
@@ -575,22 +553,11 @@
     <name>RequestDialog</name>
     <message>
         <source>Yes</source>
-        <translation type="unfinished">是</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>No</source>
-        <translation type="unfinished">否</translation>
-    </message>
-</context>
-<context>
-    <name>RequestMenu</name>
-    <message>
-        <source>Yes</source>
-        <translation type="vanished">是</translation>
-    </message>
-    <message>
-        <source>No</source>
-        <translation type="vanished">否</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

@@ -65,7 +65,7 @@
     </message>
     <message>
         <source>Czech</source>
-        <translation type="unfinished"></translation>
+        <translation>チェコ語</translation>
     </message>
     <message>
         <source>Spanish</source>
@@ -116,22 +116,15 @@
     </message>
     <message>
         <source>Night Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>ナイトモード</translation>
     </message>
     <message>
         <source>Extensions</source>
-        <translation type="unfinished"></translation>
+        <translation>エクステンション</translation>
     </message>
     <message>
         <source>Ad Block</source>
         <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>AdBlockDownloader</name>
-    <message>
-        <source>Download</source>
-        <translation type="obsolete">ダウンロード</translation>
     </message>
 </context>
 <context>
@@ -320,23 +313,16 @@
 <context>
     <name>CredentialDialog</name>
     <message>
-        <source>Do you want to store the password?</source>
-        <translation type="unfinished">パスワードを保存しますか？</translation>
-    </message>
-    <message>
         <source>Yes</source>
-        <translation type="unfinished">はい</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>No</source>
-        <translation type="unfinished">いいえ</translation>
+        <translation type="unfinished"></translation>
     </message>
-</context>
-<context>
-    <name>CredentialMenu</name>
     <message>
         <source>Do you want to store the password?</source>
-        <translation type="vanished">パスワードを保存しますか？</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -436,11 +422,11 @@
     </message>
     <message>
         <source>Delete all Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>全てのお気に入りを消去</translation>
     </message>
     <message>
         <source>Deleting all favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>全てのお気に入りを消去中</translation>
     </message>
 </context>
 <context>
@@ -533,10 +519,6 @@
         <source>OK</source>
         <translation type="unfinished"></translation>
     </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="obsolete">キャンセル</translation>
-    </message>
 </context>
 <context>
     <name>QuickGrid</name>
@@ -571,22 +553,11 @@
     <name>RequestDialog</name>
     <message>
         <source>Yes</source>
-        <translation type="unfinished">はい</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>No</source>
-        <translation type="unfinished">いいえ</translation>
-    </message>
-</context>
-<context>
-    <name>RequestMenu</name>
-    <message>
-        <source>Yes</source>
-        <translation type="vanished">はい</translation>
-    </message>
-    <message>
-        <source>No</source>
-        <translation type="vanished">いいえ</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

@@ -313,23 +313,16 @@
 <context>
     <name>CredentialDialog</name>
     <message>
-        <source>Do you want to store the password?</source>
-        <translation type="unfinished">Ali želite shraniti geslo?</translation>
-    </message>
-    <message>
         <source>Yes</source>
-        <translation type="unfinished">Da</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>No</source>
-        <translation type="unfinished">Ne</translation>
+        <translation type="unfinished"></translation>
     </message>
-</context>
-<context>
-    <name>CredentialMenu</name>
     <message>
         <source>Do you want to store the password?</source>
-        <translation type="vanished">Ali želite shraniti geslo?</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -526,10 +519,6 @@
         <source>OK</source>
         <translation type="unfinished"></translation>
     </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="obsolete">Prekliči</translation>
-    </message>
 </context>
 <context>
     <name>QuickGrid</name>
@@ -564,22 +553,11 @@
     <name>RequestDialog</name>
     <message>
         <source>Yes</source>
-        <translation type="unfinished">Da</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>No</source>
-        <translation type="unfinished">Ne</translation>
-    </message>
-</context>
-<context>
-    <name>RequestMenu</name>
-    <message>
-        <source>Yes</source>
-        <translation type="vanished">Da</translation>
-    </message>
-    <message>
-        <source>No</source>
-        <translation type="vanished">Ne</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

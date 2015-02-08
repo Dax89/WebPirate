@@ -123,19 +123,8 @@
         <translation>Extensions</translation>
     </message>
     <message>
-        <source>Block Ads</source>
-        <translation type="vanished">Bloquer les publicités</translation>
-    </message>
-    <message>
         <source>Ad Block</source>
         <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>AdBlockDownloader</name>
-    <message>
-        <source>Download</source>
-        <translation type="obsolete">Télécharger</translation>
     </message>
 </context>
 <context>
@@ -150,7 +139,7 @@
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished">Télécharger</translation>
+        <translation>Télécharger</translation>
     </message>
     <message>
         <source>Ready</source>
@@ -162,18 +151,18 @@
     </message>
     <message>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Erreur</translation>
     </message>
     <message>
         <source>Completed</source>
-        <translation type="unfinished">Terminé</translation>
+        <translation>Terminé</translation>
     </message>
 </context>
 <context>
     <name>AdBlockFilter</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Enregistrer</translation>
+        <translation>Enregistrer</translation>
     </message>
     <message>
         <source>Filter</source>
@@ -184,15 +173,15 @@
     <name>AdBlockPage</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Enregistrer</translation>
+        <translation>Enregistrer</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="unfinished">Éditer</translation>
+        <translation>Éditer</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Supprimer</translation>
+        <translation>Supprimer</translation>
     </message>
     <message>
         <source>Deleting filter</source>
@@ -324,23 +313,16 @@
 <context>
     <name>CredentialDialog</name>
     <message>
-        <source>Do you want to store the password?</source>
-        <translation type="unfinished">Voulez-vous enregistrer le mot de passe ?</translation>
-    </message>
-    <message>
         <source>Yes</source>
-        <translation type="unfinished">Oui</translation>
+        <translation>Oui</translation>
     </message>
     <message>
         <source>No</source>
-        <translation type="unfinished">Non</translation>
+        <translation>Non</translation>
     </message>
-</context>
-<context>
-    <name>CredentialMenu</name>
     <message>
         <source>Do you want to store the password?</source>
-        <translation type="vanished">Voulez-vous enregistrer le mot de passe ?</translation>
+        <translation>Voulez-vous enregistrer le mot de passe?</translation>
     </message>
 </context>
 <context>
@@ -537,10 +519,6 @@
         <source>OK</source>
         <translation type="unfinished"></translation>
     </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="obsolete">Annuler</translation>
-    </message>
 </context>
 <context>
     <name>QuickGrid</name>
@@ -575,22 +553,11 @@
     <name>RequestDialog</name>
     <message>
         <source>Yes</source>
-        <translation type="unfinished">Oui</translation>
+        <translation>Oui</translation>
     </message>
     <message>
         <source>No</source>
-        <translation type="unfinished">Non</translation>
-    </message>
-</context>
-<context>
-    <name>RequestMenu</name>
-    <message>
-        <source>Yes</source>
-        <translation type="vanished">Oui</translation>
-    </message>
-    <message>
-        <source>No</source>
-        <translation type="vanished">Non</translation>
+        <translation>Non</translation>
     </message>
 </context>
 <context>

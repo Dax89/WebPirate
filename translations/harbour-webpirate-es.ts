@@ -1,71 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="cs_CZ">
+<TS version="2.1" language="es">
 <context>
     <name>AboutPage</name>
     <message>
         <source>About Web Pirate</source>
-        <translation>O Web Pirate</translation>
+        <translation>Acerca de Web Pirate</translation>
     </message>
     <message>
         <source>Catalan</source>
-        <translation>Katalánština</translation>
+        <translation>Catalán</translation>
     </message>
     <message>
         <source>Chinese</source>
-        <translation>Čínština</translation>
+        <translation>Chino</translation>
     </message>
     <message>
         <source>Dutch</source>
-        <translation>Holandština</translation>
+        <translation>Holandés</translation>
     </message>
     <message>
         <source>French</source>
-        <translation>Francouzština</translation>
+        <translation>Francés</translation>
     </message>
     <message>
         <source>German</source>
-        <translation>Němčina</translation>
+        <translation>Alemán</translation>
     </message>
     <message>
         <source>Russian</source>
-        <translation>Ruština</translation>
+        <translation>Ruso</translation>
     </message>
     <message>
         <source>Swedish</source>
-        <translation>Švédština</translation>
+        <translation>Sueco</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation>Verze</translation>
+        <translation>Versión</translation>
     </message>
     <message>
         <source>A tabbed Web Browser for SailfishOS based on WebKit</source>
-        <translation>Panelový webový prohlížeč pro SailfishOS, založený na WebKitu</translation>
+        <translation>Un navegador Web con pestañas para SailfishOS basado en WebKit</translation>
     </message>
     <message>
         <source>Developer</source>
-        <translation>Autor</translation>
+        <translation>Desarrollador</translation>
     </message>
     <message>
         <source>GitHub Repository</source>
-        <translation>Repozitář GitHub</translation>
+        <translation>Repositorio GitHub</translation>
     </message>
     <message>
         <source>Translators</source>
-        <translation>Překladatelé</translation>
+        <translation>Traductores</translation>
     </message>
     <message>
         <source>Slovenian</source>
-        <translation>Slovinština</translation>
+        <translation>Esloveno</translation>
     </message>
     <message>
         <source>Japanese</source>
-        <translation>Japonština</translation>
+        <translation>Japonés</translation>
     </message>
     <message>
         <source>Czech</source>
-        <translation>Čeština</translation>
+        <translation>Checo</translation>
     </message>
     <message>
         <source>Spanish</source>
@@ -76,51 +76,51 @@
     <name>ActionSidebar</name>
     <message>
         <source>Favorites</source>
-        <translation>Záložky</translation>
+        <translation>Favoritos</translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation>Stahování</translation>
+        <translation>Descargas</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation>Nastavení</translation>
+        <translation>Ajustes</translation>
     </message>
     <message>
         <source>General</source>
-        <translation>Obecné</translation>
+        <translation>General</translation>
     </message>
     <message>
         <source>Change settings</source>
-        <translation>Změnit nastavení</translation>
+        <translation>Cambiar ajustes</translation>
     </message>
     <message>
         <source>About Web Pirate</source>
-        <translation>O Web Pirate</translation>
+        <translation>Acerca de Web Pirate</translation>
     </message>
     <message>
         <source>Sessions</source>
-        <translation>Relace</translation>
+        <translation>Sesiones</translation>
     </message>
     <message>
         <source>Save Session</source>
-        <translation>Uložit relaci</translation>
+        <translation>Guardar sesión</translation>
     </message>
     <message>
         <source>Load Session</source>
-        <translation>Načíst relaci</translation>
+        <translation>Cargar sesión</translation>
     </message>
     <message>
         <source>Cover settings</source>
-        <translation>Nastavení obalu</translation>
+        <translation>Ajustes de la cubierta</translation>
     </message>
     <message>
         <source>Night Mode</source>
-        <translation>Noční režim</translation>
+        <translation>Modo noche</translation>
     </message>
     <message>
         <source>Extensions</source>
-        <translation>Doplňky</translation>
+        <translation>Extensiones</translation>
     </message>
     <message>
         <source>Ad Block</source>
@@ -139,7 +139,7 @@
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished">Stáhnout</translation>
+        <translation type="unfinished">Descargar</translation>
     </message>
     <message>
         <source>Ready</source>
@@ -155,14 +155,14 @@
     </message>
     <message>
         <source>Completed</source>
-        <translation type="unfinished">Dokončeno</translation>
+        <translation type="unfinished">Completado</translation>
     </message>
 </context>
 <context>
     <name>AdBlockFilter</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Uložit</translation>
+        <translation type="unfinished">Guardar</translation>
     </message>
     <message>
         <source>Filter</source>
@@ -173,15 +173,15 @@
     <name>AdBlockPage</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Uložit</translation>
+        <translation type="unfinished">Guardar</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="unfinished">Upravit</translation>
+        <translation type="unfinished">Editar</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Borrar</translation>
     </message>
     <message>
         <source>Deleting filter</source>
@@ -230,84 +230,84 @@
     <name>BrowserTab</name>
     <message>
         <source>New Tab</source>
-        <translation>Nový panel</translation>
+        <translation>Nueva pestaña</translation>
     </message>
     <message>
         <source>Load Error</source>
-        <translation>Chyba načítání</translation>
+        <translation>Error de carga</translation>
     </message>
 </context>
 <context>
     <name>BrowserWebView</name>
     <message>
         <source>Accept Certificate from:</source>
-        <translation>Přijmout certifikát od:</translation>
+        <translation>Aceptar certificado de:</translation>
     </message>
     <message>
         <source>Downloading</source>
-        <translation>Stahuje se</translation>
+        <translation>Descargando</translation>
     </message>
 </context>
 <context>
     <name>CoverModel</name>
     <message>
         <source>Go to Previous Tab</source>
-        <translation>Předchozí panel</translation>
+        <translation>Ir a la pestaña anterior</translation>
     </message>
     <message>
         <source>Go to Next Tab</source>
-        <translation>Následující panel</translation>
+        <translation>Ir a la siguiente pestaña</translation>
     </message>
     <message>
         <source>Add New Tab</source>
-        <translation>Přidat nový panel</translation>
+        <translation>Añadir nueva pestaña</translation>
     </message>
     <message>
         <source>Close Tab</source>
-        <translation>Zavřít panel</translation>
+        <translation>Cerrar pestaña</translation>
     </message>
     <message>
         <source>Load Homepage</source>
-        <translation>Načíst domovskou stránku</translation>
+        <translation>Cargar página de inicio</translation>
     </message>
     <message>
         <source>Close Browser</source>
-        <translation>Zavřít prohlížeč</translation>
+        <translation>Cerrar navegador</translation>
     </message>
     <message>
         <source>Reload Current Page</source>
-        <translation>Znovu načíst stránku</translation>
+        <translation>Actualizar página actual</translation>
     </message>
     <message>
         <source>Wipe personal data</source>
-        <translation>Vymazat soukromá data</translation>
+        <translation>Limpiar datos personales</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Hledat</translation>
+        <translation>Buscar</translation>
     </message>
 </context>
 <context>
     <name>CoverSettingsPage</name>
     <message>
         <source>General Actions</source>
-        <translation>Běžné akce</translation>
+        <translation>Acciones generales</translation>
     </message>
     <message>
         <source>Left</source>
-        <translation>Vlevo</translation>
+        <translation>Izquierda</translation>
     </message>
     <message>
         <source>Right</source>
-        <translation>Vpravo</translation>
+        <translation>Derecha</translation>
     </message>
     <message>
         <source>Webpage Actions</source>
-        <translation>Webové akce</translation>
+        <translation>Acciones página Web</translation>
     </message>
     <message>
         <source>Cover Settings</source>
-        <translation>Nastavení obalu</translation>
+        <translation>Ajustes de la cubierta</translation>
     </message>
 </context>
 <context>
@@ -329,188 +329,189 @@
     <name>DownloadListItem</name>
     <message>
         <source>Restart</source>
-        <translation>Restartovat</translation>
+        <translation>Reiniciar</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Zrušit</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <source>Completed:</source>
-        <translation>Dokončeno:</translation>
+        <translation>Completado:</translation>
     </message>
     <message>
         <source>Speed:</source>
-        <translation>Rychlost:</translation>
+        <translation>Velocidad:</translation>
     </message>
     <message>
         <source>Completed</source>
-        <translation>Dokončeno</translation>
+        <translation>Completado</translation>
     </message>
     <message>
         <source>Error:</source>
-        <translation>Chyba:</translation>
+        <translation>Error:</translation>
     </message>
 </context>
 <context>
     <name>DownloadsPage</name>
     <message>
         <source>Download Manager</source>
-        <translation>Správce stahování</translation>
+        <translation>Gestor de descargas</translation>
     </message>
     <message>
         <source>Delete completed Downloads</source>
-        <translation>Vymazat dokončená stahování</translation>
+        <translation>Borrar descargas completadas</translation>
     </message>
 </context>
 <context>
     <name>FavoritePage</name>
     <message>
         <source>Save</source>
-        <translation>Uložit</translation>
+        <translation>Guardar</translation>
     </message>
     <message>
         <source>Title</source>
-        <translation>Název</translation>
+        <translation>Título</translation>
     </message>
     <message>
         <source>Url</source>
-        <translation>Adresa</translation>
+        <translation>Url</translation>
     </message>
 </context>
 <context>
     <name>FavoritesPage</name>
     <message>
         <source>Add Folder</source>
-        <translation>Přidat složku</translation>
+        <translation>Añadir carpeta</translation>
     </message>
     <message>
         <source>Add Favorite</source>
-        <translation>Přidat záložku</translation>
+        <translation>Añadir favorito</translation>
     </message>
     <message>
         <source>Favorites</source>
-        <translation>Záložky</translation>
+        <translation>Favoritos</translation>
     </message>
     <message>
         <source>Export</source>
-        <translation>Exportovat</translation>
+        <translation>Exportar</translation>
     </message>
     <message>
         <source>Import</source>
-        <translation>Importovat</translation>
+        <translation>Importar</translation>
     </message>
     <message>
         <source>Import in</source>
-        <translation>Importovat v</translation>
+        <translation>Importar en</translation>
     </message>
     <message>
         <source>Import Favorites</source>
-        <translation>Importovat záložky</translation>
+        <translation>Importar favoritos</translation>
     </message>
     <message>
         <source>Exporting favorites</source>
-        <translation>Export záložek</translation>
+        <translation>Exportando favoritos</translation>
     </message>
     <message>
         <source>Favorites exported successfully</source>
-        <translation>Záložky úspěšně exportovány</translation>
+        <translation>Favoritos exportados con éxito</translation>
     </message>
     <message>
         <source>Favorites imported successfully</source>
-        <translation>Záložky úspěšně importovány</translation>
+        <translation>Favoritos importados con éxito</translation>
     </message>
     <message>
         <source>Delete all Favorites</source>
-        <translation>Vymazat všechny oblíbené</translation>
+        <translation>Borrar todos los favoritos</translation>
     </message>
     <message>
         <source>Deleting all favorites</source>
-        <translation>Mažou se všechny oblíbené</translation>
+        <translation>Borrando todos los favoritos</translation>
     </message>
 </context>
 <context>
     <name>FavoritesView</name>
     <message>
         <source>Edit</source>
-        <translation>Upravit</translation>
+        <translation>Editar</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Odstranit</translation>
+        <translation>Borrar</translation>
     </message>
     <message>
         <source>Deleting Favorite</source>
-        <translation>Odstraňování záložky</translation>
+        <translation> Borrando favorito</translation>
     </message>
     <message>
         <source>Deleting Folder</source>
-        <translation>Odstraňování složky</translation>
+        <translation>Borrando carpeta</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation>Otevřít</translation>
+        <translation>Abrir</translation>
     </message>
     <message>
         <source>Open in New Tab</source>
-        <translation>Otevřít v novém panelu</translation>
+        <translation>Abrir en nueva pestaña</translation>
     </message>
 </context>
 <context>
     <name>HistoryMenu</name>
     <message>
         <source>Link copied to clipboard</source>
-        <translation>Odkaz zkopírován do schránky</translation>
+        <translation>Enlace copiado al portapapeles
+</translation>
     </message>
 </context>
 <context>
     <name>LinkMenu</name>
     <message>
         <source>Open New Tab</source>
-        <translation>Otevřít nový panel</translation>
+        <translation>Abrir nueva pestaña</translation>
     </message>
     <message>
         <source>Remove From Favorites</source>
-        <translation>Odstranit ze záložek</translation>
+        <translation>Quitar de favoritos</translation>
     </message>
     <message>
         <source>Add To Favorites</source>
-        <translation>Přidat do záložek</translation>
+        <translation>Añadir a favoritos</translation>
     </message>
     <message>
         <source>Save Link Destination</source>
-        <translation>Uložit stránku odkazu</translation>
+        <translation>Guardar contenido del enlace</translation>
     </message>
     <message>
         <source>Copy Link</source>
-        <translation>Kopírovat odkaz</translation>
+        <translation>Copiar enlace</translation>
     </message>
     <message>
         <source>Save Image</source>
-        <translation>Uložit obrázek</translation>
+        <translation>Guardar imagen</translation>
     </message>
     <message>
         <source>Downloading image</source>
-        <translation>Stahování obrázku</translation>
+        <translation>Descargando imagen</translation>
     </message>
     <message>
         <source>Downloading link</source>
-        <translation>Stahování odkazu</translation>
+        <translation>Descargando enlace</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation>Otevřít</translation>
+        <translation>Abrir</translation>
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation>Odkaz zkopírován do schránky</translation>
+        <translation>Enlace copiado al portapapeles</translation>
     </message>
 </context>
 <context>
     <name>LoadFailed</name>
     <message>
         <source>You are in offline mode</source>
-        <translation>Jste v módu offline</translation>
+        <translation>Estás en modo fuera de línea</translation>
     </message>
 </context>
 <context>
@@ -524,29 +525,29 @@
     <name>QuickGrid</name>
     <message>
         <source>The QuickGrid is empty</source>
-        <translation>Rychlá volba je prázdná</translation>
+        <translation>La rejilla está vacía</translation>
     </message>
 </context>
 <context>
     <name>QuickGridItem</name>
     <message>
         <source>Removing item</source>
-        <translation>Odstraňování položky</translation>
+        <translation>Eliminando elemento</translation>
     </message>
 </context>
 <context>
     <name>QuickGridPage</name>
     <message>
         <source>Save</source>
-        <translation>Uložit</translation>
+        <translation>Guardar</translation>
     </message>
     <message>
         <source>Title</source>
-        <translation>Název</translation>
+        <translation>Título</translation>
     </message>
     <message>
         <source>Url</source>
-        <translation>Adresa</translation>
+        <translation>Url</translation>
     </message>
 </context>
 <context>
@@ -564,184 +565,184 @@
     <name>SaveSessionPage</name>
     <message>
         <source>Save Session</source>
-        <translation>Uložit relaci</translation>
+        <translation>Guardar sesión</translation>
     </message>
     <message>
         <source>Session name</source>
-        <translation>Název relaci</translation>
+        <translation>Nombre de la sesión</translation>
     </message>
     <message>
         <source>Load at startup</source>
-        <translation>Načíst při spuštění</translation>
+        <translation>Cargar al iniciar</translation>
     </message>
     <message>
         <source>Replace current session</source>
-        <translation>Nahradit současné sezení</translation>
+        <translation>Reemplazar sesión actual</translation>
     </message>
     <message>
         <source>Opened Tabs</source>
-        <translation>Otevřené panely</translation>
+        <translation>Pestañas abiertas</translation>
     </message>
     <message>
         <source>Selected</source>
-        <translation>Vybrané</translation>
+        <translation>Seleccionado</translation>
     </message>
 </context>
 <context>
     <name>SearchBar</name>
     <message>
         <source>Search with</source>
-        <translation>Hledat přes</translation>
+        <translation>Buscar con</translation>
     </message>
 </context>
 <context>
     <name>SearchEnginePage</name>
     <message>
         <source>Save</source>
-        <translation>Uložit</translation>
+        <translation>Guardar</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Jméno</translation>
+        <translation>Nombre</translation>
     </message>
     <message>
         <source>Query</source>
-        <translation>Dotaz</translation>
+        <translation>Consulta</translation>
     </message>
 </context>
 <context>
     <name>SearchEnginesPage</name>
     <message>
         <source>Set as Default</source>
-        <translation>Nastavit jako výchozí</translation>
+        <translation>Establecer por defecto</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Odstranit</translation>
+        <translation>Borrar</translation>
     </message>
     <message>
         <source>Search Engines</source>
-        <translation>Poskytovatelé vyhledávání</translation>
+        <translation>Motor de búsqueda</translation>
     </message>
     <message>
         <source>Add</source>
-        <translation>Přidat</translation>
+        <translation>Añadir</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Upravit</translation>
+        <translation>Editar</translation>
     </message>
     <message>
         <source>Deleting Search Engine</source>
-        <translation>Odstraňování poskytovatele vyhledávání</translation>
+        <translation>Borrando motor de búsqueda</translation>
     </message>
 </context>
 <context>
     <name>SessionPage</name>
     <message>
         <source>Save Session</source>
-        <translation>Uložit relaci</translation>
+        <translation>Guardar sesión</translation>
     </message>
     <message>
         <source>Session name</source>
-        <translation>Název relaci</translation>
+        <translation>Nombre de la sesión</translation>
     </message>
     <message>
         <source>Load at startup</source>
-        <translation>Načíst při spuštení</translation>
+        <translation>Cargar al iniciar</translation>
     </message>
     <message>
         <source>Replace current session</source>
-        <translation>Nahradit současnou relaci</translation>
+        <translation>Reemplazar sesión actual</translation>
     </message>
     <message>
         <source>Opened Tabs</source>
-        <translation>Otevřené panely</translation>
+        <translation>Pestañas abiertas</translation>
     </message>
     <message>
         <source>Selected</source>
-        <translation>Vybrané</translation>
+        <translation>Seleccionado</translation>
     </message>
 </context>
 <context>
     <name>SessionSettingsPage</name>
     <message>
         <source>Session Manager</source>
-        <translation>Správce relací</translation>
+        <translation>Gestor de sesiones</translation>
     </message>
     <message>
         <source>Tabs saved</source>
-        <translation>Panely uloženy</translation>
+        <translation>Pestañas guardadas</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation>Otevřít</translation>
+        <translation>Abrir</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Upravit</translation>
+        <translation>Editar</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Smazat</translation>
+        <translation>Borrar</translation>
     </message>
     <message>
         <source>Deleting session</source>
-        <translation>Mažu relaci</translation>
+        <translation>Borrando sesión</translation>
     </message>
 </context>
 <context>
     <name>SettingsPage</name>
     <message>
         <source>Home Page</source>
-        <translation>Domovská stránka</translation>
+        <translation>Págino de inicio</translation>
     </message>
     <message>
         <source>Search Engines</source>
-        <translation>Poskytovatelé vyhledávání</translation>
+        <translation>Motor de búsqueda</translation>
     </message>
     <message>
         <source>User Agent</source>
-        <translation>Identifikátor prohlížeče</translation>
+        <translation>Agente de usuario</translation>
     </message>
     <message>
         <source>Wipe Data on Exit</source>
-        <translation>Smazat data při ukončení</translation>
+        <translation>Limpiar datos al salir</translation>
     </message>
     <message>
         <source>General</source>
-        <translation>Obecné</translation>
+        <translation>General</translation>
     </message>
     <message>
         <source>Privacy</source>
-        <translation>Soukromí</translation>
+        <translation>Privacidad</translation>
     </message>
     <message>
         <source>Delete Personal Data</source>
-        <translation>Vymazat soukromá data</translation>
+        <translation>Borrar datos personales</translation>
     </message>
     <message>
         <source>Save Settings</source>
-        <translation>Uložit nastavení</translation>
+        <translation>Guardar ajustes</translation>
     </message>
     <message>
         <source>Removing personal data</source>
-        <translation>Mazání soukromých dat</translation>
+        <translation>Eliminando datos personales</translation>
     </message>
     <message>
         <source>Delete Navigation History</source>
-        <translation>Vymazat historii prohlížení</translation>
+        <translation>Borrar historial de navegación</translation>
     </message>
     <message>
         <source>Removing navigation history</source>
-        <translation>Mazání historie prohlížení</translation>
+        <translation>Eliminando historial de navegación</translation>
     </message>
 </context>
 <context>
     <name>TextSelectionPage</name>
     <message>
         <source>Done</source>
-        <translation>Dokončeno</translation>
+        <translation>Hecho</translation>
     </message>
 </context>
 <context>
@@ -752,35 +753,35 @@
     </message>
     <message>
         <source>Duration</source>
-        <translation>Doba trvání</translation>
+        <translation>Duración</translation>
     </message>
     <message>
         <source>Quality</source>
-        <translation>Kvalita</translation>
+        <translation>Calidad</translation>
     </message>
     <message>
         <source>Grabbed URLs</source>
-        <translation>Získané adresy</translation>
+        <translation>URLs capturadas</translation>
     </message>
     <message>
         <source>Title</source>
-        <translation>Název</translation>
+        <translation>Título</translation>
     </message>
     <message>
         <source>YouTube Grabber</source>
-        <translation>YouTube pomocník</translation>
+        <translation>Capturador de YouTube</translation>
     </message>
     <message>
         <source>Play</source>
-        <translation>Přehrát</translation>
+        <translation>Reproducir</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation>Stáhnout</translation>
+        <translation>Descargar</translation>
     </message>
     <message>
         <source>Grabbing video</source>
-        <translation>Získávání videa</translation>
+        <translation>Capturando vídeo</translation>
     </message>
 </context>
 </TS>

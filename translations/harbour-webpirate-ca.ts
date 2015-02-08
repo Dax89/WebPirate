@@ -123,19 +123,8 @@
         <translation>Extensions</translation>
     </message>
     <message>
-        <source>Block Ads</source>
-        <translation type="vanished">Bloca els anuncis</translation>
-    </message>
-    <message>
         <source>Ad Block</source>
         <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>AdBlockDownloader</name>
-    <message>
-        <source>Download</source>
-        <translation type="obsolete">Descarrega</translation>
     </message>
 </context>
 <context>
@@ -324,23 +313,16 @@
 <context>
     <name>CredentialDialog</name>
     <message>
-        <source>Do you want to store the password?</source>
-        <translation type="unfinished">Voleu desar la contrasenya?</translation>
-    </message>
-    <message>
         <source>Yes</source>
-        <translation type="unfinished">Sí</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>No</source>
-        <translation type="unfinished">No</translation>
+        <translation type="unfinished"></translation>
     </message>
-</context>
-<context>
-    <name>CredentialMenu</name>
     <message>
         <source>Do you want to store the password?</source>
-        <translation type="vanished">Voleu desar la contrasenya?</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -537,10 +519,6 @@
         <source>OK</source>
         <translation type="unfinished"></translation>
     </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="obsolete">Cancel·la</translation>
-    </message>
 </context>
 <context>
     <name>QuickGrid</name>
@@ -575,22 +553,11 @@
     <name>RequestDialog</name>
     <message>
         <source>Yes</source>
-        <translation type="unfinished">Sí</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>No</source>
-        <translation type="unfinished">No</translation>
-    </message>
-</context>
-<context>
-    <name>RequestMenu</name>
-    <message>
-        <source>Yes</source>
-        <translation type="vanished">Sí</translation>
-    </message>
-    <message>
-        <source>No</source>
-        <translation type="vanished">No</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
