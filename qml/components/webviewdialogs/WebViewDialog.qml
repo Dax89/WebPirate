@@ -16,20 +16,14 @@ PopupDialog
     width: Screen.width
     height: Screen.height - tabheader.height
 
-    onVisibleChanged: {
-        if(!manageNavigationBar)
-            return;
-
-        if(visible) {
+    Component.onCompleted: {
+        if(manageNavigationBar) {
             webviewdialogprivate.navigationWasVisible = navigationbar.visible;
             navigationbar.evaporate();
-            return;
         }
 
-        navigationbar.solidify();
+        show();
     }
-
-    Component.onCompleted: show()
 
     Component.onDestruction: {
         if(manageNavigationBar && webviewdialogprivate.navigationWasVisible)
