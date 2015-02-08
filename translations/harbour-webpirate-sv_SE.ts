@@ -67,6 +67,10 @@
         <source>Czech</source>
         <translation>Tjeckiska</translation>
     </message>
+    <message>
+        <source>Spanish</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ActionSidebar</name>

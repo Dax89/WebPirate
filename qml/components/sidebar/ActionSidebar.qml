@@ -89,7 +89,7 @@ Item
             SidebarSwitch
             {
                 anchors { left: parent.left; right: parent.right }
-                text: qsTr("Block Ads")
+                text: qsTr("Ad Block")
                 onClicked: pageStack.push(Qt.resolvedUrl("../../pages/adblock/AdBlockPage.qml"), { "settings": mainwindow.settings });
 
                 Component.onCompleted: {
