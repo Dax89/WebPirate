@@ -35,7 +35,10 @@ Page
                                                           readonly property string translators: "sponka"; },
 
                                                QtObject { readonly property string language: qsTr("Japanese");
-                                                          readonly property string translators: "rrijken"; } ]
+                                                          readonly property string translators: "rrijken"; },
+
+                                               QtObject { readonly property string language: qsTr("Spanish");
+                                                          readonly property string translators: "carmenfdezb"; } ]
 
     id: aboutpage
     allowedOrientations: Orientation.All
