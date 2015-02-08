@@ -1,4 +1,4 @@
-script + ins, div[id^='dotnAd'], div[id^='meetic'], div[id^='eadv'], div[class*='adv'], div[class$='fblikebox'], div#cboxOverlay + div#colorbox, div#cboxOverlay, iframe[id^='google_ads_'], iframe[id^='ad_'], .adsbygoogle,
+script + ins, div[id^='dotnAd'], div[id^='meetic'], div[id^='eadv'], div[class*='adv'], div[class$='fblikebox'], div#cboxOverlay + div#colorbox, div#cboxOverlay, iframe[id^='google_ads_'], iframe[id^='ad_'], .adsbygoogle
 {
   display: none !important;
 }

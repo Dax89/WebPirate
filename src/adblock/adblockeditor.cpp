@@ -78,7 +78,7 @@ void AdBlockEditor::saveFilters()
         const QString& f = filters.at(i);
         tablefile.write(QString("[%1, %2]\n").arg(cssfile.pos()).arg(f.length()).toLatin1());
 
-        if(i < (f.length() - 1))
+        if(i < (filters.length() - 1))
             cssfile.write(QString("%1, ").arg(f).toLatin1());
         else
             cssfile.write(f.toLatin1());
