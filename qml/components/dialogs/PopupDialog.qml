@@ -14,7 +14,7 @@ MouseArea
 
     function show() {
         popupdialog.visible = true;
-        popupmenu.height = (Theme.itemSizeSmall * Math.min(3, listview.count)) + (titleVisible ? Theme.itemSizeSmall : 0);
+        popupmenu.height = (Theme.itemSizeSmall * Math.min(5, listview.count)) + (titleVisible ? Theme.itemSizeSmall : 0);
     }
 
     function hide() {
