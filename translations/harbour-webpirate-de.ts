@@ -406,7 +406,7 @@
     </message>
     <message>
         <source>Import Favorites</source>
-        <translation>Favoriten importieren</translation>
+        <translation type="vanished">Favoriten importieren</translation>
     </message>
     <message>
         <source>Exporting favorites</source>
@@ -511,6 +511,13 @@
     <message>
         <source>You are in offline mode</source>
         <translation>Sie benutzen den Offline Modus</translation>
+    </message>
+</context>
+<context>
+    <name>MultiFilePickerPage</name>
+    <message>
+        <source>Done</source>
+        <translation type="unfinished">Erledigt</translation>
     </message>
 </context>
 <context>

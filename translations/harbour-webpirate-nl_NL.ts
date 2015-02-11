@@ -406,7 +406,7 @@
     </message>
     <message>
         <source>Import Favorites</source>
-        <translation>Bladwijzers importeren</translation>
+        <translation type="vanished">Bladwijzers importeren</translation>
     </message>
     <message>
         <source>Exporting favorites</source>
@@ -511,6 +511,13 @@
     <message>
         <source>You are in offline mode</source>
         <translation>U bent in offline-modus</translation>
+    </message>
+</context>
+<context>
+    <name>MultiFilePickerPage</name>
+    <message>
+        <source>Done</source>
+        <translation type="unfinished">Klaar</translation>
     </message>
 </context>
 <context>

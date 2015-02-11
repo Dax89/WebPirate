@@ -406,7 +406,7 @@
     </message>
     <message>
         <source>Import Favorites</source>
-        <translation>导入到书签</translation>
+        <translation type="vanished">导入到书签</translation>
     </message>
     <message>
         <source>Exporting favorites</source>
@@ -511,6 +511,13 @@
     <message>
         <source>You are in offline mode</source>
         <translation>处于离线模式中</translation>
+    </message>
+</context>
+<context>
+    <name>MultiFilePickerPage</name>
+    <message>
+        <source>Done</source>
+        <translation type="unfinished">完成</translation>
     </message>
 </context>
 <context>

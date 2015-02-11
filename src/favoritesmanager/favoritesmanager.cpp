@@ -35,9 +35,9 @@ int FavoritesManager::nearestPos(int a, int b)
     return b;
 }
 
-QString FavoritesManager::readFile(const QUrl &file)
+QString FavoritesManager::readFile(const QString &file)
 {
-    QFile f(file.toLocalFile());
+    QFile f(file);
     f.open(QFile::ReadOnly);
     QString data = QString(f.readAll());
     f.close();
@@ -129,7 +129,7 @@ void FavoritesManager::parseFolder(FavoriteItem* parentfolder, const QString& da
     }
 }
 
-void FavoritesManager::importFile(const QUrl &file)
+void FavoritesManager::importFile(const QString &file)
 {
     QString data = this->readFile(file);
     int firstpos = data.indexOf(this->_folderbeginregex);

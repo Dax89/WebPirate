@@ -66,9 +66,9 @@ Page
                 text: (folderId === 0) ? qsTr("Import") : (qsTr("Import in") + " '" + favoritesview.model.currentFolder() + "'")
 
                 onClicked: {
-                    var page = pageStack.push(Qt.resolvedUrl("../pages/FilePicker.qml"), { "title": qsTr("Import Favorites") });
+                    var page = pageStack.push(Qt.resolvedUrl("picker/FilePickerPage.qml"), { "filter": "*.htm;*.html", "rootPage": favoritespage });
 
-                    page.fileSelected.connect(function(file) {
+                    page.filePicked.connect(function(file) {
                         favoritesmanager.importFile(file);
                     });
                 }

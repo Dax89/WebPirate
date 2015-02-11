@@ -405,10 +405,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Import Favorites</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Exporting favorites</source>
         <translation type="unfinished"></translation>
     </message>
@@ -510,6 +506,13 @@
     <name>LoadFailed</name>
     <message>
         <source>You are in offline mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>MultiFilePickerPage</name>
+    <message>
+        <source>Done</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

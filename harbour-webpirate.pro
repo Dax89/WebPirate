@@ -34,7 +34,8 @@ SOURCES += src/harbour-webpirate.cpp \
     src/adblock/adblockmanager.cpp \
     src/adblock/adblockeditor.cpp \
     src/adblock/adblockfilter.cpp \
-    src/adblock/adblockdownloader.cpp
+    src/adblock/adblockdownloader.cpp \
+    src/filepicker/folderlistmodel.cpp
 
 OTHER_FILES += qml/harbour-webpirate.qml \
     rpm/harbour-webpirate.changes.in \
@@ -84,7 +85,6 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/components/PopupMessage.qml \
     qml/components/sidebar/SidebarItem.qml \
     qml/pages/AboutPage.qml \
-    qml/pages/FilePicker.qml \
     qml/js/canvg/canvg.js \
     qml/js/canvg/rgbcolor.js \
     qml/js/canvg/StackBlur.js \
@@ -125,7 +125,10 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/components/dialogs/CredentialDialog.qml \
     qml/components/webviewdialogs/RequestDialog.qml \
     qml/components/webviewdialogs/PromptDialog.qml \
-    qml/components/webviewdialogs/AuthenticationDialog.qml
+    qml/components/webviewdialogs/AuthenticationDialog.qml \
+    qml/pages/picker/FilePickerPage.qml \
+    qml/components/pickers/FilePicker.qml \
+    qml/pages/picker/MultiFilePickerPage.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line
@@ -162,5 +165,6 @@ HEADERS += \
     src/adblock/adblockmanager.h \
     src/adblock/adblockeditor.h \
     src/adblock/adblockfilter.h \
-    src/adblock/adblockdownloader.h
+    src/adblock/adblockdownloader.h \
+    src/filepicker/folderlistmodel.h
 

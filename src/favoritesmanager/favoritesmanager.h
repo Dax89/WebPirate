@@ -26,14 +26,14 @@ class FavoritesManager : public QObject
 
     private:
         static int nearestPos(int a, int b);
-        QString readFile(const QUrl& file);
+        QString readFile(const QString &file);
         void writeHeader(QTextStream& ts);
         void exportBookmarks(FavoriteItem *parentitem, QTextStream& ts, int level);
         void parseFavorite(FavoriteItem *parentfolder, const QString& data, int& currpos);
         void parseFolder(FavoriteItem *parentfolder, const QString &data, const QString& name, int& currpos);
 
     public slots:
-        void importFile(const QUrl &file);
+        void importFile(const QString &file);
         void createRoot();
         void exportFile(const QString& foldername);
         void clearTree();

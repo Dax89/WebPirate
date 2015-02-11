@@ -33,6 +33,7 @@
 #include "dbus/webpirateservice.h"
 #include "favoritesmanager/favoritesmanager.h"
 #include "downloadmanager/downloadmanager.h"
+#include "filepicker/folderlistmodel.h"
 #include "adblock/adblockeditor.h"
 #include "adblock/adblockmanager.h"
 #include "adblock/adblockdownloader.h"
@@ -47,6 +48,8 @@ int main(int argc, char *argv[])
 
     qmlRegisterType<DownloadItem>("WebPirate.Private", 1, 0, "DownloadItem");
     qmlRegisterType<FavoriteItem>("WebPirate.Private", 1, 0, "FavoriteItem");
+
+    qmlRegisterType<FolderListModel>("WebPirate.Pickers", 1, 0, "FolderListModel");
 
     qmlRegisterType<AdBlockEditor>("WebPirate.AdBlock", 1, 0, "AdBlockEditor");
     qmlRegisterType<AdBlockDownloader>("WebPirate.AdBlock", 1, 0, "AdBlockDownloader");
