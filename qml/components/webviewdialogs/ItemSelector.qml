@@ -15,16 +15,22 @@ WebViewDialog
     popupDelegate: ListItem {
         contentHeight: Theme.itemSizeSmall
         contentWidth: parent.width
-        highlighted: model.selected
         enabled: model.enabled
 
         Label {
-            anchors.fill: parent
-            anchors.bottomMargin: Theme.paddingSmall
-            horizontalAlignment: Text.AlignHCenter
+            id: lblitemsel
+            anchors { left: parent.left; right: itemselswitch.left; verticalCenter: parent.verticalCenter; leftMargin: Theme.paddingLarge }
+            horizontalAlignment: Text.AlignLeft
             verticalAlignment: Text.AlignVCenter
-            color: model.selected ? Theme.highlightColor : Theme.primaryColor
             text: model.text
+        }
+
+        Switch
+        {
+            id: itemselswitch
+            anchors { right: parent.right; verticalCenter: lblitemsel.verticalCenter }
+            checked: model.selected
+            onClicked: itemselector.selectorModel.accept(model.index)
         }
 
         onClicked: itemselector.selectorModel.accept(model.index)
