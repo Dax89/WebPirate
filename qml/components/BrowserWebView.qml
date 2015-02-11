@@ -85,6 +85,8 @@ SilicaWebView
         }
     }
 
+    experimental.filePicker: FilePickerDialog { }
+
     experimental.onMessageReceived: {
         var data = JSON.parse(message.data);
 

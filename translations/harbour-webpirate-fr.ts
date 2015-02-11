@@ -517,7 +517,7 @@
     <name>MultiFilePickerPage</name>
     <message>
         <source>Done</source>
-        <translation type="unfinished">Fait</translation>
+        <translation type="obsolete">Fait</translation>
     </message>
 </context>
 <context>

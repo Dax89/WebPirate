@@ -10,9 +10,25 @@ Page
     property string filter
 
     signal filePicked(string file)
+    signal dismiss()
+
+    function pickFile(file) {
+        filepickerpageprivate.isFilePicked = true;
+        filePicked(file);
+    }
+
+    QtObject {
+        property bool isFilePicked: false
+        id: filepickerpageprivate
+    }
 
     id: filepickerpage
     allowedOrientations: Orientation.All
+
+    Component.onDestruction: {
+        if(!filepickerpageprivate.isFilePicked)
+            dismiss();
+    }
 
     SilicaFlickable
     {
@@ -30,18 +46,18 @@ Page
                 id: foldermodel
 
                 onDirectoryNameChanged: {
-                    pageheader.title = foldermodel.directoryName
+                    pageheader.title = foldermodel.directoryName;
                 }
             }
 
             onFileSelected: {
-                filePicked(filepath);
+                pickFile(filepath);
                 pageStack.pop(rootPage);
             }
 
             onFolderSelected: {
                 var page = pageStack.push(Qt.resolvedUrl("FilePickerPage.qml"), { "directory": folderpath, "filter" : filter, "rootPage": rootPage })
-                page.filePicked.connect(filePicked);
+                page.filePicked.connect(pickFile);
             }
         }
     }

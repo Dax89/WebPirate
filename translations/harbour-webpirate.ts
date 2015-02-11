@@ -510,13 +510,6 @@
     </message>
 </context>
 <context>
-    <name>MultiFilePickerPage</name>
-    <message>
-        <source>Done</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
     <name>PromptDialog</name>
     <message>
         <source>OK</source>
