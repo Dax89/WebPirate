@@ -15,9 +15,11 @@ WebViewDialog
     popupDelegate: ListItem {
         contentHeight: Theme.itemSizeSmall
         contentWidth: parent.width
+        highlighted: model.selected
         enabled: model.enabled
 
-        Label {
+        Label
+        {
             id: lblitemsel
             anchors { left: parent.left; right: itemselswitch.left; verticalCenter: parent.verticalCenter; leftMargin: Theme.paddingLarge }
             horizontalAlignment: Text.AlignLeft
