@@ -201,7 +201,7 @@ Item
         }
 
         searchBar.onTextChanged: {
-            if(webview.loading) {
+            if(webview.loading || !searchBar.editing) {
                 historymenu.hide();
                 return;
             }
