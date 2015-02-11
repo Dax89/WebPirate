@@ -13,8 +13,7 @@ PopupDialog
     }
 
     id: webviewdialog
-    width: Screen.width
-    height: Screen.height - tabheader.height
+    anchors { fill: parent; bottomMargin: tabheader.height }
 
     Component.onCompleted: {
         if(manageNavigationBar) {
