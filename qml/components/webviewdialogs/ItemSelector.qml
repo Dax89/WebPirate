@@ -10,7 +10,7 @@ WebViewDialog
     titleVisible: false
     width: Screen.width
     height: Screen.height - tabheader.height
-    onClicked: selectorModel.reject();
+    onClicked: selectorModel.reject()
 
     popupDelegate: ListItem {
         contentHeight: Theme.itemSizeSmall
@@ -23,6 +23,7 @@ WebViewDialog
             anchors.bottomMargin: Theme.paddingSmall
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
+            color: model.selected ? Theme.highlightColor : Theme.primaryColor
             text: model.text
         }
 
@@ -32,4 +33,6 @@ WebViewDialog
     onSelectorModelChanged: {
         itemselector.popupModel = itemselector.selectorModel.items;
     }
+
+    Component.onCompleted: popupList.positionViewAtIndex(webview.itemSelectorIndex, ListView.Beginning)
 }

@@ -13,6 +13,8 @@ import "../js/YouTubeGrabber.js" as YouTubeGrabber
 
 SilicaWebView
 {
+    property int itemSelectorIndex: -1 /* Keeps the selected index of ItemSelector */
+
     function setNightMode(nightmode)
     {
         if(browsertab.state !== "webbrowser")
@@ -111,6 +113,8 @@ SilicaWebView
                 credentialdialog.show();
             }
         }
+        else if(data.type === "selector_touch")
+            itemSelectorIndex = data.selectedIndex;
         else if(data.type === "youtube_play") {
             pageStack.push(Qt.resolvedUrl("../pages/YouTubeSettingsPage.qml"), {"videoId": data.videoid, "settings": mainwindow.settings });
         }

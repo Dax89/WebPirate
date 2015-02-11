@@ -63,7 +63,14 @@ var __webpirate__ = {
         }
 
         var data = new Object;
-        data.type = "touchstart";
+
+        if(touchevent.target.tagName === "SELECT")
+        {
+            data.type = "selector_touch";
+            data.selectedIndex = touchevent.target.selectedIndex;
+        }
+        else
+            data.type = "touchstart";
 
         navigator.qt.postMessage(JSON.stringify(data));
     },

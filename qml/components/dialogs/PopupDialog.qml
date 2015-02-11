@@ -6,6 +6,7 @@ MouseArea
     property alias title: lblheader.text
     property alias popupModel: listview.model
     property alias popupDelegate: listview.delegate
+    property alias popupList: listview
 
     property bool titleVisible: true
 
