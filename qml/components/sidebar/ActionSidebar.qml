@@ -46,7 +46,7 @@ Item
                 anchors { left: parent.left; right: parent.right }
                 icon: "image://theme/icon-s-favorite"
                 text: qsTr("Favorites")
-                onClicked: pageStack.push(Qt.resolvedUrl("../../pages/FavoritesPage.qml"), { "folderId": 0, "tabview": tabview, "rootPage": pageStack.currentPage });
+                onClicked: pageStack.push(Qt.resolvedUrl("../../pages/favorite/FavoritesPage.qml"), { "folderId": 0, "tabview": tabview, "rootPage": pageStack.currentPage });
             }
 
             SidebarItem

@@ -45,12 +45,12 @@ Item
                 MenuItem {
                     text: qsTr("Edit");
 
-                    onClicked: pageStack.push(Qt.resolvedUrl("../pages/FavoritePage.qml"), {"model": favoritesmodel,
-                                                                                            "favoriteId": favoriteid,
-                                                                                            "parentId": parentid,
-                                                                                            "isFolder": isfolder,
-                                                                                            "title": title,
-                                                                                            "url": url });
+                    onClicked: pageStack.push(Qt.resolvedUrl("../pages/favorite/FavoritePage.qml"), { "model": favoritesmodel,
+                                                                                                      "favoriteId": favoriteid,
+                                                                                                      "parentId": parentid,
+                                                                                                      "isFolder": isfolder,
+                                                                                                      "title": title,
+                                                                                                      "url": url });
                 }
 
                 MenuItem {
@@ -65,7 +65,7 @@ Item
 
             onClicked: {
                 if(isfolder) {
-                    pageStack.push(Qt.resolvedUrl("../pages/FavoritesPage.qml"), { "folderId": favoriteid, "tabview": tabview, "rootPage": rootPage })
+                    pageStack.push(Qt.resolvedUrl("../pages/favorite/FavoritesPage.qml"), { "folderId": favoriteid, "tabview": tabview, "rootPage": rootPage })
                     return;
                 }
 

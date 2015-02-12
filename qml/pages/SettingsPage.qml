@@ -65,7 +65,7 @@ Dialog
                 }
 
                 onPressAndHold: {
-                    var page = pageStack.push(Qt.resolvedUrl("SearchEnginesPage.qml"), {"settings": settings });
+                    var page = pageStack.push(Qt.resolvedUrl("searchengine/SearchEnginesPage.qml"), {"settings": settings });
                     page.defaultEngineChanged.connect(function(newindex) {
                         cbsearchengines.currentIndex = newindex;
                     });

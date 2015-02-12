@@ -1,8 +1,8 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
-import "../models"
-import "../js/SearchEngines.js" as SearchEngines
-import "../js/Database.js" as Database
+import "../../models"
+import "../../js/SearchEngines.js" as SearchEngines
+import "../../js/Database.js" as Database
 
 Page
 {

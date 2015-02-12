@@ -58,9 +58,9 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/models/FavoritesModel.qml \
     qml/components/FavoritesView.qml \
     qml/js/helpers/WebViewHelper.js \
-    qml/pages/SearchEnginesPage.qml \
-    qml/pages/FavoritePage.qml \
-    qml/pages/SearchEnginePage.qml \
+    qml/pages/searchengine/SearchEnginesPage.qml \
+    qml/pages/favorite/FavoritePage.qml \
+    qml/pages/searchengine/SearchEnginePage.qml \
     qml/models/SearchEngineModel.qml \
     qml/js/Credentials.js \
     qml/js/GibberishAES.js \
@@ -69,7 +69,7 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/components/items/DownloadListItem.qml \
     qml/components/BrowserWebView.qml \
     qml/components/sidebar/ActionSidebar.qml \
-    qml/pages/FavoritesPage.qml \
+    qml/pages/favorite/FavoritesPage.qml \
     qml/js/History.js \
     qml/components/menus/HistoryMenu.qml \
     qml/components/SettingLabel.qml \

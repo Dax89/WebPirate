@@ -1,10 +1,10 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
 import WebPirate 1.0
-import "../components"
-import "../components/tabview"
-import "../models"
-import "../js/Favorites.js" as Favorites
+import "../../components"
+import "../../components/tabview"
+import "../../models"
+import "../../js/Favorites.js" as Favorites
 
 Page
 {
@@ -66,7 +66,7 @@ Page
                 text: (folderId === 0) ? qsTr("Import") : (qsTr("Import in") + " '" + favoritesview.model.currentFolder() + "'")
 
                 onClicked: {
-                    var page = pageStack.push(Qt.resolvedUrl("picker/FilePickerPage.qml"), { "filter": "*.htm;*.html", "rootPage": favoritespage });
+                    var page = pageStack.push(Qt.resolvedUrl("../picker/FilePickerPage.qml"), { "filter": "*.htm;*.html", "rootPage": favoritespage });
 
                     page.filePicked.connect(function(file) {
                         favoritesmanager.importFile(file);
@@ -77,13 +77,13 @@ Page
             MenuItem
             {
                 text: qsTr("Add Folder")
-                onClicked: pageStack.push(Qt.resolvedUrl("../pages/FavoritePage.qml"), { "model": favoritesview.model, "isFolder": true, "parentId": favoritesview.model.currentId });
+                onClicked: pageStack.push(Qt.resolvedUrl("FavoritePage.qml"), { "model": favoritesview.model, "isFolder": true, "parentId": favoritesview.model.currentId });
             }
 
             MenuItem
             {
                 text: qsTr("Add Favorite")
-                onClicked: pageStack.push(Qt.resolvedUrl("../pages/FavoritePage.qml"), { "model": favoritesview.model, "isFolder": false, "parentId": favoritesview.model.currentId });
+                onClicked: pageStack.push(Qt.resolvedUrl("FavoritePage.qml"), { "model": favoritesview.model, "isFolder": false, "parentId": favoritesview.model.currentId });
             }
         }
 
