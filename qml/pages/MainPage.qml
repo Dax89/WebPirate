@@ -53,6 +53,7 @@ Page
         }
     }
 
+    /*
     Connections
     {
         target: webpirateservice
@@ -64,6 +65,7 @@ Page
                 mainwindow.activate();
         }
     }
+    */
 
     Connections
     {

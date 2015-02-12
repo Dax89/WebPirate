@@ -15,10 +15,10 @@ TARGET = harbour-webpirate
 QT += sql dbus
 CONFIG += sailfishapp
 
-# Install D-Bus Service
-dbus_service.files = org.browser.WebPirate.service
-dbus_service.path = /usr/share/dbus-1/services
-INSTALLS += dbus_service
+# Install D-Bus Service (Currently Disabled)
+# dbus_service.files = org.browser.WebPirate.service
+# dbus_service.path = /usr/share/dbus-1/services
+# INSTALLS += dbus_service
 
 SOURCES += src/harbour-webpirate.cpp \
     src/webviewdatabase.cpp \

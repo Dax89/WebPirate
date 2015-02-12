@@ -30,7 +30,7 @@
 
 #include <QtQuick>
 #include <sailfishapp.h>
-#include "dbus/webpirateservice.h"
+//#include "dbus/webpirateservice.h"
 #include "favoritesmanager/favoritesmanager.h"
 #include "downloadmanager/downloadmanager.h"
 #include "filepicker/folderlistmodel.h"
@@ -60,7 +60,7 @@ int main(int argc, char *argv[])
     qmlRegisterType<FavoritesManager>("WebPirate", 1, 0, "FavoritesManager");
 
     MimeDatabase mimedb;
-    WebPirateService wpservice;
+    //WebPirateService wpservice;
     WebViewDatabase webviewdb;
 
     QScopedPointer<QQuickView> view(SailfishApp::createView());
@@ -71,7 +71,7 @@ int main(int argc, char *argv[])
     engine->addImageProvider(WebIconDatabase::PROVIDER_NAME, new FaviconProvider());
     engine->rootContext()->setContextProperty("mimedatabase", &mimedb);
     engine->rootContext()->setContextProperty("webviewdatabase", &webviewdb);
-    engine->rootContext()->setContextProperty("webpirateservice", &wpservice);
+    //engine->rootContext()->setContextProperty("webpirateservice", &wpservice);
 
     view->setSource(SailfishApp::pathTo("qml/harbour-webpirate.qml"));
     view->show();

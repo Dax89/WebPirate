@@ -69,6 +69,5 @@ desktop-file-install --delete-original       \
 %{_datadir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/icons/hicolor/86x86/apps/%{name}.png
-%{_datadir}/dbus-1/services/*.service
 # >> files
 # << files
