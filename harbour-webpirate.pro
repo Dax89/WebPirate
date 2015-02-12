@@ -67,7 +67,7 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/components/menus/LinkMenu.qml \
     qml/pages/DownloadsPage.qml \
     qml/components/items/DownloadListItem.qml \
-    qml/components/BrowserWebView.qml \
+    qml/components/webview/BrowserWebView.qml \
     qml/components/sidebar/ActionSidebar.qml \
     qml/pages/favorite/FavoritesPage.qml \
     qml/js/History.js \
@@ -118,17 +118,18 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     adblock.table \
     qml/pages/adblock/AdBlockFilter.qml \
     qml/pages/adblock/AdBlockDownloaderPage.qml \
-    qml/components/webviewdialogs/ItemSelector.qml \
-    qml/components/webviewdialogs/AlertDialog.qml \
-    qml/components/webviewdialogs/WebViewDialog.qml \
+    qml/components/webview/jsdialogs/ItemSelector.qml \
+    qml/components/webview/jsdialogs/AlertDialog.qml \
+    qml/components/webview/jsdialogs/WebViewDialog.qml \
     qml/components/dialogs/PopupDialog.qml \
     qml/components/dialogs/CredentialDialog.qml \
-    qml/components/webviewdialogs/RequestDialog.qml \
-    qml/components/webviewdialogs/PromptDialog.qml \
-    qml/components/webviewdialogs/AuthenticationDialog.qml \
+    qml/components/webview/jsdialogs/RequestDialog.qml \
+    qml/components/webview/jsdialogs/PromptDialog.qml \
+    qml/components/webview/jsdialogs/AuthenticationDialog.qml \
     qml/pages/picker/FilePickerPage.qml \
     qml/components/pickers/FilePicker.qml \
-    qml/components/webviewdialogs/FilePickerDialog.qml
+    qml/components/webview/jsdialogs/FilePickerDialog.qml \
+    qml/components/webview/WebViewListener.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line

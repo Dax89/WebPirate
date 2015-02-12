@@ -1,15 +1,15 @@
 import QtQuick 2.1
 import QtWebKit 3.0
 import Sailfish.Silica 1.0
-import "menus"
-import "webviewdialogs"
-import "../js/UrlHelper.js" as UrlHelper
-import "../js/Database.js" as Database
-import "../js/Favorites.js" as Favorites
-import "../js/Credentials.js" as Credentials
-import "../js/History.js" as History
-import "../js/UserAgents.js" as UserAgents
-import "../js/YouTubeGrabber.js" as YouTubeGrabber
+import "../menus"
+import "jsdialogs"
+import "../../js/UrlHelper.js" as UrlHelper
+import "../../js/Database.js" as Database
+import "../../js/Favorites.js" as Favorites
+import "../../js/Credentials.js" as Credentials
+import "../../js/History.js" as History
+import "../../js/UserAgents.js" as UserAgents
+import "../../js/YouTubeGrabber.js" as YouTubeGrabber
 
 SilicaWebView
 {
@@ -26,6 +26,7 @@ SilicaWebView
     id: webview
 
     VerticalScrollDecorator { flickable: webview }
+    WebViewListener { id: listener }
 
     /* Experimental WebView Features */
     experimental.preferences.webGLEnabled: true
@@ -38,15 +39,15 @@ SilicaWebView
     experimental.userStyleSheet: mainwindow.settings.adblockmanager.rulesFile
 
     experimental.userScripts: [ /* SVG Polyfill: From 'canvg' project */
-                                Qt.resolvedUrl("../js/canvg/rgbcolor.js"),
-                                Qt.resolvedUrl("../js/canvg/StackBlur.js"),
-                                Qt.resolvedUrl("../js/canvg/canvg.js"),
+                                Qt.resolvedUrl("../../js/canvg/rgbcolor.js"),
+                                Qt.resolvedUrl("../../js/canvg/StackBlur.js"),
+                                Qt.resolvedUrl("../../js/canvg/canvg.js"),
 
                                 /* Custom WebView Helpers */
-                                Qt.resolvedUrl("../js/helpers/ForcePixelRatio.js"),
-                                Qt.resolvedUrl("../js/helpers/WebViewHelper.js"),
-                                Qt.resolvedUrl("../js/helpers/YouTubeHelper.js"),
-                                Qt.resolvedUrl("../js/helpers/NightMode.js")]
+                                Qt.resolvedUrl("../../js/helpers/ForcePixelRatio.js"),
+                                Qt.resolvedUrl("../../js/helpers/WebViewHelper.js"),
+                                Qt.resolvedUrl("../../js/helpers/YouTubeHelper.js"),
+                                Qt.resolvedUrl("../../js/helpers/NightMode.js")]
 
     experimental.certificateVerificationDialog: RequestDialog {
         title: qsTr("Accept Certificate from:") + " " + webview.url + " ?"
@@ -72,7 +73,7 @@ SilicaWebView
             if(pageStack.busy)
                 pageStack.completeAnimation();
 
-            pageStack.push(Qt.resolvedUrl("webviewdialogs/PromptDialog.qml"), { "promptModel": model, "title": message, "textField": defaultValue });
+            pageStack.push(Qt.resolvedUrl("jsdialogs/PromptDialog.qml"), { "promptModel": model, "title": message, "textField": defaultValue });
         }
     }
 
@@ -81,50 +82,13 @@ SilicaWebView
             if(pageStack.busy)
                 pageStack.completeAnimation();
 
-            pageStack.push(Qt.resolvedUrl("webviewdialogs/AuthenticationDialog.qml"), { "authenticationModel": model })
+            pageStack.push(Qt.resolvedUrl("jsdialogs/AuthenticationDialog.qml"), { "authenticationModel": model })
         }
     }
 
     experimental.filePicker: FilePickerDialog { }
-
-    experimental.onMessageReceived: {
-        var data = JSON.parse(message.data);
-
-        if(data.type === "touchstart")
-            sidebar.collapse();
-        else if(data.type === "newtab")
-            tabview.addTab(data.url);
-        else if(data.type === "longpress") {
-            credentialdialog.hide();
-
-            if(data.url) {
-                linkmenu.url = data.url;
-                linkmenu.isimage = data.isimage;
-                linkmenu.show();
-            }
-            else if(data.text)
-                pageStack.push(Qt.resolvedUrl("../pages/TextSelectionPage.qml"), { "text": data.text });
-        }
-        else if(data.type === "submit") {
-            linkmenu.hide();
-
-            if((mainwindow.settings.clearonexit === false) && Credentials.needsDialog(Database.instance(), mainwindow.settings, url.toString(), data))
-            {
-                credentialdialog.url = url.toString();
-                credentialdialog.logindata = data;
-                credentialdialog.show();
-            }
-        }
-        else if(data.type === "selector_touch")
-            itemSelectorIndex = data.selectedIndex;
-        else if(data.type === "youtube_play") {
-            pageStack.push(Qt.resolvedUrl("../pages/YouTubeSettingsPage.qml"), {"videoId": data.videoid, "settings": mainwindow.settings });
-        }
-    }
-
-    experimental.itemSelector: ItemSelector {
-        selectorModel: model
-    }
+    experimental.onMessageReceived: listener.execute(message)
+    experimental.itemSelector: ItemSelector { selectorModel: model }
 
     experimental.onDownloadRequested: {
         var mime = mimedatabase.mimeFromUrl(downloadItem.url);
@@ -132,7 +96,7 @@ SilicaWebView
 
         if(mimeinfo[0] === "video")
         {
-            pageStack.push(Qt.resolvedUrl("../pages/VideoPlayerPage.qml"), { "videoSource": downloadItem.url });
+            pageStack.push(Qt.resolvedUrl("../../pages/VideoPlayerPage.qml"), { "videoSource": downloadItem.url });
             return;
         }
 

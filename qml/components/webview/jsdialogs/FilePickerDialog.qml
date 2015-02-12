@@ -6,7 +6,7 @@ Item
         if(pageStack.busy)
             pageStack.completeAnimation();
 
-        var page = pageStack.push(Qt.resolvedUrl("../../pages/picker/FilePickerPage.qml"), { "rootPage": mainpage });
+        var page = pageStack.push(Qt.resolvedUrl("../../../pages/picker/FilePickerPage.qml"), { "rootPage": mainpage });
 
         page.filePicked.connect(function(file) {
             model.accept(file);

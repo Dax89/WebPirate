@@ -3,7 +3,7 @@ import Sailfish.Silica 1.0
 import "navigationbar"
 import "dialogs"
 import "menus"
-import "webviewdialogs"
+import "webview"
 import "quickgrid"
 import "../js/UrlHelper.js" as UrlHelper
 import "../js/Database.js" as Database
@@ -102,7 +102,7 @@ Item
         var specialurl = UrlHelper.specialUrl(url);
 
         if(specialurl === "config")
-            pageStack.push(Qt.resolvedUrl("../SettingsPage.qml"), {"settings": mainwindow.settings });
+            pageStack.push(Qt.resolvedUrl("../pages/SettingsPage.qml"), {"settings": mainwindow.settings });
         else
             loadDefault();
     }
