@@ -180,8 +180,8 @@ Item
                        readonly property string icon: "image://theme/icon-m-delete"
 
                        function execute() {
-                           webviewdatabase.clearCache();
-                           webviewdatabase.clearNavigationData();
+                           webkitdatabase.clearCache();
+                           webkitdatabase.clearNavigationData();
                            Credentials.clear(Database.instance());
                            History.clear();
                        } } ]

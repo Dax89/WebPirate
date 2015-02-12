@@ -38,7 +38,7 @@
 #include "adblock/adblockmanager.h"
 #include "adblock/adblockdownloader.h"
 #include "mime/mimedatabase.h"
-#include "webviewdatabase.h"
+#include "webkitdatabase/webkitdatabase.h"
 #include "faviconprovider.h"
 
 int main(int argc, char *argv[])
@@ -61,7 +61,7 @@ int main(int argc, char *argv[])
 
     MimeDatabase mimedb;
     //WebPirateService wpservice;
-    WebViewDatabase webviewdb;
+    WebKitDatabase webkitdb;
 
     QScopedPointer<QQuickView> view(SailfishApp::createView());
     QQmlEngine* engine = view->engine();
@@ -70,7 +70,7 @@ int main(int argc, char *argv[])
 
     engine->addImageProvider(WebIconDatabase::PROVIDER_NAME, new FaviconProvider());
     engine->rootContext()->setContextProperty("mimedatabase", &mimedb);
-    engine->rootContext()->setContextProperty("webviewdatabase", &webviewdb);
+    engine->rootContext()->setContextProperty("webkitdatabase", &webkitdb);
     //engine->rootContext()->setContextProperty("webpirateservice", &wpservice);
 
     view->setSource(SailfishApp::pathTo("qml/harbour-webpirate.qml"));

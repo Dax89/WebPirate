@@ -21,7 +21,7 @@ CONFIG += sailfishapp
 # INSTALLS += dbus_service
 
 SOURCES += src/harbour-webpirate.cpp \
-    src/webviewdatabase.cpp \
+    src/webkitdatabase/webkitdatabase.cpp \
     src/downloadmanager/downloadmanager.cpp \
     src/downloadmanager/downloaditem.cpp \
     src/webkitdatabase/webicondatabase.cpp \
@@ -152,7 +152,7 @@ RESOURCES += \
     resources.qrc
 
 HEADERS += \
-    src/webviewdatabase.h \
+    src/webkitdatabase/webkitdatabase.h \
     src/downloadmanager/downloadmanager.h \
     src/downloadmanager/downloaditem.h \
     src/webkitdatabase/webicondatabase.h \

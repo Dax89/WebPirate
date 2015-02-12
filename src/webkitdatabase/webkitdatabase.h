@@ -6,12 +6,12 @@
 #include <QStandardPaths>
 #include <QDir>
 
-class WebViewDatabase : public QObject
+class WebKitDatabase : public QObject
 {
     Q_OBJECT
 
     public:
-        explicit WebViewDatabase(QObject *parent = 0);
+        explicit WebKitDatabase(QObject *parent = 0);
 
     private:
         void renameDatabase();
