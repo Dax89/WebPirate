@@ -3,6 +3,13 @@ var __webpirate__ = {
     islongpress: false,
     currtouch: null,
 
+    rootTextNode: function(element) {
+        if(element.parentElement)
+            return element.parentElement;
+
+        return element;
+    },
+
     checkLongPress: function(x, y, target) {
         __webpirate__.islongpress = true;
         var rect = target.getBoundingClientRect();
@@ -31,8 +38,13 @@ var __webpirate__ = {
             data.url = target.src;
             data.isimage = true;
         }
-        else if(target.textContent)
-            data.text = target.innerText;
+        else if(target.textContent) /* 'textContent' is faster than 'innerText', use for test text presence */
+        {
+            var roottn = __webpirate__.rootTextNode(target);
+
+            if(roottn)
+                data.text = roottn.innerText;
+        }
         else
         {
             var style = window.getComputedStyle(target, null); // Try to get image from CSS
