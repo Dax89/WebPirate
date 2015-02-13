@@ -107,7 +107,7 @@ var __yt_webpirate__ = {
         setTimeout(function() {
             if(!__yt_webpirate__.checkYouTubeVideo())
                 __yt_webpirate__.checkEmbeddedYouTubeVideo();
-        }, 800);
+        }, 1000);
     }
 }
 
