@@ -205,12 +205,22 @@ Item
         backButton.enabled: webview.canGoBack;
 
         onActionBarRequested: actionbar.visible ? actionbar.evaporate() : actionbar.solidify()
-        onForwardRequested: webview.goForward();
-        onBackRequested: webview.goBack();
         onRefreshRequested: webview.reload();
         onStopRequested: webview.stop();
         onSearchRequested: load(searchquery);
         onEvaporated: actionbar.evaporate();
+
+        onBackRequested: {
+            findtextbar.evaporate();
+            actionbar.evaporate();
+            webview.goBack();
+        }
+
+        onForwardRequested: {
+            findtextbar.evaporate();
+            actionbar.evaporate();
+            webview.goForward();
+        }
 
         searchBar.onFocusChanged: {
             if(!searchBar.focus)
