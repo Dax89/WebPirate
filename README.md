@@ -10,6 +10,8 @@ Features
 - Delete Personal Data (Navigation History, Cache, Login Data, Cookies) on exit.
 - Favorites can be Imported and Exported, Folder support available too.
 - Integrated YouTube Player and Grabber
+- "Find in Page" support
+- File Upload
 - Session Management
 - Simple AdBlocking system
 - Night Mode
@@ -17,7 +19,6 @@ Features
 Planned Features
 -----
 
-- File Upload Support
 - Cookie Management
 - Page's content reflow
 - Do you want more? Just ask! :)

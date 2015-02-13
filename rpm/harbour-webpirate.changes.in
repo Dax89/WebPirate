@@ -8,6 +8,18 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* ??? Feb ?? 2015 Antonio Davide Trogu <trogu.davide@gmail.com> 0.9.4-1
+- Implemented internal File Picker (instead of Silica.Pickers)
+- Implemented Color Picker Dialog
+- Implemented File Upload support
+- Implemented Text Search
+- Improved Clipboard management
+- Increased ItemSelector's limit to 5 when selecting items from ComboBoxes
+- BUGFIX: ItemSelector does not display the selected item
+- Redesigned Item Selector
+- Cleaned Source Code
+- Minor Fixes
+
 * Sun Feb 08 2015 Antonio Davide Trogu <trogu.davide@gmail.com> 0.9.3-1
 - Improved AdBlock Implementation: it is possible to add/remove/edit/download filters
 - BUGFIX: CredentialDialog does not save passwords
