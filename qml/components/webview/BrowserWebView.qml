@@ -86,6 +86,15 @@ SilicaWebView
         }
     }
 
+    experimental.colorChooser: Item {  /* ColorChooser is particular: A dedicated page suits better */
+        Component.onCompleted: {
+            if(pageStack.busy)
+                pageStack.completeAnimation();
+
+            pageStack.push(Qt.resolvedUrl("jsdialogs/ColorChooserDialog.qml"), { "colorModel": model, "color": model.currentColor });
+        }
+    }
+
     experimental.filePicker: FilePickerDialog { }
     experimental.onMessageReceived: listener.execute(message)
     experimental.itemSelector: ItemSelector { selectorModel: model }

@@ -129,7 +129,8 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/pages/picker/FilePickerPage.qml \
     qml/components/pickers/FilePicker.qml \
     qml/components/webview/jsdialogs/FilePickerDialog.qml \
-    qml/components/webview/WebViewListener.qml
+    qml/components/webview/WebViewListener.qml \
+    qml/components/webview/jsdialogs/ColorChooserDialog.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line
