@@ -182,6 +182,21 @@ Item
         hideWhenFinished: true
     }
 
+    FindTextBar
+    {
+        id: findtextbar
+        anchors { bottom: navigationbar.top; left: parent.left; right: parent.right }
+    }
+
+    ActionBar
+    {
+        id: actionbar
+        anchors { bottom: navigationbar.top; left: parent.left; right: parent.right }
+
+        onHomepageRequested: load(mainwindow.settings.homepage)
+        onFindRequested: findtextbar.solidify()
+    }
+
     NavigationBar
     {
         id: navigationbar
@@ -189,11 +204,13 @@ Item
         forwardButton.enabled: webview.canGoForward;
         backButton.enabled: webview.canGoBack;
 
+        onActionBarRequested: actionbar.visible ? actionbar.evaporate() : actionbar.solidify()
         onForwardRequested: webview.goForward();
         onBackRequested: webview.goBack();
         onRefreshRequested: webview.reload();
         onStopRequested: webview.stop();
         onSearchRequested: load(searchquery);
+        onEvaporated: actionbar.evaporate();
 
         searchBar.onFocusChanged: {
             if(!searchBar.focus)

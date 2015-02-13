@@ -18,6 +18,7 @@ Item
         id: listenerprivate
 
         function onTouchStart(/* data */) {
+            actionbar.evaporate();
             sidebar.collapse();
         }
 

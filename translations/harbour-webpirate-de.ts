@@ -457,6 +457,13 @@
     </message>
 </context>
 <context>
+    <name>FindTextBar</name>
+    <message>
+        <source>Insert text</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>HistoryMenu</name>
     <message>
         <source>Link copied to clipboard</source>

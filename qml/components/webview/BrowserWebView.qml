@@ -49,6 +49,10 @@ SilicaWebView
                                 Qt.resolvedUrl("../../js/helpers/YouTubeHelper.js"),
                                 Qt.resolvedUrl("../../js/helpers/NightMode.js")]
 
+    experimental.onTextFound: {
+        findtextbar.findError = (matchCount <= 0);
+    }
+
     experimental.certificateVerificationDialog: RequestDialog {
         title: qsTr("Accept Certificate from:") + " " + webview.url + " ?"
         onRequestAccepted: model.accept()
@@ -123,6 +127,8 @@ SilicaWebView
         navigationbar.state = webview.loading ? "loading" : "loaded";
 
         if(loadRequest.status === WebView.LoadStartedStatus) {
+            actionbar.evaporate();
+            findtextbar.evaporate();
             navigationbar.solidify();
             tabheader.solidify();
             linkmenu.hide();
@@ -135,7 +141,7 @@ SilicaWebView
         }
         else if (loadRequest.status === WebView.LoadSucceededStatus)  {
             var stringurl = url.toString();
-            navigationbar.favorite = Favorites.contains(stringurl);
+            actionbar.favorite = Favorites.contains(stringurl);
 
             if(!UrlHelper.isSpecialUrl(stringurl) && UrlHelper.isUrl(stringurl))
             {
