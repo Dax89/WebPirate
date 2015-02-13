@@ -69,7 +69,7 @@
     </message>
     <message>
         <source>Spanish</source>
-        <translation type="unfinished"></translation>
+        <translation>Español</translation>
     </message>
 </context>
 <context>
@@ -124,106 +124,106 @@
     </message>
     <message>
         <source>Ad Block</source>
-        <translation type="unfinished"></translation>
+        <translation>Ad Block</translation>
     </message>
 </context>
 <context>
     <name>AdBlockDownloaderPage</name>
     <message>
         <source>AdBlock Updater</source>
-        <translation type="unfinished"></translation>
+        <translation>AdBlock Updater</translation>
     </message>
     <message>
         <source>State</source>
-        <translation type="unfinished"></translation>
+        <translation>Estado</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished">Descargar</translation>
+        <translation>Descargar</translation>
     </message>
     <message>
         <source>Ready</source>
-        <translation type="unfinished"></translation>
+        <translation>Listo</translation>
     </message>
     <message>
         <source>Connecting</source>
-        <translation type="unfinished"></translation>
+        <translation>Conectando</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Error</translation>
     </message>
     <message>
         <source>Completed</source>
-        <translation type="unfinished">Completado</translation>
+        <translation>Completado</translation>
     </message>
 </context>
 <context>
     <name>AdBlockFilter</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Guardar</translation>
+        <translation>Guardar</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation type="unfinished"></translation>
+        <translation>Filtro</translation>
     </message>
 </context>
 <context>
     <name>AdBlockPage</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Guardar</translation>
+        <translation>Guardar</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="unfinished">Editar</translation>
+        <translation>Editar</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Borrar</translation>
+        <translation>Borrar</translation>
     </message>
     <message>
         <source>Deleting filter</source>
-        <translation type="unfinished"></translation>
+        <translation>Borrando filtro</translation>
     </message>
     <message>
         <source>Update Filters</source>
-        <translation type="unfinished"></translation>
+        <translation>Actualizar filtros</translation>
     </message>
     <message>
         <source>Add Filter</source>
-        <translation type="unfinished"></translation>
+        <translation>Añadir filtro</translation>
     </message>
 </context>
 <context>
     <name>AlertDialog</name>
     <message>
         <source>Ok</source>
-        <translation type="unfinished"></translation>
+        <translation>Ok</translation>
     </message>
 </context>
 <context>
     <name>AuthenticationDialog</name>
     <message>
         <source>Login</source>
-        <translation type="unfinished"></translation>
+        <translation>Acceso</translation>
     </message>
     <message>
         <source>Authentication required</source>
-        <translation type="unfinished"></translation>
+        <translation>Se requiere autenticación</translation>
     </message>
     <message>
         <source>requires authentication</source>
-        <translation type="unfinished"></translation>
+        <translation>requiere autenticación</translation>
     </message>
     <message>
         <source>User</source>
-        <translation type="unfinished"></translation>
+        <translation>Usuario</translation>
     </message>
     <message>
         <source>Password</source>
-        <translation type="unfinished"></translation>
+        <translation>Contraseña</translation>
     </message>
 </context>
 <context>
@@ -314,15 +314,15 @@
     <name>CredentialDialog</name>
     <message>
         <source>Yes</source>
-        <translation type="unfinished"></translation>
+        <translation>Sí</translation>
     </message>
     <message>
         <source>No</source>
-        <translation type="unfinished"></translation>
+        <translation>No</translation>
     </message>
     <message>
         <source>Do you want to store the password?</source>
-        <translation type="unfinished"></translation>
+        <translation>¿Quieres guardar la contraseña?</translation>
     </message>
 </context>
 <context>
@@ -403,10 +403,6 @@
     <message>
         <source>Import in</source>
         <translation>Importar en</translation>
-    </message>
-    <message>
-        <source>Import Favorites</source>
-        <translation type="vanished">Importar favoritos</translation>
     </message>
     <message>
         <source>Exporting favorites</source>
@@ -522,17 +518,10 @@
     </message>
 </context>
 <context>
-    <name>MultiFilePickerPage</name>
-    <message>
-        <source>Done</source>
-        <translation type="obsolete">Hecho</translation>
-    </message>
-</context>
-<context>
     <name>PromptDialog</name>
     <message>
         <source>OK</source>
-        <translation type="unfinished"></translation>
+        <translation>OK</translation>
     </message>
 </context>
 <context>
@@ -568,11 +557,11 @@
     <name>RequestDialog</name>
     <message>
         <source>Yes</source>
-        <translation type="unfinished"></translation>
+        <translation>Sí</translation>
     </message>
     <message>
         <source>No</source>
-        <translation type="unfinished"></translation>
+        <translation>No</translation>
     </message>
 </context>
 <context>

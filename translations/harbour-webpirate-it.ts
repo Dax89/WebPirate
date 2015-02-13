@@ -405,10 +405,6 @@
         <translation>Importa in</translation>
     </message>
     <message>
-        <source>Import Favorites</source>
-        <translation type="vanished">Importa preferiti</translation>
-    </message>
-    <message>
         <source>Exporting favorites</source>
         <translation>Esporto preferiti</translation>
     </message>
@@ -460,7 +456,7 @@
     <name>FindTextBar</name>
     <message>
         <source>Search</source>
-        <translation type="unfinished">Cerca</translation>
+        <translation>Cerca</translation>
     </message>
 </context>
 <context>
@@ -518,13 +514,6 @@
     <message>
         <source>You are in offline mode</source>
         <translation>Sei in modalità non in linea</translation>
-    </message>
-</context>
-<context>
-    <name>MultiFilePickerPage</name>
-    <message>
-        <source>Done</source>
-        <translation type="obsolete">Fatto</translation>
     </message>
 </context>
 <context>

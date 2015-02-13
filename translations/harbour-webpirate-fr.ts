@@ -69,7 +69,7 @@
     </message>
     <message>
         <source>Spanish</source>
-        <translation type="unfinished"></translation>
+        <translation>Espagnol</translation>
     </message>
 </context>
 <context>
@@ -84,7 +84,7 @@
     </message>
     <message>
         <source>Settings</source>
-        <translation>Réglages</translation>
+        <translation>Paramètres</translation>
     </message>
     <message>
         <source>General</source>
@@ -92,7 +92,7 @@
     </message>
     <message>
         <source>Change settings</source>
-        <translation>Changer les réglages</translation>
+        <translation>Changer les paramètres</translation>
     </message>
     <message>
         <source>About Web Pirate</source>
@@ -112,7 +112,7 @@
     </message>
     <message>
         <source>Cover settings</source>
-        <translation>Réglages de la couverture</translation>
+        <translation>Paramètres de couverture</translation>
     </message>
     <message>
         <source>Night Mode</source>
@@ -124,18 +124,18 @@
     </message>
     <message>
         <source>Ad Block</source>
-        <translation type="unfinished"></translation>
+        <translation>AdBlock</translation>
     </message>
 </context>
 <context>
     <name>AdBlockDownloaderPage</name>
     <message>
         <source>AdBlock Updater</source>
-        <translation type="unfinished"></translation>
+        <translation>Mise à jour AdBlock</translation>
     </message>
     <message>
         <source>State</source>
-        <translation type="unfinished"></translation>
+        <translation>Etat</translation>
     </message>
     <message>
         <source>Download</source>
@@ -143,11 +143,11 @@
     </message>
     <message>
         <source>Ready</source>
-        <translation type="unfinished"></translation>
+        <translation>Prêt</translation>
     </message>
     <message>
         <source>Connecting</source>
-        <translation type="unfinished"></translation>
+        <translation>Connexion</translation>
     </message>
     <message>
         <source>Error</source>
@@ -166,7 +166,7 @@
     </message>
     <message>
         <source>Filter</source>
-        <translation type="unfinished"></translation>
+        <translation>Filtrer</translation>
     </message>
 </context>
 <context>
@@ -185,45 +185,45 @@
     </message>
     <message>
         <source>Deleting filter</source>
-        <translation type="unfinished"></translation>
+        <translation>Supprimer le filtre</translation>
     </message>
     <message>
         <source>Update Filters</source>
-        <translation type="unfinished"></translation>
+        <translation>Mise à jour des filtres</translation>
     </message>
     <message>
         <source>Add Filter</source>
-        <translation type="unfinished"></translation>
+        <translation>Ajouter un filtre</translation>
     </message>
 </context>
 <context>
     <name>AlertDialog</name>
     <message>
         <source>Ok</source>
-        <translation type="unfinished"></translation>
+        <translation>OK</translation>
     </message>
 </context>
 <context>
     <name>AuthenticationDialog</name>
     <message>
         <source>Login</source>
-        <translation type="unfinished"></translation>
+        <translation>Login</translation>
     </message>
     <message>
         <source>Authentication required</source>
-        <translation type="unfinished"></translation>
+        <translation>Authentification requise</translation>
     </message>
     <message>
         <source>requires authentication</source>
-        <translation type="unfinished"></translation>
+        <translation>requiert authentification</translation>
     </message>
     <message>
         <source>User</source>
-        <translation type="unfinished"></translation>
+        <translation>Utilisateur</translation>
     </message>
     <message>
         <source>Password</source>
-        <translation type="unfinished"></translation>
+        <translation>Mot de passe</translation>
     </message>
 </context>
 <context>
@@ -307,7 +307,7 @@
     </message>
     <message>
         <source>Cover Settings</source>
-        <translation>Réglages de la couverture</translation>
+        <translation>Paramètres de couverture</translation>
     </message>
 </context>
 <context>
@@ -405,28 +405,24 @@
         <translation>Importer dans</translation>
     </message>
     <message>
-        <source>Import Favorites</source>
-        <translation type="vanished">Importer favoris</translation>
-    </message>
-    <message>
         <source>Exporting favorites</source>
         <translation>Exporter les favoris</translation>
     </message>
     <message>
         <source>Favorites exported successfully</source>
-        <translation>Exporter des favoris réussi</translation>
+        <translation>Export des favoris réussi</translation>
     </message>
     <message>
         <source>Favorites imported successfully</source>
-        <translation>Importer des favoris réussi</translation>
+        <translation>Import des favoris réussi</translation>
     </message>
     <message>
         <source>Delete all Favorites</source>
-        <translation>Supprimer les favoris</translation>
+        <translation>Supprimer tous les favoris</translation>
     </message>
     <message>
         <source>Deleting all favorites</source>
-        <translation>Favoris en cours de suppression</translation>
+        <translation>Suppression de tous les favoris</translation>
     </message>
 </context>
 <context>
@@ -441,11 +437,11 @@
     </message>
     <message>
         <source>Deleting Favorite</source>
-        <translation>Supprimer le favori</translation>
+        <translation>Suppression du  favori</translation>
     </message>
     <message>
         <source>Deleting Folder</source>
-        <translation>Supprimer le dossier</translation>
+        <translation>Suppression du dossier</translation>
     </message>
     <message>
         <source>Open</source>
@@ -460,7 +456,7 @@
     <name>FindTextBar</name>
     <message>
         <source>Search</source>
-        <translation type="unfinished">Rechercher</translation>
+        <translation>Rechercher</translation>
     </message>
 </context>
 <context>
@@ -521,17 +517,10 @@
     </message>
 </context>
 <context>
-    <name>MultiFilePickerPage</name>
-    <message>
-        <source>Done</source>
-        <translation type="obsolete">Fait</translation>
-    </message>
-</context>
-<context>
     <name>PromptDialog</name>
     <message>
         <source>OK</source>
-        <translation type="unfinished"></translation>
+        <translation>OK</translation>
     </message>
 </context>
 <context>
@@ -736,7 +725,7 @@
     </message>
     <message>
         <source>Save Settings</source>
-        <translation>Enregistrer les réglages</translation>
+        <translation>Enregistrer les paramètres</translation>
     </message>
     <message>
         <source>Removing personal data</source>

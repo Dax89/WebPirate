@@ -405,10 +405,6 @@
         <translation>Importera i</translation>
     </message>
     <message>
-        <source>Import Favorites</source>
-        <translation type="vanished">Importera favoriter</translation>
-    </message>
-    <message>
         <source>Exporting favorites</source>
         <translation>Exporterar favoriter</translation>
     </message>
@@ -460,7 +456,7 @@
     <name>FindTextBar</name>
     <message>
         <source>Search</source>
-        <translation type="unfinished">Sök</translation>
+        <translation>Sök</translation>
     </message>
 </context>
 <context>
@@ -518,13 +514,6 @@
     <message>
         <source>You are in offline mode</source>
         <translation>Du är i frånkopplat läge</translation>
-    </message>
-</context>
-<context>
-    <name>MultiFilePickerPage</name>
-    <message>
-        <source>Done</source>
-        <translation type="obsolete">Klar</translation>
     </message>
 </context>
 <context>

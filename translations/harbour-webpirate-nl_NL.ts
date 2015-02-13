@@ -405,10 +405,6 @@
         <translation>Importeren naar</translation>
     </message>
     <message>
-        <source>Import Favorites</source>
-        <translation type="vanished">Bladwijzers importeren</translation>
-    </message>
-    <message>
         <source>Exporting favorites</source>
         <translation>Bezig met exporteren van bladwijzers</translation>
     </message>
@@ -460,7 +456,7 @@
     <name>FindTextBar</name>
     <message>
         <source>Search</source>
-        <translation type="unfinished">Zoeken</translation>
+        <translation>Zoeken</translation>
     </message>
 </context>
 <context>
@@ -518,13 +514,6 @@
     <message>
         <source>You are in offline mode</source>
         <translation>U bent in offline-modus</translation>
-    </message>
-</context>
-<context>
-    <name>MultiFilePickerPage</name>
-    <message>
-        <source>Done</source>
-        <translation type="obsolete">Klaar</translation>
     </message>
 </context>
 <context>

@@ -69,7 +69,7 @@
     </message>
     <message>
         <source>Spanish</source>
-        <translation type="unfinished"></translation>
+        <translation>Испанский</translation>
     </message>
 </context>
 <context>
@@ -124,7 +124,7 @@
     </message>
     <message>
         <source>Ad Block</source>
-        <translation type="unfinished"></translation>
+        <translation>Ad Block</translation>
     </message>
 </context>
 <context>
@@ -405,10 +405,6 @@
         <translation>Импорт в </translation>
     </message>
     <message>
-        <source>Import Favorites</source>
-        <translation type="vanished">Импорт закладок</translation>
-    </message>
-    <message>
         <source>Exporting favorites</source>
         <translation>Экспортирование закладок</translation>
     </message>
@@ -518,13 +514,6 @@
     <message>
         <source>You are in offline mode</source>
         <translation>Вы в режиме &quot;offline mode&quot;</translation>
-    </message>
-</context>
-<context>
-    <name>MultiFilePickerPage</name>
-    <message>
-        <source>Done</source>
-        <translation type="obsolete">Готово</translation>
     </message>
 </context>
 <context>

@@ -405,10 +405,6 @@
         <translation>にインポート</translation>
     </message>
     <message>
-        <source>Import Favorites</source>
-        <translation type="vanished">お気に入りをインポート</translation>
-    </message>
-    <message>
         <source>Exporting favorites</source>
         <translation>お気に入りをエクスポート</translation>
     </message>
@@ -518,13 +514,6 @@
     <message>
         <source>You are in offline mode</source>
         <translation>オフラインモード中</translation>
-    </message>
-</context>
-<context>
-    <name>MultiFilePickerPage</name>
-    <message>
-        <source>Done</source>
-        <translation type="obsolete">完了</translation>
     </message>
 </context>
 <context>

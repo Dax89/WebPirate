@@ -405,10 +405,6 @@
         <translation>Uvozi v</translation>
     </message>
     <message>
-        <source>Import Favorites</source>
-        <translation type="vanished">Uvozi zaznamke</translation>
-    </message>
-    <message>
         <source>Exporting favorites</source>
         <translation>Izvoz zaznamkov</translation>
     </message>
@@ -518,13 +514,6 @@
     <message>
         <source>You are in offline mode</source>
         <translation>Ste v načinu brez povezave</translation>
-    </message>
-</context>
-<context>
-    <name>MultiFilePickerPage</name>
-    <message>
-        <source>Done</source>
-        <translation type="obsolete">Končano</translation>
     </message>
 </context>
 <context>
