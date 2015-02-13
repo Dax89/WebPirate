@@ -459,8 +459,8 @@
 <context>
     <name>FindTextBar</name>
     <message>
-        <source>Insert text</source>
-        <translation type="unfinished"></translation>
+        <source>Search</source>
+        <translation type="unfinished">Sök</translation>
     </message>
 </context>
 <context>

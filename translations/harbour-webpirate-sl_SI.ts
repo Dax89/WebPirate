@@ -459,7 +459,7 @@
 <context>
     <name>FindTextBar</name>
     <message>
-        <source>Insert text</source>
+        <source>Search</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

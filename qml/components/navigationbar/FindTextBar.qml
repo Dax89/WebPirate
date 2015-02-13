@@ -27,7 +27,7 @@ BrowserBar
             width: parent.width - (btnsearchup.width + btnsearchdown.width + btnclose.width)
             height: parent.height
             font.pixelSize: Theme.fontSizeSmall
-            placeholderText: qsTr("Insert text") + "..."
+            placeholderText: qsTr("Search") + "..."
 
             onTextChanged: {
                 searchfield.errorHighlight = false;
