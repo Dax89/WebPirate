@@ -44,7 +44,8 @@ BrowserBar
             rotation: 180
 
             onClicked: webview.experimental.findText(searchfield.text, WebViewExperimental.FindBackward |
-                                                                       WebViewExperimental.FindHighlightAllOccurrences)
+                                                                       WebViewExperimental.FindHighlightAllOccurrences |
+                                                                       WebViewExperimental.FindWrapsAroundDocument);
         }
 
         IconButton
