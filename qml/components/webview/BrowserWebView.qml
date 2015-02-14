@@ -23,10 +23,11 @@ SilicaWebView
         webview.experimental.evaluateJavaScript("__wp_nightmode__.switchMode(" + nightmode + ")");
     }
 
-    id: webview
-
     VerticalScrollDecorator { flickable: webview }
     WebViewListener { id: listener }
+
+    id: webview
+    contentHeight: experimental.page.height + (mainpage.isPortrait ? Qt.inputMethod.keyboardRectangle.height : Qt.inputMethod.keyboardRectangle.width);
 
     /* Experimental WebView Features */
     experimental.preferences.webGLEnabled: true
