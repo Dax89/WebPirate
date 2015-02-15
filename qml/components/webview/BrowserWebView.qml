@@ -27,8 +27,8 @@ SilicaWebView
     WebViewListener { id: listener }
 
     id: webview
-    topMargin: Qt.inputMethod.visible ? (mainpage.isPortrait ? Qt.inputMethod.keyboardRectangle.height : Qt.inputMethod.keyboardRectangle.width) - Theme.iconSizeMedium : 0
-    y: topMargin ? (-topMargin + Theme.iconSizeMedium) : 0
+    topMargin: Qt.inputMethod.visible ? (mainpage.isPortrait ? Qt.inputMethod.keyboardRectangle.height : Qt.inputMethod.keyboardRectangle.width) : 0
+    y: topMargin ? -topMargin : 0
 
     /* Experimental WebView Features */
     experimental.preferences.webGLEnabled: true

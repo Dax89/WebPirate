@@ -13,7 +13,8 @@ Item
                                             "submit": onFormSubmit,
                                             "selector_touch": onSelectorTouched,
                                             "newtab": newTabRequested,
-                                            "youtube_play": playVideo }
+                                            "youtube_play": playVideo,
+                                            "window_open": onWindowOpen }
 
         id: listenerprivate
 
@@ -54,6 +55,11 @@ Item
 
         function playVideo(data) {
             pageStack.push(Qt.resolvedUrl("../../pages/YouTubeSettingsPage.qml"), {"videoId": data.videoid, "settings": mainwindow.settings });
+        }
+
+        function onWindowOpen(data) {
+            actionbar.popups.appendPopup(data.url);
+            navigationbar.alertState = true;
         }
     }
 

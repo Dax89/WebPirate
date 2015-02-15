@@ -16,6 +16,8 @@ BrowserBar
     property alias backButton: btnback
     property alias forwardButton: btnforward
 
+    property bool alertState: false
+
     id: navigationbar
     state: "loaded";
     opacity: 1.0
@@ -41,7 +43,30 @@ BrowserBar
         width: visible ? Theme.iconSizeMedium : 0
         visible: !searchbar.editing
         anchors { left: btnback.right; top: parent.top; bottom: parent.bottom }
-        onClicked: actionBarRequested()
+
+        onClicked: {
+            alertState = false; /* Reset Alert */
+            actionBarRequested();
+        }
+
+        Label
+        {
+            id: lblalert
+            anchors.fill: btnactionbar.icon
+            visible: alertState
+            color: "red"
+            font.bold: true
+            text: "!"
+            horizontalAlignment: Text.AlignRight
+            verticalAlignment: Text.AlignTop
+
+            onVisibleChanged: {
+                if(visible)
+                    gumanimation.start();
+            }
+
+            PropertyAnimation { id: gumanimation; target: lblalert; property: "scale"; from: 1.5; to: 1.0; running: false; duration: 200; easing.type: Easing.OutBounce }
+        }
     }
 
     SearchBar

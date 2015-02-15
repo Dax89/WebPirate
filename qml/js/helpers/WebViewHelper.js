@@ -166,3 +166,11 @@ document.addEventListener("touchmove",  __webpirate__.onTouchMove, true);
 document.addEventListener("touchend",  __webpirate__.onTouchEnd, true);
 document.addEventListener("click",  __webpirate__.onClick, true);
 document.addEventListener("submit",  __webpirate__.onSubmit, true);
+
+window.open = function(url) { /* Popup Blocker */
+    var data = new Object;
+    data.type = "window_open";
+    data.url = url;
+
+    navigator.qt.postMessage(JSON.stringify(data));
+}

@@ -518,6 +518,17 @@
     </message>
 </context>
 <context>
+    <name>PopupBlockerPage</name>
+    <message>
+        <source>Popup Blocker</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Clear popup list</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>PromptDialog</name>
     <message>
         <source>OK</source>

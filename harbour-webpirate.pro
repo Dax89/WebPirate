@@ -133,7 +133,9 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/components/webview/jsdialogs/ColorChooserDialog.qml \
     qml/components/navigationbar/ActionBar.qml \
     qml/components/navigationbar/BrowserBar.qml \
-    qml/components/navigationbar/FindTextBar.qml
+    qml/components/navigationbar/FindTextBar.qml \
+    qml/models/PopupModel.qml \
+    qml/pages/popupblocker/PopupBlockerPage.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line

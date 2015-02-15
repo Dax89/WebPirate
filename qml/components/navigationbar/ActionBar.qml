@@ -2,17 +2,19 @@ import QtQuick 2.1
 import Sailfish.Silica 1.0
 import "../../js/UrlHelper.js" as UrlHelper
 import "../../js/Favorites.js" as Favorites
+import "../../models"
 
 BrowserBar
 {
     property bool favorite: false
+    property PopupModel popups: PopupModel { }
 
     signal homepageRequested()
     signal findRequested()
 
     function calcButtonWidth()
     {
-        var count = 1;
+        var count = 2;
 
         if(btnfind.visible)
             count++;
@@ -75,6 +77,31 @@ BrowserBar
                     Favorites.removeFromUrl(webview.url.toString());
                     actionbar.favorite = false;
                 }
+            }
+        }
+
+        IconButton
+        {
+            id: btnpopups
+            enabled: popups.count > 0
+            width: visible ? calcButtonWidth() : 0
+            anchors.verticalCenter: parent.verticalCenter
+            icon.source: "image://theme/icon-m-tabs"
+
+            onClicked: {
+                actionbar.evaporate();
+                pageStack.push(Qt.resolvedUrl("../../pages/popupblocker/PopupBlockerPage.qml"), { "popupModel": popups, "tabView": tabview });
+            }
+
+            Label
+            {
+                text: popups.count
+                x: btnpopups.icon.x + (btnpopups.icon.width - contentWidth) / 2 - (contentWidth / 2)
+                y: btnpopups.icon.y + (btnpopups.icon.height - contentHeight) / 2 - (contentHeight / 5)
+                color: Theme.highlightDimmerColor
+                horizontalAlignment: Text.AlignHCenter
+                font.pixelSize: Theme.fontSizeExtraSmall
+                font.bold: true
             }
         }
     }
