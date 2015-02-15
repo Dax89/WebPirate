@@ -165,7 +165,7 @@ Item
     {
         id: webview
         visible: false
-        anchors.top: parent.top
+        //anchors.top: parent.top
         width: mainpage.isPortrait ? Screen.width : Screen.height
         height: mainpage.isPortrait ? Screen.height : Screen.width
     }
