@@ -27,6 +27,7 @@ Page
                 onClicked: {
                     remorsepopup.execute(qsTr("Deleting History"), function() {
                         History.clear();
+                        historyModel.clear();
                     });
                 }
             }
