@@ -150,17 +150,17 @@ Item
             SidebarItem
             {
                 anchors { left: parent.left; right: parent.right }
-                icon: "image://theme/icon-m-device"
-                text: qsTr("Cover settings")
-                onClicked: pageStack.push(Qt.resolvedUrl("../../pages/cover/CoverSettingsPage.qml"), { "settings": mainwindow.settings });
+                icon: "image://theme/icon-m-tabs"
+                text: qsTr("Popup Blocker")
+                onClicked: pageStack.push(Qt.resolvedUrl("../../pages/popupblocker/PopupManagerPage.qml"));
             }
 
             SidebarItem
             {
                 anchors { left: parent.left; right: parent.right }
-                icon: "image://theme/icon-m-tabs"
-                text: qsTr("Popup Blocker")
-                onClicked: pageStack.push(Qt.resolvedUrl("../../pages/popupblocker/PopupManagerPage.qml"));
+                icon: "image://theme/icon-m-device"
+                text: qsTr("Cover settings")
+                onClicked: pageStack.push(Qt.resolvedUrl("../../pages/cover/CoverSettingsPage.qml"), { "settings": mainwindow.settings });
             }
 
             SidebarItem
