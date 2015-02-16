@@ -14,7 +14,7 @@ function load(db)
 function clearRules(db)
 {
     db.transaction(function(tx) {
-        tx.executeSql("DROP TABLE IF EXISTS PopupBlocker");
+        tx.executeSql("DELETE FROM PopupBlocker");
     });
 }
 
