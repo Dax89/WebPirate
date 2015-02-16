@@ -126,6 +126,10 @@
         <source>Ad Block</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Navigation History</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>AdBlockDownloaderPage</name>
@@ -517,6 +521,40 @@
     <name>LoadFailed</name>
     <message>
         <source>You are in offline mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>NavigationHistoryItem</name>
+    <message>
+        <source>Open</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Open in New Tab</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Deleting item</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>NavigationHistoryPage</name>
+    <message>
+        <source>Delete History</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Deleting History</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Navigation History</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

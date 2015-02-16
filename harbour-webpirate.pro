@@ -136,7 +136,10 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/components/navigationbar/FindTextBar.qml \
     qml/models/PopupModel.qml \
     qml/pages/popupblocker/PopupBlockerPage.qml \
-    qml/pages/downloadmanager/NewDownloadPage.qml
+    qml/pages/downloadmanager/NewDownloadPage.qml \
+    qml/pages/history/NavigationHistoryPage.qml \
+    qml/models/HistoryModel.qml \
+    qml/components/items/NavigationHistoryItem.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line

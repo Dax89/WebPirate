@@ -78,3 +78,13 @@ function match(query, model)
             model.append(res.rows[i]);
     });
 }
+
+function fetchAll(model)
+{
+    instance().transaction(function(tx) {
+        var res = tx.executeSql("SELECT * FROM HISTORY ORDER BY lastvisit DESC")
+
+        if(res.rows.length)
+            model.populate(res.rows);
+    });
+}

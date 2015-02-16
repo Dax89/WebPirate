@@ -58,6 +58,14 @@ Item
                 onClicked: pageStack.push(Qt.resolvedUrl("../../pages/downloadmanager/DownloadsPage.qml"), { "settings": mainwindow.settings });
             }
 
+            SidebarItem
+            {
+                anchors { left: parent.left; right: parent.right }
+                icon: "image://theme/icon-s-time"
+                text: qsTr("Navigation History")
+                onClicked: pageStack.push(Qt.resolvedUrl("../../pages/history/NavigationHistoryPage.qml"), { "tabView": tabview });
+            }
+
             SectionHeader
             {
                 id: sessionsection
