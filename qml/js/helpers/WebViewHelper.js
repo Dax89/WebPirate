@@ -126,6 +126,9 @@ var __webpirate__ = {
     onSubmit: function(event) {
         var inputelements = event.target.getElementsByTagName("input");
 
+        if(!inputelements)
+            return;
+
         var logindata = new Object
         logindata.type = "submit";
 
