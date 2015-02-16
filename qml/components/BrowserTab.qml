@@ -165,8 +165,8 @@ Item
     {
         id: webview
         visible: false
-        width: mainpage.isPortrait ? Screen.width : Screen.height
-        height: mainpage.isPortrait ? Screen.height : Screen.width
+        webviewWidth: mainpage.isPortrait ? Screen.width : Screen.height
+        webviewHeight: mainpage.isPortrait ? (Screen.height - Qt.inputMethod.keyboardRectangle.height) : (Screen.width - Qt.inputMethod.keyboardRectangle.width)
     }
 
     LoadingBar
