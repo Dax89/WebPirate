@@ -4,6 +4,7 @@ import Sailfish.Silica 1.0
 BackgroundItem
 {
     property alias circleVisible: circle.visible
+    property alias circleText: lblcircletext.text
     property alias icon: imgaction.source
     property alias text: lblaction.text
 
@@ -47,10 +48,10 @@ BackgroundItem
 
             Label
             {
+                id: lblcircletext
                 anchors.fill: parent
                 verticalAlignment: Text.AlignVCenter
                 horizontalAlignment: Text.AlignHCenter
-                text: mainwindow.settings.downloadmanager.count
                 font.pixelSize: Theme.fontSizeExtraSmall
                 color: Theme.primaryColor
                 elide: Text.ElideRight

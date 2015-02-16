@@ -52,18 +52,30 @@ Item
             SidebarItem
             {
                 anchors { left: parent.left; right: parent.right }
+                icon: "image://theme/icon-s-time"
+                text: qsTr("Navigation History")
+                onClicked: pageStack.push(Qt.resolvedUrl("../../pages/history/NavigationHistoryPage.qml"), { "tabView": tabview });
+            }
+
+            SidebarItem
+            {
+                anchors { left: parent.left; right: parent.right }
                 icon: "image://theme/icon-s-cloud-download"
                 text: qsTr("Downloads")
                 circleVisible: true
+                circleText: mainwindow.settings.downloadmanager.count
                 onClicked: pageStack.push(Qt.resolvedUrl("../../pages/downloadmanager/DownloadsPage.qml"), { "settings": mainwindow.settings });
             }
 
             SidebarItem
             {
                 anchors { left: parent.left; right: parent.right }
-                icon: "image://theme/icon-s-time"
-                text: qsTr("Navigation History")
-                onClicked: pageStack.push(Qt.resolvedUrl("../../pages/history/NavigationHistoryPage.qml"), { "tabView": tabview });
+                icon: "image://theme/icon-m-tab"
+                text: qsTr("Closed Tabs")
+                circleVisible: true
+                enabled: tabview.closedtabs.count > 0
+                circleText: tabview.closedtabs.count
+                onClicked: pageStack.push(Qt.resolvedUrl("../../pages/closedtabs/ClosedTabsPage.qml"), { "tabView": tabview });
             }
 
             SectionHeader

@@ -130,6 +130,10 @@
         <source>Navigation History</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Closed Tabs</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>AdBlockDownloaderPage</name>
@@ -250,6 +254,36 @@
     <message>
         <source>Downloading</source>
         <translation>Scaricando</translation>
+    </message>
+</context>
+<context>
+    <name>ClosedTabItem</name>
+    <message>
+        <source>Open</source>
+        <translation type="unfinished">Apri</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Deleting Tab</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ClosedTabsPage</name>
+    <message>
+        <source>Closed Tabs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Delete Closed Tabs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Deleting Tabs</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

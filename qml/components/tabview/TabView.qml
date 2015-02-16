@@ -1,11 +1,13 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
 import ".."
+import "../../models"
 import "../sidebar"
 
 Item
 {
     property ListModel pages: ListModel { }
+    property ClosedTabsModel closedtabs: ClosedTabsModel { }
     property int currentIndex: -1
     property string pageState
 
@@ -59,6 +61,7 @@ Item
     {
         var tab = pages.get(idx).tab;
         pages.remove(idx);
+        closedtabs.push(tab.getTitle(), tab.getUrl());
 
         tab.parent = null /* Remove Parent Ownership */
         tab.destroy();    /* Destroy the tab immediately */

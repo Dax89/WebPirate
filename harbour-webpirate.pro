@@ -139,7 +139,10 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/pages/downloadmanager/NewDownloadPage.qml \
     qml/pages/history/NavigationHistoryPage.qml \
     qml/models/HistoryModel.qml \
-    qml/components/items/NavigationHistoryItem.qml
+    qml/components/items/NavigationHistoryItem.qml \
+    qml/models/ClosedTabsModel.qml \
+    qml/pages/closedtabs/ClosedTabsPage.qml \
+    qml/components/items/ClosedTabItem.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line
