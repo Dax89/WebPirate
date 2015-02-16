@@ -31,7 +31,6 @@ BrowserBar
     {
         id: row
         anchors.fill: parent
-        spacing: Theme.paddingMedium
 
         IconButton
         {

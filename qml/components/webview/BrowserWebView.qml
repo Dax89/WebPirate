@@ -154,6 +154,7 @@ SilicaWebView
         navigationbar.state = webview.loading ? "loading" : "loaded";
 
         if(loadRequest.status === WebView.LoadStartedStatus) {
+            actionbar.blockedPopups.clear();
             actionbar.evaporate();
             findtextbar.evaporate();
             navigationbar.solidify();

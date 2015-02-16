@@ -16,7 +16,6 @@ BrowserBar
     property alias backButton: btnback
     property alias forwardButton: btnforward
 
-    property bool alertState: false
 
     id: navigationbar
     state: "loaded";
@@ -43,18 +42,14 @@ BrowserBar
         width: visible ? Theme.iconSizeMedium : 0
         visible: !searchbar.editing
         anchors { left: btnback.right; top: parent.top; bottom: parent.bottom }
-
-        onClicked: {
-            alertState = false; /* Reset Alert */
-            actionBarRequested();
-        }
+        onClicked: actionBarRequested()
 
         Label
         {
             id: lblalert
             anchors.fill: btnactionbar.icon
-            visible: alertState
-            color: "red"
+            visible: actionbar.blockedPopups.count > 0
+            color: "orangered"
             font.bold: true
             text: "!"
             horizontalAlignment: Text.AlignRight
