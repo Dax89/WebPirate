@@ -134,6 +134,10 @@
         <source>Closed Tabs</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Popup Blocker</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>AdBlockDownloaderPage</name>
@@ -232,6 +236,25 @@
     <message>
         <source>Password</source>
         <translation>Mot de passe</translation>
+    </message>
+</context>
+<context>
+    <name>BlockedPopupItem</name>
+    <message>
+        <source>Block</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Allow</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation type="unfinished">Supprimer</translation>
+    </message>
+    <message>
+        <source>Deleting rule</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -604,6 +627,29 @@
     </message>
 </context>
 <context>
+    <name>NewPopupRulePage</name>
+    <message>
+        <source>Apply Rule</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Url</source>
+        <translation type="unfinished">URL</translation>
+    </message>
+    <message>
+        <source>Rule</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Allow</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Block</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>PopupBlockerPage</name>
     <message>
         <source>Popup Blocker</source>
@@ -611,6 +657,25 @@
     </message>
     <message>
         <source>Clear popup list</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>PopupManagerPage</name>
+    <message>
+        <source>Popup Manager</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Delete Rules</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Deleting rules</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>New Rule</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

@@ -134,7 +134,6 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/components/navigationbar/ActionBar.qml \
     qml/components/navigationbar/BrowserBar.qml \
     qml/components/navigationbar/FindTextBar.qml \
-    qml/models/PopupModel.qml \
     qml/pages/popupblocker/PopupBlockerPage.qml \
     qml/pages/downloadmanager/NewDownloadPage.qml \
     qml/pages/history/NavigationHistoryPage.qml \
@@ -142,7 +141,14 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/components/items/NavigationHistoryItem.qml \
     qml/models/ClosedTabsModel.qml \
     qml/pages/closedtabs/ClosedTabsPage.qml \
-    qml/components/items/ClosedTabItem.qml
+    qml/components/items/ClosedTabItem.qml \
+    qml/js/PopupBlocker.js \
+    qml/models/BlockedPopupModel.qml \
+    qml/models/PopupModel.qml \
+    qml/pages/popupblocker/PopupManagerPage.qml \
+    qml/components/items/PopupItem.qml \
+    qml/components/items/BlockedPopupItem.qml \
+    qml/pages/popupblocker/NewPopupRulePage.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line

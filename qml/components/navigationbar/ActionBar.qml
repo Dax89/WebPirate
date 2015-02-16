@@ -7,7 +7,7 @@ import "../../models"
 BrowserBar
 {
     property bool favorite: false
-    property PopupModel popups: PopupModel { }
+    property BlockedPopupModel blockedPopups: BlockedPopupModel { }
 
     signal homepageRequested()
     signal findRequested()
@@ -83,19 +83,19 @@ BrowserBar
         IconButton
         {
             id: btnpopups
-            enabled: popups.count > 0
+            enabled: blockedPopups.count > 0
             width: visible ? calcButtonWidth() : 0
             anchors.verticalCenter: parent.verticalCenter
             icon.source: "image://theme/icon-m-tabs"
 
             onClicked: {
                 actionbar.evaporate();
-                pageStack.push(Qt.resolvedUrl("../../pages/popupblocker/PopupBlockerPage.qml"), { "popupModel": popups, "tabView": tabview });
+                pageStack.push(Qt.resolvedUrl("../../pages/popupblocker/PopupBlockerPage.qml"), { "popupModel": blockedPopups, "tabView": tabview });
             }
 
             Label
             {
-                text: popups.count
+                text: blockedPopups.count
                 x: btnpopups.icon.x + (btnpopups.icon.width - contentWidth) / 2 - (contentWidth / 2)
                 y: btnpopups.icon.y + (btnpopups.icon.height - contentHeight) / 2 - (contentHeight / 5)
                 color: Theme.highlightDimmerColor

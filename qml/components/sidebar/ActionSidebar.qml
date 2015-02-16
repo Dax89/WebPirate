@@ -158,6 +158,14 @@ Item
             SidebarItem
             {
                 anchors { left: parent.left; right: parent.right }
+                icon: "image://theme/icon-m-tabs"
+                text: qsTr("Popup Blocker")
+                onClicked: pageStack.push(Qt.resolvedUrl("../../pages/popupblocker/PopupManagerPage.qml"));
+            }
+
+            SidebarItem
+            {
+                anchors { left: parent.left; right: parent.right }
                 icon: "image://theme/icon-m-about"
                 text: qsTr("About Web Pirate")
                 onClicked: pageStack.push(Qt.resolvedUrl("../../pages/AboutPage.qml"), { "settings": mainwindow.settings });

@@ -86,5 +86,7 @@ function fetchAll(model)
 
         if(res.rows.length)
             model.populate(res.rows);
+        else
+            model.clear();
     });
 }

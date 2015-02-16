@@ -1,6 +1,7 @@
 import QtQuick 2.1
 import "../../js/Database.js" as Database
 import "../../js/Credentials.js" as Credentials
+import "../../js/PopupBlocker.js" as PopupBlocker
 
 Item
 {
@@ -58,8 +59,17 @@ Item
         }
 
         function onWindowOpen(data) {
-            actionbar.popups.appendPopup(data.url);
-            navigationbar.alertState = true;
+            var rule = PopupBlocker.getRule(Database.instance(), data.url);
+
+            if(rule === PopupBlocker.NoRule)
+            {
+                actionbar.blockedPopups.appendPopup(data.url);
+                navigationbar.alertState = true;
+            }
+            else if(rule === PopupBlocker.AllowRule)
+                tabview.addTab(data.url);
+            /* else if(rule === PopupBlocker.BlockRule)
+                Just Ignore It */
         }
     }
 

@@ -37,6 +37,7 @@ import "js/Favorites.js" as Favorites
 import "js/SearchEngines.js" as SearchEngines
 import "js/QuickGrid.js" as QuickGrid
 import "js/UserAgents.js" as UserAgents
+import "js/PopupBlocker.js" as PopupBlocker
 import "js/Credentials.js" as Credentials
 import "js/History.js" as History
 import "js/Sessions.js" as Sessions
@@ -53,6 +54,7 @@ ApplicationWindow
             History.load();
             Favorites.load(Database.instance());
             UserAgents.load(Database.instance());
+            PopupBlocker.load(Database.instance());
             SearchEngines.load(Database.instance(), settings.searchengines);
             QuickGrid.load(Database.instance(), settings.quickgridmodel);
 

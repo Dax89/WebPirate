@@ -1,6 +1,9 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
 import "../../components/tabview"
+import "../../components/items"
+import "../../js/Database.js" as Database
+import "../../js/PopupBlocker.js" as PopupBlocker
 
 Page
 {
@@ -16,8 +19,7 @@ Page
 
         PullDownMenu
         {
-            MenuItem
-            {
+            MenuItem {
                 text: qsTr("Clear popup list")
                 onClicked: popupModel.clear()
             }
@@ -30,23 +32,20 @@ Page
             id: listview
             anchors { left: parent.left; top: pageheader.bottom; right: parent.right; bottom: parent.bottom }
 
-            delegate: ListItem {
+            delegate: BlockedPopupItem {
                 id: listitem
                 contentWidth: parent.width
                 contentHeight: Theme.itemSizeSmall
+                blockedUrl: url
+
+                onAllowPopup: PopupBlocker.setRule(Database.instance(), url, PopupBlocker.AllowRule)
+                onBlockPopup: PopupBlocker.setRule(Database.instance(), url, PopupBlocker.BlockRule)
+                onDeleteRule: PopupBlocker.setRule(Database.instance(), url, PopupBlocker.NoRule)
 
                 onClicked: {
                     tabView.addTab(url);
                     popupModel.remove(index);
                     pageStack.pop();
-                }
-
-                Label
-                {
-                    anchors { fill: parent; leftMargin: Theme.paddingMedium; rightMargin: Theme.paddingMedium }
-                    horizontalAlignment: Text.AlignLeft
-                    verticalAlignment: Text.AlignVCenter
-                    text: url
                 }
             }
         }
