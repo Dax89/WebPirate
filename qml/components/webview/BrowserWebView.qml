@@ -14,8 +14,6 @@ import "../../js/YouTubeGrabber.js" as YouTubeGrabber
 SilicaWebView
 {
     property int itemSelectorIndex: -1 /* Keeps the selected index of ItemSelector */
-    property real webviewHeight
-    property real webviewWidth
 
     function setNightMode(nightmode)
     {
@@ -29,31 +27,6 @@ SilicaWebView
     WebViewListener { id: listener }
 
     id: webview
-
-    onWebviewHeightChanged: {
-        if(!visible)
-            return;
-
-        height = webviewHeight;
-    }
-
-    onWebviewWidthChanged: {
-        if(!visible)
-            return;
-
-        width = webviewWidth;
-    }
-
-    onVisibleChanged: {
-        if(!visible)
-            return;
-
-        if(height !== webviewHeight)
-            height = webviewHeight;
-
-        if(width !== webviewWidth)
-            width = webviewWidth;
-    }
 
     /* Experimental WebView Features */
     experimental.preferences.webGLEnabled: true

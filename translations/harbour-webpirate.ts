@@ -260,11 +260,11 @@
 <context>
     <name>BrowserTab</name>
     <message>
-        <source>New Tab</source>
+        <source>Load Error</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Load Error</source>
+        <source>New Tab</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

@@ -20,47 +20,6 @@ Item
         navigationbar.searchBar.triggerKeyboard();
     }
 
-    id: browsertab
-    state: "newtab"
-
-    onVisibleChanged: {
-        if(!visible) {
-            linkmenu.hide();
-            return;
-        }
-
-        tabview.pageState = browsertab.state /* Notify TabView's page state */
-    }
-
-    onStateChanged: {
-        if(visible)
-            tabview.pageState = browsertab.state /* Notify TabView's page state */
-    }
-
-    states: [
-        State {
-            name: "newtab";
-            PropertyChanges { target: webview; visible: false }
-            PropertyChanges { target: loadingbar; visible: false; canDisplay: false }
-            PropertyChanges { target: navigationbar; state: "loaded" }
-            PropertyChanges { target: loader; active: true; source: Qt.resolvedUrl("quickgrid/QuickGrid.qml"); visible: true; }
-        },
-
-        State {
-            name: "webbrowser";
-            PropertyChanges { target: webview; visible: true; }
-            PropertyChanges { target: loadingbar; canDisplay: true }
-            PropertyChanges { target: loader; source: ""; visible: false; active: false }
-        },
-
-        State {
-            name: "loaderror";
-            PropertyChanges { target: webview; visible: false; }
-            PropertyChanges { target: loadingbar; visible: false; canDisplay: false }
-            PropertyChanges { target: navigationbar; state: "loaded" }
-            PropertyChanges { target: loader; active: true; source: Qt.resolvedUrl("LoadFailed.qml"); visible: true; }
-        } ]
-
     function getIcon()
     {
         if((state === "newtab") || (state === "loaderror"))
@@ -123,6 +82,60 @@ Item
             loadDefault();
     }
 
+    function calculateWebViewMetrics()
+    {
+        if(!webview.visible)
+            return;
+
+        var keyboardrect = Qt.inputMethod.keyboardRectangle;
+        webview.width = mainpage.isPortrait ? Screen.width : Screen.height;
+        webview.height = mainpage.isPortrait ? (Screen.height - keyboardrect.height) : (Screen.width - keyboardrect.width);
+    }
+
+    Connections { target: Qt.inputMethod; onVisibleChanged: calculateWebViewMetrics(); }
+    Connections { target: mainpage; onOrientationChanged: calculateWebViewMetrics(); }
+
+    id: browsertab
+    state: "newtab"
+
+    onVisibleChanged: {
+        if(!visible) {
+            linkmenu.hide();
+            return;
+        }
+
+        tabview.pageState = browsertab.state; /* Notify TabView's page state */
+    }
+
+    onStateChanged: {
+        if(visible)
+            tabview.pageState = browsertab.state; /* Notify TabView's page state */
+    }
+
+    states: [
+        State {
+            name: "newtab";
+            PropertyChanges { target: webview; visible: false }
+            PropertyChanges { target: loadingbar; visible: false; canDisplay: false }
+            PropertyChanges { target: navigationbar; state: "loaded" }
+            PropertyChanges { target: loader; active: true; source: Qt.resolvedUrl("quickgrid/QuickGrid.qml"); visible: true; }
+        },
+
+        State {
+            name: "webbrowser";
+            PropertyChanges { target: webview; visible: true; }
+            PropertyChanges { target: loadingbar; canDisplay: true }
+            PropertyChanges { target: loader; source: ""; visible: false; active: false }
+        },
+
+        State {
+            name: "loaderror";
+            PropertyChanges { target: webview; visible: false; }
+            PropertyChanges { target: loadingbar; visible: false; canDisplay: false }
+            PropertyChanges { target: navigationbar; state: "loaded" }
+            PropertyChanges { target: loader; active: true; source: Qt.resolvedUrl("LoadFailed.qml"); visible: true; }
+        } ]
+
     LinkMenu {
         id: linkmenu
 
@@ -165,8 +178,11 @@ Item
     {
         id: webview
         visible: false
-        webviewWidth: mainpage.isPortrait ? Screen.width : Screen.height
-        webviewHeight: mainpage.isPortrait ? (Screen.height - Qt.inputMethod.keyboardRectangle.height) : (Screen.width - Qt.inputMethod.keyboardRectangle.width)
+
+        onVisibleChanged: {
+            if(visible)
+                calculateWebViewMetrics();
+        }
     }
 
     LoadingBar
