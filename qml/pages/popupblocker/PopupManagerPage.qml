@@ -57,6 +57,21 @@ Page
             contentHeight: Theme.itemSizeSmall
             popupDomain: domain
             popupRule: popuprule
+
+            onBlockPopup: {
+                PopupBlocker.setRule(Database.instance(), domain, PopupBlocker.BlockRule);
+                popupmodel.setProperty(index, "popuprule", PopupBlocker.BlockRule);
+            }
+
+            onAllowPopup: {
+                PopupBlocker.setRule(Database.instance(), domain, PopupBlocker.AllowRule);
+                popupmodel.setProperty(index, "popuprule", PopupBlocker.AllowRule);
+            }
+
+            onDeleteRule: {
+                PopupBlocker.setRule(Database.instance(), domain, PopupBlocker.NoRule);
+                popupmodel.remove(index);
+            }
         }
     }
 }

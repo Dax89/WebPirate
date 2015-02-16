@@ -662,6 +662,29 @@
     </message>
 </context>
 <context>
+    <name>PopupItem</name>
+    <message>
+        <source>Rule</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Allow</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Block</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation type="unfinished">Borrar</translation>
+    </message>
+    <message>
+        <source>Deleting rule</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>PopupManagerPage</name>
     <message>
         <source>Popup Manager</source>
