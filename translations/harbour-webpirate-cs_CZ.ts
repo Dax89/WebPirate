@@ -362,6 +362,10 @@
         <source>Delete completed Downloads</source>
         <translation>Vymazat dokončená stahování</translation>
     </message>
+    <message>
+        <source>New Download</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>FavoritePage</name>
@@ -514,6 +518,17 @@
     <message>
         <source>You are in offline mode</source>
         <translation>Jste v módu offline</translation>
+    </message>
+</context>
+<context>
+    <name>NewDownloadPage</name>
+    <message>
+        <source>Start Download</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Download Url</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

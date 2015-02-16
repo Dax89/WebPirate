@@ -362,6 +362,10 @@
         <source>Delete completed Downloads</source>
         <translation>Elimina les descàrregues completades</translation>
     </message>
+    <message>
+        <source>New Download</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>FavoritePage</name>
@@ -514,6 +518,17 @@
     <message>
         <source>You are in offline mode</source>
         <translation>Esteu en mode fora de línia</translation>
+    </message>
+</context>
+<context>
+    <name>NewDownloadPage</name>
+    <message>
+        <source>Start Download</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Download Url</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

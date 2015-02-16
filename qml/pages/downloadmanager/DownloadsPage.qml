@@ -1,7 +1,7 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
-import "../models"
-import "../components/items"
+import "../../models"
+import "../../components/items"
 
 Page
 {
@@ -18,6 +18,18 @@ Page
             MenuItem {
                 text: qsTr("Delete completed Downloads")
                 onClicked: settings.downloadmanager.removeCompleted()
+            }
+
+            MenuItem {
+                text: qsTr("New Download")
+
+                onClicked: {
+                    var dialog = pageStack.push(Qt.resolvedUrl("NewDownloadPage.qml"));
+
+                    dialog.accepted.connect(function() {
+                        settings.downloadmanager.createDownload(dialog.downloadUrl);
+                    });
+                }
             }
         }
 

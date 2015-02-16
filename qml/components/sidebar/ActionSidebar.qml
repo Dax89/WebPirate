@@ -55,7 +55,7 @@ Item
                 icon: "image://theme/icon-s-cloud-download"
                 text: qsTr("Downloads")
                 circleVisible: true
-                onClicked: pageStack.push(Qt.resolvedUrl("../../pages/DownloadsPage.qml"), { "settings": mainwindow.settings });
+                onClicked: pageStack.push(Qt.resolvedUrl("../../pages/downloadmanager/DownloadsPage.qml"), { "settings": mainwindow.settings });
             }
 
             SectionHeader

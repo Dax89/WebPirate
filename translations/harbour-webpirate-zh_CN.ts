@@ -362,6 +362,10 @@
         <source>Delete completed Downloads</source>
         <translation>删除已完成的下载</translation>
     </message>
+    <message>
+        <source>New Download</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>FavoritePage</name>
@@ -514,6 +518,17 @@
     <message>
         <source>You are in offline mode</source>
         <translation>处于离线模式中</translation>
+    </message>
+</context>
+<context>
+    <name>NewDownloadPage</name>
+    <message>
+        <source>Start Download</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Download Url</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

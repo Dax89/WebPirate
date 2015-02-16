@@ -65,7 +65,7 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/js/Credentials.js \
     qml/js/GibberishAES.js \
     qml/components/menus/LinkMenu.qml \
-    qml/pages/DownloadsPage.qml \
+    qml/pages/downloadmanager/DownloadsPage.qml \
     qml/components/items/DownloadListItem.qml \
     qml/components/webview/BrowserWebView.qml \
     qml/components/sidebar/ActionSidebar.qml \
@@ -135,7 +135,8 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/components/navigationbar/BrowserBar.qml \
     qml/components/navigationbar/FindTextBar.qml \
     qml/models/PopupModel.qml \
-    qml/pages/popupblocker/PopupBlockerPage.qml
+    qml/pages/popupblocker/PopupBlockerPage.qml \
+    qml/pages/downloadmanager/NewDownloadPage.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line
