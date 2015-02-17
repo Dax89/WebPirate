@@ -8,6 +8,8 @@ Item
     property int labelElide: Text.ElideNone
     property int labelWrap: Text.NoWrap
 
+    property alias titleFont: lbltitle.font
+    property alias contentFont: lblcontent.font
     property alias text: lblcontent.text
 
     height: lbltitle.height + lblcontent.height

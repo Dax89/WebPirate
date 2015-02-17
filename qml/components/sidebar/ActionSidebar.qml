@@ -168,7 +168,13 @@ Item
                 anchors { left: parent.left; right: parent.right }
                 icon: "image://theme/icon-m-about"
                 text: qsTr("About Web Pirate")
-                onClicked: pageStack.push(Qt.resolvedUrl("../../pages/AboutPage.qml"), { "settings": mainwindow.settings });
+                onClicked: {
+                    var page = pageStack.push(Qt.resolvedUrl("../../pages/AboutPage.qml"), { "settings": mainwindow.settings });
+
+                    page.urlRequested.connect(function(url) {
+                        tabview.addTab(url);
+                    });
+                }
             }
         }
     }

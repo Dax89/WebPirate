@@ -40,6 +40,8 @@ Page
                                                QtObject { readonly property string language: qsTr("Spanish");
                                                           readonly property string translators: "carmenfdezb"; } ]
 
+    signal urlRequested(string url)
+
     id: aboutpage
     allowedOrientations: Orientation.All
 
@@ -123,7 +125,18 @@ Page
                     id: lblrepository
                     anchors { left: parent.left; top: lbldev.bottom; right: parent.right; leftMargin: Theme.paddingSmall; rightMargin: Theme.paddingSmall }
                     title: qsTr("GitHub Repository")
+                    contentFont.underline: true
                     text: "https://github.com/Dax89/harbour-webpirate";
+
+                    MouseArea
+                    {
+                        anchors.fill: parent
+
+                        onClicked: {
+                            urlRequested(lblrepository.text);
+                            pageStack.pop();
+                        }
+                    }
                 }
             }
 
