@@ -256,12 +256,12 @@
 <context>
     <name>BrowserTab</name>
     <message>
-        <source>New Tab</source>
-        <translation>Nov zavihek</translation>
-    </message>
-    <message>
         <source>Load Error</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>New Tab</source>
+        <translation>Nov zavihek</translation>
     </message>
 </context>
 <context>

@@ -256,12 +256,12 @@
 <context>
     <name>BrowserTab</name>
     <message>
-        <source>New Tab</source>
-        <translation>新しいタブを開く</translation>
-    </message>
-    <message>
         <source>Load Error</source>
         <translation>ロードエラー</translation>
+    </message>
+    <message>
+        <source>New Tab</source>
+        <translation>新しいタブを開く</translation>
     </message>
 </context>
 <context>

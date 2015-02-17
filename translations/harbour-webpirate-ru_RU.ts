@@ -256,12 +256,12 @@
 <context>
     <name>BrowserTab</name>
     <message>
-        <source>New Tab</source>
-        <translation>Новая вкладка</translation>
-    </message>
-    <message>
         <source>Load Error</source>
         <translation>Ошибка загрузки</translation>
+    </message>
+    <message>
+        <source>New Tab</source>
+        <translation>Новая вкладка</translation>
     </message>
 </context>
 <context>
@@ -517,7 +517,7 @@
     <name>FindTextBar</name>
     <message>
         <source>Search</source>
-        <translation type="unfinished">Поиск</translation>
+        <translation>Поиск</translation>
     </message>
 </context>
 <context>

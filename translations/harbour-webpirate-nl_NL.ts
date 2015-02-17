@@ -585,7 +585,7 @@
     </message>
     <message>
         <source>Open in New Tab</source>
-        <translation>Openen in nieuw tabblad</translation>
+        <translation>Openen op nieuw tabblad</translation>
     </message>
     <message>
         <source>Delete</source>

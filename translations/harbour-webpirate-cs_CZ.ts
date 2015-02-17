@@ -124,19 +124,19 @@
     </message>
     <message>
         <source>Ad Block</source>
-        <translation type="unfinished"></translation>
+        <translation>Blokování reklam</translation>
     </message>
     <message>
         <source>Navigation History</source>
-        <translation type="unfinished"></translation>
+        <translation>Historie navigace</translation>
     </message>
     <message>
         <source>Closed Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Zavřené panely</translation>
     </message>
     <message>
         <source>Popup Blocker</source>
-        <translation type="unfinished"></translation>
+        <translation>Blokování vyskakujících oken</translation>
     </message>
 </context>
 <context>
@@ -174,34 +174,34 @@
     <name>AdBlockFilter</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Uložit</translation>
+        <translation>Uložit</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation type="unfinished"></translation>
+        <translation>Filtr</translation>
     </message>
 </context>
 <context>
     <name>AdBlockPage</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Uložit</translation>
+        <translation>Uložit</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="unfinished">Upravit</translation>
+        <translation>Upravit</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>Odstranit</translation>
     </message>
     <message>
         <source>Deleting filter</source>
-        <translation type="unfinished"></translation>
+        <translation>Odstraňování filtru</translation>
     </message>
     <message>
         <source>Update Filters</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktualizovat filtry</translation>
     </message>
     <message>
         <source>Add Filter</source>
@@ -212,22 +212,22 @@
     <name>AlertDialog</name>
     <message>
         <source>Ok</source>
-        <translation type="unfinished"></translation>
+        <translation>Ok</translation>
     </message>
 </context>
 <context>
     <name>AuthenticationDialog</name>
     <message>
         <source>Login</source>
-        <translation type="unfinished"></translation>
+        <translation>Přihlásit</translation>
     </message>
     <message>
         <source>Authentication required</source>
-        <translation type="unfinished"></translation>
+        <translation>Vyžadováno ověření</translation>
     </message>
     <message>
         <source>requires authentication</source>
-        <translation type="unfinished"></translation>
+        <translation>vyžaduje ověření</translation>
     </message>
     <message>
         <source>User</source>
@@ -235,14 +235,14 @@
     </message>
     <message>
         <source>Password</source>
-        <translation type="unfinished"></translation>
+        <translation>Heslo</translation>
     </message>
 </context>
 <context>
     <name>BlockedPopupItem</name>
     <message>
         <source>Allow</source>
-        <translation type="unfinished"></translation>
+        <translation>Povolit</translation>
     </message>
     <message>
         <source>Delete</source>
@@ -250,18 +250,18 @@
     </message>
     <message>
         <source>Deleting rule</source>
-        <translation type="unfinished"></translation>
+        <translation>Odstraňování pravidla</translation>
     </message>
 </context>
 <context>
     <name>BrowserTab</name>
     <message>
-        <source>New Tab</source>
-        <translation>Nový panel</translation>
-    </message>
-    <message>
         <source>Load Error</source>
         <translation>Chyba načítání</translation>
+    </message>
+    <message>
+        <source>New Tab</source>
+        <translation>Nový panel</translation>
     </message>
 </context>
 <context>
@@ -279,30 +279,30 @@
     <name>ClosedTabItem</name>
     <message>
         <source>Open</source>
-        <translation type="unfinished">Otevřít</translation>
+        <translation>Otevřít</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>Odstranit</translation>
     </message>
     <message>
         <source>Deleting Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Odstraňování panelu</translation>
     </message>
 </context>
 <context>
     <name>ClosedTabsPage</name>
     <message>
         <source>Closed Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Zavřené panely</translation>
     </message>
     <message>
         <source>Delete Closed Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Odstranit zavřené panely</translation>
     </message>
     <message>
         <source>Deleting Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Odstraňování panelů</translation>
     </message>
 </context>
 <context>
@@ -371,15 +371,15 @@
     <name>CredentialDialog</name>
     <message>
         <source>Yes</source>
-        <translation type="unfinished"></translation>
+        <translation>Ano</translation>
     </message>
     <message>
         <source>No</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ne</translation>
     </message>
     <message>
         <source>Do you want to store the password?</source>
-        <translation type="unfinished"></translation>
+        <translation>Chcete uložit heslo?</translation>
     </message>
 </context>
 <context>
@@ -421,7 +421,7 @@
     </message>
     <message>
         <source>New Download</source>
-        <translation type="unfinished"></translation>
+        <translation>Nové stahování</translation>
     </message>
 </context>
 <context>
@@ -517,7 +517,7 @@
     <name>FindTextBar</name>
     <message>
         <source>Search</source>
-        <translation type="unfinished">Hledat</translation>
+        <translation>Hledat</translation>
     </message>
 </context>
 <context>
@@ -581,15 +581,15 @@
     <name>NavigationHistoryItem</name>
     <message>
         <source>Open</source>
-        <translation type="unfinished">Otevřít</translation>
+        <translation>Otevřít</translation>
     </message>
     <message>
         <source>Open in New Tab</source>
-        <translation type="unfinished">Otevřít v novém panelu</translation>
+        <translation>Otevřít v novém panelu</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>Odstranit</translation>
     </message>
     <message>
         <source>Deleting item</source>
@@ -600,26 +600,26 @@
     <name>NavigationHistoryPage</name>
     <message>
         <source>Delete History</source>
-        <translation type="unfinished"></translation>
+        <translation>Smazat historii</translation>
     </message>
     <message>
         <source>Deleting History</source>
-        <translation type="unfinished"></translation>
+        <translation>Mazání historie</translation>
     </message>
     <message>
         <source>Navigation History</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Historie navigace</translation>
     </message>
 </context>
 <context>
     <name>NewDownloadPage</name>
     <message>
         <source>Start Download</source>
-        <translation type="unfinished"></translation>
+        <translation>Začít stahování</translation>
     </message>
     <message>
         <source>Download Url</source>
-        <translation type="unfinished"></translation>
+        <translation>Stáhnout odkaz</translation>
     </message>
 </context>
 <context>
@@ -630,7 +630,7 @@
     </message>
     <message>
         <source>Url</source>
-        <translation type="unfinished">Adresa</translation>
+        <translation>Odkaz</translation>
     </message>
     <message>
         <source>Rule</source>
@@ -638,22 +638,22 @@
     </message>
     <message>
         <source>Allow</source>
-        <translation type="unfinished"></translation>
+        <translation>Povolit</translation>
     </message>
     <message>
         <source>Block</source>
-        <translation type="unfinished"></translation>
+        <translation>Blokovat</translation>
     </message>
 </context>
 <context>
     <name>PopupBlockerPage</name>
     <message>
         <source>Popup Blocker</source>
-        <translation type="unfinished"></translation>
+        <translation>Blokování vyskakujících oken</translation>
     </message>
     <message>
         <source>Clear popup list</source>
-        <translation type="unfinished"></translation>
+        <translation>Vymazat seznam vyskakujících oken</translation>
     </message>
 </context>
 <context>
@@ -664,11 +664,11 @@
     </message>
     <message>
         <source>Allow</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Povolit</translation>
     </message>
     <message>
         <source>Block</source>
-        <translation type="unfinished"></translation>
+        <translation>Blokovat</translation>
     </message>
     <message>
         <source>Delete</source>
@@ -676,18 +676,18 @@
     </message>
     <message>
         <source>Deleting rule</source>
-        <translation type="unfinished"></translation>
+        <translation>Odstraňování pravidla</translation>
     </message>
 </context>
 <context>
     <name>PopupManagerPage</name>
     <message>
         <source>Popup Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Správa vyskakujících oken</translation>
     </message>
     <message>
         <source>Delete Rules</source>
-        <translation type="unfinished"></translation>
+        <translation>Smazat pravidla</translation>
     </message>
     <message>
         <source>Deleting rules</source>
@@ -695,14 +695,14 @@
     </message>
     <message>
         <source>New Rule</source>
-        <translation type="unfinished"></translation>
+        <translation>Nové pravidlo</translation>
     </message>
 </context>
 <context>
     <name>PromptDialog</name>
     <message>
         <source>OK</source>
-        <translation type="unfinished"></translation>
+        <translation>OK</translation>
     </message>
 </context>
 <context>
@@ -738,11 +738,11 @@
     <name>RequestDialog</name>
     <message>
         <source>Yes</source>
-        <translation type="unfinished"></translation>
+        <translation>Ano</translation>
     </message>
     <message>
         <source>No</source>
-        <translation type="unfinished"></translation>
+        <translation>Ne</translation>
     </message>
 </context>
 <context>

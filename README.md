@@ -14,6 +14,8 @@ Features
 - File Upload
 - Session Management
 - Simple AdBlocking system
+- Popup Blocker
+- Closed tabs can be recovered
 - Night Mode
 
 Planned Features
