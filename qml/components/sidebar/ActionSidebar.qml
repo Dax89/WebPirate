@@ -6,7 +6,7 @@ Item
 {
     id: sidebar
     visible: false
-    width: visible ? parent.width * 0.55 : 0
+    width: visible ? (mainpage.isPortrait ? parent.width * 0.55 : parent.height * 0.80) : 0
     z: 2
 
     Behavior on width {
