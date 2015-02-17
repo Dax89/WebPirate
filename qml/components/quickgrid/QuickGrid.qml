@@ -86,7 +86,7 @@ Rectangle
 
                 delegate: QuickGridItem {
                     id: quickitem
-                    width: (parent.width / 3) - quickgriditems.spacing
+                    width: (mainpage.isPortrait ? (parent.width / 3) : (parent.width / 4)) - quickgriditems.spacing
                     height: width
                     specialItem: special
                     itemTitle: special ? "" : title
