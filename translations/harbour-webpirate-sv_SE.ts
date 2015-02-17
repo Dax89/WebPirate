@@ -128,15 +128,15 @@
     </message>
     <message>
         <source>Navigation History</source>
-        <translation type="unfinished"></translation>
+        <translation>Surfhistorik</translation>
     </message>
     <message>
         <source>Closed Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Stängda flikar</translation>
     </message>
     <message>
         <source>Popup Blocker</source>
-        <translation type="unfinished"></translation>
+        <translation>Popup-blockerare</translation>
     </message>
 </context>
 <context>
@@ -242,26 +242,26 @@
     <name>BlockedPopupItem</name>
     <message>
         <source>Allow</source>
-        <translation type="unfinished"></translation>
+        <translation>Tillåt</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Ta bort</translation>
+        <translation>Ta bort</translation>
     </message>
     <message>
         <source>Deleting rule</source>
-        <translation type="unfinished"></translation>
+        <translation>Tar bort regel</translation>
     </message>
 </context>
 <context>
     <name>BrowserTab</name>
     <message>
-        <source>New Tab</source>
-        <translation>Ny flik</translation>
-    </message>
-    <message>
         <source>Load Error</source>
         <translation>Läsfel</translation>
+    </message>
+    <message>
+        <source>New Tab</source>
+        <translation>Ny flik</translation>
     </message>
 </context>
 <context>
@@ -279,30 +279,30 @@
     <name>ClosedTabItem</name>
     <message>
         <source>Open</source>
-        <translation type="unfinished">Öppna</translation>
+        <translation>Öppna</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Ta bort</translation>
+        <translation>Ta bort</translation>
     </message>
     <message>
         <source>Deleting Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Tar bort flik</translation>
     </message>
 </context>
 <context>
     <name>ClosedTabsPage</name>
     <message>
         <source>Closed Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Stängda flikar</translation>
     </message>
     <message>
         <source>Delete Closed Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Ta bort stängda flikar</translation>
     </message>
     <message>
         <source>Deleting Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Tar bort flikar</translation>
     </message>
 </context>
 <context>
@@ -421,7 +421,7 @@
     </message>
     <message>
         <source>New Download</source>
-        <translation type="unfinished"></translation>
+        <translation>Ny nedladdning</translation>
     </message>
 </context>
 <context>
@@ -581,121 +581,121 @@
     <name>NavigationHistoryItem</name>
     <message>
         <source>Open</source>
-        <translation type="unfinished">Öppna</translation>
+        <translation>Öppna</translation>
     </message>
     <message>
         <source>Open in New Tab</source>
-        <translation type="unfinished">Öppna i ny flik</translation>
+        <translation>Öppna i ny flik</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Ta bort</translation>
+        <translation>Ta bort</translation>
     </message>
     <message>
         <source>Deleting item</source>
-        <translation type="unfinished"></translation>
+        <translation>Tar bort objekt</translation>
     </message>
 </context>
 <context>
     <name>NavigationHistoryPage</name>
     <message>
         <source>Delete History</source>
-        <translation type="unfinished"></translation>
+        <translation>Ta bort historik</translation>
     </message>
     <message>
         <source>Deleting History</source>
-        <translation type="unfinished"></translation>
+        <translation>Tar bort historik</translation>
     </message>
     <message>
         <source>Navigation History</source>
-        <translation type="unfinished"></translation>
+        <translation>Surfhistorik</translation>
     </message>
 </context>
 <context>
     <name>NewDownloadPage</name>
     <message>
         <source>Start Download</source>
-        <translation type="unfinished"></translation>
+        <translation>Starta nedladdning</translation>
     </message>
     <message>
         <source>Download Url</source>
-        <translation type="unfinished"></translation>
+        <translation>Nedladdningslänk</translation>
     </message>
 </context>
 <context>
     <name>NewPopupRulePage</name>
     <message>
         <source>Apply Rule</source>
-        <translation type="unfinished"></translation>
+        <translation>Verkställ regel</translation>
     </message>
     <message>
         <source>Url</source>
-        <translation type="unfinished">URL</translation>
+        <translation>URL</translation>
     </message>
     <message>
         <source>Rule</source>
-        <translation type="unfinished"></translation>
+        <translation>Regel</translation>
     </message>
     <message>
         <source>Allow</source>
-        <translation type="unfinished"></translation>
+        <translation>Tillåt</translation>
     </message>
     <message>
         <source>Block</source>
-        <translation type="unfinished"></translation>
+        <translation>Blockera</translation>
     </message>
 </context>
 <context>
     <name>PopupBlockerPage</name>
     <message>
         <source>Popup Blocker</source>
-        <translation type="unfinished"></translation>
+        <translation>Popup-blockerare</translation>
     </message>
     <message>
         <source>Clear popup list</source>
-        <translation type="unfinished"></translation>
+        <translation>Rensa popup-listan</translation>
     </message>
 </context>
 <context>
     <name>PopupItem</name>
     <message>
         <source>Rule</source>
-        <translation type="unfinished"></translation>
+        <translation>Regel</translation>
     </message>
     <message>
         <source>Allow</source>
-        <translation type="unfinished"></translation>
+        <translation>Tillåt</translation>
     </message>
     <message>
         <source>Block</source>
-        <translation type="unfinished"></translation>
+        <translation>Blockera</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Ta bort</translation>
+        <translation>Ta bort</translation>
     </message>
     <message>
         <source>Deleting rule</source>
-        <translation type="unfinished"></translation>
+        <translation>Tar bort regel</translation>
     </message>
 </context>
 <context>
     <name>PopupManagerPage</name>
     <message>
         <source>Popup Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Popup-hanterare</translation>
     </message>
     <message>
         <source>Delete Rules</source>
-        <translation type="unfinished"></translation>
+        <translation>Ta bort regler</translation>
     </message>
     <message>
         <source>Deleting rules</source>
-        <translation type="unfinished"></translation>
+        <translation>Tar bort regler</translation>
     </message>
     <message>
         <source>New Rule</source>
-        <translation type="unfinished"></translation>
+        <translation>Ny regel</translation>
     </message>
 </context>
 <context>

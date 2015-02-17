@@ -128,15 +128,15 @@
     </message>
     <message>
         <source>Navigation History</source>
-        <translation type="unfinished"></translation>
+        <translation>Surfgeschiedenis</translation>
     </message>
     <message>
         <source>Closed Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Gesloten tabbladen</translation>
     </message>
     <message>
         <source>Popup Blocker</source>
-        <translation type="unfinished"></translation>
+        <translation>Pop-upblokkeerder</translation>
     </message>
 </context>
 <context>
@@ -242,26 +242,26 @@
     <name>BlockedPopupItem</name>
     <message>
         <source>Allow</source>
-        <translation type="unfinished"></translation>
+        <translation>Toestaan</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Verwijderen</translation>
+        <translation>Verwijderen</translation>
     </message>
     <message>
         <source>Deleting rule</source>
-        <translation type="unfinished"></translation>
+        <translation>Regel verwijderen</translation>
     </message>
 </context>
 <context>
     <name>BrowserTab</name>
     <message>
-        <source>New Tab</source>
-        <translation>Nieuw tabblad</translation>
-    </message>
-    <message>
         <source>Load Error</source>
         <translation>Fout bij laden</translation>
+    </message>
+    <message>
+        <source>New Tab</source>
+        <translation>Nieuw tabblad</translation>
     </message>
 </context>
 <context>
@@ -279,30 +279,30 @@
     <name>ClosedTabItem</name>
     <message>
         <source>Open</source>
-        <translation type="unfinished">Openen</translation>
+        <translation>Openen</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Verwijderen</translation>
+        <translation>Verwijderen</translation>
     </message>
     <message>
         <source>Deleting Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Bezig met verwijderen van tabblad</translation>
     </message>
 </context>
 <context>
     <name>ClosedTabsPage</name>
     <message>
         <source>Closed Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Gesloten tabbladen</translation>
     </message>
     <message>
         <source>Delete Closed Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Gesloten tabbladen verwijderen</translation>
     </message>
     <message>
         <source>Deleting Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Beziq met verwijderen van tabbladen</translation>
     </message>
 </context>
 <context>
@@ -421,7 +421,7 @@
     </message>
     <message>
         <source>New Download</source>
-        <translation type="unfinished"></translation>
+        <translation>Nieuwe download</translation>
     </message>
 </context>
 <context>
@@ -581,121 +581,121 @@
     <name>NavigationHistoryItem</name>
     <message>
         <source>Open</source>
-        <translation type="unfinished">Openen</translation>
+        <translation>Openen</translation>
     </message>
     <message>
         <source>Open in New Tab</source>
-        <translation type="unfinished">Openen op nieuw tabblad</translation>
+        <translation>Openen in nieuw tabblad</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Verwijderen</translation>
+        <translation>Verwijderen</translation>
     </message>
     <message>
         <source>Deleting item</source>
-        <translation type="unfinished"></translation>
+        <translation>Bezig met verwijderen van item</translation>
     </message>
 </context>
 <context>
     <name>NavigationHistoryPage</name>
     <message>
         <source>Delete History</source>
-        <translation type="unfinished"></translation>
+        <translation>Geschiedenis verwijderen</translation>
     </message>
     <message>
         <source>Deleting History</source>
-        <translation type="unfinished"></translation>
+        <translation>Bezig met verwijderen van geschiedenis</translation>
     </message>
     <message>
         <source>Navigation History</source>
-        <translation type="unfinished"></translation>
+        <translation>Surfgeschiedenis</translation>
     </message>
 </context>
 <context>
     <name>NewDownloadPage</name>
     <message>
         <source>Start Download</source>
-        <translation type="unfinished"></translation>
+        <translation>Downloaden beginnen</translation>
     </message>
     <message>
         <source>Download Url</source>
-        <translation type="unfinished"></translation>
+        <translation>URL downloaden</translation>
     </message>
 </context>
 <context>
     <name>NewPopupRulePage</name>
     <message>
         <source>Apply Rule</source>
-        <translation type="unfinished"></translation>
+        <translation>Regel toepassen</translation>
     </message>
     <message>
         <source>Url</source>
-        <translation type="unfinished">URL</translation>
+        <translation>URL</translation>
     </message>
     <message>
         <source>Rule</source>
-        <translation type="unfinished"></translation>
+        <translation>Regel</translation>
     </message>
     <message>
         <source>Allow</source>
-        <translation type="unfinished"></translation>
+        <translation>Toestaan</translation>
     </message>
     <message>
         <source>Block</source>
-        <translation type="unfinished"></translation>
+        <translation>Blokkeren</translation>
     </message>
 </context>
 <context>
     <name>PopupBlockerPage</name>
     <message>
         <source>Popup Blocker</source>
-        <translation type="unfinished"></translation>
+        <translation>Pop-upblokkeerder</translation>
     </message>
     <message>
         <source>Clear popup list</source>
-        <translation type="unfinished"></translation>
+        <translation>Pop-uplijst wissen</translation>
     </message>
 </context>
 <context>
     <name>PopupItem</name>
     <message>
         <source>Rule</source>
-        <translation type="unfinished"></translation>
+        <translation>Regel</translation>
     </message>
     <message>
         <source>Allow</source>
-        <translation type="unfinished"></translation>
+        <translation>Toestaan</translation>
     </message>
     <message>
         <source>Block</source>
-        <translation type="unfinished"></translation>
+        <translation>Blokkeren</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Verwijderen</translation>
+        <translation>Verwijderen</translation>
     </message>
     <message>
         <source>Deleting rule</source>
-        <translation type="unfinished"></translation>
+        <translation>Bezig met verwijderen van regel</translation>
     </message>
 </context>
 <context>
     <name>PopupManagerPage</name>
     <message>
         <source>Popup Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Pop-upbeheerder</translation>
     </message>
     <message>
         <source>Delete Rules</source>
-        <translation type="unfinished"></translation>
+        <translation>Regels verwijderen</translation>
     </message>
     <message>
         <source>Deleting rules</source>
-        <translation type="unfinished"></translation>
+        <translation>Bezig met verwijderen van regels</translation>
     </message>
     <message>
         <source>New Rule</source>
-        <translation type="unfinished"></translation>
+        <translation>Nieuwe regel</translation>
     </message>
 </context>
 <context>

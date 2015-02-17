@@ -128,15 +128,15 @@
     </message>
     <message>
         <source>Navigation History</source>
-        <translation type="unfinished"></translation>
+        <translation>Historial de navegació</translation>
     </message>
     <message>
         <source>Closed Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Pestanyes tancades</translation>
     </message>
     <message>
         <source>Popup Blocker</source>
-        <translation type="unfinished"></translation>
+        <translation>Blocador de finestres emergents</translation>
     </message>
 </context>
 <context>
@@ -242,26 +242,26 @@
     <name>BlockedPopupItem</name>
     <message>
         <source>Allow</source>
-        <translation type="unfinished"></translation>
+        <translation>Permet</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Elimina</translation>
+        <translation>Elimina</translation>
     </message>
     <message>
         <source>Deleting rule</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;està eliminant la instrucció</translation>
     </message>
 </context>
 <context>
     <name>BrowserTab</name>
     <message>
-        <source>New Tab</source>
-        <translation>Nova pestanya</translation>
-    </message>
-    <message>
         <source>Load Error</source>
         <translation>Error de càrrega</translation>
+    </message>
+    <message>
+        <source>New Tab</source>
+        <translation>Nova pestanya</translation>
     </message>
 </context>
 <context>
@@ -279,30 +279,30 @@
     <name>ClosedTabItem</name>
     <message>
         <source>Open</source>
-        <translation type="unfinished">Obre</translation>
+        <translation>Obre</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Elimina</translation>
+        <translation>Elimina</translation>
     </message>
     <message>
         <source>Deleting Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;està eliminant la pestanya</translation>
     </message>
 </context>
 <context>
     <name>ClosedTabsPage</name>
     <message>
         <source>Closed Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Pestanyes tancades</translation>
     </message>
     <message>
         <source>Delete Closed Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Elimina les pestanyes tancades</translation>
     </message>
     <message>
         <source>Deleting Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;estan eliminant les pestanyes</translation>
     </message>
 </context>
 <context>
@@ -421,7 +421,7 @@
     </message>
     <message>
         <source>New Download</source>
-        <translation type="unfinished"></translation>
+        <translation>Nova descàrrega</translation>
     </message>
 </context>
 <context>
@@ -517,7 +517,7 @@
     <name>FindTextBar</name>
     <message>
         <source>Search</source>
-        <translation type="unfinished">Cerca</translation>
+        <translation>Cerca</translation>
     </message>
 </context>
 <context>
@@ -581,121 +581,121 @@
     <name>NavigationHistoryItem</name>
     <message>
         <source>Open</source>
-        <translation type="unfinished">Obre</translation>
+        <translation>Obre</translation>
     </message>
     <message>
         <source>Open in New Tab</source>
-        <translation type="unfinished">Obre en una pestanya nova</translation>
+        <translation>Obre en una pestanya nova</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Elimina</translation>
+        <translation>Elimina</translation>
     </message>
     <message>
         <source>Deleting item</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;està eliminant l&apos;element</translation>
     </message>
 </context>
 <context>
     <name>NavigationHistoryPage</name>
     <message>
         <source>Delete History</source>
-        <translation type="unfinished"></translation>
+        <translation>Elimina l&apos;historial</translation>
     </message>
     <message>
         <source>Deleting History</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;està eliminant l&apos;historial</translation>
     </message>
     <message>
         <source>Navigation History</source>
-        <translation type="unfinished"></translation>
+        <translation>Historial de navegació</translation>
     </message>
 </context>
 <context>
     <name>NewDownloadPage</name>
     <message>
         <source>Start Download</source>
-        <translation type="unfinished"></translation>
+        <translation>Inicia la descàrrega</translation>
     </message>
     <message>
         <source>Download Url</source>
-        <translation type="unfinished"></translation>
+        <translation>Descarrega l&apos;Url</translation>
     </message>
 </context>
 <context>
     <name>NewPopupRulePage</name>
     <message>
         <source>Apply Rule</source>
-        <translation type="unfinished"></translation>
+        <translation>Aplica la instrucció</translation>
     </message>
     <message>
         <source>Url</source>
-        <translation type="unfinished">Url</translation>
+        <translation>Url</translation>
     </message>
     <message>
         <source>Rule</source>
-        <translation type="unfinished"></translation>
+        <translation>Instrucció</translation>
     </message>
     <message>
         <source>Allow</source>
-        <translation type="unfinished"></translation>
+        <translation>Permet</translation>
     </message>
     <message>
         <source>Block</source>
-        <translation type="unfinished"></translation>
+        <translation>Bloca</translation>
     </message>
 </context>
 <context>
     <name>PopupBlockerPage</name>
     <message>
         <source>Popup Blocker</source>
-        <translation type="unfinished"></translation>
+        <translation>Blocador de finestres emergents</translation>
     </message>
     <message>
         <source>Clear popup list</source>
-        <translation type="unfinished"></translation>
+        <translation>Neteja la llista de finestres emergents</translation>
     </message>
 </context>
 <context>
     <name>PopupItem</name>
     <message>
         <source>Rule</source>
-        <translation type="unfinished"></translation>
+        <translation>Instrucció</translation>
     </message>
     <message>
         <source>Allow</source>
-        <translation type="unfinished"></translation>
+        <translation>Permet</translation>
     </message>
     <message>
         <source>Block</source>
-        <translation type="unfinished"></translation>
+        <translation>Bloca</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Elimina</translation>
+        <translation>Elimina</translation>
     </message>
     <message>
         <source>Deleting rule</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;està eliminant la instrucció</translation>
     </message>
 </context>
 <context>
     <name>PopupManagerPage</name>
     <message>
         <source>Popup Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Gestor de finestres emergents</translation>
     </message>
     <message>
         <source>Delete Rules</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;estan eliminant les instruccions</translation>
     </message>
     <message>
         <source>Deleting rules</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;estan eliminant les instruccions</translation>
     </message>
     <message>
         <source>New Rule</source>
-        <translation type="unfinished"></translation>
+        <translation>Nova instrucció</translation>
     </message>
 </context>
 <context>

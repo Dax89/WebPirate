@@ -128,15 +128,15 @@
     </message>
     <message>
         <source>Navigation History</source>
-        <translation type="unfinished"></translation>
+        <translation>Cronologia</translation>
     </message>
     <message>
         <source>Closed Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Schede Chiuse</translation>
     </message>
     <message>
         <source>Popup Blocker</source>
-        <translation type="unfinished"></translation>
+        <translation>Blocco Popup</translation>
     </message>
 </context>
 <context>
@@ -242,26 +242,26 @@
     <name>BlockedPopupItem</name>
     <message>
         <source>Allow</source>
-        <translation type="unfinished"></translation>
+        <translation>Permetti</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>Elimina</translation>
     </message>
     <message>
         <source>Deleting rule</source>
-        <translation type="unfinished"></translation>
+        <translation>Rimuovi regola</translation>
     </message>
 </context>
 <context>
     <name>BrowserTab</name>
     <message>
-        <source>New Tab</source>
-        <translation>Nuova scheda</translation>
-    </message>
-    <message>
         <source>Load Error</source>
         <translation>Errore di caricamento</translation>
+    </message>
+    <message>
+        <source>New Tab</source>
+        <translation>Nuova scheda</translation>
     </message>
 </context>
 <context>
@@ -279,30 +279,30 @@
     <name>ClosedTabItem</name>
     <message>
         <source>Open</source>
-        <translation type="unfinished">Apri</translation>
+        <translation>Apri</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>Rimuovi</translation>
     </message>
     <message>
         <source>Deleting Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Rimozione scheda</translation>
     </message>
 </context>
 <context>
     <name>ClosedTabsPage</name>
     <message>
         <source>Closed Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Schede Chiuse</translation>
     </message>
     <message>
         <source>Delete Closed Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Rimuovi schede chiuse</translation>
     </message>
     <message>
         <source>Deleting Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Rimozione schede</translation>
     </message>
 </context>
 <context>
@@ -421,7 +421,7 @@
     </message>
     <message>
         <source>New Download</source>
-        <translation type="unfinished"></translation>
+        <translation>Nuovo Download</translation>
     </message>
 </context>
 <context>
@@ -581,121 +581,121 @@
     <name>NavigationHistoryItem</name>
     <message>
         <source>Open</source>
-        <translation type="unfinished">Apri</translation>
+        <translation>Apri</translation>
     </message>
     <message>
         <source>Open in New Tab</source>
-        <translation type="unfinished">Apri in una nuova scheda</translation>
+        <translation>Apri in una nuova scheda</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>Rimuovi</translation>
     </message>
     <message>
         <source>Deleting item</source>
-        <translation type="unfinished"></translation>
+        <translation>Rimozione elemento</translation>
     </message>
 </context>
 <context>
     <name>NavigationHistoryPage</name>
     <message>
         <source>Delete History</source>
-        <translation type="unfinished"></translation>
+        <translation>Rimuovi cronologia</translation>
     </message>
     <message>
         <source>Deleting History</source>
-        <translation type="unfinished"></translation>
+        <translation>Rimozione cronologia</translation>
     </message>
     <message>
         <source>Navigation History</source>
-        <translation type="unfinished"></translation>
+        <translation>Cronologia</translation>
     </message>
 </context>
 <context>
     <name>NewDownloadPage</name>
     <message>
         <source>Start Download</source>
-        <translation type="unfinished"></translation>
+        <translation>Scarica</translation>
     </message>
     <message>
         <source>Download Url</source>
-        <translation type="unfinished"></translation>
+        <translation>Url</translation>
     </message>
 </context>
 <context>
     <name>NewPopupRulePage</name>
     <message>
         <source>Apply Rule</source>
-        <translation type="unfinished"></translation>
+        <translation>Applica Regola</translation>
     </message>
     <message>
         <source>Url</source>
-        <translation type="unfinished">Url</translation>
+        <translation>Url</translation>
     </message>
     <message>
         <source>Rule</source>
-        <translation type="unfinished"></translation>
+        <translation>Regola</translation>
     </message>
     <message>
         <source>Allow</source>
-        <translation type="unfinished"></translation>
+        <translation>Permetti</translation>
     </message>
     <message>
         <source>Block</source>
-        <translation type="unfinished"></translation>
+        <translation>Blocca</translation>
     </message>
 </context>
 <context>
     <name>PopupBlockerPage</name>
     <message>
         <source>Popup Blocker</source>
-        <translation type="unfinished"></translation>
+        <translation>Blocco Popup</translation>
     </message>
     <message>
         <source>Clear popup list</source>
-        <translation type="unfinished"></translation>
+        <translation>Cancella lista popup</translation>
     </message>
 </context>
 <context>
     <name>PopupItem</name>
     <message>
         <source>Rule</source>
-        <translation type="unfinished"></translation>
+        <translation>Regola</translation>
     </message>
     <message>
         <source>Allow</source>
-        <translation type="unfinished"></translation>
+        <translation>Permetti</translation>
     </message>
     <message>
         <source>Block</source>
-        <translation type="unfinished"></translation>
+        <translation>Blocca</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>Rimuovi</translation>
     </message>
     <message>
         <source>Deleting rule</source>
-        <translation type="unfinished"></translation>
+        <translation>Rimozione regola</translation>
     </message>
 </context>
 <context>
     <name>PopupManagerPage</name>
     <message>
         <source>Popup Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Gestore Popup</translation>
     </message>
     <message>
         <source>Delete Rules</source>
-        <translation type="unfinished"></translation>
+        <translation>Rimuovi regole</translation>
     </message>
     <message>
         <source>Deleting rules</source>
-        <translation type="unfinished"></translation>
+        <translation>Rimozione regole</translation>
     </message>
     <message>
         <source>New Rule</source>
-        <translation type="unfinished"></translation>
+        <translation>Nuova regola</translation>
     </message>
 </context>
 <context>

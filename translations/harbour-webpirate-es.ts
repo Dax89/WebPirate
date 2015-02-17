@@ -128,15 +128,15 @@
     </message>
     <message>
         <source>Navigation History</source>
-        <translation type="unfinished"></translation>
+        <translation>Historial de navegación</translation>
     </message>
     <message>
         <source>Closed Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Pestañas cerradas</translation>
     </message>
     <message>
         <source>Popup Blocker</source>
-        <translation type="unfinished"></translation>
+        <translation>Bloqueador de ventanas emergentes</translation>
     </message>
 </context>
 <context>
@@ -242,26 +242,26 @@
     <name>BlockedPopupItem</name>
     <message>
         <source>Allow</source>
-        <translation type="unfinished"></translation>
+        <translation>Permitir</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Borrar</translation>
+        <translation>Borrar</translation>
     </message>
     <message>
         <source>Deleting rule</source>
-        <translation type="unfinished"></translation>
+        <translation>Borrando regla</translation>
     </message>
 </context>
 <context>
     <name>BrowserTab</name>
     <message>
-        <source>New Tab</source>
-        <translation>Nueva pestaña</translation>
-    </message>
-    <message>
         <source>Load Error</source>
         <translation>Error de carga</translation>
+    </message>
+    <message>
+        <source>New Tab</source>
+        <translation>Nueva pestaña</translation>
     </message>
 </context>
 <context>
@@ -279,30 +279,30 @@
     <name>ClosedTabItem</name>
     <message>
         <source>Open</source>
-        <translation type="unfinished">Abrir</translation>
+        <translation>Abrir</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Borrar</translation>
+        <translation>Borrar</translation>
     </message>
     <message>
         <source>Deleting Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Borrando pestaña</translation>
     </message>
 </context>
 <context>
     <name>ClosedTabsPage</name>
     <message>
         <source>Closed Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Pestañas cerradas</translation>
     </message>
     <message>
         <source>Delete Closed Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Borrar pestañas cerradas</translation>
     </message>
     <message>
         <source>Deleting Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Borrando pestañas</translation>
     </message>
 </context>
 <context>
@@ -421,7 +421,7 @@
     </message>
     <message>
         <source>New Download</source>
-        <translation type="unfinished"></translation>
+        <translation>Nueva descarga</translation>
     </message>
 </context>
 <context>
@@ -517,7 +517,7 @@
     <name>FindTextBar</name>
     <message>
         <source>Search</source>
-        <translation type="unfinished">Buscar</translation>
+        <translation>Buscar</translation>
     </message>
 </context>
 <context>
@@ -582,121 +582,121 @@
     <name>NavigationHistoryItem</name>
     <message>
         <source>Open</source>
-        <translation type="unfinished">Abrir</translation>
+        <translation>Abrir</translation>
     </message>
     <message>
         <source>Open in New Tab</source>
-        <translation type="unfinished">Abrir en nueva pestaña</translation>
+        <translation>Abrir en nueva pestaña</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Borrar</translation>
+        <translation>Borrar</translation>
     </message>
     <message>
         <source>Deleting item</source>
-        <translation type="unfinished"></translation>
+        <translation>Borrando elemento</translation>
     </message>
 </context>
 <context>
     <name>NavigationHistoryPage</name>
     <message>
         <source>Delete History</source>
-        <translation type="unfinished"></translation>
+        <translation>Borrar historial</translation>
     </message>
     <message>
         <source>Deleting History</source>
-        <translation type="unfinished"></translation>
+        <translation>Borrando historial</translation>
     </message>
     <message>
         <source>Navigation History</source>
-        <translation type="unfinished"></translation>
+        <translation>Historial de navegación</translation>
     </message>
 </context>
 <context>
     <name>NewDownloadPage</name>
     <message>
         <source>Start Download</source>
-        <translation type="unfinished"></translation>
+        <translation>Comenzar descarga</translation>
     </message>
     <message>
         <source>Download Url</source>
-        <translation type="unfinished"></translation>
+        <translation>Descargar Url</translation>
     </message>
 </context>
 <context>
     <name>NewPopupRulePage</name>
     <message>
         <source>Apply Rule</source>
-        <translation type="unfinished"></translation>
+        <translation>Aplicar regla</translation>
     </message>
     <message>
         <source>Url</source>
-        <translation type="unfinished">Url</translation>
+        <translation>Url</translation>
     </message>
     <message>
         <source>Rule</source>
-        <translation type="unfinished"></translation>
+        <translation>Regla</translation>
     </message>
     <message>
         <source>Allow</source>
-        <translation type="unfinished"></translation>
+        <translation>Permitir</translation>
     </message>
     <message>
         <source>Block</source>
-        <translation type="unfinished"></translation>
+        <translation>Bloquear</translation>
     </message>
 </context>
 <context>
     <name>PopupBlockerPage</name>
     <message>
         <source>Popup Blocker</source>
-        <translation type="unfinished"></translation>
+        <translation>Bloqueador de ventanas emergentes</translation>
     </message>
     <message>
         <source>Clear popup list</source>
-        <translation type="unfinished"></translation>
+        <translation>Limpiar lista de ventanas emergentes</translation>
     </message>
 </context>
 <context>
     <name>PopupItem</name>
     <message>
         <source>Rule</source>
-        <translation type="unfinished"></translation>
+        <translation>Regla</translation>
     </message>
     <message>
         <source>Allow</source>
-        <translation type="unfinished"></translation>
+        <translation>Permitir</translation>
     </message>
     <message>
         <source>Block</source>
-        <translation type="unfinished"></translation>
+        <translation>Bloquear</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Borrar</translation>
+        <translation>Borrar</translation>
     </message>
     <message>
         <source>Deleting rule</source>
-        <translation type="unfinished"></translation>
+        <translation>Borrando regla</translation>
     </message>
 </context>
 <context>
     <name>PopupManagerPage</name>
     <message>
         <source>Popup Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Gestor de ventanas emergentes</translation>
     </message>
     <message>
         <source>Delete Rules</source>
-        <translation type="unfinished"></translation>
+        <translation>Borrar reglas</translation>
     </message>
     <message>
         <source>Deleting rules</source>
-        <translation type="unfinished"></translation>
+        <translation>Borrando reglas</translation>
     </message>
     <message>
         <source>New Rule</source>
-        <translation type="unfinished"></translation>
+        <translation>Nueva regla</translation>
     </message>
 </context>
 <context>
