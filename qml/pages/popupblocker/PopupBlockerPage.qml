@@ -39,7 +39,6 @@ Page
                 blockedUrl: url
 
                 onAllowPopup: PopupBlocker.setRule(Database.instance(), url, PopupBlocker.AllowRule)
-                onBlockPopup: PopupBlocker.setRule(Database.instance(), url, PopupBlocker.BlockRule)
                 onDeleteRule: PopupBlocker.setRule(Database.instance(), url, PopupBlocker.NoRule)
 
                 onClicked: {

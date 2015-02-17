@@ -5,20 +5,13 @@ import "../../js/PopupBlocker.js" as PopupBlocker
 ListItem
 {
     property alias blockedUrl: lblurl.text
-    property int popuprule: PopupBlocker.AllowRule
 
-    signal blockPopup()
     signal allowPopup()
     signal deleteRule()
 
     id: blockedpopupitem
 
     menu: ContextMenu {
-        MenuItem {
-            text: qsTr("Block")
-            onClicked: blockPopup()
-        }
-
         MenuItem {
             text: qsTr("Allow")
             onClicked: allowPopup()

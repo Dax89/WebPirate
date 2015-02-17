@@ -241,10 +241,6 @@
 <context>
     <name>BlockedPopupItem</name>
     <message>
-        <source>Block</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Allow</source>
         <translation type="unfinished"></translation>
     </message>
