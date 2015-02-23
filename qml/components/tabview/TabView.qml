@@ -180,14 +180,18 @@ Item
 
             function requestQuickGrid()
             {
-                tabheader.solidify();
+                if(Qt.application.state === Qt.ApplicationActive)
+                    tabheader.solidify();
+
                 loadfailed.visible = false;
                 quickgrid.visible = true;
             }
 
             function requestLoadFailed()
             {
-                tabheader.solidify();
+                if(Qt.application.state === Qt.ApplicationActive)
+                    tabheader.solidify();
+
                 quickgrid.visible = false;
                 loadfailed.visible = true;
             }

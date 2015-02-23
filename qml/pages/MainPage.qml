@@ -46,7 +46,7 @@ Page
         target: Qt.application
 
         onStateChanged: {
-            if((Qt.application.state !== Qt.ApplicationActive) && (tabview.pageState === "webbrowser"))
+            if(Qt.application.state !== Qt.ApplicationActive)
                 tabview.header.evaporate();
             else
                 tabview.header.solidify();
