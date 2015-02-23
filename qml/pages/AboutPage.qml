@@ -25,6 +25,9 @@ Page
                                                QtObject { readonly property string language: qsTr("German");
                                                           readonly property string translators: "Moth, blubdbibub, snowpolloi"; },
 
+                                               QtObject { readonly property string language: qsTr("Italian");
+                                                          readonly property string translators: "Watchmaker, Dax89"; },
+
                                                QtObject { readonly property string language: qsTr("Russian");
                                                           readonly property string translators: "lewa"; },
 
