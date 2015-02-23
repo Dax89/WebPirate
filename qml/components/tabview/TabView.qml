@@ -44,6 +44,17 @@ Item
         }
     }
 
+    Connections {
+        target: Qt.inputMethod
+
+        onVisibleChanged: {
+            if(pageState === "webbrowser")
+                return;
+
+            specialitems.calculateMetrics();
+        }
+    }
+
     function renderTab()
     {
         if(currentIndex === -1)
@@ -163,8 +174,10 @@ Item
 
             function calculateMetrics()
             {
+                var keyboardrect = Qt.inputMethod.keyboardRectangle;
+
                 specialitems.width = stack.width;
-                specialitems.height = stack.height - Theme.iconSizeMedium;
+                specialitems.height = stack.height - (mainpage.isPortrait ? keyboardrect.height : keyboardrect.width) - Theme.iconSizeMedium;
 
                 if(quickgrid.visible)
                 {
