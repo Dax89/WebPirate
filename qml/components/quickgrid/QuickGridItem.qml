@@ -1,7 +1,7 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
 
-BackgroundItem
+ListItem
 {
     property string itemUrl
     property alias itemTitle: lbltitle.text
@@ -10,15 +10,10 @@ BackgroundItem
 
     id: quickgriditem
     visible: specialItem ? editEnabled : true
-    scale: pressed ? 1.2 : 1.0
 
     onItemUrlChanged: {
         if(!specialItem)
             imgicon.source = mainwindow.settings.icondatabase.provideIcon(itemUrl);
-    }
-
-    Behavior on scale {
-        NumberAnimation { properties: "scale"; duration: 100; easing.type: Easing.OutInBounce }
     }
 
     Rectangle

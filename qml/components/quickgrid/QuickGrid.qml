@@ -42,76 +42,67 @@ Rectangle
         }
     }
 
-    SilicaFlickable
+    ViewPlaceholder
     {
-        id: flick
-        anchors { left: parent.left; top: searchbar.bottom; right: parent.right; bottom: parent.bottom; topMargin: Theme.paddingLarge }
-        contentHeight: mainwindow.settings.quickgridmodel.count > 1 ? (quickgriditems.height + navigationbar.height) : parent.height
-        onVerticalVelocityChanged: sidebar.collapse();
-        clip: true
+        id: placeholder
+        anchors.fill: parent
+        enabled: !editMode && (mainwindow.settings.quickgridmodel.count === 1)
+        text: qsTr("The QuickGrid is empty")
 
-        VerticalScrollDecorator { flickable: flick }
-
-        ViewPlaceholder
-        {
-            id: placeholder
+        MouseArea {
             anchors.fill: parent
-            enabled: !editMode && (mainwindow.settings.quickgridmodel.count === 1)
-            text: qsTr("The QuickGrid is empty")
 
-            MouseArea {
-                anchors.fill: parent
-
-                onPressAndHold: {
-                    placeholder.enabled = false;
-                    enableEditMode();
-                }
+            onPressAndHold: {
+                placeholder.enabled = false;
+                enableEditMode();
             }
         }
+    }
 
-        Flow
-        {
-            id: quickgriditems
-            visible: (editMode && mainwindow.settings.quickgridmodel.count === 1) || mainwindow.settings.quickgridmodel.count > 1
-            anchors { left: parent.left; top: parent.top; right: parent.right; leftMargin: Theme.paddingMedium; rightMargin: Theme.paddingMedium }
-            spacing: Theme.paddingMedium
+    SilicaGridView
+    {
+        id: quickgriditems
+        visible: (editMode && mainwindow.settings.quickgridmodel.count === 1) || mainwindow.settings.quickgridmodel.count > 1
+        anchors { left: parent.left; top: searchbar.bottom; right: parent.right; bottom: parent.bottom; leftMargin: Theme.paddingMedium; topMargin: Theme.paddingLarge }
+        cellWidth: (mainpage.isPortrait ? (parent.width / 3) : (parent.width / 4)) - Theme.paddingSmall
+        cellHeight: cellWidth
+        clip: true
 
-            add: Transition {
-                NumberAnimation { properties: "scale"; from: 1.2; to: 1.0; duration: 100; easing.type: Easing.OutInBounce }
-            }
+        VerticalScrollDecorator { flickable: quickgriditems }
+        onVerticalVelocityChanged: sidebar.collapse();
 
-            Repeater
-            {
-                model: mainwindow.settings.quickgridmodel
+        add: Transition {
+            NumberAnimation { properties: "scale"; from: 1.2; to: 1.0; duration: 100; easing.type: Easing.OutInBounce }
+        }
 
-                delegate: QuickGridItem {
-                    id: quickitem
-                    width: (mainpage.isPortrait ? (parent.width / 3) : (parent.width / 4)) - quickgriditems.spacing
-                    height: width
-                    specialItem: special
-                    itemTitle: special ? "" : title
-                    itemUrl: special ? "" : url
-                    editEnabled: editMode
+        model: mainwindow.settings.quickgridmodel
 
-                    onPressAndHold: enableEditMode();
+        delegate: QuickGridItem {
+            id: quickitem
+            contentWidth: quickgriditems.cellWidth - Theme.paddingMedium
+            contentHeight: quickgriditems.cellHeight - Theme.paddingMedium
+            specialItem: special
+            itemTitle: special ? "" : title
+            itemUrl: special ? "" : url
+            editEnabled: editMode
 
-                    onClicked: {
-                        if(special) {
-                            mainwindow.settings.quickgridmodel.addEmpty();
-                            return;
-                        }
+            onPressAndHold: enableEditMode();
 
-                        if(editMode) {
-                            disableEditMode();
-                            return;
-                        }
-
-                        if(url && url.length)
-                            browsertab.load(url);
-
-                        sidebar.collapse();
-                    }
+            onClicked: {
+                if(special) {
+                    mainwindow.settings.quickgridmodel.addEmpty();
+                    return;
                 }
+
+                if(editMode) {
+                    disableEditMode();
+                    return;
+                }
+
+                if(url && url.length)
+                    browsertab.load(url);
+
+                sidebar.collapse();
             }
         }
     }

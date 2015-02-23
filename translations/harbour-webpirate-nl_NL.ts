@@ -71,6 +71,10 @@
         <source>Spanish</source>
         <translation>Spaans</translation>
     </message>
+    <message>
+        <source>Italian</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ActionSidebar</name>
