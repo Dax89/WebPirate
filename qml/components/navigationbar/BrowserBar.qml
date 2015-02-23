@@ -7,7 +7,7 @@ Rectangle
     signal evaporated()
 
     function solidify() {
-        opacity = 1.0
+        opacity = 1.0;
         solidified();
     }
 

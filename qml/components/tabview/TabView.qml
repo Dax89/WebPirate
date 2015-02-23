@@ -3,6 +3,7 @@ import Sailfish.Silica 1.0
 import ".."
 import "../../models"
 import "../sidebar"
+import "../quickgrid"
 
 Item
 {
@@ -17,10 +18,30 @@ Item
     onCurrentIndexChanged: renderTab()
     Component.onCompleted: renderTab()
 
+    onPageStateChanged: {
+        if(pageState === "newtab")
+            specialitems.requestQuickGrid();
+        else if(pageState === "loaderror")
+            specialitems.requestLoadFailed();
+        else
+            specialitems.dismiss();
+    }
+
     /* BrowserTab Component */
     Component {
         id: tabcomponent
         BrowserTab { }
+    }
+
+    Connections {
+        target: mainpage;
+
+        onOrientationChanged: {
+            if(pageState === "webbrowser")
+                return;
+
+            specialitems.calculateMetrics();
+        }
     }
 
     function renderTab()
@@ -32,7 +53,7 @@ Item
         {
             var tab = pages.get(i).tab;
 
-            if(i == currentIndex)
+            if(i === currentIndex)
             {
                 tab.webView.setNightMode(mainwindow.settings.nightmode);
                 tab.visible = true;
@@ -54,6 +75,8 @@ Item
 
         if(url)
             tab.load(url);
+        else
+            tab.loadDefault();
 
         pages.append({ "tab": tab });
 
@@ -125,6 +148,74 @@ Item
         {
             id: stack
             anchors { left: parent.left; right: parent.right; top: tabheader.bottom; bottom: parent.bottom }
+        }
+
+        Item
+        {
+            id: specialitems
+            anchors.top: tabheader.bottom
+
+            function dismiss()
+            {
+                quickgrid.visible = false;
+                loadfailed.visible = false;
+            }
+
+            function calculateMetrics()
+            {
+                specialitems.width = stack.width;
+                specialitems.height = stack.height - Theme.iconSizeMedium;
+
+                if(quickgrid.visible)
+                {
+                    quickgrid.width = specialitems.width
+                    quickgrid.height = specialitems.height
+                }
+                else if(loadfailed.visible)
+                {
+                    loadfailed.width = specialitems.width
+                    loadfailed.height = specialitems.height
+                }
+            }
+
+            function requestQuickGrid()
+            {
+                tabheader.solidify();
+                loadfailed.visible = false;
+                quickgrid.visible = true;
+            }
+
+            function requestLoadFailed()
+            {
+                tabheader.solidify();
+                quickgrid.visible = false;
+                loadfailed.visible = true;
+            }
+
+            QuickGrid
+            {
+                id: quickgrid
+                visible: false
+                anchors.top: parent.top
+                onLoadRequested: tabview.currentTab().load(request)
+
+                onVisibleChanged: {
+                    if(visible)
+                        specialitems.calculateMetrics();
+                }
+            }
+
+            LoadFailed
+            {
+                id: loadfailed
+                anchors.top: parent.top
+                visible: false
+
+                onVisibleChanged: {
+                    if(visible)
+                        specialitems.calculateMetrics();
+                }
+            }
         }
     }
 

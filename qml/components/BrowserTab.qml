@@ -4,7 +4,6 @@ import "navigationbar"
 import "dialogs"
 import "menus"
 import "webview"
-import "quickgrid"
 import "../js/UrlHelper.js" as UrlHelper
 import "../js/Database.js" as Database
 import "../js/Favorites.js" as Favorites
@@ -13,6 +12,7 @@ import "../js/Credentials.js" as Credentials
 Item
 {
     property alias webView: webview
+    property alias tabStatus: tabstatus
     property string lastError: ""
 
     function searchRequested()
@@ -89,12 +89,6 @@ Item
         if(tabstatus.visible)
             tabstatus.width = parent.width;
 
-        if(loader.visible)
-        {
-            loader.width = mainpage.isPortrait ? Screen.width : Screen.height;
-            loader.height = (mainpage.isPortrait ? Screen.height - keyboardrect.height : Screen.width - keyboardrect.width) - navigationbar.height;
-        }
-
         if(webview.visible)
         {
             webview.width = mainpage.isPortrait ? Screen.width : Screen.height;
@@ -106,7 +100,6 @@ Item
     Connections { target: mainpage; onOrientationChanged: calculateMetrics() }
 
     id: browsertab
-    state: "newtab"
     visible: false
     Component.onCompleted: calculateMetrics()
 
@@ -130,14 +123,12 @@ Item
             PropertyChanges { target: webview; visible: false }
             PropertyChanges { target: loadingbar; visible: false; canDisplay: false }
             PropertyChanges { target: navigationbar; state: "loaded" }
-            PropertyChanges { target: loader; active: true; source: Qt.resolvedUrl("quickgrid/QuickGrid.qml"); visible: true; }
         },
 
         State {
             name: "webbrowser";
             PropertyChanges { target: webview; visible: true; }
             PropertyChanges { target: loadingbar; canDisplay: true }
-            PropertyChanges { target: loader; source: ""; visible: false; active: false }
         },
 
         State {
@@ -145,7 +136,6 @@ Item
             PropertyChanges { target: webview; visible: false; }
             PropertyChanges { target: loadingbar; visible: false; canDisplay: false }
             PropertyChanges { target: navigationbar; state: "loaded" }
-            PropertyChanges { target: loader; active: true; source: Qt.resolvedUrl("LoadFailed.qml"); visible: true; }
         } ]
 
     LinkMenu {
@@ -166,27 +156,6 @@ Item
         id: historymenu
         anchors { left: parent.left; right: parent.right; top: parent.top; bottom: tabstatus.top }
         onUrlRequested: browsertab.load(url)
-    }
-
-    Loader
-    {
-        id: loader
-
-        onLoaded: {
-            tabheader.solidify();
-            navigationbar.solidify();
-
-            if(browsertab.state === "loaderror")
-            {
-                loader.item.offline = webview.experimental.offline;
-                loader.item.errorString = browsertab.lastError;
-            }
-        }
-
-        onVisibleChanged: {
-            if(visible)
-                calculateMetrics();
-        }
     }
 
     BrowserWebView

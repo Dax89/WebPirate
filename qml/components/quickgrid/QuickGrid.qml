@@ -1,10 +1,12 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
-import "../../components/navigationbar"
+import "../navigationbar"
 
-Rectangle
+Item
 {
     property bool editMode: false
+
+    signal loadRequested(string request)
 
     function enableEditMode()
     {
@@ -25,16 +27,11 @@ Rectangle
 
     id: quickgrid
 
-    gradient: Gradient {
-        GradientStop { position: 0.0; color: Theme.rgba(Theme.highlightDimmerColor, 1.0) }
-        GradientStop { position: 1.0; color: Theme.rgba(Theme.highlightDimmerColor, 0.7) }
-    }
-
     SearchBar
     {
         id: searchbar
         anchors { left: parent.left; top: parent.top; right: parent.right; topMargin: Theme.paddingLarge; leftMargin: Theme.paddingMedium; rightMargin: Theme.paddingMedium }
-        onReturnPressed: browsertab.load(searchquery)
+        onReturnPressed: loadRequested(searchquery)
 
         onVisibleChanged: {
             if(!visible)
@@ -46,7 +43,7 @@ Rectangle
     {
         id: flick
         anchors { left: parent.left; top: searchbar.bottom; right: parent.right; bottom: parent.bottom; topMargin: Theme.paddingLarge }
-        contentHeight: mainwindow.settings.quickgridmodel.count > 1 ? (quickgriditems.height + navigationbar.height) : parent.height
+        contentHeight: mainwindow.settings.quickgridmodel.count > 1 ? quickgriditems.height : parent.height
         onVerticalVelocityChanged: sidebar.collapse();
         clip: true
 
@@ -107,7 +104,7 @@ Rectangle
                         }
 
                         if(url && url.length)
-                            browsertab.load(url);
+                            loadRequested(url);
 
                         sidebar.collapse();
                     }
