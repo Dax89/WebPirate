@@ -157,7 +157,7 @@ function addUrl(title, url, parentid)
     var nodeid;
 
     instance().transaction(function(tx) {
-        nodeid = transactionAddUrl(tx, title, url, parentid);
+        nodeid = transactionAddUrl(tx, title, url, parentid ? parentid : 0);
     });
 
     return nodeid;
