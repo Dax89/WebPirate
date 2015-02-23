@@ -42,67 +42,76 @@ Rectangle
         }
     }
 
-    ViewPlaceholder
+    SilicaFlickable
     {
-        id: placeholder
-        anchors.fill: parent
-        enabled: !editMode && (mainwindow.settings.quickgridmodel.count === 1)
-        text: qsTr("The QuickGrid is empty")
-
-        MouseArea {
-            anchors.fill: parent
-
-            onPressAndHold: {
-                placeholder.enabled = false;
-                enableEditMode();
-            }
-        }
-    }
-
-    SilicaGridView
-    {
-        id: quickgriditems
-        visible: (editMode && mainwindow.settings.quickgridmodel.count === 1) || mainwindow.settings.quickgridmodel.count > 1
-        anchors { left: parent.left; top: searchbar.bottom; right: parent.right; bottom: parent.bottom; leftMargin: Theme.paddingMedium; topMargin: Theme.paddingLarge }
-        cellWidth: (mainpage.isPortrait ? (parent.width / 3) : (parent.width / 4)) - Theme.paddingSmall
-        cellHeight: cellWidth
+        id: flick
+        anchors { left: parent.left; top: searchbar.bottom; right: parent.right; bottom: parent.bottom; topMargin: Theme.paddingLarge }
+        contentHeight: mainwindow.settings.quickgridmodel.count > 1 ? (quickgriditems.height + navigationbar.height) : parent.height
+        onVerticalVelocityChanged: sidebar.collapse();
         clip: true
 
-        VerticalScrollDecorator { flickable: quickgriditems }
-        onVerticalVelocityChanged: sidebar.collapse();
+        VerticalScrollDecorator { flickable: flick }
 
-        add: Transition {
-            NumberAnimation { properties: "scale"; from: 1.2; to: 1.0; duration: 100; easing.type: Easing.OutInBounce }
+        ViewPlaceholder
+        {
+            id: placeholder
+            anchors.fill: parent
+            enabled: !editMode && (mainwindow.settings.quickgridmodel.count === 1)
+            text: qsTr("The QuickGrid is empty")
+
+            MouseArea {
+                anchors.fill: parent
+
+                onPressAndHold: {
+                    placeholder.enabled = false;
+                    enableEditMode();
+                }
+            }
         }
 
-        model: mainwindow.settings.quickgridmodel
+        Flow
+        {
+            id: quickgriditems
+            visible: (editMode && mainwindow.settings.quickgridmodel.count === 1) || mainwindow.settings.quickgridmodel.count > 1
+            anchors { left: parent.left; top: parent.top; right: parent.right; leftMargin: Theme.paddingMedium; rightMargin: Theme.paddingMedium }
+            spacing: Theme.paddingMedium
 
-        delegate: QuickGridItem {
-            id: quickitem
-            contentWidth: quickgriditems.cellWidth - Theme.paddingMedium
-            contentHeight: quickgriditems.cellHeight - Theme.paddingMedium
-            specialItem: special
-            itemTitle: special ? "" : title
-            itemUrl: special ? "" : url
-            editEnabled: editMode
+            add: Transition {
+                NumberAnimation { properties: "scale"; from: 1.2; to: 1.0; duration: 100; easing.type: Easing.OutInBounce }
+            }
 
-            onPressAndHold: enableEditMode();
+            Repeater
+            {
+                model: mainwindow.settings.quickgridmodel
 
-            onClicked: {
-                if(special) {
-                    mainwindow.settings.quickgridmodel.addEmpty();
-                    return;
+                delegate: QuickGridItem {
+                    id: quickitem
+                    width: (mainpage.isPortrait ? (parent.width / 3) : (parent.width / 4)) - quickgriditems.spacing
+                    height: width
+                    specialItem: special
+                    itemTitle: special ? "" : title
+                    itemUrl: special ? "" : url
+                    editEnabled: editMode
+
+                    onPressAndHold: enableEditMode();
+
+                    onClicked: {
+                        if(special) {
+                            mainwindow.settings.quickgridmodel.addEmpty();
+                            return;
+                        }
+
+                        if(editMode) {
+                            disableEditMode();
+                            return;
+                        }
+
+                        if(url && url.length)
+                            browsertab.load(url);
+
+                        sidebar.collapse();
+                    }
                 }
-
-                if(editMode) {
-                    disableEditMode();
-                    return;
-                }
-
-                if(url && url.length)
-                    browsertab.load(url);
-
-                sidebar.collapse();
             }
         }
     }

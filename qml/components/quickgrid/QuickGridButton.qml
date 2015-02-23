@@ -4,7 +4,7 @@ import Sailfish.Silica 1.0
 IconButton
 {
     id: btnedit
-    width: quickgriditem.contentWidth * 0.25
+    width: quickgriditem.width * 0.25
     height: width
     icon { width: btnedit.width; height: btnedit.height; fillMode: Image.PreserveAspectFit }
     visible: opacity > 0.0

@@ -1,7 +1,7 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
 
-ListItem
+BackgroundItem
 {
     property string itemUrl
     property alias itemTitle: lbltitle.text
