@@ -569,6 +569,10 @@
         <source>Link copied to clipboard</source>
         <translation>链接已复制到剪贴板</translation>
     </message>
+    <message>
+        <source>Open New Tab in Background</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>LoadFailed</name>

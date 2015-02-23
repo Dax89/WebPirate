@@ -43,16 +43,23 @@ Item
         }
     }
 
-    function addTab(url)
+    function addTab(url, foreground)
     {
+        if(typeof(foreground) === "undefined")
+            foreground = true;
+
         var tab = tabcomponent.createObject(stack);
         tab.anchors.fill = stack
+        tab.visible = foreground;
 
         if(url)
             tab.load(url);
 
         pages.append({ "tab": tab });
-        currentIndex = (pages.count - 1);
+
+        if(foreground)
+            currentIndex = (pages.count - 1);
+
         tabheader.calculateTabWidth();
         return tab;
     }

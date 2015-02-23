@@ -97,6 +97,7 @@ Item
 
     id: browsertab
     state: "newtab"
+    visible: false
 
     onVisibleChanged: {
         if(!visible) {
@@ -140,7 +141,7 @@ Item
         id: linkmenu
 
         onOpenLinkRequested: browsertab.load(url)
-        onOpenTabRequested: tabview.addTab(url)
+        onOpenTabRequested: tabview.addTab(url, foreground)
         onAddToFavoritesRequested: Favorites.addUrl(url, url)
         onRemoveFromFavoritesRequested: Favorites.removeFromUrl(url)
     }

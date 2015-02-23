@@ -21,6 +21,12 @@ PopupDialog
                                                         }
                                                       },
 
+                                            QtObject { readonly property string menuText: qsTr("Open New Tab in Background")
+                                                       function execute() {
+                                                           linkmenu.openTabRequested(linkmenu.url, false);
+                                                       }
+                                                     },
+
                                              QtObject { readonly property string menuText: qsTr("Copy Link")
                                                         function execute() {
                                                             Clipboard.text = linkmenu.url;
@@ -50,7 +56,7 @@ PopupDialog
                                                       } ]
 
     signal openLinkRequested(string url)
-    signal openTabRequested(string url)
+    signal openTabRequested(string url, bool foreground)
     signal addToFavoritesRequested(string url)
     signal removeFromFavoritesRequested(string url)
 

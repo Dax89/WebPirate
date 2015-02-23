@@ -570,6 +570,10 @@
         <source>Link copied to clipboard</source>
         <translation>Enlace copiado al portapapeles</translation>
     </message>
+    <message>
+        <source>Open New Tab in Background</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>LoadFailed</name>
