@@ -86,15 +86,20 @@ Item
     {
         var keyboardrect = Qt.inputMethod.keyboardRectangle;
 
-        if(!webview.visible)
+        if(tabstatus.visible)
+            tabstatus.width = parent.width;
+
+        if(loader.visible)
         {
             loader.width = mainpage.isPortrait ? Screen.width : Screen.height;
             loader.height = (mainpage.isPortrait ? Screen.height - keyboardrect.height : Screen.width - keyboardrect.width) - navigationbar.height;
-            return;
         }
 
-        webview.width = mainpage.isPortrait ? Screen.width : Screen.height;
-        webview.height = mainpage.isPortrait ? (Screen.height - keyboardrect.height) : (Screen.width - keyboardrect.width);
+        if(webview.visible)
+        {
+            webview.width = mainpage.isPortrait ? Screen.width : Screen.height;
+            webview.height = mainpage.isPortrait ? (Screen.height - keyboardrect.height) : (Screen.width - keyboardrect.width);
+        }
     }
 
     Connections { target: Qt.inputMethod; onVisibleChanged: calculateMetrics() }
@@ -154,12 +159,12 @@ Item
 
     CredentialDialog {
         id: credentialdialog
-        anchors { left: parent.left; right: parent.right; top: parent.top; bottom: navigationbar.top }
+        anchors { left: parent.left; right: parent.right; top: parent.top; bottom: tabstatus.top }
     }
 
     HistoryMenu {
         id: historymenu
-        anchors { left: parent.left; right: parent.right; top: parent.top; bottom: navigationbar.top }
+        anchors { left: parent.left; right: parent.right; top: parent.top; bottom: tabstatus.top }
         onUrlRequested: browsertab.load(url)
     }
 
@@ -177,6 +182,11 @@ Item
                 loader.item.errorString = browsertab.lastError;
             }
         }
+
+        onVisibleChanged: {
+            if(visible)
+                calculateMetrics();
+        }
     }
 
     BrowserWebView
@@ -190,70 +200,82 @@ Item
         }
     }
 
-    LoadingBar
+    Item
     {
-        id: loadingbar
-        z: 1
-        visible: false
-        anchors { left: parent.left; bottom: navigationbar.top; right: parent.right }
-        minimumValue: 0
-        maximumValue: 100
-        value: webview.loadProgress
-        hideWhenFinished: true
-    }
+        id: tabstatus
+        anchors.bottom: parent.bottom
+        height: navigationbar.height + actionbar.height
 
-    FindTextBar
-    {
-        id: findtextbar
-        anchors { bottom: navigationbar.top; left: parent.left; right: parent.right }
-    }
-
-    ActionBar
-    {
-        id: actionbar
-        anchors { bottom: navigationbar.top; left: parent.left; right: parent.right }
-
-        onHomepageRequested: load(mainwindow.settings.homepage)
-        onFindRequested: findtextbar.solidify()
-    }
-
-    NavigationBar
-    {
-        id: navigationbar
-        anchors { bottom: parent.bottom; left: parent.left; right: parent.right }
-        forwardButton.enabled: webview.canGoForward;
-        backButton.enabled: webview.canGoBack;
-
-        onActionBarRequested: actionbar.visible ? actionbar.evaporate() : actionbar.solidify()
-        onRefreshRequested: webview.reload();
-        onStopRequested: webview.stop();
-        onSearchRequested: load(searchquery);
-        onEvaporated: actionbar.evaporate();
-
-        onBackRequested: {
-            findtextbar.evaporate();
-            actionbar.evaporate();
-            webview.goBack();
+        onVisibleChanged: {
+            if(visible)
+                calculateMetrics();
         }
 
-        onForwardRequested: {
-            findtextbar.evaporate();
-            actionbar.evaporate();
-            webview.goForward();
+        LoadingBar
+        {
+            id: loadingbar
+            z: 1
+            visible: false
+            anchors { left: parent.left; bottom: navigationbar.top; right: parent.right }
+            minimumValue: 0
+            maximumValue: 100
+            value: webview.loadProgress
+            hideWhenFinished: true
         }
 
-        searchBar.onFocusChanged: {
-            if(!searchBar.focus)
-                historymenu.hide();
+        FindTextBar
+        {
+            id: findtextbar
+            anchors { bottom: navigationbar.top; left: parent.left; right: parent.right }
         }
 
-        searchBar.onTextChanged: {
-            if(webview.loading || !searchBar.editing) {
-                historymenu.hide();
-                return;
+        ActionBar
+        {
+            id: actionbar
+            anchors { bottom: navigationbar.top; left: parent.left; right: parent.right }
+
+            onHomepageRequested: load(mainwindow.settings.homepage)
+            onFindRequested: findtextbar.solidify()
+        }
+
+        NavigationBar
+        {
+            id: navigationbar
+            anchors { bottom: parent.bottom; left: parent.left; right: parent.right }
+            forwardButton.enabled: webview.canGoForward;
+            backButton.enabled: webview.canGoBack;
+
+            onActionBarRequested: actionbar.visible ? actionbar.evaporate() : actionbar.solidify()
+            onRefreshRequested: webview.reload();
+            onStopRequested: webview.stop();
+            onSearchRequested: load(searchquery);
+            onEvaporated: actionbar.evaporate();
+
+            onBackRequested: {
+                findtextbar.evaporate();
+                actionbar.evaporate();
+                webview.goBack();
             }
 
-            historymenu.query = text;
+            onForwardRequested: {
+                findtextbar.evaporate();
+                actionbar.evaporate();
+                webview.goForward();
+            }
+
+            searchBar.onFocusChanged: {
+                if(!searchBar.focus)
+                    historymenu.hide();
+            }
+
+            searchBar.onTextChanged: {
+                if(webview.loading || !searchBar.editing) {
+                    historymenu.hide();
+                    return;
+                }
+
+                historymenu.query = text;
+            }
         }
     }
 }
