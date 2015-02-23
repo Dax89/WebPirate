@@ -7,7 +7,7 @@ Dialog
     property alias downloadUrl: tfdownloadurl.text
 
     id: newdownloadpage
-    orientation: Orientation.All
+    allowedOrientations: Orientation.All
     acceptDestinationAction: PageStackAction.Pop
     canAccept: tfdownloadurl.text.length > 0 && UrlHelper.isUrl(tfdownloadurl.text)
 
