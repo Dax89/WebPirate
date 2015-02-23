@@ -82,22 +82,28 @@ Item
             loadDefault();
     }
 
-    function calculateWebViewMetrics()
+    function calculateMetrics()
     {
-        if(!webview.visible)
-            return;
-
         var keyboardrect = Qt.inputMethod.keyboardRectangle;
+
+        if(!webview.visible)
+        {
+            loader.width = mainpage.isPortrait ? Screen.width : Screen.height;
+            loader.height = (mainpage.isPortrait ? Screen.height - keyboardrect.height : Screen.width - keyboardrect.width) - navigationbar.height;
+            return;
+        }
+
         webview.width = mainpage.isPortrait ? Screen.width : Screen.height;
         webview.height = mainpage.isPortrait ? (Screen.height - keyboardrect.height) : (Screen.width - keyboardrect.width);
     }
 
-    Connections { target: Qt.inputMethod; onVisibleChanged: calculateWebViewMetrics(); }
-    Connections { target: mainpage; onOrientationChanged: calculateWebViewMetrics(); }
+    Connections { target: Qt.inputMethod; onVisibleChanged: calculateMetrics() }
+    Connections { target: mainpage; onOrientationChanged: calculateMetrics() }
 
     id: browsertab
     state: "newtab"
     visible: false
+    Component.onCompleted: calculateMetrics()
 
     onVisibleChanged: {
         if(!visible) {
@@ -160,8 +166,6 @@ Item
     Loader
     {
         id: loader
-        anchors { left: parent.left; top: parent.top; right: parent.right }
-        height: (mainpage.isPortrait ? Screen.height : Screen.width) - navigationbar.height
 
         onLoaded: {
             tabheader.solidify();
@@ -182,7 +186,7 @@ Item
 
         onVisibleChanged: {
             if(visible)
-                calculateWebViewMetrics();
+                calculateMetrics();
         }
     }
 
