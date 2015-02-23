@@ -663,6 +663,10 @@
         <source>Clear popup list</source>
         <translation>清除弹出页面列表</translation>
     </message>
+    <message>
+        <source>Removing popups</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>PopupItem</name>

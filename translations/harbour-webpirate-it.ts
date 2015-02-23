@@ -663,6 +663,10 @@
         <source>Clear popup list</source>
         <translation>Cancella lista popup</translation>
     </message>
+    <message>
+        <source>Removing popups</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>PopupItem</name>

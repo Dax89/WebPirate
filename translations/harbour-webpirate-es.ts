@@ -664,6 +664,10 @@
         <source>Clear popup list</source>
         <translation>Limpiar lista de ventanas emergentes</translation>
     </message>
+    <message>
+        <source>Removing popups</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>PopupItem</name>
