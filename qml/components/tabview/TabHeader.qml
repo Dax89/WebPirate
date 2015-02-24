@@ -69,7 +69,7 @@ Rectangle
             height: Theme.iconSizeMedium
             icon.source: "image://theme/icon-m-add"
             anchors.rightMargin: Theme.paddingSmall
-            onClicked: tabview.addTab()
+            onClicked: tabview.addTab(mainwindow.settings.homepage)
         }
     }
 

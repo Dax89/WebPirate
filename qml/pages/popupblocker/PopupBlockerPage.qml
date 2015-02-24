@@ -13,7 +13,6 @@ Page
     id: popupblockerpage
     allowedOrientations: Orientation.All
 
-    RemorsePopup { id: remorsepopup }
 
     SilicaFlickable
     {
@@ -23,12 +22,7 @@ Page
         {
             MenuItem {
                 text: qsTr("Clear popup list")
-
-                onClicked: {
-                    remorsepopup.execute(qsTr("Removing popups"), function() {
-                        popupModel.clear();
-                    });
-                }
+                onClicked: popupModel.clear();
             }
         }
 

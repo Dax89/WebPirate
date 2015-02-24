@@ -44,6 +44,7 @@ Dialog
                 id: tfhomepage
                 label: qsTr("Home Page")
                 width: parent.width
+                inputMethodHints: Qt.ImhUrlCharactersOnly
                 text: settings.homepage
             }
 

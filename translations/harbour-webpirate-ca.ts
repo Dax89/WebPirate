@@ -663,10 +663,6 @@
         <source>Clear popup list</source>
         <translation>Neteja la llista de finestres emergents</translation>
     </message>
-    <message>
-        <source>Removing popups</source>
-        <translation type="unfinished"></translation>
-    </message>
 </context>
 <context>
     <name>PopupItem</name>

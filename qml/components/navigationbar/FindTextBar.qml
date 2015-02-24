@@ -13,10 +13,6 @@ BrowserBar
         findtextbar.findError = false;
     }
 
-    onEvaporated: {
-        searchfield.text = "";
-    }
-
     Row
     {
         anchors.fill: parent
@@ -27,6 +23,7 @@ BrowserBar
             width: parent.width - (btnsearchup.width + btnsearchdown.width + btnclose.width)
             height: parent.height
             font.pixelSize: Theme.fontSizeSmall
+            inputMethodHints: Qt.ImhNoAutoUppercase
             placeholderText: qsTr("Search") + "..."
 
             onTextChanged: {

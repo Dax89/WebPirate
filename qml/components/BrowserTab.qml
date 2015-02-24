@@ -50,7 +50,7 @@ Item
         return "about:newtab";
     }
 
-    function loadDefault()
+    function loadNewTab()
     {
         state = "newtab";
         webview.url = "about:newtab"
@@ -63,34 +63,36 @@ Item
         if(specialurl === "config")
             pageStack.push(Qt.resolvedUrl("../pages/SettingsPage.qml"), {"settings": mainwindow.settings });
         else
-            loadDefault();
+            loadNewTab();
     }
 
-    function load(req) {
-        if(UrlHelper.isSpecialUrl(req))
-            manageSpecialUrl(req);
-        else if(req !== null)
-        {
-            state = "webbrowser";
+    function load(req)
+    {
+        if(!req)
+            loadNewTab();
 
-            if(UrlHelper.isUrl(req))
-                webview.url = UrlHelper.adjustUrl(req);
-            else
-                webview.url = mainwindow.settings.searchengines.get(mainwindow.settings.searchengine).query + req;
+        if(UrlHelper.isSpecialUrl(req))
+        {
+            manageSpecialUrl(req);
+            return;
         }
+
+        state = "webbrowser";
+
+        if(UrlHelper.isUrl(req))
+            webview.url = UrlHelper.adjustUrl(req);
         else
-            loadDefault();
+            webview.url = mainwindow.settings.searchengines.get(mainwindow.settings.searchengine).query + req;
     }
 
     function calculateMetrics()
     {
-        var keyboardrect = Qt.inputMethod.keyboardRectangle;
+        if(!webview.visible)
+            return;
 
-        if(webview.visible)
-        {
-            webview.width = mainpage.isPortrait ? Screen.width : Screen.height;
-            webview.height = mainpage.isPortrait ? (Screen.height - keyboardrect.height) : (Screen.width - keyboardrect.width);
-        }
+        var keyboardrect = Qt.inputMethod.keyboardRectangle;
+        webview.width = mainpage.isPortrait ? Screen.width : Screen.height;
+        webview.height = mainpage.isPortrait ? (Screen.height - keyboardrect.height) : (Screen.width - keyboardrect.width);
     }
 
     Connections { target: Qt.inputMethod; onVisibleChanged: calculateMetrics() }

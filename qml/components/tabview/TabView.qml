@@ -65,8 +65,6 @@ Item
 
         if(url)
             tab.load(url);
-        else
-            tab.loadDefault();
 
         pages.append({ "tab": tab });
 

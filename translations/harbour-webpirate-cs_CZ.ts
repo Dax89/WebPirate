@@ -663,10 +663,6 @@
         <source>Clear popup list</source>
         <translation>Vymazat seznam vyskakujících oken</translation>
     </message>
-    <message>
-        <source>Removing popups</source>
-        <translation type="unfinished"></translation>
-    </message>
 </context>
 <context>
     <name>PopupItem</name>
