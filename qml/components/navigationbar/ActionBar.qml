@@ -14,10 +14,7 @@ BrowserBar
 
     function calcButtonWidth()
     {
-        var count = 2;
-
-        if(btnfind.visible)
-            count++;
+        var count = 3;
 
         if(btnfavorite.visible)
             count++;
@@ -49,7 +46,6 @@ BrowserBar
         {
             id: btnfind
             icon.source: "image://theme/icon-m-search"
-            visible: !UrlHelper.isSpecialUrl(navigationbar.searchBar.url)
             anchors.verticalCenter: parent.verticalCenter
             width: calcButtonWidth()
 
@@ -62,8 +58,8 @@ BrowserBar
         IconButton
         {
             id: btnfavorite
+            visible: navigationbar.searchBar.url.length > 0
             width: visible ? calcButtonWidth() : 0
-            visible: (navigationbar.searchBar.url.length === 0) || !UrlHelper.isSpecialUrl(navigationbar.searchBar.url)
             anchors.verticalCenter: parent.verticalCenter
             icon.source: (actionbar.favorite ? "image://theme/icon-m-favorite-selected" : "image://theme/icon-m-favorite")
 

@@ -163,10 +163,12 @@ SilicaWebView
 
         if(UrlHelper.isSpecialUrl(stringurl))
         {
+            navigationbar.actionButton.enabled = false;
             manageSpecialUrl(stringurl);
             return;
         }
 
+        navigationbar.actionButton.enabled = true;
         browsertab.state = "webbrowser";
 
         if(!loading && YouTubeGrabber.isYouTubeVideo(stringurl))

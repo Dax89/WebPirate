@@ -13,6 +13,7 @@ BrowserBar
     signal searchRequested(string searchquery)
 
     property alias searchBar: searchbar
+    property alias actionButton: btnaction
     property alias backButton: btnback
     property alias forwardButton: btnforward
 
@@ -37,17 +38,18 @@ BrowserBar
 
     IconButton
     {
-        id: btnactionbar
+        id: btnaction
         icon.source: "image://theme/icon-m-levels"
         width: visible ? Theme.iconSizeMedium : 0
         visible: !searchbar.editing
         anchors { left: btnback.right; top: parent.top; bottom: parent.bottom }
+        enabled: false
         onClicked: actionBarRequested()
 
         Label
         {
             id: lblalert
-            anchors.fill: btnactionbar.icon
+            anchors.fill: btnaction.icon
             visible: actionbar.blockedPopups.count > 0
             color: "orangered"
             font.bold: true
@@ -67,7 +69,7 @@ BrowserBar
     SearchBar
     {
         id: searchbar
-        anchors { left: btnactionbar.right; right: btnrefresh.left; verticalCenter: parent.verticalCenter }
+        anchors { left: btnaction.right; right: btnrefresh.left; verticalCenter: parent.verticalCenter }
         onReturnPressed: navigationbar.searchRequested(searchquery);
     }
 
