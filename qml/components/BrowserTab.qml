@@ -86,9 +86,6 @@ Item
     {
         var keyboardrect = Qt.inputMethod.keyboardRectangle;
 
-        if(tabstatus.visible)
-            tabstatus.width = parent.width;
-
         if(webview.visible)
         {
             webview.width = mainpage.isPortrait ? Screen.width : Screen.height;
@@ -152,12 +149,6 @@ Item
         anchors { left: parent.left; right: parent.right; top: parent.top; bottom: tabstatus.top }
     }
 
-    HistoryMenu {
-        id: historymenu
-        anchors { left: parent.left; right: parent.right; top: parent.top; bottom: tabstatus.top }
-        onUrlRequested: browsertab.load(url)
-    }
-
     BrowserWebView
     {
         id: webview
@@ -172,7 +163,7 @@ Item
     Item
     {
         id: tabstatus
-        anchors.bottom: parent.bottom
+        anchors { left: parent.left; right: parent.right; bottom: parent.bottom }
         height: navigationbar.height + actionbar.height
 
         onVisibleChanged: {
@@ -232,13 +223,8 @@ Item
                 webview.goForward();
             }
 
-            searchBar.onFocusChanged: {
-                if(!searchBar.focus)
-                    historymenu.hide();
-            }
-
             searchBar.onTextChanged: {
-                if(webview.loading || !searchBar.editing) {
+                if(!searchBar.editing) {
                     historymenu.hide();
                     return;
                 }

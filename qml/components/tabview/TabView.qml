@@ -2,6 +2,7 @@ import QtQuick 2.1
 import Sailfish.Silica 1.0
 import ".."
 import "../../models"
+import "../menus"
 import "../sidebar"
 import "../quickgrid"
 
@@ -31,28 +32,6 @@ Item
     Component {
         id: tabcomponent
         BrowserTab { }
-    }
-
-    Connections {
-        target: mainpage;
-
-        onOrientationChanged: {
-            if(pageState === "webbrowser")
-                return;
-
-            specialitems.calculateMetrics();
-        }
-    }
-
-    Connections {
-        target: Qt.inputMethod
-
-        onVisibleChanged: {
-            if(pageState === "webbrowser")
-                return;
-
-            specialitems.calculateMetrics();
-        }
     }
 
     function renderTab()
@@ -164,7 +143,9 @@ Item
         Item
         {
             id: specialitems
-            anchors.top: tabheader.bottom
+            anchors { left: parent.left; right: parent.right; top: tabheader.bottom; bottom: parent.bottom; bottomMargin: Theme.iconSizeMedium }
+            onWidthChanged: calculateMetrics()
+            onHeightChanged: calculateMetrics()
 
             function dismiss()
             {
@@ -174,11 +155,6 @@ Item
 
             function calculateMetrics()
             {
-                var keyboardrect = Qt.inputMethod.keyboardRectangle;
-
-                specialitems.width = stack.width;
-                specialitems.height = stack.height - (mainpage.isPortrait ? keyboardrect.height : keyboardrect.width) - Theme.iconSizeMedium;
-
                 if(quickgrid.visible)
                 {
                     quickgrid.width = specialitems.width
@@ -207,6 +183,13 @@ Item
 
                 quickgrid.visible = false;
                 loadfailed.visible = true;
+            }
+
+            HistoryMenu
+            {
+                id: historymenu
+                anchors.fill: parent
+                onUrlRequested: tabview.currentTab().load(url)
             }
 
             QuickGrid
