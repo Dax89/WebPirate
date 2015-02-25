@@ -152,19 +152,20 @@ SilicaWebView
     }
 
     onLoadingChanged: {
-        if(!visible)
-            return;
-
         if(loadRequest.status === WebView.LoadStartedStatus)
         {
+            if(visible)
+            {
+                navigationbar.solidify();
+                tabheader.solidify();
+                sidebar.collapse();
+                historymenu.hide();
+            }
+
             actionbar.blockedPopups.clear();
             actionbar.evaporate();
             findtextbar.evaporate();
-            navigationbar.solidify();
-            tabheader.solidify();
             linkmenu.hide();
-            sidebar.collapse();
-            historymenu.hide();
             return;
         }
 
