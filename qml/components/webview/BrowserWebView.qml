@@ -147,9 +147,6 @@ SilicaWebView
         if((request.navigationType === WebView.OtherNavigation) && UrlHelper.domainName(url.toString()) !== UrlHelper.domainName(stringurl))
             return; /* Ignore Other Domain Requests */
 
-        experimental.postMessage("forcepixelratio");
-        webview.setNightMode(mainwindow.settings.nightmode);
-
         if(YouTubeGrabber.isYouTubeVideo(stringurl))
             experimental.postMessage("youtube_convertvideo");
     }
@@ -185,8 +182,11 @@ SilicaWebView
 
             if(!UrlHelper.isSpecialUrl(stringurl) && UrlHelper.isUrl(stringurl))
             {
+                experimental.postMessage("forcepixelratio");
                 experimental.postMessage("polish_document");
                 experimental.postMessage("youtube_convertvideo");
+
+                webview.setNightMode(mainwindow.settings.nightmode);
 
                 Credentials.compile(Database.instance(), mainwindow.settings, stringurl, webview);
                 History.store(stringurl, title);
