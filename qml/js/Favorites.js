@@ -101,20 +101,48 @@ function get(favoriteid)
 
 function transactionAddFolder(tx, title, parentid)
 {
-    var res = tx.executeSql("INSERT INTO Favorites (parentid, url, title, isfolder) VALUES (?, NULL, ?, 1);", [parentid, title]);
-    var nodeid = parseInt(res.insertId);
+    var result = new Object;
+    var res = tx.executeSql("SELECT favoriteid FROM Favorites WHERE parentid=? AND url IS NULL AND title=? AND isfolder=1 LIMIT 1", [parentid, title]);
 
-    tx.executeSql("INSERT INTO FavoritesTree (parentid, childid) VALUES (?, ?)", [parentid, nodeid]);
-    return nodeid;
+    if(res.rows.length > 0) /* Avoid Duplicates */
+    {
+        result.added = false;
+        result.id = parseInt(res.rows[0].favoriteid);
+    }
+    else
+    {
+        res = tx.executeSql("INSERT INTO Favorites (parentid, url, title, isfolder) VALUES (?, NULL, ?, 1)", [parentid, title]);
+
+        result.added = true;
+        result.id = parseInt(res.insertId);
+
+        tx.executeSql("INSERT INTO FavoritesTree (parentid, childid) VALUES (?, ?)", [parentid, result.id]);
+    }
+
+    return result;
 }
 
 function transactionAddUrl(tx, title, url, parentid)
 {
-    var res = tx.executeSql("INSERT INTO Favorites (parentid, url, title, isfolder) VALUES (?, ?, ?, 0);", [parentid, url, title]);
-    var nodeid = parseInt(res.insertId);
+    var result = new Object;
+    var res = tx.executeSql("SELECT favoriteid FROM Favorites WHERE parentid=? AND url=? AND title=? AND isfolder=0 LIMIT 1", [parentid, url, title]);
 
-    tx.executeSql("INSERT INTO FavoritesTree (parentid, childid) VALUES (?, ?)", [parentid, nodeid]);
-    return nodeid;
+    if(res.rows.length > 0) /* Avoid Duplicates */
+    {
+        result.added = false;
+        result.id = parseInt(res.rows[0].favoriteid);
+    }
+    else
+    {
+        res = tx.executeSql("INSERT INTO Favorites (parentid, url, title, isfolder) VALUES (?, ?, ?, 0)", [parentid, url, title]);
+
+        result.added = true;
+        result.id = parseInt(res.insertId);
+
+        tx.executeSql("INSERT INTO FavoritesTree (parentid, childid) VALUES (?, ?)", [parentid, result.id]);
+    }
+
+    return result;
 }
 
 function transactionGet(tx, favoriteid)
@@ -143,24 +171,24 @@ function transactionRemove(tx, favoriteid)
 
 function addFolder(title, parentid)
 {
-    var nodeid;
+    var result = null;
 
     instance().transaction(function(tx) {
-        nodeid = transactionAddFolder(tx, title, parentid);
+        result = transactionAddFolder(tx, title, parentid);
     });
 
-    return nodeid;
+    return result.id;
 }
 
 function addUrl(title, url, parentid)
 {
-    var nodeid;
+    var result = null;
 
     instance().transaction(function(tx) {
-        nodeid = transactionAddUrl(tx, title, url, parentid ? parentid : 0);
+        result = transactionAddUrl(tx, title, url, parentid ? parentid : 0);
     });
 
-    return nodeid;
+    return result.id;
 }
 
 function replaceFolder(id, title)
@@ -201,12 +229,16 @@ function doImport(rootfolder, parentid, favoritesmodel)
             var f = rootfolder.favorites[i];
 
             if(f.isFolder) {
-                var folderid = importFolder(tx, f, parentid);
-                favoritesmodel.addFolderInView(f.title, folderid, parentid);
+                var folderresult = importFolder(tx, f, parentid);
+
+                if(folderresult.added)
+                    favoritesmodel.addFolderInView(f.title, folderresult.id, parentid);
             }
             else {
-                var urlid = transactionAddUrl(tx, f.title, f.url, parentid);
-                favoritesmodel.addUrlInView(f.title, f.url, urlid, parentid);
+                var urlresult = transactionAddUrl(tx, f.title, f.url, parentid);
+
+                if(urlresult.added)
+                    favoritesmodel.addUrlInView(f.title, f.url, urlresult.id, parentid);
             }
         }
     });
@@ -214,19 +246,19 @@ function doImport(rootfolder, parentid, favoritesmodel)
 
 function importFolder(tx, folder, parentid)
 {
-    var folderid = transactionAddFolder(tx, folder.title, parentid);
+    var result = transactionAddFolder(tx, folder.title, parentid);
 
     for(var i = 0; i < folder.favorites.length; i++)
     {
         var f = folder.favorites[i];
 
         if(f.isFolder)
-            importFolder(tx, f, folderid);
+            importFolder(tx, f, result.id);
         else
-            transactionAddUrl(tx, f.title, f.url, folderid);
+            transactionAddUrl(tx, f.title, f.url, result.id);
     }
 
-    return folderid;
+    return result;
 }
 
 function doExport(favoritesmanager, folderid, foldername)
