@@ -80,6 +80,7 @@ PopupDialog
             anchors.bottomMargin: Theme.paddingSmall
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
+            font.pixelSize: Theme.fontSizeSmall
             text: linkmenuModel[index].menuText
         }
 

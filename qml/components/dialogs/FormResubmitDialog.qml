@@ -37,6 +37,7 @@ PopupDialog
                 id: lblyes
                 text: qsTr("Yes");
                 anchors.fill: parent
+                font.pixelSize: Theme.fontSizeSmall
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
             }
@@ -57,6 +58,7 @@ PopupDialog
                 id: lblno
                 text: qsTr("No");
                 anchors.fill: parent
+                font.pixelSize: Theme.fontSizeSmall
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
             }

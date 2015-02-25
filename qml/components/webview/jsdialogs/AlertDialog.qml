@@ -16,6 +16,7 @@ WebViewDialog
             id: lblyes
             text: qsTr("Ok");
             anchors.fill: parent
+            font.pixelSize: Theme.fontSizeSmall
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
         }

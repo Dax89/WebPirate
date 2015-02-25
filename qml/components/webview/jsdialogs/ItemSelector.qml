@@ -24,6 +24,7 @@ WebViewDialog
             anchors { left: parent.left; right: itemselswitch.left; verticalCenter: parent.verticalCenter; leftMargin: Theme.paddingLarge }
             horizontalAlignment: Text.AlignLeft
             verticalAlignment: Text.AlignVCenter
+            font.pixelSize: Theme.fontSizeSmall
             text: model.text
         }
 
