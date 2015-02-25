@@ -17,7 +17,7 @@ PopupDialog
 
                                              QtObject { readonly property string menuText: qsTr("Open New Tab")
                                                         function execute() {
-                                                            linkmenu.openTabRequested(linkmenu.url);
+                                                            linkmenu.openTabRequested(linkmenu.url, true);
                                                         }
                                                       },
 

@@ -8,6 +8,9 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Wed Feb 25 2015 Antonio Davide Trogu <trogu.davide@gmail.com> 0.9.6-3
+- REGRESSION FIX: Added missing parameter when opening a new tab from LinkMenu
+
 * Wed Feb 25 2015 Antonio Davide Trogu <trogu.davide@gmail.com> 0.9.6-2
 - REGRESSION FIX: Cover Action "Add New Tab" loaded as blank page
 
