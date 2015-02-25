@@ -8,6 +8,25 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Wed Feb 25 2015 Antonio Davide Trogu <trogu.davide@gmail.com> 0.9.6-1
+- BUGFIX: Fixed broken "Add/Remove favorites" option in LinkMenu
+- BUGFIX: Do not add duplicate when importing favorites (see issue #16 on GitHub)
+- The browser will trigger a warning when you are try to resend form's data
+- Replaced evaluateJavascript() calls with asynchronous postMessage() ones
+- Updated AdBlock Definitions (credits goes to llelectronics, the Webcat browser's developer)
+- Polished UI's Tabs
+- Polished Dialogs and Menus
+- Improved Night Mode
+- Improved YouTube Grabber
+- Cleaned Source Code: Removed unused signals and slots
+- Minor Fixes
+- Updated Localizations
+- UI Performance Boost:
+  - Tabs requires less memory and they are more responsive
+  - Done Fine Tuning all over the place (using the QML Profiler :))
+  - There is only one QuickGrid instance shared between tabs
+  - There is only one HistoryMenu instance shared between tabs
+
 * Tue Feb 17 2015 Antonio Davide Trogu <trogu.davide@gmail.com> 0.9.5-1
 - Implemented Popup Blocker
 - Allow to recover closed tabs
