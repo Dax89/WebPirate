@@ -23,18 +23,6 @@ SilicaWebView
         experimental.postMessage(nightmode ? "enable_nightmode" : "disable_nightmode");
     }
 
-    function hideBars()
-    {
-        actionbar.blockedPopups.clear();
-        actionbar.evaporate();
-        findtextbar.evaporate();
-        navigationbar.solidify();
-        tabheader.solidify();
-        linkmenu.hide();
-        sidebar.collapse();
-        historymenu.hide();
-    }
-
     VerticalScrollDecorator { flickable: webview }
     WebViewListener { id: listener }
 
@@ -157,11 +145,28 @@ SilicaWebView
         if(!visible)
             return;
 
-        if(loadRequest.status === WebView.LoadFailedStatus) {
+        if(loadRequest.status === WebView.LoadStartedStatus)
+        {
+            actionbar.blockedPopups.clear();
+            actionbar.evaporate();
+            findtextbar.evaporate();
+            navigationbar.solidify();
+            tabheader.solidify();
+            linkmenu.hide();
+            sidebar.collapse();
+            historymenu.hide();
+            return;
+        }
+
+        if(loadRequest.status === WebView.LoadFailedStatus)
+        {
             browsertab.lastError = loadRequest.errorString;
             browsertab.state = "loaderror";
+            return;
         }
-        else if (loadRequest.status === WebView.LoadSucceededStatus)  {
+
+        if(loadRequest.status === WebView.LoadSucceededStatus)
+        {
             var stringurl = url.toString();
             actionbar.favorite = Favorites.contains(stringurl);
 
