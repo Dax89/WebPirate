@@ -8,7 +8,8 @@ Rectangle
     property bool loading: false
 
     id: tabbutton
-    anchors { top: headerrow.top; bottom: headerrow.bottom }
+    radius: 8
+    anchors { top: headerrow.top; bottom: headerrow.bottom; bottomMargin: -radius }
     width: tabheader.tabWidth
     color: (index === currentIndex ? Theme.secondaryColor : Theme.secondaryHighlightColor);
     scale: headermousearea.pressed ? 1.05 : 1.0
@@ -24,7 +25,7 @@ Rectangle
     MouseArea
     {
         id: headermousearea
-        anchors { left: parent.left; top: parent.top; right: btnclose.left; bottom: parent.bottom }
+        anchors { left: parent.left; top: parent.top; right: btnclose.left; bottom: parent.bottom; bottomMargin: radius }
 
         Item
         {

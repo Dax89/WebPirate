@@ -30,6 +30,7 @@ Rectangle
 
     id: tabheader
     z: 1
+    clip: true
     height: Theme.iconSizeMedium
     color: Theme.rgba(Theme.highlightDimmerColor, 1.0)
     visible: opacity > 0.0
@@ -47,7 +48,7 @@ Rectangle
     {
         id: headerrow
         anchors { left: parent.left; right: btnsidebar.left; top: parent.top; bottom: parent.bottom }
-        spacing: 2
+        spacing: Theme.paddingSmall / 2
 
         Repeater
         {
