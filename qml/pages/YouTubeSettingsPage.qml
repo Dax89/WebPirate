@@ -28,128 +28,140 @@ Page
     SilicaFlickable
     {
         anchors.fill: parent
-
-        PageHeader { id: dlgheader; title: qsTr("YouTube Grabber") }
+        contentHeight: content.height
 
         Column
         {
-            id: column
-            anchors { left: parent.left; top: dlgheader.bottom; right: parent.right }
-
-            Row
-            {
-                id: videoinfo
-                width: parent.width
-                height: Math.max(imgthumbnail.height, colinfo.height)
-                spacing: Theme.paddingSmall
-                visible: !grabFailed
-
-                Image
-                {
-                    id: imgthumbnail
-                    width: 240
-                    height: 130
-                    fillMode: Image.PreserveAspectCrop
-                }
-
-                Column
-                {
-                    id: colinfo
-                    width: parent.width - imgthumbnail.width
-                    spacing: Theme.paddingMedium
-
-                    InfoLabel {
-                        id: lblauthor
-                        width: parent.width
-                        title: qsTr("Author")
-                    }
-
-                    InfoLabel {
-                        id: lblduration
-                        width: parent.width
-                        title: qsTr("Duration")
-                    }
-                }
-            }
+            id: content
+            width: parent.width
+            spacing: Theme.paddingMedium
 
             Column
             {
-                id: colvideo
+                id: column
                 width: parent.width
-                spacing: Theme.paddingMedium
 
-                InfoLabel
+                PageHeader { id: dlgheader; title: qsTr("YouTube Grabber") }
+
+                Row
                 {
-                    id: lblresponse
-                    anchors.topMargin: Theme.paddingMedium
+                    id: videoinfo
                     width: parent.width
-                    contentColor: grabFailed ? "red" : "lime"
-                    title: qsTr("Response")
-                    text: "OK"
-                    labelWrap: Text.WordWrap
-                }
-
-                InfoLabel
-                {
-                    id: lbltitle
+                    height: Math.max(imgthumbnail.height, colinfo.height)
+                    spacing: Theme.paddingSmall
                     visible: !grabFailed
-                    anchors.topMargin: Theme.paddingMedium
-                    width: parent.width
-                    title: qsTr("Title")
-                    labelWrap: Text.WordWrap
-                }
-            }
-        }
 
-        Label
-        {
-            id: lblgrabs
-            visible: !grabFailed
-            anchors { left: parent.left; top: column.bottom; right: parent.right; topMargin: Theme.paddingLarge }
-            font.pixelSize: Theme.fontSizeSmall
-            color: Theme.highlightColor
-            text: qsTr("Grabbed URLs") + ":"
-            wrapMode: Text.WordWrap
-        }
-
-        ListView
-        {
-            id: lvvideotypes
-            visible: !grabFailed
-            anchors { left: parent.left; top: lblgrabs.bottom; right: parent.right; bottom: parent.bottom; topMargin: Theme.paddingMedium; }
-            model: videoTypes
-            clip: true
-
-            delegate: ListItem {
-                id: lvitem
-                contentWidth: lvvideotypes.width
-                contentHeight: Theme.itemSizeSmall
-                onClicked: playVideo(videoTitle, url, videoThumbnail)
-
-                menu: ContextMenu {
-                    MenuItem {
-                        text: qsTr("Play")
-                        onClicked: playVideo(videoTitle, url, videoThumbnail)
+                    Image
+                    {
+                        id: imgthumbnail
+                        width: 240
+                        height: 130
+                        fillMode: Image.PreserveAspectCrop
                     }
 
-                    MenuItem {
-                        text: qsTr("Download")
+                    Column
+                    {
+                        id: colinfo
+                        width: parent.width - imgthumbnail.width
+                        spacing: Theme.paddingMedium
 
-                        onClicked: {
-                            lvitem.remorseAction(qsTr("Grabbing video"), function() {
-                                settings.downloadmanager.createDownload(url);
-                            });
+                        InfoLabel {
+                            id: lblauthor
+                            width: parent.width
+                            title: qsTr("Author")
+                        }
+
+                        InfoLabel {
+                            id: lblduration
+                            width: parent.width
+                            title: qsTr("Duration")
                         }
                     }
                 }
 
-                InfoLabel
+                Column
                 {
-                    anchors.fill: parent
-                    labelElide: Text.ElideRight
-                    displayColon: false
-                    title: qsTr("Quality") + ": " + (quality + " (" + mime + (hascodec ? (", " + codec) : "") + ")")
-                    text: url
+                    id: colvideo
+                    width: parent.width
+                    spacing: Theme.paddingMedium
+
+                    InfoLabel
+                    {
+                        id: lblresponse
+                        anchors.topMargin: Theme.paddingMedium
+                        width: parent.width
+                        contentColor: grabFailed ? "red" : "lime"
+                        title: qsTr("Response")
+                        text: "OK"
+                        labelWrap: Text.WordWrap
+                    }
+
+                    InfoLabel
+                    {
+                        id: lbltitle
+                        visible: !grabFailed
+                        anchors.topMargin: Theme.paddingMedium
+                        width: parent.width
+                        title: qsTr("Title")
+                        labelWrap: Text.WordWrap
+                    }
+                }
+            }
+
+            Label
+            {
+                id: lblgrabs
+                visible: !grabFailed
+                anchors { left: parent.left; right: parent.right }
+                font.pixelSize: Theme.fontSizeSmall
+                color: Theme.highlightColor
+                text: qsTr("Grabbed URLs") + ":"
+                wrapMode: Text.WordWrap
+            }
+
+            Column
+            {
+                id: colvideotypes
+                visible: !grabFailed
+                anchors { left: parent.left; right: parent.right }
+
+                Repeater
+                {
+                    model: videoTypes
+
+
+                    delegate: ListItem {
+                        id: lvitem
+                        contentWidth: colvideotypes.width
+                        contentHeight: Theme.itemSizeSmall
+                        onClicked: playVideo(videoTitle, url, videoThumbnail)
+
+                        menu: ContextMenu {
+                            MenuItem {
+                                text: qsTr("Play")
+                                onClicked: playVideo(videoTitle, url, videoThumbnail)
+                            }
+
+                            MenuItem {
+                                text: qsTr("Download")
+
+                                onClicked: {
+                                    lvitem.remorseAction(qsTr("Grabbing video"), function() {
+                                        settings.downloadmanager.createDownload(url);
+                                    });
+                                }
+                            }
+                        }
+
+                        InfoLabel
+                        {
+                            anchors.fill: parent
+                            labelElide: Text.ElideRight
+                            displayColon: false
+                            title: qsTr("Quality") + ": " + (quality + " (" + mime + (hascodec ? (", " + codec) : "") + ")")
+                            text: url
+                        }
+                    }
                 }
             }
         }
