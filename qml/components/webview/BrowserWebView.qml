@@ -145,6 +145,9 @@ SilicaWebView
             return;
         }
 
+        if((request.navigationType === WebView.OtherNavigation) && UrlHelper.domainName(url.toString()) !== UrlHelper.domainName(stringurl))
+            return; /* Ignore Other Domain Requests */
+
         experimental.postMessage("forcepixelratio");
         webview.setNightMode(mainwindow.settings.nightmode);
 
