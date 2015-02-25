@@ -148,7 +148,8 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/components/items/PopupItem.qml \
     qml/components/items/BlockedPopupItem.qml \
     qml/pages/popupblocker/NewPopupRulePage.qml \
-    qml/js/helpers/MessageListener.js
+    qml/js/helpers/MessageListener.js \
+    qml/components/dialogs/FormResubmitDialog.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line

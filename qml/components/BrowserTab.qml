@@ -151,6 +151,11 @@ Item
         anchors { left: parent.left; right: parent.right; top: parent.top; bottom: tabstatus.top }
     }
 
+    FormResubmitDialog {
+        id: formresubmitdialog
+        anchors { left: parent.left; right: parent.right; top: parent.top; bottom: tabstatus.top }
+    }
+
     BrowserWebView
     {
         id: webview

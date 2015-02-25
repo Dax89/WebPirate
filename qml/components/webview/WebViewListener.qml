@@ -31,6 +31,7 @@ Item
 
         function onLongPress(data) {
             credentialdialog.hide();
+            formresubmitdialog.hide();
 
             if(data.url) {
                 linkmenu.url = data.url;

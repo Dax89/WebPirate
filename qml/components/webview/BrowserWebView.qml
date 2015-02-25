@@ -132,8 +132,19 @@ SilicaWebView
 
     onNavigationRequested: {
         var stringurl = request.url.toString();
-
         browsertab.lastError = "";
+
+        if(UrlHelper.isSpecialUrl(stringurl) || (request.navigationType === WebView.FormSubmittedNavigation))
+            return;
+
+        if(request.navigationType === WebView.FormResubmittedNavigation)
+        {
+            request.action = WebView.IgnoreRequest;
+            formresubmitdialog.url = stringurl;
+            formresubmitdialog.show();
+            return;
+        }
+
         experimental.postMessage("forcepixelratio");
         webview.setNightMode(mainwindow.settings.nightmode);
 

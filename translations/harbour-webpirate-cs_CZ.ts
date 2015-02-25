@@ -525,6 +525,21 @@
     </message>
 </context>
 <context>
+    <name>FormResubmitDialog</name>
+    <message>
+        <source>This page contains information written by you: do you want to resend the data?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Yes</source>
+        <translation type="unfinished">Ano</translation>
+    </message>
+    <message>
+        <source>No</source>
+        <translation type="unfinished">Ne</translation>
+    </message>
+</context>
+<context>
     <name>HistoryMenu</name>
     <message>
         <source>Link copied to clipboard</source>
