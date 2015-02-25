@@ -92,8 +92,17 @@ function grabVideo(videoid, ytvideosettings)
                 var videoentry = videoinfo[i].split("=");
 
                 if((videoentry[0] === "status") && (videoentry[1] === "fail"))
-                    break; //FIXME: (YouTube) Grab Error Message
-                else if(videoentry[0] === "author")
+                    ytvideosettings.grabFailed = true;
+                else if(videoentry[0] === "reason")
+                    ytvideosettings.videoResponse = UrlHelper.decode(videoentry[1]);
+
+                if(ytvideosettings.grabFailed && ytvideosettings.videoResponse.length)
+                    break;
+
+                if(ytvideosettings.grabFailed)
+                    continue;
+
+                if(videoentry[0] === "author")
                     ytvideosettings.videoAuthor = UrlHelper.decode(videoentry[1]);
                 else if(videoentry[0] === "title")
                     ytvideosettings.videoTitle = UrlHelper.decode(videoentry[1]);

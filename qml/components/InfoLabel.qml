@@ -10,6 +10,7 @@ Item
 
     property alias titleFont: lbltitle.font
     property alias contentFont: lblcontent.font
+    property alias contentColor: lblcontent.color
     property alias text: lblcontent.text
 
     height: lbltitle.height + lblcontent.height

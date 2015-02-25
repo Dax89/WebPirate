@@ -10,6 +10,8 @@ Page
     property ListModel videoTypes: ListModel { }
     property Settings settings
 
+    property bool grabFailed: false
+    property alias videoResponse: lblresponse.text
     property alias videoTitle: lbltitle.text
     property alias videoAuthor: lblauthor.text
     property alias videoDuration: lblduration.text
@@ -40,6 +42,7 @@ Page
                 width: parent.width
                 height: Math.max(imgthumbnail.height, colinfo.height)
                 spacing: Theme.paddingSmall
+                visible: !grabFailed
 
                 Image
                 {
@@ -69,19 +72,39 @@ Page
                 }
             }
 
-            InfoLabel
+            Column
             {
-                id: lbltitle
-                anchors.topMargin: Theme.paddingMedium
+                id: colvideo
                 width: parent.width
-                title: qsTr("Title")
-                labelWrap: Text.WordWrap
+                spacing: Theme.paddingMedium
+
+                InfoLabel
+                {
+                    id: lblresponse
+                    anchors.topMargin: Theme.paddingMedium
+                    width: parent.width
+                    contentColor: grabFailed ? "red" : "lime"
+                    title: qsTr("Response")
+                    text: "OK"
+                    labelWrap: Text.WordWrap
+                }
+
+                InfoLabel
+                {
+                    id: lbltitle
+                    visible: !grabFailed
+                    anchors.topMargin: Theme.paddingMedium
+                    width: parent.width
+                    title: qsTr("Title")
+                    labelWrap: Text.WordWrap
+                }
             }
         }
 
         Label
         {
             id: lblgrabs
+            visible: !grabFailed
             anchors { left: parent.left; top: column.bottom; right: parent.right; topMargin: Theme.paddingLarge }
             font.pixelSize: Theme.fontSizeSmall
             color: Theme.highlightColor
@@ -92,6 +115,7 @@ Page
         ListView
         {
             id: lvvideotypes
+            visible: !grabFailed
             anchors { left: parent.left; top: lblgrabs.bottom; right: parent.right; bottom: parent.bottom; topMargin: Theme.paddingMedium; }
             model: videoTypes
             clip: true

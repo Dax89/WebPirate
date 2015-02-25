@@ -649,7 +649,7 @@ function encString(plaintext, key, iv) {
     }
 
     if (iv === undefined) {
-        // TODO: This is not defined anywhere... commented out...
+        // This is not defined anywhere... commented out...
         // iv = genIV();
     } else {
         iv = s2a(iv, false);

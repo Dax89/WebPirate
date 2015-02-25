@@ -990,5 +990,9 @@
         <source>Grabbing video</source>
         <translation>Grabbing video</translation>
     </message>
+    <message>
+        <source>Response</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 </TS>

@@ -990,5 +990,9 @@
         <source>Grabbing video</source>
         <translation>正在抓取视频</translation>
     </message>
+    <message>
+        <source>Response</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 </TS>
