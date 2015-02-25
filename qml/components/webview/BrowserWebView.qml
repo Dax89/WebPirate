@@ -44,7 +44,6 @@ SilicaWebView
     experimental.preferences.javascriptEnabled: true
     experimental.preferences.navigatorQtObjectEnabled: true
     experimental.preferences.developerExtrasEnabled: true
-    experimental.transparentBackground: true
     experimental.userAgent: UserAgents.get(mainwindow.settings.useragent).value
     experimental.userStyleSheet: mainwindow.settings.adblockmanager.rulesFile
 
