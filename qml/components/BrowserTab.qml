@@ -201,6 +201,7 @@ Item
             id: actionbar
             anchors { bottom: navigationbar.top; left: parent.left; right: parent.right }
 
+            onQuickGridRequested: load("about:newtab")
             onHomepageRequested: load(mainwindow.settings.homepage)
             onFindRequested: findtextbar.solidify()
         }

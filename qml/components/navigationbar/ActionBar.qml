@@ -9,12 +9,13 @@ BrowserBar
     property bool favorite: false
     property BlockedPopupModel blockedPopups: BlockedPopupModel { }
 
+    signal quickGridRequested()
     signal homepageRequested()
     signal findRequested()
 
     function calcButtonWidth()
     {
-        var count = 3;
+        var count = 4;
 
         if(btnfavorite.visible)
             count++;
@@ -31,10 +32,25 @@ BrowserBar
 
         IconButton
         {
+            id: btnquickgrid
+            icon.source: "qrc:///res/quickgrid.png"
+            anchors.verticalCenter: parent.verticalCenter
+            width: calcButtonWidth()
+            height: parent.height
+
+            onClicked: {
+                quickGridRequested();
+                actionbar.evaporate();
+            }
+        }
+
+        IconButton
+        {
             id: btnhome
             icon.source: "image://theme/icon-m-home"
             anchors.verticalCenter: parent.verticalCenter
             width: calcButtonWidth()
+            height: parent.height
 
             onClicked: {
                 homepageRequested();
@@ -48,6 +64,7 @@ BrowserBar
             icon.source: "image://theme/icon-m-search"
             anchors.verticalCenter: parent.verticalCenter
             width: calcButtonWidth()
+            height: parent.height
 
             onClicked: {
                 findRequested();
@@ -60,6 +77,7 @@ BrowserBar
             id: btnfavorite
             visible: navigationbar.searchBar.url.length > 0
             width: visible ? calcButtonWidth() : 0
+            height: parent.height
             anchors.verticalCenter: parent.verticalCenter
             icon.source: (actionbar.favorite ? "image://theme/icon-m-favorite-selected" : "image://theme/icon-m-favorite")
 
@@ -80,6 +98,7 @@ BrowserBar
             id: btnpopups
             enabled: blockedPopups.count > 0
             width: visible ? calcButtonWidth() : 0
+            height: parent.height
             anchors.verticalCenter: parent.verticalCenter
             icon.source: "image://theme/icon-m-tabs"
 
