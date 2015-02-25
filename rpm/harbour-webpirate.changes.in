@@ -8,6 +8,9 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Wed Feb 25 2015 Antonio Davide Trogu <trogu.davide@gmail.com> 0.9.6-2
+- REGRESSION FIX: Cover Action "Add New Tab" loaded as blank page
+
 * Wed Feb 25 2015 Antonio Davide Trogu <trogu.davide@gmail.com> 0.9.6-1
 - BUGFIX: Fixed broken "Add/Remove favorites" option in LinkMenu
 - BUGFIX: Do not add duplicate when importing favorites (see issue #16 on GitHub)

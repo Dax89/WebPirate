@@ -117,7 +117,7 @@ Item
                        readonly property string icon: "image://theme/icon-cover-new"
 
                        function execute(tabview) {
-                           tabview.addTab();
+                           tabview.addTab(mainwindow.settings.homepage);
                        } },
 
                 Item { readonly property int categoryId: generalCategoryId
@@ -156,7 +156,7 @@ Item
                            var tab = tabview.currentTab();
 
                            if(!tab)
-                               tab = tabview.addTab();
+                               tab = tabview.addTab(mainwindow.settings.homepage);
 
                            mainwindow.activate();
                            tab.searchRequested();
