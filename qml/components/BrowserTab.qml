@@ -204,6 +204,7 @@ Item
         {
             id: navigationbar
             anchors { bottom: parent.bottom; left: parent.left; right: parent.right }
+            state: webview.loading ? "loading" : "loaded"
             forwardButton.enabled: webview.canGoForward;
             backButton.enabled: webview.canGoBack;
 

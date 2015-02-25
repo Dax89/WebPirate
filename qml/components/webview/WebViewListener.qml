@@ -9,7 +9,8 @@ Item
 
     QtObject
     {
-        readonly property var dispatcher: { "touchstart": onTouchStart,
+        readonly property var dispatcher: { "console_log": onConsoleLog,
+                                            "touchstart": onTouchStart,
                                             "longpress": onLongPress,
                                             "submit": onFormSubmit,
                                             "selector_touch": onSelectorTouched,
@@ -18,6 +19,10 @@ Item
                                             "window_open": onWindowOpen }
 
         id: listenerprivate
+
+        function onConsoleLog(data) {
+            console.log(data.log);
+        }
 
         function onTouchStart(/* data */) {
             actionbar.evaporate();

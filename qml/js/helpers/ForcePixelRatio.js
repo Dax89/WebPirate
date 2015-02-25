@@ -31,5 +31,3 @@ var __wp_forcepixelratio__ = {
             viewport.content = "width=device-width/3.0, minimum-scale=3.0, initial-scale=3.0";
     }
 }
-
-__wp_forcepixelratio__.adjust();

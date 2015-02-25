@@ -20,7 +20,19 @@ SilicaWebView
         if(browsertab.state !== "webbrowser")
             return;
 
-        webview.experimental.evaluateJavaScript("__wp_nightmode__.switchMode(" + nightmode + ")");
+        experimental.postMessage(nightmode ? "enable_nightmode" : "disable_nightmode");
+    }
+
+    function hideBars()
+    {
+        actionbar.blockedPopups.clear();
+        actionbar.evaporate();
+        findtextbar.evaporate();
+        navigationbar.solidify();
+        tabheader.solidify();
+        linkmenu.hide();
+        sidebar.collapse();
+        historymenu.hide();
     }
 
     VerticalScrollDecorator { flickable: webview }
@@ -57,7 +69,8 @@ SilicaWebView
                                 Qt.resolvedUrl("../../js/helpers/ForcePixelRatio.js"),
                                 Qt.resolvedUrl("../../js/helpers/WebViewHelper.js"),
                                 Qt.resolvedUrl("../../js/helpers/YouTubeHelper.js"),
-                                Qt.resolvedUrl("../../js/helpers/NightMode.js")]
+                                Qt.resolvedUrl("../../js/helpers/NightMode.js"),
+                                Qt.resolvedUrl("../../js/helpers/MessageListener.js"), ]
 
     experimental.onTextFound: {
         findtextbar.findError = (matchCount <= 0);
@@ -110,8 +123,8 @@ SilicaWebView
     }
 
     experimental.filePicker: FilePickerDialog { }
-    experimental.onMessageReceived: listener.execute(message)
     experimental.itemSelector: ItemSelector { selectorModel: model }
+    experimental.onMessageReceived: listener.execute(message)
 
     experimental.onDownloadRequested: {
         var mime = mimedatabase.mimeFromUrl(downloadItem.url);
@@ -129,24 +142,22 @@ SilicaWebView
                                });
     }
 
+    onNavigationRequested: {
+        var stringurl = request.url.toString();
+
+        browsertab.lastError = "";
+        experimental.postMessage("forcepixelratio");
+        webview.setNightMode(mainwindow.settings.nightmode);
+
+        if(YouTubeGrabber.isYouTubeVideo(stringurl))
+            experimental.postMessage("youtube_convertvideo");
+    }
+
     onLoadingChanged: {
         if(!visible)
             return;
 
-        browsertab.lastError = "";
-        navigationbar.state = webview.loading ? "loading" : "loaded";
-
-        if(loadRequest.status === WebView.LoadStartedStatus) {
-            actionbar.blockedPopups.clear();
-            actionbar.evaporate();
-            findtextbar.evaporate();
-            navigationbar.solidify();
-            tabheader.solidify();
-            linkmenu.hide();
-            sidebar.collapse();
-            historymenu.hide();
-        }
-        else if(loadRequest.status === WebView.LoadFailedStatus) {
+        if(loadRequest.status === WebView.LoadFailedStatus) {
             browsertab.lastError = loadRequest.errorString;
             browsertab.state = "loaderror";
         }
@@ -156,14 +167,12 @@ SilicaWebView
 
             if(!UrlHelper.isSpecialUrl(stringurl) && UrlHelper.isUrl(stringurl))
             {
-                webview.experimental.evaluateJavaScript("__webpirate__.polishDocument();
-                                                         __yt_webpirate__.convertVideo();");
+                experimental.postMessage("polish_document");
+                experimental.postMessage("youtube_convertvideo");
 
                 Credentials.compile(Database.instance(), mainwindow.settings, stringurl, webview);
                 History.store(stringurl, title);
             }
-
-            webview.setNightMode(mainwindow.settings.nightmode);
         }
     }
 
@@ -180,9 +189,6 @@ SilicaWebView
 
         navigationbar.actionButton.enabled = true;
         browsertab.state = "webbrowser";
-
-        if(!loading && YouTubeGrabber.isYouTubeVideo(stringurl))
-            webview.experimental.evaluateJavaScript("__yt_webpirate__.convertVideo()");
     }
 
     onTitleChanged: navigationbar.searchBar.title = title;
