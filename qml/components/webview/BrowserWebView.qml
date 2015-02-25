@@ -26,6 +26,15 @@ SilicaWebView
     VerticalScrollDecorator { flickable: webview }
     WebViewListener { id: listener }
 
+    Rectangle /* Night Mode Rectangle */
+    {
+        x: contentX
+        y: webview.contentHeight - 1
+        width: Math.max(webview.contentWidth, webview.width)
+        height: Math.max(webview.contentHeight, webview.height)
+        color: mainwindow.settings.nightmode ? "black" : "white"
+    }
+
     id: webview
 
     /* Experimental WebView Features */
@@ -35,6 +44,7 @@ SilicaWebView
     experimental.preferences.javascriptEnabled: true
     experimental.preferences.navigatorQtObjectEnabled: true
     experimental.preferences.developerExtrasEnabled: true
+    experimental.transparentBackground: true
     experimental.userAgent: UserAgents.get(mainwindow.settings.useragent).value
     experimental.userStyleSheet: mainwindow.settings.adblockmanager.rulesFile
 
