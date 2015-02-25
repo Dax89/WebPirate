@@ -73,7 +73,7 @@
     </message>
     <message>
         <source>Italian</source>
-        <translation type="unfinished"></translation>
+        <translation>Italiano</translation>
     </message>
 </context>
 <context>
@@ -528,15 +528,15 @@
     <name>FormResubmitDialog</name>
     <message>
         <source>This page contains information written by you: do you want to resend the data?</source>
-        <translation type="unfinished"></translation>
+        <translation>Esta página contiene información que has introducido: ¿quieres reenviar esta información?</translation>
     </message>
     <message>
         <source>Yes</source>
-        <translation type="unfinished">Sí</translation>
+        <translation>Sí</translation>
     </message>
     <message>
         <source>No</source>
-        <translation type="unfinished">No</translation>
+        <translation>No</translation>
     </message>
 </context>
 <context>
@@ -591,7 +591,7 @@
     </message>
     <message>
         <source>Open New Tab in Background</source>
-        <translation type="unfinished"></translation>
+        <translation>Abrir nueva pestaña en segundo plano</translation>
     </message>
 </context>
 <context>

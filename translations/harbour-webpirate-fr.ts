@@ -140,7 +140,7 @@
     </message>
     <message>
         <source>Popup Blocker</source>
-        <translation type="unfinished"></translation>
+        <translation>Bloqueur de Popup</translation>
     </message>
 </context>
 <context>
@@ -216,7 +216,7 @@
     <name>AlertDialog</name>
     <message>
         <source>Ok</source>
-        <translation>OK</translation>
+        <translation>Ok</translation>
     </message>
 </context>
 <context>
@@ -246,7 +246,7 @@
     <name>BlockedPopupItem</name>
     <message>
         <source>Allow</source>
-        <translation type="unfinished"></translation>
+        <translation>Autoriser</translation>
     </message>
     <message>
         <source>Delete</source>
@@ -649,7 +649,7 @@
     <name>NewPopupRulePage</name>
     <message>
         <source>Apply Rule</source>
-        <translation type="unfinished"></translation>
+        <translation>Appliquer la règle</translation>
     </message>
     <message>
         <source>Url</source>
@@ -657,11 +657,11 @@
     </message>
     <message>
         <source>Rule</source>
-        <translation type="unfinished"></translation>
+        <translation>Règle</translation>
     </message>
     <message>
         <source>Allow</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Autoriser</translation>
     </message>
     <message>
         <source>Block</source>
@@ -672,22 +672,22 @@
     <name>PopupBlockerPage</name>
     <message>
         <source>Popup Blocker</source>
-        <translation type="unfinished"></translation>
+        <translation>Bloqueur de Popup</translation>
     </message>
     <message>
         <source>Clear popup list</source>
-        <translation type="unfinished"></translation>
+        <translation>Vider la liste des popups</translation>
     </message>
 </context>
 <context>
     <name>PopupItem</name>
     <message>
         <source>Rule</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Règle</translation>
     </message>
     <message>
         <source>Allow</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Autoriser</translation>
     </message>
     <message>
         <source>Block</source>
