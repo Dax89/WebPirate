@@ -47,7 +47,7 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/js/Favorites.js \
     qml/components/browsertab/navigationbar/NavigationBar.qml \
     qml/components/browsertab/navigationbar/LoadingBar.qml \
-    qml/components/LoadFailed.qml \
+    qml/components/browsertab/views/LoadFailed.qml \
     qml/components/browsertab/BrowserTab.qml \
     qml/pages/SettingsPage.qml \
     qml/pages/MainPage.qml \
@@ -149,7 +149,8 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/pages/popupblocker/NewPopupRulePage.qml \
     qml/js/helpers/MessageListener.js \
     qml/components/browsertab/navigationbar/tabbars/QueryBar.qml \
-    qml/components/browsertab/navigationbar/tabbars/SearchBar.qml
+    qml/components/browsertab/navigationbar/tabbars/SearchBar.qml \
+    qml/components/browsertab/ViewStack.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line

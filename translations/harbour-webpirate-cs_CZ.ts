@@ -261,7 +261,7 @@
     <name>BrowserTab</name>
     <message>
         <source>Load Error</source>
-        <translation>Chyba načítání</translation>
+        <translation type="vanished">Chyba načítání</translation>
     </message>
     <message>
         <source>New Tab</source>

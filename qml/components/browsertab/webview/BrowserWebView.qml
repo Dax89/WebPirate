@@ -132,7 +132,6 @@ SilicaWebView
 
     onNavigationRequested: {
         var stringurl = request.url.toString();
-        browsertab.lastError = "";
 
         if(UrlHelper.isSpecialUrl(stringurl) || (request.navigationType === WebView.FormSubmittedNavigation))
             return;
@@ -172,8 +171,7 @@ SilicaWebView
 
         if(loadRequest.status === WebView.LoadFailedStatus)
         {
-            browsertab.lastError = loadRequest.errorString;
-            browsertab.state = "loaderror";
+            viewstack.pushLoadError(loadRequest.errorString, experimental.offline);
             return;
         }
 

@@ -1,6 +1,6 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
-import ".."
+import "../browsertab/navigationbar"
 import "../../js/YouTubeGrabber.js" as YouTubeGrabber
 
 Item
@@ -42,7 +42,7 @@ Item
             id: videoprogress
             anchors.fill: parent
             barHeight: mbprogressbar.height
-            z: 1
+            z: 10
         }
 
         LoadingBar
@@ -56,7 +56,7 @@ Item
         MouseArea
         {
             anchors.fill: parent
-            z: 2
+            z: 20
 
             onClicked: {
                 var seekpos = Math.floor(((videoprogress.maximumValue - videoprogress.minimumValue) / videoprogress.width) * mouse.x);

@@ -24,7 +24,7 @@ MouseArea
 
     id: popupdialog
     visible: false
-    z: 10
+    z: 20
 
     onClicked: {
         ignoreDialog();

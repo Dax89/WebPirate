@@ -7,7 +7,7 @@ Rectangle
     visible: opacity > 0.0 ? true : false
     color: Theme.highlightColor
     opacity: 0.0
-    z: 1
+    z: 10
 
     function show(message)
     {

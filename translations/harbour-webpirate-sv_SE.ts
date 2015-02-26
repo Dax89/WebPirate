@@ -261,7 +261,7 @@
     <name>BrowserTab</name>
     <message>
         <source>Load Error</source>
-        <translation>Läsfel</translation>
+        <translation type="vanished">Läsfel</translation>
     </message>
     <message>
         <source>New Tab</source>

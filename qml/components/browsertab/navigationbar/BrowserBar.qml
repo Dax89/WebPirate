@@ -20,7 +20,7 @@ Rectangle
     opacity: 0.0
     height: opacity > 0.0 ? Theme.iconSizeMedium : 0
     visible: opacity > 0.0 && (Qt.application.state === Qt.ApplicationActive)
-    z: 1
+    z: 10
 
     gradient: Gradient {
         GradientStop { position: 0.0; color: Theme.rgba(Theme.highlightDimmerColor, 1.0) }

@@ -27,7 +27,7 @@ Label
     elide: Text.ElideRight
     verticalAlignment: Text.AlignHCenter
     horizontalAlignment: Text.AlignRight
-    z: 1
+    z: 10
 
     Behavior on opacity { NumberAnimation { duration: 800; easing.type: Easing.Linear } }
 

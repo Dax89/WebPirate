@@ -25,7 +25,7 @@ Rectangle
     id: toolbar
     color: Theme.highlightDimmerColor
     visible: Qt.application.state === Qt.ApplicationActive
-    z: 1
+    z: 10
 
     Behavior on opacity { NumberAnimation { duration: 800; easing.type: Easing.Linear } }
 
@@ -52,7 +52,7 @@ Rectangle
         height: Theme.itemSizeSmall
         anchors { left: parent.left; verticalCenter: parent.verticalCenter }
         icon.source: videoplayer.playbackState === MediaPlayer.PlayingState ? "image://theme/icon-m-pause" : "image://theme/icon-m-play"
-        z: 1
+        z: 10
 
         onClicked: {
             restoreOpacity();

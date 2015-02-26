@@ -29,7 +29,7 @@ Rectangle
     }
 
     id: tabheader
-    z: 1
+    z: 9
     clip: true
     height: Theme.iconSizeMedium
     color: Theme.rgba(Theme.highlightDimmerColor, 1.0)

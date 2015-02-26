@@ -14,7 +14,6 @@ Item
 {
     property alias webView: webview
     property alias tabStatus: tabstatus
-    property string lastError: ""
 
     function searchRequested()
     {
@@ -23,10 +22,10 @@ Item
 
     function getIcon()
     {
-        if((state === "newtab") || (state === "loaderror"))
-            return "image://theme/icon-m-tabs";
+        if(state === "webbrowser")
+            return (webview.icon !== "" ? webview.icon : "image://theme/icon-s-group-chat");
 
-        return (webview.icon !== "" ? webview.icon : "image://theme/icon-s-group-chat");
+        return "image://theme/icon-m-tabs";
     }
 
     function getTitle()
@@ -36,9 +35,6 @@ Item
 
         if(navigationbar.queryBar.url.length > 0)
             return navigationbar.queryBar.url
-
-        if(navigationbar.state == "loaderror")
-            return qsTr("Load Error");
 
         return qsTr("New Tab");
     }
@@ -54,7 +50,7 @@ Item
     function loadNewTab()
     {
         state = "newtab";
-        webview.url = "about:newtab"
+        webview.url = "about:newtab";
     }
 
     function manageSpecialUrl(url)
@@ -129,13 +125,6 @@ Item
             name: "webbrowser";
             PropertyChanges { target: webview; visible: true; }
             PropertyChanges { target: loadingbar; canDisplay: true }
-        },
-
-        State {
-            name: "loaderror";
-            PropertyChanges { target: webview; visible: false; }
-            PropertyChanges { target: loadingbar; visible: false; canDisplay: false }
-            PropertyChanges { target: navigationbar; state: "loaded" }
         } ]
 
     LinkMenu {
@@ -168,11 +157,18 @@ Item
         }
     }
 
+    ViewStack
+    {
+        id: viewstack
+        anchors { left: parent.left; top: parent.top; right: parent.right; bottom: tabstatus.top }
+    }
+
     Item
     {
         id: tabstatus
         anchors { left: parent.left; right: parent.right; bottom: parent.bottom }
         height: navigationbar.height + actionbar.height
+        z: 10
 
         onVisibleChanged: {
             if(visible)
@@ -182,7 +178,6 @@ Item
         LoadingBar
         {
             id: loadingbar
-            z: 1
             visible: false
             anchors { left: parent.left; bottom: navigationbar.top; right: parent.right }
             minimumValue: 0
@@ -213,7 +208,7 @@ Item
             anchors { bottom: parent.bottom; left: parent.left; right: parent.right }
             state: webview.loading ? "loading" : "loaded"
             forwardButton.enabled: webview.canGoForward;
-            backButton.enabled: webview.canGoBack;
+            backButton.enabled: !viewstack.empty || webview.canGoBack;
 
             onActionBarRequested: actionbar.visible ? actionbar.evaporate() : actionbar.solidify()
             onRefreshRequested: webview.reload();
@@ -224,6 +219,17 @@ Item
             onBackRequested: {
                 searchbar.evaporate();
                 actionbar.evaporate();
+
+                if(!viewstack.empty)
+                {
+                    viewstack.pop();
+
+                    if(!webview.canGoBack)
+                        loadNewTab();
+
+                    return;
+                }
+
                 webview.goBack();
             }
 

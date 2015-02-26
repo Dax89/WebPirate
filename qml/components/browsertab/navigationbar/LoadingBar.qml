@@ -14,6 +14,7 @@ Rectangle
 
     height: barHeight
     color: "transparent"
+    z: 10
 
     onValueChanged: {
         if(hideWhenFinished) {

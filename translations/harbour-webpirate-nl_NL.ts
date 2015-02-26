@@ -261,7 +261,7 @@
     <name>BrowserTab</name>
     <message>
         <source>Load Error</source>
-        <translation>Fout bij laden</translation>
+        <translation type="vanished">Fout bij laden</translation>
     </message>
     <message>
         <source>New Tab</source>

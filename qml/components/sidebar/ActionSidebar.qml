@@ -7,7 +7,7 @@ Item
     id: sidebar
     visible: false
     width: visible ? (mainpage.isPortrait ? parent.width * 0.55 : parent.height * 0.80) : 0
-    z: 2
+    z: 20
 
     Behavior on width {
         NumberAnimation { duration: 250; easing.type: Easing.InOutQuad }

@@ -261,7 +261,7 @@
     <name>BrowserTab</name>
     <message>
         <source>Load Error</source>
-        <translation>Erreur de chargement</translation>
+        <translation type="vanished">Erreur de chargement</translation>
     </message>
     <message>
         <source>New Tab</source>

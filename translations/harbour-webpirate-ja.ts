@@ -261,7 +261,7 @@
     <name>BrowserTab</name>
     <message>
         <source>Load Error</source>
-        <translation>ロードエラー</translation>
+        <translation type="vanished">ロードエラー</translation>
     </message>
     <message>
         <source>New Tab</source>
