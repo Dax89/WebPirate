@@ -67,11 +67,25 @@ Item
         LoadFailed { }
     }
 
+    Component
+    {
+        id: browserplayercomponent
+        BrowserPlayer { }
+    }
+
     function pushLoadError(errorstring, offline)
     {
         var item = loadfailedcomponent.createObject(viewstack);
         item.errorString = errorstring;
         item.offline = offline;
+
+        stackobject.push(item);
+    }
+
+    function pushBrowserPlayer(videosource)
+    {
+        var item = browserplayercomponent.createObject(viewstack);
+        item.videoSource = videosource
 
         stackobject.push(item);
     }

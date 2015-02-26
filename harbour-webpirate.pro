@@ -150,7 +150,8 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/js/helpers/MessageListener.js \
     qml/components/browsertab/navigationbar/tabbars/QueryBar.qml \
     qml/components/browsertab/navigationbar/tabbars/SearchBar.qml \
-    qml/components/browsertab/ViewStack.qml
+    qml/components/browsertab/ViewStack.qml \
+    qml/components/browsertab/views/BrowserPlayer.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line

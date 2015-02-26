@@ -120,7 +120,8 @@ SilicaWebView
 
         if(mimeinfo[0] === "video")
         {
-            pageStack.push(Qt.resolvedUrl("../../../pages/VideoPlayerPage.qml"), { "videoSource": downloadItem.url });
+            //pageStack.push(Qt.resolvedUrl("../../../pages/VideoPlayerPage.qml"), { "videoSource": downloadItem.url });
+            viewstack.pushBrowserPlayer(downloadItem.url);
             return;
         }
 
