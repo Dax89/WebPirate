@@ -521,7 +521,7 @@
     <name>FindTextBar</name>
     <message>
         <source>Search</source>
-        <translation>Buscar</translation>
+        <translation type="vanished">Buscar</translation>
     </message>
 </context>
 <context>
@@ -730,6 +730,13 @@
     </message>
 </context>
 <context>
+    <name>QueryBar</name>
+    <message>
+        <source>Search with</source>
+        <translation type="unfinished">Buscar con</translation>
+    </message>
+</context>
+<context>
     <name>QuickGrid</name>
     <message>
         <source>The QuickGrid is empty</source>
@@ -800,7 +807,11 @@
     <name>SearchBar</name>
     <message>
         <source>Search with</source>
-        <translation>Buscar con</translation>
+        <translation type="vanished">Buscar con</translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation type="unfinished">Buscar</translation>
     </message>
 </context>
 <context>

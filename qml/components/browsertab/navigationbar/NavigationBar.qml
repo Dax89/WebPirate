@@ -1,7 +1,8 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
-import "../../js/Favorites.js" as Favorites
-import "../../js/UrlHelper.js" as UrlHelper
+import "tabbars"
+import "../../../js/Favorites.js" as Favorites
+import "../../../js/UrlHelper.js" as UrlHelper
 
 BrowserBar
 {
@@ -12,7 +13,7 @@ BrowserBar
     signal forwardRequested()
     signal searchRequested(string searchquery)
 
-    property alias searchBar: searchbar
+    property alias queryBar: querybar
     property alias actionButton: btnaction
     property alias backButton: btnback
     property alias forwardButton: btnforward
@@ -30,7 +31,7 @@ BrowserBar
         id: btnback
         icon.source: "image://theme/icon-m-back"
         width: visible ? Theme.iconSizeMedium : 0
-        visible: !searchbar.editing
+        visible: !querybar.editing
         anchors { left: navigationbar.left; top: parent.top; bottom: parent.bottom }
         enabled: false
         onClicked: backRequested();
@@ -41,7 +42,7 @@ BrowserBar
         id: btnaction
         icon.source: "image://theme/icon-m-levels"
         width: visible ? Theme.iconSizeMedium : 0
-        visible: !searchbar.editing
+        visible: !querybar.editing
         anchors { left: btnback.right; top: parent.top; bottom: parent.bottom }
         enabled: false
         onClicked: actionBarRequested()
@@ -66,9 +67,9 @@ BrowserBar
         }
     }
 
-    SearchBar
+    QueryBar
     {
-        id: searchbar
+        id: querybar
         anchors { left: btnaction.right; right: btnrefresh.left; verticalCenter: parent.verticalCenter }
         onReturnPressed: navigationbar.searchRequested(searchquery);
     }
@@ -78,7 +79,7 @@ BrowserBar
         id: btnrefresh
         icon.source: "image://theme/icon-m-refresh"
         width: visible ? Theme.iconSizeMedium : 0
-        visible: !searchbar.editing
+        visible: !querybar.editing
         anchors { right: btnforward.left; top: parent.top; bottom: parent.bottom }
 
         onClicked: {
@@ -94,7 +95,7 @@ BrowserBar
         id: btnforward
         icon.source: "image://theme/icon-m-forward"
         width: visible ? Theme.iconSizeMedium : 0
-        visible: !searchbar.editing
+        visible: !querybar.editing
         anchors { right: parent.right; top: parent.top; bottom: parent.bottom }
         enabled: false
 

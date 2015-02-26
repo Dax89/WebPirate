@@ -1,7 +1,7 @@
 import QtQuick 2.1
-import "../../js/Database.js" as Database
-import "../../js/Credentials.js" as Credentials
-import "../../js/PopupBlocker.js" as PopupBlocker
+import "../../../js/Database.js" as Database
+import "../../../js/Credentials.js" as Credentials
+import "../../../js/PopupBlocker.js" as PopupBlocker
 
 Item
 {
@@ -39,7 +39,7 @@ Item
                 linkmenu.show();
             }
             else if(data.text)
-                pageStack.push(Qt.resolvedUrl("../../pages/TextSelectionPage.qml"), { "text": data.text });
+                pageStack.push(Qt.resolvedUrl("../../../pages/TextSelectionPage.qml"), { "text": data.text });
         }
 
         function onFormSubmit(data) {
@@ -61,7 +61,7 @@ Item
         }
 
         function playVideo(data) {
-            pageStack.push(Qt.resolvedUrl("../../pages/YouTubeSettingsPage.qml"), {"videoId": data.videoid, "settings": mainwindow.settings });
+            pageStack.push(Qt.resolvedUrl("../../../pages/YouTubeSettingsPage.qml"), {"videoId": data.videoid, "settings": mainwindow.settings });
         }
 
         function onWindowOpen(data) {

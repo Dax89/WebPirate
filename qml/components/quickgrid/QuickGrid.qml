@@ -1,6 +1,6 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
-import "../navigationbar"
+import "../browsertab/navigationbar/tabbars"
 
 Item
 {
@@ -27,22 +27,22 @@ Item
 
     id: quickgrid
 
-    SearchBar
+    QueryBar
     {
-        id: searchbar
+        id: querybar
         anchors { left: parent.left; top: parent.top; right: parent.right; topMargin: Theme.paddingLarge; leftMargin: Theme.paddingMedium; rightMargin: Theme.paddingMedium }
         onReturnPressed: loadRequested(searchquery)
 
         onVisibleChanged: {
             if(!visible)
-                searchbar.clear();
+                querybar.clear();
         }
     }
 
     SilicaFlickable
     {
         id: flick
-        anchors { left: parent.left; top: searchbar.bottom; right: parent.right; bottom: parent.bottom; topMargin: Theme.paddingLarge }
+        anchors { left: parent.left; top: querybar.bottom; right: parent.right; bottom: parent.bottom; topMargin: Theme.paddingLarge }
         contentHeight: mainwindow.settings.quickgridmodel.count > 1 ? quickgriditems.height : parent.height
         onVerticalVelocityChanged: sidebar.collapse();
         clip: true

@@ -1,27 +1,26 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
-import "../../js/SearchEngines.js" as SearchEngines
 
 Item
 {
     property string title
     property string url
 
-    property alias editing: searchfield.focus
+    property alias editing: queryfield.focus
 
     signal textChanged(string text)
     signal returnPressed(string searchquery)
 
     function triggerKeyboard() {
-        searchfield.forceActiveFocus();
+        queryfield.forceActiveFocus();
     }
 
     function clear() {
-        searchfield.text = "";
+        queryfield.text = "";
     }
 
-    id: searchbar
-    height: searchfield.height
+    id: querybar
+    height: queryfield.height
 
     Behavior on width {
         NumberAnimation { duration: 500; easing.type: Easing.InOutElastic }
@@ -29,7 +28,7 @@ Item
 
     TextField
     {
-        id: searchfield
+        id: queryfield
         anchors { left: parent.left; right: parent.right }
         font.pixelSize: Theme.fontSizeSmall
         inputMethodHints: Qt.ImhNoAutoUppercase
@@ -37,8 +36,8 @@ Item
         labelVisible: false
 
         Keys.onReturnPressed: {
-            searchbar.returnPressed(text);
-            searchfield.focus = false;
+            querybar.returnPressed(text);
+            queryfield.focus = false;
         }
 
         onFocusChanged: {
@@ -53,16 +52,16 @@ Item
             deselect();
         }
 
-        onTextChanged: searchbar.textChanged(text)
+        onTextChanged: querybar.textChanged(text)
     }
 
     onUrlChanged: {
-        if(!searchfield.focus)
-            searchfield.text = (title.length == 0 ? url : title);
+        if(!queryfield.focus)
+            queryfield.text = (title.length == 0 ? url : title);
     }
 
     onTitleChanged: {
-        if(!searchfield.focus)
-            searchfield.text = title
+        if(!queryfield.focus)
+            queryfield.text = title
     }
 }

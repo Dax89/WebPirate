@@ -1,8 +1,8 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
-import "../../js/UrlHelper.js" as UrlHelper
-import "../../js/Favorites.js" as Favorites
-import "../../models"
+import ".."
+import "../../../../js/Favorites.js" as Favorites
+import "../../../../models"
 
 BrowserBar
 {
@@ -75,7 +75,7 @@ BrowserBar
         IconButton
         {
             id: btnfavorite
-            visible: navigationbar.searchBar.url.length > 0
+            visible: navigationbar.queryBar.url.length > 0
             width: visible ? calcButtonWidth() : 0
             height: parent.height
             anchors.verticalCenter: parent.verticalCenter
@@ -104,7 +104,7 @@ BrowserBar
 
             onClicked: {
                 actionbar.evaporate();
-                pageStack.push(Qt.resolvedUrl("../../pages/popupblocker/PopupBlockerPage.qml"), { "popupModel": blockedPopups, "tabView": tabview });
+                pageStack.push(Qt.resolvedUrl("../../../../pages/popupblocker/PopupBlockerPage.qml"), { "popupModel": blockedPopups, "tabView": tabview });
             }
 
             Label

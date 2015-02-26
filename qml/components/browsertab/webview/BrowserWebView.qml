@@ -2,14 +2,15 @@ import QtQuick 2.1
 import QtWebKit 3.0
 import Sailfish.Silica 1.0
 import "../menus"
+import "../dialogs"
 import "jsdialogs"
-import "../../js/UrlHelper.js" as UrlHelper
-import "../../js/Database.js" as Database
-import "../../js/Favorites.js" as Favorites
-import "../../js/Credentials.js" as Credentials
-import "../../js/History.js" as History
-import "../../js/UserAgents.js" as UserAgents
-import "../../js/YouTubeGrabber.js" as YouTubeGrabber
+import "../../../js/UrlHelper.js" as UrlHelper
+import "../../../js/Database.js" as Database
+import "../../../js/Favorites.js" as Favorites
+import "../../../js/Credentials.js" as Credentials
+import "../../../js/History.js" as History
+import "../../../js/UserAgents.js" as UserAgents
+import "../../../js/YouTubeGrabber.js" as YouTubeGrabber
 
 SilicaWebView
 {
@@ -48,19 +49,19 @@ SilicaWebView
     experimental.userStyleSheet: mainwindow.settings.adblockmanager.rulesFile
 
     experimental.userScripts: [ /* SVG Polyfill: From 'canvg' project */
-                                Qt.resolvedUrl("../../js/canvg/rgbcolor.js"),
-                                Qt.resolvedUrl("../../js/canvg/StackBlur.js"),
-                                Qt.resolvedUrl("../../js/canvg/canvg.js"),
+                                Qt.resolvedUrl("../../../js/canvg/rgbcolor.js"),
+                                Qt.resolvedUrl("../../../js/canvg/StackBlur.js"),
+                                Qt.resolvedUrl("../../../js/canvg/canvg.js"),
 
                                 /* Custom WebView Helpers */
-                                Qt.resolvedUrl("../../js/helpers/ForcePixelRatio.js"),
-                                Qt.resolvedUrl("../../js/helpers/WebViewHelper.js"),
-                                Qt.resolvedUrl("../../js/helpers/YouTubeHelper.js"),
-                                Qt.resolvedUrl("../../js/helpers/NightMode.js"),
-                                Qt.resolvedUrl("../../js/helpers/MessageListener.js"), ]
+                                Qt.resolvedUrl("../../../js/helpers/ForcePixelRatio.js"),
+                                Qt.resolvedUrl("../../../js/helpers/WebViewHelper.js"),
+                                Qt.resolvedUrl("../../../js/helpers/YouTubeHelper.js"),
+                                Qt.resolvedUrl("../../../js/helpers/NightMode.js"),
+                                Qt.resolvedUrl("../../../js/helpers/MessageListener.js"), ]
 
     experimental.onTextFound: {
-        findtextbar.findError = (matchCount <= 0);
+        searchbar.findError = (matchCount <= 0);
     }
 
     experimental.certificateVerificationDialog: RequestDialog {
@@ -119,7 +120,7 @@ SilicaWebView
 
         if(mimeinfo[0] === "video")
         {
-            pageStack.push(Qt.resolvedUrl("../../pages/VideoPlayerPage.qml"), { "videoSource": downloadItem.url });
+            pageStack.push(Qt.resolvedUrl("../../../pages/VideoPlayerPage.qml"), { "videoSource": downloadItem.url });
             return;
         }
 
@@ -164,7 +165,7 @@ SilicaWebView
 
             actionbar.blockedPopups.clear();
             actionbar.evaporate();
-            findtextbar.evaporate();
+            searchbar.evaporate();
             linkmenu.hide();
             return;
         }
@@ -197,7 +198,7 @@ SilicaWebView
 
     onUrlChanged: {
         var stringurl = url.toString();
-        navigationbar.searchBar.url = stringurl;
+        navigationbar.queryBar.url = stringurl;
 
         if(UrlHelper.isSpecialUrl(stringurl))
         {
@@ -210,7 +211,7 @@ SilicaWebView
         browsertab.state = "webbrowser";
     }
 
-    onTitleChanged: navigationbar.searchBar.title = title;
+    onTitleChanged: navigationbar.queryBar.title = title;
 
     onVerticalVelocityChanged: {
         if(!visible)

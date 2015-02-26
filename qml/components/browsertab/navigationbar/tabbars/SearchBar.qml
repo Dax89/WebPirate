@@ -2,15 +2,16 @@ import QtQuick 2.1
 import QtWebKit 3.0
 import QtWebKit.experimental 1.0
 import Sailfish.Silica 1.0
+import ".."
 
 BrowserBar
 {
     property alias findError: searchfield.errorHighlight
 
-    id: findtextbar
+    id: searchbar
 
     onSolidified: {
-        findtextbar.findError = false;
+        searchbar.findError = false;
     }
 
     Row
@@ -66,7 +67,7 @@ BrowserBar
 
             onClicked: {
                 webview.experimental.findText("", 0);
-                findtextbar.evaporate();
+                searchbar.evaporate();
             }
         }
     }

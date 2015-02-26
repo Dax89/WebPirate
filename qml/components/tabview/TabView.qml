@@ -5,6 +5,7 @@ import "../../models"
 import "../menus"
 import "../sidebar"
 import "../quickgrid"
+import "../browsertab"
 
 Item
 {
@@ -21,11 +22,9 @@ Item
 
     onPageStateChanged: {
         if(pageState === "newtab")
-            specialitems.requestQuickGrid();
-        else if(pageState === "loaderror")
-            specialitems.requestLoadFailed();
+            globalitems.requestQuickGrid();
         else
-            specialitems.dismiss();
+            globalitems.dismiss();
     }
 
     /* BrowserTab Component */
@@ -140,7 +139,7 @@ Item
 
         Item
         {
-            id: specialitems
+            id: globalitems
             anchors { left: parent.left; right: parent.right; top: tabheader.bottom; bottom: parent.bottom; bottomMargin: Theme.iconSizeMedium }
             onWidthChanged: calculateMetrics()
             onHeightChanged: calculateMetrics()
@@ -148,21 +147,15 @@ Item
             function dismiss()
             {
                 quickgrid.visible = false;
-                loadfailed.visible = false;
             }
 
             function calculateMetrics()
             {
-                if(quickgrid.visible)
-                {
-                    quickgrid.width = specialitems.width
-                    quickgrid.height = specialitems.height
-                }
-                else if(loadfailed.visible)
-                {
-                    loadfailed.width = specialitems.width
-                    loadfailed.height = specialitems.height
-                }
+                if(!quickgrid.visible)
+                    return;
+
+                quickgrid.width = globalitems.width;
+                quickgrid.height = globalitems.height;
             }
 
             function requestQuickGrid()
@@ -170,17 +163,7 @@ Item
                 if(Qt.application.state === Qt.ApplicationActive)
                     tabheader.solidify();
 
-                loadfailed.visible = false;
                 quickgrid.visible = true;
-            }
-
-            function requestLoadFailed()
-            {
-                if(Qt.application.state === Qt.ApplicationActive)
-                    tabheader.solidify();
-
-                quickgrid.visible = false;
-                loadfailed.visible = true;
             }
 
             HistoryMenu
@@ -199,19 +182,7 @@ Item
 
                 onVisibleChanged: {
                     if(visible)
-                        specialitems.calculateMetrics();
-                }
-            }
-
-            LoadFailed
-            {
-                id: loadfailed
-                anchors.top: parent.top
-                visible: false
-
-                onVisibleChanged: {
-                    if(visible)
-                        specialitems.calculateMetrics();
+                        globalitems.calculateMetrics();
                 }
             }
         }

@@ -45,11 +45,10 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/js/UrlHelper.js \
     qml/js/SearchEngines.js \
     qml/js/Favorites.js \
-    qml/components/navigationbar/SearchBar.qml \
-    qml/components/navigationbar/NavigationBar.qml \
-    qml/components/LoadingBar.qml \
+    qml/components/browsertab/navigationbar/NavigationBar.qml \
+    qml/components/browsertab/navigationbar/LoadingBar.qml \
     qml/components/LoadFailed.qml \
-    qml/components/BrowserTab.qml \
+    qml/components/browsertab/BrowserTab.qml \
     qml/pages/SettingsPage.qml \
     qml/pages/MainPage.qml \
     qml/js/UserAgents.js \
@@ -64,14 +63,14 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/models/SearchEngineModel.qml \
     qml/js/Credentials.js \
     qml/js/GibberishAES.js \
-    qml/components/menus/LinkMenu.qml \
+    qml/components/browsertab/menus/LinkMenu.qml \
     qml/pages/downloadmanager/DownloadsPage.qml \
     qml/components/items/DownloadListItem.qml \
-    qml/components/webview/BrowserWebView.qml \
+    qml/components/browsertab/webview/BrowserWebView.qml \
     qml/components/sidebar/ActionSidebar.qml \
     qml/pages/favorite/FavoritesPage.qml \
     qml/js/History.js \
-    qml/components/menus/HistoryMenu.qml \
+    qml/components/browsertab/menus/HistoryMenu.qml \
     qml/components/SettingLabel.qml \
     qml/pages/TextSelectionPage.qml \
     qml/components/tabview/TabView.qml \
@@ -117,22 +116,22 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     adblock.table \
     qml/pages/adblock/AdBlockFilter.qml \
     qml/pages/adblock/AdBlockDownloaderPage.qml \
-    qml/components/webview/jsdialogs/ItemSelector.qml \
-    qml/components/webview/jsdialogs/AlertDialog.qml \
-    qml/components/webview/jsdialogs/WebViewDialog.qml \
-    qml/components/dialogs/PopupDialog.qml \
-    qml/components/dialogs/CredentialDialog.qml \
-    qml/components/webview/jsdialogs/RequestDialog.qml \
-    qml/components/webview/jsdialogs/PromptDialog.qml \
-    qml/components/webview/jsdialogs/AuthenticationDialog.qml \
+    qml/components/browsertab/webview/jsdialogs/ItemSelector.qml \
+    qml/components/browsertab/webview/jsdialogs/AlertDialog.qml \
+    qml/components/browsertab/webview/jsdialogs/WebViewDialog.qml \
+    qml/components/browsertab/dialogs/PopupDialog.qml \
+    qml/components/browsertab/dialogs/CredentialDialog.qml \
+    qml/components/browsertab/dialogs/FormResubmitDialog.qml \
+    qml/components/browsertab/webview/jsdialogs/RequestDialog.qml \
+    qml/components/browsertab/webview/jsdialogs/PromptDialog.qml \
+    qml/components/browsertab/webview/jsdialogs/AuthenticationDialog.qml \
     qml/pages/picker/FilePickerPage.qml \
     qml/components/pickers/FilePicker.qml \
-    qml/components/webview/jsdialogs/FilePickerDialog.qml \
-    qml/components/webview/WebViewListener.qml \
-    qml/components/webview/jsdialogs/ColorChooserDialog.qml \
-    qml/components/navigationbar/ActionBar.qml \
-    qml/components/navigationbar/BrowserBar.qml \
-    qml/components/navigationbar/FindTextBar.qml \
+    qml/components/browsertab/webview/jsdialogs/FilePickerDialog.qml \
+    qml/components/browsertab/webview/WebViewListener.qml \
+    qml/components/browsertab/webview/jsdialogs/ColorChooserDialog.qml \
+    qml/components/browsertab/navigationbar/tabbars/ActionBar.qml \
+    qml/components/browsertab/navigationbar/BrowserBar.qml \
     qml/pages/popupblocker/PopupBlockerPage.qml \
     qml/pages/downloadmanager/NewDownloadPage.qml \
     qml/pages/history/NavigationHistoryPage.qml \
@@ -149,7 +148,8 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/components/items/BlockedPopupItem.qml \
     qml/pages/popupblocker/NewPopupRulePage.qml \
     qml/js/helpers/MessageListener.js \
-    qml/components/dialogs/FormResubmitDialog.qml
+    qml/components/browsertab/navigationbar/tabbars/QueryBar.qml \
+    qml/components/browsertab/navigationbar/tabbars/SearchBar.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line

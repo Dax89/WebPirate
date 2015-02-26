@@ -1,13 +1,14 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
 import "navigationbar"
+import "navigationbar/tabbars"
 import "dialogs"
 import "menus"
 import "webview"
-import "../js/UrlHelper.js" as UrlHelper
-import "../js/Database.js" as Database
-import "../js/Favorites.js" as Favorites
-import "../js/Credentials.js" as Credentials
+import "../../js/UrlHelper.js" as UrlHelper
+import "../../js/Database.js" as Database
+import "../../js/Favorites.js" as Favorites
+import "../../js/Credentials.js" as Credentials
 
 Item
 {
@@ -17,7 +18,7 @@ Item
 
     function searchRequested()
     {
-        navigationbar.searchBar.triggerKeyboard();
+        navigationbar.queryBar.triggerKeyboard();
     }
 
     function getIcon()
@@ -30,11 +31,11 @@ Item
 
     function getTitle()
     {
-        if(navigationbar.searchBar.title.length > 0)
-            return navigationbar.searchBar.title
+        if(navigationbar.queryBar.title.length > 0)
+            return navigationbar.queryBar.title
 
-        if(navigationbar.searchBar.url.length > 0)
-            return navigationbar.searchBar.url
+        if(navigationbar.queryBar.url.length > 0)
+            return navigationbar.queryBar.url
 
         if(navigationbar.state == "loaderror")
             return qsTr("Load Error");
@@ -61,7 +62,7 @@ Item
         var specialurl = UrlHelper.specialUrl(url);
 
         if(specialurl === "config")
-            pageStack.push(Qt.resolvedUrl("../pages/SettingsPage.qml"), {"settings": mainwindow.settings });
+            pageStack.push(Qt.resolvedUrl("../../pages/SettingsPage.qml"), {"settings": mainwindow.settings });
         else
             loadNewTab();
     }
@@ -190,9 +191,9 @@ Item
             hideWhenFinished: true
         }
 
-        FindTextBar
+        SearchBar
         {
-            id: findtextbar
+            id: searchbar
             anchors { bottom: navigationbar.top; left: parent.left; right: parent.right }
         }
 
@@ -203,7 +204,7 @@ Item
 
             onQuickGridRequested: load("about:newtab")
             onHomepageRequested: load(mainwindow.settings.homepage)
-            onFindRequested: findtextbar.solidify()
+            onFindRequested: searchbar.solidify()
         }
 
         NavigationBar
@@ -221,19 +222,19 @@ Item
             onEvaporated: actionbar.evaporate();
 
             onBackRequested: {
-                findtextbar.evaporate();
+                searchbar.evaporate();
                 actionbar.evaporate();
                 webview.goBack();
             }
 
             onForwardRequested: {
-                findtextbar.evaporate();
+                searchbar.evaporate();
                 actionbar.evaporate();
                 webview.goForward();
             }
 
-            searchBar.onTextChanged: {
-                if(!searchBar.editing) {
+            queryBar.onTextChanged: {
+                if(!queryBar.editing) {
                     historymenu.hide();
                     return;
                 }
