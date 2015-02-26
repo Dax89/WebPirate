@@ -161,6 +161,17 @@ Item
     {
         id: viewstack
         anchors { left: parent.left; top: parent.top; right: parent.right; bottom: tabstatus.top }
+
+        onEmptyChanged: {
+            if(!empty) {
+                navigationbar.refreshButton.enabled = false;
+                navigationbar.actionButton.enabled = false;
+            }
+            else if(!UrlHelper.isSpecialUrl(webview.url.toString()))
+                navigationbar.actionButton.enabled = true;
+
+            navigationbar.refreshButton.enabled = true;
+        }
     }
 
     Item

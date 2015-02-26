@@ -15,6 +15,7 @@ BrowserBar
 
     property alias queryBar: querybar
     property alias actionButton: btnaction
+    property alias refreshButton: btnrefresh
     property alias backButton: btnback
     property alias forwardButton: btnforward
 
