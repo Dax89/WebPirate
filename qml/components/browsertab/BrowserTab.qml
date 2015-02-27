@@ -198,6 +198,11 @@ Item
         height: navigationbar.height + actionbar.height
         z: 10
 
+        onVisibleChanged: {
+            if(visible)
+                calculateMetrics();
+        }
+
         LoadingBar
         {
             id: loadingbar
