@@ -63,8 +63,7 @@ Rectangle
     MediaPlayerProgressBar
     {
         id: pbbuffer
-        anchors { left: btnplaystop.right; right: parent.right; verticalCenter: parent.verticalCenter; rightMargin: Theme.paddingMedium }
-        width: parent.width - btnplaystop.width
+        anchors { left: btnplaystop.right; right: btnfullscreen.left; verticalCenter: parent.verticalCenter }
         bufferMinimum: 0
         bufferMaximum: 1.0
         bufferValue: videoplayer.bufferProgress
@@ -77,6 +76,21 @@ Rectangle
 
             if(videoplayer.seekable)
                 videoplayer.seek(seekpos);
+        }
+    }
+
+    IconButton
+    {
+        id: btnfullscreen
+        width: Theme.itemSizeSmall
+        height: Theme.itemSizeSmall
+        anchors { right: parent.right; rightMargin: Theme.paddingMedium; verticalCenter: parent.verticalCenter }
+        icon.source: browserplayer.fullScreen ? "qrc:///res/exit-fullscreen.png" : "qrc:///res/enter-fullscreen.png"
+        z: 10
+
+        onClicked: {
+            restoreOpacity();
+            browserplayer.switchFullScreen();
         }
     }
 }

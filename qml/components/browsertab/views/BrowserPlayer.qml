@@ -9,6 +9,18 @@ Item
     property alias videoThumbnail: imgthumbnail.source
     property alias videoTitle: mptitle.text
 
+    property bool fullScreen: false
+
+    function switchFullScreen()
+    {
+        if(fullScreen)
+            tabheader.solidify();
+        else
+            tabheader.evaporate();
+
+        fullScreen = !fullScreen;
+    }
+
     id: browserplayer
 
     states: [ State { name: "error";
@@ -49,16 +61,10 @@ Item
             mptoolbar.keepVisible(keep);
             mptitle.keepVisible(keep);
 
-            if(keep)
-            {
-                tabheader.solidify();
+            if(keep && !fullScreen)
                 navigationbar.solidify();
-            }
             else
-            {
-                tabheader.evaporate();
                 navigationbar.evaporate();
-            }
         }
 
         onErrorChanged: {

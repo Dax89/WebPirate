@@ -30,9 +30,6 @@ Item
 
         function push(item)
         {
-            tabheader.solidify();
-            navigationbar.solidify();
-
             item.width = viewstack.width;
             item.height = viewstack.height;
 
@@ -75,6 +72,9 @@ Item
 
     function pushLoadError(errorstring, offline)
     {
+        tabheader.solidify();
+        navigationbar.solidify();
+
         var item = loadfailedcomponent.createObject(viewstack);
         item.errorString = errorstring;
         item.offline = offline;
