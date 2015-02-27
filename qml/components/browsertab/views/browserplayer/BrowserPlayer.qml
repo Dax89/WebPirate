@@ -65,7 +65,7 @@ Item
         id: screenping
         repeat: true
         triggeredOnStart: true
-        interval: 10000 /* 60s */
+        interval: 60000 /* 60s */
         running: browserplayer.visible && (videoplayer.playbackState === MediaPlayer.PlayingState)
 
         onRunningChanged: console.log("running: " + running)
