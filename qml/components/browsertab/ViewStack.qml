@@ -41,13 +41,18 @@ Item
             viewstack.opacity = 1.0;
         }
 
-        function pop()
+        function erase(idx)
         {
-            var item = model.get(0).item;
-            model.remove(0);
+            var item = model.get(idx).item;
+            model.remove(idx);
 
             item.parent = null;
             item.destroy();
+        }
+
+        function pop()
+        {
+            erase(0);
 
             if(!empty)
             {
@@ -100,9 +105,10 @@ Item
             opacity = 0.0;
     }
 
-    function replace()
+    function replace(componenturl, tabstate, params)
     {
-
+        stackobject.erase(0);
+        push(componenturl, tabstate, params);
     }
 
     Behavior on opacity {

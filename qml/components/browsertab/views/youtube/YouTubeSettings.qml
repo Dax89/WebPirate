@@ -16,7 +16,7 @@ Item
     property alias videoThumbnail: imgthumbnail.source
 
     function playVideo(videotitle, videourl, videothumbnail) {
-        //TODO: pageStack.replace(Qt.resolvedUrl("VideoPlayerPage.qml"), { "videoTitle": videotitle, "videoSource": videourl, "videoThumbnail": videothumbnail });
+        viewstack.push(Qt.resolvedUrl("../browserplayer/BrowserPlayer.qml"), "mediaplayer", { "videoTitle": videotitle, "videoSource": videourl, "videoThumbnail": videothumbnail });
     }
 
     id: dlgytvideosettings
