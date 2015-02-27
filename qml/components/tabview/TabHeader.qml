@@ -17,15 +17,15 @@ Rectangle
 
     function calculateTabWidth()
     {
-        if(!pages.count)
+        if(!tabs.count)
             return;
 
         var stdwidth = (headerrow.width - btnplus.width) / 2;
 
-        if((pages.count * stdwidth) <= headerrow.width)
+        if((tabs.count * stdwidth) <= headerrow.width)
             tabheader.tabWidth = stdwidth;
         else
-            tabheader.tabWidth = ((headerrow.width - btnplus.width) / pages.count);
+            tabheader.tabWidth = ((headerrow.width - btnplus.width) / tabs.count);
     }
 
     id: tabheader
@@ -53,7 +53,7 @@ Rectangle
         Repeater
         {
             id: repeater
-            model: pages
+            model: tabs
             anchors { left: parent.left; top: parent.top; right: parent.right }
 
             delegate: TabButton {

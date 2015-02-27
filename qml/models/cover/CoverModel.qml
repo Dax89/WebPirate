@@ -91,7 +91,7 @@ Item
                        readonly property string icon: "image://theme/icon-cover-previous"
 
                        function execute(tabview) {
-                           var idx = (tabview.currentIndex - 1) % tabview.pages.count;
+                           var idx = (tabview.currentIndex - 1) % tabview.tabs.count;
 
                            if(idx < 0)
                                idx = 0;
@@ -104,10 +104,10 @@ Item
                        readonly property string icon: "image://theme/icon-cover-next"
 
                        function execute(tabview) {
-                           var idx = (tabview.currentIndex + 1) % tabview.pages.count;
+                           var idx = (tabview.currentIndex + 1) % tabview.tabs.count;
 
-                           if(idx >= tabview.pages.count)
-                               idx = tabview.pages.count -1;
+                           if(idx >= tabview.tabs.count)
+                               idx = tabview.tabs.count -1;
 
                            tabview.currentIndex = idx;
                        } },
@@ -125,7 +125,7 @@ Item
                        readonly property string icon: "image://theme/icon-cover-cancel"
 
                        function execute(tabview) {
-                           if(tabview.pages.count <= 1)
+                           if(tabview.tabs.count <= 1)
                                return;
 
                            tabview.removeTab(tabview.currentIndex);

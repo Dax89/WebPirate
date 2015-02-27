@@ -11,7 +11,7 @@ Dialog
     allowedOrientations: Orientation.All
     acceptDestinationAction: PageStackAction.Pop
     canAccept: tfsessionname.text.length > 0
-    onAccepted: Sessions.save(tfsessionname.text, tabView.pages, tabView.currentIndex, tsautoload.checked, tsreplacecurrent.checked)
+    onAccepted: Sessions.save(tfsessionname.text, tabView.tabs, tabView.currentIndex, tsautoload.checked, tsreplacecurrent.checked)
 
     DialogHeader { id: dlgheader; acceptText: qsTr("Save Session") }
 
@@ -58,7 +58,7 @@ Dialog
     SilicaListView
     {
         anchors { left: parent.left; top: lbltabs.bottom; right: parent.right; bottom: parent.bottom; topMargin: Theme.paddingSmall }
-        model: tabView.pages
+        model: tabView.tabs
         clip: true
 
         delegate: PageItem {

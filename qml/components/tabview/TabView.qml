@@ -8,7 +8,7 @@ import "../quickgrid"
 
 Item
 {
-    property ListModel pages: ListModel { }
+    property ListModel tabs: ListModel { }
     property ClosedTabsModel closedtabs: ClosedTabsModel { }
     property Component tabComponent: null
     property int currentIndex: -1
@@ -32,9 +32,9 @@ Item
         if(currentIndex === -1)
             return;
 
-        for(var i = 0; i < pages.count; i++)
+        for(var i = 0; i < tabs.count; i++)
         {
-            var tab = pages.get(i).tab;
+            var tab = tabs.get(i).tab;
 
             if(i === currentIndex)
             {
@@ -62,10 +62,10 @@ Item
         if(url)
             tab.load(url);
 
-        pages.append({ "tab": tab });
+        tabs.append({ "tab": tab });
 
         if(foreground)
-            currentIndex = (pages.count - 1);
+            currentIndex = (tabs.count - 1);
 
         tabheader.calculateTabWidth();
         return tab;
@@ -73,8 +73,8 @@ Item
 
     function removeTab(idx)
     {
-        var tab = pages.get(idx).tab;
-        pages.remove(idx);
+        var tab = tabs.get(idx).tab;
+        tabs.remove(idx);
         closedtabs.push(tab.getTitle(), tab.getUrl());
 
         tab.parent = null /* Remove Parent Ownership */
@@ -95,13 +95,13 @@ Item
     {
         currentIndex = -1;
 
-        while(pages.count)
+        while(tabs.count)
             removeTab(0);
     }
 
     function currentTab()
     {
-        var item = pages.get(currentIndex);
+        var item = tabs.get(currentIndex);
 
         if(!item)
             return null;

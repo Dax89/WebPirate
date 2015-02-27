@@ -79,7 +79,7 @@ Rectangle
         height: Theme.iconSizeSmall
         anchors { right: parent.right; rightMargin: Theme.paddingSmall; verticalCenter: headermousearea.verticalCenter }
         icon.source: "image://theme/icon-close-vkb"
-        visible: pages.count > 1
+        visible: tabs.count > 1
         onClicked: tabview.removeTab(index)
     }
 }
