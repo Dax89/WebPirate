@@ -118,6 +118,7 @@ Item
 
                        function execute(tabview) {
                            tabview.addTab(mainwindow.settings.homepage);
+                           tabview.header.solidify();
                        } },
 
                 Item { readonly property int categoryId: generalCategoryId
@@ -156,7 +157,10 @@ Item
                            var tab = tabview.currentTab();
 
                            if(!tab)
+                           {
                                tab = tabview.addTab(mainwindow.settings.homepage);
+                               tabview.header.solidify();
+                           }
                            else if(!tab.viewStack.empty)
                                tab.viewStack.clear(); /* Clear special pages */
 
