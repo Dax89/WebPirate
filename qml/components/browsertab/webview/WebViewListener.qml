@@ -61,6 +61,8 @@ Item
         }
 
         function playYouTubeVideo(data) {
+            tabheader.solidify();
+            navigationbar.solidify();
             viewstack.push(Qt.resolvedUrl("../views/youtube/YouTubeSettings.qml"), "youtubesettings", { "videoId": data.videoid });
         }
 
