@@ -83,7 +83,16 @@ Item
 
         onErrorChanged: {
             if(videoplayer !== MediaPlayer.NoError)
+            {
                 browserplayer.state = "error";
+
+                /* Avoid MediaPlayer undefined behavior */
+                videoplayer.stop();
+                navigationbar.solidify();
+
+                if(fullScreen)
+                    switchFullScreen();
+            }
         }
 
         onStatusChanged: {
