@@ -66,6 +66,8 @@ Item
 
     function load(req)
     {
+        viewstack.clear();
+
         if(!req)
             loadNewTab();
 
