@@ -68,8 +68,6 @@ Item
         interval: 60000 /* 60s */
         running: browserplayer.visible && (videoplayer.playbackState === MediaPlayer.PlayingState)
 
-        onRunningChanged: console.log("running: " + running)
-
         onTriggered: {
             mainwindow.settings.screenblank.enabled = false;
         }
