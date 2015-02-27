@@ -88,8 +88,6 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/js/canvg/rgbcolor.js \
     qml/js/canvg/StackBlur.js \
     qml/js/YouTubeGrabber.js \
-    qml/pages/YouTubeSettingsPage.qml \
-    qml/pages/VideoPlayerPage.qml \
     qml/components/InfoLabel.qml \
     qml/js/helpers/YouTubeHelper.js \
     qml/components/browsertab/views/browserplayer/mediacomponents/MediaPlayerProgressBar.qml \
