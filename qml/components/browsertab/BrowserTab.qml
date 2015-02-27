@@ -85,18 +85,32 @@ Item
             webview.url = mainwindow.settings.searchengines.get(mainwindow.settings.searchengine).query + req;
     }
 
-    function calculateMetrics()
+    function calculateWidth()
     {
+        width = parent.width;
+
+        if(!webview.visible)
+            return;
+
+        webview.width = mainpage.isPortrait ? Screen.width : Screen.height;
+    }
+
+    function calculateHeight()
+    {
+        height = parent.height;
+
         if(!webview.visible)
             return;
 
         var keyboardrect = Qt.inputMethod.keyboardRectangle;
-        webview.width = mainpage.isPortrait ? Screen.width : Screen.height;
         webview.height = mainpage.isPortrait ? (Screen.height - keyboardrect.height) : (Screen.width - keyboardrect.width);
     }
 
-    Connections { target: Qt.inputMethod; onVisibleChanged: calculateMetrics() }
-    Connections { target: mainpage; onOrientationChanged: calculateMetrics() }
+    function calculateMetrics()
+    {
+        calculateWidth();
+        calculateHeight();
+    }
 
     id: browsertab
     visible: false
@@ -183,11 +197,6 @@ Item
         anchors { left: parent.left; right: parent.right; bottom: parent.bottom }
         height: navigationbar.height + actionbar.height
         z: 10
-
-        onVisibleChanged: {
-            if(visible)
-                calculateMetrics();
-        }
 
         LoadingBar
         {

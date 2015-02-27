@@ -56,7 +56,6 @@ Item
             tabComponent = Qt.createComponent(Qt.resolvedUrl("../browsertab/BrowserTab.qml"));
 
         var tab = tabComponent.createObject(stack);
-        tab.anchors.fill = stack
         tab.visible = foreground;
 
         if(url)
@@ -111,7 +110,8 @@ Item
 
     RemorsePopup { id: tabviewremorse }
 
-    PopupMessage {
+    PopupMessage
+    {
         id: popupmessage
         anchors { left: parent.left; top: parent.top; right: parent.right }
     }
@@ -132,6 +132,20 @@ Item
         {
             id: stack
             anchors { left: parent.left; right: parent.right; top: tabheader.bottom; bottom: parent.bottom }
+
+            onWidthChanged: {
+                var tab = currentTab();
+
+                if(tab)
+                    tab.calculateWidth();
+            }
+
+            onHeightChanged: {
+                var tab = currentTab();
+
+                if(tab)
+                    tab.calculateHeight();
+            }
         }
 
         Item
