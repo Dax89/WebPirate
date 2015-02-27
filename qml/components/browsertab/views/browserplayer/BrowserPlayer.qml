@@ -60,6 +60,21 @@ Item
         }
     }
 
+    Timer
+    {
+        id: screenping
+        repeat: true
+        triggeredOnStart: true
+        interval: 10000 /* 60s */
+        running: browserplayer.visible && (videoplayer.playbackState === MediaPlayer.PlayingState)
+
+        onRunningChanged: console.log("running: " + running)
+
+        onTriggered: {
+            mainwindow.settings.screenblank.enabled = false;
+        }
+    }
+
     Video
     {
         id: videoplayer

@@ -35,7 +35,8 @@ SOURCES += src/harbour-webpirate.cpp \
     src/adblock/adblockeditor.cpp \
     src/adblock/adblockfilter.cpp \
     src/adblock/adblockdownloader.cpp \
-    src/filepicker/folderlistmodel.cpp
+    src/filepicker/folderlistmodel.cpp \
+    src/dbus/client/screenblank.cpp
 
 OTHER_FILES += qml/harbour-webpirate.qml \
     rpm/harbour-webpirate.changes.in \
@@ -188,5 +189,6 @@ HEADERS += \
     src/adblock/adblockeditor.h \
     src/adblock/adblockfilter.h \
     src/adblock/adblockdownloader.h \
-    src/filepicker/folderlistmodel.h
+    src/filepicker/folderlistmodel.h \
+    src/dbus/client/screenblank.h
 

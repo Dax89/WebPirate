@@ -31,6 +31,7 @@
 #include <QtQuick>
 #include <sailfishapp.h>
 //#include "dbus/webpirateservice.h"
+#include "dbus/client/screenblank.h"
 #include "favoritesmanager/favoritesmanager.h"
 #include "downloadmanager/downloadmanager.h"
 #include "filepicker/folderlistmodel.h"
@@ -48,6 +49,8 @@ int main(int argc, char *argv[])
 
     qmlRegisterType<DownloadItem>("WebPirate.Private", 1, 0, "DownloadItem");
     qmlRegisterType<FavoriteItem>("WebPirate.Private", 1, 0, "FavoriteItem");
+
+    qmlRegisterType<ScreenBlank>("WebPirate.DBus", 1, 0, "ScreenBlank");
 
     qmlRegisterType<FolderListModel>("WebPirate.Pickers", 1, 0, "FolderListModel");
 

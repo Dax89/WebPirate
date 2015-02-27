@@ -21,6 +21,8 @@ Item
     Component.onCompleted: renderTab()
 
     onPageStateChanged: {
+        mainwindow.settings.screenblank.enabled = (pageState !== "mediaplayer");
+
         if(pageState === "newtab")
             globalitems.requestQuickGrid();
         else
