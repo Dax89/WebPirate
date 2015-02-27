@@ -1,7 +1,7 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
-import "../browsertab/navigationbar"
-import "../../js/YouTubeGrabber.js" as YouTubeGrabber
+import "../../../navigationbar"
+import "../../../../../js/YouTubeGrabber.js" as YouTubeGrabber
 
 Item
 {

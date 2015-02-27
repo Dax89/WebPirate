@@ -1,7 +1,7 @@
 import QtQuick 2.1
 import QtMultimedia 5.0
 import Sailfish.Silica 1.0
-import "../../mediaplayer"
+import "mediacomponents"
 
 Item
 {

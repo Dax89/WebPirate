@@ -92,9 +92,9 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/pages/VideoPlayerPage.qml \
     qml/components/InfoLabel.qml \
     qml/js/helpers/YouTubeHelper.js \
-    qml/components/mediaplayer/MediaPlayerProgressBar.qml \
-    qml/components/mediaplayer/MediaPlayerToolBar.qml \
-    qml/components/mediaplayer/MediaPlayerTitle.qml \
+    qml/components/browsertab/views/browserplayer/mediacomponents/MediaPlayerProgressBar.qml \
+    qml/components/browsertab/views/browserplayer/mediacomponents/MediaPlayerToolBar.qml \
+    qml/components/browsertab/views/browserplayer/mediacomponents/MediaPlayerTitle.qml \
     qml/components/tabview/TabHeader.qml \
     qml/js/Sessions.js \
     qml/pages/session/SaveSessionPage.qml \
@@ -151,7 +151,7 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/components/browsertab/navigationbar/tabbars/QueryBar.qml \
     qml/components/browsertab/navigationbar/tabbars/SearchBar.qml \
     qml/components/browsertab/ViewStack.qml \
-    qml/components/browsertab/views/BrowserPlayer.qml
+    qml/components/browsertab/views/browserplayer/BrowserPlayer.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line
