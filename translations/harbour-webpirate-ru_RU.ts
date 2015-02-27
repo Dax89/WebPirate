@@ -1010,43 +1010,39 @@
     <name>YouTubeSettingsPage</name>
     <message>
         <source>Author</source>
-        <translation>Автор</translation>
+        <translation type="vanished">Автор</translation>
     </message>
     <message>
         <source>Duration</source>
-        <translation>Продолжительность</translation>
+        <translation type="vanished">Продолжительность</translation>
     </message>
     <message>
         <source>Quality</source>
-        <translation>Качество</translation>
+        <translation type="vanished">Качество</translation>
     </message>
     <message>
         <source>Grabbed URLs</source>
-        <translation>Захват URL-адреса</translation>
+        <translation type="vanished">Захват URL-адреса</translation>
     </message>
     <message>
         <source>Title</source>
-        <translation>Название</translation>
+        <translation type="vanished">Название</translation>
     </message>
     <message>
         <source>YouTube Grabber</source>
-        <translation>Захват YouTube</translation>
+        <translation type="vanished">Захват YouTube</translation>
     </message>
     <message>
         <source>Play</source>
-        <translation>Играть</translation>
+        <translation type="vanished">Играть</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation>Скачать</translation>
+        <translation type="vanished">Скачать</translation>
     </message>
     <message>
         <source>Grabbing video</source>
-        <translation>Grabbing video</translation>
-    </message>
-    <message>
-        <source>Response</source>
-        <translation type="unfinished"></translation>
+        <translation type="vanished">Grabbing video</translation>
     </message>
 </context>
 </TS>

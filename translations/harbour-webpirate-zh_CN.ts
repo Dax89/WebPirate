@@ -1010,43 +1010,39 @@
     <name>YouTubeSettingsPage</name>
     <message>
         <source>Author</source>
-        <translation>作者</translation>
+        <translation type="vanished">作者</translation>
     </message>
     <message>
         <source>Duration</source>
-        <translation>长度</translation>
+        <translation type="vanished">长度</translation>
     </message>
     <message>
         <source>Quality</source>
-        <translation>质量</translation>
+        <translation type="vanished">质量</translation>
     </message>
     <message>
         <source>Grabbed URLs</source>
-        <translation>抓取到的URL</translation>
+        <translation type="vanished">抓取到的URL</translation>
     </message>
     <message>
         <source>Title</source>
-        <translation>标题</translation>
+        <translation type="vanished">标题</translation>
     </message>
     <message>
         <source>YouTube Grabber</source>
-        <translation>YouTube抓取器</translation>
+        <translation type="vanished">YouTube抓取器</translation>
     </message>
     <message>
         <source>Play</source>
-        <translation>播放</translation>
+        <translation type="vanished">播放</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation>下载</translation>
+        <translation type="vanished">下载</translation>
     </message>
     <message>
         <source>Grabbing video</source>
-        <translation>正在抓取视频</translation>
-    </message>
-    <message>
-        <source>Response</source>
-        <translation type="unfinished"></translation>
+        <translation type="vanished">正在抓取视频</translation>
     </message>
 </context>
 </TS>

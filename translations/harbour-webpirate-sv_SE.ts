@@ -1010,43 +1010,39 @@
     <name>YouTubeSettingsPage</name>
     <message>
         <source>Author</source>
-        <translation>Upphovsman</translation>
+        <translation type="vanished">Upphovsman</translation>
     </message>
     <message>
         <source>Duration</source>
-        <translation>Varaktighet</translation>
+        <translation type="vanished">Varaktighet</translation>
     </message>
     <message>
         <source>Quality</source>
-        <translation>Kvalitet</translation>
+        <translation type="vanished">Kvalitet</translation>
     </message>
     <message>
         <source>Grabbed URLs</source>
-        <translation>Hämtade URL:er</translation>
+        <translation type="vanished">Hämtade URL:er</translation>
     </message>
     <message>
         <source>Title</source>
-        <translation>Titel</translation>
+        <translation type="vanished">Titel</translation>
     </message>
     <message>
         <source>YouTube Grabber</source>
-        <translation>YouTube-hämtare</translation>
+        <translation type="vanished">YouTube-hämtare</translation>
     </message>
     <message>
         <source>Play</source>
-        <translation>Spela upp</translation>
+        <translation type="vanished">Spela upp</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation>Ladda ner</translation>
+        <translation type="vanished">Ladda ner</translation>
     </message>
     <message>
         <source>Grabbing video</source>
-        <translation>Hämtar video</translation>
-    </message>
-    <message>
-        <source>Response</source>
-        <translation type="unfinished"></translation>
+        <translation type="vanished">Hämtar video</translation>
     </message>
 </context>
 </TS>

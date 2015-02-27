@@ -1010,43 +1010,39 @@
     <name>YouTubeSettingsPage</name>
     <message>
         <source>Author</source>
-        <translation>Autor</translation>
+        <translation type="vanished">Autor</translation>
     </message>
     <message>
         <source>Duration</source>
-        <translation>Doba trvání</translation>
+        <translation type="vanished">Doba trvání</translation>
     </message>
     <message>
         <source>Quality</source>
-        <translation>Kvalita</translation>
+        <translation type="vanished">Kvalita</translation>
     </message>
     <message>
         <source>Grabbed URLs</source>
-        <translation>Získané adresy</translation>
+        <translation type="vanished">Získané adresy</translation>
     </message>
     <message>
         <source>Title</source>
-        <translation>Název</translation>
+        <translation type="vanished">Název</translation>
     </message>
     <message>
         <source>YouTube Grabber</source>
-        <translation>YouTube pomocník</translation>
+        <translation type="vanished">YouTube pomocník</translation>
     </message>
     <message>
         <source>Play</source>
-        <translation>Přehrát</translation>
+        <translation type="vanished">Přehrát</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation>Stáhnout</translation>
+        <translation type="vanished">Stáhnout</translation>
     </message>
     <message>
         <source>Grabbing video</source>
-        <translation>Získávání videa</translation>
-    </message>
-    <message>
-        <source>Response</source>
-        <translation type="unfinished"></translation>
+        <translation type="vanished">Získávání videa</translation>
     </message>
 </context>
 </TS>

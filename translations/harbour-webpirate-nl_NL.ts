@@ -1010,43 +1010,39 @@
     <name>YouTubeSettingsPage</name>
     <message>
         <source>Author</source>
-        <translation>Auteur</translation>
+        <translation type="vanished">Auteur</translation>
     </message>
     <message>
         <source>Duration</source>
-        <translation>Duur</translation>
+        <translation type="vanished">Duur</translation>
     </message>
     <message>
         <source>Quality</source>
-        <translation>Kwaliteit</translation>
+        <translation type="vanished">Kwaliteit</translation>
     </message>
     <message>
         <source>Grabbed URLs</source>
-        <translation>Gegrepen URLs</translation>
+        <translation type="vanished">Gegrepen URLs</translation>
     </message>
     <message>
         <source>Title</source>
-        <translation>Titel</translation>
+        <translation type="vanished">Titel</translation>
     </message>
     <message>
         <source>YouTube Grabber</source>
-        <translation>YouTube-grijper</translation>
+        <translation type="vanished">YouTube-grijper</translation>
     </message>
     <message>
         <source>Play</source>
-        <translation>Afspelen</translation>
+        <translation type="vanished">Afspelen</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation>Downloaden</translation>
+        <translation type="vanished">Downloaden</translation>
     </message>
     <message>
         <source>Grabbing video</source>
-        <translation>Bezig met grijpen van video</translation>
-    </message>
-    <message>
-        <source>Response</source>
-        <translation type="unfinished"></translation>
+        <translation type="vanished">Bezig met grijpen van video</translation>
     </message>
 </context>
 </TS>

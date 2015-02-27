@@ -1012,43 +1012,39 @@
     <name>YouTubeSettingsPage</name>
     <message>
         <source>Author</source>
-        <translation>作者</translation>
+        <translation type="vanished">作者</translation>
     </message>
     <message>
         <source>Duration</source>
-        <translation>デュレーション</translation>
+        <translation type="vanished">デュレーション</translation>
     </message>
     <message>
         <source>Quality</source>
-        <translation>画質</translation>
+        <translation type="vanished">画質</translation>
     </message>
     <message>
         <source>Grabbed URLs</source>
-        <translation>グラブ済みUrl</translation>
+        <translation type="vanished">グラブ済みUrl</translation>
     </message>
     <message>
         <source>Title</source>
-        <translation>タイトル</translation>
+        <translation type="vanished">タイトル</translation>
     </message>
     <message>
         <source>YouTube Grabber</source>
-        <translation>ユーチューブグラバー</translation>
+        <translation type="vanished">ユーチューブグラバー</translation>
     </message>
     <message>
         <source>Play</source>
-        <translation>再生</translation>
+        <translation type="vanished">再生</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation>ダウンロード</translation>
+        <translation type="vanished">ダウンロード</translation>
     </message>
     <message>
         <source>Grabbing video</source>
-        <translation>ビデオをグラブ中</translation>
-    </message>
-    <message>
-        <source>Response</source>
-        <translation type="unfinished"></translation>
+        <translation type="vanished">ビデオをグラブ中</translation>
     </message>
 </context>
 </TS>
