@@ -59,7 +59,7 @@ var __yt_webpirate__ = {
         if(!iframes.length)
             return;
 
-        var ytregex = new RegExp("www\\.youtube\\.[^/]+/embed/([^/]+)");
+        var ytregex = new RegExp("www\\.youtube\\.[^/]+/embed/([^/\\?]+)");
 
         for(var i = 0; i < iframes.length; i++)
         {
