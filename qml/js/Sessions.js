@@ -100,21 +100,21 @@ function get(sessionid)
     return session;
 }
 
-function save(name, pages, currentindex, autoload, replacecurrent)
+function save(name, tabs, currentindex, autoload, replacecurrent)
 {
     instance().transaction(function(tx) {
-        transactionSave(tx, name, pages, currentindex, autoload, replacecurrent);
+        transactionSave(tx, name, tabs, currentindex, autoload, replacecurrent);
     });
 }
 
-function transactionSave(tx, name, pages, currentindex, autoload, replacecurrent)
+function transactionSave(tx, name, tabs, currentindex, autoload, replacecurrent)
 {
     var res = tx.executeSql("INSERT INTO Sessions (name, replacecurrent) VALUES (?, ?)", [name, replacecurrent ? 1 : 0]);
     var sessionid = parseInt(res.insertId);
 
-    for(var i = 0; i < pages.count; i++)
+    for(var i = 0; i < tabs.count; i++)
     {
-        var tab = pages.get(i).tab;
+        var tab = tabs.get(i).tab;
         tx.executeSql("INSERT INTO SessionData (id, title, url, current) VALUES(?, ?, ?, ?)", [sessionid, tab.getTitle(), tab.getUrl(), (i === currentindex ? 1 : 0)]);
     }
 
