@@ -43,12 +43,17 @@ Page
 
     Connections
     {
+        property bool headerWasActive: false
+
         target: Qt.application
 
         onStateChanged: {
             if(Qt.application.state !== Qt.ApplicationActive)
+            {
+                headerWasActive = tabview.header.visible;
                 tabview.header.evaporate();
-            else
+            }
+            else if(headerWasActive)
                 tabview.header.solidify();
         }
     }
@@ -97,6 +102,6 @@ Page
     PageCoverActions
     {
         id: pagecoveractions
-        enabled: mainpage.status === PageStatus.Active
+        enabled: (mainpage.status === PageStatus.Active) && ((tabview.pages.count > 0) && (tabview.currentTab()) && tabview.currentTab().viewStack.empty)
     }
 }

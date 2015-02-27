@@ -26,12 +26,20 @@ Item
 
     id: browserplayer
 
-    states: [ State { name: "error";
+    states: [ State { name: "error"
                       PropertyChanges { target: lblmessage; visible: true }
+                      PropertyChanges { target: videoplayer; visible: false }
                       PropertyChanges { target: pcbusy; visible: false } },
+
               State { name: "loading"
                       PropertyChanges { target: lblmessage; visible: false }
-                      PropertyChanges { target: pcbusy; visible: true } } ]
+                      PropertyChanges { target: videoplayer; visible: true }
+                      PropertyChanges { target: pcbusy; visible: true } },
+
+              State { name: "playing"
+                      PropertyChanges { target: lblmessage; visible: false }
+                      PropertyChanges { target: videoplayer; visible: true }
+                      PropertyChanges { target: pcbusy; visible: false } }]
 
     Rectangle
     {
@@ -64,18 +72,23 @@ Item
             mptoolbar.keepVisible(keep);
             mptitle.keepVisible(keep);
 
-            if(keep && !fullScreen)
+            if(keep && !fullScreen && (Qt.application.state === Qt.ApplicationActive))
                 navigationbar.solidify();
             else
                 navigationbar.evaporate();
+
+            if(videoplayer.playbackState === MediaPlayer.PlayingState)
+                browserplayer.state = "playing";
         }
 
         onErrorChanged: {
-            browserplayer.state = (videoplayer !== MediaPlayer.NoError ? "" : "error");
+            if(videoplayer !== MediaPlayer.NoError)
+                browserplayer.state = "error";
         }
 
         onStatusChanged: {
-            browserplayer.state = (status === MediaPlayer.Loading || status === MediaPlayer.Buffering || status === MediaPlayer.Stalled) ? "loading" : "";
+            if((playbackState !== MediaPlayer.PlayingState) && (status === MediaPlayer.Loading || status === MediaPlayer.Buffering || status === MediaPlayer.Stalled))
+                browserplayer.state = "loading";
         }
 
         Image
@@ -118,6 +131,7 @@ Item
         MediaPlayerToolBar
         {
             id: mptoolbar
+            enabled: browserplayer.state !== "error"
             height: Theme.itemSizeSmall
             anchors { left: parent.left; bottom: parent.bottom; right: parent.right; }
         }
@@ -125,7 +139,7 @@ Item
 
     CoverActionList /* Media Player Cover Actions */
     {
-        enabled: (browserplayer.status === PageStatus.Active) && !lblmessage.visible
+        enabled: browserplayer.state !== "error"
         iconBackground: true
 
         CoverAction
@@ -137,19 +151,19 @@ Item
         CoverAction
         {
             iconSource: "image://theme/icon-cover-cancel"
-            onTriggered: pageStack.pop()
+            onTriggered: viewstack.clear()
         }
     }
 
     CoverActionList /* Media Player Fallback Cover Actions */
     {
-        enabled: (browserplayer.status === PageStatus.Active) && lblmessage.visible
+        enabled: browserplayer.state === "error"
         iconBackground: true
 
         CoverAction
         {
             iconSource: "image://theme/icon-cover-cancel"
-            onTriggered: pageStack.pop()
+            onTriggered: viewstack.clear()
         }
     }
 }

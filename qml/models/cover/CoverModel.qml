@@ -157,6 +157,8 @@ Item
 
                            if(!tab)
                                tab = tabview.addTab(mainwindow.settings.homepage);
+                           else if(!tab.viewStack.empty)
+                               tab.viewStack.clear(); /* Clear special pages */
 
                            mainwindow.activate();
                            tab.searchRequested();

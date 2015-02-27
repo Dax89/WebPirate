@@ -93,7 +93,8 @@ Item
 
     function clear()
     {
-        stackobject.model.clear();
+        while(stackobject.model.count)
+            stackobject.erase(0);
     }
 
     function pop()

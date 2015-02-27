@@ -14,6 +14,7 @@ Item
 {
     property alias webView: webview
     property alias tabStatus: tabstatus
+    property alias viewStack: viewstack
 
     function searchRequested()
     {
