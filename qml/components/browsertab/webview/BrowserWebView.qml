@@ -120,8 +120,7 @@ SilicaWebView
 
         if(mimeinfo[0] === "video")
         {
-            //pageStack.push(Qt.resolvedUrl("../../../pages/VideoPlayerPage.qml"), { "videoSource": downloadItem.url });
-            viewstack.pushBrowserPlayer(downloadItem.url);
+            viewstack.push(Qt.resolvedUrl("../views/browserplayer/BrowserPlayer.qml"), "mediaplayer", { "videoSource": downloadItem.url });
             return;
         }
 
@@ -172,7 +171,9 @@ SilicaWebView
 
         if(loadRequest.status === WebView.LoadFailedStatus)
         {
-            viewstack.pushLoadError(loadRequest.errorString, experimental.offline);
+            tabheader.solidify();
+            navigationbar.solidify();
+            viewstack.push(Qt.resolvedUrl("../views/LoadFailed.qml"), "loaderror", { "errorString": loadRequest.errorString, "offline": experimental.offline });
             return;
         }
 

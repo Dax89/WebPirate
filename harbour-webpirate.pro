@@ -151,7 +151,8 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/components/browsertab/navigationbar/tabbars/QueryBar.qml \
     qml/components/browsertab/navigationbar/tabbars/SearchBar.qml \
     qml/components/browsertab/ViewStack.qml \
-    qml/components/browsertab/views/browserplayer/BrowserPlayer.qml
+    qml/components/browsertab/views/browserplayer/BrowserPlayer.qml \
+    qml/components/browsertab/views/youtube/YouTubeSettings.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line

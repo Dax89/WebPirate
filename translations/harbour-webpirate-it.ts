@@ -964,6 +964,49 @@
     </message>
 </context>
 <context>
+    <name>YouTubeSettings</name>
+    <message>
+        <source>YouTube Grabber</source>
+        <translation type="unfinished">YouTube Grabber</translation>
+    </message>
+    <message>
+        <source>Author</source>
+        <translation type="unfinished">Autore</translation>
+    </message>
+    <message>
+        <source>Duration</source>
+        <translation type="unfinished">Durata</translation>
+    </message>
+    <message>
+        <source>Response</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Title</source>
+        <translation type="unfinished">Titolo</translation>
+    </message>
+    <message>
+        <source>Grabbed URLs</source>
+        <translation type="unfinished">Link trovati</translation>
+    </message>
+    <message>
+        <source>Play</source>
+        <translation type="unfinished">Play</translation>
+    </message>
+    <message>
+        <source>Download</source>
+        <translation type="unfinished">Scarica</translation>
+    </message>
+    <message>
+        <source>Grabbing video</source>
+        <translation type="unfinished">Download video</translation>
+    </message>
+    <message>
+        <source>Quality</source>
+        <translation type="unfinished">Qualità</translation>
+    </message>
+</context>
+<context>
     <name>YouTubeSettingsPage</name>
     <message>
         <source>Author</source>

@@ -964,6 +964,49 @@
     </message>
 </context>
 <context>
+    <name>YouTubeSettings</name>
+    <message>
+        <source>YouTube Grabber</source>
+        <translation type="unfinished">YouTube抓取器</translation>
+    </message>
+    <message>
+        <source>Author</source>
+        <translation type="unfinished">作者</translation>
+    </message>
+    <message>
+        <source>Duration</source>
+        <translation type="unfinished">长度</translation>
+    </message>
+    <message>
+        <source>Response</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Title</source>
+        <translation type="unfinished">标题</translation>
+    </message>
+    <message>
+        <source>Grabbed URLs</source>
+        <translation type="unfinished">抓取到的URL</translation>
+    </message>
+    <message>
+        <source>Play</source>
+        <translation type="unfinished">播放</translation>
+    </message>
+    <message>
+        <source>Download</source>
+        <translation type="unfinished">下载</translation>
+    </message>
+    <message>
+        <source>Grabbing video</source>
+        <translation type="unfinished">正在抓取视频</translation>
+    </message>
+    <message>
+        <source>Quality</source>
+        <translation type="unfinished">质量</translation>
+    </message>
+</context>
+<context>
     <name>YouTubeSettingsPage</name>
     <message>
         <source>Author</source>

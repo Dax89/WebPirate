@@ -966,6 +966,49 @@
     </message>
 </context>
 <context>
+    <name>YouTubeSettings</name>
+    <message>
+        <source>YouTube Grabber</source>
+        <translation type="unfinished">ユーチューブグラバー</translation>
+    </message>
+    <message>
+        <source>Author</source>
+        <translation type="unfinished">作者</translation>
+    </message>
+    <message>
+        <source>Duration</source>
+        <translation type="unfinished">デュレーション</translation>
+    </message>
+    <message>
+        <source>Response</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Title</source>
+        <translation type="unfinished">タイトル</translation>
+    </message>
+    <message>
+        <source>Grabbed URLs</source>
+        <translation type="unfinished">グラブ済みUrl</translation>
+    </message>
+    <message>
+        <source>Play</source>
+        <translation type="unfinished">再生</translation>
+    </message>
+    <message>
+        <source>Download</source>
+        <translation type="unfinished">ダウンロード</translation>
+    </message>
+    <message>
+        <source>Grabbing video</source>
+        <translation type="unfinished">ビデオをグラブ中</translation>
+    </message>
+    <message>
+        <source>Quality</source>
+        <translation type="unfinished">画質</translation>
+    </message>
+</context>
+<context>
     <name>YouTubeSettingsPage</name>
     <message>
         <source>Author</source>

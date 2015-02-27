@@ -1,13 +1,13 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
-import "views"
-import "views/browserplayer"
 
 Item
 {
     QtObject
     {
         property ListModel model: ListModel { }
+        property var componentCache: ({ })
+        property string originalTabState
 
         id: stackobject
 
@@ -59,36 +59,31 @@ Item
 
     readonly property bool empty: stackobject.model.count === 0
 
-    Component
-    {
-        id: loadfailedcomponent
-        LoadFailed { }
+    onEmptyChanged: {
+        if(!empty && (stackobject.model.count === 1))
+            stackobject.originalTabState = browsertab.state;
+        else if(empty)
+            browsertab.state = stackobject.originalTabState;
     }
 
-    Component
+    function push(componenturl, tabstate, params)
     {
-        id: browserplayercomponent
-        BrowserPlayer { }
-    }
+        var component = stackobject.componentCache[componenturl];
 
-    function pushLoadError(errorstring, offline)
-    {
-        tabheader.solidify();
-        navigationbar.solidify();
+        if(!component)
+            component = stackobject.componentCache[componenturl] = Qt.createComponent(componenturl);
 
-        var item = loadfailedcomponent.createObject(viewstack);
-        item.errorString = errorstring;
-        item.offline = offline;
+        if(!component)
+        {
+            console.error("Cannot create component: " + componenturl);
+            return;
+        }
 
-        stackobject.push(item);
-    }
+        var object = component.createObject(viewstack, params || { });
+        stackobject.push(object);
 
-    function pushBrowserPlayer(videosource)
-    {
-        var item = browserplayercomponent.createObject(viewstack);
-        item.videoSource = videosource
-
-        stackobject.push(item);
+        if(tabstate)
+            browsertab.state = tabstate;
     }
 
     function clear()
@@ -105,7 +100,7 @@ Item
             opacity = 0.0;
     }
 
-    function replaceTop()
+    function replace()
     {
 
     }

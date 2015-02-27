@@ -16,7 +16,10 @@ Item
         if(fullScreen)
             tabheader.solidify();
         else
+        {
             tabheader.evaporate();
+            navigationbar.evaporate();
+        }
 
         fullScreen = !fullScreen;
     }

@@ -964,6 +964,49 @@
     </message>
 </context>
 <context>
+    <name>YouTubeSettings</name>
+    <message>
+        <source>YouTube Grabber</source>
+        <translation type="unfinished">YouTube pomocník</translation>
+    </message>
+    <message>
+        <source>Author</source>
+        <translation type="unfinished">Autor</translation>
+    </message>
+    <message>
+        <source>Duration</source>
+        <translation type="unfinished">Doba trvání</translation>
+    </message>
+    <message>
+        <source>Response</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Title</source>
+        <translation type="unfinished">Název</translation>
+    </message>
+    <message>
+        <source>Grabbed URLs</source>
+        <translation type="unfinished">Získané adresy</translation>
+    </message>
+    <message>
+        <source>Play</source>
+        <translation type="unfinished">Přehrát</translation>
+    </message>
+    <message>
+        <source>Download</source>
+        <translation type="unfinished">Stáhnout</translation>
+    </message>
+    <message>
+        <source>Grabbing video</source>
+        <translation type="unfinished">Získávání videa</translation>
+    </message>
+    <message>
+        <source>Quality</source>
+        <translation type="unfinished">Kvalita</translation>
+    </message>
+</context>
+<context>
     <name>YouTubeSettingsPage</name>
     <message>
         <source>Author</source>
