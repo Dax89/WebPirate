@@ -139,7 +139,7 @@ Item
 
     CoverActionList /* Media Player Cover Actions */
     {
-        enabled: browserplayer.state !== "error"
+        enabled: browserplayer.visible && (browserplayer.state !== "error")
         iconBackground: true
 
         CoverAction
@@ -157,7 +157,7 @@ Item
 
     CoverActionList /* Media Player Fallback Cover Actions */
     {
-        enabled: browserplayer.state === "error"
+        enabled: browserplayer.visible && (browserplayer.state === "error")
         iconBackground: true
 
         CoverAction

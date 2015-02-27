@@ -102,6 +102,6 @@ Page
     PageCoverActions
     {
         id: pagecoveractions
-        enabled: (mainpage.status === PageStatus.Active) && ((tabview.tabs.count > 0) && (tabview.currentTab()) && tabview.currentTab().viewStack.empty)
+        enabled: (mainpage.status === PageStatus.Active) && ((tabview.currentIndex > -1) && tabview.currentTab().viewStack.empty)
     }
 }
