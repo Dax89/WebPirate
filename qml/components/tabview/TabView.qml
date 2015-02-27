@@ -5,12 +5,12 @@ import "../../models"
 import "../browsertab/menus"
 import "../sidebar"
 import "../quickgrid"
-import "../browsertab"
 
 Item
 {
     property ListModel pages: ListModel { }
     property ClosedTabsModel closedtabs: ClosedTabsModel { }
+    property Component tabComponent: null
     property int currentIndex: -1
     property string pageState
 
@@ -25,12 +25,6 @@ Item
             globalitems.requestQuickGrid();
         else
             globalitems.dismiss();
-    }
-
-    /* BrowserTab Component */
-    Component {
-        id: tabcomponent
-        BrowserTab { }
     }
 
     function renderTab()
@@ -58,7 +52,10 @@ Item
         if(typeof(foreground) === "undefined")
             foreground = true;
 
-        var tab = tabcomponent.createObject(stack);
+        if(!tabComponent)
+            tabComponent = Qt.createComponent(Qt.resolvedUrl("../browsertab/BrowserTab.qml"));
+
+        var tab = tabComponent.createObject(stack);
         tab.anchors.fill = stack
         tab.visible = foreground;
 
