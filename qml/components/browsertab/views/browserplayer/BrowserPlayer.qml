@@ -110,7 +110,19 @@ Item
 
         onStatusChanged: {
             if((playbackState !== MediaPlayer.PlayingState) && (status === MediaPlayer.Loading || status === MediaPlayer.Buffering || status === MediaPlayer.Stalled))
+            {
                 browserplayer.state = "loading";
+                return;
+            }
+
+            if(status === MediaPlayer.EndOfMedia)
+            {
+                if(fullScreen)
+                    switchFullScreen();
+
+                if(Qt.application.state === Qt.ApplicationActive)
+                    navigationbar.solidify();
+            }
         }
 
         Image
