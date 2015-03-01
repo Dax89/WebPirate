@@ -955,6 +955,10 @@
         <source>Removing navigation history</source>
         <translation>Tar bort surfhistorik</translation>
     </message>
+    <message>
+        <source>Long press to edit</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>TextSelectionPage</name>

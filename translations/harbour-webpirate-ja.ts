@@ -957,6 +957,10 @@
         <source>Removing navigation history</source>
         <translation>最近の履歴を削除中</translation>
     </message>
+    <message>
+        <source>Long press to edit</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>TextSelectionPage</name>

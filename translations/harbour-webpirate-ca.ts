@@ -955,6 +955,10 @@
         <source>Removing navigation history</source>
         <translation>S&apos;està eliminant l&apos;historial de navegació</translation>
     </message>
+    <message>
+        <source>Long press to edit</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>TextSelectionPage</name>

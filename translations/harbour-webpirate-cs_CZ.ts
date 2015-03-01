@@ -955,6 +955,10 @@
         <source>Removing navigation history</source>
         <translation>Mazání historie prohlížení</translation>
     </message>
+    <message>
+        <source>Long press to edit</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>TextSelectionPage</name>

@@ -944,6 +944,10 @@
         <source>Removing navigation history</source>
         <translation>Odstrani zgodovino brskanja</translation>
     </message>
+    <message>
+        <source>Long press to edit</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>TextSelectionPage</name>

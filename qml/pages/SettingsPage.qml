@@ -52,6 +52,7 @@ Dialog
             {
                 id: cbsearchengines
                 label: qsTr("Search Engines")
+                description: qsTr("Long press to edit")
                 currentIndex: settings.searchengine
                 width: parent.width
 
