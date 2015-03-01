@@ -10,18 +10,24 @@ Item
     QtObject
     {
         readonly property var dispatcher: { "console_log": onConsoleLog,
+                                            "console_error": onConsoleError,
                                             "touchstart": onTouchStart,
                                             "longpress": onLongPress,
                                             "submit": onFormSubmit,
                                             "selector_touch": onSelectorTouched,
                                             "newtab": newTabRequested,
-                                            "youtube_play": playYouTubeVideo,
-                                            "window_open": onWindowOpen }
+                                            "window_open": onWindowOpen,
+                                            "play_youtube": playYouTubeVideo,
+                                            "play_vimeo": playVimeoVideo }
 
         id: listenerprivate
 
         function onConsoleLog(data) {
             console.log(data.log);
+        }
+
+        function onConsoleError(data) {
+            console.error(data.log);
         }
 
         function onTouchStart(/* data */) {
@@ -64,6 +70,12 @@ Item
             tabheader.solidify();
             navigationbar.solidify();
             viewstack.push(Qt.resolvedUrl("../views/youtube/YouTubeSettings.qml"), "youtubesettings", { "videoId": data.videoid });
+        }
+
+        function playVimeoVideo(data) {
+            tabheader.solidify();
+            navigationbar.solidify();
+            viewstack.push(Qt.resolvedUrl("../views/browserplayer/BrowserPlayer.qml"), "mediplayer", { "videoSource": data.videourl, "videoThumbnail": data.thumbnail, "videoTitle": data.title });
         }
 
         function onWindowOpen(data) {

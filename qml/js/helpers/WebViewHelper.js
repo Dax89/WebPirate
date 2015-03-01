@@ -177,11 +177,3 @@ window.open = function(url) { /* Popup Blocker */
 
     navigator.qt.postMessage(JSON.stringify(data));
 }
-
-console.log = function(log) { /* Forward to Qt's console.log */
-    var data = new Object;
-    data.type = "console_log";
-    data.log = log;
-
-    navigator.qt.postMessage(JSON.stringify(data));
-}

@@ -43,12 +43,16 @@ SilicaWebView
     experimental.preferences.dnsPrefetchEnabled: true
     experimental.preferences.pluginsEnabled: true
     experimental.preferences.javascriptEnabled: true
+    experimental.preferences.localStorageEnabled: true
     experimental.preferences.navigatorQtObjectEnabled: true
     experimental.preferences.developerExtrasEnabled: true
     experimental.userAgent: UserAgents.get(mainwindow.settings.useragent).value
     experimental.userStyleSheet: mainwindow.settings.adblockmanager.rulesFile
 
-    experimental.userScripts: [ /* SVG Polyfill: From 'canvg' project */
+    experimental.userScripts: [ /* Forward 'console' object to Qt's one */
+                                Qt.resolvedUrl("../../../js/helpers/Console.js"),
+
+                                /* SVG Polyfill: From 'canvg' project */
                                 Qt.resolvedUrl("../../../js/canvg/rgbcolor.js"),
                                 Qt.resolvedUrl("../../../js/canvg/StackBlur.js"),
                                 Qt.resolvedUrl("../../../js/canvg/canvg.js"),
@@ -56,8 +60,16 @@ SilicaWebView
                                 /* Custom WebView Helpers */
                                 Qt.resolvedUrl("../../../js/helpers/ForcePixelRatio.js"),
                                 Qt.resolvedUrl("../../../js/helpers/WebViewHelper.js"),
-                                Qt.resolvedUrl("../../../js/helpers/YouTubeHelper.js"),
                                 Qt.resolvedUrl("../../../js/helpers/NightMode.js"),
+                                Qt.resolvedUrl("../../../js/helpers/GrabberBuilder.js"),
+
+                                /* Video Helpers */
+                                Qt.resolvedUrl("../../../js/helpers/video/YouTubeHelper.js"),
+                                Qt.resolvedUrl("../../../js/helpers/video/DailyMotionHelper.js"),
+                                Qt.resolvedUrl("../../../js/helpers/video/VimeoHelper.js"),
+                                Qt.resolvedUrl("../../../js/helpers/video/VideoHelper.js"),
+
+                                /* Message Listener */
                                 Qt.resolvedUrl("../../../js/helpers/MessageListener.js"), ]
 
     experimental.onTextFound: {
@@ -147,8 +159,7 @@ SilicaWebView
         if((request.navigationType === WebView.OtherNavigation) && UrlHelper.domainName(url.toString()) !== UrlHelper.domainName(stringurl))
             return; /* Ignore Other Domain Requests */
 
-        if(YouTubeGrabber.isYouTubeVideo(stringurl))
-            experimental.postMessage("youtube_convertvideo");
+        experimental.postMessage("video_get");
     }
 
     onLoadingChanged: {
@@ -186,7 +197,7 @@ SilicaWebView
             {
                 experimental.postMessage("forcepixelratio");
                 experimental.postMessage("polish_document");
-                experimental.postMessage("youtube_convertvideo");
+                experimental.postMessage("video_get");
 
                 webview.setNightMode(mainwindow.settings.nightmode);
 

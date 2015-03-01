@@ -88,9 +88,8 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/js/canvg/canvg.js \
     qml/js/canvg/rgbcolor.js \
     qml/js/canvg/StackBlur.js \
-    qml/js/YouTubeGrabber.js \
     qml/components/InfoLabel.qml \
-    qml/js/helpers/YouTubeHelper.js \
+    qml/js/YouTubeGrabber.js \
     qml/components/browsertab/views/browserplayer/mediacomponents/MediaPlayerProgressBar.qml \
     qml/components/browsertab/views/browserplayer/mediacomponents/MediaPlayerToolBar.qml \
     qml/components/browsertab/views/browserplayer/mediacomponents/MediaPlayerTitle.qml \
@@ -151,7 +150,14 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/components/browsertab/navigationbar/tabbars/SearchBar.qml \
     qml/components/browsertab/ViewStack.qml \
     qml/components/browsertab/views/browserplayer/BrowserPlayer.qml \
-    qml/components/browsertab/views/youtube/YouTubeSettings.qml
+    qml/components/browsertab/views/youtube/YouTubeSettings.qml \
+    qml/js/grabbers/VimeoGrabber.js \
+    qml/js/helpers/video/YouTubeHelper.js \
+    qml/js/helpers/video/VimeoHelper.js \
+    qml/js/helpers/video/VideoHelper.js \
+    qml/js/helpers/Console.js \
+    qml/js/helpers/video/DailyMotionHelper.js \
+    qml/js/helpers/GrabberBuilder.js
 
 # to disable building translations every time, comment out the
 # following CONFIG line
