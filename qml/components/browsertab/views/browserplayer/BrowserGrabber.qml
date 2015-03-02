@@ -1,5 +1,6 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
+import "mediacomponents"
 import "../../../../components"
 
 Item
@@ -18,37 +19,6 @@ Item
         videoList.append( {"videoinfo": info, "videourl": url });
     }
 
-    function pad(num, size)
-    {
-        var s = num + "";
-
-        while(s.length < size)
-            s = "0" + s;
-
-        return s;
-    }
-
-    function displayDuration(duration)
-    {
-        var numdays = Math.floor(duration / 86400);
-        var numhours = Math.floor((duration % 86400) / 3600);
-        var numminutes = Math.floor(((duration % 86400) % 3600) / 60);
-        var numseconds = ((duration % 86400) % 3600) % 60;
-
-        var videoduration = "";
-
-        if(numdays > 0)
-            videoduration += pad(numdays, 2) + ":";
-
-        if(numhours > 0)
-            videoduration += pad(numhours, 2) + ":";
-
-        videoduration += pad(numminutes, 2) + ":";
-        videoduration += pad(numseconds, 2);
-
-        return videoduration;
-    }
-
     function playVideo(videotitle, videourl, videothumbnail) {
         viewstack.push(Qt.resolvedUrl("BrowserPlayer.qml"), "mediaplayer", { "videoTitle": videotitle, "videoSource": videourl, "videoThumbnail": videothumbnail });
     }
@@ -56,8 +26,10 @@ Item
     id: browsergrabber
 
     onVideoDurationChanged: {
-        lblduration.text = displayDuration(videoDuration);
+        lblduration.text = timings.displayDuration(videoDuration);
     }
+
+    MediaPlayerTimings { id: timings }
 
     SilicaFlickable
     {
@@ -182,6 +154,16 @@ Item
                                     lvitem.remorseAction(qsTr("Grabbing video"), function() {
                                         mainwindow.settings.downloadmanager.createDownload(videourl);
                                     });
+                                }
+                            }
+
+                            MenuItem
+                            {
+                                text: qsTr("Copy URL")
+
+                                onClicked: {
+                                    popupmessage.show(qsTr("Link copied to clipboard"));
+                                    Clipboard.text = videourl;
                                 }
                             }
                         }
