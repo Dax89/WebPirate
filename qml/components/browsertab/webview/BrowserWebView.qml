@@ -21,7 +21,7 @@ SilicaWebView
         if(browsertab.state !== "webbrowser")
             return;
 
-        experimental.postMessage(nightmode ? "enable_nightmode" : "disable_nightmode");
+        experimental.postMessage(nightmode ? "nightmode_enable" : "nightmode_disable");
     }
 
     VerticalScrollDecorator { flickable: webview }
