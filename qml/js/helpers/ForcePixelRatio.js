@@ -5,8 +5,12 @@
  * Thanks to llelectronics for allowing me to use his trick :)
  */
 var __wp_forcepixelratio__ = {
+
+    blacklist: { "www.tagesschau.de": true,
+                 "www.dailymotion.com": true },
+
     adjust: function() {
-        if(document.location.hostname === "www.tagesschau.de") // Horrible Hack: Do not trigger DevicePixelRatio on this site
+        if(__wp_forcepixelratio__.blacklist[document.location.hostname]) // Horrible Hack: Do not trigger DevicePixelRatio on these sites
             return;
 
         var viewport = document.querySelector("meta[name='viewport']");
