@@ -295,6 +295,14 @@
         <source>Quality</source>
         <translation type="obsolete">Qualità</translation>
     </message>
+    <message>
+        <source>Copy URL</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Link copied to clipboard</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>BrowserTab</name>

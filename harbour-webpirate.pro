@@ -156,7 +156,8 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/js/helpers/Console.js \
     qml/js/helpers/video/DailyMotionHelper.js \
     qml/js/helpers/GrabberBuilder.js \
-    qml/components/browsertab/views/browserplayer/BrowserGrabber.qml
+    qml/components/browsertab/views/browserplayer/BrowserGrabber.qml \
+    qml/components/browsertab/views/browserplayer/mediacomponents/MediaPlayerTimings.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line

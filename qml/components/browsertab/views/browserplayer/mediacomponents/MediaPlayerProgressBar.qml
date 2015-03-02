@@ -1,7 +1,6 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
 import "../../../navigationbar"
-import "../../../../../js/YouTubeGrabber.js" as YouTubeGrabber
 
 Item
 {
@@ -22,11 +21,13 @@ Item
     id: mbprogressbar
     height: 20
 
+    MediaPlayerTimings { id: timings }
+
     Label
     {
         id: lblcurrentprogress
         anchors { left: parent.left; verticalCenter: progresscontainer.verticalCenter }
-        text: YouTubeGrabber.displayDuration(Math.floor(videoprogress.value / 1000.0))
+        text: timings.displayDuration(Math.floor(videoprogress.value / 1000.0))
         font.pixelSize: Theme.fontSizeSmall
         verticalAlignment: Text.AlignVCenter
     }
@@ -69,7 +70,7 @@ Item
     {
         id: lblduration
         anchors { right: parent.right; verticalCenter: progresscontainer.verticalCenter }
-        text: YouTubeGrabber.displayDuration(Math.floor(videoprogress.maximumValue / 1000.0))
+        text: timings.displayDuration(Math.floor(videoprogress.maximumValue / 1000.0))
         font.pixelSize: Theme.fontSizeSmall
         verticalAlignment: Text.AlignVCenter
     }

@@ -295,6 +295,14 @@
         <source>Quality</source>
         <translation type="obsolete">质量</translation>
     </message>
+    <message>
+        <source>Copy URL</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Link copied to clipboard</source>
+        <translation type="unfinished">链接已复制到剪贴板</translation>
+    </message>
 </context>
 <context>
     <name>BrowserTab</name>
