@@ -110,9 +110,9 @@ BrowserBar
             Label
             {
                 text: blockedPopups.count
-                x: btnpopups.icon.x + (btnpopups.icon.width - contentWidth) / 2 - (contentWidth / 2)
-                y: btnpopups.icon.y + (btnpopups.icon.height - contentHeight) / 2 - (contentHeight / 5)
-                color: Theme.highlightDimmerColor
+                anchors.fill: parent
+                enabled: parent.enabled
+                verticalAlignment: Text.AlignVCenter
                 horizontalAlignment: Text.AlignHCenter
                 font.pixelSize: Theme.fontSizeExtraSmall
                 font.bold: true
