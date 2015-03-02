@@ -77,7 +77,6 @@ void DownloadItem::checkConflicts(QString& filename, const QString& downloadpath
 void DownloadItem::start()
 {
     QNetworkRequest request(this->_url);
-
     this->_file.open(QFile::WriteOnly | QFile::Truncate);
 
     if(this->_completed)
@@ -131,13 +130,31 @@ void DownloadItem::onDownloadError(QNetworkReply::NetworkError)
 
 void DownloadItem::onDownloadFinished(QNetworkReply* reply)
 {
+    int statuscode = reply->attribute(QNetworkRequest::HttpStatusCodeAttribute).toInt();
     this->_completed = true;
     this->_file.close();
 
-    reply->deleteLater();
-    this->_downloadreply = NULL;
+    if(statuscode == 302) /* Manage Redirects */
+    {
+        this->_file.remove(); /* Delete Junk File */
+        QUrl redirecturl = reply->attribute(QNetworkRequest::RedirectionTargetAttribute).toUrl();
 
-    emit completedChanged();
+        if(redirecturl.isValid() && (redirecturl != this->_url)) /* Avoid Fake/Redirect Loop */
+        {
+            this->_redirectfromurl = this->_url;
+            this->_url = redirecturl;
+
+            reply->deleteLater();
+            this->_downloadreply = NULL;
+            this->start();
+        }
+    }
+    else
+    {
+        reply->deleteLater();
+        this->_downloadreply = NULL;
+        emit completedChanged();
+    }
 }
 
 void DownloadItem::onDownloadProgress(qint64 bytesreceived, qint64 bytestotal)

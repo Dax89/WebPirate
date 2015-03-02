@@ -58,6 +58,7 @@ class DownloadItem: public QObject
     private:
         bool _completed;
         QUrl _url;
+        QUrl _redirectfromurl;
         QFile _file;
         qint64 _progressvalue;
         qint64 _progresstotal;
