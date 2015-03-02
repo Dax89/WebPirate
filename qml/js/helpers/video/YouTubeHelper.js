@@ -45,7 +45,7 @@ var __wp_youtubehelper__ = {
         videoinfo.type = "play_youtube";
         videoinfo.videoid = cap[1];
 
-        var player = __wp_grabberbuilder__.createPlayer(ytplayer, "yt", "navigator.qt.postMessage('" + JSON.stringify(videoinfo) + "')", __wp_youtubehelper__.playbutton);
+        __wp_grabberbuilder__.createPlayer(ytplayer, "yt", "navigator.qt.postMessage('" + JSON.stringify(videoinfo) + "')", __wp_youtubehelper__.playbutton);
     },
 
     getEmbeddedVideos: function() {
@@ -68,7 +68,7 @@ var __wp_youtubehelper__ = {
             videoinfo.type = "play_youtube";
             videoinfo.videoid = cap[1];
 
-            var player = __wp_grabberbuilder__.createPlayer(iframe, "yt", "navigator.qt.postMessage('" + JSON.stringify(videoinfo) + "')", __wp_youtubehelper__.playbutton);
+            __wp_grabberbuilder__.createPlayer(iframe, "yt", "navigator.qt.postMessage('" + JSON.stringify(videoinfo) + "')", __wp_youtubehelper__.playbutton);
         }
     }
 }
