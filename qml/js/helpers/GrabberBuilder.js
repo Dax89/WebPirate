@@ -12,13 +12,13 @@ var __wp_grabberbuilder__ = {
         __wp_grabberbuilder__.cleanElement(element);
 
         var player = document.createElement("DIV");
-        player.id = "__wp_" + playername + "player__";
+        player.id = "__wp_" + playername + "_player__";
         player.style.backgroundColor = "#1b1b1b";
         player.style.width = rect.width + "px";
         player.style.height = rect.height + "px";
 
         var btnplay = document.createElement("A");
-        btnplay.id = "__wp_" + playername + "playbutton__";
+        btnplay.id = "__wp_" + playername + "_playbutton__";
         btnplay.href = "#";
         btnplay.setAttribute("onclick", clickevent + "; return false;");
         btnplay.style.display = "block";
