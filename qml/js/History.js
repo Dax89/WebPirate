@@ -38,7 +38,7 @@ function clear()
 function store(url, title)
 {
     instance().transaction(function(tx) {
-        tx.executeSql("INSERT OR REPLACE INTO History(url, title, lastvisit) VALUES(?, ?, DATETIME('now'))", [url, title]);
+        tx.executeSql("INSERT OR REPLACE INTO History(url, title, lastvisit) VALUES(?, ?, DATETIME(CURRENT_TIMESTAMP, 'localtime'))", [url, title]);
     });
 }
 
