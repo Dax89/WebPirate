@@ -258,6 +258,45 @@
     </message>
 </context>
 <context>
+    <name>BrowserGrabber</name>
+    <message>
+        <source>Author</source>
+        <translation type="unfinished">Upphovsman</translation>
+    </message>
+    <message>
+        <source>Duration</source>
+        <translation type="unfinished">Varaktighet</translation>
+    </message>
+    <message>
+        <source>Response</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Title</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Grabbed URLs</source>
+        <translation type="unfinished">Hämtade URL:er</translation>
+    </message>
+    <message>
+        <source>Play</source>
+        <translation type="unfinished">Spela upp</translation>
+    </message>
+    <message>
+        <source>Download</source>
+        <translation type="unfinished">Ladda ner</translation>
+    </message>
+    <message>
+        <source>Grabbing video</source>
+        <translation type="unfinished">Hämtar video</translation>
+    </message>
+    <message>
+        <source>Quality</source>
+        <translation type="obsolete">Kvalitet</translation>
+    </message>
+</context>
+<context>
     <name>BrowserTab</name>
     <message>
         <source>Load Error</source>
@@ -968,46 +1007,56 @@
     </message>
 </context>
 <context>
-    <name>YouTubeSettings</name>
+    <name>WebViewListener</name>
     <message>
-        <source>YouTube Grabber</source>
-        <translation type="unfinished">YouTube-hämtare</translation>
-    </message>
-    <message>
-        <source>Author</source>
-        <translation type="unfinished">Upphovsman</translation>
-    </message>
-    <message>
-        <source>Duration</source>
-        <translation type="unfinished">Varaktighet</translation>
-    </message>
-    <message>
-        <source>Response</source>
+        <source>FAILED</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Title</source>
+        <source>Codec</source>
         <translation type="unfinished"></translation>
     </message>
-    <message>
-        <source>Grabbed URLs</source>
-        <translation type="unfinished">Hämtade URL:er</translation>
-    </message>
-    <message>
-        <source>Play</source>
-        <translation type="unfinished">Spela upp</translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation type="unfinished">Ladda ner</translation>
-    </message>
-    <message>
-        <source>Grabbing video</source>
-        <translation type="unfinished">Hämtar video</translation>
-    </message>
+</context>
+<context>
+    <name>YouTubeGrabber</name>
     <message>
         <source>Quality</source>
         <translation type="unfinished">Kvalitet</translation>
+    </message>
+</context>
+<context>
+    <name>YouTubeSettings</name>
+    <message>
+        <source>YouTube Grabber</source>
+        <translation type="obsolete">YouTube-hämtare</translation>
+    </message>
+    <message>
+        <source>Author</source>
+        <translation type="obsolete">Upphovsman</translation>
+    </message>
+    <message>
+        <source>Duration</source>
+        <translation type="obsolete">Varaktighet</translation>
+    </message>
+    <message>
+        <source>Grabbed URLs</source>
+        <translation type="obsolete">Hämtade URL:er</translation>
+    </message>
+    <message>
+        <source>Play</source>
+        <translation type="obsolete">Spela upp</translation>
+    </message>
+    <message>
+        <source>Download</source>
+        <translation type="obsolete">Ladda ner</translation>
+    </message>
+    <message>
+        <source>Grabbing video</source>
+        <translation type="obsolete">Hämtar video</translation>
+    </message>
+    <message>
+        <source>Quality</source>
+        <translation type="obsolete">Kvalitet</translation>
     </message>
 </context>
 <context>

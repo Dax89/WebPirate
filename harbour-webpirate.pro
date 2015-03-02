@@ -150,14 +150,13 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/components/browsertab/navigationbar/tabbars/SearchBar.qml \
     qml/components/browsertab/ViewStack.qml \
     qml/components/browsertab/views/browserplayer/BrowserPlayer.qml \
-    qml/components/browsertab/views/youtube/YouTubeSettings.qml \
-    qml/js/grabbers/VimeoGrabber.js \
     qml/js/helpers/video/YouTubeHelper.js \
     qml/js/helpers/video/VimeoHelper.js \
     qml/js/helpers/video/VideoHelper.js \
     qml/js/helpers/Console.js \
     qml/js/helpers/video/DailyMotionHelper.js \
-    qml/js/helpers/GrabberBuilder.js
+    qml/js/helpers/GrabberBuilder.js \
+    qml/components/browsertab/views/browserplayer/BrowserGrabber.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line

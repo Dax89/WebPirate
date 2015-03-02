@@ -13,6 +13,7 @@ var __wp_grabberbuilder__ = {
 
         var player = document.createElement("DIV");
         player.id = "__wp_" + playername + "player__";
+        player.style.backgroundColor = "#1b1b1b";
         player.style.width = rect.width + "px";
         player.style.height = rect.height + "px";
 
@@ -28,7 +29,12 @@ var __wp_grabberbuilder__ = {
             btnplay.style.background = "url('" + iconurl + "') 50% 50% / 50% no-repeat";
 
         player.appendChild(btnplay);
-        element.appendChild(player);
+
+        if(element.tagName === "IFRAME")
+            element.outerHTML = player.outerHTML;
+        else
+            element.appendChild(player);
+
         return player;
     }
 }

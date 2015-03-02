@@ -258,6 +258,41 @@
     </message>
 </context>
 <context>
+    <name>BrowserGrabber</name>
+    <message>
+        <source>Author</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Duration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Response</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Title</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Grabbed URLs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Play</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Download</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Grabbing video</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>BrowserTab</name>
     <message>
         <source>New Tab</source>
@@ -953,43 +988,18 @@
     </message>
 </context>
 <context>
-    <name>YouTubeSettings</name>
+    <name>WebViewListener</name>
     <message>
-        <source>YouTube Grabber</source>
+        <source>FAILED</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Author</source>
+        <source>Codec</source>
         <translation type="unfinished"></translation>
     </message>
-    <message>
-        <source>Duration</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Response</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Title</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Grabbed URLs</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Play</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Grabbing video</source>
-        <translation type="unfinished"></translation>
-    </message>
+</context>
+<context>
+    <name>YouTubeGrabber</name>
     <message>
         <source>Quality</source>
         <translation type="unfinished"></translation>

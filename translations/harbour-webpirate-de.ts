@@ -258,6 +258,45 @@
     </message>
 </context>
 <context>
+    <name>BrowserGrabber</name>
+    <message>
+        <source>Author</source>
+        <translation type="unfinished">Verfasser</translation>
+    </message>
+    <message>
+        <source>Duration</source>
+        <translation type="unfinished">Dauer</translation>
+    </message>
+    <message>
+        <source>Response</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Title</source>
+        <translation type="unfinished">Titel</translation>
+    </message>
+    <message>
+        <source>Grabbed URLs</source>
+        <translation type="unfinished">Erfasste URLs</translation>
+    </message>
+    <message>
+        <source>Play</source>
+        <translation type="unfinished">Abspielen</translation>
+    </message>
+    <message>
+        <source>Download</source>
+        <translation type="unfinished">Herunterladen</translation>
+    </message>
+    <message>
+        <source>Grabbing video</source>
+        <translation type="unfinished">Video wird erfasst</translation>
+    </message>
+    <message>
+        <source>Quality</source>
+        <translation type="obsolete">Qualität</translation>
+    </message>
+</context>
+<context>
     <name>BrowserTab</name>
     <message>
         <source>Load Error</source>
@@ -968,46 +1007,60 @@
     </message>
 </context>
 <context>
-    <name>YouTubeSettings</name>
+    <name>WebViewListener</name>
     <message>
-        <source>YouTube Grabber</source>
-        <translation type="unfinished">YouTube Grabber</translation>
-    </message>
-    <message>
-        <source>Author</source>
-        <translation type="unfinished">Verfasser</translation>
-    </message>
-    <message>
-        <source>Duration</source>
-        <translation type="unfinished">Dauer</translation>
-    </message>
-    <message>
-        <source>Response</source>
+        <source>FAILED</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Title</source>
-        <translation type="unfinished">Titel</translation>
+        <source>Codec</source>
+        <translation type="unfinished"></translation>
     </message>
-    <message>
-        <source>Grabbed URLs</source>
-        <translation type="unfinished">Erfasste URLs</translation>
-    </message>
-    <message>
-        <source>Play</source>
-        <translation type="unfinished">Abspielen</translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation type="unfinished">Herunterladen</translation>
-    </message>
-    <message>
-        <source>Grabbing video</source>
-        <translation type="unfinished">Video wird erfasst</translation>
-    </message>
+</context>
+<context>
+    <name>YouTubeGrabber</name>
     <message>
         <source>Quality</source>
         <translation type="unfinished">Qualität</translation>
+    </message>
+</context>
+<context>
+    <name>YouTubeSettings</name>
+    <message>
+        <source>YouTube Grabber</source>
+        <translation type="obsolete">YouTube Grabber</translation>
+    </message>
+    <message>
+        <source>Author</source>
+        <translation type="obsolete">Verfasser</translation>
+    </message>
+    <message>
+        <source>Duration</source>
+        <translation type="obsolete">Dauer</translation>
+    </message>
+    <message>
+        <source>Title</source>
+        <translation type="obsolete">Titel</translation>
+    </message>
+    <message>
+        <source>Grabbed URLs</source>
+        <translation type="obsolete">Erfasste URLs</translation>
+    </message>
+    <message>
+        <source>Play</source>
+        <translation type="obsolete">Abspielen</translation>
+    </message>
+    <message>
+        <source>Download</source>
+        <translation type="obsolete">Herunterladen</translation>
+    </message>
+    <message>
+        <source>Grabbing video</source>
+        <translation type="obsolete">Video wird erfasst</translation>
+    </message>
+    <message>
+        <source>Quality</source>
+        <translation type="obsolete">Qualität</translation>
     </message>
 </context>
 <context>

@@ -258,6 +258,45 @@
     </message>
 </context>
 <context>
+    <name>BrowserGrabber</name>
+    <message>
+        <source>Author</source>
+        <translation type="unfinished">Auteur</translation>
+    </message>
+    <message>
+        <source>Duration</source>
+        <translation type="unfinished">Duur</translation>
+    </message>
+    <message>
+        <source>Response</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Title</source>
+        <translation type="unfinished">Titel</translation>
+    </message>
+    <message>
+        <source>Grabbed URLs</source>
+        <translation type="unfinished">Gegrepen URLs</translation>
+    </message>
+    <message>
+        <source>Play</source>
+        <translation type="unfinished">Afspelen</translation>
+    </message>
+    <message>
+        <source>Download</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Grabbing video</source>
+        <translation type="unfinished">Bezig met grijpen van video</translation>
+    </message>
+    <message>
+        <source>Quality</source>
+        <translation type="obsolete">Kwaliteit</translation>
+    </message>
+</context>
+<context>
     <name>BrowserTab</name>
     <message>
         <source>Load Error</source>
@@ -968,46 +1007,56 @@
     </message>
 </context>
 <context>
-    <name>YouTubeSettings</name>
+    <name>WebViewListener</name>
     <message>
-        <source>YouTube Grabber</source>
-        <translation type="unfinished">YouTube-grijper</translation>
-    </message>
-    <message>
-        <source>Author</source>
-        <translation type="unfinished">Auteur</translation>
-    </message>
-    <message>
-        <source>Duration</source>
-        <translation type="unfinished">Duur</translation>
-    </message>
-    <message>
-        <source>Response</source>
+        <source>FAILED</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Title</source>
-        <translation type="unfinished">Titel</translation>
-    </message>
-    <message>
-        <source>Grabbed URLs</source>
-        <translation type="unfinished">Gegrepen URLs</translation>
-    </message>
-    <message>
-        <source>Play</source>
-        <translation type="unfinished">Afspelen</translation>
-    </message>
-    <message>
-        <source>Download</source>
+        <source>Codec</source>
         <translation type="unfinished"></translation>
     </message>
-    <message>
-        <source>Grabbing video</source>
-        <translation type="unfinished">Bezig met grijpen van video</translation>
-    </message>
+</context>
+<context>
+    <name>YouTubeGrabber</name>
     <message>
         <source>Quality</source>
         <translation type="unfinished">Kwaliteit</translation>
+    </message>
+</context>
+<context>
+    <name>YouTubeSettings</name>
+    <message>
+        <source>YouTube Grabber</source>
+        <translation type="obsolete">YouTube-grijper</translation>
+    </message>
+    <message>
+        <source>Author</source>
+        <translation type="obsolete">Auteur</translation>
+    </message>
+    <message>
+        <source>Duration</source>
+        <translation type="obsolete">Duur</translation>
+    </message>
+    <message>
+        <source>Title</source>
+        <translation type="obsolete">Titel</translation>
+    </message>
+    <message>
+        <source>Grabbed URLs</source>
+        <translation type="obsolete">Gegrepen URLs</translation>
+    </message>
+    <message>
+        <source>Play</source>
+        <translation type="obsolete">Afspelen</translation>
+    </message>
+    <message>
+        <source>Grabbing video</source>
+        <translation type="obsolete">Bezig met grijpen van video</translation>
+    </message>
+    <message>
+        <source>Quality</source>
+        <translation type="obsolete">Kwaliteit</translation>
     </message>
 </context>
 <context>

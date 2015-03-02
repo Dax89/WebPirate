@@ -1,26 +1,63 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
 import "../../../../components"
-import "../../../../js/YouTubeGrabber.js" as YouTubeGrabber
 
 Item
 {
-    property string videoId
-    property ListModel videoTypes: ListModel { }
-
     property bool grabFailed: false
-    property alias videoResponse: lblresponse.text
+    property int videoDuration: 0
+    property ListModel videoList: ListModel { }
+
+    property alias grabResult: lblgrabresult.text
     property alias videoTitle: lbltitle.text
     property alias videoAuthor: lblauthor.text
-    property alias videoDuration: lblduration.text
     property alias videoThumbnail: imgthumbnail.source
 
-    function playVideo(videotitle, videourl, videothumbnail) {
-        viewstack.push(Qt.resolvedUrl("../browserplayer/BrowserPlayer.qml"), "mediaplayer", { "videoTitle": videotitle, "videoSource": videourl, "videoThumbnail": videothumbnail });
+    function addVideo(info, url)
+    {
+        videoList.append( {"videoinfo": info, "videourl": url });
     }
 
-    id: dlgytvideosettings
-    onVideoIdChanged: YouTubeGrabber.grabVideo(videoId, dlgytvideosettings);
+    function pad(num, size)
+    {
+        var s = num + "";
+
+        while(s.length < size)
+            s = "0" + s;
+
+        return s;
+    }
+
+    function displayDuration(duration)
+    {
+        var numdays = Math.floor(duration / 86400);
+        var numhours = Math.floor((duration % 86400) / 3600);
+        var numminutes = Math.floor(((duration % 86400) % 3600) / 60);
+        var numseconds = ((duration % 86400) % 3600) % 60;
+
+        var videoduration = "";
+
+        if(numdays > 0)
+            videoduration += pad(numdays, 2) + ":";
+
+        if(numhours > 0)
+            videoduration += pad(numhours, 2) + ":";
+
+        videoduration += pad(numminutes, 2) + ":";
+        videoduration += pad(numseconds, 2);
+
+        return videoduration;
+    }
+
+    function playVideo(videotitle, videourl, videothumbnail) {
+        viewstack.push(Qt.resolvedUrl("BrowserPlayer.qml"), "mediaplayer", { "videoTitle": videotitle, "videoSource": videourl, "videoThumbnail": videothumbnail });
+    }
+
+    id: browsergrabber
+
+    onVideoDurationChanged: {
+        lblduration.text = displayDuration(videoDuration);
+    }
 
     SilicaFlickable
     {
@@ -30,6 +67,7 @@ Item
         Column
         {
             id: content
+            anchors { top: parent.top; topMargin: Theme.paddingSmall }
             width: parent.width
             spacing: Theme.paddingMedium
 
@@ -37,8 +75,6 @@ Item
             {
                 id: column
                 width: parent.width
-
-                PageHeader { id: dlgheader; title: qsTr("YouTube Grabber") }
 
                 Row
                 {
@@ -84,7 +120,7 @@ Item
 
                     InfoLabel
                     {
-                        id: lblresponse
+                        id: lblgrabresult
                         anchors.topMargin: Theme.paddingMedium
                         width: parent.width
                         contentColor: grabFailed ? "red" : "lime"
@@ -124,19 +160,19 @@ Item
 
                 Repeater
                 {
-                    model: videoTypes
+                    model: videoList
 
 
                     delegate: ListItem {
                         id: lvitem
                         contentWidth: colvideotypes.width
                         contentHeight: Theme.itemSizeSmall
-                        onClicked: playVideo(videoTitle, url, videoThumbnail)
+                        onClicked: playVideo(videoTitle, videourl, videoThumbnail)
 
                         menu: ContextMenu {
                             MenuItem {
                                 text: qsTr("Play")
-                                onClicked: playVideo(videoTitle, url, videoThumbnail)
+                                onClicked: playVideo(videoTitle, videourl, videoThumbnail)
                             }
 
                             MenuItem {
@@ -144,7 +180,7 @@ Item
 
                                 onClicked: {
                                     lvitem.remorseAction(qsTr("Grabbing video"), function() {
-                                        mainwindow.settings.downloadmanager.createDownload(url);
+                                        mainwindow.settings.downloadmanager.createDownload(videourl);
                                     });
                                 }
                             }
@@ -155,8 +191,8 @@ Item
                             anchors.fill: parent
                             labelElide: Text.ElideRight
                             displayColon: false
-                            title: qsTr("Quality") + ": " + (quality + " (" + mime + (hascodec ? (", " + codec) : "") + ")")
-                            text: url
+                            title: videoinfo
+                            text: videourl
                         }
                     }
                 }

@@ -2,6 +2,7 @@ import QtQuick 2.1
 import "../../../js/Database.js" as Database
 import "../../../js/Credentials.js" as Credentials
 import "../../../js/PopupBlocker.js" as PopupBlocker
+import "../../../js/YouTubeGrabber.js" as YouTubeGrabber
 
 Item
 {
@@ -18,6 +19,7 @@ Item
                                             "newtab": newTabRequested,
                                             "window_open": onWindowOpen,
                                             "play_youtube": playYouTubeVideo,
+                                            "play_dailymotion": playDailyMotionVideo,
                                             "play_vimeo": playVimeoVideo }
 
         id: listenerprivate
@@ -69,13 +71,35 @@ Item
         function playYouTubeVideo(data) {
             tabheader.solidify();
             navigationbar.solidify();
-            viewstack.push(Qt.resolvedUrl("../views/youtube/YouTubeSettings.qml"), "youtubesettings", { "videoId": data.videoid });
+
+            var grabber = viewStack.push(Qt.resolvedUrl("../views/browserplayer/BrowserGrabber.qml"), "mediagrabber");
+            YouTubeGrabber.grabVideo(data.videoid, grabber);
+        }
+
+        function playDailyMotionVideo(data) {
+            tabheader.solidify();
+            navigationbar.solidify();
+
+            var grabber = viewStack.push(Qt.resolvedUrl("../views/browserplayer/BrowserGrabber.qml"), "mediagrabber", { "grabFailed": data.videos.length <= 0,
+                                                                                                                        "grabResult": data.videos.length <= 0 ? qsTr("FAILED") : "OK",
+                                                                                                                        "videoTitle": data.title,
+                                                                                                                        "videoAuthor": data.author,
+                                                                                                                        "videoThumbnail": data.thumbnail,
+                                                                                                                        "videoDuration": data.duration });
+
+            for(var i = 0; i < data.videos.length; i++)
+            {
+                var video = data.videos[i];
+                grabber.addVideo(qsTr("Codec") + ": " + video.type, video.url);
+            }
         }
 
         function playVimeoVideo(data) {
             tabheader.solidify();
             navigationbar.solidify();
-            viewstack.push(Qt.resolvedUrl("../views/browserplayer/BrowserPlayer.qml"), "mediplayer", { "videoSource": data.videourl, "videoThumbnail": data.thumbnail, "videoTitle": data.title });
+            viewstack.push(Qt.resolvedUrl("../views/browserplayer/BrowserPlayer.qml"), "mediaplayer", { "videoSource": data.videourl,
+                                                                                                        "videoThumbnail": data.thumbnail,
+                                                                                                        "videoTitle": data.title });
         }
 
         function onWindowOpen(data) {

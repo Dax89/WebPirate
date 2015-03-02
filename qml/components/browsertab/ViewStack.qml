@@ -89,6 +89,8 @@ Item
 
         if(tabstate)
             browsertab.state = tabstate;
+
+        return object;
     }
 
     function clear()
