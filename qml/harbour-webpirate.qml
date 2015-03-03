@@ -95,6 +95,8 @@ ApplicationWindow
     cover: null
 
     Component.onDestruction: {
+        Database.set("blockads", settings.adblockmanager.enabled ? 1 : 0);
+
         if(settings.clearonexit) {
             webkitdatabase.clearCache();
             webkitdatabase.clearNavigationData();

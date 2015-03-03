@@ -1,6 +1,5 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
-import "../../js/Database.js" as Database
 
 Item
 {
@@ -118,7 +117,6 @@ Item
 
                 switchItem.onCheckedChanged: {
                     mainwindow.settings.adblockmanager.enabled = switchItem.checked;
-                    Database.set("blockads", switchItem.checked ? 1 : 0);
                 }
             }
 
