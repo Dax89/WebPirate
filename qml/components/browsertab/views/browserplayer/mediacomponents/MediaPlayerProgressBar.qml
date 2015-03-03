@@ -40,18 +40,18 @@ Item
 
         LoadingBar
         {
-            id: videoprogress
-            anchors.fill: parent
-            barHeight: mbprogressbar.height
-            z: 10
-        }
-
-        LoadingBar
-        {
             id: bufferprogress
             anchors.fill: parent
             barColor: reverseRgb(Theme.highlightColor)
             barHeight: mbprogressbar.height
+        }
+
+        LoadingBar
+        {
+            id: videoprogress
+            anchors.fill: parent
+            barHeight: mbprogressbar.height
+            z: 10
         }
 
         MouseArea
