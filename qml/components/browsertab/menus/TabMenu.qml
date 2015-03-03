@@ -7,6 +7,7 @@ PopupDialog
     property int selectedIndex
 
     id: tabmenu
+    z: 10
     titleVisible: true
 
     property list<QtObject> tabmenuModel: [ QtObject { readonly property string menuText: qsTr("Duplicate Tab")
