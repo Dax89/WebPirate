@@ -261,55 +261,47 @@
     <name>BrowserGrabber</name>
     <message>
         <source>Author</source>
-        <translation type="unfinished">Autore</translation>
+        <translation>Autore</translation>
     </message>
     <message>
         <source>Duration</source>
-        <translation type="unfinished">Durata</translation>
+        <translation>Durata</translation>
     </message>
     <message>
         <source>Response</source>
-        <translation type="unfinished"></translation>
+        <translation>Risposta</translation>
     </message>
     <message>
         <source>Title</source>
-        <translation type="unfinished">Titolo</translation>
+        <translation>Titolo</translation>
     </message>
     <message>
         <source>Grabbed URLs</source>
-        <translation type="unfinished">Link trovati</translation>
+        <translation>Link trovati</translation>
     </message>
     <message>
         <source>Play</source>
-        <translation type="unfinished">Play</translation>
+        <translation>Play</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished">Scarica</translation>
+        <translation>Scarica</translation>
     </message>
     <message>
         <source>Grabbing video</source>
-        <translation type="unfinished">Download video</translation>
-    </message>
-    <message>
-        <source>Quality</source>
-        <translation type="obsolete">Qualità</translation>
+        <translation>Download video</translation>
     </message>
     <message>
         <source>Copy URL</source>
-        <translation type="unfinished"></translation>
+        <translation>Copia indirizzo</translation>
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation type="unfinished"></translation>
+        <translation>Link copiato negli appunti</translation>
     </message>
 </context>
 <context>
     <name>BrowserTab</name>
-    <message>
-        <source>Load Error</source>
-        <translation type="vanished">Errore di caricamento</translation>
-    </message>
     <message>
         <source>New Tab</source>
         <translation>Nuova scheda</translation>
@@ -565,14 +557,7 @@
     </message>
     <message>
         <source>Add to Quick Grid</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>FindTextBar</name>
-    <message>
-        <source>Search</source>
-        <translation type="vanished">Cerca</translation>
+        <translation>Aggiungi alla Quick Grid</translation>
     </message>
 </context>
 <context>
@@ -637,7 +622,7 @@
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation>Link copiato nella clipboard</translation>
+        <translation>Link copiato negli appunti</translation>
     </message>
     <message>
         <source>Open New Tab in Background</source>
@@ -783,7 +768,7 @@
     <name>QueryBar</name>
     <message>
         <source>Search with</source>
-        <translation type="unfinished">Cerca con</translation>
+        <translation>Cerca con</translation>
     </message>
 </context>
 <context>
@@ -856,12 +841,8 @@
 <context>
     <name>SearchBar</name>
     <message>
-        <source>Search with</source>
-        <translation type="vanished">Cerca con</translation>
-    </message>
-    <message>
         <source>Search</source>
-        <translation type="unfinished">Cerca</translation>
+        <translation>Cerca</translation>
     </message>
 </context>
 <context>
@@ -1008,30 +989,30 @@
     </message>
     <message>
         <source>Long press to edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Premi a lungo per modificare</translation>
     </message>
 </context>
 <context>
     <name>TabMenu</name>
     <message>
         <source>Add to Quick Grid</source>
-        <translation type="unfinished"></translation>
+        <translation>Aggiungi alla Quick Grid</translation>
     </message>
     <message>
         <source>Duplicate Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Duplica scheda</translation>
     </message>
     <message>
         <source>Duplicate Tab in Background</source>
-        <translation type="unfinished"></translation>
+        <translation>Duplica scheda in secondo piano</translation>
     </message>
     <message>
         <source>Close Tab</source>
-        <translation type="unfinished">Chiudi scheda</translation>
+        <translation>Chiudi scheda</translation>
     </message>
     <message>
         <source>Close other Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Chiudi le altre schede</translation>
     </message>
 </context>
 <context>
@@ -1045,96 +1026,18 @@
     <name>WebViewListener</name>
     <message>
         <source>FAILED</source>
-        <translation type="unfinished"></translation>
+        <translation>FALLITO</translation>
     </message>
     <message>
         <source>Codec</source>
-        <translation type="unfinished"></translation>
+        <translation>Codec</translation>
     </message>
 </context>
 <context>
     <name>YouTubeGrabber</name>
     <message>
         <source>Quality</source>
-        <translation type="unfinished">Qualità</translation>
-    </message>
-</context>
-<context>
-    <name>YouTubeSettings</name>
-    <message>
-        <source>YouTube Grabber</source>
-        <translation type="obsolete">YouTube Grabber</translation>
-    </message>
-    <message>
-        <source>Author</source>
-        <translation type="obsolete">Autore</translation>
-    </message>
-    <message>
-        <source>Duration</source>
-        <translation type="obsolete">Durata</translation>
-    </message>
-    <message>
-        <source>Title</source>
-        <translation type="obsolete">Titolo</translation>
-    </message>
-    <message>
-        <source>Grabbed URLs</source>
-        <translation type="obsolete">Link trovati</translation>
-    </message>
-    <message>
-        <source>Play</source>
-        <translation type="obsolete">Play</translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation type="obsolete">Scarica</translation>
-    </message>
-    <message>
-        <source>Grabbing video</source>
-        <translation type="obsolete">Download video</translation>
-    </message>
-    <message>
-        <source>Quality</source>
-        <translation type="obsolete">Qualità</translation>
-    </message>
-</context>
-<context>
-    <name>YouTubeSettingsPage</name>
-    <message>
-        <source>Author</source>
-        <translation type="vanished">Autore</translation>
-    </message>
-    <message>
-        <source>Duration</source>
-        <translation type="vanished">Durata</translation>
-    </message>
-    <message>
-        <source>Quality</source>
-        <translation type="vanished">Qualità</translation>
-    </message>
-    <message>
-        <source>Grabbed URLs</source>
-        <translation type="vanished">Link trovati</translation>
-    </message>
-    <message>
-        <source>Title</source>
-        <translation type="vanished">Titolo</translation>
-    </message>
-    <message>
-        <source>YouTube Grabber</source>
-        <translation type="vanished">YouTube Grabber</translation>
-    </message>
-    <message>
-        <source>Play</source>
-        <translation type="vanished">Play</translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation type="vanished">Scarica</translation>
-    </message>
-    <message>
-        <source>Grabbing video</source>
-        <translation type="vanished">Download video</translation>
+        <translation>Qualità</translation>
     </message>
 </context>
 </TS>

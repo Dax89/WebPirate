@@ -261,55 +261,47 @@
     <name>BrowserGrabber</name>
     <message>
         <source>Author</source>
-        <translation type="unfinished">Upphovsman</translation>
+        <translation>Upphovsman</translation>
     </message>
     <message>
         <source>Duration</source>
-        <translation type="unfinished">Varaktighet</translation>
+        <translation>Varaktighet</translation>
     </message>
     <message>
         <source>Response</source>
-        <translation type="unfinished"></translation>
+        <translation>Svar</translation>
     </message>
     <message>
         <source>Title</source>
-        <translation type="unfinished"></translation>
+        <translation>Namn</translation>
     </message>
     <message>
         <source>Grabbed URLs</source>
-        <translation type="unfinished">Hämtade URL:er</translation>
+        <translation>Hämtade URL:er</translation>
     </message>
     <message>
         <source>Play</source>
-        <translation type="unfinished">Spela upp</translation>
+        <translation>Spela upp</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished">Ladda ner</translation>
+        <translation>Ladda ner</translation>
     </message>
     <message>
         <source>Grabbing video</source>
-        <translation type="unfinished">Hämtar video</translation>
-    </message>
-    <message>
-        <source>Quality</source>
-        <translation type="obsolete">Kvalitet</translation>
+        <translation>Hämtar video</translation>
     </message>
     <message>
         <source>Copy URL</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopiera länk</translation>
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation type="unfinished">Länk kopierad till Urklipp</translation>
+        <translation>Länk kopierad till Urklipp</translation>
     </message>
 </context>
 <context>
     <name>BrowserTab</name>
-    <message>
-        <source>Load Error</source>
-        <translation type="vanished">Läsfel</translation>
-    </message>
     <message>
         <source>New Tab</source>
         <translation>Ny flik</translation>
@@ -565,14 +557,7 @@
     </message>
     <message>
         <source>Add to Quick Grid</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>FindTextBar</name>
-    <message>
-        <source>Search</source>
-        <translation type="vanished">Sök</translation>
+        <translation>Lägg till i snabbstartfältet</translation>
     </message>
 </context>
 <context>
@@ -783,7 +768,7 @@
     <name>QueryBar</name>
     <message>
         <source>Search with</source>
-        <translation type="unfinished">Sök med</translation>
+        <translation>Sök med</translation>
     </message>
 </context>
 <context>
@@ -856,12 +841,8 @@
 <context>
     <name>SearchBar</name>
     <message>
-        <source>Search with</source>
-        <translation type="vanished">Sök med</translation>
-    </message>
-    <message>
         <source>Search</source>
-        <translation type="unfinished">Sök</translation>
+        <translation>Sök</translation>
     </message>
 </context>
 <context>
@@ -1008,30 +989,30 @@
     </message>
     <message>
         <source>Long press to edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Långtryck för att redigera</translation>
     </message>
 </context>
 <context>
     <name>TabMenu</name>
     <message>
         <source>Add to Quick Grid</source>
-        <translation type="unfinished"></translation>
+        <translation>Lägg till i snabbstartfältet</translation>
     </message>
     <message>
         <source>Duplicate Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopiera flik</translation>
     </message>
     <message>
         <source>Duplicate Tab in Background</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopiera flik i bakgrunden</translation>
     </message>
     <message>
         <source>Close Tab</source>
-        <translation type="unfinished">Stäng flik</translation>
+        <translation>Stäng flik</translation>
     </message>
     <message>
         <source>Close other Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Stäng alla andra flikar</translation>
     </message>
 </context>
 <context>
@@ -1045,92 +1026,18 @@
     <name>WebViewListener</name>
     <message>
         <source>FAILED</source>
-        <translation type="unfinished"></translation>
+        <translation>MISSLYCKADES</translation>
     </message>
     <message>
         <source>Codec</source>
-        <translation type="unfinished"></translation>
+        <translation>Kodek</translation>
     </message>
 </context>
 <context>
     <name>YouTubeGrabber</name>
     <message>
         <source>Quality</source>
-        <translation type="unfinished">Kvalitet</translation>
-    </message>
-</context>
-<context>
-    <name>YouTubeSettings</name>
-    <message>
-        <source>YouTube Grabber</source>
-        <translation type="obsolete">YouTube-hämtare</translation>
-    </message>
-    <message>
-        <source>Author</source>
-        <translation type="obsolete">Upphovsman</translation>
-    </message>
-    <message>
-        <source>Duration</source>
-        <translation type="obsolete">Varaktighet</translation>
-    </message>
-    <message>
-        <source>Grabbed URLs</source>
-        <translation type="obsolete">Hämtade URL:er</translation>
-    </message>
-    <message>
-        <source>Play</source>
-        <translation type="obsolete">Spela upp</translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation type="obsolete">Ladda ner</translation>
-    </message>
-    <message>
-        <source>Grabbing video</source>
-        <translation type="obsolete">Hämtar video</translation>
-    </message>
-    <message>
-        <source>Quality</source>
-        <translation type="obsolete">Kvalitet</translation>
-    </message>
-</context>
-<context>
-    <name>YouTubeSettingsPage</name>
-    <message>
-        <source>Author</source>
-        <translation type="vanished">Upphovsman</translation>
-    </message>
-    <message>
-        <source>Duration</source>
-        <translation type="vanished">Varaktighet</translation>
-    </message>
-    <message>
-        <source>Quality</source>
-        <translation type="vanished">Kvalitet</translation>
-    </message>
-    <message>
-        <source>Grabbed URLs</source>
-        <translation type="vanished">Hämtade URL:er</translation>
-    </message>
-    <message>
-        <source>Title</source>
-        <translation type="vanished">Titel</translation>
-    </message>
-    <message>
-        <source>YouTube Grabber</source>
-        <translation type="vanished">YouTube-hämtare</translation>
-    </message>
-    <message>
-        <source>Play</source>
-        <translation type="vanished">Spela upp</translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation type="vanished">Ladda ner</translation>
-    </message>
-    <message>
-        <source>Grabbing video</source>
-        <translation type="vanished">Hämtar video</translation>
+        <translation>Kvalitet</translation>
     </message>
 </context>
 </TS>

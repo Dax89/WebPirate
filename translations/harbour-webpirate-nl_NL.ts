@@ -9,7 +9,7 @@
     </message>
     <message>
         <source>Catalan</source>
-        <translation>Cataleens</translation>
+        <translation>Catalaans</translation>
     </message>
     <message>
         <source>Chinese</source>
@@ -261,55 +261,47 @@
     <name>BrowserGrabber</name>
     <message>
         <source>Author</source>
-        <translation type="unfinished">Auteur</translation>
+        <translation>Auteur</translation>
     </message>
     <message>
         <source>Duration</source>
-        <translation type="unfinished">Duur</translation>
+        <translation>Duur</translation>
     </message>
     <message>
         <source>Response</source>
-        <translation type="unfinished"></translation>
+        <translation>Antwoord</translation>
     </message>
     <message>
         <source>Title</source>
-        <translation type="unfinished">Titel</translation>
+        <translation>Titel</translation>
     </message>
     <message>
         <source>Grabbed URLs</source>
-        <translation type="unfinished">Gegrepen URLs</translation>
+        <translation>Gegrepen URLs</translation>
     </message>
     <message>
         <source>Play</source>
-        <translation type="unfinished">Afspelen</translation>
+        <translation>Afspelen</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished"></translation>
+        <translation>Downloaden</translation>
     </message>
     <message>
         <source>Grabbing video</source>
-        <translation type="unfinished">Bezig met grijpen van video</translation>
-    </message>
-    <message>
-        <source>Quality</source>
-        <translation type="obsolete">Kwaliteit</translation>
+        <translation>Bezig met grijpen van video</translation>
     </message>
     <message>
         <source>Copy URL</source>
-        <translation type="unfinished"></translation>
+        <translation>URL kopiëren</translation>
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation type="unfinished">Link gekopieerd naar klembord</translation>
+        <translation>Link gekopieerd naar klembord</translation>
     </message>
 </context>
 <context>
     <name>BrowserTab</name>
-    <message>
-        <source>Load Error</source>
-        <translation type="vanished">Fout bij laden</translation>
-    </message>
     <message>
         <source>New Tab</source>
         <translation>Nieuw tabblad</translation>
@@ -565,14 +557,7 @@
     </message>
     <message>
         <source>Add to Quick Grid</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>FindTextBar</name>
-    <message>
-        <source>Search</source>
-        <translation type="vanished">Zoeken</translation>
+        <translation>Toevoegen aan snelkiezer</translation>
     </message>
 </context>
 <context>
@@ -783,7 +768,7 @@
     <name>QueryBar</name>
     <message>
         <source>Search with</source>
-        <translation type="unfinished">Zoeken met</translation>
+        <translation>Zoeken met</translation>
     </message>
 </context>
 <context>
@@ -856,12 +841,8 @@
 <context>
     <name>SearchBar</name>
     <message>
-        <source>Search with</source>
-        <translation type="vanished">Zoeken met</translation>
-    </message>
-    <message>
         <source>Search</source>
-        <translation type="unfinished">Zoeken</translation>
+        <translation>Zoeken</translation>
     </message>
 </context>
 <context>
@@ -1008,30 +989,30 @@
     </message>
     <message>
         <source>Long press to edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Lang ingedrukt houden om te bewerken</translation>
     </message>
 </context>
 <context>
     <name>TabMenu</name>
     <message>
         <source>Add to Quick Grid</source>
-        <translation type="unfinished"></translation>
+        <translation>Toevoegen aan snelkiezer</translation>
     </message>
     <message>
         <source>Duplicate Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Tabblad dupliceren</translation>
     </message>
     <message>
         <source>Duplicate Tab in Background</source>
-        <translation type="unfinished"></translation>
+        <translation>Tabblad dupliceren op achtergrond</translation>
     </message>
     <message>
         <source>Close Tab</source>
-        <translation type="unfinished">Tabblad sluiten</translation>
+        <translation>Tabblad sluiten</translation>
     </message>
     <message>
         <source>Close other Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Andere tabbladen sluiten</translation>
     </message>
 </context>
 <context>
@@ -1045,92 +1026,18 @@
     <name>WebViewListener</name>
     <message>
         <source>FAILED</source>
-        <translation type="unfinished"></translation>
+        <translation>MISLUKT</translation>
     </message>
     <message>
         <source>Codec</source>
-        <translation type="unfinished"></translation>
+        <translation>Codec</translation>
     </message>
 </context>
 <context>
     <name>YouTubeGrabber</name>
     <message>
         <source>Quality</source>
-        <translation type="unfinished">Kwaliteit</translation>
-    </message>
-</context>
-<context>
-    <name>YouTubeSettings</name>
-    <message>
-        <source>YouTube Grabber</source>
-        <translation type="obsolete">YouTube-grijper</translation>
-    </message>
-    <message>
-        <source>Author</source>
-        <translation type="obsolete">Auteur</translation>
-    </message>
-    <message>
-        <source>Duration</source>
-        <translation type="obsolete">Duur</translation>
-    </message>
-    <message>
-        <source>Title</source>
-        <translation type="obsolete">Titel</translation>
-    </message>
-    <message>
-        <source>Grabbed URLs</source>
-        <translation type="obsolete">Gegrepen URLs</translation>
-    </message>
-    <message>
-        <source>Play</source>
-        <translation type="obsolete">Afspelen</translation>
-    </message>
-    <message>
-        <source>Grabbing video</source>
-        <translation type="obsolete">Bezig met grijpen van video</translation>
-    </message>
-    <message>
-        <source>Quality</source>
-        <translation type="obsolete">Kwaliteit</translation>
-    </message>
-</context>
-<context>
-    <name>YouTubeSettingsPage</name>
-    <message>
-        <source>Author</source>
-        <translation type="vanished">Auteur</translation>
-    </message>
-    <message>
-        <source>Duration</source>
-        <translation type="vanished">Duur</translation>
-    </message>
-    <message>
-        <source>Quality</source>
-        <translation type="vanished">Kwaliteit</translation>
-    </message>
-    <message>
-        <source>Grabbed URLs</source>
-        <translation type="vanished">Gegrepen URLs</translation>
-    </message>
-    <message>
-        <source>Title</source>
-        <translation type="vanished">Titel</translation>
-    </message>
-    <message>
-        <source>YouTube Grabber</source>
-        <translation type="vanished">YouTube-grijper</translation>
-    </message>
-    <message>
-        <source>Play</source>
-        <translation type="vanished">Afspelen</translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation type="vanished">Downloaden</translation>
-    </message>
-    <message>
-        <source>Grabbing video</source>
-        <translation type="vanished">Bezig met grijpen van video</translation>
+        <translation>Kwaliteit</translation>
     </message>
 </context>
 </TS>

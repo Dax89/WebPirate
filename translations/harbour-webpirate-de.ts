@@ -41,7 +41,7 @@
     </message>
     <message>
         <source>A tabbed Web Browser for SailfishOS based on WebKit</source>
-        <translation>Web Browser mit Registernavigation für SailfishOS, basierend auf WebKit</translation>
+        <translation>Internet Browser mit Tab-Navigation, basierend auf WebKit</translation>
     </message>
     <message>
         <source>Developer</source>
@@ -128,7 +128,7 @@
     </message>
     <message>
         <source>Ad Block</source>
-        <translation>AdBlock</translation>
+        <translation>Werbeblocker</translation>
     </message>
     <message>
         <source>Navigation History</source>
@@ -261,55 +261,47 @@
     <name>BrowserGrabber</name>
     <message>
         <source>Author</source>
-        <translation type="unfinished">Verfasser</translation>
+        <translation>Autor</translation>
     </message>
     <message>
         <source>Duration</source>
-        <translation type="unfinished">Dauer</translation>
+        <translation>Wiedergabedauer</translation>
     </message>
     <message>
         <source>Response</source>
-        <translation type="unfinished"></translation>
+        <translation>Reaktion</translation>
     </message>
     <message>
         <source>Title</source>
-        <translation type="unfinished">Titel</translation>
+        <translation>Titel</translation>
     </message>
     <message>
         <source>Grabbed URLs</source>
-        <translation type="unfinished">Erfasste URLs</translation>
+        <translation>Erfasste URLs</translation>
     </message>
     <message>
         <source>Play</source>
-        <translation type="unfinished">Abspielen</translation>
+        <translation>Abspielen</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished">Herunterladen</translation>
+        <translation>Download</translation>
     </message>
     <message>
         <source>Grabbing video</source>
-        <translation type="unfinished">Video wird erfasst</translation>
-    </message>
-    <message>
-        <source>Quality</source>
-        <translation type="obsolete">Qualität</translation>
+        <translation>Video wird erfasst</translation>
     </message>
     <message>
         <source>Copy URL</source>
-        <translation type="unfinished"></translation>
+        <translation>URL kopieren</translation>
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation type="unfinished">Link in Zwischenablage kopiert</translation>
+        <translation>Link wurde in die Zwischenablage kopiert</translation>
     </message>
 </context>
 <context>
     <name>BrowserTab</name>
-    <message>
-        <source>Load Error</source>
-        <translation type="vanished">Ladefehler</translation>
-    </message>
     <message>
         <source>New Tab</source>
         <translation>Neuer Tab</translation>
@@ -338,7 +330,7 @@
     </message>
     <message>
         <source>Deleting Tab</source>
-        <translation>Tab wird gelöscht</translation>
+        <translation>Lösche Tab</translation>
     </message>
 </context>
 <context>
@@ -353,7 +345,7 @@
     </message>
     <message>
         <source>Deleting Tabs</source>
-        <translation>Tabs werden gelöscht</translation>
+        <translation>Lösche Tabs</translation>
     </message>
 </context>
 <context>
@@ -565,14 +557,7 @@
     </message>
     <message>
         <source>Add to Quick Grid</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>FindTextBar</name>
-    <message>
-        <source>Search</source>
-        <translation type="vanished">Suchen</translation>
+        <translation>Zu Schnellstarter hinzufügen</translation>
     </message>
 </context>
 <context>
@@ -783,7 +768,7 @@
     <name>QueryBar</name>
     <message>
         <source>Search with</source>
-        <translation type="unfinished">Suchen mit</translation>
+        <translation>Suchen mit</translation>
     </message>
 </context>
 <context>
@@ -856,12 +841,8 @@
 <context>
     <name>SearchBar</name>
     <message>
-        <source>Search with</source>
-        <translation type="vanished">Suchen mit</translation>
-    </message>
-    <message>
         <source>Search</source>
-        <translation type="unfinished">Suchen</translation>
+        <translation>Suchen</translation>
     </message>
 </context>
 <context>
@@ -1008,30 +989,30 @@
     </message>
     <message>
         <source>Long press to edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Zum Bearbeiten gedrückt halten</translation>
     </message>
 </context>
 <context>
     <name>TabMenu</name>
     <message>
         <source>Add to Quick Grid</source>
-        <translation type="unfinished"></translation>
+        <translation>Zu Schnellstarter hinzufügen</translation>
     </message>
     <message>
         <source>Duplicate Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Tab duplizieren</translation>
     </message>
     <message>
         <source>Duplicate Tab in Background</source>
-        <translation type="unfinished"></translation>
+        <translation>Tab im Hintergrund duplizieren</translation>
     </message>
     <message>
         <source>Close Tab</source>
-        <translation type="unfinished">Tab schließen</translation>
+        <translation>Tab schließen</translation>
     </message>
     <message>
         <source>Close other Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Andere Tabs schließen</translation>
     </message>
 </context>
 <context>
@@ -1045,96 +1026,18 @@
     <name>WebViewListener</name>
     <message>
         <source>FAILED</source>
-        <translation type="unfinished"></translation>
+        <translation>FEHLGESCHLAGEN</translation>
     </message>
     <message>
         <source>Codec</source>
-        <translation type="unfinished"></translation>
+        <translation>Codec</translation>
     </message>
 </context>
 <context>
     <name>YouTubeGrabber</name>
     <message>
         <source>Quality</source>
-        <translation type="unfinished">Qualität</translation>
-    </message>
-</context>
-<context>
-    <name>YouTubeSettings</name>
-    <message>
-        <source>YouTube Grabber</source>
-        <translation type="obsolete">YouTube Grabber</translation>
-    </message>
-    <message>
-        <source>Author</source>
-        <translation type="obsolete">Verfasser</translation>
-    </message>
-    <message>
-        <source>Duration</source>
-        <translation type="obsolete">Dauer</translation>
-    </message>
-    <message>
-        <source>Title</source>
-        <translation type="obsolete">Titel</translation>
-    </message>
-    <message>
-        <source>Grabbed URLs</source>
-        <translation type="obsolete">Erfasste URLs</translation>
-    </message>
-    <message>
-        <source>Play</source>
-        <translation type="obsolete">Abspielen</translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation type="obsolete">Herunterladen</translation>
-    </message>
-    <message>
-        <source>Grabbing video</source>
-        <translation type="obsolete">Video wird erfasst</translation>
-    </message>
-    <message>
-        <source>Quality</source>
-        <translation type="obsolete">Qualität</translation>
-    </message>
-</context>
-<context>
-    <name>YouTubeSettingsPage</name>
-    <message>
-        <source>Author</source>
-        <translation type="vanished">Verfasser</translation>
-    </message>
-    <message>
-        <source>Duration</source>
-        <translation type="vanished">Dauer</translation>
-    </message>
-    <message>
-        <source>Quality</source>
-        <translation type="vanished">Qualität</translation>
-    </message>
-    <message>
-        <source>Grabbed URLs</source>
-        <translation type="vanished">Erfasste URLs</translation>
-    </message>
-    <message>
-        <source>Title</source>
-        <translation type="vanished">Titel</translation>
-    </message>
-    <message>
-        <source>YouTube Grabber</source>
-        <translation type="vanished">YouTube Grabber</translation>
-    </message>
-    <message>
-        <source>Play</source>
-        <translation type="vanished">Abspielen</translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation type="vanished">Herunterladen</translation>
-    </message>
-    <message>
-        <source>Grabbing video</source>
-        <translation type="vanished">Video wird erfasst</translation>
+        <translation>Wiedergabequalität</translation>
     </message>
 </context>
 </TS>

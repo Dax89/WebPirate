@@ -261,55 +261,47 @@
     <name>BrowserGrabber</name>
     <message>
         <source>Author</source>
-        <translation type="unfinished">Autor</translation>
+        <translation>Autor</translation>
     </message>
     <message>
         <source>Duration</source>
-        <translation type="unfinished">Durada</translation>
+        <translation>Durada</translation>
     </message>
     <message>
         <source>Response</source>
-        <translation type="unfinished"></translation>
+        <translation>Resposta</translation>
     </message>
     <message>
         <source>Title</source>
-        <translation type="unfinished">Títol</translation>
+        <translation>Títol</translation>
     </message>
     <message>
         <source>Grabbed URLs</source>
-        <translation type="unfinished">URLs capturades</translation>
+        <translation>URLs capturades</translation>
     </message>
     <message>
         <source>Play</source>
-        <translation type="unfinished">Reprodueix</translation>
+        <translation>Reprodueix</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished">Descarrega</translation>
+        <translation>Descarrega</translation>
     </message>
     <message>
         <source>Grabbing video</source>
-        <translation type="unfinished">S&apos;està capturant el vídeo</translation>
-    </message>
-    <message>
-        <source>Quality</source>
-        <translation type="obsolete">Qualitat</translation>
+        <translation>S&apos;està capturant el vídeo</translation>
     </message>
     <message>
         <source>Copy URL</source>
-        <translation type="unfinished"></translation>
+        <translation>Copia la URL</translation>
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation type="unfinished">S&apos;ha copiat l&apos;enllaç al porta-retalls</translation>
+        <translation>S&apos;ha copiat l&apos;enllaç al porta-retalls</translation>
     </message>
 </context>
 <context>
     <name>BrowserTab</name>
-    <message>
-        <source>Load Error</source>
-        <translation type="vanished">Error de càrrega</translation>
-    </message>
     <message>
         <source>New Tab</source>
         <translation>Nova pestanya</translation>
@@ -565,14 +557,7 @@
     </message>
     <message>
         <source>Add to Quick Grid</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>FindTextBar</name>
-    <message>
-        <source>Search</source>
-        <translation type="vanished">Cerca</translation>
+        <translation>Afegeix a la reixeta ràpida</translation>
     </message>
 </context>
 <context>
@@ -783,7 +768,7 @@
     <name>QueryBar</name>
     <message>
         <source>Search with</source>
-        <translation type="unfinished">Cerca amb</translation>
+        <translation>Cerca amb</translation>
     </message>
 </context>
 <context>
@@ -856,12 +841,8 @@
 <context>
     <name>SearchBar</name>
     <message>
-        <source>Search with</source>
-        <translation type="vanished">Cerca amb</translation>
-    </message>
-    <message>
         <source>Search</source>
-        <translation type="unfinished">Cerca</translation>
+        <translation>Cerca</translation>
     </message>
 </context>
 <context>
@@ -1008,30 +989,30 @@
     </message>
     <message>
         <source>Long press to edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Mantingueu premut per editar</translation>
     </message>
 </context>
 <context>
     <name>TabMenu</name>
     <message>
         <source>Add to Quick Grid</source>
-        <translation type="unfinished"></translation>
+        <translation>Afegeix a la reixeta ràpida</translation>
     </message>
     <message>
         <source>Duplicate Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Clona la pestanya</translation>
     </message>
     <message>
         <source>Duplicate Tab in Background</source>
-        <translation type="unfinished"></translation>
+        <translation>Clona la pestanya a un segon pla</translation>
     </message>
     <message>
         <source>Close Tab</source>
-        <translation type="unfinished">Tanca la pestanya</translation>
+        <translation>Tanca la pestanya</translation>
     </message>
     <message>
         <source>Close other Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Tanca les altres pestanyes</translation>
     </message>
 </context>
 <context>
@@ -1045,96 +1026,18 @@
     <name>WebViewListener</name>
     <message>
         <source>FAILED</source>
-        <translation type="unfinished"></translation>
+        <translation>ERRONI</translation>
     </message>
     <message>
         <source>Codec</source>
-        <translation type="unfinished"></translation>
+        <translation>Còdec</translation>
     </message>
 </context>
 <context>
     <name>YouTubeGrabber</name>
     <message>
         <source>Quality</source>
-        <translation type="unfinished">Qualitat</translation>
-    </message>
-</context>
-<context>
-    <name>YouTubeSettings</name>
-    <message>
-        <source>YouTube Grabber</source>
-        <translation type="obsolete">Capturador de YouTube</translation>
-    </message>
-    <message>
-        <source>Author</source>
-        <translation type="obsolete">Autor</translation>
-    </message>
-    <message>
-        <source>Duration</source>
-        <translation type="obsolete">Durada</translation>
-    </message>
-    <message>
-        <source>Title</source>
-        <translation type="obsolete">Títol</translation>
-    </message>
-    <message>
-        <source>Grabbed URLs</source>
-        <translation type="obsolete">URLs capturades</translation>
-    </message>
-    <message>
-        <source>Play</source>
-        <translation type="obsolete">Reprodueix</translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation type="obsolete">Descarrega</translation>
-    </message>
-    <message>
-        <source>Grabbing video</source>
-        <translation type="obsolete">S&apos;està capturant el vídeo</translation>
-    </message>
-    <message>
-        <source>Quality</source>
-        <translation type="obsolete">Qualitat</translation>
-    </message>
-</context>
-<context>
-    <name>YouTubeSettingsPage</name>
-    <message>
-        <source>Author</source>
-        <translation type="vanished">Autor</translation>
-    </message>
-    <message>
-        <source>Duration</source>
-        <translation type="vanished">Durada</translation>
-    </message>
-    <message>
-        <source>Quality</source>
-        <translation type="vanished">Qualitat</translation>
-    </message>
-    <message>
-        <source>Grabbed URLs</source>
-        <translation type="vanished">URLs capturades</translation>
-    </message>
-    <message>
-        <source>Title</source>
-        <translation type="vanished">Títol</translation>
-    </message>
-    <message>
-        <source>YouTube Grabber</source>
-        <translation type="vanished">Capturador de YouTube</translation>
-    </message>
-    <message>
-        <source>Play</source>
-        <translation type="vanished">Reprodueix</translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation type="vanished">Descarrega</translation>
-    </message>
-    <message>
-        <source>Grabbing video</source>
-        <translation type="vanished">S&apos;està capturant el vídeo</translation>
+        <translation>Qualitat</translation>
     </message>
 </context>
 </TS>

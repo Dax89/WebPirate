@@ -73,7 +73,7 @@
     </message>
     <message>
         <source>Italian</source>
-        <translation type="unfinished"></translation>
+        <translation>Italian</translation>
     </message>
 </context>
 <context>
@@ -261,11 +261,11 @@
     <name>BrowserGrabber</name>
     <message>
         <source>Author</source>
-        <translation type="unfinished">作者</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Duration</source>
-        <translation type="unfinished">长度</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Response</source>
@@ -277,11 +277,11 @@
     </message>
     <message>
         <source>Grabbed URLs</source>
-        <translation type="unfinished">抓取到的URL</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Play</source>
-        <translation type="unfinished">播放</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Download</source>
@@ -289,11 +289,7 @@
     </message>
     <message>
         <source>Grabbing video</source>
-        <translation type="unfinished">正在抓取视频</translation>
-    </message>
-    <message>
-        <source>Quality</source>
-        <translation type="obsolete">质量</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Copy URL</source>
@@ -306,10 +302,6 @@
 </context>
 <context>
     <name>BrowserTab</name>
-    <message>
-        <source>Load Error</source>
-        <translation type="vanished">载入错误</translation>
-    </message>
     <message>
         <source>New Tab</source>
         <translation>新标签页</translation>
@@ -569,25 +561,18 @@
     </message>
 </context>
 <context>
-    <name>FindTextBar</name>
-    <message>
-        <source>Search</source>
-        <translation type="vanished">搜索</translation>
-    </message>
-</context>
-<context>
     <name>FormResubmitDialog</name>
     <message>
         <source>This page contains information written by you: do you want to resend the data?</source>
-        <translation type="unfinished"></translation>
+        <translation>这个页面包含了你之前输入的信息，重新发送数据？</translation>
     </message>
     <message>
         <source>Yes</source>
-        <translation type="unfinished">是</translation>
+        <translation>是</translation>
     </message>
     <message>
         <source>No</source>
-        <translation type="unfinished">否</translation>
+        <translation>否</translation>
     </message>
 </context>
 <context>
@@ -641,7 +626,7 @@
     </message>
     <message>
         <source>Open New Tab in Background</source>
-        <translation type="unfinished"></translation>
+        <translation>在后台打开新标签页</translation>
     </message>
 </context>
 <context>
@@ -783,7 +768,7 @@
     <name>QueryBar</name>
     <message>
         <source>Search with</source>
-        <translation type="unfinished">搜索</translation>
+        <translation>搜索</translation>
     </message>
 </context>
 <context>
@@ -856,12 +841,8 @@
 <context>
     <name>SearchBar</name>
     <message>
-        <source>Search with</source>
-        <translation type="vanished">搜索</translation>
-    </message>
-    <message>
         <source>Search</source>
-        <translation type="unfinished">搜索</translation>
+        <translation>搜索</translation>
     </message>
 </context>
 <context>
@@ -1056,85 +1037,7 @@
     <name>YouTubeGrabber</name>
     <message>
         <source>Quality</source>
-        <translation type="unfinished">质量</translation>
-    </message>
-</context>
-<context>
-    <name>YouTubeSettings</name>
-    <message>
-        <source>YouTube Grabber</source>
-        <translation type="obsolete">YouTube抓取器</translation>
-    </message>
-    <message>
-        <source>Author</source>
-        <translation type="obsolete">作者</translation>
-    </message>
-    <message>
-        <source>Duration</source>
-        <translation type="obsolete">长度</translation>
-    </message>
-    <message>
-        <source>Title</source>
-        <translation type="obsolete">标题</translation>
-    </message>
-    <message>
-        <source>Grabbed URLs</source>
-        <translation type="obsolete">抓取到的URL</translation>
-    </message>
-    <message>
-        <source>Play</source>
-        <translation type="obsolete">播放</translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation type="obsolete">下载</translation>
-    </message>
-    <message>
-        <source>Grabbing video</source>
-        <translation type="obsolete">正在抓取视频</translation>
-    </message>
-    <message>
-        <source>Quality</source>
-        <translation type="obsolete">质量</translation>
-    </message>
-</context>
-<context>
-    <name>YouTubeSettingsPage</name>
-    <message>
-        <source>Author</source>
-        <translation type="vanished">作者</translation>
-    </message>
-    <message>
-        <source>Duration</source>
-        <translation type="vanished">长度</translation>
-    </message>
-    <message>
-        <source>Quality</source>
-        <translation type="vanished">质量</translation>
-    </message>
-    <message>
-        <source>Grabbed URLs</source>
-        <translation type="vanished">抓取到的URL</translation>
-    </message>
-    <message>
-        <source>Title</source>
-        <translation type="vanished">标题</translation>
-    </message>
-    <message>
-        <source>YouTube Grabber</source>
-        <translation type="vanished">YouTube抓取器</translation>
-    </message>
-    <message>
-        <source>Play</source>
-        <translation type="vanished">播放</translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation type="vanished">下载</translation>
-    </message>
-    <message>
-        <source>Grabbing video</source>
-        <translation type="vanished">正在抓取视频</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

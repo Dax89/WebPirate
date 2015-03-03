@@ -155,7 +155,7 @@
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished">Stáhnout</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ready</source>
@@ -261,11 +261,11 @@
     <name>BrowserGrabber</name>
     <message>
         <source>Author</source>
-        <translation type="unfinished">Autor</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Duration</source>
-        <translation type="unfinished">Doba trvání</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Response</source>
@@ -277,23 +277,19 @@
     </message>
     <message>
         <source>Grabbed URLs</source>
-        <translation type="unfinished">Získané adresy</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Play</source>
-        <translation type="unfinished">Přehrát</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished">Stáhnout</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Grabbing video</source>
-        <translation type="unfinished">Získávání videa</translation>
-    </message>
-    <message>
-        <source>Quality</source>
-        <translation type="obsolete">Kvalita</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Copy URL</source>
@@ -306,10 +302,6 @@
 </context>
 <context>
     <name>BrowserTab</name>
-    <message>
-        <source>Load Error</source>
-        <translation type="vanished">Chyba načítání</translation>
-    </message>
     <message>
         <source>New Tab</source>
         <translation>Nový panel</translation>
@@ -569,13 +561,6 @@
     </message>
 </context>
 <context>
-    <name>FindTextBar</name>
-    <message>
-        <source>Search</source>
-        <translation type="vanished">Hledat</translation>
-    </message>
-</context>
-<context>
     <name>FormResubmitDialog</name>
     <message>
         <source>This page contains information written by you: do you want to resend the data?</source>
@@ -783,7 +768,7 @@
     <name>QueryBar</name>
     <message>
         <source>Search with</source>
-        <translation type="unfinished">Hledat přes</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -855,10 +840,6 @@
 </context>
 <context>
     <name>SearchBar</name>
-    <message>
-        <source>Search with</source>
-        <translation type="vanished">Hledat přes</translation>
-    </message>
     <message>
         <source>Search</source>
         <translation type="unfinished">Hledat</translation>
@@ -1056,85 +1037,7 @@
     <name>YouTubeGrabber</name>
     <message>
         <source>Quality</source>
-        <translation type="unfinished">Kvalita</translation>
-    </message>
-</context>
-<context>
-    <name>YouTubeSettings</name>
-    <message>
-        <source>YouTube Grabber</source>
-        <translation type="obsolete">YouTube pomocník</translation>
-    </message>
-    <message>
-        <source>Author</source>
-        <translation type="obsolete">Autor</translation>
-    </message>
-    <message>
-        <source>Duration</source>
-        <translation type="obsolete">Doba trvání</translation>
-    </message>
-    <message>
-        <source>Title</source>
-        <translation type="obsolete">Název</translation>
-    </message>
-    <message>
-        <source>Grabbed URLs</source>
-        <translation type="obsolete">Získané adresy</translation>
-    </message>
-    <message>
-        <source>Play</source>
-        <translation type="obsolete">Přehrát</translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation type="obsolete">Stáhnout</translation>
-    </message>
-    <message>
-        <source>Grabbing video</source>
-        <translation type="obsolete">Získávání videa</translation>
-    </message>
-    <message>
-        <source>Quality</source>
-        <translation type="obsolete">Kvalita</translation>
-    </message>
-</context>
-<context>
-    <name>YouTubeSettingsPage</name>
-    <message>
-        <source>Author</source>
-        <translation type="vanished">Autor</translation>
-    </message>
-    <message>
-        <source>Duration</source>
-        <translation type="vanished">Doba trvání</translation>
-    </message>
-    <message>
-        <source>Quality</source>
-        <translation type="vanished">Kvalita</translation>
-    </message>
-    <message>
-        <source>Grabbed URLs</source>
-        <translation type="vanished">Získané adresy</translation>
-    </message>
-    <message>
-        <source>Title</source>
-        <translation type="vanished">Název</translation>
-    </message>
-    <message>
-        <source>YouTube Grabber</source>
-        <translation type="vanished">YouTube pomocník</translation>
-    </message>
-    <message>
-        <source>Play</source>
-        <translation type="vanished">Přehrát</translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation type="vanished">Stáhnout</translation>
-    </message>
-    <message>
-        <source>Grabbing video</source>
-        <translation type="vanished">Získávání videa</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

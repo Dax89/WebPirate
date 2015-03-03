@@ -73,7 +73,7 @@
     </message>
     <message>
         <source>Italian</source>
-        <translation type="unfinished"></translation>
+        <translation>Italien</translation>
     </message>
 </context>
 <context>
@@ -254,18 +254,18 @@
     </message>
     <message>
         <source>Deleting rule</source>
-        <translation type="unfinished"></translation>
+        <translation>Supprimer la règle</translation>
     </message>
 </context>
 <context>
     <name>BrowserGrabber</name>
     <message>
         <source>Author</source>
-        <translation type="unfinished">Auteur</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Duration</source>
-        <translation type="unfinished">Durée</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Response</source>
@@ -277,11 +277,11 @@
     </message>
     <message>
         <source>Grabbed URLs</source>
-        <translation type="unfinished">URLs capturés</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Play</source>
-        <translation type="unfinished">Lire</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Download</source>
@@ -289,11 +289,7 @@
     </message>
     <message>
         <source>Grabbing video</source>
-        <translation type="unfinished">Capture Vidéo en cours</translation>
-    </message>
-    <message>
-        <source>Quality</source>
-        <translation type="obsolete">Qualité</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Copy URL</source>
@@ -306,10 +302,6 @@
 </context>
 <context>
     <name>BrowserTab</name>
-    <message>
-        <source>Load Error</source>
-        <translation type="vanished">Erreur de chargement</translation>
-    </message>
     <message>
         <source>New Tab</source>
         <translation>Nouvel onglet</translation>
@@ -569,25 +561,18 @@
     </message>
 </context>
 <context>
-    <name>FindTextBar</name>
-    <message>
-        <source>Search</source>
-        <translation type="vanished">Rechercher</translation>
-    </message>
-</context>
-<context>
     <name>FormResubmitDialog</name>
     <message>
         <source>This page contains information written by you: do you want to resend the data?</source>
-        <translation type="unfinished"></translation>
+        <translation>Cette page contient des informations que vous avez écrit: voulez-vous renvoyer les données ?</translation>
     </message>
     <message>
         <source>Yes</source>
-        <translation type="unfinished">Oui</translation>
+        <translation>Oui</translation>
     </message>
     <message>
         <source>No</source>
-        <translation type="unfinished">Non</translation>
+        <translation>Non</translation>
     </message>
 </context>
 <context>
@@ -641,7 +626,7 @@
     </message>
     <message>
         <source>Open New Tab in Background</source>
-        <translation type="unfinished"></translation>
+        <translation>Ouvrir un nouvel onglet en arrière-plan</translation>
     </message>
 </context>
 <context>
@@ -712,7 +697,7 @@
     </message>
     <message>
         <source>Allow</source>
-        <translation type="unfinished">Autoriser</translation>
+        <translation>Autoriser</translation>
     </message>
     <message>
         <source>Block</source>
@@ -734,11 +719,11 @@
     <name>PopupItem</name>
     <message>
         <source>Rule</source>
-        <translation type="unfinished">Règle</translation>
+        <translation>Règle</translation>
     </message>
     <message>
         <source>Allow</source>
-        <translation type="unfinished">Autoriser</translation>
+        <translation>Autoriser</translation>
     </message>
     <message>
         <source>Block</source>
@@ -750,26 +735,26 @@
     </message>
     <message>
         <source>Deleting rule</source>
-        <translation type="unfinished"></translation>
+        <translation>Supprimer la règle</translation>
     </message>
 </context>
 <context>
     <name>PopupManagerPage</name>
     <message>
         <source>Popup Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Gestionnaire de Popup</translation>
     </message>
     <message>
         <source>Delete Rules</source>
-        <translation type="unfinished"></translation>
+        <translation>Supprimer les règles</translation>
     </message>
     <message>
         <source>Deleting rules</source>
-        <translation type="unfinished"></translation>
+        <translation>Suppression de règles</translation>
     </message>
     <message>
         <source>New Rule</source>
-        <translation type="unfinished"></translation>
+        <translation>Nouvelle règle</translation>
     </message>
 </context>
 <context>
@@ -783,7 +768,7 @@
     <name>QueryBar</name>
     <message>
         <source>Search with</source>
-        <translation type="unfinished">Rechercher avec</translation>
+        <translation>Rechercher avec</translation>
     </message>
 </context>
 <context>
@@ -856,12 +841,8 @@
 <context>
     <name>SearchBar</name>
     <message>
-        <source>Search with</source>
-        <translation type="vanished">Rechercher avec</translation>
-    </message>
-    <message>
         <source>Search</source>
-        <translation type="unfinished">Rechercher</translation>
+        <translation>Rechercher</translation>
     </message>
 </context>
 <context>
@@ -1008,7 +989,7 @@
     </message>
     <message>
         <source>Long press to edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Appui long pour modifier</translation>
     </message>
 </context>
 <context>
@@ -1056,85 +1037,7 @@
     <name>YouTubeGrabber</name>
     <message>
         <source>Quality</source>
-        <translation type="unfinished">Qualité</translation>
-    </message>
-</context>
-<context>
-    <name>YouTubeSettings</name>
-    <message>
-        <source>YouTube Grabber</source>
-        <translation type="obsolete">Capture YouTube</translation>
-    </message>
-    <message>
-        <source>Author</source>
-        <translation type="obsolete">Auteur</translation>
-    </message>
-    <message>
-        <source>Duration</source>
-        <translation type="obsolete">Durée</translation>
-    </message>
-    <message>
-        <source>Title</source>
-        <translation type="obsolete">Titre</translation>
-    </message>
-    <message>
-        <source>Grabbed URLs</source>
-        <translation type="obsolete">URLs capturés</translation>
-    </message>
-    <message>
-        <source>Play</source>
-        <translation type="obsolete">Lire</translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation type="obsolete">Télécharger</translation>
-    </message>
-    <message>
-        <source>Grabbing video</source>
-        <translation type="obsolete">Capture Vidéo en cours</translation>
-    </message>
-    <message>
-        <source>Quality</source>
-        <translation type="obsolete">Qualité</translation>
-    </message>
-</context>
-<context>
-    <name>YouTubeSettingsPage</name>
-    <message>
-        <source>Author</source>
-        <translation type="vanished">Auteur</translation>
-    </message>
-    <message>
-        <source>Duration</source>
-        <translation type="vanished">Durée</translation>
-    </message>
-    <message>
-        <source>Quality</source>
-        <translation type="vanished">Qualité</translation>
-    </message>
-    <message>
-        <source>Grabbed URLs</source>
-        <translation type="vanished">URLs capturés</translation>
-    </message>
-    <message>
-        <source>Title</source>
-        <translation type="vanished">Titre</translation>
-    </message>
-    <message>
-        <source>YouTube Grabber</source>
-        <translation type="vanished">Capture YouTube</translation>
-    </message>
-    <message>
-        <source>Play</source>
-        <translation type="vanished">Lire</translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation type="vanished">Télécharger</translation>
-    </message>
-    <message>
-        <source>Grabbing video</source>
-        <translation type="vanished">Capture Vidéo en cours</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

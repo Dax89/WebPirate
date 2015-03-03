@@ -140,7 +140,7 @@
     </message>
     <message>
         <source>Popup Blocker</source>
-        <translation>Bloqueador de ventanas emergentes</translation>
+        <translation>Bloqueador de popup</translation>
     </message>
 </context>
 <context>
@@ -261,11 +261,11 @@
     <name>BrowserGrabber</name>
     <message>
         <source>Author</source>
-        <translation type="unfinished">Autor</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Duration</source>
-        <translation type="unfinished">Duración</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Response</source>
@@ -277,11 +277,11 @@
     </message>
     <message>
         <source>Grabbed URLs</source>
-        <translation type="unfinished">URLs capturadas</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Play</source>
-        <translation type="unfinished">Reproducir</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Download</source>
@@ -289,11 +289,7 @@
     </message>
     <message>
         <source>Grabbing video</source>
-        <translation type="unfinished">Capturando vídeo</translation>
-    </message>
-    <message>
-        <source>Quality</source>
-        <translation type="obsolete">Calidad</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Copy URL</source>
@@ -306,10 +302,6 @@
 </context>
 <context>
     <name>BrowserTab</name>
-    <message>
-        <source>Load Error</source>
-        <translation type="vanished">Error de carga</translation>
-    </message>
     <message>
         <source>New Tab</source>
         <translation>Nueva pestaña</translation>
@@ -569,13 +561,6 @@
     </message>
 </context>
 <context>
-    <name>FindTextBar</name>
-    <message>
-        <source>Search</source>
-        <translation type="vanished">Buscar</translation>
-    </message>
-</context>
-<context>
     <name>FormResubmitDialog</name>
     <message>
         <source>This page contains information written by you: do you want to resend the data?</source>
@@ -724,11 +709,11 @@
     <name>PopupBlockerPage</name>
     <message>
         <source>Popup Blocker</source>
-        <translation>Bloqueador de ventanas emergentes</translation>
+        <translation>Bloqueador de popup</translation>
     </message>
     <message>
         <source>Clear popup list</source>
-        <translation>Limpiar lista de ventanas emergentes</translation>
+        <translation>Limpiar lista de popup</translation>
     </message>
 </context>
 <context>
@@ -758,7 +743,7 @@
     <name>PopupManagerPage</name>
     <message>
         <source>Popup Manager</source>
-        <translation>Gestor de ventanas emergentes</translation>
+        <translation>Gestor de popup</translation>
     </message>
     <message>
         <source>Delete Rules</source>
@@ -784,7 +769,7 @@
     <name>QueryBar</name>
     <message>
         <source>Search with</source>
-        <translation type="unfinished">Buscar con</translation>
+        <translation>Buscar con</translation>
     </message>
 </context>
 <context>
@@ -857,12 +842,8 @@
 <context>
     <name>SearchBar</name>
     <message>
-        <source>Search with</source>
-        <translation type="vanished">Buscar con</translation>
-    </message>
-    <message>
         <source>Search</source>
-        <translation type="unfinished">Buscar</translation>
+        <translation>Buscar</translation>
     </message>
 </context>
 <context>
@@ -1009,7 +990,7 @@
     </message>
     <message>
         <source>Long press to edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Mantén pulsado para editar</translation>
     </message>
 </context>
 <context>
@@ -1057,85 +1038,7 @@
     <name>YouTubeGrabber</name>
     <message>
         <source>Quality</source>
-        <translation type="unfinished">Calidad</translation>
-    </message>
-</context>
-<context>
-    <name>YouTubeSettings</name>
-    <message>
-        <source>YouTube Grabber</source>
-        <translation type="obsolete">Capturador de YouTube</translation>
-    </message>
-    <message>
-        <source>Author</source>
-        <translation type="obsolete">Autor</translation>
-    </message>
-    <message>
-        <source>Duration</source>
-        <translation type="obsolete">Duración</translation>
-    </message>
-    <message>
-        <source>Title</source>
-        <translation type="obsolete">Título</translation>
-    </message>
-    <message>
-        <source>Grabbed URLs</source>
-        <translation type="obsolete">URLs capturadas</translation>
-    </message>
-    <message>
-        <source>Play</source>
-        <translation type="obsolete">Reproducir</translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation type="obsolete">Descargar</translation>
-    </message>
-    <message>
-        <source>Grabbing video</source>
-        <translation type="obsolete">Capturando vídeo</translation>
-    </message>
-    <message>
-        <source>Quality</source>
-        <translation type="obsolete">Calidad</translation>
-    </message>
-</context>
-<context>
-    <name>YouTubeSettingsPage</name>
-    <message>
-        <source>Author</source>
-        <translation type="vanished">Autor</translation>
-    </message>
-    <message>
-        <source>Duration</source>
-        <translation type="vanished">Duración</translation>
-    </message>
-    <message>
-        <source>Quality</source>
-        <translation type="vanished">Calidad</translation>
-    </message>
-    <message>
-        <source>Grabbed URLs</source>
-        <translation type="vanished">URLs capturadas</translation>
-    </message>
-    <message>
-        <source>Title</source>
-        <translation type="vanished">Título</translation>
-    </message>
-    <message>
-        <source>YouTube Grabber</source>
-        <translation type="vanished">Capturador de YouTube</translation>
-    </message>
-    <message>
-        <source>Play</source>
-        <translation type="vanished">Reproducir</translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation type="vanished">Descargar</translation>
-    </message>
-    <message>
-        <source>Grabbing video</source>
-        <translation type="vanished">Capturando vídeo</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

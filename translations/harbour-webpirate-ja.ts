@@ -261,11 +261,11 @@
     <name>BrowserGrabber</name>
     <message>
         <source>Author</source>
-        <translation type="unfinished">作者</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Duration</source>
-        <translation type="unfinished">デュレーション</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Response</source>
@@ -277,11 +277,11 @@
     </message>
     <message>
         <source>Grabbed URLs</source>
-        <translation type="unfinished">グラブ済みUrl</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Play</source>
-        <translation type="unfinished">再生</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Download</source>
@@ -289,11 +289,7 @@
     </message>
     <message>
         <source>Grabbing video</source>
-        <translation type="unfinished">ビデオをグラブ中</translation>
-    </message>
-    <message>
-        <source>Quality</source>
-        <translation type="obsolete">画質</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Copy URL</source>
@@ -306,10 +302,6 @@
 </context>
 <context>
     <name>BrowserTab</name>
-    <message>
-        <source>Load Error</source>
-        <translation type="vanished">ロードエラー</translation>
-    </message>
     <message>
         <source>New Tab</source>
         <translation>新しいタブを開く</translation>
@@ -569,13 +561,6 @@
     </message>
 </context>
 <context>
-    <name>FindTextBar</name>
-    <message>
-        <source>Search</source>
-        <translation type="vanished">検索する</translation>
-    </message>
-</context>
-<context>
     <name>FormResubmitDialog</name>
     <message>
         <source>This page contains information written by you: do you want to resend the data?</source>
@@ -783,7 +768,7 @@
     <name>QueryBar</name>
     <message>
         <source>Search with</source>
-        <translation type="unfinished">で検索</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -856,12 +841,8 @@
 <context>
     <name>SearchBar</name>
     <message>
-        <source>Search with</source>
-        <translation type="vanished">で検索</translation>
-    </message>
-    <message>
         <source>Search</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">検索</translation>
     </message>
 </context>
 <context>
@@ -1058,85 +1039,7 @@
     <name>YouTubeGrabber</name>
     <message>
         <source>Quality</source>
-        <translation type="unfinished">画質</translation>
-    </message>
-</context>
-<context>
-    <name>YouTubeSettings</name>
-    <message>
-        <source>YouTube Grabber</source>
-        <translation type="obsolete">ユーチューブグラバー</translation>
-    </message>
-    <message>
-        <source>Author</source>
-        <translation type="obsolete">作者</translation>
-    </message>
-    <message>
-        <source>Duration</source>
-        <translation type="obsolete">デュレーション</translation>
-    </message>
-    <message>
-        <source>Title</source>
-        <translation type="obsolete">タイトル</translation>
-    </message>
-    <message>
-        <source>Grabbed URLs</source>
-        <translation type="obsolete">グラブ済みUrl</translation>
-    </message>
-    <message>
-        <source>Play</source>
-        <translation type="obsolete">再生</translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation type="obsolete">ダウンロード</translation>
-    </message>
-    <message>
-        <source>Grabbing video</source>
-        <translation type="obsolete">ビデオをグラブ中</translation>
-    </message>
-    <message>
-        <source>Quality</source>
-        <translation type="obsolete">画質</translation>
-    </message>
-</context>
-<context>
-    <name>YouTubeSettingsPage</name>
-    <message>
-        <source>Author</source>
-        <translation type="vanished">作者</translation>
-    </message>
-    <message>
-        <source>Duration</source>
-        <translation type="vanished">デュレーション</translation>
-    </message>
-    <message>
-        <source>Quality</source>
-        <translation type="vanished">画質</translation>
-    </message>
-    <message>
-        <source>Grabbed URLs</source>
-        <translation type="vanished">グラブ済みUrl</translation>
-    </message>
-    <message>
-        <source>Title</source>
-        <translation type="vanished">タイトル</translation>
-    </message>
-    <message>
-        <source>YouTube Grabber</source>
-        <translation type="vanished">ユーチューブグラバー</translation>
-    </message>
-    <message>
-        <source>Play</source>
-        <translation type="vanished">再生</translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation type="vanished">ダウンロード</translation>
-    </message>
-    <message>
-        <source>Grabbing video</source>
-        <translation type="vanished">ビデオをグラブ中</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

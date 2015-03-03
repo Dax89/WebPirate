@@ -57,23 +57,23 @@
     </message>
     <message>
         <source>Slovenian</source>
-        <translation type="unfinished"></translation>
+        <translation>Slovensko</translation>
     </message>
     <message>
         <source>Japanese</source>
-        <translation type="unfinished"></translation>
+        <translation>Japonsko</translation>
     </message>
     <message>
         <source>Czech</source>
-        <translation type="unfinished"></translation>
+        <translation>Češko</translation>
     </message>
     <message>
         <source>Spanish</source>
-        <translation type="unfinished"></translation>
+        <translation>Špansko</translation>
     </message>
     <message>
         <source>Italian</source>
-        <translation type="unfinished"></translation>
+        <translation>Italijansko</translation>
     </message>
 </context>
 <context>
@@ -104,157 +104,157 @@
     </message>
     <message>
         <source>Sessions</source>
-        <translation type="unfinished"></translation>
+        <translation>Seje</translation>
     </message>
     <message>
         <source>Save Session</source>
-        <translation type="unfinished"></translation>
+        <translation>Shranjene seje</translation>
     </message>
     <message>
         <source>Load Session</source>
-        <translation type="unfinished"></translation>
+        <translation>Naloži sejo</translation>
     </message>
     <message>
         <source>Cover settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Nastavitve naslovnice</translation>
     </message>
     <message>
         <source>Night Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Nočni način</translation>
     </message>
     <message>
         <source>Extensions</source>
-        <translation type="unfinished"></translation>
+        <translation>Razširitve</translation>
     </message>
     <message>
         <source>Ad Block</source>
-        <translation type="unfinished"></translation>
+        <translation>Ad Block</translation>
     </message>
     <message>
         <source>Navigation History</source>
-        <translation type="unfinished"></translation>
+        <translation>Zgodovina brskanja</translation>
     </message>
     <message>
         <source>Closed Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Zaprti zavihki</translation>
     </message>
     <message>
         <source>Popup Blocker</source>
-        <translation type="unfinished"></translation>
+        <translation>Blokiranje pojavnih oken</translation>
     </message>
 </context>
 <context>
     <name>AdBlockDownloaderPage</name>
     <message>
         <source>AdBlock Updater</source>
-        <translation type="unfinished"></translation>
+        <translation>AdBlock posodobilnik</translation>
     </message>
     <message>
         <source>State</source>
-        <translation type="unfinished"></translation>
+        <translation>Stanje</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished"></translation>
+        <translation>Prenos</translation>
     </message>
     <message>
         <source>Ready</source>
-        <translation type="unfinished"></translation>
+        <translation>Pripravljen</translation>
     </message>
     <message>
         <source>Connecting</source>
-        <translation type="unfinished"></translation>
+        <translation>Povezovanje</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Napaka</translation>
     </message>
     <message>
         <source>Completed</source>
-        <translation type="unfinished">Končano</translation>
+        <translation>Končano</translation>
     </message>
 </context>
 <context>
     <name>AdBlockFilter</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Shrani</translation>
+        <translation>Shrani</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation type="unfinished"></translation>
+        <translation>Filter</translation>
     </message>
 </context>
 <context>
     <name>AdBlockPage</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Shrani</translation>
+        <translation>Shrani</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="unfinished">Uredi</translation>
+        <translation>Uredi</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Izbriši</translation>
+        <translation>Izbriši</translation>
     </message>
     <message>
         <source>Deleting filter</source>
-        <translation type="unfinished"></translation>
+        <translation>Brisanje filtra</translation>
     </message>
     <message>
         <source>Update Filters</source>
-        <translation type="unfinished"></translation>
+        <translation>Posodobi filtre</translation>
     </message>
     <message>
         <source>Add Filter</source>
-        <translation type="unfinished"></translation>
+        <translation>Dodaj filter</translation>
     </message>
 </context>
 <context>
     <name>AlertDialog</name>
     <message>
         <source>Ok</source>
-        <translation type="unfinished"></translation>
+        <translation>OK</translation>
     </message>
 </context>
 <context>
     <name>AuthenticationDialog</name>
     <message>
         <source>Login</source>
-        <translation type="unfinished"></translation>
+        <translation>Prijava</translation>
     </message>
     <message>
         <source>Authentication required</source>
-        <translation type="unfinished"></translation>
+        <translation>Zahtevano je preverjanje pristnosti</translation>
     </message>
     <message>
         <source>requires authentication</source>
-        <translation type="unfinished"></translation>
+        <translation>zahteva preverjanje pristnosti</translation>
     </message>
     <message>
         <source>User</source>
-        <translation type="unfinished"></translation>
+        <translation>Uporabnik</translation>
     </message>
     <message>
         <source>Password</source>
-        <translation type="unfinished"></translation>
+        <translation>Geslo</translation>
     </message>
 </context>
 <context>
     <name>BlockedPopupItem</name>
     <message>
         <source>Allow</source>
-        <translation type="unfinished"></translation>
+        <translation>Dovoli</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Izbriši</translation>
+        <translation>Izbriši</translation>
     </message>
     <message>
         <source>Deleting rule</source>
-        <translation type="unfinished"></translation>
+        <translation>Brisanje pravila</translation>
     </message>
 </context>
 <context>
@@ -285,7 +285,7 @@
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Prenos</translation>
     </message>
     <message>
         <source>Grabbing video</source>
@@ -322,107 +322,107 @@
     <name>ClosedTabItem</name>
     <message>
         <source>Open</source>
-        <translation type="unfinished">Odpri</translation>
+        <translation>Odpri</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Izbriši</translation>
+        <translation>Izbriši</translation>
     </message>
     <message>
         <source>Deleting Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Brisanje zavihka</translation>
     </message>
 </context>
 <context>
     <name>ClosedTabsPage</name>
     <message>
         <source>Closed Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Zaprti zavihki</translation>
     </message>
     <message>
         <source>Delete Closed Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Izbriši zaprte zavihke</translation>
     </message>
     <message>
         <source>Deleting Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Brisanje zavihkov</translation>
     </message>
 </context>
 <context>
     <name>CoverModel</name>
     <message>
         <source>Go to Previous Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Pojdi na prejšnji zavihek</translation>
     </message>
     <message>
         <source>Go to Next Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Pojdi na naslednji zavihek</translation>
     </message>
     <message>
         <source>Add New Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Dodaj nov zavihek</translation>
     </message>
     <message>
         <source>Close Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Zapri zavihek</translation>
     </message>
     <message>
         <source>Load Homepage</source>
-        <translation type="unfinished"></translation>
+        <translation>Naloži domačo stran</translation>
     </message>
     <message>
         <source>Close Browser</source>
-        <translation type="unfinished"></translation>
+        <translation>Zapri brskalnik</translation>
     </message>
     <message>
         <source>Reload Current Page</source>
-        <translation type="unfinished"></translation>
+        <translation>Ponovno naloži trenutno stran</translation>
     </message>
     <message>
         <source>Wipe personal data</source>
-        <translation type="unfinished"></translation>
+        <translation>Počisti osebne podatke</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Iskanje</translation>
     </message>
 </context>
 <context>
     <name>CoverSettingsPage</name>
     <message>
         <source>General Actions</source>
-        <translation type="unfinished"></translation>
+        <translation>Splošne nastavitve</translation>
     </message>
     <message>
         <source>Left</source>
-        <translation type="unfinished"></translation>
+        <translation>Levo</translation>
     </message>
     <message>
         <source>Right</source>
-        <translation type="unfinished"></translation>
+        <translation>Desno</translation>
     </message>
     <message>
         <source>Webpage Actions</source>
-        <translation type="unfinished"></translation>
+        <translation>Dejanja spletne strani</translation>
     </message>
     <message>
         <source>Cover Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Nastavitve naslovnice</translation>
     </message>
 </context>
 <context>
     <name>CredentialDialog</name>
     <message>
         <source>Yes</source>
-        <translation type="unfinished"></translation>
+        <translation>Da</translation>
     </message>
     <message>
         <source>No</source>
-        <translation type="unfinished"></translation>
+        <translation>Ne</translation>
     </message>
     <message>
         <source>Do you want to store the password?</source>
-        <translation type="unfinished"></translation>
+        <translation>Ali želite shraniti geslo?</translation>
     </message>
 </context>
 <context>
@@ -464,7 +464,7 @@
     </message>
     <message>
         <source>New Download</source>
-        <translation type="unfinished"></translation>
+        <translation>Nov prenos</translation>
     </message>
 </context>
 <context>
@@ -522,11 +522,11 @@
     </message>
     <message>
         <source>Delete all Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Izbriši vse zaznamke</translation>
     </message>
     <message>
         <source>Deleting all favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Brisanje vseh zaznamkov</translation>
     </message>
 </context>
 <context>
@@ -549,11 +549,11 @@
     </message>
     <message>
         <source>Open</source>
-        <translation type="unfinished">Odpri</translation>
+        <translation>Odpri</translation>
     </message>
     <message>
         <source>Open in New Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Odpri v novem zavihku</translation>
     </message>
     <message>
         <source>Add to Quick Grid</source>
@@ -564,15 +564,15 @@
     <name>FormResubmitDialog</name>
     <message>
         <source>This page contains information written by you: do you want to resend the data?</source>
-        <translation type="unfinished"></translation>
+        <translation>Stran vsebuje podatke, katere ste vnesli sami. Ali želite ponovno poslati podatke?</translation>
     </message>
     <message>
         <source>Yes</source>
-        <translation type="unfinished"></translation>
+        <translation>Da</translation>
     </message>
     <message>
         <source>No</source>
-        <translation type="unfinished"></translation>
+        <translation>Ne</translation>
     </message>
 </context>
 <context>
@@ -626,7 +626,7 @@
     </message>
     <message>
         <source>Open New Tab in Background</source>
-        <translation type="unfinished"></translation>
+        <translation>Odpri nov zavihek v ozadju</translation>
     </message>
 </context>
 <context>
@@ -640,149 +640,149 @@
     <name>NavigationHistoryItem</name>
     <message>
         <source>Open</source>
-        <translation type="unfinished">Odpri</translation>
+        <translation>Odpri</translation>
     </message>
     <message>
         <source>Open in New Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Odpri v novem zavihku</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Izbriši</translation>
+        <translation>Izbriši</translation>
     </message>
     <message>
         <source>Deleting item</source>
-        <translation type="unfinished"></translation>
+        <translation>Brisanje postavke</translation>
     </message>
 </context>
 <context>
     <name>NavigationHistoryPage</name>
     <message>
         <source>Delete History</source>
-        <translation type="unfinished"></translation>
+        <translation>Izbriši zgodovino</translation>
     </message>
     <message>
         <source>Deleting History</source>
-        <translation type="unfinished"></translation>
+        <translation>Brisanje zgodovine</translation>
     </message>
     <message>
         <source>Navigation History</source>
-        <translation type="unfinished"></translation>
+        <translation>Zgodovina brskanja</translation>
     </message>
 </context>
 <context>
     <name>NewDownloadPage</name>
     <message>
         <source>Start Download</source>
-        <translation type="unfinished"></translation>
+        <translation>Začni prenos</translation>
     </message>
     <message>
         <source>Download Url</source>
-        <translation type="unfinished"></translation>
+        <translation>URL za prenos</translation>
     </message>
 </context>
 <context>
     <name>NewPopupRulePage</name>
     <message>
         <source>Apply Rule</source>
-        <translation type="unfinished"></translation>
+        <translation>Uveljavi pravilo</translation>
     </message>
     <message>
         <source>Url</source>
-        <translation type="unfinished">URL</translation>
+        <translation>URL</translation>
     </message>
     <message>
         <source>Rule</source>
-        <translation type="unfinished"></translation>
+        <translation>Pravilo</translation>
     </message>
     <message>
         <source>Allow</source>
-        <translation type="unfinished"></translation>
+        <translation>Dovoli</translation>
     </message>
     <message>
         <source>Block</source>
-        <translation type="unfinished"></translation>
+        <translation>Blokiraj</translation>
     </message>
 </context>
 <context>
     <name>PopupBlockerPage</name>
     <message>
         <source>Popup Blocker</source>
-        <translation type="unfinished"></translation>
+        <translation>Blokiranje pojavnih oken</translation>
     </message>
     <message>
         <source>Clear popup list</source>
-        <translation type="unfinished"></translation>
+        <translation>Počisti pojavni seznam</translation>
     </message>
 </context>
 <context>
     <name>PopupItem</name>
     <message>
         <source>Rule</source>
-        <translation type="unfinished"></translation>
+        <translation>Pravilo</translation>
     </message>
     <message>
         <source>Allow</source>
-        <translation type="unfinished"></translation>
+        <translation>Dovoli</translation>
     </message>
     <message>
         <source>Block</source>
-        <translation type="unfinished"></translation>
+        <translation>Blokiraj</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Izbriši</translation>
+        <translation>Izbriši</translation>
     </message>
     <message>
         <source>Deleting rule</source>
-        <translation type="unfinished"></translation>
+        <translation>Brisanje pravila</translation>
     </message>
 </context>
 <context>
     <name>PopupManagerPage</name>
     <message>
         <source>Popup Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Upravljanje pojavnih oken</translation>
     </message>
     <message>
         <source>Delete Rules</source>
-        <translation type="unfinished"></translation>
+        <translation>Izbriši pravila</translation>
     </message>
     <message>
         <source>Deleting rules</source>
-        <translation type="unfinished"></translation>
+        <translation>Brisanje pravil</translation>
     </message>
     <message>
         <source>New Rule</source>
-        <translation type="unfinished"></translation>
+        <translation>Novo pravilo</translation>
     </message>
 </context>
 <context>
     <name>PromptDialog</name>
     <message>
         <source>OK</source>
-        <translation type="unfinished"></translation>
+        <translation>OK</translation>
     </message>
 </context>
 <context>
     <name>QueryBar</name>
     <message>
         <source>Search with</source>
-        <translation type="unfinished">Išči z</translation>
+        <translation>Išči z</translation>
     </message>
 </context>
 <context>
     <name>QuickGrid</name>
     <message>
         <source>The QuickGrid is empty</source>
-        <translation type="unfinished"></translation>
+        <translation>QuickGrid je prazen</translation>
     </message>
 </context>
 <context>
     <name>QuickGridItem</name>
     <message>
         <source>Removing item</source>
-        <translation type="unfinished"></translation>
+        <translation>Odstranjevanje postavke</translation>
     </message>
 </context>
 <context>
@@ -804,49 +804,45 @@
     <name>RequestDialog</name>
     <message>
         <source>Yes</source>
-        <translation type="unfinished"></translation>
+        <translation>Da</translation>
     </message>
     <message>
         <source>No</source>
-        <translation type="unfinished"></translation>
+        <translation>Ne</translation>
     </message>
 </context>
 <context>
     <name>SaveSessionPage</name>
     <message>
         <source>Save Session</source>
-        <translation type="unfinished"></translation>
+        <translation>Shrani sejo</translation>
     </message>
     <message>
         <source>Session name</source>
-        <translation type="unfinished"></translation>
+        <translation>Ime seje</translation>
     </message>
     <message>
         <source>Load at startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Zaženi ob zagonu</translation>
     </message>
     <message>
         <source>Replace current session</source>
-        <translation type="unfinished"></translation>
+        <translation>Zamenjaj trenutno sejo</translation>
     </message>
     <message>
         <source>Opened Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Odprti zavihki</translation>
     </message>
     <message>
         <source>Selected</source>
-        <translation type="unfinished"></translation>
+        <translation>Izbrano</translation>
     </message>
 </context>
 <context>
     <name>SearchBar</name>
     <message>
-        <source>Search with</source>
-        <translation type="vanished">Išči z</translation>
-    </message>
-    <message>
         <source>Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Iskanje</translation>
     </message>
 </context>
 <context>
@@ -895,54 +891,54 @@
     <name>SessionPage</name>
     <message>
         <source>Save Session</source>
-        <translation type="unfinished"></translation>
+        <translation>Shrani sejo</translation>
     </message>
     <message>
         <source>Session name</source>
-        <translation type="unfinished"></translation>
+        <translation>Ime seje</translation>
     </message>
     <message>
         <source>Load at startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Zaženi ob zagonu</translation>
     </message>
     <message>
         <source>Replace current session</source>
-        <translation type="unfinished"></translation>
+        <translation>Zamenjaj trenutno sejo</translation>
     </message>
     <message>
         <source>Opened Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Odprti zavihki</translation>
     </message>
     <message>
         <source>Selected</source>
-        <translation type="unfinished"></translation>
+        <translation>Izbrano</translation>
     </message>
 </context>
 <context>
     <name>SessionSettingsPage</name>
     <message>
         <source>Session Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Upravitelj sej</translation>
     </message>
     <message>
         <source>Tabs saved</source>
-        <translation type="unfinished"></translation>
+        <translation>Zavihki so shranjeni</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation type="unfinished">Odpri</translation>
+        <translation>Odpri</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="unfinished">Uredi</translation>
+        <translation>Uredi</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Izbriši</translation>
+        <translation>Izbriši</translation>
     </message>
     <message>
         <source>Deleting session</source>
-        <translation type="unfinished"></translation>
+        <translation>Brisanje seje</translation>
     </message>
 </context>
 <context>
@@ -957,7 +953,7 @@
     </message>
     <message>
         <source>User Agent</source>
-        <translation type="unfinished"></translation>
+        <translation>User Agent</translation>
     </message>
     <message>
         <source>Wipe Data on Exit</source>
@@ -993,7 +989,7 @@
     </message>
     <message>
         <source>Long press to edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Za urejanje pritisnite in držite</translation>
     </message>
 </context>
 <context>
@@ -1012,7 +1008,7 @@
     </message>
     <message>
         <source>Close Tab</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Zapri zavihek</translation>
     </message>
     <message>
         <source>Close other Tabs</source>
@@ -1042,20 +1038,6 @@
     <message>
         <source>Quality</source>
         <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>YouTubeSettings</name>
-    <message>
-        <source>Title</source>
-        <translation type="obsolete">Naslov</translation>
-    </message>
-</context>
-<context>
-    <name>YouTubeSettingsPage</name>
-    <message>
-        <source>Title</source>
-        <translation type="obsolete">Naslov</translation>
     </message>
 </context>
 </TS>

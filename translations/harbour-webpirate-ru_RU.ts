@@ -128,7 +128,7 @@
     </message>
     <message>
         <source>Ad Block</source>
-        <translation>Ad Block</translation>
+        <translation>Блокирование рекламы</translation>
     </message>
     <message>
         <source>Navigation History</source>
@@ -140,7 +140,7 @@
     </message>
     <message>
         <source>Popup Blocker</source>
-        <translation type="unfinished">Popup Blocker</translation>
+        <translation>Блокирование всплывающих окон</translation>
     </message>
 </context>
 <context>
@@ -261,11 +261,11 @@
     <name>BrowserGrabber</name>
     <message>
         <source>Author</source>
-        <translation type="unfinished">Автор</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Duration</source>
-        <translation type="unfinished">Продолжительность</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Response</source>
@@ -277,23 +277,19 @@
     </message>
     <message>
         <source>Grabbed URLs</source>
-        <translation type="unfinished">Захват URL-адреса</translation>
-    </message>
-    <message>
-        <source>Play</source>
-        <translation type="unfinished">Играть</translation>
-    </message>
-    <message>
-        <source>Download</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Grabbing video</source>
-        <translation type="unfinished">Grabbing video</translation>
+        <source>Play</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Quality</source>
-        <translation type="obsolete">Качество</translation>
+        <source>Download</source>
+        <translation type="unfinished">Загрузить</translation>
+    </message>
+    <message>
+        <source>Grabbing video</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Copy URL</source>
@@ -306,10 +302,6 @@
 </context>
 <context>
     <name>BrowserTab</name>
-    <message>
-        <source>Load Error</source>
-        <translation type="vanished">Ошибка загрузки</translation>
-    </message>
     <message>
         <source>New Tab</source>
         <translation>Новая вкладка</translation>
@@ -569,13 +561,6 @@
     </message>
 </context>
 <context>
-    <name>FindTextBar</name>
-    <message>
-        <source>Search</source>
-        <translation type="vanished">Поиск</translation>
-    </message>
-</context>
-<context>
     <name>FormResubmitDialog</name>
     <message>
         <source>This page contains information written by you: do you want to resend the data?</source>
@@ -783,7 +768,7 @@
     <name>QueryBar</name>
     <message>
         <source>Search with</source>
-        <translation type="unfinished">Поиск с </translation>
+        <translation>Искать с помощью</translation>
     </message>
 </context>
 <context>
@@ -856,12 +841,8 @@
 <context>
     <name>SearchBar</name>
     <message>
-        <source>Search with</source>
-        <translation type="vanished">Поиск с </translation>
-    </message>
-    <message>
         <source>Search</source>
-        <translation type="unfinished">Поиск</translation>
+        <translation>Поиск</translation>
     </message>
 </context>
 <context>
@@ -941,7 +922,7 @@
     </message>
     <message>
         <source>Tabs saved</source>
-        <translation>Вкладки сохранены </translation>
+        <translation>Сохраненные вкладки</translation>
     </message>
     <message>
         <source>Open</source>
@@ -1008,7 +989,7 @@
     </message>
     <message>
         <source>Long press to edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Удерживайте для редактирования</translation>
     </message>
 </context>
 <context>
@@ -1056,77 +1037,7 @@
     <name>YouTubeGrabber</name>
     <message>
         <source>Quality</source>
-        <translation type="unfinished">Качество</translation>
-    </message>
-</context>
-<context>
-    <name>YouTubeSettings</name>
-    <message>
-        <source>YouTube Grabber</source>
-        <translation type="obsolete">Захват YouTube</translation>
-    </message>
-    <message>
-        <source>Author</source>
-        <translation type="obsolete">Автор</translation>
-    </message>
-    <message>
-        <source>Duration</source>
-        <translation type="obsolete">Продолжительность</translation>
-    </message>
-    <message>
-        <source>Grabbed URLs</source>
-        <translation type="obsolete">Захват URL-адреса</translation>
-    </message>
-    <message>
-        <source>Play</source>
-        <translation type="obsolete">Играть</translation>
-    </message>
-    <message>
-        <source>Grabbing video</source>
-        <translation type="obsolete">Grabbing video</translation>
-    </message>
-    <message>
-        <source>Quality</source>
-        <translation type="obsolete">Качество</translation>
-    </message>
-</context>
-<context>
-    <name>YouTubeSettingsPage</name>
-    <message>
-        <source>Author</source>
-        <translation type="vanished">Автор</translation>
-    </message>
-    <message>
-        <source>Duration</source>
-        <translation type="vanished">Продолжительность</translation>
-    </message>
-    <message>
-        <source>Quality</source>
-        <translation type="vanished">Качество</translation>
-    </message>
-    <message>
-        <source>Grabbed URLs</source>
-        <translation type="vanished">Захват URL-адреса</translation>
-    </message>
-    <message>
-        <source>Title</source>
-        <translation type="vanished">Название</translation>
-    </message>
-    <message>
-        <source>YouTube Grabber</source>
-        <translation type="vanished">Захват YouTube</translation>
-    </message>
-    <message>
-        <source>Play</source>
-        <translation type="vanished">Играть</translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation type="vanished">Скачать</translation>
-    </message>
-    <message>
-        <source>Grabbing video</source>
-        <translation type="vanished">Grabbing video</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
