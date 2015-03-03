@@ -9,14 +9,14 @@ PopupDialog
     id: tabmenu
     titleVisible: true
 
-    property list<QtObject> tabmenuModel: [ QtObject { readonly property string menuText: qsTr("Duplicate")
+    property list<QtObject> tabmenuModel: [ QtObject { readonly property string menuText: qsTr("Duplicate Tab")
                                                        function execute() {
                                                            var tab = tabview.tabAt(selectedIndex);
                                                            tabview.addTab(tab.getUrl(), true, selectedIndex + 1);
                                                        }
                                                       },
 
-                                            QtObject { readonly property string menuText: qsTr("Duplicate in Background")
+                                            QtObject { readonly property string menuText: qsTr("Duplicate Tab in Background")
                                                        function execute() {
                                                            var tab = tabview.tabAt(selectedIndex);
                                                            tabview.addTab(tab.getUrl(), false, selectedIndex + 1);
@@ -30,13 +30,13 @@ PopupDialog
                                                        }
                                                      },
 
-                                            QtObject { readonly property string menuText: qsTr("Close")
+                                            QtObject { readonly property string menuText: qsTr("Close Tab")
                                                        function execute() {
                                                            tabview.removeTab(selectedIndex);
                                                        }
                                                      },
 
-                                            QtObject { readonly property string menuText: qsTr("Close other tabs")
+                                            QtObject { readonly property string menuText: qsTr("Close other Tabs")
                                                        function execute() {
                                                            var deleteidx = 0;
                                                            var deletedtabs = 0;
