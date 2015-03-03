@@ -1,30 +1,24 @@
 .pragma library
 
-function createSchema(db)
+function createSchema(tx)
 {
-    db.transaction(function(tx) {
-        tx.executeSql("CREATE TABLE IF NOT EXISTS CoverSettings(category INTEGER PRIMARY KEY, leftaction INTEGER, rightaction INTEGER)");
-    });
+    tx.executeSql("CREATE TABLE IF NOT EXISTS CoverSettings(category INTEGER PRIMARY KEY, leftaction INTEGER, rightaction INTEGER)");
 }
 
-function load(db, categoryid)
+function load(tx, categoryid)
 {
     var settings = new Object;
+    var res = tx.executeSql("SELECT leftaction, rightaction FROM CoverSettings WHERE category=?", [categoryid]);
 
-    db.transaction(function(tx) {
-        var res = tx.executeSql("SELECT leftaction, rightaction FROM CoverSettings WHERE category=?", [categoryid]);
+    if(!res.rows.length) /* Fallback to default settings */
+    {
+        settings.left = 0;
+        settings.right = 1;
+        return;
+    }
 
-        if(!res.rows.length) /* Fallback to default settings */
-        {
-            settings.left = 0;
-            settings.right = 1;
-            return;
-        }
-
-        settings.left = res.rows[0].leftaction;
-        settings.right = res.rows[0].rightaction;
-    });
-
+    settings.left = res.rows[0].leftaction;
+    settings.right = res.rows[0].rightaction;
     return settings;
 }
 

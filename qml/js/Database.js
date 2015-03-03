@@ -57,13 +57,20 @@ function get(setting)
     var res = false;
 
     db.readTransaction(function(tx) {
-        var r = tx.executeSql("SELECT value FROM BrowserSettings WHERE name = ?;", [setting]);
-
-        if(r.rows.length > 0)
-            res = r.rows.item(0).value;
+        res = transactionGet(tx, setting);
     });
 
     return res;
+}
+
+function transactionGet(tx, setting)
+{
+    var r = tx.executeSql("SELECT value FROM BrowserSettings WHERE name = ?;", [setting]);
+
+    if(r.rows.length > 0)
+        return r.rows.item(0).value;
+
+    return false;
 }
 
 function load()
@@ -74,4 +81,9 @@ function load()
     db.transaction(function(tx) {
         tx.executeSql("CREATE TABLE IF NOT EXISTS BrowserSettings(name TEXT PRIMARY KEY, value TEXT)");
     });
+}
+
+function transaction(txfunc)
+{
+    instance().transaction(txfunc);
 }

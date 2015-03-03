@@ -52,35 +52,38 @@ ApplicationWindow
         Component.onCompleted: {
             Database.load();
             History.load();
-            Favorites.load(Database.instance());
-            UserAgents.load(Database.instance());
-            PopupBlocker.load(Database.instance());
-            SearchEngines.load(Database.instance(), settings.searchengines);
-            QuickGrid.load(Database.instance(), settings.quickgridmodel);
-
             Sessions.createSchema();
-            Credentials.createSchema(Database.instance());
-            Cover.createSchema(Database.instance());
+            Favorites.load(Database.instance());
 
-            var c = Cover.load(Database.instance(), settings.coveractions.generalCategoryId);
-            settings.coveractions.generalLeftAction = c.left;
-            settings.coveractions.generalRightAction = c.right;
+            Database.transaction(function(tx) {
+                UserAgents.load(tx);
+                PopupBlocker.load(tx);
+                SearchEngines.load(tx, settings.searchengines);
+                QuickGrid.load(tx, settings.quickgridmodel);
 
-            c = Cover.load(Database.instance(), settings.coveractions.webPageCategoryId);
-            settings.coveractions.webPageLeftAction = c.left;
-            settings.coveractions.webPageRightAction = c.right;
+                Credentials.createSchema(tx);
+                Cover.createSchema(tx);
 
-            var hp = Database.get("homepage");
-            settings.homepage = (hp === false ? "about:newtab" : hp);
+                var c = Cover.load(tx, settings.coveractions.generalCategoryId);
+                settings.coveractions.generalLeftAction = c.left;
+                settings.coveractions.generalRightAction = c.right;
 
-            var se = Database.get("searchengine");
-            settings.searchengine = (se === false ? 0 : se);
+                c = Cover.load(tx, settings.coveractions.webPageCategoryId);
+                settings.coveractions.webPageLeftAction = c.left;
+                settings.coveractions.webPageRightAction = c.right;
 
-            var ua = Database.get("useragent");
-            settings.useragent = (ua === false ? 0 : ua);
+                var hp = Database.transactionGet(tx, "homepage");
+                settings.homepage = (hp === false ? "about:newtab" : hp);
 
-            settings.adblockmanager.enabled = parseInt(Database.get("blockads"));
-            settings.clearonexit = parseInt(Database.get("clearonexit"));
+                var se = Database.transactionGet(tx, "searchengine");
+                settings.searchengine = (se === false ? 0 : se);
+
+                var ua = Database.transactionGet(tx, "useragent");
+                settings.useragent = (ua === false ? 0 : ua);
+
+                settings.adblockmanager.enabled = parseInt(Database.transactionGet(tx, "blockads"));
+                settings.clearonexit = parseInt(Database.transactionGet(tx, "clearonexit"));
+            });
         }
     }
 

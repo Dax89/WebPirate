@@ -3,11 +3,9 @@
 .import "GibberishAES.js" as AES
 .import "UrlHelper.js" as UrlHelper
 
-function createSchema(db)
+function createSchema(tx)
 {
-    db.transaction(function(tx) {
-        tx.executeSql("CREATE TABLE IF NOT EXISTS Credentials (url TEXT, loginattribute TEXT, loginid TEXT, login TEXT, passwordattribute TEXT, passwordid TEXT, password TEXT)");
-    });
+    tx.executeSql("CREATE TABLE IF NOT EXISTS Credentials (url TEXT, loginattribute TEXT, loginid TEXT, login TEXT, passwordattribute TEXT, passwordid TEXT, password TEXT)");
 }
 
 function generateKey(settings)

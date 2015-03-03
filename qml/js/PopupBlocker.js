@@ -4,11 +4,9 @@
 
 var AllowRule = 0, BlockRule = 1, NoRule = 2;
 
-function load(db)
+function load(tx)
 {
-    db.transaction(function(tx) {
-        tx.executeSql("CREATE TABLE IF NOT EXISTS PopupBlocker (domain TEXT PRIMARY KEY, popuprule INTEGER)");
-    });
+    tx.executeSql("CREATE TABLE IF NOT EXISTS PopupBlocker (domain TEXT PRIMARY KEY, popuprule INTEGER)");
 }
 
 function clearRules(db)
