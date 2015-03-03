@@ -23,10 +23,10 @@ Item
 
     function getIcon()
     {
-        if(state === "webbrowser")
-            return (webview.icon !== "" ? webview.icon : "image://theme/icon-s-group-chat");
+        if(state === "newtab")
+            return "image://theme/icon-m-tabs";
 
-        return "image://theme/icon-m-tabs";
+        return (webview.icon !== "" ? webview.icon : "image://theme/icon-s-group-chat");
     }
 
     function getTitle()
@@ -42,10 +42,10 @@ Item
 
     function getUrl()
     {
-        if(state === "webbrowser")
-            return webview.url.toString();
+        if(state === "newtab")
+            return "about:newtab";
 
-        return "about:newtab";
+        return webview.url.toString();
     }
 
     function loadNewTab()
