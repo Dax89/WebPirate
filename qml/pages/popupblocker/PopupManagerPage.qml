@@ -3,8 +3,8 @@ import Sailfish.Silica 1.0
 import "../../models"
 import "../../components/items"
 import "../../js/UrlHelper.js" as UrlHelper
-import "../../js/Database.js" as Database
-import "../../js/PopupBlocker.js" as PopupBlocker
+import "../../js/settings/Database.js" as Database
+import "../../js/settings/PopupBlocker.js" as PopupBlocker
 
 Page
 {

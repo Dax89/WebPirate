@@ -44,16 +44,16 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     translations/*.ts \
     harbour-webpirate.desktop \
     qml/js/UrlHelper.js \
-    qml/js/SearchEngines.js \
-    qml/js/Favorites.js \
+    qml/js/settings/SearchEngines.js \
+    qml/js/settings/Favorites.js \
     qml/components/browsertab/navigationbar/NavigationBar.qml \
     qml/components/browsertab/navigationbar/LoadingBar.qml \
     qml/components/browsertab/views/LoadFailed.qml \
     qml/components/browsertab/BrowserTab.qml \
     qml/pages/SettingsPage.qml \
     qml/pages/MainPage.qml \
-    qml/js/UserAgents.js \
-    qml/js/Database.js \
+    qml/js/settings/UserAgents.js \
+    qml/js/settings/Database.js \
     qml/models/Settings.qml \
     qml/models/FavoritesModel.qml \
     qml/components/FavoritesView.qml \
@@ -62,7 +62,7 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/pages/favorite/FavoritePage.qml \
     qml/pages/searchengine/SearchEnginePage.qml \
     qml/models/SearchEngineModel.qml \
-    qml/js/Credentials.js \
+    qml/js/settings/Credentials.js \
     qml/js/GibberishAES.js \
     qml/components/browsertab/menus/LinkMenu.qml \
     qml/pages/downloadmanager/DownloadsPage.qml \
@@ -70,7 +70,7 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/components/browsertab/webview/BrowserWebView.qml \
     qml/components/sidebar/ActionSidebar.qml \
     qml/pages/favorite/FavoritesPage.qml \
-    qml/js/History.js \
+    qml/js/settings/History.js \
     qml/components/browsertab/menus/HistoryMenu.qml \
     qml/components/SettingLabel.qml \
     qml/pages/TextSelectionPage.qml \
@@ -80,7 +80,7 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/components/quickgrid/QuickGridItem.qml \
     qml/components/quickgrid/QuickGridButton.qml \
     qml/pages/QuickGridPage.qml \
-    qml/js/QuickGrid.js \
+    qml/js/settings/QuickGrid.js \
     qml/models/QuickGridModel.qml \
     qml/components/PopupMessage.qml \
     qml/components/sidebar/SidebarItem.qml \
@@ -94,7 +94,7 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/components/browsertab/views/browserplayer/mediacomponents/MediaPlayerToolBar.qml \
     qml/components/browsertab/views/browserplayer/mediacomponents/MediaPlayerTitle.qml \
     qml/components/tabview/TabHeader.qml \
-    qml/js/Sessions.js \
+    qml/js/settings/Sessions.js \
     qml/pages/session/SaveSessionPage.qml \
     qml/components/items/PageItem.qml \
     qml/pages/session/SessionSettingsPage.qml \
@@ -103,7 +103,7 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/components/items/cover/CoverMenu.qml \
     qml/models/cover/CoverModel.qml \
     qml/components/items/cover/PageCoverActions.qml \
-    qml/js/Cover.js \
+    qml/js/settings/Cover.js \
     org.browser.WebPirate.service \
     rpm/harbour-webpirate.yaml \
     qml/js/helpers/NightMode.js \
@@ -138,7 +138,7 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/models/ClosedTabsModel.qml \
     qml/pages/closedtabs/ClosedTabsPage.qml \
     qml/components/items/ClosedTabItem.qml \
-    qml/js/PopupBlocker.js \
+    qml/js/settings/PopupBlocker.js \
     qml/models/BlockedPopupModel.qml \
     qml/models/PopupModel.qml \
     qml/pages/popupblocker/PopupManagerPage.qml \

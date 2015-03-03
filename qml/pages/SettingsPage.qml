@@ -3,10 +3,10 @@ import Sailfish.Silica 1.0
 import "../components"
 import "../models"
 import "../js/UrlHelper.js" as UrlHelper
-import "../js/Database.js" as Database
-import "../js/Credentials.js" as Credentials
-import "../js/History.js" as History
-import "../js/UserAgents.js" as UserAgents
+import "../js/settings/Database.js" as Database
+import "../js/settings/Credentials.js" as Credentials
+import "../js/settings/History.js" as History
+import "../js/settings/UserAgents.js" as UserAgents
 
 Dialog
 {

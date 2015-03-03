@@ -4,7 +4,7 @@ import WebPirate 1.0
 import "../../components"
 import "../../components/tabview"
 import "../../models"
-import "../../js/Favorites.js" as Favorites
+import "../../js/settings/Favorites.js" as Favorites
 
 Page
 {

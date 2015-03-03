@@ -32,16 +32,16 @@ import QtQuick 2.1
 import Sailfish.Silica 1.0
 import "models"
 import "pages"
-import "js/Database.js" as Database
-import "js/Favorites.js" as Favorites
-import "js/SearchEngines.js" as SearchEngines
-import "js/QuickGrid.js" as QuickGrid
-import "js/UserAgents.js" as UserAgents
-import "js/PopupBlocker.js" as PopupBlocker
-import "js/Credentials.js" as Credentials
-import "js/History.js" as History
-import "js/Sessions.js" as Sessions
-import "js/Cover.js" as Cover
+import "js/settings/Database.js" as Database
+import "js/settings/Favorites.js" as Favorites
+import "js/settings/SearchEngines.js" as SearchEngines
+import "js/settings/QuickGrid.js" as QuickGrid
+import "js/settings/UserAgents.js" as UserAgents
+import "js/settings/PopupBlocker.js" as PopupBlocker
+import "js/settings/Credentials.js" as Credentials
+import "js/settings/History.js" as History
+import "js/settings/Sessions.js" as Sessions
+import "js/settings/Cover.js" as Cover
 
 ApplicationWindow
 {

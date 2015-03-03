@@ -2,7 +2,7 @@ import QtQuick 2.1
 import Sailfish.Silica 1.0
 import "../dialogs"
 import "../../items/"
-import "../../../js/History.js" as History
+import "../../../js/settings/History.js" as History
 
 PopupDialog
 {

@@ -1,6 +1,6 @@
 import QtQuick 2.1
-import "../js/Database.js" as Database
-import "../js/QuickGrid.js" as QuickGrid
+import "../js/settings/Database.js" as Database
+import "../js/settings/QuickGrid.js" as QuickGrid
 
 ListModel
 {

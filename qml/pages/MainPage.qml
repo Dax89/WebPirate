@@ -34,7 +34,7 @@ import Sailfish.Silica 1.0
 import "../components/tabview"
 import "../components/items/cover"
 import "../models"
-import "../js/Sessions.js" as Sessions
+import "../js/settings/Sessions.js" as Sessions
 
 Page
 {

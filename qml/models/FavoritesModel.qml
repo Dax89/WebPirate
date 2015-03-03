@@ -1,6 +1,6 @@
 import QtQuick 2.1
 import "../js/UrlHelper.js" as UrlHelper
-import "../js/Favorites.js" as Favorites
+import "../js/settings/Favorites.js" as Favorites
 
 ListModel
 {

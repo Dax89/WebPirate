@@ -1,6 +1,6 @@
 .pragma library
 
-.import "UrlHelper.js" as UrlHelper
+.import "../UrlHelper.js" as UrlHelper
 
 var AllowRule = 0, BlockRule = 1, NoRule = 2;
 

@@ -3,7 +3,7 @@ import Sailfish.Silica 1.0
 import "../../models"
 import "../../components/items"
 import "../../components/tabview"
-import "../../js/History.js" as History
+import "../../js/settings/History.js" as History
 
 Page
 {

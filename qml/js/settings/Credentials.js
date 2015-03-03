@@ -1,7 +1,7 @@
 .pragma library
 
-.import "GibberishAES.js" as AES
-.import "UrlHelper.js" as UrlHelper
+.import "../GibberishAES.js" as AES
+.import "../UrlHelper.js" as UrlHelper
 
 function createSchema(tx)
 {

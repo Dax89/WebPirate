@@ -1,7 +1,7 @@
 import QtQuick 2.1
-import "../../../js/Database.js" as Database
-import "../../../js/Credentials.js" as Credentials
-import "../../../js/PopupBlocker.js" as PopupBlocker
+import "../../../js/settings/Database.js" as Database
+import "../../../js/settings/Credentials.js" as Credentials
+import "../../../js/settings/PopupBlocker.js" as PopupBlocker
 import "../../../js/YouTubeGrabber.js" as YouTubeGrabber
 
 Item

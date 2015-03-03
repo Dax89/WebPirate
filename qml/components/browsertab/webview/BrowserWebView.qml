@@ -5,11 +5,11 @@ import "../menus"
 import "../dialogs"
 import "jsdialogs"
 import "../../../js/UrlHelper.js" as UrlHelper
-import "../../../js/Database.js" as Database
-import "../../../js/Favorites.js" as Favorites
-import "../../../js/Credentials.js" as Credentials
-import "../../../js/History.js" as History
-import "../../../js/UserAgents.js" as UserAgents
+import "../../../js/settings/Database.js" as Database
+import "../../../js/settings/Favorites.js" as Favorites
+import "../../../js/settings/Credentials.js" as Credentials
+import "../../../js/settings/History.js" as History
+import "../../../js/settings/UserAgents.js" as UserAgents
 import "../../../js/YouTubeGrabber.js" as YouTubeGrabber
 
 SilicaWebView

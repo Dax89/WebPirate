@@ -2,7 +2,7 @@ import QtQuick 2.1
 import Sailfish.Silica 1.0
 import "../../components/tabview"
 import "../../components/items"
-import "../../js/Sessions.js" as Sessions
+import "../../js/settings/Sessions.js" as Sessions
 
 Dialog
 {

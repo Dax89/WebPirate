@@ -1,6 +1,6 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
-import "../../js/PopupBlocker.js" as PopupBlocker
+import "../../js/settings/PopupBlocker.js" as PopupBlocker
 
 ListItem
 {

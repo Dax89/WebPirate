@@ -6,9 +6,9 @@ import "dialogs"
 import "menus"
 import "webview"
 import "../../js/UrlHelper.js" as UrlHelper
-import "../../js/Database.js" as Database
-import "../../js/Favorites.js" as Favorites
-import "../../js/Credentials.js" as Credentials
+import "../../js/settings/Database.js" as Database
+import "../../js/settings/Favorites.js" as Favorites
+import "../../js/settings/Credentials.js" as Credentials
 
 Item
 {

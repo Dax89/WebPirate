@@ -1,7 +1,7 @@
 .pragma library
 
 .import QtQuick.LocalStorage 2.0 as Storage
-.import "UrlHelper.js" as UrlHelper
+.import "../UrlHelper.js" as UrlHelper
 
 function instance()
 {
