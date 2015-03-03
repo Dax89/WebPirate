@@ -14,11 +14,13 @@ function load(tx, categoryid)
     {
         settings.left = 0;
         settings.right = 1;
-        return;
+    }
+    else
+    {
+        settings.left = res.rows[0].leftaction;
+        settings.right = res.rows[0].rightaction;
     }
 
-    settings.left = res.rows[0].leftaction;
-    settings.right = res.rows[0].rightaction;
     return settings;
 }
 

@@ -20,16 +20,20 @@ function load(tx, searchengines)
     else
     {
         for(i = 0; i < defaultsearchengines.length; i++)
-            add(db, searchengines, defaultsearchengines[i].name, defaultsearchengines[i].query);
+            transactionAdd(tx, searchengines, defaultsearchengines[i].name, defaultsearchengines[i].query);
     }
+}
+
+function transactionAdd(tx, searchengines, name, query)
+{
+    searchengines.append({ "name": name, "query": query })
+    tx.executeSql("INSERT OR REPLACE INTO SearchEngines (name, query) VALUES (?, ?);", [name, query]);
 }
 
 function add(db, searchengines, name, query)
 {
-    searchengines.append({ "name": name, "query": query })
-
     db.transaction(function(tx) {
-        tx.executeSql("INSERT OR REPLACE INTO SearchEngines (name, query) VALUES (?, ?);", [name, query]);
+        transactionAdd(tx, searchengines, name, query);
     });
 }
 
