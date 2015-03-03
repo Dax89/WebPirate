@@ -176,6 +176,7 @@ SilicaWebView
             actionbar.blockedPopups.clear();
             actionbar.evaporate();
             searchbar.evaporate();
+            tabmenu.hide();
             linkmenu.hide();
             return;
         }

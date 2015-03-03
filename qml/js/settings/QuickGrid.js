@@ -6,9 +6,9 @@ function load(tx, quickgridmodel)
     var res = tx.executeSql("SELECT title, url FROM QuickGrid");
 
     for(var i = 0; i < res.rows.length; i++)
-        quickgridmodel.append({ "special": false, "title": res.rows[i].title ? res.rows[i].title : "", "url": res.rows[i].url ? res.rows[i].url : "" });
+        quickgridmodel.addUrl((res.rows[i].title ? res.rows[i].title : ""), (res.rows[i].url ? res.rows[i].url : "" ));
 
-    quickgridmodel.append({ "special": true, "title": "", "url": "" });
+    quickgridmodel.addSpecial();
 }
 
 function save(db, quickgridmodel)

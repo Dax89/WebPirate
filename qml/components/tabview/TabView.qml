@@ -17,8 +17,12 @@ Item
     property alias header: tabheader
 
     id: tabview
-    onCurrentIndexChanged: renderTab()
     Component.onCompleted: renderTab()
+
+    onCurrentIndexChanged: {
+        tabmenu.hide();
+        renderTab();
+    }
 
     onPageStateChanged: {
         mainwindow.settings.screenblank.enabled = (pageState !== "mediaplayer");
@@ -49,7 +53,7 @@ Item
         }
     }
 
-    function addTab(url, foreground)
+    function addTab(url, foreground, insertpos)
     {
         if(typeof(foreground) === "undefined")
             foreground = true;
@@ -63,10 +67,13 @@ Item
         if(url)
             tab.load(url);
 
-        tabs.append({ "tab": tab });
+        if(insertpos)
+            tabs.insert(insertpos, { "tab": tab });
+        else
+            tabs.append({ "tab": tab });
 
         if(foreground)
-            currentIndex = (tabs.count - 1);
+            currentIndex = insertpos ? insertpos : (tabs.count - 1);
 
         tabheader.calculateTabWidth();
         return tab;
@@ -100,14 +107,19 @@ Item
             removeTab(0);
     }
 
-    function currentTab()
+    function tabAt(index)
     {
-        var item = tabs.get(currentIndex);
+        var item = tabs.get(index);
 
         if(!item)
             return null;
 
         return item.tab;
+    }
+
+    function currentTab()
+    {
+        return tabAt(currentIndex);
     }
 
     RemorsePopup { id: tabviewremorse }
@@ -128,6 +140,12 @@ Item
         {
             id: tabheader
             anchors { left: parent.left;  right: parent.right; top: parent.top }
+        }
+
+        TabMenu
+        {
+            id: tabmenu
+            anchors { left: parent.left; right: parent.right; top: tabheader.bottom; bottom: parent.bottom }
         }
 
         Item

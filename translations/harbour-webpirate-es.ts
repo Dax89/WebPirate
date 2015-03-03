@@ -563,6 +563,10 @@
         <source>Open in New Tab</source>
         <translation>Abrir en nueva pestaña</translation>
     </message>
+    <message>
+        <source>Add to Quick Grid</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>FindTextBar</name>
@@ -1005,6 +1009,29 @@
     </message>
     <message>
         <source>Long press to edit</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>TabMenu</name>
+    <message>
+        <source>Duplicate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Duplicate in Background</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Close other tabs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Add to Quick Grid</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

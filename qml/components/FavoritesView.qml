@@ -61,6 +61,12 @@ Item
                                                           favoritesmodel.erase(favoriteid, parentid);
                                                       });
                 }
+
+                MenuItem
+                {
+                    text: qsTr("Add to Quick Grid")
+                    onClicked: mainwindow.settings.quickgridmodel.addUrl(title, url)
+                }
             }
 
             onClicked: {

@@ -7,19 +7,21 @@ Rectangle
     property alias title: tabtitle.text
     property bool loading: false
 
+    function getColor() {
+        if(headermousearea.pressed)
+            return Theme.highlightColor;
+
+        return (index === currentIndex ? Theme.secondaryColor : Theme.secondaryHighlightColor);
+    }
+
     id: tabbutton
     radius: 8
     anchors { top: headerrow.top; bottom: headerrow.bottom; bottomMargin: -radius }
     width: tabheader.tabWidth
-    color: (index === currentIndex ? Theme.secondaryColor : Theme.secondaryHighlightColor);
-    scale: headermousearea.pressed ? 1.05 : 1.0
+    color: getColor()
 
     Behavior on width {
         NumberAnimation { duration: 50; easing.type: Easing.InOutQuad }
-    }
-
-    Behavior on scale {
-        NumberAnimation { properties: "scale"; duration: 50; easing.type: Easing.InOutElastic }
     }
 
     MouseArea
@@ -69,6 +71,13 @@ Rectangle
         onClicked: {
             sidebar.collapse();
             tabview.currentIndex = index;
+        }
+
+        onPressAndHold: {
+            sidebar.collapse();
+
+            tabmenu.selectedIndex = index;
+            tabmenu.show();
         }
     }
 
