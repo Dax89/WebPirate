@@ -20,15 +20,14 @@ function clear(db)
 {
     db.transaction(function(tx) {
         tx.executeSql("DROP TABLE IF EXISTS Credentials");
+        createSchema(tx);
     });
-
-    createSchema(db);
 }
 
 function remove(db, url, loginid, passwordid)
 {
     db.transaction(function(tx) {
-        tx.executeSql("DELETE FROM Credentials WHERE url=? AND loginid=? AND passswordid=?;", [UrlHelper.urlPath(url), loginid, passwordid]);
+        tx.executeSql("DELETE FROM Credentials WHERE url=? AND loginid=? AND passwordid=?;", [UrlHelper.urlPath(url), loginid, passwordid]);
     });
 }
 
