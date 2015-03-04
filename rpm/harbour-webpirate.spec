@@ -14,14 +14,13 @@ Name:       harbour-webpirate
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 Summary:    harbour-webpirate
 Version:    0.9.7
-Release:    1
+Release:    2
 Group:      Qt/Qt
 License:    GPL3
 URL:        http://github.com/Dax89/harbour-webpirate
 Source0:    %{name}-%{version}.tar.bz2
 Source100:  harbour-webpirate.yaml
 Requires:   sailfishsilica-qt5 >= 0.10.9
-Requires:   openssl
 BuildRequires:  pkgconfig(sailfishapp) >= 1.0.2
 BuildRequires:  pkgconfig(libcrypto)
 BuildRequires:  pkgconfig(Qt5Core)
