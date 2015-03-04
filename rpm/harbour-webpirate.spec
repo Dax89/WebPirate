@@ -21,7 +21,9 @@ URL:        http://github.com/Dax89/harbour-webpirate
 Source0:    %{name}-%{version}.tar.bz2
 Source100:  harbour-webpirate.yaml
 Requires:   sailfishsilica-qt5 >= 0.10.9
+Requires:   openssl
 BuildRequires:  pkgconfig(sailfishapp) >= 1.0.2
+BuildRequires:  pkgconfig(libcrypto)
 BuildRequires:  pkgconfig(Qt5Core)
 BuildRequires:  pkgconfig(Qt5Qml)
 BuildRequires:  pkgconfig(Qt5Quick)
