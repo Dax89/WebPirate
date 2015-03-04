@@ -85,9 +85,10 @@ QString AES256::encode(const QString &s, const QString &key)
 
     EVP_EncryptInit_ex(&cipher, NULL, NULL, NULL, NULL);
     EVP_EncryptUpdate(&cipher, reinterpret_cast<unsigned char*>(result.data()), &len, reinterpret_cast<const unsigned char*>(s.toUtf8().constData()), s.length());
-    EVP_EncryptFinal(&cipher, reinterpret_cast<unsigned char*>(result.data() + len), &finallen);
+    EVP_EncryptFinal_ex(&cipher, reinterpret_cast<unsigned char*>(result.data() + len), &finallen);
     EVP_CIPHER_CTX_cleanup(&cipher);
 
+    result.resize(len + finallen);
     salt.prepend(saltblock, 8);
     return QString::fromUtf8(result.prepend(salt).toBase64());
 }
@@ -110,7 +111,10 @@ QString AES256::decode(const QString &s, const QString &key)
 
     EVP_DecryptInit_ex(&cipher, NULL, NULL, NULL, NULL);
     EVP_DecryptUpdate(&cipher, reinterpret_cast<unsigned char*>(result.data()), &len, reinterpret_cast<const unsigned char*>(cipheredtext.constData()), cipheredtext.length());
-    EVP_DecryptFinal(&cipher, reinterpret_cast<unsigned char*>(result.data() + len), &finallen);
-    return QString(result).trimmed();
+    EVP_DecryptFinal_ex(&cipher, reinterpret_cast<unsigned char*>(result.data() + len), &finallen);
+    EVP_CIPHER_CTX_cleanup(&cipher);
+
+    result.resize(finallen);
+    return QString(result);
 }
 
