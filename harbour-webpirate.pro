@@ -14,6 +14,7 @@ TARGET = harbour-webpirate
 
 QT += sql dbus
 CONFIG += sailfishapp
+PKGCONFIG += libcrypto
 
 # Install D-Bus Service (Currently Disabled)
 # dbus_service.files = org.browser.WebPirate.service
@@ -36,7 +37,8 @@ SOURCES += src/harbour-webpirate.cpp \
     src/adblock/adblockfilter.cpp \
     src/adblock/adblockdownloader.cpp \
     src/filepicker/folderlistmodel.cpp \
-    src/dbus/client/screenblank.cpp
+    src/dbus/client/screenblank.cpp \
+    src/security/cryptography/aes256.cpp
 
 OTHER_FILES += qml/harbour-webpirate.qml \
     rpm/harbour-webpirate.changes.in \
@@ -63,7 +65,6 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/pages/searchengine/SearchEnginePage.qml \
     qml/models/SearchEngineModel.qml \
     qml/js/settings/Credentials.js \
-    qml/js/GibberishAES.js \
     qml/components/browsertab/menus/LinkMenu.qml \
     qml/pages/downloadmanager/DownloadsPage.qml \
     qml/components/items/DownloadListItem.qml \
@@ -197,5 +198,6 @@ HEADERS += \
     src/adblock/adblockfilter.h \
     src/adblock/adblockdownloader.h \
     src/filepicker/folderlistmodel.h \
-    src/dbus/client/screenblank.h
+    src/dbus/client/screenblank.h \
+    src/security/cryptography/aes256.h
 

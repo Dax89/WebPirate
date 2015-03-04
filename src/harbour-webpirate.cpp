@@ -32,6 +32,7 @@
 #include <sailfishapp.h>
 //#include "dbus/webpirateservice.h"
 #include "dbus/client/screenblank.h"
+#include "security/cryptography/aes256.h"
 #include "favoritesmanager/favoritesmanager.h"
 #include "downloadmanager/downloadmanager.h"
 #include "filepicker/folderlistmodel.h"
@@ -49,6 +50,8 @@ int main(int argc, char *argv[])
 
     qmlRegisterType<DownloadItem>("WebPirate.Private", 1, 0, "DownloadItem");
     qmlRegisterType<FavoriteItem>("WebPirate.Private", 1, 0, "FavoriteItem");
+
+    qmlRegisterSingletonType<AES256>("WebPirate.Security", 1, 0, "AES256", &AES256::initialize);
 
     qmlRegisterType<ScreenBlank>("WebPirate.DBus", 1, 0, "ScreenBlank");
 
