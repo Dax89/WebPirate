@@ -49,12 +49,12 @@ var __wp_youtubehelper__ = {
     },
 
     getEmbeddedVideos: function() {
-        var iframes = document.getElementsByTagName("iframe");
+        var iframes = document.querySelectorAll("iframe[src]");
 
         if(!iframes.length)
             return;
 
-        var ytregex = new RegExp("www\\.youtube\\.[^/]+/embed/([^/\\?]+)");
+        var ytregex = new RegExp("www\\.youtube[\\-nocookie\\.]*\\.[^/]+/embed/([^/\\?]+)");
 
         for(var i = 0; i < iframes.length; i++)
         {
