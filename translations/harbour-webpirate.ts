@@ -561,6 +561,13 @@
     </message>
 </context>
 <context>
+    <name>FilePickerPage</name>
+    <message>
+        <source>Root</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>FormResubmitDialog</name>
     <message>
         <source>This page contains information written by you: do you want to resend the data?</source>

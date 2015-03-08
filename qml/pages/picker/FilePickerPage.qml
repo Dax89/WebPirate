@@ -46,7 +46,7 @@ Page
                 id: foldermodel
 
                 onDirectoryNameChanged: {
-                    pageheader.title = foldermodel.directoryName;
+                    pageheader.title = ((directory === "/") ? qsTr("Root") : foldermodel.directoryName);
                 }
             }
 

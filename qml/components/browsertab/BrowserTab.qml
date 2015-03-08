@@ -79,6 +79,32 @@ Item
 
         state = "webbrowser";
 
+        if(UrlHelper.protocol(req) === "file")
+        {
+            webview.url = ""; /* Blank Page */
+
+            var filepath = UrlHelper.filePath(req);
+
+            if(!filepath.length)
+                return; /* Empty file:// request, do nothing */
+
+            var mimetype = mimedatabase.mimeFromUrl(filepath);
+
+            if(mimetype === "inode/directory")
+            {
+                var filepicker = pageStack.push(Qt.resolvedUrl("../../pages/picker/FilePickerPage.qml"), { "rootPage": mainpage, "directory": filepath });
+
+                filepicker.filePicked.connect(function(file) {
+                    webview.url = file;
+                });
+
+                return;
+            }
+
+            webview.url = filepath;
+            return;
+        }
+
         if(UrlHelper.isUrl(req))
             webview.url = UrlHelper.adjustUrl(req);
         else

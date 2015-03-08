@@ -70,7 +70,7 @@ SilicaWebView
                                 Qt.resolvedUrl("../../../js/helpers/video/VideoHelper.js"),
 
                                 /* Message Listener */
-                                Qt.resolvedUrl("../../../js/helpers/MessageListener.js"), ]
+                                Qt.resolvedUrl("../../../js/helpers/MessageListener.js") ]
 
     experimental.onTextFound: {
         searchbar.findError = (matchCount <= 0);
@@ -144,8 +144,9 @@ SilicaWebView
 
     onNavigationRequested: {
         var stringurl = request.url.toString();
+        var protocol = UrlHelper.protocol(stringurl);
 
-        if(UrlHelper.isSpecialUrl(stringurl) || (request.navigationType === WebView.FormSubmittedNavigation))
+        if(((protocol !== "http") && (protocol !== "https")) || UrlHelper.isSpecialUrl(stringurl) || (request.navigationType === WebView.FormSubmittedNavigation))
             return;
 
         if(request.navigationType === WebView.FormResubmittedNavigation)
