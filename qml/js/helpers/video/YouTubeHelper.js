@@ -24,7 +24,7 @@ var __wp_youtubehelper__ = {
     },
 
     getVideo: function() {
-        var ytregex = new RegExp("[www|m]+\\.youtube\\.[^/]+.*/watch\\?v\\=([^&]+)");
+        var ytregex = /^.*(?:(?:youtu\.be\/|v\/|vi\/|u\/\w\/|embed\/)|(?:(?:watch)?\?v(?:i)?=|\&v(?:i)?=))([^#\&\?]*).*/;
 
         if(!ytregex.test(document.location.href))
             return;
@@ -54,7 +54,7 @@ var __wp_youtubehelper__ = {
         if(!iframes.length)
             return;
 
-        var ytregex = new RegExp("www\\.youtube[\\-nocookie\\.]*\\.[^/]+/embed/([^/\\?]+)");
+        var ytregex = /^.*(?:(?:youtu\.be\/|v\/|vi\/|u\/\w\/|embed\/)|(?:(?:watch)?\?v(?:i)?=|\&v(?:i)?=))([^#\&\?]*).*/;
 
         for(var i = 0; i < iframes.length; i++)
         {
