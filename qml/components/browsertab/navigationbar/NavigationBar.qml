@@ -30,7 +30,7 @@ BrowserBar
     IconButton
     {
         id: btnback
-        icon.source: "image://theme/icon-m-back"
+        icon.source: "qrc:///res/back.png"
         width: visible ? Theme.iconSizeMedium : 0
         visible: !querybar.editing
         anchors { left: navigationbar.left; top: parent.top; bottom: parent.bottom }
@@ -94,7 +94,7 @@ BrowserBar
     IconButton
     {
         id: btnforward
-        icon.source: "image://theme/icon-m-forward"
+        icon.source: "qrc:///res/forward.png"
         width: visible ? Theme.iconSizeMedium : 0
         visible: !querybar.editing
         anchors { right: parent.right; top: parent.top; bottom: parent.bottom }

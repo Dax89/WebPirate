@@ -7,5 +7,7 @@
         <file>res/exit-fullscreen.png</file>
         <file>res/enter-fullscreen.png</file>
         <file>res/googleplus.png</file>
+        <file>res/back.png</file>
+        <file>res/forward.png</file>
     </qresource>
 </RCC>
