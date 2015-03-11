@@ -96,6 +96,8 @@ ListItem
         LoadingBar {
             id: progressbar
             width: parent.width
+            backColor: "white"
+            barHeight: 8
             minimumValue: 0
             maximumValue: 100
             value: Math.round((downloadItem.progressValue / downloadItem.progressTotal) * 100)

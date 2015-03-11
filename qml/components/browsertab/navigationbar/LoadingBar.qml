@@ -3,6 +3,7 @@ import Sailfish.Silica 1.0
 
 Rectangle
 {
+    property color backColor: "transparent"
     property real minimumValue: 0
     property real maximumValue: 100
     property real value: minimumValue
@@ -13,7 +14,7 @@ Rectangle
     property alias barColor: progress.color
 
     height: barHeight
-    color: "transparent"
+    color: backColor
     z: 10
 
     onValueChanged: {
