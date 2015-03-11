@@ -35,6 +35,8 @@ function checkDBUpgrade()
                                  row = res.rows[i];
                                  tx.executeSql("INSERT OR REPLACE INTO SessionFlags (key, value) VALUES(?, ?)", [row.key, row.value]);
                              }
+
+                             tx.executeSql("DROP TABLE IF EXISTS SessionConfig");
                          });
     }
 }
