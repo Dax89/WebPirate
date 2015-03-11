@@ -1002,6 +1002,10 @@
         <source>Long press to edit</source>
         <translation>Lang ingedrukt houden om te bewerken</translation>
     </message>
+    <message>
+        <source>Restore tabs at Startup</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ShareMenu</name>

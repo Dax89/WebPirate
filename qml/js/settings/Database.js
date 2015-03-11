@@ -47,7 +47,7 @@ function set(setting, value)
     var db = instance();
 
     db.transaction(function(tx) {
-        tx.executeSql("INSERT OR REPLACE INTO BrowserSettings (name, value) VALUES (?, ?);", [setting, value]);
+        transactionSet(tx, setting, value);
     });
 }
 
@@ -61,6 +61,11 @@ function get(setting)
     });
 
     return res;
+}
+
+function transactionSet(tx, setting, value)
+{
+    tx.executeSql("INSERT OR REPLACE INTO BrowserSettings (name, value) VALUES (?, ?);", [setting, value]);
 }
 
 function transactionGet(tx, setting)

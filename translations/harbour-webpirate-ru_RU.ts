@@ -1002,6 +1002,10 @@
         <source>Long press to edit</source>
         <translation>Удерживайте для редактирования</translation>
     </message>
+    <message>
+        <source>Restore tabs at Startup</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ShareMenu</name>

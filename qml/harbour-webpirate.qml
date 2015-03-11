@@ -83,6 +83,7 @@ ApplicationWindow
 
                 settings.adblockmanager.enabled = parseInt(Database.transactionGet(tx, "blockads"));
                 settings.clearonexit = parseInt(Database.transactionGet(tx, "clearonexit"));
+                settings.restoretabs = parseInt(Database.transactionGet(tx, "restoretabs"));
             });
         }
     }

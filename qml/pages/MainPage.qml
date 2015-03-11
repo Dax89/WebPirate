@@ -97,6 +97,11 @@ Page
             else
                 Sessions.load(sessionid, tabview);
         }
+
+        Component.onDestruction: {
+            if(settings.restoretabs)
+                Sessions.save("__temp__session__", tabview.tabs, tabview.currentIndex, true, true, true);
+        }
     }
 
     PageCoverActions

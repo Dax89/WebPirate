@@ -17,6 +17,22 @@ Dialog
     acceptDestinationAction: PageStackAction.Pop
     canAccept: true
 
+    onAccepted: {
+        if(UrlHelper.isUrl(tfhomepage.text) || UrlHelper.isSpecialUrl(tfhomepage.text))
+            settings.homepage = UrlHelper.adjustUrl(tfhomepage.text);
+
+        settings.searchengine = cbsearchengines.currentIndex;
+        settings.useragent = cbuseragent.currentIndex;
+
+        Database.transaction(function(tx) {
+            Database.transactionSet(tx, "homepage", settings.homepage);
+            Database.transactionSet(tx, "searchengine", settings.searchengine);
+            Database.transactionSet(tx, "useragent", settings.useragent);
+            Database.transactionSet(tx, "clearonexit", settings.clearonexit);
+            Database.transactionSet(tx, "restoretabs", settings.restoretabs);
+        });
+    }
+
     SilicaFlickable
     {
         anchors.fill: parent
@@ -93,24 +109,32 @@ Dialog
                 }
             }
 
+            TextSwitch
+            {
+                id: swrestoretabs
+                text: qsTr("Restore tabs at Startup")
+                width: parent.width
+                checked: settings.restoretabs
+
+                onCheckedChanged: {
+                    settings.restoretabs = checked;
+                }
+            }
+
             SectionHeader
             {
                 text: qsTr("Privacy");
             }
 
-            Row
+            TextSwitch
             {
+                id: swclearonexit
+                text: qsTr("Wipe Data on Exit")
                 width: parent.width
-                height: Theme.itemSizeSmall
+                checked: settings.clearonexit
 
-                TextSwitch
-                {
-                    id: swclearonexit
-                    text: qsTr("Wipe Data on Exit")
-                    width: parent.width
-                    height: parent.height
-                    checked: settings.clearonexit
-                    onClicked: settings.clearonexit = checked
+                onCheckedChanged: {
+                    settings.clearonexit = checked;
                 }
             }
 
@@ -167,21 +191,6 @@ Dialog
                     History.clear();
                 }
             }
-        }
-    }
-
-    onDone: {
-        if(result === DialogResult.Accepted) {
-            if(UrlHelper.isUrl(tfhomepage.text) || UrlHelper.isSpecialUrl(tfhomepage.text))
-                settings.homepage = UrlHelper.adjustUrl(tfhomepage.text);
-
-            settings.searchengine = cbsearchengines.currentIndex;
-            settings.useragent = cbuseragent.currentIndex;
-
-            Database.set("homepage", settings.homepage);
-            Database.set("searchengine", settings.searchengine);
-            Database.set("useragent", settings.useragent);
-            Database.set("clearonexit", settings.clearonexit)
         }
     }
 }

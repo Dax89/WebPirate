@@ -4,15 +4,55 @@
 
 function instance()
 {
-    return Storage.LocalStorage.openDatabaseSync("Session", "1.0", "Saved Sessions", 2000000);  /* DB Size: 2MB */
+    return openDatabase("1.1")
+}
+
+function checkDBUpgrade()
+{
+    var db = openDatabase("");
+
+    if(db.version === "1.0")
+    {
+        db.changeVersion("1.0", "1.1",
+                         function(tx) {
+                             /* Migrate Old SessionData Table */
+                             var i, row = null, res = tx.executeSql("SELECT * FROM SessionData");
+                             tx.executeSql("CREATE TABLE IF NOT EXISTS SessionTabs(id INTEGER, title TEXT, url TEXT, current INTEGER)");
+
+                             for(i = 0; i < res.rows.length; i++) {
+                                 row = res.rows[i];
+                                 tx.executeSql("INSERT INTO SessionTabs (id, title, url, current) VALUES(?, ?, ?, ?)",
+                                               [row.id, row.title, row.url, row.current]);
+                             }
+
+                             tx.executeSql("DROP TABLE IF EXISTS SessionData");
+
+                             /* Migrate Old SessionConfig Table */
+                             res = tx.executeSql("SELECT * FROM SessionConfig");
+                             tx.executeSql("CREATE TABLE IF NOT EXISTS SessionFlags(key TEXT PRIMARY KEY, value INTEGER)");
+
+                             for(i = 0; i < res.rows.length; i++) {
+                                 row = res.rows[i];
+                                 tx.executeSql("INSERT OR REPLACE INTO SessionFlags (key, value) VALUES(?, ?)", [row.key, row.value]);
+                             }
+                         });
+    }
+}
+
+function openDatabase(version)
+{
+    return Storage.LocalStorage.openDatabaseSync("Session", version, "Saved Sessions", 2000000);  /* DB Size: 2MB */
 }
 
 function createSchema()
 {
-    instance().transaction(function(tx) {
+    checkDBUpgrade();
+    var db = instance();
+
+    db.transaction(function(tx) {
         tx.executeSql("CREATE TABLE IF NOT EXISTS Sessions(id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, replacecurrent INTEGER)");
-        tx.executeSql("CREATE TABLE IF NOT EXISTS SessionData(id INTEGER, title, TEXT, url TEXT, current INTEGER)");
-        tx.executeSql("CREATE TABLE IF NOT EXISTS SessionConfig(key TEXT, value INTEGER)");
+        tx.executeSql("CREATE TABLE IF NOT EXISTS SessionTabs(id INTEGER, title TEXT, url TEXT, current INTEGER)");
+        tx.executeSql("CREATE TABLE IF NOT EXISTS SessionFlags(key TEXT PRIMARY KEY, value INTEGER)");
     });
 }
 
@@ -25,7 +65,7 @@ function setStartupId(sessionid)
 
 function transactionSetStartupId(tx, sessionid)
 {
-    tx.executeSql("INSERT OR REPLACE INTO SessionConfig (key, value) VALUES('autoload', ?)", [sessionid]);
+    tx.executeSql("INSERT OR REPLACE INTO SessionFlags (key, value) VALUES('autoload', ?)", [sessionid]);
 }
 
 function startupId()
@@ -39,15 +79,37 @@ function startupId()
     return sessionid;
 }
 
-function transactionStartupId(tx)
+function selfDestructId()
 {
-    var res = tx.executeSql("SELECT value FROM SessionConfig WHERE key='autoload'");
+    var sessionid = -1;
+
+    instance().transaction(function(tx) {
+        sessionid = transactionSelfDestructId(tx);
+    });
+
+    return sessionid;
+}
+
+function transactionSelfDestructId(tx)
+{
+    var res = tx.executeSql("SELECT value FROM SessionFlags WHERE key='selfdestruct'");
 
     if(res.rows.length > 0)
         return res.rows[0].value;
 
     return -1;
 }
+
+function transactionStartupId(tx)
+{
+    var res = tx.executeSql("SELECT value FROM SessionFlags WHERE key='autoload'");
+
+    if(res.rows.length > 0)
+        return res.rows[0].value;
+
+    return -1;
+}
+
 
 function transactionGet(tx, sessionid)
 {
@@ -62,7 +124,7 @@ function transactionGet(tx, sessionid)
     session.replacecurrent = res.rows[0].replacecurrent;
     session.autoload = transactionStartupId(tx) === session.id;
 
-    res = tx.executeSql("SELECT title, url, current FROM SessionData WHERE id=?", [sessionid]);
+    res = tx.executeSql("SELECT title, url, current FROM SessionTabs WHERE id=?", [sessionid]);
 
     if(!res)
         return null;
@@ -83,7 +145,7 @@ function getAll(sessionmodel)
 
         for(var i = 0; i < res.rows.length; i++)
         {
-            var count = tx.executeSql("SELECT COUNT(*) FROM SessionData WHERE id=?", [res.rows[i].id]);
+            var count = tx.executeSql("SELECT COUNT(*) FROM SessionTabs WHERE id=?", [res.rows[i].id]);
             sessionmodel.append({ "sessionid": res.rows[i].id, "name": res.rows[i].name, "count": count.rows[0]["COUNT(*)"] });
         }
     });
@@ -100,14 +162,14 @@ function get(sessionid)
     return session;
 }
 
-function save(name, tabs, currentindex, autoload, replacecurrent)
+function save(name, tabs, currentindex, autoload, replacecurrent, selfdestruct)
 {
     instance().transaction(function(tx) {
-        transactionSave(tx, name, tabs, currentindex, autoload, replacecurrent);
+        transactionSave(tx, name, tabs, currentindex, autoload, replacecurrent, selfdestruct);
     });
 }
 
-function transactionSave(tx, name, tabs, currentindex, autoload, replacecurrent)
+function transactionSave(tx, name, tabs, currentindex, autoload, replacecurrent, selfdestruct)
 {
     var res = tx.executeSql("INSERT INTO Sessions (name, replacecurrent) VALUES (?, ?)", [name, replacecurrent ? 1 : 0]);
     var sessionid = parseInt(res.insertId);
@@ -115,11 +177,14 @@ function transactionSave(tx, name, tabs, currentindex, autoload, replacecurrent)
     for(var i = 0; i < tabs.count; i++)
     {
         var tab = tabs.get(i).tab;
-        tx.executeSql("INSERT INTO SessionData (id, title, url, current) VALUES(?, ?, ?, ?)", [sessionid, tab.getTitle(), tab.getUrl(), (i === currentindex ? 1 : 0)]);
+        tx.executeSql("INSERT INTO SessionTabs (id, title, url, current) VALUES(?, ?, ?, ?)", [sessionid, tab.getTitle(), tab.getUrl(), (i === currentindex ? 1 : 0)]);
     }
 
     if(autoload)
-        tx.executeSql("INSERT OR REPLACE INTO SessionConfig (key, value) VALUES ('autoload', ?)", [sessionid]);
+        tx.executeSql("INSERT OR REPLACE INTO SessionFlags (key, value) VALUES ('autoload', ?)", [sessionid]);
+
+    if(selfdestruct)
+        tx.executeSql("INSERT OR REPLACE INTO SessionFlags (key, value) VALUES ('selfdestruct', ?)", [sessionid]);
 }
 
 function load(sessionid, tabview)
@@ -133,18 +198,11 @@ function load(sessionid, tabview)
         if(session.replacecurrent)
             tabview.removeAllTabs();
 
-        var selectedtab = -1;
-
         for(var i = 0; i < session.tabs.length; i++)
-        {
-            tabview.addTab(session.tabs[i].url);
+            tabview.addTab(session.tabs[i].url, session.tabs[i].current);
 
-            if(session.tabs[i].current)
-                selectedtab = i;
-        }
-
-        if(selectedtab !== -1)
-            tabview.currentIndex = selectedtab;
+        if(transactionSelfDestructId(tx) === session.id)
+            transactionRemove(tx, sessionid);
     });
 }
 
@@ -157,11 +215,14 @@ function remove(sessionid)
 
 function transactionRemove(tx, sessionid)
 {
-    tx.executeSql("DELETE FROM SessionData WHERE id=?", [sessionid]);
+    tx.executeSql("DELETE FROM SessionTabs WHERE id=?", [sessionid]);
     tx.executeSql("DELETE FROM Sessions WHERE id=?", [sessionid]);
 
     if(transactionStartupId(tx) === sessionid)
-        tx.executeSql("DELETE FROM SessionConfig WHERE key='autoload'");
+        tx.executeSql("DELETE FROM SessionFlags WHERE key='autoload'");
+
+    if(transactionSelfDestructId(tx) === sessionid)
+        tx.executeSql("DELETE FROM SessionFlags WHERE key='selfdestruct'");
 }
 
 function update(sessionid, name, autoload, replacecurrent)
@@ -172,6 +233,6 @@ function update(sessionid, name, autoload, replacecurrent)
         if(autoload)
             transactionSetStartupId(tx, sessionid);
         else if(!autoload && (transactionStartupId(tx) === sessionid))
-            tx.executeSql("DELETE FROM SessionConfig WHERE key='autoload'");
+            tx.executeSql("DELETE FROM SessionFlags WHERE key='autoload'");
     });
 }
