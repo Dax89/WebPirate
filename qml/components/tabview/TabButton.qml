@@ -2,7 +2,7 @@ import QtQuick 2.1
 import Sailfish.Silica 1.0
 
 Rectangle
-{
+{    
     property alias icon: favicon.source
     property alias title: tabtitle.text
     property bool loading: false
@@ -11,23 +11,17 @@ Rectangle
         if(headermousearea.pressed)
             return Theme.highlightColor;
 
-        return (index === currentIndex ? Theme.secondaryColor : Theme.secondaryHighlightColor);
+        return (index === tabview.currentIndex ? Theme.secondaryColor : Theme.secondaryHighlightColor);
     }
 
     id: tabbutton
     radius: 8
-    anchors { top: headerrow.top; bottom: headerrow.bottom; bottomMargin: -radius }
-    width: tabheader.tabWidth
     color: getColor()
-
-    Behavior on width {
-        NumberAnimation { duration: 50; easing.type: Easing.InOutQuad }
-    }
 
     MouseArea
     {
         id: headermousearea
-        anchors { left: parent.left; top: parent.top; right: btnclose.left; bottom: parent.bottom; bottomMargin: radius }
+        anchors { left: parent.left; top: parent.top; right: btnclose.left; bottom: parent.bottom; bottomMargin: radius / 2 }
 
         Item
         {

@@ -21,6 +21,7 @@ Item
 
     onCurrentIndexChanged: {
         tabmenu.hide();
+        tabheader.ensureVisible();
         renderTab();
     }
 
@@ -75,7 +76,6 @@ Item
         if(foreground)
             currentIndex = insertpos ? insertpos : (tabs.count - 1);
 
-        tabheader.calculateTabWidth();
         return tab;
     }
 
@@ -95,8 +95,6 @@ Item
             currentIndex--;
         else
             renderTab();
-
-        tabheader.calculateTabWidth();
     }
 
     function removeAllTabs()
