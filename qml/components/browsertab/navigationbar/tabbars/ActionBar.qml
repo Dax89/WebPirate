@@ -20,6 +20,9 @@ BrowserBar
         if(btnfavorite.visible)
             count++;
 
+        if(btnshare.visible)
+            count++;
+
         return row.width / count;
     }
 
@@ -90,6 +93,21 @@ BrowserBar
                     Favorites.removeFromUrl(webview.url.toString());
                     actionbar.favorite = false;
                 }
+            }
+        }
+
+        IconButton
+        {
+            id: btnshare
+            enabled: navigationbar.queryBar.url.length > 0
+            width: visible ? calcButtonWidth() : 0
+            height: parent.height
+            anchors.verticalCenter: parent.verticalCenter
+            icon.source: "image://theme/icon-m-share"
+
+            onClicked: {
+                actionbar.evaporate();
+                sharemenu.share(browsertab.getUrl());
             }
         }
 

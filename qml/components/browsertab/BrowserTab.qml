@@ -145,6 +145,7 @@ Item
     onVisibleChanged: {
         if(!visible) {
             linkmenu.hide();
+            sharemenu.hide();
             return;
         }
 
@@ -177,6 +178,11 @@ Item
         onOpenTabRequested: tabview.addTab(url, foreground)
         onAddToFavoritesRequested: Favorites.addUrl(url, url)
         onRemoveFromFavoritesRequested: Favorites.removeFromUrl(url)
+    }
+
+    ShareMenu {
+        id: sharemenu
+        onShareRequested: browsertab.load(sharedurl)
     }
 
     CredentialDialog {

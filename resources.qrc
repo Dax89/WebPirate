@@ -6,5 +6,6 @@
         <file>res/quickgrid.png</file>
         <file>res/exit-fullscreen.png</file>
         <file>res/enter-fullscreen.png</file>
+        <file>res/googleplus.png</file>
     </qresource>
 </RCC>

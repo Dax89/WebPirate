@@ -179,6 +179,7 @@ SilicaWebView
             searchbar.evaporate();
             tabmenu.hide();
             linkmenu.hide();
+            sharemenu.hide();
             return;
         }
 

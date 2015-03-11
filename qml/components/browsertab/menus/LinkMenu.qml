@@ -42,6 +42,12 @@ PopupDialog
                                                         }
                                                       },
 
+                                             QtObject { readonly property string menuText: qsTr("Share")
+                                                        function execute() {
+                                                            sharemenu.share(linkmenu.url);
+                                                        }
+                                                      },
+
                                              QtObject { readonly property string menuText: linkmenu.favorite ? qsTr("Remove From Favorites") : qsTr("Add To Favorites")
                                                         function execute() {
                                                             if(!linkmenu.favorite) {

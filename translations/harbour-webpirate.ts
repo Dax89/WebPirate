@@ -635,6 +635,10 @@
         <source>Open New Tab in Background</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Share</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>LoadFailed</name>
@@ -996,6 +1000,25 @@
     </message>
     <message>
         <source>Long press to edit</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ShareMenu</name>
+    <message>
+        <source>Share on Facebook</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Share on Twitter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Share on Google+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Share</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
