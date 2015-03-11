@@ -13,12 +13,30 @@ Page
         pageStack.pop();
     }
 
-    PageHeader { id: pageheader; title: qsTr("Session Manager") }
-
     SilicaListView
     {
-        anchors { left: parent.left; top: pageheader.bottom; right: parent.right; bottom: parent.bottom }
+        anchors.fill: parent
         model: ListModel { id: sessionmodel }
+
+        PullDownMenu
+        {
+            MenuItem {
+                text: qsTr("Save current session")
+
+                onClicked: {
+                    var sessionpage = pageStack.push(Qt.resolvedUrl("SaveSessionPage.qml"), { "tabView": tabView })
+
+                    sessionpage.accepted.connect(function() {
+                        Sessions.getAll(sessionmodel);
+                    });
+                }
+            }
+        }
+
+        header: PageHeader {
+            id: pageheader;
+            title: qsTr("Session Manager")
+        }
 
         delegate: PageItem {
             id: sessionitem

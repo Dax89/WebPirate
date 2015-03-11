@@ -108,11 +108,11 @@
     </message>
     <message>
         <source>Save Session</source>
-        <translation>Spara session</translation>
+        <translation type="vanished">Spara session</translation>
     </message>
     <message>
         <source>Load Session</source>
-        <translation>Läs in session</translation>
+        <translation type="vanished">Läs in session</translation>
     </message>
     <message>
         <source>Cover settings</source>
@@ -899,6 +899,37 @@
     </message>
 </context>
 <context>
+    <name>SessionManagerPage</name>
+    <message>
+        <source>Session Manager</source>
+        <translation type="unfinished">Sessionshanterare</translation>
+    </message>
+    <message>
+        <source>Tabs saved</source>
+        <translation type="unfinished">Flikar sparade</translation>
+    </message>
+    <message>
+        <source>Open</source>
+        <translation type="unfinished">Öppna</translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation type="unfinished">Redigera</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation type="unfinished">Ta bort</translation>
+    </message>
+    <message>
+        <source>Deleting session</source>
+        <translation type="unfinished">Tar bort session</translation>
+    </message>
+    <message>
+        <source>Save current session</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>SessionPage</name>
     <message>
         <source>Save Session</source>
@@ -929,27 +960,27 @@
     <name>SessionSettingsPage</name>
     <message>
         <source>Session Manager</source>
-        <translation>Sessionshanterare</translation>
+        <translation type="vanished">Sessionshanterare</translation>
     </message>
     <message>
         <source>Tabs saved</source>
-        <translation>Flikar sparade</translation>
+        <translation type="vanished">Flikar sparade</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation>Öppna</translation>
+        <translation type="vanished">Öppna</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Redigera</translation>
+        <translation type="vanished">Redigera</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Ta bort</translation>
+        <translation type="vanished">Ta bort</translation>
     </message>
     <message>
         <source>Deleting session</source>
-        <translation>Tar bort session</translation>
+        <translation type="vanished">Tar bort session</translation>
     </message>
 </context>
 <context>

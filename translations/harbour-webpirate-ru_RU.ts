@@ -108,11 +108,11 @@
     </message>
     <message>
         <source>Save Session</source>
-        <translation>Сохранить сессию</translation>
+        <translation type="vanished">Сохранить сессию</translation>
     </message>
     <message>
         <source>Load Session</source>
-        <translation>Загрузить сессию</translation>
+        <translation type="vanished">Загрузить сессию</translation>
     </message>
     <message>
         <source>Cover settings</source>
@@ -899,6 +899,37 @@
     </message>
 </context>
 <context>
+    <name>SessionManagerPage</name>
+    <message>
+        <source>Session Manager</source>
+        <translation type="unfinished">Управление сессией</translation>
+    </message>
+    <message>
+        <source>Tabs saved</source>
+        <translation type="unfinished">Сохраненные вкладки</translation>
+    </message>
+    <message>
+        <source>Open</source>
+        <translation type="unfinished">Открыть</translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation type="unfinished">Удалить</translation>
+    </message>
+    <message>
+        <source>Deleting session</source>
+        <translation type="unfinished">Удаление сессии</translation>
+    </message>
+    <message>
+        <source>Save current session</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>SessionPage</name>
     <message>
         <source>Save Session</source>
@@ -929,27 +960,27 @@
     <name>SessionSettingsPage</name>
     <message>
         <source>Session Manager</source>
-        <translation>Управление сессией</translation>
+        <translation type="vanished">Управление сессией</translation>
     </message>
     <message>
         <source>Tabs saved</source>
-        <translation>Сохраненные вкладки</translation>
+        <translation type="vanished">Сохраненные вкладки</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation>Открыть</translation>
+        <translation type="vanished">Открыть</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Редактировать</translation>
+        <translation type="vanished">Редактировать</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Удалить</translation>
+        <translation type="vanished">Удалить</translation>
     </message>
     <message>
         <source>Deleting session</source>
-        <translation>Удаление сессии</translation>
+        <translation type="vanished">Удаление сессии</translation>
     </message>
 </context>
 <context>

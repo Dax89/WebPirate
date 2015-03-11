@@ -59,6 +59,14 @@ Item
             SidebarItem
             {
                 anchors { left: parent.left; right: parent.right }
+                icon: "image://theme/icon-s-group-chat"
+                text: qsTr("Sessions")
+                onClicked: pageStack.push(Qt.resolvedUrl("../../pages/session/SessionManagerPage.qml"), { "tabView": tabview });
+            }
+
+            SidebarItem
+            {
+                anchors { left: parent.left; right: parent.right }
                 icon: "image://theme/icon-s-cloud-download"
                 text: qsTr("Downloads")
                 circleVisible: true
@@ -75,28 +83,6 @@ Item
                 enabled: tabview.closedtabs.count > 0
                 circleText: tabview.closedtabs.count
                 onClicked: pageStack.push(Qt.resolvedUrl("../../pages/closedtabs/ClosedTabsPage.qml"), { "tabView": tabview });
-            }
-
-            SectionHeader
-            {
-                id: sessionsection
-                text: qsTr("Sessions")
-            }
-
-            SidebarItem
-            {
-                anchors { left: parent.left; right: parent.right }
-                icon: "image://theme/icon-s-device-download"
-                text: qsTr("Save Session")
-                onClicked: pageStack.push(Qt.resolvedUrl("../../pages/session/SaveSessionPage.qml"), { "tabView": tabview });
-            }
-
-            SidebarItem
-            {
-                anchors { left: parent.left; right: parent.right }
-                icon: "image://theme/icon-s-device-upload"
-                text: qsTr("Load Session")
-                onClicked: pageStack.push(Qt.resolvedUrl("../../pages/session/SessionSettingsPage.qml"), { "tabView": tabview });
             }
 
             SectionHeader

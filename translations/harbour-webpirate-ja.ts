@@ -108,11 +108,11 @@
     </message>
     <message>
         <source>Save Session</source>
-        <translation>セッションの保存</translation>
+        <translation type="vanished">セッションの保存</translation>
     </message>
     <message>
         <source>Load Session</source>
-        <translation>セッションを開く</translation>
+        <translation type="vanished">セッションを開く</translation>
     </message>
     <message>
         <source>Cover settings</source>
@@ -899,6 +899,37 @@
     </message>
 </context>
 <context>
+    <name>SessionManagerPage</name>
+    <message>
+        <source>Session Manager</source>
+        <translation type="unfinished">セッションマネージャー</translation>
+    </message>
+    <message>
+        <source>Tabs saved</source>
+        <translation type="unfinished">保存済みタブ</translation>
+    </message>
+    <message>
+        <source>Open</source>
+        <translation type="unfinished">開く</translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Deleting session</source>
+        <translation type="unfinished">セッションを削除中</translation>
+    </message>
+    <message>
+        <source>Save current session</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>SessionPage</name>
     <message>
         <source>Save Session</source>
@@ -929,27 +960,27 @@
     <name>SessionSettingsPage</name>
     <message>
         <source>Session Manager</source>
-        <translation>セッションマネージャー</translation>
+        <translation type="vanished">セッションマネージャー</translation>
     </message>
     <message>
         <source>Tabs saved</source>
-        <translation>保存済みタブ</translation>
+        <translation type="vanished">保存済みタブ</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation>開く</translation>
+        <translation type="vanished">開く</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>編集</translation>
+        <translation type="vanished">編集</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>消去する</translation>
+        <translation type="vanished">消去する</translation>
     </message>
     <message>
         <source>Deleting session</source>
-        <translation>セッションを削除中</translation>
+        <translation type="vanished">セッションを削除中</translation>
     </message>
 </context>
 <context>

@@ -108,11 +108,11 @@
     </message>
     <message>
         <source>Save Session</source>
-        <translation>Shranjene seje</translation>
+        <translation type="vanished">Shranjene seje</translation>
     </message>
     <message>
         <source>Load Session</source>
-        <translation>Naloži sejo</translation>
+        <translation type="vanished">Naloži sejo</translation>
     </message>
     <message>
         <source>Cover settings</source>
@@ -899,6 +899,37 @@
     </message>
 </context>
 <context>
+    <name>SessionManagerPage</name>
+    <message>
+        <source>Session Manager</source>
+        <translation type="unfinished">Upravitelj sej</translation>
+    </message>
+    <message>
+        <source>Tabs saved</source>
+        <translation type="unfinished">Zavihki so shranjeni</translation>
+    </message>
+    <message>
+        <source>Open</source>
+        <translation type="unfinished">Odpri</translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation type="unfinished">Uredi</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation type="unfinished">Izbriši</translation>
+    </message>
+    <message>
+        <source>Deleting session</source>
+        <translation type="unfinished">Brisanje seje</translation>
+    </message>
+    <message>
+        <source>Save current session</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>SessionPage</name>
     <message>
         <source>Save Session</source>
@@ -929,27 +960,27 @@
     <name>SessionSettingsPage</name>
     <message>
         <source>Session Manager</source>
-        <translation>Upravitelj sej</translation>
+        <translation type="vanished">Upravitelj sej</translation>
     </message>
     <message>
         <source>Tabs saved</source>
-        <translation>Zavihki so shranjeni</translation>
+        <translation type="vanished">Zavihki so shranjeni</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation>Odpri</translation>
+        <translation type="vanished">Odpri</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Uredi</translation>
+        <translation type="vanished">Uredi</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Izbriši</translation>
+        <translation type="vanished">Izbriši</translation>
     </message>
     <message>
         <source>Deleting session</source>
-        <translation>Brisanje seje</translation>
+        <translation type="vanished">Brisanje seje</translation>
     </message>
 </context>
 <context>

@@ -108,11 +108,11 @@
     </message>
     <message>
         <source>Save Session</source>
-        <translation>Uložit relaci</translation>
+        <translation type="vanished">Uložit relaci</translation>
     </message>
     <message>
         <source>Load Session</source>
-        <translation>Načíst relaci</translation>
+        <translation type="vanished">Načíst relaci</translation>
     </message>
     <message>
         <source>Cover settings</source>
@@ -899,6 +899,37 @@
     </message>
 </context>
 <context>
+    <name>SessionManagerPage</name>
+    <message>
+        <source>Session Manager</source>
+        <translation type="unfinished">Správce relací</translation>
+    </message>
+    <message>
+        <source>Tabs saved</source>
+        <translation type="unfinished">Panely uloženy</translation>
+    </message>
+    <message>
+        <source>Open</source>
+        <translation type="unfinished">Otevřít</translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation type="unfinished">Upravit</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Deleting session</source>
+        <translation type="unfinished">Mažu relaci</translation>
+    </message>
+    <message>
+        <source>Save current session</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>SessionPage</name>
     <message>
         <source>Save Session</source>
@@ -929,27 +960,27 @@
     <name>SessionSettingsPage</name>
     <message>
         <source>Session Manager</source>
-        <translation>Správce relací</translation>
+        <translation type="vanished">Správce relací</translation>
     </message>
     <message>
         <source>Tabs saved</source>
-        <translation>Panely uloženy</translation>
+        <translation type="vanished">Panely uloženy</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation>Otevřít</translation>
+        <translation type="vanished">Otevřít</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Upravit</translation>
+        <translation type="vanished">Upravit</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Smazat</translation>
+        <translation type="vanished">Smazat</translation>
     </message>
     <message>
         <source>Deleting session</source>
-        <translation>Mažu relaci</translation>
+        <translation type="vanished">Mažu relaci</translation>
     </message>
 </context>
 <context>

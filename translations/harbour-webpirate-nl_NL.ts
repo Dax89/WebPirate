@@ -108,11 +108,11 @@
     </message>
     <message>
         <source>Save Session</source>
-        <translation>Sessie opslaan</translation>
+        <translation type="vanished">Sessie opslaan</translation>
     </message>
     <message>
         <source>Load Session</source>
-        <translation>Sessie laden</translation>
+        <translation type="vanished">Sessie laden</translation>
     </message>
     <message>
         <source>Cover settings</source>
@@ -899,6 +899,37 @@
     </message>
 </context>
 <context>
+    <name>SessionManagerPage</name>
+    <message>
+        <source>Session Manager</source>
+        <translation type="unfinished">Sessiebeheerder</translation>
+    </message>
+    <message>
+        <source>Tabs saved</source>
+        <translation type="unfinished">Opgeslagen tabbladen</translation>
+    </message>
+    <message>
+        <source>Open</source>
+        <translation type="unfinished">Openen</translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation type="unfinished">Bewerken</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation type="unfinished">Verwijderen</translation>
+    </message>
+    <message>
+        <source>Deleting session</source>
+        <translation type="unfinished">Bezig met verwijderen van sessie</translation>
+    </message>
+    <message>
+        <source>Save current session</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>SessionPage</name>
     <message>
         <source>Save Session</source>
@@ -929,27 +960,27 @@
     <name>SessionSettingsPage</name>
     <message>
         <source>Session Manager</source>
-        <translation>Sessiebeheerder</translation>
+        <translation type="vanished">Sessiebeheerder</translation>
     </message>
     <message>
         <source>Tabs saved</source>
-        <translation>Opgeslagen tabbladen</translation>
+        <translation type="vanished">Opgeslagen tabbladen</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation>Openen</translation>
+        <translation type="vanished">Openen</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Bewerken</translation>
+        <translation type="vanished">Bewerken</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Verwijderen</translation>
+        <translation type="vanished">Verwijderen</translation>
     </message>
     <message>
         <source>Deleting session</source>
-        <translation>Bezig met verwijderen van sessie</translation>
+        <translation type="vanished">Bezig met verwijderen van sessie</translation>
     </message>
 </context>
 <context>

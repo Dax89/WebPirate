@@ -107,14 +107,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Save Session</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Load Session</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Cover settings</source>
         <translation type="unfinished"></translation>
     </message>
@@ -899,6 +891,37 @@
     </message>
 </context>
 <context>
+    <name>SessionManagerPage</name>
+    <message>
+        <source>Session Manager</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Tabs saved</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Open</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Deleting session</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Save current session</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>SessionPage</name>
     <message>
         <source>Save Session</source>
@@ -922,33 +945,6 @@
     </message>
     <message>
         <source>Selected</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>SessionSettingsPage</name>
-    <message>
-        <source>Session Manager</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Tabs saved</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Open</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Edit</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Deleting session</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

@@ -108,11 +108,11 @@
     </message>
     <message>
         <source>Save Session</source>
-        <translation>保存会话</translation>
+        <translation type="vanished">保存会话</translation>
     </message>
     <message>
         <source>Load Session</source>
-        <translation>载入会话</translation>
+        <translation type="vanished">载入会话</translation>
     </message>
     <message>
         <source>Cover settings</source>
@@ -899,6 +899,37 @@
     </message>
 </context>
 <context>
+    <name>SessionManagerPage</name>
+    <message>
+        <source>Session Manager</source>
+        <translation type="unfinished">会话管理器</translation>
+    </message>
+    <message>
+        <source>Tabs saved</source>
+        <translation type="unfinished">标签页已保存</translation>
+    </message>
+    <message>
+        <source>Open</source>
+        <translation type="unfinished">打开</translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation type="unfinished">编辑</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation type="unfinished">删除</translation>
+    </message>
+    <message>
+        <source>Deleting session</source>
+        <translation type="unfinished">正在删除会话</translation>
+    </message>
+    <message>
+        <source>Save current session</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>SessionPage</name>
     <message>
         <source>Save Session</source>
@@ -929,27 +960,27 @@
     <name>SessionSettingsPage</name>
     <message>
         <source>Session Manager</source>
-        <translation>会话管理器</translation>
+        <translation type="vanished">会话管理器</translation>
     </message>
     <message>
         <source>Tabs saved</source>
-        <translation>标签页已保存</translation>
+        <translation type="vanished">标签页已保存</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation>打开</translation>
+        <translation type="vanished">打开</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>编辑</translation>
+        <translation type="vanished">编辑</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>删除</translation>
+        <translation type="vanished">删除</translation>
     </message>
     <message>
         <source>Deleting session</source>
-        <translation>正在删除会话</translation>
+        <translation type="vanished">正在删除会话</translation>
     </message>
 </context>
 <context>

@@ -108,11 +108,11 @@
     </message>
     <message>
         <source>Save Session</source>
-        <translation>Desa la sessió</translation>
+        <translation type="vanished">Desa la sessió</translation>
     </message>
     <message>
         <source>Load Session</source>
-        <translation>Carrega una sessió</translation>
+        <translation type="vanished">Carrega una sessió</translation>
     </message>
     <message>
         <source>Cover settings</source>
@@ -899,6 +899,37 @@
     </message>
 </context>
 <context>
+    <name>SessionManagerPage</name>
+    <message>
+        <source>Session Manager</source>
+        <translation type="unfinished">Gestor de sessions</translation>
+    </message>
+    <message>
+        <source>Tabs saved</source>
+        <translation type="unfinished">S&apos;han desat les pestanyes</translation>
+    </message>
+    <message>
+        <source>Open</source>
+        <translation type="unfinished">Obre</translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation type="unfinished">Edita</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation type="unfinished">Elimina</translation>
+    </message>
+    <message>
+        <source>Deleting session</source>
+        <translation type="unfinished">S&apos;està eliminant la sessió</translation>
+    </message>
+    <message>
+        <source>Save current session</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>SessionPage</name>
     <message>
         <source>Save Session</source>
@@ -929,27 +960,27 @@
     <name>SessionSettingsPage</name>
     <message>
         <source>Session Manager</source>
-        <translation>Gestor de sessions</translation>
+        <translation type="vanished">Gestor de sessions</translation>
     </message>
     <message>
         <source>Tabs saved</source>
-        <translation>S&apos;han desat les pestanyes</translation>
+        <translation type="vanished">S&apos;han desat les pestanyes</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation>Obre</translation>
+        <translation type="vanished">Obre</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Edita</translation>
+        <translation type="vanished">Edita</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Elimina</translation>
+        <translation type="vanished">Elimina</translation>
     </message>
     <message>
         <source>Deleting session</source>
-        <translation>S&apos;està eliminant la sessió</translation>
+        <translation type="vanished">S&apos;està eliminant la sessió</translation>
     </message>
 </context>
 <context>

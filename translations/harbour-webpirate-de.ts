@@ -108,11 +108,11 @@
     </message>
     <message>
         <source>Save Session</source>
-        <translation>Sitzung speichern</translation>
+        <translation type="vanished">Sitzung speichern</translation>
     </message>
     <message>
         <source>Load Session</source>
-        <translation>Sitzung wiederherstellen</translation>
+        <translation type="vanished">Sitzung wiederherstellen</translation>
     </message>
     <message>
         <source>Cover settings</source>
@@ -899,6 +899,37 @@
     </message>
 </context>
 <context>
+    <name>SessionManagerPage</name>
+    <message>
+        <source>Session Manager</source>
+        <translation type="unfinished">Sitzungsmanager</translation>
+    </message>
+    <message>
+        <source>Tabs saved</source>
+        <translation type="unfinished">Gespeicherte Tabs</translation>
+    </message>
+    <message>
+        <source>Open</source>
+        <translation type="unfinished">Öffnen</translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation type="unfinished">Bearbeiten</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation type="unfinished">Löschen</translation>
+    </message>
+    <message>
+        <source>Deleting session</source>
+        <translation type="unfinished">Sitzung wird gelöscht</translation>
+    </message>
+    <message>
+        <source>Save current session</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>SessionPage</name>
     <message>
         <source>Save Session</source>
@@ -929,27 +960,27 @@
     <name>SessionSettingsPage</name>
     <message>
         <source>Session Manager</source>
-        <translation>Sitzungsmanager</translation>
+        <translation type="vanished">Sitzungsmanager</translation>
     </message>
     <message>
         <source>Tabs saved</source>
-        <translation>Gespeicherte Tabs</translation>
+        <translation type="vanished">Gespeicherte Tabs</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation>Öffnen</translation>
+        <translation type="vanished">Öffnen</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Bearbeiten</translation>
+        <translation type="vanished">Bearbeiten</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Löschen</translation>
+        <translation type="vanished">Löschen</translation>
     </message>
     <message>
         <source>Deleting session</source>
-        <translation>Sitzung wird gelöscht</translation>
+        <translation type="vanished">Sitzung wird gelöscht</translation>
     </message>
 </context>
 <context>

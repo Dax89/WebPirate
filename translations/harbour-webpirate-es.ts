@@ -108,11 +108,11 @@
     </message>
     <message>
         <source>Save Session</source>
-        <translation>Guardar sesión</translation>
+        <translation type="vanished">Guardar sesión</translation>
     </message>
     <message>
         <source>Load Session</source>
-        <translation>Cargar sesión</translation>
+        <translation type="vanished">Cargar sesión</translation>
     </message>
     <message>
         <source>Cover settings</source>
@@ -900,6 +900,37 @@
     </message>
 </context>
 <context>
+    <name>SessionManagerPage</name>
+    <message>
+        <source>Session Manager</source>
+        <translation type="unfinished">Gestor de sesiones</translation>
+    </message>
+    <message>
+        <source>Tabs saved</source>
+        <translation type="unfinished">Pestañas guardadas</translation>
+    </message>
+    <message>
+        <source>Open</source>
+        <translation type="unfinished">Abrir</translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation type="unfinished">Editar</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation type="unfinished">Borrar</translation>
+    </message>
+    <message>
+        <source>Deleting session</source>
+        <translation type="unfinished">Borrando sesión</translation>
+    </message>
+    <message>
+        <source>Save current session</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>SessionPage</name>
     <message>
         <source>Save Session</source>
@@ -930,27 +961,27 @@
     <name>SessionSettingsPage</name>
     <message>
         <source>Session Manager</source>
-        <translation>Gestor de sesiones</translation>
+        <translation type="vanished">Gestor de sesiones</translation>
     </message>
     <message>
         <source>Tabs saved</source>
-        <translation>Pestañas guardadas</translation>
+        <translation type="vanished">Pestañas guardadas</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation>Abrir</translation>
+        <translation type="vanished">Abrir</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Editar</translation>
+        <translation type="vanished">Editar</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Borrar</translation>
+        <translation type="vanished">Borrar</translation>
     </message>
     <message>
         <source>Deleting session</source>
-        <translation>Borrando sesión</translation>
+        <translation type="vanished">Borrando sesión</translation>
     </message>
 </context>
 <context>

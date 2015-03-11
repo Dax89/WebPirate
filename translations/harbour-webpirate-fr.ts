@@ -108,11 +108,11 @@
     </message>
     <message>
         <source>Save Session</source>
-        <translation>Enregistrer la session</translation>
+        <translation type="vanished">Enregistrer la session</translation>
     </message>
     <message>
         <source>Load Session</source>
-        <translation>Charger la session</translation>
+        <translation type="vanished">Charger la session</translation>
     </message>
     <message>
         <source>Cover settings</source>
@@ -899,6 +899,37 @@
     </message>
 </context>
 <context>
+    <name>SessionManagerPage</name>
+    <message>
+        <source>Session Manager</source>
+        <translation type="unfinished">Gestionnaire de session</translation>
+    </message>
+    <message>
+        <source>Tabs saved</source>
+        <translation type="unfinished">Onglets enregistrés</translation>
+    </message>
+    <message>
+        <source>Open</source>
+        <translation type="unfinished">Ouvrir</translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation type="unfinished">Éditer</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation type="unfinished">Supprimer</translation>
+    </message>
+    <message>
+        <source>Deleting session</source>
+        <translation type="unfinished">Supprimer la session</translation>
+    </message>
+    <message>
+        <source>Save current session</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>SessionPage</name>
     <message>
         <source>Save Session</source>
@@ -929,27 +960,27 @@
     <name>SessionSettingsPage</name>
     <message>
         <source>Session Manager</source>
-        <translation>Gestionnaire de session</translation>
+        <translation type="vanished">Gestionnaire de session</translation>
     </message>
     <message>
         <source>Tabs saved</source>
-        <translation>Onglets enregistrés</translation>
+        <translation type="vanished">Onglets enregistrés</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation>Ouvrir</translation>
+        <translation type="vanished">Ouvrir</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Éditer</translation>
+        <translation type="vanished">Éditer</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Supprimer</translation>
+        <translation type="vanished">Supprimer</translation>
     </message>
     <message>
         <source>Deleting session</source>
-        <translation>Supprimer la session</translation>
+        <translation type="vanished">Supprimer la session</translation>
     </message>
 </context>
 <context>
