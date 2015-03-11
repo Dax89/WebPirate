@@ -23,10 +23,10 @@ Item
 
     function getIcon()
     {
-        if(state === "newtab")
+        if((state === "newtab") || (webview.icon === ""))
             return "image://theme/icon-m-tabs";
 
-        return (webview.icon !== "" ? webview.icon : "image://theme/icon-s-group-chat");
+        return webview.icon;
     }
 
     function getTitle()
