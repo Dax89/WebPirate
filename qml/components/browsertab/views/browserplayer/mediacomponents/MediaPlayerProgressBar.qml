@@ -11,11 +11,18 @@ Item
     property alias bufferMaximum: bufferprogress.maximumValue
     property alias bufferValue: bufferprogress.value
 
+    signal dragChanged(bool dragging)
     signal seekRequested(int seekpos)
 
     function reverseRgb(rgba)
     {
         return Qt.rgba(1.0 - rgba.r, 1.0 - rgba.g, 1.0 - rgba.b, 1.0);
+    }
+
+    function seekTo(seekpx)
+    {
+        var seekpos = Math.floor(((videoprogress.maximumValue - videoprogress.minimumValue) / videoprogress.width) * seekpx);
+        seekRequested(seekpos);
     }
 
     id: mbprogressbar
@@ -35,7 +42,7 @@ Item
     Rectangle
     {
         id: progresscontainer
-        anchors { left: lblcurrentprogress.right; right: lblduration.left; top: parent.top; bottom: parent.bottom; leftMargin: Theme.paddingSmall; rightMargin: Theme.paddingSmall }
+        anchors { left: lblcurrentprogress.right; right: lblduration.left; top: parent.top; bottom: parent.bottom; leftMargin: Theme.paddingLarge; rightMargin: Theme.paddingLarge }
         color: "white"
 
         LoadingBar
@@ -51,17 +58,35 @@ Item
             id: videoprogress
             anchors.fill: parent
             barHeight: mbprogressbar.height
-            z: 10
+
+            MediaPlayerCursor
+            {
+                id: mediacursor
+                size: videoprogress.barHeight + Theme.paddingMedium
+                anchors.verticalCenter: videoprogress.progressItem.verticalCenter
+                z: 15
+
+                x: {
+                    if(mousearea.drag.active)
+                        return mousearea.mouseX;
+
+                    return videoprogress.progressItem.width - (size / 2);
+                }
+            }
         }
 
         MouseArea
         {
-            anchors.fill: parent
+            id: mousearea
             z: 20
+            anchors.fill: parent
+            drag { target: mediacursor; axis: Drag.XAxis; minimumX: 0; maximumX: progresscontainer.width }
+            drag.onActiveChanged: dragChanged(drag.active)
+            onClicked: seekTo(mouse.x)
 
-            onClicked: {
-                var seekpos = Math.floor(((videoprogress.maximumValue - videoprogress.minimumValue) / videoprogress.width) * mouse.x);
-                seekRequested(seekpos);
+            onReleased: {
+                if(drag.active)
+                    seekTo(mediacursor.x + (mediacursor.size / 2));
             }
         }
     }

@@ -70,6 +70,7 @@ Rectangle
         progressMinimum: 0
         progressMaximum: videoplayer.duration
         progressValue: videoplayer.position
+        onDragChanged: keepVisible(dragging)
 
         onSeekRequested: {
             restoreOpacity();

@@ -11,6 +11,7 @@ Rectangle
     property bool canDisplay: true
     property int barHeight: 4
 
+    property alias progressItem: progress
     property alias barColor: progress.color
 
     height: barHeight
