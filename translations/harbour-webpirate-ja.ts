@@ -75,6 +75,10 @@
         <source>Italian</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Finnish</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ActionSidebar</name>
