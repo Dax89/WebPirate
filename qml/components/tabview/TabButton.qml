@@ -27,11 +27,6 @@ MouseArea
     }
 
     onClicked: {
-        if(tabs.count === 1) {
-            executeClick();
-            return;
-        }
-
         if(!timdoubletap.running) {
             timdoubletap.start();
             return;
