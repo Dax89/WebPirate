@@ -192,6 +192,7 @@ Item
                 if(Qt.application.state === Qt.ApplicationActive)
                     tabheader.solidify();
 
+                quickgrid.disableEditMode();
                 quickgrid.visible = true;
             }
 
