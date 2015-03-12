@@ -1,22 +1,45 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
 
-BackgroundItem
+MouseArea
 {
     property alias icon: favicon.source
     property alias title: tabtitle.text
     property bool loading: false
 
     function getColor() {
-        if(down)
+        if(pressed && containsMouse)
             return Theme.highlightColor;
 
         return (index === tabview.currentIndex ? Theme.secondaryColor : Theme.secondaryHighlightColor);
     }
 
-    onClicked: {
+    function executeClick() {
         sidebar.collapse();
         tabview.currentIndex = index;
+    }
+
+    Timer
+    {
+        id: timdoubletap
+        interval: 150
+        onTriggered: executeClick()
+    }
+
+    onClicked: {
+        if(tabs.count === 1) {
+            executeClick();
+            return;
+        }
+
+        if(!timdoubletap.running) {
+            timdoubletap.start();
+            return;
+        }
+
+        /* Handle Double Tap */
+        if(tabs.count > 1)
+            tabview.removeTab(index);
     }
 
     onPressAndHold: {
