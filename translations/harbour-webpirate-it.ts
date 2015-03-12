@@ -107,14 +107,6 @@
         <translation>Sessioni</translation>
     </message>
     <message>
-        <source>Save Session</source>
-        <translation type="vanished">Salva sessione</translation>
-    </message>
-    <message>
-        <source>Load Session</source>
-        <translation type="vanished">Carica sessione</translation>
-    </message>
-    <message>
         <source>Cover settings</source>
         <translation>Impostazioni Cover</translation>
     </message>
@@ -564,7 +556,7 @@
     <name>FilePickerPage</name>
     <message>
         <source>Root</source>
-        <translation type="unfinished"></translation>
+        <translation>Radice</translation>
     </message>
 </context>
 <context>
@@ -637,7 +629,7 @@
     </message>
     <message>
         <source>Share</source>
-        <translation type="unfinished"></translation>
+        <translation>Condividi</translation>
     </message>
 </context>
 <context>
@@ -902,31 +894,31 @@
     <name>SessionManagerPage</name>
     <message>
         <source>Session Manager</source>
-        <translation type="unfinished">Gestore sessioni</translation>
+        <translation>Gestore sessioni</translation>
     </message>
     <message>
         <source>Tabs saved</source>
-        <translation type="unfinished">Schede salvate</translation>
+        <translation>Schede salvate</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation type="unfinished">Apri</translation>
+        <translation>Apri</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="unfinished">Modifica</translation>
+        <translation>Modifica</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>Elimina</translation>
     </message>
     <message>
         <source>Deleting session</source>
-        <translation type="unfinished">Rimozione sessione</translation>
+        <translation>Rimozione sessione</translation>
     </message>
     <message>
         <source>Save current session</source>
-        <translation type="unfinished"></translation>
+        <translation>Salva sessione corrente</translation>
     </message>
 </context>
 <context>
@@ -954,33 +946,6 @@
     <message>
         <source>Selected</source>
         <translation>Selezionata</translation>
-    </message>
-</context>
-<context>
-    <name>SessionSettingsPage</name>
-    <message>
-        <source>Session Manager</source>
-        <translation type="vanished">Gestore sessioni</translation>
-    </message>
-    <message>
-        <source>Tabs saved</source>
-        <translation type="vanished">Schede salvate</translation>
-    </message>
-    <message>
-        <source>Open</source>
-        <translation type="vanished">Apri</translation>
-    </message>
-    <message>
-        <source>Edit</source>
-        <translation type="vanished">Modifica</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <translation type="vanished">Cancella</translation>
-    </message>
-    <message>
-        <source>Deleting session</source>
-        <translation type="vanished">Rimozione sessione</translation>
     </message>
 </context>
 <context>
@@ -1035,26 +1000,26 @@
     </message>
     <message>
         <source>Restore tabs at Startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Ripristina le schede all&apos;avvio</translation>
     </message>
 </context>
 <context>
     <name>ShareMenu</name>
     <message>
         <source>Share on Facebook</source>
-        <translation type="unfinished"></translation>
+        <translation>Condividi su Facebook</translation>
     </message>
     <message>
         <source>Share on Twitter</source>
-        <translation type="unfinished"></translation>
+        <translation>Condividi su Twitter</translation>
     </message>
     <message>
         <source>Share on Google+</source>
-        <translation type="unfinished"></translation>
+        <translation>Condividi su Google+</translation>
     </message>
     <message>
         <source>Share</source>
-        <translation type="unfinished"></translation>
+        <translation>Condividi</translation>
     </message>
 </context>
 <context>

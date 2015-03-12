@@ -107,14 +107,6 @@
         <translation>Сессии</translation>
     </message>
     <message>
-        <source>Save Session</source>
-        <translation type="vanished">Сохранить сессию</translation>
-    </message>
-    <message>
-        <source>Load Session</source>
-        <translation type="vanished">Загрузить сессию</translation>
-    </message>
-    <message>
         <source>Cover settings</source>
         <translation>Настройки плиток</translation>
     </message>
@@ -261,43 +253,43 @@
     <name>BrowserGrabber</name>
     <message>
         <source>Author</source>
-        <translation type="unfinished"></translation>
+        <translation>Автор</translation>
     </message>
     <message>
         <source>Duration</source>
-        <translation type="unfinished"></translation>
+        <translation>Продолжительность</translation>
     </message>
     <message>
         <source>Response</source>
-        <translation type="unfinished"></translation>
+        <translation>Ответ</translation>
     </message>
     <message>
         <source>Title</source>
-        <translation type="unfinished"></translation>
+        <translation>Название</translation>
     </message>
     <message>
         <source>Grabbed URLs</source>
-        <translation type="unfinished"></translation>
+        <translation>Захват URL-адреса</translation>
     </message>
     <message>
         <source>Play</source>
-        <translation type="unfinished"></translation>
+        <translation>Играть</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished">Загрузить</translation>
+        <translation>Скачать</translation>
     </message>
     <message>
         <source>Grabbing video</source>
-        <translation type="unfinished"></translation>
+        <translation>Grabbing video</translation>
     </message>
     <message>
         <source>Copy URL</source>
-        <translation type="unfinished"></translation>
+        <translation>Копировать ссылку</translation>
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation type="unfinished">Ссылка скопирована</translation>
+        <translation>Ссылка скопирована</translation>
     </message>
 </context>
 <context>
@@ -557,7 +549,7 @@
     </message>
     <message>
         <source>Add to Quick Grid</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить в Fast Dial</translation>
     </message>
 </context>
 <context>
@@ -902,11 +894,11 @@
     <name>SessionManagerPage</name>
     <message>
         <source>Session Manager</source>
-        <translation type="unfinished">Управление сессией</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Tabs saved</source>
-        <translation type="unfinished">Сохраненные вкладки</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Open</source>
@@ -922,7 +914,7 @@
     </message>
     <message>
         <source>Deleting session</source>
-        <translation type="unfinished">Удаление сессии</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Save current session</source>
@@ -954,33 +946,6 @@
     <message>
         <source>Selected</source>
         <translation>Выбрано</translation>
-    </message>
-</context>
-<context>
-    <name>SessionSettingsPage</name>
-    <message>
-        <source>Session Manager</source>
-        <translation type="vanished">Управление сессией</translation>
-    </message>
-    <message>
-        <source>Tabs saved</source>
-        <translation type="vanished">Сохраненные вкладки</translation>
-    </message>
-    <message>
-        <source>Open</source>
-        <translation type="vanished">Открыть</translation>
-    </message>
-    <message>
-        <source>Edit</source>
-        <translation type="vanished">Редактировать</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <translation type="vanished">Удалить</translation>
-    </message>
-    <message>
-        <source>Deleting session</source>
-        <translation type="vanished">Удаление сессии</translation>
     </message>
 </context>
 <context>
@@ -1061,23 +1026,23 @@
     <name>TabMenu</name>
     <message>
         <source>Add to Quick Grid</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить в Fast Dial</translation>
     </message>
     <message>
         <source>Duplicate Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Копировать вкладку</translation>
     </message>
     <message>
         <source>Duplicate Tab in Background</source>
-        <translation type="unfinished"></translation>
+        <translation>Копировать вкладку в фоне</translation>
     </message>
     <message>
         <source>Close Tab</source>
-        <translation type="unfinished">Закрыть вкладку</translation>
+        <translation>Закрыть вкладку</translation>
     </message>
     <message>
         <source>Close other Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Закрыть другие вкладки</translation>
     </message>
 </context>
 <context>
@@ -1091,18 +1056,18 @@
     <name>WebViewListener</name>
     <message>
         <source>FAILED</source>
-        <translation type="unfinished"></translation>
+        <translation>Ошибка</translation>
     </message>
     <message>
         <source>Codec</source>
-        <translation type="unfinished"></translation>
+        <translation>Кодек</translation>
     </message>
 </context>
 <context>
     <name>YouTubeGrabber</name>
     <message>
         <source>Quality</source>
-        <translation type="unfinished"></translation>
+        <translation>Качество</translation>
     </message>
 </context>
 </TS>

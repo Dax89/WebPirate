@@ -107,14 +107,6 @@
         <translation>Sessions</translation>
     </message>
     <message>
-        <source>Save Session</source>
-        <translation type="vanished">Desa la sessió</translation>
-    </message>
-    <message>
-        <source>Load Session</source>
-        <translation type="vanished">Carrega una sessió</translation>
-    </message>
-    <message>
         <source>Cover settings</source>
         <translation>Configuració de portada</translation>
     </message>
@@ -564,7 +556,7 @@
     <name>FilePickerPage</name>
     <message>
         <source>Root</source>
-        <translation type="unfinished"></translation>
+        <translation>Root</translation>
     </message>
 </context>
 <context>
@@ -902,11 +894,11 @@
     <name>SessionManagerPage</name>
     <message>
         <source>Session Manager</source>
-        <translation type="unfinished">Gestor de sessions</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Tabs saved</source>
-        <translation type="unfinished">S&apos;han desat les pestanyes</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Open</source>
@@ -922,7 +914,7 @@
     </message>
     <message>
         <source>Deleting session</source>
-        <translation type="unfinished">S&apos;està eliminant la sessió</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Save current session</source>
@@ -954,33 +946,6 @@
     <message>
         <source>Selected</source>
         <translation>Seleccionat</translation>
-    </message>
-</context>
-<context>
-    <name>SessionSettingsPage</name>
-    <message>
-        <source>Session Manager</source>
-        <translation type="vanished">Gestor de sessions</translation>
-    </message>
-    <message>
-        <source>Tabs saved</source>
-        <translation type="vanished">S&apos;han desat les pestanyes</translation>
-    </message>
-    <message>
-        <source>Open</source>
-        <translation type="vanished">Obre</translation>
-    </message>
-    <message>
-        <source>Edit</source>
-        <translation type="vanished">Edita</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <translation type="vanished">Elimina</translation>
-    </message>
-    <message>
-        <source>Deleting session</source>
-        <translation type="vanished">S&apos;està eliminant la sessió</translation>
     </message>
 </context>
 <context>

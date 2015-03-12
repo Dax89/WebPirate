@@ -69,11 +69,11 @@
     </message>
     <message>
         <source>Spanish</source>
-        <translation type="unfinished"></translation>
+        <translation>Španělština</translation>
     </message>
     <message>
         <source>Italian</source>
-        <translation type="unfinished"></translation>
+        <translation>Italština</translation>
     </message>
 </context>
 <context>
@@ -105,14 +105,6 @@
     <message>
         <source>Sessions</source>
         <translation>Relace</translation>
-    </message>
-    <message>
-        <source>Save Session</source>
-        <translation type="vanished">Uložit relaci</translation>
-    </message>
-    <message>
-        <source>Load Session</source>
-        <translation type="vanished">Načíst relaci</translation>
     </message>
     <message>
         <source>Cover settings</source>
@@ -147,31 +139,31 @@
     <name>AdBlockDownloaderPage</name>
     <message>
         <source>AdBlock Updater</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktualizace AdBlock</translation>
     </message>
     <message>
         <source>State</source>
-        <translation type="unfinished"></translation>
+        <translation>Stav</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished"></translation>
+        <translation>Stáhnout</translation>
     </message>
     <message>
         <source>Ready</source>
-        <translation type="unfinished"></translation>
+        <translation>Připraveno</translation>
     </message>
     <message>
         <source>Connecting</source>
-        <translation type="unfinished"></translation>
+        <translation>Připojuje se</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Chyba</translation>
     </message>
     <message>
         <source>Completed</source>
-        <translation type="unfinished">Dokončeno</translation>
+        <translation>Dokončeno</translation>
     </message>
 </context>
 <context>
@@ -209,7 +201,7 @@
     </message>
     <message>
         <source>Add Filter</source>
-        <translation type="unfinished"></translation>
+        <translation>Přidat filtr</translation>
     </message>
 </context>
 <context>
@@ -235,7 +227,7 @@
     </message>
     <message>
         <source>User</source>
-        <translation type="unfinished"></translation>
+        <translation>Uživatel</translation>
     </message>
     <message>
         <source>Password</source>
@@ -250,7 +242,7 @@
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>Odstranit</translation>
     </message>
     <message>
         <source>Deleting rule</source>
@@ -261,43 +253,43 @@
     <name>BrowserGrabber</name>
     <message>
         <source>Author</source>
-        <translation type="unfinished"></translation>
+        <translation>Autor</translation>
     </message>
     <message>
         <source>Duration</source>
-        <translation type="unfinished"></translation>
+        <translation>Doba trvání</translation>
     </message>
     <message>
         <source>Response</source>
-        <translation type="unfinished"></translation>
+        <translation>Odpověď</translation>
     </message>
     <message>
         <source>Title</source>
-        <translation type="unfinished">Název</translation>
+        <translation>Název</translation>
     </message>
     <message>
         <source>Grabbed URLs</source>
-        <translation type="unfinished"></translation>
+        <translation>Získané adresy URL</translation>
     </message>
     <message>
         <source>Play</source>
-        <translation type="unfinished"></translation>
+        <translation>Přehrát</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished"></translation>
+        <translation>Stáhnout</translation>
     </message>
     <message>
         <source>Grabbing video</source>
-        <translation type="unfinished"></translation>
+        <translation>Získávání videa</translation>
     </message>
     <message>
         <source>Copy URL</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopírovat URL</translation>
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation type="unfinished">Odkaz zkopírován do schránky</translation>
+        <translation>Odkaz zkopírován do schránky</translation>
     </message>
 </context>
 <context>
@@ -418,7 +410,7 @@
     </message>
     <message>
         <source>No</source>
-        <translation type="unfinished">Ne</translation>
+        <translation>Ne</translation>
     </message>
     <message>
         <source>Do you want to store the password?</source>
@@ -557,29 +549,29 @@
     </message>
     <message>
         <source>Add to Quick Grid</source>
-        <translation type="unfinished"></translation>
+        <translation>Přidat do rychlé mřížky</translation>
     </message>
 </context>
 <context>
     <name>FilePickerPage</name>
     <message>
         <source>Root</source>
-        <translation type="unfinished"></translation>
+        <translation>Root</translation>
     </message>
 </context>
 <context>
     <name>FormResubmitDialog</name>
     <message>
         <source>This page contains information written by you: do you want to resend the data?</source>
-        <translation type="unfinished"></translation>
+        <translation>Tato stránka obsahuje informace zapsané vámi: přejete si přeposlat data ?</translation>
     </message>
     <message>
         <source>Yes</source>
-        <translation type="unfinished">Ano</translation>
+        <translation>Ano</translation>
     </message>
     <message>
         <source>No</source>
-        <translation type="unfinished">Ne</translation>
+        <translation>Ne</translation>
     </message>
 </context>
 <context>
@@ -633,11 +625,11 @@
     </message>
     <message>
         <source>Open New Tab in Background</source>
-        <translation type="unfinished"></translation>
+        <translation>Otevřít Nový panel na pozadí</translation>
     </message>
     <message>
         <source>Share</source>
-        <translation type="unfinished"></translation>
+        <translation>Sdílet</translation>
     </message>
 </context>
 <context>
@@ -663,7 +655,7 @@
     </message>
     <message>
         <source>Deleting item</source>
-        <translation type="unfinished"></translation>
+        <translation>Odstraňování položky</translation>
     </message>
 </context>
 <context>
@@ -678,7 +670,7 @@
     </message>
     <message>
         <source>Navigation History</source>
-        <translation type="unfinished">Historie navigace</translation>
+        <translation>Historie navigace</translation>
     </message>
 </context>
 <context>
@@ -696,7 +688,7 @@
     <name>NewPopupRulePage</name>
     <message>
         <source>Apply Rule</source>
-        <translation type="unfinished"></translation>
+        <translation>Použít pravidlo</translation>
     </message>
     <message>
         <source>Url</source>
@@ -704,7 +696,7 @@
     </message>
     <message>
         <source>Rule</source>
-        <translation type="unfinished"></translation>
+        <translation>Pravidlo</translation>
     </message>
     <message>
         <source>Allow</source>
@@ -730,11 +722,11 @@
     <name>PopupItem</name>
     <message>
         <source>Rule</source>
-        <translation type="unfinished"></translation>
+        <translation>Pravidlo</translation>
     </message>
     <message>
         <source>Allow</source>
-        <translation type="unfinished">Povolit</translation>
+        <translation>Povolit</translation>
     </message>
     <message>
         <source>Block</source>
@@ -742,7 +734,7 @@
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>Odstranit</translation>
     </message>
     <message>
         <source>Deleting rule</source>
@@ -761,7 +753,7 @@
     </message>
     <message>
         <source>Deleting rules</source>
-        <translation type="unfinished"></translation>
+        <translation>Odstraňování pravidel</translation>
     </message>
     <message>
         <source>New Rule</source>
@@ -779,7 +771,7 @@
     <name>QueryBar</name>
     <message>
         <source>Search with</source>
-        <translation type="unfinished"></translation>
+        <translation>Hledat přes</translation>
     </message>
 </context>
 <context>
@@ -853,7 +845,7 @@
     <name>SearchBar</name>
     <message>
         <source>Search</source>
-        <translation type="unfinished">Hledat</translation>
+        <translation>Hledat</translation>
     </message>
 </context>
 <context>
@@ -902,11 +894,11 @@
     <name>SessionManagerPage</name>
     <message>
         <source>Session Manager</source>
-        <translation type="unfinished">Správce relací</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Tabs saved</source>
-        <translation type="unfinished">Panely uloženy</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Open</source>
@@ -918,11 +910,11 @@
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Odstranit</translation>
     </message>
     <message>
         <source>Deleting session</source>
-        <translation type="unfinished">Mažu relaci</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Save current session</source>
@@ -954,33 +946,6 @@
     <message>
         <source>Selected</source>
         <translation>Vybrané</translation>
-    </message>
-</context>
-<context>
-    <name>SessionSettingsPage</name>
-    <message>
-        <source>Session Manager</source>
-        <translation type="vanished">Správce relací</translation>
-    </message>
-    <message>
-        <source>Tabs saved</source>
-        <translation type="vanished">Panely uloženy</translation>
-    </message>
-    <message>
-        <source>Open</source>
-        <translation type="vanished">Otevřít</translation>
-    </message>
-    <message>
-        <source>Edit</source>
-        <translation type="vanished">Upravit</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <translation type="vanished">Smazat</translation>
-    </message>
-    <message>
-        <source>Deleting session</source>
-        <translation type="vanished">Mažu relaci</translation>
     </message>
 </context>
 <context>
@@ -1031,7 +996,7 @@
     </message>
     <message>
         <source>Long press to edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Dlouze zmáčkněte pro editaci</translation>
     </message>
     <message>
         <source>Restore tabs at Startup</source>
@@ -1042,42 +1007,42 @@
     <name>ShareMenu</name>
     <message>
         <source>Share on Facebook</source>
-        <translation type="unfinished"></translation>
+        <translation>Sdílet na Facebooku</translation>
     </message>
     <message>
         <source>Share on Twitter</source>
-        <translation type="unfinished"></translation>
+        <translation>Sdílet na Twitteru</translation>
     </message>
     <message>
         <source>Share on Google+</source>
-        <translation type="unfinished"></translation>
+        <translation>Sdílet na Google+</translation>
     </message>
     <message>
         <source>Share</source>
-        <translation type="unfinished"></translation>
+        <translation>Sdílet</translation>
     </message>
 </context>
 <context>
     <name>TabMenu</name>
     <message>
         <source>Add to Quick Grid</source>
-        <translation type="unfinished"></translation>
+        <translation>Přidat do rychlé mřížky</translation>
     </message>
     <message>
         <source>Duplicate Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Duplikovat Panel</translation>
     </message>
     <message>
         <source>Duplicate Tab in Background</source>
-        <translation type="unfinished"></translation>
+        <translation>Duplikovat Panel na pozadí</translation>
     </message>
     <message>
         <source>Close Tab</source>
-        <translation type="unfinished">Zavřít panel</translation>
+        <translation>Zavřít Panel</translation>
     </message>
     <message>
         <source>Close other Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Zavřít ostatní Panely</translation>
     </message>
 </context>
 <context>
@@ -1091,18 +1056,18 @@
     <name>WebViewListener</name>
     <message>
         <source>FAILED</source>
-        <translation type="unfinished"></translation>
+        <translation>SELHALO</translation>
     </message>
     <message>
         <source>Codec</source>
-        <translation type="unfinished"></translation>
+        <translation>Kodek</translation>
     </message>
 </context>
 <context>
     <name>YouTubeGrabber</name>
     <message>
         <source>Quality</source>
-        <translation type="unfinished"></translation>
+        <translation>Kvalita</translation>
     </message>
 </context>
 </TS>

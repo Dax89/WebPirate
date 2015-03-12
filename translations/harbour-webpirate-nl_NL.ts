@@ -107,14 +107,6 @@
         <translation>Sessies</translation>
     </message>
     <message>
-        <source>Save Session</source>
-        <translation type="vanished">Sessie opslaan</translation>
-    </message>
-    <message>
-        <source>Load Session</source>
-        <translation type="vanished">Sessie laden</translation>
-    </message>
-    <message>
         <source>Cover settings</source>
         <translation>Miniatuurinstellingen</translation>
     </message>
@@ -564,7 +556,7 @@
     <name>FilePickerPage</name>
     <message>
         <source>Root</source>
-        <translation type="unfinished"></translation>
+        <translation>Bestandssyteem</translation>
     </message>
 </context>
 <context>
@@ -637,7 +629,7 @@
     </message>
     <message>
         <source>Share</source>
-        <translation type="unfinished"></translation>
+        <translation>Delen</translation>
     </message>
 </context>
 <context>
@@ -902,31 +894,31 @@
     <name>SessionManagerPage</name>
     <message>
         <source>Session Manager</source>
-        <translation type="unfinished">Sessiebeheerder</translation>
+        <translation>Sessiebeheerder</translation>
     </message>
     <message>
         <source>Tabs saved</source>
-        <translation type="unfinished">Opgeslagen tabbladen</translation>
+        <translation>Tabbladen zijn opgeslagen</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation type="unfinished">Openen</translation>
+        <translation>Openen</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="unfinished">Bewerken</translation>
+        <translation>Bewerken</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Verwijderen</translation>
+        <translation>Verwijderen</translation>
     </message>
     <message>
         <source>Deleting session</source>
-        <translation type="unfinished">Bezig met verwijderen van sessie</translation>
+        <translation>Bezig met verwijderen van sessie</translation>
     </message>
     <message>
         <source>Save current session</source>
-        <translation type="unfinished"></translation>
+        <translation>Huidige sessie opslaan</translation>
     </message>
 </context>
 <context>
@@ -954,33 +946,6 @@
     <message>
         <source>Selected</source>
         <translation>Geselecteerd</translation>
-    </message>
-</context>
-<context>
-    <name>SessionSettingsPage</name>
-    <message>
-        <source>Session Manager</source>
-        <translation type="vanished">Sessiebeheerder</translation>
-    </message>
-    <message>
-        <source>Tabs saved</source>
-        <translation type="vanished">Opgeslagen tabbladen</translation>
-    </message>
-    <message>
-        <source>Open</source>
-        <translation type="vanished">Openen</translation>
-    </message>
-    <message>
-        <source>Edit</source>
-        <translation type="vanished">Bewerken</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <translation type="vanished">Verwijderen</translation>
-    </message>
-    <message>
-        <source>Deleting session</source>
-        <translation type="vanished">Bezig met verwijderen van sessie</translation>
     </message>
 </context>
 <context>
@@ -1035,26 +1000,26 @@
     </message>
     <message>
         <source>Restore tabs at Startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Tabbladen herstellen bij opstarten</translation>
     </message>
 </context>
 <context>
     <name>ShareMenu</name>
     <message>
         <source>Share on Facebook</source>
-        <translation type="unfinished"></translation>
+        <translation>Delen op Facebook</translation>
     </message>
     <message>
         <source>Share on Twitter</source>
-        <translation type="unfinished"></translation>
+        <translation>Delen op Twitter</translation>
     </message>
     <message>
         <source>Share on Google+</source>
-        <translation type="unfinished"></translation>
+        <translation>Delen op Google+</translation>
     </message>
     <message>
         <source>Share</source>
-        <translation type="unfinished"></translation>
+        <translation>Delen</translation>
     </message>
 </context>
 <context>

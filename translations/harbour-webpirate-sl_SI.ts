@@ -107,14 +107,6 @@
         <translation>Seje</translation>
     </message>
     <message>
-        <source>Save Session</source>
-        <translation type="vanished">Shranjene seje</translation>
-    </message>
-    <message>
-        <source>Load Session</source>
-        <translation type="vanished">Naloži sejo</translation>
-    </message>
-    <message>
         <source>Cover settings</source>
         <translation>Nastavitve naslovnice</translation>
     </message>
@@ -261,43 +253,43 @@
     <name>BrowserGrabber</name>
     <message>
         <source>Author</source>
-        <translation type="unfinished"></translation>
+        <translation>Avtor</translation>
     </message>
     <message>
         <source>Duration</source>
-        <translation type="unfinished"></translation>
+        <translation>Trajanje</translation>
     </message>
     <message>
         <source>Response</source>
-        <translation type="unfinished"></translation>
+        <translation>Odgovor</translation>
     </message>
     <message>
         <source>Title</source>
-        <translation type="unfinished">Naslov</translation>
+        <translation>Naslov</translation>
     </message>
     <message>
         <source>Grabbed URLs</source>
-        <translation type="unfinished"></translation>
+        <translation>Grabbed URLs</translation>
     </message>
     <message>
         <source>Play</source>
-        <translation type="unfinished"></translation>
+        <translation>Predvajaj</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished">Prenos</translation>
+        <translation>Prenos</translation>
     </message>
     <message>
         <source>Grabbing video</source>
-        <translation type="unfinished"></translation>
+        <translation>Grabbing video</translation>
     </message>
     <message>
         <source>Copy URL</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopiraj URL</translation>
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation type="unfinished">Povezava shranjena v odložišče</translation>
+        <translation>Povezava shranjena v odložišče</translation>
     </message>
 </context>
 <context>
@@ -557,14 +549,14 @@
     </message>
     <message>
         <source>Add to Quick Grid</source>
-        <translation type="unfinished"></translation>
+        <translation>Dodaj na QuickGrid</translation>
     </message>
 </context>
 <context>
     <name>FilePickerPage</name>
     <message>
         <source>Root</source>
-        <translation type="unfinished"></translation>
+        <translation>Root</translation>
     </message>
 </context>
 <context>
@@ -637,7 +629,7 @@
     </message>
     <message>
         <source>Share</source>
-        <translation type="unfinished"></translation>
+        <translation>Deli</translation>
     </message>
 </context>
 <context>
@@ -902,11 +894,11 @@
     <name>SessionManagerPage</name>
     <message>
         <source>Session Manager</source>
-        <translation type="unfinished">Upravitelj sej</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Tabs saved</source>
-        <translation type="unfinished">Zavihki so shranjeni</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Open</source>
@@ -922,7 +914,7 @@
     </message>
     <message>
         <source>Deleting session</source>
-        <translation type="unfinished">Brisanje seje</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Save current session</source>
@@ -954,33 +946,6 @@
     <message>
         <source>Selected</source>
         <translation>Izbrano</translation>
-    </message>
-</context>
-<context>
-    <name>SessionSettingsPage</name>
-    <message>
-        <source>Session Manager</source>
-        <translation type="vanished">Upravitelj sej</translation>
-    </message>
-    <message>
-        <source>Tabs saved</source>
-        <translation type="vanished">Zavihki so shranjeni</translation>
-    </message>
-    <message>
-        <source>Open</source>
-        <translation type="vanished">Odpri</translation>
-    </message>
-    <message>
-        <source>Edit</source>
-        <translation type="vanished">Uredi</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <translation type="vanished">Izbriši</translation>
-    </message>
-    <message>
-        <source>Deleting session</source>
-        <translation type="vanished">Brisanje seje</translation>
     </message>
 </context>
 <context>
@@ -1042,42 +1007,42 @@
     <name>ShareMenu</name>
     <message>
         <source>Share on Facebook</source>
-        <translation type="unfinished"></translation>
+        <translation>Deli na Facebooku</translation>
     </message>
     <message>
         <source>Share on Twitter</source>
-        <translation type="unfinished"></translation>
+        <translation>Deli na Twitterju</translation>
     </message>
     <message>
         <source>Share on Google+</source>
-        <translation type="unfinished"></translation>
+        <translation>Deli na Google+</translation>
     </message>
     <message>
         <source>Share</source>
-        <translation type="unfinished"></translation>
+        <translation>Deli</translation>
     </message>
 </context>
 <context>
     <name>TabMenu</name>
     <message>
         <source>Add to Quick Grid</source>
-        <translation type="unfinished"></translation>
+        <translation>Dodaj na QuickGrid</translation>
     </message>
     <message>
         <source>Duplicate Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Podvoji zavihek</translation>
     </message>
     <message>
         <source>Duplicate Tab in Background</source>
-        <translation type="unfinished"></translation>
+        <translation>Podvoji zavihek v ozadju</translation>
     </message>
     <message>
         <source>Close Tab</source>
-        <translation type="unfinished">Zapri zavihek</translation>
+        <translation>Zapri zavihek</translation>
     </message>
     <message>
         <source>Close other Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Zapri ostale zavihke</translation>
     </message>
 </context>
 <context>
@@ -1091,18 +1056,18 @@
     <name>WebViewListener</name>
     <message>
         <source>FAILED</source>
-        <translation type="unfinished"></translation>
+        <translation>FAILED</translation>
     </message>
     <message>
         <source>Codec</source>
-        <translation type="unfinished"></translation>
+        <translation>Kodek</translation>
     </message>
 </context>
 <context>
     <name>YouTubeGrabber</name>
     <message>
         <source>Quality</source>
-        <translation type="unfinished"></translation>
+        <translation>Kvaliteta</translation>
     </message>
 </context>
 </TS>

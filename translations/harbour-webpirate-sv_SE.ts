@@ -107,14 +107,6 @@
         <translation>Sessioner</translation>
     </message>
     <message>
-        <source>Save Session</source>
-        <translation type="vanished">Spara session</translation>
-    </message>
-    <message>
-        <source>Load Session</source>
-        <translation type="vanished">Läs in session</translation>
-    </message>
-    <message>
         <source>Cover settings</source>
         <translation>Miniatyrinställningar</translation>
     </message>
@@ -564,7 +556,7 @@
     <name>FilePickerPage</name>
     <message>
         <source>Root</source>
-        <translation type="unfinished"></translation>
+        <translation>Root</translation>
     </message>
 </context>
 <context>
@@ -637,7 +629,7 @@
     </message>
     <message>
         <source>Share</source>
-        <translation type="unfinished"></translation>
+        <translation>Dela</translation>
     </message>
 </context>
 <context>
@@ -902,31 +894,31 @@
     <name>SessionManagerPage</name>
     <message>
         <source>Session Manager</source>
-        <translation type="unfinished">Sessionshanterare</translation>
+        <translation>Sessionshanterare</translation>
     </message>
     <message>
         <source>Tabs saved</source>
-        <translation type="unfinished">Flikar sparade</translation>
+        <translation>Flikar sparade</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation type="unfinished">Öppna</translation>
+        <translation>Öppna</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="unfinished">Redigera</translation>
+        <translation>Redigera</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Ta bort</translation>
+        <translation>Ta bort</translation>
     </message>
     <message>
         <source>Deleting session</source>
-        <translation type="unfinished">Tar bort session</translation>
+        <translation>Tar bort session</translation>
     </message>
     <message>
         <source>Save current session</source>
-        <translation type="unfinished"></translation>
+        <translation>Spara aktuell session</translation>
     </message>
 </context>
 <context>
@@ -954,33 +946,6 @@
     <message>
         <source>Selected</source>
         <translation>Markerad</translation>
-    </message>
-</context>
-<context>
-    <name>SessionSettingsPage</name>
-    <message>
-        <source>Session Manager</source>
-        <translation type="vanished">Sessionshanterare</translation>
-    </message>
-    <message>
-        <source>Tabs saved</source>
-        <translation type="vanished">Flikar sparade</translation>
-    </message>
-    <message>
-        <source>Open</source>
-        <translation type="vanished">Öppna</translation>
-    </message>
-    <message>
-        <source>Edit</source>
-        <translation type="vanished">Redigera</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <translation type="vanished">Ta bort</translation>
-    </message>
-    <message>
-        <source>Deleting session</source>
-        <translation type="vanished">Tar bort session</translation>
     </message>
 </context>
 <context>
@@ -1035,26 +1000,26 @@
     </message>
     <message>
         <source>Restore tabs at Startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Återställ flikar vid uppstart</translation>
     </message>
 </context>
 <context>
     <name>ShareMenu</name>
     <message>
         <source>Share on Facebook</source>
-        <translation type="unfinished"></translation>
+        <translation>Dela på Facebook</translation>
     </message>
     <message>
         <source>Share on Twitter</source>
-        <translation type="unfinished"></translation>
+        <translation>Dela på Twitter</translation>
     </message>
     <message>
         <source>Share on Google+</source>
-        <translation type="unfinished"></translation>
+        <translation>Dela på Google+</translation>
     </message>
     <message>
         <source>Share</source>
-        <translation type="unfinished"></translation>
+        <translation>Dela</translation>
     </message>
 </context>
 <context>

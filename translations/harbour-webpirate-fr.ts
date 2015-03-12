@@ -107,14 +107,6 @@
         <translation>Sessions</translation>
     </message>
     <message>
-        <source>Save Session</source>
-        <translation type="vanished">Enregistrer la session</translation>
-    </message>
-    <message>
-        <source>Load Session</source>
-        <translation type="vanished">Charger la session</translation>
-    </message>
-    <message>
         <source>Cover settings</source>
         <translation>Paramètres de couverture</translation>
     </message>
@@ -261,43 +253,43 @@
     <name>BrowserGrabber</name>
     <message>
         <source>Author</source>
-        <translation type="unfinished"></translation>
+        <translation>Auteur </translation>
     </message>
     <message>
         <source>Duration</source>
-        <translation type="unfinished"></translation>
+        <translation>Durée</translation>
     </message>
     <message>
         <source>Response</source>
-        <translation type="unfinished"></translation>
+        <translation>Réponse</translation>
     </message>
     <message>
         <source>Title</source>
-        <translation type="unfinished">Titre</translation>
+        <translation>Titre</translation>
     </message>
     <message>
         <source>Grabbed URLs</source>
-        <translation type="unfinished"></translation>
+        <translation>URLs capturés</translation>
     </message>
     <message>
         <source>Play</source>
-        <translation type="unfinished"></translation>
+        <translation>Lire</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished">Télécharger</translation>
+        <translation>Télécharger</translation>
     </message>
     <message>
         <source>Grabbing video</source>
-        <translation type="unfinished"></translation>
+        <translation>Capture Vidéo en cours</translation>
     </message>
     <message>
         <source>Copy URL</source>
-        <translation type="unfinished"></translation>
+        <translation>Copier le lien</translation>
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation type="unfinished">Lien copié dans le presse-papiers</translation>
+        <translation>Lien copié dans le presse-papiers</translation>
     </message>
 </context>
 <context>
@@ -557,14 +549,14 @@
     </message>
     <message>
         <source>Add to Quick Grid</source>
-        <translation type="unfinished"></translation>
+        <translation>Ajouter à la grille d&apos;accès rapide</translation>
     </message>
 </context>
 <context>
     <name>FilePickerPage</name>
     <message>
         <source>Root</source>
-        <translation type="unfinished"></translation>
+        <translation>Root</translation>
     </message>
 </context>
 <context>
@@ -637,7 +629,7 @@
     </message>
     <message>
         <source>Share</source>
-        <translation type="unfinished"></translation>
+        <translation>Partager</translation>
     </message>
 </context>
 <context>
@@ -902,11 +894,11 @@
     <name>SessionManagerPage</name>
     <message>
         <source>Session Manager</source>
-        <translation type="unfinished">Gestionnaire de session</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Tabs saved</source>
-        <translation type="unfinished">Onglets enregistrés</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Open</source>
@@ -922,7 +914,7 @@
     </message>
     <message>
         <source>Deleting session</source>
-        <translation type="unfinished">Supprimer la session</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Save current session</source>
@@ -954,33 +946,6 @@
     <message>
         <source>Selected</source>
         <translation>Sélectionné</translation>
-    </message>
-</context>
-<context>
-    <name>SessionSettingsPage</name>
-    <message>
-        <source>Session Manager</source>
-        <translation type="vanished">Gestionnaire de session</translation>
-    </message>
-    <message>
-        <source>Tabs saved</source>
-        <translation type="vanished">Onglets enregistrés</translation>
-    </message>
-    <message>
-        <source>Open</source>
-        <translation type="vanished">Ouvrir</translation>
-    </message>
-    <message>
-        <source>Edit</source>
-        <translation type="vanished">Éditer</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <translation type="vanished">Supprimer</translation>
-    </message>
-    <message>
-        <source>Deleting session</source>
-        <translation type="vanished">Supprimer la session</translation>
     </message>
 </context>
 <context>
@@ -1042,42 +1007,42 @@
     <name>ShareMenu</name>
     <message>
         <source>Share on Facebook</source>
-        <translation type="unfinished"></translation>
+        <translation>Partager sur Facebook</translation>
     </message>
     <message>
         <source>Share on Twitter</source>
-        <translation type="unfinished"></translation>
+        <translation>Partager sur Twitter</translation>
     </message>
     <message>
         <source>Share on Google+</source>
-        <translation type="unfinished"></translation>
+        <translation>Partager sur Google+</translation>
     </message>
     <message>
         <source>Share</source>
-        <translation type="unfinished"></translation>
+        <translation>Partager</translation>
     </message>
 </context>
 <context>
     <name>TabMenu</name>
     <message>
         <source>Add to Quick Grid</source>
-        <translation type="unfinished"></translation>
+        <translation>Ajouter à la grille d&apos;accès rapide</translation>
     </message>
     <message>
         <source>Duplicate Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Dupliquer l&apos;onglet </translation>
     </message>
     <message>
         <source>Duplicate Tab in Background</source>
-        <translation type="unfinished"></translation>
+        <translation>Dupliquer l&apos;onglet en arrière-plan</translation>
     </message>
     <message>
         <source>Close Tab</source>
-        <translation type="unfinished">Fermer l&apos;onglet</translation>
+        <translation>Fermer l&apos;onglet</translation>
     </message>
     <message>
         <source>Close other Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Fermer les autres onglets</translation>
     </message>
 </context>
 <context>
@@ -1091,18 +1056,18 @@
     <name>WebViewListener</name>
     <message>
         <source>FAILED</source>
-        <translation type="unfinished"></translation>
+        <translation>ECHEC</translation>
     </message>
     <message>
         <source>Codec</source>
-        <translation type="unfinished"></translation>
+        <translation>Codec</translation>
     </message>
 </context>
 <context>
     <name>YouTubeGrabber</name>
     <message>
         <source>Quality</source>
-        <translation type="unfinished"></translation>
+        <translation>Qualité</translation>
     </message>
 </context>
 </TS>

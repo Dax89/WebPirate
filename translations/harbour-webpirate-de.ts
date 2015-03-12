@@ -107,14 +107,6 @@
         <translation>Sitzungen</translation>
     </message>
     <message>
-        <source>Save Session</source>
-        <translation type="vanished">Sitzung speichern</translation>
-    </message>
-    <message>
-        <source>Load Session</source>
-        <translation type="vanished">Sitzung wiederherstellen</translation>
-    </message>
-    <message>
         <source>Cover settings</source>
         <translation>Cover Einstellungen</translation>
     </message>
@@ -564,7 +556,7 @@
     <name>FilePickerPage</name>
     <message>
         <source>Root</source>
-        <translation type="unfinished"></translation>
+        <translation>Root</translation>
     </message>
 </context>
 <context>
@@ -637,7 +629,7 @@
     </message>
     <message>
         <source>Share</source>
-        <translation type="unfinished"></translation>
+        <translation>Teilen</translation>
     </message>
 </context>
 <context>
@@ -902,31 +894,31 @@
     <name>SessionManagerPage</name>
     <message>
         <source>Session Manager</source>
-        <translation type="unfinished">Sitzungsmanager</translation>
+        <translation>Sitzungsmanager</translation>
     </message>
     <message>
         <source>Tabs saved</source>
-        <translation type="unfinished">Gespeicherte Tabs</translation>
+        <translation>Gespeicherte Tabs</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation type="unfinished">Öffnen</translation>
+        <translation>Öffnen</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="unfinished">Bearbeiten</translation>
+        <translation>Bearbeiten</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Löschen</translation>
+        <translation>Löschen</translation>
     </message>
     <message>
         <source>Deleting session</source>
-        <translation type="unfinished">Sitzung wird gelöscht</translation>
+        <translation>Sitzung wird gelöscht</translation>
     </message>
     <message>
         <source>Save current session</source>
-        <translation type="unfinished"></translation>
+        <translation>Laufende Sitzung speichern</translation>
     </message>
 </context>
 <context>
@@ -954,33 +946,6 @@
     <message>
         <source>Selected</source>
         <translation>Ausgewählt</translation>
-    </message>
-</context>
-<context>
-    <name>SessionSettingsPage</name>
-    <message>
-        <source>Session Manager</source>
-        <translation type="vanished">Sitzungsmanager</translation>
-    </message>
-    <message>
-        <source>Tabs saved</source>
-        <translation type="vanished">Gespeicherte Tabs</translation>
-    </message>
-    <message>
-        <source>Open</source>
-        <translation type="vanished">Öffnen</translation>
-    </message>
-    <message>
-        <source>Edit</source>
-        <translation type="vanished">Bearbeiten</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <translation type="vanished">Löschen</translation>
-    </message>
-    <message>
-        <source>Deleting session</source>
-        <translation type="vanished">Sitzung wird gelöscht</translation>
     </message>
 </context>
 <context>
@@ -1035,26 +1000,26 @@
     </message>
     <message>
         <source>Restore tabs at Startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Tabs beim Starten wiederherstellen</translation>
     </message>
 </context>
 <context>
     <name>ShareMenu</name>
     <message>
         <source>Share on Facebook</source>
-        <translation type="unfinished"></translation>
+        <translation>Auf Facebook teilen</translation>
     </message>
     <message>
         <source>Share on Twitter</source>
-        <translation type="unfinished"></translation>
+        <translation>Auf Twitter teilen</translation>
     </message>
     <message>
         <source>Share on Google+</source>
-        <translation type="unfinished"></translation>
+        <translation>Auf Google+ teilen</translation>
     </message>
     <message>
         <source>Share</source>
-        <translation type="unfinished"></translation>
+        <translation>Teilen</translation>
     </message>
 </context>
 <context>

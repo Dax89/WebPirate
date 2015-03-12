@@ -107,14 +107,6 @@
         <translation>セッション</translation>
     </message>
     <message>
-        <source>Save Session</source>
-        <translation type="vanished">セッションの保存</translation>
-    </message>
-    <message>
-        <source>Load Session</source>
-        <translation type="vanished">セッションを開く</translation>
-    </message>
-    <message>
         <source>Cover settings</source>
         <translation>カバー設定</translation>
     </message>
@@ -902,11 +894,11 @@
     <name>SessionManagerPage</name>
     <message>
         <source>Session Manager</source>
-        <translation type="unfinished">セッションマネージャー</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Tabs saved</source>
-        <translation type="unfinished">保存済みタブ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Open</source>
@@ -922,7 +914,7 @@
     </message>
     <message>
         <source>Deleting session</source>
-        <translation type="unfinished">セッションを削除中</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Save current session</source>
@@ -954,33 +946,6 @@
     <message>
         <source>Selected</source>
         <translation>選択済み</translation>
-    </message>
-</context>
-<context>
-    <name>SessionSettingsPage</name>
-    <message>
-        <source>Session Manager</source>
-        <translation type="vanished">セッションマネージャー</translation>
-    </message>
-    <message>
-        <source>Tabs saved</source>
-        <translation type="vanished">保存済みタブ</translation>
-    </message>
-    <message>
-        <source>Open</source>
-        <translation type="vanished">開く</translation>
-    </message>
-    <message>
-        <source>Edit</source>
-        <translation type="vanished">編集</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <translation type="vanished">消去する</translation>
-    </message>
-    <message>
-        <source>Deleting session</source>
-        <translation type="vanished">セッションを削除中</translation>
     </message>
 </context>
 <context>
