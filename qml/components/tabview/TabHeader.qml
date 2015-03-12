@@ -39,37 +39,48 @@ Rectangle
     {
         id: listview
         orientation: ListView.Horizontal
-        anchors { left: parent.left; right: btnplus.left; rightMargin: Theme.paddingSmall; top: parent.top; bottom: parent.bottom }
+        anchors { left: parent.left; right: buttons.left; top: parent.top; bottom: parent.bottom }
         spacing: Theme.paddingSmall / 2
         clip: true
         model: tabs
 
         delegate: TabButton {
             width: tabheader.tabWidth
-            height: tabheader.height + Math.abs(radius)
+            height: tabheader.height
             icon: tab.getIcon();
             title: tab.getTitle();
             loading: (tab.state === "webbrowser") && tab.webView.loading
         }
     }
 
-    IconButton
+    Item
     {
-        id: btnplus
-        icon.source: "image://theme/icon-m-add"
-        width: Theme.iconSizeMedium
-        height: Theme.iconSizeMedium
-        anchors { top: parent.top; bottom: parent.bottom; right: btnsidebar.left }
-        onClicked: tabview.addTab(mainwindow.settings.homepage)
-    }
-
-    IconButton
-    {
-        id: btnsidebar
-        icon.source: "image://theme/icon-lock-more"
-        width: Theme.iconSizeMedium
-        height: Theme.iconSizeMedium
+        id: buttons
         anchors { top: parent.top; bottom: parent.bottom; right: parent.right }
-        onClicked: sidebar.visible ? sidebar.collapse() : sidebar.expand();
+        clip: true
+        width: rowcontent.width
+
+        Row
+        {
+            id: rowcontent
+
+            IconButton
+            {
+                id: btnplus
+                icon.source: "image://theme/icon-m-add"
+                width: Theme.iconSizeMedium
+                height: Theme.iconSizeMedium
+                onClicked: tabview.addTab(mainwindow.settings.homepage)
+            }
+
+            IconButton
+            {
+                id: btnsidebar
+                icon.source: "image://theme/icon-lock-more"
+                width: Theme.iconSizeMedium
+                height: Theme.iconSizeMedium
+                onClicked: sidebar.visible ? sidebar.collapse() : sidebar.expand()
+            }
+        }
     }
 }

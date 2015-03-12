@@ -1,34 +1,44 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
 
-Rectangle
-{    
+BackgroundItem
+{
     property alias icon: favicon.source
     property alias title: tabtitle.text
     property bool loading: false
 
     function getColor() {
-        if(headermousearea.pressed)
+        if(down)
             return Theme.highlightColor;
 
         return (index === tabview.currentIndex ? Theme.secondaryColor : Theme.secondaryHighlightColor);
     }
 
-    id: tabbutton
-    radius: 8
-    color: getColor()
+    onClicked: {
+        sidebar.collapse();
+        tabview.currentIndex = index;
+    }
 
-    MouseArea
+    onPressAndHold: {
+        sidebar.collapse();
+
+        tabmenu.selectedIndex = index;
+        tabmenu.show();
+    }
+
+    Rectangle
     {
-        id: headermousearea
-        anchors { left: parent.left; top: parent.top; right: btnclose.left; bottom: parent.bottom; bottomMargin: radius / 2 }
+        id: tabbutton
+        radius: 8
+        anchors { fill: parent; topMargin: tabbutton.radius / 4; bottomMargin: -tabbutton.radius }
+        color: getColor()
 
         Item
         {
             id: indicator
+            width: tabtitle.contentHeight
+            height: tabtitle.contentHeight
             anchors { left: parent.left; leftMargin: Theme.paddingSmall; verticalCenter: parent.verticalCenter }
-            width: tabtitle.height
-            height: tabtitle.height
 
             BusyIndicator
             {
@@ -53,36 +63,23 @@ Rectangle
         Text
         {
             id: tabtitle
-            anchors { left: indicator.right; right: parent.right; verticalCenter: parent.verticalCenter; leftMargin: Theme.paddingSmall }
+            anchors { left: indicator.right; right: btnclose.left; verticalCenter: parent.verticalCenter; leftMargin: Theme.paddingSmall }
             font.pixelSize: Theme.fontSizeSmall
             verticalAlignment: Text.AlignVCenter
             horizontalAlignment: Text.AlignLeft
             elide: Text.ElideRight
             maximumLineCount: 1
-            clip: true
         }
 
-        onClicked: {
-            sidebar.collapse();
-            tabview.currentIndex = index;
+        IconButton
+        {
+            id: btnclose
+            width: Theme.iconSizeSmall
+            height: Theme.iconSizeSmall
+            anchors { right: parent.right; rightMargin: Theme.paddingSmall; verticalCenter: parent.verticalCenter }
+            icon.source: "image://theme/icon-close-vkb"
+            visible: tabs.count > 1
+            onClicked: tabview.removeTab(index)
         }
-
-        onPressAndHold: {
-            sidebar.collapse();
-
-            tabmenu.selectedIndex = index;
-            tabmenu.show();
-        }
-    }
-
-    IconButton
-    {
-        id: btnclose
-        width: Theme.iconSizeSmall
-        height: Theme.iconSizeSmall
-        anchors { right: parent.right; rightMargin: Theme.paddingSmall; verticalCenter: headermousearea.verticalCenter }
-        icon.source: "image://theme/icon-close-vkb"
-        visible: tabs.count > 1
-        onClicked: tabview.removeTab(index)
     }
 }
