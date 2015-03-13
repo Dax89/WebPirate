@@ -41,7 +41,7 @@
 #include "adblock/adblockdownloader.h"
 #include "mime/mimedatabase.h"
 #include "webkitdatabase/webkitdatabase.h"
-#include "faviconprovider.h"
+#include "imageproviders/faviconprovider.h"
 
 int main(int argc, char *argv[])
 {

@@ -2,7 +2,7 @@
 #define FAVICONPROVIDER_H
 
 #include <QQuickImageProvider>
-#include "webkitdatabase/webicondatabase.h"
+#include "../webkitdatabase/webicondatabase.h"
 
 class FaviconProvider : public QQuickImageProvider
 {

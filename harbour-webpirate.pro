@@ -27,7 +27,7 @@ SOURCES += src/harbour-webpirate.cpp \
     src/downloadmanager/downloaditem.cpp \
     src/webkitdatabase/webicondatabase.cpp \
     src/favoritesmanager/favoritesmanager.cpp \
-    src/faviconprovider.cpp \
+    src/imageproviders/faviconprovider.cpp \
     src/favoritesmanager/favoriteitem.cpp \
     src/dbus/webpirateadaptor.cpp \
     src/dbus/webpirateservice.cpp \
@@ -191,7 +191,7 @@ HEADERS += \
     src/downloadmanager/downloaditem.h \
     src/webkitdatabase/webicondatabase.h \
     src/favoritesmanager/favoritesmanager.h \
-    src/faviconprovider.h \
+    src/imageproviders/faviconprovider.h \
     src/favoritesmanager/favoriteitem.h \
     src/dbus/webpirateadaptor.h \
     src/dbus/webpirateservice.h \
