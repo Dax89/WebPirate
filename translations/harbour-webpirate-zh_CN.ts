@@ -138,6 +138,14 @@
         <source>Popup Blocker</source>
         <translation>阻止弹出页面</translation>
     </message>
+    <message>
+        <source>Download</source>
+        <translation type="unfinished">下载</translation>
+    </message>
+    <message>
+        <source>Closed Tab</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>AdBlockDownloaderPage</name>

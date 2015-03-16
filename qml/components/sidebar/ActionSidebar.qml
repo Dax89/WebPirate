@@ -44,7 +44,7 @@ Item
             {
                 anchors { left: parent.left; right: parent.right }
                 icon: "image://theme/icon-s-favorite"
-                text: qsTr("Favorites")
+                itemText: qsTr("Favorites")
                 onClicked: pageStack.push(Qt.resolvedUrl("../../pages/favorite/FavoritesPage.qml"), { "folderId": 0, "tabview": tabview, "rootPage": pageStack.currentPage });
             }
 
@@ -52,7 +52,7 @@ Item
             {
                 anchors { left: parent.left; right: parent.right }
                 icon: "image://theme/icon-s-time"
-                text: qsTr("Navigation History")
+                itemText: qsTr("Navigation History")
                 onClicked: pageStack.push(Qt.resolvedUrl("../../pages/history/NavigationHistoryPage.qml"), { "tabView": tabview });
             }
 
@@ -60,7 +60,7 @@ Item
             {
                 anchors { left: parent.left; right: parent.right }
                 icon: "image://theme/icon-s-group-chat"
-                text: qsTr("Sessions")
+                itemText: qsTr("Sessions")
                 onClicked: pageStack.push(Qt.resolvedUrl("../../pages/session/SessionManagerPage.qml"), { "tabView": tabview });
             }
 
@@ -68,9 +68,10 @@ Item
             {
                 anchors { left: parent.left; right: parent.right }
                 icon: "image://theme/icon-s-cloud-download"
-                text: qsTr("Downloads")
-                circleVisible: true
-                circleText: mainwindow.settings.downloadmanager.count
+                itemText: qsTr("Downloads")
+                singleItemText: qsTr("Download")
+                count: mainwindow.settings.downloadmanager.count
+                countVisible: true
                 onClicked: pageStack.push(Qt.resolvedUrl("../../pages/downloadmanager/DownloadsPage.qml"), { "settings": mainwindow.settings });
             }
 
@@ -78,10 +79,11 @@ Item
             {
                 anchors { left: parent.left; right: parent.right }
                 icon: "image://theme/icon-m-tab"
-                text: qsTr("Closed Tabs")
-                circleVisible: true
+                itemText: qsTr("Closed Tabs")
+                singleItemText: qsTr("Closed Tab")
+                countVisible: true
+                count: tabview.closedtabs.count
                 enabled: tabview.closedtabs.count > 0
-                circleText: tabview.closedtabs.count
                 onClicked: pageStack.push(Qt.resolvedUrl("../../pages/closedtabs/ClosedTabsPage.qml"), { "tabView": tabview });
             }
 
@@ -127,7 +129,7 @@ Item
             {
                 anchors { left: parent.left; right: parent.right }
                 icon: "image://theme/icon-s-setting"
-                text: qsTr("Change settings")
+                itemText: qsTr("Change settings")
                 onClicked: pageStack.push(Qt.resolvedUrl("../../pages/SettingsPage.qml"), { "settings": mainwindow.settings });
             }
 
@@ -135,7 +137,7 @@ Item
             {
                 anchors { left: parent.left; right: parent.right }
                 icon: "image://theme/icon-m-tabs"
-                text: qsTr("Popup Blocker")
+                itemText: qsTr("Popup Blocker")
                 onClicked: pageStack.push(Qt.resolvedUrl("../../pages/popupblocker/PopupManagerPage.qml"));
             }
 
@@ -143,7 +145,7 @@ Item
             {
                 anchors { left: parent.left; right: parent.right }
                 icon: "image://theme/icon-m-device"
-                text: qsTr("Cover settings")
+                itemText: qsTr("Cover settings")
                 onClicked: pageStack.push(Qt.resolvedUrl("../../pages/cover/CoverSettingsPage.qml"), { "settings": mainwindow.settings });
             }
 
@@ -151,7 +153,7 @@ Item
             {
                 anchors { left: parent.left; right: parent.right }
                 icon: "image://theme/icon-m-about"
-                text: qsTr("About Web Pirate")
+                itemText: qsTr("About Web Pirate")
                 onClicked: {
                     var page = pageStack.push(Qt.resolvedUrl("../../pages/AboutPage.qml"), { "settings": mainwindow.settings });
 

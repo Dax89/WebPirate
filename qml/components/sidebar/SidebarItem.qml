@@ -3,11 +3,13 @@ import Sailfish.Silica 1.0
 
 BackgroundItem
 {
-    property alias circleVisible: circle.visible
-    property alias circleText: lblcircletext.text
+    property bool countVisible: false
+    property int count
+    property string itemText
+    property string singleItemText
     property alias icon: imgaction.source
-    property alias text: lblaction.text
 
+    id: sidebaritem
     height: Theme.itemSizeExtraSmall
     onClicked: sidebar.collapse()
 
@@ -29,32 +31,21 @@ BackgroundItem
         {
             id: lblaction
             height: parent.height
+            width: sidebaritem.width - imgaction.width
             horizontalAlignment: Text.AlignLeft
             verticalAlignment: Text.AlignVCenter
             font.pixelSize: Theme.fontSizeExtraSmall
             elide: Text.ElideRight
-        }
 
-        Rectangle
-        {
-            id: circle
-            width: Theme.iconSizeSmall
-            height: Theme.iconSizeSmall
-            color: Theme.secondaryHighlightColor
-            anchors.leftMargin: Theme.paddingMedium
-            anchors.verticalCenter: parent.verticalCenter
-            radius: width * 0.5
-            visible: false
+            text: {
+                if(countVisible) {
+                    if(count === 1)
+                        return count + " " + (singleItemText ? singleItemText : itemText)
 
-            Label
-            {
-                id: lblcircletext
-                anchors.fill: parent
-                verticalAlignment: Text.AlignVCenter
-                horizontalAlignment: Text.AlignHCenter
-                font.pixelSize: Theme.fontSizeExtraSmall
-                color: Theme.primaryColor
-                elide: Text.ElideRight
+                    return count + " " + itemText;
+                }
+
+                return itemText;
             }
         }
     }

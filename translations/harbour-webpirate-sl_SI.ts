@@ -138,6 +138,14 @@
         <source>Popup Blocker</source>
         <translation>Blokiranje pojavnih oken</translation>
     </message>
+    <message>
+        <source>Download</source>
+        <translation type="unfinished">Prenos</translation>
+    </message>
+    <message>
+        <source>Closed Tab</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>AdBlockDownloaderPage</name>

@@ -138,6 +138,14 @@
         <source>Popup Blocker</source>
         <translation>Blocador de finestres emergents</translation>
     </message>
+    <message>
+        <source>Download</source>
+        <translation type="unfinished">Descarrega</translation>
+    </message>
+    <message>
+        <source>Closed Tab</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>AdBlockDownloaderPage</name>
