@@ -114,7 +114,7 @@ QString AES256::decode(const QString &s, const QString &key)
     EVP_DecryptFinal_ex(&cipher, reinterpret_cast<unsigned char*>(result.data() + len), &finallen);
     EVP_CIPHER_CTX_cleanup(&cipher);
 
-    result.resize(finallen);
+    result.resize(len + finallen);
     return QString(result);
 }
 
