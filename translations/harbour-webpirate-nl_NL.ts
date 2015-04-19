@@ -430,6 +430,13 @@
     </message>
 </context>
 <context>
+    <name>DownloadItem</name>
+    <message>
+        <source>Redirect Loop</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>DownloadListItem</name>
     <message>
         <source>Restart</source>

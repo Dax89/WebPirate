@@ -73,7 +73,7 @@ ListItem
             Label {
                 id: lblspeed
                 height: parent.height
-                width: parent.width / 2
+                width: downloadItem.error ? 0 : (parent.width / 2)
                 font.pixelSize: Theme.fontSizeExtraSmall
                 horizontalAlignment: Text.AlignLeft
                 verticalAlignment: Text.AlignVCenter
@@ -84,8 +84,9 @@ ListItem
             Label {
                 id: lblprogress
                 height: parent.height
-                width: parent.width / 2
-                text: qsTr("Completed:") + " " + progressbar.value + "%"
+                width: downloadItem.error ? parent.width : (parent.width / 2)
+                text: downloadItem.error ? downloadItem.lastError : (qsTr("Completed:") + " " + progressbar.value + "%")
+                color: downloadItem.error ? "red" : Theme.primaryColor
                 font.pixelSize: Theme.fontSizeExtraSmall
                 horizontalAlignment: Text.AlignRight
                 verticalAlignment: Text.AlignVCenter
@@ -107,11 +108,9 @@ ListItem
     onDownloadItemChanged: {
         downloadItem.progressValueChanged.connect(updateProgressValue);
         downloadItem.completedChanged.connect(checkCompletedState);
-        downloadItem.error.connect(downloadError);
     }
 
     Component.onDestruction: {
-        downloadItem.error.disconnect(downloadError);
         downloadItem.completedChanged.disconnect(checkCompletedState);
         downloadItem.progressValueChanged.disconnect(updateProgressValue);
     }

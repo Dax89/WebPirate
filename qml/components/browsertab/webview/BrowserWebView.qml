@@ -138,7 +138,7 @@ SilicaWebView
 
         tabviewremorse.execute(qsTr("Downloading") + " " + downloadItem.suggestedFilename,
                                function() {
-                                   mainwindow.settings.downloadmanager.createDownload(downloadItem.url);
+                                   mainwindow.settings.downloadmanager.createDownload(downloadItem.url, downloadItem.suggestedFilename);
                                });
     }
 

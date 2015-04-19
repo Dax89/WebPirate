@@ -22,6 +22,7 @@ class DownloadManager : public QObject
     public slots:
         DownloadItem* downloadItem(int index);
         void createDownload(const QUrl& url);
+        void createDownload(const QUrl &url, const QString& filename);
         void removeCompleted();
 
     private:

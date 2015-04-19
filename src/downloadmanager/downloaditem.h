@@ -16,30 +16,35 @@ class DownloadItem: public QObject
 
     Q_PROPERTY(const QString& speed READ speed NOTIFY speedChanged)
     Q_PROPERTY(const QString& fileName READ fileName NOTIFY fileNameChanged)
+    Q_PROPERTY(const QString& lastError READ lastError NOTIFY lastErrorChanged)
     Q_PROPERTY(bool completed READ completed NOTIFY completedChanged)
+    Q_PROPERTY(bool error READ error NOTIFY errorChanged)
     Q_PROPERTY(qint64 progressValue READ progressValue NOTIFY progressValueChanged)
     Q_PROPERTY(qint64 progressTotal READ progressTotal NOTIFY progressTotalChanged)
 
     public:
         DownloadItem(QObject* parent = 0);
-        DownloadItem(const QUrl& url, QObject* parent = 0);
+        DownloadItem(const QUrl& url, const QString& filename, QObject* parent = 0);
         const QString& speed() const;
         const QString& fileName() const;
+        const QString& lastError() const;
         bool completed() const;
+        bool error() const;
         qint64 progressValue() const;
         qint64 progressTotal() const;
 
     private:
-        QString parseFileName(const QUrl& url, const QString& downloadpath);
+        QString parseFileName(const QUrl& url);
         void checkConflicts(QString& filename, const QString& downloadpath);
 
     signals:
         void speedChanged();
         void fileNameChanged();
         void completedChanged();
+        void errorChanged();
+        void lastErrorChanged();
         void progressValueChanged();
         void progressTotalChanged();
-        void error(QString message);
 
     public slots:
         void start();
@@ -57,13 +62,16 @@ class DownloadItem: public QObject
 
     private:
         bool _completed;
+        bool _error;
         QUrl _url;
         QUrl _redirectfromurl;
+        QUrl _referer;
         QFile _file;
         qint64 _progressvalue;
         qint64 _progresstotal;
         QString _filename;
         QString _downloadspeed;
+        QString _lasterror;
         QTime _downloadtime;
         QNetworkAccessManager _networkmanager;
         QNetworkReply* _downloadreply;

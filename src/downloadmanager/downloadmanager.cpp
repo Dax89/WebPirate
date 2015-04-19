@@ -17,7 +17,12 @@ qint64 DownloadManager::count() const
 
 void DownloadManager::createDownload(const QUrl &url)
 {
-    DownloadItem* di = new DownloadItem(url, this);
+    this->createDownload(url, QString());
+}
+
+void DownloadManager::createDownload(const QUrl &url, const QString &filename)
+{
+    DownloadItem* di = new DownloadItem(url, filename, this);
     this->_downloads.append(di);
 
     di->start();

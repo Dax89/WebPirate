@@ -2,17 +2,25 @@
 
 const QString DownloadItem::DEFAULT_FILENAME = "download.html";
 
-DownloadItem::DownloadItem(QObject *parent): QObject(parent), _completed(false)
+DownloadItem::DownloadItem(QObject *parent): QObject(parent), _completed(false), _error(false)
 {
 
 }
 
-DownloadItem::DownloadItem(const QUrl &url, QObject* parent): QObject(parent), _completed(false), _url(url), _progressvalue(0), _progresstotal(0), _downloadreply(NULL)
+DownloadItem::DownloadItem(const QUrl &url, const QString &filename, QObject* parent): QObject(parent), _completed(false), _url(url), _progressvalue(0), _progresstotal(0), _downloadreply(NULL)
 {
     QString downloadpath = QStandardPaths::writableLocation(QStandardPaths::DownloadLocation);
     connect(&this->_networkmanager, SIGNAL(finished(QNetworkReply*)), this, SLOT(onDownloadFinished(QNetworkReply*)));
 
-    this->_filename = this->parseFileName(url, downloadpath);
+    if(filename.isEmpty())
+        this->_filename = this->parseFileName(url);
+    else
+        this->_filename = filename;
+
+    this->checkConflicts(this->_filename, downloadpath);
+
+    qDebug() << QString("%1%2%3").arg(downloadpath, QDir::separator(), this->_filename);
+
     this->_file.setFileName(QString("%1%2%3").arg(downloadpath, QDir::separator(), this->_filename));
     emit fileNameChanged();
 }
@@ -27,9 +35,19 @@ const QString &DownloadItem::fileName() const
     return this->_filename;
 }
 
+const QString &DownloadItem::lastError() const
+{
+    return this->_lasterror;
+}
+
 bool DownloadItem::completed() const
 {
     return this->_completed;
+}
+
+bool DownloadItem::error() const
+{
+    return this->_error;
 }
 
 qint64 DownloadItem::progressValue() const
@@ -42,7 +60,7 @@ qint64 DownloadItem::progressTotal() const
     return this->_progresstotal;
 }
 
-QString DownloadItem::parseFileName(const QUrl& url, const QString& downloadpath)
+QString DownloadItem::parseFileName(const QUrl& url)
 {
     QRegExp regex(QRegExp("[_\\d\\w\\-\\. ]+\\.[_\\d\\w\\-\\. ]+"));
     QString filename = url.toString().split('/').last();
@@ -53,7 +71,6 @@ QString DownloadItem::parseFileName(const QUrl& url, const QString& downloadpath
     else
         filename = filename.mid(idx, regex.matchedLength());
 
-    this->checkConflicts(filename, downloadpath);
     return filename;
 }
 
@@ -84,8 +101,13 @@ void DownloadItem::start()
     else
         this->_downloadtime.start();
 
+    this->_error = false;
+    this->_lasterror.clear();
     this->_completed = false;
+
     emit completedChanged();
+    emit errorChanged();
+    emit lastErrorChanged();
 
     this->_downloadreply = this->_networkmanager.get(request);
     connect(this->_downloadreply, SIGNAL(readyRead()), this, SLOT(onNetworkReplyReadyRead()));
@@ -125,14 +147,19 @@ void DownloadItem::onDownloadError(QNetworkReply::NetworkError)
     this->_file.close();
     this->_file.remove();
 
-    emit error(this->_downloadreply->errorString());
+    this->_error = true;
+    this->_lasterror = this->_downloadreply->errorString();
+
+    emit errorChanged();
+    emit lastErrorChanged();
 }
 
 void DownloadItem::onDownloadFinished(QNetworkReply* reply)
 {
     int statuscode = reply->attribute(QNetworkRequest::HttpStatusCodeAttribute).toInt();
-    this->_completed = true;
     this->_file.close();
+
+    qDebug() << statuscode;
 
     if(statuscode == 302) /* Manage Redirects */
     {
@@ -148,12 +175,36 @@ void DownloadItem::onDownloadFinished(QNetworkReply* reply)
             this->_downloadreply = NULL;
             this->start();
         }
+        else
+        {
+            this->_error = true;
+            this->_completed = false;
+            this->_lasterror = tr("Redirect Loop");
+
+            emit completedChanged();
+            emit errorChanged();
+            emit lastErrorChanged();
+        }
     }
     else
     {
+        if(statuscode == 200)
+        {
+            this->_completed = true;
+            emit completedChanged();
+        }
+        else
+        {
+            this->_error = true;
+            this->_lasterror = reply->errorString();
+
+            emit errorChanged();
+            emit lastErrorChanged();
+        }
+
         reply->deleteLater();
         this->_downloadreply = NULL;
-        emit completedChanged();
+
     }
 }
 
