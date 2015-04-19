@@ -1,7 +1,7 @@
 .pragma library
 
 var domainregex = new RegExp("http[s]*://[a-zA-Z0-9-_]*[\\.]*[a-zA-Z0-9-_]+\\.[a-zA-Z0-9-_\\.]+");
-var urlregex = new RegExp("[-a-zA-Z0-9@:%._\\+~#=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%_\\+.~#?&//=]*)");
+var urlregex = new RegExp("[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%_\\+.~#?&//=]*)");
 var ipregex = new RegExp("[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}");
 var protocolregex = new RegExp("([^:]+)://");
 var httpregex = new RegExp("^(http|https)://");
