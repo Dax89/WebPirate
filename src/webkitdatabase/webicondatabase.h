@@ -30,6 +30,7 @@ class WebIconDatabase : public QObject
         bool execute(QSqlQuery &queryobj);
         bool hasIcon(const QString& url);
         int queryIconId(const QString& url);
+        QString adjustUrl(const QString& url) const;
 
     private:
         static int _refcount;

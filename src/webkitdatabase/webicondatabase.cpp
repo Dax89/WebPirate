@@ -71,12 +71,14 @@ int WebIconDatabase::queryIconId(const QString &url)
     if(!this->open())
         return -1;
 
-    QSqlDatabase db = QSqlDatabase::database(WebIconDatabase::CONNECTION_NAME, false);
-    QSqlQuery q(db);
-    QString host = QUrl(url).host();
+    QUrl urlobj = QUrl::fromUserInput(this->adjustUrl(url));
+    QString host = urlobj.host();
 
     if(host.isEmpty())
         return -1;
+
+    QSqlDatabase db = QSqlDatabase::database(WebIconDatabase::CONNECTION_NAME, false);
+    QSqlQuery q(db);
 
     if(!this->prepare(q, "SELECT iconID FROM PageURL WHERE url LIKE ?"))
         return -1;
@@ -87,6 +89,14 @@ int WebIconDatabase::queryIconId(const QString &url)
         return -1;
 
     return q.value(0).toInt();
+}
+
+QString WebIconDatabase::adjustUrl(const QString &url) const
+{
+    if(url[0] == '.')
+        return url.mid(1); // Adjust URLs from cookies.db
+
+    return url;
 }
 
 QString WebIconDatabase::queryIconUrl(const QString &url)
