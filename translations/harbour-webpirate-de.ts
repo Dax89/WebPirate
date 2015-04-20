@@ -146,6 +146,10 @@
         <source>Closed Tab</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Cookies</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>AdBlockDownloaderPage</name>
@@ -350,6 +354,13 @@
     <message>
         <source>Deleting Tabs</source>
         <translation>Lösche Tabs</translation>
+    </message>
+</context>
+<context>
+    <name>CookieManagerPage</name>
+    <message>
+        <source>Cookie Manager</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

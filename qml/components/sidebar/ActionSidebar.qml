@@ -67,6 +67,14 @@ Item
             SidebarItem
             {
                 anchors { left: parent.left; right: parent.right }
+                icon: "qrc:///res/cookies.png"
+                itemText: qsTr("Cookies")
+                onClicked: pageStack.push(Qt.resolvedUrl("../../pages/cookie/CookieManagerPage.qml"), { "settings": mainwindow.settings });
+            }
+
+            SidebarItem
+            {
+                anchors { left: parent.left; right: parent.right }
                 icon: "image://theme/icon-s-cloud-download"
                 itemText: qsTr("Downloads")
                 singleItemText: qsTr("Download")
