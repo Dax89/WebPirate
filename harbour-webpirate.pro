@@ -39,10 +39,11 @@ SOURCES += src/harbour-webpirate.cpp \
     src/filepicker/folderlistmodel.cpp \
     src/dbus/client/screenblank.cpp \
     src/security/cryptography/aes256.cpp \
-    src/webkitdatabase/cookiejar.cpp \
+    src/webkitdatabase/cookie/cookiejar.cpp \
     src/webkitdatabase/abstractdatabase.cpp \
     src/downloadmanager/webviewdownloaditem.cpp \
-    src/downloadmanager/abstractdownloaditem.cpp
+    src/downloadmanager/abstractdownloaditem.cpp \
+    src/webkitdatabase/cookie/cookieitem.cpp
 
 OTHER_FILES += qml/harbour-webpirate.qml \
     rpm/harbour-webpirate.changes.in \
@@ -166,7 +167,8 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/pages/session/SessionManagerPage.qml \
     qml/components/browsertab/views/browserplayer/mediacomponents/MediaPlayerCursor.qml \
     qml/components/browsertab/views/browserplayer/mediacomponents/MediaPlayerProgressBar.qml \
-    qml/pages/cookie/CookieManagerPage.qml
+    qml/pages/cookie/CookieManagerPage.qml \
+    qml/components/items/CookieListItem.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line
@@ -208,8 +210,9 @@ HEADERS += \
     src/filepicker/folderlistmodel.h \
     src/dbus/client/screenblank.h \
     src/security/cryptography/aes256.h \
-    src/webkitdatabase/cookiejar.h \
+    src/webkitdatabase/cookie/cookiejar.h \
     src/webkitdatabase/abstractdatabase.h \
     src/downloadmanager/webviewdownloaditem.h \
-    src/downloadmanager/abstractdownloaditem.h
+    src/downloadmanager/abstractdownloaditem.h \
+    src/webkitdatabase/cookie/cookieitem.h
 

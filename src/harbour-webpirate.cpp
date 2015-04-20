@@ -40,7 +40,7 @@
 #include "adblock/adblockmanager.h"
 #include "adblock/adblockdownloader.h"
 #include "mime/mimedatabase.h"
-#include "webkitdatabase/cookiejar.h"
+#include "webkitdatabase/cookie/cookiejar.h"
 #include "webkitdatabase/webkitdatabase.h"
 #include "imageproviders/faviconprovider.h"
 
