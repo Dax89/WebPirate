@@ -40,6 +40,7 @@
 #include "adblock/adblockmanager.h"
 #include "adblock/adblockdownloader.h"
 #include "mime/mimedatabase.h"
+#include "webkitdatabase/cookiejar.h"
 #include "webkitdatabase/webkitdatabase.h"
 #include "imageproviders/faviconprovider.h"
 
@@ -61,6 +62,7 @@ int main(int argc, char *argv[])
     qmlRegisterType<AdBlockDownloader>("WebPirate.AdBlock", 1, 0, "AdBlockDownloader");
     qmlRegisterType<AdBlockManager>("WebPirate.AdBlock", 1, 0, "AdBlockManager");
 
+    qmlRegisterType<CookieJar>("WebPirate", 1, 0, "CookieJar");
     qmlRegisterType<WebIconDatabase>("WebPirate", 1, 0, "WebIconDatabase");
     qmlRegisterType<DownloadManager>("WebPirate", 1, 0, "DownloadManager");
     qmlRegisterType<FavoritesManager>("WebPirate", 1, 0, "FavoritesManager");

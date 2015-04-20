@@ -13,6 +13,7 @@ QtObject
     property DownloadManager downloadmanager: DownloadManager { }
     property AdBlockManager adblockmanager: AdBlockManager { }
     property QuickGridModel quickgridmodel: QuickGridModel { }
+    property CookieJar cookiejar: CookieJar { }
     property WebIconDatabase icondatabase: WebIconDatabase { }
     property CoverModel coveractions: CoverModel { }
 
