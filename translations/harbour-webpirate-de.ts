@@ -440,7 +440,7 @@
     <name>DownloadListItem</name>
     <message>
         <source>Restart</source>
-        <translation>Erneut laden</translation>
+        <translation type="vanished">Erneut laden</translation>
     </message>
     <message>
         <source>Cancel</source>

@@ -440,7 +440,7 @@
     <name>DownloadListItem</name>
     <message>
         <source>Restart</source>
-        <translation>Redémarrer</translation>
+        <translation type="vanished">Redémarrer</translation>
     </message>
     <message>
         <source>Cancel</source>

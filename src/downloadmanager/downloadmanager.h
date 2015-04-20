@@ -5,6 +5,7 @@
 #include <QHash>
 #include <QStandardPaths>
 #include "downloaditem.h"
+#include "webviewdownloaditem.h"
 
 class DownloadManager : public QObject
 {
@@ -20,13 +21,13 @@ class DownloadManager : public QObject
         void countChanged();
 
     public slots:
-        DownloadItem* downloadItem(int index);
-        void createDownload(const QUrl& url);
-        void createDownload(const QUrl &url, const QString& filename);
+        AbstractDownloadItem *downloadItem(int index);
+        void createDownloadFromUrl(const QUrl& url);
+        void createDownload(QWebDownloadItem* downloaditem);
         void removeCompleted();
 
     private:
-        QList<DownloadItem*> _downloads;
+        QList<AbstractDownloadItem*> _downloads;
 };
 
 #endif // DOWNLOADMANAGER_H

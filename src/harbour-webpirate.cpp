@@ -48,7 +48,7 @@ int main(int argc, char *argv[])
     QScopedPointer<QGuiApplication> application(SailfishApp::application(argc, argv));
     application->setApplicationName("harbour-webpirate");
 
-    qmlRegisterType<DownloadItem>("WebPirate.Private", 1, 0, "DownloadItem");
+    qmlRegisterType<AbstractDownloadItem>("WebPirate.Private", 1, 0, "DownloadItem");
     qmlRegisterType<FavoriteItem>("WebPirate.Private", 1, 0, "FavoriteItem");
 
     qmlRegisterSingletonType<AES256>("WebPirate.Security", 1, 0, "AES256", &AES256::initialize);

@@ -25,11 +25,6 @@ ListItem
     menu: Component {
         ContextMenu {
             MenuItem {
-                text: qsTr("Restart");
-                onClicked: downloadItem.restart()
-            }
-
-            MenuItem {
                 text: qsTr("Cancel")
                 visible: !downloadItem.completed
                 onClicked: downloadItem.cancel()

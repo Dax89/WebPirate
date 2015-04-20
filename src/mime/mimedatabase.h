@@ -6,6 +6,7 @@
 #include <QMimeDatabase>
 #include <QMimeType>
 #include <QDebug>
+#include <QtWebKit/QWebSettings>
 
 class MimeDatabase : public QObject
 {

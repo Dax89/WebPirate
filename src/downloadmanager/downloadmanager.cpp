@@ -5,7 +5,7 @@ DownloadManager::DownloadManager(QObject *parent): QObject(parent)
 
 }
 
-DownloadItem *DownloadManager::downloadItem(int index)
+AbstractDownloadItem *DownloadManager::downloadItem(int index)
 {
     return this->_downloads[index];
 }
@@ -15,14 +15,18 @@ qint64 DownloadManager::count() const
     return this->_downloads.count();
 }
 
-void DownloadManager::createDownload(const QUrl &url)
+void DownloadManager::createDownloadFromUrl(const QUrl &url)
 {
-    this->createDownload(url, QString());
+    DownloadItem* di = new DownloadItem(url, this);
+    this->_downloads.append(di);
+
+    di->start();
+    emit countChanged();
 }
 
-void DownloadManager::createDownload(const QUrl &url, const QString &filename)
+void DownloadManager::createDownload(QWebDownloadItem* downloaditem)
 {
-    DownloadItem* di = new DownloadItem(url, filename, this);
+    WebViewDownloadItem* di = new WebViewDownloadItem(downloaditem, this);
     this->_downloads.append(di);
 
     di->start();
@@ -35,7 +39,7 @@ void DownloadManager::removeCompleted()
 
     while(i < this->_downloads.count())
     {
-        DownloadItem* di = this->_downloads[i];
+        AbstractDownloadItem* di = this->_downloads[i];
 
         if(!di->completed())
         {

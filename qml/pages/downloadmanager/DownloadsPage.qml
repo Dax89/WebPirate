@@ -27,7 +27,7 @@ Page
                     var dialog = pageStack.push(Qt.resolvedUrl("NewDownloadPage.qml"));
 
                     dialog.accepted.connect(function() {
-                        settings.downloadmanager.createDownload(dialog.downloadUrl);
+                        settings.downloadmanager.createDownloadFromUrl(dialog.downloadUrl);
                     });
                 }
             }

@@ -440,7 +440,7 @@
     <name>DownloadListItem</name>
     <message>
         <source>Restart</source>
-        <translation>Перезагрузка</translation>
+        <translation type="vanished">Перезагрузка</translation>
     </message>
     <message>
         <source>Cancel</source>

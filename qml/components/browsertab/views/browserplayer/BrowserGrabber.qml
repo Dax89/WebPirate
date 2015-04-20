@@ -152,7 +152,7 @@ Item
 
                                 onClicked: {
                                     lvitem.remorseAction(qsTr("Grabbing video"), function() {
-                                        mainwindow.settings.downloadmanager.createDownload(videourl);
+                                        mainwindow.settings.downloadmanager.createDownloadFromUrl(videourl);
                                     });
                                 }
                             }

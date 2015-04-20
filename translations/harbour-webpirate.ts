@@ -439,10 +439,6 @@
 <context>
     <name>DownloadListItem</name>
     <message>
-        <source>Restart</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Cancel</source>
         <translation type="unfinished"></translation>
     </message>

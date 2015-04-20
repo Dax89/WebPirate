@@ -440,7 +440,7 @@
     <name>DownloadListItem</name>
     <message>
         <source>Restart</source>
-        <translation>Aloita uudelleen</translation>
+        <translation type="vanished">Aloita uudelleen</translation>
     </message>
     <message>
         <source>Cancel</source>

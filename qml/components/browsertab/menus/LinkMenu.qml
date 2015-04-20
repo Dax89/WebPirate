@@ -37,7 +37,7 @@ PopupDialog
                                              QtObject { readonly property string menuText: linkmenu.isimage ? qsTr("Save Image") : qsTr("Save Link Destination")
                                                         function execute() {
                                                             tabviewremorse.execute(isimage ? qsTr("Downloading image") : qsTr("Downloading link"), function() {
-                                                                mainwindow.settings.downloadmanager.createDownload(linkmenu.url);
+                                                                mainwindow.settings.downloadmanager.createDownloadFromUrl(linkmenu.url);
                                                             });
                                                         }
                                                       },

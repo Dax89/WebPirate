@@ -440,7 +440,7 @@
     <name>DownloadListItem</name>
     <message>
         <source>Restart</source>
-        <translation>Ponovni zagon</translation>
+        <translation type="vanished">Ponovni zagon</translation>
     </message>
     <message>
         <source>Cancel</source>

@@ -39,6 +39,7 @@ SilicaWebView
     id: webview
 
     /* Experimental WebView Features */
+    experimental.preferences.webAudioEnabled: true;
     experimental.preferences.webGLEnabled: true
     experimental.preferences.dnsPrefetchEnabled: true
     experimental.preferences.pluginsEnabled: true
@@ -46,6 +47,7 @@ SilicaWebView
     experimental.preferences.localStorageEnabled: true
     experimental.preferences.navigatorQtObjectEnabled: true
     experimental.preferences.developerExtrasEnabled: true
+    experimental.preferences.offlineWebApplicationCacheEnabled: true
     experimental.userAgent: UserAgents.get(mainwindow.settings.useragent).value
     experimental.userStyleSheet: mainwindow.settings.adblockmanager.rulesFile
 
@@ -138,7 +140,7 @@ SilicaWebView
 
         tabviewremorse.execute(qsTr("Downloading") + " " + downloadItem.suggestedFilename,
                                function() {
-                                   mainwindow.settings.downloadmanager.createDownload(downloadItem.url, downloadItem.suggestedFilename);
+                                   mainwindow.settings.downloadmanager.createDownload(downloadItem);
                                });
     }
 

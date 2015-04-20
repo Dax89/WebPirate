@@ -440,7 +440,7 @@
     <name>DownloadListItem</name>
     <message>
         <source>Restart</source>
-        <translation>重新启动</translation>
+        <translation type="vanished">重新启动</translation>
     </message>
     <message>
         <source>Cancel</source>

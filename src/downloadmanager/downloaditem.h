@@ -4,52 +4,24 @@
 #include <QNetworkAccessManager>
 #include <QNetworkReply>
 #include <QUrl>
-#include <QTime>
-#include <QStringList>
-#include <QStandardPaths>
 #include <QFile>
 #include <QDir>
+#include "abstractdownloaditem.h"
 
-class DownloadItem: public QObject
+class DownloadItem: public AbstractDownloadItem
 {
     Q_OBJECT
 
-    Q_PROPERTY(const QString& speed READ speed NOTIFY speedChanged)
-    Q_PROPERTY(const QString& fileName READ fileName NOTIFY fileNameChanged)
-    Q_PROPERTY(const QString& lastError READ lastError NOTIFY lastErrorChanged)
-    Q_PROPERTY(bool completed READ completed NOTIFY completedChanged)
-    Q_PROPERTY(bool error READ error NOTIFY errorChanged)
-    Q_PROPERTY(qint64 progressValue READ progressValue NOTIFY progressValueChanged)
-    Q_PROPERTY(qint64 progressTotal READ progressTotal NOTIFY progressTotalChanged)
-
     public:
         DownloadItem(QObject* parent = 0);
-        DownloadItem(const QUrl& url, const QString& filename, QObject* parent = 0);
-        const QString& speed() const;
-        const QString& fileName() const;
-        const QString& lastError() const;
-        bool completed() const;
-        bool error() const;
-        qint64 progressValue() const;
-        qint64 progressTotal() const;
+        DownloadItem(const QUrl& url, QObject* parent = 0);
 
     private:
         QString parseFileName(const QUrl& url);
-        void checkConflicts(QString& filename, const QString& downloadpath);
-
-    signals:
-        void speedChanged();
-        void fileNameChanged();
-        void completedChanged();
-        void errorChanged();
-        void lastErrorChanged();
-        void progressValueChanged();
-        void progressTotalChanged();
 
     public slots:
-        void start();
-        void restart();
-        void cancel();
+        virtual void start();
+        virtual void cancel();
 
     private slots:
         void onNetworkReplyReadyRead();
@@ -61,18 +33,8 @@ class DownloadItem: public QObject
         static const QString DEFAULT_FILENAME;
 
     private:
-        bool _completed;
-        bool _error;
-        QUrl _url;
         QUrl _redirectfromurl;
-        QUrl _referer;
         QFile _file;
-        qint64 _progressvalue;
-        qint64 _progresstotal;
-        QString _filename;
-        QString _downloadspeed;
-        QString _lasterror;
-        QTime _downloadtime;
         QNetworkAccessManager _networkmanager;
         QNetworkReply* _downloadreply;
 };

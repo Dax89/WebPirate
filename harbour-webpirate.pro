@@ -12,7 +12,7 @@
 # The name of your application
 TARGET = harbour-webpirate
 
-QT += sql dbus
+QT += sql dbus webkit-private
 CONFIG += sailfishapp
 PKGCONFIG += libcrypto
 
@@ -38,7 +38,11 @@ SOURCES += src/harbour-webpirate.cpp \
     src/adblock/adblockdownloader.cpp \
     src/filepicker/folderlistmodel.cpp \
     src/dbus/client/screenblank.cpp \
-    src/security/cryptography/aes256.cpp
+    src/security/cryptography/aes256.cpp \
+    #src/webkitdatabase/cookiejar.cpp \
+    #src/webkitdatabase/abstractdatabase.cpp \
+    src/downloadmanager/webviewdownloaditem.cpp \
+    src/downloadmanager/abstractdownloaditem.cpp
 
 OTHER_FILES += qml/harbour-webpirate.qml \
     rpm/harbour-webpirate.changes.in \
@@ -202,5 +206,9 @@ HEADERS += \
     src/adblock/adblockdownloader.h \
     src/filepicker/folderlistmodel.h \
     src/dbus/client/screenblank.h \
-    src/security/cryptography/aes256.h
+    src/security/cryptography/aes256.h \
+    #src/webkitdatabase/cookiejar.h \
+    #src/webkitdatabase/abstractdatabase.h \
+    src/downloadmanager/webviewdownloaditem.h \
+    src/downloadmanager/abstractdownloaditem.h
 
