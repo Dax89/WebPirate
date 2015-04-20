@@ -357,6 +357,13 @@
     </message>
 </context>
 <context>
+    <name>CookieListItem</name>
+    <message>
+        <source>Cookies:</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>CookieManagerPage</name>
     <message>
         <source>Cookie Manager</source>

@@ -21,6 +21,7 @@ Page
             contentHeight: Theme.itemSizeSmall
 
             domain: settings.cookiejar.getDomain(index)
+            count: settings.cookiejar.cookieCount(domain)
             icon: settings.icondatabase.provideIcon(domain)
         }
     }

@@ -3,29 +3,51 @@ import Sailfish.Silica 1.0
 
 ListItem
 {
+    property int count: 0
     property alias icon: imgfavicon.source
     property alias domain: lbldomain.text
 
     Row
     {
-        spacing: Theme.paddingSmall
+        spacing: Theme.paddingMedium
         anchors.fill: parent
 
         Image
         {
             id: imgfavicon
+            anchors.verticalCenter: parent.verticalCenter
             width: lbldomain.contentHeight
             height: lbldomain.contentHeight
             fillMode: Image.PreserveAspectFit
         }
 
-        Label
+        Column
         {
-            id: lbldomain
+            id: colcontainer
+            anchors.verticalCenter: parent.verticalCenter
             width: parent.width - imgfavicon.width
-            verticalAlignment: Text.AlignVCenter
-            horizontalAlignment: Text.AlignLeft
-            elide: Text.ElideRight
+            height: parent.height
+
+            Label
+            {
+                id: lbldomain
+                width: parent.width
+                verticalAlignment: Text.AlignTop
+                horizontalAlignment: Text.AlignLeft
+                elide: Text.ElideRight
+            }
+
+            Label
+            {
+                id: lblcount
+                width: parent.width
+                verticalAlignment: Text.AlignTop
+                horizontalAlignment: Text.AlignLeft
+                color: Theme.highlightColor
+                font.pixelSize: Theme.fontSizeTiny
+                elide: Text.ElideRight
+                text: qsTr("Cookies:") + " " + count
+            }
         }
     }
 }
