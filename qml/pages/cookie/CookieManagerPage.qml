@@ -1,7 +1,7 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
 import "../../models"
-import "../../components/items"
+import "../../components/items/cookie"
 
 Page
 {
@@ -44,10 +44,10 @@ Page
             delegate: DomainListItem {
                 contentWidth: parent.width
                 contentHeight: Theme.itemSizeSmall
-
                 domain: model.modelData
                 count: settings.cookiejar.cookieCount(model.modelData)
                 icon: settings.icondatabase.provideIcon(model.modelData)
+                onClicked: pageStack.push(Qt.resolvedUrl("CookieListPage.qml"), { "settings": settings, "domain": model.modelData })
             }
         }
     }

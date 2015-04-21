@@ -3,21 +3,23 @@ import Sailfish.Silica 1.0
 
 ListItem
 {
-    property int count: 0
-    property alias icon: imgfavicon.source
-    property alias domain: lbldomain.text
+    property alias cookieDomain: lbldomain.text
+    property alias cookieName: lblcookiename.text
+
+    id: cookielistitem
 
     Row
     {
         spacing: Theme.paddingMedium
-        anchors.fill: parent
+        anchors { fill: parent; leftMargin: Theme.paddingSmall; rightMargin: Theme.paddingSmall }
 
         Image
         {
-            id: imgfavicon
+            id: imgcookie
+            source: "qrc:///res/cookies.png"
             anchors.verticalCenter: parent.verticalCenter
-            width: lbldomain.contentHeight
-            height: lbldomain.contentHeight
+            width: lblcookiename.contentHeight
+            height: lblcookiename.contentHeight
             fillMode: Image.PreserveAspectFit
         }
 
@@ -25,12 +27,12 @@ ListItem
         {
             id: colcontainer
             anchors.verticalCenter: parent.verticalCenter
-            width: parent.width - imgfavicon.width
+            width: parent.width - imgcookie.width
             height: parent.height
 
             Label
             {
-                id: lbldomain
+                id: lblcookiename
                 width: parent.width
                 verticalAlignment: Text.AlignTop
                 horizontalAlignment: Text.AlignLeft
@@ -39,14 +41,13 @@ ListItem
 
             Label
             {
-                id: lblcount
+                id: lbldomain
                 width: parent.width
                 verticalAlignment: Text.AlignTop
                 horizontalAlignment: Text.AlignLeft
                 color: Theme.highlightColor
                 font.pixelSize: Theme.fontSizeTiny
                 elide: Text.ElideRight
-                text: qsTr("Cookies:") + " " + count
             }
         }
     }

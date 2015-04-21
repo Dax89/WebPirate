@@ -36,9 +36,9 @@ void CookieJar::unload()
 
     foreach(QString domain, this->_domains)
     {
-        QList<CookieItem*>& cookies = this->_cookiemap[domain];
+        QObjectList& cookies = this->_cookiemap[domain];
 
-        foreach(CookieItem* ci, cookies)
+        foreach(QObject* ci, cookies)
             ci->deleteLater();
     }
 
@@ -75,7 +75,7 @@ QStringList CookieJar::domains() const
     return this->_domains;
 }
 
-QList<CookieItem *> CookieJar::getCookies(const QString &domain)
+QList<QObject *> CookieJar::getCookies(const QString &domain)
 {
     return this->_cookiemap[domain];
 }
@@ -103,7 +103,7 @@ void CookieJar::populateHashMap(const QList<QNetworkCookie> &cookies)
         if(!this->_cookiemap.contains(cookie.domain()))
         {
             this->_domains.append(cookie.domain());
-            this->_cookiemap[cookie.domain()] = QList<CookieItem*>();
+            this->_cookiemap[cookie.domain()] = QObjectList();
         }
 
         this->_cookiemap[cookie.domain()].append(new CookieItem(cookie));

@@ -22,7 +22,7 @@ class CookieJar: public AbstractDatabase
         void unload();
         void filter(const QString& s);
         int cookieCount(const QString& domain) const;
-        QList<CookieItem*> getCookies(const QString& domain);
+        QList<QObject*> getCookies(const QString& domain);
 
     protected:
         virtual bool open() const;
@@ -34,7 +34,7 @@ class CookieJar: public AbstractDatabase
         void domainsChanged();
 
     private:
-        QHash<QString, QList<CookieItem*> > _cookiemap;
+        QHash<QString, QObjectList> _cookiemap;
         QStringList _domains;
         QStringList _filtereddomains;
         bool _filtered;
