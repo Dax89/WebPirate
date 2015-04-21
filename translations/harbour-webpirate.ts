@@ -357,13 +357,6 @@
     </message>
 </context>
 <context>
-    <name>CookieListItem</name>
-    <message>
-        <source>Cookies:</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
     <name>CookieManagerPage</name>
     <message>
         <source>Cookie Manager</source>
@@ -448,6 +441,13 @@
     </message>
     <message>
         <source>Do you want to store the password?</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>DomainListItem</name>
+    <message>
+        <source>Cookies:</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

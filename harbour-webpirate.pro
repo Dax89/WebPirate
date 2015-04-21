@@ -168,8 +168,8 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/components/browsertab/views/browserplayer/mediacomponents/MediaPlayerCursor.qml \
     qml/components/browsertab/views/browserplayer/mediacomponents/MediaPlayerProgressBar.qml \
     qml/pages/cookie/CookieManagerPage.qml \
-    qml/components/items/CookieListItem.qml \
-    qml/pages/cookie/CookiePage.qml
+    qml/pages/cookie/CookiePage.qml \
+    qml/components/items/DomainListItem.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line

@@ -31,7 +31,6 @@ Page
                 id: sffilter
                 width: parent.width
                 placeholderText: qsTr("Filter")
-                focus: true
                 onTextChanged: settings.cookiejar.filter(sffilter.text)
             }
         }
@@ -42,7 +41,7 @@ Page
             anchors { left: parent.left; top: content.bottom; right: parent.right; bottom: parent.bottom }
             model: settings.cookiejar.domains
 
-            delegate: CookieListItem {
+            delegate: DomainListItem {
                 contentWidth: parent.width
                 contentHeight: Theme.itemSizeSmall
 
