@@ -10,19 +10,46 @@ Page
     Component.onCompleted: settings.cookiejar.load()
     Component.onDestruction: settings.cookiejar.unload()
 
-    SilicaListView
+    SilicaFlickable
     {
+        id: flickable
         anchors.fill: parent
-        header: PageHeader { title: qsTr("Cookie Manager")  }
-        model: settings.cookiejar.count
 
-        delegate: CookieListItem {
-            contentWidth: parent.width
-            contentHeight: Theme.itemSizeSmall
+        Column
+        {
+            id: content
+            width: parent.width
 
-            domain: settings.cookiejar.getDomain(index)
-            count: settings.cookiejar.cookieCount(domain)
-            icon: settings.icondatabase.provideIcon(domain)
+            PageHeader
+            {
+                id: pagehdr
+                title: qsTr("Cookie Manager")
+            }
+
+            SearchField
+            {
+                id: sffilter
+                width: parent.width
+                placeholderText: qsTr("Filter")
+                focus: true
+                onTextChanged: settings.cookiejar.filter(sffilter.text)
+            }
+        }
+
+        SilicaListView
+        {
+            id: listview
+            anchors { left: parent.left; top: content.bottom; right: parent.right; bottom: parent.bottom }
+            model: settings.cookiejar.domains
+
+            delegate: CookieListItem {
+                contentWidth: parent.width
+                contentHeight: Theme.itemSizeSmall
+
+                domain: model.modelData
+                count: settings.cookiejar.cookieCount(model.modelData)
+                icon: settings.icondatabase.provideIcon(model.modelData)
+            }
         }
     }
 }

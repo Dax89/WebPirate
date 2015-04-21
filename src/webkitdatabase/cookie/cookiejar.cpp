@@ -4,13 +4,8 @@ const QString CookieJar::CONNECTION_NAME = "__wp__CookieJar";
 const QString CookieJar::WEBKIT_DATABASE = ".QtWebKit";
 const QString CookieJar::COOKIE_DATABASE = "cookies.db";
 
-CookieJar::CookieJar(QObject *parent): AbstractDatabase(CookieJar::CONNECTION_NAME, parent)
+CookieJar::CookieJar(QObject *parent): AbstractDatabase(CookieJar::CONNECTION_NAME, parent), _filtered(false)
 {
-}
-
-int CookieJar::count() const
-{
-    return this->_cookiemap.count();
 }
 
 void CookieJar::load()
@@ -31,7 +26,7 @@ void CookieJar::load()
         this->populateHashMap(cookies);
     }
 
-    emit countChanged();
+    emit domainsChanged();
 }
 
 void CookieJar::unload()
@@ -51,14 +46,38 @@ void CookieJar::unload()
     this->_cookiemap.clear();
 }
 
-QString CookieJar::getDomain(int idx) const
+void CookieJar::filter(const QString &s)
 {
-    return this->_domains.at(idx);
+    if(!s.isEmpty())
+    {
+        this->_filtereddomains = this->_domains.filter(s, Qt::CaseInsensitive);
+        this->_filtered = true;
+    }
+    else
+    {
+        this->_filtereddomains.clear();
+        this->_filtered = false;
+    }
+
+    emit domainsChanged();
 }
 
 int CookieJar::cookieCount(const QString &domain) const
 {
     return this->_cookiemap[domain].count();
+}
+
+QStringList CookieJar::domains() const
+{
+    if(this->_filtered)
+        return this->_filtereddomains;
+
+    return this->_domains;
+}
+
+QList<CookieItem *> CookieJar::getCookies(const QString &domain)
+{
+    return this->_cookiemap[domain];
 }
 
 bool CookieJar::open() const

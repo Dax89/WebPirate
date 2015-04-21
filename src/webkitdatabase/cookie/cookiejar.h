@@ -2,6 +2,7 @@
 #define COOKIEJAR_H
 
 #include <QHash>
+#include <QStringList>
 #include <QNetworkCookie>
 #include "../abstractdatabase.h"
 #include "cookieitem.h"
@@ -10,17 +11,18 @@ class CookieJar: public AbstractDatabase
 {
     Q_OBJECT
 
-    Q_PROPERTY(int count READ count NOTIFY countChanged)
+    Q_PROPERTY(QStringList domains READ domains NOTIFY domainsChanged)
 
     public:
         CookieJar(QObject* parent = 0);
-        int count() const;
+        QStringList domains() const;
 
     public slots:
         void load();
         void unload();
-        QString getDomain(int idx) const;
+        void filter(const QString& s);
         int cookieCount(const QString& domain) const;
+        QList<CookieItem*> getCookies(const QString& domain);
 
     protected:
         virtual bool open() const;
@@ -29,11 +31,13 @@ class CookieJar: public AbstractDatabase
         void populateHashMap(const QList<QNetworkCookie>& cookies);
 
     signals:
-        void countChanged();
+        void domainsChanged();
 
     private:
         QHash<QString, QList<CookieItem*> > _cookiemap;
-        QList<QString> _domains;
+        QStringList _domains;
+        QStringList _filtereddomains;
+        bool _filtered;
 
     private:
         static const QString CONNECTION_NAME;

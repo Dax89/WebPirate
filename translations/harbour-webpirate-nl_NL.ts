@@ -369,6 +369,10 @@
         <source>Cookie Manager</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Filter</source>
+        <translation type="unfinished">Filteren</translation>
+    </message>
 </context>
 <context>
     <name>CoverModel</name>
