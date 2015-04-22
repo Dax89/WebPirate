@@ -17,6 +17,28 @@ Page
         id: flickable
         anchors.fill: parent
 
+        RemorsePopup { id: remorsepopup }
+
+        PullDownMenu
+        {
+            MenuItem
+            {
+                text: qsTr("Remove All Cookies")
+
+                onClicked: {
+                    remorsepopup.execute(qsTr("Removing Cookies"), function() {
+
+                    });
+                }
+            }
+
+            MenuItem
+            {
+                text: qsTr("Add Cookie")
+                onClicked: pageStack.push(Qt.resolvedUrl("CookiePage.qml"), { "settings": pagecookiemanager.settings })
+            }
+        }
+
         Column
         {
             id: content
@@ -33,6 +55,7 @@ Page
                 id: sffilter
                 width: parent.width
                 placeholderText: qsTr("Filter")
+                inputMethodHints: Qt.ImhUrlCharactersOnly | Qt.ImhNoAutoUppercase
                 onTextChanged: settings.cookiejar.filter(sffilter.text)
             }
         }

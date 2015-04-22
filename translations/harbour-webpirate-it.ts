@@ -373,6 +373,18 @@
         <source>Filter</source>
         <translation type="unfinished">Filtri</translation>
     </message>
+    <message>
+        <source>Remove All Cookies</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Removing Cookies</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Add Cookie</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CookiePage</name>

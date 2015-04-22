@@ -10,6 +10,17 @@ Dialog
     id: dlgbookmark
     allowedOrientations: Orientation.All
     acceptDestinationAction: PageStackAction.Pop
+    canAccept: false
+
+    onCookieItemChanged: {
+        dlgbookmark.canAccept = true;
+
+        tfname.text = cookieItem.name;
+        tfdomain.text = cookieItem.domain;
+        tfpath.text = cookieItem.path;
+        tfexpires.text = cookieItem.expires;
+        tfvalue.text = cookieItem.value;
+    }
 
     SilicaFlickable
     {
@@ -30,42 +41,42 @@ Dialog
 
             TextField
             {
+                id: tfname
                 width: parent.width
                 label: qsTr("Name")
                 placeholderText: label
-                text: cookieItem.name
             }
 
             TextField
             {
+                id: tfdomain
                 width: parent.width
                 label: qsTr("Domain")
                 placeholderText: label
-                text: cookieItem.domain
             }
 
             TextField
             {
+                id: tfpath
                 width: parent.width
                 label: qsTr("Path")
                 placeholderText: label
-                text: cookieItem.path
             }
 
             TextField
             {
+                id: tfexpires
                 width: parent.width
                 label: qsTr("Expires")
                 placeholderText: label
-                text: cookieItem.expires
             }
 
             TextArea
             {
+                id: tfvalue
                 width: parent.width
                 label: qsTr("Value")
                 placeholderText: label
-                text: cookieItem.value
             }
         }
     }

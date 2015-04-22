@@ -46,7 +46,7 @@ ListItem
                 verticalAlignment: Text.AlignTop
                 horizontalAlignment: Text.AlignLeft
                 color: Theme.highlightColor
-                font.pixelSize: Theme.fontSizeTiny
+                font.pixelSize: Theme.fontSizeExtraSmall
                 elide: Text.ElideRight
             }
         }
