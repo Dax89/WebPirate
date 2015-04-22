@@ -168,6 +168,12 @@ SilicaWebView
     onLoadingChanged: {
         if(loadRequest.status === WebView.LoadStartedStatus)
         {
+            if(browsertab.state == "loaderror")
+            {
+                viewstack.pop(); // Pop out error page
+                browsertab.state == "webbrowser";
+            }
+
             if(visible)
             {
                 navigationbar.solidify();
