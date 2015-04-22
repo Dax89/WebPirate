@@ -357,9 +357,24 @@
     </message>
 </context>
 <context>
+    <name>CookieListItem</name>
+    <message>
+        <source>Delete</source>
+        <translation type="unfinished">Izbriši</translation>
+    </message>
+    <message>
+        <source>Deleting Cookie</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>CookieListPage</name>
     <message>
         <source>Cookies</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Add Cookie</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -494,6 +509,14 @@
     <name>DomainListItem</name>
     <message>
         <source>Cookies:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation type="unfinished">Izbriši</translation>
+    </message>
+    <message>
+        <source>Deleting Cookies</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

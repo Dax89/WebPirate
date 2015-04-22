@@ -51,17 +51,17 @@ Item
             SidebarItem
             {
                 anchors { left: parent.left; right: parent.right }
-                icon: "image://theme/icon-s-time"
-                itemText: qsTr("Navigation History")
-                onClicked: pageStack.push(Qt.resolvedUrl("../../pages/history/NavigationHistoryPage.qml"), { "tabView": tabview });
+                icon: "image://theme/icon-s-group-chat"
+                itemText: qsTr("Sessions")
+                onClicked: pageStack.push(Qt.resolvedUrl("../../pages/session/SessionManagerPage.qml"), { "tabView": tabview });
             }
 
             SidebarItem
             {
                 anchors { left: parent.left; right: parent.right }
-                icon: "image://theme/icon-s-group-chat"
-                itemText: qsTr("Sessions")
-                onClicked: pageStack.push(Qt.resolvedUrl("../../pages/session/SessionManagerPage.qml"), { "tabView": tabview });
+                icon: "image://theme/icon-s-time"
+                itemText: qsTr("Navigation History")
+                onClicked: pageStack.push(Qt.resolvedUrl("../../pages/history/NavigationHistoryPage.qml"), { "tabView": tabview });
             }
 
             SidebarItem

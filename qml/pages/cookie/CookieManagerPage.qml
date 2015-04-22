@@ -27,7 +27,7 @@ Page
 
                 onClicked: {
                     remorsepopup.execute(qsTr("Removing Cookies"), function() {
-
+                        settings.cookiejar.deleteAllCookies();
                     });
                 }
             }
@@ -65,14 +65,23 @@ Page
             id: listview
             anchors { left: parent.left; top: content.bottom; right: parent.right; bottom: parent.bottom }
             model: settings.cookiejar.domains
+            clip: true
 
             delegate: DomainListItem {
+                id: domainlistitem
                 contentWidth: parent.width
                 contentHeight: Theme.itemSizeSmall
                 domain: model.modelData
                 count: settings.cookiejar.cookieCount(model.modelData)
                 icon: settings.icondatabase.provideIcon(model.modelData)
-                onClicked: pageStack.push(Qt.resolvedUrl("CookieListPage.qml"), { "settings": settings, "domain": model.modelData })
+
+                onClicked: {
+                    var cookiepage = pageStack.push(Qt.resolvedUrl("CookieListPage.qml"), { "settings": settings, "domain": model.modelData })
+
+                    cookiepage.done.connect(function() {
+                        domainlistitem.count = settings.cookiejar.cookieCount(model.modelData); // Update Count for this item
+                    });
+                }
             }
         }
     }

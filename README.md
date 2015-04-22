@@ -19,11 +19,12 @@ Features
 - Popup Blocker
 - Closed tabs can be recovered
 - Night Mode
+- Cookie Management
 
 Planned Features
 -----
 
-- Cookie Management
+
 - Page's content reflow
 - Do you want more? Just ask! :)
 

@@ -8,6 +8,19 @@ ListItem
 
     id: cookielistitem
 
+    menu: ContextMenu {
+        MenuItem {
+            text: qsTr("Delete")
+
+            onClicked: {
+                cookielistitem.remorseAction(qsTr("Deleting Cookie"), function() {
+                    settings.cookiejar.deleteCookie(model.modelData);
+                    pagecookielist.loadCookies(); // Reload cookies
+                });
+            }
+        }
+    }
+
     Row
     {
         spacing: Theme.paddingMedium

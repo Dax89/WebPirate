@@ -9,21 +9,61 @@ Page
     property Settings settings
     property string domain
 
+    signal done()
+
+    function loadCookies()
+    {
+        listview.model = settings.cookiejar.getCookies(pagecookielist.domain);
+    }
+
     id: pagecookielist
     allowedOrientations: Orientation.All
+    Component.onDestruction: done()
 
     SilicaListView
     {
+        PullDownMenu
+        {
+            MenuItem
+            {
+                text: qsTr("Add Cookie")
+
+                onClicked: {
+                    var dlgcookie = pageStack.push(Qt.resolvedUrl("CookiePage.qml"), { "settings": pagecookielist.settings, "domain": pagecookielist.domain });
+
+                    dlgcookie.accepted.connect(function() {
+                        loadCookies(); // Reload cookies
+                    });
+                }
+            }
+        }
+
+        id: listview
+        clip: true
         anchors.fill: parent
         header: PageHeader { id: pageheader; title: qsTr("Cookies") }
-        model: settings.cookiejar.getCookies(pagecookielist.domain)
+        Component.onCompleted: loadCookies()
+
+        onCountChanged: {
+            if(count > 0)
+                return;
+
+            pageStack.pop();
+        }
 
         delegate: CookieListItem {
             contentWidth: parent.width
             contentHeight: Theme.itemSizeSmall
             cookieName: model.modelData.name
             cookieDomain: pagecookielist.domain
-            onClicked: pageStack.push(Qt.resolvedUrl("CookiePage.qml"), { "settings": settings, "cookieItem": model.modelData })
+
+            onClicked: {
+                var dlgcookie = pageStack.push(Qt.resolvedUrl("CookiePage.qml"), { "settings": pagecookielist.settings, "cookieItem": model.modelData });
+
+                dlgcookie.accepted.connect(function() {
+                    loadCookies(); // Reload cookies
+                });
+            }
         }
     }
 }

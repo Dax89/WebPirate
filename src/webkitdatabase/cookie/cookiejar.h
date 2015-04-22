@@ -15,26 +15,44 @@ class CookieJar: public AbstractDatabase
 
     public:
         CookieJar(QObject* parent = 0);
-        QStringList domains() const;
+        const QStringList& domains() const;
 
     public slots:
         void load();
         void unload();
         void filter(const QString& s);
         int cookieCount(const QString& domain) const;
-        QList<QObject*> getCookies(const QString& domain);
+        QList<QObject*> getCookies(const QString& domain) const;
+        void setCookie(CookieItem* ci);
+        void setCookie(const QString& name, const QString& domain, const QString& path, const QDateTime &expires, const QString& value);
+        void deleteCookiesFrom(const QString& domain);
+        void deleteCookie(CookieItem* ci);
+        void deleteAllCookies();
 
     protected:
         virtual bool open() const;
 
     private:
+        void disposeItems();
+        void updateFilter();
+        void swapCookie(CookieItem* ci);
+        void removeDomain(const QString& domain);
+        bool insert(CookieItem* ci, bool update);
+        bool exists(CookieItem* ci);
         void populateHashMap(const QList<QNetworkCookie>& cookies);
+
+    private: // SQL Interface
+        void commit(CookieItem* ci);
+        void commitDelete();
+        void commitDelete(const QString& domain);
+        void commitDelete(const CookieItem *ci);
 
     signals:
         void domainsChanged();
 
     private:
         QHash<QString, QObjectList> _cookiemap;
+        QString _filter;
         QStringList _domains;
         QStringList _filtereddomains;
         bool _filtered;

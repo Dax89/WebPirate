@@ -7,6 +7,20 @@ ListItem
     property alias icon: imgfavicon.source
     property alias domain: lbldomain.text
 
+    id: domainlistitem
+
+    menu: ContextMenu {
+        MenuItem {
+            text: qsTr("Delete")
+
+            onClicked: {
+                domainlistitem.remorseAction(qsTr("Deleting Cookies"), function() {
+                    settings.cookiejar.deleteCookiesFrom(domain);
+                });
+            }
+        }
+    }
+
     Row
     {
         spacing: Theme.paddingMedium

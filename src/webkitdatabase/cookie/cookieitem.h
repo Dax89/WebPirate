@@ -12,25 +12,29 @@ class CookieItem : public QObject
     Q_PROPERTY(QString domain READ domain WRITE setDomain NOTIFY domainChanged)
     Q_PROPERTY(QString name READ name WRITE setName NOTIFY nameChanged)
     Q_PROPERTY(QString path READ path WRITE setPath NOTIFY pathChanged)
-    Q_PROPERTY(QString expires READ expires WRITE setExpires NOTIFY expiresChanged)
+    Q_PROPERTY(QDateTime expires READ expires WRITE setExpires NOTIFY expiresChanged)
     Q_PROPERTY(QString value READ value WRITE setValue NOTIFY valueChanged)
 
     public:
+        explicit CookieItem(const QString &domain, const QString& name, const QString& value, QObject *parent = 0);
         explicit CookieItem(const QNetworkCookie& cookie, QObject *parent = 0);
 
     public:
+        QString originalDomain() const;
+        QString originalName() const;
         QString domain() const;
         QString name() const;
         QString path() const;
-        QString expires() const;
+        QDateTime expires() const;
         QString value() const;
 
     public:
         void setDomain(const QString& s);
         void setName(const QString& s);
         void setPath(const QString& s);
-        void setExpires(const QString& s);
+        void setExpires(const QDateTime& dt);
         void setValue(const QString& s);
+        QByteArray toRawForm() const;
 
     signals:
         void domainChanged();
@@ -41,6 +45,8 @@ class CookieItem : public QObject
 
     private:
         QNetworkCookie _cookie;
+        QString _originaldomain;
+        QString _originalname;
 };
 
 Q_DECLARE_METATYPE(CookieItem*)
