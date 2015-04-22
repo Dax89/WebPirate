@@ -55,7 +55,7 @@ Page
                 id: sffilter
                 width: parent.width
                 placeholderText: qsTr("Filter")
-                inputMethodHints: Qt.ImhUrlCharactersOnly | Qt.ImhNoAutoUppercase
+                inputMethodHints: Qt.ImhUrlCharactersOnly | Qt.ImhNoAutoUppercase | Qt.ImhNoPredictiveText
                 onTextChanged: settings.cookiejar.filter(sffilter.text)
             }
         }
@@ -76,10 +76,10 @@ Page
                 icon: settings.icondatabase.provideIcon(model.modelData)
 
                 onClicked: {
-                    var cookiepage = pageStack.push(Qt.resolvedUrl("CookieListPage.qml"), { "settings": settings, "domain": model.modelData })
+                    var cookiepage = pageStack.push(Qt.resolvedUrl("CookieListPage.qml"), { "domainItem": domainlistitem, "settings": settings, "domain": model.modelData });
 
-                    cookiepage.done.connect(function() {
-                        domainlistitem.count = settings.cookiejar.cookieCount(model.modelData); // Update Count for this item
+                    cookiepage.countChanged.connect(function() {
+                        cookiepage.domainItem.count = cookiepage.settings.cookiejar.cookieCount(cookiepage.domain);
                     });
                 }
             }

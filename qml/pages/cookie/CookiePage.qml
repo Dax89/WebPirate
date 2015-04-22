@@ -10,7 +10,7 @@ Dialog
 
     function validateFields()
     {
-        var date = Date.parse(tfexpires.text);
+        var date = Date.fromLocaleString(Qt.locale(), tfexpires.text, Locale.ShortFormat);
 
         if(!tfname.text.length || !tfdomain.text.length || !tfpath.text.length || !tfvalue.text.length || isNaN(date))
         {
@@ -23,7 +23,7 @@ Dialog
 
     function updateCookieData()
     {
-        var date = new Date(tfexpires.text);
+        var date = Date.fromLocaleString(Qt.locale(), tfexpires.text, Locale.ShortFormat);
 
         if(cookieItem)
         {
@@ -46,14 +46,14 @@ Dialog
     onAccepted: updateCookieData()
 
     onCookieItemChanged: {
-        dlgcookie.canAccept = true;
-        tfdomain.enabled = false
-
         tfname.text = cookieItem.name;
         tfdomain.text = cookieItem.domain;
         tfpath.text = cookieItem.path;
         tfexpires.text = cookieItem.expires.toLocaleString(null, Locale.ShortFormat);
         tfvalue.text = cookieItem.value;
+
+        tfdomain.enabled = false
+        dlgcookie.canAccept = true;
     }
 
     onDomainChanged: {
@@ -82,6 +82,7 @@ Dialog
             {
                 id: tfname
                 width: parent.width
+                inputMethodHints: Qt.ImhNoAutoUppercase | Qt.ImhNoPredictiveText
                 label: qsTr("Name")
                 placeholderText: label
                 onTextChanged: validateFields()
@@ -91,6 +92,7 @@ Dialog
             {
                 id: tfdomain
                 width: parent.width
+                inputMethodHints: Qt.ImhUrlCharactersOnly | Qt.ImhNoAutoUppercase | Qt.ImhNoPredictiveText
                 label: qsTr("Domain")
                 placeholderText: label
                 onTextChanged: validateFields()
@@ -101,6 +103,7 @@ Dialog
                 id: tfpath
                 width: parent.width
                 label: qsTr("Path")
+                inputMethodHints: Qt.ImhUrlCharactersOnly | Qt.ImhNoAutoUppercase | Qt.ImhNoPredictiveText
                 placeholderText: label
                 onTextChanged: validateFields()
 
@@ -117,6 +120,7 @@ Dialog
                 id: tfexpires
                 width: parent.width
                 label: qsTr("Expires")
+                inputMethodHints: Qt.ImhNoAutoUppercase | Qt.ImhNoPredictiveText
                 placeholderText: label
                 onTextChanged: validateFields()
 
@@ -134,6 +138,7 @@ Dialog
                 id: tfvalue
                 width: parent.width
                 label: qsTr("Value")
+                inputMethodHints: Qt.ImhNoAutoUppercase | Qt.ImhNoPredictiveText
                 placeholderText: label
                 onTextChanged: validateFields()
             }

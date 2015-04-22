@@ -6,19 +6,20 @@ import "../../components/items/cookie"
 
 Page
 {
+    property DomainListItem domainItem
     property Settings settings
     property string domain
 
-    signal done()
+    signal countChanged()
 
     function loadCookies()
     {
         listview.model = settings.cookiejar.getCookies(pagecookielist.domain);
+        countChanged();
     }
 
     id: pagecookielist
     allowedOrientations: Orientation.All
-    Component.onDestruction: done()
 
     SilicaListView
     {
