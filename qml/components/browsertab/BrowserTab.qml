@@ -182,7 +182,7 @@ Item
 
     ShareMenu {
         id: sharemenu
-        onShareRequested: browsertab.load(sharedurl)
+        //onShareRequested: browsertab.load(sharedurl)
     }
 
     CredentialDialog {

@@ -1117,15 +1117,15 @@
     <name>ShareMenu</name>
     <message>
         <source>Share on Facebook</source>
-        <translation>Delen op Facebook</translation>
+        <translation type="vanished">Delen op Facebook</translation>
     </message>
     <message>
         <source>Share on Twitter</source>
-        <translation>Delen op Twitter</translation>
+        <translation type="vanished">Delen op Twitter</translation>
     </message>
     <message>
         <source>Share on Google+</source>
-        <translation>Delen op Google+</translation>
+        <translation type="vanished">Delen op Google+</translation>
     </message>
     <message>
         <source>Share</source>

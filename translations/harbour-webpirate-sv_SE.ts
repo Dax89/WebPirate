@@ -1117,15 +1117,15 @@
     <name>ShareMenu</name>
     <message>
         <source>Share on Facebook</source>
-        <translation>Dela på Facebook</translation>
+        <translation type="vanished">Dela på Facebook</translation>
     </message>
     <message>
         <source>Share on Twitter</source>
-        <translation>Dela på Twitter</translation>
+        <translation type="vanished">Dela på Twitter</translation>
     </message>
     <message>
         <source>Share on Google+</source>
-        <translation>Dela på Google+</translation>
+        <translation type="vanished">Dela på Google+</translation>
     </message>
     <message>
         <source>Share</source>

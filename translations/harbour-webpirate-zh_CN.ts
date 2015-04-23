@@ -1117,15 +1117,15 @@
     <name>ShareMenu</name>
     <message>
         <source>Share on Facebook</source>
-        <translation>在Facebook上分享</translation>
+        <translation type="vanished">在Facebook上分享</translation>
     </message>
     <message>
         <source>Share on Twitter</source>
-        <translation>在Twitter上分享</translation>
+        <translation type="vanished">在Twitter上分享</translation>
     </message>
     <message>
         <source>Share on Google+</source>
-        <translation>在Google+上分享</translation>
+        <translation type="vanished">在Google+上分享</translation>
     </message>
     <message>
         <source>Share</source>

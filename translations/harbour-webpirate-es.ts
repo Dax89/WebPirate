@@ -1118,15 +1118,15 @@
     <name>ShareMenu</name>
     <message>
         <source>Share on Facebook</source>
-        <translation>Compartir en Facebook</translation>
+        <translation type="vanished">Compartir en Facebook</translation>
     </message>
     <message>
         <source>Share on Twitter</source>
-        <translation>Compartir en Twitter</translation>
+        <translation type="vanished">Compartir en Twitter</translation>
     </message>
     <message>
         <source>Share on Google+</source>
-        <translation>Compartir en Google+</translation>
+        <translation type="vanished">Compartir en Google+</translation>
     </message>
     <message>
         <source>Share</source>

@@ -99,7 +99,7 @@ BrowserBar
         IconButton
         {
             id: btnshare
-            enabled: navigationbar.queryBar.url.length > 0
+            enabled: (mainwindow.settings.transferengine.count > 0) && (navigationbar.queryBar.url.length > 0)
             width: visible ? calcButtonWidth() : 0
             height: parent.height
             anchors.verticalCenter: parent.verticalCenter

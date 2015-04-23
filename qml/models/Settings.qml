@@ -2,6 +2,7 @@ import QtQuick 2.1
 import QtSystemInfo 5.0
 import WebPirate 1.0
 import WebPirate.DBus 1.0
+import WebPirate.DBus.TransferEngine 1.0
 import WebPirate.AdBlock 1.0
 import "cover"
 
@@ -15,6 +16,7 @@ QtObject
     property QuickGridModel quickgridmodel: QuickGridModel { }
     property CookieJar cookiejar: CookieJar { }
     property WebIconDatabase icondatabase: WebIconDatabase { }
+    property TransferEngine transferengine: TransferEngine { }
     property CoverModel coveractions: CoverModel { }
 
     property int searchengine        /* Search Engine Index */

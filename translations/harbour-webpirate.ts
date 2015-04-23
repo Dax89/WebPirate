@@ -1112,18 +1112,6 @@
 <context>
     <name>ShareMenu</name>
     <message>
-        <source>Share on Facebook</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Share on Twitter</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Share on Google+</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Share</source>
         <translation type="unfinished"></translation>
     </message>

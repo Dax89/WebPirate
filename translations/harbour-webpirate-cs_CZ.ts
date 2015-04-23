@@ -1117,15 +1117,15 @@
     <name>ShareMenu</name>
     <message>
         <source>Share on Facebook</source>
-        <translation>Sdílet na Facebooku</translation>
+        <translation type="vanished">Sdílet na Facebooku</translation>
     </message>
     <message>
         <source>Share on Twitter</source>
-        <translation>Sdílet na Twitteru</translation>
+        <translation type="vanished">Sdílet na Twitteru</translation>
     </message>
     <message>
         <source>Share on Google+</source>
-        <translation>Sdílet na Google+</translation>
+        <translation type="vanished">Sdílet na Google+</translation>
     </message>
     <message>
         <source>Share</source>
