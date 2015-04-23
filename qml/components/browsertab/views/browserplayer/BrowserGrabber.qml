@@ -15,9 +15,9 @@ Item
     property alias videoAuthor: lblauthor.text
     property alias videoThumbnail: imgthumbnail.source
 
-    function addVideo(info, url)
+    function addVideo(info, mime, url)
     {
-        videoList.append( {"videoinfo": info, "videourl": url });
+        videoList.append( {"videoinfo": info, "videomime": mime, "videourl": url });
     }
 
     function playVideo(videotitle, videourl, videothumbnail) {
@@ -153,7 +153,9 @@ Item
 
                                 onClicked: {
                                     lvitem.remorseAction(qsTr("Grabbing video"), function() {
-                                        mainwindow.settings.downloadmanager.createDownloadFromUrl(videourl);
+                                        var ext = videomime.split("/")[1];
+
+                                        mainwindow.settings.downloadmanager.createDownloadFromUrl(videourl, videoTitle + "." + ext);
                                     });
                                 }
                             }
