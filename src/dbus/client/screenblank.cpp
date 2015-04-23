@@ -11,7 +11,7 @@ bool ScreenBlank::enabled() const
 
 void ScreenBlank::setEnabled(bool e)
 {
-    if(e == this->_enabled)
+    if(this->_enabled && e) // We don't need to ping if it is already enabled
         return;
 
     this->_enabled = e;
