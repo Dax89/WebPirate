@@ -70,6 +70,12 @@ QString AbstractDownloadItem::completePath() const
     return QString("%1%2%3").arg(this->downloadPath(), QDir::separator(), this->fileName());
 }
 
+void AbstractDownloadItem::adjust(QString &filename)
+{
+    QRegExp regex("[/\\\\?%*:|\"<> \\t]+");
+    filename.replace(regex, "_");
+}
+
 void AbstractDownloadItem::checkConflicts(QString &filename)
 {
     QDir dir(this->_downloadpath);
@@ -138,6 +144,7 @@ void AbstractDownloadItem::setFileName(const QString &filename)
         return;
 
     this->_filename = filename;
+    this->adjust(this->_filename);
     this->checkConflicts(this->_filename);
 
     emit fileNameChanged();

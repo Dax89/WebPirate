@@ -39,6 +39,7 @@ class AbstractDownloadItem : public QObject
         QString completePath() const;
 
     private:
+        void adjust(QString& filename);
         void checkConflicts(QString& filename);
         void setSpeed(const QString& speed);
 
