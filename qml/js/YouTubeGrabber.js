@@ -29,7 +29,7 @@ function decodeVideoTypes(videolist, mediagrabber)
                           "quality": qualityregex.exec(videolist[i])[1] };
 
         mediagrabber.addVideo(qsTr("Quality") + ": " + (videoinfo.quality + " (" + videoinfo.mime + (videoinfo.hascodec ? (", " + videoinfo.codec) : "") + ")"),
-                              videoinfo.url);
+                              videoinfo.mime, videoinfo.url);
     }
 }
 
