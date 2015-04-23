@@ -14,7 +14,7 @@ class DownloadItem: public AbstractDownloadItem
 
     public:
         DownloadItem(QObject* parent = 0);
-        DownloadItem(const QUrl& url, QObject* parent = 0);
+        DownloadItem(const QUrl& url, const QString& filename, QObject* parent = 0);
 
     private:
         QString parseFileName(const QUrl& url);

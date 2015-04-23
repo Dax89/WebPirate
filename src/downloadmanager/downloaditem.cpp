@@ -7,11 +7,11 @@ DownloadItem::DownloadItem(QObject *parent): AbstractDownloadItem(parent), _down
 
 }
 
-DownloadItem::DownloadItem(const QUrl &url, QObject* parent): AbstractDownloadItem(url, parent), _downloadreply(NULL)
+DownloadItem::DownloadItem(const QUrl &url, const QString &filename, QObject* parent): AbstractDownloadItem(url, parent), _downloadreply(NULL)
 {
     connect(&this->_networkmanager, SIGNAL(finished(QNetworkReply*)), this, SLOT(onDownloadFinished(QNetworkReply*)));
 
-    this->setFileName(this->parseFileName(url));
+    this->setFileName((filename.isEmpty() ? this->parseFileName(url) : filename));
     this->_file.setFileName(QString("%1%2%3").arg(this->downloadPath(), QDir::separator(), this->fileName()));
 }
 

@@ -23,6 +23,7 @@ class DownloadManager : public QObject
     public slots:
         AbstractDownloadItem *downloadItem(int index);
         void createDownloadFromUrl(const QUrl& url);
+        void createDownloadFromUrl(const QUrl& url, const QString& filename);
         void createDownload(QWebDownloadItem* downloaditem);
         void removeCompleted();
 
