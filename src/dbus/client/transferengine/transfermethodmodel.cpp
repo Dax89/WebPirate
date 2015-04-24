@@ -94,6 +94,7 @@ bool TransferMethodModel::isTransferMethodRequested(const TransferMethodInfo &tm
 QHash<int, QByteArray> TransferMethodModel::roleNames() const
 {
     QHash<int, QByteArray> roles;
+    roles[TransferMethodModel::UserName] = "userName";
     roles[TransferMethodModel::MethodId] = "methodId";
     roles[TransferMethodModel::ShareUIPath] = "shareUIPath";
 
@@ -117,6 +118,9 @@ QVariant TransferMethodModel::data(const QModelIndex &index, int role) const
 
     switch(role)
     {
+        case TransferMethodModel::UserName:
+            return tmi.UserName;
+
         case TransferMethodModel::MethodId:
             return tmi.MethodId;
 

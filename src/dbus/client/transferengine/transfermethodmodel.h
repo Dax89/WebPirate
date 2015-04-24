@@ -13,7 +13,7 @@ class TransferMethodModel: public QAbstractListModel
     Q_PROPERTY(TransferEngine* transferEngine READ transferEngine WRITE setTransferEngine NOTIFY transferEngineChanged)
 
     public:
-        enum RoleNames { MethodId, ShareUIPath };
+        enum RoleNames { UserName, MethodId, ShareUIPath };
 
     public:
         explicit TransferMethodModel(QObject *parent = 0);

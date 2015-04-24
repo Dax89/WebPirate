@@ -62,7 +62,7 @@ PopupDialog
             horizontalAlignment: Text.AlignLeft
             verticalAlignment: Text.AlignVCenter
             font.pixelSize: Theme.fontSizeSmall
-            text: methodId
+            text: methodId + (userName.length ? " (" + userName + ")" : "")
         }
 
         /*
