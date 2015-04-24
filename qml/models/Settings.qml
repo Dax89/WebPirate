@@ -27,5 +27,5 @@ QtObject
     property bool restoretabs        /* Restore Tabs at Startup */
     property bool nightmode: false;  /* Night Mode */
 
-    readonly property string version: "0.9.8"
+    readonly property string version: "0.9.9"
 }
