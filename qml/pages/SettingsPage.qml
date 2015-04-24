@@ -181,6 +181,16 @@ Dialog
             {
                 width: parent.width
                 height: Theme.itemSizeSmall
+                labelText: qsTr("Delete Cookies")
+                actionMessage: qsTr("Removing cookies")
+
+                onActionRequested: settings.cookiejar.deleteAllCookies()
+            }
+
+            SettingLabel
+            {
+                width: parent.width
+                height: Theme.itemSizeSmall
                 labelText: qsTr("Delete Personal Data")
                 actionMessage: qsTr("Removing personal data")
 

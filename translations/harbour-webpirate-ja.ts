@@ -1114,6 +1114,14 @@
         <source>Restore tabs at Startup</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Delete Cookies</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Removing cookies</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ShareMenu</name>
