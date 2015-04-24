@@ -47,7 +47,7 @@ SOURCES += src/harbour-webpirate.cpp \
     src/dbus/client/transferengine/transferengine.cpp \
     src/dbus/client/transferengine/transfermethodinfo.cpp \
     src/dbus/client/transferengine/transfermethodmodel.cpp \
-    src/dbus/client/voicecall.cpp
+    src/dbus/client/urlcomposer.cpp
 
 OTHER_FILES += qml/harbour-webpirate.qml \
     rpm/harbour-webpirate.changes.in \
@@ -225,5 +225,5 @@ HEADERS += \
     src/dbus/client/transferengine/transferengine.h \
     src/dbus/client/transferengine/transfermethodinfo.h \
     src/dbus/client/transferengine/transfermethodmodel.h \
-    src/dbus/client/voicecall.h
+    src/dbus/client/urlcomposer.h
 

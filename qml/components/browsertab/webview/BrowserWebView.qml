@@ -44,7 +44,15 @@ SilicaWebView
             scheme: "tel"
 
             onReceivedRequest: {
-                mainwindow.settings.voicecall.compose(request.url);
+                mainwindow.settings.urlcomposer.compose(request.url);
+            }
+        },
+
+        UrlSchemeDelegate {
+            scheme: "sms"
+
+            onReceivedRequest: {
+                mainwindow.settings.urlcomposer.send(request.url);
             }
         }
     ]

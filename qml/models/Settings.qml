@@ -17,7 +17,7 @@ QtObject
     property CookieJar cookiejar: CookieJar { }
     property WebIconDatabase icondatabase: WebIconDatabase { }
     property TransferEngine transferengine: TransferEngine { }
-    property VoiceCall voicecall: VoiceCall { }
+    property UrlComposer urlcomposer: UrlComposer { }
     property CoverModel coveractions: CoverModel { }
 
     property int searchengine        /* Search Engine Index */
