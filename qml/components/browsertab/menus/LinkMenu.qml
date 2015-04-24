@@ -44,7 +44,7 @@ PopupDialog
 
                                              QtObject { readonly property string menuText: qsTr("Share")
                                                         function execute() {
-                                                            sharemenu.share(linkmenu.url, linkmenu.url);
+                                                            sharemenu.share(linkmenu.title, linkmenu.url);
                                                         }
                                                       },
 
@@ -72,7 +72,6 @@ PopupDialog
 
     onUrlChanged: {
         linkmenu.favorite = Favorites.contains(linkmenu.url);
-        linkmenu.title = url;
     }
 
     popupModel: linkmenuModel

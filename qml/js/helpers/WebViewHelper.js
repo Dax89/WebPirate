@@ -22,19 +22,23 @@ var __webpirate__ = {
         data.top = rect.top;
         data.width = rect.width;
         data.height = rect.height;
+        data.title = "";
 
         if(target.tagName === "A")
         {
+            data.title = target.textContent.length ? target.textContent : target.href;
             data.url = target.href;
             data.isimage = false;
         }
         else if(target.parentNode.tagName === 'A')
         {
+            data.title = target.parentNode.textContent.length ? target.parentNode.textContent : target.parentNode.href;
             data.url = target.parentNode.href;
             data.isimage = false;
         }
         else if(target.tagName === "IMG")
         {
+            data.title = target.alt.length ? target.alt : target.src;
             data.url = target.src;
             data.isimage = true;
         }
