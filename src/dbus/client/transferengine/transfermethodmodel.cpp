@@ -97,6 +97,7 @@ QHash<int, QByteArray> TransferMethodModel::roleNames() const
     roles[TransferMethodModel::UserName] = "userName";
     roles[TransferMethodModel::MethodId] = "methodId";
     roles[TransferMethodModel::ShareUIPath] = "shareUIPath";
+    roles[TransferMethodModel::AccountId] = "accountId";
 
     return roles;
 }
@@ -126,6 +127,9 @@ QVariant TransferMethodModel::data(const QModelIndex &index, int role) const
 
         case TransferMethodModel::ShareUIPath:
             return tmi.ShareUIpath;
+
+        case TransferMethodModel::AccountId:
+            return tmi.AccountId;
 
         default:
             break;

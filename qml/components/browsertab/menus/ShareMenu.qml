@@ -5,10 +5,16 @@ import "../dialogs"
 
 PopupDialog
 {
-    property string url;
+    property var content
 
-    function share(shareurl) {
-        sharemenu.url = shareurl;
+    function share(urltitle, shareurl) {
+        if(!sharemenu.content)
+            sharemenu.content = new Object;
+
+        sharemenu.content.linkTitle = urltitle;
+        sharemenu.content.status = shareurl;
+
+        sharemenu.title = qsTr("Share") + ":\n" + shareurl;
         sharemenu.show();
     }
 
@@ -16,11 +22,8 @@ PopupDialog
     titleVisible: true
     anchors.fill: parent
 
-    onUrlChanged: {
-        sharemenu.title = qsTr("Share") + ":\n" + url;
-    }
-
     popupModel: TransferMethodModel {
+        id: transfermethodmodel
         filter: "text/x-url"
         transferEngine: mainwindow.settings.transferengine
     }
@@ -40,8 +43,10 @@ PopupDialog
         }
 
         onClicked: {
+            sharemenu.content.type = transfermethodmodel.filter; // Set Filter before open a new page
             sharemenu.hide();
-            pageStack.push(Qt.resolvedUrl(shareUIPath));
+
+            pageStack.push(Qt.resolvedUrl(shareUIPath), { "methodId": methodId, "accountId": accountId, "content": sharemenu.content } );
         }
     }
 }

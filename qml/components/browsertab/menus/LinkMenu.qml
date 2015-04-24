@@ -44,7 +44,7 @@ PopupDialog
 
                                              QtObject { readonly property string menuText: qsTr("Share")
                                                         function execute() {
-                                                            sharemenu.share(linkmenu.url);
+                                                            sharemenu.share(linkmenu.url, linkmenu.url);
                                                         }
                                                       },
 

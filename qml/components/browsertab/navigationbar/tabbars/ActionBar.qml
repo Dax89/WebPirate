@@ -107,7 +107,7 @@ BrowserBar
 
             onClicked: {
                 actionbar.evaporate();
-                sharemenu.share(browsertab.getUrl());
+                sharemenu.share(browsertab.getTitle(), browsertab.getUrl());
             }
         }
 
