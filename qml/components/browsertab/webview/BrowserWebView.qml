@@ -1,5 +1,6 @@
 import QtQuick 2.1
 import QtWebKit 3.0
+import QtWebKit.experimental 1.0
 import Sailfish.Silica 1.0
 import "../menus"
 import "../dialogs"
@@ -38,8 +39,18 @@ SilicaWebView
 
     id: webview
 
+    experimental.urlSchemeDelegates: [
+        UrlSchemeDelegate {
+            scheme: "tel"
+
+            onReceivedRequest: {
+                mainwindow.settings.voicecall.compose(request.url);
+            }
+        }
+    ]
+
     /* Experimental WebView Features */
-    experimental.preferences.webAudioEnabled: true;
+    experimental.preferences.webAudioEnabled: true
     experimental.preferences.webGLEnabled: true
     experimental.preferences.dnsPrefetchEnabled: true
     experimental.preferences.pluginsEnabled: true

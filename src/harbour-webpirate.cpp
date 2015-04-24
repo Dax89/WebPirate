@@ -32,6 +32,7 @@
 #include <sailfishapp.h>
 //#include "dbus/webpirateservice.h"
 #include "dbus/client/screenblank.h"
+#include "dbus/client/voicecall.h"
 #include "dbus/client/transferengine/transferengine.h"
 #include "dbus/client/transferengine/transfermethodmodel.h"
 #include "security/cryptography/aes256.h"
@@ -57,6 +58,7 @@ int main(int argc, char *argv[])
     qmlRegisterSingletonType<AES256>("WebPirate.Security", 1, 0, "AES256", &AES256::initialize);
 
     qmlRegisterType<ScreenBlank>("WebPirate.DBus", 1, 0, "ScreenBlank");
+    qmlRegisterType<VoiceCall>("WebPirate.DBus", 1, 0, "VoiceCall");
     qmlRegisterType<TransferEngine>("WebPirate.DBus.TransferEngine", 1, 0, "TransferEngine");
     qmlRegisterType<TransferMethodModel>("WebPirate.DBus.TransferEngine", 1, 0, "TransferMethodModel");
 
