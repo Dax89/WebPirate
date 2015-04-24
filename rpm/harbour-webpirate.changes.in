@@ -8,6 +8,22 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* ??? Apr ?? 2015 Antonio Davide Trogu <trogu.davide@gmail.com> 0.9.9-1
+- Implemented tel: protocol
+- Implemented sms: protocol
+- Implemented mailto: protocol
+- Implemented Cookie Editor
+- Integration with Sailfish's accounts
+- BUGFIX: The browser doesn't open t.co links
+- BUGFIX: Screen goes off while playing long videos
+- BUGFIX: Loaded username/passwords are truncated
+- BUGFIX: Is some cases Download Manager does not download anything
+- BUGFIX: Broken DailyMotion grabber
+- Improved File Name detection when downloading files
+- Added a generic cover action when other pages are opened
+- Minor Fixes
+- Updated Localizations
+
 * Thu Mar 12 2015 Antonio Davide Trogu <trogu.davide@gmail.com> 0.9.8-1
 - Implemented file:// protocol
 - Implemented "Share link on ..." feature
