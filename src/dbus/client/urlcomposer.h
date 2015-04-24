@@ -14,6 +14,7 @@ class UrlComposer : public QObject
     public slots:
         void compose(const QString& tel) const;
         void send(const QString& sms) const;
+        void mailTo(const QString& mail) const;
 };
 
 #endif // URLCOMPOSER_H

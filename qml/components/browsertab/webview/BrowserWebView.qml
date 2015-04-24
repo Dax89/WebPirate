@@ -55,6 +55,14 @@ SilicaWebView
                 mainwindow.settings.urlcomposer.send(request.url);
             }
         }
+        ,
+        UrlSchemeDelegate {
+            scheme: "mailto"
+
+            onReceivedRequest: {
+                mainwindow.settings.urlcomposer.mailTo(request.url);
+            }
+        }
     ]
 
     /* Experimental WebView Features */

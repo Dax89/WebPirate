@@ -28,3 +28,15 @@ void UrlComposer::send(const QString &sms) const
     message.setArguments(args);
     connection.send(message);
 }
+
+void UrlComposer::mailTo(const QString &mail) const
+{
+    QList<QVariant> args;
+    args.append(QVariant::fromValue((QStringList() << mail)));
+
+    QDBusMessage message = QDBusMessage::createMethodCall("com.jolla.email.ui", "/com/jolla/email/ui", "com.jolla.email.ui", "mailto");
+    QDBusConnection connection(QDBusConnection::sessionBus());
+
+    message.setArguments(args);
+    connection.send(message);
+}
