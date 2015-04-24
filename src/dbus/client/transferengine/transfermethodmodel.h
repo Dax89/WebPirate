@@ -24,6 +24,7 @@ class TransferMethodModel: public QAbstractListModel
 
     private:
         void updateMethods();
+        bool isTransferMethodRequested(const TransferMethodInfo& tmi);
 
     signals:
         void filterChanged();

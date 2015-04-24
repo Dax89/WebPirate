@@ -43,21 +43,13 @@ void TransferMethodModel::setTransferEngine(TransferEngine *te)
 
 void TransferMethodModel::updateMethods()
 {
-    this->_filter.clear();
-
     if(!this->_filter.isEmpty())
     {
         QList<TransferMethodInfo> methods = this->_transferengine->transferMethods();
 
         foreach(TransferMethodInfo method, methods)
         {
-            if((method.Capabilities.count() == 1) && (method.Capabilities.first() == "*")) // All filters are valid
-            {
-                this->_methods.append(method);
-                continue;
-            }
-
-            if(method.Capabilities.indexOf(this->_filter) == -1)
+            if(!this->isTransferMethodRequested(method))
                 continue;
 
             this->_methods.append(method);
@@ -66,9 +58,37 @@ void TransferMethodModel::updateMethods()
     else
         this->_methods = this->_transferengine->transferMethods();
 
-
     this->beginInsertRows(QModelIndex(), 0, this->_filter.count() - 1);
     this->endInsertRows();
+}
+
+bool TransferMethodModel::isTransferMethodRequested(const TransferMethodInfo &tmi)
+{
+    const QStringList& capabilities = tmi.Capabilities;
+
+    if(this->_filter.isEmpty())
+        return true;
+
+    QRegExp rgxfilter("(.+)/(.+)");
+
+    if(!rgxfilter.exactMatch(this->_filter))
+        return false;
+
+    foreach(QString capability, capabilities)
+    {
+        if(capability == "*")
+            return true;
+
+        QStringList types = capability.split("/");
+
+        if(rgxfilter.cap(1) != types[0]) // Validate Prefix
+            return false;
+
+        if((rgxfilter.cap(2) == types[1]) || types[1] == "*") // Validate Suffix
+            return true;
+    }
+
+    return false;
 }
 
 QHash<int, QByteArray> TransferMethodModel::roleNames() const
