@@ -109,4 +109,15 @@ Page
         id: pagecoveractions
         enabled: (mainpage.status === PageStatus.Active) && ((tabview.currentIndex > -1) && tabview.currentTab().viewStack.empty)
     }
+
+    CoverActionList
+    {
+        enabled: mainpage.status !== PageStatus.Active
+
+        CoverAction
+        {
+            iconSource: "image://theme/icon-cover-cancel"
+            onTriggered: pageStack.pop(mainpage, PageStackAction.Immediate)
+        }
+    }
 }
