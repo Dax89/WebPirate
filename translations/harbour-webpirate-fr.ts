@@ -77,7 +77,7 @@
     </message>
     <message>
         <source>Finnish</source>
-        <translation type="unfinished"></translation>
+        <translation>Finlandais</translation>
     </message>
 </context>
 <context>
@@ -140,11 +140,11 @@
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished">Télécharger</translation>
+        <translation>Télécharger</translation>
     </message>
     <message>
         <source>Closed Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Onglet fermé</translation>
     </message>
     <message>
         <source>Cookies</source>
@@ -529,10 +529,6 @@
 </context>
 <context>
     <name>DownloadListItem</name>
-    <message>
-        <source>Restart</source>
-        <translation type="vanished">Redémarrer</translation>
-    </message>
     <message>
         <source>Cancel</source>
         <translation>Annuler</translation>
@@ -1004,31 +1000,31 @@
     <name>SessionManagerPage</name>
     <message>
         <source>Session Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Gestionnaire de session</translation>
     </message>
     <message>
         <source>Tabs saved</source>
-        <translation type="unfinished"></translation>
+        <translation>Onglets enregistrés</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation type="unfinished">Ouvrir</translation>
+        <translation>Ouvrir</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="unfinished">Éditer</translation>
+        <translation>Éditer</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Supprimer</translation>
+        <translation>Supprimer</translation>
     </message>
     <message>
         <source>Deleting session</source>
-        <translation type="unfinished"></translation>
+        <translation>Suppression de la session</translation>
     </message>
     <message>
         <source>Save current session</source>
-        <translation type="unfinished"></translation>
+        <translation>Enregistrer la session actuelle</translation>
     </message>
 </context>
 <context>
@@ -1110,7 +1106,7 @@
     </message>
     <message>
         <source>Restore tabs at Startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Restaurer les onglets au démarrage</translation>
     </message>
     <message>
         <source>Delete Cookies</source>
@@ -1123,18 +1119,6 @@
 </context>
 <context>
     <name>ShareMenu</name>
-    <message>
-        <source>Share on Facebook</source>
-        <translation type="vanished">Partager sur Facebook</translation>
-    </message>
-    <message>
-        <source>Share on Twitter</source>
-        <translation type="vanished">Partager sur Twitter</translation>
-    </message>
-    <message>
-        <source>Share on Google+</source>
-        <translation type="vanished">Partager sur Google+</translation>
-    </message>
     <message>
         <source>Share</source>
         <translation>Partager</translation>

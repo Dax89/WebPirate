@@ -77,7 +77,7 @@
     </message>
     <message>
         <source>Finnish</source>
-        <translation type="unfinished"></translation>
+        <translation>Finlandès</translation>
     </message>
 </context>
 <context>
@@ -140,15 +140,15 @@
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished">Descarrega</translation>
+        <translation>Descarrega</translation>
     </message>
     <message>
         <source>Closed Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Pestanya tancada</translation>
     </message>
     <message>
         <source>Cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>Galetes</translation>
     </message>
 </context>
 <context>
@@ -360,72 +360,72 @@
     <name>CookieListItem</name>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Elimina</translation>
+        <translation>Elimina</translation>
     </message>
     <message>
         <source>Deleting Cookie</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;està eliminant la galeta</translation>
     </message>
 </context>
 <context>
     <name>CookieListPage</name>
     <message>
         <source>Cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>Galetes</translation>
     </message>
     <message>
         <source>Add Cookie</source>
-        <translation type="unfinished"></translation>
+        <translation>Afegeix galeta</translation>
     </message>
 </context>
 <context>
     <name>CookieManagerPage</name>
     <message>
         <source>Cookie Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Gestor de galetes</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation type="unfinished">Filtra</translation>
+        <translation>Filtre</translation>
     </message>
     <message>
         <source>Remove All Cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>Elimina totes les galetes</translation>
     </message>
     <message>
         <source>Removing Cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;estan eliminant les galetes</translation>
     </message>
     <message>
         <source>Add Cookie</source>
-        <translation type="unfinished"></translation>
+        <translation>Afegeix una galeta</translation>
     </message>
 </context>
 <context>
     <name>CookiePage</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Desa</translation>
+        <translation>Desa</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="unfinished">Nom</translation>
+        <translation>Nom</translation>
     </message>
     <message>
         <source>Domain</source>
-        <translation type="unfinished"></translation>
+        <translation>Domini</translation>
     </message>
     <message>
         <source>Path</source>
-        <translation type="unfinished"></translation>
+        <translation>Ruta</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation type="unfinished"></translation>
+        <translation>Valor</translation>
     </message>
     <message>
         <source>Expires</source>
-        <translation type="unfinished"></translation>
+        <translation>Venciment</translation>
     </message>
 </context>
 <context>
@@ -509,30 +509,26 @@
     <name>DomainListItem</name>
     <message>
         <source>Cookies:</source>
-        <translation type="unfinished"></translation>
+        <translation>Galetes:</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Elimina</translation>
+        <translation>Elimina</translation>
     </message>
     <message>
         <source>Deleting Cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;estan eliminant les galetes</translation>
     </message>
 </context>
 <context>
     <name>DownloadItem</name>
     <message>
         <source>Redirect Loop</source>
-        <translation type="unfinished"></translation>
+        <translation>Bucle de redirecció</translation>
     </message>
 </context>
 <context>
     <name>DownloadListItem</name>
-    <message>
-        <source>Restart</source>
-        <translation type="vanished">Reinicia</translation>
-    </message>
     <message>
         <source>Cancel</source>
         <translation>Cancel·la</translation>
@@ -739,7 +735,7 @@
     </message>
     <message>
         <source>Share</source>
-        <translation type="unfinished"></translation>
+        <translation>Comparteix</translation>
     </message>
 </context>
 <context>
@@ -1004,31 +1000,31 @@
     <name>SessionManagerPage</name>
     <message>
         <source>Session Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Gestor de sessions</translation>
     </message>
     <message>
         <source>Tabs saved</source>
-        <translation type="unfinished"></translation>
+        <translation>Pestanyes desades</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation type="unfinished">Obre</translation>
+        <translation>Obre</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="unfinished">Edita</translation>
+        <translation>Edita</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Elimina</translation>
+        <translation>Elimina</translation>
     </message>
     <message>
         <source>Deleting session</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;està eliminant la sessió</translation>
     </message>
     <message>
         <source>Save current session</source>
-        <translation type="unfinished"></translation>
+        <translation>Desa la sessió actual</translation>
     </message>
 </context>
 <context>
@@ -1110,7 +1106,7 @@
     </message>
     <message>
         <source>Restore tabs at Startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Restableix les pestanyes en iniciar</translation>
     </message>
     <message>
         <source>Delete Cookies</source>
@@ -1125,7 +1121,7 @@
     <name>ShareMenu</name>
     <message>
         <source>Share</source>
-        <translation type="unfinished"></translation>
+        <translation>Comparteix</translation>
     </message>
 </context>
 <context>

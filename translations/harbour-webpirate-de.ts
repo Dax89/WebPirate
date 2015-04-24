@@ -140,15 +140,15 @@
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished"></translation>
+        <translation>Download</translation>
     </message>
     <message>
         <source>Closed Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Geschlossener Tab</translation>
     </message>
     <message>
         <source>Cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>Cookies</translation>
     </message>
 </context>
 <context>
@@ -360,72 +360,72 @@
     <name>CookieListItem</name>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Löschen</translation>
+        <translation>Löschen</translation>
     </message>
     <message>
         <source>Deleting Cookie</source>
-        <translation type="unfinished"></translation>
+        <translation>Cookie wird gelöscht</translation>
     </message>
 </context>
 <context>
     <name>CookieListPage</name>
     <message>
         <source>Cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>Cookies</translation>
     </message>
     <message>
         <source>Add Cookie</source>
-        <translation type="unfinished"></translation>
+        <translation>Cookie hinzufügen</translation>
     </message>
 </context>
 <context>
     <name>CookieManagerPage</name>
     <message>
         <source>Cookie Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Cookie Manager</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation type="unfinished">Filter</translation>
+        <translation>Filter</translation>
     </message>
     <message>
         <source>Remove All Cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>Alle Cookies entfernen</translation>
     </message>
     <message>
         <source>Removing Cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>Cookies werden entfernt</translation>
     </message>
     <message>
         <source>Add Cookie</source>
-        <translation type="unfinished"></translation>
+        <translation>Cookie hinzufügen</translation>
     </message>
 </context>
 <context>
     <name>CookiePage</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Speichern</translation>
+        <translation>Speichern</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="unfinished">Name</translation>
+        <translation>Name</translation>
     </message>
     <message>
         <source>Domain</source>
-        <translation type="unfinished"></translation>
+        <translation>Domain</translation>
     </message>
     <message>
         <source>Path</source>
-        <translation type="unfinished"></translation>
+        <translation>Pfad</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation type="unfinished"></translation>
+        <translation>Wert</translation>
     </message>
     <message>
         <source>Expires</source>
-        <translation type="unfinished"></translation>
+        <translation>Verfällt</translation>
     </message>
 </context>
 <context>
@@ -509,30 +509,26 @@
     <name>DomainListItem</name>
     <message>
         <source>Cookies:</source>
-        <translation type="unfinished"></translation>
+        <translation>Cookies:</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Löschen</translation>
+        <translation>Löschen</translation>
     </message>
     <message>
         <source>Deleting Cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>Cookies werden gelöscht</translation>
     </message>
 </context>
 <context>
     <name>DownloadItem</name>
     <message>
         <source>Redirect Loop</source>
-        <translation type="unfinished"></translation>
+        <translation>Redirect Loop</translation>
     </message>
 </context>
 <context>
     <name>DownloadListItem</name>
-    <message>
-        <source>Restart</source>
-        <translation type="vanished">Erneut laden</translation>
-    </message>
     <message>
         <source>Cancel</source>
         <translation>Abbruch</translation>
@@ -1123,18 +1119,6 @@
 </context>
 <context>
     <name>ShareMenu</name>
-    <message>
-        <source>Share on Facebook</source>
-        <translation type="vanished">Auf Facebook teilen</translation>
-    </message>
-    <message>
-        <source>Share on Twitter</source>
-        <translation type="vanished">Auf Twitter teilen</translation>
-    </message>
-    <message>
-        <source>Share on Google+</source>
-        <translation type="vanished">Auf Google+ teilen</translation>
-    </message>
     <message>
         <source>Share</source>
         <translation>Teilen</translation>

@@ -530,10 +530,6 @@
 <context>
     <name>DownloadListItem</name>
     <message>
-        <source>Restart</source>
-        <translation type="vanished">重新启动</translation>
-    </message>
-    <message>
         <source>Cancel</source>
         <translation>取消</translation>
     </message>
@@ -1123,18 +1119,6 @@
 </context>
 <context>
     <name>ShareMenu</name>
-    <message>
-        <source>Share on Facebook</source>
-        <translation type="vanished">在Facebook上分享</translation>
-    </message>
-    <message>
-        <source>Share on Twitter</source>
-        <translation type="vanished">在Twitter上分享</translation>
-    </message>
-    <message>
-        <source>Share on Google+</source>
-        <translation type="vanished">在Google+上分享</translation>
-    </message>
     <message>
         <source>Share</source>
         <translation>分享</translation>

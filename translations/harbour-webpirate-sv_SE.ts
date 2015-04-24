@@ -77,7 +77,7 @@
     </message>
     <message>
         <source>Finnish</source>
-        <translation type="unfinished"></translation>
+        <translation>Finska</translation>
     </message>
 </context>
 <context>
@@ -140,15 +140,15 @@
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished">Ladda ner</translation>
+        <translation>Ladda ner</translation>
     </message>
     <message>
         <source>Closed Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Stängd flik</translation>
     </message>
     <message>
         <source>Cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>Cookies</translation>
     </message>
 </context>
 <context>
@@ -360,72 +360,72 @@
     <name>CookieListItem</name>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Ta bort</translation>
+        <translation>Ta bort</translation>
     </message>
     <message>
         <source>Deleting Cookie</source>
-        <translation type="unfinished"></translation>
+        <translation>Tar bort cookie</translation>
     </message>
 </context>
 <context>
     <name>CookieListPage</name>
     <message>
         <source>Cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>Cookies</translation>
     </message>
     <message>
         <source>Add Cookie</source>
-        <translation type="unfinished"></translation>
+        <translation>Lägg till cookie</translation>
     </message>
 </context>
 <context>
     <name>CookieManagerPage</name>
     <message>
         <source>Cookie Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Cookie-hanterare</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation type="unfinished">Filter</translation>
+        <translation>Filter</translation>
     </message>
     <message>
         <source>Remove All Cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>Ta bort alla cookies</translation>
     </message>
     <message>
         <source>Removing Cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>Tar bort cookies</translation>
     </message>
     <message>
         <source>Add Cookie</source>
-        <translation type="unfinished"></translation>
+        <translation>Lägg till cookie</translation>
     </message>
 </context>
 <context>
     <name>CookiePage</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Spara</translation>
+        <translation>Spara</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="unfinished">Namn</translation>
+        <translation>Namn</translation>
     </message>
     <message>
         <source>Domain</source>
-        <translation type="unfinished"></translation>
+        <translation>Domän</translation>
     </message>
     <message>
         <source>Path</source>
-        <translation type="unfinished"></translation>
+        <translation>Sökväg</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation type="unfinished"></translation>
+        <translation>Värde</translation>
     </message>
     <message>
         <source>Expires</source>
-        <translation type="unfinished"></translation>
+        <translation>Upphör</translation>
     </message>
 </context>
 <context>
@@ -509,30 +509,26 @@
     <name>DomainListItem</name>
     <message>
         <source>Cookies:</source>
-        <translation type="unfinished"></translation>
+        <translation>Cookies:</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Ta bort</translation>
+        <translation>Ta bort</translation>
     </message>
     <message>
         <source>Deleting Cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>Tar bort cookies</translation>
     </message>
 </context>
 <context>
     <name>DownloadItem</name>
     <message>
         <source>Redirect Loop</source>
-        <translation type="unfinished"></translation>
+        <translation>Omdirigeringsloop</translation>
     </message>
 </context>
 <context>
     <name>DownloadListItem</name>
-    <message>
-        <source>Restart</source>
-        <translation type="vanished">Starta om</translation>
-    </message>
     <message>
         <source>Cancel</source>
         <translation>Avbryt</translation>
@@ -1114,27 +1110,15 @@
     </message>
     <message>
         <source>Delete Cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>Ta bort cookies</translation>
     </message>
     <message>
         <source>Removing cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>Tar bort cookies</translation>
     </message>
 </context>
 <context>
     <name>ShareMenu</name>
-    <message>
-        <source>Share on Facebook</source>
-        <translation type="vanished">Dela på Facebook</translation>
-    </message>
-    <message>
-        <source>Share on Twitter</source>
-        <translation type="vanished">Dela på Twitter</translation>
-    </message>
-    <message>
-        <source>Share on Google+</source>
-        <translation type="vanished">Dela på Google+</translation>
-    </message>
     <message>
         <source>Share</source>
         <translation>Dela</translation>

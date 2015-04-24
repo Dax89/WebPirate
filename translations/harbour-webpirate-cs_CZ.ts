@@ -77,7 +77,7 @@
     </message>
     <message>
         <source>Finnish</source>
-        <translation type="unfinished"></translation>
+        <translation>Finština</translation>
     </message>
 </context>
 <context>
@@ -140,11 +140,11 @@
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished">Stáhnout</translation>
+        <translation>Stáhnout</translation>
     </message>
     <message>
         <source>Closed Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Zavřený panel</translation>
     </message>
     <message>
         <source>Cookies</source>
@@ -529,10 +529,6 @@
 </context>
 <context>
     <name>DownloadListItem</name>
-    <message>
-        <source>Restart</source>
-        <translation type="vanished">Restartovat</translation>
-    </message>
     <message>
         <source>Cancel</source>
         <translation>Zrušit</translation>
@@ -1004,31 +1000,31 @@
     <name>SessionManagerPage</name>
     <message>
         <source>Session Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Správce relací</translation>
     </message>
     <message>
         <source>Tabs saved</source>
-        <translation type="unfinished"></translation>
+        <translation>Panely uloženy</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation type="unfinished">Otevřít</translation>
+        <translation>Otevřít</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="unfinished">Upravit</translation>
+        <translation>Upravit</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Odstranit</translation>
+        <translation>Odstranit</translation>
     </message>
     <message>
         <source>Deleting session</source>
-        <translation type="unfinished"></translation>
+        <translation>Mažu relaci</translation>
     </message>
     <message>
         <source>Save current session</source>
-        <translation type="unfinished"></translation>
+        <translation>Uložit současné sezení</translation>
     </message>
 </context>
 <context>
@@ -1110,7 +1106,7 @@
     </message>
     <message>
         <source>Restore tabs at Startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Obnovit panely při startu</translation>
     </message>
     <message>
         <source>Delete Cookies</source>
@@ -1123,18 +1119,6 @@
 </context>
 <context>
     <name>ShareMenu</name>
-    <message>
-        <source>Share on Facebook</source>
-        <translation type="vanished">Sdílet na Facebooku</translation>
-    </message>
-    <message>
-        <source>Share on Twitter</source>
-        <translation type="vanished">Sdílet na Twitteru</translation>
-    </message>
-    <message>
-        <source>Share on Google+</source>
-        <translation type="vanished">Sdílet na Google+</translation>
-    </message>
     <message>
         <source>Share</source>
         <translation>Sdílet</translation>

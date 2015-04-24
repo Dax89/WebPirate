@@ -1,508 +1,508 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="ru_RU">
+<TS version="2.1" language="zh_TW">
 <context>
     <name>AboutPage</name>
     <message>
         <source>About Web Pirate</source>
-        <translation>О Web Pirate</translation>
+        <translation>關於 Web Pirate</translation>
     </message>
     <message>
         <source>Catalan</source>
-        <translation>Каталонский</translation>
+        <translation>Catalan</translation>
     </message>
     <message>
         <source>Chinese</source>
-        <translation>Китайский</translation>
+        <translation>簡體中文</translation>
     </message>
     <message>
         <source>Dutch</source>
-        <translation>Голландский</translation>
+        <translation>Dutch</translation>
     </message>
     <message>
         <source>French</source>
-        <translation>Французский</translation>
+        <translation>French</translation>
     </message>
     <message>
         <source>German</source>
-        <translation>Немецкий</translation>
+        <translation>German</translation>
     </message>
     <message>
         <source>Russian</source>
-        <translation>Русский</translation>
+        <translation>Russian</translation>
     </message>
     <message>
         <source>Swedish</source>
-        <translation>Шведский</translation>
+        <translation>Swedish</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation>Версия</translation>
+        <translation>版本</translation>
     </message>
     <message>
         <source>A tabbed Web Browser for SailfishOS based on WebKit</source>
-        <translation>Браузер с поддержкой вкладок для SailfishOS, основанный на WebKit</translation>
+        <translation>一個基於WebKit的SailfishOS分頁式網路瀏覽器</translation>
     </message>
     <message>
         <source>Developer</source>
-        <translation>Разработчик</translation>
+        <translation>開發者</translation>
     </message>
     <message>
         <source>GitHub Repository</source>
-        <translation>GitHub Repository</translation>
+        <translation>GitHub網頁</translation>
     </message>
     <message>
         <source>Translators</source>
-        <translation>Переводчики</translation>
+        <translation>翻譯者</translation>
     </message>
     <message>
         <source>Slovenian</source>
-        <translation>Словенский</translation>
+        <translation>Slovenian</translation>
     </message>
     <message>
         <source>Japanese</source>
-        <translation>Японский</translation>
+        <translation>Japanese</translation>
     </message>
     <message>
         <source>Czech</source>
-        <translation>Чешский</translation>
+        <translation>Czech</translation>
     </message>
     <message>
         <source>Spanish</source>
-        <translation>Испанский</translation>
+        <translation>Spanish</translation>
     </message>
     <message>
         <source>Italian</source>
-        <translation>Итальянский</translation>
+        <translation>Italian</translation>
     </message>
     <message>
         <source>Finnish</source>
-        <translation>Финский</translation>
+        <translation>Finnish</translation>
     </message>
 </context>
 <context>
     <name>ActionSidebar</name>
     <message>
         <source>Favorites</source>
-        <translation>Закладки</translation>
+        <translation>我的最愛</translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation>Загрузки</translation>
+        <translation>下載</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation>Настройки</translation>
+        <translation>設定</translation>
     </message>
     <message>
         <source>General</source>
-        <translation>Основные</translation>
+        <translation>一般</translation>
     </message>
     <message>
         <source>Change settings</source>
-        <translation>Изменить настройки </translation>
+        <translation>變更設定</translation>
     </message>
     <message>
         <source>About Web Pirate</source>
-        <translation>О браузере</translation>
+        <translation>關於 Web Pirate</translation>
     </message>
     <message>
         <source>Sessions</source>
-        <translation>Сессии</translation>
+        <translation>瀏覽狀態</translation>
     </message>
     <message>
         <source>Cover settings</source>
-        <translation>Настройки плиток</translation>
+        <translation>封面設定</translation>
     </message>
     <message>
         <source>Night Mode</source>
-        <translation>Ночной режим</translation>
+        <translation>夜間模式</translation>
     </message>
     <message>
         <source>Extensions</source>
-        <translation>Расширения</translation>
+        <translation>擴充程式</translation>
     </message>
     <message>
         <source>Ad Block</source>
-        <translation>Блокирование рекламы</translation>
+        <translation>廣告封鎖</translation>
     </message>
     <message>
         <source>Navigation History</source>
-        <translation>Журнал</translation>
+        <translation>瀏覽記錄</translation>
     </message>
     <message>
         <source>Closed Tabs</source>
-        <translation>Закрытые вкладки</translation>
+        <translation>關閉分頁</translation>
     </message>
     <message>
         <source>Popup Blocker</source>
-        <translation>Блокирование всплывающих окон</translation>
+        <translation>封鎖彈出視窗</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation>Скачать</translation>
+        <translation>下載</translation>
     </message>
     <message>
         <source>Closed Tab</source>
-        <translation>Закрыть вкладку</translation>
+        <translation>已關閉的分頁</translation>
     </message>
     <message>
         <source>Cookies</source>
-        <translation>Cookies</translation>
+        <translation>Cookie</translation>
     </message>
 </context>
 <context>
     <name>AdBlockDownloaderPage</name>
     <message>
         <source>AdBlock Updater</source>
-        <translation>Блокировщик рекламы</translation>
+        <translation>廣告封鎖更新器</translation>
     </message>
     <message>
         <source>State</source>
-        <translation>Состояние</translation>
+        <translation>狀態</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation>Загрузить</translation>
+        <translation>下載</translation>
     </message>
     <message>
         <source>Ready</source>
-        <translation>Готово</translation>
+        <translation>讀取</translation>
     </message>
     <message>
         <source>Connecting</source>
-        <translation>Соединение</translation>
+        <translation>連線中</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Ошибка</translation>
+        <translation>錯誤</translation>
     </message>
     <message>
         <source>Completed</source>
-        <translation>Завершено</translation>
+        <translation>完成</translation>
     </message>
 </context>
 <context>
     <name>AdBlockFilter</name>
     <message>
         <source>Save</source>
-        <translation>Сохранить</translation>
+        <translation>儲存</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation>Фильтр</translation>
+        <translation>篩選設定</translation>
     </message>
 </context>
 <context>
     <name>AdBlockPage</name>
     <message>
         <source>Save</source>
-        <translation>Сохранить</translation>
+        <translation>儲存</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Править</translation>
+        <translation>編輯</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Удалить</translation>
+        <translation>刪除</translation>
     </message>
     <message>
         <source>Deleting filter</source>
-        <translation>Удаление фильтра</translation>
+        <translation>刪除篩選設定中</translation>
     </message>
     <message>
         <source>Update Filters</source>
-        <translation>Обновление фильтров</translation>
+        <translation>更新篩選設定</translation>
     </message>
     <message>
         <source>Add Filter</source>
-        <translation>Добавить фильтр</translation>
+        <translation>增加篩選設定</translation>
     </message>
 </context>
 <context>
     <name>AlertDialog</name>
     <message>
         <source>Ok</source>
-        <translation>Ok</translation>
+        <translation>確定</translation>
     </message>
 </context>
 <context>
     <name>AuthenticationDialog</name>
     <message>
         <source>Login</source>
-        <translation>Логин</translation>
+        <translation>登入</translation>
     </message>
     <message>
         <source>Authentication required</source>
-        <translation>Требуется аутентификация</translation>
+        <translation>需要認證</translation>
     </message>
     <message>
         <source>requires authentication</source>
-        <translation>требует проверки подлинности</translation>
+        <translation>需要認證</translation>
     </message>
     <message>
         <source>User</source>
-        <translation>Пользователь</translation>
+        <translation>使用者</translation>
     </message>
     <message>
         <source>Password</source>
-        <translation>Пароль</translation>
+        <translation>密碼</translation>
     </message>
 </context>
 <context>
     <name>BlockedPopupItem</name>
     <message>
         <source>Allow</source>
-        <translation>Разрешить</translation>
+        <translation>允許</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Удалить</translation>
+        <translation>刪除</translation>
     </message>
     <message>
         <source>Deleting rule</source>
-        <translation>Удаление правила</translation>
+        <translation>刪除規則中</translation>
     </message>
 </context>
 <context>
     <name>BrowserGrabber</name>
     <message>
         <source>Author</source>
-        <translation>Автор</translation>
+        <translation>作者</translation>
     </message>
     <message>
         <source>Duration</source>
-        <translation>Продолжительность</translation>
+        <translation>播放時間</translation>
     </message>
     <message>
         <source>Response</source>
-        <translation>Ответ</translation>
+        <translation>回饋</translation>
     </message>
     <message>
         <source>Title</source>
-        <translation>Название</translation>
+        <translation>標題</translation>
     </message>
     <message>
         <source>Grabbed URLs</source>
-        <translation>Захват URL-адреса</translation>
+        <translation>取得之網址</translation>
     </message>
     <message>
         <source>Play</source>
-        <translation>Играть</translation>
+        <translation>播放</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation>Скачать</translation>
+        <translation>下載</translation>
     </message>
     <message>
         <source>Grabbing video</source>
-        <translation>Grabbing video</translation>
+        <translation>取得影片中</translation>
     </message>
     <message>
         <source>Copy URL</source>
-        <translation>Копировать ссылку</translation>
+        <translation>複製網址</translation>
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation>Ссылка скопирована</translation>
+        <translation>將連結複製到剪貼簿</translation>
     </message>
 </context>
 <context>
     <name>BrowserTab</name>
     <message>
         <source>New Tab</source>
-        <translation>Новая вкладка</translation>
+        <translation>新分頁</translation>
     </message>
 </context>
 <context>
     <name>BrowserWebView</name>
     <message>
         <source>Accept Certificate from:</source>
-        <translation>Принять сертификат от:</translation>
+        <translation>接受之認證:</translation>
     </message>
     <message>
         <source>Downloading</source>
-        <translation>Загрузка</translation>
+        <translation>下載中</translation>
     </message>
 </context>
 <context>
     <name>ClosedTabItem</name>
     <message>
         <source>Open</source>
-        <translation>Открыть</translation>
+        <translation>開啟</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Удалить</translation>
+        <translation>刪除</translation>
     </message>
     <message>
         <source>Deleting Tab</source>
-        <translation>Удаление вкладки</translation>
+        <translation>刪除分頁</translation>
     </message>
 </context>
 <context>
     <name>ClosedTabsPage</name>
     <message>
         <source>Closed Tabs</source>
-        <translation>Закрытые вкладки</translation>
+        <translation>關閉分頁</translation>
     </message>
     <message>
         <source>Delete Closed Tabs</source>
-        <translation>Удалить закрытые вкладки</translation>
+        <translation>刪除關閉的分頁</translation>
     </message>
     <message>
         <source>Deleting Tabs</source>
-        <translation>Удаление вкладок</translation>
+        <translation>刪除分頁</translation>
     </message>
 </context>
 <context>
     <name>CookieListItem</name>
     <message>
         <source>Delete</source>
-        <translation>Удалить</translation>
+        <translation>刪除</translation>
     </message>
     <message>
         <source>Deleting Cookie</source>
-        <translation>Удалить Cookie</translation>
+        <translation>刪除Cookie中</translation>
     </message>
 </context>
 <context>
     <name>CookieListPage</name>
     <message>
         <source>Cookies</source>
-        <translation>Cookies</translation>
+        <translation>Cookie</translation>
     </message>
     <message>
         <source>Add Cookie</source>
-        <translation>Добавить Cookie</translation>
+        <translation>新增Cookie</translation>
     </message>
 </context>
 <context>
     <name>CookieManagerPage</name>
     <message>
         <source>Cookie Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Cookie管理員</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation>Фильтр</translation>
+        <translation>篩選</translation>
     </message>
     <message>
         <source>Remove All Cookies</source>
-        <translation>Удалить все Cookies</translation>
+        <translation>移除所有Cookie</translation>
     </message>
     <message>
         <source>Removing Cookies</source>
-        <translation>Удаление Cookies</translation>
+        <translation>移除Cookie中</translation>
     </message>
     <message>
         <source>Add Cookie</source>
-        <translation type="unfinished">Добавить Cookie</translation>
+        <translation>新增Cookie</translation>
     </message>
 </context>
 <context>
     <name>CookiePage</name>
     <message>
         <source>Save</source>
-        <translation>Сохранить</translation>
+        <translation>儲存</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Имя</translation>
+        <translation>名稱</translation>
     </message>
     <message>
         <source>Domain</source>
-        <translation type="unfinished"></translation>
+        <translation>網域</translation>
     </message>
     <message>
         <source>Path</source>
-        <translation>Путь</translation>
+        <translation>路徑</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation type="unfinished"></translation>
+        <translation>值</translation>
     </message>
     <message>
         <source>Expires</source>
-        <translation>Истекает</translation>
+        <translation>期限</translation>
     </message>
 </context>
 <context>
     <name>CoverModel</name>
     <message>
         <source>Go to Previous Tab</source>
-        <translation>Перейти к предыдущей вкладке </translation>
+        <translation>至前一個分頁</translation>
     </message>
     <message>
         <source>Go to Next Tab</source>
-        <translation>Перейти к следующей вкладке</translation>
+        <translation>至下一個分頁</translation>
     </message>
     <message>
         <source>Add New Tab</source>
-        <translation>Добавить новую вкладку</translation>
+        <translation>新增分頁</translation>
     </message>
     <message>
         <source>Close Tab</source>
-        <translation>Закрыть вкладку</translation>
+        <translation>關閉分頁</translation>
     </message>
     <message>
         <source>Load Homepage</source>
-        <translation>Загрузить домашнюю страницу</translation>
+        <translation>載入首頁</translation>
     </message>
     <message>
         <source>Close Browser</source>
-        <translation>Закрыть браузер</translation>
+        <translation>關閉瀏覽器</translation>
     </message>
     <message>
         <source>Reload Current Page</source>
-        <translation>Перезагрузить текущую страницу</translation>
+        <translation>重新載入目前頁面</translation>
     </message>
     <message>
         <source>Wipe personal data</source>
-        <translation>Очистить персональные данные</translation>
+        <translation>移除個人資料</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Поиск</translation>
+        <translation>搜尋</translation>
     </message>
 </context>
 <context>
     <name>CoverSettingsPage</name>
     <message>
         <source>General Actions</source>
-        <translation>Основные действия</translation>
+        <translation>一般行為</translation>
     </message>
     <message>
         <source>Left</source>
-        <translation>Левее</translation>
+        <translation>左</translation>
     </message>
     <message>
         <source>Right</source>
-        <translation>Правее</translation>
+        <translation>右</translation>
     </message>
     <message>
         <source>Webpage Actions</source>
-        <translation type="unfinished"></translation>
+        <translation>網頁行為</translation>
     </message>
     <message>
         <source>Cover Settings</source>
-        <translation>Настройки плиток</translation>
+        <translation>封面設定</translation>
     </message>
 </context>
 <context>
     <name>CredentialDialog</name>
     <message>
         <source>Yes</source>
-        <translation>Да</translation>
+        <translation>確定</translation>
     </message>
     <message>
         <source>No</source>
-        <translation>Нет</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Do you want to store the password?</source>
-        <translation>Вы хотите сохранить пароль?</translation>
+        <translation>您要儲存密碼嗎?</translation>
     </message>
 </context>
 <context>
@@ -513,600 +513,600 @@
     </message>
     <message>
         <source>Delete</source>
-        <translation>Удалить</translation>
+        <translation>刪除</translation>
     </message>
     <message>
         <source>Deleting Cookies</source>
-        <translation>Удаление Cookies</translation>
+        <translation>刪除Cookie中</translation>
     </message>
 </context>
 <context>
     <name>DownloadItem</name>
     <message>
         <source>Redirect Loop</source>
-        <translation type="unfinished"></translation>
+        <translation>重新指引迴圈</translation>
     </message>
 </context>
 <context>
     <name>DownloadListItem</name>
     <message>
         <source>Cancel</source>
-        <translation>Отмена</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <source>Completed:</source>
-        <translation>Завершено:</translation>
+        <translation>完成:</translation>
     </message>
     <message>
         <source>Speed:</source>
-        <translation>Скорость:</translation>
+        <translation>速度:</translation>
     </message>
     <message>
         <source>Completed</source>
-        <translation>Завершено</translation>
+        <translation>完成</translation>
     </message>
     <message>
         <source>Error:</source>
-        <translation>Ошибка:</translation>
+        <translation>錯誤:</translation>
     </message>
 </context>
 <context>
     <name>DownloadsPage</name>
     <message>
         <source>Download Manager</source>
-        <translation>Менеджер загрузок</translation>
+        <translation>下載管理員</translation>
     </message>
     <message>
         <source>Delete completed Downloads</source>
-        <translation>Удалить завершенные загрузки</translation>
+        <translation>刪除完成的下載</translation>
     </message>
     <message>
         <source>New Download</source>
-        <translation>Новая загрузка</translation>
+        <translation>新增下載</translation>
     </message>
 </context>
 <context>
     <name>FavoritePage</name>
     <message>
         <source>Save</source>
-        <translation>Сохранить</translation>
+        <translation>儲存</translation>
     </message>
     <message>
         <source>Title</source>
-        <translation>Название </translation>
+        <translation>標題</translation>
     </message>
     <message>
         <source>Url</source>
-        <translation>Url</translation>
+        <translation>網址</translation>
     </message>
 </context>
 <context>
     <name>FavoritesPage</name>
     <message>
         <source>Add Folder</source>
-        <translation>Добавить папку</translation>
+        <translation>新增資料夾</translation>
     </message>
     <message>
         <source>Add Favorite</source>
-        <translation>Добавить закладку</translation>
+        <translation>新增我的最愛</translation>
     </message>
     <message>
         <source>Favorites</source>
-        <translation>Закладки</translation>
+        <translation>我的最愛</translation>
     </message>
     <message>
         <source>Export</source>
-        <translation>Экспорт</translation>
+        <translation>匯出</translation>
     </message>
     <message>
         <source>Import</source>
-        <translation>Импорт</translation>
+        <translation>匯入</translation>
     </message>
     <message>
         <source>Import in</source>
-        <translation>Импорт в </translation>
+        <translation>匯入至</translation>
     </message>
     <message>
         <source>Exporting favorites</source>
-        <translation>Экспортирование закладок</translation>
+        <translation>匯出我的最愛</translation>
     </message>
     <message>
         <source>Favorites exported successfully</source>
-        <translation>Экспорт закладок прошел успешно</translation>
+        <translation>我的最愛匯出成功</translation>
     </message>
     <message>
         <source>Favorites imported successfully</source>
-        <translation>Импорт закладок прошел успешно</translation>
+        <translation>我的最愛匯入成功</translation>
     </message>
     <message>
         <source>Delete all Favorites</source>
-        <translation>Удалить все закладки</translation>
+        <translation>刪除所有我的最愛</translation>
     </message>
     <message>
         <source>Deleting all favorites</source>
-        <translation>Удаление всех закладок</translation>
+        <translation>刪除所有我的最愛中</translation>
     </message>
 </context>
 <context>
     <name>FavoritesView</name>
     <message>
         <source>Edit</source>
-        <translation>Редактировать</translation>
+        <translation>編輯</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Удалить</translation>
+        <translation>刪除</translation>
     </message>
     <message>
         <source>Deleting Favorite</source>
-        <translation>Удаление закладки</translation>
+        <translation>刪除我的最愛中</translation>
     </message>
     <message>
         <source>Deleting Folder</source>
-        <translation>Удаление папки</translation>
+        <translation>刪除資料夾</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation>Открыть</translation>
+        <translation>開啟</translation>
     </message>
     <message>
         <source>Open in New Tab</source>
-        <translation>Открыть в новой вкладке</translation>
+        <translation>於新分頁開啟</translation>
     </message>
     <message>
         <source>Add to Quick Grid</source>
-        <translation>Добавить в Fast Dial</translation>
+        <translation>新增至快速啟動頁</translation>
     </message>
 </context>
 <context>
     <name>FilePickerPage</name>
     <message>
         <source>Root</source>
-        <translation type="unfinished"></translation>
+        <translation>管理者</translation>
     </message>
 </context>
 <context>
     <name>FormResubmitDialog</name>
     <message>
         <source>This page contains information written by you: do you want to resend the data?</source>
-        <translation>Эта страница содержит информацию, написанную Вами: вы хотите отправить данные?</translation>
+        <translation>此頁面包含您所提供的資料:您要從新提供資料嗎?</translation>
     </message>
     <message>
         <source>Yes</source>
-        <translation>Да</translation>
+        <translation>確定</translation>
     </message>
     <message>
         <source>No</source>
-        <translation>Нет</translation>
+        <translation>取消</translation>
     </message>
 </context>
 <context>
     <name>HistoryMenu</name>
     <message>
         <source>Link copied to clipboard</source>
-        <translation>Ссылка скопирована</translation>
+        <translation>將連結複製至剪貼簿</translation>
     </message>
 </context>
 <context>
     <name>LinkMenu</name>
     <message>
         <source>Open New Tab</source>
-        <translation>Открыть новую вкладку</translation>
+        <translation>開啟新分頁</translation>
     </message>
     <message>
         <source>Remove From Favorites</source>
-        <translation>Удалить из закладок</translation>
+        <translation>從我的最愛中移除</translation>
     </message>
     <message>
         <source>Add To Favorites</source>
-        <translation>Добавить в закладки</translation>
+        <translation>新增至我的最愛</translation>
     </message>
     <message>
         <source>Save Link Destination</source>
-        <translation>Сохранить ссылку назначения</translation>
+        <translation>儲存連結目標</translation>
     </message>
     <message>
         <source>Copy Link</source>
-        <translation>Копировать ссылку</translation>
+        <translation>複製連結</translation>
     </message>
     <message>
         <source>Save Image</source>
-        <translation>Сохранить изображение</translation>
+        <translation>儲存圖片</translation>
     </message>
     <message>
         <source>Downloading image</source>
-        <translation>Загружаю изображение</translation>
+        <translation>下載圖片中</translation>
     </message>
     <message>
         <source>Downloading link</source>
-        <translation>Загружаю ссылку</translation>
+        <translation>下載連結中</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation>Открыть</translation>
+        <translation>開啟</translation>
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation>Ссылка скопирована</translation>
+        <translation>將連結複製至剪貼簿</translation>
     </message>
     <message>
         <source>Open New Tab in Background</source>
-        <translation>Открыть новую вкладку в фоновом режиме</translation>
+        <translation>於背景開啟新分頁</translation>
     </message>
     <message>
         <source>Share</source>
-        <translation>Поделиться</translation>
+        <translation>分享</translation>
     </message>
 </context>
 <context>
     <name>LoadFailed</name>
     <message>
         <source>You are in offline mode</source>
-        <translation>Вы в режиме &quot;offline mode&quot;</translation>
+        <translation>您目前於離線模式</translation>
     </message>
 </context>
 <context>
     <name>NavigationHistoryItem</name>
     <message>
         <source>Open</source>
-        <translation>Открыть</translation>
+        <translation>開啟</translation>
     </message>
     <message>
         <source>Open in New Tab</source>
-        <translation>Открыть в новой вкладке</translation>
+        <translation>於新分頁開啟</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Удалить</translation>
+        <translation>刪除</translation>
     </message>
     <message>
         <source>Deleting item</source>
-        <translation>Удаление пункта</translation>
+        <translation>刪除項目中</translation>
     </message>
 </context>
 <context>
     <name>NavigationHistoryPage</name>
     <message>
         <source>Delete History</source>
-        <translation>Удалить историю</translation>
+        <translation>刪除記錄</translation>
     </message>
     <message>
         <source>Deleting History</source>
-        <translation>Удаление истории</translation>
+        <translation>刪除記錄中</translation>
     </message>
     <message>
         <source>Navigation History</source>
-        <translation>Журнал</translation>
+        <translation>瀏覽記錄</translation>
     </message>
 </context>
 <context>
     <name>NewDownloadPage</name>
     <message>
         <source>Start Download</source>
-        <translation>Начать загрузку</translation>
+        <translation>開始下載</translation>
     </message>
     <message>
         <source>Download Url</source>
-        <translation>Скачать Url</translation>
+        <translation>下載網址</translation>
     </message>
 </context>
 <context>
     <name>NewPopupRulePage</name>
     <message>
         <source>Apply Rule</source>
-        <translation>Добавить правило</translation>
+        <translation>設定規則</translation>
     </message>
     <message>
         <source>Url</source>
-        <translation>Url</translation>
+        <translation>網址</translation>
     </message>
     <message>
         <source>Rule</source>
-        <translation>Правило</translation>
+        <translation>規則</translation>
     </message>
     <message>
         <source>Allow</source>
-        <translation>Разрешить</translation>
+        <translation>允許</translation>
     </message>
     <message>
         <source>Block</source>
-        <translation>Блокировать</translation>
+        <translation>封鎖</translation>
     </message>
 </context>
 <context>
     <name>PopupBlockerPage</name>
     <message>
         <source>Popup Blocker</source>
-        <translation>Popup Blocker</translation>
+        <translation>彈出視窗封鎖器</translation>
     </message>
     <message>
         <source>Clear popup list</source>
-        <translation>Очистить список блокированных окон </translation>
+        <translation>清除彈出視窗清單</translation>
     </message>
 </context>
 <context>
     <name>PopupItem</name>
     <message>
         <source>Rule</source>
-        <translation>Правило</translation>
+        <translation>規則</translation>
     </message>
     <message>
         <source>Allow</source>
-        <translation>Разрешить</translation>
+        <translation>允許</translation>
     </message>
     <message>
         <source>Block</source>
-        <translation>Блокировать</translation>
+        <translation>封鎖</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Удалить</translation>
+        <translation>刪除</translation>
     </message>
     <message>
         <source>Deleting rule</source>
-        <translation>Удаление правила</translation>
+        <translation>刪除規則中</translation>
     </message>
 </context>
 <context>
     <name>PopupManagerPage</name>
     <message>
         <source>Popup Manager</source>
-        <translation>Popup менеджер</translation>
+        <translation>彈出視窗管理員</translation>
     </message>
     <message>
         <source>Delete Rules</source>
-        <translation>Удалить правила</translation>
+        <translation>刪除規則</translation>
     </message>
     <message>
         <source>Deleting rules</source>
-        <translation>Удаление правил</translation>
+        <translation>刪除規則中</translation>
     </message>
     <message>
         <source>New Rule</source>
-        <translation>Новое правило</translation>
+        <translation>新規則</translation>
     </message>
 </context>
 <context>
     <name>PromptDialog</name>
     <message>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation>確定</translation>
     </message>
 </context>
 <context>
     <name>QueryBar</name>
     <message>
         <source>Search with</source>
-        <translation>Искать с помощью</translation>
+        <translation>搜尋由</translation>
     </message>
 </context>
 <context>
     <name>QuickGrid</name>
     <message>
         <source>The QuickGrid is empty</source>
-        <translation>Страница быстрого доступа пустая</translation>
+        <translation>無項目於快速啟動頁</translation>
     </message>
 </context>
 <context>
     <name>QuickGridItem</name>
     <message>
         <source>Removing item</source>
-        <translation>Удаление пункта</translation>
+        <translation>移除項目中</translation>
     </message>
 </context>
 <context>
     <name>QuickGridPage</name>
     <message>
         <source>Save</source>
-        <translation>Сохранить</translation>
+        <translation>儲存</translation>
     </message>
     <message>
         <source>Title</source>
-        <translation>Название</translation>
+        <translation>標題</translation>
     </message>
     <message>
         <source>Url</source>
-        <translation>Url</translation>
+        <translation>網址</translation>
     </message>
 </context>
 <context>
     <name>RequestDialog</name>
     <message>
         <source>Yes</source>
-        <translation>Да</translation>
+        <translation>確定</translation>
     </message>
     <message>
         <source>No</source>
-        <translation>Нет</translation>
+        <translation>取消</translation>
     </message>
 </context>
 <context>
     <name>SaveSessionPage</name>
     <message>
         <source>Save Session</source>
-        <translation>Сохранить сессию</translation>
+        <translation>儲存瀏覽狀態</translation>
     </message>
     <message>
         <source>Session name</source>
-        <translation>Имя сессии</translation>
+        <translation>瀏覽狀態名稱</translation>
     </message>
     <message>
         <source>Load at startup</source>
-        <translation>Загрузить при запуске</translation>
+        <translation>開啟時載入</translation>
     </message>
     <message>
         <source>Replace current session</source>
-        <translation>Заменить текущую сессию</translation>
+        <translation>替代目前瀏覽狀態</translation>
     </message>
     <message>
         <source>Opened Tabs</source>
-        <translation>Открыть вкладки</translation>
+        <translation>開啟之分頁</translation>
     </message>
     <message>
         <source>Selected</source>
-        <translation>Выбрано</translation>
+        <translation>被選取的</translation>
     </message>
 </context>
 <context>
     <name>SearchBar</name>
     <message>
         <source>Search</source>
-        <translation>Поиск</translation>
+        <translation>搜尋</translation>
     </message>
 </context>
 <context>
     <name>SearchEnginePage</name>
     <message>
         <source>Save</source>
-        <translation>Сохранить</translation>
+        <translation>儲存</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Имя</translation>
+        <translation>名稱</translation>
     </message>
     <message>
         <source>Query</source>
-        <translation>Запрос</translation>
+        <translation>查詢</translation>
     </message>
 </context>
 <context>
     <name>SearchEnginesPage</name>
     <message>
         <source>Set as Default</source>
-        <translation>Установить по умолчанию</translation>
+        <translation>儲存為預設值</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Удалить</translation>
+        <translation>刪除</translation>
     </message>
     <message>
         <source>Search Engines</source>
-        <translation>Поисковый движок</translation>
+        <translation>搜尋引擎</translation>
     </message>
     <message>
         <source>Add</source>
-        <translation>Добавить</translation>
+        <translation>新增</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Править</translation>
+        <translation>編輯</translation>
     </message>
     <message>
         <source>Deleting Search Engine</source>
-        <translation>Удаление поискового движка</translation>
+        <translation>刪除搜尋引擎中</translation>
     </message>
 </context>
 <context>
     <name>SessionManagerPage</name>
     <message>
         <source>Session Manager</source>
-        <translation>Управление сессией</translation>
+        <translation>瀏覽狀態管理員</translation>
     </message>
     <message>
         <source>Tabs saved</source>
-        <translation>Количество сохраненных вкладок</translation>
+        <translation>已儲存之分頁</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation>Открыть</translation>
+        <translation>開啟</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Править</translation>
+        <translation>編輯</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Удалить</translation>
+        <translation>刪除</translation>
     </message>
     <message>
         <source>Deleting session</source>
-        <translation>Удаление сессии</translation>
+        <translation>刪除瀏覽狀態</translation>
     </message>
     <message>
         <source>Save current session</source>
-        <translation>Сохранить текущую сессию</translation>
+        <translation>儲存目前瀏覽狀態</translation>
     </message>
 </context>
 <context>
     <name>SessionPage</name>
     <message>
         <source>Save Session</source>
-        <translation>Сохранить сессию</translation>
+        <translation>儲存瀏覽狀態</translation>
     </message>
     <message>
         <source>Session name</source>
-        <translation>Название сессии</translation>
+        <translation>瀏覽狀態名稱</translation>
     </message>
     <message>
         <source>Load at startup</source>
-        <translation>Загрузить при запуске</translation>
+        <translation>開啟時載入</translation>
     </message>
     <message>
         <source>Replace current session</source>
-        <translation>Заменить текущую сессию</translation>
+        <translation>替代目前瀏覽狀態</translation>
     </message>
     <message>
         <source>Opened Tabs</source>
-        <translation>Открытые вкладки</translation>
+        <translation>開啟之分頁</translation>
     </message>
     <message>
         <source>Selected</source>
-        <translation>Выбрано</translation>
+        <translation>被選取的</translation>
     </message>
 </context>
 <context>
     <name>SettingsPage</name>
     <message>
         <source>Home Page</source>
-        <translation>Домашняя страница</translation>
+        <translation>首頁</translation>
     </message>
     <message>
         <source>Search Engines</source>
-        <translation>Поисковый движок</translation>
+        <translation>搜尋引擎</translation>
     </message>
     <message>
         <source>User Agent</source>
-        <translation>Тип поискового сайта</translation>
+        <translation>代理主機</translation>
     </message>
     <message>
         <source>Wipe Data on Exit</source>
-        <translation>Удалить данные при выходе</translation>
+        <translation>關閉時移除資料</translation>
     </message>
     <message>
         <source>General</source>
-        <translation>Основные</translation>
+        <translation>一般</translation>
     </message>
     <message>
         <source>Privacy</source>
-        <translation>Конфиденциальность </translation>
+        <translation>隱私</translation>
     </message>
     <message>
         <source>Delete Personal Data</source>
-        <translation>Удалить персональные данные</translation>
+        <translation>刪除個人資料</translation>
     </message>
     <message>
         <source>Save Settings</source>
-        <translation>Сохранить настройки</translation>
+        <translation>儲存設定</translation>
     </message>
     <message>
         <source>Removing personal data</source>
-        <translation>Удаление персональных данных</translation>
+        <translation>移除個人資料中</translation>
     </message>
     <message>
         <source>Delete Navigation History</source>
-        <translation>Удалить историю</translation>
+        <translation>刪除瀏覽記錄</translation>
     </message>
     <message>
         <source>Removing navigation history</source>
-        <translation>Удаление истории</translation>
+        <translation>移除瀏覽記錄中</translation>
     </message>
     <message>
         <source>Long press to edit</source>
-        <translation>Удерживайте для редактирования</translation>
+        <translation>長按可進行編輯</translation>
     </message>
     <message>
         <source>Restore tabs at Startup</source>
-        <translation>Восстановить окна,  открытые в прошлый раз</translation>
+        <translation>於開啟時重新載入分頁</translation>
     </message>
     <message>
         <source>Delete Cookies</source>
@@ -1121,55 +1121,55 @@
     <name>ShareMenu</name>
     <message>
         <source>Share</source>
-        <translation>Поделиться</translation>
+        <translation>分享</translation>
     </message>
 </context>
 <context>
     <name>TabMenu</name>
     <message>
         <source>Add to Quick Grid</source>
-        <translation>Добавить в Fast Dial</translation>
+        <translation>新增至快速啟動頁</translation>
     </message>
     <message>
         <source>Duplicate Tab</source>
-        <translation>Копировать вкладку</translation>
+        <translation>開啟相同分頁</translation>
     </message>
     <message>
         <source>Duplicate Tab in Background</source>
-        <translation>Копировать вкладку в фоне</translation>
+        <translation>於背景開啟相同分頁</translation>
     </message>
     <message>
         <source>Close Tab</source>
-        <translation>Закрыть вкладку</translation>
+        <translation>關閉分頁</translation>
     </message>
     <message>
         <source>Close other Tabs</source>
-        <translation>Закрыть другие вкладки</translation>
+        <translation>關閉其他分頁</translation>
     </message>
 </context>
 <context>
     <name>TextSelectionPage</name>
     <message>
         <source>Done</source>
-        <translation>Готово</translation>
+        <translation>完成</translation>
     </message>
 </context>
 <context>
     <name>WebViewListener</name>
     <message>
         <source>FAILED</source>
-        <translation>Ошибка</translation>
+        <translation>失敗</translation>
     </message>
     <message>
         <source>Codec</source>
-        <translation>Кодек</translation>
+        <translation>解碼器</translation>
     </message>
 </context>
 <context>
     <name>YouTubeGrabber</name>
     <message>
         <source>Quality</source>
-        <translation>Качество</translation>
+        <translation>品質</translation>
     </message>
 </context>
 </TS>

@@ -530,10 +530,6 @@
 <context>
     <name>DownloadListItem</name>
     <message>
-        <source>Restart</source>
-        <translation type="vanished">Aloita uudelleen</translation>
-    </message>
-    <message>
         <source>Cancel</source>
         <translation>Peruuta</translation>
     </message>

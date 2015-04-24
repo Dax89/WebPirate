@@ -77,7 +77,7 @@
     </message>
     <message>
         <source>Finnish</source>
-        <translation type="unfinished"></translation>
+        <translation>Finsko</translation>
     </message>
 </context>
 <context>
@@ -140,11 +140,11 @@
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished">Prenos</translation>
+        <translation>Prenos</translation>
     </message>
     <message>
         <source>Closed Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Zaprt zavihek</translation>
     </message>
     <message>
         <source>Cookies</source>
@@ -529,10 +529,6 @@
 </context>
 <context>
     <name>DownloadListItem</name>
-    <message>
-        <source>Restart</source>
-        <translation type="vanished">Ponovni zagon</translation>
-    </message>
     <message>
         <source>Cancel</source>
         <translation>Prekliči</translation>
@@ -1004,31 +1000,31 @@
     <name>SessionManagerPage</name>
     <message>
         <source>Session Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Upravitelj sej</translation>
     </message>
     <message>
         <source>Tabs saved</source>
-        <translation type="unfinished"></translation>
+        <translation>Zavihki so shranjeni</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation type="unfinished">Odpri</translation>
+        <translation>Odpri</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="unfinished">Uredi</translation>
+        <translation>Uredi</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Izbriši</translation>
+        <translation>Izbriši</translation>
     </message>
     <message>
         <source>Deleting session</source>
-        <translation type="unfinished"></translation>
+        <translation>Brisanje seje</translation>
     </message>
     <message>
         <source>Save current session</source>
-        <translation type="unfinished"></translation>
+        <translation>Shrani trenutno sejo</translation>
     </message>
 </context>
 <context>
@@ -1110,7 +1106,7 @@
     </message>
     <message>
         <source>Restore tabs at Startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Obnovi zavihke ob zagonu</translation>
     </message>
     <message>
         <source>Delete Cookies</source>
@@ -1123,18 +1119,6 @@
 </context>
 <context>
     <name>ShareMenu</name>
-    <message>
-        <source>Share on Facebook</source>
-        <translation type="vanished">Deli na Facebooku</translation>
-    </message>
-    <message>
-        <source>Share on Twitter</source>
-        <translation type="vanished">Deli na Twitterju</translation>
-    </message>
-    <message>
-        <source>Share on Google+</source>
-        <translation type="vanished">Deli na Google+</translation>
-    </message>
     <message>
         <source>Share</source>
         <translation>Deli</translation>

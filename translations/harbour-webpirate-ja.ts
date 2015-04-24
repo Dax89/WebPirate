@@ -530,10 +530,6 @@
 <context>
     <name>DownloadListItem</name>
     <message>
-        <source>Restart</source>
-        <translation type="vanished">再起動</translation>
-    </message>
-    <message>
         <source>Cancel</source>
         <translation>キャンセル</translation>
     </message>

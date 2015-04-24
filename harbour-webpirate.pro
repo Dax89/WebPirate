@@ -194,7 +194,8 @@ TRANSLATIONS += translations/harbour-webpirate.ts \
             translations/harbour-webpirate-ru_RU.ts \
             translations/harbour-webpirate-sl_SI.ts \
             translations/harbour-webpirate-sv_SE.ts \
-            translations/harbour-webpirate-zh_CN.ts
+            translations/harbour-webpirate-zh_CN.ts \
+            translations/harbour-webpirate-zh_TW.ts
 
 RESOURCES += \
     resources.qrc

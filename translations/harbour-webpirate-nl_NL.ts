@@ -41,7 +41,7 @@
     </message>
     <message>
         <source>A tabbed Web Browser for SailfishOS based on WebKit</source>
-        <translation>Een op WebKit gebaseerde webbrowser met tabbladen voor SailfishOS</translation>
+        <translation>Een webbrowser met tabbladen voor SailfishOS, gebaseerd op WebKit</translation>
     </message>
     <message>
         <source>Developer</source>
@@ -112,7 +112,7 @@
     </message>
     <message>
         <source>Cover settings</source>
-        <translation>Miniatuurinstellingen</translation>
+        <translation>Omslaginstellingen</translation>
     </message>
     <message>
         <source>Night Mode</source>
@@ -140,15 +140,15 @@
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished"></translation>
+        <translation>Downloaden</translation>
     </message>
     <message>
         <source>Closed Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Gesloten tabblad</translation>
     </message>
     <message>
         <source>Cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>Cookies</translation>
     </message>
 </context>
 <context>
@@ -167,7 +167,7 @@
     </message>
     <message>
         <source>Ready</source>
-        <translation>Klaar</translation>
+        <translation>Afgerond</translation>
     </message>
     <message>
         <source>Connecting</source>
@@ -235,7 +235,7 @@
     </message>
     <message>
         <source>Authentication required</source>
-        <translation>Authenticatie vereist</translation>
+        <translation>Authenticatie is vereist</translation>
     </message>
     <message>
         <source>requires authentication</source>
@@ -262,7 +262,7 @@
     </message>
     <message>
         <source>Deleting rule</source>
-        <translation>Regel verwijderen</translation>
+        <translation>Bezig met verwijderen van regel</translation>
     </message>
 </context>
 <context>
@@ -319,7 +319,7 @@
     <name>BrowserWebView</name>
     <message>
         <source>Accept Certificate from:</source>
-        <translation>Certificaat accepteren van:</translation>
+        <translation>Accepteer het certificaat van:</translation>
     </message>
     <message>
         <source>Downloading</source>
@@ -360,72 +360,72 @@
     <name>CookieListItem</name>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Verwijderen</translation>
+        <translation>Verwijderen</translation>
     </message>
     <message>
         <source>Deleting Cookie</source>
-        <translation type="unfinished"></translation>
+        <translation>Bezig met verwijderen van cookie</translation>
     </message>
 </context>
 <context>
     <name>CookieListPage</name>
     <message>
         <source>Cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>Cookies</translation>
     </message>
     <message>
         <source>Add Cookie</source>
-        <translation type="unfinished"></translation>
+        <translation>Cookie toevoegen</translation>
     </message>
 </context>
 <context>
     <name>CookieManagerPage</name>
     <message>
         <source>Cookie Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Cookies-beheerder</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation type="unfinished">Filteren</translation>
+        <translation>Filteren</translation>
     </message>
     <message>
         <source>Remove All Cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>Alle cookies verwijderen</translation>
     </message>
     <message>
         <source>Removing Cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>Bezig met verwijderen van cookies</translation>
     </message>
     <message>
         <source>Add Cookie</source>
-        <translation type="unfinished"></translation>
+        <translation>Cookie toevoegen</translation>
     </message>
 </context>
 <context>
     <name>CookiePage</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Opslaan</translation>
+        <translation>Opslaan</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="unfinished">Naam</translation>
+        <translation>Naam</translation>
     </message>
     <message>
         <source>Domain</source>
-        <translation type="unfinished"></translation>
+        <translation>Domein</translation>
     </message>
     <message>
         <source>Path</source>
-        <translation type="unfinished"></translation>
+        <translation>Pad</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation type="unfinished"></translation>
+        <translation>Waarde</translation>
     </message>
     <message>
         <source>Expires</source>
-        <translation type="unfinished"></translation>
+        <translation>Vervalt op</translation>
     </message>
 </context>
 <context>
@@ -487,7 +487,7 @@
     </message>
     <message>
         <source>Cover Settings</source>
-        <translation>Miniatuurinstellingen</translation>
+        <translation>Omslaginstellingen</translation>
     </message>
 </context>
 <context>
@@ -509,30 +509,26 @@
     <name>DomainListItem</name>
     <message>
         <source>Cookies:</source>
-        <translation type="unfinished"></translation>
+        <translation>Cookies:</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Verwijderen</translation>
+        <translation>Verwijderen</translation>
     </message>
     <message>
         <source>Deleting Cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>Bezig met verwijderen van cookies</translation>
     </message>
 </context>
 <context>
     <name>DownloadItem</name>
     <message>
         <source>Redirect Loop</source>
-        <translation type="unfinished"></translation>
+        <translation>Vast in herleidingsfase</translation>
     </message>
 </context>
 <context>
     <name>DownloadListItem</name>
-    <message>
-        <source>Restart</source>
-        <translation type="vanished">Herstarten</translation>
-    </message>
     <message>
         <source>Cancel</source>
         <translation>Annuleren</translation>
@@ -673,7 +669,7 @@
     <name>FormResubmitDialog</name>
     <message>
         <source>This page contains information written by you: do you want to resend the data?</source>
-        <translation>Deze pagina bevat informatie die door u is geschreven: wilt u de data opnieuw versturen?</translation>
+        <translation>Deze pagina bevat door u geschreven informatie: wilt u de gegevens opnieuw versturen?</translation>
     </message>
     <message>
         <source>Yes</source>
@@ -746,7 +742,7 @@
     <name>LoadFailed</name>
     <message>
         <source>You are in offline mode</source>
-        <translation>U bent in offline-modus</translation>
+        <translation>U bevindt zich in offline-modus</translation>
     </message>
 </context>
 <context>
@@ -1008,7 +1004,7 @@
     </message>
     <message>
         <source>Tabs saved</source>
-        <translation>Tabbladen zijn opgeslagen</translation>
+        <translation>De tabbladen zijn opgeslagen</translation>
     </message>
     <message>
         <source>Open</source>
@@ -1123,18 +1119,6 @@
 </context>
 <context>
     <name>ShareMenu</name>
-    <message>
-        <source>Share on Facebook</source>
-        <translation type="vanished">Delen op Facebook</translation>
-    </message>
-    <message>
-        <source>Share on Twitter</source>
-        <translation type="vanished">Delen op Twitter</translation>
-    </message>
-    <message>
-        <source>Share on Google+</source>
-        <translation type="vanished">Delen op Google+</translation>
-    </message>
     <message>
         <source>Share</source>
         <translation>Delen</translation>
