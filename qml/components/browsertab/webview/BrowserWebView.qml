@@ -239,7 +239,7 @@ SilicaWebView
 
                 webview.setNightMode(mainwindow.settings.nightmode);
 
-                Credentials.compile(Database.instance(), mainwindow.settings, stringurl, webview);
+                Credentials.compile(Database.instance(), stringurl, webview);
                 History.store(stringurl, title);
             }
         }

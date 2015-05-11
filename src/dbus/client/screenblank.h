@@ -4,7 +4,6 @@
 #include <QObject>
 #include <QDBusMessage>
 #include <QDBusConnection>
-#include <QDebug>
 
 class ScreenBlank : public QObject
 {

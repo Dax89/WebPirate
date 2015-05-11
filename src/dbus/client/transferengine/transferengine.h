@@ -4,7 +4,6 @@
 #include <QObject>
 #include <QtDBus>
 #include <QList>
-#include <QDebug>
 #include <QDBusMetaType>
 #include "transfermethodinfo.h"
 

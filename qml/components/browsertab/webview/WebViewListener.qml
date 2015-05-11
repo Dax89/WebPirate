@@ -54,7 +54,7 @@ Item
         function onFormSubmit(data) {
             linkmenu.hide();
 
-            if((mainwindow.settings.clearonexit === false) && Credentials.needsDialog(Database.instance(), mainwindow.settings, url.toString(), data)) {
+            if((mainwindow.settings.clearonexit === false) && Credentials.needsDialog(Database.instance(), url.toString(), data)) {
                 credentialdialog.url = url.toString();
                 credentialdialog.logindata = data;
                 credentialdialog.show();

@@ -31,11 +31,14 @@
 #include <QtQuick>
 #include <sailfishapp.h>
 //#include "dbus/webpirateservice.h"
+#include "dbus/client/machineid.h"
 #include "dbus/client/screenblank.h"
 #include "dbus/client/urlcomposer.h"
+#include "dbus/client/ofono/ofono.h"
 #include "dbus/client/transferengine/transferengine.h"
 #include "dbus/client/transferengine/transfermethodmodel.h"
 #include "security/cryptography/aes256.h"
+#include "network/networkinterfaces.h"
 #include "favoritesmanager/favoritesmanager.h"
 #include "downloadmanager/downloadmanager.h"
 #include "filepicker/folderlistmodel.h"
@@ -56,6 +59,9 @@ int main(int argc, char *argv[])
     qmlRegisterType<FavoriteItem>("WebPirate.Private", 1, 0, "FavoriteItem");
 
     qmlRegisterSingletonType<AES256>("WebPirate.Security", 1, 0, "AES256", &AES256::initialize);
+    qmlRegisterSingletonType<NetworkInterfaces>("WebPirate.Network", 1, 0, "NetworkInterfaces", &NetworkInterfaces::initialize);
+    qmlRegisterSingletonType<MachineID>("WebPirate.DBus", 1, 0, "MachineID", &MachineID::initialize);
+    qmlRegisterSingletonType<Ofono>("WebPirate.DBus", 1, 0, "Ofono", &Ofono::initialize);
 
     qmlRegisterType<ScreenBlank>("WebPirate.DBus", 1, 0, "ScreenBlank");
     qmlRegisterType<UrlComposer>("WebPirate.DBus", 1, 0, "UrlComposer");

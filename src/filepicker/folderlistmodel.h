@@ -7,7 +7,6 @@
 #include <QVariant>
 #include <QFileInfo>
 #include <QDir>
-#include <QDebug>
 
 class FolderListModel : public QAbstractListModel
 {

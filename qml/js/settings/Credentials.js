@@ -1,6 +1,8 @@
 .pragma library
 
 .import WebPirate.Security 1.0 as Security
+.import WebPirate.DBus 1.0 as DBus
+.import WebPirate.Network 1.0 as Network
 .import "../UrlHelper.js" as UrlHelper
 
 function createSchema(tx)
@@ -8,12 +10,21 @@ function createSchema(tx)
     tx.executeSql("CREATE TABLE IF NOT EXISTS Credentials (url TEXT, loginattribute TEXT, loginid TEXT, login TEXT, passwordattribute TEXT, passwordid TEXT, password TEXT)");
 }
 
-function generateKey(settings)
+function generateKey()
 {
-    if(settings.deviceinfo.imeiCount() > 0)
-        return settings.deviceinfo.imei(0);
+    var ofono = DBus.Ofono;
 
-    return settings.deviceinfo.uniqueDeviceID();
+    if(ofono.available && (ofono.imeiCount > 0))
+        return ofono.imei(0);
+
+    /* No IMEI: Fallback to MAC address */
+    var interfaces = Network.NetworkInterfaces;
+
+    if(interfaces.interfaceCount > 0)
+        return interfaces.interfaceMAC(0);
+
+    /* No MAC: Fallback to Machine ID */
+    return DBus.MachineID.value;
 }
 
 function clear(db)
@@ -31,9 +42,9 @@ function remove(db, url, loginid, passwordid)
     });
 }
 
-function store(db, settings, url, logindata)
+function store(db, url, logindata)
 {
-    var key = generateKey(settings);
+    var key = generateKey();
 
     db.transaction(function(tx) {
         tx.executeSql("DELETE FROM Credentials WHERE url=? AND loginid=? AND passwordid=?;", [UrlHelper.urlPath(url), logindata.loginid, logindata.passwordid]);
@@ -43,10 +54,10 @@ function store(db, settings, url, logindata)
     })
 }
 
-function needsDialog(db, settings, url, logindata)
+function needsDialog(db, url, logindata)
 {
     var r = true;
-    var key = generateKey(settings);
+    var key = generateKey();
 
     db.transaction(function(tx) {
         var res = tx.executeSql("SELECT * FROM Credentials WHERE url=? AND loginid=? AND passwordid=?;", [UrlHelper.urlPath(url), logindata.loginid, logindata.passwordid]);
@@ -58,7 +69,7 @@ function needsDialog(db, settings, url, logindata)
     return r;
 }
 
-function compile(db, settings, url, webview)
+function compile(db, url, webview)
 {
     db.transaction(function(tx) {
         var res = tx.executeSql("SELECT * FROM Credentials WHERE url=?;", [UrlHelper.urlPath(url)]);
@@ -66,7 +77,7 @@ function compile(db, settings, url, webview)
         if(res.rows.length <= 0)
             return;
 
-        var k = generateKey(settings);
+        var k = generateKey();
 
         for(var i = 0; i < res.rows.length; i++)
         {

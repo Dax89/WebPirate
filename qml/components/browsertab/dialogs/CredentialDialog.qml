@@ -21,7 +21,7 @@ PopupDialog
     title: qsTr("Do you want to store the password?")
 
     onRequestAccepted: {
-        Credentials.store(Database.instance(), mainwindow.settings, credentialdialog.url, logindata);
+        Credentials.store(Database.instance(), credentialdialog.url, logindata);
         clearData();
     }
 

@@ -5,7 +5,6 @@
 #include <QDir>
 #include <QFile>
 #include <QStandardPaths>
-#include <QDebug>
 
 class AdBlockManager: public QObject
 {

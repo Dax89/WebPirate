@@ -6,7 +6,6 @@
 #include <QDir>
 #include <QTimer>
 #include <QStandardPaths>
-#include <QDebug>
 
 class AbstractDownloadItem : public QObject
 {

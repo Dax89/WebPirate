@@ -47,7 +47,11 @@ SOURCES += src/harbour-webpirate.cpp \
     src/dbus/client/transferengine/transferengine.cpp \
     src/dbus/client/transferengine/transfermethodinfo.cpp \
     src/dbus/client/transferengine/transfermethodmodel.cpp \
-    src/dbus/client/urlcomposer.cpp
+    src/dbus/client/urlcomposer.cpp \
+    src/dbus/client/ofono/ofono.cpp \
+    src/dbus/client/ofono/ofonoproperty.cpp \
+    src/network/networkinterfaces.cpp \
+    src/dbus/client/machineid.cpp
 
 OTHER_FILES += qml/harbour-webpirate.qml \
     rpm/harbour-webpirate.changes.in \
@@ -226,5 +230,9 @@ HEADERS += \
     src/dbus/client/transferengine/transferengine.h \
     src/dbus/client/transferengine/transfermethodinfo.h \
     src/dbus/client/transferengine/transfermethodmodel.h \
-    src/dbus/client/urlcomposer.h
+    src/dbus/client/urlcomposer.h \
+    src/dbus/client/ofono/ofono.h \
+    src/dbus/client/ofono/ofonoproperty.h \
+    src/network/networkinterfaces.h \
+    src/dbus/client/machineid.h
 
