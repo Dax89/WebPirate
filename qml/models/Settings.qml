@@ -1,5 +1,6 @@
 import QtQuick 2.1
 import WebPirate 1.0
+import WebPirate.Private 1.0
 import WebPirate.DBus 1.0
 import WebPirate.DBus.TransferEngine 1.0
 import WebPirate.AdBlock 1.0
@@ -7,6 +8,7 @@ import "cover"
 
 QtObject
 {
+    property MimeDatabase mimedatabase: MimeDatabase { }
     property ScreenBlank screenblank: ScreenBlank { }
     property SearchEngineModel searchengines: SearchEngineModel { }
     property DownloadManager downloadmanager: DownloadManager { }

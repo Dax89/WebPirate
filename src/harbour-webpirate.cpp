@@ -57,6 +57,7 @@ int main(int argc, char *argv[])
 
     qmlRegisterType<AbstractDownloadItem>("WebPirate.Private", 1, 0, "DownloadItem");
     qmlRegisterType<FavoriteItem>("WebPirate.Private", 1, 0, "FavoriteItem");
+    qmlRegisterType<MimeDatabase>("WebPirate.Private", 1, 0, "MimeDatabase");
 
     qmlRegisterSingletonType<AES256>("WebPirate.Security", 1, 0, "AES256", &AES256::initialize);
     qmlRegisterSingletonType<NetworkInterfaces>("WebPirate.Network", 1, 0, "NetworkInterfaces", &NetworkInterfaces::initialize);
@@ -79,7 +80,6 @@ int main(int argc, char *argv[])
     qmlRegisterType<DownloadManager>("WebPirate", 1, 0, "DownloadManager");
     qmlRegisterType<FavoritesManager>("WebPirate", 1, 0, "FavoritesManager");
 
-    MimeDatabase mimedb;
     //WebPirateService wpservice;
     WebKitDatabase webkitdb;
 
@@ -89,7 +89,6 @@ int main(int argc, char *argv[])
     QObject::connect(engine, SIGNAL(quit()), application.data(), SLOT(quit()));
 
     engine->addImageProvider(WebIconDatabase::PROVIDER_NAME, new FaviconProvider());
-    engine->rootContext()->setContextProperty("mimedatabase", &mimedb);
     engine->rootContext()->setContextProperty("webkitdatabase", &webkitdb);
     //engine->rootContext()->setContextProperty("webpirateservice", &wpservice);
 

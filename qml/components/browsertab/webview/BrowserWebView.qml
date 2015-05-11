@@ -156,7 +156,7 @@ SilicaWebView
     experimental.onMessageReceived: listener.execute(message)
 
     experimental.onDownloadRequested: {
-        var mime = mimedatabase.mimeFromUrl(downloadItem.url);
+        var mime = mainwindow.settings.mimedatabase.mimeFromUrl(downloadItem.url);
         var mimeinfo = mime.split("/");
 
         if(mimeinfo[0] === "video")

@@ -88,7 +88,7 @@ Item
             if(!filepath.length)
                 return; /* Empty file:// request, do nothing */
 
-            var mimetype = mimedatabase.mimeFromUrl(filepath);
+            var mimetype = mainwindow.settings.mimedatabase.mimeFromUrl(filepath);
 
             if(mimetype === "inode/directory")
             {

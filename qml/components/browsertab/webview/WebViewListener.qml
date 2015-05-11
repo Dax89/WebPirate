@@ -91,7 +91,7 @@ Item
             for(var i = 0; i < data.videos.length; i++)
             {
                 var video = data.videos[i];
-                grabber.addVideo(qsTr("Codec") + ": " + video.type, mimedatabase.mimeFromUrl(video.url), video.url);
+                grabber.addVideo(qsTr("Codec") + ": " + video.type, mainwindow.settings.mimedatabase.mimeFromUrl(video.url), video.url);
             }
         }
 
