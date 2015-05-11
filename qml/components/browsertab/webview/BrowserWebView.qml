@@ -1,6 +1,5 @@
 import QtQuick 2.1
 import QtWebKit 3.0
-import QtWebKit.experimental 1.0
 import Sailfish.Silica 1.0
 import "../menus"
 import "../dialogs"
@@ -26,6 +25,7 @@ SilicaWebView
     }
 
     VerticalScrollDecorator { flickable: webview }
+    UrlSchemeDelegateHandler{ id: urlschemedelegatehandler }
     WebViewListener { id: listener }
 
     Rectangle /* Night Mode Rectangle */
@@ -38,32 +38,6 @@ SilicaWebView
     }
 
     id: webview
-
-    experimental.urlSchemeDelegates: [
-        UrlSchemeDelegate {
-            scheme: "tel"
-
-            onReceivedRequest: {
-                mainwindow.settings.urlcomposer.compose(request.url);
-            }
-        },
-
-        UrlSchemeDelegate {
-            scheme: "sms"
-
-            onReceivedRequest: {
-                mainwindow.settings.urlcomposer.send(request.url);
-            }
-        }
-        ,
-        UrlSchemeDelegate {
-            scheme: "mailto"
-
-            onReceivedRequest: {
-                mainwindow.settings.urlcomposer.mailTo(request.url);
-            }
-        }
-    ]
 
     /* Experimental WebView Features */
     experimental.preferences.webAudioEnabled: true
@@ -174,6 +148,12 @@ SilicaWebView
     onNavigationRequested: {
         var stringurl = request.url.toString();
         var protocol = UrlHelper.protocol(stringurl);
+
+        if((request.navigationType === WebView.LinkClickedNavigation) && urlschemedelegatehandler.handleProtocol(protocol, request.url))
+        {
+            request.action = WebView.IgnoreRequest;
+            return;
+        }
 
         if(((protocol !== "http") && (protocol !== "https")) || UrlHelper.isSpecialUrl(stringurl) || (request.navigationType === WebView.FormSubmittedNavigation))
             return;

@@ -179,7 +179,8 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/components/items/cookie/DomainListItem.qml \
     qml/pages/cookie/CookieListPage.qml \
     qml/components/items/cookie/CookieListItem.qml \
-    qml/pages/cookie/CookiePage.qml
+    qml/pages/cookie/CookiePage.qml \
+    qml/components/browsertab/webview/UrlSchemeDelegateHandler.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line
