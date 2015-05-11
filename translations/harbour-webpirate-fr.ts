@@ -1159,7 +1159,11 @@
     <name>TextSelectionPage</name>
     <message>
         <source>Done</source>
-        <translation>Fait</translation>
+        <translation type="vanished">Fait</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

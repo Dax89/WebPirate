@@ -1161,7 +1161,11 @@
     <name>TextSelectionPage</name>
     <message>
         <source>Done</source>
-        <translation>完了</translation>
+        <translation type="vanished">完了</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

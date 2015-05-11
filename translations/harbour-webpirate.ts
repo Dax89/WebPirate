@@ -1158,7 +1158,7 @@
 <context>
     <name>TextSelectionPage</name>
     <message>
-        <source>Done</source>
+        <source>Copy</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

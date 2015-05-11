@@ -10,9 +10,14 @@ Dialog
     acceptDestinationAction: PageStackAction.Pop
     canAccept: true
 
+    onAccepted: {
+        if(!textarea.selectedText.length || (!textarea.selectionStart && (textarea.selectionEnd == textarea.text.length)))
+            Clipboard.text = textarea.text;
+    }
+
     DialogHeader {
         id: header
-        acceptText: qsTr("Done")
+        acceptText: qsTr("Copy")
     }
 
     TextArea
