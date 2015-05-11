@@ -1,17 +1,11 @@
 #ifndef WEBICONDATABASE_H
 #define WEBICONDATABASE_H
 
-#include <QObject>
-#include <QDir>
 #include <QVariant>
 #include <QUrl>
-#include <QStandardPaths>
-#include <QtSql/QSqlDatabase>
-#include <QtSql/QSqlQuery>
-#include <QtSql/QSqlError>
-#include <QDebug>
+#include "abstractdatabase.h"
 
-class WebIconDatabase : public QObject
+class WebIconDatabase: public AbstractDatabase
 {
     Q_OBJECT
 
@@ -19,21 +13,17 @@ class WebIconDatabase : public QObject
         explicit WebIconDatabase(QObject* parent = 0);
         QString queryIconUrl(const QString& url);
         QByteArray queryIconPixmap(const QString& url);
-        ~WebIconDatabase();
 
     public slots:
         QString provideIcon(const QString &url);
 
+    protected:
+        virtual bool open() const;
+
     private:
-        bool open();
-        bool prepare(QSqlQuery &queryobj, const QString& query);
-        bool execute(QSqlQuery &queryobj);
         bool hasIcon(const QString& url);
         int queryIconId(const QString& url);
         QString adjustUrl(const QString& url) const;
-
-    private:
-        static int _refcount;
 
     public:
         static const QString PROVIDER_NAME;

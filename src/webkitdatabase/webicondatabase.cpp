@@ -5,30 +5,9 @@ const QString WebIconDatabase::WEBKIT_DATABASE = ".QtWebKit";
 const QString WebIconDatabase::ICON_DATABASE = "WebpageIcons.db";
 const QString WebIconDatabase::PROVIDER_NAME = "favicons";
 
-int WebIconDatabase::_refcount = 0;
-
-WebIconDatabase::WebIconDatabase(QObject *parent): QObject(parent)
+WebIconDatabase::WebIconDatabase(QObject *parent): AbstractDatabase(WebIconDatabase::CONNECTION_NAME, parent)
 {
-    if(!this->_refcount)
-        QSqlDatabase::addDatabase("QSQLITE", WebIconDatabase::CONNECTION_NAME);
 
-    this->_refcount++;
-}
-
-WebIconDatabase::~WebIconDatabase()
-{
-    WebIconDatabase::_refcount--;
-
-    if(!WebIconDatabase::_refcount)
-    {
-        QSqlDatabase db = QSqlDatabase::database(WebIconDatabase::CONNECTION_NAME, false);
-
-        if(db.isOpen())
-            db.close();
-
-        db = QSqlDatabase(); // Reset Database Reference
-        QSqlDatabase::removeDatabase(WebIconDatabase::CONNECTION_NAME);
-    }
 }
 
 bool WebIconDatabase::hasIcon(const QString &url)
@@ -50,7 +29,7 @@ QString WebIconDatabase::provideIcon(const QString &url)
     return "image://theme/icon-m-favorite-selected";
 }
 
-bool WebIconDatabase::open()
+bool WebIconDatabase::open() const
 {
     QSqlDatabase db = QSqlDatabase::database(WebIconDatabase::CONNECTION_NAME, false);
 
@@ -139,32 +118,4 @@ QByteArray WebIconDatabase::queryIconPixmap(const QString &url)
         return QByteArray();
 
     return q.value(0).toByteArray();
-}
-
-bool WebIconDatabase::prepare(QSqlQuery& queryobj, const QString &query)
-{
-    if(!queryobj.prepare(query))
-    {
-        qWarning() << Q_FUNC_INFO << "failed to prepare query";
-        qWarning() << queryobj.lastError();
-        qWarning() << queryobj.lastQuery();
-
-        return false;
-    }
-
-    return true;
-}
-
-bool WebIconDatabase::execute(QSqlQuery &queryobj)
-{
-    if(!queryobj.exec())
-    {
-        qWarning() << Q_FUNC_INFO << "failed to execute query";
-        qWarning() << queryobj.lastError();
-        qWarning() << queryobj.lastQuery();
-
-        return false;
-    }
-
-    return true;
 }
