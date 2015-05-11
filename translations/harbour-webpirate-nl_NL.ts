@@ -49,7 +49,7 @@
     </message>
     <message>
         <source>GitHub Repository</source>
-        <translation>GitHub-pakketbron</translation>
+        <translation>GitHub-pagina</translation>
     </message>
     <message>
         <source>Translators</source>
@@ -81,11 +81,11 @@
     </message>
     <message>
         <source>Icon Designer</source>
-        <translation type="unfinished"></translation>
+        <translation>Pictogramontwerper</translation>
     </message>
     <message>
         <source>Translation Platform</source>
-        <translation type="unfinished"></translation>
+        <translation>Vertalingsplatform</translation>
     </message>
 </context>
 <context>
@@ -305,7 +305,7 @@
     </message>
     <message>
         <source>Grabbing video</source>
-        <translation>Bezig met grijpen van video</translation>
+        <translation>Bezig met het grijpen van de video</translation>
     </message>
     <message>
         <source>Copy URL</source>
@@ -616,15 +616,15 @@
     </message>
     <message>
         <source>Exporting favorites</source>
-        <translation>Bezig met exporteren van bladwijzers</translation>
+        <translation>Bezig met het exporteren van de bladwijzers</translation>
     </message>
     <message>
         <source>Favorites exported successfully</source>
-        <translation>Bladwijzers succesvol geëxporteerd</translation>
+        <translation>De bladwijzers zijn succesvol geëxporteerd</translation>
     </message>
     <message>
         <source>Favorites imported successfully</source>
-        <translation>Bladwijzers succesvol geïmporteerd</translation>
+        <translation>De bladwijzers zijn succesvol geïmporteerd</translation>
     </message>
     <message>
         <source>Delete all Favorites</source>
@@ -632,7 +632,7 @@
     </message>
     <message>
         <source>Deleting all favorites</source>
-        <translation>Bezig met verwijderen van alle bladwijzers</translation>
+        <translation>Bezig met het verwijderen van alle bladwijzers</translation>
     </message>
 </context>
 <context>
@@ -647,11 +647,11 @@
     </message>
     <message>
         <source>Deleting Favorite</source>
-        <translation>Bezig met verwijderen van bladwijzer</translation>
+        <translation>Bezig met het verwijderen van de bladwijzer</translation>
     </message>
     <message>
         <source>Deleting Folder</source>
-        <translation>Bezig met verwijderen van map</translation>
+        <translation>Bezig met het verwijderen van de map</translation>
     </message>
     <message>
         <source>Open</source>
@@ -663,21 +663,21 @@
     </message>
     <message>
         <source>Add to Quick Grid</source>
-        <translation>Toevoegen aan snelkiezer</translation>
+        <translation>Toevoegen aan Snelkiezer</translation>
     </message>
 </context>
 <context>
     <name>FilePickerPage</name>
     <message>
         <source>Root</source>
-        <translation>Bestandssyteem</translation>
+        <translation>Bestandssysteem</translation>
     </message>
 </context>
 <context>
     <name>FormResubmitDialog</name>
     <message>
         <source>This page contains information written by you: do you want to resend the data?</source>
-        <translation>Deze pagina bevat door u geschreven informatie: wilt u de gegevens opnieuw versturen?</translation>
+        <translation>Deze pagina bevat informatie die door u is ingevoerd: wilt u deze gegevens opnieuw versturen?</translation>
     </message>
     <message>
         <source>Yes</source>
@@ -692,7 +692,7 @@
     <name>HistoryMenu</name>
     <message>
         <source>Link copied to clipboard</source>
-        <translation>Link gekopieerd naar klembord</translation>
+        <translation>De link is gekopieerd naar het klembord</translation>
     </message>
 </context>
 <context>
@@ -723,11 +723,11 @@
     </message>
     <message>
         <source>Downloading image</source>
-        <translation>Bezig met downloaden van afbeelding</translation>
+        <translation>Bezig met het downloaden van de afbeelding</translation>
     </message>
     <message>
         <source>Downloading link</source>
-        <translation>Bezig met downloaden van link</translation>
+        <translation>Bezig met het downloaden van de link</translation>
     </message>
     <message>
         <source>Open</source>
@@ -735,7 +735,7 @@
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation>Link gekopieerd naar klembord</translation>
+        <translation>De link is gekopieerd naar het klembord</translation>
     </message>
     <message>
         <source>Open New Tab in Background</source>
@@ -750,7 +750,7 @@
     <name>LoadFailed</name>
     <message>
         <source>You are in offline mode</source>
-        <translation>U bevindt zich in offline-modus</translation>
+        <translation>U bevindt zich in de offline-modus</translation>
     </message>
 </context>
 <context>
@@ -769,7 +769,7 @@
     </message>
     <message>
         <source>Deleting item</source>
-        <translation>Bezig met verwijderen van item</translation>
+        <translation>Bezig met het verwijderen van het item</translation>
     </message>
 </context>
 <context>
@@ -780,7 +780,7 @@
     </message>
     <message>
         <source>Deleting History</source>
-        <translation>Bezig met verwijderen van geschiedenis</translation>
+        <translation>Bezig met het verwijderen van de geschiedenis</translation>
     </message>
     <message>
         <source>Navigation History</source>
@@ -852,7 +852,7 @@
     </message>
     <message>
         <source>Deleting rule</source>
-        <translation>Bezig met verwijderen van regel</translation>
+        <translation>Bezig met het verwijderen van de regel</translation>
     </message>
 </context>
 <context>
@@ -867,7 +867,7 @@
     </message>
     <message>
         <source>Deleting rules</source>
-        <translation>Bezig met verwijderen van regels</translation>
+        <translation>Bezig met het verwijderen van de regels</translation>
     </message>
     <message>
         <source>New Rule</source>
@@ -892,14 +892,14 @@
     <name>QuickGrid</name>
     <message>
         <source>The QuickGrid is empty</source>
-        <translation>De snelkiezer is leeg</translation>
+        <translation>De Snelkiezer is leeg</translation>
     </message>
 </context>
 <context>
     <name>QuickGridItem</name>
     <message>
         <source>Removing item</source>
-        <translation>Bezig met verwijderen van item</translation>
+        <translation>Bezig met het verwijderen van het item</translation>
     </message>
 </context>
 <context>
@@ -1001,7 +1001,7 @@
     </message>
     <message>
         <source>Deleting Search Engine</source>
-        <translation>Bezig met verwijderen van zoekmachine</translation>
+        <translation>Bezig met het verwijderen van de zoekmachine</translation>
     </message>
 </context>
 <context>
@@ -1028,7 +1028,7 @@
     </message>
     <message>
         <source>Deleting session</source>
-        <translation>Bezig met verwijderen van sessie</translation>
+        <translation>Bezig met het verwijderen van de sessie</translation>
     </message>
     <message>
         <source>Save current session</source>
@@ -1043,7 +1043,7 @@
     </message>
     <message>
         <source>Session name</source>
-        <translation>Naam van sessie</translation>
+        <translation>Sessienaam</translation>
     </message>
     <message>
         <source>Load at startup</source>
@@ -1078,7 +1078,7 @@
     </message>
     <message>
         <source>Wipe Data on Exit</source>
-        <translation>Data wissen bij afsluiten</translation>
+        <translation>Gegevens wissen wanneer de browser wordt afgesloten</translation>
     </message>
     <message>
         <source>General</source>
@@ -1098,7 +1098,7 @@
     </message>
     <message>
         <source>Removing personal data</source>
-        <translation>Bezig met verwijderen van persoonlijke gegevens</translation>
+        <translation>Bezig met het verwijderen van persoonlijke gegevens</translation>
     </message>
     <message>
         <source>Delete Navigation History</source>
@@ -1106,7 +1106,7 @@
     </message>
     <message>
         <source>Removing navigation history</source>
-        <translation>Bezig met wissen van surfgeschiedenis</translation>
+        <translation>Bezig met het wissen van de surfgeschiedenis</translation>
     </message>
     <message>
         <source>Long press to edit</source>
@@ -1118,11 +1118,11 @@
     </message>
     <message>
         <source>Delete Cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>Cookies verwijderen</translation>
     </message>
     <message>
         <source>Removing cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>Bezig met het verwijderen van de cookies</translation>
     </message>
 </context>
 <context>
@@ -1136,7 +1136,7 @@
     <name>TabMenu</name>
     <message>
         <source>Add to Quick Grid</source>
-        <translation>Toevoegen aan snelkiezer</translation>
+        <translation>Toevoegen aan Snelkiezer</translation>
     </message>
     <message>
         <source>Duplicate Tab</source>
@@ -1144,7 +1144,7 @@
     </message>
     <message>
         <source>Duplicate Tab in Background</source>
-        <translation>Tabblad dupliceren op achtergrond</translation>
+        <translation>Tabblad dupliceren op de achtergrond</translation>
     </message>
     <message>
         <source>Close Tab</source>

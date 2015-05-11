@@ -1118,7 +1118,7 @@
     </message>
     <message>
         <source>Delete Cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>Удаленить Cookies</translation>
     </message>
     <message>
         <source>Removing cookies</source>
