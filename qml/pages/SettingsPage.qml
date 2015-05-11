@@ -161,7 +161,7 @@ Dialog
 
                     onClicked: rideletecache.execute(bideletecache, qsTr("Removing cache"),
                                                      function() {
-                                                         webkitdatabase.clearCache();
+                                                         settings.webkitdatabase.clearCache();
                                                      });
                 }
             }
@@ -195,8 +195,8 @@ Dialog
                 actionMessage: qsTr("Removing personal data")
 
                 onActionRequested: {
-                    webkitdatabase.clearCache();
-                    webkitdatabase.clearNavigationData();
+                    settings.webkitdatabase.clearCache();
+                    settings.webkitdatabase.clearNavigationData();
                     Credentials.clear(Database.instance());
                     History.clear();
                 }

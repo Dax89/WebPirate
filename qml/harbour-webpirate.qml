@@ -99,8 +99,8 @@ ApplicationWindow
         Database.set("blockads", settings.adblockmanager.enabled ? 1 : 0);
 
         if(settings.clearonexit) {
-            webkitdatabase.clearCache();
-            webkitdatabase.clearNavigationData();
+            settings.webkitdatabase.clearCache();
+            settings.webkitdatabase.clearNavigationData();
             Credentials.clear(Database.instance());
             History.clear();
         }
