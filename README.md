@@ -1,5 +1,4 @@
-WebPirate is a Tabbed WebBrowser for SailfishOS based on WebKit.<br>
-This software is under Heavy Development.
+WebPirate is a Tabbed WebBrowser for SailfishOS based on WebKit
 
 Features
 -----
@@ -23,8 +22,6 @@ Features
 
 Planned Features
 -----
-
-
 - Page's content reflow
 - Do you want more? Just ask! :)
 
