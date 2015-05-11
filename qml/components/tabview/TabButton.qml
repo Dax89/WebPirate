@@ -51,53 +51,58 @@ MouseArea
         anchors { fill: parent; topMargin: tabbutton.radius / 4; bottomMargin: -tabbutton.radius }
         color: getColor()
 
-        Item
+        Item /* Needed in order to align | Icon | Text | X | button correctly */
         {
-            id: indicator
-            width: tabtitle.contentHeight
-            height: tabtitle.contentHeight
-            anchors { left: parent.left; leftMargin: Theme.paddingSmall; verticalCenter: parent.verticalCenter }
+            anchors { fill: parent; topMargin: tabbutton.radius / 4; bottomMargin: tabbutton.radius }
 
-            BusyIndicator
+            Item
             {
-                id: loadindicator
-                visible: loading
-                running: loading
-                anchors.fill: parent
-                size: BusyIndicatorSize.Small
+                id: indicator
+                width: tabtitle.contentHeight
+                height: tabtitle.contentHeight
+                anchors { left: parent.left; leftMargin: Theme.paddingSmall; verticalCenter: parent.verticalCenter }
+
+                BusyIndicator
+                {
+                    id: loadindicator
+                    visible: loading
+                    running: loading
+                    anchors.fill: parent
+                    size: BusyIndicatorSize.Small
+                }
+
+                Image
+                {
+                    id: favicon
+                    visible: !loading
+                    anchors.fill: parent
+                    fillMode: Image.PreserveAspectFit
+                    asynchronous: true
+                    smooth: true
+                }
             }
 
-            Image
+            Text
             {
-                id: favicon
-                visible: !loading
-                anchors.fill: parent
-                fillMode: Image.PreserveAspectFit
-                asynchronous: true
-                smooth: true
+                id: tabtitle
+                anchors { left: indicator.right; right: btnclose.left; verticalCenter: parent.verticalCenter; leftMargin: Theme.paddingSmall }
+                font.pixelSize: Theme.fontSizeSmall
+                verticalAlignment: Text.AlignVCenter
+                horizontalAlignment: Text.AlignLeft
+                elide: Text.ElideRight
+                maximumLineCount: 1
             }
-        }
 
-        Text
-        {
-            id: tabtitle
-            anchors { left: indicator.right; right: btnclose.left; verticalCenter: parent.verticalCenter; leftMargin: Theme.paddingSmall }
-            font.pixelSize: Theme.fontSizeSmall
-            verticalAlignment: Text.AlignVCenter
-            horizontalAlignment: Text.AlignLeft
-            elide: Text.ElideRight
-            maximumLineCount: 1
-        }
-
-        IconButton
-        {
-            id: btnclose
-            width: Theme.iconSizeSmall
-            height: Theme.iconSizeSmall
-            anchors { right: parent.right; rightMargin: Theme.paddingSmall; verticalCenter: parent.verticalCenter }
-            icon.source: "image://theme/icon-close-vkb"
-            visible: tabs.count > 1
-            onClicked: tabview.removeTab(index)
+            IconButton
+            {
+                id: btnclose
+                width: Theme.iconSizeSmall
+                height: Theme.iconSizeSmall
+                anchors { right: parent.right; rightMargin: Theme.paddingSmall; verticalCenter: parent.verticalCenter }
+                icon.source: "image://theme/icon-close-vkb"
+                visible: tabs.count > 1
+                onClicked: tabview.removeTab(index)
+            }
         }
     }
 }
