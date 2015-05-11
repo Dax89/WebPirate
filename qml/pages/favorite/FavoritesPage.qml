@@ -1,6 +1,6 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
-import WebPirate 1.0
+import harbour.webpirate.LocalStorage 1.0
 import "../../components"
 import "../../components/tabview"
 import "../../models"

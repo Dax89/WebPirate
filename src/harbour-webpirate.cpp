@@ -54,31 +54,32 @@ int main(int argc, char *argv[])
     QScopedPointer<QGuiApplication> application(SailfishApp::application(argc, argv));
     application->setApplicationName("harbour-webpirate");
 
-    qmlRegisterType<AbstractDownloadItem>("WebPirate.Private", 1, 0, "DownloadItem");
-    qmlRegisterType<FavoriteItem>("WebPirate.Private", 1, 0, "FavoriteItem");
-    qmlRegisterType<MimeDatabase>("WebPirate.Private", 1, 0, "MimeDatabase");
+    qmlRegisterType<AbstractDownloadItem>("harbour.webpirate.Private", 1, 0, "DownloadItem");
+    qmlRegisterType<FavoriteItem>("harbour.webpirate.Private", 1, 0, "FavoriteItem");
+    qmlRegisterType<MimeDatabase>("harbour.webpirate.Private", 1, 0, "MimeDatabase");
 
-    qmlRegisterSingletonType<AES256>("WebPirate.Security", 1, 0, "AES256", &AES256::initialize);
-    qmlRegisterSingletonType<NetworkInterfaces>("WebPirate.Network", 1, 0, "NetworkInterfaces", &NetworkInterfaces::initialize);
-    qmlRegisterSingletonType<MachineID>("WebPirate.DBus", 1, 0, "MachineID", &MachineID::initialize);
-    qmlRegisterSingletonType<Ofono>("WebPirate.DBus", 1, 0, "Ofono", &Ofono::initialize);
+    qmlRegisterSingletonType<AES256>("harbour.webpirate.Security", 1, 0, "AES256", &AES256::initialize);
+    qmlRegisterSingletonType<NetworkInterfaces>("harbour.webpirate.Network", 1, 0, "NetworkInterfaces", &NetworkInterfaces::initialize);
+    qmlRegisterSingletonType<MachineID>("harbour.webpirate.DBus", 1, 0, "MachineID", &MachineID::initialize);
+    qmlRegisterSingletonType<Ofono>("harbour.webpirate.DBus", 1, 0, "Ofono", &Ofono::initialize);
 
-    qmlRegisterType<ScreenBlank>("WebPirate.DBus", 1, 0, "ScreenBlank");
-    qmlRegisterType<UrlComposer>("WebPirate.DBus", 1, 0, "UrlComposer");
-    qmlRegisterType<TransferEngine>("WebPirate.DBus.TransferEngine", 1, 0, "TransferEngine");
-    qmlRegisterType<TransferMethodModel>("WebPirate.DBus.TransferEngine", 1, 0, "TransferMethodModel");
+    qmlRegisterType<ScreenBlank>("harbour.webpirate.DBus", 1, 0, "ScreenBlank");
+    qmlRegisterType<UrlComposer>("harbour.webpirate.DBus", 1, 0, "UrlComposer");
+    qmlRegisterType<TransferEngine>("harbour.webpirate.DBus.TransferEngine", 1, 0, "TransferEngine");
+    qmlRegisterType<TransferMethodModel>("harbour.webpirate.DBus.TransferEngine", 1, 0, "TransferMethodModel");
 
-    qmlRegisterType<FolderListModel>("WebPirate.Pickers", 1, 0, "FolderListModel");
+    qmlRegisterType<FolderListModel>("harbour.webpirate.Pickers", 1, 0, "FolderListModel");
 
-    qmlRegisterType<AdBlockEditor>("WebPirate.AdBlock", 1, 0, "AdBlockEditor");
-    qmlRegisterType<AdBlockDownloader>("WebPirate.AdBlock", 1, 0, "AdBlockDownloader");
-    qmlRegisterType<AdBlockManager>("WebPirate.AdBlock", 1, 0, "AdBlockManager");
+    qmlRegisterType<AdBlockEditor>("harbour.webpirate.AdBlock", 1, 0, "AdBlockEditor");
+    qmlRegisterType<AdBlockDownloader>("harbour.webpirate.AdBlock", 1, 0, "AdBlockDownloader");
+    qmlRegisterType<AdBlockManager>("harbour.webpirate.AdBlock", 1, 0, "AdBlockManager");
 
-    qmlRegisterType<CookieJar>("WebPirate", 1, 0, "CookieJar");
-    qmlRegisterType<WebKitDatabase>("WebPirate", 1, 0, "WebKitDatabase");
-    qmlRegisterType<WebIconDatabase>("WebPirate", 1, 0, "WebIconDatabase");
-    qmlRegisterType<DownloadManager>("WebPirate", 1, 0, "DownloadManager");
-    qmlRegisterType<FavoritesManager>("WebPirate", 1, 0, "FavoritesManager");
+    qmlRegisterType<CookieJar>("harbour.webpirate.WebKit", 1, 0, "CookieJar");
+    qmlRegisterType<WebKitDatabase>("harbour.webpirate.WebKit", 1, 0, "WebKitDatabase");
+    qmlRegisterType<WebIconDatabase>("harbour.webpirate.WebKit", 1, 0, "WebIconDatabase");
+    qmlRegisterType<DownloadManager>("harbour.webpirate.WebKit", 1, 0, "DownloadManager");
+
+    qmlRegisterType<FavoritesManager>("harbour.webpirate.LocalStorage", 1, 0, "FavoritesManager");
 
     QScopedPointer<QQuickView> view(SailfishApp::createView());
     QQmlEngine* engine = view->engine();

@@ -1,8 +1,8 @@
 .pragma library
 
-.import WebPirate.Security 1.0 as Security
-.import WebPirate.DBus 1.0 as DBus
-.import WebPirate.Network 1.0 as Network
+.import harbour.webpirate.Security 1.0 as Security
+.import harbour.webpirate.DBus 1.0 as DBus
+.import harbour.webpirate.Network 1.0 as Network
 .import "../UrlHelper.js" as UrlHelper
 
 function createSchema(tx)

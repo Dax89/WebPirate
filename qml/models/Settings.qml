@@ -1,9 +1,9 @@
 import QtQuick 2.1
-import WebPirate 1.0
-import WebPirate.Private 1.0
-import WebPirate.DBus 1.0
-import WebPirate.DBus.TransferEngine 1.0
-import WebPirate.AdBlock 1.0
+import harbour.webpirate.Private 1.0
+import harbour.webpirate.WebKit 1.0
+import harbour.webpirate.DBus 1.0
+import harbour.webpirate.DBus.TransferEngine 1.0
+import harbour.webpirate.AdBlock 1.0
 import "cover"
 
 QtObject
