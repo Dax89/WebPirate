@@ -79,6 +79,14 @@
         <source>Finnish</source>
         <translation>Finlandese</translation>
     </message>
+    <message>
+        <source>Icon Designer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Translation Platform</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ActionSidebar</name>

@@ -116,7 +116,7 @@ Page
             Item
             {
                 width: parent.width
-                height: Theme.paddingLarge + lbldev.height + lblrepository.height
+                height: Theme.paddingLarge + lbldev.height + lblicondesigner.height + lblrepository.height + lbltranslationplatform.height
 
                 InfoLabel
                 {
@@ -128,8 +128,16 @@ Page
 
                 InfoLabel
                 {
-                    id: lblrepository
+                    id: lblicondesigner
                     anchors { left: parent.left; top: lbldev.bottom; right: parent.right; leftMargin: Theme.paddingSmall; rightMargin: Theme.paddingSmall }
+                    title: qsTr("Icon Designer")
+                    text: "Moth"
+                }
+
+                InfoLabel
+                {
+                    id: lblrepository
+                    anchors { left: parent.left; top: lblicondesigner.bottom; right: parent.right; leftMargin: Theme.paddingSmall; rightMargin: Theme.paddingSmall }
                     title: qsTr("GitHub Repository")
                     contentFont.underline: true
                     text: "https://github.com/Dax89/harbour-webpirate";
@@ -140,6 +148,25 @@ Page
 
                         onClicked: {
                             urlRequested(lblrepository.text);
+                            pageStack.pop();
+                        }
+                    }
+                }
+
+                InfoLabel
+                {
+                    id: lbltranslationplatform
+                    anchors { left: parent.left; top: lblrepository.bottom; right: parent.right; leftMargin: Theme.paddingSmall; rightMargin: Theme.paddingSmall }
+                    title: qsTr("Translation Platform")
+                    contentFont.underline: true
+                    text: "https://www.transifex.com/projects/p/webpirate";
+
+                    MouseArea
+                    {
+                        anchors.fill: parent
+
+                        onClicked: {
+                            urlRequested(lbltranslationplatform.text);
                             pageStack.pop();
                         }
                     }
