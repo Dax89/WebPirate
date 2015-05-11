@@ -11,7 +11,7 @@ Page
     signal rulesDownloaded()
 
     id: adblockdownloaderpage
-    allowedOrientations: Orientation.All
+    allowedOrientations: defaultAllowedOrientations
 
     AdBlockDownloader
     {

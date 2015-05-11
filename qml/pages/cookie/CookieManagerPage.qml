@@ -8,7 +8,7 @@ Page
     property Settings settings
 
     id: pagecookiemanager
-    allowedOrientations: Orientation.All
+    allowedOrientations: defaultAllowedOrientations
     Component.onCompleted: settings.cookiejar.load()
     Component.onDestruction: settings.cookiejar.unload()
 

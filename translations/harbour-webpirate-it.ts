@@ -81,11 +81,11 @@
     </message>
     <message>
         <source>Icon Designer</source>
-        <translation type="unfinished"></translation>
+        <translation>Designer dell&apos;icona</translation>
     </message>
     <message>
         <source>Translation Platform</source>
-        <translation type="unfinished"></translation>
+        <translation>Piattaforma di Localizzazione</translation>
     </message>
 </context>
 <context>
@@ -148,7 +148,7 @@
     </message>
     <message>
         <source>Download</source>
-        <translation>Scarica</translation>
+        <translation>Download</translation>
     </message>
     <message>
         <source>Closed Tab</source>

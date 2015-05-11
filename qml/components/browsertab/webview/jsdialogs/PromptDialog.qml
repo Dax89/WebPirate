@@ -8,7 +8,7 @@ Dialog
     property alias textField: tfprompt.text
 
     id: promptdialog
-    allowedOrientations: Orientation.All
+    allowedOrientations: defaultAllowedOrientations
     acceptDestinationAction: PageStackAction.Pop
     canAccept: true
     onAccepted: promptModel.accept(tfprompt.text)

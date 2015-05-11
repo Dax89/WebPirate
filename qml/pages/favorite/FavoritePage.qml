@@ -13,7 +13,7 @@ Dialog
     property alias url: tfurl.text
 
     id: dlgbookmark
-    allowedOrientations: Orientation.All
+    allowedOrientations: defaultAllowedOrientations
     acceptDestinationAction: PageStackAction.Pop
     canAccept: false
 

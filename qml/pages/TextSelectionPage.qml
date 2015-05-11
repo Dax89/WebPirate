@@ -6,7 +6,7 @@ Dialog
 {
     property alias text: textarea.text
 
-    allowedOrientations: Orientation.All
+    allowedOrientations: defaultAllowedOrientations
     acceptDestinationAction: PageStackAction.Pop
     canAccept: true
 

@@ -13,7 +13,7 @@ Page
     property Page rootPage
 
     id: favoritespage
-    allowedOrientations: Orientation.All
+    allowedOrientations: defaultAllowedOrientations
 
     RemorsePopup { id: remorsepopup }
     PopupMessage { id: popupmessage; anchors { left: parent.left; top: parent.top; right: parent.right } }

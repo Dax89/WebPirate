@@ -9,7 +9,7 @@ Dialog
     property alias rule: cbrule.currentIndex
 
     id: popupruledialog
-    allowedOrientations: Orientation.All
+    allowedOrientations: defaultAllowedOrientations
     acceptDestinationAction: PageStackAction.Pop
     canAccept: tfurl.text.length && UrlHelper.isUrl(tfurl.text) && (cbrule.currentIndex > -1)
 

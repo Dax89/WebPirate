@@ -13,7 +13,7 @@ Page
                                                              readonly property int categoryId: settings.coveractions.webPageCategoryId } ]
 
     id: coversettingspage
-    allowedOrientations: Orientation.All
+    allowedOrientations: defaultAllowedOrientations
 
     SilicaFlickable
     {

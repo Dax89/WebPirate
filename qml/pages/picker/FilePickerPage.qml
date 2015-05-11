@@ -23,7 +23,7 @@ Page
     }
 
     id: filepickerpage
-    allowedOrientations: Orientation.All
+    allowedOrientations: defaultAllowedOrientations
 
     Component.onDestruction: {
         if(!filepickerpageprivate.isFilePicked)

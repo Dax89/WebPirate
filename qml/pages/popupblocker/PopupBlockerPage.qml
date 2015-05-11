@@ -11,7 +11,7 @@ Page
     property TabView tabView
 
     id: popupblockerpage
-    allowedOrientations: Orientation.All
+    allowedOrientations: defaultAllowedOrientations
 
 
     SilicaFlickable

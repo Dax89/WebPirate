@@ -49,7 +49,7 @@ Page
     signal urlRequested(string url)
 
     id: aboutpage
-    allowedOrientations: Orientation.All
+    allowedOrientations: defaultAllowedOrientations
 
     SilicaFlickable
     {

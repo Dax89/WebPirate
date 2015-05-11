@@ -5,7 +5,7 @@ Dialog
 {
     property var authenticationModel
 
-    allowedOrientations: Orientation.All
+    allowedOrientations: defaultAllowedOrientations
     acceptDestinationAction: PageStackAction.Pop
     canAccept: true
     onAccepted: authenticationModel.accept(tfuser.text, tfpassword.text)

@@ -13,7 +13,7 @@ Dialog
     property Settings settings
 
     id: dlgsettings
-    allowedOrientations: Orientation.All
+    allowedOrientations: defaultAllowedOrientations
     acceptDestinationAction: PageStackAction.Pop
     canAccept: true
 

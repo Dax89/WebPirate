@@ -91,7 +91,7 @@ ApplicationWindow
     default property alias settings: settings
 
     id: mainwindow
-    allowedOrientations: Orientation.All
+    allowedOrientations: defaultAllowedOrientations
     initialPage: Component { MainPage { } }
     cover: null
 

@@ -40,7 +40,7 @@ Dialog
     }
 
     id: dlgcookie
-    allowedOrientations: Orientation.All
+    allowedOrientations: defaultAllowedOrientations
     acceptDestinationAction: PageStackAction.Pop
     canAccept: false
     onAccepted: updateCookieData()

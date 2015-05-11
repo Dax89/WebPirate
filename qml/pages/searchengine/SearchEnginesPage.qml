@@ -11,7 +11,7 @@ Page
     signal defaultEngineChanged(int newindex)
 
     id: dlgsearchengines
-    allowedOrientations: Orientation.All
+    allowedOrientations: defaultAllowedOrientations
 
     SilicaFlickable
     {

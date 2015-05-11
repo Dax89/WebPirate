@@ -11,7 +11,7 @@ Page
     property PopupModel popupmodel: PopupModel { }
 
     id: popupmanagerpage
-    allowedOrientations: Orientation.All
+    allowedOrientations: defaultAllowedOrientations
     Component.onCompleted: PopupBlocker.fetchAll(Database.instance(), popupmodel)
 
     RemorsePopup { id: remorsepopup }

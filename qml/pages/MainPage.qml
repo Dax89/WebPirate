@@ -39,7 +39,7 @@ import "../js/settings/Sessions.js" as Sessions
 Page
 {
     id: mainpage
-    allowedOrientations: Orientation.All
+    allowedOrientations: defaultAllowedOrientations
 
     Connections
     {
@@ -52,20 +52,6 @@ Page
                 tabview.header.solidify();
         }
     }
-
-    /*
-    Connections
-    {
-        target: webpirateservice
-
-        onUrlRequested: {
-            tabview.addTab(url);
-
-            if(!mainwindow.applicationActive)
-                mainwindow.activate();
-        }
-    }
-    */
 
     Connections
     {

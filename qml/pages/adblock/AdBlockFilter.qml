@@ -8,7 +8,7 @@ Dialog
     property AdBlockEditor adblockeditor
 
     id: dlgadblockfilter
-    allowedOrientations: Orientation.All
+    allowedOrientations: defaultAllowedOrientations
     acceptDestinationAction: PageStackAction.Pop
     canAccept: tffilter.text.length > 0
 

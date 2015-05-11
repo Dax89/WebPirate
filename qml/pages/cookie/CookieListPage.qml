@@ -19,7 +19,7 @@ Page
     }
 
     id: pagecookielist
-    allowedOrientations: Orientation.All
+    allowedOrientations: defaultAllowedOrientations
 
     SilicaListView
     {

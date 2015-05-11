@@ -13,7 +13,7 @@ Dialog
     }
 
     id: adblockpage
-    allowedOrientations: Orientation.All
+    allowedOrientations: defaultAllowedOrientations
     acceptDestinationAction: PageStackAction.Pop
     onAccepted: adblockeditor.saveFilters()
 

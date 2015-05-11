@@ -8,7 +8,7 @@ Page
     property Settings settings
 
     id: downloadpage
-    allowedOrientations: Orientation.All
+    allowedOrientations: defaultAllowedOrientations
 
     SilicaFlickable
     {

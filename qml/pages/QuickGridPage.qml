@@ -13,7 +13,7 @@ Dialog
 
     id: quickgridpage
 
-    allowedOrientations: Orientation.All
+    allowedOrientations: defaultAllowedOrientations
     acceptDestinationAction: PageStackAction.Pop
     canAccept: (tftitle.text.length > 0) && (tfurl.text.length > 0)
 

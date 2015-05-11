@@ -12,7 +12,7 @@ Dialog
 
     property alias sessionName: tfsessionname.text
 
-    allowedOrientations: Orientation.All
+    allowedOrientations: defaultAllowedOrientations
     acceptDestinationAction: PageStackAction.Pop
     canAccept: tfsessionname.text.length > 0
     onAccepted: Sessions.update(sessionId, tfsessionname.text, tsautoload.checked, tsreplacecurrent.checked)

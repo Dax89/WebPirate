@@ -8,7 +8,7 @@ Dialog
 {
     property TabView tabView
 
-    allowedOrientations: Orientation.All
+    allowedOrientations: defaultAllowedOrientations
     acceptDestinationAction: PageStackAction.Pop
     canAccept: tfsessionname.text.length > 0
     onAccepted: Sessions.save(tfsessionname.text, tabView.tabs, tabView.currentIndex, tsautoload.checked, tsreplacecurrent.checked)

@@ -8,7 +8,7 @@ Page
     property TabView tabView
 
     id: closedtabspage
-    allowedOrientations: Orientation.All
+    allowedOrientations: defaultAllowedOrientations
 
     function openTab(url, index) {
         tabView.addTab(url);

@@ -11,7 +11,7 @@ Page
     property HistoryModel historyModel: HistoryModel { }
 
     id: navigationhistorypage
-    allowedOrientations: Orientation.All
+    allowedOrientations: defaultAllowedOrientations
     Component.onCompleted: History.fetchAll(historyModel);
 
     RemorsePopup { id: remorsepopup }

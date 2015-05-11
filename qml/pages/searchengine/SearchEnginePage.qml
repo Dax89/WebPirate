@@ -13,7 +13,7 @@ Dialog
     property string query
 
     id: dlgsearchengine
-    allowedOrientations: Orientation.All
+    allowedOrientations: defaultAllowedOrientations
     acceptDestinationAction: PageStackAction.Pop
     canAccept: true
 
