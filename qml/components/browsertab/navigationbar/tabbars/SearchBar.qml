@@ -1,6 +1,5 @@
 import QtQuick 2.1
 import QtWebKit 3.0
-import QtWebKit.experimental 1.0
 import Sailfish.Silica 1.0
 import ".."
 
@@ -41,9 +40,9 @@ BrowserBar
             width: Theme.itemSizeExtraSmall
             rotation: 180
 
-            onClicked: webview.experimental.findText(searchfield.text, WebViewExperimental.FindBackward |
-                                                                       WebViewExperimental.FindHighlightAllOccurrences |
-                                                                       WebViewExperimental.FindWrapsAroundDocument);
+            onClicked: webview.experimental.findText(searchfield.text, 0xE); /* WebViewExperimental.FindBackward |
+                                                                                WebViewExperimental.FindHighlightAllOccurrences |
+                                                                                WebViewExperimental.FindWrapsAroundDocument */
         }
 
         IconButton
@@ -54,8 +53,8 @@ BrowserBar
             anchors.verticalCenter: parent.verticalCenter
             width: Theme.itemSizeExtraSmall
 
-            onClicked: webview.experimental.findText(searchfield.text, WebViewExperimental.FindHighlightAllOccurrences |
-                                                                       WebViewExperimental.FindWrapsAroundDocument)
+            onClicked: webview.experimental.findText(searchfield.text, 0xC); /* WebViewExperimental.FindHighlightAllOccurrences |
+                                                                                WebViewExperimental.FindWrapsAroundDocument */
         }
 
         IconButton
