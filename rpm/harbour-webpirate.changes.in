@@ -8,6 +8,13 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* ??? May ?? 2015 Antonio Davide Trogu <trogu.davide@gmail.com> 1.0-1
+- BUGFIX: Broken Edge Swipes in Landscape in Äijänpäivänjärvi
+- Implemented Vimeo Grabber
+- Dropped QtSystemInfo (now WebPirate should pass Harbour validation :) )
+- Cleaned Source Code
+- Minor UI Fixes
+
 * Fri Apr 24 2015 Antonio Davide Trogu <trogu.davide@gmail.com> 0.9.9-1
 - Implemented tel: protocol
 - Implemented sms: protocol
