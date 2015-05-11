@@ -98,9 +98,19 @@ Item
         function playVimeoVideo(data) {
             tabheader.solidify();
             navigationbar.solidify();
-            viewstack.push(Qt.resolvedUrl("../views/browserplayer/BrowserPlayer.qml"), "mediaplayer", { "videoSource": data.videourl,
-                                                                                                        "videoThumbnail": data.thumbnail,
-                                                                                                        "videoTitle": data.title });
+
+            var grabber = viewstack.push(Qt.resolvedUrl("../views/browserplayer/BrowserGrabber.qml"), "mediagrabber", { "grabFailed": data.videos.length <= 0,
+                                                                                                                        "grabResult": data.videos.length <= 0 ? qsTr("FAILED") : "OK",
+                                                                                                                        "videoTitle": data.title,
+                                                                                                                        "videoAuthor": data.author,
+                                                                                                                        "videoThumbnail": data.thumbnail,
+                                                                                                                        "videoDuration": data.duration });
+
+            for(var i = 0; i < data.videos.length; i++)
+            {
+                var video = data.videos[i];
+                grabber.addVideo(qsTr("Codec") + ": " + video.type, mainwindow.settings.mimedatabase.mimeFromUrl(video.url), video.url);
+            }
         }
 
         function onWindowOpen(data) {
