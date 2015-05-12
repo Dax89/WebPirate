@@ -25,6 +25,7 @@ WebViewDialog
             horizontalAlignment: Text.AlignLeft
             verticalAlignment: Text.AlignVCenter
             font.pixelSize: Theme.fontSizeSmall
+            elide: Text.ElideRight
             text: model.text
         }
 
