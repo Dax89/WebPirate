@@ -4,17 +4,40 @@
 #include <QObject>
 #include <QMetaObject>
 #include <QMetaProperty>
-#include <QtWebKit/private/qwebdownloaditem_p.h>
 #include "abstractdownloaditem.h"
+
+/* MOC needs this, otherwise 'webkit-private' is needed in order to connect failed() signal */
+class QWebDownloadItem: public QObject
+{
+    Q_OBJECT
+
+    Q_ENUMS(DownloadError)
+
+    private:
+        explicit QWebDownloadItem(QObject* = 0) { }
+
+    public:
+        enum DownloadError {
+            Aborted = 0,
+            CannotWriteToFile,
+            CannotOpenFile,
+            DestinationAlreadyExists,
+            Cancelled,
+            CannotDetermineFilename,
+            NetworkFailure
+        };
+};
 
 class WebViewDownloadItem : public AbstractDownloadItem
 {
     Q_OBJECT
 
     public:
-        explicit WebViewDownloadItem(QWebDownloadItem* downloaditem, QObject *parent = 0);
+        explicit WebViewDownloadItem(QObject *downloaditem, QObject *parent = 0);
 
     private:
+        QVariant getProperty(const QObject* obj, const char* name) const ;
+        bool setProperty(QObject* obj, const char* name, QVariant value) const ;
         void removeFile();
 
     public:
@@ -27,7 +50,7 @@ class WebViewDownloadItem : public AbstractDownloadItem
         void onDownloadFailed(QWebDownloadItem::DownloadError, const QUrl&, const QString& description);
 
     private:
-        QWebDownloadItem* _downloaditem;
+        QObject* _downloaditem;
 };
 
 #endif // WEBVIEWDOWNLOADITEM_H

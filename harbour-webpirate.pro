@@ -12,7 +12,7 @@
 # The name of your application
 TARGET = harbour-webpirate
 
-QT += sql dbus webkit-private
+QT += sql dbus
 CONFIG += sailfishapp
 PKGCONFIG += libcrypto
 
