@@ -22,7 +22,7 @@ Dialog
         anchors.fill: parent
 
         DialogHeader {
-            title: qsTr("Save")
+            acceptText: qsTr("Save")
         }
 
         TextField
