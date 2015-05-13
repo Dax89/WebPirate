@@ -1,4 +1,5 @@
 import QtQuick 2.1
+import Sailfish.Silica 1.0
 import "../../../js/settings/Database.js" as Database
 import "../../../js/settings/Credentials.js" as Credentials
 import "../../../js/settings/PopupBlocker.js" as PopupBlocker
@@ -13,6 +14,7 @@ Item
         readonly property var dispatcher: { "console_log": onConsoleLog,
                                             "console_error": onConsoleError,
                                             "touchstart": onTouchStart,
+                                            /* "touchmove": onTouchMove, */
                                             "longpress": onLongPress,
                                             "submit": onFormSubmit,
                                             "selector_touch": onSelectorTouched,
@@ -36,6 +38,19 @@ Item
             actionbar.evaporate();
             sidebar.collapse();
         }
+
+        /*
+        function onTouchMove(data) {
+            if(data.moveup) {
+                navigationbar.evaporate();
+                tabheader.evaporate();
+            }
+            else if(data.movedown) {
+                navigationbar.solidify();
+                tabheader.solidify();
+            }
+        }
+        */
 
         function onLongPress(data) {
             credentialdialog.hide();

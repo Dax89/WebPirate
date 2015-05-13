@@ -1,5 +1,6 @@
 var __webpirate__ = {
     timerid: -1,
+    lastY: -1,
     islongpress: false,
     currtouch: null,
 
@@ -70,6 +71,8 @@ var __webpirate__ = {
     },
 
     onTouchStart: function(touchevent) {
+        __webpirate__.lastY = touchevent.touches[0].clientY;
+
         if(touchevent.touches.length === 1)
         {
             __webpirate__.currtouch = touchevent.touches[0];
@@ -99,8 +102,9 @@ var __webpirate__ = {
             touchevent.preventDefault();
         }
 
-        __webpirate__.currtouch = null;
         clearTimeout(__webpirate__.timerid);
+        __webpirate__.lasty = touchevent.touches[0].clientY;
+        __webpirate__.currtouch = null;
     },
 
     onTouchMove: function(touchevent) {
@@ -112,6 +116,22 @@ var __webpirate__ = {
 
         clearTimeout(__webpirate__.timerid);
         __webpirate__.currtouch = null;
+
+        if(touchevent.touches.length !== 1)
+            return;
+
+        var currenty = touchevent.touches[0].clientY;
+
+        if(currenty === __webpirate__.lastY)
+            return;
+
+        var data = new Object;
+        data.type = "touchmove";
+        data.moveup = (currenty < __webpirate__.lastY);
+        data.movedown = (currenty > __webpirate__.lastY);
+
+        navigator.qt.postMessage(JSON.stringify(data));
+        __webpirate__.lastY = currenty;
     },
 
     onClick: function(event) {

@@ -240,7 +240,9 @@ SilicaWebView
         browsertab.state = "webbrowser";
     }
 
-    onTitleChanged: navigationbar.queryBar.title = title;
+    onTitleChanged: {
+        navigationbar.queryBar.title = title;
+    }
 
     onVerticalVelocityChanged: {
         if(!visible)
@@ -250,7 +252,7 @@ SilicaWebView
         {
             navigationbar.solidify();
 
-            if((Math.abs(verticalVelocity) > Screen.height) || (contentY <= 0)) /* Catch Page's begin and QuickScroll: make TabHeader solid, if needed */
+            if((Math.abs(verticalVelocity) > Screen.height) || (contentY <= 0)) // Catch Page's begin and QuickScroll: make TabHeader solid, if needed
                 tabheader.solidify();
         }
         else if(verticalVelocity > 0)
