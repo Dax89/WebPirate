@@ -8,10 +8,10 @@ Features
 - Login data can be saved so the Browser can compile the fields for you
 - Delete Personal Data (Navigation History, Cache, Login Data, Cookies) on exit.
 - Favorites can be Imported and Exported, Folder support available too.
-- Integrated YouTube and Dailymotion Player/Grabber
+- Integrated YouTube, Dailymotion and Vimeo Player/Grabber
 - "Find in Page" support
 - Integrated Media Player
-- Share Links on Facebook/Twitter/Google+
+- Integration with SailfishOS accounts
 - File Upload
 - Session Management
 - Simple AdBlocking system
@@ -19,11 +19,6 @@ Features
 - Closed tabs can be recovered
 - Night Mode
 - Cookie Management
-
-Planned Features
------
-- Page's content reflow
-- Do you want more? Just ask! :)
 
 Translation
 -----

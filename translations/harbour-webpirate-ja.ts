@@ -891,10 +891,6 @@
 <context>
     <name>QuickGrid</name>
     <message>
-        <source>The QuickGrid is empty</source>
-        <translation type="vanished">クイックグリッドに登録サイトが無</translation>
-    </message>
-    <message>
         <source>Long Press to edit</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1171,10 +1167,6 @@
 </context>
 <context>
     <name>TextSelectionPage</name>
-    <message>
-        <source>Done</source>
-        <translation type="vanished">完了</translation>
-    </message>
     <message>
         <source>Copy</source>
         <translation type="unfinished"></translation>

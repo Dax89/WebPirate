@@ -81,11 +81,11 @@
     </message>
     <message>
         <source>Icon Designer</source>
-        <translation type="unfinished"></translation>
+        <translation>Создатель иконки</translation>
     </message>
     <message>
         <source>Translation Platform</source>
-        <translation type="unfinished"></translation>
+        <translation>Платформа перевода</translation>
     </message>
 </context>
 <context>
@@ -390,7 +390,7 @@
     <name>CookieManagerPage</name>
     <message>
         <source>Cookie Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Cookie менеджер</translation>
     </message>
     <message>
         <source>Filter</source>
@@ -406,7 +406,7 @@
     </message>
     <message>
         <source>Add Cookie</source>
-        <translation type="unfinished">Добавить Cookie</translation>
+        <translation>Добавить Cookie</translation>
     </message>
 </context>
 <context>
@@ -421,7 +421,7 @@
     </message>
     <message>
         <source>Domain</source>
-        <translation type="unfinished"></translation>
+        <translation>Домен</translation>
     </message>
     <message>
         <source>Path</source>
@@ -429,7 +429,7 @@
     </message>
     <message>
         <source>Value</source>
-        <translation type="unfinished"></translation>
+        <translation>Значение</translation>
     </message>
     <message>
         <source>Expires</source>
@@ -891,10 +891,6 @@
 <context>
     <name>QuickGrid</name>
     <message>
-        <source>The QuickGrid is empty</source>
-        <translation type="vanished">Страница быстрого доступа пустая</translation>
-    </message>
-    <message>
         <source>Long Press to edit</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1130,7 +1126,7 @@
     </message>
     <message>
         <source>Removing cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>Удаление Cookies</translation>
     </message>
     <message>
         <source>Keep Favicons when deleting personal data</source>
@@ -1170,12 +1166,8 @@
 <context>
     <name>TextSelectionPage</name>
     <message>
-        <source>Done</source>
-        <translation type="vanished">Готово</translation>
-    </message>
-    <message>
         <source>Copy</source>
-        <translation type="unfinished"></translation>
+        <translation>Копировать</translation>
     </message>
 </context>
 <context>

@@ -891,10 +891,6 @@
 <context>
     <name>QuickGrid</name>
     <message>
-        <source>The QuickGrid is empty</source>
-        <translation type="vanished">Rychlá volba je prázdná</translation>
-    </message>
-    <message>
         <source>Long Press to edit</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1169,10 +1165,6 @@
 </context>
 <context>
     <name>TextSelectionPage</name>
-    <message>
-        <source>Done</source>
-        <translation type="vanished">Dokončeno</translation>
-    </message>
     <message>
         <source>Copy</source>
         <translation type="unfinished"></translation>

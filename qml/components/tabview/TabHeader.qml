@@ -67,7 +67,7 @@ Rectangle
             IconButton
             {
                 id: btnplus
-                icon.source: "image://theme/icon-m-add"
+                icon.source: "qrc:///res/add.png"
                 width: Theme.iconSizeMedium
                 height: Theme.iconSizeMedium
                 onClicked: tabview.addTab(mainwindow.settings.homepage)

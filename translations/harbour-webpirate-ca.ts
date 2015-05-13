@@ -891,10 +891,6 @@
 <context>
     <name>QuickGrid</name>
     <message>
-        <source>The QuickGrid is empty</source>
-        <translation type="vanished">La reixeta és buida</translation>
-    </message>
-    <message>
         <source>Long Press to edit</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1126,11 +1122,11 @@
     </message>
     <message>
         <source>Delete Cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>Elimina les galetes</translation>
     </message>
     <message>
         <source>Removing cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;estan eliminant les galetes</translation>
     </message>
     <message>
         <source>Keep Favicons when deleting personal data</source>
@@ -1169,10 +1165,6 @@
 </context>
 <context>
     <name>TextSelectionPage</name>
-    <message>
-        <source>Done</source>
-        <translation type="vanished">Fet</translation>
-    </message>
     <message>
         <source>Copy</source>
         <translation type="unfinished"></translation>

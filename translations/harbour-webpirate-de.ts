@@ -891,16 +891,12 @@
 <context>
     <name>QuickGrid</name>
     <message>
-        <source>The QuickGrid is empty</source>
-        <translation type="vanished">Der Schnellstarter ist leer</translation>
-    </message>
-    <message>
         <source>Long Press to edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Zum Bearbeiten gedrückt halten</translation>
     </message>
     <message>
         <source>The Quick Grid is empty</source>
-        <translation type="unfinished"></translation>
+        <translation>Der Schnellstarter ist leer</translation>
     </message>
 </context>
 <context>
@@ -1134,7 +1130,7 @@
     </message>
     <message>
         <source>Keep Favicons when deleting personal data</source>
-        <translation type="unfinished"></translation>
+        <translation>Favicons beim Löschen der privaten Daten erhalten</translation>
     </message>
 </context>
 <context>
@@ -1170,12 +1166,8 @@
 <context>
     <name>TextSelectionPage</name>
     <message>
-        <source>Done</source>
-        <translation type="vanished">Erledigt</translation>
-    </message>
-    <message>
         <source>Copy</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopieren</translation>
     </message>
 </context>
 <context>

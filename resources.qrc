@@ -10,5 +10,6 @@
         <file>res/back.png</file>
         <file>res/forward.png</file>
         <file>res/cookies.png</file>
+        <file>res/add.png</file>
     </qresource>
 </RCC>

@@ -891,16 +891,12 @@
 <context>
     <name>QuickGrid</name>
     <message>
-        <source>The QuickGrid is empty</source>
-        <translation type="vanished">Snabbstartfältet är tomt</translation>
-    </message>
-    <message>
         <source>Long Press to edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Långtryck för att redigera</translation>
     </message>
     <message>
         <source>The Quick Grid is empty</source>
-        <translation type="unfinished"></translation>
+        <translation>Snabbstartfältet är tomt</translation>
     </message>
 </context>
 <context>
@@ -1134,7 +1130,7 @@
     </message>
     <message>
         <source>Keep Favicons when deleting personal data</source>
-        <translation type="unfinished"></translation>
+        <translation>Behåll favoritikoner när pesronlig data tas bort</translation>
     </message>
 </context>
 <context>
@@ -1170,12 +1166,8 @@
 <context>
     <name>TextSelectionPage</name>
     <message>
-        <source>Done</source>
-        <translation type="vanished">Klar</translation>
-    </message>
-    <message>
         <source>Copy</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopiera</translation>
     </message>
 </context>
 <context>

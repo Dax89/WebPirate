@@ -891,16 +891,12 @@
 <context>
     <name>QuickGrid</name>
     <message>
-        <source>The QuickGrid is empty</source>
-        <translation type="vanished">De Snelkiezer is leeg</translation>
-    </message>
-    <message>
         <source>Long Press to edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Lang ingedrukt houden om te bewerken</translation>
     </message>
     <message>
         <source>The Quick Grid is empty</source>
-        <translation type="unfinished"></translation>
+        <translation>De Snelkiezer is leeg</translation>
     </message>
 </context>
 <context>
@@ -1170,12 +1166,8 @@
 <context>
     <name>TextSelectionPage</name>
     <message>
-        <source>Done</source>
-        <translation type="vanished">Klaar</translation>
-    </message>
-    <message>
         <source>Copy</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopiëren</translation>
     </message>
 </context>
 <context>

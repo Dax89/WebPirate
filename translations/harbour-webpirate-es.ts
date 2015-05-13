@@ -892,10 +892,6 @@
 <context>
     <name>QuickGrid</name>
     <message>
-        <source>The QuickGrid is empty</source>
-        <translation type="vanished">La rejilla rápida está vacía</translation>
-    </message>
-    <message>
         <source>Long Press to edit</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1127,11 +1123,11 @@
     </message>
     <message>
         <source>Delete Cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>Borrar cookies</translation>
     </message>
     <message>
         <source>Removing cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>Borrando cookies</translation>
     </message>
     <message>
         <source>Keep Favicons when deleting personal data</source>
@@ -1170,10 +1166,6 @@
 </context>
 <context>
     <name>TextSelectionPage</name>
-    <message>
-        <source>Done</source>
-        <translation type="vanished">Hecho</translation>
-    </message>
     <message>
         <source>Copy</source>
         <translation type="unfinished"></translation>
