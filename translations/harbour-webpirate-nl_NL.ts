@@ -1130,7 +1130,7 @@
     </message>
     <message>
         <source>Keep Favicons when deleting personal data</source>
-        <translation type="unfinished"></translation>
+        <translation>Favicons bewaren bij het verwijderen van persoonlijke gegevens</translation>
     </message>
 </context>
 <context>

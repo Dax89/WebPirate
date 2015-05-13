@@ -81,11 +81,11 @@
     </message>
     <message>
         <source>Icon Designer</source>
-        <translation type="unfinished"></translation>
+        <translation>Diseñador del icono</translation>
     </message>
     <message>
         <source>Translation Platform</source>
-        <translation type="unfinished"></translation>
+        <translation>Plataforma de traducción</translation>
     </message>
 </context>
 <context>
@@ -893,11 +893,11 @@
     <name>QuickGrid</name>
     <message>
         <source>Long Press to edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Mantener pulsado para editar</translation>
     </message>
     <message>
         <source>The Quick Grid is empty</source>
-        <translation type="unfinished"></translation>
+        <translation>La rejilla rápida está vacía</translation>
     </message>
 </context>
 <context>
@@ -1131,7 +1131,7 @@
     </message>
     <message>
         <source>Keep Favicons when deleting personal data</source>
-        <translation type="unfinished"></translation>
+        <translation>Mantener los iconos de los Favoritos cuando se borren los datos personales</translation>
     </message>
 </context>
 <context>
@@ -1168,7 +1168,7 @@
     <name>TextSelectionPage</name>
     <message>
         <source>Copy</source>
-        <translation type="unfinished"></translation>
+        <translation>Copiar</translation>
     </message>
 </context>
 <context>

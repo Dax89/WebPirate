@@ -16,16 +16,7 @@ var __wp_forcepixelratio__ = {
         var viewport = document.querySelector("meta[name='viewport']");
 
         if(!viewport)
-        {
-            var heads = document.getElementsByTagName("head");
-
-            if((heads.length <= 0) || !heads[0])
-                return;
-
-            viewport = document.createElement("meta");
-            viewport.name = "viewport";
-            heads[0].appendChild(viewport);
-        }
+            return;
 
         if(screen.width <= 540) /* Jolla devicePixelRatio: 1.5 */
             viewport.content = "width=device-width/1.5, minimum-scale=1.5, initial-scale=1.5";

@@ -81,11 +81,11 @@
     </message>
     <message>
         <source>Icon Designer</source>
-        <translation type="unfinished"></translation>
+        <translation>Oblikovalec ikone</translation>
     </message>
     <message>
         <source>Translation Platform</source>
-        <translation type="unfinished"></translation>
+        <translation>Platforma za prevajanje</translation>
     </message>
 </context>
 <context>
@@ -156,7 +156,7 @@
     </message>
     <message>
         <source>Cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>Piškotki</translation>
     </message>
 </context>
 <context>
@@ -368,72 +368,72 @@
     <name>CookieListItem</name>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Izbriši</translation>
+        <translation>Izbriši</translation>
     </message>
     <message>
         <source>Deleting Cookie</source>
-        <translation type="unfinished"></translation>
+        <translation>Brisanje piškotka</translation>
     </message>
 </context>
 <context>
     <name>CookieListPage</name>
     <message>
         <source>Cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>Piškotki</translation>
     </message>
     <message>
         <source>Add Cookie</source>
-        <translation type="unfinished"></translation>
+        <translation>Dodaj piškotek</translation>
     </message>
 </context>
 <context>
     <name>CookieManagerPage</name>
     <message>
         <source>Cookie Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Upravljanje piškotkov</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation type="unfinished">Filter</translation>
+        <translation>Filter</translation>
     </message>
     <message>
         <source>Remove All Cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>Odstrani vse piškotke</translation>
     </message>
     <message>
         <source>Removing Cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>Odstranjevanje piškotkov</translation>
     </message>
     <message>
         <source>Add Cookie</source>
-        <translation type="unfinished"></translation>
+        <translation>Dodaj piškotek</translation>
     </message>
 </context>
 <context>
     <name>CookiePage</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Shrani</translation>
+        <translation>Shrani</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="unfinished">Ime</translation>
+        <translation>Ime</translation>
     </message>
     <message>
         <source>Domain</source>
-        <translation type="unfinished"></translation>
+        <translation>Domena</translation>
     </message>
     <message>
         <source>Path</source>
-        <translation type="unfinished"></translation>
+        <translation>Pot</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation type="unfinished"></translation>
+        <translation>Vrednost</translation>
     </message>
     <message>
         <source>Expires</source>
-        <translation type="unfinished"></translation>
+        <translation>Potek</translation>
     </message>
 </context>
 <context>
@@ -517,22 +517,22 @@
     <name>DomainListItem</name>
     <message>
         <source>Cookies:</source>
-        <translation type="unfinished"></translation>
+        <translation>Piškotki:</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Izbriši</translation>
+        <translation>Izbriši</translation>
     </message>
     <message>
         <source>Deleting Cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>Brisanje piškotkov</translation>
     </message>
 </context>
 <context>
     <name>DownloadItem</name>
     <message>
         <source>Redirect Loop</source>
-        <translation type="unfinished"></translation>
+        <translation>Preusmeritvena zanka</translation>
     </message>
 </context>
 <context>
@@ -892,11 +892,11 @@
     <name>QuickGrid</name>
     <message>
         <source>Long Press to edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Za urejanje pritisnite in držite</translation>
     </message>
     <message>
         <source>The Quick Grid is empty</source>
-        <translation type="unfinished"></translation>
+        <translation>QuickGrid je prazen</translation>
     </message>
 </context>
 <context>
@@ -1122,15 +1122,15 @@
     </message>
     <message>
         <source>Delete Cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>Izbriši piškotke</translation>
     </message>
     <message>
         <source>Removing cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>Odstranjevanje piškotkov</translation>
     </message>
     <message>
         <source>Keep Favicons when deleting personal data</source>
-        <translation type="unfinished"></translation>
+        <translation>Pri brisanju osebnih podatkov ohrani ikono zaznamka</translation>
     </message>
 </context>
 <context>
@@ -1167,7 +1167,7 @@
     <name>TextSelectionPage</name>
     <message>
         <source>Copy</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopiraj</translation>
     </message>
 </context>
 <context>

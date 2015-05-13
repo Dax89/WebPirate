@@ -892,7 +892,7 @@
     <name>QuickGrid</name>
     <message>
         <source>Long Press to edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Удерживайте для редактирования</translation>
     </message>
     <message>
         <source>The Quick Grid is empty</source>
