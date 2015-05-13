@@ -54,7 +54,7 @@ Item
             id: placeholder
             anchors.fill: parent
             enabled: !editMode && (mainwindow.settings.quickgridmodel.count === 1)
-            text: qsTr("The QuickGrid is empty")
+            text: qsTr("The Quick Grid is empty") + "\n" + qsTr("Long Press to edit")
 
             MouseArea {
                 anchors.fill: parent

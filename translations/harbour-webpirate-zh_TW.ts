@@ -892,7 +892,15 @@
     <name>QuickGrid</name>
     <message>
         <source>The QuickGrid is empty</source>
-        <translation>無項目於快速啟動頁</translation>
+        <translation type="vanished">無項目於快速啟動頁</translation>
+    </message>
+    <message>
+        <source>Long Press to edit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>The Quick Grid is empty</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

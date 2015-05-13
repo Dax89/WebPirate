@@ -892,7 +892,15 @@
     <name>QuickGrid</name>
     <message>
         <source>The QuickGrid is empty</source>
-        <translation>未设置快速拨号</translation>
+        <translation type="vanished">未设置快速拨号</translation>
+    </message>
+    <message>
+        <source>Long Press to edit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>The Quick Grid is empty</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

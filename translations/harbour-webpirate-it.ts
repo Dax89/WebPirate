@@ -892,7 +892,15 @@
     <name>QuickGrid</name>
     <message>
         <source>The QuickGrid is empty</source>
-        <translation>La griglia è vuota</translation>
+        <translation type="vanished">La griglia è vuota</translation>
+    </message>
+    <message>
+        <source>Long Press to edit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>The Quick Grid is empty</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

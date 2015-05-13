@@ -892,7 +892,15 @@
     <name>QuickGrid</name>
     <message>
         <source>The QuickGrid is empty</source>
-        <translation>La reixeta és buida</translation>
+        <translation type="vanished">La reixeta és buida</translation>
+    </message>
+    <message>
+        <source>Long Press to edit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>The Quick Grid is empty</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

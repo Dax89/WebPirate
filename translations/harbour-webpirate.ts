@@ -891,7 +891,11 @@
 <context>
     <name>QuickGrid</name>
     <message>
-        <source>The QuickGrid is empty</source>
+        <source>Long Press to edit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>The Quick Grid is empty</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
