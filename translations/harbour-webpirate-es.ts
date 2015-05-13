@@ -1133,6 +1133,10 @@
         <source>Removing cookies</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Keep Favicons when deleting personal data</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ShareMenu</name>

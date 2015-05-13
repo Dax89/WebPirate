@@ -29,6 +29,7 @@ Dialog
             Database.transactionSet(tx, "searchengine", settings.searchengine);
             Database.transactionSet(tx, "useragent", settings.useragent);
             Database.transactionSet(tx, "clearonexit", settings.clearonexit);
+            Database.transactionSet(tx, "keepfavicons", settings.keepfavicons);
             Database.transactionSet(tx, "restoretabs", settings.restoretabs);
         });
     }
@@ -138,6 +139,18 @@ Dialog
                 }
             }
 
+            TextSwitch
+            {
+                id: swkeepicons
+                text: qsTr("Keep Favicons when deleting personal data")
+                width: parent.width
+                checked: settings.keepfavicons
+
+                onCheckedChanged: {
+                    settings.keepfavicons = checked;
+                }
+            }
+
             /*
             Item
             {
@@ -196,7 +209,7 @@ Dialog
 
                 onActionRequested: {
                     settings.webkitdatabase.clearCache();
-                    settings.webkitdatabase.clearNavigationData();
+                    settings.webkitdatabase.clearNavigationData(settings.keepfavicons);
                     Credentials.clear(Database.instance());
                     History.clear();
                 }

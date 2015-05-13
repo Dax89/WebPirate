@@ -17,7 +17,7 @@ class WebKitDatabase : public QObject
         void renameDatabase();
 
     public slots:
-        void clearNavigationData();
+        void clearNavigationData(bool keepfavicons);
         void clearCache();
 
     private:

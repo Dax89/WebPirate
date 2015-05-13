@@ -22,12 +22,29 @@ void WebKitDatabase::renameDatabase()
     }
 }
 
-void WebKitDatabase::clearNavigationData()
+void WebKitDatabase::clearNavigationData(bool keepfavicons)
 {
     QDir datadir = QDir(QStandardPaths::writableLocation(QStandardPaths::DataLocation));
 
     if(datadir.cd(WebKitDatabase::WEBKIT_DATABASE))
-        datadir.removeRecursively();
+    {
+        if(datadir.cd("Databases"))
+        {
+            datadir.removeRecursively();
+            datadir.cdUp();
+        }
+
+        if(datadir.cd("LocalStorage"))
+        {
+            datadir.removeRecursively();
+            datadir.cdUp();
+        }
+
+        datadir.remove("cookies.db");
+
+        if(!keepfavicons)
+            datadir.remove("WebpageIcons.db");
+    }
 }
 
 void WebKitDatabase::clearCache()

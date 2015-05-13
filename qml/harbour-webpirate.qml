@@ -82,6 +82,7 @@ ApplicationWindow
                 settings.useragent = (ua === false ? 0 : ua);
 
                 settings.adblockmanager.enabled = parseInt(Database.transactionGet(tx, "blockads"));
+                settings.keepfavicons = parseInt(Database.transactionGet(tx, "keepfavicons"));
                 settings.clearonexit = parseInt(Database.transactionGet(tx, "clearonexit"));
                 settings.restoretabs = parseInt(Database.transactionGet(tx, "restoretabs"));
             });
@@ -100,7 +101,7 @@ ApplicationWindow
 
         if(settings.clearonexit) {
             settings.webkitdatabase.clearCache();
-            settings.webkitdatabase.clearNavigationData();
+            settings.webkitdatabase.clearNavigationData(settings.keepfavicons);
             Credentials.clear(Database.instance());
             History.clear();
         }

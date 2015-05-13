@@ -187,7 +187,7 @@ Item
 
                        function execute() {
                            mainwindow.settings.webkitdatabase.clearCache();
-                           mainwindow.settings.webkitdatabase.clearNavigationData();
+                           mainwindow.settings.webkitdatabase.clearNavigationData(settings.keepfavicons);
                            Credentials.clear(Database.instance());
                            History.clear();
                        } } ]
