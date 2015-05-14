@@ -8,7 +8,9 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
-* Wed May 13 2015 Antonio Davide Trogu <trogu.davide@gmail.com> 1.0-1
+* Wed May 13 2015 Antonio Davide Trogu <trogu.davide@gmail.com> 1.0-2
+- Rev2: Updated Spanish, Dutch, Russian and Slovenian localizations
+- Rev2: Pixel Ratio Hack fixes
 - BUGFIX: Broken Edge Swipes in Landscape in Äijänpäivänjärvi
 - Allow to set different protocols as homepage (ftp, file and so on)
 - Now it is possible to keep Favicons when deleting personal data
