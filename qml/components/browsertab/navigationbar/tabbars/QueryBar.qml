@@ -31,7 +31,7 @@ Item
         id: queryfield
         anchors { left: parent.left; right: parent.right }
         font.pixelSize: Theme.fontSizeSmall
-        inputMethodHints: Qt.ImhNoAutoUppercase
+        inputMethodHints: Qt.ImhNoAutoUppercase | Qt.ImhNoPredictiveText
         placeholderText: qsTr("Search with") + " " + mainwindow.settings.searchengines.get(mainwindow.settings.searchengine).name
         labelVisible: false
 
