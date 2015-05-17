@@ -81,11 +81,11 @@
     </message>
     <message>
         <source>Icon Designer</source>
-        <translation type="unfinished"></translation>
+        <translation>Dissenyador d&apos;icones</translation>
     </message>
     <message>
         <source>Translation Platform</source>
-        <translation type="unfinished"></translation>
+        <translation>Plataforma de traducció</translation>
     </message>
 </context>
 <context>
@@ -892,11 +892,11 @@
     <name>QuickGrid</name>
     <message>
         <source>Long Press to edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Mantingueu premut per editar</translation>
     </message>
     <message>
         <source>The Quick Grid is empty</source>
-        <translation type="unfinished"></translation>
+        <translation>La reixeta ràpida està buida</translation>
     </message>
 </context>
 <context>
@@ -1130,7 +1130,7 @@
     </message>
     <message>
         <source>Keep Favicons when deleting personal data</source>
-        <translation type="unfinished"></translation>
+        <translation>Conserva les icones dels preferits quan s&apos;eliminin les dades personals</translation>
     </message>
 </context>
 <context>
@@ -1167,7 +1167,7 @@
     <name>TextSelectionPage</name>
     <message>
         <source>Copy</source>
-        <translation type="unfinished"></translation>
+        <translation>Copia</translation>
     </message>
 </context>
 <context>
