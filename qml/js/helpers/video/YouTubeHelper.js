@@ -49,7 +49,7 @@ var __wp_youtubehelper__ = {
     },
 
     getEmbeddedVideos: function() {
-        var iframes = document.querySelectorAll("iframe[class='youtube-player']");
+        var iframes = document.querySelectorAll("iframe[src*='www.youtube.com/embed/']");
 
         if(!iframes.length)
             return;
