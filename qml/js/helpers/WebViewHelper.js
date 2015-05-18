@@ -11,6 +11,23 @@ var __webpirate__ = {
         return element;
     },
 
+    findAnchorAncestor: function(element) {
+        var currelement = element
+
+        while(currelement)
+        {
+            if(currelement.tagName === "BODY")
+                return null;
+
+            if(currelement.tagName === "A")
+                break;
+
+            currelement = currelement.parentNode;
+        }
+
+        return currelement;
+    },
+
     checkLongPress: function(x, y, target) {
         __webpirate__.islongpress = true;
         var rect = target.getBoundingClientRect();
@@ -25,16 +42,12 @@ var __webpirate__ = {
         data.height = rect.height;
         data.title = "";
 
-        if(target.tagName === "A")
+        var anchorelement = __webpirate__.findAnchorAncestor(target);
+
+        if(anchorelement)
         {
-            data.title = target.textContent.length ? target.textContent : target.href;
-            data.url = target.href;
-            data.isimage = false;
-        }
-        else if(target.parentNode.tagName === 'A')
-        {
-            data.title = target.parentNode.textContent.length ? target.parentNode.textContent : target.parentNode.href;
-            data.url = target.parentNode.href;
+            data.title = anchorelement.textContent.length ? anchorelement.textContent : anchorelement.href;
+            data.url = anchorelement.href;
             data.isimage = false;
         }
         else if(target.tagName === "IMG")
