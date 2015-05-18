@@ -8,7 +8,7 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
-* Mon May 18 2015 Antonio Davide Trogu <trogu.davide@gmail.com> 1.0.1-1
+* Mon May 18 2015 Antonio Davide Trogu <trogu.davide@gmail.com> 1.1-1
 - REGRESSION FIX:  Relax filter when searching for embedded YouTube videos
 - WebViewHelper: Better <a> tag detection algorithm
 - Disable text predition in the address bar
