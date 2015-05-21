@@ -98,7 +98,7 @@ Page
                 if(newtab)
                     tabview.addTab(favoriteurl);
                 else
-                    tabview.tabsget(tabview.currentIndex).tab.load(favoriteurl);
+                    tabview.tabs.get(tabview.currentIndex).tab.load(favoriteurl);
             }
         }
     }
