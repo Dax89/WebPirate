@@ -46,7 +46,7 @@ var __webpirate__ = {
 
         if(anchorelement)
         {
-            data.title = anchorelement.textContent.length ? anchorelement.textContent : anchorelement.href;
+            data.title = target.textContent.length ? target.textContent.trim() : anchorelement.href;
             data.url = anchorelement.href;
             data.isimage = false;
         }
