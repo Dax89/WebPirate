@@ -35,6 +35,24 @@ int FavoritesManager::nearestPos(int a, int b)
     return b;
 }
 
+QString FavoritesManager::locateSailfishBrowserFavorites()
+{
+    QDir dir(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation));
+
+    if(!dir.cd("org.sailfishos"))
+        return QString();
+
+    if(!dir.cd("sailfish-browser"))
+        return QString();
+
+    QString bookmarkspath = dir.absoluteFilePath("bookmarks.json");
+
+    if(!QFile::exists(bookmarkspath))
+        return QString();
+
+    return bookmarkspath;
+}
+
 QString FavoritesManager::readFile(const QString &file)
 {
     QFile f(file);
@@ -127,6 +145,39 @@ void FavoritesManager::parseFolder(FavoriteItem* parentfolder, const QString& da
 
         pos = currpos;
     }
+}
+
+void FavoritesManager::importFromSailfishBrowser()
+{
+    QString s = this->locateSailfishBrowserFavorites();
+
+    if(s.isEmpty())
+    {
+        emit parsingError();
+        return;
+    }
+
+    QJsonDocument jsondoc = QJsonDocument::fromJson(this->readFile(s).toUtf8());
+    this->clearTree();
+
+    this->_root = new FavoriteItem(QString(), this);
+
+    if(!jsondoc.isArray())
+    {
+        this->clearTree();
+        emit parsingError();
+        return;
+    }
+
+    QJsonArray jsonarray = jsondoc.array();
+
+    for(int i = 0; i < jsonarray.count(); i++)
+    {
+        QJsonObject jsonobject = jsonarray.at(i).toObject();
+        this->_root->addFavorite(jsonobject["title"].toString(), jsonobject["url"].toString());
+    }
+
+    emit parsingCompleted();
 }
 
 void FavoritesManager::importFile(const QString &file)

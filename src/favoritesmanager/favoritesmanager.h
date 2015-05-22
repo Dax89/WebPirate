@@ -9,6 +9,9 @@
 #include <QDate>
 #include <QTextStream>
 #include <QStandardPaths>
+#include <QJsonDocument>
+#include <QJsonArray>
+#include <QJsonObject>
 #include "favoriteitem.h"
 
 class FavoritesManager : public QObject
@@ -26,6 +29,7 @@ class FavoritesManager : public QObject
 
     private:
         static int nearestPos(int a, int b);
+        QString locateSailfishBrowserFavorites();
         QString readFile(const QString &file);
         void writeHeader(QTextStream& ts);
         void exportBookmarks(FavoriteItem *parentitem, QTextStream& ts, int level);
@@ -33,6 +37,7 @@ class FavoritesManager : public QObject
         void parseFolder(FavoriteItem *parentfolder, const QString &data, const QString& name, int& currpos);
 
     public slots:
+        void importFromSailfishBrowser();
         void importFile(const QString &file);
         void createRoot();
         void exportFile(const QString& foldername);
@@ -40,6 +45,7 @@ class FavoritesManager : public QObject
 
     signals:
         void parsingCompleted();
+        void parsingError();
 
     private:
         FavoriteItem* _root;

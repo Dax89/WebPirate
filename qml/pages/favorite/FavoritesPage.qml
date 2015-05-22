@@ -27,6 +27,8 @@ Page
             favoritesmanager.clearTree();
             popupmessage.show(qsTr("Favorites imported successfully"))
         }
+
+        onParsingError: popupmessage.show(qsTr("Cannot import favorites"));
     }
 
     SilicaFlickable
@@ -66,11 +68,15 @@ Page
                 text: (folderId === 0) ? qsTr("Import") : (qsTr("Import in") + " '" + favoritesview.model.currentFolder() + "'")
 
                 onClicked: {
+                    pageStack.push(Qt.resolvedUrl("FavoritesImportPage.qml"), { "favoritesManager": favoritesmanager, "rootPage": favoritespage });
+
+                    /*
                     var page = pageStack.push(Qt.resolvedUrl("../picker/FilePickerPage.qml"), { "filter": "*.htm;*.html", "rootPage": favoritespage });
 
                     page.filePicked.connect(function(file) {
                         favoritesmanager.importFile(file);
                     });
+                    */
                 }
             }
 

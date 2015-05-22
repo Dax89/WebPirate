@@ -589,6 +589,21 @@
     </message>
 </context>
 <context>
+    <name>FavoritesImportPage</name>
+    <message>
+        <source>Import Favorites</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>From HTML File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>From Sailfish Browser</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>FavoritesPage</name>
     <message>
         <source>Add Folder</source>
@@ -633,6 +648,10 @@
     <message>
         <source>Deleting all favorites</source>
         <translation>正在删除所有书签</translation>
+    </message>
+    <message>
+        <source>Cannot import favorites</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
