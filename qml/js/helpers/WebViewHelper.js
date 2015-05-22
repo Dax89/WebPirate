@@ -148,9 +148,9 @@ var __webpirate__ = {
     },
 
     onClick: function(event) {
-        var target = event.target;
+        var target = __webpirate__.findAnchorAncestor(event.target);
 
-        if((target.tagName === "A") && target.hasAttribute("target"))
+        if(target && target.hasAttribute("target"))
         {
             var data = new Object;
             data.type = "newtab";
