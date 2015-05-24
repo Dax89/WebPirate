@@ -25,7 +25,7 @@ var __wp_videohelper__ = {
             }
 
             helper.getVideo();
-        }, 800);
+        }, 1000);
     },
 
     getEmbeddedVideos: function() {
