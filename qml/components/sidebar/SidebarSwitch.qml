@@ -38,7 +38,7 @@ BackgroundItem
             height: parent.height
             horizontalAlignment: Text.AlignLeft
             verticalAlignment: Text.AlignVCenter
-            font.pixelSize: Theme.fontSizeExtraSmall
+            font.pixelSize: Theme.fontSizeSmall
             elide: Text.ElideRight
         }
     }

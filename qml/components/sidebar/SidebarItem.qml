@@ -35,7 +35,7 @@ BackgroundItem
             width: sidebaritem.width - imgaction.width
             horizontalAlignment: Text.AlignLeft
             verticalAlignment: Text.AlignVCenter
-            font.pixelSize: Theme.fontSizeExtraSmall
+            font.pixelSize: Theme.fontSizeSmall
             elide: Text.ElideRight
 
             text: {
