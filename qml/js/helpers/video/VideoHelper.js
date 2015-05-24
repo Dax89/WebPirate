@@ -25,10 +25,11 @@ var __wp_videohelper__ = {
             }
 
             helper.getVideo();
-        }, 1000);
+        }, 800);
     },
 
     getEmbeddedVideos: function() {
         __wp_youtubehelper__.getEmbeddedVideos();
+        __wp_jwplayerhelper__.getEmbeddedVideos();
     }
 };
