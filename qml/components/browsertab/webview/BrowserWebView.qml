@@ -134,7 +134,7 @@ SilicaWebView
         var mime = mainwindow.settings.mimedatabase.mimeFromUrl(downloadItem.url);
         var mimeinfo = mime.split("/");
 
-        if(mimeinfo[0] === "video")
+        if(mimeinfo[0] === "video" || mimeinfo[0] === "audio")
         {
             viewstack.push(Qt.resolvedUrl("../views/browserplayer/BrowserPlayer.qml"), "mediaplayer", { "videoSource": downloadItem.url });
             return;
