@@ -18,11 +18,14 @@ Item
                                             "longpress": onLongPress,
                                             "submit": onFormSubmit,
                                             "selector_touch": onSelectorTouched,
+                                            "lock_download": lockDownload,
                                             "newtab": newTabRequested,
                                             "window_open": onWindowOpen,
+                                            "play_video": playVideo,
                                             "play_youtube": playYouTubeVideo,
                                             "play_dailymotion": playDailyMotionVideo,
-                                            "play_vimeo": playVimeoVideo }
+                                            "play_vimeo": playVimeoVideo,
+                                            "play_jwplayer": playJwPlayer }
 
         id: listenerprivate
 
@@ -31,7 +34,7 @@ Item
         }
 
         function onConsoleError(data) {
-            console.error(data.log);
+            console.log(data.log);
         }
 
         function onTouchStart(/* data */) {
@@ -80,8 +83,17 @@ Item
             webview.itemSelectorIndex = data.selectedIndex;
         }
 
+        function lockDownload(data) {
+            webview.lockDownload = true;
+            webview.lockDownloadAction = data.action;
+        }
+
         function newTabRequested(data) {
             tabview.addTab(data.url);
+        }
+
+        function playVideo(data) {
+            viewstack.push(Qt.resolvedUrl("../views/browserplayer/BrowserPlayer.qml"), "mediaplayer", { "videoSource": data.url });
         }
 
         function playYouTubeVideo(data) {
@@ -126,6 +138,10 @@ Item
                 var video = data.videos[i];
                 grabber.addVideo(qsTr("Codec") + ": " + video.type, mainwindow.settings.mimedatabase.mimeFromUrl(video.url), video.url);
             }
+        }
+
+        function playJwPlayer(data) {
+            viewstack.push(Qt.resolvedUrl("../views/browserplayer/BrowserPlayer.qml"), "mediaplayer", { "videoTitle": data.title, "videoSource": data.url });
         }
 
         function onWindowOpen(data) {

@@ -181,7 +181,8 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/components/items/cookie/CookieListItem.qml \
     qml/pages/cookie/CookiePage.qml \
     qml/components/browsertab/webview/UrlSchemeDelegateHandler.qml \
-    qml/pages/favorite/FavoritesImportPage.qml
+    qml/pages/favorite/FavoritesImportPage.qml \
+    qml/js/helpers/video/players/JWPlayerHelper.js
 
 # to disable building translations every time, comment out the
 # following CONFIG line

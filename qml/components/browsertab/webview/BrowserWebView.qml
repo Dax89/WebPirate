@@ -14,6 +14,8 @@ import "../../../js/YouTubeGrabber.js" as YouTubeGrabber
 
 SilicaWebView
 {
+    property string lockDownloadAction
+    property bool lockDownload: false  /* Manage Download Requests in a different way */
     property int itemSelectorIndex: -1 /* Keeps the selected index of ItemSelector */
 
     function setNightMode(nightmode)
@@ -22,6 +24,12 @@ SilicaWebView
             return;
 
         experimental.postMessage(nightmode ? "nightmode_enable" : "nightmode_disable");
+    }
+
+    function releaseDownloadLock()
+    {
+        webView.lockDownload = false;
+        webView.lockDownloadAction = "";
     }
 
     VerticalScrollDecorator { flickable: webview }
@@ -72,6 +80,9 @@ SilicaWebView
                                 Qt.resolvedUrl("../../../js/helpers/video/DailyMotionHelper.js"),
                                 Qt.resolvedUrl("../../../js/helpers/video/VimeoHelper.js"),
                                 Qt.resolvedUrl("../../../js/helpers/video/VideoHelper.js"),
+
+                                /* Video Players */
+                                Qt.resolvedUrl("../../../js/helpers/video/players/JWPlayerHelper.js"),
 
                                 /* Message Listener */
                                 Qt.resolvedUrl("../../../js/helpers/MessageListener.js") ]
@@ -134,9 +145,16 @@ SilicaWebView
         var mime = mainwindow.settings.mimedatabase.mimeFromUrl(downloadItem.url);
         var mimeinfo = mime.split("/");
 
-        if(mimeinfo[0] === "video" || mimeinfo[0] === "audio")
+        if((mimeinfo[0] === "video") || (mimeinfo[0] === "audio") || (webview.lockDownload && (webview.lockDownloadAction === "mediaplayer")))
         {
-            viewstack.push(Qt.resolvedUrl("../views/browserplayer/BrowserPlayer.qml"), "mediaplayer", { "videoSource": downloadItem.url });
+            viewstack.push(Qt.resolvedUrl("../views/browserplayer/BrowserPlayer.qml"), "mediaplayer", { "videoTitle": downloadItem.suggestedFilename, "videoSource": downloadItem.url });
+            webview.releaseDownloadLock();
+            return;
+        }
+
+        if(webview.lockDownload)
+        {
+            webview.releaseDownloadLock();
             return;
         }
 

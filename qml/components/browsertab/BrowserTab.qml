@@ -37,6 +37,13 @@ Item
         if(navigationbar.queryBar.url.length > 0)
             return navigationbar.queryBar.url
 
+        if(state === "mediaplayer") {
+            var videotitle = viewstack.top().videoTitle;
+
+            if(videotitle.length)
+                return videotitle;
+        }
+
         return qsTr("New Tab");
     }
 

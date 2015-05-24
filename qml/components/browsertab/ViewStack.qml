@@ -108,6 +108,11 @@ Item
             opacity = 0.0;
     }
 
+    function top()
+    {
+        return stackobject.top();
+    }
+
     function replace(componenturl, tabstate, params)
     {
         stackobject.erase(0);

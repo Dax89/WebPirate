@@ -147,17 +147,33 @@ var __webpirate__ = {
         __webpirate__.lastY = currenty;
     },
 
-    onClick: function(event) {
-        var target = __webpirate__.findAnchorAncestor(event.target);
+    onClick: function(clickevent) {
+        var target = __webpirate__.findAnchorAncestor(clickevent.target);
 
-        if(target && target.hasAttribute("target"))
+        if(!target)
+            return;
+
+        var data = new Object;
+
+        if(target.hasAttribute("__wp_video__"))
         {
-            var data = new Object;
+            data.type = "lock_download";
+            data.action = "mediaplayer";
+        }
+        else if(target.hasAttribute("target"))
+        {
             data.type = "newtab";
             data.url = target.href;
-
-            navigator.qt.postMessage(JSON.stringify(data));
         }
+        else if(target.tagName === "VIDEO")
+        {
+            data.type = "play_video";
+            data.url = target.src;
+        }
+        else
+            return;
+
+        navigator.qt.postMessage(JSON.stringify(data));
     },
 
     onSubmit: function(event) {
@@ -213,4 +229,11 @@ window.open = function(url) { /* Popup Blocker */
     data.url = url;
 
     navigator.qt.postMessage(JSON.stringify(data));
+}
+
+window.onerror = function(errmsg, url, line) { /* Print Javascript Errors */
+    if((url !== undefined) && url.length)
+        console.log(url + "(" + line + "): " + errmsg);
+
+    return false; /* Ignore other errors */
 }
