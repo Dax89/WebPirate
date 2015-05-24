@@ -37,7 +37,17 @@ Page
         delegate: ListItem {
             height: Theme.itemSizeSmall
             width: parent.width
-            onClicked: importtypes[index].execute()
+
+            onClicked: {
+                if(index == 0) {
+                    importtypes[index].execute();
+                    return;
+                }
+
+                remorseAction(qsTr("Imporing Favorites"), function() {
+                    importtypes[index].execute();
+                });
+            }
 
             Label {
                 anchors { fill: parent; leftMargin: Theme.paddingMedium; rightMargin: Theme.paddingMedium }
