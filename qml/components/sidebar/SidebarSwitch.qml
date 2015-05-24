@@ -8,6 +8,7 @@ BackgroundItem
     property alias text: lblaction.text
 
     height: Theme.itemSizeExtraSmall
+    anchors.leftMargin: Theme.paddingMedium
 
     onClicked: {
         if(switchOnClick) {

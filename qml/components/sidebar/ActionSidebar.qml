@@ -59,23 +59,7 @@ Item
             SidebarItem
             {
                 anchors { left: parent.left; right: parent.right }
-                icon: "image://theme/icon-s-time"
-                itemText: qsTr("Navigation History")
-                onClicked: pageStack.push(Qt.resolvedUrl("../../pages/history/NavigationHistoryPage.qml"), { "tabView": tabview });
-            }
-
-            SidebarItem
-            {
-                anchors { left: parent.left; right: parent.right }
-                icon: "qrc:///res/cookies.png"
-                itemText: qsTr("Cookies")
-                onClicked: pageStack.push(Qt.resolvedUrl("../../pages/cookie/CookieManagerPage.qml"), { "settings": mainwindow.settings });
-            }
-
-            SidebarItem
-            {
-                anchors { left: parent.left; right: parent.right }
-                icon: "image://theme/icon-s-cloud-download"
+                icon: "qrc:///res/download.png"
                 itemText: qsTr("Downloads")
                 singleItemText: qsTr("Download")
                 count: mainwindow.settings.downloadmanager.count
@@ -93,6 +77,22 @@ Item
                 count: tabview.closedtabs.count
                 enabled: tabview.closedtabs.count > 0
                 onClicked: pageStack.push(Qt.resolvedUrl("../../pages/closedtabs/ClosedTabsPage.qml"), { "tabView": tabview });
+            }
+
+            SidebarItem
+            {
+                anchors { left: parent.left; right: parent.right }
+                icon: "image://theme/icon-s-time"
+                itemText: qsTr("Navigation History")
+                onClicked: pageStack.push(Qt.resolvedUrl("../../pages/history/NavigationHistoryPage.qml"), { "tabView": tabview });
+            }
+
+            SidebarItem
+            {
+                anchors { left: parent.left; right: parent.right }
+                icon: "qrc:///res/cookies.png"
+                itemText: qsTr("Cookies")
+                onClicked: pageStack.push(Qt.resolvedUrl("../../pages/cookie/CookieManagerPage.qml"), { "settings": mainwindow.settings });
             }
 
             SectionHeader
