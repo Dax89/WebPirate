@@ -774,6 +774,13 @@
     </message>
 </context>
 <context>
+    <name>MediaPlayerToolBar</name>
+    <message>
+        <source>Downloading media</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>NavigationHistoryItem</name>
     <message>
         <source>Open</source>
