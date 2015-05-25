@@ -592,14 +592,18 @@
     <name>FavoritesImportPage</name>
     <message>
         <source>Import Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>导入到书签</translation>
     </message>
     <message>
         <source>From HTML File</source>
-        <translation type="unfinished"></translation>
+        <translation>从HTML文件</translation>
     </message>
     <message>
         <source>From Sailfish Browser</source>
+        <translation>从Sailfish浏览器</translation>
+    </message>
+    <message>
+        <source>Imporing Favorites</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -651,7 +655,7 @@
     </message>
     <message>
         <source>Cannot import favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>无法导入书签</translation>
     </message>
 </context>
 <context>
@@ -776,7 +780,7 @@
     <name>MediaPlayerToolBar</name>
     <message>
         <source>Downloading media</source>
-        <translation type="unfinished"></translation>
+        <translation>正在下载媒体</translation>
     </message>
 </context>
 <context>

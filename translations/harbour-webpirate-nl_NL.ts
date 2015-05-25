@@ -132,7 +132,7 @@
     </message>
     <message>
         <source>Ad Block</source>
-        <translation>Advertentieblokkeerder</translation>
+        <translation>Advertentieblokkering</translation>
     </message>
     <message>
         <source>Navigation History</source>
@@ -144,7 +144,7 @@
     </message>
     <message>
         <source>Popup Blocker</source>
-        <translation>Pop-upblokkeerder</translation>
+        <translation>Pop-upblokkering</translation>
     </message>
     <message>
         <source>Download</source>
@@ -163,7 +163,7 @@
     <name>AdBlockDownloaderPage</name>
     <message>
         <source>AdBlock Updater</source>
-        <translation>Advertentieblokkeerder-bijwerker</translation>
+        <translation>Advertentieblokkeringsbijwerker</translation>
     </message>
     <message>
         <source>State</source>
@@ -592,15 +592,19 @@
     <name>FavoritesImportPage</name>
     <message>
         <source>Import Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Bladwijzers importeren</translation>
     </message>
     <message>
         <source>From HTML File</source>
-        <translation type="unfinished"></translation>
+        <translation>Uit een HTML-bestand</translation>
     </message>
     <message>
         <source>From Sailfish Browser</source>
-        <translation type="unfinished"></translation>
+        <translation>Uit de Sailfish-webbrowser</translation>
+    </message>
+    <message>
+        <source>Imporing Favorites</source>
+        <translation>Bezig met het importeren van de favorieten</translation>
     </message>
 </context>
 <context>
@@ -651,7 +655,7 @@
     </message>
     <message>
         <source>Cannot import favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Het importeren van de bladwijzers is mislukt</translation>
     </message>
 </context>
 <context>
@@ -718,7 +722,7 @@
     <name>LinkMenu</name>
     <message>
         <source>Open New Tab</source>
-        <translation>Nieuw tabblad openen</translation>
+        <translation>Openen op nieuw tabblad</translation>
     </message>
     <message>
         <source>Remove From Favorites</source>
@@ -758,7 +762,7 @@
     </message>
     <message>
         <source>Open New Tab in Background</source>
-        <translation>Nieuw tabblad openen op achtergrond</translation>
+        <translation>Openen op nieuw achtergrondtabblad</translation>
     </message>
     <message>
         <source>Share</source>
@@ -776,7 +780,7 @@
     <name>MediaPlayerToolBar</name>
     <message>
         <source>Downloading media</source>
-        <translation type="unfinished"></translation>
+        <translation>Bezig met het downloaden van de media</translation>
     </message>
 </context>
 <context>
@@ -851,7 +855,7 @@
     <name>PopupBlockerPage</name>
     <message>
         <source>Popup Blocker</source>
-        <translation>Pop-upblokkeerder</translation>
+        <translation>Pop-upblokkering</translation>
     </message>
     <message>
         <source>Clear popup list</source>
@@ -1120,7 +1124,7 @@
     </message>
     <message>
         <source>Delete Personal Data</source>
-        <translation>Persoonlijke gegevens verwijderen</translation>
+        <translation>Persoonlijke gegevens wissen</translation>
     </message>
     <message>
         <source>Save Settings</source>
@@ -1128,7 +1132,7 @@
     </message>
     <message>
         <source>Removing personal data</source>
-        <translation>Bezig met het verwijderen van persoonlijke gegevens</translation>
+        <translation>Bezig met het wissen van de persoonlijke gegevens</translation>
     </message>
     <message>
         <source>Delete Navigation History</source>
@@ -1148,15 +1152,15 @@
     </message>
     <message>
         <source>Delete Cookies</source>
-        <translation>Cookies verwijderen</translation>
+        <translation>Cookies wissen</translation>
     </message>
     <message>
         <source>Removing cookies</source>
-        <translation>Bezig met het verwijderen van de cookies</translation>
+        <translation>Bezig met het wissen van de cookies</translation>
     </message>
     <message>
         <source>Keep Favicons when deleting personal data</source>
-        <translation>Favicons bewaren bij het verwijderen van persoonlijke gegevens</translation>
+        <translation>Favicons behouden bij het wissen van persoonlijke gegevens</translation>
     </message>
 </context>
 <context>

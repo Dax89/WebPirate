@@ -592,14 +592,18 @@
     <name>FavoritesImportPage</name>
     <message>
         <source>Import Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Импорт закладок</translation>
     </message>
     <message>
         <source>From HTML File</source>
-        <translation type="unfinished"></translation>
+        <translation>Из HTML файла</translation>
     </message>
     <message>
         <source>From Sailfish Browser</source>
+        <translation>Из стандартного браузера</translation>
+    </message>
+    <message>
+        <source>Imporing Favorites</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -651,7 +655,7 @@
     </message>
     <message>
         <source>Cannot import favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Не могу импортировать закладки</translation>
     </message>
 </context>
 <context>

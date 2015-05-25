@@ -8,6 +8,19 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Mon May 25 2015 Antonio Davide Trogu <trogu.davide@gmail.com> 1.2-1
+- BUGFIX: Broken "Open" menu in Favorites Manager
+- UrlHelper: Treat url:port and ip:port as URLs
+- Added an experimental JWPlayer (pseudo)grabber
+- Detect <video> tags, if any
+- Send audio files in MediaPlayer
+- Allow to download files directly from MediaPlayer
+- Increased Sidebar's font
+- Allow to import Sailfish Browser Favorites
+- Override WebView preferredMinimumContentsWidth's property
+- Minor Fixes
+- Updated Localizations
+
 * Mon May 18 2015 Antonio Davide Trogu <trogu.davide@gmail.com> 1.1-1
 - REGRESSION FIX:  Relax filter when searching for embedded YouTube videos
 - WebViewHelper: Better <a> tag detection algorithm

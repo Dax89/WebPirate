@@ -592,15 +592,19 @@
     <name>FavoritesImportPage</name>
     <message>
         <source>Import Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Importera favoriter</translation>
     </message>
     <message>
         <source>From HTML File</source>
-        <translation type="unfinished"></translation>
+        <translation>Från HTML-fil</translation>
     </message>
     <message>
         <source>From Sailfish Browser</source>
-        <translation type="unfinished"></translation>
+        <translation>Från Sailfish webbläsare</translation>
+    </message>
+    <message>
+        <source>Imporing Favorites</source>
+        <translation>Importerar favoriter</translation>
     </message>
 </context>
 <context>
@@ -651,7 +655,7 @@
     </message>
     <message>
         <source>Cannot import favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Kan inte importera favoriter</translation>
     </message>
 </context>
 <context>
@@ -776,7 +780,7 @@
     <name>MediaPlayerToolBar</name>
     <message>
         <source>Downloading media</source>
-        <translation type="unfinished"></translation>
+        <translation>Laddar ner media</translation>
     </message>
 </context>
 <context>

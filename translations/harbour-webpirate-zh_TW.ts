@@ -592,14 +592,18 @@
     <name>FavoritesImportPage</name>
     <message>
         <source>Import Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>匯入我的最愛</translation>
     </message>
     <message>
         <source>From HTML File</source>
-        <translation type="unfinished"></translation>
+        <translation>從HTML檔</translation>
     </message>
     <message>
         <source>From Sailfish Browser</source>
+        <translation>從 Sailfish 瀏覽器</translation>
+    </message>
+    <message>
+        <source>Imporing Favorites</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -651,7 +655,7 @@
     </message>
     <message>
         <source>Cannot import favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>無法匯入我的最愛</translation>
     </message>
 </context>
 <context>

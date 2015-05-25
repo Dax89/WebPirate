@@ -592,15 +592,19 @@
     <name>FavoritesImportPage</name>
     <message>
         <source>Import Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Importa preferiti</translation>
     </message>
     <message>
         <source>From HTML File</source>
-        <translation type="unfinished"></translation>
+        <translation>Da File HTML</translation>
     </message>
     <message>
         <source>From Sailfish Browser</source>
-        <translation type="unfinished"></translation>
+        <translation>Da Sailfish Browser</translation>
+    </message>
+    <message>
+        <source>Imporing Favorites</source>
+        <translation>Importazione preferiti</translation>
     </message>
 </context>
 <context>
@@ -651,7 +655,7 @@
     </message>
     <message>
         <source>Cannot import favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Impossibile importare i preferiti</translation>
     </message>
 </context>
 <context>
@@ -666,7 +670,7 @@
     </message>
     <message>
         <source>Deleting Favorite</source>
-        <translation>Elimina dai preferiti</translation>
+        <translation>Rimozione preferito</translation>
     </message>
     <message>
         <source>Deleting Folder</source>
@@ -776,7 +780,7 @@
     <name>MediaPlayerToolBar</name>
     <message>
         <source>Downloading media</source>
-        <translation type="unfinished"></translation>
+        <translation>Download file multimediale</translation>
     </message>
 </context>
 <context>

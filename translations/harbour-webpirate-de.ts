@@ -592,15 +592,19 @@
     <name>FavoritesImportPage</name>
     <message>
         <source>Import Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Favoriten importieren</translation>
     </message>
     <message>
         <source>From HTML File</source>
-        <translation type="unfinished"></translation>
+        <translation>Aus HTML-Datei</translation>
     </message>
     <message>
         <source>From Sailfish Browser</source>
-        <translation type="unfinished"></translation>
+        <translation>Vom Sailfish Browser</translation>
+    </message>
+    <message>
+        <source>Imporing Favorites</source>
+        <translation>Favoriten werden importiert</translation>
     </message>
 </context>
 <context>
@@ -651,7 +655,7 @@
     </message>
     <message>
         <source>Cannot import favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Favoriten nicht importiert</translation>
     </message>
 </context>
 <context>
@@ -776,7 +780,7 @@
     <name>MediaPlayerToolBar</name>
     <message>
         <source>Downloading media</source>
-        <translation type="unfinished"></translation>
+        <translation>Material wird heruntergeladen</translation>
     </message>
 </context>
 <context>

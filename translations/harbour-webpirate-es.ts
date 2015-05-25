@@ -592,14 +592,18 @@
     <name>FavoritesImportPage</name>
     <message>
         <source>Import Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Importar Favoritos</translation>
     </message>
     <message>
         <source>From HTML File</source>
-        <translation type="unfinished"></translation>
+        <translation>Desde un fichero HTML</translation>
     </message>
     <message>
         <source>From Sailfish Browser</source>
+        <translation>Desde el Navegador de Sailfish</translation>
+    </message>
+    <message>
+        <source>Imporing Favorites</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -651,7 +655,7 @@
     </message>
     <message>
         <source>Cannot import favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>No se pueden importar los favoritos</translation>
     </message>
 </context>
 <context>

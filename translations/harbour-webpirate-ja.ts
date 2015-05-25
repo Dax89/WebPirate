@@ -602,6 +602,10 @@
         <source>From Sailfish Browser</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Imporing Favorites</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>FavoritesPage</name>
