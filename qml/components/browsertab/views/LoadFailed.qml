@@ -40,7 +40,7 @@ Rectangle
 
         text: {
             if(crash)
-                return qsTr("WebView process crashed, restarting...");
+                return qsTr("WebView process has crashed, restarting...");
 
             if(offline)
                 return qsTr("You are in offline mode");
