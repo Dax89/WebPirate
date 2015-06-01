@@ -51,7 +51,8 @@ SOURCES += src/harbour-webpirate.cpp \
     src/dbus/client/ofono/ofono.cpp \
     src/dbus/client/ofono/ofonoproperty.cpp \
     src/network/networkinterfaces.cpp \
-    src/dbus/client/machineid.cpp
+    src/dbus/client/machineid.cpp \
+    src/dbus/client/notifications/notifications.cpp
 
 OTHER_FILES += qml/harbour-webpirate.qml \
     rpm/harbour-webpirate.changes.in \
@@ -182,7 +183,9 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/pages/cookie/CookiePage.qml \
     qml/components/browsertab/webview/UrlSchemeDelegateHandler.qml \
     qml/pages/favorite/FavoritesImportPage.qml \
-    qml/js/helpers/video/players/JWPlayerHelper.js
+    qml/js/helpers/video/players/JWPlayerHelper.js \
+    qml/js/helpers/Notification.js \
+    qml/components/browsertab/dialogs/NotificationDialog.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line
@@ -237,5 +240,6 @@ HEADERS += \
     src/dbus/client/ofono/ofono.h \
     src/dbus/client/ofono/ofonoproperty.h \
     src/network/networkinterfaces.h \
-    src/dbus/client/machineid.h
+    src/dbus/client/machineid.h \
+    src/dbus/client/notifications/notifications.h
 

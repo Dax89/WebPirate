@@ -201,6 +201,11 @@ Item
         anchors { left: parent.left; right: parent.right; top: parent.top; bottom: tabstatus.top }
     }
 
+    NotificationDialog {
+        id: notificationdialog
+        anchors { left: parent.left; right: parent.right; top: parent.top; bottom: tabstatus.top }
+    }
+
     BrowserWebView
     {
         id: webview

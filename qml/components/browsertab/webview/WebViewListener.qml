@@ -21,6 +21,7 @@ Item
                                             "lock_download": lockDownload,
                                             "newtab": newTabRequested,
                                             "window_open": onWindowOpen,
+                                            "notification_created": onNotificationCreated,
                                             "play_video": playVideo,
                                             "play_youtube": playYouTubeVideo,
                                             "play_dailymotion": playDailyMotionVideo,
@@ -153,6 +154,10 @@ Item
                 tabview.addTab(data.url);
             /* else if(rule === PopupBlocker.BlockRule)
                 Just Ignore It */
+        }
+
+        function onNotificationCreated(data) {
+            mainwindow.settings.notifications.send(data.title, data.options.body);
         }
     }
 

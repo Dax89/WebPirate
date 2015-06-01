@@ -49,6 +49,7 @@ SilicaWebView
 
     /* Experimental WebView Features */
     experimental.preferences.webAudioEnabled: true
+    experimental.preferences.notificationsEnabled: true
     experimental.preferences.webGLEnabled: true
     experimental.preferences.dnsPrefetchEnabled: true
     experimental.preferences.pluginsEnabled: true
@@ -85,7 +86,10 @@ SilicaWebView
                                 Qt.resolvedUrl("../../../js/helpers/video/players/JWPlayerHelper.js"),
 
                                 /* Message Listener */
-                                Qt.resolvedUrl("../../../js/helpers/MessageListener.js") ]
+                                Qt.resolvedUrl("../../../js/helpers/MessageListener.js"),
+
+                                /* Complete Web Notifications Implementation */
+                                Qt.resolvedUrl("../../../js/helpers/Notification.js") ]
 
     experimental.onTextFound: {
         searchbar.findError = (matchCount <= 0);
@@ -140,6 +144,7 @@ SilicaWebView
     experimental.filePicker: FilePickerDialog { }
     experimental.itemSelector: ItemSelector { selectorModel: model }
     experimental.onMessageReceived: listener.execute(message)
+    experimental.onPermissionRequested: notificationdialog.show();
 
     experimental.onProcessDidCrash: {
         tabheader.solidify();
@@ -220,6 +225,7 @@ SilicaWebView
             tabmenu.hide();
             linkmenu.hide();
             sharemenu.hide();
+            notificationdialog.hide();
             return;
         }
 

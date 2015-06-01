@@ -3,6 +3,7 @@ import harbour.webpirate.Private 1.0
 import harbour.webpirate.WebKit 1.0
 import harbour.webpirate.DBus 1.0
 import harbour.webpirate.DBus.TransferEngine 1.0
+import harbour.webpirate.DBus.Notifications 1.0
 import harbour.webpirate.AdBlock 1.0
 import "cover"
 
@@ -18,6 +19,7 @@ QtObject
     property WebKitDatabase webkitdatabase: WebKitDatabase { }
     property WebIconDatabase icondatabase: WebIconDatabase { }
     property TransferEngine transferengine: TransferEngine { }
+    property Notifications notifications: Notifications { }
     property UrlComposer urlcomposer: UrlComposer { }
     property CoverModel coveractions: CoverModel { }
 

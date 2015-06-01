@@ -776,7 +776,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>WebView process crashed, restarting...</source>
+        <source>WebView process has crashed, restarting...</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -852,6 +852,21 @@
     </message>
     <message>
         <source>Block</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>NotificationDialog</name>
+    <message>
+        <source>wants to access System&apos;s Notifications</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Allow</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Deny</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

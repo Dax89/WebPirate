@@ -777,7 +777,7 @@
         <translation>Estás en modo fuera de línea</translation>
     </message>
     <message>
-        <source>WebView process crashed, restarting...</source>
+        <source>WebView process has crashed, restarting...</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -854,6 +854,25 @@
     <message>
         <source>Block</source>
         <translation>Bloquear</translation>
+    </message>
+</context>
+<context>
+    <name>NotificationDialog</name>
+    <message>
+        <source>OK</source>
+        <translation type="obsolete">OK</translation>
+    </message>
+    <message>
+        <source>wants to access System&apos;s Notifications</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Allow</source>
+        <translation type="unfinished">Permitir</translation>
+    </message>
+    <message>
+        <source>Deny</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

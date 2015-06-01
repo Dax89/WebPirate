@@ -1,0 +1,18 @@
+#ifndef NOTIFICATIONS_H
+#define NOTIFICATIONS_H
+
+#include <QObject>
+#include <QtDBus>
+
+class Notifications : public QObject
+{
+    Q_OBJECT
+
+    public:
+        explicit Notifications(QObject *parent = 0);
+
+    public slots:
+        void send(const QString& summary, const QString& body);
+};
+
+#endif // NOTIFICATIONS_H
