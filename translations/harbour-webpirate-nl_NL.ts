@@ -775,6 +775,10 @@
         <source>You are in offline mode</source>
         <translation>U bevindt zich in de offline-modus</translation>
     </message>
+    <message>
+        <source>WebView process crashed, restarting...</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>MediaPlayerToolBar</name>

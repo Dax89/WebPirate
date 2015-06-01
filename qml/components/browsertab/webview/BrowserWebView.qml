@@ -141,6 +141,12 @@ SilicaWebView
     experimental.itemSelector: ItemSelector { selectorModel: model }
     experimental.onMessageReceived: listener.execute(message)
 
+    experimental.onProcessDidCrash: {
+        tabheader.solidify();
+        navigationbar.evaporate(); // Disallow NavigationBar usage
+        viewstack.push(Qt.resolvedUrl("../views/LoadFailed.qml"), "loaderror", { "errorString": webview.url, "offline": experimental.offline, "crash": true });
+    }
+
     experimental.onDownloadRequested: {
         var mime = mainwindow.settings.mimedatabase.mimeFromUrl(downloadItem.url);
         var mimeinfo = mime.split("/");
@@ -221,7 +227,7 @@ SilicaWebView
         {
             tabheader.solidify();
             navigationbar.solidify();
-            viewstack.push(Qt.resolvedUrl("../views/LoadFailed.qml"), "loaderror", { "errorString": loadRequest.errorString, "offline": experimental.offline });
+            viewstack.push(Qt.resolvedUrl("../views/LoadFailed.qml"), "loaderror", { "errorString": loadRequest.errorString, "offline": experimental.offline, "crash": false });
             return;
         }
 

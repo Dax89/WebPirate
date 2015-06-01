@@ -775,6 +775,10 @@
         <source>You are in offline mode</source>
         <translation>Olet offline-tilassa</translation>
     </message>
+    <message>
+        <source>WebView process crashed, restarting...</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>MediaPlayerToolBar</name>

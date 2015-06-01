@@ -6,23 +6,48 @@ Rectangle
 {
     property string errorString
     property bool offline
+    property bool crash
 
     id: loadfailed
     color: "white"
+
+    Component.onCompleted: {
+        if(crash)
+            webview.reload();
+    }
 
     Image
     {
         id: imgerror
         anchors.centerIn: parent
-        source: offline ? "qrc:///res/status-offline.png" : "qrc:///res/red-cross-icon.png"
         clip: true
+
+        source: {
+            if(crash)
+                return "qrc:///res/processcrash.png";
+
+            if(offline)
+                return "qrc:///res/noconnection.png";
+
+            return "qrc:///res/loaderror.png";
+        }
     }
 
     Text
     {
         id: txterror
-        anchors { top: imgerror.bottom; left: parent.left; right: parent.right }
-        text: offline ? qsTr("You are in offline mode") : errorString
+        anchors { top: imgerror.bottom; left: parent.left; right: parent.right; topMargin: Theme.paddingMedium }
+
+        text: {
+            if(crash)
+                return qsTr("WebView process crashed, restarting...");
+
+            if(offline)
+                return qsTr("You are in offline mode");
+
+            return errorString;
+        }
+
         horizontalAlignment: Text.AlignHCenter
         wrapMode: Text.WordWrap
     }

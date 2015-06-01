@@ -775,6 +775,10 @@
         <source>You are in offline mode</source>
         <translation>Ste v načinu brez povezave</translation>
     </message>
+    <message>
+        <source>WebView process crashed, restarting...</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>MediaPlayerToolBar</name>

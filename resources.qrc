@@ -1,7 +1,5 @@
 <RCC>
     <qresource prefix="/">
-        <file>res/red-cross-icon.png</file>
-        <file>res/status-offline.png</file>
         <file>harbour-webpirate.png</file>
         <file>res/quickgrid.png</file>
         <file>res/exit-fullscreen.png</file>
@@ -12,5 +10,8 @@
         <file>res/cookies.png</file>
         <file>res/add.png</file>
         <file>res/download.png</file>
+        <file>res/noconnection.png</file>
+        <file>res/processcrash.png</file>
+        <file>res/loaderror.png</file>
     </qresource>
 </RCC>
