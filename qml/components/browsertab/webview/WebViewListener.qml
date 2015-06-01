@@ -60,7 +60,7 @@ Item
             formresubmitdialog.hide();
 
             if(data.url) {
-                linkmenu.title = data.title;
+                linkmenu.title = data.url;
                 linkmenu.url = data.url;
                 linkmenu.isimage = data.isimage;
                 linkmenu.show();
