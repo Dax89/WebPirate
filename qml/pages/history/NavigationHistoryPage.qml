@@ -44,13 +44,14 @@ Page
         }
 
         section.delegate: Component {
-            SectionHeader { text: section; font.pixelSize: Theme.fontSizeExtraSmall; height: Theme.itemSizeExtraSmall }
+            SectionHeader { text: section; font.pixelSize: Theme.fontSizeSmall; height: Theme.itemSizeExtraSmall }
         }
 
         delegate: NavigationHistoryItem {
             id: navigationhistoryitem
             contentWidth: parent.width
             contentHeight: Theme.itemSizeSmall
+            titleFont: Theme.fontSizeSmall
             historyTime: time
             historyTitle: title
             historyUrl: url

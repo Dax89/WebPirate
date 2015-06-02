@@ -6,6 +6,7 @@ ListItem
     property alias historyTime: lbltime.text
     property alias historyTitle: lbltitle.text
     property alias historyUrl: lblurl.text
+    property real titleFont: Theme.fontSizeExtraSmall
 
     signal openRequested()
     signal openNewTabRequested()
@@ -59,7 +60,7 @@ ListItem
                 text: title
                 width: parent.width
                 height: parent.height / 2
-                font.pixelSize: Theme.fontSizeExtraSmall
+                font.pixelSize: titleFont
                 horizontalAlignment: Text.AlignLeft
                 verticalAlignment: Text.AlignVCenter
                 color: Theme.highlightColor
