@@ -13,6 +13,13 @@ window.Notification = function(title, options) {
     this.onclick = function() { };
     this.onclose = function() { };
 
+    if(options.icon) /* We want an absolute path */
+    {
+        var link = document.createElement("a");
+        link.href = options.icon;
+        options.icon = link.protocol + "//" + link.host + link.pathname + link.search + link.hash;
+    }
+
     var data = new Object;
     data.type = "notification_created";
     data.title = title;

@@ -2,6 +2,9 @@
 #define NOTIFICATIONS_H
 
 #include <QObject>
+#include <QHash>
+#include <QImage>
+#include <QPair>
 #include <QtDBus>
 
 class Notifications : public QObject
@@ -12,6 +15,7 @@ class Notifications : public QObject
         explicit Notifications(QObject *parent = 0);
 
     public slots:
+        void send(const QString& summary, const QString& body, const QUrl& icon);
         void send(const QString& summary, const QString& body);
 };
 
