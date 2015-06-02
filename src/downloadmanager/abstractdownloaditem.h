@@ -61,6 +61,8 @@ class AbstractDownloadItem : public QObject
         virtual void cancel();
 
     signals:
+        void downloadCompleted(const QString& filename);
+        void downloadFailed(const QString& filename);
         void urlChanged();
         void completedChanged();
         void errorChanged();

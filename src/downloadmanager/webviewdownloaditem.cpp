@@ -60,6 +60,8 @@ void WebViewDownloadItem::onDownloadSucceeded()
     this->setCompleted(true);
     this->setError(false);
     this->setLastError(QString());
+
+    emit downloadCompleted(this->fileName());
 }
 
 void WebViewDownloadItem::onDownloadFailed(QWebDownloadItem::DownloadError, const QUrl&, const QString &description)
@@ -68,4 +70,6 @@ void WebViewDownloadItem::onDownloadFailed(QWebDownloadItem::DownloadError, cons
     this->setError(true);
     this->setLastError(description);    
     this->removeFile();
+
+    emit downloadFailed(this->fileName());
 }

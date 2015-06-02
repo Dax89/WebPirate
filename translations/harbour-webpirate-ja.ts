@@ -1243,4 +1243,15 @@
         <translation type="unfinished"></translation>
     </message>
 </context>
+<context>
+    <name>harbour-webpirate</name>
+    <message>
+        <source>Download Completed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Download Failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
 </TS>

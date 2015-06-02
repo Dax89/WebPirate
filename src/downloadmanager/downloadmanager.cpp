@@ -23,8 +23,10 @@ void DownloadManager::createDownloadFromUrl(const QUrl &url)
 void DownloadManager::createDownloadFromUrl(const QUrl &url, const QString &filename)
 {
     DownloadItem* di = new DownloadItem(url, filename, this);
-    this->_downloads.append(di);
+    connect(di, SIGNAL(downloadCompleted(const QString&)), this, SIGNAL(downloadCompleted(const QString&)));
+    connect(di, SIGNAL(downloadFailed(const QString&)), this, SIGNAL(downloadFailed(const QString&)));
 
+    this->_downloads.append(di);
     di->start();
     emit countChanged();
 }
@@ -32,8 +34,10 @@ void DownloadManager::createDownloadFromUrl(const QUrl &url, const QString &file
 void DownloadManager::createDownload(QWebDownloadItem* downloaditem)
 {
     WebViewDownloadItem* di = new WebViewDownloadItem(downloaditem, this);
-    this->_downloads.append(di);
+    connect(di, SIGNAL(downloadCompleted(const QString&)), this, SIGNAL(downloadCompleted(const QString&)));
+    connect(di, SIGNAL(downloadFailed(const QString&)), this, SIGNAL(downloadFailed(const QString&)));
 
+    this->_downloads.append(di);
     di->start();
     emit countChanged();
 }

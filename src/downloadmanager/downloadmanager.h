@@ -19,6 +19,8 @@ class DownloadManager : public QObject
 
     signals:
         void countChanged();
+        void downloadCompleted(const QString& filename);
+        void downloadFailed(const QString& filename);
 
     public slots:
         AbstractDownloadItem *downloadItem(int index);

@@ -49,6 +49,9 @@ ApplicationWindow
     {
         id: settings
 
+        downloadmanager.onDownloadCompleted: notifications.send(filename, qsTr("Download Completed"), "icon-m-download", false);
+        downloadmanager.onDownloadFailed: notifications.send(filename, qsTr("Download Failed"), "icon-m-download", false);
+
         Component.onCompleted: {
             Database.load();
             History.load();

@@ -68,6 +68,8 @@ void DownloadItem::onDownloadError(QNetworkReply::NetworkError)
 
     this->setError(true);
     this->setLastError(this->_downloadreply->errorString());
+
+    emit downloadFailed(this->fileName());
 }
 
 void DownloadItem::onDownloadFinished(QNetworkReply* reply)
@@ -109,6 +111,9 @@ void DownloadItem::onDownloadFinished(QNetworkReply* reply)
         reply->deleteLater();
         this->_downloadreply = NULL;
     }
+
+    if(!this->error())
+        emit downloadCompleted(this->fileName());
 }
 
 void DownloadItem::onDownloadProgress(qint64 bytesreceived, qint64 bytestotal)
