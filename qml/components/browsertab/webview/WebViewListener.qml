@@ -30,6 +30,10 @@ Item
 
         id: listenerprivate
 
+        function clearEscape(s) {
+            return s.replace("&#39;", "'");
+        }
+
         function onConsoleLog(data) {
             console.log(data.log);
         }
@@ -110,9 +114,9 @@ Item
             navigationbar.solidify();
 
             var grabber = viewStack.push(Qt.resolvedUrl("../views/browserplayer/BrowserGrabber.qml"), "mediagrabber", { "grabFailed": data.videos.length <= 0,
-                                                                                                                        "grabResult": data.videos.length <= 0 ? qsTr("FAILED") : "OK",
-                                                                                                                        "videoTitle": data.title,
-                                                                                                                        "videoAuthor": data.author,
+                                                                                                                        "grabStatus": data.videos.length <= 0 ? qsTr("FAILED") : "OK",
+                                                                                                                        "videoTitle": clearEscape(data.title),
+                                                                                                                        "videoAuthor": clearEscape(data.author),
                                                                                                                         "videoThumbnail": data.thumbnail,
                                                                                                                         "videoDuration": data.duration });
 
@@ -128,9 +132,9 @@ Item
             navigationbar.solidify();
 
             var grabber = viewstack.push(Qt.resolvedUrl("../views/browserplayer/BrowserGrabber.qml"), "mediagrabber", { "grabFailed": data.videos.length <= 0,
-                                                                                                                        "grabResult": data.videos.length <= 0 ? qsTr("FAILED") : "OK",
-                                                                                                                        "videoTitle": data.title,
-                                                                                                                        "videoAuthor": data.author,
+                                                                                                                        "grabStatus": data.videos.length <= 0 ? qsTr("FAILED") : "OK",
+                                                                                                                        "videoTitle": clearEscape(data.title),
+                                                                                                                        "videoAuthor": clearEscape(data.author),
                                                                                                                         "videoThumbnail": data.thumbnail,
                                                                                                                         "videoDuration": data.duration });
 

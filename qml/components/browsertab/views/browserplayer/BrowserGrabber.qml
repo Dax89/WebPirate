@@ -16,20 +16,15 @@ Item
     property alias videoAuthor: lblauthor.text
     property alias videoThumbnail: imgthumbnail.source
 
-    onGrabbingChanged: console.log(grabbing)
-    onGrabStatusChanged: console.log(grabStatus)
-
-    function addVideo(info, mime, url)
-    {
+    function addVideo(info, mime, url) {
         videoList.append( {"videoinfo": info, "videomime": mime, "videourl": url });
     }
 
-    function clearVideos()
-    {
+    function clearVideos() {
         videoList.clear();
     }
 
-    function playVideo(videotitle, videourl, videothumbnail) {
+    function playVideo(videotitle, videourl, videothumbnail){
         viewstack.push(Qt.resolvedUrl("BrowserPlayer.qml"), "mediaplayer", { "videoTitle": videotitle, "videoSource": videourl, "videoThumbnail": videothumbnail });
     }
 

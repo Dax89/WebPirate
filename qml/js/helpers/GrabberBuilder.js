@@ -4,6 +4,10 @@ var __wp_grabberbuilder__ = {
             element.removeChild(element.firstChild);
     },
 
+    escape: function(s) {
+        return s.replace(/'/g, "&#39;");
+    },
+
     createPlayer: function(element, playername, clickevent, iconurl) {
         if(!element)
             return null;
