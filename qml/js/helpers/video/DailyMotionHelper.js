@@ -45,7 +45,8 @@ var __wp_dailymotionhelper__ = {
 
         var parent = iframe.parentElement;
         parent.style.paddingTop = "0";
-        parent.insertBefore(dmplayer, iframe);
+        parent.removeChild(parent.firstElementChild); /* Remove .video-player-placeholder element */
+        parent.insertBefore(dmplayer, parent.firstElementChild);
         iframe.remove();
 
         __wp_grabberbuilder__.createPlayer(dmplayer, "dm", "navigator.qt.postMessage('" + JSON.stringify(videoinfo) + "')", __wp_dailymotionhelper__.playbutton);
