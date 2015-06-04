@@ -185,7 +185,8 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/pages/favorite/FavoritesImportPage.qml \
     qml/js/helpers/video/players/JWPlayerHelper.js \
     qml/js/helpers/Notification.js \
-    qml/components/browsertab/dialogs/NotificationDialog.qml
+    qml/components/browsertab/dialogs/NotificationDialog.qml \
+    qml/js/YouTubeCipher.js
 
 # to disable building translations every time, comment out the
 # following CONFIG line

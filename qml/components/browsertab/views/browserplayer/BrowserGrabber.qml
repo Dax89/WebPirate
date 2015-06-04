@@ -20,6 +20,11 @@ Item
         videoList.append( {"videoinfo": info, "videomime": mime, "videourl": url });
     }
 
+    function clearVideos()
+    {
+        videoList.clear();
+    }
+
     function playVideo(videotitle, videourl, videothumbnail) {
         viewstack.push(Qt.resolvedUrl("BrowserPlayer.qml"), "mediaplayer", { "videoTitle": videotitle, "videoSource": videourl, "videoThumbnail": videothumbnail });
     }
