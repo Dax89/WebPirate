@@ -18,6 +18,8 @@ Page
 
     SilicaListView
     {
+        VerticalScrollDecorator { flickable: listview }
+
         PullDownMenu
         {
             MenuItem

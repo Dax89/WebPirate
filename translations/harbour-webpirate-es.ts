@@ -313,7 +313,7 @@
     </message>
     <message>
         <source>Status</source>
-        <translation type="unfinished"></translation>
+        <translation>Estado</translation>
     </message>
 </context>
 <context>
@@ -655,7 +655,7 @@
     </message>
     <message>
         <source>Cannot import favorites</source>
-        <translation>No se pueden importar los favoritos</translation>
+        <translation>No es posible importar los favoritos</translation>
     </message>
 </context>
 <context>
@@ -1235,23 +1235,23 @@
     <name>YouTubeCipher</name>
     <message>
         <source>Downloading Player&apos;s Cipher</source>
-        <translation type="unfinished"></translation>
+        <translation>Descargando decodificador del reproductor</translation>
     </message>
     <message>
         <source>Cannot find decoding function</source>
-        <translation type="unfinished"></translation>
+        <translation>No es posible encontrar función de decodificación</translation>
     </message>
     <message>
         <source>Cannot find decoding object</source>
-        <translation type="unfinished"></translation>
+        <translation>No es posible encontrar objeto de decodificación</translation>
     </message>
     <message>
         <source>Cannot download Video Configuration</source>
-        <translation type="unfinished"></translation>
+        <translation>No es posible descargar configuración del vídeo</translation>
     </message>
     <message>
         <source>Ciphered Video: Downloading WebPage</source>
-        <translation type="unfinished"></translation>
+        <translation>Vídeo codificado: descargando de página Web</translation>
     </message>
 </context>
 <context>
@@ -1262,15 +1262,15 @@
     </message>
     <message>
         <source>OK</source>
-        <translation type="unfinished">OK</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <source>Downloading video info</source>
-        <translation type="unfinished"></translation>
+        <translation>Descargando info del vídeo</translation>
     </message>
     <message>
         <source>FAILED</source>
-        <translation type="unfinished">FALLIDO</translation>
+        <translation>FALLIDO</translation>
     </message>
 </context>
 <context>

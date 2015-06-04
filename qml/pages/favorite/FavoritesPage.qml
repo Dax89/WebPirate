@@ -31,10 +31,8 @@ Page
         onParsingError: popupmessage.show(qsTr("Cannot import favorites"));
     }
 
-    SilicaFlickable
+    FavoritesView
     {
-        anchors.fill: parent
-
         PullDownMenu
         {
             MenuItem
@@ -82,24 +80,20 @@ Page
             }
         }
 
-        PageHeader { id: header }
+        id: favoritesview
+        anchors.fill: parent
+        header: PageHeader { id: header }
 
-        FavoritesView
-        {
-            id: favoritesview
-            anchors { top: header.bottom; left: parent.left; right: parent.right; bottom: parent.bottom }
-
-            onUrlRequested: {
-                if(newtab)
-                    tabview.addTab(favoriteurl);
-                else
-                    tabview.tabs.get(tabview.currentIndex).tab.load(favoriteurl);
-            }
+        onUrlRequested: {
+            if(newtab)
+                tabview.addTab(favoriteurl);
+            else
+                tabview.tabs.get(tabview.currentIndex).tab.load(favoriteurl);
         }
     }
 
     Component.onCompleted: {
         favoritesview.model.jumpTo(folderId);
-        header.title = (folderId === 0 ? qsTr("Favorites") : favoritesview.model.currentFolder());
+        favoritesview.headerItem.title = (folderId === 0 ? qsTr("Favorites") : favoritesview.model.currentFolder());
     }
 }

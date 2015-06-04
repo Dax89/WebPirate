@@ -65,7 +65,10 @@ Page
             id: listview
             anchors { left: parent.left; top: content.bottom; right: parent.right; bottom: parent.bottom }
             model: settings.cookiejar.domains
+            quickScroll: true
             clip: true
+
+            VerticalScrollDecorator { flickable: listview }
 
             delegate: DomainListItem {
                 id: domainlistitem
