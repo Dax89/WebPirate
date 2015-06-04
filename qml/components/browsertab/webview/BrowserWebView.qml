@@ -10,7 +10,7 @@ import "../../../js/settings/Favorites.js" as Favorites
 import "../../../js/settings/Credentials.js" as Credentials
 import "../../../js/settings/History.js" as History
 import "../../../js/settings/UserAgents.js" as UserAgents
-import "../../../js/YouTubeGrabber.js" as YouTubeGrabber
+import "../../../js/youtube/YouTubeGrabber.js" as YouTubeGrabber
 
 SilicaWebView
 {

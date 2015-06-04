@@ -3,7 +3,7 @@ import Sailfish.Silica 1.0
 import "../../../js/settings/Database.js" as Database
 import "../../../js/settings/Credentials.js" as Credentials
 import "../../../js/settings/PopupBlocker.js" as PopupBlocker
-import "../../../js/YouTubeGrabber.js" as YouTubeGrabber
+import "../../../js/youtube/YouTubeGrabber.js" as YouTubeGrabber
 
 Item
 {

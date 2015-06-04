@@ -104,7 +104,7 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/js/canvg/rgbcolor.js \
     qml/js/canvg/StackBlur.js \
     qml/components/InfoLabel.qml \
-    qml/js/YouTubeGrabber.js \
+    qml/js/youtube/YouTubeGrabber.js \
     qml/components/browsertab/views/browserplayer/mediacomponents/MediaPlayerToolBar.qml \
     qml/components/browsertab/views/browserplayer/mediacomponents/MediaPlayerTitle.qml \
     qml/components/tabview/TabHeader.qml \
@@ -186,7 +186,7 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/js/helpers/video/players/JWPlayerHelper.js \
     qml/js/helpers/Notification.js \
     qml/components/browsertab/dialogs/NotificationDialog.qml \
-    qml/js/YouTubeCipher.js
+    qml/js/youtube/YouTubeCipher.js
 
 # to disable building translations every time, comment out the
 # following CONFIG line

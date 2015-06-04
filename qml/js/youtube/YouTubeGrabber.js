@@ -1,6 +1,6 @@
 .pragma library
 
-.import "UrlHelper.js" as UrlHelper
+.import "../UrlHelper.js" as UrlHelper
 .import "YouTubeCipher.js" as YouTubeCipher
 
 function grabVideoUrl(videoid)
