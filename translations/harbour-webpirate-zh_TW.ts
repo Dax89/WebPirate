@@ -285,7 +285,7 @@
     </message>
     <message>
         <source>Response</source>
-        <translation>回饋</translation>
+        <translation type="vanished">回饋</translation>
     </message>
     <message>
         <source>Title</source>
@@ -314,6 +314,14 @@
     <message>
         <source>Link copied to clipboard</source>
         <translation>將連結複製到剪貼簿</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation type="obsolete">確定</translation>
     </message>
 </context>
 <context>
@@ -1235,10 +1243,45 @@
     </message>
 </context>
 <context>
+    <name>YouTubeCipher</name>
+    <message>
+        <source>Downloading Player&apos;s Cipher</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot find decoding function</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot find decoding object</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot download Video Configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Ciphered Video: Downloading WebPage</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>YouTubeGrabber</name>
     <message>
         <source>Quality</source>
         <translation>品質</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation type="unfinished">確定</translation>
+    </message>
+    <message>
+        <source>Downloading video info</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>FAILED</source>
+        <translation type="unfinished">失敗</translation>
     </message>
 </context>
 <context>

@@ -284,10 +284,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Response</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Title</source>
         <translation type="unfinished"></translation>
     </message>
@@ -313,6 +309,10 @@
     </message>
     <message>
         <source>Link copied to clipboard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Status</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1231,9 +1231,44 @@
     </message>
 </context>
 <context>
+    <name>YouTubeCipher</name>
+    <message>
+        <source>Downloading Player&apos;s Cipher</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot find decoding function</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot find decoding object</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot download Video Configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Ciphered Video: Downloading WebPage</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>YouTubeGrabber</name>
     <message>
         <source>Quality</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Downloading video info</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>FAILED</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

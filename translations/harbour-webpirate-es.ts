@@ -285,7 +285,7 @@
     </message>
     <message>
         <source>Response</source>
-        <translation>Respuesta</translation>
+        <translation type="vanished">Respuesta</translation>
     </message>
     <message>
         <source>Title</source>
@@ -314,6 +314,14 @@
     <message>
         <source>Link copied to clipboard</source>
         <translation>Enlace copiado al portapapeles</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation type="obsolete">OK</translation>
     </message>
 </context>
 <context>
@@ -1236,10 +1244,45 @@
     </message>
 </context>
 <context>
+    <name>YouTubeCipher</name>
+    <message>
+        <source>Downloading Player&apos;s Cipher</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot find decoding function</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot find decoding object</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot download Video Configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Ciphered Video: Downloading WebPage</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>YouTubeGrabber</name>
     <message>
         <source>Quality</source>
         <translation>Calidad</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation type="unfinished">OK</translation>
+    </message>
+    <message>
+        <source>Downloading video info</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>FAILED</source>
+        <translation type="unfinished">FALLIDO</translation>
     </message>
 </context>
 <context>

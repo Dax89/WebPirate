@@ -5,12 +5,16 @@ function grabPlayerJavascript(ytplayer, mediagrabber, urldecoder)
     //var playerid = /html5player-([^/]+)\/html5player.js/.exec(ytplayer.assets.js);
     var req = new XMLHttpRequest();
 
+    mediagrabber.grabStatus = qsTr("Downloading Player's Cipher");
+
     req.onreadystatechange = function() {
         if(req.readyState === XMLHttpRequest.DONE) {
             var funcname = /a.set\("signature",([a-z0-9]+)\([a-z]\)\);/i.exec(req.responseText);
 
             if(!funcname || !funcname[1]) {
                 mediagrabber.grabFailed = true;
+                mediagrabber.grabbing = false;
+                mediagrabber.grabStatus = qsTr("Cannot find decoding function");
                 return;
             }
 
@@ -19,6 +23,8 @@ function grabPlayerJavascript(ytplayer, mediagrabber, urldecoder)
 
             if(!funcbody || !funcbody[1]) {
                 mediagrabber.grabFailed = true;
+                mediagrabber.grabbing = false;
+                mediagrabber.grabStatus = qsTr("Cannot find decoding function");
                 return;
             }
 
@@ -26,6 +32,8 @@ function grabPlayerJavascript(ytplayer, mediagrabber, urldecoder)
 
             if(!decodeobjname || !decodeobjname[1]) {
                 mediagrabber.grabFailed = true;
+                mediagrabber.grabbing = false;
+                mediagrabber.grabStatus = qsTr("Cannot find decoding object");
                 return;
             }
 
@@ -34,6 +42,8 @@ function grabPlayerJavascript(ytplayer, mediagrabber, urldecoder)
 
             if(!decodeobj || !decodeobj[1]) {
                 mediagrabber.grabFailed = true;
+                mediagrabber.grabbing = false;
+                mediagrabber.grabStatus = qsTr("Cannot find decoding object");
                 return;
             }
 
@@ -55,6 +65,8 @@ function grabPlayerJavascript(ytplayer, mediagrabber, urldecoder)
 function decodeCipheredVideo(videoid, mediagrabber, urldecoder)
 {
     mediagrabber.clearVideos(); /* Delete Ciphered URLs, if any */
+    mediagrabber.grabbing = true; /* Force Grabbing State */
+    mediagrabber.grabStatus = qsTr("Ciphered Video: Downloading WebPage");
 
     var req = new XMLHttpRequest();
 
@@ -64,6 +76,8 @@ function decodeCipheredVideo(videoid, mediagrabber, urldecoder)
 
             if(!cap || !cap[1]) {
                 mediagrabber.grabFailed = true;
+                mediagrabber.grabbing = false;
+                mediagrabber.grabStatus = qsTr("Cannot download Video Configuration");
                 return;
             }
 

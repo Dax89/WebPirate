@@ -285,7 +285,7 @@
     </message>
     <message>
         <source>Response</source>
-        <translation>Resposta</translation>
+        <translation type="vanished">Resposta</translation>
     </message>
     <message>
         <source>Title</source>
@@ -314,6 +314,14 @@
     <message>
         <source>Link copied to clipboard</source>
         <translation>S&apos;ha copiat l&apos;enllaç al porta-retalls</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation type="obsolete">D&apos;acord</translation>
     </message>
 </context>
 <context>
@@ -1235,10 +1243,45 @@
     </message>
 </context>
 <context>
+    <name>YouTubeCipher</name>
+    <message>
+        <source>Downloading Player&apos;s Cipher</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot find decoding function</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot find decoding object</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot download Video Configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Ciphered Video: Downloading WebPage</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>YouTubeGrabber</name>
     <message>
         <source>Quality</source>
         <translation>Qualitat</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation type="unfinished">D&apos;acord</translation>
+    </message>
+    <message>
+        <source>Downloading video info</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>FAILED</source>
+        <translation type="unfinished">ERRONI</translation>
     </message>
 </context>
 <context>

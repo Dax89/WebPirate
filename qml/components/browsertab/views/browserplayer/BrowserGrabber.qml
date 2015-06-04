@@ -6,14 +6,18 @@ import "../../../items/cover"
 
 Item
 {
+    property bool grabbing: false
     property bool grabFailed: false
     property int videoDuration: 0
     property ListModel videoList: ListModel { }
 
-    property alias grabResult: lblgrabresult.text
+    property alias grabStatus: lblgrabstatus.text
     property alias videoTitle: lbltitle.text
     property alias videoAuthor: lblauthor.text
     property alias videoThumbnail: imgthumbnail.source
+
+    onGrabbingChanged: console.log(grabbing)
+    onGrabStatusChanged: console.log(grabStatus)
 
     function addVideo(info, mime, url)
     {
@@ -98,13 +102,22 @@ Item
 
                     InfoLabel
                     {
-                        id: lblgrabresult
+                        id: lblgrabstatus
                         anchors.topMargin: Theme.paddingMedium
                         width: parent.width
-                        contentColor: grabFailed ? "red" : "lime"
-                        title: qsTr("Response")
-                        text: "OK"
+                        title: qsTr("Status")
+                        text: grabStatus
                         labelWrap: Text.WordWrap
+
+                        contentColor: {
+                            if(!grabbing && !grabFailed)
+                                return "lime";
+
+                            if(grabFailed)
+                                return "red";
+
+                            return Theme.primaryColor;
+                        }
                     }
 
                     InfoLabel

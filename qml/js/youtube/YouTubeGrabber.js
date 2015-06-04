@@ -20,6 +20,8 @@ function decodeVideoTypes(videolist, mediagrabber, decodefunc)
 
     for(var i = 0; i < videolist.length; i++)
     {
+        mediagrabber.grabStatus = qsTr("Grabbing URL " + (i + 1));
+
         var videotype = UrlHelper.decode(typeregex.exec(videolist[i])[0]);
         var cap = codecregex.exec(videotype);
 
@@ -34,12 +36,19 @@ function decodeVideoTypes(videolist, mediagrabber, decodefunc)
             var signature = /s=([A-F0-9]+\.[A-F0-9]+)/.exec(videolist[i]);
 
             if(signature && signature[1])
+            {
+                mediagrabber.grabStatus = qsTr("Decoding Signature for URL " + (i + 1));
                 videoinfo.url += "&signature=" + decodefunc(signature[1]);
+            }
         }
 
         mediagrabber.addVideo(qsTr("Quality") + ": " + (videoinfo.quality + " (" + videoinfo.mime + (videoinfo.hascodec ? (", " + videoinfo.codec) : "") + ")"),
                               videoinfo.mime, videoinfo.url);
     }
+
+    mediagrabber.grabStatus = qsTr("OK");
+    mediagrabber.grabFailed = false;
+    mediagrabber.grabbing = false;
 }
 
 function grabVideo(videoid, mediagrabber)
@@ -51,17 +60,26 @@ function grabVideo(videoid, mediagrabber)
             var ciphered = false;
             var videoinfo = req.responseText.split("&");
 
+            mediagrabber.grabbing = true;
+            mediagrabber.grabStatus = qsTr("Downloading video info");
+
             for(var i = 0; i < videoinfo.length; i++)
             {
                 var videoentry = videoinfo[i].split("=");
 
                 if((videoentry[0] === "status") && (videoentry[1] === "fail"))
+                {
                     mediagrabber.grabFailed = true;
+                    mediagrabber.grabStatus = qsTr("FAILED");
+                }
                 else if(videoentry[0] === "reason")
-                    mediagrabber.videoResponse = UrlHelper.decode(videoentry[1]);
+                    mediagrabber.grabStatus = UrlHelper.decode(videoentry[1]);
 
                 if(mediagrabber.grabFailed && mediagrabber.grabResult.length)
+                {
+                    mediagrabber.grabbing = false;
                     break;
+                }
 
                 if(mediagrabber.grabFailed)
                     continue;
