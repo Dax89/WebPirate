@@ -5,7 +5,7 @@ Notifications::Notifications(QObject *parent): QObject(parent)
 
 }
 
-void Notifications::send(const QString &summary, const QString &body, const QString &icon, bool feedback)
+void Notifications::send(const QString &summary, const QString &body, const QString &icon, bool feedback, bool temporary)
 {
     QList<QVariant> args;
     QDBusMessage message = QDBusMessage::createMethodCall("org.freedesktop.Notifications", "/org/freedesktop/Notifications", "org.freedesktop.Notifications", "Notify");
@@ -27,8 +27,18 @@ void Notifications::send(const QString &summary, const QString &body, const QStr
     args << qApp->applicationName();
     args << 0u;
     args << QString();
-    args << summary;
-    args << body;
+
+    if(!temporary)
+    {
+        args << summary;
+        args << body;
+    }
+    else
+    {
+        args << QString();
+        args << QString();
+    }
+
     args << QStringList();
     args << hints;
     args << -1;
@@ -40,5 +50,5 @@ void Notifications::send(const QString &summary, const QString &body, const QStr
 
 void Notifications::send(const QString &summary, const QString &body)
 {
-    this->send(summary, body, QString(), false);
+    this->send(summary, body, QString(), false, false);
 }
