@@ -23,8 +23,11 @@ BrowserBar
             width: parent.width - (btnsearchup.width + btnsearchdown.width + btnclose.width)
             height: parent.height
             font.pixelSize: Theme.fontSizeSmall
-            inputMethodHints: Qt.ImhNoAutoUppercase
+            inputMethodHints: Qt.ImhNoAutoUppercase | Qt.ImhNoPredictiveText
             placeholderText: qsTr("Search") + "..."
+
+            Keys.onReturnPressed:  webview.experimental.findText(searchfield.text, 0xC); /* WebViewExperimental.FindHighlightAllOccurrences |
+                                                                                            WebViewExperimental.FindWrapsAroundDocument */
 
             onTextChanged: {
                 searchfield.errorHighlight = false;
