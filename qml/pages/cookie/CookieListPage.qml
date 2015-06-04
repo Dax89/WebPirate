@@ -40,6 +40,7 @@ Page
 
         id: listview
         clip: true
+        quickScroll: true
         anchors.fill: parent
         header: PageHeader { id: pageheader; title: qsTr("Cookies") }
         Component.onCompleted: loadCookies()

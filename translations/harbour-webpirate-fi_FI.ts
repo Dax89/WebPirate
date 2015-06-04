@@ -1276,12 +1276,12 @@
         <translation type="unfinished">Ok</translation>
     </message>
     <message>
-        <source>Downloading video info</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>FAILED</source>
         <translation type="unfinished">EPÄONNISTUI</translation>
+    </message>
+    <message>
+        <source>Downloading video info</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

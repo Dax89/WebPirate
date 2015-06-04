@@ -1266,12 +1266,12 @@
 <context>
     <name>YouTubeGrabber</name>
     <message>
-        <source>Quality</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>OK</source>
         <translation type="unfinished">OK</translation>
+    </message>
+    <message>
+        <source>Quality</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Downloading video info</source>

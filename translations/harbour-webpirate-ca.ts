@@ -1276,12 +1276,12 @@
         <translation type="unfinished">D&apos;acord</translation>
     </message>
     <message>
-        <source>Downloading video info</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>FAILED</source>
         <translation type="unfinished">ERRONI</translation>
+    </message>
+    <message>
+        <source>Downloading video info</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

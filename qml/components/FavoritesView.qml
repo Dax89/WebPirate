@@ -15,6 +15,7 @@ Item
         clip: true
         anchors.fill: parent
         model: FavoritesModel { id: favoritesmodel }
+        quickScroll: true
 
         delegate: ListItem {
             id: listitem

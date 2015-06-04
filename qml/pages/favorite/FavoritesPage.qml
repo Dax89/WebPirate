@@ -66,18 +66,7 @@ Page
             MenuItem
             {
                 text: (folderId === 0) ? qsTr("Import") : (qsTr("Import in") + " '" + favoritesview.model.currentFolder() + "'")
-
-                onClicked: {
-                    pageStack.push(Qt.resolvedUrl("FavoritesImportPage.qml"), { "favoritesManager": favoritesmanager, "rootPage": favoritespage });
-
-                    /*
-                    var page = pageStack.push(Qt.resolvedUrl("../picker/FilePickerPage.qml"), { "filter": "*.htm;*.html", "rootPage": favoritespage });
-
-                    page.filePicked.connect(function(file) {
-                        favoritesmanager.importFile(file);
-                    });
-                    */
-                }
+                onClicked: pageStack.push(Qt.resolvedUrl("FavoritesImportPage.qml"), { "favoritesManager": favoritesmanager, "rootPage": favoritespage });
             }
 
             MenuItem

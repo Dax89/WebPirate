@@ -1276,12 +1276,12 @@
         <translation type="unfinished">OK</translation>
     </message>
     <message>
-        <source>Downloading video info</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>FAILED</source>
         <translation type="unfinished">Ошибка</translation>
+    </message>
+    <message>
+        <source>Downloading video info</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

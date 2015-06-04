@@ -36,6 +36,7 @@ Page
         id: listview
         anchors.fill: parent
         model: historyModel
+        quickScroll: true
         section.property: "date"
         section.criteria: ViewSection.FullString
 

@@ -1276,12 +1276,12 @@
         <translation type="unfinished">確定</translation>
     </message>
     <message>
-        <source>Downloading video info</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>FAILED</source>
         <translation type="unfinished">失敗</translation>
+    </message>
+    <message>
+        <source>Downloading video info</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
