@@ -284,10 +284,6 @@
         <translation>Doba trvání</translation>
     </message>
     <message>
-        <source>Response</source>
-        <translation type="vanished">Odpověď</translation>
-    </message>
-    <message>
         <source>Title</source>
         <translation>Název</translation>
     </message>
@@ -318,10 +314,6 @@
     <message>
         <source>Status</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation type="obsolete">OK</translation>
     </message>
 </context>
 <context>
@@ -600,19 +592,19 @@
     <name>FavoritesImportPage</name>
     <message>
         <source>Import Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Importovat Záložky</translation>
     </message>
     <message>
         <source>From HTML File</source>
-        <translation type="unfinished"></translation>
+        <translation>Z HTML Souboru</translation>
     </message>
     <message>
         <source>From Sailfish Browser</source>
-        <translation type="unfinished"></translation>
+        <translation>Z Sailfish prohlížeče</translation>
     </message>
     <message>
         <source>Imporing Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Importování záložek</translation>
     </message>
 </context>
 <context>
@@ -663,7 +655,7 @@
     </message>
     <message>
         <source>Cannot import favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Není možné importovat záložky</translation>
     </message>
 </context>
 <context>
@@ -792,7 +784,7 @@
     <name>MediaPlayerToolBar</name>
     <message>
         <source>Downloading media</source>
-        <translation type="unfinished"></translation>
+        <translation>Stahování média</translation>
     </message>
 </context>
 <context>
@@ -865,10 +857,6 @@
 </context>
 <context>
     <name>NotificationDialog</name>
-    <message>
-        <source>OK</source>
-        <translation type="obsolete">OK</translation>
-    </message>
     <message>
         <source>wants to access System&apos;s Notifications</source>
         <translation type="unfinished"></translation>
@@ -1276,12 +1264,12 @@
         <translation type="unfinished">OK</translation>
     </message>
     <message>
-        <source>FAILED</source>
-        <translation type="unfinished">SELHALO</translation>
-    </message>
-    <message>
         <source>Downloading video info</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>FAILED</source>
+        <translation type="unfinished">SELHALO</translation>
     </message>
 </context>
 <context>

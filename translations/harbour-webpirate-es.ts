@@ -284,10 +284,6 @@
         <translation>Duración</translation>
     </message>
     <message>
-        <source>Response</source>
-        <translation type="vanished">Respuesta</translation>
-    </message>
-    <message>
         <source>Title</source>
         <translation>Título</translation>
     </message>
@@ -318,10 +314,6 @@
     <message>
         <source>Status</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation type="obsolete">OK</translation>
     </message>
 </context>
 <context>
@@ -612,7 +604,7 @@
     </message>
     <message>
         <source>Imporing Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Importando Favoritos</translation>
     </message>
 </context>
 <context>
@@ -786,14 +778,14 @@
     </message>
     <message>
         <source>WebView process has crashed, restarting...</source>
-        <translation type="unfinished"></translation>
+        <translation>El proceso WebView se ha colgado, reiniciando...</translation>
     </message>
 </context>
 <context>
     <name>MediaPlayerToolBar</name>
     <message>
         <source>Downloading media</source>
-        <translation type="unfinished"></translation>
+        <translation>Descargando multimedia</translation>
     </message>
 </context>
 <context>
@@ -867,20 +859,16 @@
 <context>
     <name>NotificationDialog</name>
     <message>
-        <source>OK</source>
-        <translation type="obsolete">OK</translation>
-    </message>
-    <message>
         <source>wants to access System&apos;s Notifications</source>
-        <translation type="unfinished"></translation>
+        <translation>quiere acceder al Sistema de Notificaciones</translation>
     </message>
     <message>
         <source>Allow</source>
-        <translation type="unfinished">Permitir</translation>
+        <translation>Permitir</translation>
     </message>
     <message>
         <source>Deny</source>
-        <translation type="unfinished"></translation>
+        <translation>Rechazar</translation>
     </message>
 </context>
 <context>
@@ -1277,23 +1265,23 @@
         <translation type="unfinished">OK</translation>
     </message>
     <message>
-        <source>FAILED</source>
-        <translation type="unfinished">FALLIDO</translation>
-    </message>
-    <message>
         <source>Downloading video info</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>FAILED</source>
+        <translation type="unfinished">FALLIDO</translation>
     </message>
 </context>
 <context>
     <name>harbour-webpirate</name>
     <message>
         <source>Download Completed</source>
-        <translation type="unfinished"></translation>
+        <translation>Descarga Completada</translation>
     </message>
     <message>
         <source>Download Failed</source>
-        <translation type="unfinished"></translation>
+        <translation>Decarga Fallida</translation>
     </message>
 </context>
 </TS>

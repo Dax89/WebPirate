@@ -284,10 +284,6 @@
         <translation>Varaktighet</translation>
     </message>
     <message>
-        <source>Response</source>
-        <translation type="vanished">Svar</translation>
-    </message>
-    <message>
         <source>Title</source>
         <translation>Namn</translation>
     </message>
@@ -317,11 +313,7 @@
     </message>
     <message>
         <source>Status</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation type="obsolete">OK</translation>
+        <translation>Status</translation>
     </message>
 </context>
 <context>
@@ -785,7 +777,7 @@
     </message>
     <message>
         <source>WebView process has crashed, restarting...</source>
-        <translation type="unfinished"></translation>
+        <translation>WebView-processen har kraschat, startar om...</translation>
     </message>
 </context>
 <context>
@@ -866,20 +858,16 @@
 <context>
     <name>NotificationDialog</name>
     <message>
-        <source>OK</source>
-        <translation type="obsolete">OK</translation>
-    </message>
-    <message>
         <source>wants to access System&apos;s Notifications</source>
-        <translation type="unfinished"></translation>
+        <translation>vill få åtkomst till systemets meddelandefunktion</translation>
     </message>
     <message>
         <source>Allow</source>
-        <translation type="unfinished">Tillåt</translation>
+        <translation>Tillåt</translation>
     </message>
     <message>
         <source>Deny</source>
-        <translation type="unfinished"></translation>
+        <translation>Neka</translation>
     </message>
 </context>
 <context>
@@ -1246,23 +1234,23 @@
     <name>YouTubeCipher</name>
     <message>
         <source>Downloading Player&apos;s Cipher</source>
-        <translation type="unfinished"></translation>
+        <translation>Laddar ner spelarens kryptering</translation>
     </message>
     <message>
         <source>Cannot find decoding function</source>
-        <translation type="unfinished"></translation>
+        <translation>Kan inte hitta avkodningsfunktionen</translation>
     </message>
     <message>
         <source>Cannot find decoding object</source>
-        <translation type="unfinished"></translation>
+        <translation>Kan inte hitta avkodningsobjektet</translation>
     </message>
     <message>
         <source>Cannot download Video Configuration</source>
-        <translation type="unfinished"></translation>
+        <translation>Kan inte ladda ner videokonfiguration</translation>
     </message>
     <message>
         <source>Ciphered Video: Downloading WebPage</source>
-        <translation type="unfinished"></translation>
+        <translation>Krypterad video: Laddar ner webbsida</translation>
     </message>
 </context>
 <context>
@@ -1273,26 +1261,26 @@
     </message>
     <message>
         <source>OK</source>
-        <translation type="unfinished">OK</translation>
-    </message>
-    <message>
-        <source>FAILED</source>
-        <translation type="unfinished">MISSLYCKADES</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <source>Downloading video info</source>
-        <translation type="unfinished"></translation>
+        <translation>Laddar ner videoinfo</translation>
+    </message>
+    <message>
+        <source>FAILED</source>
+        <translation>MISSLYCKADES</translation>
     </message>
 </context>
 <context>
     <name>harbour-webpirate</name>
     <message>
         <source>Download Completed</source>
-        <translation type="unfinished"></translation>
+        <translation>Nedladdning slutförd</translation>
     </message>
     <message>
         <source>Download Failed</source>
-        <translation type="unfinished"></translation>
+        <translation>Nedladdning misslyckades</translation>
     </message>
 </context>
 </TS>

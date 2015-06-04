@@ -284,10 +284,6 @@
         <translation>播放時間</translation>
     </message>
     <message>
-        <source>Response</source>
-        <translation type="vanished">回饋</translation>
-    </message>
-    <message>
         <source>Title</source>
         <translation>標題</translation>
     </message>
@@ -318,10 +314,6 @@
     <message>
         <source>Status</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation type="obsolete">確定</translation>
     </message>
 </context>
 <context>
@@ -612,7 +604,7 @@
     </message>
     <message>
         <source>Imporing Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>匯入我的最愛</translation>
     </message>
 </context>
 <context>
@@ -785,14 +777,14 @@
     </message>
     <message>
         <source>WebView process has crashed, restarting...</source>
-        <translation type="unfinished"></translation>
+        <translation>檢視網頁失敗，重新啟動中...</translation>
     </message>
 </context>
 <context>
     <name>MediaPlayerToolBar</name>
     <message>
         <source>Downloading media</source>
-        <translation type="unfinished"></translation>
+        <translation>下載多媒體中</translation>
     </message>
 </context>
 <context>
@@ -866,20 +858,16 @@
 <context>
     <name>NotificationDialog</name>
     <message>
-        <source>OK</source>
-        <translation type="obsolete">確定</translation>
-    </message>
-    <message>
         <source>wants to access System&apos;s Notifications</source>
-        <translation type="unfinished"></translation>
+        <translation>希望與系統通知相連結</translation>
     </message>
     <message>
         <source>Allow</source>
-        <translation type="unfinished">允許</translation>
+        <translation>允許</translation>
     </message>
     <message>
         <source>Deny</source>
-        <translation type="unfinished"></translation>
+        <translation>拒絕</translation>
     </message>
 </context>
 <context>
@@ -1276,23 +1264,23 @@
         <translation type="unfinished">確定</translation>
     </message>
     <message>
-        <source>FAILED</source>
-        <translation type="unfinished">失敗</translation>
-    </message>
-    <message>
         <source>Downloading video info</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>FAILED</source>
+        <translation type="unfinished">失敗</translation>
     </message>
 </context>
 <context>
     <name>harbour-webpirate</name>
     <message>
         <source>Download Completed</source>
-        <translation type="unfinished"></translation>
+        <translation>下載完成</translation>
     </message>
     <message>
         <source>Download Failed</source>
-        <translation type="unfinished"></translation>
+        <translation>下載失敗</translation>
     </message>
 </context>
 </TS>

@@ -284,10 +284,6 @@
         <translation>Wiedergabedauer</translation>
     </message>
     <message>
-        <source>Response</source>
-        <translation type="vanished">Reaktion</translation>
-    </message>
-    <message>
         <source>Title</source>
         <translation>Titel</translation>
     </message>
@@ -317,11 +313,7 @@
     </message>
     <message>
         <source>Status</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation type="obsolete">OK</translation>
+        <translation>Status</translation>
     </message>
 </context>
 <context>
@@ -785,7 +777,7 @@
     </message>
     <message>
         <source>WebView process has crashed, restarting...</source>
-        <translation type="unfinished"></translation>
+        <translation>WebView Prozess ist abgestürzt und wird neu gestartet...</translation>
     </message>
 </context>
 <context>
@@ -866,20 +858,16 @@
 <context>
     <name>NotificationDialog</name>
     <message>
-        <source>OK</source>
-        <translation type="obsolete">OK</translation>
-    </message>
-    <message>
         <source>wants to access System&apos;s Notifications</source>
-        <translation type="unfinished"></translation>
+        <translation>möchte auf die Systembenachrichtigungen zugreifen</translation>
     </message>
     <message>
         <source>Allow</source>
-        <translation type="unfinished"></translation>
+        <translation>Erlauben</translation>
     </message>
     <message>
         <source>Deny</source>
-        <translation type="unfinished"></translation>
+        <translation>Ablehnen</translation>
     </message>
 </context>
 <context>
@@ -1246,23 +1234,23 @@
     <name>YouTubeCipher</name>
     <message>
         <source>Downloading Player&apos;s Cipher</source>
-        <translation type="unfinished"></translation>
+        <translation>Chiffre des Players wird heruntergeladen</translation>
     </message>
     <message>
         <source>Cannot find decoding function</source>
-        <translation type="unfinished"></translation>
+        <translation>Decoder nicht gefunden</translation>
     </message>
     <message>
         <source>Cannot find decoding object</source>
-        <translation type="unfinished"></translation>
+        <translation>Zu dekodierendes Objekt nicht gefunden</translation>
     </message>
     <message>
         <source>Cannot download Video Configuration</source>
-        <translation type="unfinished"></translation>
+        <translation>Videostruktur kann nicht heruntergeladen werden</translation>
     </message>
     <message>
         <source>Ciphered Video: Downloading WebPage</source>
-        <translation type="unfinished"></translation>
+        <translation>Verschlüsseltes Video: Seite wird heruntergeladen</translation>
     </message>
 </context>
 <context>
@@ -1273,26 +1261,26 @@
     </message>
     <message>
         <source>OK</source>
-        <translation type="unfinished">OK</translation>
-    </message>
-    <message>
-        <source>FAILED</source>
-        <translation type="unfinished">FEHLGESCHLAGEN</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <source>Downloading video info</source>
-        <translation type="unfinished"></translation>
+        <translation>Video Info wird heruntergeladen</translation>
+    </message>
+    <message>
+        <source>FAILED</source>
+        <translation>FEHLGESCHLAGEN</translation>
     </message>
 </context>
 <context>
     <name>harbour-webpirate</name>
     <message>
         <source>Download Completed</source>
-        <translation type="unfinished"></translation>
+        <translation>Download fertiggestellt</translation>
     </message>
     <message>
         <source>Download Failed</source>
-        <translation type="unfinished"></translation>
+        <translation>Download fehlgeschlagen</translation>
     </message>
 </context>
 </TS>

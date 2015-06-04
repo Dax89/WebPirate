@@ -284,10 +284,6 @@
         <translation>Durada</translation>
     </message>
     <message>
-        <source>Response</source>
-        <translation type="vanished">Resposta</translation>
-    </message>
-    <message>
         <source>Title</source>
         <translation>Títol</translation>
     </message>
@@ -318,10 +314,6 @@
     <message>
         <source>Status</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation type="obsolete">D&apos;acord</translation>
     </message>
 </context>
 <context>
@@ -866,10 +858,6 @@
 <context>
     <name>NotificationDialog</name>
     <message>
-        <source>OK</source>
-        <translation type="obsolete">D&apos;acord</translation>
-    </message>
-    <message>
         <source>wants to access System&apos;s Notifications</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1276,12 +1264,12 @@
         <translation type="unfinished">D&apos;acord</translation>
     </message>
     <message>
-        <source>FAILED</source>
-        <translation type="unfinished">ERRONI</translation>
-    </message>
-    <message>
         <source>Downloading video info</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>FAILED</source>
+        <translation type="unfinished">ERRONI</translation>
     </message>
 </context>
 <context>

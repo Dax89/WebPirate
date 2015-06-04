@@ -8,6 +8,19 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Thu Jun 25 2015 Antonio Davide Trogu <trogu.davide@gmail.com> 1.3-1
+- Experimental support for Notifications with SailfishOS (Web Notification API and Download Manager)
+- YouTube Grabber: Added experimental decoder for ciphered/scambled videos
+- Restart the WebProcess automatically if crashes
+- Added QuickScroll in Favorites/History/Cookie Manager
+- Browser's Grabber now reports its status
+- Fixed DailyMotion Grabber
+- Escape single quotes when grabbing videos
+- Disabled predictive text in search bar, search down when pressing Enter on VKB
+- Improved Error Page's appearance
+- Minor Fixes
+- Updated Localizations
+
 * Mon May 25 2015 Antonio Davide Trogu <trogu.davide@gmail.com> 1.2-1
 - BUGFIX: Broken "Open" menu in Favorites Manager
 - UrlHelper: Treat url:port and ip:port as URLs

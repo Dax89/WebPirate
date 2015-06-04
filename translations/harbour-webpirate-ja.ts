@@ -315,10 +315,6 @@
         <source>Status</source>
         <translation type="unfinished"></translation>
     </message>
-    <message>
-        <source>OK</source>
-        <translation type="obsolete">OK</translation>
-    </message>
 </context>
 <context>
     <name>BrowserTab</name>
@@ -862,10 +858,6 @@
 <context>
     <name>NotificationDialog</name>
     <message>
-        <source>OK</source>
-        <translation type="obsolete">OK</translation>
-    </message>
-    <message>
         <source>wants to access System&apos;s Notifications</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1266,12 +1258,12 @@
 <context>
     <name>YouTubeGrabber</name>
     <message>
-        <source>OK</source>
-        <translation type="unfinished">OK</translation>
-    </message>
-    <message>
         <source>Quality</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation type="unfinished">OK</translation>
     </message>
     <message>
         <source>Downloading video info</source>

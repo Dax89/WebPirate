@@ -81,11 +81,11 @@
     </message>
     <message>
         <source>Icon Designer</source>
-        <translation type="unfinished"></translation>
+        <translation>Designer de l&apos;icône </translation>
     </message>
     <message>
         <source>Translation Platform</source>
-        <translation type="unfinished"></translation>
+        <translation>Plateforme de traduction</translation>
     </message>
 </context>
 <context>
@@ -284,10 +284,6 @@
         <translation>Durée</translation>
     </message>
     <message>
-        <source>Response</source>
-        <translation type="vanished">Réponse</translation>
-    </message>
-    <message>
         <source>Title</source>
         <translation>Titre</translation>
     </message>
@@ -318,10 +314,6 @@
     <message>
         <source>Status</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation type="obsolete">OK</translation>
     </message>
 </context>
 <context>
@@ -600,19 +592,19 @@
     <name>FavoritesImportPage</name>
     <message>
         <source>Import Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Importer les favoris</translation>
     </message>
     <message>
         <source>From HTML File</source>
-        <translation type="unfinished"></translation>
+        <translation>De fichier HTML</translation>
     </message>
     <message>
         <source>From Sailfish Browser</source>
-        <translation type="unfinished"></translation>
+        <translation>Du navigateur Sailfish</translation>
     </message>
     <message>
         <source>Imporing Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Import des favoris</translation>
     </message>
 </context>
 <context>
@@ -663,7 +655,7 @@
     </message>
     <message>
         <source>Cannot import favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Impossible d&apos;importer les favoris</translation>
     </message>
 </context>
 <context>
@@ -785,14 +777,14 @@
     </message>
     <message>
         <source>WebView process has crashed, restarting...</source>
-        <translation type="unfinished"></translation>
+        <translation>Le processus WebView s&apos;est arrêté, il redémarre ...</translation>
     </message>
 </context>
 <context>
     <name>MediaPlayerToolBar</name>
     <message>
         <source>Downloading media</source>
-        <translation type="unfinished"></translation>
+        <translation>Téléchargement de fichier</translation>
     </message>
 </context>
 <context>
@@ -866,20 +858,16 @@
 <context>
     <name>NotificationDialog</name>
     <message>
-        <source>OK</source>
-        <translation type="obsolete">OK</translation>
-    </message>
-    <message>
         <source>wants to access System&apos;s Notifications</source>
-        <translation type="unfinished"></translation>
+        <translation>souhaite accéder au Système de Notifications</translation>
     </message>
     <message>
         <source>Allow</source>
-        <translation type="unfinished">Autoriser</translation>
+        <translation>Autoriser</translation>
     </message>
     <message>
         <source>Deny</source>
-        <translation type="unfinished"></translation>
+        <translation>Refuser</translation>
     </message>
 </context>
 <context>
@@ -953,11 +941,11 @@
     <name>QuickGrid</name>
     <message>
         <source>Long Press to edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Appui long pour éditer</translation>
     </message>
     <message>
         <source>The Quick Grid is empty</source>
-        <translation type="unfinished"></translation>
+        <translation>La grille d&apos;accès rapide est vide</translation>
     </message>
 </context>
 <context>
@@ -1191,7 +1179,7 @@
     </message>
     <message>
         <source>Keep Favicons when deleting personal data</source>
-        <translation type="unfinished"></translation>
+        <translation>Gardez les Favicons lors de la suppression des données personnelles</translation>
     </message>
 </context>
 <context>
@@ -1228,7 +1216,7 @@
     <name>TextSelectionPage</name>
     <message>
         <source>Copy</source>
-        <translation type="unfinished"></translation>
+        <translation>Copier</translation>
     </message>
 </context>
 <context>
@@ -1276,23 +1264,23 @@
         <translation type="unfinished">OK</translation>
     </message>
     <message>
-        <source>FAILED</source>
-        <translation type="unfinished">ECHEC</translation>
-    </message>
-    <message>
         <source>Downloading video info</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>FAILED</source>
+        <translation type="unfinished">ECHEC</translation>
     </message>
 </context>
 <context>
     <name>harbour-webpirate</name>
     <message>
         <source>Download Completed</source>
-        <translation type="unfinished"></translation>
+        <translation>Téléchargement terminé</translation>
     </message>
     <message>
         <source>Download Failed</source>
-        <translation type="unfinished"></translation>
+        <translation>Echec du téléchargement</translation>
     </message>
 </context>
 </TS>

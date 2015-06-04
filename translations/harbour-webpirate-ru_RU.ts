@@ -284,10 +284,6 @@
         <translation>Продолжительность</translation>
     </message>
     <message>
-        <source>Response</source>
-        <translation type="vanished">Ответ</translation>
-    </message>
-    <message>
         <source>Title</source>
         <translation>Название</translation>
     </message>
@@ -318,10 +314,6 @@
     <message>
         <source>Status</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation type="obsolete">OK</translation>
     </message>
 </context>
 <context>
@@ -792,7 +784,7 @@
     <name>MediaPlayerToolBar</name>
     <message>
         <source>Downloading media</source>
-        <translation type="unfinished"></translation>
+        <translation>Загружаю медиа</translation>
     </message>
 </context>
 <context>
@@ -865,10 +857,6 @@
 </context>
 <context>
     <name>NotificationDialog</name>
-    <message>
-        <source>OK</source>
-        <translation type="obsolete">OK</translation>
-    </message>
     <message>
         <source>wants to access System&apos;s Notifications</source>
         <translation type="unfinished"></translation>
@@ -1276,23 +1264,23 @@
         <translation type="unfinished">OK</translation>
     </message>
     <message>
-        <source>FAILED</source>
-        <translation type="unfinished">Ошибка</translation>
-    </message>
-    <message>
         <source>Downloading video info</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>FAILED</source>
+        <translation type="unfinished">Ошибка</translation>
     </message>
 </context>
 <context>
     <name>harbour-webpirate</name>
     <message>
         <source>Download Completed</source>
-        <translation type="unfinished"></translation>
+        <translation>Загрузка завершена</translation>
     </message>
     <message>
         <source>Download Failed</source>
-        <translation type="unfinished"></translation>
+        <translation>Ошибка загрузки</translation>
     </message>
 </context>
 </TS>

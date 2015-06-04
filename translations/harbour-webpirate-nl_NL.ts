@@ -284,10 +284,6 @@
         <translation>Duur</translation>
     </message>
     <message>
-        <source>Response</source>
-        <translation type="vanished">Antwoord</translation>
-    </message>
-    <message>
         <source>Title</source>
         <translation>Titel</translation>
     </message>
@@ -317,11 +313,7 @@
     </message>
     <message>
         <source>Status</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation type="obsolete">OK</translation>
+        <translation>Status</translation>
     </message>
 </context>
 <context>
@@ -785,7 +777,7 @@
     </message>
     <message>
         <source>WebView process has crashed, restarting...</source>
-        <translation type="unfinished"></translation>
+        <translation>Het WebView-proces is gecrasht. Bezig met herstarten...</translation>
     </message>
 </context>
 <context>
@@ -866,20 +858,16 @@
 <context>
     <name>NotificationDialog</name>
     <message>
-        <source>OK</source>
-        <translation type="obsolete">OK</translation>
-    </message>
-    <message>
         <source>wants to access System&apos;s Notifications</source>
-        <translation type="unfinished"></translation>
+        <translation>wil systeemmeldingen kunnen geven</translation>
     </message>
     <message>
         <source>Allow</source>
-        <translation type="unfinished">Toestaan</translation>
+        <translation>Toestaan</translation>
     </message>
     <message>
         <source>Deny</source>
-        <translation type="unfinished"></translation>
+        <translation>Weigeren</translation>
     </message>
 </context>
 <context>
@@ -1246,23 +1234,23 @@
     <name>YouTubeCipher</name>
     <message>
         <source>Downloading Player&apos;s Cipher</source>
-        <translation type="unfinished"></translation>
+        <translation>Bezig met het downloaden van de spelercodering</translation>
     </message>
     <message>
         <source>Cannot find decoding function</source>
-        <translation type="unfinished"></translation>
+        <translation>Het is niet gelukt om de decodeer-functie te vinden</translation>
     </message>
     <message>
         <source>Cannot find decoding object</source>
-        <translation type="unfinished"></translation>
+        <translation>Het is niet gelukt om het decodeer-object te vinden</translation>
     </message>
     <message>
         <source>Cannot download Video Configuration</source>
-        <translation type="unfinished"></translation>
+        <translation>Het is niet gelukt om de video-configuratie te downloaden</translation>
     </message>
     <message>
         <source>Ciphered Video: Downloading WebPage</source>
-        <translation type="unfinished"></translation>
+        <translation>Gecodeerde video: bezig met het downloaden van de webpagina</translation>
     </message>
 </context>
 <context>
@@ -1273,26 +1261,26 @@
     </message>
     <message>
         <source>OK</source>
-        <translation type="unfinished">OK</translation>
-    </message>
-    <message>
-        <source>FAILED</source>
-        <translation type="unfinished">MISLUKT</translation>
+        <translation>Oké</translation>
     </message>
     <message>
         <source>Downloading video info</source>
-        <translation type="unfinished"></translation>
+        <translation>Bezig met het downloaden van de video-informatie</translation>
+    </message>
+    <message>
+        <source>FAILED</source>
+        <translation>MISLUKT</translation>
     </message>
 </context>
 <context>
     <name>harbour-webpirate</name>
     <message>
         <source>Download Completed</source>
-        <translation type="unfinished"></translation>
+        <translation>Download afgerond</translation>
     </message>
     <message>
         <source>Download Failed</source>
-        <translation type="unfinished"></translation>
+        <translation>Download mislukt</translation>
     </message>
 </context>
 </TS>

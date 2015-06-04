@@ -262,7 +262,7 @@
     <name>BlockedPopupItem</name>
     <message>
         <source>Allow</source>
-        <translation>Permetti</translation>
+        <translation>Consenti</translation>
     </message>
     <message>
         <source>Delete</source>
@@ -282,10 +282,6 @@
     <message>
         <source>Duration</source>
         <translation>Durata</translation>
-    </message>
-    <message>
-        <source>Response</source>
-        <translation type="vanished">Risposta</translation>
     </message>
     <message>
         <source>Title</source>
@@ -317,11 +313,7 @@
     </message>
     <message>
         <source>Status</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>OK</source>
-        <translation type="obsolete">OK</translation>
+        <translation>Stato</translation>
     </message>
 </context>
 <context>
@@ -785,7 +777,7 @@
     </message>
     <message>
         <source>WebView process has crashed, restarting...</source>
-        <translation type="unfinished"></translation>
+        <translation>Il processo della WebView è crashato, riavvio in corso...</translation>
     </message>
 </context>
 <context>
@@ -856,7 +848,7 @@
     </message>
     <message>
         <source>Allow</source>
-        <translation>Permetti</translation>
+        <translation>Consenti</translation>
     </message>
     <message>
         <source>Block</source>
@@ -866,20 +858,16 @@
 <context>
     <name>NotificationDialog</name>
     <message>
-        <source>OK</source>
-        <translation type="obsolete">OK</translation>
-    </message>
-    <message>
         <source>wants to access System&apos;s Notifications</source>
-        <translation type="unfinished"></translation>
+        <translation>desidera accedere alle notifiche di sistema</translation>
     </message>
     <message>
         <source>Allow</source>
-        <translation type="unfinished">Permetti</translation>
+        <translation>Consenti</translation>
     </message>
     <message>
         <source>Deny</source>
-        <translation type="unfinished"></translation>
+        <translation>Nega</translation>
     </message>
 </context>
 <context>
@@ -901,7 +889,7 @@
     </message>
     <message>
         <source>Allow</source>
-        <translation>Permetti</translation>
+        <translation>Consenti</translation>
     </message>
     <message>
         <source>Block</source>
@@ -1246,23 +1234,23 @@
     <name>YouTubeCipher</name>
     <message>
         <source>Downloading Player&apos;s Cipher</source>
-        <translation type="unfinished"></translation>
+        <translation>Scarico il codificatore del player</translation>
     </message>
     <message>
         <source>Cannot find decoding function</source>
-        <translation type="unfinished"></translation>
+        <translation>Impossibile trovare la funzione di decodifica</translation>
     </message>
     <message>
         <source>Cannot find decoding object</source>
-        <translation type="unfinished"></translation>
+        <translation>Impossibile trovare l&apos;oggetto di decodifica</translation>
     </message>
     <message>
         <source>Cannot download Video Configuration</source>
-        <translation type="unfinished"></translation>
+        <translation>Impossibile scaricare la configurazione del video</translation>
     </message>
     <message>
         <source>Ciphered Video: Downloading WebPage</source>
-        <translation type="unfinished"></translation>
+        <translation>Video Codificato: Scarico la pagina</translation>
     </message>
 </context>
 <context>
@@ -1273,26 +1261,26 @@
     </message>
     <message>
         <source>OK</source>
-        <translation type="unfinished">OK</translation>
-    </message>
-    <message>
-        <source>FAILED</source>
-        <translation type="unfinished">FALLITO</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <source>Downloading video info</source>
-        <translation type="unfinished"></translation>
+        <translation>Scarico le informazioni del video</translation>
+    </message>
+    <message>
+        <source>FAILED</source>
+        <translation>FALLITO</translation>
     </message>
 </context>
 <context>
     <name>harbour-webpirate</name>
     <message>
         <source>Download Completed</source>
-        <translation type="unfinished"></translation>
+        <translation>Download Completato</translation>
     </message>
     <message>
         <source>Download Failed</source>
-        <translation type="unfinished"></translation>
+        <translation>Download Fallito</translation>
     </message>
 </context>
 </TS>
