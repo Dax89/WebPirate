@@ -28,7 +28,7 @@ function grabPlayerJavascript(ytplayer, mediagrabber, urldecoder)
                 return;
             }
 
-            var decodeobjname = /([a-z]{2,})\.[a-z]+\(/.exec(funcbody[1]);
+            var decodeobjname = /([a-z]{2,})\.[a-zA-Z0-9]+\(/.exec(funcbody[1]);
 
             if(!decodeobjname || !decodeobjname[1]) {
                 mediagrabber.grabFailed = true;
