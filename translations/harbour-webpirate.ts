@@ -574,6 +574,21 @@
     </message>
 </context>
 <context>
+    <name>ExperimentalSettingsPage</name>
+    <message>
+        <source>Save</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Override Text Fields</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Use SailfishOS&apos;s editing components instead of WebView&apos;s ones</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>FavoritePage</name>
     <message>
         <source>Save</source>
@@ -953,10 +968,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Keep Favicons when deleting personal data</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Delete Navigation History</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1188,67 +1199,11 @@
 <context>
     <name>SettingsPage</name>
     <message>
-        <source>Home Page</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Search Engines</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>User Agent</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Wipe Data on Exit</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>General</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Privacy</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Delete Personal Data</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Save Settings</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Removing personal data</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Delete Navigation History</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Removing navigation history</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Long press to edit</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Restore tabs at Startup</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Delete Cookies</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Removing cookies</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Keep Favicons when deleting personal data</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

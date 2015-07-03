@@ -574,6 +574,21 @@
     </message>
 </context>
 <context>
+    <name>ExperimentalSettingsPage</name>
+    <message>
+        <source>Save</source>
+        <translation type="unfinished">Speichern</translation>
+    </message>
+    <message>
+        <source>Override Text Fields</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Use SailfishOS&apos;s editing components instead of WebView&apos;s ones</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>FavoritePage</name>
     <message>
         <source>Save</source>
@@ -1012,7 +1027,7 @@
     </message>
     <message>
         <source>Keep Favicons when deleting personal data</source>
-        <translation type="unfinished">Favicons beim Löschen der privaten Daten erhalten</translation>
+        <translation type="obsolete">Favicons beim Löschen der privaten Daten erhalten</translation>
     </message>
     <message>
         <source>Delete Navigation History</source>
@@ -1247,19 +1262,19 @@
     <name>SettingsPage</name>
     <message>
         <source>Home Page</source>
-        <translation>Startseite</translation>
+        <translation type="vanished">Startseite</translation>
     </message>
     <message>
         <source>Search Engines</source>
-        <translation>Suchmaschine</translation>
+        <translation type="vanished">Suchmaschine</translation>
     </message>
     <message>
         <source>User Agent</source>
-        <translation>User Agent</translation>
+        <translation type="vanished">User Agent</translation>
     </message>
     <message>
         <source>Wipe Data on Exit</source>
-        <translation>Daten beim Beenden löschen</translation>
+        <translation type="vanished">Daten beim Beenden löschen</translation>
     </message>
     <message>
         <source>General</source>
@@ -1271,43 +1286,43 @@
     </message>
     <message>
         <source>Delete Personal Data</source>
-        <translation>Private Daten löschen</translation>
+        <translation type="vanished">Private Daten löschen</translation>
     </message>
     <message>
         <source>Save Settings</source>
-        <translation>Einstellungen speichern</translation>
+        <translation type="vanished">Einstellungen speichern</translation>
     </message>
     <message>
         <source>Removing personal data</source>
-        <translation>Private Daten werden entfernt</translation>
+        <translation type="vanished">Private Daten werden entfernt</translation>
     </message>
     <message>
         <source>Delete Navigation History</source>
-        <translation>Verlauf löschen</translation>
+        <translation type="vanished">Verlauf löschen</translation>
     </message>
     <message>
         <source>Removing navigation history</source>
-        <translation>Verlauf wird gelöscht</translation>
+        <translation type="vanished">Verlauf wird gelöscht</translation>
     </message>
     <message>
         <source>Long press to edit</source>
-        <translation>Zum Bearbeiten gedrückt halten</translation>
+        <translation type="vanished">Zum Bearbeiten gedrückt halten</translation>
     </message>
     <message>
         <source>Restore tabs at Startup</source>
-        <translation>Tabs beim Starten wiederherstellen</translation>
+        <translation type="vanished">Tabs beim Starten wiederherstellen</translation>
     </message>
     <message>
         <source>Delete Cookies</source>
-        <translation>Cookies löschen</translation>
+        <translation type="vanished">Cookies löschen</translation>
     </message>
     <message>
         <source>Removing cookies</source>
-        <translation>Cookies werden entfernt</translation>
+        <translation type="vanished">Cookies werden entfernt</translation>
     </message>
     <message>
         <source>Keep Favicons when deleting personal data</source>
-        <translation>Favicons beim Löschen der privaten Daten erhalten</translation>
+        <translation type="vanished">Favicons beim Löschen der privaten Daten erhalten</translation>
     </message>
     <message>
         <source>Browser Settings</source>

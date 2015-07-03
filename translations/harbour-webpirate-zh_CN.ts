@@ -574,6 +574,21 @@
     </message>
 </context>
 <context>
+    <name>ExperimentalSettingsPage</name>
+    <message>
+        <source>Save</source>
+        <translation type="unfinished">保存</translation>
+    </message>
+    <message>
+        <source>Override Text Fields</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Use SailfishOS&apos;s editing components instead of WebView&apos;s ones</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>FavoritePage</name>
     <message>
         <source>Save</source>
@@ -1012,7 +1027,7 @@
     </message>
     <message>
         <source>Keep Favicons when deleting personal data</source>
-        <translation type="unfinished">删除个人数据时保留书签图标</translation>
+        <translation type="obsolete">删除个人数据时保留书签图标</translation>
     </message>
     <message>
         <source>Delete Navigation History</source>
@@ -1247,19 +1262,19 @@
     <name>SettingsPage</name>
     <message>
         <source>Home Page</source>
-        <translation>主页</translation>
+        <translation type="vanished">主页</translation>
     </message>
     <message>
         <source>Search Engines</source>
-        <translation>搜索引擎</translation>
+        <translation type="vanished">搜索引擎</translation>
     </message>
     <message>
         <source>User Agent</source>
-        <translation>用户代理</translation>
+        <translation type="vanished">用户代理</translation>
     </message>
     <message>
         <source>Wipe Data on Exit</source>
-        <translation>退出时清除记录</translation>
+        <translation type="vanished">退出时清除记录</translation>
     </message>
     <message>
         <source>General</source>
@@ -1271,43 +1286,43 @@
     </message>
     <message>
         <source>Delete Personal Data</source>
-        <translation>删除个人记录</translation>
+        <translation type="vanished">删除个人记录</translation>
     </message>
     <message>
         <source>Save Settings</source>
-        <translation>保存设置</translation>
+        <translation type="vanished">保存设置</translation>
     </message>
     <message>
         <source>Removing personal data</source>
-        <translation>正在删除个人记录</translation>
+        <translation type="vanished">正在删除个人记录</translation>
     </message>
     <message>
         <source>Delete Navigation History</source>
-        <translation>删除浏览历史</translation>
+        <translation type="vanished">删除浏览历史</translation>
     </message>
     <message>
         <source>Removing navigation history</source>
-        <translation>正在删除浏览历史</translation>
+        <translation type="vanished">正在删除浏览历史</translation>
     </message>
     <message>
         <source>Long press to edit</source>
-        <translation>长按以编辑</translation>
+        <translation type="vanished">长按以编辑</translation>
     </message>
     <message>
         <source>Restore tabs at Startup</source>
-        <translation>在启动时恢复标签页</translation>
+        <translation type="vanished">在启动时恢复标签页</translation>
     </message>
     <message>
         <source>Delete Cookies</source>
-        <translation>删除Cookie</translation>
+        <translation type="vanished">删除Cookie</translation>
     </message>
     <message>
         <source>Removing cookies</source>
-        <translation>正在删除Cookie</translation>
+        <translation type="vanished">正在删除Cookie</translation>
     </message>
     <message>
         <source>Keep Favicons when deleting personal data</source>
-        <translation>删除个人数据时保留书签图标</translation>
+        <translation type="vanished">删除个人数据时保留书签图标</translation>
     </message>
     <message>
         <source>Browser Settings</source>

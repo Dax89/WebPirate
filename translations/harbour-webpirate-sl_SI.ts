@@ -574,6 +574,21 @@
     </message>
 </context>
 <context>
+    <name>ExperimentalSettingsPage</name>
+    <message>
+        <source>Save</source>
+        <translation type="unfinished">Shrani</translation>
+    </message>
+    <message>
+        <source>Override Text Fields</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Use SailfishOS&apos;s editing components instead of WebView&apos;s ones</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>FavoritePage</name>
     <message>
         <source>Save</source>
@@ -1012,7 +1027,7 @@
     </message>
     <message>
         <source>Keep Favicons when deleting personal data</source>
-        <translation type="unfinished">Pri brisanju osebnih podatkov ohrani ikono zaznamka</translation>
+        <translation type="obsolete">Pri brisanju osebnih podatkov ohrani ikono zaznamka</translation>
     </message>
     <message>
         <source>Delete Navigation History</source>
@@ -1247,19 +1262,19 @@
     <name>SettingsPage</name>
     <message>
         <source>Home Page</source>
-        <translation>Domača stran</translation>
+        <translation type="vanished">Domača stran</translation>
     </message>
     <message>
         <source>Search Engines</source>
-        <translation>Iskalniki</translation>
+        <translation type="vanished">Iskalniki</translation>
     </message>
     <message>
         <source>User Agent</source>
-        <translation>User Agent</translation>
+        <translation type="vanished">User Agent</translation>
     </message>
     <message>
         <source>Wipe Data on Exit</source>
-        <translation>Ob izhodu pobriši podatke</translation>
+        <translation type="vanished">Ob izhodu pobriši podatke</translation>
     </message>
     <message>
         <source>General</source>
@@ -1271,43 +1286,43 @@
     </message>
     <message>
         <source>Delete Personal Data</source>
-        <translation>Izbriši osebne podatke</translation>
+        <translation type="vanished">Izbriši osebne podatke</translation>
     </message>
     <message>
         <source>Save Settings</source>
-        <translation>Shrani nastavitve</translation>
+        <translation type="vanished">Shrani nastavitve</translation>
     </message>
     <message>
         <source>Removing personal data</source>
-        <translation>Ostranjevanje osebnih podatkov</translation>
+        <translation type="vanished">Ostranjevanje osebnih podatkov</translation>
     </message>
     <message>
         <source>Delete Navigation History</source>
-        <translation>Izbriši zgodovino</translation>
+        <translation type="vanished">Izbriši zgodovino</translation>
     </message>
     <message>
         <source>Removing navigation history</source>
-        <translation>Odstrani zgodovino brskanja</translation>
+        <translation type="vanished">Odstrani zgodovino brskanja</translation>
     </message>
     <message>
         <source>Long press to edit</source>
-        <translation>Za urejanje pritisnite in držite</translation>
+        <translation type="vanished">Za urejanje pritisnite in držite</translation>
     </message>
     <message>
         <source>Restore tabs at Startup</source>
-        <translation>Obnovi zavihke ob zagonu</translation>
+        <translation type="vanished">Obnovi zavihke ob zagonu</translation>
     </message>
     <message>
         <source>Delete Cookies</source>
-        <translation>Izbriši piškotke</translation>
+        <translation type="vanished">Izbriši piškotke</translation>
     </message>
     <message>
         <source>Removing cookies</source>
-        <translation>Odstranjevanje piškotkov</translation>
+        <translation type="vanished">Odstranjevanje piškotkov</translation>
     </message>
     <message>
         <source>Keep Favicons when deleting personal data</source>
-        <translation>Pri brisanju osebnih podatkov ohrani ikono zaznamka</translation>
+        <translation type="vanished">Pri brisanju osebnih podatkov ohrani ikono zaznamka</translation>
     </message>
     <message>
         <source>Browser Settings</source>

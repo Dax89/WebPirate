@@ -108,7 +108,6 @@ Dialog
                     History.clear();
                 }
             }
-
         }
     }
 }

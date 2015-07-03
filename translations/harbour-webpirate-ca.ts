@@ -574,6 +574,21 @@
     </message>
 </context>
 <context>
+    <name>ExperimentalSettingsPage</name>
+    <message>
+        <source>Save</source>
+        <translation type="unfinished">Desa</translation>
+    </message>
+    <message>
+        <source>Override Text Fields</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Use SailfishOS&apos;s editing components instead of WebView&apos;s ones</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>FavoritePage</name>
     <message>
         <source>Save</source>
@@ -1012,7 +1027,7 @@
     </message>
     <message>
         <source>Keep Favicons when deleting personal data</source>
-        <translation type="unfinished">Conserva les icones dels preferits quan s&apos;eliminin les dades personals</translation>
+        <translation type="obsolete">Conserva les icones dels preferits quan s&apos;eliminin les dades personals</translation>
     </message>
     <message>
         <source>Delete Navigation History</source>
@@ -1247,19 +1262,19 @@
     <name>SettingsPage</name>
     <message>
         <source>Home Page</source>
-        <translation>Pàgina d&apos;inici</translation>
+        <translation type="vanished">Pàgina d&apos;inici</translation>
     </message>
     <message>
         <source>Search Engines</source>
-        <translation>Motors de cerca</translation>
+        <translation type="vanished">Motors de cerca</translation>
     </message>
     <message>
         <source>User Agent</source>
-        <translation>Agent d&apos;usuari</translation>
+        <translation type="vanished">Agent d&apos;usuari</translation>
     </message>
     <message>
         <source>Wipe Data on Exit</source>
-        <translation>Neteja les dades de navegació en sortir</translation>
+        <translation type="vanished">Neteja les dades de navegació en sortir</translation>
     </message>
     <message>
         <source>General</source>
@@ -1271,43 +1286,43 @@
     </message>
     <message>
         <source>Delete Personal Data</source>
-        <translation>Elimina les dades personals</translation>
+        <translation type="vanished">Elimina les dades personals</translation>
     </message>
     <message>
         <source>Save Settings</source>
-        <translation>Desa la configuració</translation>
+        <translation type="vanished">Desa la configuració</translation>
     </message>
     <message>
         <source>Removing personal data</source>
-        <translation>S&apos;estan eliminant les dades personals</translation>
+        <translation type="vanished">S&apos;estan eliminant les dades personals</translation>
     </message>
     <message>
         <source>Delete Navigation History</source>
-        <translation>Elimina l&apos;historial de navegació</translation>
+        <translation type="vanished">Elimina l&apos;historial de navegació</translation>
     </message>
     <message>
         <source>Removing navigation history</source>
-        <translation>S&apos;està eliminant l&apos;historial de navegació</translation>
+        <translation type="vanished">S&apos;està eliminant l&apos;historial de navegació</translation>
     </message>
     <message>
         <source>Long press to edit</source>
-        <translation>Mantingueu premut per editar</translation>
+        <translation type="vanished">Mantingueu premut per editar</translation>
     </message>
     <message>
         <source>Restore tabs at Startup</source>
-        <translation>Restableix les pestanyes en iniciar</translation>
+        <translation type="vanished">Restableix les pestanyes en iniciar</translation>
     </message>
     <message>
         <source>Delete Cookies</source>
-        <translation>Elimina les galetes</translation>
+        <translation type="vanished">Elimina les galetes</translation>
     </message>
     <message>
         <source>Removing cookies</source>
-        <translation>S&apos;estan eliminant les galetes</translation>
+        <translation type="vanished">S&apos;estan eliminant les galetes</translation>
     </message>
     <message>
         <source>Keep Favicons when deleting personal data</source>
-        <translation>Conserva les icones dels preferits quan s&apos;eliminin les dades personals</translation>
+        <translation type="vanished">Conserva les icones dels preferits quan s&apos;eliminin les dades personals</translation>
     </message>
     <message>
         <source>Browser Settings</source>

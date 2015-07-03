@@ -574,6 +574,21 @@
     </message>
 </context>
 <context>
+    <name>ExperimentalSettingsPage</name>
+    <message>
+        <source>Save</source>
+        <translation type="unfinished">Enregistrer</translation>
+    </message>
+    <message>
+        <source>Override Text Fields</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Use SailfishOS&apos;s editing components instead of WebView&apos;s ones</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>FavoritePage</name>
     <message>
         <source>Save</source>
@@ -1012,7 +1027,7 @@
     </message>
     <message>
         <source>Keep Favicons when deleting personal data</source>
-        <translation type="unfinished">Gardez les Favicons lors de la suppression des données personnelles</translation>
+        <translation type="obsolete">Gardez les Favicons lors de la suppression des données personnelles</translation>
     </message>
     <message>
         <source>Delete Navigation History</source>
@@ -1247,19 +1262,19 @@
     <name>SettingsPage</name>
     <message>
         <source>Home Page</source>
-        <translation>Page d&apos;acceuil</translation>
+        <translation type="vanished">Page d&apos;acceuil</translation>
     </message>
     <message>
         <source>Search Engines</source>
-        <translation>Moteurs de recherche</translation>
+        <translation type="vanished">Moteurs de recherche</translation>
     </message>
     <message>
         <source>User Agent</source>
-        <translation>Agent utilisateur</translation>
+        <translation type="vanished">Agent utilisateur</translation>
     </message>
     <message>
         <source>Wipe Data on Exit</source>
-        <translation>Supprimer les données en quittant</translation>
+        <translation type="vanished">Supprimer les données en quittant</translation>
     </message>
     <message>
         <source>General</source>
@@ -1271,43 +1286,43 @@
     </message>
     <message>
         <source>Delete Personal Data</source>
-        <translation>Supprimer les données personnelles</translation>
+        <translation type="vanished">Supprimer les données personnelles</translation>
     </message>
     <message>
         <source>Save Settings</source>
-        <translation>Enregistrer les paramètres</translation>
+        <translation type="vanished">Enregistrer les paramètres</translation>
     </message>
     <message>
         <source>Removing personal data</source>
-        <translation>Supprimer les données personnelles</translation>
+        <translation type="vanished">Supprimer les données personnelles</translation>
     </message>
     <message>
         <source>Delete Navigation History</source>
-        <translation>Supprimer l&apos;historique</translation>
+        <translation type="vanished">Supprimer l&apos;historique</translation>
     </message>
     <message>
         <source>Removing navigation history</source>
-        <translation>Supprimer l&apos;historique</translation>
+        <translation type="vanished">Supprimer l&apos;historique</translation>
     </message>
     <message>
         <source>Long press to edit</source>
-        <translation>Appui long pour modifier</translation>
+        <translation type="vanished">Appui long pour modifier</translation>
     </message>
     <message>
         <source>Restore tabs at Startup</source>
-        <translation>Restaurer les onglets au démarrage</translation>
+        <translation type="vanished">Restaurer les onglets au démarrage</translation>
     </message>
     <message>
         <source>Delete Cookies</source>
-        <translation>Supprimer les cookies</translation>
+        <translation type="vanished">Supprimer les cookies</translation>
     </message>
     <message>
         <source>Removing cookies</source>
-        <translation>Suppression des cookies </translation>
+        <translation type="vanished">Suppression des cookies </translation>
     </message>
     <message>
         <source>Keep Favicons when deleting personal data</source>
-        <translation>Gardez les Favicons lors de la suppression des données personnelles</translation>
+        <translation type="vanished">Gardez les Favicons lors de la suppression des données personnelles</translation>
     </message>
     <message>
         <source>Browser Settings</source>

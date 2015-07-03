@@ -574,6 +574,21 @@
     </message>
 </context>
 <context>
+    <name>ExperimentalSettingsPage</name>
+    <message>
+        <source>Save</source>
+        <translation type="unfinished">Tallenna</translation>
+    </message>
+    <message>
+        <source>Override Text Fields</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Use SailfishOS&apos;s editing components instead of WebView&apos;s ones</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>FavoritePage</name>
     <message>
         <source>Save</source>
@@ -995,10 +1010,6 @@
         <translation type="unfinished">Pyyhi data suljettaessa</translation>
     </message>
     <message>
-        <source>Keep Favicons when deleting personal data</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Delete Navigation History</source>
         <translation type="unfinished">Poista selaushistoria</translation>
     </message>
@@ -1231,19 +1242,15 @@
     <name>SettingsPage</name>
     <message>
         <source>Home Page</source>
-        <translation>Kotisivu</translation>
+        <translation type="vanished">Kotisivu</translation>
     </message>
     <message>
         <source>Search Engines</source>
-        <translation>Hakukoneet</translation>
-    </message>
-    <message>
-        <source>User Agent</source>
-        <translation type="unfinished"></translation>
+        <translation type="vanished">Hakukoneet</translation>
     </message>
     <message>
         <source>Wipe Data on Exit</source>
-        <translation>Pyyhi data suljettaessa</translation>
+        <translation type="vanished">Pyyhi data suljettaessa</translation>
     </message>
     <message>
         <source>General</source>
@@ -1255,43 +1262,27 @@
     </message>
     <message>
         <source>Delete Personal Data</source>
-        <translation>Poista henkilökohtainen data</translation>
+        <translation type="vanished">Poista henkilökohtainen data</translation>
     </message>
     <message>
         <source>Save Settings</source>
-        <translation>Tallenna asetukset</translation>
+        <translation type="vanished">Tallenna asetukset</translation>
     </message>
     <message>
         <source>Removing personal data</source>
-        <translation>Poistetaan henkilökohtaista dataa</translation>
+        <translation type="vanished">Poistetaan henkilökohtaista dataa</translation>
     </message>
     <message>
         <source>Delete Navigation History</source>
-        <translation>Poista selaushistoria</translation>
+        <translation type="vanished">Poista selaushistoria</translation>
     </message>
     <message>
         <source>Removing navigation history</source>
-        <translation>Poistetaan selaushistoriaa</translation>
+        <translation type="vanished">Poistetaan selaushistoriaa</translation>
     </message>
     <message>
         <source>Long press to edit</source>
-        <translation>Paina pitkään editoidaksesi</translation>
-    </message>
-    <message>
-        <source>Restore tabs at Startup</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Delete Cookies</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Removing cookies</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Keep Favicons when deleting personal data</source>
-        <translation type="unfinished"></translation>
+        <translation type="vanished">Paina pitkään editoidaksesi</translation>
     </message>
     <message>
         <source>Browser Settings</source>

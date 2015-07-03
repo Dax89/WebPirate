@@ -58,6 +58,7 @@ Page
                 height: Theme.itemSizeSmall
                 icon: "qrc:///res/experimental.png"
                 text: qsTr("Experimental")
+                onActionRequested: pageStack.push(Qt.resolvedUrl("ExperimentalSettingsPage.qml"), { "settings": settingspage.settings })
             }
         }
     }

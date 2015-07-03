@@ -574,6 +574,21 @@
     </message>
 </context>
 <context>
+    <name>ExperimentalSettingsPage</name>
+    <message>
+        <source>Save</source>
+        <translation type="unfinished">Guardar</translation>
+    </message>
+    <message>
+        <source>Override Text Fields</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Use SailfishOS&apos;s editing components instead of WebView&apos;s ones</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>FavoritePage</name>
     <message>
         <source>Save</source>
@@ -1013,7 +1028,7 @@
     </message>
     <message>
         <source>Keep Favicons when deleting personal data</source>
-        <translation type="unfinished">Mantener los iconos de los Favoritos cuando se borren los datos personales</translation>
+        <translation type="obsolete">Mantener los iconos de los Favoritos cuando se borren los datos personales</translation>
     </message>
     <message>
         <source>Delete Navigation History</source>
@@ -1248,19 +1263,19 @@
     <name>SettingsPage</name>
     <message>
         <source>Home Page</source>
-        <translation>Págino de inicio</translation>
+        <translation type="vanished">Págino de inicio</translation>
     </message>
     <message>
         <source>Search Engines</source>
-        <translation>Motor de búsqueda</translation>
+        <translation type="vanished">Motor de búsqueda</translation>
     </message>
     <message>
         <source>User Agent</source>
-        <translation>Agente de usuario</translation>
+        <translation type="vanished">Agente de usuario</translation>
     </message>
     <message>
         <source>Wipe Data on Exit</source>
-        <translation>Limpiar datos al salir</translation>
+        <translation type="vanished">Limpiar datos al salir</translation>
     </message>
     <message>
         <source>General</source>
@@ -1272,43 +1287,43 @@
     </message>
     <message>
         <source>Delete Personal Data</source>
-        <translation>Borrar datos personales</translation>
+        <translation type="vanished">Borrar datos personales</translation>
     </message>
     <message>
         <source>Save Settings</source>
-        <translation>Guardar ajustes</translation>
+        <translation type="vanished">Guardar ajustes</translation>
     </message>
     <message>
         <source>Removing personal data</source>
-        <translation>Eliminando datos personales</translation>
+        <translation type="vanished">Eliminando datos personales</translation>
     </message>
     <message>
         <source>Delete Navigation History</source>
-        <translation>Borrar historial de navegación</translation>
+        <translation type="vanished">Borrar historial de navegación</translation>
     </message>
     <message>
         <source>Removing navigation history</source>
-        <translation>Eliminando historial de navegación</translation>
+        <translation type="vanished">Eliminando historial de navegación</translation>
     </message>
     <message>
         <source>Long press to edit</source>
-        <translation>Mantén pulsado para editar</translation>
+        <translation type="vanished">Mantén pulsado para editar</translation>
     </message>
     <message>
         <source>Restore tabs at Startup</source>
-        <translation>Restaurar pestañas al iniciar</translation>
+        <translation type="vanished">Restaurar pestañas al iniciar</translation>
     </message>
     <message>
         <source>Delete Cookies</source>
-        <translation>Borrar cookies</translation>
+        <translation type="vanished">Borrar cookies</translation>
     </message>
     <message>
         <source>Removing cookies</source>
-        <translation>Borrando cookies</translation>
+        <translation type="vanished">Borrando cookies</translation>
     </message>
     <message>
         <source>Keep Favicons when deleting personal data</source>
-        <translation>Mantener los iconos de los Favoritos cuando se borren los datos personales</translation>
+        <translation type="vanished">Mantener los iconos de los Favoritos cuando se borren los datos personales</translation>
     </message>
     <message>
         <source>Browser Settings</source>

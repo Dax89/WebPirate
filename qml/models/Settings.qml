@@ -9,6 +9,8 @@ import "cover"
 
 QtObject
 {
+    readonly property string version: "1.3"
+
     property MimeDatabase mimedatabase: MimeDatabase { }
     property ScreenBlank screenblank: ScreenBlank { }
     property SearchEngineModel searchengines: SearchEngineModel { }
@@ -29,7 +31,8 @@ QtObject
     property bool clearonexit        /* Wipe UserData on exit */
     property bool keepfavicons       /* Keep Icon Database on data deletion */
     property bool restoretabs        /* Restore Tabs at Startup */
-    property bool nightmode: false;  /* Night Mode */
+    property bool nightmode: false   /* Night Mode */
 
-    readonly property string version: "1.3"
+    /* Experimental Settings */
+    property bool exp_overridetextfields /* Overrides WebView's text fields with Sailfish ones */
 }

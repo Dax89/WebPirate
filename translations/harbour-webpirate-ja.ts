@@ -574,6 +574,21 @@
     </message>
 </context>
 <context>
+    <name>ExperimentalSettingsPage</name>
+    <message>
+        <source>Save</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Override Text Fields</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Use SailfishOS&apos;s editing components instead of WebView&apos;s ones</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>FavoritePage</name>
     <message>
         <source>Save</source>
@@ -987,10 +1002,6 @@
         <translation type="unfinished">終了時にデータを消去する</translation>
     </message>
     <message>
-        <source>Keep Favicons when deleting personal data</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Delete Navigation History</source>
         <translation type="unfinished">最近の履歴を消去する</translation>
     </message>
@@ -1223,19 +1234,19 @@
     <name>SettingsPage</name>
     <message>
         <source>Home Page</source>
-        <translation>ホームページ</translation>
+        <translation type="vanished">ホームページ</translation>
     </message>
     <message>
         <source>Search Engines</source>
-        <translation>検索エンジン</translation>
+        <translation type="vanished">検索エンジン</translation>
     </message>
     <message>
         <source>User Agent</source>
-        <translation>ユーザーエージェント</translation>
+        <translation type="vanished">ユーザーエージェント</translation>
     </message>
     <message>
         <source>Wipe Data on Exit</source>
-        <translation>終了時にデータを消去する</translation>
+        <translation type="vanished">終了時にデータを消去する</translation>
     </message>
     <message>
         <source>General</source>
@@ -1249,43 +1260,23 @@
     </message>
     <message>
         <source>Delete Personal Data</source>
-        <translation>パーソナルデートを消去する</translation>
+        <translation type="vanished">パーソナルデートを消去する</translation>
     </message>
     <message>
         <source>Save Settings</source>
-        <translation>設定を保存する</translation>
+        <translation type="vanished">設定を保存する</translation>
     </message>
     <message>
         <source>Removing personal data</source>
-        <translation>パーソナルデートを削除中</translation>
+        <translation type="vanished">パーソナルデートを削除中</translation>
     </message>
     <message>
         <source>Delete Navigation History</source>
-        <translation>最近の履歴を消去する</translation>
+        <translation type="vanished">最近の履歴を消去する</translation>
     </message>
     <message>
         <source>Removing navigation history</source>
-        <translation>最近の履歴を削除中</translation>
-    </message>
-    <message>
-        <source>Long press to edit</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Restore tabs at Startup</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Delete Cookies</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Removing cookies</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Keep Favicons when deleting personal data</source>
-        <translation type="unfinished"></translation>
+        <translation type="vanished">最近の履歴を削除中</translation>
     </message>
     <message>
         <source>Browser Settings</source>

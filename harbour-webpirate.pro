@@ -189,7 +189,8 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/pages/settings/SettingsPage.qml \
     qml/pages/settings/GeneralSettingsPage.qml \
     qml/pages/settings/PrivacySettingsPage.qml \
-    qml/pages/settings/TabsSettingsPage.qml
+    qml/pages/settings/TabsSettingsPage.qml \
+    qml/pages/settings/ExperimentalSettingsPage.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line

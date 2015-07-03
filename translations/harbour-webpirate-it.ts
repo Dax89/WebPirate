@@ -574,6 +574,21 @@
     </message>
 </context>
 <context>
+    <name>ExperimentalSettingsPage</name>
+    <message>
+        <source>Save</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Override Text Fields</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Use SailfishOS&apos;s editing components instead of WebView&apos;s ones</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>FavoritePage</name>
     <message>
         <source>Save</source>
@@ -1008,7 +1023,7 @@
     </message>
     <message>
         <source>Keep Favicons when deleting personal data</source>
-        <translation type="unfinished">Conserva le icone durante la rimozione dei dati personali</translation>
+        <translation type="obsolete">Conserva le icone durante la rimozione dei dati personali</translation>
     </message>
     <message>
         <source>Delete Navigation History</source>
@@ -1243,19 +1258,19 @@
     <name>SettingsPage</name>
     <message>
         <source>Home Page</source>
-        <translation>Pagina iniziale</translation>
+        <translation type="vanished">Pagina iniziale</translation>
     </message>
     <message>
         <source>Search Engines</source>
-        <translation>Motori di ricerca</translation>
+        <translation type="vanished">Motori di ricerca</translation>
     </message>
     <message>
         <source>User Agent</source>
-        <translation>User Agent</translation>
+        <translation type="vanished">User Agent</translation>
     </message>
     <message>
         <source>Wipe Data on Exit</source>
-        <translation>Cancella dati all&apos;uscita</translation>
+        <translation type="vanished">Cancella dati all&apos;uscita</translation>
     </message>
     <message>
         <source>General</source>
@@ -1267,43 +1282,43 @@
     </message>
     <message>
         <source>Delete Personal Data</source>
-        <translation>Cancella dati personali</translation>
+        <translation type="vanished">Cancella dati personali</translation>
     </message>
     <message>
         <source>Save Settings</source>
-        <translation>Salva impostazioni</translation>
+        <translation type="vanished">Salva impostazioni</translation>
     </message>
     <message>
         <source>Removing personal data</source>
-        <translation>Rimozione dati personali</translation>
+        <translation type="vanished">Rimozione dati personali</translation>
     </message>
     <message>
         <source>Delete Navigation History</source>
-        <translation>Cancella cronologia di navigazione</translation>
+        <translation type="vanished">Cancella cronologia di navigazione</translation>
     </message>
     <message>
         <source>Removing navigation history</source>
-        <translation>Rimozione cronologia di navigazione</translation>
+        <translation type="vanished">Rimozione cronologia di navigazione</translation>
     </message>
     <message>
         <source>Long press to edit</source>
-        <translation>Premi a lungo per modificare</translation>
+        <translation type="vanished">Premi a lungo per modificare</translation>
     </message>
     <message>
         <source>Restore tabs at Startup</source>
-        <translation>Ripristina le schede all&apos;avvio</translation>
+        <translation type="vanished">Ripristina le schede all&apos;avvio</translation>
     </message>
     <message>
         <source>Delete Cookies</source>
-        <translation>Cancella i cookie</translation>
+        <translation type="vanished">Cancella i cookie</translation>
     </message>
     <message>
         <source>Removing cookies</source>
-        <translation>Rimozione cookie</translation>
+        <translation type="vanished">Rimozione cookie</translation>
     </message>
     <message>
         <source>Keep Favicons when deleting personal data</source>
-        <translation>Conserva le icone durante la rimozione dei dati personali</translation>
+        <translation type="vanished">Conserva le icone durante la rimozione dei dati personali</translation>
     </message>
     <message>
         <source>Browser Settings</source>

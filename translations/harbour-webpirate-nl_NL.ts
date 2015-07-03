@@ -574,6 +574,21 @@
     </message>
 </context>
 <context>
+    <name>ExperimentalSettingsPage</name>
+    <message>
+        <source>Save</source>
+        <translation type="unfinished">Opslaan</translation>
+    </message>
+    <message>
+        <source>Override Text Fields</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Use SailfishOS&apos;s editing components instead of WebView&apos;s ones</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>FavoritePage</name>
     <message>
         <source>Save</source>
@@ -1012,7 +1027,7 @@
     </message>
     <message>
         <source>Keep Favicons when deleting personal data</source>
-        <translation type="unfinished">Favicons behouden bij het wissen van persoonlijke gegevens</translation>
+        <translation type="obsolete">Favicons behouden bij het wissen van persoonlijke gegevens</translation>
     </message>
     <message>
         <source>Delete Navigation History</source>
@@ -1247,19 +1262,19 @@
     <name>SettingsPage</name>
     <message>
         <source>Home Page</source>
-        <translation>Startpagina</translation>
+        <translation type="vanished">Startpagina</translation>
     </message>
     <message>
         <source>Search Engines</source>
-        <translation>Zoekmachines</translation>
+        <translation type="vanished">Zoekmachines</translation>
     </message>
     <message>
         <source>User Agent</source>
-        <translation>Gebruikersagent</translation>
+        <translation type="vanished">Gebruikersagent</translation>
     </message>
     <message>
         <source>Wipe Data on Exit</source>
-        <translation>Gegevens wissen wanneer de browser wordt afgesloten</translation>
+        <translation type="vanished">Gegevens wissen wanneer de browser wordt afgesloten</translation>
     </message>
     <message>
         <source>General</source>
@@ -1271,43 +1286,43 @@
     </message>
     <message>
         <source>Delete Personal Data</source>
-        <translation>Persoonlijke gegevens wissen</translation>
+        <translation type="vanished">Persoonlijke gegevens wissen</translation>
     </message>
     <message>
         <source>Save Settings</source>
-        <translation>Instellingen opslaan</translation>
+        <translation type="vanished">Instellingen opslaan</translation>
     </message>
     <message>
         <source>Removing personal data</source>
-        <translation>Bezig met het wissen van de persoonlijke gegevens</translation>
+        <translation type="vanished">Bezig met het wissen van de persoonlijke gegevens</translation>
     </message>
     <message>
         <source>Delete Navigation History</source>
-        <translation>Surfgeschiedenis wissen</translation>
+        <translation type="vanished">Surfgeschiedenis wissen</translation>
     </message>
     <message>
         <source>Removing navigation history</source>
-        <translation>Bezig met het wissen van de surfgeschiedenis</translation>
+        <translation type="vanished">Bezig met het wissen van de surfgeschiedenis</translation>
     </message>
     <message>
         <source>Long press to edit</source>
-        <translation>Lang ingedrukt houden om te bewerken</translation>
+        <translation type="vanished">Lang ingedrukt houden om te bewerken</translation>
     </message>
     <message>
         <source>Restore tabs at Startup</source>
-        <translation>Tabbladen herstellen bij opstarten</translation>
+        <translation type="vanished">Tabbladen herstellen bij opstarten</translation>
     </message>
     <message>
         <source>Delete Cookies</source>
-        <translation>Cookies wissen</translation>
+        <translation type="vanished">Cookies wissen</translation>
     </message>
     <message>
         <source>Removing cookies</source>
-        <translation>Bezig met het wissen van de cookies</translation>
+        <translation type="vanished">Bezig met het wissen van de cookies</translation>
     </message>
     <message>
         <source>Keep Favicons when deleting personal data</source>
-        <translation>Favicons behouden bij het wissen van persoonlijke gegevens</translation>
+        <translation type="vanished">Favicons behouden bij het wissen van persoonlijke gegevens</translation>
     </message>
     <message>
         <source>Browser Settings</source>

@@ -88,6 +88,9 @@ ApplicationWindow
                 settings.keepfavicons = parseInt(Database.transactionGet(tx, "keepfavicons"));
                 settings.clearonexit = parseInt(Database.transactionGet(tx, "clearonexit"));
                 settings.restoretabs = parseInt(Database.transactionGet(tx, "restoretabs"));
+
+                /* Experimental Options */
+                settings.exp_overridetextfields = parseInt(Database.transactionGet(tx, "overridetextfields"));
             });
         }
     }

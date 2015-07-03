@@ -574,6 +574,21 @@
     </message>
 </context>
 <context>
+    <name>ExperimentalSettingsPage</name>
+    <message>
+        <source>Save</source>
+        <translation type="unfinished">Сохранить</translation>
+    </message>
+    <message>
+        <source>Override Text Fields</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Use SailfishOS&apos;s editing components instead of WebView&apos;s ones</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>FavoritePage</name>
     <message>
         <source>Save</source>
@@ -1007,10 +1022,6 @@
         <translation type="unfinished">Удалить данные при выходе</translation>
     </message>
     <message>
-        <source>Keep Favicons when deleting personal data</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Delete Navigation History</source>
         <translation type="unfinished">Удалить историю</translation>
     </message>
@@ -1243,19 +1254,19 @@
     <name>SettingsPage</name>
     <message>
         <source>Home Page</source>
-        <translation>Домашняя страница</translation>
+        <translation type="vanished">Домашняя страница</translation>
     </message>
     <message>
         <source>Search Engines</source>
-        <translation>Поисковый движок</translation>
+        <translation type="vanished">Поисковый движок</translation>
     </message>
     <message>
         <source>User Agent</source>
-        <translation>Тип поискового сайта</translation>
+        <translation type="vanished">Тип поискового сайта</translation>
     </message>
     <message>
         <source>Wipe Data on Exit</source>
-        <translation>Удалить данные при выходе</translation>
+        <translation type="vanished">Удалить данные при выходе</translation>
     </message>
     <message>
         <source>General</source>
@@ -1267,43 +1278,39 @@
     </message>
     <message>
         <source>Delete Personal Data</source>
-        <translation>Удалить персональные данные</translation>
+        <translation type="vanished">Удалить персональные данные</translation>
     </message>
     <message>
         <source>Save Settings</source>
-        <translation>Сохранить настройки</translation>
+        <translation type="vanished">Сохранить настройки</translation>
     </message>
     <message>
         <source>Removing personal data</source>
-        <translation>Удаление персональных данных</translation>
+        <translation type="vanished">Удаление персональных данных</translation>
     </message>
     <message>
         <source>Delete Navigation History</source>
-        <translation>Удалить историю</translation>
+        <translation type="vanished">Удалить историю</translation>
     </message>
     <message>
         <source>Removing navigation history</source>
-        <translation>Удаление истории</translation>
+        <translation type="vanished">Удаление истории</translation>
     </message>
     <message>
         <source>Long press to edit</source>
-        <translation>Удерживайте для редактирования</translation>
+        <translation type="vanished">Удерживайте для редактирования</translation>
     </message>
     <message>
         <source>Restore tabs at Startup</source>
-        <translation>Восстановить окна,  открытые в прошлый раз</translation>
+        <translation type="vanished">Восстановить окна,  открытые в прошлый раз</translation>
     </message>
     <message>
         <source>Delete Cookies</source>
-        <translation>Удаленить Cookies</translation>
+        <translation type="vanished">Удаленить Cookies</translation>
     </message>
     <message>
         <source>Removing cookies</source>
-        <translation>Удаление Cookies</translation>
-    </message>
-    <message>
-        <source>Keep Favicons when deleting personal data</source>
-        <translation type="unfinished"></translation>
+        <translation type="vanished">Удаление Cookies</translation>
     </message>
     <message>
         <source>Browser Settings</source>

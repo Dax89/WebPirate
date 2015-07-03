@@ -574,6 +574,21 @@
     </message>
 </context>
 <context>
+    <name>ExperimentalSettingsPage</name>
+    <message>
+        <source>Save</source>
+        <translation type="unfinished">Uložit</translation>
+    </message>
+    <message>
+        <source>Override Text Fields</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Use SailfishOS&apos;s editing components instead of WebView&apos;s ones</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>FavoritePage</name>
     <message>
         <source>Save</source>
@@ -1012,7 +1027,7 @@
     </message>
     <message>
         <source>Keep Favicons when deleting personal data</source>
-        <translation type="unfinished">Ponechaf Favicony při odstaňování osobních dat</translation>
+        <translation type="obsolete">Ponechaf Favicony při odstaňování osobních dat</translation>
     </message>
     <message>
         <source>Delete Navigation History</source>
@@ -1247,19 +1262,19 @@
     <name>SettingsPage</name>
     <message>
         <source>Home Page</source>
-        <translation>Domovská stránka</translation>
+        <translation type="vanished">Domovská stránka</translation>
     </message>
     <message>
         <source>Search Engines</source>
-        <translation>Poskytovatelé vyhledávání</translation>
+        <translation type="vanished">Poskytovatelé vyhledávání</translation>
     </message>
     <message>
         <source>User Agent</source>
-        <translation>Identifikátor prohlížeče</translation>
+        <translation type="vanished">Identifikátor prohlížeče</translation>
     </message>
     <message>
         <source>Wipe Data on Exit</source>
-        <translation>Smazat data při ukončení</translation>
+        <translation type="vanished">Smazat data při ukončení</translation>
     </message>
     <message>
         <source>General</source>
@@ -1271,43 +1286,43 @@
     </message>
     <message>
         <source>Delete Personal Data</source>
-        <translation>Vymazat soukromá data</translation>
+        <translation type="vanished">Vymazat soukromá data</translation>
     </message>
     <message>
         <source>Save Settings</source>
-        <translation>Uložit nastavení</translation>
+        <translation type="vanished">Uložit nastavení</translation>
     </message>
     <message>
         <source>Removing personal data</source>
-        <translation>Mazání soukromých dat</translation>
+        <translation type="vanished">Mazání soukromých dat</translation>
     </message>
     <message>
         <source>Delete Navigation History</source>
-        <translation>Vymazat historii prohlížení</translation>
+        <translation type="vanished">Vymazat historii prohlížení</translation>
     </message>
     <message>
         <source>Removing navigation history</source>
-        <translation>Mazání historie prohlížení</translation>
+        <translation type="vanished">Mazání historie prohlížení</translation>
     </message>
     <message>
         <source>Long press to edit</source>
-        <translation>Dlouze zmáčkněte pro editaci</translation>
+        <translation type="vanished">Dlouze zmáčkněte pro editaci</translation>
     </message>
     <message>
         <source>Restore tabs at Startup</source>
-        <translation>Obnovit panely při startu</translation>
+        <translation type="vanished">Obnovit panely při startu</translation>
     </message>
     <message>
         <source>Delete Cookies</source>
-        <translation>Odstranit Cookies</translation>
+        <translation type="vanished">Odstranit Cookies</translation>
     </message>
     <message>
         <source>Removing cookies</source>
-        <translation>Odstraňování Cookies</translation>
+        <translation type="vanished">Odstraňování Cookies</translation>
     </message>
     <message>
         <source>Keep Favicons when deleting personal data</source>
-        <translation>Ponechaf Favicony při odstaňování osobních dat</translation>
+        <translation type="vanished">Ponechaf Favicony při odstaňování osobních dat</translation>
     </message>
     <message>
         <source>Browser Settings</source>

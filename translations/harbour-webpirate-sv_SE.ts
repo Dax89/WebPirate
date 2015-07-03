@@ -574,6 +574,21 @@
     </message>
 </context>
 <context>
+    <name>ExperimentalSettingsPage</name>
+    <message>
+        <source>Save</source>
+        <translation type="unfinished">Spara</translation>
+    </message>
+    <message>
+        <source>Override Text Fields</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Use SailfishOS&apos;s editing components instead of WebView&apos;s ones</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>FavoritePage</name>
     <message>
         <source>Save</source>
@@ -1012,7 +1027,7 @@
     </message>
     <message>
         <source>Keep Favicons when deleting personal data</source>
-        <translation type="unfinished">Behåll favoritikoner när pesronlig data tas bort</translation>
+        <translation type="obsolete">Behåll favoritikoner när pesronlig data tas bort</translation>
     </message>
     <message>
         <source>Delete Navigation History</source>
@@ -1247,19 +1262,19 @@
     <name>SettingsPage</name>
     <message>
         <source>Home Page</source>
-        <translation>Hemsida</translation>
+        <translation type="vanished">Hemsida</translation>
     </message>
     <message>
         <source>Search Engines</source>
-        <translation>Sökmotorer</translation>
+        <translation type="vanished">Sökmotorer</translation>
     </message>
     <message>
         <source>User Agent</source>
-        <translation>Användaragent</translation>
+        <translation type="vanished">Användaragent</translation>
     </message>
     <message>
         <source>Wipe Data on Exit</source>
-        <translation>Ta bort surfdata vid avslut</translation>
+        <translation type="vanished">Ta bort surfdata vid avslut</translation>
     </message>
     <message>
         <source>General</source>
@@ -1271,43 +1286,43 @@
     </message>
     <message>
         <source>Delete Personal Data</source>
-        <translation>Radera personlig data</translation>
+        <translation type="vanished">Radera personlig data</translation>
     </message>
     <message>
         <source>Save Settings</source>
-        <translation>Spara inställningar</translation>
+        <translation type="vanished">Spara inställningar</translation>
     </message>
     <message>
         <source>Removing personal data</source>
-        <translation>Tar bort personlig data</translation>
+        <translation type="vanished">Tar bort personlig data</translation>
     </message>
     <message>
         <source>Delete Navigation History</source>
-        <translation>Ta bort surfhistorik</translation>
+        <translation type="vanished">Ta bort surfhistorik</translation>
     </message>
     <message>
         <source>Removing navigation history</source>
-        <translation>Tar bort surfhistorik</translation>
+        <translation type="vanished">Tar bort surfhistorik</translation>
     </message>
     <message>
         <source>Long press to edit</source>
-        <translation>Långtryck för att redigera</translation>
+        <translation type="vanished">Långtryck för att redigera</translation>
     </message>
     <message>
         <source>Restore tabs at Startup</source>
-        <translation>Återställ flikar vid uppstart</translation>
+        <translation type="vanished">Återställ flikar vid uppstart</translation>
     </message>
     <message>
         <source>Delete Cookies</source>
-        <translation>Ta bort cookies</translation>
+        <translation type="vanished">Ta bort cookies</translation>
     </message>
     <message>
         <source>Removing cookies</source>
-        <translation>Tar bort cookies</translation>
+        <translation type="vanished">Tar bort cookies</translation>
     </message>
     <message>
         <source>Keep Favicons when deleting personal data</source>
-        <translation>Behåll favoritikoner när pesronlig data tas bort</translation>
+        <translation type="vanished">Behåll favoritikoner när pesronlig data tas bort</translation>
     </message>
     <message>
         <source>Browser Settings</source>
