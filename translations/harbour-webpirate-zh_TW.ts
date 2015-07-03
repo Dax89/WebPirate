@@ -712,6 +712,52 @@
     </message>
 </context>
 <context>
+    <name>GeneralSettings</name>
+    <message>
+        <source>Save</source>
+        <translation type="obsolete">儲存</translation>
+    </message>
+    <message>
+        <source>Home Page</source>
+        <translation type="obsolete">首頁</translation>
+    </message>
+    <message>
+        <source>Search Engines</source>
+        <translation type="obsolete">搜尋引擎</translation>
+    </message>
+    <message>
+        <source>Long press to edit</source>
+        <translation type="obsolete">長按可進行編輯</translation>
+    </message>
+    <message>
+        <source>User Agent</source>
+        <translation type="obsolete">代理主機</translation>
+    </message>
+</context>
+<context>
+    <name>GeneralSettingsPage</name>
+    <message>
+        <source>Save</source>
+        <translation type="unfinished">儲存</translation>
+    </message>
+    <message>
+        <source>Home Page</source>
+        <translation type="unfinished">首頁</translation>
+    </message>
+    <message>
+        <source>Search Engines</source>
+        <translation type="unfinished">搜尋引擎</translation>
+    </message>
+    <message>
+        <source>Long press to edit</source>
+        <translation type="unfinished">長按可進行編輯</translation>
+    </message>
+    <message>
+        <source>User Agent</source>
+        <translation type="unfinished">代理主機</translation>
+    </message>
+</context>
+<context>
     <name>HistoryMenu</name>
     <message>
         <source>Link copied to clipboard</source>
@@ -921,6 +967,88 @@
     <message>
         <source>New Rule</source>
         <translation>新規則</translation>
+    </message>
+</context>
+<context>
+    <name>PrivacyPage</name>
+    <message>
+        <source>Wipe Data on Exit</source>
+        <translation type="obsolete">關閉時移除資料</translation>
+    </message>
+    <message>
+        <source>Keep Favicons when deleting personal data</source>
+        <translation type="obsolete">刪除個人資料時保留網站圖示</translation>
+    </message>
+    <message>
+        <source>Delete Navigation History</source>
+        <translation type="obsolete">刪除瀏覽記錄</translation>
+    </message>
+    <message>
+        <source>Removing navigation history</source>
+        <translation type="obsolete">移除瀏覽記錄中</translation>
+    </message>
+    <message>
+        <source>Delete Cookies</source>
+        <translation type="obsolete">刪除Cookie</translation>
+    </message>
+    <message>
+        <source>Removing cookies</source>
+        <translation type="obsolete">刪除Cookie中</translation>
+    </message>
+    <message>
+        <source>Delete Personal Data</source>
+        <translation type="obsolete">刪除個人資料</translation>
+    </message>
+    <message>
+        <source>Removing personal data</source>
+        <translation type="obsolete">移除個人資料中</translation>
+    </message>
+</context>
+<context>
+    <name>PrivacySettingsPage</name>
+    <message>
+        <source>Wipe Data on Exit</source>
+        <translation type="unfinished">關閉時移除資料</translation>
+    </message>
+    <message>
+        <source>Keep Favicons when deleting personal data</source>
+        <translation type="unfinished">刪除個人資料時保留網站圖示</translation>
+    </message>
+    <message>
+        <source>Delete Navigation History</source>
+        <translation type="unfinished">刪除瀏覽記錄</translation>
+    </message>
+    <message>
+        <source>Removing navigation history</source>
+        <translation type="unfinished">移除瀏覽記錄中</translation>
+    </message>
+    <message>
+        <source>Delete Cookies</source>
+        <translation type="unfinished">刪除Cookie</translation>
+    </message>
+    <message>
+        <source>Removing cookies</source>
+        <translation type="unfinished">刪除Cookie中</translation>
+    </message>
+    <message>
+        <source>Delete Personal Data</source>
+        <translation type="unfinished">刪除個人資料</translation>
+    </message>
+    <message>
+        <source>Removing personal data</source>
+        <translation type="unfinished">移除個人資料中</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation type="unfinished">儲存</translation>
+    </message>
+    <message>
+        <source>Privacy Options</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Privacy Management</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1181,6 +1309,18 @@
         <source>Keep Favicons when deleting personal data</source>
         <translation>刪除個人資料時保留網站圖示</translation>
     </message>
+    <message>
+        <source>Browser Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Tabs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Experimental</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ShareMenu</name>
@@ -1210,6 +1350,17 @@
     <message>
         <source>Close other Tabs</source>
         <translation>關閉其他分頁</translation>
+    </message>
+</context>
+<context>
+    <name>TabsSettingsPage</name>
+    <message>
+        <source>Restore tabs at Startup</source>
+        <translation type="unfinished">於開啟時重新載入分頁</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation type="unfinished">儲存</translation>
     </message>
 </context>
 <context>

@@ -712,6 +712,52 @@
     </message>
 </context>
 <context>
+    <name>GeneralSettings</name>
+    <message>
+        <source>Save</source>
+        <translation type="obsolete">Enregistrer</translation>
+    </message>
+    <message>
+        <source>Home Page</source>
+        <translation type="obsolete">Page d&apos;acceuil</translation>
+    </message>
+    <message>
+        <source>Search Engines</source>
+        <translation type="obsolete">Moteurs de recherche</translation>
+    </message>
+    <message>
+        <source>Long press to edit</source>
+        <translation type="obsolete">Appui long pour modifier</translation>
+    </message>
+    <message>
+        <source>User Agent</source>
+        <translation type="obsolete">Agent utilisateur</translation>
+    </message>
+</context>
+<context>
+    <name>GeneralSettingsPage</name>
+    <message>
+        <source>Save</source>
+        <translation type="unfinished">Enregistrer</translation>
+    </message>
+    <message>
+        <source>Home Page</source>
+        <translation type="unfinished">Page d&apos;acceuil</translation>
+    </message>
+    <message>
+        <source>Search Engines</source>
+        <translation type="unfinished">Moteurs de recherche</translation>
+    </message>
+    <message>
+        <source>Long press to edit</source>
+        <translation type="unfinished">Appui long pour modifier</translation>
+    </message>
+    <message>
+        <source>User Agent</source>
+        <translation type="unfinished">Agent utilisateur</translation>
+    </message>
+</context>
+<context>
     <name>HistoryMenu</name>
     <message>
         <source>Link copied to clipboard</source>
@@ -921,6 +967,88 @@
     <message>
         <source>New Rule</source>
         <translation>Nouvelle règle</translation>
+    </message>
+</context>
+<context>
+    <name>PrivacyPage</name>
+    <message>
+        <source>Wipe Data on Exit</source>
+        <translation type="obsolete">Supprimer les données en quittant</translation>
+    </message>
+    <message>
+        <source>Keep Favicons when deleting personal data</source>
+        <translation type="obsolete">Gardez les Favicons lors de la suppression des données personnelles</translation>
+    </message>
+    <message>
+        <source>Delete Navigation History</source>
+        <translation type="obsolete">Supprimer l&apos;historique</translation>
+    </message>
+    <message>
+        <source>Removing navigation history</source>
+        <translation type="obsolete">Supprimer l&apos;historique</translation>
+    </message>
+    <message>
+        <source>Delete Cookies</source>
+        <translation type="obsolete">Supprimer les cookies</translation>
+    </message>
+    <message>
+        <source>Removing cookies</source>
+        <translation type="obsolete">Suppression des cookies </translation>
+    </message>
+    <message>
+        <source>Delete Personal Data</source>
+        <translation type="obsolete">Supprimer les données personnelles</translation>
+    </message>
+    <message>
+        <source>Removing personal data</source>
+        <translation type="obsolete">Supprimer les données personnelles</translation>
+    </message>
+</context>
+<context>
+    <name>PrivacySettingsPage</name>
+    <message>
+        <source>Wipe Data on Exit</source>
+        <translation type="unfinished">Supprimer les données en quittant</translation>
+    </message>
+    <message>
+        <source>Keep Favicons when deleting personal data</source>
+        <translation type="unfinished">Gardez les Favicons lors de la suppression des données personnelles</translation>
+    </message>
+    <message>
+        <source>Delete Navigation History</source>
+        <translation type="unfinished">Supprimer l&apos;historique</translation>
+    </message>
+    <message>
+        <source>Removing navigation history</source>
+        <translation type="unfinished">Supprimer l&apos;historique</translation>
+    </message>
+    <message>
+        <source>Delete Cookies</source>
+        <translation type="unfinished">Supprimer les cookies</translation>
+    </message>
+    <message>
+        <source>Removing cookies</source>
+        <translation type="unfinished">Suppression des cookies </translation>
+    </message>
+    <message>
+        <source>Delete Personal Data</source>
+        <translation type="unfinished">Supprimer les données personnelles</translation>
+    </message>
+    <message>
+        <source>Removing personal data</source>
+        <translation type="unfinished">Supprimer les données personnelles</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation type="unfinished">Enregistrer</translation>
+    </message>
+    <message>
+        <source>Privacy Options</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Privacy Management</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1181,6 +1309,18 @@
         <source>Keep Favicons when deleting personal data</source>
         <translation>Gardez les Favicons lors de la suppression des données personnelles</translation>
     </message>
+    <message>
+        <source>Browser Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Tabs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Experimental</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ShareMenu</name>
@@ -1210,6 +1350,17 @@
     <message>
         <source>Close other Tabs</source>
         <translation>Fermer les autres onglets</translation>
+    </message>
+</context>
+<context>
+    <name>TabsSettingsPage</name>
+    <message>
+        <source>Restore tabs at Startup</source>
+        <translation type="unfinished">Restaurer les onglets au démarrage</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation type="unfinished">Enregistrer</translation>
     </message>
 </context>
 <context>

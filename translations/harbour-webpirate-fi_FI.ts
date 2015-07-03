@@ -712,6 +712,48 @@
     </message>
 </context>
 <context>
+    <name>GeneralSettings</name>
+    <message>
+        <source>Save</source>
+        <translation type="obsolete">Tallenna</translation>
+    </message>
+    <message>
+        <source>Home Page</source>
+        <translation type="obsolete">Kotisivu</translation>
+    </message>
+    <message>
+        <source>Search Engines</source>
+        <translation type="obsolete">Hakukoneet</translation>
+    </message>
+    <message>
+        <source>Long press to edit</source>
+        <translation type="obsolete">Paina pitkään editoidaksesi</translation>
+    </message>
+</context>
+<context>
+    <name>GeneralSettingsPage</name>
+    <message>
+        <source>Save</source>
+        <translation type="unfinished">Tallenna</translation>
+    </message>
+    <message>
+        <source>Home Page</source>
+        <translation type="unfinished">Kotisivu</translation>
+    </message>
+    <message>
+        <source>Search Engines</source>
+        <translation type="unfinished">Hakukoneet</translation>
+    </message>
+    <message>
+        <source>Long press to edit</source>
+        <translation type="unfinished">Paina pitkään editoidaksesi</translation>
+    </message>
+    <message>
+        <source>User Agent</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>HistoryMenu</name>
     <message>
         <source>Link copied to clipboard</source>
@@ -921,6 +963,76 @@
     <message>
         <source>New Rule</source>
         <translation>Uusi sääntö</translation>
+    </message>
+</context>
+<context>
+    <name>PrivacyPage</name>
+    <message>
+        <source>Wipe Data on Exit</source>
+        <translation type="obsolete">Pyyhi data suljettaessa</translation>
+    </message>
+    <message>
+        <source>Delete Navigation History</source>
+        <translation type="obsolete">Poista selaushistoria</translation>
+    </message>
+    <message>
+        <source>Removing navigation history</source>
+        <translation type="obsolete">Poistetaan selaushistoriaa</translation>
+    </message>
+    <message>
+        <source>Delete Personal Data</source>
+        <translation type="obsolete">Poista henkilökohtainen data</translation>
+    </message>
+    <message>
+        <source>Removing personal data</source>
+        <translation type="obsolete">Poistetaan henkilökohtaista dataa</translation>
+    </message>
+</context>
+<context>
+    <name>PrivacySettingsPage</name>
+    <message>
+        <source>Wipe Data on Exit</source>
+        <translation type="unfinished">Pyyhi data suljettaessa</translation>
+    </message>
+    <message>
+        <source>Keep Favicons when deleting personal data</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Delete Navigation History</source>
+        <translation type="unfinished">Poista selaushistoria</translation>
+    </message>
+    <message>
+        <source>Removing navigation history</source>
+        <translation type="unfinished">Poistetaan selaushistoriaa</translation>
+    </message>
+    <message>
+        <source>Delete Cookies</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Removing cookies</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Delete Personal Data</source>
+        <translation type="unfinished">Poista henkilökohtainen data</translation>
+    </message>
+    <message>
+        <source>Removing personal data</source>
+        <translation type="unfinished">Poistetaan henkilökohtaista dataa</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation type="unfinished">Tallenna</translation>
+    </message>
+    <message>
+        <source>Privacy Options</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Privacy Management</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1181,6 +1293,18 @@
         <source>Keep Favicons when deleting personal data</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Browser Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Tabs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Experimental</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ShareMenu</name>
@@ -1210,6 +1334,17 @@
     <message>
         <source>Close other Tabs</source>
         <translation>Sulje muut välilehdet</translation>
+    </message>
+</context>
+<context>
+    <name>TabsSettingsPage</name>
+    <message>
+        <source>Restore tabs at Startup</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation type="unfinished">Tallenna</translation>
     </message>
 </context>
 <context>

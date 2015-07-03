@@ -712,6 +712,40 @@
     </message>
 </context>
 <context>
+    <name>GeneralSettings</name>
+    <message>
+        <source>Home Page</source>
+        <translation type="obsolete">ホームページ</translation>
+    </message>
+    <message>
+        <source>User Agent</source>
+        <translation type="obsolete">ユーザーエージェント</translation>
+    </message>
+</context>
+<context>
+    <name>GeneralSettingsPage</name>
+    <message>
+        <source>Save</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Home Page</source>
+        <translation type="unfinished">ホームページ</translation>
+    </message>
+    <message>
+        <source>Search Engines</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Long press to edit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>User Agent</source>
+        <translation type="unfinished">ユーザーエージェント</translation>
+    </message>
+</context>
+<context>
     <name>HistoryMenu</name>
     <message>
         <source>Link copied to clipboard</source>
@@ -921,6 +955,76 @@
     <message>
         <source>New Rule</source>
         <translation>新ルール</translation>
+    </message>
+</context>
+<context>
+    <name>PrivacyPage</name>
+    <message>
+        <source>Wipe Data on Exit</source>
+        <translation type="obsolete">終了時にデータを消去する</translation>
+    </message>
+    <message>
+        <source>Delete Navigation History</source>
+        <translation type="obsolete">最近の履歴を消去する</translation>
+    </message>
+    <message>
+        <source>Removing navigation history</source>
+        <translation type="obsolete">最近の履歴を削除中</translation>
+    </message>
+    <message>
+        <source>Delete Personal Data</source>
+        <translation type="obsolete">パーソナルデートを消去する</translation>
+    </message>
+    <message>
+        <source>Removing personal data</source>
+        <translation type="obsolete">パーソナルデートを削除中</translation>
+    </message>
+</context>
+<context>
+    <name>PrivacySettingsPage</name>
+    <message>
+        <source>Wipe Data on Exit</source>
+        <translation type="unfinished">終了時にデータを消去する</translation>
+    </message>
+    <message>
+        <source>Keep Favicons when deleting personal data</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Delete Navigation History</source>
+        <translation type="unfinished">最近の履歴を消去する</translation>
+    </message>
+    <message>
+        <source>Removing navigation history</source>
+        <translation type="unfinished">最近の履歴を削除中</translation>
+    </message>
+    <message>
+        <source>Delete Cookies</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Removing cookies</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Delete Personal Data</source>
+        <translation type="unfinished">パーソナルデートを消去する</translation>
+    </message>
+    <message>
+        <source>Removing personal data</source>
+        <translation type="unfinished">パーソナルデートを削除中</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Privacy Options</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Privacy Management</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1183,6 +1287,18 @@
         <source>Keep Favicons when deleting personal data</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Browser Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Tabs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Experimental</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ShareMenu</name>
@@ -1211,6 +1327,17 @@
     </message>
     <message>
         <source>Close other Tabs</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>TabsSettingsPage</name>
+    <message>
+        <source>Restore tabs at Startup</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Save</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

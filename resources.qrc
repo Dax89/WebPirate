@@ -13,5 +13,7 @@
         <file>res/noconnection.png</file>
         <file>res/processcrash.png</file>
         <file>res/loaderror.png</file>
+        <file>res/experimental.png</file>
+        <file>res/privacy.png</file>
     </qresource>
 </RCC>

@@ -138,7 +138,7 @@ Item
                 anchors { left: parent.left; right: parent.right }
                 icon: "image://theme/icon-s-setting"
                 itemText: qsTr("Change settings")
-                onClicked: pageStack.push(Qt.resolvedUrl("../../pages/SettingsPage.qml"), { "settings": mainwindow.settings });
+                onClicked: pageStack.push(Qt.resolvedUrl("../../pages/settings/SettingsPage.qml"), { "settings": mainwindow.settings });
             }
 
             SidebarItem

@@ -712,6 +712,52 @@
     </message>
 </context>
 <context>
+    <name>GeneralSettings</name>
+    <message>
+        <source>Save</source>
+        <translation type="obsolete">Guardar</translation>
+    </message>
+    <message>
+        <source>Home Page</source>
+        <translation type="obsolete">Págino de inicio</translation>
+    </message>
+    <message>
+        <source>Search Engines</source>
+        <translation type="obsolete">Motor de búsqueda</translation>
+    </message>
+    <message>
+        <source>Long press to edit</source>
+        <translation type="obsolete">Mantén pulsado para editar</translation>
+    </message>
+    <message>
+        <source>User Agent</source>
+        <translation type="obsolete">Agente de usuario</translation>
+    </message>
+</context>
+<context>
+    <name>GeneralSettingsPage</name>
+    <message>
+        <source>Save</source>
+        <translation type="unfinished">Guardar</translation>
+    </message>
+    <message>
+        <source>Home Page</source>
+        <translation type="unfinished">Págino de inicio</translation>
+    </message>
+    <message>
+        <source>Search Engines</source>
+        <translation type="unfinished">Motor de búsqueda</translation>
+    </message>
+    <message>
+        <source>Long press to edit</source>
+        <translation type="unfinished">Mantén pulsado para editar</translation>
+    </message>
+    <message>
+        <source>User Agent</source>
+        <translation type="unfinished">Agente de usuario</translation>
+    </message>
+</context>
+<context>
     <name>HistoryMenu</name>
     <message>
         <source>Link copied to clipboard</source>
@@ -922,6 +968,88 @@
     <message>
         <source>New Rule</source>
         <translation>Nueva regla</translation>
+    </message>
+</context>
+<context>
+    <name>PrivacyPage</name>
+    <message>
+        <source>Wipe Data on Exit</source>
+        <translation type="obsolete">Limpiar datos al salir</translation>
+    </message>
+    <message>
+        <source>Keep Favicons when deleting personal data</source>
+        <translation type="obsolete">Mantener los iconos de los Favoritos cuando se borren los datos personales</translation>
+    </message>
+    <message>
+        <source>Delete Navigation History</source>
+        <translation type="obsolete">Borrar historial de navegación</translation>
+    </message>
+    <message>
+        <source>Removing navigation history</source>
+        <translation type="obsolete">Eliminando historial de navegación</translation>
+    </message>
+    <message>
+        <source>Delete Cookies</source>
+        <translation type="obsolete">Borrar cookies</translation>
+    </message>
+    <message>
+        <source>Removing cookies</source>
+        <translation type="obsolete">Borrando cookies</translation>
+    </message>
+    <message>
+        <source>Delete Personal Data</source>
+        <translation type="obsolete">Borrar datos personales</translation>
+    </message>
+    <message>
+        <source>Removing personal data</source>
+        <translation type="obsolete">Eliminando datos personales</translation>
+    </message>
+</context>
+<context>
+    <name>PrivacySettingsPage</name>
+    <message>
+        <source>Wipe Data on Exit</source>
+        <translation type="unfinished">Limpiar datos al salir</translation>
+    </message>
+    <message>
+        <source>Keep Favicons when deleting personal data</source>
+        <translation type="unfinished">Mantener los iconos de los Favoritos cuando se borren los datos personales</translation>
+    </message>
+    <message>
+        <source>Delete Navigation History</source>
+        <translation type="unfinished">Borrar historial de navegación</translation>
+    </message>
+    <message>
+        <source>Removing navigation history</source>
+        <translation type="unfinished">Eliminando historial de navegación</translation>
+    </message>
+    <message>
+        <source>Delete Cookies</source>
+        <translation type="unfinished">Borrar cookies</translation>
+    </message>
+    <message>
+        <source>Removing cookies</source>
+        <translation type="unfinished">Borrando cookies</translation>
+    </message>
+    <message>
+        <source>Delete Personal Data</source>
+        <translation type="unfinished">Borrar datos personales</translation>
+    </message>
+    <message>
+        <source>Removing personal data</source>
+        <translation type="unfinished">Eliminando datos personales</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation type="unfinished">Guardar</translation>
+    </message>
+    <message>
+        <source>Privacy Options</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Privacy Management</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1182,6 +1310,18 @@
         <source>Keep Favicons when deleting personal data</source>
         <translation>Mantener los iconos de los Favoritos cuando se borren los datos personales</translation>
     </message>
+    <message>
+        <source>Browser Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Tabs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Experimental</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ShareMenu</name>
@@ -1211,6 +1351,17 @@
     <message>
         <source>Close other Tabs</source>
         <translation>Cerrar otras pestañas</translation>
+    </message>
+</context>
+<context>
+    <name>TabsSettingsPage</name>
+    <message>
+        <source>Restore tabs at Startup</source>
+        <translation type="unfinished">Restaurar pestañas al iniciar</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation type="unfinished">Guardar</translation>
     </message>
 </context>
 <context>

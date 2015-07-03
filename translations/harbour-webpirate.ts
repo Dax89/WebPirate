@@ -712,6 +712,29 @@
     </message>
 </context>
 <context>
+    <name>GeneralSettingsPage</name>
+    <message>
+        <source>Save</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Home Page</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Search Engines</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Long press to edit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>User Agent</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>HistoryMenu</name>
     <message>
         <source>Link copied to clipboard</source>
@@ -920,6 +943,53 @@
     </message>
     <message>
         <source>New Rule</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>PrivacySettingsPage</name>
+    <message>
+        <source>Wipe Data on Exit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Keep Favicons when deleting personal data</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Delete Navigation History</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Removing navigation history</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Delete Cookies</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Removing cookies</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Delete Personal Data</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Removing personal data</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Privacy Options</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Privacy Management</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1181,6 +1251,18 @@
         <source>Keep Favicons when deleting personal data</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Browser Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Tabs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Experimental</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ShareMenu</name>
@@ -1209,6 +1291,17 @@
     </message>
     <message>
         <source>Close other Tabs</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>TabsSettingsPage</name>
+    <message>
+        <source>Restore tabs at Startup</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Save</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

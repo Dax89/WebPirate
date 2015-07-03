@@ -712,6 +712,52 @@
     </message>
 </context>
 <context>
+    <name>GeneralSettings</name>
+    <message>
+        <source>Save</source>
+        <translation type="obsolete">Сохранить</translation>
+    </message>
+    <message>
+        <source>Home Page</source>
+        <translation type="obsolete">Домашняя страница</translation>
+    </message>
+    <message>
+        <source>Search Engines</source>
+        <translation type="obsolete">Поисковый движок</translation>
+    </message>
+    <message>
+        <source>Long press to edit</source>
+        <translation type="obsolete">Удерживайте для редактирования</translation>
+    </message>
+    <message>
+        <source>User Agent</source>
+        <translation type="obsolete">Тип поискового сайта</translation>
+    </message>
+</context>
+<context>
+    <name>GeneralSettingsPage</name>
+    <message>
+        <source>Save</source>
+        <translation type="unfinished">Сохранить</translation>
+    </message>
+    <message>
+        <source>Home Page</source>
+        <translation type="unfinished">Домашняя страница</translation>
+    </message>
+    <message>
+        <source>Search Engines</source>
+        <translation type="unfinished">Поисковый движок</translation>
+    </message>
+    <message>
+        <source>Long press to edit</source>
+        <translation type="unfinished">Удерживайте для редактирования</translation>
+    </message>
+    <message>
+        <source>User Agent</source>
+        <translation type="unfinished">Тип поискового сайта</translation>
+    </message>
+</context>
+<context>
     <name>HistoryMenu</name>
     <message>
         <source>Link copied to clipboard</source>
@@ -921,6 +967,84 @@
     <message>
         <source>New Rule</source>
         <translation>Новое правило</translation>
+    </message>
+</context>
+<context>
+    <name>PrivacyPage</name>
+    <message>
+        <source>Wipe Data on Exit</source>
+        <translation type="obsolete">Удалить данные при выходе</translation>
+    </message>
+    <message>
+        <source>Delete Navigation History</source>
+        <translation type="obsolete">Удалить историю</translation>
+    </message>
+    <message>
+        <source>Removing navigation history</source>
+        <translation type="obsolete">Удаление истории</translation>
+    </message>
+    <message>
+        <source>Delete Cookies</source>
+        <translation type="obsolete">Удаленить Cookies</translation>
+    </message>
+    <message>
+        <source>Removing cookies</source>
+        <translation type="obsolete">Удаление Cookies</translation>
+    </message>
+    <message>
+        <source>Delete Personal Data</source>
+        <translation type="obsolete">Удалить персональные данные</translation>
+    </message>
+    <message>
+        <source>Removing personal data</source>
+        <translation type="obsolete">Удаление персональных данных</translation>
+    </message>
+</context>
+<context>
+    <name>PrivacySettingsPage</name>
+    <message>
+        <source>Wipe Data on Exit</source>
+        <translation type="unfinished">Удалить данные при выходе</translation>
+    </message>
+    <message>
+        <source>Keep Favicons when deleting personal data</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Delete Navigation History</source>
+        <translation type="unfinished">Удалить историю</translation>
+    </message>
+    <message>
+        <source>Removing navigation history</source>
+        <translation type="unfinished">Удаление истории</translation>
+    </message>
+    <message>
+        <source>Delete Cookies</source>
+        <translation type="unfinished">Удаленить Cookies</translation>
+    </message>
+    <message>
+        <source>Removing cookies</source>
+        <translation type="unfinished">Удаление Cookies</translation>
+    </message>
+    <message>
+        <source>Delete Personal Data</source>
+        <translation type="unfinished">Удалить персональные данные</translation>
+    </message>
+    <message>
+        <source>Removing personal data</source>
+        <translation type="unfinished">Удаление персональных данных</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation type="unfinished">Сохранить</translation>
+    </message>
+    <message>
+        <source>Privacy Options</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Privacy Management</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1181,6 +1305,18 @@
         <source>Keep Favicons when deleting personal data</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Browser Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Tabs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Experimental</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ShareMenu</name>
@@ -1210,6 +1346,17 @@
     <message>
         <source>Close other Tabs</source>
         <translation>Закрыть другие вкладки</translation>
+    </message>
+</context>
+<context>
+    <name>TabsSettingsPage</name>
+    <message>
+        <source>Restore tabs at Startup</source>
+        <translation type="unfinished">Восстановить окна,  открытые в прошлый раз</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation type="unfinished">Сохранить</translation>
     </message>
 </context>
 <context>

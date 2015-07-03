@@ -712,6 +712,52 @@
     </message>
 </context>
 <context>
+    <name>GeneralSettings</name>
+    <message>
+        <source>Save</source>
+        <translation type="obsolete">Uložit</translation>
+    </message>
+    <message>
+        <source>Home Page</source>
+        <translation type="obsolete">Domovská stránka</translation>
+    </message>
+    <message>
+        <source>Search Engines</source>
+        <translation type="obsolete">Poskytovatelé vyhledávání</translation>
+    </message>
+    <message>
+        <source>Long press to edit</source>
+        <translation type="obsolete">Dlouze zmáčkněte pro editaci</translation>
+    </message>
+    <message>
+        <source>User Agent</source>
+        <translation type="obsolete">Identifikátor prohlížeče</translation>
+    </message>
+</context>
+<context>
+    <name>GeneralSettingsPage</name>
+    <message>
+        <source>Save</source>
+        <translation type="unfinished">Uložit</translation>
+    </message>
+    <message>
+        <source>Home Page</source>
+        <translation type="unfinished">Domovská stránka</translation>
+    </message>
+    <message>
+        <source>Search Engines</source>
+        <translation type="unfinished">Poskytovatelé vyhledávání</translation>
+    </message>
+    <message>
+        <source>Long press to edit</source>
+        <translation type="unfinished">Dlouze zmáčkněte pro editaci</translation>
+    </message>
+    <message>
+        <source>User Agent</source>
+        <translation type="unfinished">Identifikátor prohlížeče</translation>
+    </message>
+</context>
+<context>
     <name>HistoryMenu</name>
     <message>
         <source>Link copied to clipboard</source>
@@ -921,6 +967,88 @@
     <message>
         <source>New Rule</source>
         <translation>Nové pravidlo</translation>
+    </message>
+</context>
+<context>
+    <name>PrivacyPage</name>
+    <message>
+        <source>Wipe Data on Exit</source>
+        <translation type="obsolete">Smazat data při ukončení</translation>
+    </message>
+    <message>
+        <source>Keep Favicons when deleting personal data</source>
+        <translation type="obsolete">Ponechaf Favicony při odstaňování osobních dat</translation>
+    </message>
+    <message>
+        <source>Delete Navigation History</source>
+        <translation type="obsolete">Vymazat historii prohlížení</translation>
+    </message>
+    <message>
+        <source>Removing navigation history</source>
+        <translation type="obsolete">Mazání historie prohlížení</translation>
+    </message>
+    <message>
+        <source>Delete Cookies</source>
+        <translation type="obsolete">Odstranit Cookies</translation>
+    </message>
+    <message>
+        <source>Removing cookies</source>
+        <translation type="obsolete">Odstraňování Cookies</translation>
+    </message>
+    <message>
+        <source>Delete Personal Data</source>
+        <translation type="obsolete">Vymazat soukromá data</translation>
+    </message>
+    <message>
+        <source>Removing personal data</source>
+        <translation type="obsolete">Mazání soukromých dat</translation>
+    </message>
+</context>
+<context>
+    <name>PrivacySettingsPage</name>
+    <message>
+        <source>Wipe Data on Exit</source>
+        <translation type="unfinished">Smazat data při ukončení</translation>
+    </message>
+    <message>
+        <source>Keep Favicons when deleting personal data</source>
+        <translation type="unfinished">Ponechaf Favicony při odstaňování osobních dat</translation>
+    </message>
+    <message>
+        <source>Delete Navigation History</source>
+        <translation type="unfinished">Vymazat historii prohlížení</translation>
+    </message>
+    <message>
+        <source>Removing navigation history</source>
+        <translation type="unfinished">Mazání historie prohlížení</translation>
+    </message>
+    <message>
+        <source>Delete Cookies</source>
+        <translation type="unfinished">Odstranit Cookies</translation>
+    </message>
+    <message>
+        <source>Removing cookies</source>
+        <translation type="unfinished">Odstraňování Cookies</translation>
+    </message>
+    <message>
+        <source>Delete Personal Data</source>
+        <translation type="unfinished">Vymazat soukromá data</translation>
+    </message>
+    <message>
+        <source>Removing personal data</source>
+        <translation type="unfinished">Mazání soukromých dat</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation type="unfinished">Uložit</translation>
+    </message>
+    <message>
+        <source>Privacy Options</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Privacy Management</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1181,6 +1309,18 @@
         <source>Keep Favicons when deleting personal data</source>
         <translation>Ponechaf Favicony při odstaňování osobních dat</translation>
     </message>
+    <message>
+        <source>Browser Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Tabs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Experimental</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ShareMenu</name>
@@ -1210,6 +1350,17 @@
     <message>
         <source>Close other Tabs</source>
         <translation>Zavřít ostatní Panely</translation>
+    </message>
+</context>
+<context>
+    <name>TabsSettingsPage</name>
+    <message>
+        <source>Restore tabs at Startup</source>
+        <translation type="unfinished">Obnovit panely při startu</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation type="unfinished">Uložit</translation>
     </message>
 </context>
 <context>

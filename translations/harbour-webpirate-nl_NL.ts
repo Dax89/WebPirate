@@ -712,6 +712,52 @@
     </message>
 </context>
 <context>
+    <name>GeneralSettings</name>
+    <message>
+        <source>Save</source>
+        <translation type="obsolete">Opslaan</translation>
+    </message>
+    <message>
+        <source>Home Page</source>
+        <translation type="obsolete">Startpagina</translation>
+    </message>
+    <message>
+        <source>Search Engines</source>
+        <translation type="obsolete">Zoekmachines</translation>
+    </message>
+    <message>
+        <source>Long press to edit</source>
+        <translation type="obsolete">Lang ingedrukt houden om te bewerken</translation>
+    </message>
+    <message>
+        <source>User Agent</source>
+        <translation type="obsolete">Gebruikersagent</translation>
+    </message>
+</context>
+<context>
+    <name>GeneralSettingsPage</name>
+    <message>
+        <source>Save</source>
+        <translation type="unfinished">Opslaan</translation>
+    </message>
+    <message>
+        <source>Home Page</source>
+        <translation type="unfinished">Startpagina</translation>
+    </message>
+    <message>
+        <source>Search Engines</source>
+        <translation type="unfinished">Zoekmachines</translation>
+    </message>
+    <message>
+        <source>Long press to edit</source>
+        <translation type="unfinished">Lang ingedrukt houden om te bewerken</translation>
+    </message>
+    <message>
+        <source>User Agent</source>
+        <translation type="unfinished">Gebruikersagent</translation>
+    </message>
+</context>
+<context>
     <name>HistoryMenu</name>
     <message>
         <source>Link copied to clipboard</source>
@@ -921,6 +967,88 @@
     <message>
         <source>New Rule</source>
         <translation>Nieuwe regel</translation>
+    </message>
+</context>
+<context>
+    <name>PrivacyPage</name>
+    <message>
+        <source>Wipe Data on Exit</source>
+        <translation type="obsolete">Gegevens wissen wanneer de browser wordt afgesloten</translation>
+    </message>
+    <message>
+        <source>Keep Favicons when deleting personal data</source>
+        <translation type="obsolete">Favicons behouden bij het wissen van persoonlijke gegevens</translation>
+    </message>
+    <message>
+        <source>Delete Navigation History</source>
+        <translation type="obsolete">Surfgeschiedenis wissen</translation>
+    </message>
+    <message>
+        <source>Removing navigation history</source>
+        <translation type="obsolete">Bezig met het wissen van de surfgeschiedenis</translation>
+    </message>
+    <message>
+        <source>Delete Cookies</source>
+        <translation type="obsolete">Cookies wissen</translation>
+    </message>
+    <message>
+        <source>Removing cookies</source>
+        <translation type="obsolete">Bezig met het wissen van de cookies</translation>
+    </message>
+    <message>
+        <source>Delete Personal Data</source>
+        <translation type="obsolete">Persoonlijke gegevens wissen</translation>
+    </message>
+    <message>
+        <source>Removing personal data</source>
+        <translation type="obsolete">Bezig met het wissen van de persoonlijke gegevens</translation>
+    </message>
+</context>
+<context>
+    <name>PrivacySettingsPage</name>
+    <message>
+        <source>Wipe Data on Exit</source>
+        <translation type="unfinished">Gegevens wissen wanneer de browser wordt afgesloten</translation>
+    </message>
+    <message>
+        <source>Keep Favicons when deleting personal data</source>
+        <translation type="unfinished">Favicons behouden bij het wissen van persoonlijke gegevens</translation>
+    </message>
+    <message>
+        <source>Delete Navigation History</source>
+        <translation type="unfinished">Surfgeschiedenis wissen</translation>
+    </message>
+    <message>
+        <source>Removing navigation history</source>
+        <translation type="unfinished">Bezig met het wissen van de surfgeschiedenis</translation>
+    </message>
+    <message>
+        <source>Delete Cookies</source>
+        <translation type="unfinished">Cookies wissen</translation>
+    </message>
+    <message>
+        <source>Removing cookies</source>
+        <translation type="unfinished">Bezig met het wissen van de cookies</translation>
+    </message>
+    <message>
+        <source>Delete Personal Data</source>
+        <translation type="unfinished">Persoonlijke gegevens wissen</translation>
+    </message>
+    <message>
+        <source>Removing personal data</source>
+        <translation type="unfinished">Bezig met het wissen van de persoonlijke gegevens</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation type="unfinished">Opslaan</translation>
+    </message>
+    <message>
+        <source>Privacy Options</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Privacy Management</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1181,6 +1309,18 @@
         <source>Keep Favicons when deleting personal data</source>
         <translation>Favicons behouden bij het wissen van persoonlijke gegevens</translation>
     </message>
+    <message>
+        <source>Browser Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Tabs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Experimental</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ShareMenu</name>
@@ -1210,6 +1350,17 @@
     <message>
         <source>Close other Tabs</source>
         <translation>Andere tabbladen sluiten</translation>
+    </message>
+</context>
+<context>
+    <name>TabsSettingsPage</name>
+    <message>
+        <source>Restore tabs at Startup</source>
+        <translation type="unfinished">Tabbladen herstellen bij opstarten</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation type="unfinished">Opslaan</translation>
     </message>
 </context>
 <context>

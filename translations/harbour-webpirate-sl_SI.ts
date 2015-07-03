@@ -712,6 +712,52 @@
     </message>
 </context>
 <context>
+    <name>GeneralSettings</name>
+    <message>
+        <source>Save</source>
+        <translation type="obsolete">Shrani</translation>
+    </message>
+    <message>
+        <source>Home Page</source>
+        <translation type="obsolete">Domača stran</translation>
+    </message>
+    <message>
+        <source>Search Engines</source>
+        <translation type="obsolete">Iskalniki</translation>
+    </message>
+    <message>
+        <source>Long press to edit</source>
+        <translation type="obsolete">Za urejanje pritisnite in držite</translation>
+    </message>
+    <message>
+        <source>User Agent</source>
+        <translation type="obsolete">User Agent</translation>
+    </message>
+</context>
+<context>
+    <name>GeneralSettingsPage</name>
+    <message>
+        <source>Save</source>
+        <translation type="unfinished">Shrani</translation>
+    </message>
+    <message>
+        <source>Home Page</source>
+        <translation type="unfinished">Domača stran</translation>
+    </message>
+    <message>
+        <source>Search Engines</source>
+        <translation type="unfinished">Iskalniki</translation>
+    </message>
+    <message>
+        <source>Long press to edit</source>
+        <translation type="unfinished">Za urejanje pritisnite in držite</translation>
+    </message>
+    <message>
+        <source>User Agent</source>
+        <translation type="unfinished">User Agent</translation>
+    </message>
+</context>
+<context>
     <name>HistoryMenu</name>
     <message>
         <source>Link copied to clipboard</source>
@@ -921,6 +967,88 @@
     <message>
         <source>New Rule</source>
         <translation>Novo pravilo</translation>
+    </message>
+</context>
+<context>
+    <name>PrivacyPage</name>
+    <message>
+        <source>Wipe Data on Exit</source>
+        <translation type="obsolete">Ob izhodu pobriši podatke</translation>
+    </message>
+    <message>
+        <source>Keep Favicons when deleting personal data</source>
+        <translation type="obsolete">Pri brisanju osebnih podatkov ohrani ikono zaznamka</translation>
+    </message>
+    <message>
+        <source>Delete Navigation History</source>
+        <translation type="obsolete">Izbriši zgodovino</translation>
+    </message>
+    <message>
+        <source>Removing navigation history</source>
+        <translation type="obsolete">Odstrani zgodovino brskanja</translation>
+    </message>
+    <message>
+        <source>Delete Cookies</source>
+        <translation type="obsolete">Izbriši piškotke</translation>
+    </message>
+    <message>
+        <source>Removing cookies</source>
+        <translation type="obsolete">Odstranjevanje piškotkov</translation>
+    </message>
+    <message>
+        <source>Delete Personal Data</source>
+        <translation type="obsolete">Izbriši osebne podatke</translation>
+    </message>
+    <message>
+        <source>Removing personal data</source>
+        <translation type="obsolete">Ostranjevanje osebnih podatkov</translation>
+    </message>
+</context>
+<context>
+    <name>PrivacySettingsPage</name>
+    <message>
+        <source>Wipe Data on Exit</source>
+        <translation type="unfinished">Ob izhodu pobriši podatke</translation>
+    </message>
+    <message>
+        <source>Keep Favicons when deleting personal data</source>
+        <translation type="unfinished">Pri brisanju osebnih podatkov ohrani ikono zaznamka</translation>
+    </message>
+    <message>
+        <source>Delete Navigation History</source>
+        <translation type="unfinished">Izbriši zgodovino</translation>
+    </message>
+    <message>
+        <source>Removing navigation history</source>
+        <translation type="unfinished">Odstrani zgodovino brskanja</translation>
+    </message>
+    <message>
+        <source>Delete Cookies</source>
+        <translation type="unfinished">Izbriši piškotke</translation>
+    </message>
+    <message>
+        <source>Removing cookies</source>
+        <translation type="unfinished">Odstranjevanje piškotkov</translation>
+    </message>
+    <message>
+        <source>Delete Personal Data</source>
+        <translation type="unfinished">Izbriši osebne podatke</translation>
+    </message>
+    <message>
+        <source>Removing personal data</source>
+        <translation type="unfinished">Ostranjevanje osebnih podatkov</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation type="unfinished">Shrani</translation>
+    </message>
+    <message>
+        <source>Privacy Options</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Privacy Management</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1181,6 +1309,18 @@
         <source>Keep Favicons when deleting personal data</source>
         <translation>Pri brisanju osebnih podatkov ohrani ikono zaznamka</translation>
     </message>
+    <message>
+        <source>Browser Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Tabs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Experimental</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ShareMenu</name>
@@ -1210,6 +1350,17 @@
     <message>
         <source>Close other Tabs</source>
         <translation>Zapri ostale zavihke</translation>
+    </message>
+</context>
+<context>
+    <name>TabsSettingsPage</name>
+    <message>
+        <source>Restore tabs at Startup</source>
+        <translation type="unfinished">Obnovi zavihke ob zagonu</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation type="unfinished">Shrani</translation>
     </message>
 </context>
 <context>

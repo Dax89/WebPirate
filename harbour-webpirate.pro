@@ -66,7 +66,6 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/components/browsertab/navigationbar/LoadingBar.qml \
     qml/components/browsertab/views/LoadFailed.qml \
     qml/components/browsertab/BrowserTab.qml \
-    qml/pages/SettingsPage.qml \
     qml/pages/MainPage.qml \
     qml/js/settings/UserAgents.js \
     qml/js/settings/Database.js \
@@ -186,7 +185,11 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/js/helpers/video/players/JWPlayerHelper.js \
     qml/js/helpers/Notification.js \
     qml/components/browsertab/dialogs/NotificationDialog.qml \
-    qml/js/youtube/YouTubeCipher.js
+    qml/js/youtube/YouTubeCipher.js \
+    qml/pages/settings/SettingsPage.qml \
+    qml/pages/settings/GeneralSettingsPage.qml \
+    qml/pages/settings/PrivacySettingsPage.qml \
+    qml/pages/settings/TabsSettingsPage.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line

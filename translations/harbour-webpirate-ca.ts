@@ -712,6 +712,52 @@
     </message>
 </context>
 <context>
+    <name>GeneralSettings</name>
+    <message>
+        <source>Save</source>
+        <translation type="obsolete">Desa</translation>
+    </message>
+    <message>
+        <source>Home Page</source>
+        <translation type="obsolete">Pàgina d&apos;inici</translation>
+    </message>
+    <message>
+        <source>Search Engines</source>
+        <translation type="obsolete">Motors de cerca</translation>
+    </message>
+    <message>
+        <source>Long press to edit</source>
+        <translation type="obsolete">Mantingueu premut per editar</translation>
+    </message>
+    <message>
+        <source>User Agent</source>
+        <translation type="obsolete">Agent d&apos;usuari</translation>
+    </message>
+</context>
+<context>
+    <name>GeneralSettingsPage</name>
+    <message>
+        <source>Save</source>
+        <translation type="unfinished">Desa</translation>
+    </message>
+    <message>
+        <source>Home Page</source>
+        <translation type="unfinished">Pàgina d&apos;inici</translation>
+    </message>
+    <message>
+        <source>Search Engines</source>
+        <translation type="unfinished">Motors de cerca</translation>
+    </message>
+    <message>
+        <source>Long press to edit</source>
+        <translation type="unfinished">Mantingueu premut per editar</translation>
+    </message>
+    <message>
+        <source>User Agent</source>
+        <translation type="unfinished">Agent d&apos;usuari</translation>
+    </message>
+</context>
+<context>
     <name>HistoryMenu</name>
     <message>
         <source>Link copied to clipboard</source>
@@ -921,6 +967,88 @@
     <message>
         <source>New Rule</source>
         <translation>Nova instrucció</translation>
+    </message>
+</context>
+<context>
+    <name>PrivacyPage</name>
+    <message>
+        <source>Wipe Data on Exit</source>
+        <translation type="obsolete">Neteja les dades de navegació en sortir</translation>
+    </message>
+    <message>
+        <source>Keep Favicons when deleting personal data</source>
+        <translation type="obsolete">Conserva les icones dels preferits quan s&apos;eliminin les dades personals</translation>
+    </message>
+    <message>
+        <source>Delete Navigation History</source>
+        <translation type="obsolete">Elimina l&apos;historial de navegació</translation>
+    </message>
+    <message>
+        <source>Removing navigation history</source>
+        <translation type="obsolete">S&apos;està eliminant l&apos;historial de navegació</translation>
+    </message>
+    <message>
+        <source>Delete Cookies</source>
+        <translation type="obsolete">Elimina les galetes</translation>
+    </message>
+    <message>
+        <source>Removing cookies</source>
+        <translation type="obsolete">S&apos;estan eliminant les galetes</translation>
+    </message>
+    <message>
+        <source>Delete Personal Data</source>
+        <translation type="obsolete">Elimina les dades personals</translation>
+    </message>
+    <message>
+        <source>Removing personal data</source>
+        <translation type="obsolete">S&apos;estan eliminant les dades personals</translation>
+    </message>
+</context>
+<context>
+    <name>PrivacySettingsPage</name>
+    <message>
+        <source>Wipe Data on Exit</source>
+        <translation type="unfinished">Neteja les dades de navegació en sortir</translation>
+    </message>
+    <message>
+        <source>Keep Favicons when deleting personal data</source>
+        <translation type="unfinished">Conserva les icones dels preferits quan s&apos;eliminin les dades personals</translation>
+    </message>
+    <message>
+        <source>Delete Navigation History</source>
+        <translation type="unfinished">Elimina l&apos;historial de navegació</translation>
+    </message>
+    <message>
+        <source>Removing navigation history</source>
+        <translation type="unfinished">S&apos;està eliminant l&apos;historial de navegació</translation>
+    </message>
+    <message>
+        <source>Delete Cookies</source>
+        <translation type="unfinished">Elimina les galetes</translation>
+    </message>
+    <message>
+        <source>Removing cookies</source>
+        <translation type="unfinished">S&apos;estan eliminant les galetes</translation>
+    </message>
+    <message>
+        <source>Delete Personal Data</source>
+        <translation type="unfinished">Elimina les dades personals</translation>
+    </message>
+    <message>
+        <source>Removing personal data</source>
+        <translation type="unfinished">S&apos;estan eliminant les dades personals</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation type="unfinished">Desa</translation>
+    </message>
+    <message>
+        <source>Privacy Options</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Privacy Management</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1181,6 +1309,18 @@
         <source>Keep Favicons when deleting personal data</source>
         <translation>Conserva les icones dels preferits quan s&apos;eliminin les dades personals</translation>
     </message>
+    <message>
+        <source>Browser Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Tabs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Experimental</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ShareMenu</name>
@@ -1210,6 +1350,17 @@
     <message>
         <source>Close other Tabs</source>
         <translation>Tanca les altres pestanyes</translation>
+    </message>
+</context>
+<context>
+    <name>TabsSettingsPage</name>
+    <message>
+        <source>Restore tabs at Startup</source>
+        <translation type="unfinished">Restableix les pestanyes en iniciar</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation type="unfinished">Desa</translation>
     </message>
 </context>
 <context>

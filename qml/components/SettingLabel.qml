@@ -3,7 +3,9 @@ import Sailfish.Silica 1.0
 
 Item
 {
-    property alias labelText: lbltext.text
+    property alias icon: imgicon.source
+    property alias text: lbltext.text
+    property bool remorseRequired: false
     property string actionMessage
 
     signal actionRequested()
@@ -15,17 +17,42 @@ Item
 
         RemorseItem { id: remorseitem }
 
-        Label
+        Row
         {
-            id: lbltext
-            anchors.fill: parent
-            anchors.leftMargin: Theme.paddingLarge
-            verticalAlignment: Text.AlignVCenter
+            id: row
+            spacing: Theme.paddingSmall
+            height: parent.height
+            anchors { left: parent.left; right: parent.right; leftMargin: Theme.paddingMedium; rightMargin: Theme.paddingMedium }
+
+            Image
+            {
+                id: imgicon
+                width: lbltext.contentHeight
+                height: lbltext.contentHeight
+                anchors.verticalCenter: lbltext.verticalCenter
+                fillMode: Image.PreserveAspectFit
+                visible: imgicon.status === Image.Ready
+            }
+
+            Label
+            {
+                id: lbltext
+                width: parent.width - imgicon.width
+                height: parent.height
+                verticalAlignment: Text.AlignVCenter
+            }
         }
 
-        onClicked: remorseitem.execute(backgrounditem, actionMessage,
-                                       function() {
-                                           actionRequested();
-                                       });
+        onClicked: {
+            if(!remorseRequired) {
+                actionRequested();
+                return;
+            }
+
+            remorseitem.execute(backgrounditem, actionMessage,
+                                function() {
+                                    actionRequested();
+                                });
+        }
     }
 }
