@@ -28,7 +28,7 @@ var __wp_systemtextfield__ = {
         data.maxlength = target.maxLength;
         data.selectionstart = target.selectionStart;
         data.selectionend = target.selectionEnd;
-        data.text = __wp_grabberbuilder__.escape(target.value); /* Use Grabber Builder's escape function */
+        data.text = __wp_utils__.escape(target.value);
 
         navigator.qt.postMessage(JSON.stringify(data));
     },
@@ -38,7 +38,7 @@ var __wp_systemtextfield__ = {
             return;
 
         var target = __wp_systemtextfield__.elementMap[id];
-        target.value = __wp_grabberbuilder__.unescape(text);
+        target.value = __wp_utils__.unescape(text);
 
         if(startselection !== endselection) {
             if(startselection)

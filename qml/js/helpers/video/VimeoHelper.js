@@ -24,8 +24,8 @@ var __wp_vimeohelper__ = {
 
         var vimeoinfo = new Object;
         vimeoinfo.type = "play_vimeo";
-        vimeoinfo.title = __wp_grabberbuilder__.escape(clip.video.title);
-        vimeoinfo.author = __wp_grabberbuilder__.escape(clip.video.owner.name);
+        vimeoinfo.title = __wp_utils__.escape(clip.video.title);
+        vimeoinfo.author = __wp_utils__.escape(clip.video.owner.name);
         vimeoinfo.thumbnail = clip.video.thumbs.base;
         vimeoinfo.duration = clip.video.duration;
         vimeoinfo.videos = new Array;

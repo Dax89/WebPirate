@@ -65,6 +65,9 @@ SilicaWebView
     experimental.userScripts: [ /* Forward 'console' object to Qt's one */
                                 Qt.resolvedUrl("../../../js/helpers/Console.js"),
 
+                                /* WebView Utils Functions */
+                                Qt.resolvedUrl("../../../js/helpers/Utils.js"),
+
                                 /* SVG Polyfill: From 'canvg' project */
                                 Qt.resolvedUrl("../../../js/canvg/rgbcolor.js"),
                                 Qt.resolvedUrl("../../../js/canvg/StackBlur.js"),

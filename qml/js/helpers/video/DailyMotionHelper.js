@@ -20,8 +20,8 @@ var __wp_dailymotionhelper__ = {
 
         var videoinfo = new Object;
         videoinfo.type = "play_dailymotion";
-        videoinfo.title =  __wp_grabberbuilder__.escape(dminfo.title);
-        videoinfo.author =  __wp_grabberbuilder__.escape(dminfo["owner.username"]);
+        videoinfo.title =  __wp_utils__.escape(dminfo.title);
+        videoinfo.author =  __wp_utils__.escape(dminfo["owner.username"]);
         videoinfo.thumbnail = dminfo.thumbnail_url;
         videoinfo.duration = dminfo.duration;
         videoinfo.videos = new Array;
