@@ -1027,7 +1027,7 @@
     </message>
     <message>
         <source>Keep Favicons when deleting personal data</source>
-        <translation type="obsolete">删除个人数据时保留书签图标</translation>
+        <translation type="unfinished">删除个人数据时保留书签图标</translation>
     </message>
     <message>
         <source>Delete Navigation History</source>
@@ -1376,6 +1376,13 @@
     <message>
         <source>Save</source>
         <translation type="unfinished">保存</translation>
+    </message>
+</context>
+<context>
+    <name>TextFieldPage</name>
+    <message>
+        <source>Send</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

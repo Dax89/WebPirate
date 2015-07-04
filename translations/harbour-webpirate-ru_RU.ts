@@ -1057,6 +1057,10 @@
         <source>Privacy Management</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Keep Favicons when deleting personal data</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>PromptDialog</name>
@@ -1364,6 +1368,13 @@
     <message>
         <source>Save</source>
         <translation type="unfinished">Сохранить</translation>
+    </message>
+</context>
+<context>
+    <name>TextFieldPage</name>
+    <message>
+        <source>Send</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

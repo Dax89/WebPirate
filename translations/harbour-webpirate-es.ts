@@ -1028,7 +1028,7 @@
     </message>
     <message>
         <source>Keep Favicons when deleting personal data</source>
-        <translation type="obsolete">Mantener los iconos de los Favoritos cuando se borren los datos personales</translation>
+        <translation type="unfinished">Mantener los iconos de los Favoritos cuando se borren los datos personales</translation>
     </message>
     <message>
         <source>Delete Navigation History</source>
@@ -1377,6 +1377,13 @@
     <message>
         <source>Save</source>
         <translation type="unfinished">Guardar</translation>
+    </message>
+</context>
+<context>
+    <name>TextFieldPage</name>
+    <message>
+        <source>Send</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

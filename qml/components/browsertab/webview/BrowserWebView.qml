@@ -73,6 +73,7 @@ SilicaWebView
                                 /* Custom WebView Helpers */
                                 Qt.resolvedUrl("../../../js/helpers/ForcePixelRatio.js"),
                                 Qt.resolvedUrl("../../../js/helpers/WebViewHelper.js"),
+                                Qt.resolvedUrl("../../../js/helpers/SystemTextField.js"),
                                 Qt.resolvedUrl("../../../js/helpers/NightMode.js"),
                                 Qt.resolvedUrl("../../../js/helpers/GrabberBuilder.js"),
 
@@ -247,6 +248,7 @@ SilicaWebView
                 experimental.postMessage("forcepixelratio");
                 experimental.postMessage("polish_document");
                 experimental.postMessage("video_get");
+                experimental.postMessage("textfield_override");
 
                 webview.setNightMode(mainwindow.settings.nightmode);
 

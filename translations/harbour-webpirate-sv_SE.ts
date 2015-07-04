@@ -1027,7 +1027,7 @@
     </message>
     <message>
         <source>Keep Favicons when deleting personal data</source>
-        <translation type="obsolete">Behåll favoritikoner när pesronlig data tas bort</translation>
+        <translation type="unfinished">Behåll favoritikoner när pesronlig data tas bort</translation>
     </message>
     <message>
         <source>Delete Navigation History</source>
@@ -1376,6 +1376,13 @@
     <message>
         <source>Save</source>
         <translation type="unfinished">Spara</translation>
+    </message>
+</context>
+<context>
+    <name>TextFieldPage</name>
+    <message>
+        <source>Send</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

@@ -1027,7 +1027,7 @@
     </message>
     <message>
         <source>Keep Favicons when deleting personal data</source>
-        <translation type="obsolete">Favicons behouden bij het wissen van persoonlijke gegevens</translation>
+        <translation type="unfinished">Favicons behouden bij het wissen van persoonlijke gegevens</translation>
     </message>
     <message>
         <source>Delete Navigation History</source>
@@ -1376,6 +1376,13 @@
     <message>
         <source>Save</source>
         <translation type="unfinished">Opslaan</translation>
+    </message>
+</context>
+<context>
+    <name>TextFieldPage</name>
+    <message>
+        <source>Send</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

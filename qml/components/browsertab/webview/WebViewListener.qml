@@ -18,6 +18,7 @@ Item
                                             "longpress": onLongPress,
                                             "submit": onFormSubmit,
                                             "selector_touch": onSelectorTouched,
+                                            "textfield_selected": onTextFieldSelected,
                                             "lock_download": lockDownload,
                                             "newtab": newTabRequested,
                                             "window_open": onWindowOpen,
@@ -32,6 +33,10 @@ Item
 
         function clearEscape(s) {
             return s.replace("&#39;", "'");
+        }
+
+        function escapeString(s) {
+            return s.replace(/'/g, "&#39;");
         }
 
         function onConsoleLog(data) {
@@ -86,6 +91,42 @@ Item
 
         function onSelectorTouched(data) {
             webview.itemSelectorIndex = data.selectedIndex;
+        }
+
+        function onTextFieldSelected(data) {
+            if(!mainwindow.settings.exp_overridetextfields)
+                return;
+
+            var tfpage = pageStack.push(Qt.resolvedUrl("../../../pages/TextFieldPage.qml"), { "elementId": data.id, "maxLength": data.maxlength,
+                                                                                              "selectionStart": data.selectionstart, "selectionEnd": data.selectionEnd,
+                                                                                              "text": clearEscape(data.text) });
+
+            tfpage.accepted.connect(function() {
+                var data = new Object;
+                data.type = "textfield_sendedit";
+                data.id = tfpage.elementId;
+                data.text = escapeString(tfpage.text);
+
+                if(tfpage.selectionStart !== tfpage.selectionEnd) {
+                    data.selectionstart = tfpage.selectionStart;
+                    data.selectionend = tfpage.selectionEnd;
+                }
+                else {
+                    data.selectionstart = null;
+                    data.selectionend = null;
+                }
+
+                webview.experimental.postMessage(JSON.stringify(data));
+            });
+
+            tfpage.rejected.connect(function() {
+                var data = new Object;
+                data.type = "textfield_canceledit";
+                data.id = tfpage.elementId;
+
+                webview.experimental.postMessage(JSON.stringify(data));
+
+            });
         }
 
         function lockDownload(data) {

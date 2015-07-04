@@ -1023,7 +1023,7 @@
     </message>
     <message>
         <source>Keep Favicons when deleting personal data</source>
-        <translation type="obsolete">Conserva le icone durante la rimozione dei dati personali</translation>
+        <translation type="unfinished">Conserva le icone durante la rimozione dei dati personali</translation>
     </message>
     <message>
         <source>Delete Navigation History</source>
@@ -1371,6 +1371,13 @@
     </message>
     <message>
         <source>Save</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>TextFieldPage</name>
+    <message>
+        <source>Send</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

@@ -11,7 +11,7 @@ Dialog
     canAccept: true
 
     onAccepted: {
-        if(!textarea.selectedText.length || (!textarea.selectionStart && (textarea.selectionEnd == textarea.text.length)))
+        if(!textarea.selectedText.length || (!textarea.selectionStart && (textarea.selectionEnd === textarea.text.length)))
             Clipboard.text = textarea.text;
     }
 

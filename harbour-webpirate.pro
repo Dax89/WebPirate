@@ -190,7 +190,9 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/pages/settings/GeneralSettingsPage.qml \
     qml/pages/settings/PrivacySettingsPage.qml \
     qml/pages/settings/TabsSettingsPage.qml \
-    qml/pages/settings/ExperimentalSettingsPage.qml
+    qml/pages/settings/ExperimentalSettingsPage.qml \
+    qml/js/helpers/SystemTextField.js \
+    qml/pages/TextFieldPage.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line

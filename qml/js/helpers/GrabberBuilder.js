@@ -8,6 +8,10 @@ var __wp_grabberbuilder__ = {
         return s.replace(/'/g, "&#39;");
     },
 
+    unescape: function(s) {
+        return s.replace("&#39;", "'");
+    },
+
     createPlayer: function(element, playername, clickevent, iconurl) {
         if(!element)
             return null;
