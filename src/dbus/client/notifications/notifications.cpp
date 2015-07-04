@@ -18,7 +18,7 @@ void Notifications::send(const QString &summary, const QString &body, const QStr
         hints["x-nemo-icon"] = "icon-m-notifications";
 
     if(feedback)
-        hints["x-nemo-feedback"] = "sms";
+        hints["x-nemo-feedback"] = "chat";
 
     hints["x-nemo-preview-icon"] = "icon-m-notifications";
     hints["x-nemo-preview-summary"] = summary;
