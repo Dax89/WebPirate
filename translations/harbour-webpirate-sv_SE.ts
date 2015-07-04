@@ -577,15 +577,15 @@
     <name>ExperimentalSettingsPage</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Spara</translation>
+        <translation>Spara</translation>
     </message>
     <message>
         <source>Override Text Fields</source>
-        <translation type="unfinished"></translation>
+        <translation>Åsidosätt textfält</translation>
     </message>
     <message>
         <source>Use SailfishOS&apos;s editing components instead of WebView&apos;s ones</source>
-        <translation type="unfinished"></translation>
+        <translation>Använd SailfishOS redigeringsfunktioner, istället för WebViews</translation>
     </message>
 </context>
 <context>
@@ -727,49 +727,26 @@
     </message>
 </context>
 <context>
-    <name>GeneralSettings</name>
-    <message>
-        <source>Save</source>
-        <translation type="obsolete">Spara</translation>
-    </message>
-    <message>
-        <source>Home Page</source>
-        <translation type="obsolete">Hemsida</translation>
-    </message>
-    <message>
-        <source>Search Engines</source>
-        <translation type="obsolete">Sökmotorer</translation>
-    </message>
-    <message>
-        <source>Long press to edit</source>
-        <translation type="obsolete">Långtryck för att redigera</translation>
-    </message>
-    <message>
-        <source>User Agent</source>
-        <translation type="obsolete">Användaragent</translation>
-    </message>
-</context>
-<context>
     <name>GeneralSettingsPage</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Spara</translation>
+        <translation>Spara</translation>
     </message>
     <message>
         <source>Home Page</source>
-        <translation type="unfinished">Hemsida</translation>
+        <translation>Hemsida</translation>
     </message>
     <message>
         <source>Search Engines</source>
-        <translation type="unfinished">Sökmotorer</translation>
+        <translation>Sökmotorer</translation>
     </message>
     <message>
         <source>Long press to edit</source>
-        <translation type="unfinished">Långtryck för att redigera</translation>
+        <translation>Långtryck för att redigera</translation>
     </message>
     <message>
         <source>User Agent</source>
-        <translation type="unfinished">Användaragent</translation>
+        <translation>Användaragent</translation>
     </message>
 </context>
 <context>
@@ -985,84 +962,49 @@
     </message>
 </context>
 <context>
-    <name>PrivacyPage</name>
-    <message>
-        <source>Wipe Data on Exit</source>
-        <translation type="obsolete">Ta bort surfdata vid avslut</translation>
-    </message>
-    <message>
-        <source>Keep Favicons when deleting personal data</source>
-        <translation type="obsolete">Behåll favoritikoner när pesronlig data tas bort</translation>
-    </message>
-    <message>
-        <source>Delete Navigation History</source>
-        <translation type="obsolete">Ta bort surfhistorik</translation>
-    </message>
-    <message>
-        <source>Removing navigation history</source>
-        <translation type="obsolete">Tar bort surfhistorik</translation>
-    </message>
-    <message>
-        <source>Delete Cookies</source>
-        <translation type="obsolete">Ta bort cookies</translation>
-    </message>
-    <message>
-        <source>Removing cookies</source>
-        <translation type="obsolete">Tar bort cookies</translation>
-    </message>
-    <message>
-        <source>Delete Personal Data</source>
-        <translation type="obsolete">Radera personlig data</translation>
-    </message>
-    <message>
-        <source>Removing personal data</source>
-        <translation type="obsolete">Tar bort personlig data</translation>
-    </message>
-</context>
-<context>
     <name>PrivacySettingsPage</name>
     <message>
         <source>Wipe Data on Exit</source>
-        <translation type="unfinished">Ta bort surfdata vid avslut</translation>
-    </message>
-    <message>
-        <source>Keep Favicons when deleting personal data</source>
-        <translation type="unfinished">Behåll favoritikoner när pesronlig data tas bort</translation>
+        <translation>Ta bort surfdata vid avslut</translation>
     </message>
     <message>
         <source>Delete Navigation History</source>
-        <translation type="unfinished">Ta bort surfhistorik</translation>
+        <translation>Ta bort surfhistorik</translation>
     </message>
     <message>
         <source>Removing navigation history</source>
-        <translation type="unfinished">Tar bort surfhistorik</translation>
+        <translation>Tar bort surfhistorik</translation>
     </message>
     <message>
         <source>Delete Cookies</source>
-        <translation type="unfinished">Ta bort cookies</translation>
+        <translation>Ta bort cookies</translation>
     </message>
     <message>
         <source>Removing cookies</source>
-        <translation type="unfinished">Tar bort cookies</translation>
+        <translation>Tar bort cookies</translation>
     </message>
     <message>
         <source>Delete Personal Data</source>
-        <translation type="unfinished">Radera personlig data</translation>
+        <translation>Ta bort personlig data</translation>
     </message>
     <message>
         <source>Removing personal data</source>
-        <translation type="unfinished">Tar bort personlig data</translation>
+        <translation>Tar bort personlig data</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Spara</translation>
+        <translation>Spara</translation>
     </message>
     <message>
         <source>Privacy Options</source>
-        <translation type="unfinished"></translation>
+        <translation>Sekretessalternativ</translation>
     </message>
     <message>
         <source>Privacy Management</source>
+        <translation>Sekretesshantering</translation>
+    </message>
+    <message>
+        <source>Keep Favicons when deleting personal data</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1261,22 +1203,6 @@
 <context>
     <name>SettingsPage</name>
     <message>
-        <source>Home Page</source>
-        <translation type="vanished">Hemsida</translation>
-    </message>
-    <message>
-        <source>Search Engines</source>
-        <translation type="vanished">Sökmotorer</translation>
-    </message>
-    <message>
-        <source>User Agent</source>
-        <translation type="vanished">Användaragent</translation>
-    </message>
-    <message>
-        <source>Wipe Data on Exit</source>
-        <translation type="vanished">Ta bort surfdata vid avslut</translation>
-    </message>
-    <message>
         <source>General</source>
         <translation>Allmänt</translation>
     </message>
@@ -1285,56 +1211,16 @@
         <translation>Sekretess</translation>
     </message>
     <message>
-        <source>Delete Personal Data</source>
-        <translation type="vanished">Radera personlig data</translation>
-    </message>
-    <message>
-        <source>Save Settings</source>
-        <translation type="vanished">Spara inställningar</translation>
-    </message>
-    <message>
-        <source>Removing personal data</source>
-        <translation type="vanished">Tar bort personlig data</translation>
-    </message>
-    <message>
-        <source>Delete Navigation History</source>
-        <translation type="vanished">Ta bort surfhistorik</translation>
-    </message>
-    <message>
-        <source>Removing navigation history</source>
-        <translation type="vanished">Tar bort surfhistorik</translation>
-    </message>
-    <message>
-        <source>Long press to edit</source>
-        <translation type="vanished">Långtryck för att redigera</translation>
-    </message>
-    <message>
-        <source>Restore tabs at Startup</source>
-        <translation type="vanished">Återställ flikar vid uppstart</translation>
-    </message>
-    <message>
-        <source>Delete Cookies</source>
-        <translation type="vanished">Ta bort cookies</translation>
-    </message>
-    <message>
-        <source>Removing cookies</source>
-        <translation type="vanished">Tar bort cookies</translation>
-    </message>
-    <message>
-        <source>Keep Favicons when deleting personal data</source>
-        <translation type="vanished">Behåll favoritikoner när pesronlig data tas bort</translation>
-    </message>
-    <message>
         <source>Browser Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Webbläsarinställningar</translation>
     </message>
     <message>
         <source>Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Flikar</translation>
     </message>
     <message>
         <source>Experimental</source>
-        <translation type="unfinished"></translation>
+        <translation>Experimentell</translation>
     </message>
 </context>
 <context>
@@ -1371,11 +1257,11 @@
     <name>TabsSettingsPage</name>
     <message>
         <source>Restore tabs at Startup</source>
-        <translation type="unfinished">Återställ flikar vid uppstart</translation>
+        <translation>Återställ flikar vid uppstart</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Spara</translation>
+        <translation>Spara</translation>
     </message>
 </context>
 <context>

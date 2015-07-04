@@ -577,15 +577,15 @@
     <name>ExperimentalSettingsPage</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Speichern</translation>
+        <translation>Speichern</translation>
     </message>
     <message>
         <source>Override Text Fields</source>
-        <translation type="unfinished"></translation>
+        <translation>Textfelder überschreiben</translation>
     </message>
     <message>
         <source>Use SailfishOS&apos;s editing components instead of WebView&apos;s ones</source>
-        <translation type="unfinished"></translation>
+        <translation>Editor-Komponenten von SailfishOS statt der von WebView verwenden</translation>
     </message>
 </context>
 <context>
@@ -727,49 +727,26 @@
     </message>
 </context>
 <context>
-    <name>GeneralSettings</name>
-    <message>
-        <source>Save</source>
-        <translation type="obsolete">Speichern</translation>
-    </message>
-    <message>
-        <source>Home Page</source>
-        <translation type="obsolete">Startseite</translation>
-    </message>
-    <message>
-        <source>Search Engines</source>
-        <translation type="obsolete">Suchmaschine</translation>
-    </message>
-    <message>
-        <source>Long press to edit</source>
-        <translation type="obsolete">Zum Bearbeiten gedrückt halten</translation>
-    </message>
-    <message>
-        <source>User Agent</source>
-        <translation type="obsolete">User Agent</translation>
-    </message>
-</context>
-<context>
     <name>GeneralSettingsPage</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Speichern</translation>
+        <translation>Speichern</translation>
     </message>
     <message>
         <source>Home Page</source>
-        <translation type="unfinished">Startseite</translation>
+        <translation>Homepage</translation>
     </message>
     <message>
         <source>Search Engines</source>
-        <translation type="unfinished">Suchmaschine</translation>
+        <translation>Suchmaschinen</translation>
     </message>
     <message>
         <source>Long press to edit</source>
-        <translation type="unfinished">Zum Bearbeiten gedrückt halten</translation>
+        <translation>Zum Bearbeiten gedrückt halten</translation>
     </message>
     <message>
         <source>User Agent</source>
-        <translation type="unfinished">User Agent</translation>
+        <translation>User Agent</translation>
     </message>
 </context>
 <context>
@@ -985,84 +962,49 @@
     </message>
 </context>
 <context>
-    <name>PrivacyPage</name>
-    <message>
-        <source>Wipe Data on Exit</source>
-        <translation type="obsolete">Daten beim Beenden löschen</translation>
-    </message>
-    <message>
-        <source>Keep Favicons when deleting personal data</source>
-        <translation type="obsolete">Favicons beim Löschen der privaten Daten erhalten</translation>
-    </message>
-    <message>
-        <source>Delete Navigation History</source>
-        <translation type="obsolete">Verlauf löschen</translation>
-    </message>
-    <message>
-        <source>Removing navigation history</source>
-        <translation type="obsolete">Verlauf wird gelöscht</translation>
-    </message>
-    <message>
-        <source>Delete Cookies</source>
-        <translation type="obsolete">Cookies löschen</translation>
-    </message>
-    <message>
-        <source>Removing cookies</source>
-        <translation type="obsolete">Cookies werden entfernt</translation>
-    </message>
-    <message>
-        <source>Delete Personal Data</source>
-        <translation type="obsolete">Private Daten löschen</translation>
-    </message>
-    <message>
-        <source>Removing personal data</source>
-        <translation type="obsolete">Private Daten werden entfernt</translation>
-    </message>
-</context>
-<context>
     <name>PrivacySettingsPage</name>
     <message>
         <source>Wipe Data on Exit</source>
-        <translation type="unfinished">Daten beim Beenden löschen</translation>
-    </message>
-    <message>
-        <source>Keep Favicons when deleting personal data</source>
-        <translation type="unfinished">Favicons beim Löschen der privaten Daten erhalten</translation>
+        <translation>Daten beim Beenden löschen</translation>
     </message>
     <message>
         <source>Delete Navigation History</source>
-        <translation type="unfinished">Verlauf löschen</translation>
+        <translation>Verlauf löschen</translation>
     </message>
     <message>
         <source>Removing navigation history</source>
-        <translation type="unfinished">Verlauf wird gelöscht</translation>
+        <translation>Verlauf wird gelöscht</translation>
     </message>
     <message>
         <source>Delete Cookies</source>
-        <translation type="unfinished">Cookies löschen</translation>
+        <translation>Cookies löschen</translation>
     </message>
     <message>
         <source>Removing cookies</source>
-        <translation type="unfinished">Cookies werden entfernt</translation>
+        <translation>Cookies werden entfernt</translation>
     </message>
     <message>
         <source>Delete Personal Data</source>
-        <translation type="unfinished">Private Daten löschen</translation>
+        <translation>Private Daten löschen</translation>
     </message>
     <message>
         <source>Removing personal data</source>
-        <translation type="unfinished">Private Daten werden entfernt</translation>
+        <translation>Private Daten werden entfernt</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Speichern</translation>
+        <translation>Speichern</translation>
     </message>
     <message>
         <source>Privacy Options</source>
-        <translation type="unfinished"></translation>
+        <translation>Optionen zur Privatssphäre</translation>
     </message>
     <message>
         <source>Privacy Management</source>
+        <translation>Privatsphäre verwalten</translation>
+    </message>
+    <message>
+        <source>Keep Favicons when deleting personal data</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1261,22 +1203,6 @@
 <context>
     <name>SettingsPage</name>
     <message>
-        <source>Home Page</source>
-        <translation type="vanished">Startseite</translation>
-    </message>
-    <message>
-        <source>Search Engines</source>
-        <translation type="vanished">Suchmaschine</translation>
-    </message>
-    <message>
-        <source>User Agent</source>
-        <translation type="vanished">User Agent</translation>
-    </message>
-    <message>
-        <source>Wipe Data on Exit</source>
-        <translation type="vanished">Daten beim Beenden löschen</translation>
-    </message>
-    <message>
         <source>General</source>
         <translation>Allgemein</translation>
     </message>
@@ -1285,56 +1211,16 @@
         <translation>Privatssphäre</translation>
     </message>
     <message>
-        <source>Delete Personal Data</source>
-        <translation type="vanished">Private Daten löschen</translation>
-    </message>
-    <message>
-        <source>Save Settings</source>
-        <translation type="vanished">Einstellungen speichern</translation>
-    </message>
-    <message>
-        <source>Removing personal data</source>
-        <translation type="vanished">Private Daten werden entfernt</translation>
-    </message>
-    <message>
-        <source>Delete Navigation History</source>
-        <translation type="vanished">Verlauf löschen</translation>
-    </message>
-    <message>
-        <source>Removing navigation history</source>
-        <translation type="vanished">Verlauf wird gelöscht</translation>
-    </message>
-    <message>
-        <source>Long press to edit</source>
-        <translation type="vanished">Zum Bearbeiten gedrückt halten</translation>
-    </message>
-    <message>
-        <source>Restore tabs at Startup</source>
-        <translation type="vanished">Tabs beim Starten wiederherstellen</translation>
-    </message>
-    <message>
-        <source>Delete Cookies</source>
-        <translation type="vanished">Cookies löschen</translation>
-    </message>
-    <message>
-        <source>Removing cookies</source>
-        <translation type="vanished">Cookies werden entfernt</translation>
-    </message>
-    <message>
-        <source>Keep Favicons when deleting personal data</source>
-        <translation type="vanished">Favicons beim Löschen der privaten Daten erhalten</translation>
-    </message>
-    <message>
         <source>Browser Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Browsereinstellungen</translation>
     </message>
     <message>
         <source>Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Tabs</translation>
     </message>
     <message>
         <source>Experimental</source>
-        <translation type="unfinished"></translation>
+        <translation>Experimentelles</translation>
     </message>
 </context>
 <context>
@@ -1371,11 +1257,11 @@
     <name>TabsSettingsPage</name>
     <message>
         <source>Restore tabs at Startup</source>
-        <translation type="unfinished">Tabs beim Starten wiederherstellen</translation>
+        <translation>Tabs beim Starten wiederherstellen</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Speichern</translation>
+        <translation>Speichern</translation>
     </message>
 </context>
 <context>

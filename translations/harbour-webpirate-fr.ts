@@ -313,7 +313,7 @@
     </message>
     <message>
         <source>Status</source>
-        <translation type="unfinished"></translation>
+        <translation>Statut</translation>
     </message>
 </context>
 <context>
@@ -577,7 +577,7 @@
     <name>ExperimentalSettingsPage</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Enregistrer</translation>
+        <translation>Enregistrer</translation>
     </message>
     <message>
         <source>Override Text Fields</source>
@@ -727,49 +727,26 @@
     </message>
 </context>
 <context>
-    <name>GeneralSettings</name>
-    <message>
-        <source>Save</source>
-        <translation type="obsolete">Enregistrer</translation>
-    </message>
-    <message>
-        <source>Home Page</source>
-        <translation type="obsolete">Page d&apos;acceuil</translation>
-    </message>
-    <message>
-        <source>Search Engines</source>
-        <translation type="obsolete">Moteurs de recherche</translation>
-    </message>
-    <message>
-        <source>Long press to edit</source>
-        <translation type="obsolete">Appui long pour modifier</translation>
-    </message>
-    <message>
-        <source>User Agent</source>
-        <translation type="obsolete">Agent utilisateur</translation>
-    </message>
-</context>
-<context>
     <name>GeneralSettingsPage</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Enregistrer</translation>
+        <translation>Enregistrer</translation>
     </message>
     <message>
         <source>Home Page</source>
-        <translation type="unfinished">Page d&apos;acceuil</translation>
+        <translation>Page d&apos;acceuil</translation>
     </message>
     <message>
         <source>Search Engines</source>
-        <translation type="unfinished">Moteurs de recherche</translation>
+        <translation>Moteurs de recherche</translation>
     </message>
     <message>
         <source>Long press to edit</source>
-        <translation type="unfinished">Appui long pour modifier</translation>
+        <translation>Appui long pour modifier</translation>
     </message>
     <message>
         <source>User Agent</source>
-        <translation type="unfinished">Agent utilisateur</translation>
+        <translation>Agent utilisateur</translation>
     </message>
 </context>
 <context>
@@ -985,77 +962,38 @@
     </message>
 </context>
 <context>
-    <name>PrivacyPage</name>
-    <message>
-        <source>Wipe Data on Exit</source>
-        <translation type="obsolete">Supprimer les données en quittant</translation>
-    </message>
-    <message>
-        <source>Keep Favicons when deleting personal data</source>
-        <translation type="obsolete">Gardez les Favicons lors de la suppression des données personnelles</translation>
-    </message>
-    <message>
-        <source>Delete Navigation History</source>
-        <translation type="obsolete">Supprimer l&apos;historique</translation>
-    </message>
-    <message>
-        <source>Removing navigation history</source>
-        <translation type="obsolete">Supprimer l&apos;historique</translation>
-    </message>
-    <message>
-        <source>Delete Cookies</source>
-        <translation type="obsolete">Supprimer les cookies</translation>
-    </message>
-    <message>
-        <source>Removing cookies</source>
-        <translation type="obsolete">Suppression des cookies </translation>
-    </message>
-    <message>
-        <source>Delete Personal Data</source>
-        <translation type="obsolete">Supprimer les données personnelles</translation>
-    </message>
-    <message>
-        <source>Removing personal data</source>
-        <translation type="obsolete">Supprimer les données personnelles</translation>
-    </message>
-</context>
-<context>
     <name>PrivacySettingsPage</name>
     <message>
         <source>Wipe Data on Exit</source>
-        <translation type="unfinished">Supprimer les données en quittant</translation>
-    </message>
-    <message>
-        <source>Keep Favicons when deleting personal data</source>
-        <translation type="unfinished">Gardez les Favicons lors de la suppression des données personnelles</translation>
+        <translation>Supprimer les données en quittant</translation>
     </message>
     <message>
         <source>Delete Navigation History</source>
-        <translation type="unfinished">Supprimer l&apos;historique</translation>
+        <translation>Supprimer l&apos;historique</translation>
     </message>
     <message>
         <source>Removing navigation history</source>
-        <translation type="unfinished">Supprimer l&apos;historique</translation>
+        <translation>Supprimer l&apos;historique</translation>
     </message>
     <message>
         <source>Delete Cookies</source>
-        <translation type="unfinished">Supprimer les cookies</translation>
+        <translation>Supprimer les cookies</translation>
     </message>
     <message>
         <source>Removing cookies</source>
-        <translation type="unfinished">Suppression des cookies </translation>
+        <translation>Suppression des cookies </translation>
     </message>
     <message>
         <source>Delete Personal Data</source>
-        <translation type="unfinished">Supprimer les données personnelles</translation>
+        <translation>Supprimer les données personnelles</translation>
     </message>
     <message>
         <source>Removing personal data</source>
-        <translation type="unfinished">Supprimer les données personnelles</translation>
+        <translation>Supprimer les données personnelles</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Enregistrer</translation>
+        <translation>Enregistrer</translation>
     </message>
     <message>
         <source>Privacy Options</source>
@@ -1063,6 +1001,10 @@
     </message>
     <message>
         <source>Privacy Management</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Keep Favicons when deleting personal data</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1261,22 +1203,6 @@
 <context>
     <name>SettingsPage</name>
     <message>
-        <source>Home Page</source>
-        <translation type="vanished">Page d&apos;acceuil</translation>
-    </message>
-    <message>
-        <source>Search Engines</source>
-        <translation type="vanished">Moteurs de recherche</translation>
-    </message>
-    <message>
-        <source>User Agent</source>
-        <translation type="vanished">Agent utilisateur</translation>
-    </message>
-    <message>
-        <source>Wipe Data on Exit</source>
-        <translation type="vanished">Supprimer les données en quittant</translation>
-    </message>
-    <message>
         <source>General</source>
         <translation>Général</translation>
     </message>
@@ -1285,52 +1211,12 @@
         <translation>Confidentialité</translation>
     </message>
     <message>
-        <source>Delete Personal Data</source>
-        <translation type="vanished">Supprimer les données personnelles</translation>
-    </message>
-    <message>
-        <source>Save Settings</source>
-        <translation type="vanished">Enregistrer les paramètres</translation>
-    </message>
-    <message>
-        <source>Removing personal data</source>
-        <translation type="vanished">Supprimer les données personnelles</translation>
-    </message>
-    <message>
-        <source>Delete Navigation History</source>
-        <translation type="vanished">Supprimer l&apos;historique</translation>
-    </message>
-    <message>
-        <source>Removing navigation history</source>
-        <translation type="vanished">Supprimer l&apos;historique</translation>
-    </message>
-    <message>
-        <source>Long press to edit</source>
-        <translation type="vanished">Appui long pour modifier</translation>
-    </message>
-    <message>
-        <source>Restore tabs at Startup</source>
-        <translation type="vanished">Restaurer les onglets au démarrage</translation>
-    </message>
-    <message>
-        <source>Delete Cookies</source>
-        <translation type="vanished">Supprimer les cookies</translation>
-    </message>
-    <message>
-        <source>Removing cookies</source>
-        <translation type="vanished">Suppression des cookies </translation>
-    </message>
-    <message>
-        <source>Keep Favicons when deleting personal data</source>
-        <translation type="vanished">Gardez les Favicons lors de la suppression des données personnelles</translation>
-    </message>
-    <message>
         <source>Browser Settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Onglets</translation>
     </message>
     <message>
         <source>Experimental</source>
@@ -1371,11 +1257,11 @@
     <name>TabsSettingsPage</name>
     <message>
         <source>Restore tabs at Startup</source>
-        <translation type="unfinished">Restaurer les onglets au démarrage</translation>
+        <translation>Restaurer les onglets au démarrage</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Enregistrer</translation>
+        <translation>Enregistrer</translation>
     </message>
 </context>
 <context>
@@ -1407,23 +1293,23 @@
     <name>YouTubeCipher</name>
     <message>
         <source>Downloading Player&apos;s Cipher</source>
-        <translation type="unfinished"></translation>
+        <translation>Téléchargement du décodeur du lecteur</translation>
     </message>
     <message>
         <source>Cannot find decoding function</source>
-        <translation type="unfinished"></translation>
+        <translation>Ne trouve pas la fonction de décodage</translation>
     </message>
     <message>
         <source>Cannot find decoding object</source>
-        <translation type="unfinished"></translation>
+        <translation>Ne trouve pas l&apos;objet de décodage</translation>
     </message>
     <message>
         <source>Cannot download Video Configuration</source>
-        <translation type="unfinished"></translation>
+        <translation>Ne peut télécharger la configuration de la vidéo</translation>
     </message>
     <message>
         <source>Ciphered Video: Downloading WebPage</source>
-        <translation type="unfinished"></translation>
+        <translation>Vidéo chiffrée : téléchargement de la page Web</translation>
     </message>
 </context>
 <context>
@@ -1434,15 +1320,15 @@
     </message>
     <message>
         <source>OK</source>
-        <translation type="unfinished">OK</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <source>Downloading video info</source>
-        <translation type="unfinished"></translation>
+        <translation>Téléchargement des infos de la vidéo</translation>
     </message>
     <message>
         <source>FAILED</source>
-        <translation type="unfinished">ECHEC</translation>
+        <translation>Echec</translation>
     </message>
 </context>
 <context>

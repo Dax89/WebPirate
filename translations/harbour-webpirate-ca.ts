@@ -9,7 +9,7 @@
     </message>
     <message>
         <source>Catalan</source>
-        <translation>Catal</translation>
+        <translation>Català</translation>
     </message>
     <message>
         <source>Chinese</source>
@@ -313,7 +313,7 @@
     </message>
     <message>
         <source>Status</source>
-        <translation type="unfinished"></translation>
+        <translation>Estat</translation>
     </message>
 </context>
 <context>
@@ -607,19 +607,19 @@
     <name>FavoritesImportPage</name>
     <message>
         <source>Import Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Importa preferits</translation>
     </message>
     <message>
         <source>From HTML File</source>
-        <translation type="unfinished"></translation>
+        <translation>D&apos;un fitxer HTML</translation>
     </message>
     <message>
         <source>From Sailfish Browser</source>
-        <translation type="unfinished"></translation>
+        <translation>Del navegador de Sailfish</translation>
     </message>
     <message>
         <source>Imporing Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;estan important els preferits</translation>
     </message>
 </context>
 <context>
@@ -670,7 +670,7 @@
     </message>
     <message>
         <source>Cannot import favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>No s&apos;han pogut importar els preferits</translation>
     </message>
 </context>
 <context>
@@ -727,29 +727,6 @@
     </message>
 </context>
 <context>
-    <name>GeneralSettings</name>
-    <message>
-        <source>Save</source>
-        <translation type="obsolete">Desa</translation>
-    </message>
-    <message>
-        <source>Home Page</source>
-        <translation type="obsolete">Pàgina d&apos;inici</translation>
-    </message>
-    <message>
-        <source>Search Engines</source>
-        <translation type="obsolete">Motors de cerca</translation>
-    </message>
-    <message>
-        <source>Long press to edit</source>
-        <translation type="obsolete">Mantingueu premut per editar</translation>
-    </message>
-    <message>
-        <source>User Agent</source>
-        <translation type="obsolete">Agent d&apos;usuari</translation>
-    </message>
-</context>
-<context>
     <name>GeneralSettingsPage</name>
     <message>
         <source>Save</source>
@@ -757,7 +734,7 @@
     </message>
     <message>
         <source>Home Page</source>
-        <translation type="unfinished">Pàgina d&apos;inici</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Search Engines</source>
@@ -765,11 +742,11 @@
     </message>
     <message>
         <source>Long press to edit</source>
-        <translation type="unfinished">Mantingueu premut per editar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>User Agent</source>
-        <translation type="unfinished">Agent d&apos;usuari</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -838,14 +815,14 @@
     </message>
     <message>
         <source>WebView process has crashed, restarting...</source>
-        <translation type="unfinished"></translation>
+        <translation>El procés WebView s&apos;ha aturat, s&apos;està reiniciant...</translation>
     </message>
 </context>
 <context>
     <name>MediaPlayerToolBar</name>
     <message>
         <source>Downloading media</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;està descarregant el fitxer multimèdia</translation>
     </message>
 </context>
 <context>
@@ -920,15 +897,15 @@
     <name>NotificationDialog</name>
     <message>
         <source>wants to access System&apos;s Notifications</source>
-        <translation type="unfinished"></translation>
+        <translation>sol·licita accés a les Notificacions del Sistema</translation>
     </message>
     <message>
         <source>Allow</source>
-        <translation type="unfinished">Permet</translation>
+        <translation>Permet</translation>
     </message>
     <message>
         <source>Deny</source>
-        <translation type="unfinished"></translation>
+        <translation>Denega</translation>
     </message>
 </context>
 <context>
@@ -985,73 +962,34 @@
     </message>
 </context>
 <context>
-    <name>PrivacyPage</name>
-    <message>
-        <source>Wipe Data on Exit</source>
-        <translation type="obsolete">Neteja les dades de navegació en sortir</translation>
-    </message>
-    <message>
-        <source>Keep Favicons when deleting personal data</source>
-        <translation type="obsolete">Conserva les icones dels preferits quan s&apos;eliminin les dades personals</translation>
-    </message>
-    <message>
-        <source>Delete Navigation History</source>
-        <translation type="obsolete">Elimina l&apos;historial de navegació</translation>
-    </message>
-    <message>
-        <source>Removing navigation history</source>
-        <translation type="obsolete">S&apos;està eliminant l&apos;historial de navegació</translation>
-    </message>
-    <message>
-        <source>Delete Cookies</source>
-        <translation type="obsolete">Elimina les galetes</translation>
-    </message>
-    <message>
-        <source>Removing cookies</source>
-        <translation type="obsolete">S&apos;estan eliminant les galetes</translation>
-    </message>
-    <message>
-        <source>Delete Personal Data</source>
-        <translation type="obsolete">Elimina les dades personals</translation>
-    </message>
-    <message>
-        <source>Removing personal data</source>
-        <translation type="obsolete">S&apos;estan eliminant les dades personals</translation>
-    </message>
-</context>
-<context>
     <name>PrivacySettingsPage</name>
     <message>
         <source>Wipe Data on Exit</source>
-        <translation type="unfinished">Neteja les dades de navegació en sortir</translation>
-    </message>
-    <message>
-        <source>Keep Favicons when deleting personal data</source>
-        <translation type="unfinished">Conserva les icones dels preferits quan s&apos;eliminin les dades personals</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete Navigation History</source>
-        <translation type="unfinished">Elimina l&apos;historial de navegació</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Removing navigation history</source>
-        <translation type="unfinished">S&apos;està eliminant l&apos;historial de navegació</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete Cookies</source>
-        <translation type="unfinished">Elimina les galetes</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Removing cookies</source>
-        <translation type="unfinished">S&apos;estan eliminant les galetes</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete Personal Data</source>
-        <translation type="unfinished">Elimina les dades personals</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Removing personal data</source>
-        <translation type="unfinished">S&apos;estan eliminant les dades personals</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Save</source>
@@ -1063,6 +1001,10 @@
     </message>
     <message>
         <source>Privacy Management</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Keep Favicons when deleting personal data</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1261,68 +1203,12 @@
 <context>
     <name>SettingsPage</name>
     <message>
-        <source>Home Page</source>
-        <translation type="vanished">Pàgina d&apos;inici</translation>
-    </message>
-    <message>
-        <source>Search Engines</source>
-        <translation type="vanished">Motors de cerca</translation>
-    </message>
-    <message>
-        <source>User Agent</source>
-        <translation type="vanished">Agent d&apos;usuari</translation>
-    </message>
-    <message>
-        <source>Wipe Data on Exit</source>
-        <translation type="vanished">Neteja les dades de navegació en sortir</translation>
-    </message>
-    <message>
         <source>General</source>
         <translation>General</translation>
     </message>
     <message>
         <source>Privacy</source>
         <translation>Privacitat</translation>
-    </message>
-    <message>
-        <source>Delete Personal Data</source>
-        <translation type="vanished">Elimina les dades personals</translation>
-    </message>
-    <message>
-        <source>Save Settings</source>
-        <translation type="vanished">Desa la configuració</translation>
-    </message>
-    <message>
-        <source>Removing personal data</source>
-        <translation type="vanished">S&apos;estan eliminant les dades personals</translation>
-    </message>
-    <message>
-        <source>Delete Navigation History</source>
-        <translation type="vanished">Elimina l&apos;historial de navegació</translation>
-    </message>
-    <message>
-        <source>Removing navigation history</source>
-        <translation type="vanished">S&apos;està eliminant l&apos;historial de navegació</translation>
-    </message>
-    <message>
-        <source>Long press to edit</source>
-        <translation type="vanished">Mantingueu premut per editar</translation>
-    </message>
-    <message>
-        <source>Restore tabs at Startup</source>
-        <translation type="vanished">Restableix les pestanyes en iniciar</translation>
-    </message>
-    <message>
-        <source>Delete Cookies</source>
-        <translation type="vanished">Elimina les galetes</translation>
-    </message>
-    <message>
-        <source>Removing cookies</source>
-        <translation type="vanished">S&apos;estan eliminant les galetes</translation>
-    </message>
-    <message>
-        <source>Keep Favicons when deleting personal data</source>
-        <translation type="vanished">Conserva les icones dels preferits quan s&apos;eliminin les dades personals</translation>
     </message>
     <message>
         <source>Browser Settings</source>
@@ -1371,7 +1257,7 @@
     <name>TabsSettingsPage</name>
     <message>
         <source>Restore tabs at Startup</source>
-        <translation type="unfinished">Restableix les pestanyes en iniciar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Save</source>
@@ -1407,23 +1293,23 @@
     <name>YouTubeCipher</name>
     <message>
         <source>Downloading Player&apos;s Cipher</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;està descarregant el xifrat del reproductor</translation>
     </message>
     <message>
         <source>Cannot find decoding function</source>
-        <translation type="unfinished"></translation>
+        <translation>No s&apos;ha pogut trobar la funció de descodificació</translation>
     </message>
     <message>
         <source>Cannot find decoding object</source>
-        <translation type="unfinished"></translation>
+        <translation>No s&apos;ha pogut trobar l&apos;objecte de descodificació</translation>
     </message>
     <message>
         <source>Cannot download Video Configuration</source>
-        <translation type="unfinished"></translation>
+        <translation>No s&apos;ha pogut descarregar la configuració de vídeo</translation>
     </message>
     <message>
         <source>Ciphered Video: Downloading WebPage</source>
-        <translation type="unfinished"></translation>
+        <translation>Vídeo xifrat: s&apos;està descarregat la pàgina web</translation>
     </message>
 </context>
 <context>
@@ -1434,26 +1320,26 @@
     </message>
     <message>
         <source>OK</source>
-        <translation type="unfinished">D&apos;acord</translation>
+        <translation>D&apos;acord</translation>
     </message>
     <message>
         <source>Downloading video info</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;està descarregant la informació del vídeo</translation>
     </message>
     <message>
         <source>FAILED</source>
-        <translation type="unfinished">ERRONI</translation>
+        <translation>ERRONI</translation>
     </message>
 </context>
 <context>
     <name>harbour-webpirate</name>
     <message>
         <source>Download Completed</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;ha completat la descàrrega</translation>
     </message>
     <message>
         <source>Download Failed</source>
-        <translation type="unfinished"></translation>
+        <translation>La descàrrega ha fallat</translation>
     </message>
 </context>
 </TS>

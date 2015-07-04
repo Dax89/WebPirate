@@ -727,29 +727,6 @@
     </message>
 </context>
 <context>
-    <name>GeneralSettings</name>
-    <message>
-        <source>Save</source>
-        <translation type="obsolete">保存</translation>
-    </message>
-    <message>
-        <source>Home Page</source>
-        <translation type="obsolete">主页</translation>
-    </message>
-    <message>
-        <source>Search Engines</source>
-        <translation type="obsolete">搜索引擎</translation>
-    </message>
-    <message>
-        <source>Long press to edit</source>
-        <translation type="obsolete">长按以编辑</translation>
-    </message>
-    <message>
-        <source>User Agent</source>
-        <translation type="obsolete">用户代理</translation>
-    </message>
-</context>
-<context>
     <name>GeneralSettingsPage</name>
     <message>
         <source>Save</source>
@@ -757,7 +734,7 @@
     </message>
     <message>
         <source>Home Page</source>
-        <translation type="unfinished">主页</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Search Engines</source>
@@ -765,11 +742,11 @@
     </message>
     <message>
         <source>Long press to edit</source>
-        <translation type="unfinished">长按以编辑</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>User Agent</source>
-        <translation type="unfinished">用户代理</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -985,73 +962,34 @@
     </message>
 </context>
 <context>
-    <name>PrivacyPage</name>
-    <message>
-        <source>Wipe Data on Exit</source>
-        <translation type="obsolete">退出时清除记录</translation>
-    </message>
-    <message>
-        <source>Keep Favicons when deleting personal data</source>
-        <translation type="obsolete">删除个人数据时保留书签图标</translation>
-    </message>
-    <message>
-        <source>Delete Navigation History</source>
-        <translation type="obsolete">删除浏览历史</translation>
-    </message>
-    <message>
-        <source>Removing navigation history</source>
-        <translation type="obsolete">正在删除浏览历史</translation>
-    </message>
-    <message>
-        <source>Delete Cookies</source>
-        <translation type="obsolete">删除Cookie</translation>
-    </message>
-    <message>
-        <source>Removing cookies</source>
-        <translation type="obsolete">正在删除Cookie</translation>
-    </message>
-    <message>
-        <source>Delete Personal Data</source>
-        <translation type="obsolete">删除个人记录</translation>
-    </message>
-    <message>
-        <source>Removing personal data</source>
-        <translation type="obsolete">正在删除个人记录</translation>
-    </message>
-</context>
-<context>
     <name>PrivacySettingsPage</name>
     <message>
         <source>Wipe Data on Exit</source>
-        <translation type="unfinished">退出时清除记录</translation>
-    </message>
-    <message>
-        <source>Keep Favicons when deleting personal data</source>
-        <translation type="unfinished">删除个人数据时保留书签图标</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete Navigation History</source>
-        <translation type="unfinished">删除浏览历史</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Removing navigation history</source>
-        <translation type="unfinished">正在删除浏览历史</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete Cookies</source>
-        <translation type="unfinished">删除Cookie</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Removing cookies</source>
-        <translation type="unfinished">正在删除Cookie</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete Personal Data</source>
-        <translation type="unfinished">删除个人记录</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Removing personal data</source>
-        <translation type="unfinished">正在删除个人记录</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Save</source>
@@ -1063,6 +1001,10 @@
     </message>
     <message>
         <source>Privacy Management</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Keep Favicons when deleting personal data</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1261,68 +1203,12 @@
 <context>
     <name>SettingsPage</name>
     <message>
-        <source>Home Page</source>
-        <translation type="vanished">主页</translation>
-    </message>
-    <message>
-        <source>Search Engines</source>
-        <translation type="vanished">搜索引擎</translation>
-    </message>
-    <message>
-        <source>User Agent</source>
-        <translation type="vanished">用户代理</translation>
-    </message>
-    <message>
-        <source>Wipe Data on Exit</source>
-        <translation type="vanished">退出时清除记录</translation>
-    </message>
-    <message>
         <source>General</source>
         <translation>常规设置</translation>
     </message>
     <message>
         <source>Privacy</source>
         <translation>隐私设置</translation>
-    </message>
-    <message>
-        <source>Delete Personal Data</source>
-        <translation type="vanished">删除个人记录</translation>
-    </message>
-    <message>
-        <source>Save Settings</source>
-        <translation type="vanished">保存设置</translation>
-    </message>
-    <message>
-        <source>Removing personal data</source>
-        <translation type="vanished">正在删除个人记录</translation>
-    </message>
-    <message>
-        <source>Delete Navigation History</source>
-        <translation type="vanished">删除浏览历史</translation>
-    </message>
-    <message>
-        <source>Removing navigation history</source>
-        <translation type="vanished">正在删除浏览历史</translation>
-    </message>
-    <message>
-        <source>Long press to edit</source>
-        <translation type="vanished">长按以编辑</translation>
-    </message>
-    <message>
-        <source>Restore tabs at Startup</source>
-        <translation type="vanished">在启动时恢复标签页</translation>
-    </message>
-    <message>
-        <source>Delete Cookies</source>
-        <translation type="vanished">删除Cookie</translation>
-    </message>
-    <message>
-        <source>Removing cookies</source>
-        <translation type="vanished">正在删除Cookie</translation>
-    </message>
-    <message>
-        <source>Keep Favicons when deleting personal data</source>
-        <translation type="vanished">删除个人数据时保留书签图标</translation>
     </message>
     <message>
         <source>Browser Settings</source>
@@ -1371,7 +1257,7 @@
     <name>TabsSettingsPage</name>
     <message>
         <source>Restore tabs at Startup</source>
-        <translation type="unfinished">在启动时恢复标签页</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Save</source>

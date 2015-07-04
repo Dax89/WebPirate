@@ -727,17 +727,6 @@
     </message>
 </context>
 <context>
-    <name>GeneralSettings</name>
-    <message>
-        <source>Home Page</source>
-        <translation type="obsolete">ホームページ</translation>
-    </message>
-    <message>
-        <source>User Agent</source>
-        <translation type="obsolete">ユーザーエージェント</translation>
-    </message>
-</context>
-<context>
     <name>GeneralSettingsPage</name>
     <message>
         <source>Save</source>
@@ -745,11 +734,11 @@
     </message>
     <message>
         <source>Home Page</source>
-        <translation type="unfinished">ホームページ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Search Engines</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">サーチエンジン</translation>
     </message>
     <message>
         <source>Long press to edit</source>
@@ -757,7 +746,7 @@
     </message>
     <message>
         <source>User Agent</source>
-        <translation type="unfinished">ユーザーエージェント</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -973,41 +962,18 @@
     </message>
 </context>
 <context>
-    <name>PrivacyPage</name>
-    <message>
-        <source>Wipe Data on Exit</source>
-        <translation type="obsolete">終了時にデータを消去する</translation>
-    </message>
-    <message>
-        <source>Delete Navigation History</source>
-        <translation type="obsolete">最近の履歴を消去する</translation>
-    </message>
-    <message>
-        <source>Removing navigation history</source>
-        <translation type="obsolete">最近の履歴を削除中</translation>
-    </message>
-    <message>
-        <source>Delete Personal Data</source>
-        <translation type="obsolete">パーソナルデートを消去する</translation>
-    </message>
-    <message>
-        <source>Removing personal data</source>
-        <translation type="obsolete">パーソナルデートを削除中</translation>
-    </message>
-</context>
-<context>
     <name>PrivacySettingsPage</name>
     <message>
         <source>Wipe Data on Exit</source>
-        <translation type="unfinished">終了時にデータを消去する</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete Navigation History</source>
-        <translation type="unfinished">最近の履歴を消去する</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Removing navigation history</source>
-        <translation type="unfinished">最近の履歴を削除中</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete Cookies</source>
@@ -1019,11 +985,11 @@
     </message>
     <message>
         <source>Delete Personal Data</source>
-        <translation type="unfinished">パーソナルデートを消去する</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Removing personal data</source>
-        <translation type="unfinished">パーソナルデートを削除中</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Save</source>
@@ -1237,22 +1203,6 @@
 <context>
     <name>SettingsPage</name>
     <message>
-        <source>Home Page</source>
-        <translation type="vanished">ホームページ</translation>
-    </message>
-    <message>
-        <source>Search Engines</source>
-        <translation type="vanished">検索エンジン</translation>
-    </message>
-    <message>
-        <source>User Agent</source>
-        <translation type="vanished">ユーザーエージェント</translation>
-    </message>
-    <message>
-        <source>Wipe Data on Exit</source>
-        <translation type="vanished">終了時にデータを消去する</translation>
-    </message>
-    <message>
         <source>General</source>
         <translation>ジェネラル
 	
@@ -1261,26 +1211,6 @@
     <message>
         <source>Privacy</source>
         <translation>プライバシー</translation>
-    </message>
-    <message>
-        <source>Delete Personal Data</source>
-        <translation type="vanished">パーソナルデートを消去する</translation>
-    </message>
-    <message>
-        <source>Save Settings</source>
-        <translation type="vanished">設定を保存する</translation>
-    </message>
-    <message>
-        <source>Removing personal data</source>
-        <translation type="vanished">パーソナルデートを削除中</translation>
-    </message>
-    <message>
-        <source>Delete Navigation History</source>
-        <translation type="vanished">最近の履歴を消去する</translation>
-    </message>
-    <message>
-        <source>Removing navigation history</source>
-        <translation type="vanished">最近の履歴を削除中</translation>
     </message>
     <message>
         <source>Browser Settings</source>

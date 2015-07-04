@@ -313,7 +313,7 @@
     </message>
     <message>
         <source>Status</source>
-        <translation type="unfinished"></translation>
+        <translation>Status</translation>
     </message>
 </context>
 <context>
@@ -607,19 +607,19 @@
     <name>FavoritesImportPage</name>
     <message>
         <source>Import Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Uvozi zaznamke</translation>
     </message>
     <message>
         <source>From HTML File</source>
-        <translation type="unfinished"></translation>
+        <translation>Iz HTML datoteke</translation>
     </message>
     <message>
         <source>From Sailfish Browser</source>
-        <translation type="unfinished"></translation>
+        <translation>Iz Sailfish brskalnika</translation>
     </message>
     <message>
         <source>Imporing Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Uvoz zaznamkov</translation>
     </message>
 </context>
 <context>
@@ -670,7 +670,7 @@
     </message>
     <message>
         <source>Cannot import favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Ne morem uvoziti zaznamkov</translation>
     </message>
 </context>
 <context>
@@ -727,29 +727,6 @@
     </message>
 </context>
 <context>
-    <name>GeneralSettings</name>
-    <message>
-        <source>Save</source>
-        <translation type="obsolete">Shrani</translation>
-    </message>
-    <message>
-        <source>Home Page</source>
-        <translation type="obsolete">Domača stran</translation>
-    </message>
-    <message>
-        <source>Search Engines</source>
-        <translation type="obsolete">Iskalniki</translation>
-    </message>
-    <message>
-        <source>Long press to edit</source>
-        <translation type="obsolete">Za urejanje pritisnite in držite</translation>
-    </message>
-    <message>
-        <source>User Agent</source>
-        <translation type="obsolete">User Agent</translation>
-    </message>
-</context>
-<context>
     <name>GeneralSettingsPage</name>
     <message>
         <source>Save</source>
@@ -757,7 +734,7 @@
     </message>
     <message>
         <source>Home Page</source>
-        <translation type="unfinished">Domača stran</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Search Engines</source>
@@ -765,11 +742,11 @@
     </message>
     <message>
         <source>Long press to edit</source>
-        <translation type="unfinished">Za urejanje pritisnite in držite</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>User Agent</source>
-        <translation type="unfinished">User Agent</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -838,14 +815,14 @@
     </message>
     <message>
         <source>WebView process has crashed, restarting...</source>
-        <translation type="unfinished"></translation>
+        <translation>WebView proces se je nepričakovano ustavil, ponovni zagon ...</translation>
     </message>
 </context>
 <context>
     <name>MediaPlayerToolBar</name>
     <message>
         <source>Downloading media</source>
-        <translation type="unfinished"></translation>
+        <translation>Prenašanje datoteke</translation>
     </message>
 </context>
 <context>
@@ -920,15 +897,15 @@
     <name>NotificationDialog</name>
     <message>
         <source>wants to access System&apos;s Notifications</source>
-        <translation type="unfinished"></translation>
+        <translation>želi dostopati do sistemskih obvestil</translation>
     </message>
     <message>
         <source>Allow</source>
-        <translation type="unfinished">Dovoli</translation>
+        <translation>Dovoli</translation>
     </message>
     <message>
         <source>Deny</source>
-        <translation type="unfinished"></translation>
+        <translation>Zavrni</translation>
     </message>
 </context>
 <context>
@@ -985,73 +962,34 @@
     </message>
 </context>
 <context>
-    <name>PrivacyPage</name>
-    <message>
-        <source>Wipe Data on Exit</source>
-        <translation type="obsolete">Ob izhodu pobriši podatke</translation>
-    </message>
-    <message>
-        <source>Keep Favicons when deleting personal data</source>
-        <translation type="obsolete">Pri brisanju osebnih podatkov ohrani ikono zaznamka</translation>
-    </message>
-    <message>
-        <source>Delete Navigation History</source>
-        <translation type="obsolete">Izbriši zgodovino</translation>
-    </message>
-    <message>
-        <source>Removing navigation history</source>
-        <translation type="obsolete">Odstrani zgodovino brskanja</translation>
-    </message>
-    <message>
-        <source>Delete Cookies</source>
-        <translation type="obsolete">Izbriši piškotke</translation>
-    </message>
-    <message>
-        <source>Removing cookies</source>
-        <translation type="obsolete">Odstranjevanje piškotkov</translation>
-    </message>
-    <message>
-        <source>Delete Personal Data</source>
-        <translation type="obsolete">Izbriši osebne podatke</translation>
-    </message>
-    <message>
-        <source>Removing personal data</source>
-        <translation type="obsolete">Ostranjevanje osebnih podatkov</translation>
-    </message>
-</context>
-<context>
     <name>PrivacySettingsPage</name>
     <message>
         <source>Wipe Data on Exit</source>
-        <translation type="unfinished">Ob izhodu pobriši podatke</translation>
-    </message>
-    <message>
-        <source>Keep Favicons when deleting personal data</source>
-        <translation type="unfinished">Pri brisanju osebnih podatkov ohrani ikono zaznamka</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete Navigation History</source>
-        <translation type="unfinished">Izbriši zgodovino</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Removing navigation history</source>
-        <translation type="unfinished">Odstrani zgodovino brskanja</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete Cookies</source>
-        <translation type="unfinished">Izbriši piškotke</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Removing cookies</source>
-        <translation type="unfinished">Odstranjevanje piškotkov</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete Personal Data</source>
-        <translation type="unfinished">Izbriši osebne podatke</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Removing personal data</source>
-        <translation type="unfinished">Ostranjevanje osebnih podatkov</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Save</source>
@@ -1063,6 +1001,10 @@
     </message>
     <message>
         <source>Privacy Management</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Keep Favicons when deleting personal data</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1261,68 +1203,12 @@
 <context>
     <name>SettingsPage</name>
     <message>
-        <source>Home Page</source>
-        <translation type="vanished">Domača stran</translation>
-    </message>
-    <message>
-        <source>Search Engines</source>
-        <translation type="vanished">Iskalniki</translation>
-    </message>
-    <message>
-        <source>User Agent</source>
-        <translation type="vanished">User Agent</translation>
-    </message>
-    <message>
-        <source>Wipe Data on Exit</source>
-        <translation type="vanished">Ob izhodu pobriši podatke</translation>
-    </message>
-    <message>
         <source>General</source>
         <translation>Splošno</translation>
     </message>
     <message>
         <source>Privacy</source>
         <translation>Zasebnost</translation>
-    </message>
-    <message>
-        <source>Delete Personal Data</source>
-        <translation type="vanished">Izbriši osebne podatke</translation>
-    </message>
-    <message>
-        <source>Save Settings</source>
-        <translation type="vanished">Shrani nastavitve</translation>
-    </message>
-    <message>
-        <source>Removing personal data</source>
-        <translation type="vanished">Ostranjevanje osebnih podatkov</translation>
-    </message>
-    <message>
-        <source>Delete Navigation History</source>
-        <translation type="vanished">Izbriši zgodovino</translation>
-    </message>
-    <message>
-        <source>Removing navigation history</source>
-        <translation type="vanished">Odstrani zgodovino brskanja</translation>
-    </message>
-    <message>
-        <source>Long press to edit</source>
-        <translation type="vanished">Za urejanje pritisnite in držite</translation>
-    </message>
-    <message>
-        <source>Restore tabs at Startup</source>
-        <translation type="vanished">Obnovi zavihke ob zagonu</translation>
-    </message>
-    <message>
-        <source>Delete Cookies</source>
-        <translation type="vanished">Izbriši piškotke</translation>
-    </message>
-    <message>
-        <source>Removing cookies</source>
-        <translation type="vanished">Odstranjevanje piškotkov</translation>
-    </message>
-    <message>
-        <source>Keep Favicons when deleting personal data</source>
-        <translation type="vanished">Pri brisanju osebnih podatkov ohrani ikono zaznamka</translation>
     </message>
     <message>
         <source>Browser Settings</source>
@@ -1371,7 +1257,7 @@
     <name>TabsSettingsPage</name>
     <message>
         <source>Restore tabs at Startup</source>
-        <translation type="unfinished">Obnovi zavihke ob zagonu</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Save</source>
@@ -1407,23 +1293,23 @@
     <name>YouTubeCipher</name>
     <message>
         <source>Downloading Player&apos;s Cipher</source>
-        <translation type="unfinished"></translation>
+        <translation>Prenašam predvajalnikov šifrant</translation>
     </message>
     <message>
         <source>Cannot find decoding function</source>
-        <translation type="unfinished"></translation>
+        <translation>Ne najdem funkcije za dekodiranje</translation>
     </message>
     <message>
         <source>Cannot find decoding object</source>
-        <translation type="unfinished"></translation>
+        <translation>Ne najdem funkcije za dekodiranje</translation>
     </message>
     <message>
         <source>Cannot download Video Configuration</source>
-        <translation type="unfinished"></translation>
+        <translation>Neuspešen prenos konfiguracije videa</translation>
     </message>
     <message>
         <source>Ciphered Video: Downloading WebPage</source>
-        <translation type="unfinished"></translation>
+        <translation>Šifriran video: prenašam spletno stran</translation>
     </message>
 </context>
 <context>
@@ -1434,26 +1320,26 @@
     </message>
     <message>
         <source>OK</source>
-        <translation type="unfinished">OK</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <source>Downloading video info</source>
-        <translation type="unfinished"></translation>
+        <translation>Prenašanje video informacij</translation>
     </message>
     <message>
         <source>FAILED</source>
-        <translation type="unfinished">FAILED</translation>
+        <translation>NI USPELO&lt;</translation>
     </message>
 </context>
 <context>
     <name>harbour-webpirate</name>
     <message>
         <source>Download Completed</source>
-        <translation type="unfinished"></translation>
+        <translation>Prenos zaključen</translation>
     </message>
     <message>
         <source>Download Failed</source>
-        <translation type="unfinished"></translation>
+        <translation>Prenašanje ni uspelo</translation>
     </message>
 </context>
 </TS>

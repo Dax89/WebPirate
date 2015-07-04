@@ -313,7 +313,7 @@
     </message>
     <message>
         <source>Status</source>
-        <translation type="unfinished"></translation>
+        <translation>Статус</translation>
     </message>
 </context>
 <context>
@@ -577,7 +577,7 @@
     <name>ExperimentalSettingsPage</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Сохранить</translation>
+        <translation>Сохранить</translation>
     </message>
     <message>
         <source>Override Text Fields</source>
@@ -619,7 +619,7 @@
     </message>
     <message>
         <source>Imporing Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Импортировать закладки</translation>
     </message>
 </context>
 <context>
@@ -727,49 +727,26 @@
     </message>
 </context>
 <context>
-    <name>GeneralSettings</name>
-    <message>
-        <source>Save</source>
-        <translation type="obsolete">Сохранить</translation>
-    </message>
-    <message>
-        <source>Home Page</source>
-        <translation type="obsolete">Домашняя страница</translation>
-    </message>
-    <message>
-        <source>Search Engines</source>
-        <translation type="obsolete">Поисковый движок</translation>
-    </message>
-    <message>
-        <source>Long press to edit</source>
-        <translation type="obsolete">Удерживайте для редактирования</translation>
-    </message>
-    <message>
-        <source>User Agent</source>
-        <translation type="obsolete">Тип поискового сайта</translation>
-    </message>
-</context>
-<context>
     <name>GeneralSettingsPage</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Сохранить</translation>
+        <translation>Сохранить</translation>
     </message>
     <message>
         <source>Home Page</source>
-        <translation type="unfinished">Домашняя страница</translation>
+        <translation>Домашняя страница</translation>
     </message>
     <message>
         <source>Search Engines</source>
-        <translation type="unfinished">Поисковый движок</translation>
+        <translation>Поисковый движок</translation>
     </message>
     <message>
         <source>Long press to edit</source>
-        <translation type="unfinished">Удерживайте для редактирования</translation>
+        <translation>Удерживайте для редактирования</translation>
     </message>
     <message>
         <source>User Agent</source>
-        <translation type="unfinished">Тип поискового сайта</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -920,15 +897,15 @@
     <name>NotificationDialog</name>
     <message>
         <source>wants to access System&apos;s Notifications</source>
-        <translation type="unfinished"></translation>
+        <translation>получить доступ к системным уведомлениям</translation>
     </message>
     <message>
         <source>Allow</source>
-        <translation type="unfinished">Разрешить</translation>
+        <translation>Разрешить</translation>
     </message>
     <message>
         <source>Deny</source>
-        <translation type="unfinished"></translation>
+        <translation>Отказать</translation>
     </message>
 </context>
 <context>
@@ -985,73 +962,42 @@
     </message>
 </context>
 <context>
-    <name>PrivacyPage</name>
-    <message>
-        <source>Wipe Data on Exit</source>
-        <translation type="obsolete">Удалить данные при выходе</translation>
-    </message>
-    <message>
-        <source>Delete Navigation History</source>
-        <translation type="obsolete">Удалить историю</translation>
-    </message>
-    <message>
-        <source>Removing navigation history</source>
-        <translation type="obsolete">Удаление истории</translation>
-    </message>
-    <message>
-        <source>Delete Cookies</source>
-        <translation type="obsolete">Удаленить Cookies</translation>
-    </message>
-    <message>
-        <source>Removing cookies</source>
-        <translation type="obsolete">Удаление Cookies</translation>
-    </message>
-    <message>
-        <source>Delete Personal Data</source>
-        <translation type="obsolete">Удалить персональные данные</translation>
-    </message>
-    <message>
-        <source>Removing personal data</source>
-        <translation type="obsolete">Удаление персональных данных</translation>
-    </message>
-</context>
-<context>
     <name>PrivacySettingsPage</name>
     <message>
         <source>Wipe Data on Exit</source>
-        <translation type="unfinished">Удалить данные при выходе</translation>
+        <translation>Удалить данные при выходе</translation>
     </message>
     <message>
         <source>Delete Navigation History</source>
-        <translation type="unfinished">Удалить историю</translation>
+        <translation>Удалить историю</translation>
     </message>
     <message>
         <source>Removing navigation history</source>
-        <translation type="unfinished">Удаление истории</translation>
+        <translation>Удаление истории</translation>
     </message>
     <message>
         <source>Delete Cookies</source>
-        <translation type="unfinished">Удаленить Cookies</translation>
+        <translation>Удаленить Cookies</translation>
     </message>
     <message>
         <source>Removing cookies</source>
-        <translation type="unfinished">Удаление Cookies</translation>
+        <translation>Удаление Cookies</translation>
     </message>
     <message>
         <source>Delete Personal Data</source>
-        <translation type="unfinished">Удалить персональные данные</translation>
+        <translation>Удалить персональные данные</translation>
     </message>
     <message>
         <source>Removing personal data</source>
-        <translation type="unfinished">Удаление персональных данных</translation>
+        <translation>Удаление персональных данных</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Сохранить</translation>
+        <translation>Сохранить</translation>
     </message>
     <message>
         <source>Privacy Options</source>
-        <translation type="unfinished"></translation>
+        <translation>Опции конфиденциальности</translation>
     </message>
     <message>
         <source>Privacy Management</source>
@@ -1084,7 +1030,7 @@
     </message>
     <message>
         <source>The Quick Grid is empty</source>
-        <translation type="unfinished"></translation>
+        <translation>Fast Dial пустой</translation>
     </message>
 </context>
 <context>
@@ -1257,22 +1203,6 @@
 <context>
     <name>SettingsPage</name>
     <message>
-        <source>Home Page</source>
-        <translation type="vanished">Домашняя страница</translation>
-    </message>
-    <message>
-        <source>Search Engines</source>
-        <translation type="vanished">Поисковый движок</translation>
-    </message>
-    <message>
-        <source>User Agent</source>
-        <translation type="vanished">Тип поискового сайта</translation>
-    </message>
-    <message>
-        <source>Wipe Data on Exit</source>
-        <translation type="vanished">Удалить данные при выходе</translation>
-    </message>
-    <message>
         <source>General</source>
         <translation>Основные</translation>
     </message>
@@ -1281,48 +1211,12 @@
         <translation>Конфиденциальность </translation>
     </message>
     <message>
-        <source>Delete Personal Data</source>
-        <translation type="vanished">Удалить персональные данные</translation>
-    </message>
-    <message>
-        <source>Save Settings</source>
-        <translation type="vanished">Сохранить настройки</translation>
-    </message>
-    <message>
-        <source>Removing personal data</source>
-        <translation type="vanished">Удаление персональных данных</translation>
-    </message>
-    <message>
-        <source>Delete Navigation History</source>
-        <translation type="vanished">Удалить историю</translation>
-    </message>
-    <message>
-        <source>Removing navigation history</source>
-        <translation type="vanished">Удаление истории</translation>
-    </message>
-    <message>
-        <source>Long press to edit</source>
-        <translation type="vanished">Удерживайте для редактирования</translation>
-    </message>
-    <message>
-        <source>Restore tabs at Startup</source>
-        <translation type="vanished">Восстановить окна,  открытые в прошлый раз</translation>
-    </message>
-    <message>
-        <source>Delete Cookies</source>
-        <translation type="vanished">Удаленить Cookies</translation>
-    </message>
-    <message>
-        <source>Removing cookies</source>
-        <translation type="vanished">Удаление Cookies</translation>
-    </message>
-    <message>
         <source>Browser Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Настройки браузера</translation>
     </message>
     <message>
         <source>Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Вкладки</translation>
     </message>
     <message>
         <source>Experimental</source>
@@ -1363,11 +1257,11 @@
     <name>TabsSettingsPage</name>
     <message>
         <source>Restore tabs at Startup</source>
-        <translation type="unfinished">Восстановить окна,  открытые в прошлый раз</translation>
+        <translation>Восстановить окна,  открытые в прошлый раз</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Сохранить</translation>
+        <translation>Сохранить</translation>
     </message>
 </context>
 <context>
@@ -1403,11 +1297,11 @@
     </message>
     <message>
         <source>Cannot find decoding function</source>
-        <translation type="unfinished"></translation>
+        <translation>Не могу найти функцию декодирования</translation>
     </message>
     <message>
         <source>Cannot find decoding object</source>
-        <translation type="unfinished"></translation>
+        <translation>Не могу найти функцию декодирования</translation>
     </message>
     <message>
         <source>Cannot download Video Configuration</source>

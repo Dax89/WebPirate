@@ -313,7 +313,7 @@
     </message>
     <message>
         <source>Status</source>
-        <translation type="unfinished"></translation>
+        <translation>狀態</translation>
     </message>
 </context>
 <context>
@@ -577,15 +577,15 @@
     <name>ExperimentalSettingsPage</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished">儲存</translation>
+        <translation>儲存</translation>
     </message>
     <message>
         <source>Override Text Fields</source>
-        <translation type="unfinished"></translation>
+        <translation>清除文字區域</translation>
     </message>
     <message>
         <source>Use SailfishOS&apos;s editing components instead of WebView&apos;s ones</source>
-        <translation type="unfinished"></translation>
+        <translation>利用SailfishOS的編輯元件來替代WebView</translation>
     </message>
 </context>
 <context>
@@ -727,49 +727,26 @@
     </message>
 </context>
 <context>
-    <name>GeneralSettings</name>
-    <message>
-        <source>Save</source>
-        <translation type="obsolete">儲存</translation>
-    </message>
-    <message>
-        <source>Home Page</source>
-        <translation type="obsolete">首頁</translation>
-    </message>
-    <message>
-        <source>Search Engines</source>
-        <translation type="obsolete">搜尋引擎</translation>
-    </message>
-    <message>
-        <source>Long press to edit</source>
-        <translation type="obsolete">長按可進行編輯</translation>
-    </message>
-    <message>
-        <source>User Agent</source>
-        <translation type="obsolete">代理主機</translation>
-    </message>
-</context>
-<context>
     <name>GeneralSettingsPage</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished">儲存</translation>
+        <translation>儲存</translation>
     </message>
     <message>
         <source>Home Page</source>
-        <translation type="unfinished">首頁</translation>
+        <translation>首頁</translation>
     </message>
     <message>
         <source>Search Engines</source>
-        <translation type="unfinished">搜尋引擎</translation>
+        <translation>搜尋引擎</translation>
     </message>
     <message>
         <source>Long press to edit</source>
-        <translation type="unfinished">長按可進行編輯</translation>
+        <translation>長按可進行編輯</translation>
     </message>
     <message>
         <source>User Agent</source>
-        <translation type="unfinished">代理主機</translation>
+        <translation>代理主機</translation>
     </message>
 </context>
 <context>
@@ -985,84 +962,49 @@
     </message>
 </context>
 <context>
-    <name>PrivacyPage</name>
-    <message>
-        <source>Wipe Data on Exit</source>
-        <translation type="obsolete">關閉時移除資料</translation>
-    </message>
-    <message>
-        <source>Keep Favicons when deleting personal data</source>
-        <translation type="obsolete">刪除個人資料時保留網站圖示</translation>
-    </message>
-    <message>
-        <source>Delete Navigation History</source>
-        <translation type="obsolete">刪除瀏覽記錄</translation>
-    </message>
-    <message>
-        <source>Removing navigation history</source>
-        <translation type="obsolete">移除瀏覽記錄中</translation>
-    </message>
-    <message>
-        <source>Delete Cookies</source>
-        <translation type="obsolete">刪除Cookie</translation>
-    </message>
-    <message>
-        <source>Removing cookies</source>
-        <translation type="obsolete">刪除Cookie中</translation>
-    </message>
-    <message>
-        <source>Delete Personal Data</source>
-        <translation type="obsolete">刪除個人資料</translation>
-    </message>
-    <message>
-        <source>Removing personal data</source>
-        <translation type="obsolete">移除個人資料中</translation>
-    </message>
-</context>
-<context>
     <name>PrivacySettingsPage</name>
     <message>
         <source>Wipe Data on Exit</source>
-        <translation type="unfinished">關閉時移除資料</translation>
-    </message>
-    <message>
-        <source>Keep Favicons when deleting personal data</source>
-        <translation type="unfinished">刪除個人資料時保留網站圖示</translation>
+        <translation>關閉時移除資料</translation>
     </message>
     <message>
         <source>Delete Navigation History</source>
-        <translation type="unfinished">刪除瀏覽記錄</translation>
+        <translation>刪除瀏覽記錄</translation>
     </message>
     <message>
         <source>Removing navigation history</source>
-        <translation type="unfinished">移除瀏覽記錄中</translation>
+        <translation>移除瀏覽記錄中</translation>
     </message>
     <message>
         <source>Delete Cookies</source>
-        <translation type="unfinished">刪除Cookie</translation>
+        <translation>刪除Cookie</translation>
     </message>
     <message>
         <source>Removing cookies</source>
-        <translation type="unfinished">刪除Cookie中</translation>
+        <translation>刪除Cookie中</translation>
     </message>
     <message>
         <source>Delete Personal Data</source>
-        <translation type="unfinished">刪除個人資料</translation>
+        <translation>刪除個人資料</translation>
     </message>
     <message>
         <source>Removing personal data</source>
-        <translation type="unfinished">移除個人資料中</translation>
+        <translation>移除個人資料中</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="unfinished">儲存</translation>
+        <translation>儲存</translation>
     </message>
     <message>
         <source>Privacy Options</source>
-        <translation type="unfinished"></translation>
+        <translation>隱私選項</translation>
     </message>
     <message>
         <source>Privacy Management</source>
+        <translation>隱私管理</translation>
+    </message>
+    <message>
+        <source>Keep Favicons when deleting personal data</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1261,22 +1203,6 @@
 <context>
     <name>SettingsPage</name>
     <message>
-        <source>Home Page</source>
-        <translation type="vanished">首頁</translation>
-    </message>
-    <message>
-        <source>Search Engines</source>
-        <translation type="vanished">搜尋引擎</translation>
-    </message>
-    <message>
-        <source>User Agent</source>
-        <translation type="vanished">代理主機</translation>
-    </message>
-    <message>
-        <source>Wipe Data on Exit</source>
-        <translation type="vanished">關閉時移除資料</translation>
-    </message>
-    <message>
         <source>General</source>
         <translation>一般</translation>
     </message>
@@ -1285,56 +1211,16 @@
         <translation>隱私</translation>
     </message>
     <message>
-        <source>Delete Personal Data</source>
-        <translation type="vanished">刪除個人資料</translation>
-    </message>
-    <message>
-        <source>Save Settings</source>
-        <translation type="vanished">儲存設定</translation>
-    </message>
-    <message>
-        <source>Removing personal data</source>
-        <translation type="vanished">移除個人資料中</translation>
-    </message>
-    <message>
-        <source>Delete Navigation History</source>
-        <translation type="vanished">刪除瀏覽記錄</translation>
-    </message>
-    <message>
-        <source>Removing navigation history</source>
-        <translation type="vanished">移除瀏覽記錄中</translation>
-    </message>
-    <message>
-        <source>Long press to edit</source>
-        <translation type="vanished">長按可進行編輯</translation>
-    </message>
-    <message>
-        <source>Restore tabs at Startup</source>
-        <translation type="vanished">於開啟時重新載入分頁</translation>
-    </message>
-    <message>
-        <source>Delete Cookies</source>
-        <translation type="vanished">刪除Cookie</translation>
-    </message>
-    <message>
-        <source>Removing cookies</source>
-        <translation type="vanished">刪除Cookie中</translation>
-    </message>
-    <message>
-        <source>Keep Favicons when deleting personal data</source>
-        <translation type="vanished">刪除個人資料時保留網站圖示</translation>
-    </message>
-    <message>
         <source>Browser Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>瀏覽器設定</translation>
     </message>
     <message>
         <source>Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>分頁</translation>
     </message>
     <message>
         <source>Experimental</source>
-        <translation type="unfinished"></translation>
+        <translation>實驗性</translation>
     </message>
 </context>
 <context>
@@ -1371,11 +1257,11 @@
     <name>TabsSettingsPage</name>
     <message>
         <source>Restore tabs at Startup</source>
-        <translation type="unfinished">於開啟時重新載入分頁</translation>
+        <translation>於開啟時重新載入分頁</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="unfinished">儲存</translation>
+        <translation>儲存</translation>
     </message>
 </context>
 <context>
@@ -1407,23 +1293,23 @@
     <name>YouTubeCipher</name>
     <message>
         <source>Downloading Player&apos;s Cipher</source>
-        <translation type="unfinished"></translation>
+        <translation>撥放器解碼功能下載中</translation>
     </message>
     <message>
         <source>Cannot find decoding function</source>
-        <translation type="unfinished"></translation>
+        <translation>無法找到解碼功能</translation>
     </message>
     <message>
         <source>Cannot find decoding object</source>
-        <translation type="unfinished"></translation>
+        <translation>無法找到解碼物件</translation>
     </message>
     <message>
         <source>Cannot download Video Configuration</source>
-        <translation type="unfinished"></translation>
+        <translation>無法下載影片組態</translation>
     </message>
     <message>
         <source>Ciphered Video: Downloading WebPage</source>
-        <translation type="unfinished"></translation>
+        <translation>已解碼影片：網頁下載中</translation>
     </message>
 </context>
 <context>
@@ -1434,15 +1320,15 @@
     </message>
     <message>
         <source>OK</source>
-        <translation type="unfinished">確定</translation>
+        <translation>確定</translation>
     </message>
     <message>
         <source>Downloading video info</source>
-        <translation type="unfinished"></translation>
+        <translation>下載影片資訊中</translation>
     </message>
     <message>
         <source>FAILED</source>
-        <translation type="unfinished">失敗</translation>
+        <translation>失敗</translation>
     </message>
 </context>
 <context>

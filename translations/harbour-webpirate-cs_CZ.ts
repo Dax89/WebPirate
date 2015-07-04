@@ -313,7 +313,7 @@
     </message>
     <message>
         <source>Status</source>
-        <translation type="unfinished"></translation>
+        <translation>Stav</translation>
     </message>
 </context>
 <context>
@@ -727,29 +727,6 @@
     </message>
 </context>
 <context>
-    <name>GeneralSettings</name>
-    <message>
-        <source>Save</source>
-        <translation type="obsolete">Uložit</translation>
-    </message>
-    <message>
-        <source>Home Page</source>
-        <translation type="obsolete">Domovská stránka</translation>
-    </message>
-    <message>
-        <source>Search Engines</source>
-        <translation type="obsolete">Poskytovatelé vyhledávání</translation>
-    </message>
-    <message>
-        <source>Long press to edit</source>
-        <translation type="obsolete">Dlouze zmáčkněte pro editaci</translation>
-    </message>
-    <message>
-        <source>User Agent</source>
-        <translation type="obsolete">Identifikátor prohlížeče</translation>
-    </message>
-</context>
-<context>
     <name>GeneralSettingsPage</name>
     <message>
         <source>Save</source>
@@ -757,7 +734,7 @@
     </message>
     <message>
         <source>Home Page</source>
-        <translation type="unfinished">Domovská stránka</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Search Engines</source>
@@ -765,11 +742,11 @@
     </message>
     <message>
         <source>Long press to edit</source>
-        <translation type="unfinished">Dlouze zmáčkněte pro editaci</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>User Agent</source>
-        <translation type="unfinished">Identifikátor prohlížeče</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -838,7 +815,7 @@
     </message>
     <message>
         <source>WebView process has crashed, restarting...</source>
-        <translation type="unfinished"></translation>
+        <translation>Process WebView selhal, restartuje se...</translation>
     </message>
 </context>
 <context>
@@ -920,15 +897,15 @@
     <name>NotificationDialog</name>
     <message>
         <source>wants to access System&apos;s Notifications</source>
-        <translation type="unfinished"></translation>
+        <translation>požaduje přístup k systémovým oznámením</translation>
     </message>
     <message>
         <source>Allow</source>
-        <translation type="unfinished">Povolit</translation>
+        <translation>Povolit</translation>
     </message>
     <message>
         <source>Deny</source>
-        <translation type="unfinished"></translation>
+        <translation>Zamítnout</translation>
     </message>
 </context>
 <context>
@@ -985,73 +962,34 @@
     </message>
 </context>
 <context>
-    <name>PrivacyPage</name>
-    <message>
-        <source>Wipe Data on Exit</source>
-        <translation type="obsolete">Smazat data při ukončení</translation>
-    </message>
-    <message>
-        <source>Keep Favicons when deleting personal data</source>
-        <translation type="obsolete">Ponechaf Favicony při odstaňování osobních dat</translation>
-    </message>
-    <message>
-        <source>Delete Navigation History</source>
-        <translation type="obsolete">Vymazat historii prohlížení</translation>
-    </message>
-    <message>
-        <source>Removing navigation history</source>
-        <translation type="obsolete">Mazání historie prohlížení</translation>
-    </message>
-    <message>
-        <source>Delete Cookies</source>
-        <translation type="obsolete">Odstranit Cookies</translation>
-    </message>
-    <message>
-        <source>Removing cookies</source>
-        <translation type="obsolete">Odstraňování Cookies</translation>
-    </message>
-    <message>
-        <source>Delete Personal Data</source>
-        <translation type="obsolete">Vymazat soukromá data</translation>
-    </message>
-    <message>
-        <source>Removing personal data</source>
-        <translation type="obsolete">Mazání soukromých dat</translation>
-    </message>
-</context>
-<context>
     <name>PrivacySettingsPage</name>
     <message>
         <source>Wipe Data on Exit</source>
-        <translation type="unfinished">Smazat data při ukončení</translation>
-    </message>
-    <message>
-        <source>Keep Favicons when deleting personal data</source>
-        <translation type="unfinished">Ponechaf Favicony při odstaňování osobních dat</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete Navigation History</source>
-        <translation type="unfinished">Vymazat historii prohlížení</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Removing navigation history</source>
-        <translation type="unfinished">Mazání historie prohlížení</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete Cookies</source>
-        <translation type="unfinished">Odstranit Cookies</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Removing cookies</source>
-        <translation type="unfinished">Odstraňování Cookies</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete Personal Data</source>
-        <translation type="unfinished">Vymazat soukromá data</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Removing personal data</source>
-        <translation type="unfinished">Mazání soukromých dat</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Save</source>
@@ -1063,6 +1001,10 @@
     </message>
     <message>
         <source>Privacy Management</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Keep Favicons when deleting personal data</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1261,68 +1203,12 @@
 <context>
     <name>SettingsPage</name>
     <message>
-        <source>Home Page</source>
-        <translation type="vanished">Domovská stránka</translation>
-    </message>
-    <message>
-        <source>Search Engines</source>
-        <translation type="vanished">Poskytovatelé vyhledávání</translation>
-    </message>
-    <message>
-        <source>User Agent</source>
-        <translation type="vanished">Identifikátor prohlížeče</translation>
-    </message>
-    <message>
-        <source>Wipe Data on Exit</source>
-        <translation type="vanished">Smazat data při ukončení</translation>
-    </message>
-    <message>
         <source>General</source>
         <translation>Obecné</translation>
     </message>
     <message>
         <source>Privacy</source>
         <translation>Soukromí</translation>
-    </message>
-    <message>
-        <source>Delete Personal Data</source>
-        <translation type="vanished">Vymazat soukromá data</translation>
-    </message>
-    <message>
-        <source>Save Settings</source>
-        <translation type="vanished">Uložit nastavení</translation>
-    </message>
-    <message>
-        <source>Removing personal data</source>
-        <translation type="vanished">Mazání soukromých dat</translation>
-    </message>
-    <message>
-        <source>Delete Navigation History</source>
-        <translation type="vanished">Vymazat historii prohlížení</translation>
-    </message>
-    <message>
-        <source>Removing navigation history</source>
-        <translation type="vanished">Mazání historie prohlížení</translation>
-    </message>
-    <message>
-        <source>Long press to edit</source>
-        <translation type="vanished">Dlouze zmáčkněte pro editaci</translation>
-    </message>
-    <message>
-        <source>Restore tabs at Startup</source>
-        <translation type="vanished">Obnovit panely při startu</translation>
-    </message>
-    <message>
-        <source>Delete Cookies</source>
-        <translation type="vanished">Odstranit Cookies</translation>
-    </message>
-    <message>
-        <source>Removing cookies</source>
-        <translation type="vanished">Odstraňování Cookies</translation>
-    </message>
-    <message>
-        <source>Keep Favicons when deleting personal data</source>
-        <translation type="vanished">Ponechaf Favicony při odstaňování osobních dat</translation>
     </message>
     <message>
         <source>Browser Settings</source>
@@ -1371,7 +1257,7 @@
     <name>TabsSettingsPage</name>
     <message>
         <source>Restore tabs at Startup</source>
-        <translation type="unfinished">Obnovit panely při startu</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Save</source>
@@ -1407,23 +1293,23 @@
     <name>YouTubeCipher</name>
     <message>
         <source>Downloading Player&apos;s Cipher</source>
-        <translation type="unfinished"></translation>
+        <translation>Stahování šifry přehrávače</translation>
     </message>
     <message>
         <source>Cannot find decoding function</source>
-        <translation type="unfinished"></translation>
+        <translation>Nelze nalézt dekódovací funkci</translation>
     </message>
     <message>
         <source>Cannot find decoding object</source>
-        <translation type="unfinished"></translation>
+        <translation>Nelze nalézt dekódovací objekt</translation>
     </message>
     <message>
         <source>Cannot download Video Configuration</source>
-        <translation type="unfinished"></translation>
+        <translation>Nelze stáhnout konfiguraci videa</translation>
     </message>
     <message>
         <source>Ciphered Video: Downloading WebPage</source>
-        <translation type="unfinished"></translation>
+        <translation>Šifrované video: Stahování webu</translation>
     </message>
 </context>
 <context>
@@ -1434,26 +1320,26 @@
     </message>
     <message>
         <source>OK</source>
-        <translation type="unfinished">OK</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <source>Downloading video info</source>
-        <translation type="unfinished"></translation>
+        <translation>Stahování informací o videu</translation>
     </message>
     <message>
         <source>FAILED</source>
-        <translation type="unfinished">SELHALO</translation>
+        <translation>SELHALO</translation>
     </message>
 </context>
 <context>
     <name>harbour-webpirate</name>
     <message>
         <source>Download Completed</source>
-        <translation type="unfinished"></translation>
+        <translation>Stahování dokončeno</translation>
     </message>
     <message>
         <source>Download Failed</source>
-        <translation type="unfinished"></translation>
+        <translation>Stahování selhalo</translation>
     </message>
 </context>
 </TS>

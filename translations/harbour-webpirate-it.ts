@@ -577,15 +577,15 @@
     <name>ExperimentalSettingsPage</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished"></translation>
+        <translation>Salva</translation>
     </message>
     <message>
         <source>Override Text Fields</source>
-        <translation type="unfinished"></translation>
+        <translation>Sovrascrivi campi di testo</translation>
     </message>
     <message>
         <source>Use SailfishOS&apos;s editing components instead of WebView&apos;s ones</source>
-        <translation type="unfinished"></translation>
+        <translation>Sostituisci i componenti di editing della WebView con quelli di Sailfish</translation>
     </message>
 </context>
 <context>
@@ -727,45 +727,26 @@
     </message>
 </context>
 <context>
-    <name>GeneralSettings</name>
-    <message>
-        <source>Home Page</source>
-        <translation type="obsolete">Pagina iniziale</translation>
-    </message>
-    <message>
-        <source>Search Engines</source>
-        <translation type="obsolete">Motori di ricerca</translation>
-    </message>
-    <message>
-        <source>Long press to edit</source>
-        <translation type="obsolete">Premi a lungo per modificare</translation>
-    </message>
-    <message>
-        <source>User Agent</source>
-        <translation type="obsolete">User Agent</translation>
-    </message>
-</context>
-<context>
     <name>GeneralSettingsPage</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished"></translation>
+        <translation>Salva</translation>
     </message>
     <message>
         <source>Home Page</source>
-        <translation type="unfinished">Pagina iniziale</translation>
+        <translation>Pagina iniziale</translation>
     </message>
     <message>
         <source>Search Engines</source>
-        <translation type="unfinished">Motori di ricerca</translation>
+        <translation>Motori di ricerca</translation>
     </message>
     <message>
         <source>Long press to edit</source>
-        <translation type="unfinished">Premi a lungo per modificare</translation>
+        <translation>Premi a lungo per modificare</translation>
     </message>
     <message>
         <source>User Agent</source>
-        <translation type="unfinished">User Agent</translation>
+        <translation>User Agent</translation>
     </message>
 </context>
 <context>
@@ -981,84 +962,49 @@
     </message>
 </context>
 <context>
-    <name>PrivacyPage</name>
-    <message>
-        <source>Wipe Data on Exit</source>
-        <translation type="obsolete">Cancella dati all&apos;uscita</translation>
-    </message>
-    <message>
-        <source>Keep Favicons when deleting personal data</source>
-        <translation type="obsolete">Conserva le icone durante la rimozione dei dati personali</translation>
-    </message>
-    <message>
-        <source>Delete Navigation History</source>
-        <translation type="obsolete">Cancella cronologia di navigazione</translation>
-    </message>
-    <message>
-        <source>Removing navigation history</source>
-        <translation type="obsolete">Rimozione cronologia di navigazione</translation>
-    </message>
-    <message>
-        <source>Delete Cookies</source>
-        <translation type="obsolete">Cancella i cookie</translation>
-    </message>
-    <message>
-        <source>Removing cookies</source>
-        <translation type="obsolete">Rimozione cookie</translation>
-    </message>
-    <message>
-        <source>Delete Personal Data</source>
-        <translation type="obsolete">Cancella dati personali</translation>
-    </message>
-    <message>
-        <source>Removing personal data</source>
-        <translation type="obsolete">Rimozione dati personali</translation>
-    </message>
-</context>
-<context>
     <name>PrivacySettingsPage</name>
     <message>
         <source>Wipe Data on Exit</source>
-        <translation type="unfinished">Cancella dati all&apos;uscita</translation>
-    </message>
-    <message>
-        <source>Keep Favicons when deleting personal data</source>
-        <translation type="unfinished">Conserva le icone durante la rimozione dei dati personali</translation>
+        <translation>Elimina i dati all&apos;uscita</translation>
     </message>
     <message>
         <source>Delete Navigation History</source>
-        <translation type="unfinished">Cancella cronologia di navigazione</translation>
+        <translation>Elimina cronologia di navigazione</translation>
     </message>
     <message>
         <source>Removing navigation history</source>
-        <translation type="unfinished">Rimozione cronologia di navigazione</translation>
+        <translation>Rimozione cronologia di navigazione</translation>
     </message>
     <message>
         <source>Delete Cookies</source>
-        <translation type="unfinished">Cancella i cookie</translation>
+        <translation>Elimina cookie</translation>
     </message>
     <message>
         <source>Removing cookies</source>
-        <translation type="unfinished">Rimozione cookie</translation>
+        <translation>Rimozione cookie</translation>
     </message>
     <message>
         <source>Delete Personal Data</source>
-        <translation type="unfinished">Cancella dati personali</translation>
+        <translation>Elimina dati personali</translation>
     </message>
     <message>
         <source>Removing personal data</source>
-        <translation type="unfinished">Rimozione dati personali</translation>
+        <translation>Rimozione dati personali</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="unfinished"></translation>
+        <translation>Salva</translation>
     </message>
     <message>
         <source>Privacy Options</source>
-        <translation type="unfinished"></translation>
+        <translation>Opzioni per la Privacy</translation>
     </message>
     <message>
         <source>Privacy Management</source>
+        <translation>Gestione Privacy</translation>
+    </message>
+    <message>
+        <source>Keep Favicons when deleting personal data</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1257,22 +1203,6 @@
 <context>
     <name>SettingsPage</name>
     <message>
-        <source>Home Page</source>
-        <translation type="vanished">Pagina iniziale</translation>
-    </message>
-    <message>
-        <source>Search Engines</source>
-        <translation type="vanished">Motori di ricerca</translation>
-    </message>
-    <message>
-        <source>User Agent</source>
-        <translation type="vanished">User Agent</translation>
-    </message>
-    <message>
-        <source>Wipe Data on Exit</source>
-        <translation type="vanished">Cancella dati all&apos;uscita</translation>
-    </message>
-    <message>
         <source>General</source>
         <translation>Generali</translation>
     </message>
@@ -1281,56 +1211,16 @@
         <translation>Privacy</translation>
     </message>
     <message>
-        <source>Delete Personal Data</source>
-        <translation type="vanished">Cancella dati personali</translation>
-    </message>
-    <message>
-        <source>Save Settings</source>
-        <translation type="vanished">Salva impostazioni</translation>
-    </message>
-    <message>
-        <source>Removing personal data</source>
-        <translation type="vanished">Rimozione dati personali</translation>
-    </message>
-    <message>
-        <source>Delete Navigation History</source>
-        <translation type="vanished">Cancella cronologia di navigazione</translation>
-    </message>
-    <message>
-        <source>Removing navigation history</source>
-        <translation type="vanished">Rimozione cronologia di navigazione</translation>
-    </message>
-    <message>
-        <source>Long press to edit</source>
-        <translation type="vanished">Premi a lungo per modificare</translation>
-    </message>
-    <message>
-        <source>Restore tabs at Startup</source>
-        <translation type="vanished">Ripristina le schede all&apos;avvio</translation>
-    </message>
-    <message>
-        <source>Delete Cookies</source>
-        <translation type="vanished">Cancella i cookie</translation>
-    </message>
-    <message>
-        <source>Removing cookies</source>
-        <translation type="vanished">Rimozione cookie</translation>
-    </message>
-    <message>
-        <source>Keep Favicons when deleting personal data</source>
-        <translation type="vanished">Conserva le icone durante la rimozione dei dati personali</translation>
-    </message>
-    <message>
         <source>Browser Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Impostazioni</translation>
     </message>
     <message>
         <source>Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Schede</translation>
     </message>
     <message>
         <source>Experimental</source>
-        <translation type="unfinished"></translation>
+        <translation>Esperimenti</translation>
     </message>
 </context>
 <context>
@@ -1367,11 +1257,11 @@
     <name>TabsSettingsPage</name>
     <message>
         <source>Restore tabs at Startup</source>
-        <translation type="unfinished">Ripristina le schede all&apos;avvio</translation>
+        <translation>Ripristina le schede all&apos;avvio</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="unfinished"></translation>
+        <translation>Salva</translation>
     </message>
 </context>
 <context>
