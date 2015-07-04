@@ -60,7 +60,7 @@ var __webpirate__ = {
             var roottn = __webpirate__.rootTextNode(target);
 
             if(roottn)
-                data.text = roottn.innerText;
+                data.text = __wp_utils__.escape(roottn.innerText);
         }
         else
         {

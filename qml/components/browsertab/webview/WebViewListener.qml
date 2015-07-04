@@ -76,7 +76,7 @@ Item
                 linkmenu.show();
             }
             else if(data.text)
-                pageStack.push(Qt.resolvedUrl("../../../pages/webview/TextSelectionPage.qml"), { "text": data.text });
+                pageStack.push(Qt.resolvedUrl("../../../pages/webview/TextSelectionPage.qml"), { "text": clearEscape(data.text) });
         }
 
         function onFormSubmit(data) {
