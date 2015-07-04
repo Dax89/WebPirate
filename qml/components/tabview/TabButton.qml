@@ -81,7 +81,7 @@ MouseArea
                 radius: tabbutton.radius
                 width: visible ? parent.height : 0
                 height: parent.height
-                anchors { right: parent.right; top: parent.top; bottom: parent.bottom; rightMargin: visible ? 0 : Theme.paddingSmall }
+                anchors { right: parent.right; top: parent.top; bottom: parent.bottom; rightMargin: visible ? 0 : Theme.paddingMedium }
                 visible: tabs.count > 1
                 onClicked: tabview.removeTab(index)
             }
