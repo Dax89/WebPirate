@@ -49,6 +49,6 @@ var __wp_dailymotionhelper__ = {
         parent.insertBefore(dmplayer, parent.firstElementChild);
         iframe.remove();
 
-        __wp_grabberbuilder__.createPlayer(dmplayer, "dm", "navigator.qt.postMessage('" + JSON.stringify(videoinfo) + "')", __wp_dailymotionhelper__.playbutton);
+        __wp_grabberbuilder__.createPlayer(dmplayer, "dm", "navigator.qt.postMessage('" + JSON.stringify(videoinfo) + "')", __wp_dailymotionhelper__.playbutton, dminfo.thumbnail_url);
     }
 };

@@ -4,7 +4,7 @@ var __wp_grabberbuilder__ = {
             element.removeChild(element.firstChild);
     },
 
-    createPlayer: function(element, playername, clickevent, iconurl) {
+    createPlayer: function(element, playername, clickevent, iconurl, backgroundimage) {
         if(!element)
             return null;
 
@@ -13,7 +13,14 @@ var __wp_grabberbuilder__ = {
 
         var player = document.createElement("DIV");
         player.id = "__wp_" + playername + "_player__";
-        player.style.backgroundColor = "#1b1b1b";
+
+        if(backgroundimage) {
+            player.style.backgroundImage = "url(" + backgroundimage + ")";
+            player.style.backgroundSize = "100% auto";
+        }
+        else
+            player.style.backgroundColor = "#1b1b1b";
+
         player.style.width = rect.width + "px";
         player.style.height = rect.height + "px";
 

@@ -53,6 +53,6 @@ var __wp_vimeohelper__ = {
             }
         }
 
-        __wp_grabberbuilder__.createPlayer(element, "vm", "navigator.qt.postMessage('" + JSON.stringify(vimeoinfo) + "')", __wp_vimeohelper__.playbutton);
+        __wp_grabberbuilder__.createPlayer(element, "vm", "navigator.qt.postMessage('" + JSON.stringify(vimeoinfo) + "')", __wp_vimeohelper__.playbutton, clip.video.thumbs.base);
     }
 };
