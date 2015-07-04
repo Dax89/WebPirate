@@ -14,27 +14,9 @@ MouseArea
         return (index === tabview.currentIndex ? Theme.secondaryColor : Theme.secondaryHighlightColor);
     }
 
-    function executeClick() {
+    onClicked: {
         sidebar.collapse();
         tabview.currentIndex = index;
-    }
-
-    Timer
-    {
-        id: timdoubletap
-        interval: 150
-        onTriggered: executeClick()
-    }
-
-    onClicked: {
-        if(!timdoubletap.running) {
-            timdoubletap.start();
-            return;
-        }
-
-        /* Handle Double Tap */
-        if(tabs.count > 1)
-            tabview.removeTab(index);
     }
 
     onPressAndHold: {
@@ -85,7 +67,7 @@ MouseArea
             Text
             {
                 id: tabtitle
-                anchors { left: indicator.right; right: btnclose.left; verticalCenter: parent.verticalCenter; leftMargin: Theme.paddingSmall }
+                anchors { left: indicator.right; right: closebutton.left; verticalCenter: parent.verticalCenter; leftMargin: Theme.paddingSmall }
                 font.pixelSize: Theme.fontSizeSmall
                 verticalAlignment: Text.AlignVCenter
                 horizontalAlignment: Text.AlignLeft
@@ -93,13 +75,13 @@ MouseArea
                 maximumLineCount: 1
             }
 
-            IconButton
+            TabCloseButton
             {
-                id: btnclose
-                width: Theme.iconSizeSmall
-                height: Theme.iconSizeSmall
-                anchors { right: parent.right; rightMargin: Theme.paddingSmall; verticalCenter: parent.verticalCenter }
-                icon.source: "image://theme/icon-close-vkb"
+                id: closebutton
+                radius: tabbutton.radius
+                width: visible ? parent.height : 0
+                height: parent.height
+                anchors { right: parent.right; top: parent.top; bottom: parent.bottom; rightMargin: visible ? 0 : Theme.paddingSmall }
                 visible: tabs.count > 1
                 onClicked: tabview.removeTab(index)
             }

@@ -15,5 +15,6 @@
         <file>res/loaderror.png</file>
         <file>res/experimental.png</file>
         <file>res/privacy.png</file>
+        <file>res/close.png</file>
     </qresource>
 </RCC>

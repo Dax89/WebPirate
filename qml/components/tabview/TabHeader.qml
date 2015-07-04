@@ -3,7 +3,7 @@ import Sailfish.Silica 1.0
 
 Rectangle
 {
-    property real tabWidth: tabview.width * 0.40;
+    property real tabWidth: mainpage.isPortrait ? tabview.width * 0.45 : tabview.width * 0.35
 
     function solidify() {
         tabheader.height = Theme.iconSizeMedium;
