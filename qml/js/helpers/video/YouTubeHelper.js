@@ -49,7 +49,7 @@ var __wp_youtubehelper__ = {
         videoinfo.type = "play_youtube";
         videoinfo.videoid = cap[1];
 
-        __wp_grabberbuilder__.createPlayer(ytplayer, "yt", "navigator.qt.postMessage('" + JSON.stringify(videoinfo) + "')", __wp_youtubehelper__.playbutton, __wp_youtubehelper__.getVideoThumbnail(cap[1]));
+        __wp_grabberbuilder__.createPlayer(ytplayer, "yt", "navigator.qt.postMessage('" + JSON.stringify(videoinfo) + "')", __wp_youtubehelper__.playbutton, __wp_youtubehelper__.grabVideoThumbnail(cap[1]));
     },
 
     getEmbeddedVideos: function() {

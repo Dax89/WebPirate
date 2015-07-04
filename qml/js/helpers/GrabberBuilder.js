@@ -16,7 +16,9 @@ var __wp_grabberbuilder__ = {
 
         if(backgroundimage) {
             player.style.backgroundImage = "url(" + backgroundimage + ")";
-            player.style.backgroundSize = "100% auto";
+            player.style.backgroundSize = "cover";
+            player.style.backgroundRepeat = "no-repeat";
+            player.style.backgroundPosition = "center center";
         }
         else
             player.style.backgroundColor = "#1b1b1b";
