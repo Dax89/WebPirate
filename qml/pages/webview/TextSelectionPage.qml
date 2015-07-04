@@ -1,6 +1,5 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
-import "../components"
 
 Dialog
 {
@@ -24,15 +23,8 @@ Dialog
     {
         id: textarea
         softwareInputPanelEnabled: false
+        anchors { left: parent.left; top: header.bottom; right: parent.right; bottom: parent.bottom }
 
-        anchors
-        {
-            left: parent.left
-            top: header.bottom
-            right: parent.right
-            bottom: parent.bottom
-        }
-
-        Component.onCompleted: textarea.selectAll();
+        Component.onCompleted: textarea.selectAll()
     }
 }

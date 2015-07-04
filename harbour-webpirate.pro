@@ -87,7 +87,7 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/js/settings/History.js \
     qml/components/browsertab/menus/HistoryMenu.qml \
     qml/components/SettingLabel.qml \
-    qml/pages/TextSelectionPage.qml \
+    qml/pages/webview/TextSelectionPage.qml \
     qml/components/tabview/TabView.qml \
     qml/components/tabview/TabButton.qml \
     qml/components/quickgrid/QuickGrid.qml \
@@ -192,7 +192,7 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/pages/settings/TabsSettingsPage.qml \
     qml/pages/settings/ExperimentalSettingsPage.qml \
     qml/js/helpers/SystemTextField.js \
-    qml/pages/TextFieldPage.qml \
+    qml/pages/webview/TextFieldPage.qml \
     qml/js/helpers/Utils.js
 
 # to disable building translations every time, comment out the

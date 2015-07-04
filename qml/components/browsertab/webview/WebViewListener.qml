@@ -76,7 +76,7 @@ Item
                 linkmenu.show();
             }
             else if(data.text)
-                pageStack.push(Qt.resolvedUrl("../../../pages/TextSelectionPage.qml"), { "text": data.text });
+                pageStack.push(Qt.resolvedUrl("../../../pages/webview/TextSelectionPage.qml"), { "text": data.text });
         }
 
         function onFormSubmit(data) {
@@ -97,9 +97,9 @@ Item
             if(!mainwindow.settings.exp_overridetextfields)
                 return;
 
-            var tfpage = pageStack.push(Qt.resolvedUrl("../../../pages/TextFieldPage.qml"), { "elementId": data.id, "maxLength": data.maxlength,
-                                                                                              "selectionStart": data.selectionstart, "selectionEnd": data.selectionEnd,
-                                                                                              "text": clearEscape(data.text) });
+            var tfpage = pageStack.push(Qt.resolvedUrl("../../../pages/webview/TextFieldPage.qml"), { "elementId": data.id, "maxLength": data.maxlength,
+                                                                                                      "selectionStart": data.selectionstart, "selectionEnd": data.selectionEnd,
+                                                                                                      "text": clearEscape(data.text) });
 
             tfpage.accepted.connect(function() {
                 var data = new Object;
