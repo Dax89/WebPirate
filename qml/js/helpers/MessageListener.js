@@ -1,6 +1,6 @@
 var __wp_messagedispatcher__  = {
     "forcepixelratio": function() { __wp_forcepixelratio__.adjust(); },
-    "polish_document":  function() { __webpirate__.polishDocument(); },
+    "polish_view":  function() { __webpirate__.polishView(); },
     "textfield_override": function() { __wp_systemtextfield__.overrideEnabled = true; },
     "nightmode_enable": function() { __wp_nightmode__.switchMode(true); },
     "nightmode_disable": function() { __wp_nightmode__.switchMode(false); },

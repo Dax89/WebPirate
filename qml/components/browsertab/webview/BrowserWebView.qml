@@ -32,9 +32,14 @@ SilicaWebView
         webView.lockDownloadAction = "";
     }
 
-    VerticalScrollDecorator { flickable: webview }
     UrlSchemeDelegateHandler{ id: urlschemedelegatehandler }
     WebViewListener { id: listener }
+
+    VerticalScrollDecorator
+    {
+        id: vscrolldecorator
+        flickable: webview
+    }
 
     Rectangle /* Night Mode Rectangle */
     {
@@ -249,7 +254,7 @@ SilicaWebView
             if(!UrlHelper.isSpecialUrl(stringurl) && UrlHelper.isUrl(stringurl))
             {
                 experimental.postMessage("forcepixelratio");
-                experimental.postMessage("polish_document");
+                experimental.postMessage("polish_view");
                 experimental.postMessage("video_get");
                 experimental.postMessage("textfield_override");
 

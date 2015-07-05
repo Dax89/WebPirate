@@ -78,8 +78,24 @@ var __webpirate__ = {
         navigator.qt.postMessage(JSON.stringify(data));
     },
 
-    polishDocument: function() {
+    notifyPageStyle: function () {
+        var body = document.querySelector("body");
+
+        if(!body)
+            return;
+
+        var style = window.getComputedStyle(body);
+
+        var data = new Object;
+        data.type = "webpage_style";
+        data.backgroundcolor = __wp_utils__.rgb(style.backgroundColor);
+
+        navigator.qt.postMessage(JSON.stringify(data));
+    },
+
+    polishView: function() {
         canvg(); /* Convert all SVG Images to canvas objects */
+        __webpirate__.notifyPageStyle();
     },
 
     onTouchStart: function(touchevent) {

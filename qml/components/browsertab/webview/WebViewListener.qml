@@ -20,6 +20,7 @@ Item
                                             "selector_touch": onSelectorTouched,
                                             "textfield_selected": onTextFieldSelected,
                                             "lock_download": lockDownload,
+                                            "webpage_style": webPageStyle,
                                             "newtab": newTabRequested,
                                             "window_open": onWindowOpen,
                                             "notification_created": onNotificationCreated,
@@ -132,6 +133,16 @@ Item
         function lockDownload(data) {
             webview.lockDownload = true;
             webview.lockDownloadAction = data.action;
+        }
+
+        function webPageStyle(data) {
+            if(!data.backgroundcolor) {
+                vscrolldecorator.color = Theme.primaryColor;
+                return;
+            }
+
+            var color = data.backgroundcolor;
+            vscrolldecorator.color = "#" + ((1 << 24) + ((255 - color.r) << 16) + ((255 - color.g) << 8) + (255 - color.b)).toString(16).slice(1);
         }
 
         function newTabRequested(data) {
