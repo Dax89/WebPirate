@@ -712,11 +712,11 @@
     </message>
     <message>
         <source>SD Card</source>
-        <translation type="unfinished"></translation>
+        <translation>SD Karte</translation>
     </message>
     <message>
         <source>Home</source>
-        <translation type="unfinished"></translation>
+        <translation>Startseite</translation>
     </message>
 </context>
 <context>
@@ -1013,7 +1013,7 @@
     </message>
     <message>
         <source>Keep Favicons when deleting personal data</source>
-        <translation type="unfinished"></translation>
+        <translation>Favicons beim Löschen der privaten Daten erhalten</translation>
     </message>
 </context>
 <context>
@@ -1276,7 +1276,7 @@
     <name>TextFieldPage</name>
     <message>
         <source>Send</source>
-        <translation type="unfinished"></translation>
+        <translation>Sebden</translation>
     </message>
 </context>
 <context>

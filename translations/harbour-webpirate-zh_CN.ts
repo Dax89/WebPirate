@@ -313,7 +313,7 @@
     </message>
     <message>
         <source>Status</source>
-        <translation type="unfinished"></translation>
+        <translation>状态</translation>
     </message>
 </context>
 <context>
@@ -577,7 +577,7 @@
     <name>ExperimentalSettingsPage</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished">保存</translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>Override Text Fields</source>
@@ -585,7 +585,7 @@
     </message>
     <message>
         <source>Use SailfishOS&apos;s editing components instead of WebView&apos;s ones</source>
-        <translation type="unfinished"></translation>
+        <translation>用SailfishOS的编辑控件替代WebView的</translation>
     </message>
 </context>
 <context>
@@ -619,7 +619,7 @@
     </message>
     <message>
         <source>Imporing Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>正在导入书签</translation>
     </message>
 </context>
 <context>
@@ -712,11 +712,11 @@
     </message>
     <message>
         <source>SD Card</source>
-        <translation type="unfinished"></translation>
+        <translation>SD卡</translation>
     </message>
     <message>
         <source>Home</source>
-        <translation type="unfinished"></translation>
+        <translation>主页</translation>
     </message>
 </context>
 <context>
@@ -738,23 +738,23 @@
     <name>GeneralSettingsPage</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished">保存</translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>Home Page</source>
-        <translation type="unfinished"></translation>
+        <translation>主页</translation>
     </message>
     <message>
         <source>Search Engines</source>
-        <translation type="unfinished">搜索引擎</translation>
+        <translation>搜索引擎</translation>
     </message>
     <message>
         <source>Long press to edit</source>
-        <translation type="unfinished"></translation>
+        <translation>长按以编辑</translation>
     </message>
     <message>
         <source>User Agent</source>
-        <translation type="unfinished"></translation>
+        <translation>用户代理</translation>
     </message>
 </context>
 <context>
@@ -823,7 +823,7 @@
     </message>
     <message>
         <source>WebView process has crashed, restarting...</source>
-        <translation type="unfinished"></translation>
+        <translation>WebView进程已崩溃，重启中……</translation>
     </message>
 </context>
 <context>
@@ -905,15 +905,15 @@
     <name>NotificationDialog</name>
     <message>
         <source>wants to access System&apos;s Notifications</source>
-        <translation type="unfinished"></translation>
+        <translation>希望使用系统通知</translation>
     </message>
     <message>
         <source>Allow</source>
-        <translation type="unfinished">允许</translation>
+        <translation>允许</translation>
     </message>
     <message>
         <source>Deny</source>
-        <translation type="unfinished"></translation>
+        <translation>禁止</translation>
     </message>
 </context>
 <context>
@@ -973,47 +973,47 @@
     <name>PrivacySettingsPage</name>
     <message>
         <source>Wipe Data on Exit</source>
-        <translation type="unfinished"></translation>
+        <translation>退出时清除记录</translation>
     </message>
     <message>
         <source>Delete Navigation History</source>
-        <translation type="unfinished"></translation>
+        <translation>删除浏览历史</translation>
     </message>
     <message>
         <source>Removing navigation history</source>
-        <translation type="unfinished"></translation>
+        <translation>正在删除浏览历史</translation>
     </message>
     <message>
         <source>Delete Cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>删除Cookie</translation>
     </message>
     <message>
         <source>Removing cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>正在删除Cookie</translation>
     </message>
     <message>
         <source>Delete Personal Data</source>
-        <translation type="unfinished"></translation>
+        <translation>删除个人记录</translation>
     </message>
     <message>
         <source>Removing personal data</source>
-        <translation type="unfinished"></translation>
+        <translation>正在删除个人记录</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="unfinished">保存</translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>Privacy Options</source>
-        <translation type="unfinished"></translation>
+        <translation>隐私选项</translation>
     </message>
     <message>
         <source>Privacy Management</source>
-        <translation type="unfinished"></translation>
+        <translation>隐私管理</translation>
     </message>
     <message>
         <source>Keep Favicons when deleting personal data</source>
-        <translation type="unfinished"></translation>
+        <translation>删除个人数据时保留书签图标</translation>
     </message>
 </context>
 <context>
@@ -1220,15 +1220,15 @@
     </message>
     <message>
         <source>Browser Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>浏览器设置</translation>
     </message>
     <message>
         <source>Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>标签</translation>
     </message>
     <message>
         <source>Experimental</source>
-        <translation type="unfinished"></translation>
+        <translation>实验功能</translation>
     </message>
 </context>
 <context>
@@ -1265,18 +1265,18 @@
     <name>TabsSettingsPage</name>
     <message>
         <source>Restore tabs at Startup</source>
-        <translation type="unfinished"></translation>
+        <translation>在启动时恢复标签页</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="unfinished">保存</translation>
+        <translation>保存</translation>
     </message>
 </context>
 <context>
     <name>TextFieldPage</name>
     <message>
         <source>Send</source>
-        <translation type="unfinished"></translation>
+        <translation>发送</translation>
     </message>
 </context>
 <context>
@@ -1305,15 +1305,15 @@
     </message>
     <message>
         <source>Cannot find decoding function</source>
-        <translation type="unfinished"></translation>
+        <translation>无法找到解码功能</translation>
     </message>
     <message>
         <source>Cannot find decoding object</source>
-        <translation type="unfinished"></translation>
+        <translation>无法找到解码对象</translation>
     </message>
     <message>
         <source>Cannot download Video Configuration</source>
-        <translation type="unfinished"></translation>
+        <translation>无法下载视频配置</translation>
     </message>
     <message>
         <source>Ciphered Video: Downloading WebPage</source>
@@ -1328,26 +1328,26 @@
     </message>
     <message>
         <source>OK</source>
-        <translation type="unfinished">确定</translation>
+        <translation>确定</translation>
     </message>
     <message>
         <source>Downloading video info</source>
-        <translation type="unfinished"></translation>
+        <translation>正在下载视频信息</translation>
     </message>
     <message>
         <source>FAILED</source>
-        <translation type="unfinished">失败</translation>
+        <translation>失败</translation>
     </message>
 </context>
 <context>
     <name>harbour-webpirate</name>
     <message>
         <source>Download Completed</source>
-        <translation type="unfinished"></translation>
+        <translation>下载完成</translation>
     </message>
     <message>
         <source>Download Failed</source>
-        <translation type="unfinished"></translation>
+        <translation>下载失败</translation>
     </message>
 </context>
 </TS>

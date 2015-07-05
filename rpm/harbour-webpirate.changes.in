@@ -8,6 +8,21 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Sun Jul 05 2015 Antonio Davide Trogu <trogu.davide@gmail.com> 1.4-1
+- Updated YouTube Cipher
+- Redesigned Settings UI using a hierarchical structure
+- Settings: Added new 'Experimental' section
+- EXPERIMENTAL: Added WebView's TextArea overrider (must enabled in settings)
+- WebViewHelper: Escape Text before moving it in QML World
+- TabView: Close button is now easier to tap
+- Use 'chat' sound for Web Notifications
+- Grabber Builder: Added support for thumbails in Web Pages
+- File Picker: Allow Access to SD Card
+- Increased Loading Bar's height
+- WebView: Adjust Vertical Scroll Indicator's color according to website's background color
+- Minor Fixes
+- Updated Localizations
+
 * Thu Jun 25 2015 Antonio Davide Trogu <trogu.davide@gmail.com> 1.3-2
 - Experimental support for Notifications with SailfishOS (Web Notification API and Download Manager)
 - YouTube Grabber: Added experimental decoder for ciphered/scambled videos

@@ -581,11 +581,11 @@
     </message>
     <message>
         <source>Override Text Fields</source>
-        <translation type="unfinished"></translation>
+        <translation>Ecraser les champs texte</translation>
     </message>
     <message>
         <source>Use SailfishOS&apos;s editing components instead of WebView&apos;s ones</source>
-        <translation type="unfinished"></translation>
+        <translation>Utiliser les fonctions d&apos;édition de Sailfish plutôt que celles de WebView</translation>
     </message>
 </context>
 <context>
@@ -1005,11 +1005,11 @@
     </message>
     <message>
         <source>Privacy Options</source>
-        <translation type="unfinished"></translation>
+        <translation>Options de confidentialité</translation>
     </message>
     <message>
         <source>Privacy Management</source>
-        <translation type="unfinished"></translation>
+        <translation>Gestion de la confidentialité</translation>
     </message>
     <message>
         <source>Keep Favicons when deleting personal data</source>
@@ -1220,7 +1220,7 @@
     </message>
     <message>
         <source>Browser Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Paramètres du navigateur</translation>
     </message>
     <message>
         <source>Tabs</source>
@@ -1228,7 +1228,7 @@
     </message>
     <message>
         <source>Experimental</source>
-        <translation type="unfinished"></translation>
+        <translation>Expérimental</translation>
     </message>
 </context>
 <context>
