@@ -49,7 +49,7 @@
     </message>
     <message>
         <source>GitHub Repository</source>
-        <translation type="unfinished"></translation>
+        <translation>GitHub sijoituspaikka</translation>
     </message>
     <message>
         <source>Translators</source>
@@ -77,15 +77,15 @@
     </message>
     <message>
         <source>Finnish</source>
-        <translation type="unfinished"></translation>
+        <translation>suomi</translation>
     </message>
     <message>
         <source>Icon Designer</source>
-        <translation type="unfinished"></translation>
+        <translation>Kuvan suunnittelija</translation>
     </message>
     <message>
         <source>Translation Platform</source>
-        <translation type="unfinished"></translation>
+        <translation>Käännöksen julkaisualustta</translation>
     </message>
 </context>
 <context>
@@ -116,7 +116,7 @@
     </message>
     <message>
         <source>Sessions</source>
-        <translation>Sessiot</translation>
+        <translation>Istunnot</translation>
     </message>
     <message>
         <source>Cover settings</source>
@@ -148,15 +148,15 @@
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished">Lataa</translation>
+        <translation>Lataa</translation>
     </message>
     <message>
         <source>Closed Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Suljettu välilehti</translation>
     </message>
     <message>
         <source>Cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>Evästeet</translation>
     </message>
 </context>
 <context>
@@ -179,7 +179,7 @@
     </message>
     <message>
         <source>Connecting</source>
-        <translation>Yhdistetään</translation>
+        <translation>Yhdistetään...</translation>
     </message>
     <message>
         <source>Error</source>
@@ -217,7 +217,7 @@
     </message>
     <message>
         <source>Deleting filter</source>
-        <translation>Poista suodatin</translation>
+        <translation>Poistetaan suodatin...</translation>
     </message>
     <message>
         <source>Update Filters</source>
@@ -293,7 +293,7 @@
     </message>
     <message>
         <source>Play</source>
-        <translation type="unfinished"></translation>
+        <translation>Käynnistä</translation>
     </message>
     <message>
         <source>Download</source>
@@ -301,7 +301,7 @@
     </message>
     <message>
         <source>Grabbing video</source>
-        <translation type="unfinished"></translation>
+        <translation>Otetaan video</translation>
     </message>
     <message>
         <source>Copy URL</source>
@@ -313,7 +313,7 @@
     </message>
     <message>
         <source>Status</source>
-        <translation type="unfinished"></translation>
+        <translation>Tila</translation>
     </message>
 </context>
 <context>
@@ -368,22 +368,22 @@
     <name>CookieListItem</name>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Poista</translation>
+        <translation>Poista</translation>
     </message>
     <message>
         <source>Deleting Cookie</source>
-        <translation type="unfinished"></translation>
+        <translation>Poistetaan evästeet...</translation>
     </message>
 </context>
 <context>
     <name>CookieListPage</name>
     <message>
         <source>Cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>Evästeet</translation>
     </message>
     <message>
         <source>Add Cookie</source>
-        <translation type="unfinished"></translation>
+        <translation>Lisää eväste</translation>
     </message>
 </context>
 <context>
@@ -394,46 +394,46 @@
     </message>
     <message>
         <source>Filter</source>
-        <translation type="unfinished">Suodatin</translation>
+        <translation>Suodatin</translation>
     </message>
     <message>
         <source>Remove All Cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>Poista kaikki evästeet</translation>
     </message>
     <message>
         <source>Removing Cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>Poistetaan evästeet...</translation>
     </message>
     <message>
         <source>Add Cookie</source>
-        <translation type="unfinished"></translation>
+        <translation>Lisää eväste</translation>
     </message>
 </context>
 <context>
     <name>CookiePage</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Tallenna</translation>
+        <translation>Tallenna</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="unfinished">Nimi</translation>
+        <translation>Nimi</translation>
     </message>
     <message>
         <source>Domain</source>
-        <translation type="unfinished"></translation>
+        <translation>Piiri</translation>
     </message>
     <message>
         <source>Path</source>
-        <translation type="unfinished"></translation>
+        <translation>Polku</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation type="unfinished"></translation>
+        <translation>Arvo</translation>
     </message>
     <message>
         <source>Expires</source>
-        <translation type="unfinished"></translation>
+        <translation>Vanhenee</translation>
     </message>
 </context>
 <context>
@@ -479,7 +479,7 @@
     <name>CoverSettingsPage</name>
     <message>
         <source>General Actions</source>
-        <translation type="unfinished"></translation>
+        <translation>Yleiset toiminnot</translation>
     </message>
     <message>
         <source>Left</source>
@@ -491,7 +491,7 @@
     </message>
     <message>
         <source>Webpage Actions</source>
-        <translation type="unfinished"></translation>
+        <translation>Web -sivujen toiminnot</translation>
     </message>
     <message>
         <source>Cover Settings</source>
@@ -517,15 +517,15 @@
     <name>DomainListItem</name>
     <message>
         <source>Cookies:</source>
-        <translation type="unfinished"></translation>
+        <translation>Evästeet:</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Poista</translation>
+        <translation>Poista</translation>
     </message>
     <message>
         <source>Deleting Cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>Poistaa evästeet...</translation>
     </message>
 </context>
 <context>
@@ -577,11 +577,11 @@
     <name>ExperimentalSettingsPage</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Tallenna</translation>
+        <translation>Tallenna</translation>
     </message>
     <message>
         <source>Override Text Fields</source>
-        <translation type="unfinished"></translation>
+        <translation>Ohita tekstikentät</translation>
     </message>
     <message>
         <source>Use SailfishOS&apos;s editing components instead of WebView&apos;s ones</source>
@@ -607,7 +607,7 @@
     <name>FavoritesImportPage</name>
     <message>
         <source>Import Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Tuo suosikit</translation>
     </message>
     <message>
         <source>From HTML File</source>
@@ -615,11 +615,11 @@
     </message>
     <message>
         <source>From Sailfish Browser</source>
-        <translation type="unfinished"></translation>
+        <translation>Sailfish -selaimelta</translation>
     </message>
     <message>
         <source>Imporing Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Tuodaan suosikit...</translation>
     </message>
 </context>
 <context>
@@ -670,7 +670,7 @@
     </message>
     <message>
         <source>Cannot import favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Ei voi tuoda suosikkeja</translation>
     </message>
 </context>
 <context>
@@ -712,7 +712,7 @@
     </message>
     <message>
         <source>SD Card</source>
-        <translation type="unfinished"></translation>
+        <translation>SD -muistikortti</translation>
     </message>
     <message>
         <source>Home</source>
@@ -738,11 +738,11 @@
     <name>GeneralSettingsPage</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Tallenna</translation>
+        <translation>Tallenna</translation>
     </message>
     <message>
         <source>Home Page</source>
-        <translation type="unfinished"></translation>
+        <translation>Kotisivu</translation>
     </message>
     <message>
         <source>Search Engines</source>
@@ -812,7 +812,7 @@
     </message>
     <message>
         <source>Share</source>
-        <translation type="unfinished"></translation>
+        <translation>Jaa</translation>
     </message>
 </context>
 <context>
@@ -830,7 +830,7 @@
     <name>MediaPlayerToolBar</name>
     <message>
         <source>Downloading media</source>
-        <translation type="unfinished"></translation>
+        <translation>Ladataan mediaa...</translation>
     </message>
 </context>
 <context>
@@ -909,11 +909,11 @@
     </message>
     <message>
         <source>Allow</source>
-        <translation type="unfinished">Salli</translation>
+        <translation>Salli</translation>
     </message>
     <message>
         <source>Deny</source>
-        <translation type="unfinished"></translation>
+        <translation>Kiellä</translation>
     </message>
 </context>
 <context>
@@ -985,23 +985,23 @@
     </message>
     <message>
         <source>Delete Cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>Poista evästeet</translation>
     </message>
     <message>
         <source>Removing cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>Poistetaan evästeet...</translation>
     </message>
     <message>
         <source>Delete Personal Data</source>
-        <translation type="unfinished"></translation>
+        <translation>Poista henkilökohtaiset tiedot</translation>
     </message>
     <message>
         <source>Removing personal data</source>
-        <translation type="unfinished"></translation>
+        <translation>Poistetaan henkilökohtaiset tiedot...</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Tallenna</translation>
+        <translation>Tallenna</translation>
     </message>
     <message>
         <source>Privacy Options</source>
@@ -1158,23 +1158,23 @@
     </message>
     <message>
         <source>Tabs saved</source>
-        <translation type="unfinished"></translation>
+        <translation>Välilehdet tallennettu</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation type="unfinished">Avaa</translation>
+        <translation>Avaa</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="unfinished">Muokkaa</translation>
+        <translation>Muokkaa</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Poista</translation>
+        <translation>Poista</translation>
     </message>
     <message>
         <source>Deleting session</source>
-        <translation type="unfinished"></translation>
+        <translation>Poistetaan istunto...</translation>
     </message>
     <message>
         <source>Save current session</source>
@@ -1185,7 +1185,7 @@
     <name>SessionPage</name>
     <message>
         <source>Save Session</source>
-        <translation>Tallenna sessio</translation>
+        <translation>Tallenna istunto</translation>
     </message>
     <message>
         <source>Session name</source>
@@ -1220,11 +1220,11 @@
     </message>
     <message>
         <source>Browser Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Selainasetukset</translation>
     </message>
     <message>
         <source>Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Välilehdet</translation>
     </message>
     <message>
         <source>Experimental</source>
@@ -1235,7 +1235,7 @@
     <name>ShareMenu</name>
     <message>
         <source>Share</source>
-        <translation type="unfinished"></translation>
+        <translation>Jaa</translation>
     </message>
 </context>
 <context>
@@ -1269,21 +1269,21 @@
     </message>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Tallenna</translation>
+        <translation>Tallenna</translation>
     </message>
 </context>
 <context>
     <name>TextFieldPage</name>
     <message>
         <source>Send</source>
-        <translation type="unfinished"></translation>
+        <translation>Lähetä</translation>
     </message>
 </context>
 <context>
     <name>TextSelectionPage</name>
     <message>
         <source>Copy</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopioi</translation>
     </message>
 </context>
 <context>
@@ -1328,7 +1328,7 @@
     </message>
     <message>
         <source>OK</source>
-        <translation type="unfinished">Ok</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <source>Downloading video info</source>
@@ -1336,18 +1336,18 @@
     </message>
     <message>
         <source>FAILED</source>
-        <translation type="unfinished">EPÄONNISTUI</translation>
+        <translation>EPÄONNISTUI</translation>
     </message>
 </context>
 <context>
     <name>harbour-webpirate</name>
     <message>
         <source>Download Completed</source>
-        <translation type="unfinished"></translation>
+        <translation>Lataus suoritettu</translation>
     </message>
     <message>
         <source>Download Failed</source>
-        <translation type="unfinished"></translation>
+        <translation>Lataus epäonnistui</translation>
     </message>
 </context>
 </TS>
