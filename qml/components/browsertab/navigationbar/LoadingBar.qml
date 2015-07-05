@@ -9,7 +9,7 @@ Rectangle
     property real value: minimumValue
     property bool hideWhenFinished: false
     property bool canDisplay: true
-    property int barHeight: 4
+    property int barHeight: 6
 
     property alias progressItem: progress
     property alias barColor: progress.color
