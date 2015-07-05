@@ -710,6 +710,14 @@
         <source>Root</source>
         <translation>管理者</translation>
     </message>
+    <message>
+        <source>SD Card</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Home</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>FormResubmitDialog</name>

@@ -50,6 +50,28 @@ QString FolderListModel::homeFolder() const
     return QStandardPaths::writableLocation(QStandardPaths::HomeLocation);
 }
 
+QString FolderListModel::sdcardFolder() const
+{
+    QString sdcardfolder;
+
+    if(QFile::exists("/media/sdcard"))
+        sdcardfolder = "/media/sdcard";
+
+    if(QFile::exists("/run/user/100000/media/sdcard"))
+        sdcardfolder = "/run/user/100000/media/sdcard";
+
+    if(sdcardfolder.isEmpty())
+        return QString();
+
+    QDir dir(sdcardfolder);
+    QFileInfoList fileinfolist = dir.entryInfoList(QDir::AllDirs | QDir::NoDotAndDotDot | QDir::NoSymLinks, QDir::DirsFirst);
+
+    if(fileinfolist.isEmpty())
+        return QString();
+
+    return fileinfolist.first().filePath();
+}
+
 void FolderListModel::readDirectory()
 {
     this->beginResetModel();
@@ -92,6 +114,9 @@ QVariant FolderListModel::data(const QModelIndex &index, int role) const
         case FolderListModel::IsFolderRole:
             return fi.isDir();
 
+        case FolderListModel::IsImageRole:
+            return fi.isFile() && this->_mimedb.mimeTypeForFile(fi.filePath()).name().split("/")[0] == "image";
+
         default:
             break;
     }
@@ -107,6 +132,8 @@ QHash<int, QByteArray> FolderListModel::roleNames() const
     roles[FolderListModel::FilePathRole] = "filepath";
     roles[FolderListModel::IsFileRole] = "isfile";
     roles[FolderListModel::IsFolderRole] = "isfolder";
+    roles[FolderListModel::IsImageRole] = "isimage";
+
 
     return roles;
 }

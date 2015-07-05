@@ -3,6 +3,7 @@ import Sailfish.Silica 1.0
 
 SilicaListView
 {
+    property bool showThumbnails: false
     property bool multiSelect: false
     property alias folderModel: filepicker.model
 
@@ -19,10 +20,12 @@ SilicaListView
         Image
         {
             id: imgicon
-            source: fileicon
+            source: (showThumbnails && isimage) ? filepath : fileicon
             anchors { left: parent.left; verticalCenter: lblfilename.verticalCenter }
-            width: lblfilename.height
-            height: lblfilename.height
+            width: parent.height
+            height: parent.height
+            fillMode: Image.PreserveAspectFit
+            asynchronous: true
         }
 
         Label
@@ -32,7 +35,8 @@ SilicaListView
             verticalAlignment: Text.AlignVCenter
             horizontalAlignment: Text.AlignLeft
             elide: Text.ElideRight
-            wrapMode: Text.WordWrap
+            wrapMode: Text.NoWrap
+            width: parent.width
             text: filename
         }
 
