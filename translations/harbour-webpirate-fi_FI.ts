@@ -85,7 +85,7 @@
     </message>
     <message>
         <source>Translation Platform</source>
-        <translation>Käännöksen julkaisualustta</translation>
+        <translation>Käännöksen julkaisualusta</translation>
     </message>
 </context>
 <context>
@@ -1242,7 +1242,7 @@
     <name>TabMenu</name>
     <message>
         <source>Add to Quick Grid</source>
-        <translation>Lissää pikavalintaan</translation>
+        <translation>Lisää pikavalintaan</translation>
     </message>
     <message>
         <source>Duplicate Tab</source>
