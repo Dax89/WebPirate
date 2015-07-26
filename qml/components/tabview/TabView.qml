@@ -95,6 +95,9 @@ Item
             currentIndex--;
         else
             renderTab();
+
+        if(!tabs.count)
+            addTab(mainwindow.settings.homepage);
     }
 
     function removeAllTabs()

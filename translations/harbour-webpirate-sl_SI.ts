@@ -1271,6 +1271,10 @@
         <source>Save</source>
         <translation type="unfinished">Shrani</translation>
     </message>
+    <message>
+        <source>Close last tab</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>TextFieldPage</name>

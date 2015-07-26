@@ -82,7 +82,7 @@ MouseArea
                 width: visible ? parent.height : 0
                 height: parent.height
                 anchors { right: parent.right; top: parent.top; bottom: parent.bottom; rightMargin: visible ? 0 : Theme.paddingMedium }
-                visible: tabs.count > 1
+                visible: (tabs.count > 1) || mainwindow.settings.closelasttab
                 onClicked: tabview.removeTab(index)
             }
         }

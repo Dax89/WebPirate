@@ -87,6 +87,7 @@ ApplicationWindow
                 settings.adblockmanager.enabled = parseInt(Database.transactionGet(tx, "blockads"));
                 settings.keepfavicons = parseInt(Database.transactionGet(tx, "keepfavicons"));
                 settings.clearonexit = parseInt(Database.transactionGet(tx, "clearonexit"));
+                settings.closelasttab = parseInt(Database.transactionGet(tx, "closelasttab"));
                 settings.restoretabs = parseInt(Database.transactionGet(tx, "restoretabs"));
 
                 /* Experimental Options */

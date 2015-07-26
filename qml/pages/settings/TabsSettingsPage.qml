@@ -15,6 +15,7 @@ Dialog
     onAccepted: {
         Database.transaction(function(tx) {
             Database.transactionSet(tx, "restoretabs", settings.restoretabs);
+            Database.transactionSet(tx, "closelasttab", settings.closelasttab);
         });
     }
 
@@ -42,6 +43,19 @@ Dialog
 
                 onCheckedChanged: {
                     settings.restoretabs = checked;
+                }
+
+            }
+
+            TextSwitch
+            {
+                id: swcloselasttab
+                text: qsTr("Close last tab")
+                width: parent.width
+                checked: settings.closelasttab
+
+                onCheckedChanged: {
+                    settings.closelasttab = checked;
                 }
             }
         }

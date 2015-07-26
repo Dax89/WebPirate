@@ -31,6 +31,7 @@ QtObject
     property bool clearonexit        /* Wipe UserData on exit */
     property bool keepfavicons       /* Keep Icon Database on data deletion */
     property bool restoretabs        /* Restore Tabs at Startup */
+    property bool closelasttab       /* Close Last Tab */
     property bool nightmode: false   /* Night Mode */
 
     /* Experimental Settings */

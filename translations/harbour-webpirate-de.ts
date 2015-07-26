@@ -1271,6 +1271,10 @@
         <source>Save</source>
         <translation>Speichern</translation>
     </message>
+    <message>
+        <source>Close last tab</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>TextFieldPage</name>
