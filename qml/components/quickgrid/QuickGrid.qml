@@ -127,9 +127,6 @@ Item
         visible: editMode && (mousearea.currentQuickId === -1)
 
         onAddRequested: pageStack.push(Qt.resolvedUrl("../../pages/QuickGridPage.qml"), { "settings": mainwindow.settings })
-
-        onDoneRequested: {
-            quickgrid.editMode = false;
-        }
+        onDoneRequested: disableEditMode();
     }
 }
