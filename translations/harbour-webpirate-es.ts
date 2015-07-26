@@ -1043,6 +1043,24 @@
     </message>
 </context>
 <context>
+    <name>QuickGridAddButton</name>
+    <message>
+        <source>Add</source>
+        <translation type="obsolete">Añadir</translation>
+    </message>
+</context>
+<context>
+    <name>QuickGridBottomPanel</name>
+    <message>
+        <source>Add</source>
+        <translation type="unfinished">Añadir</translation>
+    </message>
+    <message>
+        <source>Done</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>QuickGridItem</name>
     <message>
         <source>Removing item</source>
@@ -1342,6 +1360,14 @@
     <message>
         <source>FAILED</source>
         <translation>FALLIDO</translation>
+    </message>
+    <message>
+        <source>Grabbing %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Decoding Signature for %1</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

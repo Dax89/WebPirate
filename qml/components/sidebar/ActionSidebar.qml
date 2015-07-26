@@ -12,6 +12,16 @@ Item
         NumberAnimation { duration: 250; easing.type: Easing.InOutQuad }
     }
 
+    PanelBackground
+    {
+        z: -1
+        rotation: -90
+        anchors.centerIn: parent
+        transformOrigin: Item.Center
+        width: parent.height
+        height: parent.width
+    }
+
     function expand() {
         visible = true;
         tabheader.solidify();

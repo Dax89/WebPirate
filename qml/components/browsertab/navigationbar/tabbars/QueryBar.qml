@@ -20,7 +20,7 @@ Item
     }
 
     id: querybar
-    height: queryfield.height
+    height: visible ? queryfield.height : 0
 
     Behavior on width {
         NumberAnimation { duration: 500; easing.type: Easing.InOutElastic }

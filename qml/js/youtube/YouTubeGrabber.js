@@ -20,7 +20,7 @@ function decodeVideoTypes(videolist, mediagrabber, decodefunc)
 
     for(var i = 0; i < videolist.length; i++)
     {
-        mediagrabber.grabStatus = qsTr("Grabbing URL " + (i + 1));
+        mediagrabber.grabStatus = qsTr("Grabbing %1").arg(i + 1);
 
         var videotype = UrlHelper.decode(typeregex.exec(videolist[i])[0]);
         var cap = codecregex.exec(videotype);
@@ -37,7 +37,7 @@ function decodeVideoTypes(videolist, mediagrabber, decodefunc)
 
             if(signature && signature[1])
             {
-                mediagrabber.grabStatus = qsTr("Decoding Signature for URL " + (i + 1));
+                mediagrabber.grabStatus = qsTr("Decoding Signature for %1").arg(i + 1);
                 videoinfo.url += "&signature=" + decodefunc(signature[1]);
             }
         }

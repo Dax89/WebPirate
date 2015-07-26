@@ -39,77 +39,97 @@ Item
         }
     }
 
-    SilicaFlickable
+    SilicaGridView
     {
-        id: flick
-        anchors { left: parent.left; top: querybar.bottom; right: parent.right; bottom: parent.bottom; topMargin: Theme.paddingLarge }
-        contentHeight: mainwindow.settings.quickgridmodel.count > 1 ? quickgriditems.height : parent.height
-        onVerticalVelocityChanged: sidebar.collapse();
+        property real spacing: Theme.paddingMedium
+
+        id: quickgridview
+        anchors { left: parent.left; top: querybar.bottom; right: parent.right; bottom: quickgridbottompanel.top; topMargin: Theme.paddingLarge; bottomMargin: Theme.paddingMedium }
+        cellWidth: mainpage.isPortrait ? (width / 3) : (width / 4)
+        cellHeight: cellWidth
+        model: mainwindow.settings.quickgridmodel
+        interactive: (mousearea.currentQuickId === -1)
         clip: true
 
-        VerticalScrollDecorator { flickable: flick }
+        onVerticalVelocityChanged: sidebar.collapse();
+
+        delegate: QuickGridItem {
+            id: quickitem
+            itemTitle: title
+            itemUrl: url
+            itemId: quickId
+        }
+
+        VerticalScrollDecorator { flickable: quickgridview }
 
         ViewPlaceholder
         {
             id: placeholder
-            anchors.fill: parent
-            enabled: !editMode && (mainwindow.settings.quickgridmodel.count === 1)
+            z: -1
+            enabled: !editMode && !mainwindow.settings.quickgridmodel.count
             text: qsTr("The Quick Grid is empty") + "\n" + qsTr("Long Press to edit")
+        }
 
-            MouseArea {
-                anchors.fill: parent
+        MouseArea
+        {
+            property int currentQuickId: -1
+            property int newIndex
+            property int index: quickgridview.indexAt(mousearea.mouseX + quickgridview.contentX, mousearea.mouseY + quickgridview.contentY)
 
-                onPressAndHold: {
-                    placeholder.enabled = false;
-                    enableEditMode();
+            id: mousearea
+            anchors.fill: parent
+
+            onClicked: {
+                if(editMode) {
+                    disableEditMode();
+                    querybar.visible = true;
+                    return;
+                }
+
+                if(index === -1)
+                    return;
+
+                var url = mainwindow.settings.quickgridmodel.get(index).url;
+
+                if(url && url.length) {
+                    loadRequested(url);
+                    sidebar.collapse();
+                }
+            }
+
+            onPressAndHold: {
+                if(editMode) {
+                    currentQuickId = mainwindow.settings.quickgridmodel.get(newIndex = index).quickId;
+                    return;
+                }
+
+                enableEditMode();
+                querybar.visible = false;
+            }
+
+            onReleased: {
+                currentQuickId = -1;
+            }
+
+            onPositionChanged: {
+                if((mousearea.currentQuickId !== -1) && (index !== -1) && (index !== newIndex)) {
+                    mainwindow.settings.quickgridmodel.move(newIndex, newIndex = index, 1);
+                    quickgridview.positionViewAtIndex(newIndex, GridView.Contain);
                 }
             }
         }
+    }
 
-        Flow
-        {
-            id: quickgriditems
-            visible: (editMode && mainwindow.settings.quickgridmodel.count === 1) || mainwindow.settings.quickgridmodel.count > 1
-            anchors { left: parent.left; top: parent.top; right: parent.right; leftMargin: Theme.paddingMedium; rightMargin: Theme.paddingMedium }
-            spacing: Theme.paddingMedium
+    QuickGridBottomPanel
+    {
+        id: quickgridbottompanel
+        anchors { left: parent.left; right: parent.right; bottom: parent.bottom }
+        visible: editMode && (mousearea.currentQuickId === -1)
 
-            add: Transition {
-                NumberAnimation { properties: "scale"; from: 1.2; to: 1.0; duration: 100; easing.type: Easing.OutInBounce }
-            }
+        onAddRequested: pageStack.push(Qt.resolvedUrl("../../pages/QuickGridPage.qml"), { "settings": mainwindow.settings })
 
-            Repeater
-            {
-                model: mainwindow.settings.quickgridmodel
-
-                delegate: QuickGridItem {
-                    id: quickitem
-                    width: (mainpage.isPortrait ? (parent.width / 3) : (parent.width / 4)) - quickgriditems.spacing
-                    height: width
-                    specialItem: special
-                    itemTitle: special ? "" : title
-                    itemUrl: special ? "" : url
-                    editEnabled: editMode
-
-                    onPressAndHold: enableEditMode();
-
-                    onClicked: {
-                        if(special) {
-                            mainwindow.settings.quickgridmodel.addEmpty();
-                            return;
-                        }
-
-                        if(editMode) {
-                            disableEditMode();
-                            return;
-                        }
-
-                        if(url && url.length)
-                            loadRequested(url);
-
-                        sidebar.collapse();
-                    }
-                }
-            }
+        onDoneRequested: {
+            quickgrid.editMode = false;
         }
     }
 }

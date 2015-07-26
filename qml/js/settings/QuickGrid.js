@@ -7,8 +7,6 @@ function load(tx, quickgridmodel)
 
     for(var i = 0; i < res.rows.length; i++)
         quickgridmodel.addUrl((res.rows[i].title ? res.rows[i].title : ""), (res.rows[i].url ? res.rows[i].url : "" ));
-
-    quickgridmodel.addSpecial();
 }
 
 function save(db, quickgridmodel)
@@ -16,7 +14,7 @@ function save(db, quickgridmodel)
     db.transaction(function(tx) {
         tx.executeSql("DELETE FROM QuickGrid");
 
-        for(var i = 0; i < quickgridmodel.count - 1; i++) {
+        for(var i = 0; i < quickgridmodel.count; i++) {
             var item = quickgridmodel.get(i);
             tx.executeSql("INSERT INTO QuickGrid (id, title, url) VALUES (?, ?, ?)", [i, item.title, item.url]);
         }

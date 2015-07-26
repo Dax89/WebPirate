@@ -1,91 +1,108 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
 
-BackgroundItem
+Item
 {
+    property int itemId
     property string itemUrl
     property alias itemTitle: lbltitle.text
-    property bool specialItem: false
-    property bool editEnabled
 
     id: quickgriditem
-    visible: specialItem ? editEnabled : true
+    width: quickgridview.cellWidth
+    height: quickgridview.cellHeight
 
     onItemUrlChanged: {
-        if(!specialItem)
-            imgicon.source = mainwindow.settings.icondatabase.provideIcon(itemUrl);
+        imgicon.source = mainwindow.settings.icondatabase.provideIcon(itemUrl);
     }
 
-    Rectangle
+    Item
     {
-        id: thumbnail
-        anchors { left: parent.left; top: parent.top; right: parent.right; bottom: lbltitle.top }
-        radius: 8
-        border.width: 1
-        border.color: Theme.secondaryColor
-        color: Theme.highlightDimmerColor
+        id: container
+        parent: mousearea
+        x: quickgriditem.x + (quickgridview.spacing / 2) - quickgridview.contentX
+        y: quickgriditem.y + (quickgridview.spacing / 2) - quickgridview.contentY
+        width: quickgriditem.width - quickgridview.spacing
+        height: quickgriditem.height - quickgridview.spacing
+
+        Behavior on x { enabled: state !== "active"; NumberAnimation { duration: 400; easing.type: Easing.OutBack } }
+        Behavior on y { enabled: state !== "active"; NumberAnimation { duration: 400; easing.type: Easing.OutBack } }
+
+        transitions: Transition { NumberAnimation { property: "scale"; duration: 200} }
+
+        states: State {
+            name: "active"; when: mousearea.currentQuickId === quickgriditem.itemId
+            PropertyChanges { target: container; x: mousearea.mouseX - width / 2; y: mousearea.mouseY - height / 2; scale: 0.5; z: 10 }
+        }
+
+        SequentialAnimation on rotation {
+            NumberAnimation { to:  2; duration: 60 }
+            NumberAnimation { to: -2; duration: 120 }
+            NumberAnimation { to:  0; duration: 60 }
+            running: editMode && (mousearea.currentQuickId !== -1) && (state !== "active")
+            loops: Animation.Infinite
+            alwaysRunToEnd: true
+        }
+
+        Rectangle
+        {
+            id: thumbnail
+            anchors { left: parent.left; top: parent.top; right: parent.right; bottom: lbltitle.top }
+            radius: 8
+            border.width: 1
+            border.color: Theme.secondaryColor
+            color: Theme.highlightDimmerColor
+
+            Image
+            {
+                id: imgicon
+                width: parent.width * 0.4
+                height: width
+                cache: false
+                asynchronous: true
+                smooth: true
+                visible: itemUrl.length > 0
+                anchors.centerIn: parent
+                fillMode: Image.PreserveAspectFit
+            }
+
+            QuickGridButton
+            {
+                id: btnedit
+                opacity: editMode ? 1.0 : 0.0
+                anchors { left: parent.left; bottom: parent.bottom; leftMargin: Theme.paddingSmall; bottomMargin: Theme.paddingSmall }
+                icon.source: "image://theme/icon-m-edit"
+
+                onClicked: pageStack.push(Qt.resolvedUrl("../../pages/QuickGridPage.qml"), { "settings": mainwindow.settings, "index": index, "title": lbltitle.text, "url": itemUrl })
+            }
+
+            QuickGridButton
+            {
+                id: btndelete
+                opacity: editMode ? 1.0 : 0.0
+                anchors { right: parent.right; bottom: parent.bottom; rightMargin: Theme.paddingSmall; bottomMargin: Theme.paddingSmall }
+                icon.source: "image://theme/icon-close-vkb"
+
+                onClicked: {
+                    if(!itemTitle && !itemUrl) { /* Do not trigger Remorse Timer if the item is empty */
+                        mainwindow.settings.quickgridmodel.remove(index);
+                        return;
+                    }
+
+                    tabviewremorse.execute(qsTr("Removing item"), function() {
+                        mainwindow.settings.quickgridmodel.remove(index);
+                    });
+                }
+            }
+        }
 
         Label
         {
-            visible: !specialItem && (itemUrl.length === 0)
-            anchors.centerIn: parent
-            text: index + 1
-            font.pixelSize: Theme.fontSizeLarge
-            font.bold: true
-            opacity: 0.7
+            id: lbltitle
+            anchors { left: parent.left; bottom: parent.bottom; right: parent.right }
+            font.pixelSize: Theme.fontSizeExtraSmall
+            horizontalAlignment: Text.AlignHCenter
+            elide: Text.ElideRight
+            clip: true
         }
-
-        Image
-        {
-            id: imgicon
-            width: parent.width * 0.4
-            height: width
-            cache: false
-            visible: specialItem ? true : itemUrl.length > 0
-            anchors.centerIn: parent
-            fillMode: Image.PreserveAspectFit
-            source: specialItem ? "image://theme/icon-l-new" : ""
-        }
-
-        QuickGridButton
-        {
-            id: btnedit
-            opacity: (!specialItem && editEnabled) ? 1.0 : 0.0
-            anchors { left: parent.left; bottom: parent.bottom; leftMargin: Theme.paddingSmall; bottomMargin: Theme.paddingSmall }
-            icon.source: "image://theme/icon-m-edit"
-
-            onClicked: pageStack.push(Qt.resolvedUrl("../../pages/QuickGridPage.qml"), { "settings": mainwindow.settings, "index": index, "title": lbltitle.text, "url": itemUrl })
-        }
-
-        QuickGridButton
-        {
-            id: btndelete
-            opacity: (!specialItem && editEnabled) ? 1.0 : 0.0
-            anchors { right: parent.right; bottom: parent.bottom; rightMargin: Theme.paddingSmall; bottomMargin: Theme.paddingSmall }
-            icon.source: "image://theme/icon-close-vkb"
-
-            onClicked: {
-                if(!itemTitle && !itemUrl) /* Do not trigger Remorse Timer if the item is empty */
-                {
-                    mainwindow.settings.quickgridmodel.remove(index);
-                    return;
-                }
-
-                tabviewremorse.execute(qsTr("Removing item"),
-                                       function() {
-                                           mainwindow.settings.quickgridmodel.remove(index);
-                                       });
-            }
-        }
-    }
-
-    Label
-    {
-        id: lbltitle
-        anchors { left: parent.left; bottom: parent.bottom; right: parent.right }
-        font.pixelSize: Theme.fontSizeTiny
-        horizontalAlignment: Text.AlignHCenter
-        elide: Text.ElideRight
-        clip: true
     }
 }

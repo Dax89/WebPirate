@@ -9,13 +9,20 @@ Dialog
     property alias url: tfurl.text
 
     property Settings settings
-    property int index
+    property int index: -1
 
     id: quickgridpage
 
     allowedOrientations: defaultAllowedOrientations
     acceptDestinationAction: PageStackAction.Pop
     canAccept: (tftitle.text.length > 0) && (tfurl.text.length > 0)
+
+    onAccepted: {
+        if(quickgridpage.index === -1)
+            settings.quickgridmodel.addUrl(tftitle.text, UrlHelper.adjustUrl(tfurl.text));
+        else
+            settings.quickgridmodel.replace(quickgridpage.index, tftitle.text, UrlHelper.adjustUrl(tfurl.text))
+    }
 
     Column
     {
@@ -40,6 +47,4 @@ Dialog
             inputMethodHints: Qt.ImhNoAutoUppercase
         }
     }
-
-    onAccepted: settings.quickgridmodel.replace(quickgridpage.index, tftitle.text, UrlHelper.adjustUrl(tfurl.text))
 }

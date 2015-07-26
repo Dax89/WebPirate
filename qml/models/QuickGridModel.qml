@@ -4,7 +4,7 @@ import "../js/settings/QuickGrid.js" as QuickGrid
 
 ListModel
 {
-    property bool specialAdded: false
+    property int availableId: 0
 
     id: quickgridmodel
 
@@ -17,24 +17,8 @@ ListModel
 
     function addUrl(title, url)
     {
-        if(specialAdded)
-            quickgridmodel.insert((!quickgridmodel.count ? 0 : (quickgridmodel.count - 1)), { "special": false, "title": title, "url": url });
-        else
-            quickgridmodel.append({ "special": false, "title": title, "url": url });
-    }
-
-    function addEmpty()
-    {
-        if(specialAdded)
-            quickgridmodel.insert((!quickgridmodel.count ? 0 : (quickgridmodel.count - 1)), { "special": false, "title": "", "url": "" });
-        else
-            quickgridmodel.insert({ "special": false, "title": "", "url": "" });
-    }
-
-    function addSpecial()
-    {
-        quickgridmodel.append({ "special": true, "title": "", "url": "" });
-        specialAdded = true;
+        quickgridmodel.append({ "quickId": quickgridmodel.availableId, "title": title, "url": url });
+        quickgridmodel.availableId++;
     }
 
     Component.onDestruction: QuickGrid.save(Database.instance(), quickgridmodel)
