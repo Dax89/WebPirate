@@ -2,6 +2,12 @@ var __wp_systemtextfield__ = {
     overrideEnabled: false,
     elementMap: null,
 
+    fakeKeyUpEvent: function(target) {
+        var evt = document.createEvent("KeyboardEvent");
+        evt.initKeyboardEvent('keyup', true, false, window, '', 0, false, false, false, false, false);
+        target.dispatchEvent(evt);
+    },
+
     checkTextField: function(clickevent) {
         if(!__wp_systemtextfield__.overrideEnabled)
             return;
@@ -39,6 +45,7 @@ var __wp_systemtextfield__ = {
 
         var target = __wp_systemtextfield__.elementMap[id];
         target.value = __wp_utils__.unescape(text);
+        __wp_systemtextfield__.fakeKeyUpEvent(target); // Facebook needs this
 
         if(startselection !== endselection) {
             if(startselection)
