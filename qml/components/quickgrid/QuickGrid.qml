@@ -23,6 +23,7 @@ Item
             return;
 
         editMode = false;
+        querybar.visible = true;
     }
 
     id: quickgrid
@@ -82,7 +83,6 @@ Item
             onClicked: {
                 if(editMode) {
                     disableEditMode();
-                    querybar.visible = true;
                     return;
                 }
 
