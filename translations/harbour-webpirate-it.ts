@@ -1042,21 +1042,14 @@
     </message>
 </context>
 <context>
-    <name>QuickGridAddButton</name>
-    <message>
-        <source>Add</source>
-        <translation type="obsolete">Aggiungi</translation>
-    </message>
-</context>
-<context>
     <name>QuickGridBottomPanel</name>
     <message>
         <source>Add</source>
-        <translation type="unfinished">Aggiungi</translation>
+        <translation>Aggiungi</translation>
     </message>
     <message>
         <source>Done</source>
-        <translation type="unfinished"></translation>
+        <translation>Fatto</translation>
     </message>
 </context>
 <context>
@@ -1291,7 +1284,7 @@
     </message>
     <message>
         <source>Close last tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Chiudi l&apos;ultima scheda</translation>
     </message>
 </context>
 <context>
@@ -1362,11 +1355,11 @@
     </message>
     <message>
         <source>Grabbing %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Download %1</translation>
     </message>
     <message>
         <source>Decoding Signature for %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Decodifica firma per %1</translation>
     </message>
 </context>
 <context>

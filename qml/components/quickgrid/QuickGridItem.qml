@@ -19,10 +19,10 @@ Item
     {
         id: container
         parent: mousearea
-        x: quickgriditem.x + (quickgridview.spacing / 2) - quickgridview.contentX
-        y: quickgriditem.y + (quickgridview.spacing / 2) - quickgridview.contentY
-        width: quickgriditem.width - quickgridview.spacing
-        height: quickgriditem.height - quickgridview.spacing
+        x: quickgriditem.x + quickgridview.spacing - quickgridview.contentX
+        y: quickgriditem.y + quickgridview.spacing - quickgridview.contentY
+        width: quickgriditem.width - (quickgridview.spacing * 2)
+        height: quickgriditem.height - (quickgridview.spacing * 2)
 
         Behavior on x { enabled: state !== "active"; NumberAnimation { duration: 400; easing.type: Easing.OutBack } }
         Behavior on y { enabled: state !== "active"; NumberAnimation { duration: 400; easing.type: Easing.OutBack } }
