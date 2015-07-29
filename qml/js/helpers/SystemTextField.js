@@ -59,9 +59,12 @@ var __wp_systemtextfield__ = {
     },
 
     cancelEdit: function(id) {
-        if(!__wp_systemtextfield__.elementMap[id])
+        var target = __wp_systemtextfield__.elementMap[id];
+
+        if(!target)
             return;
 
+        target.blur();
         delete __wp_systemtextfield__.elementMap[id];
     }
 }

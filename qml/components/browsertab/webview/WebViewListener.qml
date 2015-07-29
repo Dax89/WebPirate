@@ -118,6 +118,7 @@ Item
                 }
 
                 webview.experimental.postMessage(JSON.stringify(data));
+                Qt.inputMethod.hide();
             });
 
             tfpage.rejected.connect(function() {
@@ -126,7 +127,7 @@ Item
                 data.id = tfpage.elementId;
 
                 webview.experimental.postMessage(JSON.stringify(data));
-
+                Qt.inputMethod.hide();
             });
         }
 
