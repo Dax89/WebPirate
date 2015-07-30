@@ -24,8 +24,8 @@ Item
         width: quickgriditem.width - (quickgridview.spacing * 2)
         height: quickgriditem.height - (quickgridview.spacing * 2)
 
-        Behavior on x { enabled: state !== "active"; NumberAnimation { duration: 400; easing.type: Easing.OutBack } }
-        Behavior on y { enabled: state !== "active"; NumberAnimation { duration: 400; easing.type: Easing.OutBack } }
+        Behavior on x { enabled: !quickgridview.flicking && (state !== "active"); NumberAnimation { duration: 400; easing.type: Easing.OutBack } }
+        Behavior on y { enabled: !quickgridview.flicking && (state !== "active"); NumberAnimation { duration: 400; easing.type: Easing.OutBack } }
 
         transitions: Transition { NumberAnimation { property: "scale"; duration: 200} }
 
