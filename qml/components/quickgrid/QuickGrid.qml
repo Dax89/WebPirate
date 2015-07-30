@@ -14,6 +14,8 @@ Item
             return;
 
         editMode = true;
+        querybar.animationEnabled = true;
+        querybar.visible = false;
         sidebar.collapse();
     }
 
@@ -24,6 +26,7 @@ Item
 
         editMode = false;
         querybar.visible = true;
+        querybar.animationEnabled = false;
     }
 
     id: quickgrid
@@ -104,7 +107,6 @@ Item
                 }
 
                 enableEditMode();
-                querybar.visible = false;
             }
 
             onReleased: {

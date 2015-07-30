@@ -3,6 +3,7 @@ import Sailfish.Silica 1.0
 
 Item
 {
+    property alias animationEnabled: bhheight.enabled
     property string title
     property string url
 
@@ -22,8 +23,14 @@ Item
     id: querybar
     height: visible ? queryfield.height : 0
 
+    Behavior on height {
+        id: bhheight
+        enabled: false
+        NumberAnimation { duration: 100; easing.type: Easing.Linear }
+    }
+
     Behavior on width {
-        NumberAnimation { duration: 500; easing.type: Easing.InOutElastic }
+        NumberAnimation { duration: 400; easing.type: Easing.InOutElastic }
     }
 
     TextField
