@@ -32,6 +32,7 @@ MouseArea
         radius: 8
         anchors { fill: parent; topMargin: tabbutton.radius / 4; bottomMargin: -tabbutton.radius }
         color: getColor()
+        clip: true
 
         Item /* Needed in order to align | Icon | Text | X | button correctly */
         {
