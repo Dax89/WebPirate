@@ -51,6 +51,7 @@ Item
             border.width: 1
             border.color: Theme.rgba(Theme.secondaryHighlightColor, 1.0)
             color: "transparent"
+            z: 2
 
             PanelBackground
             {
