@@ -19,10 +19,10 @@ Item
     {
         id: container
         parent: mousearea
-        x: quickgriditem.x + quickgridview.spacing - quickgridview.contentX
-        y: quickgriditem.y + quickgridview.spacing - quickgridview.contentY
-        width: quickgriditem.width - (quickgridview.spacing * 2)
-        height: quickgriditem.height - (quickgridview.spacing * 2)
+        x: quickgriditem.x + (Theme.paddingSmall / 2) + quickgridview.spacing - quickgridview.contentX
+        y: quickgriditem.y + (Theme.paddingSmall / 2) + quickgridview.spacing - quickgridview.contentY
+        width: quickgriditem.width - (quickgridview.spacing * 2) - Theme.paddingSmall
+        height: quickgriditem.height - (quickgridview.spacing * 2) - Theme.paddingSmall
 
         Behavior on x { enabled: !quickgridview.flicking && (state !== "active"); NumberAnimation { duration: 400; easing.type: Easing.OutBack } }
         Behavior on y { enabled: !quickgridview.flicking && (state !== "active"); NumberAnimation { duration: 400; easing.type: Easing.OutBack } }
@@ -49,7 +49,7 @@ Item
             anchors { left: parent.left; top: parent.top; right: parent.right; bottom: lbltitle.top }
             radius: 8
             border.width: 1
-            border.color: Theme.secondaryColor
+            border.color: Theme.rgba(Theme.secondaryHighlightColor, 1.0)
             color: Theme.highlightDimmerColor
 
             Image
@@ -69,7 +69,7 @@ Item
             {
                 id: btnedit
                 opacity: editMode ? 1.0 : 0.0
-                anchors { left: parent.left; bottom: parent.bottom; leftMargin: Theme.paddingSmall; bottomMargin: Theme.paddingSmall }
+                anchors { left: parent.left; bottom: parent.bottom; leftMargin: -width / 4; bottomMargin: -height / 4 }
                 icon.source: "image://theme/icon-m-edit"
 
                 onClicked: pageStack.push(Qt.resolvedUrl("../../pages/QuickGridPage.qml"), { "settings": mainwindow.settings, "index": index, "title": lbltitle.text, "url": itemUrl })
@@ -79,7 +79,7 @@ Item
             {
                 id: btndelete
                 opacity: editMode ? 1.0 : 0.0
-                anchors { right: parent.right; bottom: parent.bottom; rightMargin: Theme.paddingSmall; bottomMargin: Theme.paddingSmall }
+                anchors { right: parent.right; bottom: parent.bottom; rightMargin: -width / 4; bottomMargin: -height / 4 }
                 icon.source: "image://theme/icon-close-vkb"
 
                 onClicked: {
