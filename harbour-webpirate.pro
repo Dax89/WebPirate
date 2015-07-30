@@ -195,7 +195,8 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/pages/webview/TextFieldPage.qml \
     qml/js/helpers/Utils.js \
     qml/components/tabview/TabCloseButton.qml \
-    qml/components/quickgrid/QuickGridBottomPanel.qml
+    qml/components/quickgrid/QuickGridBottomPanel.qml \
+    qml/components/tabview/TabIcon.qml
 
 # to disable building translations every time, comment out the
 # following CONFIG line

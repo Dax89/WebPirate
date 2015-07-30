@@ -3,7 +3,7 @@ import Sailfish.Silica 1.0
 
 MouseArea
 {
-    property alias icon: favicon.source
+    property alias icon: tabicon.icon
     property alias title: tabtitle.text
     property bool loading: false
 
@@ -37,37 +37,19 @@ MouseArea
         {
             anchors { fill: parent; topMargin: tabbutton.radius / 4; bottomMargin: tabbutton.radius }
 
-            Item
+            TabIcon
             {
-                id: indicator
+                id: tabicon
                 width: tabtitle.contentHeight
                 height: tabtitle.contentHeight
                 anchors { left: parent.left; leftMargin: Theme.paddingSmall; verticalCenter: parent.verticalCenter }
-
-                BusyIndicator
-                {
-                    id: loadindicator
-                    visible: loading
-                    running: loading
-                    anchors.fill: parent
-                    size: BusyIndicatorSize.Small
-                }
-
-                Image
-                {
-                    id: favicon
-                    visible: !loading
-                    anchors.fill: parent
-                    fillMode: Image.PreserveAspectFit
-                    asynchronous: true
-                    smooth: true
-                }
+                busy: loading
             }
 
             Text
             {
                 id: tabtitle
-                anchors { left: indicator.right; right: closebutton.left; verticalCenter: parent.verticalCenter; leftMargin: Theme.paddingSmall }
+                anchors { left: tabicon.right; right: closebutton.left; verticalCenter: parent.verticalCenter; leftMargin: Theme.paddingSmall }
                 font.pixelSize: Theme.fontSizeSmall
                 verticalAlignment: Text.AlignVCenter
                 horizontalAlignment: Text.AlignLeft
