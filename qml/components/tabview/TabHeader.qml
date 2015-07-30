@@ -39,7 +39,7 @@ Rectangle
     {
         id: listview
         orientation: ListView.Horizontal
-        anchors { left: parent.left; right: buttons.left; top: parent.top; bottom: parent.bottom }
+        anchors { left: parent.left; right: buttons.left; top: parent.top; bottom: parent.bottom; rightMargin: Theme.paddingSmall / 2 }
         spacing: Theme.paddingSmall / 2
         clip: true
         model: tabs
