@@ -42,7 +42,7 @@ Item
 
     SilicaGridView
     {
-        property real spacing: Theme.paddingMedium
+        property real spacing: mainpage.isPortrait ? Theme.paddingMedium : Theme.paddingLarge
 
         id: quickgridview
         anchors { left: parent.left; top: querybar.bottom; right: parent.right; bottom: quickgridbottompanel.top; topMargin: Theme.paddingLarge }
