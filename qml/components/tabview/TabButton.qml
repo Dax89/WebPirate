@@ -14,6 +14,13 @@ MouseArea
         return (index === tabview.currentIndex ? Theme.secondaryColor : Theme.secondaryHighlightColor);
     }
 
+    onPressAndHold: {
+        sidebar.collapse();
+
+        tabmenu.selectedIndex = index;
+        tabmenu.show();
+    }
+
     onClicked: {
         sidebar.collapse();
         tabview.currentIndex = index;
@@ -39,13 +46,6 @@ MouseArea
                 height: parent.height
                 anchors { left: parent.left; verticalCenter: parent.verticalCenter }
                 busy: loading
-
-                onPressAndHold: {
-                    sidebar.collapse();
-
-                    tabmenu.selectedIndex = index;
-                    tabmenu.show();
-                }
             }
 
             Text

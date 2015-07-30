@@ -1,7 +1,7 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
 
-MouseArea
+Item
 {
     property int radius
     property bool busy
@@ -10,6 +10,7 @@ MouseArea
 
     id: tabicon
 
+    /*
     Rectangle
     {
         id: iconarea
@@ -25,7 +26,7 @@ MouseArea
             z: -1
         }
     }
-
+    */
 
     BusyIndicator
     {
