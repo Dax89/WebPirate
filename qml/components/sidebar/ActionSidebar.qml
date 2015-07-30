@@ -162,14 +162,6 @@ Item
             SidebarItem
             {
                 anchors { left: parent.left; right: parent.right }
-                icon: "image://theme/icon-m-device"
-                itemText: qsTr("Cover settings")
-                onClicked: pageStack.push(Qt.resolvedUrl("../../pages/cover/CoverSettingsPage.qml"), { "settings": mainwindow.settings });
-            }
-
-            SidebarItem
-            {
-                anchors { left: parent.left; right: parent.right }
                 icon: "image://theme/icon-m-about"
                 itemText: qsTr("About Web Pirate")
                 onClicked: {

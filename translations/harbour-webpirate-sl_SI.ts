@@ -120,7 +120,7 @@
     </message>
     <message>
         <source>Cover settings</source>
-        <translation>Nastavitve naslovnice</translation>
+        <translation type="vanished">Nastavitve naslovnice</translation>
     </message>
     <message>
         <source>Night Mode</source>
@@ -1246,6 +1246,10 @@
     </message>
     <message>
         <source>Experimental</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cover</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

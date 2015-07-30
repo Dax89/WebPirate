@@ -110,7 +110,6 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/js/settings/Sessions.js \
     qml/pages/session/SaveSessionPage.qml \
     qml/components/items/PageItem.qml \
-    qml/pages/cover/CoverSettingsPage.qml \
     qml/components/items/cover/CoverMenu.qml \
     qml/models/cover/CoverModel.qml \
     qml/components/items/cover/PageCoverActions.qml \
@@ -188,6 +187,7 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/js/youtube/YouTubeCipher.js \
     qml/pages/settings/SettingsPage.qml \
     qml/pages/settings/GeneralSettingsPage.qml \
+    qml/pages/settings/CoverSettingsPage.qml \
     qml/pages/settings/PrivacySettingsPage.qml \
     qml/pages/settings/TabsSettingsPage.qml \
     qml/pages/settings/ExperimentalSettingsPage.qml \

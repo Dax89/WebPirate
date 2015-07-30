@@ -120,7 +120,7 @@
     </message>
     <message>
         <source>Cover settings</source>
-        <translation>Paramètres de couverture</translation>
+        <translation type="vanished">Paramètres de couverture</translation>
     </message>
     <message>
         <source>Night Mode</source>
@@ -1247,6 +1247,10 @@
     <message>
         <source>Experimental</source>
         <translation>Expérimental</translation>
+    </message>
+    <message>
+        <source>Cover</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

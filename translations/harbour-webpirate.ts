@@ -119,10 +119,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Cover settings</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Night Mode</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1239,6 +1235,10 @@
     </message>
     <message>
         <source>Experimental</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cover</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

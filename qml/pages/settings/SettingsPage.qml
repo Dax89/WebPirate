@@ -38,6 +38,15 @@ Page
             {
                 width: parent.width
                 height: Theme.itemSizeSmall
+                icon: "image://theme/icon-m-device"
+                text: qsTr("Cover")
+                onActionRequested: pageStack.push(Qt.resolvedUrl("CoverSettingsPage.qml"), { "settings": settingspage.settings })
+            }
+
+            SettingLabel
+            {
+                width: parent.width
+                height: Theme.itemSizeSmall
                 icon: "image://theme/icon-s-group-chat"
                 text: qsTr("Tabs")
                 onActionRequested: pageStack.push(Qt.resolvedUrl("TabsSettingsPage.qml"), { "settings": settingspage.settings })

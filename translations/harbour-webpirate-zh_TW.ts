@@ -120,7 +120,7 @@
     </message>
     <message>
         <source>Cover settings</source>
-        <translation>封面設定</translation>
+        <translation type="vanished">封面設定</translation>
     </message>
     <message>
         <source>Night Mode</source>
@@ -1247,6 +1247,10 @@
     <message>
         <source>Experimental</source>
         <translation>實驗性</translation>
+    </message>
+    <message>
+        <source>Cover</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
