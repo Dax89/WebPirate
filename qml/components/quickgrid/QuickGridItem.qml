@@ -50,7 +50,13 @@ Item
             radius: 8
             border.width: 1
             border.color: Theme.rgba(Theme.secondaryHighlightColor, 1.0)
-            color: Theme.highlightDimmerColor
+            color: "transparent"
+
+            PanelBackground
+            {
+                anchors.fill: parent
+                z: -1
+            }
 
             Image
             {
