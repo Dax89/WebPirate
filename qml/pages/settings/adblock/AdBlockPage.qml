@@ -1,7 +1,7 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
 import harbour.webpirate.AdBlock 1.0
-import "../../models"
+import "../../../models"
 
 Dialog
 {

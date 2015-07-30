@@ -115,7 +115,7 @@ Item
             {
                 anchors { left: parent.left; right: parent.right }
                 text: qsTr("Ad Block")
-                onClicked: pageStack.push(Qt.resolvedUrl("../../pages/adblock/AdBlockPage.qml"), { "settings": mainwindow.settings });
+                switchOnClick: true
 
                 Component.onCompleted: {
                     switchItem.checked = mainwindow.settings.adblockmanager.enabled;

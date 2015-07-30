@@ -65,6 +65,15 @@ Page
             {
                 width: parent.width
                 height: Theme.itemSizeSmall
+                icon: "qrc:///res/adblock.png"
+                text: qsTr("AdBlock")
+                onActionRequested: pageStack.push(Qt.resolvedUrl("adblock/AdBlockPage.qml"), { "settings": settingspage.settings });
+            }
+
+            SettingLabel
+            {
+                width: parent.width
+                height: Theme.itemSizeSmall
                 icon: "qrc:///res/experimental.png"
                 text: qsTr("Experimental")
                 onActionRequested: pageStack.push(Qt.resolvedUrl("ExperimentalSettingsPage.qml"), { "settings": settingspage.settings })

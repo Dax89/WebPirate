@@ -1252,6 +1252,10 @@
         <source>Cover</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>AdBlock</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ShareMenu</name>

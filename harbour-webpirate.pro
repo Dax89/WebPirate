@@ -119,11 +119,8 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/js/helpers/NightMode.js \
     qml/components/sidebar/SidebarSwitch.qml \
     qml/js/helpers/ForcePixelRatio.js \
-    qml/pages/adblock/AdBlockPage.qml \
     adblock.css \
     adblock.table \
-    qml/pages/adblock/AdBlockFilter.qml \
-    qml/pages/adblock/AdBlockDownloaderPage.qml \
     qml/components/browsertab/webview/jsdialogs/ItemSelector.qml \
     qml/components/browsertab/webview/jsdialogs/AlertDialog.qml \
     qml/components/browsertab/webview/jsdialogs/WebViewDialog.qml \
@@ -191,6 +188,9 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/pages/settings/PrivacySettingsPage.qml \
     qml/pages/settings/TabsSettingsPage.qml \
     qml/pages/settings/ExperimentalSettingsPage.qml \
+    qml/pages/settings/adblock/AdBlockFilter.qml \
+    qml/pages/settings/adblock/AdBlockDownloaderPage.qml \
+    qml/pages/settings/adblock/AdBlockPage.qml \
     qml/js/helpers/SystemTextField.js \
     qml/pages/webview/TextFieldPage.qml \
     qml/js/helpers/Utils.js \
