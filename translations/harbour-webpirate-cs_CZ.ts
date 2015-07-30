@@ -119,10 +119,6 @@
         <translation>Relace</translation>
     </message>
     <message>
-        <source>Cover settings</source>
-        <translation type="vanished">Nastavení obalu</translation>
-    </message>
-    <message>
         <source>Night Mode</source>
         <translation>Noční režim</translation>
     </message>
@@ -468,7 +464,7 @@
     </message>
     <message>
         <source>Wipe personal data</source>
-        <translation>Vymazat soukromá data</translation>
+        <translation>Odstranit soukromá data</translation>
     </message>
     <message>
         <source>Search</source>
@@ -577,15 +573,15 @@
     <name>ExperimentalSettingsPage</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Uložit</translation>
+        <translation>Uložit</translation>
     </message>
     <message>
         <source>Override Text Fields</source>
-        <translation type="unfinished"></translation>
+        <translation>Přepsat textová pole</translation>
     </message>
     <message>
         <source>Use SailfishOS&apos;s editing components instead of WebView&apos;s ones</source>
-        <translation type="unfinished"></translation>
+        <translation>Používat editečný komponenty od SailfishOS místo od WebView</translation>
     </message>
 </context>
 <context>
@@ -712,11 +708,11 @@
     </message>
     <message>
         <source>SD Card</source>
-        <translation type="unfinished"></translation>
+        <translation>SD Karta</translation>
     </message>
     <message>
         <source>Home</source>
-        <translation type="unfinished"></translation>
+        <translation>Domov</translation>
     </message>
 </context>
 <context>
@@ -738,23 +734,23 @@
     <name>GeneralSettingsPage</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Uložit</translation>
+        <translation>Uložit</translation>
     </message>
     <message>
         <source>Home Page</source>
-        <translation type="unfinished"></translation>
+        <translation>Domovská stránka</translation>
     </message>
     <message>
         <source>Search Engines</source>
-        <translation type="unfinished">Poskytovatelé vyhledávání</translation>
+        <translation>Poskytovatelé vyhledávání</translation>
     </message>
     <message>
         <source>Long press to edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Dlouze zmáčkněte pro editaci</translation>
     </message>
     <message>
         <source>User Agent</source>
-        <translation type="unfinished"></translation>
+        <translation>Identifikátor prohlížeče</translation>
     </message>
 </context>
 <context>
@@ -973,47 +969,47 @@
     <name>PrivacySettingsPage</name>
     <message>
         <source>Wipe Data on Exit</source>
-        <translation type="unfinished"></translation>
+        <translation>Odstranit data při ukončení</translation>
     </message>
     <message>
         <source>Delete Navigation History</source>
-        <translation type="unfinished"></translation>
+        <translation>Vymazat historii prohlížení</translation>
     </message>
     <message>
         <source>Removing navigation history</source>
-        <translation type="unfinished"></translation>
+        <translation>Mazání historie prohlížení</translation>
     </message>
     <message>
         <source>Delete Cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>Odstranit Cookies</translation>
     </message>
     <message>
         <source>Removing cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>Odstraňování Cookies</translation>
     </message>
     <message>
         <source>Delete Personal Data</source>
-        <translation type="unfinished"></translation>
+        <translation>Vymazat soukromá data</translation>
     </message>
     <message>
         <source>Removing personal data</source>
-        <translation type="unfinished"></translation>
+        <translation>Mazání soukromých dat</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Uložit</translation>
+        <translation>Uložit</translation>
     </message>
     <message>
         <source>Privacy Options</source>
-        <translation type="unfinished"></translation>
+        <translation>Nastavení soukromí</translation>
     </message>
     <message>
         <source>Privacy Management</source>
-        <translation type="unfinished"></translation>
+        <translation>Řízení soukromí</translation>
     </message>
     <message>
         <source>Keep Favicons when deleting personal data</source>
-        <translation type="unfinished"></translation>
+        <translation>Ponechaf Favicony při odstaňování osobních dat</translation>
     </message>
 </context>
 <context>
@@ -1033,30 +1029,23 @@
 <context>
     <name>QuickGrid</name>
     <message>
-        <source>Long Press to edit</source>
-        <translation>Dlouze zmáčkněte pro editaci</translation>
-    </message>
-    <message>
         <source>The Quick Grid is empty</source>
         <translation>Rychlá volba je prázdná</translation>
     </message>
-</context>
-<context>
-    <name>QuickGridAddButton</name>
     <message>
-        <source>Add</source>
-        <translation type="obsolete">Přidat</translation>
+        <source>Long Press to edit</source>
+        <translation>Dlouze zmáčkněte pro editaci</translation>
     </message>
 </context>
 <context>
     <name>QuickGridBottomPanel</name>
     <message>
         <source>Add</source>
-        <translation type="unfinished">Přidat</translation>
+        <translation>Přidat</translation>
     </message>
     <message>
         <source>Done</source>
-        <translation type="unfinished"></translation>
+        <translation>Dokončeno</translation>
     </message>
 </context>
 <context>
@@ -1238,15 +1227,15 @@
     </message>
     <message>
         <source>Browser Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Nastavení prohlízeče</translation>
     </message>
     <message>
         <source>Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Panely</translation>
     </message>
     <message>
         <source>Experimental</source>
-        <translation type="unfinished"></translation>
+        <translation>Experimentální</translation>
     </message>
     <message>
         <source>Cover</source>
@@ -1291,22 +1280,22 @@
     <name>TabsSettingsPage</name>
     <message>
         <source>Restore tabs at Startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Obnovit panely při startu</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Uložit</translation>
+        <translation>Uložit</translation>
     </message>
     <message>
         <source>Close last tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Zavřít poslední panel</translation>
     </message>
 </context>
 <context>
     <name>TextFieldPage</name>
     <message>
         <source>Send</source>
-        <translation type="unfinished"></translation>
+        <translation>Poslat</translation>
     </message>
 </context>
 <context>
@@ -1370,11 +1359,11 @@
     </message>
     <message>
         <source>Grabbing %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Získávání %1</translation>
     </message>
     <message>
         <source>Decoding Signature for %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Dekódování signatůry pro %1</translation>
     </message>
 </context>
 <context>

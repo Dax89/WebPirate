@@ -119,10 +119,6 @@
         <translation>セッション</translation>
     </message>
     <message>
-        <source>Cover settings</source>
-        <translation type="vanished">カバー設定</translation>
-    </message>
-    <message>
         <source>Night Mode</source>
         <translation>ナイトモード</translation>
     </message>
@@ -1039,13 +1035,6 @@
     <message>
         <source>Long Press to edit</source>
         <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>QuickGridAddButton</name>
-    <message>
-        <source>Add</source>
-        <translation type="obsolete">追加</translation>
     </message>
 </context>
 <context>

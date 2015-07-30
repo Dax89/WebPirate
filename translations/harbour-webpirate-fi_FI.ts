@@ -9,7 +9,7 @@
     </message>
     <message>
         <source>Catalan</source>
-        <translation>katalan</translation>
+        <translation>katalaani</translation>
     </message>
     <message>
         <source>Chinese</source>
@@ -41,11 +41,11 @@
     </message>
     <message>
         <source>A tabbed Web Browser for SailfishOS based on WebKit</source>
-        <translation>WebKitiin perustuva välilehditetty webselain SailfishOS:lle</translation>
+        <translation>WebKitiin perustuva välilehdellinen webselain SailfishOS:lle</translation>
     </message>
     <message>
         <source>Developer</source>
-        <translation>Kehittäjät</translation>
+        <translation>Kehittäjä</translation>
     </message>
     <message>
         <source>GitHub Repository</source>
@@ -85,7 +85,7 @@
     </message>
     <message>
         <source>Translation Platform</source>
-        <translation>Käännöksen julkaisualustta</translation>
+        <translation>Käännösten julkaisualusta</translation>
     </message>
 </context>
 <context>
@@ -117,10 +117,6 @@
     <message>
         <source>Sessions</source>
         <translation>Istunnot</translation>
-    </message>
-    <message>
-        <source>Cover settings</source>
-        <translation type="vanished">Kannen asetukset</translation>
     </message>
     <message>
         <source>Night Mode</source>
@@ -217,7 +213,7 @@
     </message>
     <message>
         <source>Deleting filter</source>
-        <translation>Poistetaan suodatin...</translation>
+        <translation>Suodatinta poistetaan...</translation>
     </message>
     <message>
         <source>Update Filters</source>
@@ -289,7 +285,7 @@
     </message>
     <message>
         <source>Grabbed URLs</source>
-        <translation type="unfinished"></translation>
+        <translation>Kaapatut URL-osoitteet</translation>
     </message>
     <message>
         <source>Play</source>
@@ -331,7 +327,7 @@
     </message>
     <message>
         <source>Downloading</source>
-        <translation>Lataa</translation>
+        <translation>Lataa...</translation>
     </message>
 </context>
 <context>
@@ -346,7 +342,7 @@
     </message>
     <message>
         <source>Deleting Tab</source>
-        <translation>Poistetaan välilehteä</translation>
+        <translation>Poistetaan välilehteä...</translation>
     </message>
 </context>
 <context>
@@ -361,7 +357,7 @@
     </message>
     <message>
         <source>Deleting Tabs</source>
-        <translation>Poistetaan välilehtiä</translation>
+        <translation>Poistetaan välilehtiä...</translation>
     </message>
 </context>
 <context>
@@ -372,7 +368,7 @@
     </message>
     <message>
         <source>Deleting Cookie</source>
-        <translation>Poistetaan evästeet...</translation>
+        <translation>Poistetaan eväste...</translation>
     </message>
 </context>
 <context>
@@ -390,7 +386,7 @@
     <name>CookieManagerPage</name>
     <message>
         <source>Cookie Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Evästeiden hallinta</translation>
     </message>
     <message>
         <source>Filter</source>
@@ -440,11 +436,11 @@
     <name>CoverModel</name>
     <message>
         <source>Go to Previous Tab</source>
-        <translation>Mene edelliseen välilehteen</translation>
+        <translation>Siirry edelliseen välilehteen</translation>
     </message>
     <message>
         <source>Go to Next Tab</source>
-        <translation>Mene seuraavaan välilehteen</translation>
+        <translation>Siirry seuraavaan välilehteen</translation>
     </message>
     <message>
         <source>Add New Tab</source>
@@ -525,14 +521,14 @@
     </message>
     <message>
         <source>Deleting Cookies</source>
-        <translation>Poistaa evästeet...</translation>
+        <translation>Evästeet poistetaan...</translation>
     </message>
 </context>
 <context>
     <name>DownloadItem</name>
     <message>
         <source>Redirect Loop</source>
-        <translation type="unfinished"></translation>
+        <translation>Uudelleenohjaussilmukka</translation>
     </message>
 </context>
 <context>
@@ -566,7 +562,7 @@
     </message>
     <message>
         <source>Delete completed Downloads</source>
-        <translation>Poista ladatut</translation>
+        <translation>Poista suoritetut lataukset</translation>
     </message>
     <message>
         <source>New Download</source>
@@ -585,7 +581,7 @@
     </message>
     <message>
         <source>Use SailfishOS&apos;s editing components instead of WebView&apos;s ones</source>
-        <translation type="unfinished"></translation>
+        <translation>Käytä TextArean muokkaukseen SailfishOS:n natiivikomponentteja WebViewin tarjoaman editorin sijaan.</translation>
     </message>
 </context>
 <context>
@@ -611,7 +607,7 @@
     </message>
     <message>
         <source>From HTML File</source>
-        <translation type="unfinished"></translation>
+        <translation>HTML-tiedostosta</translation>
     </message>
     <message>
         <source>From Sailfish Browser</source>
@@ -646,7 +642,7 @@
     </message>
     <message>
         <source>Import in</source>
-        <translation type="unfinished"></translation>
+        <translation>Tuo suosikit</translation>
     </message>
     <message>
         <source>Exporting favorites</source>
@@ -666,7 +662,7 @@
     </message>
     <message>
         <source>Deleting all favorites</source>
-        <translation>Poistetaan kaikkia suosikkeja</translation>
+        <translation>Poistetaan kaikkia suosikkeja...</translation>
     </message>
     <message>
         <source>Cannot import favorites</source>
@@ -685,11 +681,11 @@
     </message>
     <message>
         <source>Deleting Favorite</source>
-        <translation>Poistetaan suosikkia</translation>
+        <translation>Poistetaan suosikkia...</translation>
     </message>
     <message>
         <source>Deleting Folder</source>
-        <translation>Poista kansio</translation>
+        <translation>Poistetaan kansiota...</translation>
     </message>
     <message>
         <source>Open</source>
@@ -708,7 +704,7 @@
     <name>FilePickerPage</name>
     <message>
         <source>Root</source>
-        <translation type="unfinished"></translation>
+        <translation>Juuri</translation>
     </message>
     <message>
         <source>SD Card</source>
@@ -716,14 +712,14 @@
     </message>
     <message>
         <source>Home</source>
-        <translation type="unfinished"></translation>
+        <translation>Koti</translation>
     </message>
 </context>
 <context>
     <name>FormResubmitDialog</name>
     <message>
         <source>This page contains information written by you: do you want to resend the data?</source>
-        <translation type="unfinished"></translation>
+        <translation>Tämä sivu sisältää kirjoittamaasi tietoa; haluatko lähettää tiedot uudelleen?</translation>
     </message>
     <message>
         <source>Yes</source>
@@ -746,11 +742,11 @@
     </message>
     <message>
         <source>Search Engines</source>
-        <translation type="unfinished">Hakukoneet</translation>
+        <translation>Hakukoneet</translation>
     </message>
     <message>
         <source>Long press to edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Muokkaa painamalla pitkään</translation>
     </message>
     <message>
         <source>User Agent</source>
@@ -792,11 +788,11 @@
     </message>
     <message>
         <source>Downloading image</source>
-        <translation>Lataa kuva</translation>
+        <translation>Ladataan kuvaa...</translation>
     </message>
     <message>
         <source>Downloading link</source>
-        <translation>Lataa linkki</translation>
+        <translation>Ladataan linkkiä...</translation>
     </message>
     <message>
         <source>Open</source>
@@ -823,14 +819,14 @@
     </message>
     <message>
         <source>WebView process has crashed, restarting...</source>
-        <translation type="unfinished"></translation>
+        <translation>Web -näkymän prosessi kaatui. Käynnistyy uudelleen...</translation>
     </message>
 </context>
 <context>
     <name>MediaPlayerToolBar</name>
     <message>
         <source>Downloading media</source>
-        <translation>Ladataan mediaa...</translation>
+        <translation>Ladataan mediatiedostoa...</translation>
     </message>
 </context>
 <context>
@@ -871,7 +867,7 @@
     <name>NewDownloadPage</name>
     <message>
         <source>Start Download</source>
-        <translation>Aloita lataus</translation>
+        <translation>Aloita lataaminen</translation>
     </message>
     <message>
         <source>Download Url</source>
@@ -882,7 +878,7 @@
     <name>NewPopupRulePage</name>
     <message>
         <source>Apply Rule</source>
-        <translation type="unfinished"></translation>
+        <translation>Ota sääntö käyttöön</translation>
     </message>
     <message>
         <source>Url</source>
@@ -924,7 +920,7 @@
     </message>
     <message>
         <source>Clear popup list</source>
-        <translation>Tyhjennä popup -lista</translation>
+        <translation>Pyyhi popup -lista</translation>
     </message>
 </context>
 <context>
@@ -973,15 +969,15 @@
     <name>PrivacySettingsPage</name>
     <message>
         <source>Wipe Data on Exit</source>
-        <translation type="unfinished"></translation>
+        <translation>Poista selaustiedot suljettaessa</translation>
     </message>
     <message>
         <source>Delete Navigation History</source>
-        <translation type="unfinished"></translation>
+        <translation>Poista selaushistoria</translation>
     </message>
     <message>
         <source>Removing navigation history</source>
-        <translation type="unfinished"></translation>
+        <translation>Poistetaan selaushistoria</translation>
     </message>
     <message>
         <source>Delete Cookies</source>
@@ -1005,15 +1001,15 @@
     </message>
     <message>
         <source>Privacy Options</source>
-        <translation type="unfinished"></translation>
+        <translation>Tietosuoja-asetukset</translation>
     </message>
     <message>
         <source>Privacy Management</source>
-        <translation type="unfinished"></translation>
+        <translation>Yksityisyystietojen hallinta</translation>
     </message>
     <message>
         <source>Keep Favicons when deleting personal data</source>
-        <translation type="unfinished"></translation>
+        <translation>Säilytä sivustojen kuvakkeet, kun henkilökohtaiset tiedot poistetaan</translation>
     </message>
 </context>
 <context>
@@ -1027,25 +1023,18 @@
     <name>QueryBar</name>
     <message>
         <source>Search with</source>
-        <translation>Etsi käyttäen</translation>
+        <translation>Etsi käyttäen...</translation>
     </message>
 </context>
 <context>
     <name>QuickGrid</name>
     <message>
         <source>The Quick Grid is empty</source>
-        <translation type="unfinished"></translation>
+        <translation>Ei pikavalintoja</translation>
     </message>
     <message>
         <source>Long Press to edit</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>QuickGridAddButton</name>
-    <message>
-        <source>Add</source>
-        <translation type="obsolete">Lisää</translation>
+        <translation>Paina pitkään muokataksesi</translation>
     </message>
 </context>
 <context>
@@ -1063,7 +1052,7 @@
     <name>QuickGridItem</name>
     <message>
         <source>Removing item</source>
-        <translation>Poistetaan kohdetta</translation>
+        <translation>Poistetaan kohdetta...</translation>
     </message>
 </context>
 <context>
@@ -1096,11 +1085,11 @@
     <name>SaveSessionPage</name>
     <message>
         <source>Save Session</source>
-        <translation>Tallenna sessio</translation>
+        <translation>Tallenna istunto</translation>
     </message>
     <message>
         <source>Session name</source>
-        <translation>Session nimi</translation>
+        <translation>Istunnon nimi</translation>
     </message>
     <message>
         <source>Load at startup</source>
@@ -1108,7 +1097,7 @@
     </message>
     <message>
         <source>Replace current session</source>
-        <translation>Korvaa avoin sessio</translation>
+        <translation>Korvaa avoinna oleva istunto</translation>
     </message>
     <message>
         <source>Opened Tabs</source>
@@ -1165,14 +1154,14 @@
     </message>
     <message>
         <source>Deleting Search Engine</source>
-        <translation>Poista hakukone</translation>
+        <translation>Poistaa hakukonetta</translation>
     </message>
 </context>
 <context>
     <name>SessionManagerPage</name>
     <message>
         <source>Session Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Istunnon hallinta</translation>
     </message>
     <message>
         <source>Tabs saved</source>
@@ -1196,7 +1185,7 @@
     </message>
     <message>
         <source>Save current session</source>
-        <translation type="unfinished"></translation>
+        <translation>Tallenna nykyinen istunto</translation>
     </message>
 </context>
 <context>
@@ -1207,19 +1196,19 @@
     </message>
     <message>
         <source>Session name</source>
-        <translation>Session nimi</translation>
+        <translation>Istunnon nimi</translation>
     </message>
     <message>
         <source>Load at startup</source>
-        <translation>Lataa käynnistyksesssä</translation>
+        <translation>Lataa käynnistyksessä</translation>
     </message>
     <message>
         <source>Replace current session</source>
-        <translation>Korvaa avoin sessio</translation>
+        <translation>Korvaa avoinna oleva istunto</translation>
     </message>
     <message>
         <source>Opened Tabs</source>
-        <translation>Avoimet välilehdet</translation>
+        <translation>Avoinna olevat välilehdet</translation>
     </message>
     <message>
         <source>Selected</source>
@@ -1246,7 +1235,7 @@
     </message>
     <message>
         <source>Experimental</source>
-        <translation type="unfinished"></translation>
+        <translation>Kokeelliset ominaisuudet</translation>
     </message>
     <message>
         <source>Cover</source>
@@ -1268,15 +1257,15 @@
     <name>TabMenu</name>
     <message>
         <source>Add to Quick Grid</source>
-        <translation>Lissää pikavalintaan</translation>
+        <translation>Lisää pikavalintaan</translation>
     </message>
     <message>
         <source>Duplicate Tab</source>
-        <translation>Duplikaatti välilehti</translation>
+        <translation>Monista</translation>
     </message>
     <message>
         <source>Duplicate Tab in Background</source>
-        <translation>Duplikaatti välilehti taustalla</translation>
+        <translation>Monista taustalle</translation>
     </message>
     <message>
         <source>Close Tab</source>
@@ -1291,7 +1280,7 @@
     <name>TabsSettingsPage</name>
     <message>
         <source>Restore tabs at Startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Palauta välilehdet, kun selain käynnistetään uudelleen</translation>
     </message>
     <message>
         <source>Save</source>
@@ -1324,7 +1313,7 @@
     </message>
     <message>
         <source>Codec</source>
-        <translation type="unfinished"></translation>
+        <translation>Koodekki</translation>
     </message>
 </context>
 <context>
@@ -1362,7 +1351,7 @@
     </message>
     <message>
         <source>Downloading video info</source>
-        <translation type="unfinished"></translation>
+        <translation>Ladataan tietoa videosta...</translation>
     </message>
     <message>
         <source>FAILED</source>

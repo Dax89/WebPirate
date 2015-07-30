@@ -119,10 +119,6 @@
         <translation>瀏覽狀態</translation>
     </message>
     <message>
-        <source>Cover settings</source>
-        <translation type="vanished">封面設定</translation>
-    </message>
-    <message>
         <source>Night Mode</source>
         <translation>夜間模式</translation>
     </message>
@@ -712,11 +708,11 @@
     </message>
     <message>
         <source>SD Card</source>
-        <translation type="unfinished"></translation>
+        <translation>SD 卡</translation>
     </message>
     <message>
         <source>Home</source>
-        <translation type="unfinished"></translation>
+        <translation>目錄</translation>
     </message>
 </context>
 <context>
@@ -1013,7 +1009,7 @@
     </message>
     <message>
         <source>Keep Favicons when deleting personal data</source>
-        <translation type="unfinished"></translation>
+        <translation>刪除個人資料時保留網站圖示</translation>
     </message>
 </context>
 <context>
@@ -1033,30 +1029,23 @@
 <context>
     <name>QuickGrid</name>
     <message>
-        <source>Long Press to edit</source>
-        <translation>長按可進行編輯</translation>
-    </message>
-    <message>
         <source>The Quick Grid is empty</source>
         <translation>無項目於快速啟動頁</translation>
     </message>
-</context>
-<context>
-    <name>QuickGridAddButton</name>
     <message>
-        <source>Add</source>
-        <translation type="obsolete">新增</translation>
+        <source>Long Press to edit</source>
+        <translation>長按可進行編輯</translation>
     </message>
 </context>
 <context>
     <name>QuickGridBottomPanel</name>
     <message>
         <source>Add</source>
-        <translation type="unfinished">新增</translation>
+        <translation>新增</translation>
     </message>
     <message>
         <source>Done</source>
-        <translation type="unfinished"></translation>
+        <translation>完成</translation>
     </message>
 </context>
 <context>
@@ -1250,7 +1239,7 @@
     </message>
     <message>
         <source>Cover</source>
-        <translation type="unfinished"></translation>
+        <translation>封面</translation>
     </message>
     <message>
         <source>AdBlock</source>
@@ -1299,14 +1288,14 @@
     </message>
     <message>
         <source>Close last tab</source>
-        <translation type="unfinished"></translation>
+        <translation>關閉最後的分頁</translation>
     </message>
 </context>
 <context>
     <name>TextFieldPage</name>
     <message>
         <source>Send</source>
-        <translation type="unfinished"></translation>
+        <translation>傳送</translation>
     </message>
 </context>
 <context>
@@ -1370,11 +1359,11 @@
     </message>
     <message>
         <source>Grabbing %1</source>
-        <translation type="unfinished"></translation>
+        <translation>取得 %1 中</translation>
     </message>
     <message>
         <source>Decoding Signature for %1</source>
-        <translation type="unfinished"></translation>
+        <translation>解析 %1 認證中</translation>
     </message>
 </context>
 <context>

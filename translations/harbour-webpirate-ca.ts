@@ -119,10 +119,6 @@
         <translation>Sessions</translation>
     </message>
     <message>
-        <source>Cover settings</source>
-        <translation type="vanished">Configuració de portada</translation>
-    </message>
-    <message>
         <source>Night Mode</source>
         <translation>Mode nocturn</translation>
     </message>
@@ -577,15 +573,15 @@
     <name>ExperimentalSettingsPage</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Desa</translation>
+        <translation>Desa</translation>
     </message>
     <message>
         <source>Override Text Fields</source>
-        <translation type="unfinished"></translation>
+        <translation>Ignora els camps de text</translation>
     </message>
     <message>
         <source>Use SailfishOS&apos;s editing components instead of WebView&apos;s ones</source>
-        <translation type="unfinished"></translation>
+        <translation>Utilitza els components d&apos;edició de SailfishOS en lloc dels de WebView</translation>
     </message>
 </context>
 <context>
@@ -712,11 +708,11 @@
     </message>
     <message>
         <source>SD Card</source>
-        <translation type="unfinished"></translation>
+        <translation>Targeta SD</translation>
     </message>
     <message>
         <source>Home</source>
-        <translation type="unfinished"></translation>
+        <translation>Pàgina d&apos;inici</translation>
     </message>
 </context>
 <context>
@@ -738,23 +734,23 @@
     <name>GeneralSettingsPage</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Desa</translation>
+        <translation>Desa</translation>
     </message>
     <message>
         <source>Home Page</source>
-        <translation type="unfinished"></translation>
+        <translation>Pàgina d&apos;inici</translation>
     </message>
     <message>
         <source>Search Engines</source>
-        <translation type="unfinished">Motors de cerca</translation>
+        <translation>Motors de cerca</translation>
     </message>
     <message>
         <source>Long press to edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Mantingueu premut per editar</translation>
     </message>
     <message>
         <source>User Agent</source>
-        <translation type="unfinished"></translation>
+        <translation>Agent d&apos;usuari</translation>
     </message>
 </context>
 <context>
@@ -973,47 +969,47 @@
     <name>PrivacySettingsPage</name>
     <message>
         <source>Wipe Data on Exit</source>
-        <translation type="unfinished"></translation>
+        <translation>Elimina les dades en sortir</translation>
     </message>
     <message>
         <source>Delete Navigation History</source>
-        <translation type="unfinished"></translation>
+        <translation>Elimina l&apos;historial de navegació</translation>
     </message>
     <message>
         <source>Removing navigation history</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;està eliminant l&apos;historial de navegació</translation>
     </message>
     <message>
         <source>Delete Cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>Elimina les galetes</translation>
     </message>
     <message>
         <source>Removing cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;estan eliminant les galetes</translation>
     </message>
     <message>
         <source>Delete Personal Data</source>
-        <translation type="unfinished"></translation>
+        <translation>Elimina les dades personals</translation>
     </message>
     <message>
         <source>Removing personal data</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;estan eliminant les dades personals</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Desa</translation>
+        <translation>Desa</translation>
     </message>
     <message>
         <source>Privacy Options</source>
-        <translation type="unfinished"></translation>
+        <translation>Opcions de privacitat</translation>
     </message>
     <message>
         <source>Privacy Management</source>
-        <translation type="unfinished"></translation>
+        <translation>Gestió de la privacitat</translation>
     </message>
     <message>
         <source>Keep Favicons when deleting personal data</source>
-        <translation type="unfinished"></translation>
+        <translation>Manté les icones de preferits quan s&apos;eliminin les dades personals</translation>
     </message>
 </context>
 <context>
@@ -1033,30 +1029,23 @@
 <context>
     <name>QuickGrid</name>
     <message>
-        <source>Long Press to edit</source>
-        <translation>Mantingueu premut per editar</translation>
-    </message>
-    <message>
         <source>The Quick Grid is empty</source>
         <translation>La reixeta ràpida està buida</translation>
     </message>
-</context>
-<context>
-    <name>QuickGridAddButton</name>
     <message>
-        <source>Add</source>
-        <translation type="obsolete">Afegeix</translation>
+        <source>Long Press to edit</source>
+        <translation>Mantingueu premut per editar</translation>
     </message>
 </context>
 <context>
     <name>QuickGridBottomPanel</name>
     <message>
         <source>Add</source>
-        <translation type="unfinished">Afegeix</translation>
+        <translation>Afegeix</translation>
     </message>
     <message>
         <source>Done</source>
-        <translation type="unfinished"></translation>
+        <translation>Fet</translation>
     </message>
 </context>
 <context>
@@ -1238,15 +1227,15 @@
     </message>
     <message>
         <source>Browser Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Configuració del navegador</translation>
     </message>
     <message>
         <source>Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Pestanyes</translation>
     </message>
     <message>
         <source>Experimental</source>
-        <translation type="unfinished"></translation>
+        <translation>Experimental</translation>
     </message>
     <message>
         <source>Cover</source>
@@ -1291,22 +1280,22 @@
     <name>TabsSettingsPage</name>
     <message>
         <source>Restore tabs at Startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Restableix les pestanyes en iniciar</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Desa</translation>
+        <translation>Desa</translation>
     </message>
     <message>
         <source>Close last tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Tanca l&apos;última pestanya</translation>
     </message>
 </context>
 <context>
     <name>TextFieldPage</name>
     <message>
         <source>Send</source>
-        <translation type="unfinished"></translation>
+        <translation>Envia</translation>
     </message>
 </context>
 <context>
@@ -1370,11 +1359,11 @@
     </message>
     <message>
         <source>Grabbing %1</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;està aconseguint %1</translation>
     </message>
     <message>
         <source>Decoding Signature for %1</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;està decodificant la signatura per a %1</translation>
     </message>
 </context>
 <context>

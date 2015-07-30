@@ -119,10 +119,6 @@
         <translation>Seje</translation>
     </message>
     <message>
-        <source>Cover settings</source>
-        <translation type="vanished">Nastavitve naslovnice</translation>
-    </message>
-    <message>
         <source>Night Mode</source>
         <translation>Nočni način</translation>
     </message>
@@ -577,15 +573,15 @@
     <name>ExperimentalSettingsPage</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Shrani</translation>
+        <translation>Shrani</translation>
     </message>
     <message>
         <source>Override Text Fields</source>
-        <translation type="unfinished"></translation>
+        <translation>Prepiši tekstovna polja</translation>
     </message>
     <message>
         <source>Use SailfishOS&apos;s editing components instead of WebView&apos;s ones</source>
-        <translation type="unfinished"></translation>
+        <translation>Za urejanje uporabi SailfishOS komponente</translation>
     </message>
 </context>
 <context>
@@ -712,11 +708,11 @@
     </message>
     <message>
         <source>SD Card</source>
-        <translation type="unfinished"></translation>
+        <translation>SD kartica</translation>
     </message>
     <message>
         <source>Home</source>
-        <translation type="unfinished"></translation>
+        <translation>Domov</translation>
     </message>
 </context>
 <context>
@@ -738,23 +734,23 @@
     <name>GeneralSettingsPage</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Shrani</translation>
+        <translation>Shrani</translation>
     </message>
     <message>
         <source>Home Page</source>
-        <translation type="unfinished"></translation>
+        <translation>Domača stran</translation>
     </message>
     <message>
         <source>Search Engines</source>
-        <translation type="unfinished">Iskalniki</translation>
+        <translation>Iskalniki</translation>
     </message>
     <message>
         <source>Long press to edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Za urejanje pritisnite in držite</translation>
     </message>
     <message>
         <source>User Agent</source>
-        <translation type="unfinished"></translation>
+        <translation>User Agent</translation>
     </message>
 </context>
 <context>
@@ -973,47 +969,47 @@
     <name>PrivacySettingsPage</name>
     <message>
         <source>Wipe Data on Exit</source>
-        <translation type="unfinished"></translation>
+        <translation>Ob izhodu pobriši podatke</translation>
     </message>
     <message>
         <source>Delete Navigation History</source>
-        <translation type="unfinished"></translation>
+        <translation>Izbriši zgodovino</translation>
     </message>
     <message>
         <source>Removing navigation history</source>
-        <translation type="unfinished"></translation>
+        <translation>Odstranjujem zgodovino brskanja</translation>
     </message>
     <message>
         <source>Delete Cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>Izbriši piškotke</translation>
     </message>
     <message>
         <source>Removing cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>Odstranjevanje piškotkov</translation>
     </message>
     <message>
         <source>Delete Personal Data</source>
-        <translation type="unfinished"></translation>
+        <translation>Izbriši osebne podatke</translation>
     </message>
     <message>
         <source>Removing personal data</source>
-        <translation type="unfinished"></translation>
+        <translation>Ostranjevanje osebnih podatkov</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Shrani</translation>
+        <translation>Shrani</translation>
     </message>
     <message>
         <source>Privacy Options</source>
-        <translation type="unfinished"></translation>
+        <translation>Nastavitve zasebnosti</translation>
     </message>
     <message>
         <source>Privacy Management</source>
-        <translation type="unfinished"></translation>
+        <translation>Upravljanje zasebnosti</translation>
     </message>
     <message>
         <source>Keep Favicons when deleting personal data</source>
-        <translation type="unfinished"></translation>
+        <translation>Pri brisanju osebnih podatkov ohrani ikono zaznamka</translation>
     </message>
 </context>
 <context>
@@ -1033,19 +1029,12 @@
 <context>
     <name>QuickGrid</name>
     <message>
-        <source>Long Press to edit</source>
-        <translation>Za urejanje pritisnite in držite</translation>
-    </message>
-    <message>
         <source>The Quick Grid is empty</source>
         <translation>QuickGrid je prazen</translation>
     </message>
-</context>
-<context>
-    <name>QuickGridAddButton</name>
     <message>
-        <source>Add</source>
-        <translation type="obsolete">Dodaj</translation>
+        <source>Long Press to edit</source>
+        <translation>Za urejanje pritisnite in držite</translation>
     </message>
 </context>
 <context>
@@ -1238,15 +1227,15 @@
     </message>
     <message>
         <source>Browser Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Nastavitve brskalnika</translation>
     </message>
     <message>
         <source>Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Zavihki</translation>
     </message>
     <message>
         <source>Experimental</source>
-        <translation type="unfinished"></translation>
+        <translation>Eksperimentalno</translation>
     </message>
     <message>
         <source>Cover</source>
@@ -1291,11 +1280,11 @@
     <name>TabsSettingsPage</name>
     <message>
         <source>Restore tabs at Startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Obnovi zavihke ob zagonu</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Shrani</translation>
+        <translation>Shrani</translation>
     </message>
     <message>
         <source>Close last tab</source>
@@ -1306,7 +1295,7 @@
     <name>TextFieldPage</name>
     <message>
         <source>Send</source>
-        <translation type="unfinished"></translation>
+        <translation>Pošlji</translation>
     </message>
 </context>
 <context>

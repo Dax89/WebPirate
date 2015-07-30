@@ -119,10 +119,6 @@
         <translation>Sessies</translation>
     </message>
     <message>
-        <source>Cover settings</source>
-        <translation type="vanished">Omslaginstellingen</translation>
-    </message>
-    <message>
         <source>Night Mode</source>
         <translation>Nachtmodus</translation>
     </message>
@@ -1033,30 +1029,23 @@
 <context>
     <name>QuickGrid</name>
     <message>
-        <source>Long Press to edit</source>
-        <translation>Lang ingedrukt houden om te bewerken</translation>
-    </message>
-    <message>
         <source>The Quick Grid is empty</source>
         <translation>De Snelkiezer is leeg</translation>
     </message>
-</context>
-<context>
-    <name>QuickGridAddButton</name>
     <message>
-        <source>Add</source>
-        <translation type="obsolete">Toevoegen</translation>
+        <source>Long Press to edit</source>
+        <translation>Lang ingedrukt houden om te bewerken</translation>
     </message>
 </context>
 <context>
     <name>QuickGridBottomPanel</name>
     <message>
         <source>Add</source>
-        <translation type="unfinished">Toevoegen</translation>
+        <translation>Toevoegen</translation>
     </message>
     <message>
         <source>Done</source>
-        <translation type="unfinished"></translation>
+        <translation>Klaar</translation>
     </message>
 </context>
 <context>
@@ -1250,7 +1239,7 @@
     </message>
     <message>
         <source>Cover</source>
-        <translation type="unfinished"></translation>
+        <translation>Omslag</translation>
     </message>
     <message>
         <source>AdBlock</source>
@@ -1299,7 +1288,7 @@
     </message>
     <message>
         <source>Close last tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Laatste tabblad sluiten</translation>
     </message>
 </context>
 <context>
@@ -1370,11 +1359,11 @@
     </message>
     <message>
         <source>Grabbing %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Bezig met het grijpen van %1</translation>
     </message>
     <message>
         <source>Decoding Signature for %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Bezig met het ontcijferen van de ondertekening voor %1</translation>
     </message>
 </context>
 <context>

@@ -119,10 +119,6 @@
         <translation>Сессии</translation>
     </message>
     <message>
-        <source>Cover settings</source>
-        <translation type="vanished">Настройки плиток</translation>
-    </message>
-    <message>
         <source>Night Mode</source>
         <translation>Ночной режим</translation>
     </message>
@@ -301,7 +297,7 @@
     </message>
     <message>
         <source>Grabbing video</source>
-        <translation>Grabbing video</translation>
+        <translation>Захват видео</translation>
     </message>
     <message>
         <source>Copy URL</source>
@@ -479,7 +475,7 @@
     <name>CoverSettingsPage</name>
     <message>
         <source>General Actions</source>
-        <translation>Основные действия</translation>
+        <translation>Начальная страница</translation>
     </message>
     <message>
         <source>Left</source>
@@ -491,7 +487,7 @@
     </message>
     <message>
         <source>Webpage Actions</source>
-        <translation type="unfinished"></translation>
+        <translation>Остальные страницы</translation>
     </message>
     <message>
         <source>Cover Settings</source>
@@ -532,7 +528,7 @@
     <name>DownloadItem</name>
     <message>
         <source>Redirect Loop</source>
-        <translation type="unfinished"></translation>
+        <translation>Циклическая переадресация</translation>
     </message>
 </context>
 <context>
@@ -581,11 +577,11 @@
     </message>
     <message>
         <source>Override Text Fields</source>
-        <translation type="unfinished"></translation>
+        <translation>Перезаписать текстовые поля</translation>
     </message>
     <message>
         <source>Use SailfishOS&apos;s editing components instead of WebView&apos;s ones</source>
-        <translation type="unfinished"></translation>
+        <translation>Использовать компоненты для редактирования от SailfishOS вместо WebView</translation>
     </message>
 </context>
 <context>
@@ -708,15 +704,15 @@
     <name>FilePickerPage</name>
     <message>
         <source>Root</source>
-        <translation type="unfinished"></translation>
+        <translation>Корень</translation>
     </message>
     <message>
         <source>SD Card</source>
-        <translation type="unfinished"></translation>
+        <translation>Карта памяти</translation>
     </message>
     <message>
         <source>Home</source>
-        <translation type="unfinished"></translation>
+        <translation>Домой</translation>
     </message>
 </context>
 <context>
@@ -754,7 +750,7 @@
     </message>
     <message>
         <source>User Agent</source>
-        <translation type="unfinished"></translation>
+        <translation>Тип сайта</translation>
     </message>
 </context>
 <context>
@@ -823,7 +819,7 @@
     </message>
     <message>
         <source>WebView process has crashed, restarting...</source>
-        <translation type="unfinished"></translation>
+        <translation>Процесс упал, перезапуск...</translation>
     </message>
 </context>
 <context>
@@ -1009,11 +1005,11 @@
     </message>
     <message>
         <source>Privacy Management</source>
-        <translation type="unfinished"></translation>
+        <translation>Управление конфиденциальностью</translation>
     </message>
     <message>
         <source>Keep Favicons when deleting personal data</source>
-        <translation type="unfinished"></translation>
+        <translation>Сохранять Fast Dial при удалении личных данных</translation>
     </message>
 </context>
 <context>
@@ -1033,30 +1029,23 @@
 <context>
     <name>QuickGrid</name>
     <message>
-        <source>Long Press to edit</source>
-        <translation>Удерживайте для редактирования</translation>
-    </message>
-    <message>
         <source>The Quick Grid is empty</source>
         <translation>Fast Dial пустой</translation>
     </message>
-</context>
-<context>
-    <name>QuickGridAddButton</name>
     <message>
-        <source>Add</source>
-        <translation type="obsolete">Добавить</translation>
+        <source>Long Press to edit</source>
+        <translation>Удерживайте для редактирования</translation>
     </message>
 </context>
 <context>
     <name>QuickGridBottomPanel</name>
     <message>
         <source>Add</source>
-        <translation type="unfinished">Добавить</translation>
+        <translation>Добавить</translation>
     </message>
     <message>
         <source>Done</source>
-        <translation type="unfinished"></translation>
+        <translation>Готово</translation>
     </message>
 </context>
 <context>
@@ -1176,7 +1165,7 @@
     </message>
     <message>
         <source>Tabs saved</source>
-        <translation>Количество сохраненных вкладок</translation>
+        <translation>Вкладки сохранены</translation>
     </message>
     <message>
         <source>Open</source>
@@ -1246,7 +1235,7 @@
     </message>
     <message>
         <source>Experimental</source>
-        <translation type="unfinished"></translation>
+        <translation>Экспериментальные</translation>
     </message>
     <message>
         <source>Cover</source>
@@ -1291,7 +1280,7 @@
     <name>TabsSettingsPage</name>
     <message>
         <source>Restore tabs at Startup</source>
-        <translation>Восстановить окна,  открытые в прошлый раз</translation>
+        <translation>Восстановить вкладки,  открытые в прошлый раз</translation>
     </message>
     <message>
         <source>Save</source>
@@ -1299,14 +1288,14 @@
     </message>
     <message>
         <source>Close last tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Закрыть последнюю вкладку</translation>
     </message>
 </context>
 <context>
     <name>TextFieldPage</name>
     <message>
         <source>Send</source>
-        <translation type="unfinished"></translation>
+        <translation>Отправить</translation>
     </message>
 </context>
 <context>
@@ -1331,23 +1320,23 @@
     <name>YouTubeCipher</name>
     <message>
         <source>Downloading Player&apos;s Cipher</source>
-        <translation type="unfinished"></translation>
+        <translation>Загрузка кода Проигрывателя</translation>
     </message>
     <message>
         <source>Cannot find decoding function</source>
-        <translation>Не могу найти функцию декодирования</translation>
+        <translation>Функция декодирования не найдена</translation>
     </message>
     <message>
         <source>Cannot find decoding object</source>
-        <translation>Не могу найти функцию декодирования</translation>
+        <translation>Объект декодирования не найден</translation>
     </message>
     <message>
         <source>Cannot download Video Configuration</source>
-        <translation type="unfinished"></translation>
+        <translation>Не удается загрузить видео настройки</translation>
     </message>
     <message>
         <source>Ciphered Video: Downloading WebPage</source>
-        <translation type="unfinished"></translation>
+        <translation>Зашифрованное видео: Загрузка Web-страницы</translation>
     </message>
 </context>
 <context>
@@ -1362,7 +1351,7 @@
     </message>
     <message>
         <source>Downloading video info</source>
-        <translation>Загружаю информацию о видео</translation>
+        <translation>Загрузка информации о видео</translation>
     </message>
     <message>
         <source>FAILED</source>
@@ -1370,11 +1359,11 @@
     </message>
     <message>
         <source>Grabbing %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Захват %1</translation>
     </message>
     <message>
         <source>Decoding Signature for %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Расшифровывать подписи для %1</translation>
     </message>
 </context>
 <context>
@@ -1385,7 +1374,7 @@
     </message>
     <message>
         <source>Download Failed</source>
-        <translation>Ошибка загрузки</translation>
+        <translation>Загрузка не удалась</translation>
     </message>
 </context>
 </TS>

@@ -119,10 +119,6 @@
         <translation>会话</translation>
     </message>
     <message>
-        <source>Cover settings</source>
-        <translation type="vanished">封面设置</translation>
-    </message>
-    <message>
         <source>Night Mode</source>
         <translation>夜间模式</translation>
     </message>
@@ -1033,30 +1029,23 @@
 <context>
     <name>QuickGrid</name>
     <message>
-        <source>Long Press to edit</source>
-        <translation>长按以编辑</translation>
-    </message>
-    <message>
         <source>The Quick Grid is empty</source>
         <translation>未设置快速拨号</translation>
     </message>
-</context>
-<context>
-    <name>QuickGridAddButton</name>
     <message>
-        <source>Add</source>
-        <translation type="obsolete">添加</translation>
+        <source>Long Press to edit</source>
+        <translation>长按以编辑</translation>
     </message>
 </context>
 <context>
     <name>QuickGridBottomPanel</name>
     <message>
         <source>Add</source>
-        <translation type="unfinished">添加</translation>
+        <translation>添加</translation>
     </message>
     <message>
         <source>Done</source>
-        <translation type="unfinished"></translation>
+        <translation>完成</translation>
     </message>
 </context>
 <context>
@@ -1250,7 +1239,7 @@
     </message>
     <message>
         <source>Cover</source>
-        <translation type="unfinished"></translation>
+        <translation>封面</translation>
     </message>
     <message>
         <source>AdBlock</source>
@@ -1299,7 +1288,7 @@
     </message>
     <message>
         <source>Close last tab</source>
-        <translation type="unfinished"></translation>
+        <translation>关闭最后的标签</translation>
     </message>
 </context>
 <context>
@@ -1370,11 +1359,11 @@
     </message>
     <message>
         <source>Grabbing %1</source>
-        <translation type="unfinished"></translation>
+        <translation>正在抓取 %1</translation>
     </message>
     <message>
         <source>Decoding Signature for %1</source>
-        <translation type="unfinished"></translation>
+        <translation>正在解码 %1</translation>
     </message>
 </context>
 <context>

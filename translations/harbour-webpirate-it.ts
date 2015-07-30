@@ -119,10 +119,6 @@
         <translation>Sessioni</translation>
     </message>
     <message>
-        <source>Cover settings</source>
-        <translation type="vanished">Impostazioni Cover</translation>
-    </message>
-    <message>
         <source>Night Mode</source>
         <translation>Modalità Notte</translation>
     </message>
@@ -1033,12 +1029,12 @@
 <context>
     <name>QuickGrid</name>
     <message>
-        <source>Long Press to edit</source>
-        <translation>Premi a lungo per modificare</translation>
-    </message>
-    <message>
         <source>The Quick Grid is empty</source>
         <translation>La griglia è vuota</translation>
+    </message>
+    <message>
+        <source>Long Press to edit</source>
+        <translation>Premi a lungo per modificare</translation>
     </message>
 </context>
 <context>
@@ -1243,7 +1239,7 @@
     </message>
     <message>
         <source>Cover</source>
-        <translation type="unfinished"></translation>
+        <translation>Cover</translation>
     </message>
     <message>
         <source>AdBlock</source>

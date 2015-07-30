@@ -119,10 +119,6 @@
         <translation>Sessioner</translation>
     </message>
     <message>
-        <source>Cover settings</source>
-        <translation type="vanished">Miniatyrinställningar</translation>
-    </message>
-    <message>
         <source>Night Mode</source>
         <translation>Nattläge</translation>
     </message>
@@ -1033,30 +1029,23 @@
 <context>
     <name>QuickGrid</name>
     <message>
-        <source>Long Press to edit</source>
-        <translation>Långtryck för att redigera</translation>
-    </message>
-    <message>
         <source>The Quick Grid is empty</source>
         <translation>Snabbstartfältet är tomt</translation>
     </message>
-</context>
-<context>
-    <name>QuickGridAddButton</name>
     <message>
-        <source>Add</source>
-        <translation type="obsolete">Lägg till</translation>
+        <source>Long Press to edit</source>
+        <translation>Långtryck för att redigera</translation>
     </message>
 </context>
 <context>
     <name>QuickGridBottomPanel</name>
     <message>
         <source>Add</source>
-        <translation type="unfinished">Lägg till</translation>
+        <translation>Lägg till</translation>
     </message>
     <message>
         <source>Done</source>
-        <translation type="unfinished"></translation>
+        <translation>Klar</translation>
     </message>
 </context>
 <context>
@@ -1250,7 +1239,7 @@
     </message>
     <message>
         <source>Cover</source>
-        <translation type="unfinished"></translation>
+        <translation>Miniatyr</translation>
     </message>
     <message>
         <source>AdBlock</source>
@@ -1299,7 +1288,7 @@
     </message>
     <message>
         <source>Close last tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Stäng senaste fliken</translation>
     </message>
 </context>
 <context>
@@ -1370,11 +1359,11 @@
     </message>
     <message>
         <source>Grabbing %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Hämtar %1</translation>
     </message>
     <message>
         <source>Decoding Signature for %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Avkodar signaturen för %1</translation>
     </message>
 </context>
 <context>

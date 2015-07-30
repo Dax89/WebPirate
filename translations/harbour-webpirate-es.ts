@@ -119,10 +119,6 @@
         <translation>Sesiones</translation>
     </message>
     <message>
-        <source>Cover settings</source>
-        <translation type="vanished">Ajustes de la cubierta</translation>
-    </message>
-    <message>
         <source>Night Mode</source>
         <translation>Modo noche</translation>
     </message>
@@ -1034,19 +1030,12 @@
 <context>
     <name>QuickGrid</name>
     <message>
-        <source>Long Press to edit</source>
-        <translation>Mantener pulsado para editar</translation>
-    </message>
-    <message>
         <source>The Quick Grid is empty</source>
         <translation>La rejilla rápida está vacía</translation>
     </message>
-</context>
-<context>
-    <name>QuickGridAddButton</name>
     <message>
-        <source>Add</source>
-        <translation type="obsolete">Añadir</translation>
+        <source>Long Press to edit</source>
+        <translation>Mantener pulsado para editar</translation>
     </message>
 </context>
 <context>

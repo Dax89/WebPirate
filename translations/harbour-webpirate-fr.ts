@@ -119,10 +119,6 @@
         <translation>Sessions</translation>
     </message>
     <message>
-        <source>Cover settings</source>
-        <translation type="vanished">Paramètres de couverture</translation>
-    </message>
-    <message>
         <source>Night Mode</source>
         <translation>Mode nuit</translation>
     </message>
@@ -712,11 +708,11 @@
     </message>
     <message>
         <source>SD Card</source>
-        <translation type="unfinished"></translation>
+        <translation>Carte SD</translation>
     </message>
     <message>
         <source>Home</source>
-        <translation type="unfinished"></translation>
+        <translation>Page d’accueil</translation>
     </message>
 </context>
 <context>
@@ -1013,7 +1009,7 @@
     </message>
     <message>
         <source>Keep Favicons when deleting personal data</source>
-        <translation type="unfinished"></translation>
+        <translation>Gardez les Favicons lors de la suppression des données personnelles</translation>
     </message>
 </context>
 <context>
@@ -1033,19 +1029,12 @@
 <context>
     <name>QuickGrid</name>
     <message>
-        <source>Long Press to edit</source>
-        <translation>Appui long pour éditer</translation>
-    </message>
-    <message>
         <source>The Quick Grid is empty</source>
         <translation>La grille d&apos;accès rapide est vide</translation>
     </message>
-</context>
-<context>
-    <name>QuickGridAddButton</name>
     <message>
-        <source>Add</source>
-        <translation type="obsolete">Ajouter</translation>
+        <source>Long Press to edit</source>
+        <translation>Appui long pour éditer</translation>
     </message>
 </context>
 <context>
@@ -1306,7 +1295,7 @@
     <name>TextFieldPage</name>
     <message>
         <source>Send</source>
-        <translation type="unfinished"></translation>
+        <translation>Envoyer</translation>
     </message>
 </context>
 <context>

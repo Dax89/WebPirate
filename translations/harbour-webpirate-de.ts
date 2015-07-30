@@ -119,10 +119,6 @@
         <translation>Sitzungen</translation>
     </message>
     <message>
-        <source>Cover settings</source>
-        <translation type="vanished">Cover Einstellungen</translation>
-    </message>
-    <message>
         <source>Night Mode</source>
         <translation>Nachtmodus</translation>
     </message>
@@ -1033,30 +1029,23 @@
 <context>
     <name>QuickGrid</name>
     <message>
-        <source>Long Press to edit</source>
-        <translation>Zum Bearbeiten gedrückt halten</translation>
-    </message>
-    <message>
         <source>The Quick Grid is empty</source>
         <translation>Der Schnellstarter ist leer</translation>
     </message>
-</context>
-<context>
-    <name>QuickGridAddButton</name>
     <message>
-        <source>Add</source>
-        <translation type="obsolete">Hinzufügen</translation>
+        <source>Long Press to edit</source>
+        <translation>Zum Bearbeiten gedrückt halten</translation>
     </message>
 </context>
 <context>
     <name>QuickGridBottomPanel</name>
     <message>
         <source>Add</source>
-        <translation type="unfinished">Hinzufügen</translation>
+        <translation>Hinzufügen</translation>
     </message>
     <message>
         <source>Done</source>
-        <translation type="unfinished"></translation>
+        <translation>Erledigt</translation>
     </message>
 </context>
 <context>
@@ -1250,7 +1239,7 @@
     </message>
     <message>
         <source>Cover</source>
-        <translation type="unfinished"></translation>
+        <translation>Cover</translation>
     </message>
     <message>
         <source>AdBlock</source>
@@ -1299,14 +1288,14 @@
     </message>
     <message>
         <source>Close last tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Letzten Tab schließen</translation>
     </message>
 </context>
 <context>
     <name>TextFieldPage</name>
     <message>
         <source>Send</source>
-        <translation>Sebden</translation>
+        <translation>Senden</translation>
     </message>
 </context>
 <context>
@@ -1370,11 +1359,11 @@
     </message>
     <message>
         <source>Grabbing %1</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 erfassen</translation>
     </message>
     <message>
         <source>Decoding Signature for %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Signatur für %1 entschlüsseln</translation>
     </message>
 </context>
 <context>
