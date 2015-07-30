@@ -7,7 +7,7 @@ Item
     signal doneRequested()
 
     id: quickgridaddbutton
-    height: visible ? Theme.itemSizeSmall : 0
+    visible: height > 0
 
     Behavior on height {
         NumberAnimation { duration: 250; easing.type: Easing.InOutQuad }

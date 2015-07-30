@@ -45,7 +45,7 @@ Item
         property real spacing: Theme.paddingMedium
 
         id: quickgridview
-        anchors { left: parent.left; top: querybar.bottom; right: parent.right; bottom: quickgridbottompanel.top; topMargin: Theme.paddingLarge; bottomMargin: Theme.paddingMedium }
+        anchors { left: parent.left; top: querybar.bottom; right: parent.right; bottom: quickgridbottompanel.top; topMargin: Theme.paddingLarge }
         cellWidth: mainpage.isPortrait ? (width / 3) : (width / 4)
         cellHeight: cellWidth
         model: mainwindow.settings.quickgridmodel
@@ -124,7 +124,7 @@ Item
     {
         id: quickgridbottompanel
         anchors { left: parent.left; right: parent.right; bottom: parent.bottom }
-        visible: editMode && (mousearea.currentQuickId === -1)
+        height: editMode && (mousearea.currentQuickId === -1) ? Theme.itemSizeSmall : 0
 
         onAddRequested: pageStack.push(Qt.resolvedUrl("../../pages/QuickGridPage.qml"), { "settings": mainwindow.settings })
         onDoneRequested: disableEditMode();
