@@ -19,13 +19,6 @@ MouseArea
         tabview.currentIndex = index;
     }
 
-    onPressAndHold: {
-        sidebar.collapse();
-
-        tabmenu.selectedIndex = index;
-        tabmenu.show();
-    }
-
     Rectangle
     {
         id: tabbutton
@@ -40,16 +33,25 @@ MouseArea
             TabIcon
             {
                 id: tabicon
-                width: tabtitle.contentHeight
-                height: tabtitle.contentHeight
-                anchors { left: parent.left; leftMargin: Theme.paddingSmall; verticalCenter: parent.verticalCenter }
+                size: tabtitle.contentHeight
+                radius: tabbutton.radius
+                width: visible ? parent.height : 0
+                height: parent.height
+                anchors { left: parent.left; verticalCenter: parent.verticalCenter }
                 busy: loading
+
+                onPressAndHold: {
+                    sidebar.collapse();
+
+                    tabmenu.selectedIndex = index;
+                    tabmenu.show();
+                }
             }
 
             Text
             {
                 id: tabtitle
-                anchors { left: tabicon.right; right: closebutton.left; verticalCenter: parent.verticalCenter; leftMargin: Theme.paddingSmall }
+                anchors { left: tabicon.right; right: closebutton.left; verticalCenter: parent.verticalCenter }
                 font.pixelSize: Theme.fontSizeSmall
                 verticalAlignment: Text.AlignVCenter
                 horizontalAlignment: Text.AlignLeft

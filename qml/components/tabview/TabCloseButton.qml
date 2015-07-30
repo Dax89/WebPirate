@@ -19,7 +19,7 @@ MouseArea
         Rectangle
         {
             anchors { left: parent.left; top: parent.top; bottom: parent.bottom }
-            color: pressed ? Theme.rgba(parent.color, 0.1) : parent.color
+            color: pressed ? Theme.rgba(parent.color, 0.5) : parent.color
             width: parent.radius
         }
     }
