@@ -9,7 +9,7 @@ Item
     z: 20
 
     Behavior on width {
-        NumberAnimation { duration: 250; easing.type: Easing.InOutQuad }
+        NumberAnimation { duration: 200; easing.type: Easing.InOutQuad }
     }
 
     PanelBackground
