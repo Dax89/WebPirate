@@ -1239,7 +1239,7 @@
     </message>
     <message>
         <source>Cover</source>
-        <translation type="unfinished"></translation>
+        <translation>Portada</translation>
     </message>
     <message>
         <source>AdBlock</source>

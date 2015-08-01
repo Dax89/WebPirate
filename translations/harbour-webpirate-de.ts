@@ -108,7 +108,7 @@
     </message>
     <message>
         <source>Change settings</source>
-        <translation>Einstellungen ändern</translation>
+        <translation>Einstellungen</translation>
     </message>
     <message>
         <source>About Web Pirate</source>
@@ -144,7 +144,7 @@
     </message>
     <message>
         <source>Download</source>
-        <translation>Download</translation>
+        <translation>Herunterladen</translation>
     </message>
     <message>
         <source>Closed Tab</source>
@@ -285,7 +285,7 @@
     </message>
     <message>
         <source>Grabbed URLs</source>
-        <translation>Erfasste URLs</translation>
+        <translation>Vorhandene URLs</translation>
     </message>
     <message>
         <source>Play</source>
@@ -293,7 +293,7 @@
     </message>
     <message>
         <source>Download</source>
-        <translation>Download</translation>
+        <translation>Herunterladen</translation>
     </message>
     <message>
         <source>Grabbing video</source>
@@ -1359,7 +1359,7 @@
     </message>
     <message>
         <source>Grabbing %1</source>
-        <translation>%1 erfassen</translation>
+        <translation>%1 wird erfasst</translation>
     </message>
     <message>
         <source>Decoding Signature for %1</source>
