@@ -21,6 +21,7 @@ Item
                                             "textfield_selected": onTextFieldSelected,
                                             "lock_download": lockDownload,
                                             "webpage_style": webPageStyle,
+                                            "loadurl": loadUrlRequested,
                                             "newtab": newTabRequested,
                                             "window_open": onWindowOpen,
                                             "notification_created": onNotificationCreated,
@@ -144,6 +145,10 @@ Item
 
             var color = data.backgroundcolor;
             vscrolldecorator.color = "#" + ((1 << 24) + ((255 - color.r) << 16) + ((255 - color.g) << 8) + (255 - color.b)).toString(16).slice(1);
+        }
+
+        function loadUrlRequested(data) {
+            browsertab.load(data.url);
         }
 
         function newTabRequested(data) {

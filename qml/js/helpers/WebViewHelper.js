@@ -175,9 +175,9 @@ var __webpirate__ = {
             data.type = "lock_download";
             data.action = "mediaplayer";
         }
-        else if(target.hasAttribute("target"))
+        else if(target.hasAttribute("target") && target.href)
         {
-            data.type = "newtab";
+            data.type = target.hasChildNodes() ? "loadurl" : "newtab";
             data.url = target.href;
         }
         else if(target.tagName === "VIDEO")
