@@ -214,7 +214,7 @@ SilicaWebView
     onLoadingChanged: {
         if(loadRequest.status === WebView.LoadStartedStatus)
         {
-            if(browsertab.state == "loaderror")
+            if(browsertab.state === "loaderror")
             {
                 viewstack.pop(); // Pop out error page
                 browsertab.state == "webbrowser";
@@ -228,6 +228,7 @@ SilicaWebView
                 historymenu.hide();
             }
 
+            Qt.inputMethod.hide();
             actionbar.blockedPopups.clear();
             actionbar.evaporate();
             searchbar.evaporate();
