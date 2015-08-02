@@ -12,7 +12,13 @@ Page
 
     id: navigationhistorypage
     allowedOrientations: defaultAllowedOrientations
-    Component.onCompleted: History.fetchAll(historyModel);
+
+    onStatusChanged: {
+        if(status !== PageStatus.Active)
+            return;
+
+        History.fetchAll(historyModel);
+    }
 
     RemorsePopup { id: remorsepopup }
 
@@ -20,10 +26,15 @@ Page
     {
         VerticalScrollDecorator { flickable: listview }
 
-        PullDownMenu
-        {
-            MenuItem
-            {
+        BusyIndicator {
+            id: busyindicator
+            anchors.centerIn: parent
+            running: historyModel.busy
+            size: BusyIndicatorSize.Large
+        }
+
+        PullDownMenu {
+            MenuItem {
                 text: qsTr("Delete History")
 
                 onClicked: {
