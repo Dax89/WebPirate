@@ -84,6 +84,8 @@ Item
             anchors.fill: parent
 
             onClicked: {
+                sidebar.collapse();
+
                 if(editMode) {
                     disableEditMode();
                     return;
