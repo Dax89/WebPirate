@@ -79,7 +79,7 @@ SilicaListView
 
         Row {
             anchors.fill: parent
-            spacing: Theme.paddingSmall
+            spacing: Theme.paddingMedium
 
             Image
             {
@@ -90,7 +90,21 @@ SilicaListView
                 height: Theme.iconSizeSmall
                 fillMode: Image.PreserveAspectFit
                 anchors.verticalCenter: parent.verticalCenter
-                source: isfolder ? "image://theme/icon-m-folder" : mainwindow.settings.icondatabase.provideIcon(url)
+
+                source: {
+                    if(isfolder)
+                        return "image://theme/icon-m-folder"
+
+
+                    return mainwindow.settings.icondatabase.provideIcon(url);
+                }
+
+                onStatusChanged: {
+                    if((status !== Image.Error) || isfolder)
+                        return;
+
+                   source = "image://theme/icon-m-favorite-selected";
+                }
             }
 
             Label {
