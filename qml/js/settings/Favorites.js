@@ -61,6 +61,7 @@ function clear()
 
 function readChildren(parentid, model)
 {
+    model.busy = true;
     model.clear();
 
     instance().transaction(function(tx) {
@@ -68,6 +69,8 @@ function readChildren(parentid, model)
 
         for(var i = 0; i < res.rows.length; i++)
             model.append(res.rows[i]);
+
+        model.busy = false;
     });
 }
 

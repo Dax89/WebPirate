@@ -5,14 +5,15 @@ import "../js/settings/Favorites.js" as Favorites
 ListModel
 {
     property int currentId
+    property bool busy: true
 
-    id: favorites
+    id: favoritesmodel
 
     function indexOf(favoriteid)
     {
-        for(var i = 0; i < favorites.count; i++)
+        for(var i = 0; i < favoritesmodel.count; i++)
         {
-            if(favoriteid === favorites.get(i).favoriteid)
+            if(favoriteid === favoritesmodel.get(i).favoriteid)
                 return i;
         }
 
@@ -21,17 +22,21 @@ ListModel
 
     function addFolderInView(title, favoriteid, parentid)
     {
-        favorites.append({ "parentid": parentid, "favoriteid": favoriteid, "url": "", "title": title, "isfolder": 1 });
+        favoritesmodel.append({ "parentid": parentid, "favoriteid": favoriteid, "url": "", "title": title, "isfolder": 1 });
     }
 
     function addUrlInView(title, url, favoriteid, parentid)
     {
-        favorites.append({ "parentid": parentid, "favoriteid": favoriteid, "url": url, "title": title, "isfolder": 0 });
+        favoritesmodel.append({ "parentid": parentid, "favoriteid": favoriteid, "url": url, "title": title, "isfolder": 0 });
     }
 
     function currentFolder()
     {
         var favorite = Favorites.get(currentId);
+
+        if(!favorite)
+            return "";
+
         return favorite.title;
     }
 
@@ -40,7 +45,7 @@ ListModel
         var favoriteid = Favorites.addFolder(title, parentid);
 
         if(currentId === parentid)
-            favorites.addFolderInView(title, favoriteid, parentid);
+            favoritesmodel.addFolderInView(title, favoriteid, parentid);
     }
 
     function addUrl(title, url, parentid)
@@ -48,7 +53,7 @@ ListModel
         var favoriteid = Favorites.addUrl(title, url, parentid);
 
         if(currentId === parentid)
-            favorites.addUrlInView(title, url, favoriteid, parentid);
+            favoritesmodel.addUrlInView(title, url, favoriteid, parentid);
     }
 
     function replaceFolder(favoriteid, parentid, title)
@@ -59,7 +64,7 @@ ListModel
 
             if(idx !== -1)
             {
-                var favorite = favorites.get(idx);
+                var favorite = favoritesmodel.get(idx);
                 favorite.title = title;
             }
         }
@@ -75,7 +80,7 @@ ListModel
 
             if(idx !== -1)
             {
-                var favorite = favorites.get(idx);
+                var favorite = favoritesmodel.get(idx);
                 favorite.title = title;
                 favorite.url = url;
             }
@@ -91,7 +96,7 @@ ListModel
             var idx = indexOf(favoriteid);
 
             if(idx !== -1)
-                favorites.remove(idx);
+                favoritesmodel.remove(idx);
         }
 
         Favorites.remove(favoriteid);
@@ -100,7 +105,7 @@ ListModel
     function jumpTo(favoriteid)
     {
         currentId = favoriteid;
-        Favorites.readChildren(favoriteid, favorites);
+        Favorites.readChildren(favoriteid, favoritesmodel);
     }
 
     function jumpBack()

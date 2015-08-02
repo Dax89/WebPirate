@@ -17,6 +17,7 @@ class FolderListModel : public QAbstractListModel
     Q_PROPERTY(QString homeFolder READ homeFolder CONSTANT FINAL)
     Q_PROPERTY(QString sdcardFolder READ sdcardFolder CONSTANT FINAL)
     Q_PROPERTY(QString directoryName READ directoryName NOTIFY directoryNameChanged)
+    Q_PROPERTY(QString filter READ filter WRITE setFilter NOTIFY filterChanged)
 
     public:
         enum Roles { FileIconRole = Qt::UserRole + 1, FileNameRole = Qt::UserRole + 2, FilePathRole = Qt::UserRole + 3,

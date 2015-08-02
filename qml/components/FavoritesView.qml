@@ -10,6 +10,14 @@ SilicaListView
 
     VerticalScrollDecorator { flickable: favoritesview }
 
+    BusyIndicator {
+        id: busyindicator
+        anchors.centerIn: parent
+        running: favoritesmodel.busy
+
+        size: BusyIndicatorSize.Large
+    }
+
     id: favoritesview
     model: FavoritesModel { id: favoritesmodel }
     quickScroll: true
@@ -93,8 +101,7 @@ SilicaListView
 
                 source: {
                     if(isfolder)
-                        return "image://theme/icon-m-folder"
-
+                        return "image://theme/icon-m-folder";
 
                     return mainwindow.settings.icondatabase.provideIcon(url);
                 }

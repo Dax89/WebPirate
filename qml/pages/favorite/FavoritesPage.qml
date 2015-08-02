@@ -92,7 +92,10 @@ Page
         }
     }
 
-    Component.onCompleted: {
+    onStatusChanged: {
+        if(status !== PageStatus.Active)
+            return;
+
         favoritesview.model.jumpTo(folderId);
         favoritesview.headerItem.title = (folderId === 0 ? qsTr("Favorites") : favoritesview.model.currentFolder());
     }
