@@ -59,12 +59,15 @@ VisualItemModel
     SidebarItem
     {
         function execute() {
+            if(!enabled)
+                return;
+
             pageStack.push(Qt.resolvedUrl("../pages/closedtabs/ClosedTabsPage.qml"), { "tabView": tabview });
             sidebar.collapse();
         }
 
         id: siclosedtabs
-        highlighted: gesturearea.pressed && (gesturearea.item === siclosedtabs)
+        highlighted: enabled && gesturearea.pressed && (gesturearea.item === siclosedtabs)
         icon: "image://theme/icon-m-tab"
         itemText: qsTr("Closed Tabs")
         singleItemText: qsTr("Closed Tab")
