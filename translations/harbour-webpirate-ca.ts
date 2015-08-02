@@ -92,67 +92,67 @@
     <name>ActionSidebar</name>
     <message>
         <source>Favorites</source>
-        <translation>Preferits</translation>
+        <translation type="vanished">Preferits</translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation>Descàrregues</translation>
+        <translation type="vanished">Descàrregues</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation>Configuració</translation>
+        <translation type="vanished">Configuració</translation>
     </message>
     <message>
         <source>General</source>
-        <translation>General</translation>
+        <translation type="vanished">General</translation>
     </message>
     <message>
         <source>Change settings</source>
-        <translation>Canvia la configuració</translation>
+        <translation type="vanished">Canvia la configuració</translation>
     </message>
     <message>
         <source>About Web Pirate</source>
-        <translation>Quant a Web Pirate</translation>
+        <translation type="vanished">Quant a Web Pirate</translation>
     </message>
     <message>
         <source>Sessions</source>
-        <translation>Sessions</translation>
+        <translation type="vanished">Sessions</translation>
     </message>
     <message>
         <source>Night Mode</source>
-        <translation>Mode nocturn</translation>
+        <translation type="vanished">Mode nocturn</translation>
     </message>
     <message>
         <source>Extensions</source>
-        <translation>Extensions</translation>
+        <translation type="vanished">Extensions</translation>
     </message>
     <message>
         <source>Ad Block</source>
-        <translation>Ad Block</translation>
+        <translation type="vanished">Ad Block</translation>
     </message>
     <message>
         <source>Navigation History</source>
-        <translation>Historial de navegació</translation>
+        <translation type="vanished">Historial de navegació</translation>
     </message>
     <message>
         <source>Closed Tabs</source>
-        <translation>Pestanyes tancades</translation>
+        <translation type="vanished">Pestanyes tancades</translation>
     </message>
     <message>
         <source>Popup Blocker</source>
-        <translation>Blocador de finestres emergents</translation>
+        <translation type="vanished">Blocador de finestres emergents</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation>Descarrega</translation>
+        <translation type="vanished">Descarrega</translation>
     </message>
     <message>
         <source>Closed Tab</source>
-        <translation>Pestanya tancada</translation>
+        <translation type="vanished">Pestanya tancada</translation>
     </message>
     <message>
         <source>Cookies</source>
-        <translation>Galetes</translation>
+        <translation type="vanished">Galetes</translation>
     </message>
 </context>
 <context>
@@ -1251,6 +1251,73 @@
     <message>
         <source>Share</source>
         <translation>Comparteix</translation>
+    </message>
+</context>
+<context>
+    <name>SidebarModel</name>
+    <message>
+        <source>General</source>
+        <translation type="unfinished">General</translation>
+    </message>
+    <message>
+        <source>Favorites</source>
+        <translation type="unfinished">Preferits</translation>
+    </message>
+    <message>
+        <source>Sessions</source>
+        <translation type="unfinished">Sessions</translation>
+    </message>
+    <message>
+        <source>Downloads</source>
+        <translation type="unfinished">Descàrregues</translation>
+    </message>
+    <message>
+        <source>Download</source>
+        <translation type="unfinished">Descarrega</translation>
+    </message>
+    <message>
+        <source>Closed Tabs</source>
+        <translation type="unfinished">Pestanyes tancades</translation>
+    </message>
+    <message>
+        <source>Closed Tab</source>
+        <translation type="unfinished">Pestanya tancada</translation>
+    </message>
+    <message>
+        <source>Navigation History</source>
+        <translation type="unfinished">Historial de navegació</translation>
+    </message>
+    <message>
+        <source>Cookies</source>
+        <translation type="unfinished">Galetes</translation>
+    </message>
+    <message>
+        <source>Extensions</source>
+        <translation type="unfinished">Extensions</translation>
+    </message>
+    <message>
+        <source>Ad Block</source>
+        <translation type="unfinished">Ad Block</translation>
+    </message>
+    <message>
+        <source>Night Mode</source>
+        <translation type="unfinished">Mode nocturn</translation>
+    </message>
+    <message>
+        <source>Settings</source>
+        <translation type="unfinished">Configuració</translation>
+    </message>
+    <message>
+        <source>Change settings</source>
+        <translation type="unfinished">Canvia la configuració</translation>
+    </message>
+    <message>
+        <source>Popup Blocker</source>
+        <translation type="unfinished">Blocador de finestres emergents</translation>
+    </message>
+    <message>
+        <source>About Web Pirate</source>
+        <translation type="unfinished">Quant a Web Pirate</translation>
     </message>
 </context>
 <context>

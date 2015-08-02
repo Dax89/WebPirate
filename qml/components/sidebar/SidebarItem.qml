@@ -11,13 +11,11 @@ BackgroundItem
 
     id: sidebaritem
     height: Theme.itemSizeExtraSmall
-    anchors.leftMargin: Theme.paddingMedium
-    onClicked: sidebar.collapse()
 
     Row
     {
         spacing: Theme.paddingSmall
-        anchors.fill: parent
+        anchors { fill: parent; leftMargin: Theme.paddingMedium }
 
         Image
         {

@@ -8,9 +8,8 @@ BackgroundItem
     property alias text: lblaction.text
 
     height: Theme.itemSizeExtraSmall
-    anchors.leftMargin: Theme.paddingMedium
 
-    onClicked: {
+    function execute() {
         if(switchOnClick) {
             switchitem.checked = !switchItem.checked;
             return;
@@ -22,7 +21,7 @@ BackgroundItem
     Row
     {
         spacing: Theme.paddingSmall
-        anchors.fill: parent
+        anchors { fill: parent; leftMargin: Theme.paddingMedium }
 
         Switch
         {

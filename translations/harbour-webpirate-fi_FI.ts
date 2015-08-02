@@ -92,67 +92,67 @@
     <name>ActionSidebar</name>
     <message>
         <source>Favorites</source>
-        <translation>Suosikit</translation>
+        <translation type="vanished">Suosikit</translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation>Lataukset</translation>
+        <translation type="vanished">Lataukset</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation>Asetukset</translation>
+        <translation type="vanished">Asetukset</translation>
     </message>
     <message>
         <source>General</source>
-        <translation>Yleistä</translation>
+        <translation type="vanished">Yleistä</translation>
     </message>
     <message>
         <source>Change settings</source>
-        <translation>Muokkaa asetuksia</translation>
+        <translation type="vanished">Muokkaa asetuksia</translation>
     </message>
     <message>
         <source>About Web Pirate</source>
-        <translation>Tietoja Web Piratesta</translation>
+        <translation type="vanished">Tietoja Web Piratesta</translation>
     </message>
     <message>
         <source>Sessions</source>
-        <translation>Istunnot</translation>
+        <translation type="vanished">Istunnot</translation>
     </message>
     <message>
         <source>Night Mode</source>
-        <translation>Yötila</translation>
+        <translation type="vanished">Yötila</translation>
     </message>
     <message>
         <source>Extensions</source>
-        <translation>Lisäosat</translation>
+        <translation type="vanished">Lisäosat</translation>
     </message>
     <message>
         <source>Ad Block</source>
-        <translation>AdBlock</translation>
+        <translation type="vanished">AdBlock</translation>
     </message>
     <message>
         <source>Navigation History</source>
-        <translation>Selaushistoria</translation>
+        <translation type="vanished">Selaushistoria</translation>
     </message>
     <message>
         <source>Closed Tabs</source>
-        <translation>Suljetut välilehdet</translation>
+        <translation type="vanished">Suljetut välilehdet</translation>
     </message>
     <message>
         <source>Popup Blocker</source>
-        <translation>Popup -ikkunoiden esto</translation>
+        <translation type="vanished">Popup -ikkunoiden esto</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation>Lataa</translation>
+        <translation type="vanished">Lataa</translation>
     </message>
     <message>
         <source>Closed Tab</source>
-        <translation>Suljettu välilehti</translation>
+        <translation type="vanished">Suljettu välilehti</translation>
     </message>
     <message>
         <source>Cookies</source>
-        <translation>Evästeet</translation>
+        <translation type="vanished">Evästeet</translation>
     </message>
 </context>
 <context>
@@ -1251,6 +1251,73 @@
     <message>
         <source>Share</source>
         <translation>Jaa</translation>
+    </message>
+</context>
+<context>
+    <name>SidebarModel</name>
+    <message>
+        <source>General</source>
+        <translation type="unfinished">Yleistä</translation>
+    </message>
+    <message>
+        <source>Favorites</source>
+        <translation type="unfinished">Suosikit</translation>
+    </message>
+    <message>
+        <source>Sessions</source>
+        <translation type="unfinished">Istunnot</translation>
+    </message>
+    <message>
+        <source>Downloads</source>
+        <translation type="unfinished">Lataukset</translation>
+    </message>
+    <message>
+        <source>Download</source>
+        <translation type="unfinished">Lataa</translation>
+    </message>
+    <message>
+        <source>Closed Tabs</source>
+        <translation type="unfinished">Suljetut välilehdet</translation>
+    </message>
+    <message>
+        <source>Closed Tab</source>
+        <translation type="unfinished">Suljettu välilehti</translation>
+    </message>
+    <message>
+        <source>Navigation History</source>
+        <translation type="unfinished">Selaushistoria</translation>
+    </message>
+    <message>
+        <source>Cookies</source>
+        <translation type="unfinished">Evästeet</translation>
+    </message>
+    <message>
+        <source>Extensions</source>
+        <translation type="unfinished">Lisäosat</translation>
+    </message>
+    <message>
+        <source>Ad Block</source>
+        <translation type="unfinished">AdBlock</translation>
+    </message>
+    <message>
+        <source>Night Mode</source>
+        <translation type="unfinished">Yötila</translation>
+    </message>
+    <message>
+        <source>Settings</source>
+        <translation type="unfinished">Asetukset</translation>
+    </message>
+    <message>
+        <source>Change settings</source>
+        <translation type="unfinished">Muokkaa asetuksia</translation>
+    </message>
+    <message>
+        <source>Popup Blocker</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>About Web Pirate</source>
+        <translation type="unfinished">Tietoja Web Piratesta</translation>
     </message>
 </context>
 <context>

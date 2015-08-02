@@ -89,73 +89,6 @@
     </message>
 </context>
 <context>
-    <name>ActionSidebar</name>
-    <message>
-        <source>Favorites</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Downloads</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Settings</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>General</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Change settings</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>About Web Pirate</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Sessions</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Night Mode</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Extensions</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Ad Block</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Navigation History</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Closed Tabs</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Popup Blocker</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Closed Tab</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Cookies</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
     <name>AdBlockDownloaderPage</name>
     <message>
         <source>AdBlock Updater</source>
@@ -1250,6 +1183,73 @@
     <name>ShareMenu</name>
     <message>
         <source>Share</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SidebarModel</name>
+    <message>
+        <source>General</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Favorites</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Sessions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Downloads</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Download</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Closed Tabs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Closed Tab</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Navigation History</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cookies</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Extensions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Ad Block</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Night Mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Change settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Popup Blocker</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>About Web Pirate</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

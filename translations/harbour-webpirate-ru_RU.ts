@@ -92,67 +92,67 @@
     <name>ActionSidebar</name>
     <message>
         <source>Favorites</source>
-        <translation>Закладки</translation>
+        <translation type="vanished">Закладки</translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation>Загрузки</translation>
+        <translation type="vanished">Загрузки</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation>Настройки</translation>
+        <translation type="vanished">Настройки</translation>
     </message>
     <message>
         <source>General</source>
-        <translation>Основные</translation>
+        <translation type="vanished">Основные</translation>
     </message>
     <message>
         <source>Change settings</source>
-        <translation>Изменить настройки </translation>
+        <translation type="vanished">Изменить настройки </translation>
     </message>
     <message>
         <source>About Web Pirate</source>
-        <translation>О браузере</translation>
+        <translation type="vanished">О браузере</translation>
     </message>
     <message>
         <source>Sessions</source>
-        <translation>Сессии</translation>
+        <translation type="vanished">Сессии</translation>
     </message>
     <message>
         <source>Night Mode</source>
-        <translation>Ночной режим</translation>
+        <translation type="vanished">Ночной режим</translation>
     </message>
     <message>
         <source>Extensions</source>
-        <translation>Расширения</translation>
+        <translation type="vanished">Расширения</translation>
     </message>
     <message>
         <source>Ad Block</source>
-        <translation>Блокирование рекламы</translation>
+        <translation type="vanished">Блокирование рекламы</translation>
     </message>
     <message>
         <source>Navigation History</source>
-        <translation>Журнал</translation>
+        <translation type="vanished">Журнал</translation>
     </message>
     <message>
         <source>Closed Tabs</source>
-        <translation>Закрытые вкладки</translation>
+        <translation type="vanished">Закрытые вкладки</translation>
     </message>
     <message>
         <source>Popup Blocker</source>
-        <translation>Блокирование всплывающих окон</translation>
+        <translation type="vanished">Блокирование всплывающих окон</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation>Скачать</translation>
+        <translation type="vanished">Скачать</translation>
     </message>
     <message>
         <source>Closed Tab</source>
-        <translation>Закрыть вкладку</translation>
+        <translation type="vanished">Закрыть вкладку</translation>
     </message>
     <message>
         <source>Cookies</source>
-        <translation>Cookies</translation>
+        <translation type="vanished">Cookies</translation>
     </message>
 </context>
 <context>
@@ -1251,6 +1251,73 @@
     <message>
         <source>Share</source>
         <translation>Поделиться</translation>
+    </message>
+</context>
+<context>
+    <name>SidebarModel</name>
+    <message>
+        <source>General</source>
+        <translation type="unfinished">Основные</translation>
+    </message>
+    <message>
+        <source>Favorites</source>
+        <translation type="unfinished">Закладки</translation>
+    </message>
+    <message>
+        <source>Sessions</source>
+        <translation type="unfinished">Сессии</translation>
+    </message>
+    <message>
+        <source>Downloads</source>
+        <translation type="unfinished">Загрузки</translation>
+    </message>
+    <message>
+        <source>Download</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Closed Tabs</source>
+        <translation type="unfinished">Закрытые вкладки</translation>
+    </message>
+    <message>
+        <source>Closed Tab</source>
+        <translation type="unfinished">Закрыть вкладку</translation>
+    </message>
+    <message>
+        <source>Navigation History</source>
+        <translation type="unfinished">Журнал</translation>
+    </message>
+    <message>
+        <source>Cookies</source>
+        <translation type="unfinished">Cookies</translation>
+    </message>
+    <message>
+        <source>Extensions</source>
+        <translation type="unfinished">Расширения</translation>
+    </message>
+    <message>
+        <source>Ad Block</source>
+        <translation type="unfinished">Блокирование рекламы</translation>
+    </message>
+    <message>
+        <source>Night Mode</source>
+        <translation type="unfinished">Ночной режим</translation>
+    </message>
+    <message>
+        <source>Settings</source>
+        <translation type="unfinished">Настройки</translation>
+    </message>
+    <message>
+        <source>Change settings</source>
+        <translation type="unfinished">Изменить настройки </translation>
+    </message>
+    <message>
+        <source>Popup Blocker</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>About Web Pirate</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

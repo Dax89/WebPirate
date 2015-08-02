@@ -92,67 +92,67 @@
     <name>ActionSidebar</name>
     <message>
         <source>Favorites</source>
-        <translation>Zaznamki</translation>
+        <translation type="vanished">Zaznamki</translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation>Prenosi</translation>
+        <translation type="vanished">Prenosi</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation>Nastavitve</translation>
+        <translation type="vanished">Nastavitve</translation>
     </message>
     <message>
         <source>General</source>
-        <translation>Splošno</translation>
+        <translation type="vanished">Splošno</translation>
     </message>
     <message>
         <source>Change settings</source>
-        <translation>Spremeni nastavitve</translation>
+        <translation type="vanished">Spremeni nastavitve</translation>
     </message>
     <message>
         <source>About Web Pirate</source>
-        <translation>O Web Pirate</translation>
+        <translation type="vanished">O Web Pirate</translation>
     </message>
     <message>
         <source>Sessions</source>
-        <translation>Seje</translation>
+        <translation type="vanished">Seje</translation>
     </message>
     <message>
         <source>Night Mode</source>
-        <translation>Nočni način</translation>
+        <translation type="vanished">Nočni način</translation>
     </message>
     <message>
         <source>Extensions</source>
-        <translation>Razširitve</translation>
+        <translation type="vanished">Razširitve</translation>
     </message>
     <message>
         <source>Ad Block</source>
-        <translation>Ad Block</translation>
+        <translation type="vanished">Ad Block</translation>
     </message>
     <message>
         <source>Navigation History</source>
-        <translation>Zgodovina brskanja</translation>
+        <translation type="vanished">Zgodovina brskanja</translation>
     </message>
     <message>
         <source>Closed Tabs</source>
-        <translation>Zaprti zavihki</translation>
+        <translation type="vanished">Zaprti zavihki</translation>
     </message>
     <message>
         <source>Popup Blocker</source>
-        <translation>Blokiranje pojavnih oken</translation>
+        <translation type="vanished">Blokiranje pojavnih oken</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation>Prenos</translation>
+        <translation type="vanished">Prenos</translation>
     </message>
     <message>
         <source>Closed Tab</source>
-        <translation>Zaprt zavihek</translation>
+        <translation type="vanished">Zaprt zavihek</translation>
     </message>
     <message>
         <source>Cookies</source>
-        <translation>Piškotki</translation>
+        <translation type="vanished">Piškotki</translation>
     </message>
 </context>
 <context>
@@ -1251,6 +1251,73 @@
     <message>
         <source>Share</source>
         <translation>Deli</translation>
+    </message>
+</context>
+<context>
+    <name>SidebarModel</name>
+    <message>
+        <source>General</source>
+        <translation type="unfinished">Splošno</translation>
+    </message>
+    <message>
+        <source>Favorites</source>
+        <translation type="unfinished">Zaznamki</translation>
+    </message>
+    <message>
+        <source>Sessions</source>
+        <translation type="unfinished">Seje</translation>
+    </message>
+    <message>
+        <source>Downloads</source>
+        <translation type="unfinished">Prenosi</translation>
+    </message>
+    <message>
+        <source>Download</source>
+        <translation type="unfinished">Prenos</translation>
+    </message>
+    <message>
+        <source>Closed Tabs</source>
+        <translation type="unfinished">Zaprti zavihki</translation>
+    </message>
+    <message>
+        <source>Closed Tab</source>
+        <translation type="unfinished">Zaprt zavihek</translation>
+    </message>
+    <message>
+        <source>Navigation History</source>
+        <translation type="unfinished">Zgodovina brskanja</translation>
+    </message>
+    <message>
+        <source>Cookies</source>
+        <translation type="unfinished">Piškotki</translation>
+    </message>
+    <message>
+        <source>Extensions</source>
+        <translation type="unfinished">Razširitve</translation>
+    </message>
+    <message>
+        <source>Ad Block</source>
+        <translation type="unfinished">Ad Block</translation>
+    </message>
+    <message>
+        <source>Night Mode</source>
+        <translation type="unfinished">Nočni način</translation>
+    </message>
+    <message>
+        <source>Settings</source>
+        <translation type="unfinished">Nastavitve</translation>
+    </message>
+    <message>
+        <source>Change settings</source>
+        <translation type="unfinished">Spremeni nastavitve</translation>
+    </message>
+    <message>
+        <source>Popup Blocker</source>
+        <translation type="unfinished">Blokiranje pojavnih oken</translation>
+    </message>
+    <message>
+        <source>About Web Pirate</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

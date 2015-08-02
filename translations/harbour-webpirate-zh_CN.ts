@@ -92,67 +92,67 @@
     <name>ActionSidebar</name>
     <message>
         <source>Favorites</source>
-        <translation>书签</translation>
+        <translation type="vanished">书签</translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation>下载</translation>
+        <translation type="vanished">下载</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation>设置</translation>
+        <translation type="vanished">设置</translation>
     </message>
     <message>
         <source>General</source>
-        <translation>常规</translation>
+        <translation type="vanished">常规</translation>
     </message>
     <message>
         <source>Change settings</source>
-        <translation>更改设置</translation>
+        <translation type="vanished">更改设置</translation>
     </message>
     <message>
         <source>About Web Pirate</source>
-        <translation>关于 Web Pirate</translation>
+        <translation type="vanished">关于 Web Pirate</translation>
     </message>
     <message>
         <source>Sessions</source>
-        <translation>会话</translation>
+        <translation type="vanished">会话</translation>
     </message>
     <message>
         <source>Night Mode</source>
-        <translation>夜间模式</translation>
+        <translation type="vanished">夜间模式</translation>
     </message>
     <message>
         <source>Extensions</source>
-        <translation>扩展</translation>
+        <translation type="vanished">扩展</translation>
     </message>
     <message>
         <source>Ad Block</source>
-        <translation>广告屏蔽</translation>
+        <translation type="vanished">广告屏蔽</translation>
     </message>
     <message>
         <source>Navigation History</source>
-        <translation>浏览历史</translation>
+        <translation type="vanished">浏览历史</translation>
     </message>
     <message>
         <source>Closed Tabs</source>
-        <translation>已关闭的标签页</translation>
+        <translation type="vanished">已关闭的标签页</translation>
     </message>
     <message>
         <source>Popup Blocker</source>
-        <translation>阻止弹出页面</translation>
+        <translation type="vanished">阻止弹出页面</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation>下载</translation>
+        <translation type="vanished">下载</translation>
     </message>
     <message>
         <source>Closed Tab</source>
-        <translation>已关闭的标签页</translation>
+        <translation type="vanished">已关闭的标签页</translation>
     </message>
     <message>
         <source>Cookies</source>
-        <translation>Cookie</translation>
+        <translation type="vanished">Cookie</translation>
     </message>
 </context>
 <context>
@@ -1251,6 +1251,73 @@
     <message>
         <source>Share</source>
         <translation>分享</translation>
+    </message>
+</context>
+<context>
+    <name>SidebarModel</name>
+    <message>
+        <source>General</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Favorites</source>
+        <translation type="unfinished">书签</translation>
+    </message>
+    <message>
+        <source>Sessions</source>
+        <translation type="unfinished">会话</translation>
+    </message>
+    <message>
+        <source>Downloads</source>
+        <translation type="unfinished">下载</translation>
+    </message>
+    <message>
+        <source>Download</source>
+        <translation type="unfinished">下载</translation>
+    </message>
+    <message>
+        <source>Closed Tabs</source>
+        <translation type="unfinished">已关闭的标签页</translation>
+    </message>
+    <message>
+        <source>Closed Tab</source>
+        <translation type="unfinished">已关闭的标签页</translation>
+    </message>
+    <message>
+        <source>Navigation History</source>
+        <translation type="unfinished">浏览历史</translation>
+    </message>
+    <message>
+        <source>Cookies</source>
+        <translation type="unfinished">Cookie</translation>
+    </message>
+    <message>
+        <source>Extensions</source>
+        <translation type="unfinished">扩展</translation>
+    </message>
+    <message>
+        <source>Ad Block</source>
+        <translation type="unfinished">广告屏蔽</translation>
+    </message>
+    <message>
+        <source>Night Mode</source>
+        <translation type="unfinished">夜间模式</translation>
+    </message>
+    <message>
+        <source>Settings</source>
+        <translation type="unfinished">设置</translation>
+    </message>
+    <message>
+        <source>Change settings</source>
+        <translation type="unfinished">更改设置</translation>
+    </message>
+    <message>
+        <source>Popup Blocker</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>About Web Pirate</source>
+        <translation type="unfinished">关于 Web Pirate</translation>
     </message>
 </context>
 <context>

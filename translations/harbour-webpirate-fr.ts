@@ -92,67 +92,67 @@
     <name>ActionSidebar</name>
     <message>
         <source>Favorites</source>
-        <translation>Favoris</translation>
+        <translation type="vanished">Favoris</translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation>Téléchargements</translation>
+        <translation type="vanished">Téléchargements</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation>Paramètres</translation>
+        <translation type="vanished">Paramètres</translation>
     </message>
     <message>
         <source>General</source>
-        <translation>Général</translation>
+        <translation type="vanished">Général</translation>
     </message>
     <message>
         <source>Change settings</source>
-        <translation>Changer les paramètres</translation>
+        <translation type="vanished">Changer les paramètres</translation>
     </message>
     <message>
         <source>About Web Pirate</source>
-        <translation>A propos de Web Pirate</translation>
+        <translation type="vanished">A propos de Web Pirate</translation>
     </message>
     <message>
         <source>Sessions</source>
-        <translation>Sessions</translation>
+        <translation type="vanished">Sessions</translation>
     </message>
     <message>
         <source>Night Mode</source>
-        <translation>Mode nuit</translation>
+        <translation type="vanished">Mode nuit</translation>
     </message>
     <message>
         <source>Extensions</source>
-        <translation>Extensions</translation>
+        <translation type="vanished">Extensions</translation>
     </message>
     <message>
         <source>Ad Block</source>
-        <translation>AdBlock</translation>
+        <translation type="vanished">AdBlock</translation>
     </message>
     <message>
         <source>Navigation History</source>
-        <translation>Historique</translation>
+        <translation type="vanished">Historique</translation>
     </message>
     <message>
         <source>Closed Tabs</source>
-        <translation>Onglets fermés</translation>
+        <translation type="vanished">Onglets fermés</translation>
     </message>
     <message>
         <source>Popup Blocker</source>
-        <translation>Bloqueur de Popup</translation>
+        <translation type="vanished">Bloqueur de Popup</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation>Télécharger</translation>
+        <translation type="vanished">Télécharger</translation>
     </message>
     <message>
         <source>Closed Tab</source>
-        <translation>Onglet fermé</translation>
+        <translation type="vanished">Onglet fermé</translation>
     </message>
     <message>
         <source>Cookies</source>
-        <translation>Cookies</translation>
+        <translation type="vanished">Cookies</translation>
     </message>
 </context>
 <context>
@@ -1251,6 +1251,73 @@
     <message>
         <source>Share</source>
         <translation>Partager</translation>
+    </message>
+</context>
+<context>
+    <name>SidebarModel</name>
+    <message>
+        <source>General</source>
+        <translation type="unfinished">Général</translation>
+    </message>
+    <message>
+        <source>Favorites</source>
+        <translation type="unfinished">Favoris</translation>
+    </message>
+    <message>
+        <source>Sessions</source>
+        <translation type="unfinished">Sessions</translation>
+    </message>
+    <message>
+        <source>Downloads</source>
+        <translation type="unfinished">Téléchargements</translation>
+    </message>
+    <message>
+        <source>Download</source>
+        <translation type="unfinished">Télécharger</translation>
+    </message>
+    <message>
+        <source>Closed Tabs</source>
+        <translation type="unfinished">Onglets fermés</translation>
+    </message>
+    <message>
+        <source>Closed Tab</source>
+        <translation type="unfinished">Onglet fermé</translation>
+    </message>
+    <message>
+        <source>Navigation History</source>
+        <translation type="unfinished">Historique</translation>
+    </message>
+    <message>
+        <source>Cookies</source>
+        <translation type="unfinished">Cookies</translation>
+    </message>
+    <message>
+        <source>Extensions</source>
+        <translation type="unfinished">Extensions</translation>
+    </message>
+    <message>
+        <source>Ad Block</source>
+        <translation type="unfinished">AdBlock</translation>
+    </message>
+    <message>
+        <source>Night Mode</source>
+        <translation type="unfinished">Mode nuit</translation>
+    </message>
+    <message>
+        <source>Settings</source>
+        <translation type="unfinished">Paramètres</translation>
+    </message>
+    <message>
+        <source>Change settings</source>
+        <translation type="unfinished">Changer les paramètres</translation>
+    </message>
+    <message>
+        <source>Popup Blocker</source>
+        <translation type="unfinished">Bloqueur de Popup</translation>
+    </message>
+    <message>
+        <source>About Web Pirate</source>
+        <translation type="unfinished">A propos de Web Pirate</translation>
     </message>
 </context>
 <context>

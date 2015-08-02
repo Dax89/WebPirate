@@ -92,67 +92,59 @@
     <name>ActionSidebar</name>
     <message>
         <source>Favorites</source>
-        <translation>お気に入り</translation>
+        <translation type="vanished">お気に入り</translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation>ダウンロード</translation>
+        <translation type="vanished">ダウンロード</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation>設定</translation>
+        <translation type="vanished">設定</translation>
     </message>
     <message>
         <source>General</source>
-        <translation>ジェネラル</translation>
+        <translation type="vanished">ジェネラル</translation>
     </message>
     <message>
         <source>Change settings</source>
-        <translation>設定を変更</translation>
+        <translation type="vanished">設定を変更</translation>
     </message>
     <message>
         <source>About Web Pirate</source>
-        <translation>Web Pirateについて</translation>
+        <translation type="vanished">Web Pirateについて</translation>
     </message>
     <message>
         <source>Sessions</source>
-        <translation>セッション</translation>
+        <translation type="vanished">セッション</translation>
     </message>
     <message>
         <source>Night Mode</source>
-        <translation>ナイトモード</translation>
+        <translation type="vanished">ナイトモード</translation>
     </message>
     <message>
         <source>Extensions</source>
-        <translation>エクステンション</translation>
+        <translation type="vanished">エクステンション</translation>
     </message>
     <message>
         <source>Ad Block</source>
-        <translation>広告ブロック</translation>
+        <translation type="vanished">広告ブロック</translation>
     </message>
     <message>
         <source>Navigation History</source>
-        <translation>ナビゲーション履歴</translation>
+        <translation type="vanished">ナビゲーション履歴</translation>
     </message>
     <message>
         <source>Closed Tabs</source>
-        <translation>閉じたタブ</translation>
+        <translation type="vanished">閉じたタブ</translation>
     </message>
     <message>
         <source>Popup Blocker</source>
-        <translation>ポップアップブロック</translation>
+        <translation type="vanished">ポップアップブロック</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished">ダウンロード</translation>
-    </message>
-    <message>
-        <source>Closed Tab</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Cookies</source>
-        <translation type="unfinished"></translation>
+        <translation type="obsolete">ダウンロード</translation>
     </message>
 </context>
 <context>
@@ -1253,6 +1245,73 @@
     <message>
         <source>Share</source>
         <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SidebarModel</name>
+    <message>
+        <source>General</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Favorites</source>
+        <translation type="unfinished">お気に入り</translation>
+    </message>
+    <message>
+        <source>Sessions</source>
+        <translation type="unfinished">セッション</translation>
+    </message>
+    <message>
+        <source>Downloads</source>
+        <translation type="unfinished">ダウンロード</translation>
+    </message>
+    <message>
+        <source>Download</source>
+        <translation type="unfinished">ダウンロード</translation>
+    </message>
+    <message>
+        <source>Closed Tabs</source>
+        <translation type="unfinished">閉じたタブ</translation>
+    </message>
+    <message>
+        <source>Closed Tab</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Navigation History</source>
+        <translation type="unfinished">ナビゲーション履歴</translation>
+    </message>
+    <message>
+        <source>Cookies</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Extensions</source>
+        <translation type="unfinished">エクステンション</translation>
+    </message>
+    <message>
+        <source>Ad Block</source>
+        <translation type="unfinished">広告ブロック</translation>
+    </message>
+    <message>
+        <source>Night Mode</source>
+        <translation type="unfinished">ナイトモード</translation>
+    </message>
+    <message>
+        <source>Settings</source>
+        <translation type="unfinished">設定</translation>
+    </message>
+    <message>
+        <source>Change settings</source>
+        <translation type="unfinished">設定を変更</translation>
+    </message>
+    <message>
+        <source>Popup Blocker</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>About Web Pirate</source>
+        <translation type="unfinished">Web Pirateについて</translation>
     </message>
 </context>
 <context>

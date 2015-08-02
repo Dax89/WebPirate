@@ -9,6 +9,7 @@ MouseArea
 
     readonly property bool verticalGesture: gestureareaprivate.velocityY > gestureareaprivate.velocityX
     readonly property bool horizontalGesture: gestureareaprivate.velocityX > gestureareaprivate.velocityY
+    readonly property bool gestureRunning: gestureareaprivate.velocity > gesturearea.threshold
     property real threshold: 15
 
     QtObject
@@ -20,11 +21,19 @@ MouseArea
         property real prevX: 0
         property real prevY: 0
 
+        function resetGesture() {
+            gestureareaprivate.tracing = false;
+            gestureareaprivate.prevX = 0;
+            gestureareaprivate.prevY = 0;
+            gestureareaprivate.velocityX = 0;
+            gestureareaprivate.velocityY = 0;
+            gestureareaprivate.velocity = 0;
+        }
+
         id: gestureareaprivate
     }
 
     id: gesturearea
-    preventStealing: true
 
     onPressed: {
         gestureareaprivate.tracing = true;
@@ -33,25 +42,25 @@ MouseArea
     }
 
     onReleased: {
-        gestureareaprivate.tracing = false;
-
         if(gesturearea.horizontalGesture) {
-            if((gestureareaprivate.velocity > gesturearea.threshold) && (mouseX > parent.width * 0.2))
+            if((gestureareaprivate.velocity > gesturearea.threshold) && (mouseX > parent.width * 0.2)) {
                 swypeRight();
-            else if((gestureareaprivate.velocity < gesturearea.threshold) && (mouseX < parent.width * 0.2))
+            }
+            else if((gestureareaprivate.velocity < gesturearea.threshold) && (mouseX < parent.width * 0.2)) {
                 swypeLeft();
+            }
         }
 
         if(gesturearea.verticalGesture) {
             if((gestureareaprivate.velocity > gesturearea.threshold) && (mouseY > parent.height * 0.2)) {
-                gestureareaprivate.tracing = false;
                 swypeDown();
             }
             else if((gestureareaprivate.velocity < gesturearea.threshold) && (mouseY < parent.height * 0.2)) {
-                gestureareaprivate.tracing = false;
                 swypeUp();
             }
         }
+
+        gestureareaprivate.resetGesture();
     }
 
     onPositionChanged: {
@@ -64,28 +73,27 @@ MouseArea
         gestureareaprivate.prevX = mouseX;
         gestureareaprivate.prevY = mouseY;
 
-        console.log(gestureareaprivate.velocity);
-
         if(gesturearea.horizontalGesture) {
             if((gestureareaprivate.velocity > gesturearea.threshold) && (mouseX > parent.width * 0.2)) {
-                gestureareaprivate.tracing = false;
+                gestureareaprivate.resetGesture();
                 swypeRight();
             }
             else if((gestureareaprivate.velocity < gesturearea.threshold) && (mouseX < parent.width * 0.2)) {
-                gestureareaprivate.tracing = false;
+                gestureareaprivate.resetGesture();
                 swypeLeft();
             }
         }
 
         if(gesturearea.verticalGesture) {
             if((gestureareaprivate.velocity > gesturearea.threshold) && (mouseY > parent.height * 0.2)) {
-                gestureareaprivate.tracing = false;
+                gestureareaprivate.resetGesture();
                 swypeDown();
             }
             else if((gestureareaprivate.velocity < gesturearea.threshold) && (mouseY < parent.height * 0.2)) {
-                gestureareaprivate.tracing = false;
+                gestureareaprivate.resetGesture();
                 swypeUp();
             }
         }
+
     }
 }

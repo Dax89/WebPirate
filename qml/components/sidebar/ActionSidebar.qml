@@ -1,5 +1,7 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
+import "../../components"
+import "../../models"
 
 Item
 {
@@ -7,6 +9,15 @@ Item
     visible: false
     width: visible ? (mainpage.isPortrait ? parent.width * 0.55 : parent.height * 0.80) : 0
     z: 20
+
+    function expand() {
+        visible = true;
+        tabheader.solidify();
+    }
+
+    function collapse() {
+        visible = false;
+    }
 
     Behavior on width {
         NumberAnimation { duration: 200; easing.type: Easing.InOutQuad }
@@ -22,155 +33,28 @@ Item
         height: parent.width
     }
 
-    function expand() {
-        visible = true;
-        tabheader.solidify();
-    }
-
-    function collapse() {
-        visible = false;
-    }
-
-    SilicaFlickable
+    SilicaListView
     {
-        id: options
+        id: lvsidebar
         anchors.fill: parent
-        contentHeight: column.height
+        model: SidebarModel { id: sidebarmodel }
 
-        VerticalScrollDecorator { flickable: options }
+        VerticalScrollDecorator { flickable: lvsidebar }
 
-        Column
+        GestureArea
         {
-            id: column
-            width: parent.width
+            property Item item: lvsidebar.itemAt(mouseX, mouseY)
 
-            SectionHeader
-            {
-                id: generalsection
-                text: qsTr("General");
-            }
+            id: gesturearea
+            anchors.fill: parent
 
-            SidebarItem
-            {
-                anchors { left: parent.left; right: parent.right }
-                icon: "image://theme/icon-s-favorite"
-                itemText: qsTr("Favorites")
-                onClicked: pageStack.push(Qt.resolvedUrl("../../pages/favorite/FavoritesPage.qml"), { "folderId": 0, "tabview": tabview, "rootPage": pageStack.currentPage });
-            }
+            onSwypeRight: sidebar.collapse()
 
-            SidebarItem
-            {
-                anchors { left: parent.left; right: parent.right }
-                icon: "image://theme/icon-s-group-chat"
-                itemText: qsTr("Sessions")
-                onClicked: pageStack.push(Qt.resolvedUrl("../../pages/session/SessionManagerPage.qml"), { "tabView": tabview });
-            }
+            onClicked: {
+                if(gesturearea.gestureRunning || !item)
+                    return;
 
-            SidebarItem
-            {
-                anchors { left: parent.left; right: parent.right }
-                icon: "qrc:///res/download.png"
-                itemText: qsTr("Downloads")
-                singleItemText: qsTr("Download")
-                count: mainwindow.settings.downloadmanager.count
-                countVisible: true
-                onClicked: pageStack.push(Qt.resolvedUrl("../../pages/downloadmanager/DownloadsPage.qml"), { "settings": mainwindow.settings });
-            }
-
-            SidebarItem
-            {
-                anchors { left: parent.left; right: parent.right }
-                icon: "image://theme/icon-m-tab"
-                itemText: qsTr("Closed Tabs")
-                singleItemText: qsTr("Closed Tab")
-                countVisible: true
-                count: tabview.closedtabs.count
-                enabled: tabview.closedtabs.count > 0
-                onClicked: pageStack.push(Qt.resolvedUrl("../../pages/closedtabs/ClosedTabsPage.qml"), { "tabView": tabview });
-            }
-
-            SidebarItem
-            {
-                anchors { left: parent.left; right: parent.right }
-                icon: "image://theme/icon-s-time"
-                itemText: qsTr("Navigation History")
-                onClicked: pageStack.push(Qt.resolvedUrl("../../pages/history/NavigationHistoryPage.qml"), { "tabView": tabview });
-            }
-
-            SidebarItem
-            {
-                anchors { left: parent.left; right: parent.right }
-                icon: "qrc:///res/cookies.png"
-                itemText: qsTr("Cookies")
-                onClicked: pageStack.push(Qt.resolvedUrl("../../pages/cookie/CookieManagerPage.qml"), { "settings": mainwindow.settings });
-            }
-
-            SectionHeader
-            {
-                id: extensionsection
-                text: qsTr("Extensions")
-            }
-
-            SidebarSwitch
-            {
-                anchors { left: parent.left; right: parent.right }
-                text: qsTr("Ad Block")
-                switchOnClick: true
-
-                Component.onCompleted: {
-                    switchItem.checked = mainwindow.settings.adblockmanager.enabled;
-                }
-
-                switchItem.onCheckedChanged: {
-                    mainwindow.settings.adblockmanager.enabled = switchItem.checked;
-                }
-            }
-
-            SidebarSwitch
-            {
-                anchors { left: parent.left; right: parent.right }
-                text: qsTr("Night Mode")
-                switchOnClick: true
-
-                switchItem.onCheckedChanged: {
-                    mainwindow.settings.nightmode = switchItem.checked;
-                }
-            }
-
-            SectionHeader
-            {
-                id: settingssection
-                text: qsTr("Settings")
-            }
-
-            SidebarItem
-            {
-                anchors { left: parent.left; right: parent.right }
-                icon: "image://theme/icon-s-setting"
-                itemText: qsTr("Change settings")
-                onClicked: pageStack.push(Qt.resolvedUrl("../../pages/settings/SettingsPage.qml"), { "settings": mainwindow.settings });
-            }
-
-            SidebarItem
-            {
-                anchors { left: parent.left; right: parent.right }
-                icon: "image://theme/icon-m-tabs"
-                itemText: qsTr("Popup Blocker")
-                onClicked: pageStack.push(Qt.resolvedUrl("../../pages/popupblocker/PopupManagerPage.qml"));
-            }
-
-            SidebarItem
-            {
-                anchors { left: parent.left; right: parent.right }
-                icon: "image://theme/icon-m-about"
-                itemText: qsTr("About Web Pirate")
-                onClicked: {
-                    var page = pageStack.push(Qt.resolvedUrl("../../pages/AboutPage.qml"), { "settings": mainwindow.settings });
-
-                    page.urlRequested.connect(function(url) {
-                        tabview.addTab(url);
-                    });
-                }
+                item.execute();
             }
         }
     }

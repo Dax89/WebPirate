@@ -92,67 +92,67 @@
     <name>ActionSidebar</name>
     <message>
         <source>Favorites</source>
-        <translation>Záložky</translation>
+        <translation type="vanished">Záložky</translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation>Stahování</translation>
+        <translation type="vanished">Stahování</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation>Nastavení</translation>
+        <translation type="vanished">Nastavení</translation>
     </message>
     <message>
         <source>General</source>
-        <translation>Obecné</translation>
+        <translation type="vanished">Obecné</translation>
     </message>
     <message>
         <source>Change settings</source>
-        <translation>Změnit nastavení</translation>
+        <translation type="vanished">Změnit nastavení</translation>
     </message>
     <message>
         <source>About Web Pirate</source>
-        <translation>O Web Pirate</translation>
+        <translation type="vanished">O Web Pirate</translation>
     </message>
     <message>
         <source>Sessions</source>
-        <translation>Relace</translation>
+        <translation type="vanished">Relace</translation>
     </message>
     <message>
         <source>Night Mode</source>
-        <translation>Noční režim</translation>
+        <translation type="vanished">Noční režim</translation>
     </message>
     <message>
         <source>Extensions</source>
-        <translation>Doplňky</translation>
+        <translation type="vanished">Doplňky</translation>
     </message>
     <message>
         <source>Ad Block</source>
-        <translation>Blokování reklam</translation>
+        <translation type="vanished">Blokování reklam</translation>
     </message>
     <message>
         <source>Navigation History</source>
-        <translation>Historie navigace</translation>
+        <translation type="vanished">Historie navigace</translation>
     </message>
     <message>
         <source>Closed Tabs</source>
-        <translation>Zavřené panely</translation>
+        <translation type="vanished">Zavřené panely</translation>
     </message>
     <message>
         <source>Popup Blocker</source>
-        <translation>Blokování vyskakujících oken</translation>
+        <translation type="vanished">Blokování vyskakujících oken</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation>Stáhnout</translation>
+        <translation type="vanished">Stáhnout</translation>
     </message>
     <message>
         <source>Closed Tab</source>
-        <translation>Zavřený panel</translation>
+        <translation type="vanished">Zavřený panel</translation>
     </message>
     <message>
         <source>Cookies</source>
-        <translation>Cookies</translation>
+        <translation type="vanished">Cookies</translation>
     </message>
 </context>
 <context>
@@ -1251,6 +1251,73 @@
     <message>
         <source>Share</source>
         <translation>Sdílet</translation>
+    </message>
+</context>
+<context>
+    <name>SidebarModel</name>
+    <message>
+        <source>General</source>
+        <translation type="unfinished">Obecné</translation>
+    </message>
+    <message>
+        <source>Favorites</source>
+        <translation type="unfinished">Záložky</translation>
+    </message>
+    <message>
+        <source>Sessions</source>
+        <translation type="unfinished">Relace</translation>
+    </message>
+    <message>
+        <source>Downloads</source>
+        <translation type="unfinished">Stahování</translation>
+    </message>
+    <message>
+        <source>Download</source>
+        <translation type="unfinished">Stáhnout</translation>
+    </message>
+    <message>
+        <source>Closed Tabs</source>
+        <translation type="unfinished">Zavřené panely</translation>
+    </message>
+    <message>
+        <source>Closed Tab</source>
+        <translation type="unfinished">Zavřený panel</translation>
+    </message>
+    <message>
+        <source>Navigation History</source>
+        <translation type="unfinished">Historie navigace</translation>
+    </message>
+    <message>
+        <source>Cookies</source>
+        <translation type="unfinished">Cookies</translation>
+    </message>
+    <message>
+        <source>Extensions</source>
+        <translation type="unfinished">Doplňky</translation>
+    </message>
+    <message>
+        <source>Ad Block</source>
+        <translation type="unfinished">Blokování reklam</translation>
+    </message>
+    <message>
+        <source>Night Mode</source>
+        <translation type="unfinished">Noční režim</translation>
+    </message>
+    <message>
+        <source>Settings</source>
+        <translation type="unfinished">Nastavení</translation>
+    </message>
+    <message>
+        <source>Change settings</source>
+        <translation type="unfinished">Změnit nastavení</translation>
+    </message>
+    <message>
+        <source>Popup Blocker</source>
+        <translation type="unfinished">Blokování vyskakujících oken</translation>
+    </message>
+    <message>
+        <source>About Web Pirate</source>
+        <translation type="unfinished">O Web Pirate</translation>
     </message>
 </context>
 <context>

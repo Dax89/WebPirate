@@ -92,67 +92,67 @@
     <name>ActionSidebar</name>
     <message>
         <source>Favorites</source>
-        <translation>Favoriter</translation>
+        <translation type="vanished">Favoriter</translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation>Nedladdningar</translation>
+        <translation type="vanished">Nedladdningar</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation>Inställningar</translation>
+        <translation type="vanished">Inställningar</translation>
     </message>
     <message>
         <source>General</source>
-        <translation>Allmänt</translation>
+        <translation type="vanished">Allmänt</translation>
     </message>
     <message>
         <source>Change settings</source>
-        <translation>Ändra inställningar</translation>
+        <translation type="vanished">Ändra inställningar</translation>
     </message>
     <message>
         <source>About Web Pirate</source>
-        <translation>Om </translation>
+        <translation type="vanished">Om </translation>
     </message>
     <message>
         <source>Sessions</source>
-        <translation>Sessioner</translation>
+        <translation type="vanished">Sessioner</translation>
     </message>
     <message>
         <source>Night Mode</source>
-        <translation>Nattläge</translation>
+        <translation type="vanished">Nattläge</translation>
     </message>
     <message>
         <source>Extensions</source>
-        <translation>Tillägg</translation>
+        <translation type="vanished">Tillägg</translation>
     </message>
     <message>
         <source>Ad Block</source>
-        <translation>Annonsblockering</translation>
+        <translation type="vanished">Annonsblockering</translation>
     </message>
     <message>
         <source>Navigation History</source>
-        <translation>Surfhistorik</translation>
+        <translation type="vanished">Surfhistorik</translation>
     </message>
     <message>
         <source>Closed Tabs</source>
-        <translation>Stängda flikar</translation>
+        <translation type="vanished">Stängda flikar</translation>
     </message>
     <message>
         <source>Popup Blocker</source>
-        <translation>Popup-blockerare</translation>
+        <translation type="vanished">Popup-blockerare</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation>Ladda ner</translation>
+        <translation type="vanished">Ladda ner</translation>
     </message>
     <message>
         <source>Closed Tab</source>
-        <translation>Stängd flik</translation>
+        <translation type="vanished">Stängd flik</translation>
     </message>
     <message>
         <source>Cookies</source>
-        <translation>Cookies</translation>
+        <translation type="vanished">Cookies</translation>
     </message>
 </context>
 <context>
@@ -1251,6 +1251,73 @@
     <message>
         <source>Share</source>
         <translation>Dela</translation>
+    </message>
+</context>
+<context>
+    <name>SidebarModel</name>
+    <message>
+        <source>General</source>
+        <translation type="unfinished">Allmänt</translation>
+    </message>
+    <message>
+        <source>Favorites</source>
+        <translation type="unfinished">Favoriter</translation>
+    </message>
+    <message>
+        <source>Sessions</source>
+        <translation type="unfinished">Sessioner</translation>
+    </message>
+    <message>
+        <source>Downloads</source>
+        <translation type="unfinished">Nedladdningar</translation>
+    </message>
+    <message>
+        <source>Download</source>
+        <translation type="unfinished">Ladda ner</translation>
+    </message>
+    <message>
+        <source>Closed Tabs</source>
+        <translation type="unfinished">Stängda flikar</translation>
+    </message>
+    <message>
+        <source>Closed Tab</source>
+        <translation type="unfinished">Stängd flik</translation>
+    </message>
+    <message>
+        <source>Navigation History</source>
+        <translation type="unfinished">Surfhistorik</translation>
+    </message>
+    <message>
+        <source>Cookies</source>
+        <translation type="unfinished">Cookies</translation>
+    </message>
+    <message>
+        <source>Extensions</source>
+        <translation type="unfinished">Tillägg</translation>
+    </message>
+    <message>
+        <source>Ad Block</source>
+        <translation type="unfinished">Annonsblockering</translation>
+    </message>
+    <message>
+        <source>Night Mode</source>
+        <translation type="unfinished">Nattläge</translation>
+    </message>
+    <message>
+        <source>Settings</source>
+        <translation type="unfinished">Inställningar</translation>
+    </message>
+    <message>
+        <source>Change settings</source>
+        <translation type="unfinished">Ändra inställningar</translation>
+    </message>
+    <message>
+        <source>Popup Blocker</source>
+        <translation type="unfinished">Popup-blockerare</translation>
+    </message>
+    <message>
+        <source>About Web Pirate</source>
+        <translation type="unfinished">Om </translation>
     </message>
 </context>
 <context>
