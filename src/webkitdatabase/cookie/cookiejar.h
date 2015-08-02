@@ -12,10 +12,12 @@ class CookieJar: public AbstractDatabase
     Q_OBJECT
 
     Q_PROPERTY(QStringList domains READ domains NOTIFY domainsChanged)
+    Q_PROPERTY(bool busy READ busy NOTIFY busyChanged)
 
     public:
         CookieJar(QObject* parent = 0);
         const QStringList& domains() const;
+        bool busy() const;
 
     public slots:
         void load();
@@ -49,6 +51,7 @@ class CookieJar: public AbstractDatabase
 
     signals:
         void domainsChanged();
+        void busyChanged();
 
     private:
         QHash<QString, QObjectList> _cookiemap;
@@ -56,6 +59,7 @@ class CookieJar: public AbstractDatabase
         QStringList _domains;
         QStringList _filtereddomains;
         bool _filtered;
+        bool _busy;
 
     private:
         static const QString CONNECTION_NAME;

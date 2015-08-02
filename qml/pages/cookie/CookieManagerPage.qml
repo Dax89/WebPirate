@@ -9,8 +9,14 @@ Page
 
     id: pagecookiemanager
     allowedOrientations: defaultAllowedOrientations
-    Component.onCompleted: settings.cookiejar.load()
     Component.onDestruction: settings.cookiejar.unload()
+
+    onStatusChanged: {
+        if(status !== PageStatus.Active)
+            return;
+
+        settings.cookiejar.load();
+    }
 
     SilicaFlickable
     {
@@ -19,10 +25,15 @@ Page
 
         RemorsePopup { id: remorsepopup }
 
-        PullDownMenu
-        {
-            MenuItem
-            {
+        BusyIndicator {
+            id: busyindicator
+            anchors.centerIn: parent
+            running: settings.cookiejar.busy
+            size: BusyIndicatorSize.Large
+        }
+
+        PullDownMenu {
+            MenuItem {
                 text: qsTr("Remove All Cookies")
 
                 onClicked: {
@@ -32,8 +43,7 @@ Page
                 }
             }
 
-            MenuItem
-            {
+            MenuItem {
                 text: qsTr("Add Cookie")
                 onClicked: pageStack.push(Qt.resolvedUrl("CookiePage.qml"), { "settings": pagecookiemanager.settings })
             }

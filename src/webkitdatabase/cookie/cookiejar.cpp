@@ -4,7 +4,7 @@ const QString CookieJar::CONNECTION_NAME = "__wp__CookieJar";
 const QString CookieJar::WEBKIT_DATABASE = ".QtWebKit";
 const QString CookieJar::COOKIE_DATABASE = "cookies.db";
 
-CookieJar::CookieJar(QObject *parent): AbstractDatabase(CookieJar::CONNECTION_NAME, parent), _filtered(false)
+CookieJar::CookieJar(QObject *parent): AbstractDatabase(CookieJar::CONNECTION_NAME, parent), _filtered(false), _busy(true)
 {
 }
 
@@ -12,6 +12,9 @@ void CookieJar::load()
 {
     if(!this->open())
         return;
+
+    this->_busy = true;
+    emit busyChanged();
 
     if(!this->_cookiemap.isEmpty())
         this->unload(); /* HashMap is not empty: unload and reload */
@@ -25,11 +28,15 @@ void CookieJar::load()
         QList<QNetworkCookie> cookies = QNetworkCookie::parseCookies(query.value(0).toByteArray());
         this->populateHashMap(cookies);
     }
+
+    this->_busy = false;
+    emit busyChanged();
     emit domainsChanged();
 }
 
 void CookieJar::unload()
 {    
+    this->_busy = true; // Restore 'busy' state
     this->disposeItems();
 }
 
@@ -61,6 +68,11 @@ const QStringList &CookieJar::domains() const
         return this->_filtereddomains;
 
     return this->_domains;
+}
+
+bool CookieJar::busy() const
+{
+    return this->_busy;
 }
 
 QList<QObject *> CookieJar::getCookies(const QString &domain) const
