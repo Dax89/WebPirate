@@ -59,8 +59,14 @@ Item
         if(typeof(foreground) === "undefined")
             foreground = true;
 
-        if(!tabComponent)
+        if(!tabComponent) {
             tabComponent = Qt.createComponent(Qt.resolvedUrl("../browsertab/BrowserTab.qml"));
+
+            if(tabComponent.status === Component.Error) {
+                console.log(tabComponent.errorString());
+                return;
+            }
+        }
 
         var tab = tabComponent.createObject(stack);
         tab.visible = foreground;
