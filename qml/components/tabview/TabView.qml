@@ -91,7 +91,7 @@ Item
         tabs.remove(idx);
         closedtabs.push(tab.getTitle(), tab.getUrl());
 
-        if(currentIndex >= 0)
+        if(currentIndex > 0)
             currentIndex--;
         else
             renderTab();
@@ -99,8 +99,10 @@ Item
         tab.parent = null /* Remove Parent Ownership */
         tab.destroy();    /* Destroy the tab immediately */
 
-        if(!tabs.count)
+        if(!tabs.count) {
+            currentIndex = -1;
             addTab(mainwindow.settings.homepage);
+        }
     }
 
     function removeAllTabs()
