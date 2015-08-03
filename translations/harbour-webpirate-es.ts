@@ -1343,6 +1343,14 @@
         <source>Close other Tabs</source>
         <translation>Cerrar otras pestañas</translation>
     </message>
+    <message>
+        <source>Save page</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Downloading web page</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>TabsSettingsPage</name>

@@ -91,16 +91,13 @@ Item
         tabs.remove(idx);
         closedtabs.push(tab.getTitle(), tab.getUrl());
 
-        tab.parent = null /* Remove Parent Ownership */
-        tab.destroy();    /* Destroy the tab immediately */
-
-        if(currentIndex === -1)
-            return;
-
-        if(currentIndex > 0)
+        if(currentIndex >= 0)
             currentIndex--;
         else
             renderTab();
+
+        tab.parent = null /* Remove Parent Ownership */
+        tab.destroy();    /* Destroy the tab immediately */
 
         if(!tabs.count)
             addTab(mainwindow.settings.homepage);
@@ -116,6 +113,9 @@ Item
 
     function tabAt(index)
     {
+        if((index < 0) || (index > tabs.count))
+            return null;
+
         var item = tabs.get(index);
 
         if(!item)
@@ -152,6 +152,7 @@ Item
         TabMenu
         {
             id: tabmenu
+            selectedIndex: tabview.currentIndex
             anchors { left: parent.left; right: parent.right; top: tabheader.bottom; bottom: parent.bottom }
         }
 

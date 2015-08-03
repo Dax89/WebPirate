@@ -8,13 +8,14 @@ MouseArea
     property alias popupDelegate: listview.delegate
     property alias popupList: listview
 
+    property int popupCount: listview.count
     property bool titleVisible: true
 
     signal ignoreDialog()
 
     function show() {
         popupdialog.visible = true;
-        popupmenu.height = (Theme.itemSizeSmall * Math.min(5, listview.count)) + (titleVisible ? Theme.itemSizeSmall : 0);
+        popupmenu.height = (Theme.itemSizeSmall * Math.min(5, popupCount)) + (titleVisible ? Theme.itemSizeSmall : 0);
     }
 
     function hide() {

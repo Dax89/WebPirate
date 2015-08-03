@@ -1342,6 +1342,14 @@
         <source>Close other Tabs</source>
         <translation>Chiudi le altre schede</translation>
     </message>
+    <message>
+        <source>Save page</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Downloading web page</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>TabsSettingsPage</name>

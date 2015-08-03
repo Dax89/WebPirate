@@ -88,7 +88,7 @@ Page
     PageCoverActions
     {
         id: pagecoveractions
-        enabled: (mainpage.status === PageStatus.Active) && ((tabview.currentIndex > -1) && tabview.currentTab().viewStack.empty)
+        enabled: (mainpage.status === PageStatus.Active) && (((tabview.currentIndex > -1) && tabview.currentTab()) && tabview.currentTab().viewStack.empty)
     }
 
     CoverActionList

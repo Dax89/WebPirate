@@ -16,8 +16,6 @@ MouseArea
 
     onPressAndHold: {
         sidebar.collapse();
-
-        tabmenu.selectedIndex = index;
         tabmenu.show();
     }
 

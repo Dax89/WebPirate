@@ -1317,8 +1317,8 @@
 <context>
     <name>TabMenu</name>
     <message>
-        <source>Add to Quick Grid</source>
-        <translation type="unfinished"></translation>
+        <source>Close Tab</source>
+        <translation type="unfinished">タブを閉じる</translation>
     </message>
     <message>
         <source>Duplicate Tab</source>
@@ -1329,11 +1329,19 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Close Tab</source>
-        <translation type="unfinished">タブを閉じる</translation>
+        <source>Save page</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Add to Quick Grid</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Close other Tabs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Downloading web page</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

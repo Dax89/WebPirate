@@ -1256,10 +1256,6 @@
 <context>
     <name>TabMenu</name>
     <message>
-        <source>Add to Quick Grid</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Duplicate Tab</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1268,11 +1264,23 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>Save page</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Add to Quick Grid</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Close Tab</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Close other Tabs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Downloading web page</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
