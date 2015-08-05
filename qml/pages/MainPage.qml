@@ -59,6 +59,18 @@ Page
         onNightmodeChanged: tabview.currentTab().webView.setNightMode(settings.nightmode)
     }
 
+    Connections
+    {
+        target: settings.webpirateinterface
+
+        onUrlRequested: {
+            for(var i = 0; i < args.length; i++)
+                tabview.addTab(args[i]);
+
+            mainwindow.activate();
+        }
+    }
+
     TabView
     {
         id: tabview

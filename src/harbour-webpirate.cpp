@@ -34,6 +34,7 @@
 #include "dbus/client/screenblank.h"
 #include "dbus/client/urlcomposer.h"
 #include "dbus/client/ofono/ofono.h"
+#include "dbus/webpirateinterface.h"
 #include "dbus/client/notifications/notifications.h"
 #include "dbus/client/transferengine/transferengine.h"
 #include "dbus/client/transferengine/transfermethodmodel.h"
@@ -55,6 +56,18 @@ int main(int argc, char *argv[])
     QScopedPointer<QGuiApplication> application(SailfishApp::application(argc, argv));
     application->setApplicationName("harbour-webpirate");
 
+    QDBusConnection sessionbus = QDBusConnection::sessionBus();
+
+    if(sessionbus.interface()->isServiceRegistered(WebPirateInterface::INTERFACE_NAME)) // Only a Single Instance is allowed
+    {
+        WebPirateInterface::sendArgs(application->arguments().mid(1)); // Forward URLs to the running instance
+
+        if(application->hasPendingEvents())
+            application->processEvents();
+
+        return 0;
+    }
+
     qmlRegisterType<AbstractDownloadItem>("harbour.webpirate.Private", 1, 0, "DownloadItem");
     qmlRegisterType<FavoriteItem>("harbour.webpirate.Private", 1, 0, "FavoriteItem");
     qmlRegisterType<MimeDatabase>("harbour.webpirate.Private", 1, 0, "MimeDatabase");
@@ -64,6 +77,7 @@ int main(int argc, char *argv[])
     qmlRegisterSingletonType<MachineID>("harbour.webpirate.DBus", 1, 0, "MachineID", &MachineID::initialize);
     qmlRegisterSingletonType<Ofono>("harbour.webpirate.DBus", 1, 0, "Ofono", &Ofono::initialize);
 
+    qmlRegisterType<WebPirateInterface>("harbour.webpirate.DBus", 1, 0, "WebPirateInterface");
     qmlRegisterType<ScreenBlank>("harbour.webpirate.DBus", 1, 0, "ScreenBlank");
     qmlRegisterType<UrlComposer>("harbour.webpirate.DBus", 1, 0, "UrlComposer");
     qmlRegisterType<Notifications>("harbour.webpirate.DBus.Notifications", 1, 0, "Notifications");

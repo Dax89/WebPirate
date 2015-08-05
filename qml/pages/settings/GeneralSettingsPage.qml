@@ -26,7 +26,6 @@ Dialog
             Database.transactionSet(tx, "searchengine", settings.searchengine);
             Database.transactionSet(tx, "useragent", settings.useragent);
         });
-
     }
 
     SilicaFlickable
@@ -97,7 +96,6 @@ Dialog
                     }
                 }
             }
-
         }
     }
 }

@@ -30,7 +30,6 @@ SOURCES += src/harbour-webpirate.cpp \
     src/imageproviders/faviconprovider.cpp \
     src/favoritesmanager/favoriteitem.cpp \
     src/dbus/webpirateadaptor.cpp \
-    src/dbus/webpirateservice.cpp \
     src/mime/mimedatabase.cpp \
     src/adblock/adblockmanager.cpp \
     src/adblock/adblockeditor.cpp \
@@ -52,7 +51,8 @@ SOURCES += src/harbour-webpirate.cpp \
     src/dbus/client/ofono/ofonoproperty.cpp \
     src/network/networkinterfaces.cpp \
     src/dbus/client/machineid.cpp \
-    src/dbus/client/notifications/notifications.cpp
+    src/dbus/client/notifications/notifications.cpp \
+    src/dbus/webpirateinterface.cpp
 
 OTHER_FILES += qml/harbour-webpirate.qml \
     rpm/harbour-webpirate.changes.in \
@@ -114,7 +114,6 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/models/cover/CoverModel.qml \
     qml/components/items/cover/PageCoverActions.qml \
     qml/js/settings/Cover.js \
-    org.browser.WebPirate.service \
     rpm/harbour-webpirate.yaml \
     qml/js/helpers/NightMode.js \
     qml/components/sidebar/SidebarSwitch.qml \
@@ -232,7 +231,6 @@ HEADERS += \
     src/imageproviders/faviconprovider.h \
     src/favoritesmanager/favoriteitem.h \
     src/dbus/webpirateadaptor.h \
-    src/dbus/webpirateservice.h \
     src/mime/mimedatabase.h \
     src/adblock/adblockmanager.h \
     src/adblock/adblockeditor.h \
@@ -254,5 +252,6 @@ HEADERS += \
     src/dbus/client/ofono/ofonoproperty.h \
     src/network/networkinterfaces.h \
     src/dbus/client/machineid.h \
-    src/dbus/client/notifications/notifications.h
+    src/dbus/client/notifications/notifications.h \
+    src/dbus/webpirateinterface.h
 

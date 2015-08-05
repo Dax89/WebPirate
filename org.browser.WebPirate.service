@@ -1,3 +1,0 @@
-[D-BUS Service]
-Name=org.browser.WebPirate
-Exec=/usr/bin/harbour-webpirate

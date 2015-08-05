@@ -10,8 +10,8 @@ WebPirateAdaptor::~WebPirateAdaptor()
 
 }
 
-void WebPirateAdaptor::openUrl(const QString &url)
+void WebPirateAdaptor::openUrl(const QStringList &args)
 {
-    QMetaObject::invokeMethod(parent(), "openUrl", Q_ARG(QString, url));
+    QMetaObject::invokeMethod(parent(), "openUrl", Q_ARG(QStringList, args));
 }
 

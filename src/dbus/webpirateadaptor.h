@@ -6,14 +6,14 @@
 class WebPirateAdaptor: public QDBusAbstractAdaptor
 {
     Q_OBJECT
-    Q_CLASSINFO("D-Bus Interface", "org.browser.WebPirate")
+    Q_CLASSINFO("D-Bus Interface", "org.harbour.webpirate")
 
     public:
         WebPirateAdaptor(QObject *parent);
         virtual ~WebPirateAdaptor();
 
     public slots:
-        void openUrl(const QString &url);
+        void openUrl(const QStringList &args);
 };
 
 #endif
