@@ -62,7 +62,6 @@ SilicaWebView
     experimental.preferences.localStorageEnabled: true
     experimental.preferences.navigatorQtObjectEnabled: true
     experimental.preferences.developerExtrasEnabled: true
-    experimental.preferences.offlineWebApplicationCacheEnabled: true
     experimental.preferredMinimumContentsWidth: 980 /* "magic" number that proved to work great on the majority of websites */
     experimental.userAgent: UserAgents.get(mainwindow.settings.useragent).value
     experimental.userStyleSheet: mainwindow.settings.adblockmanager.rulesFile
