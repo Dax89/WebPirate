@@ -89,73 +89,6 @@
     </message>
 </context>
 <context>
-    <name>ActionSidebar</name>
-    <message>
-        <source>Favorites</source>
-        <translation type="vanished">Suosikit</translation>
-    </message>
-    <message>
-        <source>Downloads</source>
-        <translation type="vanished">Lataukset</translation>
-    </message>
-    <message>
-        <source>Settings</source>
-        <translation type="vanished">Asetukset</translation>
-    </message>
-    <message>
-        <source>General</source>
-        <translation type="vanished">Yleistä</translation>
-    </message>
-    <message>
-        <source>Change settings</source>
-        <translation type="vanished">Muokkaa asetuksia</translation>
-    </message>
-    <message>
-        <source>About Web Pirate</source>
-        <translation type="vanished">Tietoja Web Piratesta</translation>
-    </message>
-    <message>
-        <source>Sessions</source>
-        <translation type="vanished">Istunnot</translation>
-    </message>
-    <message>
-        <source>Night Mode</source>
-        <translation type="vanished">Yötila</translation>
-    </message>
-    <message>
-        <source>Extensions</source>
-        <translation type="vanished">Lisäosat</translation>
-    </message>
-    <message>
-        <source>Ad Block</source>
-        <translation type="vanished">AdBlock</translation>
-    </message>
-    <message>
-        <source>Navigation History</source>
-        <translation type="vanished">Selaushistoria</translation>
-    </message>
-    <message>
-        <source>Closed Tabs</source>
-        <translation type="vanished">Suljetut välilehdet</translation>
-    </message>
-    <message>
-        <source>Popup Blocker</source>
-        <translation type="vanished">Popup -ikkunoiden esto</translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation type="vanished">Lataa</translation>
-    </message>
-    <message>
-        <source>Closed Tab</source>
-        <translation type="vanished">Suljettu välilehti</translation>
-    </message>
-    <message>
-        <source>Cookies</source>
-        <translation type="vanished">Evästeet</translation>
-    </message>
-</context>
-<context>
     <name>AdBlockDownloaderPage</name>
     <message>
         <source>AdBlock Updater</source>
@@ -213,7 +146,7 @@
     </message>
     <message>
         <source>Deleting filter</source>
-        <translation>Suodatinta poistetaan...</translation>
+        <translation>Suodatinta poistetaan</translation>
     </message>
     <message>
         <source>Update Filters</source>
@@ -342,7 +275,7 @@
     </message>
     <message>
         <source>Deleting Tab</source>
-        <translation>Poistetaan välilehteä...</translation>
+        <translation>Poistetaan välilehteä</translation>
     </message>
 </context>
 <context>
@@ -357,7 +290,7 @@
     </message>
     <message>
         <source>Deleting Tabs</source>
-        <translation>Poistetaan välilehtiä...</translation>
+        <translation>Poistetaan välilehtiä</translation>
     </message>
 </context>
 <context>
@@ -368,7 +301,7 @@
     </message>
     <message>
         <source>Deleting Cookie</source>
-        <translation>Poistetaan eväste...</translation>
+        <translation>Poistetaan eväste</translation>
     </message>
 </context>
 <context>
@@ -521,7 +454,7 @@
     </message>
     <message>
         <source>Deleting Cookies</source>
-        <translation>Evästeet poistetaan...</translation>
+        <translation>Evästeet poistetaan</translation>
     </message>
 </context>
 <context>
@@ -662,7 +595,7 @@
     </message>
     <message>
         <source>Deleting all favorites</source>
-        <translation>Poistetaan kaikkia suosikkeja...</translation>
+        <translation>Poistetaan kaikkia suosikkeja</translation>
     </message>
     <message>
         <source>Cannot import favorites</source>
@@ -681,11 +614,11 @@
     </message>
     <message>
         <source>Deleting Favorite</source>
-        <translation>Poistetaan suosikkia...</translation>
+        <translation>Poistetaan suosikkia</translation>
     </message>
     <message>
         <source>Deleting Folder</source>
-        <translation>Poistetaan kansiota...</translation>
+        <translation>Poistetaan kansiota</translation>
     </message>
     <message>
         <source>Open</source>
@@ -1041,11 +974,11 @@
     <name>QuickGridBottomPanel</name>
     <message>
         <source>Add</source>
-        <translation type="unfinished">Lisää</translation>
+        <translation>Lisää</translation>
     </message>
     <message>
         <source>Done</source>
-        <translation type="unfinished"></translation>
+        <translation>Valmis</translation>
     </message>
 </context>
 <context>
@@ -1181,7 +1114,7 @@
     </message>
     <message>
         <source>Deleting session</source>
-        <translation>Poistetaan istunto...</translation>
+        <translation>Poistetaan istunto</translation>
     </message>
     <message>
         <source>Save current session</source>
@@ -1239,7 +1172,7 @@
     </message>
     <message>
         <source>Cover</source>
-        <translation type="unfinished"></translation>
+        <translation>Kansi</translation>
     </message>
     <message>
         <source>AdBlock</source>
@@ -1257,31 +1190,31 @@
     <name>SidebarModel</name>
     <message>
         <source>General</source>
-        <translation type="unfinished">Yleistä</translation>
+        <translation>Yleistä</translation>
     </message>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished">Suosikit</translation>
+        <translation>Suosikit</translation>
     </message>
     <message>
         <source>Sessions</source>
-        <translation type="unfinished">Istunnot</translation>
+        <translation>Istunnot</translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation type="unfinished">Lataukset</translation>
+        <translation>Latausta</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished">Lataa</translation>
+        <translation>Lataa</translation>
     </message>
     <message>
         <source>Closed Tabs</source>
-        <translation type="unfinished">Suljetut välilehdet</translation>
+        <translation>suljettua välilehteä</translation>
     </message>
     <message>
         <source>Closed Tab</source>
-        <translation type="unfinished">Suljettu välilehti</translation>
+        <translation>suljettu välilehti</translation>
     </message>
     <message>
         <source>Navigation History</source>
@@ -1289,43 +1222,39 @@
     </message>
     <message>
         <source>Cookies</source>
-        <translation type="unfinished">Evästeet</translation>
+        <translation>Evästeet</translation>
     </message>
     <message>
         <source>Extensions</source>
-        <translation type="unfinished">Lisäosat</translation>
+        <translation>Laajennukset</translation>
     </message>
     <message>
         <source>Ad Block</source>
-        <translation type="unfinished">AdBlock</translation>
-    </message>
-    <message>
-        <source>Night Mode</source>
-        <translation type="unfinished">Yötila</translation>
-    </message>
-    <message>
-        <source>Settings</source>
-        <translation type="unfinished">Asetukset</translation>
-    </message>
-    <message>
-        <source>Change settings</source>
-        <translation type="unfinished">Muokkaa asetuksia</translation>
-    </message>
-    <message>
-        <source>Popup Blocker</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>Night Mode</source>
+        <translation>Yötila</translation>
+    </message>
+    <message>
+        <source>Settings</source>
+        <translation>Asetukset</translation>
+    </message>
+    <message>
+        <source>Change settings</source>
+        <translation>Muuta asetuksia</translation>
+    </message>
+    <message>
+        <source>Popup Blocker</source>
+        <translation>Popup -ikkunoiden esto</translation>
+    </message>
+    <message>
         <source>About Web Pirate</source>
-        <translation type="unfinished">Tietoja Web Piratesta</translation>
+        <translation>Tietoa Web Piratesta</translation>
     </message>
 </context>
 <context>
     <name>TabMenu</name>
-    <message>
-        <source>Add to Quick Grid</source>
-        <translation>Lisää pikavalintaan</translation>
-    </message>
     <message>
         <source>Duplicate Tab</source>
         <translation>Monista</translation>
@@ -1335,16 +1264,20 @@
         <translation>Monista taustalle</translation>
     </message>
     <message>
+        <source>Save page</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Add to Quick Grid</source>
+        <translation>Lisää pikavalintaan</translation>
+    </message>
+    <message>
         <source>Close Tab</source>
         <translation>Sulje välilehti</translation>
     </message>
     <message>
         <source>Close other Tabs</source>
         <translation>Sulje muut välilehdet</translation>
-    </message>
-    <message>
-        <source>Save page</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Downloading web page</source>
@@ -1363,7 +1296,7 @@
     </message>
     <message>
         <source>Close last tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Sulje edellinen välilehti</translation>
     </message>
 </context>
 <context>
@@ -1399,15 +1332,15 @@
     </message>
     <message>
         <source>Cannot find decoding function</source>
-        <translation type="unfinished"></translation>
+        <translation>Koodia tulkitsevaa toimintoa ei voinut löytää.</translation>
     </message>
     <message>
         <source>Cannot find decoding object</source>
-        <translation type="unfinished"></translation>
+        <translation>Koodia tulkitsevaa kohdetta ei voinut löytää.</translation>
     </message>
     <message>
         <source>Cannot download Video Configuration</source>
-        <translation type="unfinished"></translation>
+        <translation>Videon tiedostomuotoa ei voinut ladata.</translation>
     </message>
     <message>
         <source>Ciphered Video: Downloading WebPage</source>
@@ -1434,7 +1367,7 @@
     </message>
     <message>
         <source>Grabbing %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Otetaan %1</translation>
     </message>
     <message>
         <source>Decoding Signature for %1</source>

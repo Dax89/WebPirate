@@ -89,73 +89,6 @@
     </message>
 </context>
 <context>
-    <name>ActionSidebar</name>
-    <message>
-        <source>Favorites</source>
-        <translation type="vanished">Favoriter</translation>
-    </message>
-    <message>
-        <source>Downloads</source>
-        <translation type="vanished">Nedladdningar</translation>
-    </message>
-    <message>
-        <source>Settings</source>
-        <translation type="vanished">Inställningar</translation>
-    </message>
-    <message>
-        <source>General</source>
-        <translation type="vanished">Allmänt</translation>
-    </message>
-    <message>
-        <source>Change settings</source>
-        <translation type="vanished">Ändra inställningar</translation>
-    </message>
-    <message>
-        <source>About Web Pirate</source>
-        <translation type="vanished">Om </translation>
-    </message>
-    <message>
-        <source>Sessions</source>
-        <translation type="vanished">Sessioner</translation>
-    </message>
-    <message>
-        <source>Night Mode</source>
-        <translation type="vanished">Nattläge</translation>
-    </message>
-    <message>
-        <source>Extensions</source>
-        <translation type="vanished">Tillägg</translation>
-    </message>
-    <message>
-        <source>Ad Block</source>
-        <translation type="vanished">Annonsblockering</translation>
-    </message>
-    <message>
-        <source>Navigation History</source>
-        <translation type="vanished">Surfhistorik</translation>
-    </message>
-    <message>
-        <source>Closed Tabs</source>
-        <translation type="vanished">Stängda flikar</translation>
-    </message>
-    <message>
-        <source>Popup Blocker</source>
-        <translation type="vanished">Popup-blockerare</translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation type="vanished">Ladda ner</translation>
-    </message>
-    <message>
-        <source>Closed Tab</source>
-        <translation type="vanished">Stängd flik</translation>
-    </message>
-    <message>
-        <source>Cookies</source>
-        <translation type="vanished">Cookies</translation>
-    </message>
-</context>
-<context>
     <name>AdBlockDownloaderPage</name>
     <message>
         <source>AdBlock Updater</source>
@@ -1243,7 +1176,7 @@
     </message>
     <message>
         <source>AdBlock</source>
-        <translation type="unfinished"></translation>
+        <translation>AdBlock</translation>
     </message>
 </context>
 <context>
@@ -1257,75 +1190,71 @@
     <name>SidebarModel</name>
     <message>
         <source>General</source>
-        <translation type="unfinished">Allmänt</translation>
+        <translation>Allmänt</translation>
     </message>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished">Favoriter</translation>
+        <translation>Favoriter</translation>
     </message>
     <message>
         <source>Sessions</source>
-        <translation type="unfinished">Sessioner</translation>
+        <translation>Sessioner</translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation type="unfinished">Nedladdningar</translation>
+        <translation>Nedladdningar</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished">Ladda ner</translation>
+        <translation>Ladda ner</translation>
     </message>
     <message>
         <source>Closed Tabs</source>
-        <translation type="unfinished">Stängda flikar</translation>
+        <translation>Stängda flikar</translation>
     </message>
     <message>
         <source>Closed Tab</source>
-        <translation type="unfinished">Stängd flik</translation>
+        <translation>Stängd flik</translation>
     </message>
     <message>
         <source>Navigation History</source>
-        <translation type="unfinished">Surfhistorik</translation>
+        <translation>Surfhistorik</translation>
     </message>
     <message>
         <source>Cookies</source>
-        <translation type="unfinished">Cookies</translation>
+        <translation>Cookies</translation>
     </message>
     <message>
         <source>Extensions</source>
-        <translation type="unfinished">Tillägg</translation>
+        <translation>Tillägg</translation>
     </message>
     <message>
         <source>Ad Block</source>
-        <translation type="unfinished">Annonsblockering</translation>
+        <translation>Annonsblockering</translation>
     </message>
     <message>
         <source>Night Mode</source>
-        <translation type="unfinished">Nattläge</translation>
+        <translation>Nattläge</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation type="unfinished">Inställningar</translation>
+        <translation>Inställningar</translation>
     </message>
     <message>
         <source>Change settings</source>
-        <translation type="unfinished">Ändra inställningar</translation>
+        <translation>Ändra inställningar</translation>
     </message>
     <message>
         <source>Popup Blocker</source>
-        <translation type="unfinished">Popup-blockerare</translation>
+        <translation>Popup-blockerare</translation>
     </message>
     <message>
         <source>About Web Pirate</source>
-        <translation type="unfinished">Om </translation>
+        <translation>Om Web Pirate</translation>
     </message>
 </context>
 <context>
     <name>TabMenu</name>
-    <message>
-        <source>Add to Quick Grid</source>
-        <translation>Lägg till i snabbstartfältet</translation>
-    </message>
     <message>
         <source>Duplicate Tab</source>
         <translation>Kopiera flik</translation>
@@ -1333,6 +1262,14 @@
     <message>
         <source>Duplicate Tab in Background</source>
         <translation>Kopiera flik i bakgrunden</translation>
+    </message>
+    <message>
+        <source>Save page</source>
+        <translation>Spara sidan</translation>
+    </message>
+    <message>
+        <source>Add to Quick Grid</source>
+        <translation>Lägg till i snabbstartfältet</translation>
     </message>
     <message>
         <source>Close Tab</source>
@@ -1343,12 +1280,8 @@
         <translation>Stäng alla andra flikar</translation>
     </message>
     <message>
-        <source>Save page</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Downloading web page</source>
-        <translation type="unfinished"></translation>
+        <translation>Laddar ner webbsidan</translation>
     </message>
 </context>
 <context>

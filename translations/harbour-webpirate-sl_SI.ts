@@ -89,73 +89,6 @@
     </message>
 </context>
 <context>
-    <name>ActionSidebar</name>
-    <message>
-        <source>Favorites</source>
-        <translation type="vanished">Zaznamki</translation>
-    </message>
-    <message>
-        <source>Downloads</source>
-        <translation type="vanished">Prenosi</translation>
-    </message>
-    <message>
-        <source>Settings</source>
-        <translation type="vanished">Nastavitve</translation>
-    </message>
-    <message>
-        <source>General</source>
-        <translation type="vanished">Splošno</translation>
-    </message>
-    <message>
-        <source>Change settings</source>
-        <translation type="vanished">Spremeni nastavitve</translation>
-    </message>
-    <message>
-        <source>About Web Pirate</source>
-        <translation type="vanished">O Web Pirate</translation>
-    </message>
-    <message>
-        <source>Sessions</source>
-        <translation type="vanished">Seje</translation>
-    </message>
-    <message>
-        <source>Night Mode</source>
-        <translation type="vanished">Nočni način</translation>
-    </message>
-    <message>
-        <source>Extensions</source>
-        <translation type="vanished">Razširitve</translation>
-    </message>
-    <message>
-        <source>Ad Block</source>
-        <translation type="vanished">Ad Block</translation>
-    </message>
-    <message>
-        <source>Navigation History</source>
-        <translation type="vanished">Zgodovina brskanja</translation>
-    </message>
-    <message>
-        <source>Closed Tabs</source>
-        <translation type="vanished">Zaprti zavihki</translation>
-    </message>
-    <message>
-        <source>Popup Blocker</source>
-        <translation type="vanished">Blokiranje pojavnih oken</translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation type="vanished">Prenos</translation>
-    </message>
-    <message>
-        <source>Closed Tab</source>
-        <translation type="vanished">Zaprt zavihek</translation>
-    </message>
-    <message>
-        <source>Cookies</source>
-        <translation type="vanished">Piškotki</translation>
-    </message>
-</context>
-<context>
     <name>AdBlockDownloaderPage</name>
     <message>
         <source>AdBlock Updater</source>
@@ -1041,11 +974,11 @@
     <name>QuickGridBottomPanel</name>
     <message>
         <source>Add</source>
-        <translation type="unfinished">Dodaj</translation>
+        <translation>Dodaj</translation>
     </message>
     <message>
         <source>Done</source>
-        <translation type="unfinished"></translation>
+        <translation>Končano</translation>
     </message>
 </context>
 <context>
@@ -1239,11 +1172,11 @@
     </message>
     <message>
         <source>Cover</source>
-        <translation type="unfinished"></translation>
+        <translation>Naslovnica</translation>
     </message>
     <message>
         <source>AdBlock</source>
-        <translation type="unfinished"></translation>
+        <translation>AdBlock</translation>
     </message>
 </context>
 <context>
@@ -1257,75 +1190,71 @@
     <name>SidebarModel</name>
     <message>
         <source>General</source>
-        <translation type="unfinished">Splošno</translation>
+        <translation>Splošno</translation>
     </message>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished">Zaznamki</translation>
+        <translation>Zaznamki</translation>
     </message>
     <message>
         <source>Sessions</source>
-        <translation type="unfinished">Seje</translation>
+        <translation>Seje</translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation type="unfinished">Prenosi</translation>
+        <translation>Prenosi</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished">Prenos</translation>
+        <translation>Prenesi</translation>
     </message>
     <message>
         <source>Closed Tabs</source>
-        <translation type="unfinished">Zaprti zavihki</translation>
+        <translation>Zaprti zavihki</translation>
     </message>
     <message>
         <source>Closed Tab</source>
-        <translation type="unfinished">Zaprt zavihek</translation>
+        <translation>Zaprt zavihek</translation>
     </message>
     <message>
         <source>Navigation History</source>
-        <translation type="unfinished">Zgodovina brskanja</translation>
+        <translation>Zgodovina brskanja</translation>
     </message>
     <message>
         <source>Cookies</source>
-        <translation type="unfinished">Piškotki</translation>
+        <translation>Piškotki</translation>
     </message>
     <message>
         <source>Extensions</source>
-        <translation type="unfinished">Razširitve</translation>
+        <translation>Razširitve</translation>
     </message>
     <message>
         <source>Ad Block</source>
-        <translation type="unfinished">Ad Block</translation>
+        <translation>Ad Block</translation>
     </message>
     <message>
         <source>Night Mode</source>
-        <translation type="unfinished">Nočni način</translation>
+        <translation>Nočni način</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation type="unfinished">Nastavitve</translation>
+        <translation>Nastavitve</translation>
     </message>
     <message>
         <source>Change settings</source>
-        <translation type="unfinished">Spremeni nastavitve</translation>
+        <translation>Spremeni nastavitve</translation>
     </message>
     <message>
         <source>Popup Blocker</source>
-        <translation type="unfinished">Blokiranje pojavnih oken</translation>
+        <translation>Blokiranje pojavnih oken</translation>
     </message>
     <message>
         <source>About Web Pirate</source>
-        <translation type="unfinished"></translation>
+        <translation>O programu</translation>
     </message>
 </context>
 <context>
     <name>TabMenu</name>
-    <message>
-        <source>Add to Quick Grid</source>
-        <translation>Dodaj na QuickGrid</translation>
-    </message>
     <message>
         <source>Duplicate Tab</source>
         <translation>Podvoji zavihek</translation>
@@ -1333,6 +1262,14 @@
     <message>
         <source>Duplicate Tab in Background</source>
         <translation>Podvoji zavihek v ozadju</translation>
+    </message>
+    <message>
+        <source>Save page</source>
+        <translation>Shrani stran</translation>
+    </message>
+    <message>
+        <source>Add to Quick Grid</source>
+        <translation>Dodaj na QuickGrid</translation>
     </message>
     <message>
         <source>Close Tab</source>
@@ -1343,12 +1280,8 @@
         <translation>Zapri ostale zavihke</translation>
     </message>
     <message>
-        <source>Save page</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Downloading web page</source>
-        <translation type="unfinished"></translation>
+        <translation>Shranjevanje spletne strani</translation>
     </message>
 </context>
 <context>
@@ -1363,7 +1296,7 @@
     </message>
     <message>
         <source>Close last tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Zapri zadnji zavihek</translation>
     </message>
 </context>
 <context>
@@ -1434,11 +1367,11 @@
     </message>
     <message>
         <source>Grabbing %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Grabbing %1</translation>
     </message>
     <message>
         <source>Decoding Signature for %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Dekodiranje podpisa za %1</translation>
     </message>
 </context>
 <context>

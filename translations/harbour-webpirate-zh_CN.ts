@@ -89,73 +89,6 @@
     </message>
 </context>
 <context>
-    <name>ActionSidebar</name>
-    <message>
-        <source>Favorites</source>
-        <translation type="vanished">书签</translation>
-    </message>
-    <message>
-        <source>Downloads</source>
-        <translation type="vanished">下载</translation>
-    </message>
-    <message>
-        <source>Settings</source>
-        <translation type="vanished">设置</translation>
-    </message>
-    <message>
-        <source>General</source>
-        <translation type="vanished">常规</translation>
-    </message>
-    <message>
-        <source>Change settings</source>
-        <translation type="vanished">更改设置</translation>
-    </message>
-    <message>
-        <source>About Web Pirate</source>
-        <translation type="vanished">关于 Web Pirate</translation>
-    </message>
-    <message>
-        <source>Sessions</source>
-        <translation type="vanished">会话</translation>
-    </message>
-    <message>
-        <source>Night Mode</source>
-        <translation type="vanished">夜间模式</translation>
-    </message>
-    <message>
-        <source>Extensions</source>
-        <translation type="vanished">扩展</translation>
-    </message>
-    <message>
-        <source>Ad Block</source>
-        <translation type="vanished">广告屏蔽</translation>
-    </message>
-    <message>
-        <source>Navigation History</source>
-        <translation type="vanished">浏览历史</translation>
-    </message>
-    <message>
-        <source>Closed Tabs</source>
-        <translation type="vanished">已关闭的标签页</translation>
-    </message>
-    <message>
-        <source>Popup Blocker</source>
-        <translation type="vanished">阻止弹出页面</translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation type="vanished">下载</translation>
-    </message>
-    <message>
-        <source>Closed Tab</source>
-        <translation type="vanished">已关闭的标签页</translation>
-    </message>
-    <message>
-        <source>Cookies</source>
-        <translation type="vanished">Cookie</translation>
-    </message>
-</context>
-<context>
     <name>AdBlockDownloaderPage</name>
     <message>
         <source>AdBlock Updater</source>
@@ -1243,7 +1176,7 @@
     </message>
     <message>
         <source>AdBlock</source>
-        <translation type="unfinished"></translation>
+        <translation>广告屏蔽</translation>
     </message>
 </context>
 <context>
@@ -1257,75 +1190,71 @@
     <name>SidebarModel</name>
     <message>
         <source>General</source>
-        <translation type="unfinished"></translation>
+        <translation>常规</translation>
     </message>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished">书签</translation>
+        <translation>书签</translation>
     </message>
     <message>
         <source>Sessions</source>
-        <translation type="unfinished">会话</translation>
+        <translation>会话</translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation type="unfinished">下载</translation>
+        <translation>下载</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished">下载</translation>
+        <translation>下载</translation>
     </message>
     <message>
         <source>Closed Tabs</source>
-        <translation type="unfinished">已关闭的标签页</translation>
+        <translation>已关闭的标签页</translation>
     </message>
     <message>
         <source>Closed Tab</source>
-        <translation type="unfinished">已关闭的标签页</translation>
+        <translation>已关闭的标签页</translation>
     </message>
     <message>
         <source>Navigation History</source>
-        <translation type="unfinished">浏览历史</translation>
+        <translation>浏览历史</translation>
     </message>
     <message>
         <source>Cookies</source>
-        <translation type="unfinished">Cookie</translation>
+        <translation>Cookie</translation>
     </message>
     <message>
         <source>Extensions</source>
-        <translation type="unfinished">扩展</translation>
+        <translation>扩展</translation>
     </message>
     <message>
         <source>Ad Block</source>
-        <translation type="unfinished">广告屏蔽</translation>
+        <translation>广告屏蔽</translation>
     </message>
     <message>
         <source>Night Mode</source>
-        <translation type="unfinished">夜间模式</translation>
+        <translation>夜间模式</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation type="unfinished">设置</translation>
+        <translation>设置</translation>
     </message>
     <message>
         <source>Change settings</source>
-        <translation type="unfinished">更改设置</translation>
+        <translation>更改设置</translation>
     </message>
     <message>
         <source>Popup Blocker</source>
-        <translation type="unfinished"></translation>
+        <translation>屏蔽弹出页面</translation>
     </message>
     <message>
         <source>About Web Pirate</source>
-        <translation type="unfinished">关于 Web Pirate</translation>
+        <translation>关于 Web Pirate</translation>
     </message>
 </context>
 <context>
     <name>TabMenu</name>
-    <message>
-        <source>Add to Quick Grid</source>
-        <translation>添加到快速拨号</translation>
-    </message>
     <message>
         <source>Duplicate Tab</source>
         <translation>复制标签页</translation>
@@ -1333,6 +1262,14 @@
     <message>
         <source>Duplicate Tab in Background</source>
         <translation>在后台复制标签页</translation>
+    </message>
+    <message>
+        <source>Save page</source>
+        <translation>保存网页</translation>
+    </message>
+    <message>
+        <source>Add to Quick Grid</source>
+        <translation>添加到快速拨号</translation>
     </message>
     <message>
         <source>Close Tab</source>
@@ -1343,12 +1280,8 @@
         <translation>关闭其它标签页</translation>
     </message>
     <message>
-        <source>Save page</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Downloading web page</source>
-        <translation type="unfinished"></translation>
+        <translation>正在下载网页</translation>
     </message>
 </context>
 <context>

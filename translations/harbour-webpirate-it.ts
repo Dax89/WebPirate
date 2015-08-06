@@ -89,73 +89,6 @@
     </message>
 </context>
 <context>
-    <name>ActionSidebar</name>
-    <message>
-        <source>Favorites</source>
-        <translation type="vanished">Preferiti</translation>
-    </message>
-    <message>
-        <source>Downloads</source>
-        <translation type="vanished">Downloads</translation>
-    </message>
-    <message>
-        <source>Settings</source>
-        <translation type="vanished">Impostazioni</translation>
-    </message>
-    <message>
-        <source>General</source>
-        <translation type="vanished">Generali</translation>
-    </message>
-    <message>
-        <source>Change settings</source>
-        <translation type="vanished">Cambia Impostazioni</translation>
-    </message>
-    <message>
-        <source>About Web Pirate</source>
-        <translation type="vanished">Riguardo Web Pirate</translation>
-    </message>
-    <message>
-        <source>Sessions</source>
-        <translation type="vanished">Sessioni</translation>
-    </message>
-    <message>
-        <source>Night Mode</source>
-        <translation type="vanished">Modalità Notte</translation>
-    </message>
-    <message>
-        <source>Extensions</source>
-        <translation type="vanished">Estensioni</translation>
-    </message>
-    <message>
-        <source>Ad Block</source>
-        <translation type="vanished">Ad Block</translation>
-    </message>
-    <message>
-        <source>Navigation History</source>
-        <translation type="vanished">Cronologia</translation>
-    </message>
-    <message>
-        <source>Closed Tabs</source>
-        <translation type="vanished">Schede Chiuse</translation>
-    </message>
-    <message>
-        <source>Popup Blocker</source>
-        <translation type="vanished">Blocco Popup</translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation type="vanished">Download</translation>
-    </message>
-    <message>
-        <source>Closed Tab</source>
-        <translation type="vanished">Scheda chiusa</translation>
-    </message>
-    <message>
-        <source>Cookies</source>
-        <translation type="vanished">Cookie</translation>
-    </message>
-</context>
-<context>
     <name>AdBlockDownloaderPage</name>
     <message>
         <source>AdBlock Updater</source>
@@ -1243,7 +1176,7 @@
     </message>
     <message>
         <source>AdBlock</source>
-        <translation type="unfinished"></translation>
+        <translation>AdBlock</translation>
     </message>
 </context>
 <context>
@@ -1257,75 +1190,71 @@
     <name>SidebarModel</name>
     <message>
         <source>General</source>
-        <translation type="unfinished">Generali</translation>
+        <translation>Generali</translation>
     </message>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished">Preferiti</translation>
+        <translation>Preferiti</translation>
     </message>
     <message>
         <source>Sessions</source>
-        <translation type="unfinished">Sessioni</translation>
+        <translation>Sessioni</translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation type="unfinished">Downloads</translation>
+        <translation>Downloads</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished"></translation>
+        <translation>Download</translation>
     </message>
     <message>
         <source>Closed Tabs</source>
-        <translation type="unfinished">Schede Chiuse</translation>
+        <translation>Schede Chiuse</translation>
     </message>
     <message>
         <source>Closed Tab</source>
-        <translation type="unfinished">Scheda chiusa</translation>
+        <translation>Scheda chiusa</translation>
     </message>
     <message>
         <source>Navigation History</source>
-        <translation type="unfinished">Cronologia</translation>
+        <translation>Cronologia</translation>
     </message>
     <message>
         <source>Cookies</source>
-        <translation type="unfinished">Cookie</translation>
+        <translation>Cookie</translation>
     </message>
     <message>
         <source>Extensions</source>
-        <translation type="unfinished">Estensioni</translation>
+        <translation>Estensioni</translation>
     </message>
     <message>
         <source>Ad Block</source>
-        <translation type="unfinished">Ad Block</translation>
+        <translation>Ad Block</translation>
     </message>
     <message>
         <source>Night Mode</source>
-        <translation type="unfinished">Modalità Notte</translation>
+        <translation>Modalità Notte</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation type="unfinished">Impostazioni</translation>
+        <translation>Impostazioni</translation>
     </message>
     <message>
         <source>Change settings</source>
-        <translation type="unfinished">Cambia Impostazioni</translation>
+        <translation>Cambia Impostazioni</translation>
     </message>
     <message>
         <source>Popup Blocker</source>
-        <translation type="unfinished">Blocco Popup</translation>
+        <translation>Blocco Popup</translation>
     </message>
     <message>
         <source>About Web Pirate</source>
-        <translation type="unfinished">Riguardo Web Pirate</translation>
+        <translation>Riguardo Web Pirate</translation>
     </message>
 </context>
 <context>
     <name>TabMenu</name>
-    <message>
-        <source>Add to Quick Grid</source>
-        <translation>Aggiungi alla Quick Grid</translation>
-    </message>
     <message>
         <source>Duplicate Tab</source>
         <translation>Duplica scheda</translation>
@@ -1333,6 +1262,14 @@
     <message>
         <source>Duplicate Tab in Background</source>
         <translation>Duplica scheda in secondo piano</translation>
+    </message>
+    <message>
+        <source>Save page</source>
+        <translation>Salva pagina</translation>
+    </message>
+    <message>
+        <source>Add to Quick Grid</source>
+        <translation>Aggiungi alla Quick Grid</translation>
     </message>
     <message>
         <source>Close Tab</source>
@@ -1343,12 +1280,8 @@
         <translation>Chiudi le altre schede</translation>
     </message>
     <message>
-        <source>Save page</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Downloading web page</source>
-        <translation type="unfinished"></translation>
+        <translation>Download pagina web</translation>
     </message>
 </context>
 <context>

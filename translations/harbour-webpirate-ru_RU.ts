@@ -5,7 +5,7 @@
     <name>AboutPage</name>
     <message>
         <source>About Web Pirate</source>
-        <translation>О Web Pirate</translation>
+        <translation>О браузере Web Pirate</translation>
     </message>
     <message>
         <source>Catalan</source>
@@ -86,73 +86,6 @@
     <message>
         <source>Translation Platform</source>
         <translation>Платформа перевода</translation>
-    </message>
-</context>
-<context>
-    <name>ActionSidebar</name>
-    <message>
-        <source>Favorites</source>
-        <translation type="vanished">Закладки</translation>
-    </message>
-    <message>
-        <source>Downloads</source>
-        <translation type="vanished">Загрузки</translation>
-    </message>
-    <message>
-        <source>Settings</source>
-        <translation type="vanished">Настройки</translation>
-    </message>
-    <message>
-        <source>General</source>
-        <translation type="vanished">Основные</translation>
-    </message>
-    <message>
-        <source>Change settings</source>
-        <translation type="vanished">Изменить настройки </translation>
-    </message>
-    <message>
-        <source>About Web Pirate</source>
-        <translation type="vanished">О браузере</translation>
-    </message>
-    <message>
-        <source>Sessions</source>
-        <translation type="vanished">Сессии</translation>
-    </message>
-    <message>
-        <source>Night Mode</source>
-        <translation type="vanished">Ночной режим</translation>
-    </message>
-    <message>
-        <source>Extensions</source>
-        <translation type="vanished">Расширения</translation>
-    </message>
-    <message>
-        <source>Ad Block</source>
-        <translation type="vanished">Блокирование рекламы</translation>
-    </message>
-    <message>
-        <source>Navigation History</source>
-        <translation type="vanished">Журнал</translation>
-    </message>
-    <message>
-        <source>Closed Tabs</source>
-        <translation type="vanished">Закрытые вкладки</translation>
-    </message>
-    <message>
-        <source>Popup Blocker</source>
-        <translation type="vanished">Блокирование всплывающих окон</translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation type="vanished">Скачать</translation>
-    </message>
-    <message>
-        <source>Closed Tab</source>
-        <translation type="vanished">Закрыть вкладку</translation>
-    </message>
-    <message>
-        <source>Cookies</source>
-        <translation type="vanished">Cookies</translation>
     </message>
 </context>
 <context>
@@ -1239,11 +1172,11 @@
     </message>
     <message>
         <source>Cover</source>
-        <translation type="unfinished"></translation>
+        <translation>Плитка</translation>
     </message>
     <message>
         <source>AdBlock</source>
-        <translation type="unfinished"></translation>
+        <translation>AdBlock</translation>
     </message>
 </context>
 <context>
@@ -1257,75 +1190,71 @@
     <name>SidebarModel</name>
     <message>
         <source>General</source>
-        <translation type="unfinished">Основные</translation>
+        <translation>Основные</translation>
     </message>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished">Закладки</translation>
+        <translation>Закладки</translation>
     </message>
     <message>
         <source>Sessions</source>
-        <translation type="unfinished">Сессии</translation>
+        <translation>Сессии</translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation type="unfinished">Загрузки</translation>
+        <translation>Загрузки</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished"></translation>
+        <translation>Скачать</translation>
     </message>
     <message>
         <source>Closed Tabs</source>
-        <translation type="unfinished">Закрытые вкладки</translation>
+        <translation>Закрытые вкладки</translation>
     </message>
     <message>
         <source>Closed Tab</source>
-        <translation type="unfinished">Закрыть вкладку</translation>
+        <translation>Закрытая вкладка</translation>
     </message>
     <message>
         <source>Navigation History</source>
-        <translation type="unfinished">Журнал</translation>
+        <translation>Журнал</translation>
     </message>
     <message>
         <source>Cookies</source>
-        <translation type="unfinished">Cookies</translation>
+        <translation>Cookies</translation>
     </message>
     <message>
         <source>Extensions</source>
-        <translation type="unfinished">Расширения</translation>
+        <translation>Расширения</translation>
     </message>
     <message>
         <source>Ad Block</source>
-        <translation type="unfinished">Блокирование рекламы</translation>
+        <translation>Блокирование рекламы</translation>
     </message>
     <message>
         <source>Night Mode</source>
-        <translation type="unfinished">Ночной режим</translation>
+        <translation>Ночной режим</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation type="unfinished">Настройки</translation>
+        <translation>Настройки</translation>
     </message>
     <message>
         <source>Change settings</source>
-        <translation type="unfinished">Изменить настройки </translation>
+        <translation>Изменить настройки </translation>
     </message>
     <message>
         <source>Popup Blocker</source>
-        <translation type="unfinished"></translation>
+        <translation>Блокирование всплывающих окон</translation>
     </message>
     <message>
         <source>About Web Pirate</source>
-        <translation type="unfinished"></translation>
+        <translation>О браузере Web Pirate</translation>
     </message>
 </context>
 <context>
     <name>TabMenu</name>
-    <message>
-        <source>Add to Quick Grid</source>
-        <translation>Добавить в Fast Dial</translation>
-    </message>
     <message>
         <source>Duplicate Tab</source>
         <translation>Копировать вкладку</translation>
@@ -1333,6 +1262,14 @@
     <message>
         <source>Duplicate Tab in Background</source>
         <translation>Копировать вкладку в фоне</translation>
+    </message>
+    <message>
+        <source>Save page</source>
+        <translation>Сохранить страницу</translation>
+    </message>
+    <message>
+        <source>Add to Quick Grid</source>
+        <translation>Добавить в Fast Dial</translation>
     </message>
     <message>
         <source>Close Tab</source>
@@ -1343,12 +1280,8 @@
         <translation>Закрыть другие вкладки</translation>
     </message>
     <message>
-        <source>Save page</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Downloading web page</source>
-        <translation type="unfinished"></translation>
+        <translation>Загружаю страницу</translation>
     </message>
 </context>
 <context>

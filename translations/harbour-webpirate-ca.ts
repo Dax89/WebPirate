@@ -89,73 +89,6 @@
     </message>
 </context>
 <context>
-    <name>ActionSidebar</name>
-    <message>
-        <source>Favorites</source>
-        <translation type="vanished">Preferits</translation>
-    </message>
-    <message>
-        <source>Downloads</source>
-        <translation type="vanished">Descàrregues</translation>
-    </message>
-    <message>
-        <source>Settings</source>
-        <translation type="vanished">Configuració</translation>
-    </message>
-    <message>
-        <source>General</source>
-        <translation type="vanished">General</translation>
-    </message>
-    <message>
-        <source>Change settings</source>
-        <translation type="vanished">Canvia la configuració</translation>
-    </message>
-    <message>
-        <source>About Web Pirate</source>
-        <translation type="vanished">Quant a Web Pirate</translation>
-    </message>
-    <message>
-        <source>Sessions</source>
-        <translation type="vanished">Sessions</translation>
-    </message>
-    <message>
-        <source>Night Mode</source>
-        <translation type="vanished">Mode nocturn</translation>
-    </message>
-    <message>
-        <source>Extensions</source>
-        <translation type="vanished">Extensions</translation>
-    </message>
-    <message>
-        <source>Ad Block</source>
-        <translation type="vanished">Ad Block</translation>
-    </message>
-    <message>
-        <source>Navigation History</source>
-        <translation type="vanished">Historial de navegació</translation>
-    </message>
-    <message>
-        <source>Closed Tabs</source>
-        <translation type="vanished">Pestanyes tancades</translation>
-    </message>
-    <message>
-        <source>Popup Blocker</source>
-        <translation type="vanished">Blocador de finestres emergents</translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation type="vanished">Descarrega</translation>
-    </message>
-    <message>
-        <source>Closed Tab</source>
-        <translation type="vanished">Pestanya tancada</translation>
-    </message>
-    <message>
-        <source>Cookies</source>
-        <translation type="vanished">Galetes</translation>
-    </message>
-</context>
-<context>
     <name>AdBlockDownloaderPage</name>
     <message>
         <source>AdBlock Updater</source>
@@ -1265,11 +1198,11 @@
     </message>
     <message>
         <source>Sessions</source>
-        <translation type="unfinished">Sessions</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation type="unfinished">Descàrregues</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Download</source>
@@ -1281,7 +1214,7 @@
     </message>
     <message>
         <source>Closed Tab</source>
-        <translation type="unfinished">Pestanya tancada</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Navigation History</source>
@@ -1293,23 +1226,23 @@
     </message>
     <message>
         <source>Extensions</source>
-        <translation type="unfinished">Extensions</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ad Block</source>
-        <translation type="unfinished">Ad Block</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Night Mode</source>
-        <translation type="unfinished">Mode nocturn</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation type="unfinished">Configuració</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Change settings</source>
-        <translation type="unfinished">Canvia la configuració</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Popup Blocker</source>
@@ -1323,10 +1256,6 @@
 <context>
     <name>TabMenu</name>
     <message>
-        <source>Add to Quick Grid</source>
-        <translation>Afegeix a la reixeta ràpida</translation>
-    </message>
-    <message>
         <source>Duplicate Tab</source>
         <translation>Clona la pestanya</translation>
     </message>
@@ -1335,16 +1264,20 @@
         <translation>Clona la pestanya a un segon pla</translation>
     </message>
     <message>
+        <source>Save page</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Add to Quick Grid</source>
+        <translation>Afegeix a la reixeta ràpida</translation>
+    </message>
+    <message>
         <source>Close Tab</source>
         <translation>Tanca la pestanya</translation>
     </message>
     <message>
         <source>Close other Tabs</source>
         <translation>Tanca les altres pestanyes</translation>
-    </message>
-    <message>
-        <source>Save page</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Downloading web page</source>

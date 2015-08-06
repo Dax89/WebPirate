@@ -89,73 +89,6 @@
     </message>
 </context>
 <context>
-    <name>ActionSidebar</name>
-    <message>
-        <source>Favorites</source>
-        <translation type="vanished">Záložky</translation>
-    </message>
-    <message>
-        <source>Downloads</source>
-        <translation type="vanished">Stahování</translation>
-    </message>
-    <message>
-        <source>Settings</source>
-        <translation type="vanished">Nastavení</translation>
-    </message>
-    <message>
-        <source>General</source>
-        <translation type="vanished">Obecné</translation>
-    </message>
-    <message>
-        <source>Change settings</source>
-        <translation type="vanished">Změnit nastavení</translation>
-    </message>
-    <message>
-        <source>About Web Pirate</source>
-        <translation type="vanished">O Web Pirate</translation>
-    </message>
-    <message>
-        <source>Sessions</source>
-        <translation type="vanished">Relace</translation>
-    </message>
-    <message>
-        <source>Night Mode</source>
-        <translation type="vanished">Noční režim</translation>
-    </message>
-    <message>
-        <source>Extensions</source>
-        <translation type="vanished">Doplňky</translation>
-    </message>
-    <message>
-        <source>Ad Block</source>
-        <translation type="vanished">Blokování reklam</translation>
-    </message>
-    <message>
-        <source>Navigation History</source>
-        <translation type="vanished">Historie navigace</translation>
-    </message>
-    <message>
-        <source>Closed Tabs</source>
-        <translation type="vanished">Zavřené panely</translation>
-    </message>
-    <message>
-        <source>Popup Blocker</source>
-        <translation type="vanished">Blokování vyskakujících oken</translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation type="vanished">Stáhnout</translation>
-    </message>
-    <message>
-        <source>Closed Tab</source>
-        <translation type="vanished">Zavřený panel</translation>
-    </message>
-    <message>
-        <source>Cookies</source>
-        <translation type="vanished">Cookies</translation>
-    </message>
-</context>
-<context>
     <name>AdBlockDownloaderPage</name>
     <message>
         <source>AdBlock Updater</source>
@@ -1239,11 +1172,11 @@
     </message>
     <message>
         <source>Cover</source>
-        <translation type="unfinished"></translation>
+        <translation>Deska</translation>
     </message>
     <message>
         <source>AdBlock</source>
-        <translation type="unfinished"></translation>
+        <translation>Blokování Reklam</translation>
     </message>
 </context>
 <context>
@@ -1257,75 +1190,71 @@
     <name>SidebarModel</name>
     <message>
         <source>General</source>
-        <translation type="unfinished">Obecné</translation>
+        <translation>Základní</translation>
     </message>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished">Záložky</translation>
+        <translation>Záložky</translation>
     </message>
     <message>
         <source>Sessions</source>
-        <translation type="unfinished">Relace</translation>
+        <translation>Relace</translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation type="unfinished">Stahování</translation>
+        <translation>Stahování</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished">Stáhnout</translation>
+        <translation>Stáhnout</translation>
     </message>
     <message>
         <source>Closed Tabs</source>
-        <translation type="unfinished">Zavřené panely</translation>
+        <translation>Zavřené panely</translation>
     </message>
     <message>
         <source>Closed Tab</source>
-        <translation type="unfinished">Zavřený panel</translation>
+        <translation>Zavřený panel</translation>
     </message>
     <message>
         <source>Navigation History</source>
-        <translation type="unfinished">Historie navigace</translation>
+        <translation>Historie navigace</translation>
     </message>
     <message>
         <source>Cookies</source>
-        <translation type="unfinished">Cookies</translation>
+        <translation>Cookies</translation>
     </message>
     <message>
         <source>Extensions</source>
-        <translation type="unfinished">Doplňky</translation>
+        <translation>Doplňky</translation>
     </message>
     <message>
         <source>Ad Block</source>
-        <translation type="unfinished">Blokování reklam</translation>
+        <translation>Blokování reklam</translation>
     </message>
     <message>
         <source>Night Mode</source>
-        <translation type="unfinished">Noční režim</translation>
+        <translation>Noční režim</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation type="unfinished">Nastavení</translation>
+        <translation>Nastavení</translation>
     </message>
     <message>
         <source>Change settings</source>
-        <translation type="unfinished">Změnit nastavení</translation>
+        <translation>Změnit nastavení</translation>
     </message>
     <message>
         <source>Popup Blocker</source>
-        <translation type="unfinished">Blokování vyskakujících oken</translation>
+        <translation>Blokování vyskakujících oken</translation>
     </message>
     <message>
         <source>About Web Pirate</source>
-        <translation type="unfinished">O Web Pirate</translation>
+        <translation>O Web Pirate</translation>
     </message>
 </context>
 <context>
     <name>TabMenu</name>
-    <message>
-        <source>Add to Quick Grid</source>
-        <translation>Přidat do rychlé mřížky</translation>
-    </message>
     <message>
         <source>Duplicate Tab</source>
         <translation>Duplikovat Panel</translation>
@@ -1333,6 +1262,14 @@
     <message>
         <source>Duplicate Tab in Background</source>
         <translation>Duplikovat Panel na pozadí</translation>
+    </message>
+    <message>
+        <source>Save page</source>
+        <translation>Uložit stránku</translation>
+    </message>
+    <message>
+        <source>Add to Quick Grid</source>
+        <translation>Přidat do rychlé mřížky</translation>
     </message>
     <message>
         <source>Close Tab</source>
@@ -1343,12 +1280,8 @@
         <translation>Zavřít ostatní Panely</translation>
     </message>
     <message>
-        <source>Save page</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Downloading web page</source>
-        <translation type="unfinished"></translation>
+        <translation>Stahování Webové stránky</translation>
     </message>
 </context>
 <context>

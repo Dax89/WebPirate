@@ -89,73 +89,6 @@
     </message>
 </context>
 <context>
-    <name>ActionSidebar</name>
-    <message>
-        <source>Favorites</source>
-        <translation type="vanished">Bladwijzers</translation>
-    </message>
-    <message>
-        <source>Downloads</source>
-        <translation type="vanished">Downloads</translation>
-    </message>
-    <message>
-        <source>Settings</source>
-        <translation type="vanished">Instellingen</translation>
-    </message>
-    <message>
-        <source>General</source>
-        <translation type="vanished">Algemeen</translation>
-    </message>
-    <message>
-        <source>Change settings</source>
-        <translation type="vanished">Instellingen wijzigen</translation>
-    </message>
-    <message>
-        <source>About Web Pirate</source>
-        <translation type="vanished">Over WebPirate</translation>
-    </message>
-    <message>
-        <source>Sessions</source>
-        <translation type="vanished">Sessies</translation>
-    </message>
-    <message>
-        <source>Night Mode</source>
-        <translation type="vanished">Nachtmodus</translation>
-    </message>
-    <message>
-        <source>Extensions</source>
-        <translation type="vanished">Extensies</translation>
-    </message>
-    <message>
-        <source>Ad Block</source>
-        <translation type="vanished">Advertentieblokkering</translation>
-    </message>
-    <message>
-        <source>Navigation History</source>
-        <translation type="vanished">Surfgeschiedenis</translation>
-    </message>
-    <message>
-        <source>Closed Tabs</source>
-        <translation type="vanished">Gesloten tabbladen</translation>
-    </message>
-    <message>
-        <source>Popup Blocker</source>
-        <translation type="vanished">Pop-upblokkering</translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation type="vanished">Downloaden</translation>
-    </message>
-    <message>
-        <source>Closed Tab</source>
-        <translation type="vanished">Gesloten tabblad</translation>
-    </message>
-    <message>
-        <source>Cookies</source>
-        <translation type="vanished">Cookies</translation>
-    </message>
-</context>
-<context>
     <name>AdBlockDownloaderPage</name>
     <message>
         <source>AdBlock Updater</source>
@@ -1243,7 +1176,7 @@
     </message>
     <message>
         <source>AdBlock</source>
-        <translation type="unfinished"></translation>
+        <translation>Advertentieblokkeerder</translation>
     </message>
 </context>
 <context>
@@ -1257,75 +1190,71 @@
     <name>SidebarModel</name>
     <message>
         <source>General</source>
-        <translation type="unfinished">Algemeen</translation>
+        <translation>Algemeen</translation>
     </message>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished">Bladwijzers</translation>
+        <translation>Bladwijzers</translation>
     </message>
     <message>
         <source>Sessions</source>
-        <translation type="unfinished">Sessies</translation>
+        <translation>Sessies</translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation type="unfinished">Downloads</translation>
+        <translation>Downloads</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished"></translation>
+        <translation>Downloaden</translation>
     </message>
     <message>
         <source>Closed Tabs</source>
-        <translation type="unfinished">Gesloten tabbladen</translation>
+        <translation>Gesloten tabbladen</translation>
     </message>
     <message>
         <source>Closed Tab</source>
-        <translation type="unfinished">Gesloten tabblad</translation>
+        <translation>Gesloten tabblad</translation>
     </message>
     <message>
         <source>Navigation History</source>
-        <translation type="unfinished">Surfgeschiedenis</translation>
+        <translation>Surfgeschiedenis</translation>
     </message>
     <message>
         <source>Cookies</source>
-        <translation type="unfinished">Cookies</translation>
+        <translation>Cookies</translation>
     </message>
     <message>
         <source>Extensions</source>
-        <translation type="unfinished">Extensies</translation>
+        <translation>Uitbreidingen</translation>
     </message>
     <message>
         <source>Ad Block</source>
-        <translation type="unfinished">Advertentieblokkering</translation>
+        <translation>Advertentieblokkeerder</translation>
     </message>
     <message>
         <source>Night Mode</source>
-        <translation type="unfinished">Nachtmodus</translation>
+        <translation>Nachtmodus</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation type="unfinished">Instellingen</translation>
+        <translation>Instellingen</translation>
     </message>
     <message>
         <source>Change settings</source>
-        <translation type="unfinished">Instellingen wijzigen</translation>
+        <translation>Instellingen wijzigen</translation>
     </message>
     <message>
         <source>Popup Blocker</source>
-        <translation type="unfinished">Pop-upblokkering</translation>
+        <translation>Pop-up-blokkeerder</translation>
     </message>
     <message>
         <source>About Web Pirate</source>
-        <translation type="unfinished">Over WebPirate</translation>
+        <translation>Over WebPirate</translation>
     </message>
 </context>
 <context>
     <name>TabMenu</name>
-    <message>
-        <source>Add to Quick Grid</source>
-        <translation>Toevoegen aan Snelkiezer</translation>
-    </message>
     <message>
         <source>Duplicate Tab</source>
         <translation>Tabblad dupliceren</translation>
@@ -1333,6 +1262,14 @@
     <message>
         <source>Duplicate Tab in Background</source>
         <translation>Tabblad dupliceren op de achtergrond</translation>
+    </message>
+    <message>
+        <source>Save page</source>
+        <translation>Pagina opslaan</translation>
+    </message>
+    <message>
+        <source>Add to Quick Grid</source>
+        <translation>Toevoegen aan Snelkiezer</translation>
     </message>
     <message>
         <source>Close Tab</source>
@@ -1343,12 +1280,8 @@
         <translation>Andere tabbladen sluiten</translation>
     </message>
     <message>
-        <source>Save page</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Downloading web page</source>
-        <translation type="unfinished"></translation>
+        <translation>Bezig met het downloaden van de webpagina</translation>
     </message>
 </context>
 <context>

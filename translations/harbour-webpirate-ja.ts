@@ -89,65 +89,6 @@
     </message>
 </context>
 <context>
-    <name>ActionSidebar</name>
-    <message>
-        <source>Favorites</source>
-        <translation type="vanished">お気に入り</translation>
-    </message>
-    <message>
-        <source>Downloads</source>
-        <translation type="vanished">ダウンロード</translation>
-    </message>
-    <message>
-        <source>Settings</source>
-        <translation type="vanished">設定</translation>
-    </message>
-    <message>
-        <source>General</source>
-        <translation type="vanished">ジェネラル</translation>
-    </message>
-    <message>
-        <source>Change settings</source>
-        <translation type="vanished">設定を変更</translation>
-    </message>
-    <message>
-        <source>About Web Pirate</source>
-        <translation type="vanished">Web Pirateについて</translation>
-    </message>
-    <message>
-        <source>Sessions</source>
-        <translation type="vanished">セッション</translation>
-    </message>
-    <message>
-        <source>Night Mode</source>
-        <translation type="vanished">ナイトモード</translation>
-    </message>
-    <message>
-        <source>Extensions</source>
-        <translation type="vanished">エクステンション</translation>
-    </message>
-    <message>
-        <source>Ad Block</source>
-        <translation type="vanished">広告ブロック</translation>
-    </message>
-    <message>
-        <source>Navigation History</source>
-        <translation type="vanished">ナビゲーション履歴</translation>
-    </message>
-    <message>
-        <source>Closed Tabs</source>
-        <translation type="vanished">閉じたタブ</translation>
-    </message>
-    <message>
-        <source>Popup Blocker</source>
-        <translation type="vanished">ポップアップブロック</translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation type="obsolete">ダウンロード</translation>
-    </message>
-</context>
-<context>
     <name>AdBlockDownloaderPage</name>
     <message>
         <source>AdBlock Updater</source>
@@ -1251,7 +1192,9 @@
     <name>SidebarModel</name>
     <message>
         <source>General</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">ジェネラル
+	
+</translation>
     </message>
     <message>
         <source>Favorites</source>
@@ -1259,11 +1202,11 @@
     </message>
     <message>
         <source>Sessions</source>
-        <translation type="unfinished">セッション</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation type="unfinished">ダウンロード</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Download</source>
@@ -1287,27 +1230,27 @@
     </message>
     <message>
         <source>Extensions</source>
-        <translation type="unfinished">エクステンション</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ad Block</source>
-        <translation type="unfinished">広告ブロック</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Night Mode</source>
-        <translation type="unfinished">ナイトモード</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation type="unfinished">設定</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Change settings</source>
-        <translation type="unfinished">設定を変更</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Popup Blocker</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">ポップアップブロッカー</translation>
     </message>
     <message>
         <source>About Web Pirate</source>
@@ -1316,10 +1259,6 @@
 </context>
 <context>
     <name>TabMenu</name>
-    <message>
-        <source>Close Tab</source>
-        <translation type="unfinished">タブを閉じる</translation>
-    </message>
     <message>
         <source>Duplicate Tab</source>
         <translation type="unfinished"></translation>
@@ -1335,6 +1274,10 @@
     <message>
         <source>Add to Quick Grid</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Close Tab</source>
+        <translation type="unfinished">タブを閉じる</translation>
     </message>
     <message>
         <source>Close other Tabs</source>

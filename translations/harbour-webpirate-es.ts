@@ -89,73 +89,6 @@
     </message>
 </context>
 <context>
-    <name>ActionSidebar</name>
-    <message>
-        <source>Favorites</source>
-        <translation type="vanished">Favoritos</translation>
-    </message>
-    <message>
-        <source>Downloads</source>
-        <translation type="vanished">Descargas</translation>
-    </message>
-    <message>
-        <source>Settings</source>
-        <translation type="vanished">Ajustes</translation>
-    </message>
-    <message>
-        <source>General</source>
-        <translation type="vanished">General</translation>
-    </message>
-    <message>
-        <source>Change settings</source>
-        <translation type="vanished">Cambiar ajustes</translation>
-    </message>
-    <message>
-        <source>About Web Pirate</source>
-        <translation type="vanished">Acerca de Web Pirate</translation>
-    </message>
-    <message>
-        <source>Sessions</source>
-        <translation type="vanished">Sesiones</translation>
-    </message>
-    <message>
-        <source>Night Mode</source>
-        <translation type="vanished">Modo noche</translation>
-    </message>
-    <message>
-        <source>Extensions</source>
-        <translation type="vanished">Extensiones</translation>
-    </message>
-    <message>
-        <source>Ad Block</source>
-        <translation type="vanished">Ad Block</translation>
-    </message>
-    <message>
-        <source>Navigation History</source>
-        <translation type="vanished">Historial de navegación</translation>
-    </message>
-    <message>
-        <source>Closed Tabs</source>
-        <translation type="vanished">Pestañas cerradas</translation>
-    </message>
-    <message>
-        <source>Popup Blocker</source>
-        <translation type="vanished">Bloqueador de popup</translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation type="vanished">Descargar</translation>
-    </message>
-    <message>
-        <source>Closed Tab</source>
-        <translation type="vanished">Pestaña cerrada</translation>
-    </message>
-    <message>
-        <source>Cookies</source>
-        <translation type="vanished">Cookies</translation>
-    </message>
-</context>
-<context>
     <name>AdBlockDownloaderPage</name>
     <message>
         <source>AdBlock Updater</source>
@@ -1244,7 +1177,7 @@
     </message>
     <message>
         <source>AdBlock</source>
-        <translation type="unfinished"></translation>
+        <translation>AdBlock</translation>
     </message>
 </context>
 <context>
@@ -1258,75 +1191,71 @@
     <name>SidebarModel</name>
     <message>
         <source>General</source>
-        <translation type="unfinished">General</translation>
+        <translation>General</translation>
     </message>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished">Favoritos</translation>
+        <translation>Favoritos</translation>
     </message>
     <message>
         <source>Sessions</source>
-        <translation type="unfinished">Sesiones</translation>
+        <translation>Sesiones</translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation type="unfinished">Descargas</translation>
+        <translation>Descargas</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished">Descargar</translation>
+        <translation>Descargar</translation>
     </message>
     <message>
         <source>Closed Tabs</source>
-        <translation type="unfinished">Pestañas cerradas</translation>
+        <translation>Pestañas cerradas</translation>
     </message>
     <message>
         <source>Closed Tab</source>
-        <translation type="unfinished">Pestaña cerrada</translation>
+        <translation>Pestaña cerrada</translation>
     </message>
     <message>
         <source>Navigation History</source>
-        <translation type="unfinished">Historial de navegación</translation>
+        <translation>Historial de navegación</translation>
     </message>
     <message>
         <source>Cookies</source>
-        <translation type="unfinished">Cookies</translation>
+        <translation>Cookies</translation>
     </message>
     <message>
         <source>Extensions</source>
-        <translation type="unfinished">Extensiones</translation>
+        <translation>Extensiones</translation>
     </message>
     <message>
         <source>Ad Block</source>
-        <translation type="unfinished">Ad Block</translation>
+        <translation>Ad Block</translation>
     </message>
     <message>
         <source>Night Mode</source>
-        <translation type="unfinished">Modo noche</translation>
+        <translation>Modo noche</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation type="unfinished">Ajustes</translation>
+        <translation>Ajustes</translation>
     </message>
     <message>
         <source>Change settings</source>
-        <translation type="unfinished">Cambiar ajustes</translation>
+        <translation>Cambiar ajustes</translation>
     </message>
     <message>
         <source>Popup Blocker</source>
-        <translation type="unfinished">Bloqueador de popup</translation>
+        <translation>Bloqueador de popup</translation>
     </message>
     <message>
         <source>About Web Pirate</source>
-        <translation type="unfinished">Acerca de Web Pirate</translation>
+        <translation>Acerca de Web Pirate</translation>
     </message>
 </context>
 <context>
     <name>TabMenu</name>
-    <message>
-        <source>Add to Quick Grid</source>
-        <translation>Añadir a la rejilla rápida</translation>
-    </message>
     <message>
         <source>Duplicate Tab</source>
         <translation>Duplicar pestaña</translation>
@@ -1334,6 +1263,14 @@
     <message>
         <source>Duplicate Tab in Background</source>
         <translation>Duplicar pestaña en segundo plano</translation>
+    </message>
+    <message>
+        <source>Save page</source>
+        <translation>Guardar página</translation>
+    </message>
+    <message>
+        <source>Add to Quick Grid</source>
+        <translation>Añadir a la rejilla rápida</translation>
     </message>
     <message>
         <source>Close Tab</source>
@@ -1344,12 +1281,8 @@
         <translation>Cerrar otras pestañas</translation>
     </message>
     <message>
-        <source>Save page</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Downloading web page</source>
-        <translation type="unfinished"></translation>
+        <translation>Descargando página web</translation>
     </message>
 </context>
 <context>
