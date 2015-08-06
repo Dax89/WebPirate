@@ -9,7 +9,7 @@ function grabPlayerJavascript(ytplayer, mediagrabber, urldecoder)
 
     req.onreadystatechange = function() {
         if(req.readyState === XMLHttpRequest.DONE) {
-            var funcname = /a.set\("signature",([a-z0-9]+)\([a-z]\)\);/i.exec(req.responseText);
+            var funcname = /a.set\("signature",([a-zA-Z0-9]+)\([a-z]\)\);/i.exec(req.responseText);
 
             if(!funcname || !funcname[1]) {
                 mediagrabber.grabFailed = true;
@@ -28,7 +28,7 @@ function grabPlayerJavascript(ytplayer, mediagrabber, urldecoder)
                 return;
             }
 
-            var decodeobjname = /([a-z]{2,})\.[a-zA-Z0-9]+\(/.exec(funcbody[1]);
+            var decodeobjname = /([a-zA-Z0-9]{2,})\.[a-zA-Z0-9]+\(/.exec(funcbody[1]);
 
             if(!decodeobjname || !decodeobjname[1]) {
                 mediagrabber.grabFailed = true;
