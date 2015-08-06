@@ -5,6 +5,9 @@ const QString WebPageDownloadItem::DEFAULT_FILENAME = "download.html";
 WebPageDownloadItem::WebPageDownloadItem(const QString &html, QObject *parent): AbstractDownloadItem(parent), _html(html)
 {
     this->setFileName(WebPageDownloadItem::DEFAULT_FILENAME);
+    this->setProgressTotal(html.length());
+
+    emit progressTotalChanged();
 }
 
 void WebPageDownloadItem::start()
@@ -16,7 +19,9 @@ void WebPageDownloadItem::start()
 
     this->setCompleted(true);
     this->setError(false);
+    this->setProgressValue(this->_html.length());
 
+    emit progressValueChanged();
     emit downloadCompleted(this->fileName());
 }
 
