@@ -6,6 +6,7 @@
 #include <QStandardPaths>
 #include "downloaditem.h"
 #include "webviewdownloaditem.h"
+#include "webpagedownloaditem.h"
 
 class DownloadManager : public QObject
 {
@@ -26,6 +27,7 @@ class DownloadManager : public QObject
         AbstractDownloadItem *downloadItem(int index);
         void createDownloadFromUrl(const QUrl& url);
         void createDownloadFromUrl(const QUrl& url, const QString& filename);
+        void createDownloadFromPage(const QString& html);
         void createDownload(QWebDownloadItem* downloaditem);
         void removeCompleted();
 

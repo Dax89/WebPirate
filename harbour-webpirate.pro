@@ -52,7 +52,8 @@ SOURCES += src/harbour-webpirate.cpp \
     src/network/networkinterfaces.cpp \
     src/dbus/client/machineid.cpp \
     src/dbus/client/notifications/notifications.cpp \
-    src/dbus/webpirateinterface.cpp
+    src/dbus/webpirateinterface.cpp \
+    src/downloadmanager/webpagedownloaditem.cpp
 
 OTHER_FILES += qml/harbour-webpirate.qml \
     rpm/harbour-webpirate.changes.in \
@@ -253,5 +254,6 @@ HEADERS += \
     src/network/networkinterfaces.h \
     src/dbus/client/machineid.h \
     src/dbus/client/notifications/notifications.h \
-    src/dbus/webpirateinterface.h
+    src/dbus/webpirateinterface.h \
+    src/downloadmanager/webpagedownloaditem.h
 

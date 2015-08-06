@@ -54,7 +54,10 @@ PopupDialog
                                                                return;
 
                                                            tabviewremorse.execute(qsTr("Downloading web page"), function () {
-                                                               mainwindow.settings.downloadmanager.createDownloadFromUrl(selectedTab.getUrl());
+                                                               selectedTab.webView.experimental.evaluateJavaScript("(function() { return document.documentElement.innerHTML; })()",
+                                                                                                      function(result) {
+                                                                                                          mainwindow.settings.downloadmanager.createDownloadFromPage(result);
+                                                                                                      });
                                                            });
                                                        }
                                                      },

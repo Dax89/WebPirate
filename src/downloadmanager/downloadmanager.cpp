@@ -42,6 +42,16 @@ void DownloadManager::createDownload(QWebDownloadItem* downloaditem)
     emit countChanged();
 }
 
+void DownloadManager::createDownloadFromPage(const QString &html)
+{
+    WebPageDownloadItem* di = new WebPageDownloadItem(html, this);
+    connect(di, SIGNAL(downloadCompleted(const QString&)), this, SIGNAL(downloadCompleted(const QString&)));
+
+    this->_downloads.append(di);
+    di->start();
+    emit countChanged();
+}
+
 void DownloadManager::removeCompleted()
 {
     int i = 0;
