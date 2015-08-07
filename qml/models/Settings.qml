@@ -9,7 +9,7 @@ import "cover"
 
 QtObject
 {
-    readonly property string version: "1.4"
+    readonly property string version: "1.5"
 
     property MimeDatabase mimedatabase: MimeDatabase { }
     property ScreenBlank screenblank: ScreenBlank { }
