@@ -20,6 +20,7 @@
 - Detect 'Enter' key when using TOHKBD (testing needed)
 - Moved lots of Sidebar items in Settings page
 - Smart target=_blank detection
+- Allow to close the last tab (must be enabled in Settings)
 - Sidebar can be closed with a right swype
 - Restored WebPirate DBus interface
 - Updated UserAgent
