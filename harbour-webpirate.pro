@@ -100,9 +100,6 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/components/PopupMessage.qml \
     qml/components/sidebar/SidebarItem.qml \
     qml/pages/AboutPage.qml \
-    qml/js/canvg/canvg.js \
-    qml/js/canvg/rgbcolor.js \
-    qml/js/canvg/StackBlur.js \
     qml/components/InfoLabel.qml \
     qml/js/youtube/YouTubeGrabber.js \
     qml/components/browsertab/views/browserplayer/mediacomponents/MediaPlayerToolBar.qml \
@@ -199,7 +196,8 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/components/tabview/TabIcon.qml \
     qml/components/GestureArea.qml \
     qml/models/SidebarModel.qml \
-    qml/js/helpers/TOHKBD.js
+    qml/js/helpers/TOHKBD.js \
+    qml/js/polyfills/canvg.min.js
 
 # to disable building translations every time, comment out the
 # following CONFIG line

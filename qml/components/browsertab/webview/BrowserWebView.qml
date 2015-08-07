@@ -72,10 +72,8 @@ SilicaWebView
                                 /* WebView Utils Functions */
                                 Qt.resolvedUrl("../../../js/helpers/Utils.js"),
 
-                                /* SVG Polyfill: From 'canvg' project */
-                                Qt.resolvedUrl("../../../js/canvg/rgbcolor.js"),
-                                Qt.resolvedUrl("../../../js/canvg/StackBlur.js"),
-                                Qt.resolvedUrl("../../../js/canvg/canvg.js"),
+                                /* Polyfills */
+                                Qt.resolvedUrl("../../../js/polyfills/canvg.min.js"), /* SVG Support: From CanVG project: https://github.com/gabelerner/canvg */
 
                                 /* Custom WebView Helpers */
                                 Qt.resolvedUrl("../../../js/helpers/ForcePixelRatio.js"),
