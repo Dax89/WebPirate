@@ -15,12 +15,10 @@ MouseArea
 
     function show() {
         popupdialog.visible = true;
-        popupmenu.height = (Theme.itemSizeSmall * Math.min(5, popupCount)) + (titleVisible ? Theme.itemSizeSmall : 0);
     }
 
     function hide() {
         popupdialog.visible = false;
-        popupmenu.height = 0;
     }
 
     id: popupdialog
@@ -39,8 +37,8 @@ MouseArea
     Rectangle
     {
         id: popupmenu
-        visible: height > 0
         anchors { left: parent.left; right: parent.right; bottom: parent.bottom }
+        height: visible ? (Theme.itemSizeSmall * Math.min(5, popupCount)) + (titleVisible ? Theme.itemSizeSmall : 0) : 0
 
         gradient: Gradient {
             GradientStop { position: 0.0; color: Theme.rgba(Theme.highlightDimmerColor, 1.0) }
