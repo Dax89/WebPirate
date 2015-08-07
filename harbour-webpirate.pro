@@ -198,7 +198,8 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/components/quickgrid/QuickGridBottomPanel.qml \
     qml/components/tabview/TabIcon.qml \
     qml/components/GestureArea.qml \
-    qml/models/SidebarModel.qml
+    qml/models/SidebarModel.qml \
+    qml/js/helpers/TOHKBD.js
 
 # to disable building translations every time, comment out the
 # following CONFIG line

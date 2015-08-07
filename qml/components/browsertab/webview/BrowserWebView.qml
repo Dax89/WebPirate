@@ -97,7 +97,10 @@ SilicaWebView
                                 Qt.resolvedUrl("../../../js/helpers/MessageListener.js"),
 
                                 /* Complete Web Notifications Implementation */
-                                Qt.resolvedUrl("../../../js/helpers/Notification.js") ]
+                                Qt.resolvedUrl("../../../js/helpers/Notification.js"),
+
+                                /* TOHKBD Support (WebView side) */
+                                Qt.resolvedUrl("../../../js/helpers/TOHKBD.js") ]
 
     experimental.onTextFound: {
         searchbar.findError = (matchCount <= 0);
