@@ -8,6 +8,26 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Fri Aug 07 2015 Antonio Davide Trogu <trogu.davide@gmail.com> 1.5-1
+- Polished UI
+- Redesigned QuickGrid
+- QuickGrid items can now be sorted
+- Updated YouTube Cipher
+- Complete rewrite of Dailymotion's grabber
+- Smooth transitions when clicking Sidebar's items
+- FilePicker: Disabled thumbnails (triggers OOM killer)
+- Allow to save webpages by long pressing a Tab
+- Detect 'Enter' key when using TOHKBD (testing needed)
+- Moved lots of Sidebar items in Settings page
+- Smart target=_blank detection
+- Sidebar can be closed with a right swype
+- Restored WebPirate DBus interface
+- Updated UserAgent
+- Updated and minified CanVG script for faster parsing/loading
+- Minor Fixes
+- Regression Fixes
+- Updated Localizations
+
 * Sun Jul 05 2015 Antonio Davide Trogu <trogu.davide@gmail.com> 1.4-2
 - Updated YouTube Cipher
 - Redesigned Settings UI using a hierarchical structure
