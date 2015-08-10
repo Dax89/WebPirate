@@ -31,7 +31,7 @@ PopupDialog
                                                            if(!selectedTab)
                                                                return;
 
-                                                           tabview.addTab(selectedselectedTab.getUrl(), true, selectedIndex + 1);
+                                                           tabview.addTab(selectedTab.getUrl(), true, selectedIndex + 1);
                                                        }
                                                       },
 
