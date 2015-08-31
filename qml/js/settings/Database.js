@@ -4,7 +4,7 @@
 
 function instance()
 {
-    return openDatabase("1.2");
+    return openDatabase("1.3");
 }
 
 function checkDBUpgrade()
@@ -25,7 +25,7 @@ function checkDBUpgrade()
         return;
     }
 
-    if((db.version === "") || (db.version === "1.1"))
+    if(db.version === "1.1")
     {
         db.changeVersion(db.version, "1.2",
                          function(tx) {
@@ -34,6 +34,15 @@ function checkDBUpgrade()
 
         checkDBUpgrade();
         return;
+    }
+
+    if((db.version === "") || (db.version === "1.2"))
+    {
+        db.changeVersion(db.version, "1.3",
+                         function(tx) {
+                             tx.executeSql("UPDATE OR IGNORE SearchEngines SET query='https://duckduckgo.com/?q=' WHERE name='DuckDuckGo'");
+                             tx.executeSql("UPDATE OR IGNORE SearchEngines SET query='https://encrypted.google.com/search?q=' WHERE name='Google'");
+                         });
     }
 }
 
