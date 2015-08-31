@@ -2,6 +2,7 @@
 
 var domainregex = new RegExp("http[s]*://[a-zA-Z0-9-_]*[\\.]*[a-zA-Z0-9-_]+[\\.]*[a-zA-Z0-9-_\\.]*");
 var urlregex = new RegExp("[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%_\\+.~#?&//=]*)");
+var specialurlregex = new RegExp("([a-z]+)\\:.+");
 var hostportregex = new RegExp("[-a-zA-Z0-9@:%._\\+~#=]{1,256}:[0-9]+");
 var ipregex = new RegExp("[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}");
 var ipportregex = new RegExp("[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}:[0-9]+");
@@ -37,8 +38,14 @@ function protocol(url)
 {
     var cap = protocolregex.exec(url);
 
-    if(!cap || (cap && !cap[1]))
-        return "http"; /* Fallback to HTTP */
+    if(!cap || (cap && !cap[1])) {
+        cap = specialurlregex.exec(url);
+
+        if(!cap || (cap && !cap[1]))
+            return "http"; /* Fallback to HTTP */
+
+        return cap[1];
+    }
 
     return cap[1];
 }
