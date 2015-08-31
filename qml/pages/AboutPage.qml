@@ -11,28 +11,28 @@ Page
                                                           readonly property string translators: "fri666"; },
 
                                                QtObject { readonly property string language: qsTr("Chinese");
-                                                          readonly property string translators: "gexc"; },
+                                                          readonly property string translators: "gexc, hanhsuan"; },
 
                                                QtObject { readonly property string language: qsTr("Czech");
-                                                          readonly property string translators: "nodevel, Bobsikus"; },
+                                                          readonly property string translators: "cocovina, nodevel, Bobsikus, PawelSpoon"; },
 
                                                QtObject { readonly property string language: qsTr("Dutch");
                                                           readonly property string translators: "Vistaus, pljmn"; },
 
                                                QtObject { readonly property string language: qsTr("Finnish");
-                                                          readonly property string translators: "riqpe, oku9000"; },
+                                                          readonly property string translators: "reviewjolla, ari_jarvio, sakustar, tattuh, oku9000"; },
 
                                                QtObject { readonly property string language: qsTr("French");
-                                                          readonly property string translators: "Jordi, pljmn"; },
+                                                          readonly property string translators: "Jordi, pljmn, Nerfiaux, malibu1106"; },
 
                                                QtObject { readonly property string language: qsTr("German");
-                                                          readonly property string translators: "Moth, blubdbibub, snowpolloi"; },
+                                                          readonly property string translators: "Moth, blubdbibub, snowpolloi, PawelSpoon"; },
 
                                                QtObject { readonly property string language: qsTr("Italian");
                                                           readonly property string translators: "Watchmaker, Dax89"; },
 
                                                QtObject { readonly property string language: qsTr("Russian");
-                                                          readonly property string translators: "lewa"; },
+                                                          readonly property string translators: "lewa, Wedmer, akalmykov"; },
 
                                                QtObject { readonly property string language: qsTr("Swedish");
                                                           readonly property string translators: "eson"; },
@@ -44,7 +44,10 @@ Page
                                                           readonly property string translators: "rrijken"; },
 
                                                QtObject { readonly property string language: qsTr("Spanish");
-                                                          readonly property string translators: "carmenfdezb"; } ]
+                                                          readonly property string translators: "carmenfdezb"; },
+
+                                               QtObject { readonly property string language: qsTr("Greek");
+                                                          readonly property string translators: "dglent"; } ]
 
     signal urlRequested(string url)
 

@@ -87,6 +87,10 @@
         <source>Translation Platform</source>
         <translation>Piattaforma di Localizzazione</translation>
     </message>
+    <message>
+        <source>Greek</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>AdBlockDownloaderPage</name>
