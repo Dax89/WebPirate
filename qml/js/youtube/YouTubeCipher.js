@@ -9,7 +9,7 @@ function grabPlayerJavascript(ytplayer, mediagrabber, urldecoder)
 
     req.onreadystatechange = function() {
         if(req.readyState === XMLHttpRequest.DONE) {
-            var funcname = /a.set\("signature",([a-zA-Z0-9]+)\([a-z]\)\);/i.exec(req.responseText);
+            var funcname = /a.set\("signature",([a-zA-Z0-9\$]+)\([a-z]\)\);/i.exec(req.responseText);
 
             if(!funcname || !funcname[1]) {
                 mediagrabber.grabFailed = true;
@@ -24,11 +24,11 @@ function grabPlayerJavascript(ytplayer, mediagrabber, urldecoder)
             if(!funcbody || !funcbody[1]) {
                 mediagrabber.grabFailed = true;
                 mediagrabber.grabbing = false;
-                mediagrabber.grabStatus = qsTr("Cannot find decoding function");
+                mediagrabber.grabStatus = qsTr("Cannot find decoding function") + " (" + funcname[1] + ")";
                 return;
             }
 
-            var decodeobjname = /([a-zA-Z0-9]{2,})\.[a-zA-Z0-9]+\(/.exec(funcbody[1]);
+            var decodeobjname = /([a-zA-Z0-9\$]{2,})\.[a-zA-Z0-9\$]+\(/.exec(funcbody[1]);
 
             if(!decodeobjname || !decodeobjname[1]) {
                 mediagrabber.grabFailed = true;
@@ -37,13 +37,13 @@ function grabPlayerJavascript(ytplayer, mediagrabber, urldecoder)
                 return;
             }
 
-            var decodeobjrgx = new RegExp("var " + decodeobjname[1] + "={(.*?)};");
+            var decodeobjrgx = new RegExp(((decodeobjname[1][0] === "$") ? "var \\" : "var ") + decodeobjname[1] + "={(.*?)};");
             var decodeobj = decodeobjrgx.exec(req.responseText);
 
             if(!decodeobj || !decodeobj[1]) {
                 mediagrabber.grabFailed = true;
                 mediagrabber.grabbing = false;
-                mediagrabber.grabStatus = qsTr("Cannot find decoding object");
+                mediagrabber.grabStatus = qsTr("Cannot find decoding object") + " (" + decodeobjname[1] + ")";
                 return;
             }
 
@@ -56,7 +56,7 @@ function grabPlayerJavascript(ytplayer, mediagrabber, urldecoder)
     var playerurl = ytplayer.assets.js;
 
     if(playerurl.indexOf("//") === 0) /* Adjust URL, if needed */
-        playerurl = "http:" + ytplayer.assets.js;
+        playerurl = "https:" + ytplayer.assets.js;
 
     req.open("GET", playerurl);
     req.send();

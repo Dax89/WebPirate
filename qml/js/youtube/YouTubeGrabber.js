@@ -5,7 +5,7 @@
 
 function grabVideoUrl(videoid)
 {
-    return  "http://www.youtube.com/get_video_info?video_id=" + videoid + "&el=vevo&el=embedded&el=detailpage&asv=3";
+    return  "https://www.youtube.com/get_video_info?video_id=" + videoid + "&el=vevo&el=embedded&el=detailpage&asv=3";
 }
 
 function decodeVideoTypes(videolist, mediagrabber, decodefunc)
