@@ -37,6 +37,7 @@ function grabPlayerJavascript(ytplayer, mediagrabber, urldecoder)
                 return;
             }
 
+            /* Escape $ character, if needed (Javascript allows $myvariable identifiers) */
             var decodeobjrgx = new RegExp(((decodeobjname[1][0] === "$") ? "var \\" : "var ") + decodeobjname[1] + "={(.*?)};");
             var decodeobj = decodeobjrgx.exec(req.responseText);
 
