@@ -43,7 +43,7 @@ Item
 
         GestureArea
         {
-            property Item item: lvsidebar.itemAt(mouseX, mouseY)
+            property Item item: lvsidebar.itemAt(lvsidebar.contentX + mouseX, lvsidebar.contentY + mouseY)
 
             id: gesturearea
             anchors.fill: parent
