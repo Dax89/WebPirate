@@ -7,6 +7,7 @@ import "../../../js/youtube/YouTubeGrabber.js" as YouTubeGrabber
 
 Item
 {
+    property alias dispatchers: listenerdispatchers
     id: listener
 
     QtObject
@@ -32,7 +33,7 @@ Item
                                             "play_vimeo": playVimeoVideo,
                                             "play_jwplayer": playJwPlayer }
 
-        id: listenerprivate
+        id: listenerdispatchers
 
         function clearEscape(s) {
             return s.replace("&#39;", "'");
@@ -231,7 +232,7 @@ Item
     function execute(message)
     {
         var data = JSON.parse(message.data);
-        var eventfn = listenerprivate.dispatcher[data.type];
+        var eventfn = listenerdispatchers.dispatcher[data.type];
 
         if(eventfn)
             eventfn(data);

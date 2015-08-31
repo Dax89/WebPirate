@@ -3,6 +3,16 @@
 .import "../UrlHelper.js" as UrlHelper
 .import "YouTubeCipher.js" as YouTubeCipher
 
+function getVideoId(url)
+{
+    var cap = /^.*(?:(?:youtu\.be\/|v\/|vi\/|u\/\w\/|embed\/)|(?:(?:watch)?\?v(?:i)?=|\&v(?:i)?=))([^#\&\?]*).*/.exec(url);
+
+    if(!cap || !cap[1])
+        return null;
+
+    return cap[1];
+}
+
 function grabVideoUrl(videoid)
 {
     return  "https://www.youtube.com/get_video_info?video_id=" + videoid + "&el=vevo&el=embedded&el=detailpage&asv=3";

@@ -202,7 +202,7 @@ SilicaWebView
         var stringurl = request.url.toString();
         var protocol = UrlHelper.protocol(stringurl);
 
-        if((request.navigationType === WebView.LinkClickedNavigation) && urlschemedelegatehandler.handleProtocol(protocol, request.url))
+        if(urlschemedelegatehandler.handleProtocol(protocol, request.url))
         {
             request.action = WebView.IgnoreRequest;
             return;
