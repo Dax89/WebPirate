@@ -15,8 +15,9 @@ import "../../../js/youtube/YouTubeGrabber.js" as YouTubeGrabber
 SilicaWebView
 {
     property string lockDownloadAction
-    property bool lockDownload: false  /* Manage Download Requests in a different way */
-    property int itemSelectorIndex: -1 /* Keeps the selected index of ItemSelector */
+    property bool nightModeEnabled: false /* Check if Night Mode is visually active      */
+    property bool lockDownload: false     /* Manage Download Requests in a different way */
+    property int itemSelectorIndex: -1    /* Keeps the selected index of ItemSelector    */
 
     function setNightMode(nightmode)
     {
@@ -43,11 +44,24 @@ SilicaWebView
 
     Rectangle /* Night Mode Rectangle */
     {
-        x: contentX
-        y: webview.contentHeight - 1
-        width: Math.max(webview.contentWidth, webview.width)
-        height: Math.max(webview.contentHeight, webview.height)
-        color: mainwindow.settings.nightmode ? "black" : "white"
+        x: (mainwindow.settings.nightmode && !webview.nightModeEnabled) ? 0 : contentX
+        y: (mainwindow.settings.nightmode && !webview.nightModeEnabled) ? 0 : (webview.contentHeight - 1)
+
+        width:{
+            if(mainwindow.settings.nightmode && !webview.nightModeEnabled)
+                return webview.width;
+
+            return Math.max(webview.contentWidth, webview.width);
+        }
+
+        height:{
+            if(mainwindow.settings.nightmode && !webview.nightModeEnabled)
+                return webview.height;
+
+            Math.max(webview.contentHeight, webview.height);
+        }
+
+        color: mainwindow.settings.nightmode ? "#181818" : "white" /* Do not use 100% black */
     }
 
     id: webview
@@ -227,6 +241,8 @@ SilicaWebView
                 sidebar.collapse();
                 historymenu.hide();
             }
+
+            webview.nightModeEnabled = false;
 
             Qt.inputMethod.hide();
             actionbar.blockedPopups.clear();

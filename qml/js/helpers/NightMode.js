@@ -10,6 +10,7 @@ var __wp_nightmode__ = {
         var css = "html.__wp_nightmode__ { -webkit-filter: contrast(68%) brightness(108%) invert(); }" +
                   "html.__wp_nightmode__ iframe { -webkit-filter: invert(); }" + // Keep iframes normal
                   "html.__wp_nightmode__ object { -webkit-filter: invert(); }" + // Keep Flash items normal
+                  "html.__wp_nightmode__ embed { -webkit-filter: invert(); }" +  // Keep Flash items normal (HTML5)
                   "html.__wp_nightmode__ video { -webkit-filter: invert(); }" +  // Keep HTML5 Videos normal
                   "html.__wp_nightmode__ img { -webkit-filter: invert(); }" ;    // Keep images normal
 
@@ -35,5 +36,13 @@ var __wp_nightmode__ = {
               html.className += " " + "__wp_nightmode__";
           else
               html.className = html.className.replace("__wp_nightmode__", "");
+
+          setTimeout(function() { // Wait 1s before notify changes
+              var data = new Object;
+              data.type = "nightmode_changed";
+              data.enabled = newstate;
+
+              navigator.qt.postMessage(JSON.stringify(data));
+          }, 600);
       }
 };

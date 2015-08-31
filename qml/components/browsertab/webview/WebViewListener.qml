@@ -25,6 +25,7 @@ Item
                                             "newtab": newTabRequested,
                                             "window_open": onWindowOpen,
                                             "notification_created": onNotificationCreated,
+                                            "nightmode_changed": onNightModeChanged,
                                             "play_video": playVideo,
                                             "play_youtube": playYouTubeVideo,
                                             "play_dailymotion": playDailyMotionVideo,
@@ -220,6 +221,10 @@ Item
 
         function onNotificationCreated(data) {
             mainwindow.settings.notifications.send(data.title, data.options.body, (data.options.icon.length ? data.options.icon : "icon-m-notifications"), true, false);
+        }
+
+        function onNightModeChanged(data) {
+            webview.nightModeEnabled = data.enabled;
         }
     }
 
