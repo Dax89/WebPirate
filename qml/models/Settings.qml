@@ -33,7 +33,7 @@ QtObject
     property bool keepfavicons       /* Keep Icon Database on data deletion */
     property bool restoretabs        /* Restore Tabs at Startup */
     property bool closelasttab       /* Close Last Tab */
-    property bool nightmode: false   /* Night Mode */
+    property bool nightmode          /* Night Mode */
 
     /* Experimental Settings */
     property bool exp_overridetextfields /* Overrides WebView's text fields with Sailfish ones */

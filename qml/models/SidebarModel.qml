@@ -129,6 +129,10 @@ VisualItemModel
         text: qsTr("Night Mode")
         switchOnClick: true
 
+        Component.onCompleted: {
+            switchItem.checked = mainwindow.settings.nightmode;
+        }
+
         switchItem.onCheckedChanged: {
             mainwindow.settings.nightmode = switchItem.checked;
         }
