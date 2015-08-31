@@ -1,10 +1,10 @@
 .pragma library
 
 var defaultsearchengines = [ { "name": "DuckDuckGo",
-                               "query": "http://duckduckgo.com/?q=" },
+                               "query": "https://duckduckgo.com/?q=" },
 
                              { "name": "Google",
-                               "query": "https://www.google.it/search?q=" } ];
+                               "query": "https://encrypted.google.com/search?q=" } ];
 
 function load(tx, searchengines)
 {
