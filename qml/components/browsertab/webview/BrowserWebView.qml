@@ -44,8 +44,8 @@ SilicaWebView
 
     Rectangle /* Night Mode Rectangle */
     {
-        x: (mainwindow.settings.nightmode && !webview.nightModeEnabled) ? 0 : contentX
-        y: (mainwindow.settings.nightmode && !webview.nightModeEnabled) ? 0 : (webview.contentHeight - 1)
+        x: contentX
+        y: (mainwindow.settings.nightmode && !webview.nightModeEnabled) ? contentY : (webview.contentHeight - 1)
 
         width:{
             if(mainwindow.settings.nightmode && !webview.nightModeEnabled)
