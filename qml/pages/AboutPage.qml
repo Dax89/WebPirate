@@ -44,10 +44,7 @@ Page
                                                           readonly property string translators: "rrijken"; },
 
                                                QtObject { readonly property string language: qsTr("Spanish");
-                                                          readonly property string translators: "carmenfdezb"; },
-
-                                               QtObject { readonly property string language: qsTr("Greek");
-                                                          readonly property string translators: "dglent"; } ]
+                                                          readonly property string translators: "carmenfdezb"; } ]
 
     signal urlRequested(string url)
 

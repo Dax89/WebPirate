@@ -87,10 +87,6 @@
         <source>Translation Platform</source>
         <translation>翻译平台</translation>
     </message>
-    <message>
-        <source>Greek</source>
-        <translation type="unfinished"></translation>
-    </message>
 </context>
 <context>
     <name>AdBlockDownloaderPage</name>

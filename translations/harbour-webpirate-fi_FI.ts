@@ -87,10 +87,6 @@
         <source>Translation Platform</source>
         <translation>Käännösten julkaisualusta</translation>
     </message>
-    <message>
-        <source>Greek</source>
-        <translation type="unfinished"></translation>
-    </message>
 </context>
 <context>
     <name>AdBlockDownloaderPage</name>
@@ -838,7 +834,7 @@
     <name>NotificationDialog</name>
     <message>
         <source>wants to access System&apos;s Notifications</source>
-        <translation type="unfinished"></translation>
+        <translation>haluaa pääsyn käyttöliittymän viestitoimintoihin</translation>
     </message>
     <message>
         <source>Allow</source>
@@ -1180,7 +1176,7 @@
     </message>
     <message>
         <source>AdBlock</source>
-        <translation type="unfinished"></translation>
+        <translation>AdBlock</translation>
     </message>
 </context>
 <context>
@@ -1222,7 +1218,7 @@
     </message>
     <message>
         <source>Navigation History</source>
-        <translation type="unfinished">Selaushistoria</translation>
+        <translation>Selaushistoria</translation>
     </message>
     <message>
         <source>Cookies</source>
@@ -1234,7 +1230,7 @@
     </message>
     <message>
         <source>Ad Block</source>
-        <translation type="unfinished"></translation>
+        <translation>Ad Block</translation>
     </message>
     <message>
         <source>Night Mode</source>
@@ -1269,7 +1265,7 @@
     </message>
     <message>
         <source>Save page</source>
-        <translation type="unfinished"></translation>
+        <translation>Tallenna sivu</translation>
     </message>
     <message>
         <source>Add to Quick Grid</source>
@@ -1285,7 +1281,7 @@
     </message>
     <message>
         <source>Downloading web page</source>
-        <translation type="unfinished"></translation>
+        <translation>Ladataan nettisivua...</translation>
     </message>
 </context>
 <context>
@@ -1332,7 +1328,7 @@
     <name>YouTubeCipher</name>
     <message>
         <source>Downloading Player&apos;s Cipher</source>
-        <translation type="unfinished"></translation>
+        <translation>Ladataan soittimen salakirjoituskoodia</translation>
     </message>
     <message>
         <source>Cannot find decoding function</source>
@@ -1348,7 +1344,7 @@
     </message>
     <message>
         <source>Ciphered Video: Downloading WebPage</source>
-        <translation type="unfinished"></translation>
+        <translation>Salakirjoitettu video: Ladataan nettisivua</translation>
     </message>
 </context>
 <context>
@@ -1375,7 +1371,7 @@
     </message>
     <message>
         <source>Decoding Signature for %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Tulkitaan allekirjoitusta kohteelle %1</translation>
     </message>
 </context>
 <context>
