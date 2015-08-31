@@ -8,7 +8,7 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
-* Mon Aug 31 2015 Antonio Davide Trogu <trogu.davide@gmail.com> 1.6-2
+* Mon Aug 31 2015 Antonio Davide Trogu <trogu.davide@gmail.com> 1.6-3
 - REGRESSION FIX: Restored mailto/tel/sms protocols functionality
 - BUGFIX: Fixed "flashing" effect when Night Mode is used
 - BUFGIX: Wrong SideBar behavior in Landscape mode
