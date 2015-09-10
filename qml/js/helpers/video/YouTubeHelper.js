@@ -24,7 +24,7 @@ var __wp_youtubehelper__ = {
     },
 
     grabVideoThumbnail: function(videoid) {
-       return "http://img.youtube.com/vi/" + videoid + "/0.jpg";
+       return "https://img.youtube.com/vi/" + videoid + "/0.jpg";
     },
 
     getVideo: function() {
