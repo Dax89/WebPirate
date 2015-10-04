@@ -122,6 +122,7 @@ SilicaWebView
         title: qsTr("Accept Certificate from:") + " " + webview.url + " ?"
         onRequestAccepted: model.accept()
         onRequestRejected: model.reject()
+        onIgnoreDialog: model.reject()
     }
 
     experimental.alertDialog: AlertDialog {
