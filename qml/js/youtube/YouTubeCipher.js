@@ -86,6 +86,6 @@ function decodeCipheredVideo(videoid, mediagrabber, urldecoder)
         }
     }
 
-    req.open("GET", "http://www.youtube.com/watch?v=" + videoid + "&gl=US&persist_gl=1&hl=en&persist_hl=1");
+    req.open("GET", "https://www.youtube.com/watch?v=" + videoid + "&gl=US&persist_gl=1&hl=en&persist_hl=1");
     req.send();
 }
