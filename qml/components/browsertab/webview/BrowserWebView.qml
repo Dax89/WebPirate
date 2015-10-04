@@ -42,23 +42,24 @@ SilicaWebView
         flickable: webview
     }
 
-    Rectangle /* Night Mode Rectangle */
+    Rectangle /* Background Rectangle */
     {
-        x: contentX
-        y: (mainwindow.settings.nightmode && !webview.nightModeEnabled) ? contentY : (webview.contentHeight - 1)
+        z: (mainwindow.settings.nightmode && !webview.nightModeEnabled) ? (webview.z + 1) : (webview.z - 1)
+        x: webview.contentX
+        anchors.top: parent.top
 
         width:{
             if(mainwindow.settings.nightmode && !webview.nightModeEnabled)
                 return webview.width;
 
-            return Math.max(webview.contentWidth, webview.width);
+            return webview.contentWidth;
         }
 
         height:{
             if(mainwindow.settings.nightmode && !webview.nightModeEnabled)
                 return webview.height;
 
-            Math.max(webview.contentHeight, webview.height);
+            return Math.max(webview.contentHeight, webview._page.height);
         }
 
         color: mainwindow.settings.nightmode ? "#181818" : "white" /* Do not use 100% black */
@@ -76,6 +77,7 @@ SilicaWebView
     experimental.preferences.localStorageEnabled: true
     experimental.preferences.navigatorQtObjectEnabled: true
     experimental.preferences.developerExtrasEnabled: true
+    experimental.transparentBackground: true // Ignore Silica's background color
     experimental.preferredMinimumContentsWidth: 980 /* "magic" number that proved to work great on the majority of websites */
     experimental.userAgent: UserAgents.get(mainwindow.settings.useragent).value
     experimental.userStyleSheet: mainwindow.settings.adblockmanager.rulesFile
