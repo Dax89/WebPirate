@@ -36,7 +36,7 @@ function checkDBUpgrade()
         return;
     }
 
-    if((db.version === "") || (db.version === "1.2"))
+    if(db.version === "1.2")
     {
         db.changeVersion(db.version, "1.3",
                          function(tx) {
