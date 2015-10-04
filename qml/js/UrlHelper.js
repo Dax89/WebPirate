@@ -77,6 +77,10 @@ function specialUrl(url)
 
 function decode(url)
 {
-    var spaceencchar = new RegExp("[+]", "g");
-    return decodeURIComponent(url.replace(spaceencchar, "%20"));
+    return decodeURIComponent(url.replace(/+/g, "%20"));
+}
+
+function printable(url)
+{
+    return url.replace(/ /g, "%20");
 }

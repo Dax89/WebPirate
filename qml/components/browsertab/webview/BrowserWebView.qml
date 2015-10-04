@@ -285,7 +285,7 @@ SilicaWebView
 
     onUrlChanged: {
         var stringurl = url.toString();
-        navigationbar.queryBar.url = stringurl;
+        navigationbar.queryBar.url = UrlHelper.printable(stringurl);
 
         if(UrlHelper.isSpecialUrl(stringurl))
         {
