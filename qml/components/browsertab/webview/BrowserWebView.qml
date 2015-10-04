@@ -49,17 +49,17 @@ SilicaWebView
         anchors.top: parent.top
 
         width:{
-            if(mainwindow.settings.nightmode && !webview.nightModeEnabled)
-                return webview.width;
+            if(mainwindow.settings.nightmode && webview.nightModeEnabled)
+                return webview.contentWidth;
 
-            return webview.contentWidth;
+            return webview.width;
         }
 
         height:{
-            if(mainwindow.settings.nightmode && !webview.nightModeEnabled)
-                return webview.height;
+            if(mainwindow.settings.nightmode && webview.nightModeEnabled)
+                return Math.max(webview.contentHeight, webview._page.height);
 
-            return Math.max(webview.contentHeight, webview._page.height);
+            return webview.height;
         }
 
         color: mainwindow.settings.nightmode ? "#181818" : "white" /* Do not use 100% black */
