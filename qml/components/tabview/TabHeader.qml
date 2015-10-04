@@ -68,6 +68,9 @@ Rectangle
             {
                 id: btnplus
                 icon.source: "qrc:///res/add.png"
+                icon.width: Theme.iconSizeSmall
+                icon.height: Theme.iconSizeSmall
+                icon.fillMode: Image.PreserveAspectFit
                 width: Theme.iconSizeMedium
                 height: Theme.iconSizeMedium
                 onClicked: tabview.addTab(mainwindow.settings.homepage)
@@ -77,6 +80,9 @@ Rectangle
             {
                 id: btnsidebar
                 icon.source: "image://theme/icon-lock-more"
+                icon.width: Theme.iconSizeSmall
+                icon.height: Theme.iconSizeSmall
+                icon.fillMode: Image.PreserveAspectFit
                 width: Theme.iconSizeMedium
                 height: Theme.iconSizeMedium
                 onClicked: sidebar.visible ? sidebar.collapse() : sidebar.expand()
