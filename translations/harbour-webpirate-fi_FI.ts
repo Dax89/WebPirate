@@ -683,7 +683,7 @@
     </message>
     <message>
         <source>User Agent</source>
-        <translation type="unfinished"></translation>
+        <translation>User Agent</translation>
     </message>
 </context>
 <context>
@@ -849,11 +849,11 @@
     <name>PopupBlockerPage</name>
     <message>
         <source>Popup Blocker</source>
-        <translation>Popup-estäjä</translation>
+        <translation>Ponnahdusikkunoiden esto</translation>
     </message>
     <message>
         <source>Clear popup list</source>
-        <translation>Pyyhi popup -lista</translation>
+        <translation>Pyyhi ponnahdusikkunoiden lista</translation>
     </message>
 </context>
 <context>
@@ -883,7 +883,7 @@
     <name>PopupManagerPage</name>
     <message>
         <source>Popup Manager</source>
-        <translation>Popupien hallinta</translation>
+        <translation>Ponnahdusikkunoiden hallinta</translation>
     </message>
     <message>
         <source>Delete Rules</source>
@@ -910,7 +910,7 @@
     </message>
     <message>
         <source>Removing navigation history</source>
-        <translation>Poistetaan selaushistoria</translation>
+        <translation>Selaushistoria poistetaan</translation>
     </message>
     <message>
         <source>Delete Cookies</source>
@@ -1176,7 +1176,7 @@
     </message>
     <message>
         <source>AdBlock</source>
-        <translation>AdBlock</translation>
+        <translation>Mainoksien esto</translation>
     </message>
 </context>
 <context>
@@ -1230,7 +1230,7 @@
     </message>
     <message>
         <source>Ad Block</source>
-        <translation>Ad Block</translation>
+        <translation>Mainoksien esto</translation>
     </message>
     <message>
         <source>Night Mode</source>
@@ -1246,7 +1246,7 @@
     </message>
     <message>
         <source>Popup Blocker</source>
-        <translation>Popup -ikkunoiden esto</translation>
+        <translation>Ponnahdusikkunoiden esto</translation>
     </message>
     <message>
         <source>About Web Pirate</source>
@@ -1281,7 +1281,7 @@
     </message>
     <message>
         <source>Downloading web page</source>
-        <translation>Ladataan nettisivua...</translation>
+        <translation>Ladataan verkkosivua</translation>
     </message>
 </context>
 <context>

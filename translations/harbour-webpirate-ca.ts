@@ -1176,7 +1176,7 @@
     </message>
     <message>
         <source>AdBlock</source>
-        <translation type="unfinished"></translation>
+        <translation>AdBlock</translation>
     </message>
 </context>
 <context>
@@ -1190,67 +1190,67 @@
     <name>SidebarModel</name>
     <message>
         <source>General</source>
-        <translation type="unfinished">General</translation>
+        <translation>General</translation>
     </message>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished">Preferits</translation>
+        <translation>Preferits</translation>
     </message>
     <message>
         <source>Sessions</source>
-        <translation type="unfinished"></translation>
+        <translation>Sessions</translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation type="unfinished"></translation>
+        <translation>Descàrregues</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished">Descarrega</translation>
+        <translation>Descarrega</translation>
     </message>
     <message>
         <source>Closed Tabs</source>
-        <translation type="unfinished">Pestanyes tancades</translation>
+        <translation>Pestanyes tancades</translation>
     </message>
     <message>
         <source>Closed Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Pestanya tancada</translation>
     </message>
     <message>
         <source>Navigation History</source>
-        <translation type="unfinished">Historial de navegació</translation>
+        <translation>Historial de navegació</translation>
     </message>
     <message>
         <source>Cookies</source>
-        <translation type="unfinished">Galetes</translation>
+        <translation>Galetes</translation>
     </message>
     <message>
         <source>Extensions</source>
-        <translation type="unfinished"></translation>
+        <translation>Extensions</translation>
     </message>
     <message>
         <source>Ad Block</source>
-        <translation type="unfinished"></translation>
+        <translation>Ad Block</translation>
     </message>
     <message>
         <source>Night Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Mode nocturn</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Configuració</translation>
     </message>
     <message>
         <source>Change settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Canvia la configuració</translation>
     </message>
     <message>
         <source>Popup Blocker</source>
-        <translation type="unfinished">Blocador de finestres emergents</translation>
+        <translation>Blocador de finestres emergents</translation>
     </message>
     <message>
         <source>About Web Pirate</source>
-        <translation type="unfinished">Quant a Web Pirate</translation>
+        <translation>Quant a Web Pirate</translation>
     </message>
 </context>
 <context>
@@ -1265,7 +1265,7 @@
     </message>
     <message>
         <source>Save page</source>
-        <translation type="unfinished"></translation>
+        <translation>Desa la pàgina</translation>
     </message>
     <message>
         <source>Add to Quick Grid</source>
@@ -1281,7 +1281,7 @@
     </message>
     <message>
         <source>Downloading web page</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;està descarregant el web</translation>
     </message>
 </context>
 <context>
