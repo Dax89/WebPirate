@@ -137,7 +137,7 @@
 - Replaced Javascript's AES implementation with a C++ one (using libcrypto from OpenSSL project)
 
 * Tue Mar 03 2015 Antonio Davide Trogu <trogu.davide@gmail.com> 0.9.7-1
-- Implemented Video Playback in background (see here: http://talk.maemo.org/showthread.php?p=1462042#post1462042)
+- Implemented Video Playback in background (see here: https://talk.maemo.org/showthread.php?p=1462042#post1462042)
 - Implemented Dailymotion's grabber
 - Implemented Tab Menu (long press a tab in order to display it)
 - Improved Media Player UI

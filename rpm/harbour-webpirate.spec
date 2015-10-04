@@ -17,7 +17,7 @@ Version:    1.6
 Release:    3
 Group:      Qt/Qt
 License:    GPL3
-URL:        http://github.com/Dax89/harbour-webpirate
+URL:        https://github.com/Dax89/harbour-webpirate
 Source0:    %{name}-%{version}.tar.bz2
 Source100:  harbour-webpirate.yaml
 Requires:   sailfishsilica-qt5 >= 0.10.9

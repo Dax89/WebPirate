@@ -5,7 +5,7 @@
 var defaultfavorites = [ { "title": "Jolla", "url": "https://jolla.com/" },
                          { "title": "Jolla Together", "url": "https://together.jolla.com/questions/" },
                          { "title": "Jolla Users", "url": "http://www.jollausers.com/" },
-                         { "title": "Maemo Talk", "url": "http://talk.maemo.org/" },
+                         { "title": "Maemo Talk", "url": "https://talk.maemo.org/" },
                          { "title": "Sailfish OS", "url": "https://www.sailfishos.org/"} ];
 
 function instance()
