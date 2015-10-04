@@ -4,7 +4,7 @@ var __wp_utils__ = {
     },
 
     unescape: function(s) {
-        return s.replace("&#39;", "'");
+        return s.replace(/&#39;/g, "'");
     },
 
     rgb2hex: function (rgb) {

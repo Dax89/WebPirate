@@ -36,7 +36,7 @@ Item
         id: listenerdispatchers
 
         function clearEscape(s) {
-            return s.replace("&#39;", "'");
+            return s.replace(/&#39;/g, "'");
         }
 
         function escapeString(s) {
