@@ -683,7 +683,7 @@
     </message>
     <message>
         <source>User Agent</source>
-        <translation>Тип сайта</translation>
+        <translation>User Agent</translation>
     </message>
 </context>
 <context>

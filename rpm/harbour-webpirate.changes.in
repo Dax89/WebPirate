@@ -8,10 +8,20 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Tue Oct 06 2015 Antonio Davide Trogu <trogu.davide@gmail.com> 1.7-1
+- REGRESSION FIX: when Web Pirate boots for the first time.
+- BUGFIX: Web Pirate hangs when a SSL certificate request is loaded, but ignored.
+- YouTube grabber now uses HTTPS protocol.
+- Fixed epic bug in TextArea overrider (noticed by some users in TMO).
+- Correctly encode URLs in address bar.
+- Use URL-Type keyboard in address bar.
+- Ignore Multi Touch events in WebView (minimize unwanted touches while zooming)
+- Updated localizations.
+
 * Mon Aug 31 2015 Antonio Davide Trogu <trogu.davide@gmail.com> 1.6-3
 - REGRESSION FIX: Restored mailto/tel/sms protocols functionality
 - BUGFIX: Fixed "flashing" effect when Night Mode is used
-- BUFGIX: Wrong SideBar behavior in Landscape mode
+- BUGFIX: Wrong SideBar behavior in Landscape mode
 - Remember Night Mode setting
 - Cover Actions: Restore browser when "add tab" and "load homepage" actions are requested
 - Prefer "encrypted.google.com" instead of "google.com" (thanks to Mikaela Suomalainen for this enhancement! :))

@@ -942,7 +942,7 @@
     </message>
     <message>
         <source>Keep Favicons when deleting personal data</source>
-        <translation>Ponechaf Favicony při odstaňování osobních dat</translation>
+        <translation>Ponechat Favicony při odstaňování osobních dat</translation>
     </message>
 </context>
 <context>
