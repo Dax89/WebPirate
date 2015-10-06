@@ -13,6 +13,9 @@ Page
         pageStack.pop();
     }
 
+    id: sessionmanagerpage
+    allowedOrientations: defaultAllowedOrientations
+
     SilicaListView
     {
         anchors.fill: parent

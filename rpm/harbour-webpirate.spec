@@ -14,7 +14,7 @@ Name:       harbour-webpirate
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 Summary:    harbour-webpirate
 Version:    1.7
-Release:    1
+Release:    2
 Group:      Qt/Qt
 License:    GPL3
 URL:        https://github.com/Dax89/harbour-webpirate
