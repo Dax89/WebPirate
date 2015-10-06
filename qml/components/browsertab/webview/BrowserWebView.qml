@@ -62,7 +62,7 @@ SilicaWebView
             return webview.height;
         }
 
-        color: mainwindow.settings.nightmode ? "#181818" : "white" /* Do not use 100% black */
+        color: mainwindow.settings.nightmode ? "#181818" : "#FFFFFF" /* Do not use 100% black */
     }
 
     id: webview
