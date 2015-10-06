@@ -101,13 +101,16 @@ var __webpirate__ = {
     onTouchStart: function(touchevent) {
         __webpirate__.lastY = touchevent.touches[0].clientY;
 
-        if(touchevent.touches.length === 1)
+        if(touchevent.touches.length > 1) // Ignore Multi Touch
         {
-            __webpirate__.currtouch = touchevent.touches[0];
-            __webpirate__.timerid = setTimeout(function() {
-                __webpirate__.checkLongPress(__webpirate__.currtouch.clientX, __webpirate__.currtouch.clientY, touchevent.target)
-            }, 800);
+            touchevent.preventDefault();
+            return;
         }
+
+        __webpirate__.currtouch = touchevent.touches[0];
+        __webpirate__.timerid = setTimeout(function() {
+            __webpirate__.checkLongPress(__webpirate__.currtouch.clientX, __webpirate__.currtouch.clientY, touchevent.target)
+        }, 800);
 
         var data = new Object;
 
