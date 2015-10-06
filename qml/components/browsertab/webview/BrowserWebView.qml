@@ -42,27 +42,26 @@ SilicaWebView
         flickable: webview
     }
 
-    Rectangle /* Background Rectangle */
+    Rectangle /* Night Mode Rectangle */
     {
-        z: (mainwindow.settings.nightmode && !webview.nightModeEnabled) ? (webview.z + 1) : (webview.z - 1)
-        x: webview.contentX
-        anchors.top: parent.top
+        x: contentX
+        y: (mainwindow.settings.nightmode && !webview.nightModeEnabled) ? contentY : (webview.contentHeight - 1)
 
         width:{
-            if(mainwindow.settings.nightmode && webview.nightModeEnabled)
-                return webview.contentWidth;
+            if(mainwindow.settings.nightmode && !webview.nightModeEnabled)
+                return webview.width;
 
-            return webview.width;
+            return Math.max(webview.contentWidth, webview._page.width);
         }
 
         height:{
-            if(mainwindow.settings.nightmode && webview.nightModeEnabled)
-                return Math.max(webview.contentHeight, webview._page.height);
+            if(mainwindow.settings.nightmode && !webview.nightModeEnabled)
+                return webview.height;
 
-            return webview.height;
+            return Math.max(webview.contentHeight, webview._page.height);
         }
 
-        color: mainwindow.settings.nightmode ? "#181818" : "#FFFFFF" /* Do not use 100% black */
+        color: mainwindow.settings.nightmode ? "#181818" : "white" /* Do not use 100% black */
     }
 
     id: webview
@@ -77,7 +76,6 @@ SilicaWebView
     experimental.preferences.localStorageEnabled: true
     experimental.preferences.navigatorQtObjectEnabled: true
     experimental.preferences.developerExtrasEnabled: true
-    experimental.transparentBackground: true // Ignore Silica's background color
     experimental.preferredMinimumContentsWidth: 980 /* "magic" number that proved to work great on the majority of websites */
     experimental.userAgent: UserAgents.get(mainwindow.settings.useragent).value
     experimental.userStyleSheet: mainwindow.settings.adblockmanager.rulesFile
