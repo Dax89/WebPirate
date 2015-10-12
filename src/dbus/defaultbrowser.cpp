@@ -1,11 +1,24 @@
 #include "defaultbrowser.h"
 
 const QString DefaultBrowser::LOCAL_SERVICE = "org.harbour.webpirate.service";
-const QString DefaultBrowser::OPEN_URL = "open-url.desktop";
+const QString DefaultBrowser::OPEN_URL = "open-url-webpirate.desktop";
 
-DefaultBrowser::DefaultBrowser(QObject *parent) : QObject(parent)
+DefaultBrowser::DefaultBrowser(QObject *parent) : QObject(parent), _busy(false), _enabled(false)
 {
-    this->_enabled = this->localOpenUrlExists() && this->localServiceExists();
+}
+
+bool DefaultBrowser::busy() const
+{
+    return this->_busy;
+}
+
+void DefaultBrowser::setBusy(bool b)
+{
+    if(this->_busy == b)
+        return;
+
+    this->_busy = b;
+    emit busyChanged();
 }
 
 bool DefaultBrowser::enabled() const
@@ -22,16 +35,28 @@ void DefaultBrowser::setEnabled(bool b)
 
     if(b)
     {
-        this->writeLocalService();
         this->writeLocalOpenUrl();
+        this->writeLocalService();
+        this->overwriteMime();
     }
     else
     {
+        this->restoreMime();
         this->deleteLocalService();
         this->deleteLocalOpenUrl();
     }
 
     emit enabledChanged();
+}
+
+bool DefaultBrowser::localOpenUrlExists() const
+{
+    QDir localappssdir = this->localApplicationsDirectory();
+
+    if(localappssdir.path() == ".")
+        return false;
+
+    return localappssdir.exists(DefaultBrowser::OPEN_URL);
 }
 
 bool DefaultBrowser::localServiceExists() const
@@ -44,14 +69,22 @@ bool DefaultBrowser::localServiceExists() const
     return localdbusdir.exists(DefaultBrowser::LOCAL_SERVICE);
 }
 
-bool DefaultBrowser::localOpenUrlExists() const
+bool DefaultBrowser::isMimeOverriden()
 {
-    QDir localappssdir = this->localApplicationsDirectory();
+    bool res = true;
+    this->setBusy(true);
 
-    if(localappssdir.path() == ".")
-        return false;
+    if(this->executeXdgMime("query default text/html") != DefaultBrowser::OPEN_URL)
+        res = false;
 
-    return localappssdir.exists(DefaultBrowser::OPEN_URL);
+    if(res && this->executeXdgMime("query default x-maemo-urischeme/http") != DefaultBrowser::OPEN_URL)
+        res = false;
+
+    if(res && this->executeXdgMime("query default x-maemo-urischeme/https") != DefaultBrowser::OPEN_URL)
+        res = false;
+
+    this->setBusy(false);
+    return res;
 }
 
 QDir DefaultBrowser::localDBusDirectory() const
@@ -75,6 +108,31 @@ QDir DefaultBrowser::localApplicationsDirectory() const
         return dir;
 
     return QDir();
+}
+
+void DefaultBrowser::writeLocalOpenUrl() const
+{
+    QDir localappsdir = this->localApplicationsDirectory();
+
+    if(localappsdir.path() == ".")
+    {
+        QDir dir(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation));
+        dir.mkdir("applications");
+        dir.cd("applications");
+    }
+
+    QFile f(localappsdir.absoluteFilePath(DefaultBrowser::OPEN_URL));
+    f.open(QFile::WriteOnly);
+
+    f.write(QString("[Desktop Entry]\n"
+                    "Type=Application\n"
+                    "Name=Browser\n"
+                    "NotShownIn=X-MeeGo;\n"
+                    "MimeType=text/html;x-maemo-urischeme/http;x-maemo-urischeme/https;\n"
+                    "X-Maemo-Service=org.harbour.webpirate\n"
+                    "X-Maemo-Method=org.harbour.webpirate.openUrl\n").toUtf8());
+
+    f.close();
 }
 
 void DefaultBrowser::writeLocalService() const
@@ -104,29 +162,28 @@ void DefaultBrowser::writeLocalService() const
     f.close();
 }
 
-void DefaultBrowser::writeLocalOpenUrl() const
+void DefaultBrowser::deleteLocalOpenUrl() const
 {
     QDir localappsdir = this->localApplicationsDirectory();
 
     if(localappsdir.path() == ".")
-    {
-        QDir dir(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation));
-        dir.mkdir("applications");
-        dir.cd("applications");
-    }
+        return;
 
-    QStringList sysappsdirs = QStandardPaths::standardLocations(QStandardPaths::ApplicationsLocation);
-    QDir sysappsdir(sysappsdirs.last());
-    QFile infile(sysappsdir.absoluteFilePath(DefaultBrowser::OPEN_URL));
-    infile.open(QFile::ReadOnly);
-    QString content = infile.readAll();
-    infile.close();
+    if(!localappsdir.exists(DefaultBrowser::OPEN_URL))
+        return;
 
-    content.replace("org.sailfishos.browser", "org.harbour.webpirate");
-    QFile outfile(localappsdir.absoluteFilePath(DefaultBrowser::OPEN_URL));
-    outfile.open(QFile::WriteOnly);
-    outfile.write(content.toUtf8());
-    outfile.close();
+    QFile::remove(localappsdir.absoluteFilePath(DefaultBrowser::OPEN_URL));
+}
+
+void DefaultBrowser::overwriteMime()
+{
+    this->setBusy(true);
+
+    this->setMime("text/html", DefaultBrowser::OPEN_URL);
+    this->setMime("x-maemo-urischeme/http", DefaultBrowser::OPEN_URL);
+    this->setMime("x-maemo-urischeme/https", DefaultBrowser::OPEN_URL);
+
+    this->setBusy(false);
 }
 
 void DefaultBrowser::deleteLocalService() const
@@ -154,15 +211,42 @@ void DefaultBrowser::deleteLocalService() const
     }
 }
 
-void DefaultBrowser::deleteLocalOpenUrl() const
+void DefaultBrowser::restoreMime()
+{
+    this->setBusy(true);
+
+    this->setMime("text/html", "open-url.desktop");
+    this->setMime("x-maemo-urischeme/http", "open-url.desktop");
+    this->setMime("x-maemo-urischeme/https", "open-url.desktop");
+
+    this->setBusy(false);
+}
+
+QString DefaultBrowser::executeXdgMime(const QString &args)
+{
+    QProcess xdgmime;
+    xdgmime.start(QString("xdg-mime %1").arg(args));
+    xdgmime.waitForFinished();
+
+    return QString::fromUtf8(xdgmime.readAllStandardOutput()).simplified();
+}
+
+void DefaultBrowser::setMime(const QString &mimetype, const QString &desktopfile)
 {
     QDir localappsdir = this->localApplicationsDirectory();
 
-    if(localappsdir.path() == ".")
-        return;
+    if(!localappsdir.exists("defaults.list"))
+    {
+        QProcess symlink;
+        symlink.start(QString("ln -sf %1 %2").arg(localappsdir.absoluteFilePath("mimeapps.list"), localappsdir.absoluteFilePath("defaults.list")));
+        symlink.waitForFinished();
+    }
 
-    if(!localappsdir.exists(DefaultBrowser::OPEN_URL))
-            return;
+    this->executeXdgMime(QString("default %1 %2").arg(desktopfile, mimetype));
+}
 
-    QFile::remove(localappsdir.absoluteFilePath(DefaultBrowser::OPEN_URL));
+void DefaultBrowser::checkDefaultBrowser()
+{
+    this->_enabled = this->isMimeOverriden() && this->localServiceExists() && this->localOpenUrlExists();
+    emit enabledChanged();
 }

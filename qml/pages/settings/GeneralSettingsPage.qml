@@ -13,6 +13,7 @@ Dialog
     allowedOrientations: defaultAllowedOrientations
     acceptDestinationAction: PageStackAction.Pop
     canAccept: true
+    Component.onCompleted: settings.defaultbrowser.checkDefaultBrowser()
 
     onAccepted: {
         if(UrlHelper.isUrl(tfhomepage.text) || UrlHelper.isSpecialUrl(tfhomepage.text))
@@ -102,6 +103,7 @@ Dialog
                 id: swdefaultbrowser
                 text: qsTr("Set as default browser")
                 width: parent.width
+                busy: settings.defaultbrowser.busy
                 checked: settings.defaultbrowser.enabled
 
                 onCheckedChanged: {
