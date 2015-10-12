@@ -18,6 +18,7 @@ QtObject
     property AdBlockManager adblockmanager: AdBlockManager { }
     property QuickGridModel quickgridmodel: QuickGridModel { }
     property CookieJar cookiejar: CookieJar { }
+    property DefaultBrowser defaultbrowser: DefaultBrowser { }
     property WebPirateInterface webpirateinterface: WebPirateInterface { }
     property WebKitDatabase webkitdatabase: WebKitDatabase { }
     property WebIconDatabase icondatabase: WebIconDatabase { }

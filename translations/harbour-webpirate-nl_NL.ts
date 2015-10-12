@@ -685,6 +685,10 @@
         <source>User Agent</source>
         <translation>Gebruikersagent</translation>
     </message>
+    <message>
+        <source>Set as default browser</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>HistoryMenu</name>

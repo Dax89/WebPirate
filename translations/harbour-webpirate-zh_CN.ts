@@ -685,6 +685,10 @@
         <source>User Agent</source>
         <translation>用户代理</translation>
     </message>
+    <message>
+        <source>Set as default browser</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>HistoryMenu</name>

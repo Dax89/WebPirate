@@ -34,10 +34,11 @@
 #include "dbus/client/screenblank.h"
 #include "dbus/client/urlcomposer.h"
 #include "dbus/client/ofono/ofono.h"
-#include "dbus/webpirateinterface.h"
 #include "dbus/client/notifications/notifications.h"
 #include "dbus/client/transferengine/transferengine.h"
 #include "dbus/client/transferengine/transfermethodmodel.h"
+#include "dbus/webpirateinterface.h"
+#include "dbus/defaultbrowser.h"
 #include "security/cryptography/aes256.h"
 #include "network/networkinterfaces.h"
 #include "favoritesmanager/favoritesmanager.h"
@@ -77,6 +78,7 @@ int main(int argc, char *argv[])
     qmlRegisterSingletonType<MachineID>("harbour.webpirate.DBus", 1, 0, "MachineID", &MachineID::initialize);
     qmlRegisterSingletonType<Ofono>("harbour.webpirate.DBus", 1, 0, "Ofono", &Ofono::initialize);
 
+    qmlRegisterType<DefaultBrowser>("harbour.webpirate.DBus", 1, 0, "DefaultBrowser");
     qmlRegisterType<WebPirateInterface>("harbour.webpirate.DBus", 1, 0, "WebPirateInterface");
     qmlRegisterType<ScreenBlank>("harbour.webpirate.DBus", 1, 0, "ScreenBlank");
     qmlRegisterType<UrlComposer>("harbour.webpirate.DBus", 1, 0, "UrlComposer");

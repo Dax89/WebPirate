@@ -96,6 +96,18 @@ Dialog
                     }
                 }
             }
+
+            TextSwitch
+            {
+                id: swdefaultbrowser
+                text: qsTr("Set as default browser")
+                width: parent.width
+                checked: settings.defaultbrowser.enabled
+
+                onCheckedChanged: {
+                    settings.defaultbrowser.enabled = checked;
+                }
+            }
         }
     }
 }
