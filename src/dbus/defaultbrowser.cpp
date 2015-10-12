@@ -155,7 +155,7 @@ void DefaultBrowser::writeLocalService() const
     QFile f(localdbusdir.absoluteFilePath(DefaultBrowser::LOCAL_SERVICE));
     f.open(QFile::WriteOnly);
 
-    f.write(QString("[D-Bus Service]\n"
+    f.write(QString("[D-BUS Service]\n"
                     "Name=org.harbour.webpirate\n"
                     "Exec=/usr/bin/invoker -s --type=silica-qt5 /usr/bin/harbour-webpirate\n").toUtf8());
 
