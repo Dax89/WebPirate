@@ -687,7 +687,7 @@
     </message>
     <message>
         <source>Set as default browser</source>
-        <translation type="unfinished"></translation>
+        <translation>Установить браузером по умолчанию.</translation>
     </message>
 </context>
 <context>

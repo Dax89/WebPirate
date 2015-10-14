@@ -687,7 +687,7 @@
     </message>
     <message>
         <source>Set as default browser</source>
-        <translation type="unfinished"></translation>
+        <translation>Ange som standardwebbläsare</translation>
     </message>
 </context>
 <context>

@@ -687,7 +687,7 @@
     </message>
     <message>
         <source>Set as default browser</source>
-        <translation type="unfinished"></translation>
+        <translation>Estableix com a predeterminat</translation>
     </message>
 </context>
 <context>
