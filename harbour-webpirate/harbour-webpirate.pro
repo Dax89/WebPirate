@@ -21,6 +21,11 @@ PKGCONFIG += libcrypto
 # dbus_service.path = /usr/share/dbus-1/services
 # INSTALLS += dbus_service
 
+# WebP Plugin
+webp.files = $$OUT_PWD/../webp-plugin/plugins/imageformats/*.so
+webp.path = /usr/share/$$TARGET/lib/imageformats
+INSTALLS += webp
+
 SOURCES += src/harbour-webpirate.cpp \
     src/webkitdatabase/webkitdatabase.cpp \
     src/downloadmanager/downloadmanager.cpp \

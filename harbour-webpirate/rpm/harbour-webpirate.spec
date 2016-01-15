@@ -33,6 +33,7 @@ BuildRequires:  desktop-file-utils
 %description
 A Tabbed WebBrowser for SailfishOS based on WebKit
 
+%define _unpackaged_files_terminate_build 0
 
 %prep
 %setup -q -n %{name}-%{version}

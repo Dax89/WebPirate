@@ -52,10 +52,19 @@
 #include "webkitdatabase/webkitdatabase.h"
 #include "imageproviders/faviconprovider.h"
 
+void pluginenv()
+{
+    QStringList plugins = (QStringList() << "/usr/lib/qt5/plugins" <<
+                           (qApp->applicationDirPath() + QDir::separator() + "../share/" + qApp->applicationName() + QDir::separator() + "lib"));
+
+    qputenv("QT_PLUGIN_PATH", plugins.join(":").toUtf8());
+}
+
 int main(int argc, char *argv[])
 {
     QScopedPointer<QGuiApplication> application(SailfishApp::application(argc, argv));
     application->setApplicationName("harbour-webpirate");
+    pluginenv();
 
     QDBusConnection sessionbus = QDBusConnection::sessionBus();
 
