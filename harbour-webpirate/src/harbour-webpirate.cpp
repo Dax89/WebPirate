@@ -41,6 +41,7 @@
 #include "dbus/defaultbrowser.h"
 #include "security/cryptography/aes256.h"
 #include "network/networkinterfaces.h"
+#include "network/proxymanager.h"
 #include "favoritesmanager/favoritesmanager.h"
 #include "downloadmanager/downloadmanager.h"
 #include "filepicker/folderlistmodel.h"
@@ -64,7 +65,9 @@ int main(int argc, char *argv[])
 {
     QScopedPointer<QGuiApplication> application(SailfishApp::application(argc, argv));
     application->setApplicationName("harbour-webpirate");
+
     pluginenv();
+    ProxyManager::loadAndSet();
 
     QDBusConnection sessionbus = QDBusConnection::sessionBus();
 
@@ -94,6 +97,7 @@ int main(int argc, char *argv[])
     qmlRegisterType<Notifications>("harbour.webpirate.DBus.Notifications", 1, 0, "Notifications");
     qmlRegisterType<TransferEngine>("harbour.webpirate.DBus.TransferEngine", 1, 0, "TransferEngine");
     qmlRegisterType<TransferMethodModel>("harbour.webpirate.DBus.TransferEngine", 1, 0, "TransferMethodModel");
+    qmlRegisterType<ProxyManager>("harbour.webpirate.Network", 1, 0, "ProxyManager");
 
     qmlRegisterType<FolderListModel>("harbour.webpirate.Pickers", 1, 0, "FolderListModel");
 

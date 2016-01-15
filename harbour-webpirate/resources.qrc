@@ -17,5 +17,6 @@
         <file>res/privacy.png</file>
         <file>res/close.png</file>
         <file>res/adblock.png</file>
+        <file>res/proxy.png</file>
     </qresource>
 </RCC>

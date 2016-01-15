@@ -19,6 +19,7 @@ Features
 - Closed tabs can be recovered
 - Night Mode
 - Cookie Management
+- Proxy Support
 
 Translation
 -----

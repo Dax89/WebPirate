@@ -957,6 +957,33 @@
     </message>
 </context>
 <context>
+    <name>ProxySettingsPage</name>
+    <message>
+        <source>Save</source>
+        <translation type="unfinished">Enregistrer</translation>
+    </message>
+    <message>
+        <source>Proxy Disabled</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>You need to restart WebPirate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Proxy Settings (Restart needed)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Host or Ip Address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Port</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>QueryBar</name>
     <message>
         <source>Search with</source>
@@ -1181,6 +1208,10 @@
     <message>
         <source>AdBlock</source>
         <translation>AdBlock</translation>
+    </message>
+    <message>
+        <source>Proxy</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

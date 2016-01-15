@@ -65,6 +65,15 @@ Page
             {
                 width: parent.width
                 height: Theme.itemSizeSmall
+                icon: "qrc:///res/proxy.png"
+                text: qsTr("Proxy")
+                onActionRequested: pageStack.push(Qt.resolvedUrl("ProxySettingsPage.qml"));
+            }
+
+            SettingLabel
+            {
+                width: parent.width
+                height: Theme.itemSizeSmall
                 icon: "qrc:///res/adblock.png"
                 text: qsTr("AdBlock")
                 onActionRequested: pageStack.push(Qt.resolvedUrl("adblock/AdBlockPage.qml"), { "settings": settingspage.settings });

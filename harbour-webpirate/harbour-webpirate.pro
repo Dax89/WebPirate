@@ -59,7 +59,8 @@ SOURCES += src/harbour-webpirate.cpp \
     src/dbus/client/notifications/notifications.cpp \
     src/dbus/webpirateinterface.cpp \
     src/downloadmanager/webpagedownloaditem.cpp \
-    src/dbus/defaultbrowser.cpp
+    src/dbus/defaultbrowser.cpp \
+    src/network/proxymanager.cpp
 
 OTHER_FILES += qml/harbour-webpirate.qml \
     rpm/harbour-webpirate.changes.in \
@@ -261,5 +262,9 @@ HEADERS += \
     src/dbus/client/notifications/notifications.h \
     src/dbus/webpirateinterface.h \
     src/downloadmanager/webpagedownloaditem.h \
-    src/dbus/defaultbrowser.h
+    src/dbus/defaultbrowser.h \
+    src/network/proxymanager.h
+
+DISTFILES += \
+    qml/pages/settings/ProxySettingsPage.qml
 
