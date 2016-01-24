@@ -23,6 +23,7 @@ Dialog
     {
         id: textarea
         softwareInputPanelEnabled: false
+        font.pixelSize: Theme.fontSizeSmall
         anchors { left: parent.left; top: header.bottom; right: parent.right; bottom: parent.bottom }
 
         Component.onCompleted: textarea.selectAll()

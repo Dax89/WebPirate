@@ -37,6 +37,7 @@ Dialog
             property string previousText
 
             id: textarea
+            font.pixelSize: Theme.fontSizeSmall
             anchors { left: parent.left; top: dlgheader.bottom; right: parent.right; bottom: parent.bottom }
 
             onTextChanged: {
