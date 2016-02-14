@@ -116,7 +116,6 @@ PopupDialog
         contentHeight: modelData.menuVisible ? Theme.itemSizeSmall : 0
 
         Label {
-            clip: true
             visible: modelData.menuVisible
             anchors.fill: parent
             anchors.bottomMargin: Theme.paddingSmall

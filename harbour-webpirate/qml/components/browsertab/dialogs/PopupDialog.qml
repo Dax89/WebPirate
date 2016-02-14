@@ -61,7 +61,6 @@ MouseArea
             wrapMode: Text.WordWrap
             verticalAlignment: Text.AlignVCenter
             horizontalAlignment: Text.AlignHCenter
-            clip: true
         }
 
         SilicaListView

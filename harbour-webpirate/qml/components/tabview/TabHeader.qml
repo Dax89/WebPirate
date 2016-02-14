@@ -22,7 +22,6 @@ Rectangle
 
     id: tabheader
     z: 9
-    clip: true
     height: Theme.iconSizeMedium
     color: Theme.rgba(Theme.highlightDimmerColor, 1.0)
     visible: opacity > 0.0
@@ -57,7 +56,6 @@ Rectangle
     {
         id: buttons
         anchors { top: parent.top; bottom: parent.bottom; right: parent.right }
-        clip: true
         width: rowcontent.width
 
         Row

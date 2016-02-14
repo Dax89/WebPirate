@@ -20,7 +20,6 @@ Rectangle
     {
         id: imgerror
         anchors.centerIn: parent
-        clip: true
 
         source: {
             if(crash)

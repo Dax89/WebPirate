@@ -109,7 +109,6 @@ Item
             font.pixelSize: Theme.fontSizeExtraSmall
             horizontalAlignment: Text.AlignHCenter
             elide: Text.ElideRight
-            clip: true
         }
     }
 }

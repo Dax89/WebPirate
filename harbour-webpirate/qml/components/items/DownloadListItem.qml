@@ -56,7 +56,6 @@ ListItem
                 verticalAlignment: Text.AlignVCenter
                 text: downloadItem.fileName
                 elide: Text.ElideRight
-                clip: true
             }
         }
 
@@ -73,7 +72,6 @@ ListItem
                 horizontalAlignment: Text.AlignLeft
                 verticalAlignment: Text.AlignVCenter
                 elide: Text.ElideRight
-                clip: true
             }
 
             Label {
