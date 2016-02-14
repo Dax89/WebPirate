@@ -61,7 +61,8 @@ SilicaWebView
             return Math.max(webview.contentHeight, webview._page.height);
         }
 
-        color: mainwindow.settings.nightmode ? "#181818" : "white" /* Do not use 100% black */
+        color: "#181818" /* Do not use 100% black */
+        visible: mainwindow.settings.nightmode
     }
 
     id: webview
