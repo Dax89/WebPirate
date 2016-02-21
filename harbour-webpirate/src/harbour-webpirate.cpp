@@ -63,6 +63,9 @@ void pluginenv()
 
 int main(int argc, char *argv[])
 {
+    setenv("USE_ASYNC", "1", 1);
+    QQuickWindow::setDefaultAlphaBuffer(true);
+
     QScopedPointer<QGuiApplication> application(SailfishApp::application(argc, argv));
     application->setApplicationName("harbour-webpirate");
 
