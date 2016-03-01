@@ -62,9 +62,12 @@ function remove(url)
     });
 }
 
-function match(query, model)
+function match(query, model, maxcount)
 {
     model.clear();
+
+    if(maxcount === undefined)
+        maxcount = 100;
 
     if(query.length < 2)
         return;
@@ -74,8 +77,12 @@ function match(query, model)
     instance().transaction(function(tx) {
         var res = tx.executeSql("SELECT * FROM History WHERE url LIKE ? OR title LIKE ? ORDER BY lastvisit DESC LIMIT 10", [querywc, querywc]);
 
-        for(var i = 0; i < res.rows.length; i++)
+        for(var i = 0; i < res.rows.length; i++) {
+            if(model.count > maxcount)
+                return;
+
             model.append(res.rows[i]);
+        }
     });
 }
 

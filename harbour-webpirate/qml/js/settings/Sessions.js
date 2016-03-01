@@ -179,7 +179,8 @@ function transactionSave(tx, name, tabs, currentindex, autoload, replacecurrent,
     for(var i = 0; i < tabs.count; i++)
     {
         var tab = tabs.get(i).tab;
-        tx.executeSql("INSERT INTO SessionTabs (id, title, url, current) VALUES(?, ?, ?, ?)", [sessionid, tab.getTitle(), tab.getUrl(), (i === currentindex ? 1 : 0)]);
+        console.log(tab.title);
+        tx.executeSql("INSERT INTO SessionTabs (id, title, url, current) VALUES(?, ?, ?, ?)", [sessionid, tab.title, tab.webUrl, (i === currentindex ? 1 : 0)]);
     }
 
     if(autoload)

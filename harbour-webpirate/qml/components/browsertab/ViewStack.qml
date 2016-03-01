@@ -78,9 +78,8 @@ Item
         if(!component)
             component = stackobject.componentCache[componenturl] = Qt.createComponent(componenturl);
 
-        if(!component)
-        {
-            console.error("Cannot create component: " + componenturl);
+        if(component.status === Component.Error) {
+            console.log(component.errorString());
             return;
         }
 

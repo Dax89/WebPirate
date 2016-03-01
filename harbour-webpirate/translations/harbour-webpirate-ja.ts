@@ -255,42 +255,35 @@
 <context>
     <name>BrowserWebView</name>
     <message>
-        <source>Accept Certificate from:</source>
-        <translation>証明書を取得</translation>
-    </message>
-    <message>
         <source>Downloading</source>
         <translation>ダウンロード中</translation>
     </message>
+    <message>
+        <source>Refresh</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>New tab</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Duplicate Tab</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Accept Certificate from: %1 ?</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
-    <name>ClosedTabItem</name>
-    <message>
-        <source>Open</source>
-        <translation>開く</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <translation>削除する</translation>
-    </message>
-    <message>
-        <source>Deleting Tab</source>
-        <translation>タブを削除中</translation>
-    </message>
-</context>
-<context>
-    <name>ClosedTabsPage</name>
+    <name>ClosedTabsSegment</name>
     <message>
         <source>Closed Tabs</source>
-        <translation>閉じたタブ</translation>
+        <translation type="unfinished">閉じたタブ</translation>
     </message>
     <message>
         <source>Delete Closed Tabs</source>
-        <translation>閉じたタブを削除中</translation>
-    </message>
-    <message>
-        <source>Deleting Tabs</source>
-        <translation>タブを削除中</translation>
+        <translation type="unfinished">閉じたタブを削除中</translation>
     </message>
 </context>
 <context>
@@ -308,29 +301,6 @@
     <name>CookieListPage</name>
     <message>
         <source>Cookies</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Add Cookie</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>CookieManagerPage</name>
-    <message>
-        <source>Cookie Manager</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Filter</source>
-        <translation type="unfinished">フィルター</translation>
-    </message>
-    <message>
-        <source>Remove All Cookies</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Removing Cookies</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -362,6 +332,25 @@
     </message>
     <message>
         <source>Expires</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>CookiesSegment</name>
+    <message>
+        <source>Cookie Manager</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Filter</source>
+        <translation type="unfinished">フィルター</translation>
+    </message>
+    <message>
+        <source>Remove All Cookies</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Add Cookie</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -488,18 +477,22 @@
     </message>
 </context>
 <context>
-    <name>DownloadsPage</name>
-    <message>
-        <source>Download Manager</source>
-        <translation>ダウンロードマネージャー</translation>
-    </message>
+    <name>DownloadsSegment</name>
     <message>
         <source>Delete completed Downloads</source>
-        <translation>完了ダウンロードを消去する</translation>
+        <translation type="unfinished">完了ダウンロードを消去する</translation>
     </message>
     <message>
-        <source>New Download</source>
-        <translation>新しいダウンロード</translation>
+        <source>Downloads</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Download Url</source>
+        <translation type="unfinished">ダウンロードUrl</translation>
+    </message>
+    <message>
+        <source>Start</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -514,6 +507,33 @@
     </message>
     <message>
         <source>Use SailfishOS&apos;s editing components instead of WebView&apos;s ones</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>FavoriteItem</name>
+    <message>
+        <source>Open</source>
+        <translation type="unfinished">開く</translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Deleting Folder</source>
+        <translation type="unfinished">フォルダーを削除中</translation>
+    </message>
+    <message>
+        <source>Deleting Favorite</source>
+        <translation type="unfinished">お気に入るを削除中</translation>
+    </message>
+    <message>
+        <source>Add to Quick Grid</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -552,99 +572,56 @@
     </message>
 </context>
 <context>
-    <name>FavoritesPage</name>
-    <message>
-        <source>Add Folder</source>
-        <translation>フォルダーを追加する</translation>
-    </message>
-    <message>
-        <source>Add Favorite</source>
-        <translation>お気に入りに追加する</translation>
-    </message>
-    <message>
-        <source>Favorites</source>
-        <translation>お気に入り</translation>
-    </message>
+    <name>FavoritesMenu</name>
     <message>
         <source>Export</source>
-        <translation>エクスポート</translation>
-    </message>
-    <message>
-        <source>Import</source>
-        <translation>インポート</translation>
-    </message>
-    <message>
-        <source>Import in</source>
-        <translation>にインポート</translation>
+        <translation type="unfinished">エクスポート</translation>
     </message>
     <message>
         <source>Exporting favorites</source>
-        <translation>お気に入りをエクスポート</translation>
+        <translation type="unfinished">お気に入りをエクスポート</translation>
+    </message>
+    <message>
+        <source>Favorites</source>
+        <translation type="unfinished">お気に入り</translation>
     </message>
     <message>
         <source>Favorites exported successfully</source>
-        <translation>お気に入りのエクスポート完了</translation>
+        <translation type="unfinished">お気に入りのエクスポート完了</translation>
+    </message>
+    <message>
+        <source>Import</source>
+        <translation type="unfinished">インポート</translation>
+    </message>
+    <message>
+        <source>Import in</source>
+        <translation type="unfinished">にインポート</translation>
+    </message>
+    <message>
+        <source>Add Folder</source>
+        <translation type="unfinished">フォルダーを追加する</translation>
+    </message>
+    <message>
+        <source>Add Favorite</source>
+        <translation type="unfinished">お気に入りに追加する</translation>
+    </message>
+</context>
+<context>
+    <name>FavoritesSegment</name>
+    <message>
+        <source>Favorites</source>
+        <translation type="unfinished">お気に入り</translation>
+    </message>
+    <message>
+        <source>Back</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Favorites imported successfully</source>
-        <translation>お気に入りのインポート完了</translation>
-    </message>
-    <message>
-        <source>Delete all Favorites</source>
-        <translation>全てのお気に入りを消去</translation>
-    </message>
-    <message>
-        <source>Deleting all favorites</source>
-        <translation>全てのお気に入りを消去中</translation>
+        <translation type="unfinished">お気に入りのインポート完了</translation>
     </message>
     <message>
         <source>Cannot import favorites</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>FavoritesView</name>
-    <message>
-        <source>Edit</source>
-        <translation>編集</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <translation>消去する</translation>
-    </message>
-    <message>
-        <source>Deleting Favorite</source>
-        <translation>お気に入るを削除中</translation>
-    </message>
-    <message>
-        <source>Deleting Folder</source>
-        <translation>フォルダーを削除中</translation>
-    </message>
-    <message>
-        <source>Open</source>
-        <translation>開く</translation>
-    </message>
-    <message>
-        <source>Open in New Tab</source>
-        <translation>新しいタブに開く</translation>
-    </message>
-    <message>
-        <source>Add to Quick Grid</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>FilePickerPage</name>
-    <message>
-        <source>Root</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>SD Card</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Home</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -698,18 +675,21 @@
     </message>
 </context>
 <context>
+    <name>HistorySegment</name>
+    <message>
+        <source>History</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Delete History</source>
+        <translation type="unfinished">履歴を削除する</translation>
+    </message>
+</context>
+<context>
     <name>LinkMenu</name>
     <message>
         <source>Open New Tab</source>
         <translation>新しいタブを開く</translation>
-    </message>
-    <message>
-        <source>Remove From Favorites</source>
-        <translation>お気に入りから削除する</translation>
-    </message>
-    <message>
-        <source>Add To Favorites</source>
-        <translation>お気に入りに追加する</translation>
     </message>
     <message>
         <source>Save Link Destination</source>
@@ -732,16 +712,8 @@
         <translation>リンクをダウンロード中</translation>
     </message>
     <message>
-        <source>Open</source>
-        <translation>開く</translation>
-    </message>
-    <message>
         <source>Link copied to clipboard</source>
         <translation>リンクをクリップボードにコピー</translation>
-    </message>
-    <message>
-        <source>Open New Tab in Background</source>
-        <translation>バックグラウンドに新しいタブを開く</translation>
     </message>
     <message>
         <source>Share</source>
@@ -786,32 +758,6 @@
     </message>
 </context>
 <context>
-    <name>NavigationHistoryPage</name>
-    <message>
-        <source>Delete History</source>
-        <translation>履歴を削除する</translation>
-    </message>
-    <message>
-        <source>Deleting History</source>
-        <translation>履歴を削除中</translation>
-    </message>
-    <message>
-        <source>Navigation History</source>
-        <translation>ナビゲーション履歴</translation>
-    </message>
-</context>
-<context>
-    <name>NewDownloadPage</name>
-    <message>
-        <source>Start Download</source>
-        <translation>ダウンロードをスタート</translation>
-    </message>
-    <message>
-        <source>Download Url</source>
-        <translation>ダウンロードUrl</translation>
-    </message>
-</context>
-<context>
     <name>NewPopupRulePage</name>
     <message>
         <source>Apply Rule</source>
@@ -837,15 +783,15 @@
 <context>
     <name>NotificationDialog</name>
     <message>
-        <source>wants to access System&apos;s Notifications</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Allow</source>
         <translation type="unfinished">許可する</translation>
     </message>
     <message>
         <source>Deny</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&apos;%1&apos; wants to access system&apos;s notifications</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -989,6 +935,10 @@
         <source>Search with</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Search...</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>QuickGrid</name>
@@ -998,6 +948,10 @@
     </message>
     <message>
         <source>Long Press to edit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>New tab</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1073,13 +1027,6 @@
     </message>
 </context>
 <context>
-    <name>SearchBar</name>
-    <message>
-        <source>Search</source>
-        <translation type="unfinished">検索</translation>
-    </message>
-</context>
-<context>
     <name>SearchEnginePage</name>
     <message>
         <source>Save</source>
@@ -1122,33 +1069,56 @@
     </message>
 </context>
 <context>
-    <name>SessionManagerPage</name>
+    <name>SegmentsModel</name>
     <message>
-        <source>Session Manager</source>
+        <source>Tabs</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Tabs saved</source>
+        <source>Closed Tabs</source>
+        <translation type="unfinished">閉じたタブ</translation>
+    </message>
+    <message>
+        <source>Sessions</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Open</source>
-        <translation type="unfinished">開く</translation>
-    </message>
-    <message>
-        <source>Edit</source>
+        <source>Cookie</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Delete</source>
+        <source>History</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Deleting session</source>
+        <source>Downloads</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Save current session</source>
+        <source>Favorites</source>
+        <translation type="unfinished">お気に入り</translation>
+    </message>
+</context>
+<context>
+    <name>SelectorFilesPage</name>
+    <message>
+        <source>Android storage</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>SD Card</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Home</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Send %1 file(s)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Back</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1177,6 +1147,45 @@
     <message>
         <source>Selected</source>
         <translation>選択済み</translation>
+    </message>
+</context>
+<context>
+    <name>SessionsSegment</name>
+    <message>
+        <source>Sessions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>No Sessions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Save current session</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Tabs saved</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Open</source>
+        <translation type="unfinished">開く</translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Deleting session</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Loads at startup</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1217,62 +1226,24 @@
     </message>
 </context>
 <context>
-    <name>ShareMenu</name>
+    <name>TabClosedItem</name>
     <message>
-        <source>Share</source>
+        <source>Open</source>
+        <translation type="unfinished">開く</translation>
+    </message>
+    <message>
+        <source>Delete</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Deleting Tab</source>
+        <translation type="unfinished">タブを削除中</translation>
     </message>
 </context>
 <context>
-    <name>SidebarModel</name>
+    <name>TabsSegment</name>
     <message>
-        <source>General</source>
-        <translation type="unfinished">ジェネラル
-	
-</translation>
-    </message>
-    <message>
-        <source>Favorites</source>
-        <translation type="unfinished">お気に入り</translation>
-    </message>
-    <message>
-        <source>Sessions</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Downloads</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation type="unfinished">ダウンロード</translation>
-    </message>
-    <message>
-        <source>Closed Tabs</source>
-        <translation type="unfinished">閉じたタブ</translation>
-    </message>
-    <message>
-        <source>Closed Tab</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Navigation History</source>
-        <translation type="unfinished">ナビゲーション履歴</translation>
-    </message>
-    <message>
-        <source>Cookies</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Extensions</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Ad Block</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Night Mode</source>
+        <source>Tabs</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1280,47 +1251,8 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Change settings</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Popup Blocker</source>
-        <translation type="unfinished">ポップアップブロッカー</translation>
-    </message>
-    <message>
-        <source>About Web Pirate</source>
-        <translation type="unfinished">Web Pirateについて</translation>
-    </message>
-</context>
-<context>
-    <name>TabMenu</name>
-    <message>
-        <source>Duplicate Tab</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Duplicate Tab in Background</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Save page</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Add to Quick Grid</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Close Tab</source>
-        <translation type="unfinished">タブを閉じる</translation>
-    </message>
-    <message>
-        <source>Close other Tabs</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Downloading web page</source>
-        <translation type="unfinished"></translation>
+        <source>New Tab</source>
+        <translation type="unfinished">新しいタブを開く</translation>
     </message>
 </context>
 <context>

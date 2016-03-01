@@ -255,42 +255,35 @@
 <context>
     <name>BrowserWebView</name>
     <message>
-        <source>Accept Certificate from:</source>
-        <translation>Принять сертификат от:</translation>
-    </message>
-    <message>
         <source>Downloading</source>
         <translation>Загрузка</translation>
     </message>
+    <message>
+        <source>Refresh</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>New tab</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Duplicate Tab</source>
+        <translation type="unfinished">Копировать вкладку</translation>
+    </message>
+    <message>
+        <source>Accept Certificate from: %1 ?</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
-    <name>ClosedTabItem</name>
-    <message>
-        <source>Open</source>
-        <translation>Открыть</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <translation>Удалить</translation>
-    </message>
-    <message>
-        <source>Deleting Tab</source>
-        <translation>Удаление вкладки</translation>
-    </message>
-</context>
-<context>
-    <name>ClosedTabsPage</name>
+    <name>ClosedTabsSegment</name>
     <message>
         <source>Closed Tabs</source>
-        <translation>Закрытые вкладки</translation>
+        <translation type="unfinished">Закрытые вкладки</translation>
     </message>
     <message>
         <source>Delete Closed Tabs</source>
-        <translation>Удалить закрытые вкладки</translation>
-    </message>
-    <message>
-        <source>Deleting Tabs</source>
-        <translation>Удаление вкладок</translation>
+        <translation type="unfinished">Удалить закрытые вкладки</translation>
     </message>
 </context>
 <context>
@@ -309,29 +302,6 @@
     <message>
         <source>Cookies</source>
         <translation>Cookies</translation>
-    </message>
-    <message>
-        <source>Add Cookie</source>
-        <translation>Добавить Cookie</translation>
-    </message>
-</context>
-<context>
-    <name>CookieManagerPage</name>
-    <message>
-        <source>Cookie Manager</source>
-        <translation>Cookie менеджер</translation>
-    </message>
-    <message>
-        <source>Filter</source>
-        <translation>Фильтр</translation>
-    </message>
-    <message>
-        <source>Remove All Cookies</source>
-        <translation>Удалить все Cookies</translation>
-    </message>
-    <message>
-        <source>Removing Cookies</source>
-        <translation>Удаление Cookies</translation>
     </message>
     <message>
         <source>Add Cookie</source>
@@ -363,6 +333,25 @@
     <message>
         <source>Expires</source>
         <translation>Истекает</translation>
+    </message>
+</context>
+<context>
+    <name>CookiesSegment</name>
+    <message>
+        <source>Cookie Manager</source>
+        <translation type="unfinished">Cookie менеджер</translation>
+    </message>
+    <message>
+        <source>Filter</source>
+        <translation type="unfinished">Фильтр</translation>
+    </message>
+    <message>
+        <source>Remove All Cookies</source>
+        <translation type="unfinished">Удалить все Cookies</translation>
+    </message>
+    <message>
+        <source>Add Cookie</source>
+        <translation type="unfinished">Добавить Cookie</translation>
     </message>
 </context>
 <context>
@@ -488,18 +477,22 @@
     </message>
 </context>
 <context>
-    <name>DownloadsPage</name>
-    <message>
-        <source>Download Manager</source>
-        <translation>Менеджер загрузок</translation>
-    </message>
+    <name>DownloadsSegment</name>
     <message>
         <source>Delete completed Downloads</source>
-        <translation>Удалить завершенные загрузки</translation>
+        <translation type="unfinished">Удалить завершенные загрузки</translation>
     </message>
     <message>
-        <source>New Download</source>
-        <translation>Новая загрузка</translation>
+        <source>Downloads</source>
+        <translation type="unfinished">Загрузки</translation>
+    </message>
+    <message>
+        <source>Download Url</source>
+        <translation type="unfinished">Скачать Url</translation>
+    </message>
+    <message>
+        <source>Start</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -515,6 +508,33 @@
     <message>
         <source>Use SailfishOS&apos;s editing components instead of WebView&apos;s ones</source>
         <translation>Использовать компоненты для редактирования от SailfishOS вместо WebView</translation>
+    </message>
+</context>
+<context>
+    <name>FavoriteItem</name>
+    <message>
+        <source>Open</source>
+        <translation type="unfinished">Открыть</translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation type="unfinished">Править</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation type="unfinished">Удалить</translation>
+    </message>
+    <message>
+        <source>Deleting Folder</source>
+        <translation type="unfinished">Удаление папки</translation>
+    </message>
+    <message>
+        <source>Deleting Favorite</source>
+        <translation type="unfinished">Удаление закладки</translation>
+    </message>
+    <message>
+        <source>Add to Quick Grid</source>
+        <translation type="unfinished">Добавить в Fast Dial</translation>
     </message>
 </context>
 <context>
@@ -552,100 +572,57 @@
     </message>
 </context>
 <context>
-    <name>FavoritesPage</name>
-    <message>
-        <source>Add Folder</source>
-        <translation>Добавить папку</translation>
-    </message>
-    <message>
-        <source>Add Favorite</source>
-        <translation>Добавить закладку</translation>
-    </message>
-    <message>
-        <source>Favorites</source>
-        <translation>Закладки</translation>
-    </message>
+    <name>FavoritesMenu</name>
     <message>
         <source>Export</source>
-        <translation>Экспорт</translation>
-    </message>
-    <message>
-        <source>Import</source>
-        <translation>Импорт</translation>
-    </message>
-    <message>
-        <source>Import in</source>
-        <translation>Импорт в </translation>
+        <translation type="unfinished">Экспорт</translation>
     </message>
     <message>
         <source>Exporting favorites</source>
-        <translation>Экспортирование закладок</translation>
+        <translation type="unfinished">Экспортирование закладок</translation>
+    </message>
+    <message>
+        <source>Favorites</source>
+        <translation type="unfinished">Закладки</translation>
     </message>
     <message>
         <source>Favorites exported successfully</source>
-        <translation>Экспорт закладок прошел успешно</translation>
+        <translation type="unfinished">Экспорт закладок прошел успешно</translation>
+    </message>
+    <message>
+        <source>Import</source>
+        <translation type="unfinished">Импорт</translation>
+    </message>
+    <message>
+        <source>Import in</source>
+        <translation type="unfinished">Импорт в </translation>
+    </message>
+    <message>
+        <source>Add Folder</source>
+        <translation type="unfinished">Добавить папку</translation>
+    </message>
+    <message>
+        <source>Add Favorite</source>
+        <translation type="unfinished">Добавить закладку</translation>
+    </message>
+</context>
+<context>
+    <name>FavoritesSegment</name>
+    <message>
+        <source>Favorites</source>
+        <translation type="unfinished">Закладки</translation>
+    </message>
+    <message>
+        <source>Back</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Favorites imported successfully</source>
-        <translation>Импорт закладок прошел успешно</translation>
-    </message>
-    <message>
-        <source>Delete all Favorites</source>
-        <translation>Удалить все закладки</translation>
-    </message>
-    <message>
-        <source>Deleting all favorites</source>
-        <translation>Удаление всех закладок</translation>
+        <translation type="unfinished">Импорт закладок прошел успешно</translation>
     </message>
     <message>
         <source>Cannot import favorites</source>
-        <translation>Не могу импортировать закладки</translation>
-    </message>
-</context>
-<context>
-    <name>FavoritesView</name>
-    <message>
-        <source>Edit</source>
-        <translation>Редактировать</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <translation>Удалить</translation>
-    </message>
-    <message>
-        <source>Deleting Favorite</source>
-        <translation>Удаление закладки</translation>
-    </message>
-    <message>
-        <source>Deleting Folder</source>
-        <translation>Удаление папки</translation>
-    </message>
-    <message>
-        <source>Open</source>
-        <translation>Открыть</translation>
-    </message>
-    <message>
-        <source>Open in New Tab</source>
-        <translation>Открыть в новой вкладке</translation>
-    </message>
-    <message>
-        <source>Add to Quick Grid</source>
-        <translation>Добавить в Fast Dial</translation>
-    </message>
-</context>
-<context>
-    <name>FilePickerPage</name>
-    <message>
-        <source>Root</source>
-        <translation>Корень</translation>
-    </message>
-    <message>
-        <source>SD Card</source>
-        <translation>Карта памяти</translation>
-    </message>
-    <message>
-        <source>Home</source>
-        <translation>Домой</translation>
+        <translation type="unfinished">Не могу импортировать закладки</translation>
     </message>
 </context>
 <context>
@@ -698,18 +675,21 @@
     </message>
 </context>
 <context>
+    <name>HistorySegment</name>
+    <message>
+        <source>History</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Delete History</source>
+        <translation type="unfinished">Удалить историю</translation>
+    </message>
+</context>
+<context>
     <name>LinkMenu</name>
     <message>
         <source>Open New Tab</source>
         <translation>Открыть новую вкладку</translation>
-    </message>
-    <message>
-        <source>Remove From Favorites</source>
-        <translation>Удалить из закладок</translation>
-    </message>
-    <message>
-        <source>Add To Favorites</source>
-        <translation>Добавить в закладки</translation>
     </message>
     <message>
         <source>Save Link Destination</source>
@@ -732,16 +712,8 @@
         <translation>Загружаю ссылку</translation>
     </message>
     <message>
-        <source>Open</source>
-        <translation>Открыть</translation>
-    </message>
-    <message>
         <source>Link copied to clipboard</source>
         <translation>Ссылка скопирована</translation>
-    </message>
-    <message>
-        <source>Open New Tab in Background</source>
-        <translation>Открыть новую вкладку в фоновом режиме</translation>
     </message>
     <message>
         <source>Share</source>
@@ -786,32 +758,6 @@
     </message>
 </context>
 <context>
-    <name>NavigationHistoryPage</name>
-    <message>
-        <source>Delete History</source>
-        <translation>Удалить историю</translation>
-    </message>
-    <message>
-        <source>Deleting History</source>
-        <translation>Удаление истории</translation>
-    </message>
-    <message>
-        <source>Navigation History</source>
-        <translation>Журнал</translation>
-    </message>
-</context>
-<context>
-    <name>NewDownloadPage</name>
-    <message>
-        <source>Start Download</source>
-        <translation>Начать загрузку</translation>
-    </message>
-    <message>
-        <source>Download Url</source>
-        <translation>Скачать Url</translation>
-    </message>
-</context>
-<context>
     <name>NewPopupRulePage</name>
     <message>
         <source>Apply Rule</source>
@@ -837,16 +783,16 @@
 <context>
     <name>NotificationDialog</name>
     <message>
-        <source>wants to access System&apos;s Notifications</source>
-        <translation>получить доступ к системным уведомлениям</translation>
-    </message>
-    <message>
         <source>Allow</source>
         <translation>Разрешить</translation>
     </message>
     <message>
         <source>Deny</source>
         <translation>Отказать</translation>
+    </message>
+    <message>
+        <source>&apos;%1&apos; wants to access system&apos;s notifications</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -989,6 +935,10 @@
         <source>Search with</source>
         <translation>Искать с помощью</translation>
     </message>
+    <message>
+        <source>Search...</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>QuickGrid</name>
@@ -999,6 +949,10 @@
     <message>
         <source>Long Press to edit</source>
         <translation>Удерживайте для редактирования</translation>
+    </message>
+    <message>
+        <source>New tab</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1073,13 +1027,6 @@
     </message>
 </context>
 <context>
-    <name>SearchBar</name>
-    <message>
-        <source>Search</source>
-        <translation>Поиск</translation>
-    </message>
-</context>
-<context>
     <name>SearchEnginePage</name>
     <message>
         <source>Save</source>
@@ -1122,34 +1069,57 @@
     </message>
 </context>
 <context>
-    <name>SessionManagerPage</name>
+    <name>SegmentsModel</name>
     <message>
-        <source>Session Manager</source>
-        <translation>Управление сессией</translation>
+        <source>Tabs</source>
+        <translation type="unfinished">Вкладки</translation>
     </message>
     <message>
-        <source>Tabs saved</source>
-        <translation>Вкладки сохранены</translation>
+        <source>Closed Tabs</source>
+        <translation type="unfinished">Закрытые вкладки</translation>
     </message>
     <message>
-        <source>Open</source>
-        <translation>Открыть</translation>
+        <source>Sessions</source>
+        <translation type="unfinished">Сессии</translation>
     </message>
     <message>
-        <source>Edit</source>
-        <translation>Править</translation>
+        <source>Cookie</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Delete</source>
-        <translation>Удалить</translation>
+        <source>History</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Deleting session</source>
-        <translation>Удаление сессии</translation>
+        <source>Downloads</source>
+        <translation type="unfinished">Загрузки</translation>
     </message>
     <message>
-        <source>Save current session</source>
-        <translation>Сохранить текущую сессию</translation>
+        <source>Favorites</source>
+        <translation type="unfinished">Закладки</translation>
+    </message>
+</context>
+<context>
+    <name>SelectorFilesPage</name>
+    <message>
+        <source>Android storage</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>SD Card</source>
+        <translation type="unfinished">Карта памяти</translation>
+    </message>
+    <message>
+        <source>Home</source>
+        <translation type="unfinished">Домой</translation>
+    </message>
+    <message>
+        <source>Send %1 file(s)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Back</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1177,6 +1147,45 @@
     <message>
         <source>Selected</source>
         <translation>Выбрано</translation>
+    </message>
+</context>
+<context>
+    <name>SessionsSegment</name>
+    <message>
+        <source>Sessions</source>
+        <translation type="unfinished">Сессии</translation>
+    </message>
+    <message>
+        <source>No Sessions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Save current session</source>
+        <translation type="unfinished">Сохранить текущую сессию</translation>
+    </message>
+    <message>
+        <source>Tabs saved</source>
+        <translation type="unfinished">Вкладки сохранены</translation>
+    </message>
+    <message>
+        <source>Open</source>
+        <translation type="unfinished">Открыть</translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation type="unfinished">Править</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation type="unfinished">Удалить</translation>
+    </message>
+    <message>
+        <source>Deleting session</source>
+        <translation type="unfinished">Удаление сессии</translation>
+    </message>
+    <message>
+        <source>Loads at startup</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1215,108 +1224,33 @@
     </message>
 </context>
 <context>
-    <name>ShareMenu</name>
+    <name>TabClosedItem</name>
     <message>
-        <source>Share</source>
-        <translation>Поделиться</translation>
+        <source>Open</source>
+        <translation type="unfinished">Открыть</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation type="unfinished">Удалить</translation>
+    </message>
+    <message>
+        <source>Deleting Tab</source>
+        <translation type="unfinished">Удаление вкладки</translation>
     </message>
 </context>
 <context>
-    <name>SidebarModel</name>
+    <name>TabsSegment</name>
     <message>
-        <source>General</source>
-        <translation>Основные</translation>
-    </message>
-    <message>
-        <source>Favorites</source>
-        <translation>Закладки</translation>
-    </message>
-    <message>
-        <source>Sessions</source>
-        <translation>Сессии</translation>
-    </message>
-    <message>
-        <source>Downloads</source>
-        <translation>Загрузки</translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation>Скачать</translation>
-    </message>
-    <message>
-        <source>Closed Tabs</source>
-        <translation>Закрытые вкладки</translation>
-    </message>
-    <message>
-        <source>Closed Tab</source>
-        <translation>Закрытая вкладка</translation>
-    </message>
-    <message>
-        <source>Navigation History</source>
-        <translation>Журнал</translation>
-    </message>
-    <message>
-        <source>Cookies</source>
-        <translation>Cookies</translation>
-    </message>
-    <message>
-        <source>Extensions</source>
-        <translation>Расширения</translation>
-    </message>
-    <message>
-        <source>Ad Block</source>
-        <translation>Блокирование рекламы</translation>
-    </message>
-    <message>
-        <source>Night Mode</source>
-        <translation>Ночной режим</translation>
+        <source>Tabs</source>
+        <translation type="unfinished">Вкладки</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation>Настройки</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Change settings</source>
-        <translation>Изменить настройки </translation>
-    </message>
-    <message>
-        <source>Popup Blocker</source>
-        <translation>Блокирование всплывающих окон</translation>
-    </message>
-    <message>
-        <source>About Web Pirate</source>
-        <translation>О браузере Web Pirate</translation>
-    </message>
-</context>
-<context>
-    <name>TabMenu</name>
-    <message>
-        <source>Duplicate Tab</source>
-        <translation>Копировать вкладку</translation>
-    </message>
-    <message>
-        <source>Duplicate Tab in Background</source>
-        <translation>Копировать вкладку в фоне</translation>
-    </message>
-    <message>
-        <source>Save page</source>
-        <translation>Сохранить страницу</translation>
-    </message>
-    <message>
-        <source>Add to Quick Grid</source>
-        <translation>Добавить в Fast Dial</translation>
-    </message>
-    <message>
-        <source>Close Tab</source>
-        <translation>Закрыть вкладку</translation>
-    </message>
-    <message>
-        <source>Close other Tabs</source>
-        <translation>Закрыть другие вкладки</translation>
-    </message>
-    <message>
-        <source>Downloading web page</source>
-        <translation>Загружаю страницу</translation>
+        <source>New Tab</source>
+        <translation type="unfinished">Новая вкладка</translation>
     </message>
 </context>
 <context>

@@ -55,7 +55,9 @@ QString FavoritesManager::locateSailfishBrowserFavorites()
 
 QString FavoritesManager::readFile(const QString &file)
 {
-    QFile f(file);
+    QString s(file);
+
+    QFile f(s.replace("file://", ""));
     f.open(QFile::ReadOnly);
     QString data = QString(f.readAll());
     f.close();

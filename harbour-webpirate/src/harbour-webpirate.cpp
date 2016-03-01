@@ -42,9 +42,6 @@
 #include "security/cryptography/aes256.h"
 #include "network/networkinterfaces.h"
 #include "network/proxymanager.h"
-#include "favoritesmanager/favoritesmanager.h"
-#include "downloadmanager/downloadmanager.h"
-#include "filepicker/folderlistmodel.h"
 #include "adblock/adblockeditor.h"
 #include "adblock/adblockmanager.h"
 #include "adblock/adblockdownloader.h"
@@ -52,6 +49,10 @@
 #include "webkitdatabase/cookie/cookiejar.h"
 #include "webkitdatabase/webkitdatabase.h"
 #include "imageproviders/faviconprovider.h"
+#include "imageproviders/webviewthumbnailer.h"
+#include "favoritesmanager/favoritesmanager.h"
+#include "downloadmanager/downloadmanager.h"
+#include "selector/filesmodel.h"
 
 void pluginenv()
 {
@@ -84,6 +85,8 @@ int main(int argc, char *argv[])
         return 0;
     }
 
+    FilesModel::registerMetaTypes();
+
     qmlRegisterType<AbstractDownloadItem>("harbour.webpirate.Private", 1, 0, "DownloadItem");
     qmlRegisterType<FavoriteItem>("harbour.webpirate.Private", 1, 0, "FavoriteItem");
     qmlRegisterType<MimeDatabase>("harbour.webpirate.Private", 1, 0, "MimeDatabase");
@@ -102,7 +105,8 @@ int main(int argc, char *argv[])
     qmlRegisterType<TransferMethodModel>("harbour.webpirate.DBus.TransferEngine", 1, 0, "TransferMethodModel");
     qmlRegisterType<ProxyManager>("harbour.webpirate.Network", 1, 0, "ProxyManager");
 
-    qmlRegisterType<FolderListModel>("harbour.webpirate.Pickers", 1, 0, "FolderListModel");
+    qmlRegisterType<FilesModel>("harbour.webpirate.Selectors", 1, 0, "FilesModel");
+    qmlRegisterType<WebViewThumbnailer>("harbour.webpirate.Thumbnailer", 1, 0, "WebViewThumbnailer");
 
     qmlRegisterType<AdBlockEditor>("harbour.webpirate.AdBlock", 1, 0, "AdBlockEditor");
     qmlRegisterType<AdBlockDownloader>("harbour.webpirate.AdBlock", 1, 0, "AdBlockDownloader");

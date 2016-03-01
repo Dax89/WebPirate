@@ -255,42 +255,35 @@
 <context>
     <name>BrowserWebView</name>
     <message>
-        <source>Accept Certificate from:</source>
-        <translation>Hyväksy varmenne kohteesta:</translation>
-    </message>
-    <message>
         <source>Downloading</source>
         <translation>Lataa...</translation>
     </message>
+    <message>
+        <source>Refresh</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>New tab</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Duplicate Tab</source>
+        <translation type="unfinished">Monista</translation>
+    </message>
+    <message>
+        <source>Accept Certificate from: %1 ?</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
-    <name>ClosedTabItem</name>
-    <message>
-        <source>Open</source>
-        <translation>Avaa</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <translation>Poista</translation>
-    </message>
-    <message>
-        <source>Deleting Tab</source>
-        <translation>Poistetaan välilehteä</translation>
-    </message>
-</context>
-<context>
-    <name>ClosedTabsPage</name>
+    <name>ClosedTabsSegment</name>
     <message>
         <source>Closed Tabs</source>
-        <translation>Suljetut välilehdet</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete Closed Tabs</source>
-        <translation>Poista suljetut välilehdet</translation>
-    </message>
-    <message>
-        <source>Deleting Tabs</source>
-        <translation>Poistetaan välilehtiä</translation>
+        <translation type="unfinished">Poista suljetut välilehdet</translation>
     </message>
 </context>
 <context>
@@ -309,29 +302,6 @@
     <message>
         <source>Cookies</source>
         <translation>Evästeet</translation>
-    </message>
-    <message>
-        <source>Add Cookie</source>
-        <translation>Lisää eväste</translation>
-    </message>
-</context>
-<context>
-    <name>CookieManagerPage</name>
-    <message>
-        <source>Cookie Manager</source>
-        <translation>Evästeiden hallinta</translation>
-    </message>
-    <message>
-        <source>Filter</source>
-        <translation>Suodatin</translation>
-    </message>
-    <message>
-        <source>Remove All Cookies</source>
-        <translation>Poista kaikki evästeet</translation>
-    </message>
-    <message>
-        <source>Removing Cookies</source>
-        <translation>Poistetaan evästeet...</translation>
     </message>
     <message>
         <source>Add Cookie</source>
@@ -363,6 +333,25 @@
     <message>
         <source>Expires</source>
         <translation>Vanhenee</translation>
+    </message>
+</context>
+<context>
+    <name>CookiesSegment</name>
+    <message>
+        <source>Cookie Manager</source>
+        <translation type="unfinished">Evästeiden hallinta</translation>
+    </message>
+    <message>
+        <source>Filter</source>
+        <translation type="unfinished">Suodatin</translation>
+    </message>
+    <message>
+        <source>Remove All Cookies</source>
+        <translation type="unfinished">Poista kaikki evästeet</translation>
+    </message>
+    <message>
+        <source>Add Cookie</source>
+        <translation type="unfinished">Lisää eväste</translation>
     </message>
 </context>
 <context>
@@ -488,18 +477,22 @@
     </message>
 </context>
 <context>
-    <name>DownloadsPage</name>
-    <message>
-        <source>Download Manager</source>
-        <translation>Latausten hallinta</translation>
-    </message>
+    <name>DownloadsSegment</name>
     <message>
         <source>Delete completed Downloads</source>
-        <translation>Poista suoritetut lataukset</translation>
+        <translation type="unfinished">Poista suoritetut lataukset</translation>
     </message>
     <message>
-        <source>New Download</source>
-        <translation>Uusi lataus</translation>
+        <source>Downloads</source>
+        <translation type="unfinished">Latausta</translation>
+    </message>
+    <message>
+        <source>Download Url</source>
+        <translation type="unfinished">Lataa linkki</translation>
+    </message>
+    <message>
+        <source>Start</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -515,6 +508,33 @@
     <message>
         <source>Use SailfishOS&apos;s editing components instead of WebView&apos;s ones</source>
         <translation>Käytä TextArean muokkaukseen SailfishOS:n natiivikomponentteja WebViewin tarjoaman editorin sijaan.</translation>
+    </message>
+</context>
+<context>
+    <name>FavoriteItem</name>
+    <message>
+        <source>Open</source>
+        <translation type="unfinished">Avaa</translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation type="unfinished">Muokkaa</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation type="unfinished">Poista</translation>
+    </message>
+    <message>
+        <source>Deleting Folder</source>
+        <translation type="unfinished">Poistetaan kansiota</translation>
+    </message>
+    <message>
+        <source>Deleting Favorite</source>
+        <translation type="unfinished">Poistetaan suosikkia</translation>
+    </message>
+    <message>
+        <source>Add to Quick Grid</source>
+        <translation type="unfinished">Lisää pikavalintaan</translation>
     </message>
 </context>
 <context>
@@ -552,100 +572,57 @@
     </message>
 </context>
 <context>
-    <name>FavoritesPage</name>
-    <message>
-        <source>Add Folder</source>
-        <translation>Lisää kansio</translation>
-    </message>
-    <message>
-        <source>Add Favorite</source>
-        <translation>Lisää suosikki</translation>
-    </message>
-    <message>
-        <source>Favorites</source>
-        <translation>Suosikit</translation>
-    </message>
+    <name>FavoritesMenu</name>
     <message>
         <source>Export</source>
-        <translation>Vie</translation>
-    </message>
-    <message>
-        <source>Import</source>
-        <translation>Tuo</translation>
-    </message>
-    <message>
-        <source>Import in</source>
-        <translation>Tuo suosikit</translation>
+        <translation type="unfinished">Vie</translation>
     </message>
     <message>
         <source>Exporting favorites</source>
-        <translation>Viedään suosikit</translation>
+        <translation type="unfinished">Viedään suosikit</translation>
+    </message>
+    <message>
+        <source>Favorites</source>
+        <translation type="unfinished">Suosikit</translation>
     </message>
     <message>
         <source>Favorites exported successfully</source>
-        <translation>Suosikit viety onnistuneesti</translation>
+        <translation type="unfinished">Suosikit viety onnistuneesti</translation>
+    </message>
+    <message>
+        <source>Import</source>
+        <translation type="unfinished">Tuo</translation>
+    </message>
+    <message>
+        <source>Import in</source>
+        <translation type="unfinished">Tuo suosikit</translation>
+    </message>
+    <message>
+        <source>Add Folder</source>
+        <translation type="unfinished">Lisää kansio</translation>
+    </message>
+    <message>
+        <source>Add Favorite</source>
+        <translation type="unfinished">Lisää suosikki</translation>
+    </message>
+</context>
+<context>
+    <name>FavoritesSegment</name>
+    <message>
+        <source>Favorites</source>
+        <translation type="unfinished">Suosikit</translation>
+    </message>
+    <message>
+        <source>Back</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Favorites imported successfully</source>
-        <translation>Suosikit tuotu onnistuneesti</translation>
-    </message>
-    <message>
-        <source>Delete all Favorites</source>
-        <translation>Poista kaikki suosikit</translation>
-    </message>
-    <message>
-        <source>Deleting all favorites</source>
-        <translation>Poistetaan kaikkia suosikkeja</translation>
+        <translation type="unfinished">Suosikit tuotu onnistuneesti</translation>
     </message>
     <message>
         <source>Cannot import favorites</source>
-        <translation>Ei voi tuoda suosikkeja</translation>
-    </message>
-</context>
-<context>
-    <name>FavoritesView</name>
-    <message>
-        <source>Edit</source>
-        <translation>Muokkaa</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <translation>Poista</translation>
-    </message>
-    <message>
-        <source>Deleting Favorite</source>
-        <translation>Poistetaan suosikkia</translation>
-    </message>
-    <message>
-        <source>Deleting Folder</source>
-        <translation>Poistetaan kansiota</translation>
-    </message>
-    <message>
-        <source>Open</source>
-        <translation>Avaa</translation>
-    </message>
-    <message>
-        <source>Open in New Tab</source>
-        <translation>Avaa uudessa välilehdessä</translation>
-    </message>
-    <message>
-        <source>Add to Quick Grid</source>
-        <translation>Lisää pikavalintaan</translation>
-    </message>
-</context>
-<context>
-    <name>FilePickerPage</name>
-    <message>
-        <source>Root</source>
-        <translation>Juuri</translation>
-    </message>
-    <message>
-        <source>SD Card</source>
-        <translation>SD -muistikortti</translation>
-    </message>
-    <message>
-        <source>Home</source>
-        <translation>Koti</translation>
+        <translation type="unfinished">Ei voi tuoda suosikkeja</translation>
     </message>
 </context>
 <context>
@@ -698,18 +675,21 @@
     </message>
 </context>
 <context>
+    <name>HistorySegment</name>
+    <message>
+        <source>History</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Delete History</source>
+        <translation type="unfinished">Poista historia</translation>
+    </message>
+</context>
+<context>
     <name>LinkMenu</name>
     <message>
         <source>Open New Tab</source>
         <translation>Avaa uusi välilehti</translation>
-    </message>
-    <message>
-        <source>Remove From Favorites</source>
-        <translation>Poista suosikeista</translation>
-    </message>
-    <message>
-        <source>Add To Favorites</source>
-        <translation>Lisää suosikkeihin</translation>
     </message>
     <message>
         <source>Save Link Destination</source>
@@ -732,16 +712,8 @@
         <translation>Ladataan linkkiä...</translation>
     </message>
     <message>
-        <source>Open</source>
-        <translation>Avaa</translation>
-    </message>
-    <message>
         <source>Link copied to clipboard</source>
         <translation>Linkki kopioitu leikepöydälle</translation>
-    </message>
-    <message>
-        <source>Open New Tab in Background</source>
-        <translation>Avaa uusi välilehti taustalla</translation>
     </message>
     <message>
         <source>Share</source>
@@ -786,32 +758,6 @@
     </message>
 </context>
 <context>
-    <name>NavigationHistoryPage</name>
-    <message>
-        <source>Delete History</source>
-        <translation>Poista historia</translation>
-    </message>
-    <message>
-        <source>Deleting History</source>
-        <translation>Poistetaan historiaa</translation>
-    </message>
-    <message>
-        <source>Navigation History</source>
-        <translation>Selaushistoria</translation>
-    </message>
-</context>
-<context>
-    <name>NewDownloadPage</name>
-    <message>
-        <source>Start Download</source>
-        <translation>Aloita lataaminen</translation>
-    </message>
-    <message>
-        <source>Download Url</source>
-        <translation>Lataa linkki</translation>
-    </message>
-</context>
-<context>
     <name>NewPopupRulePage</name>
     <message>
         <source>Apply Rule</source>
@@ -837,16 +783,16 @@
 <context>
     <name>NotificationDialog</name>
     <message>
-        <source>wants to access System&apos;s Notifications</source>
-        <translation>haluaa pääsyn käyttöliittymän viestitoimintoihin</translation>
-    </message>
-    <message>
         <source>Allow</source>
         <translation>Salli</translation>
     </message>
     <message>
         <source>Deny</source>
         <translation>Kiellä</translation>
+    </message>
+    <message>
+        <source>&apos;%1&apos; wants to access system&apos;s notifications</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -989,6 +935,10 @@
         <source>Search with</source>
         <translation>Etsi käyttäen...</translation>
     </message>
+    <message>
+        <source>Search...</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>QuickGrid</name>
@@ -999,6 +949,10 @@
     <message>
         <source>Long Press to edit</source>
         <translation>Paina pitkään muokataksesi</translation>
+    </message>
+    <message>
+        <source>New tab</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1073,13 +1027,6 @@
     </message>
 </context>
 <context>
-    <name>SearchBar</name>
-    <message>
-        <source>Search</source>
-        <translation>Haku</translation>
-    </message>
-</context>
-<context>
     <name>SearchEnginePage</name>
     <message>
         <source>Save</source>
@@ -1122,34 +1069,57 @@
     </message>
 </context>
 <context>
-    <name>SessionManagerPage</name>
+    <name>SegmentsModel</name>
     <message>
-        <source>Session Manager</source>
-        <translation>Istunnon hallinta</translation>
+        <source>Tabs</source>
+        <translation type="unfinished">Välilehdet</translation>
     </message>
     <message>
-        <source>Tabs saved</source>
-        <translation>Välilehdet tallennettu</translation>
+        <source>Closed Tabs</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Open</source>
-        <translation>Avaa</translation>
+        <source>Sessions</source>
+        <translation type="unfinished">Istunnot</translation>
     </message>
     <message>
-        <source>Edit</source>
-        <translation>Muokkaa</translation>
+        <source>Cookie</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Delete</source>
-        <translation>Poista</translation>
+        <source>History</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Deleting session</source>
-        <translation>Poistetaan istunto</translation>
+        <source>Downloads</source>
+        <translation type="unfinished">Latausta</translation>
     </message>
     <message>
-        <source>Save current session</source>
-        <translation>Tallenna nykyinen istunto</translation>
+        <source>Favorites</source>
+        <translation type="unfinished">Suosikit</translation>
+    </message>
+</context>
+<context>
+    <name>SelectorFilesPage</name>
+    <message>
+        <source>Android storage</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>SD Card</source>
+        <translation type="unfinished">SD -muistikortti</translation>
+    </message>
+    <message>
+        <source>Home</source>
+        <translation type="unfinished">Koti</translation>
+    </message>
+    <message>
+        <source>Send %1 file(s)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Back</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1177,6 +1147,45 @@
     <message>
         <source>Selected</source>
         <translation>Valittu</translation>
+    </message>
+</context>
+<context>
+    <name>SessionsSegment</name>
+    <message>
+        <source>Sessions</source>
+        <translation type="unfinished">Istunnot</translation>
+    </message>
+    <message>
+        <source>No Sessions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Save current session</source>
+        <translation type="unfinished">Tallenna nykyinen istunto</translation>
+    </message>
+    <message>
+        <source>Tabs saved</source>
+        <translation type="unfinished">Välilehdet tallennettu</translation>
+    </message>
+    <message>
+        <source>Open</source>
+        <translation type="unfinished">Avaa</translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation type="unfinished">Muokkaa</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation type="unfinished">Poista</translation>
+    </message>
+    <message>
+        <source>Deleting session</source>
+        <translation type="unfinished">Poistetaan istunto</translation>
+    </message>
+    <message>
+        <source>Loads at startup</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1215,108 +1224,33 @@
     </message>
 </context>
 <context>
-    <name>ShareMenu</name>
+    <name>TabClosedItem</name>
     <message>
-        <source>Share</source>
-        <translation>Jaa</translation>
+        <source>Open</source>
+        <translation type="unfinished">Avaa</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation type="unfinished">Poista</translation>
+    </message>
+    <message>
+        <source>Deleting Tab</source>
+        <translation type="unfinished">Poistetaan välilehteä</translation>
     </message>
 </context>
 <context>
-    <name>SidebarModel</name>
+    <name>TabsSegment</name>
     <message>
-        <source>General</source>
-        <translation>Yleistä</translation>
-    </message>
-    <message>
-        <source>Favorites</source>
-        <translation>Suosikit</translation>
-    </message>
-    <message>
-        <source>Sessions</source>
-        <translation>Istunnot</translation>
-    </message>
-    <message>
-        <source>Downloads</source>
-        <translation>Latausta</translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation>Lataa</translation>
-    </message>
-    <message>
-        <source>Closed Tabs</source>
-        <translation>suljettua välilehteä</translation>
-    </message>
-    <message>
-        <source>Closed Tab</source>
-        <translation>suljettu välilehti</translation>
-    </message>
-    <message>
-        <source>Navigation History</source>
-        <translation>Selaushistoria</translation>
-    </message>
-    <message>
-        <source>Cookies</source>
-        <translation>Evästeet</translation>
-    </message>
-    <message>
-        <source>Extensions</source>
-        <translation>Laajennukset</translation>
-    </message>
-    <message>
-        <source>Ad Block</source>
-        <translation>Mainoksien esto</translation>
-    </message>
-    <message>
-        <source>Night Mode</source>
-        <translation>Yötila</translation>
+        <source>Tabs</source>
+        <translation type="unfinished">Välilehdet</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation>Asetukset</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Change settings</source>
-        <translation>Muuta asetuksia</translation>
-    </message>
-    <message>
-        <source>Popup Blocker</source>
-        <translation>Ponnahdusikkunoiden esto</translation>
-    </message>
-    <message>
-        <source>About Web Pirate</source>
-        <translation>Tietoa Web Piratesta</translation>
-    </message>
-</context>
-<context>
-    <name>TabMenu</name>
-    <message>
-        <source>Duplicate Tab</source>
-        <translation>Monista</translation>
-    </message>
-    <message>
-        <source>Duplicate Tab in Background</source>
-        <translation>Monista taustalle</translation>
-    </message>
-    <message>
-        <source>Save page</source>
-        <translation>Tallenna sivu</translation>
-    </message>
-    <message>
-        <source>Add to Quick Grid</source>
-        <translation>Lisää pikavalintaan</translation>
-    </message>
-    <message>
-        <source>Close Tab</source>
-        <translation>Sulje välilehti</translation>
-    </message>
-    <message>
-        <source>Close other Tabs</source>
-        <translation>Sulje muut välilehdet</translation>
-    </message>
-    <message>
-        <source>Downloading web page</source>
-        <translation>Ladataan verkkosivua</translation>
+        <source>New Tab</source>
+        <translation type="unfinished">Uusi välilehti</translation>
     </message>
 </context>
 <context>

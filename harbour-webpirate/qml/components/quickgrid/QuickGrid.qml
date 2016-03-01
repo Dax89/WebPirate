@@ -1,11 +1,11 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
-import "../browsertab/navigationbar/tabbars"
 
 Item
 {
     property bool editMode: false
 
+    signal newTabRequested()
     signal loadRequested(string request)
 
     function enableEditMode()
@@ -14,9 +14,6 @@ Item
             return;
 
         editMode = true;
-        querybar.animationEnabled = true;
-        querybar.visible = false;
-        sidebar.collapse();
     }
 
     function disableEditMode()
@@ -25,37 +22,40 @@ Item
             return;
 
         editMode = false;
-        querybar.visible = true;
-        querybar.animationEnabled = false;
     }
 
     id: quickgrid
+    clip: true
 
-    QueryBar
-    {
-        id: querybar
-        anchors { left: parent.left; top: parent.top; right: parent.right; topMargin: Theme.paddingLarge; leftMargin: Theme.paddingMedium; rightMargin: Theme.paddingMedium }
-        onReturnPressed: loadRequested(searchquery)
-
-        onVisibleChanged: {
-            if(!visible)
-                querybar.clear();
-        }
-    }
+    RemorsePopup { id: remorsepopup }
 
     SilicaGridView
     {
         property real spacing: mainpage.isPortrait ? Theme.paddingMedium : Theme.paddingLarge
 
+        PullDownMenu
+        {
+            enabled: !editMode && quickgridview.visible
+
+            MenuItem
+            {
+                text: qsTr("New tab")
+                onClicked: newTabRequested()
+            }
+        }
+
         id: quickgridview
-        anchors { left: parent.left; top: querybar.bottom; right: parent.right; bottom: quickgridbottompanel.top; topMargin: Theme.paddingLarge }
+        anchors { left: parent.left; top: parent.top; right: parent.right; bottom: quickgridbottompanel.top }
         cellWidth: mainpage.isPortrait ? (width / 3) : (width / 4)
         cellHeight: cellWidth
         model: mainwindow.settings.quickgridmodel
         interactive: (mousearea.currentQuickId === -1)
         clip: true
 
-        onVerticalVelocityChanged: sidebar.collapse();
+        header: Item {
+            width: quickgridview.width
+            height: Theme.paddingLarge
+        }
 
         delegate: QuickGridItem {
             id: quickitem
@@ -84,8 +84,6 @@ Item
             anchors.fill: parent
 
             onClicked: {
-                sidebar.collapse();
-
                 if(editMode) {
                     disableEditMode();
                     return;
@@ -96,10 +94,8 @@ Item
 
                 var url = mainwindow.settings.quickgridmodel.get(index).url;
 
-                if(url && url.length) {
+                if(url && url.length)
                     loadRequested(url);
-                    sidebar.collapse();
-                }
             }
 
             onPressAndHold: {

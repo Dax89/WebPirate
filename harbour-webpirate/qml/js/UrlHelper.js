@@ -21,7 +21,12 @@ function adjustUrl(adjurl)
 
 function domainName(url)
 {
-    return domainregex.exec(adjustUrl(url))[0];
+    var domain = domainregex.exec(adjustUrl(url));
+
+    if(!domain || domain.length < 1)
+        return;
+
+    return domain[0];
 }
 
 function urlPath(url)
@@ -77,7 +82,7 @@ function specialUrl(url)
 
 function decode(url)
 {
-    return decodeURIComponent(url.replace(/+/g, "%20"));
+    return decodeURIComponent(url.replace(/\+/g, "%20"));
 }
 
 function printable(url)

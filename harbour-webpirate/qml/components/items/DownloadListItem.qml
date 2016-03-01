@@ -1,7 +1,7 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
 import harbour.webpirate.Private 1.0
-import "../browsertab/navigationbar"
+import "../tabview/navigationbar"
 
 ListItem
 {

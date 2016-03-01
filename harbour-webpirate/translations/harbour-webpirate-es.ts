@@ -255,42 +255,35 @@
 <context>
     <name>BrowserWebView</name>
     <message>
-        <source>Accept Certificate from:</source>
-        <translation>Aceptar certificado de:</translation>
-    </message>
-    <message>
         <source>Downloading</source>
         <translation>Descargando</translation>
     </message>
+    <message>
+        <source>Refresh</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>New tab</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Duplicate Tab</source>
+        <translation type="unfinished">Duplicar pestaña</translation>
+    </message>
+    <message>
+        <source>Accept Certificate from: %1 ?</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
-    <name>ClosedTabItem</name>
-    <message>
-        <source>Open</source>
-        <translation>Abrir</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <translation>Borrar</translation>
-    </message>
-    <message>
-        <source>Deleting Tab</source>
-        <translation>Borrando pestaña</translation>
-    </message>
-</context>
-<context>
-    <name>ClosedTabsPage</name>
+    <name>ClosedTabsSegment</name>
     <message>
         <source>Closed Tabs</source>
-        <translation>Pestañas cerradas</translation>
+        <translation type="unfinished">Pestañas cerradas</translation>
     </message>
     <message>
         <source>Delete Closed Tabs</source>
-        <translation>Borrar pestañas cerradas</translation>
-    </message>
-    <message>
-        <source>Deleting Tabs</source>
-        <translation>Borrando pestañas</translation>
+        <translation type="unfinished">Borrar pestañas cerradas</translation>
     </message>
 </context>
 <context>
@@ -309,29 +302,6 @@
     <message>
         <source>Cookies</source>
         <translation>Cookies</translation>
-    </message>
-    <message>
-        <source>Add Cookie</source>
-        <translation>Añadir cookie</translation>
-    </message>
-</context>
-<context>
-    <name>CookieManagerPage</name>
-    <message>
-        <source>Cookie Manager</source>
-        <translation>Gestor de cookies</translation>
-    </message>
-    <message>
-        <source>Filter</source>
-        <translation>Filtro</translation>
-    </message>
-    <message>
-        <source>Remove All Cookies</source>
-        <translation>Borrar todas las cookies</translation>
-    </message>
-    <message>
-        <source>Removing Cookies</source>
-        <translation>Borrando cookies</translation>
     </message>
     <message>
         <source>Add Cookie</source>
@@ -363,6 +333,25 @@
     <message>
         <source>Expires</source>
         <translation>Caducidad</translation>
+    </message>
+</context>
+<context>
+    <name>CookiesSegment</name>
+    <message>
+        <source>Cookie Manager</source>
+        <translation type="unfinished">Gestor de cookies</translation>
+    </message>
+    <message>
+        <source>Filter</source>
+        <translation type="unfinished">Filtro</translation>
+    </message>
+    <message>
+        <source>Remove All Cookies</source>
+        <translation type="unfinished">Borrar todas las cookies</translation>
+    </message>
+    <message>
+        <source>Add Cookie</source>
+        <translation type="unfinished">Añadir cookie</translation>
     </message>
 </context>
 <context>
@@ -488,18 +477,22 @@
     </message>
 </context>
 <context>
-    <name>DownloadsPage</name>
-    <message>
-        <source>Download Manager</source>
-        <translation>Gestor de descargas</translation>
-    </message>
+    <name>DownloadsSegment</name>
     <message>
         <source>Delete completed Downloads</source>
-        <translation>Borrar descargas completadas</translation>
+        <translation type="unfinished">Borrar descargas completadas</translation>
     </message>
     <message>
-        <source>New Download</source>
-        <translation>Nueva descarga</translation>
+        <source>Downloads</source>
+        <translation type="unfinished">Descargas</translation>
+    </message>
+    <message>
+        <source>Download Url</source>
+        <translation type="unfinished">Descargar Url</translation>
+    </message>
+    <message>
+        <source>Start</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -515,6 +508,33 @@
     <message>
         <source>Use SailfishOS&apos;s editing components instead of WebView&apos;s ones</source>
         <translation>Utiliza los componentes de edición de SailfishOS en lugar de los de WebView</translation>
+    </message>
+</context>
+<context>
+    <name>FavoriteItem</name>
+    <message>
+        <source>Open</source>
+        <translation type="unfinished">Abrir</translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation type="unfinished">Editar</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation type="unfinished">Borrar</translation>
+    </message>
+    <message>
+        <source>Deleting Folder</source>
+        <translation type="unfinished">Borrando carpeta</translation>
+    </message>
+    <message>
+        <source>Deleting Favorite</source>
+        <translation type="unfinished"> Borrando favorito</translation>
+    </message>
+    <message>
+        <source>Add to Quick Grid</source>
+        <translation type="unfinished">Añadir a la rejilla rápida</translation>
     </message>
 </context>
 <context>
@@ -552,100 +572,57 @@
     </message>
 </context>
 <context>
-    <name>FavoritesPage</name>
-    <message>
-        <source>Add Folder</source>
-        <translation>Añadir carpeta</translation>
-    </message>
-    <message>
-        <source>Add Favorite</source>
-        <translation>Añadir favorito</translation>
-    </message>
-    <message>
-        <source>Favorites</source>
-        <translation>Favoritos</translation>
-    </message>
+    <name>FavoritesMenu</name>
     <message>
         <source>Export</source>
-        <translation>Exportar</translation>
-    </message>
-    <message>
-        <source>Import</source>
-        <translation>Importar</translation>
-    </message>
-    <message>
-        <source>Import in</source>
-        <translation>Importar en</translation>
+        <translation type="unfinished">Exportar</translation>
     </message>
     <message>
         <source>Exporting favorites</source>
-        <translation>Exportando favoritos</translation>
+        <translation type="unfinished">Exportando favoritos</translation>
+    </message>
+    <message>
+        <source>Favorites</source>
+        <translation type="unfinished">Favoritos</translation>
     </message>
     <message>
         <source>Favorites exported successfully</source>
-        <translation>Favoritos exportados con éxito</translation>
+        <translation type="unfinished">Favoritos exportados con éxito</translation>
+    </message>
+    <message>
+        <source>Import</source>
+        <translation type="unfinished">Importar</translation>
+    </message>
+    <message>
+        <source>Import in</source>
+        <translation type="unfinished">Importar en</translation>
+    </message>
+    <message>
+        <source>Add Folder</source>
+        <translation type="unfinished">Añadir carpeta</translation>
+    </message>
+    <message>
+        <source>Add Favorite</source>
+        <translation type="unfinished">Añadir favorito</translation>
+    </message>
+</context>
+<context>
+    <name>FavoritesSegment</name>
+    <message>
+        <source>Favorites</source>
+        <translation type="unfinished">Favoritos</translation>
+    </message>
+    <message>
+        <source>Back</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Favorites imported successfully</source>
-        <translation>Favoritos importados con éxito</translation>
-    </message>
-    <message>
-        <source>Delete all Favorites</source>
-        <translation>Borrar todos los favoritos</translation>
-    </message>
-    <message>
-        <source>Deleting all favorites</source>
-        <translation>Borrando todos los favoritos</translation>
+        <translation type="unfinished">Favoritos importados con éxito</translation>
     </message>
     <message>
         <source>Cannot import favorites</source>
-        <translation>No es posible importar los favoritos</translation>
-    </message>
-</context>
-<context>
-    <name>FavoritesView</name>
-    <message>
-        <source>Edit</source>
-        <translation>Editar</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <translation>Borrar</translation>
-    </message>
-    <message>
-        <source>Deleting Favorite</source>
-        <translation> Borrando favorito</translation>
-    </message>
-    <message>
-        <source>Deleting Folder</source>
-        <translation>Borrando carpeta</translation>
-    </message>
-    <message>
-        <source>Open</source>
-        <translation>Abrir</translation>
-    </message>
-    <message>
-        <source>Open in New Tab</source>
-        <translation>Abrir en nueva pestaña</translation>
-    </message>
-    <message>
-        <source>Add to Quick Grid</source>
-        <translation>Añadir a la rejilla rápida</translation>
-    </message>
-</context>
-<context>
-    <name>FilePickerPage</name>
-    <message>
-        <source>Root</source>
-        <translation>Root</translation>
-    </message>
-    <message>
-        <source>SD Card</source>
-        <translation>Tarjeta SD</translation>
-    </message>
-    <message>
-        <source>Home</source>
-        <translation>Inicio</translation>
+        <translation type="unfinished">No es posible importar los favoritos</translation>
     </message>
 </context>
 <context>
@@ -699,18 +676,21 @@
     </message>
 </context>
 <context>
+    <name>HistorySegment</name>
+    <message>
+        <source>History</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Delete History</source>
+        <translation type="unfinished">Borrar historial</translation>
+    </message>
+</context>
+<context>
     <name>LinkMenu</name>
     <message>
         <source>Open New Tab</source>
         <translation>Abrir nueva pestaña</translation>
-    </message>
-    <message>
-        <source>Remove From Favorites</source>
-        <translation>Quitar de favoritos</translation>
-    </message>
-    <message>
-        <source>Add To Favorites</source>
-        <translation>Añadir a favoritos</translation>
     </message>
     <message>
         <source>Save Link Destination</source>
@@ -733,16 +713,8 @@
         <translation>Descargando enlace</translation>
     </message>
     <message>
-        <source>Open</source>
-        <translation>Abrir</translation>
-    </message>
-    <message>
         <source>Link copied to clipboard</source>
         <translation>Enlace copiado al portapapeles</translation>
-    </message>
-    <message>
-        <source>Open New Tab in Background</source>
-        <translation>Abrir nueva pestaña en segundo plano</translation>
     </message>
     <message>
         <source>Share</source>
@@ -787,32 +759,6 @@
     </message>
 </context>
 <context>
-    <name>NavigationHistoryPage</name>
-    <message>
-        <source>Delete History</source>
-        <translation>Borrar historial</translation>
-    </message>
-    <message>
-        <source>Deleting History</source>
-        <translation>Borrando historial</translation>
-    </message>
-    <message>
-        <source>Navigation History</source>
-        <translation>Historial de navegación</translation>
-    </message>
-</context>
-<context>
-    <name>NewDownloadPage</name>
-    <message>
-        <source>Start Download</source>
-        <translation>Comenzar descarga</translation>
-    </message>
-    <message>
-        <source>Download Url</source>
-        <translation>Descargar Url</translation>
-    </message>
-</context>
-<context>
     <name>NewPopupRulePage</name>
     <message>
         <source>Apply Rule</source>
@@ -838,16 +784,16 @@
 <context>
     <name>NotificationDialog</name>
     <message>
-        <source>wants to access System&apos;s Notifications</source>
-        <translation>quiere acceder al Sistema de Notificaciones</translation>
-    </message>
-    <message>
         <source>Allow</source>
         <translation>Permitir</translation>
     </message>
     <message>
         <source>Deny</source>
         <translation>Rechazar</translation>
+    </message>
+    <message>
+        <source>&apos;%1&apos; wants to access system&apos;s notifications</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -990,6 +936,10 @@
         <source>Search with</source>
         <translation>Buscar con</translation>
     </message>
+    <message>
+        <source>Search...</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>QuickGrid</name>
@@ -1000,6 +950,10 @@
     <message>
         <source>Long Press to edit</source>
         <translation>Mantener pulsado para editar</translation>
+    </message>
+    <message>
+        <source>New tab</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1074,13 +1028,6 @@
     </message>
 </context>
 <context>
-    <name>SearchBar</name>
-    <message>
-        <source>Search</source>
-        <translation>Buscar</translation>
-    </message>
-</context>
-<context>
     <name>SearchEnginePage</name>
     <message>
         <source>Save</source>
@@ -1123,34 +1070,57 @@
     </message>
 </context>
 <context>
-    <name>SessionManagerPage</name>
+    <name>SegmentsModel</name>
     <message>
-        <source>Session Manager</source>
-        <translation>Gestor de sesiones</translation>
+        <source>Tabs</source>
+        <translation type="unfinished">Pestañas</translation>
     </message>
     <message>
-        <source>Tabs saved</source>
-        <translation>Pestañas guardadas</translation>
+        <source>Closed Tabs</source>
+        <translation type="unfinished">Pestañas cerradas</translation>
     </message>
     <message>
-        <source>Open</source>
-        <translation>Abrir</translation>
+        <source>Sessions</source>
+        <translation type="unfinished">Sesiones</translation>
     </message>
     <message>
-        <source>Edit</source>
-        <translation>Editar</translation>
+        <source>Cookie</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Delete</source>
-        <translation>Borrar</translation>
+        <source>History</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Deleting session</source>
-        <translation>Borrando sesión</translation>
+        <source>Downloads</source>
+        <translation type="unfinished">Descargas</translation>
     </message>
     <message>
-        <source>Save current session</source>
-        <translation>Guardar sesión actual</translation>
+        <source>Favorites</source>
+        <translation type="unfinished">Favoritos</translation>
+    </message>
+</context>
+<context>
+    <name>SelectorFilesPage</name>
+    <message>
+        <source>Android storage</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>SD Card</source>
+        <translation type="unfinished">Tarjeta SD</translation>
+    </message>
+    <message>
+        <source>Home</source>
+        <translation type="unfinished">Inicio</translation>
+    </message>
+    <message>
+        <source>Send %1 file(s)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Back</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1178,6 +1148,45 @@
     <message>
         <source>Selected</source>
         <translation>Seleccionado</translation>
+    </message>
+</context>
+<context>
+    <name>SessionsSegment</name>
+    <message>
+        <source>Sessions</source>
+        <translation type="unfinished">Sesiones</translation>
+    </message>
+    <message>
+        <source>No Sessions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Save current session</source>
+        <translation type="unfinished">Guardar sesión actual</translation>
+    </message>
+    <message>
+        <source>Tabs saved</source>
+        <translation type="unfinished">Pestañas guardadas</translation>
+    </message>
+    <message>
+        <source>Open</source>
+        <translation type="unfinished">Abrir</translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation type="unfinished">Editar</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation type="unfinished">Borrar</translation>
+    </message>
+    <message>
+        <source>Deleting session</source>
+        <translation type="unfinished">Borrando sesión</translation>
+    </message>
+    <message>
+        <source>Loads at startup</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1216,108 +1225,33 @@
     </message>
 </context>
 <context>
-    <name>ShareMenu</name>
+    <name>TabClosedItem</name>
     <message>
-        <source>Share</source>
-        <translation>Compartir</translation>
+        <source>Open</source>
+        <translation type="unfinished">Abrir</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation type="unfinished">Borrar</translation>
+    </message>
+    <message>
+        <source>Deleting Tab</source>
+        <translation type="unfinished">Borrando pestaña</translation>
     </message>
 </context>
 <context>
-    <name>SidebarModel</name>
+    <name>TabsSegment</name>
     <message>
-        <source>General</source>
-        <translation>General</translation>
-    </message>
-    <message>
-        <source>Favorites</source>
-        <translation>Favoritos</translation>
-    </message>
-    <message>
-        <source>Sessions</source>
-        <translation>Sesiones</translation>
-    </message>
-    <message>
-        <source>Downloads</source>
-        <translation>Descargas</translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation>Descargar</translation>
-    </message>
-    <message>
-        <source>Closed Tabs</source>
-        <translation>Pestañas cerradas</translation>
-    </message>
-    <message>
-        <source>Closed Tab</source>
-        <translation>Pestaña cerrada</translation>
-    </message>
-    <message>
-        <source>Navigation History</source>
-        <translation>Historial de navegación</translation>
-    </message>
-    <message>
-        <source>Cookies</source>
-        <translation>Cookies</translation>
-    </message>
-    <message>
-        <source>Extensions</source>
-        <translation>Extensiones</translation>
-    </message>
-    <message>
-        <source>Ad Block</source>
-        <translation>Ad Block</translation>
-    </message>
-    <message>
-        <source>Night Mode</source>
-        <translation>Modo noche</translation>
+        <source>Tabs</source>
+        <translation type="unfinished">Pestañas</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation>Ajustes</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Change settings</source>
-        <translation>Cambiar ajustes</translation>
-    </message>
-    <message>
-        <source>Popup Blocker</source>
-        <translation>Bloqueador de popup</translation>
-    </message>
-    <message>
-        <source>About Web Pirate</source>
-        <translation>Acerca de Web Pirate</translation>
-    </message>
-</context>
-<context>
-    <name>TabMenu</name>
-    <message>
-        <source>Duplicate Tab</source>
-        <translation>Duplicar pestaña</translation>
-    </message>
-    <message>
-        <source>Duplicate Tab in Background</source>
-        <translation>Duplicar pestaña en segundo plano</translation>
-    </message>
-    <message>
-        <source>Save page</source>
-        <translation>Guardar página</translation>
-    </message>
-    <message>
-        <source>Add to Quick Grid</source>
-        <translation>Añadir a la rejilla rápida</translation>
-    </message>
-    <message>
-        <source>Close Tab</source>
-        <translation>Cerrar pestaña</translation>
-    </message>
-    <message>
-        <source>Close other Tabs</source>
-        <translation>Cerrar otras pestañas</translation>
-    </message>
-    <message>
-        <source>Downloading web page</source>
-        <translation>Descargando página web</translation>
+        <source>New Tab</source>
+        <translation type="unfinished">Nueva pestaña</translation>
     </message>
 </context>
 <context>

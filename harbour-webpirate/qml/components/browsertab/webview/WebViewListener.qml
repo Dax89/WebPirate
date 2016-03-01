@@ -14,8 +14,6 @@ Item
     {
         readonly property var dispatcher: { "console_log": onConsoleLog,
                                             "console_error": onConsoleError,
-                                            "touchstart": onTouchStart,
-                                            /* "touchmove": onTouchMove, */
                                             "longpress": onLongPress,
                                             "submit": onFormSubmit,
                                             "selector_touch": onSelectorTouched,
@@ -51,46 +49,18 @@ Item
             console.log(data.log);
         }
 
-        function onTouchStart(/* data */) {
-            actionbar.evaporate();
-            sidebar.collapse();
-        }
-
-        /*
-        function onTouchMove(data) {
-            if(data.moveup) {
-                navigationbar.evaporate();
-                tabheader.evaporate();
-            }
-            else if(data.movedown) {
-                navigationbar.solidify();
-                tabheader.solidify();
-            }
-        }
-        */
-
         function onLongPress(data) {
-            credentialdialog.hide();
-            formresubmitdialog.hide();
+            tabView.dialogs.hideAll();
 
-            if(data.url) {
-                linkmenu.title = data.url;
-                linkmenu.url = data.url;
-                linkmenu.isimage = data.isimage;
-                linkmenu.show();
-            }
+            if(data.url)
+                tabView.dialogs.showLinkMenu(data.url, data.isimage);
             else if(data.text)
                 pageStack.push(Qt.resolvedUrl("../../../pages/webview/TextSelectionPage.qml"), { "text": clearEscape(data.text) });
         }
 
         function onFormSubmit(data) {
-            linkmenu.hide();
-
-            if((mainwindow.settings.clearonexit === false) && Credentials.needsDialog(Database.instance(), url.toString(), data)) {
-                credentialdialog.url = url.toString();
-                credentialdialog.logindata = data;
-                credentialdialog.show();
-            }
+            if((mainwindow.settings.clearonexit === false) && Credentials.needsDialog(Database.instance(), url.toString(), data))
+                tabView.dialogs.showCredential(url.toString(), data);
         }
 
         function onSelectorTouched(data) {
@@ -154,7 +124,7 @@ Item
         }
 
         function newTabRequested(data) {
-            tabview.addTab(data.url);
+            tabView.addTab(data.url);
         }
 
         function playVideo(data) {
@@ -162,16 +132,14 @@ Item
         }
 
         function playYouTubeVideo(data) {
-            tabheader.solidify();
-            navigationbar.solidify();
+            tabView.navigationBar.solidify();
 
             var grabber = viewStack.push(Qt.resolvedUrl("../views/browserplayer/BrowserGrabber.qml"), "mediagrabber");
             YouTubeGrabber.grabVideo(data.videoid, grabber);
         }
 
         function playDailyMotionVideo(data) {
-            tabheader.solidify();
-            navigationbar.solidify();
+            tabView.navigationBar.solidify();
 
             var grabber = viewStack.push(Qt.resolvedUrl("../views/browserplayer/BrowserGrabber.qml"), "mediagrabber", { "grabFailed": data.videos.length <= 0,
                                                                                                                         "grabStatus": data.videos.length <= 0 ? qsTr("FAILED") : "OK",
@@ -188,8 +156,7 @@ Item
         }
 
         function playVimeoVideo(data) {
-            tabheader.solidify();
-            navigationbar.solidify();
+            tabView.navigationBar.solidify();
 
             var grabber = viewstack.push(Qt.resolvedUrl("../views/browserplayer/BrowserGrabber.qml"), "mediagrabber", { "grabFailed": data.videos.length <= 0,
                                                                                                                         "grabStatus": data.videos.length <= 0 ? qsTr("FAILED") : "OK",

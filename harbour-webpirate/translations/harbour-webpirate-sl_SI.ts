@@ -255,42 +255,35 @@
 <context>
     <name>BrowserWebView</name>
     <message>
-        <source>Accept Certificate from:</source>
-        <translation>Sprejmi certifikat od:</translation>
-    </message>
-    <message>
         <source>Downloading</source>
         <translation>Prenašanje</translation>
     </message>
+    <message>
+        <source>Refresh</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>New tab</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Duplicate Tab</source>
+        <translation type="unfinished">Podvoji zavihek</translation>
+    </message>
+    <message>
+        <source>Accept Certificate from: %1 ?</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
-    <name>ClosedTabItem</name>
-    <message>
-        <source>Open</source>
-        <translation>Odpri</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <translation>Izbriši</translation>
-    </message>
-    <message>
-        <source>Deleting Tab</source>
-        <translation>Brisanje zavihka</translation>
-    </message>
-</context>
-<context>
-    <name>ClosedTabsPage</name>
+    <name>ClosedTabsSegment</name>
     <message>
         <source>Closed Tabs</source>
-        <translation>Zaprti zavihki</translation>
+        <translation type="unfinished">Zaprti zavihki</translation>
     </message>
     <message>
         <source>Delete Closed Tabs</source>
-        <translation>Izbriši zaprte zavihke</translation>
-    </message>
-    <message>
-        <source>Deleting Tabs</source>
-        <translation>Brisanje zavihkov</translation>
+        <translation type="unfinished">Izbriši zaprte zavihke</translation>
     </message>
 </context>
 <context>
@@ -309,29 +302,6 @@
     <message>
         <source>Cookies</source>
         <translation>Piškotki</translation>
-    </message>
-    <message>
-        <source>Add Cookie</source>
-        <translation>Dodaj piškotek</translation>
-    </message>
-</context>
-<context>
-    <name>CookieManagerPage</name>
-    <message>
-        <source>Cookie Manager</source>
-        <translation>Upravljanje piškotkov</translation>
-    </message>
-    <message>
-        <source>Filter</source>
-        <translation>Filter</translation>
-    </message>
-    <message>
-        <source>Remove All Cookies</source>
-        <translation>Odstrani vse piškotke</translation>
-    </message>
-    <message>
-        <source>Removing Cookies</source>
-        <translation>Odstranjevanje piškotkov</translation>
     </message>
     <message>
         <source>Add Cookie</source>
@@ -363,6 +333,25 @@
     <message>
         <source>Expires</source>
         <translation>Potek</translation>
+    </message>
+</context>
+<context>
+    <name>CookiesSegment</name>
+    <message>
+        <source>Cookie Manager</source>
+        <translation type="unfinished">Upravljanje piškotkov</translation>
+    </message>
+    <message>
+        <source>Filter</source>
+        <translation type="unfinished">Filter</translation>
+    </message>
+    <message>
+        <source>Remove All Cookies</source>
+        <translation type="unfinished">Odstrani vse piškotke</translation>
+    </message>
+    <message>
+        <source>Add Cookie</source>
+        <translation type="unfinished">Dodaj piškotek</translation>
     </message>
 </context>
 <context>
@@ -488,18 +477,22 @@
     </message>
 </context>
 <context>
-    <name>DownloadsPage</name>
-    <message>
-        <source>Download Manager</source>
-        <translation>Prenosi</translation>
-    </message>
+    <name>DownloadsSegment</name>
     <message>
         <source>Delete completed Downloads</source>
-        <translation>Izbriši končane prenose</translation>
+        <translation type="unfinished">Izbriši končane prenose</translation>
     </message>
     <message>
-        <source>New Download</source>
-        <translation>Nov prenos</translation>
+        <source>Downloads</source>
+        <translation type="unfinished">Prenosi</translation>
+    </message>
+    <message>
+        <source>Download Url</source>
+        <translation type="unfinished">URL za prenos</translation>
+    </message>
+    <message>
+        <source>Start</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -515,6 +508,33 @@
     <message>
         <source>Use SailfishOS&apos;s editing components instead of WebView&apos;s ones</source>
         <translation>Za urejanje uporabi SailfishOS komponente</translation>
+    </message>
+</context>
+<context>
+    <name>FavoriteItem</name>
+    <message>
+        <source>Open</source>
+        <translation type="unfinished">Odpri</translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation type="unfinished">Uredi</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation type="unfinished">Izbriši</translation>
+    </message>
+    <message>
+        <source>Deleting Folder</source>
+        <translation type="unfinished">Brisanje mape</translation>
+    </message>
+    <message>
+        <source>Deleting Favorite</source>
+        <translation type="unfinished">Brišem zaznamek</translation>
+    </message>
+    <message>
+        <source>Add to Quick Grid</source>
+        <translation type="unfinished">Dodaj na QuickGrid</translation>
     </message>
 </context>
 <context>
@@ -552,100 +572,57 @@
     </message>
 </context>
 <context>
-    <name>FavoritesPage</name>
-    <message>
-        <source>Add Folder</source>
-        <translation>Dodaj mapo</translation>
-    </message>
-    <message>
-        <source>Add Favorite</source>
-        <translation>Dodaj zaznamek</translation>
-    </message>
-    <message>
-        <source>Favorites</source>
-        <translation>Zaznamki</translation>
-    </message>
+    <name>FavoritesMenu</name>
     <message>
         <source>Export</source>
-        <translation>Izvozi</translation>
-    </message>
-    <message>
-        <source>Import</source>
-        <translation>Uvozi</translation>
-    </message>
-    <message>
-        <source>Import in</source>
-        <translation>Uvozi v</translation>
+        <translation type="unfinished">Izvozi</translation>
     </message>
     <message>
         <source>Exporting favorites</source>
-        <translation>Izvoz zaznamkov</translation>
+        <translation type="unfinished">Izvoz zaznamkov</translation>
+    </message>
+    <message>
+        <source>Favorites</source>
+        <translation type="unfinished">Zaznamki</translation>
     </message>
     <message>
         <source>Favorites exported successfully</source>
-        <translation>Izvoz zaznamkov je bil uspešen</translation>
+        <translation type="unfinished">Izvoz zaznamkov je bil uspešen</translation>
+    </message>
+    <message>
+        <source>Import</source>
+        <translation type="unfinished">Uvozi</translation>
+    </message>
+    <message>
+        <source>Import in</source>
+        <translation type="unfinished">Uvozi v</translation>
+    </message>
+    <message>
+        <source>Add Folder</source>
+        <translation type="unfinished">Dodaj mapo</translation>
+    </message>
+    <message>
+        <source>Add Favorite</source>
+        <translation type="unfinished">Dodaj zaznamek</translation>
+    </message>
+</context>
+<context>
+    <name>FavoritesSegment</name>
+    <message>
+        <source>Favorites</source>
+        <translation type="unfinished">Zaznamki</translation>
+    </message>
+    <message>
+        <source>Back</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Favorites imported successfully</source>
-        <translation>Zaznamki uspešno uvoženi</translation>
-    </message>
-    <message>
-        <source>Delete all Favorites</source>
-        <translation>Izbriši vse zaznamke</translation>
-    </message>
-    <message>
-        <source>Deleting all favorites</source>
-        <translation>Brisanje vseh zaznamkov</translation>
+        <translation type="unfinished">Zaznamki uspešno uvoženi</translation>
     </message>
     <message>
         <source>Cannot import favorites</source>
-        <translation>Ne morem uvoziti zaznamkov</translation>
-    </message>
-</context>
-<context>
-    <name>FavoritesView</name>
-    <message>
-        <source>Edit</source>
-        <translation>Uredi</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <translation>Izbriši</translation>
-    </message>
-    <message>
-        <source>Deleting Favorite</source>
-        <translation>Brišem zaznamek</translation>
-    </message>
-    <message>
-        <source>Deleting Folder</source>
-        <translation>Brisanje mape</translation>
-    </message>
-    <message>
-        <source>Open</source>
-        <translation>Odpri</translation>
-    </message>
-    <message>
-        <source>Open in New Tab</source>
-        <translation>Odpri v novem zavihku</translation>
-    </message>
-    <message>
-        <source>Add to Quick Grid</source>
-        <translation>Dodaj na QuickGrid</translation>
-    </message>
-</context>
-<context>
-    <name>FilePickerPage</name>
-    <message>
-        <source>Root</source>
-        <translation>Root</translation>
-    </message>
-    <message>
-        <source>SD Card</source>
-        <translation>SD kartica</translation>
-    </message>
-    <message>
-        <source>Home</source>
-        <translation>Domov</translation>
+        <translation type="unfinished">Ne morem uvoziti zaznamkov</translation>
     </message>
 </context>
 <context>
@@ -698,18 +675,21 @@
     </message>
 </context>
 <context>
+    <name>HistorySegment</name>
+    <message>
+        <source>History</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Delete History</source>
+        <translation type="unfinished">Izbriši zgodovino</translation>
+    </message>
+</context>
+<context>
     <name>LinkMenu</name>
     <message>
         <source>Open New Tab</source>
         <translation>Odpri nov zavihek</translation>
-    </message>
-    <message>
-        <source>Remove From Favorites</source>
-        <translation>Odstrani iz zaznamkov</translation>
-    </message>
-    <message>
-        <source>Add To Favorites</source>
-        <translation>Dodaj med zaznamke</translation>
     </message>
     <message>
         <source>Save Link Destination</source>
@@ -732,16 +712,8 @@
         <translation>Prenašanje povezave</translation>
     </message>
     <message>
-        <source>Open</source>
-        <translation>Odpri</translation>
-    </message>
-    <message>
         <source>Link copied to clipboard</source>
         <translation>Povezava shranjena v odložišče</translation>
-    </message>
-    <message>
-        <source>Open New Tab in Background</source>
-        <translation>Odpri nov zavihek v ozadju</translation>
     </message>
     <message>
         <source>Share</source>
@@ -786,32 +758,6 @@
     </message>
 </context>
 <context>
-    <name>NavigationHistoryPage</name>
-    <message>
-        <source>Delete History</source>
-        <translation>Izbriši zgodovino</translation>
-    </message>
-    <message>
-        <source>Deleting History</source>
-        <translation>Brisanje zgodovine</translation>
-    </message>
-    <message>
-        <source>Navigation History</source>
-        <translation>Zgodovina brskanja</translation>
-    </message>
-</context>
-<context>
-    <name>NewDownloadPage</name>
-    <message>
-        <source>Start Download</source>
-        <translation>Začni prenos</translation>
-    </message>
-    <message>
-        <source>Download Url</source>
-        <translation>URL za prenos</translation>
-    </message>
-</context>
-<context>
     <name>NewPopupRulePage</name>
     <message>
         <source>Apply Rule</source>
@@ -837,16 +783,16 @@
 <context>
     <name>NotificationDialog</name>
     <message>
-        <source>wants to access System&apos;s Notifications</source>
-        <translation>želi dostopati do sistemskih obvestil</translation>
-    </message>
-    <message>
         <source>Allow</source>
         <translation>Dovoli</translation>
     </message>
     <message>
         <source>Deny</source>
         <translation>Zavrni</translation>
+    </message>
+    <message>
+        <source>&apos;%1&apos; wants to access system&apos;s notifications</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -989,6 +935,10 @@
         <source>Search with</source>
         <translation>Išči z</translation>
     </message>
+    <message>
+        <source>Search...</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>QuickGrid</name>
@@ -999,6 +949,10 @@
     <message>
         <source>Long Press to edit</source>
         <translation>Za urejanje pritisnite in držite</translation>
+    </message>
+    <message>
+        <source>New tab</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1073,13 +1027,6 @@
     </message>
 </context>
 <context>
-    <name>SearchBar</name>
-    <message>
-        <source>Search</source>
-        <translation>Iskanje</translation>
-    </message>
-</context>
-<context>
     <name>SearchEnginePage</name>
     <message>
         <source>Save</source>
@@ -1122,34 +1069,57 @@
     </message>
 </context>
 <context>
-    <name>SessionManagerPage</name>
+    <name>SegmentsModel</name>
     <message>
-        <source>Session Manager</source>
-        <translation>Upravitelj sej</translation>
+        <source>Tabs</source>
+        <translation type="unfinished">Zavihki</translation>
     </message>
     <message>
-        <source>Tabs saved</source>
-        <translation>Zavihki so shranjeni</translation>
+        <source>Closed Tabs</source>
+        <translation type="unfinished">Zaprti zavihki</translation>
     </message>
     <message>
-        <source>Open</source>
-        <translation>Odpri</translation>
+        <source>Sessions</source>
+        <translation type="unfinished">Seje</translation>
     </message>
     <message>
-        <source>Edit</source>
-        <translation>Uredi</translation>
+        <source>Cookie</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Delete</source>
-        <translation>Izbriši</translation>
+        <source>History</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Deleting session</source>
-        <translation>Brisanje seje</translation>
+        <source>Downloads</source>
+        <translation type="unfinished">Prenosi</translation>
     </message>
     <message>
-        <source>Save current session</source>
-        <translation>Shrani trenutno sejo</translation>
+        <source>Favorites</source>
+        <translation type="unfinished">Zaznamki</translation>
+    </message>
+</context>
+<context>
+    <name>SelectorFilesPage</name>
+    <message>
+        <source>Android storage</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>SD Card</source>
+        <translation type="unfinished">SD kartica</translation>
+    </message>
+    <message>
+        <source>Home</source>
+        <translation type="unfinished">Domov</translation>
+    </message>
+    <message>
+        <source>Send %1 file(s)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Back</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1177,6 +1147,45 @@
     <message>
         <source>Selected</source>
         <translation>Izbrano</translation>
+    </message>
+</context>
+<context>
+    <name>SessionsSegment</name>
+    <message>
+        <source>Sessions</source>
+        <translation type="unfinished">Seje</translation>
+    </message>
+    <message>
+        <source>No Sessions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Save current session</source>
+        <translation type="unfinished">Shrani trenutno sejo</translation>
+    </message>
+    <message>
+        <source>Tabs saved</source>
+        <translation type="unfinished">Zavihki so shranjeni</translation>
+    </message>
+    <message>
+        <source>Open</source>
+        <translation type="unfinished">Odpri</translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation type="unfinished">Uredi</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation type="unfinished">Izbriši</translation>
+    </message>
+    <message>
+        <source>Deleting session</source>
+        <translation type="unfinished">Brisanje seje</translation>
+    </message>
+    <message>
+        <source>Loads at startup</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1215,108 +1224,33 @@
     </message>
 </context>
 <context>
-    <name>ShareMenu</name>
+    <name>TabClosedItem</name>
     <message>
-        <source>Share</source>
-        <translation>Deli</translation>
+        <source>Open</source>
+        <translation type="unfinished">Odpri</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation type="unfinished">Izbriši</translation>
+    </message>
+    <message>
+        <source>Deleting Tab</source>
+        <translation type="unfinished">Brisanje zavihka</translation>
     </message>
 </context>
 <context>
-    <name>SidebarModel</name>
+    <name>TabsSegment</name>
     <message>
-        <source>General</source>
-        <translation>Splošno</translation>
-    </message>
-    <message>
-        <source>Favorites</source>
-        <translation>Zaznamki</translation>
-    </message>
-    <message>
-        <source>Sessions</source>
-        <translation>Seje</translation>
-    </message>
-    <message>
-        <source>Downloads</source>
-        <translation>Prenosi</translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation>Prenesi</translation>
-    </message>
-    <message>
-        <source>Closed Tabs</source>
-        <translation>Zaprti zavihki</translation>
-    </message>
-    <message>
-        <source>Closed Tab</source>
-        <translation>Zaprt zavihek</translation>
-    </message>
-    <message>
-        <source>Navigation History</source>
-        <translation>Zgodovina brskanja</translation>
-    </message>
-    <message>
-        <source>Cookies</source>
-        <translation>Piškotki</translation>
-    </message>
-    <message>
-        <source>Extensions</source>
-        <translation>Razširitve</translation>
-    </message>
-    <message>
-        <source>Ad Block</source>
-        <translation>Ad Block</translation>
-    </message>
-    <message>
-        <source>Night Mode</source>
-        <translation>Nočni način</translation>
+        <source>Tabs</source>
+        <translation type="unfinished">Zavihki</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation>Nastavitve</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Change settings</source>
-        <translation>Spremeni nastavitve</translation>
-    </message>
-    <message>
-        <source>Popup Blocker</source>
-        <translation>Blokiranje pojavnih oken</translation>
-    </message>
-    <message>
-        <source>About Web Pirate</source>
-        <translation>O programu</translation>
-    </message>
-</context>
-<context>
-    <name>TabMenu</name>
-    <message>
-        <source>Duplicate Tab</source>
-        <translation>Podvoji zavihek</translation>
-    </message>
-    <message>
-        <source>Duplicate Tab in Background</source>
-        <translation>Podvoji zavihek v ozadju</translation>
-    </message>
-    <message>
-        <source>Save page</source>
-        <translation>Shrani stran</translation>
-    </message>
-    <message>
-        <source>Add to Quick Grid</source>
-        <translation>Dodaj na QuickGrid</translation>
-    </message>
-    <message>
-        <source>Close Tab</source>
-        <translation>Zapri zavihek</translation>
-    </message>
-    <message>
-        <source>Close other Tabs</source>
-        <translation>Zapri ostale zavihke</translation>
-    </message>
-    <message>
-        <source>Downloading web page</source>
-        <translation>Shranjevanje spletne strani</translation>
+        <source>New Tab</source>
+        <translation type="unfinished">Nov zavihek</translation>
     </message>
 </context>
 <context>

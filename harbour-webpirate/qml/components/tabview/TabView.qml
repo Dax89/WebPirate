@@ -1,37 +1,33 @@
 import QtQuick 2.1
+import QtGraphicalEffects 1.0
 import Sailfish.Silica 1.0
 import ".."
+import "navigationbar"
 import "../../models"
-import "../browsertab/menus"
-import "../sidebar"
-import "../quickgrid"
+import "../../components/segments"
 
 Item
 {
+    property alias dialogs: tabviewdialogs
+    property alias navigationBar: navigationbar
+
     property ListModel tabs: ListModel { }
     property ClosedTabsModel closedtabs: ClosedTabsModel { }
     property Component tabComponent: null
     property int currentIndex: -1
     property string pageState
 
-    property alias header: tabheader
-
     id: tabview
     Component.onCompleted: renderTab()
-
-    onCurrentIndexChanged: {
-        tabmenu.hide();
-        tabheader.ensureVisible();
-        renderTab();
-    }
+    onCurrentIndexChanged: renderTab()
 
     onPageStateChanged: {
         mainwindow.settings.screenblank.enabled = (pageState !== "mediaplayer");
 
         if(pageState === "newtab")
-            globalitems.requestQuickGrid();
+            tabstack.showQuickGrid();
         else
-            globalitems.dismiss();
+            tabstack.hideQuickGrid();
     }
 
     function renderTab()
@@ -68,8 +64,9 @@ Item
             }
         }
 
-        var tab = tabComponent.createObject(stack);
-        tab.visible = foreground;
+        var tab = tabComponent.createObject(tabstack.stack, { "tabView": tabview,
+                                                              "anchors.fill": tabstack.stack,
+                                                              "visible": foreground });
 
         if(url)
             tab.load(url);
@@ -85,11 +82,11 @@ Item
         return tab;
     }
 
-    function removeTab(idx)
+    function removeTab(idx, skipnewtab)
     {
         var tab = tabs.get(idx).tab;
         tabs.remove(idx);
-        closedtabs.push(tab.getTitle(), tab.getUrl());
+        closedtabs.push(tab.title, tab.webUrl);
 
         if(currentIndex > 0)
             currentIndex--;
@@ -98,6 +95,9 @@ Item
 
         tab.parent = null /* Remove Parent Ownership */
         tab.destroy();    /* Destroy the tab immediately */
+
+        if(skipnewtab)
+            return;
 
         if(!tabs.count) {
             currentIndex = -1;
@@ -110,7 +110,7 @@ Item
         currentIndex = -1;
 
         while(tabs.count)
-            removeTab(0);
+            removeTab(0, true);
     }
 
     function tabAt(index)
@@ -131,8 +131,6 @@ Item
         return tabAt(currentIndex);
     }
 
-    RemorsePopup { id: tabviewremorse }
-
     PopupMessage
     {
         id: popupmessage
@@ -141,98 +139,29 @@ Item
 
     Item
     {
+        readonly property real contentHeight: Theme.itemSizeSmall * 5
+
         id: tabcontainer
-        anchors { top: parent.top; bottom: parent.bottom; right: sidebar.left }
-        width: parent.width
+        anchors.fill: parent
 
-        TabHeader
+        TabStack
         {
-            id: tabheader
-            anchors { left: parent.left;  right: parent.right; top: parent.top }
+            id: tabstack
+            anchors { left: parent.left; right: parent.right; top: parent.top; bottom: tabviewdialogs.top; topMargin: Theme.paddingSmall }
+            dialogsVisible: tabviewdialogs.dialogVisible
+            onHideAll: tabviewdialogs.hideAll()
         }
 
-        TabMenu
+        TabViewDialogs
         {
-            id: tabmenu
-            selectedIndex: tabview.currentIndex
-            anchors { left: parent.left; right: parent.right; top: tabheader.bottom; bottom: parent.bottom }
+            id: tabviewdialogs
+            anchors { left: parent.left; right: parent.right; bottom: navigationbar.top }
         }
 
-        Item
+        NavigationBar
         {
-            id: stack
-            anchors { left: parent.left; right: parent.right; top: tabheader.bottom; bottom: parent.bottom }
-
-            onWidthChanged: {
-                var tab = currentTab();
-
-                if(tab)
-                    tab.calculateWidth();
-            }
-
-            onHeightChanged: {
-                var tab = currentTab();
-
-                if(tab)
-                    tab.calculateHeight();
-            }
+            id: navigationbar
+            anchors { left: parent.left; bottom: parent.bottom; right: parent.right }
         }
-
-        Item
-        {
-            id: globalitems
-            anchors { left: parent.left; right: parent.right; top: tabheader.bottom; bottom: parent.bottom; bottomMargin: Theme.iconSizeMedium }
-            onWidthChanged: calculateMetrics()
-            onHeightChanged: calculateMetrics()
-
-            function dismiss()
-            {
-                quickgrid.visible = false;
-            }
-
-            function calculateMetrics()
-            {
-                if(!quickgrid.visible)
-                    return;
-
-                quickgrid.width = globalitems.width;
-                quickgrid.height = globalitems.height;
-            }
-
-            function requestQuickGrid()
-            {
-                if(Qt.application.state === Qt.ApplicationActive)
-                    tabheader.solidify();
-
-                quickgrid.disableEditMode();
-                quickgrid.visible = true;
-            }
-
-            HistoryMenu
-            {
-                id: historymenu
-                anchors.fill: parent
-                onUrlRequested: tabview.currentTab().load(url)
-            }
-
-            QuickGrid
-            {
-                id: quickgrid
-                visible: false
-                anchors.top: parent.top
-                onLoadRequested: tabview.currentTab().load(request)
-
-                onVisibleChanged: {
-                    if(visible)
-                        globalitems.calculateMetrics();
-                }
-            }
-        }
-    }
-
-    ActionSidebar
-    {
-        id: sidebar
-        anchors { right: parent.right; top: parent.top; bottom: parent.bottom }
     }
 }

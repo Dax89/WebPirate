@@ -36,7 +36,7 @@ ListItem
 
     Row
     {
-        anchors { fill: parent; leftMargin: Theme.paddingSmall; rightMargin: Theme.paddingSmall }
+        anchors { fill: parent; leftMargin: Theme.paddingMedium; rightMargin: Theme.paddingMedium }
         spacing: Theme.paddingSmall
 
         Label

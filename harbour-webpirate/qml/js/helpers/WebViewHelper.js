@@ -120,7 +120,7 @@ var __webpirate__ = {
             data.selectedIndex = touchevent.target.selectedIndex;
         }
         else
-            data.type = "touchstart";
+            return;
 
         navigator.qt.postMessage(JSON.stringify(data));
     },
@@ -147,22 +147,6 @@ var __webpirate__ = {
 
         clearTimeout(__webpirate__.timerid);
         __webpirate__.currtouch = null;
-
-        if(touchevent.touches.length !== 1)
-            return;
-
-        var currenty = touchevent.touches[0].clientY;
-
-        if(currenty === __webpirate__.lastY)
-            return;
-
-        var data = new Object;
-        data.type = "touchmove";
-        data.moveup = (currenty < __webpirate__.lastY);
-        data.movedown = (currenty > __webpirate__.lastY);
-
-        navigator.qt.postMessage(JSON.stringify(data));
-        __webpirate__.lastY = currenty;
     },
 
     onClick: function(clickevent) {

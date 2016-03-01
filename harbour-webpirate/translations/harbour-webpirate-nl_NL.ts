@@ -255,42 +255,35 @@
 <context>
     <name>BrowserWebView</name>
     <message>
-        <source>Accept Certificate from:</source>
-        <translation>Accepteer het certificaat van:</translation>
-    </message>
-    <message>
         <source>Downloading</source>
         <translation>Bezig met downloaden</translation>
     </message>
+    <message>
+        <source>Refresh</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>New tab</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Duplicate Tab</source>
+        <translation type="unfinished">Tabblad dupliceren</translation>
+    </message>
+    <message>
+        <source>Accept Certificate from: %1 ?</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
-    <name>ClosedTabItem</name>
-    <message>
-        <source>Open</source>
-        <translation>Openen</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <translation>Verwijderen</translation>
-    </message>
-    <message>
-        <source>Deleting Tab</source>
-        <translation>Bezig met verwijderen van tabblad</translation>
-    </message>
-</context>
-<context>
-    <name>ClosedTabsPage</name>
+    <name>ClosedTabsSegment</name>
     <message>
         <source>Closed Tabs</source>
-        <translation>Gesloten tabbladen</translation>
+        <translation type="unfinished">Gesloten tabbladen</translation>
     </message>
     <message>
         <source>Delete Closed Tabs</source>
-        <translation>Gesloten tabbladen verwijderen</translation>
-    </message>
-    <message>
-        <source>Deleting Tabs</source>
-        <translation>Beziq met verwijderen van tabbladen</translation>
+        <translation type="unfinished">Gesloten tabbladen verwijderen</translation>
     </message>
 </context>
 <context>
@@ -309,29 +302,6 @@
     <message>
         <source>Cookies</source>
         <translation>Cookies</translation>
-    </message>
-    <message>
-        <source>Add Cookie</source>
-        <translation>Cookie toevoegen</translation>
-    </message>
-</context>
-<context>
-    <name>CookieManagerPage</name>
-    <message>
-        <source>Cookie Manager</source>
-        <translation>Cookies-beheerder</translation>
-    </message>
-    <message>
-        <source>Filter</source>
-        <translation>Filteren</translation>
-    </message>
-    <message>
-        <source>Remove All Cookies</source>
-        <translation>Alle cookies verwijderen</translation>
-    </message>
-    <message>
-        <source>Removing Cookies</source>
-        <translation>Bezig met verwijderen van cookies</translation>
     </message>
     <message>
         <source>Add Cookie</source>
@@ -363,6 +333,25 @@
     <message>
         <source>Expires</source>
         <translation>Vervalt op</translation>
+    </message>
+</context>
+<context>
+    <name>CookiesSegment</name>
+    <message>
+        <source>Cookie Manager</source>
+        <translation type="unfinished">Cookies-beheerder</translation>
+    </message>
+    <message>
+        <source>Filter</source>
+        <translation type="unfinished">Filteren</translation>
+    </message>
+    <message>
+        <source>Remove All Cookies</source>
+        <translation type="unfinished">Alle cookies verwijderen</translation>
+    </message>
+    <message>
+        <source>Add Cookie</source>
+        <translation type="unfinished">Cookie toevoegen</translation>
     </message>
 </context>
 <context>
@@ -488,18 +477,22 @@
     </message>
 </context>
 <context>
-    <name>DownloadsPage</name>
-    <message>
-        <source>Download Manager</source>
-        <translation>Downloadbeheerder</translation>
-    </message>
+    <name>DownloadsSegment</name>
     <message>
         <source>Delete completed Downloads</source>
-        <translation>Afgeronde downloads verwijderen</translation>
+        <translation type="unfinished">Afgeronde downloads verwijderen</translation>
     </message>
     <message>
-        <source>New Download</source>
-        <translation>Nieuwe download</translation>
+        <source>Downloads</source>
+        <translation type="unfinished">Downloads</translation>
+    </message>
+    <message>
+        <source>Download Url</source>
+        <translation type="unfinished">URL downloaden</translation>
+    </message>
+    <message>
+        <source>Start</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -515,6 +508,33 @@
     <message>
         <source>Use SailfishOS&apos;s editing components instead of WebView&apos;s ones</source>
         <translation>Gebruik de bewerkmogelijkheden van SailfishOS i.p.v. die van WebView</translation>
+    </message>
+</context>
+<context>
+    <name>FavoriteItem</name>
+    <message>
+        <source>Open</source>
+        <translation type="unfinished">Openen</translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation type="unfinished">Bewerken</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation type="unfinished">Verwijderen</translation>
+    </message>
+    <message>
+        <source>Deleting Folder</source>
+        <translation type="unfinished">Bezig met het verwijderen van de map</translation>
+    </message>
+    <message>
+        <source>Deleting Favorite</source>
+        <translation type="unfinished">Bezig met het verwijderen van de bladwijzer</translation>
+    </message>
+    <message>
+        <source>Add to Quick Grid</source>
+        <translation type="unfinished">Toevoegen aan Snelkiezer</translation>
     </message>
 </context>
 <context>
@@ -552,100 +572,57 @@
     </message>
 </context>
 <context>
-    <name>FavoritesPage</name>
-    <message>
-        <source>Add Folder</source>
-        <translation>Map toevoegen</translation>
-    </message>
-    <message>
-        <source>Add Favorite</source>
-        <translation>Bladwijzer toevoegen</translation>
-    </message>
-    <message>
-        <source>Favorites</source>
-        <translation>Bladwijzers</translation>
-    </message>
+    <name>FavoritesMenu</name>
     <message>
         <source>Export</source>
-        <translation>Exporteren</translation>
-    </message>
-    <message>
-        <source>Import</source>
-        <translation>Importeren</translation>
-    </message>
-    <message>
-        <source>Import in</source>
-        <translation>Importeren naar</translation>
+        <translation type="unfinished">Exporteren</translation>
     </message>
     <message>
         <source>Exporting favorites</source>
-        <translation>Bezig met het exporteren van de bladwijzers</translation>
+        <translation type="unfinished">Bezig met het exporteren van de bladwijzers</translation>
+    </message>
+    <message>
+        <source>Favorites</source>
+        <translation type="unfinished">Bladwijzers</translation>
     </message>
     <message>
         <source>Favorites exported successfully</source>
-        <translation>De bladwijzers zijn succesvol geëxporteerd</translation>
+        <translation type="unfinished">De bladwijzers zijn succesvol geëxporteerd</translation>
+    </message>
+    <message>
+        <source>Import</source>
+        <translation type="unfinished">Importeren</translation>
+    </message>
+    <message>
+        <source>Import in</source>
+        <translation type="unfinished">Importeren naar</translation>
+    </message>
+    <message>
+        <source>Add Folder</source>
+        <translation type="unfinished">Map toevoegen</translation>
+    </message>
+    <message>
+        <source>Add Favorite</source>
+        <translation type="unfinished">Bladwijzer toevoegen</translation>
+    </message>
+</context>
+<context>
+    <name>FavoritesSegment</name>
+    <message>
+        <source>Favorites</source>
+        <translation type="unfinished">Bladwijzers</translation>
+    </message>
+    <message>
+        <source>Back</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Favorites imported successfully</source>
-        <translation>De bladwijzers zijn succesvol geïmporteerd</translation>
-    </message>
-    <message>
-        <source>Delete all Favorites</source>
-        <translation>Alle bladwijzers verwijderen</translation>
-    </message>
-    <message>
-        <source>Deleting all favorites</source>
-        <translation>Bezig met het verwijderen van alle bladwijzers</translation>
+        <translation type="unfinished">De bladwijzers zijn succesvol geïmporteerd</translation>
     </message>
     <message>
         <source>Cannot import favorites</source>
-        <translation>Het importeren van de bladwijzers is mislukt</translation>
-    </message>
-</context>
-<context>
-    <name>FavoritesView</name>
-    <message>
-        <source>Edit</source>
-        <translation>Bewerken</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <translation>Verwijderen</translation>
-    </message>
-    <message>
-        <source>Deleting Favorite</source>
-        <translation>Bezig met het verwijderen van de bladwijzer</translation>
-    </message>
-    <message>
-        <source>Deleting Folder</source>
-        <translation>Bezig met het verwijderen van de map</translation>
-    </message>
-    <message>
-        <source>Open</source>
-        <translation>Openen</translation>
-    </message>
-    <message>
-        <source>Open in New Tab</source>
-        <translation>Openen op nieuw tabblad</translation>
-    </message>
-    <message>
-        <source>Add to Quick Grid</source>
-        <translation>Toevoegen aan Snelkiezer</translation>
-    </message>
-</context>
-<context>
-    <name>FilePickerPage</name>
-    <message>
-        <source>Root</source>
-        <translation>Bestandssysteem</translation>
-    </message>
-    <message>
-        <source>SD Card</source>
-        <translation>SD-kaart</translation>
-    </message>
-    <message>
-        <source>Home</source>
-        <translation>Thuis</translation>
+        <translation type="unfinished">Het importeren van de bladwijzers is mislukt</translation>
     </message>
 </context>
 <context>
@@ -698,18 +675,21 @@
     </message>
 </context>
 <context>
+    <name>HistorySegment</name>
+    <message>
+        <source>History</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Delete History</source>
+        <translation type="unfinished">Geschiedenis verwijderen</translation>
+    </message>
+</context>
+<context>
     <name>LinkMenu</name>
     <message>
         <source>Open New Tab</source>
         <translation>Openen op nieuw tabblad</translation>
-    </message>
-    <message>
-        <source>Remove From Favorites</source>
-        <translation>Verwijderen uit bladwijzers</translation>
-    </message>
-    <message>
-        <source>Add To Favorites</source>
-        <translation>Toevoegen aan bladwijzers</translation>
     </message>
     <message>
         <source>Save Link Destination</source>
@@ -732,16 +712,8 @@
         <translation>Bezig met het downloaden van de link</translation>
     </message>
     <message>
-        <source>Open</source>
-        <translation>Openen</translation>
-    </message>
-    <message>
         <source>Link copied to clipboard</source>
         <translation>De link is gekopieerd naar het klembord</translation>
-    </message>
-    <message>
-        <source>Open New Tab in Background</source>
-        <translation>Openen op nieuw achtergrondtabblad</translation>
     </message>
     <message>
         <source>Share</source>
@@ -786,32 +758,6 @@
     </message>
 </context>
 <context>
-    <name>NavigationHistoryPage</name>
-    <message>
-        <source>Delete History</source>
-        <translation>Geschiedenis verwijderen</translation>
-    </message>
-    <message>
-        <source>Deleting History</source>
-        <translation>Bezig met het verwijderen van de geschiedenis</translation>
-    </message>
-    <message>
-        <source>Navigation History</source>
-        <translation>Surfgeschiedenis</translation>
-    </message>
-</context>
-<context>
-    <name>NewDownloadPage</name>
-    <message>
-        <source>Start Download</source>
-        <translation>Downloaden beginnen</translation>
-    </message>
-    <message>
-        <source>Download Url</source>
-        <translation>URL downloaden</translation>
-    </message>
-</context>
-<context>
     <name>NewPopupRulePage</name>
     <message>
         <source>Apply Rule</source>
@@ -837,16 +783,16 @@
 <context>
     <name>NotificationDialog</name>
     <message>
-        <source>wants to access System&apos;s Notifications</source>
-        <translation>wil systeemmeldingen kunnen geven</translation>
-    </message>
-    <message>
         <source>Allow</source>
         <translation>Toestaan</translation>
     </message>
     <message>
         <source>Deny</source>
         <translation>Weigeren</translation>
+    </message>
+    <message>
+        <source>&apos;%1&apos; wants to access system&apos;s notifications</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -989,6 +935,10 @@
         <source>Search with</source>
         <translation>Zoeken met</translation>
     </message>
+    <message>
+        <source>Search...</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>QuickGrid</name>
@@ -999,6 +949,10 @@
     <message>
         <source>Long Press to edit</source>
         <translation>Lang ingedrukt houden om te bewerken</translation>
+    </message>
+    <message>
+        <source>New tab</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1073,13 +1027,6 @@
     </message>
 </context>
 <context>
-    <name>SearchBar</name>
-    <message>
-        <source>Search</source>
-        <translation>Zoeken</translation>
-    </message>
-</context>
-<context>
     <name>SearchEnginePage</name>
     <message>
         <source>Save</source>
@@ -1122,34 +1069,57 @@
     </message>
 </context>
 <context>
-    <name>SessionManagerPage</name>
+    <name>SegmentsModel</name>
     <message>
-        <source>Session Manager</source>
-        <translation>Sessiebeheerder</translation>
+        <source>Tabs</source>
+        <translation type="unfinished">Tabbladen</translation>
     </message>
     <message>
-        <source>Tabs saved</source>
-        <translation>De tabbladen zijn opgeslagen</translation>
+        <source>Closed Tabs</source>
+        <translation type="unfinished">Gesloten tabbladen</translation>
     </message>
     <message>
-        <source>Open</source>
-        <translation>Openen</translation>
+        <source>Sessions</source>
+        <translation type="unfinished">Sessies</translation>
     </message>
     <message>
-        <source>Edit</source>
-        <translation>Bewerken</translation>
+        <source>Cookie</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Delete</source>
-        <translation>Verwijderen</translation>
+        <source>History</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Deleting session</source>
-        <translation>Bezig met het verwijderen van de sessie</translation>
+        <source>Downloads</source>
+        <translation type="unfinished">Downloads</translation>
     </message>
     <message>
-        <source>Save current session</source>
-        <translation>Huidige sessie opslaan</translation>
+        <source>Favorites</source>
+        <translation type="unfinished">Bladwijzers</translation>
+    </message>
+</context>
+<context>
+    <name>SelectorFilesPage</name>
+    <message>
+        <source>Android storage</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>SD Card</source>
+        <translation type="unfinished">SD-kaart</translation>
+    </message>
+    <message>
+        <source>Home</source>
+        <translation type="unfinished">Thuis</translation>
+    </message>
+    <message>
+        <source>Send %1 file(s)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Back</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1177,6 +1147,45 @@
     <message>
         <source>Selected</source>
         <translation>Geselecteerd</translation>
+    </message>
+</context>
+<context>
+    <name>SessionsSegment</name>
+    <message>
+        <source>Sessions</source>
+        <translation type="unfinished">Sessies</translation>
+    </message>
+    <message>
+        <source>No Sessions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Save current session</source>
+        <translation type="unfinished">Huidige sessie opslaan</translation>
+    </message>
+    <message>
+        <source>Tabs saved</source>
+        <translation type="unfinished">De tabbladen zijn opgeslagen</translation>
+    </message>
+    <message>
+        <source>Open</source>
+        <translation type="unfinished">Openen</translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation type="unfinished">Bewerken</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation type="unfinished">Verwijderen</translation>
+    </message>
+    <message>
+        <source>Deleting session</source>
+        <translation type="unfinished">Bezig met het verwijderen van de sessie</translation>
+    </message>
+    <message>
+        <source>Loads at startup</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1215,108 +1224,33 @@
     </message>
 </context>
 <context>
-    <name>ShareMenu</name>
+    <name>TabClosedItem</name>
     <message>
-        <source>Share</source>
-        <translation>Delen</translation>
+        <source>Open</source>
+        <translation type="unfinished">Openen</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation type="unfinished">Verwijderen</translation>
+    </message>
+    <message>
+        <source>Deleting Tab</source>
+        <translation type="unfinished">Bezig met verwijderen van tabblad</translation>
     </message>
 </context>
 <context>
-    <name>SidebarModel</name>
+    <name>TabsSegment</name>
     <message>
-        <source>General</source>
-        <translation>Algemeen</translation>
-    </message>
-    <message>
-        <source>Favorites</source>
-        <translation>Bladwijzers</translation>
-    </message>
-    <message>
-        <source>Sessions</source>
-        <translation>Sessies</translation>
-    </message>
-    <message>
-        <source>Downloads</source>
-        <translation>Downloads</translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation>Downloaden</translation>
-    </message>
-    <message>
-        <source>Closed Tabs</source>
-        <translation>Gesloten tabbladen</translation>
-    </message>
-    <message>
-        <source>Closed Tab</source>
-        <translation>Gesloten tabblad</translation>
-    </message>
-    <message>
-        <source>Navigation History</source>
-        <translation>Surfgeschiedenis</translation>
-    </message>
-    <message>
-        <source>Cookies</source>
-        <translation>Cookies</translation>
-    </message>
-    <message>
-        <source>Extensions</source>
-        <translation>Uitbreidingen</translation>
-    </message>
-    <message>
-        <source>Ad Block</source>
-        <translation>Advertentieblokkeerder</translation>
-    </message>
-    <message>
-        <source>Night Mode</source>
-        <translation>Nachtmodus</translation>
+        <source>Tabs</source>
+        <translation type="unfinished">Tabbladen</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation>Instellingen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Change settings</source>
-        <translation>Instellingen wijzigen</translation>
-    </message>
-    <message>
-        <source>Popup Blocker</source>
-        <translation>Pop-up-blokkeerder</translation>
-    </message>
-    <message>
-        <source>About Web Pirate</source>
-        <translation>Over WebPirate</translation>
-    </message>
-</context>
-<context>
-    <name>TabMenu</name>
-    <message>
-        <source>Duplicate Tab</source>
-        <translation>Tabblad dupliceren</translation>
-    </message>
-    <message>
-        <source>Duplicate Tab in Background</source>
-        <translation>Tabblad dupliceren op de achtergrond</translation>
-    </message>
-    <message>
-        <source>Save page</source>
-        <translation>Pagina opslaan</translation>
-    </message>
-    <message>
-        <source>Add to Quick Grid</source>
-        <translation>Toevoegen aan Snelkiezer</translation>
-    </message>
-    <message>
-        <source>Close Tab</source>
-        <translation>Tabblad sluiten</translation>
-    </message>
-    <message>
-        <source>Close other Tabs</source>
-        <translation>Andere tabbladen sluiten</translation>
-    </message>
-    <message>
-        <source>Downloading web page</source>
-        <translation>Bezig met het downloaden van de webpagina</translation>
+        <source>New Tab</source>
+        <translation type="unfinished">Nieuw tabblad</translation>
     </message>
 </context>
 <context>

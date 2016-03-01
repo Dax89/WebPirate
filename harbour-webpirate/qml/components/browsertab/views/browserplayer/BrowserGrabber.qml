@@ -44,8 +44,7 @@ Item
         Column
         {
             id: content
-            anchors { top: parent.top; topMargin: Theme.paddingSmall }
-            width: parent.width
+            anchors { left: parent.left; right: parent.right; top: parent.top; topMargin: Theme.paddingSmall; leftMargin: Theme.paddingSmall; rightMargin: Theme.paddingSmall }
             spacing: Theme.paddingMedium
 
             Column

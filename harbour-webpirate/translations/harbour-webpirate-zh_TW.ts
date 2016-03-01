@@ -255,42 +255,35 @@
 <context>
     <name>BrowserWebView</name>
     <message>
-        <source>Accept Certificate from:</source>
-        <translation>接受之認證:</translation>
-    </message>
-    <message>
         <source>Downloading</source>
         <translation>下載中</translation>
     </message>
+    <message>
+        <source>Refresh</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>New tab</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Duplicate Tab</source>
+        <translation type="unfinished">開啟相同分頁</translation>
+    </message>
+    <message>
+        <source>Accept Certificate from: %1 ?</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
-    <name>ClosedTabItem</name>
-    <message>
-        <source>Open</source>
-        <translation>開啟</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <translation>刪除</translation>
-    </message>
-    <message>
-        <source>Deleting Tab</source>
-        <translation>刪除分頁</translation>
-    </message>
-</context>
-<context>
-    <name>ClosedTabsPage</name>
+    <name>ClosedTabsSegment</name>
     <message>
         <source>Closed Tabs</source>
-        <translation>關閉分頁</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete Closed Tabs</source>
-        <translation>刪除關閉的分頁</translation>
-    </message>
-    <message>
-        <source>Deleting Tabs</source>
-        <translation>刪除分頁</translation>
+        <translation type="unfinished">刪除關閉的分頁</translation>
     </message>
 </context>
 <context>
@@ -309,29 +302,6 @@
     <message>
         <source>Cookies</source>
         <translation>Cookie</translation>
-    </message>
-    <message>
-        <source>Add Cookie</source>
-        <translation>新增Cookie</translation>
-    </message>
-</context>
-<context>
-    <name>CookieManagerPage</name>
-    <message>
-        <source>Cookie Manager</source>
-        <translation>Cookie管理員</translation>
-    </message>
-    <message>
-        <source>Filter</source>
-        <translation>篩選</translation>
-    </message>
-    <message>
-        <source>Remove All Cookies</source>
-        <translation>移除所有Cookie</translation>
-    </message>
-    <message>
-        <source>Removing Cookies</source>
-        <translation>移除Cookie中</translation>
     </message>
     <message>
         <source>Add Cookie</source>
@@ -363,6 +333,25 @@
     <message>
         <source>Expires</source>
         <translation>期限</translation>
+    </message>
+</context>
+<context>
+    <name>CookiesSegment</name>
+    <message>
+        <source>Cookie Manager</source>
+        <translation type="unfinished">Cookie管理員</translation>
+    </message>
+    <message>
+        <source>Filter</source>
+        <translation type="unfinished">篩選設定</translation>
+    </message>
+    <message>
+        <source>Remove All Cookies</source>
+        <translation type="unfinished">移除所有Cookie</translation>
+    </message>
+    <message>
+        <source>Add Cookie</source>
+        <translation type="unfinished">新增Cookie</translation>
     </message>
 </context>
 <context>
@@ -488,18 +477,22 @@
     </message>
 </context>
 <context>
-    <name>DownloadsPage</name>
-    <message>
-        <source>Download Manager</source>
-        <translation>下載管理員</translation>
-    </message>
+    <name>DownloadsSegment</name>
     <message>
         <source>Delete completed Downloads</source>
-        <translation>刪除完成的下載</translation>
+        <translation type="unfinished">刪除完成的下載</translation>
     </message>
     <message>
-        <source>New Download</source>
-        <translation>新增下載</translation>
+        <source>Downloads</source>
+        <translation type="unfinished">下載</translation>
+    </message>
+    <message>
+        <source>Download Url</source>
+        <translation type="unfinished">下載網址</translation>
+    </message>
+    <message>
+        <source>Start</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -515,6 +508,33 @@
     <message>
         <source>Use SailfishOS&apos;s editing components instead of WebView&apos;s ones</source>
         <translation>利用SailfishOS的編輯元件來替代WebView</translation>
+    </message>
+</context>
+<context>
+    <name>FavoriteItem</name>
+    <message>
+        <source>Open</source>
+        <translation type="unfinished">開啟</translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation type="unfinished">編輯</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation type="unfinished">刪除</translation>
+    </message>
+    <message>
+        <source>Deleting Folder</source>
+        <translation type="unfinished">刪除資料夾</translation>
+    </message>
+    <message>
+        <source>Deleting Favorite</source>
+        <translation type="unfinished">刪除我的最愛中</translation>
+    </message>
+    <message>
+        <source>Add to Quick Grid</source>
+        <translation type="unfinished">新增至快速啟動頁</translation>
     </message>
 </context>
 <context>
@@ -552,100 +572,57 @@
     </message>
 </context>
 <context>
-    <name>FavoritesPage</name>
-    <message>
-        <source>Add Folder</source>
-        <translation>新增資料夾</translation>
-    </message>
-    <message>
-        <source>Add Favorite</source>
-        <translation>新增我的最愛</translation>
-    </message>
-    <message>
-        <source>Favorites</source>
-        <translation>我的最愛</translation>
-    </message>
+    <name>FavoritesMenu</name>
     <message>
         <source>Export</source>
-        <translation>匯出</translation>
-    </message>
-    <message>
-        <source>Import</source>
-        <translation>匯入</translation>
-    </message>
-    <message>
-        <source>Import in</source>
-        <translation>匯入至</translation>
+        <translation type="unfinished">匯出</translation>
     </message>
     <message>
         <source>Exporting favorites</source>
-        <translation>匯出我的最愛</translation>
+        <translation type="unfinished">匯出我的最愛</translation>
+    </message>
+    <message>
+        <source>Favorites</source>
+        <translation type="unfinished">我的最愛</translation>
     </message>
     <message>
         <source>Favorites exported successfully</source>
-        <translation>我的最愛匯出成功</translation>
+        <translation type="unfinished">我的最愛匯出成功</translation>
+    </message>
+    <message>
+        <source>Import</source>
+        <translation type="unfinished">匯入</translation>
+    </message>
+    <message>
+        <source>Import in</source>
+        <translation type="unfinished">匯入至</translation>
+    </message>
+    <message>
+        <source>Add Folder</source>
+        <translation type="unfinished">新增資料夾</translation>
+    </message>
+    <message>
+        <source>Add Favorite</source>
+        <translation type="unfinished">新增我的最愛</translation>
+    </message>
+</context>
+<context>
+    <name>FavoritesSegment</name>
+    <message>
+        <source>Favorites</source>
+        <translation type="unfinished">我的最愛</translation>
+    </message>
+    <message>
+        <source>Back</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Favorites imported successfully</source>
-        <translation>我的最愛匯入成功</translation>
-    </message>
-    <message>
-        <source>Delete all Favorites</source>
-        <translation>刪除所有我的最愛</translation>
-    </message>
-    <message>
-        <source>Deleting all favorites</source>
-        <translation>刪除所有我的最愛中</translation>
+        <translation type="unfinished">我的最愛匯入成功</translation>
     </message>
     <message>
         <source>Cannot import favorites</source>
-        <translation>無法匯入我的最愛</translation>
-    </message>
-</context>
-<context>
-    <name>FavoritesView</name>
-    <message>
-        <source>Edit</source>
-        <translation>編輯</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <translation>刪除</translation>
-    </message>
-    <message>
-        <source>Deleting Favorite</source>
-        <translation>刪除我的最愛中</translation>
-    </message>
-    <message>
-        <source>Deleting Folder</source>
-        <translation>刪除資料夾</translation>
-    </message>
-    <message>
-        <source>Open</source>
-        <translation>開啟</translation>
-    </message>
-    <message>
-        <source>Open in New Tab</source>
-        <translation>於新分頁開啟</translation>
-    </message>
-    <message>
-        <source>Add to Quick Grid</source>
-        <translation>新增至快速啟動頁</translation>
-    </message>
-</context>
-<context>
-    <name>FilePickerPage</name>
-    <message>
-        <source>Root</source>
-        <translation>管理者</translation>
-    </message>
-    <message>
-        <source>SD Card</source>
-        <translation>SD 卡</translation>
-    </message>
-    <message>
-        <source>Home</source>
-        <translation>目錄</translation>
+        <translation type="unfinished">無法匯入我的最愛</translation>
     </message>
 </context>
 <context>
@@ -698,18 +675,21 @@
     </message>
 </context>
 <context>
+    <name>HistorySegment</name>
+    <message>
+        <source>History</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Delete History</source>
+        <translation type="unfinished">刪除記錄</translation>
+    </message>
+</context>
+<context>
     <name>LinkMenu</name>
     <message>
         <source>Open New Tab</source>
         <translation>開啟新分頁</translation>
-    </message>
-    <message>
-        <source>Remove From Favorites</source>
-        <translation>從我的最愛中移除</translation>
-    </message>
-    <message>
-        <source>Add To Favorites</source>
-        <translation>新增至我的最愛</translation>
     </message>
     <message>
         <source>Save Link Destination</source>
@@ -732,16 +712,8 @@
         <translation>下載連結中</translation>
     </message>
     <message>
-        <source>Open</source>
-        <translation>開啟</translation>
-    </message>
-    <message>
         <source>Link copied to clipboard</source>
         <translation>將連結複製至剪貼簿</translation>
-    </message>
-    <message>
-        <source>Open New Tab in Background</source>
-        <translation>於背景開啟新分頁</translation>
     </message>
     <message>
         <source>Share</source>
@@ -786,32 +758,6 @@
     </message>
 </context>
 <context>
-    <name>NavigationHistoryPage</name>
-    <message>
-        <source>Delete History</source>
-        <translation>刪除記錄</translation>
-    </message>
-    <message>
-        <source>Deleting History</source>
-        <translation>刪除記錄中</translation>
-    </message>
-    <message>
-        <source>Navigation History</source>
-        <translation>瀏覽記錄</translation>
-    </message>
-</context>
-<context>
-    <name>NewDownloadPage</name>
-    <message>
-        <source>Start Download</source>
-        <translation>開始下載</translation>
-    </message>
-    <message>
-        <source>Download Url</source>
-        <translation>下載網址</translation>
-    </message>
-</context>
-<context>
     <name>NewPopupRulePage</name>
     <message>
         <source>Apply Rule</source>
@@ -837,16 +783,16 @@
 <context>
     <name>NotificationDialog</name>
     <message>
-        <source>wants to access System&apos;s Notifications</source>
-        <translation>希望與系統通知相連結</translation>
-    </message>
-    <message>
         <source>Allow</source>
         <translation>允許</translation>
     </message>
     <message>
         <source>Deny</source>
         <translation>拒絕</translation>
+    </message>
+    <message>
+        <source>&apos;%1&apos; wants to access system&apos;s notifications</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -989,6 +935,10 @@
         <source>Search with</source>
         <translation>搜尋由</translation>
     </message>
+    <message>
+        <source>Search...</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>QuickGrid</name>
@@ -999,6 +949,10 @@
     <message>
         <source>Long Press to edit</source>
         <translation>長按可進行編輯</translation>
+    </message>
+    <message>
+        <source>New tab</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1073,13 +1027,6 @@
     </message>
 </context>
 <context>
-    <name>SearchBar</name>
-    <message>
-        <source>Search</source>
-        <translation>搜尋</translation>
-    </message>
-</context>
-<context>
     <name>SearchEnginePage</name>
     <message>
         <source>Save</source>
@@ -1122,34 +1069,57 @@
     </message>
 </context>
 <context>
-    <name>SessionManagerPage</name>
+    <name>SegmentsModel</name>
     <message>
-        <source>Session Manager</source>
-        <translation>瀏覽狀態管理員</translation>
+        <source>Tabs</source>
+        <translation type="unfinished">分頁</translation>
     </message>
     <message>
-        <source>Tabs saved</source>
-        <translation>已儲存之分頁</translation>
+        <source>Closed Tabs</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Open</source>
-        <translation>開啟</translation>
+        <source>Sessions</source>
+        <translation type="unfinished">瀏覽狀態</translation>
     </message>
     <message>
-        <source>Edit</source>
-        <translation>編輯</translation>
+        <source>Cookie</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Delete</source>
-        <translation>刪除</translation>
+        <source>History</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Deleting session</source>
-        <translation>刪除瀏覽狀態</translation>
+        <source>Downloads</source>
+        <translation type="unfinished">下載</translation>
     </message>
     <message>
-        <source>Save current session</source>
-        <translation>儲存目前瀏覽狀態</translation>
+        <source>Favorites</source>
+        <translation type="unfinished">我的最愛</translation>
+    </message>
+</context>
+<context>
+    <name>SelectorFilesPage</name>
+    <message>
+        <source>Android storage</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>SD Card</source>
+        <translation type="unfinished">SD 卡</translation>
+    </message>
+    <message>
+        <source>Home</source>
+        <translation type="unfinished">目錄</translation>
+    </message>
+    <message>
+        <source>Send %1 file(s)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Back</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1177,6 +1147,45 @@
     <message>
         <source>Selected</source>
         <translation>被選取的</translation>
+    </message>
+</context>
+<context>
+    <name>SessionsSegment</name>
+    <message>
+        <source>Sessions</source>
+        <translation type="unfinished">瀏覽狀態</translation>
+    </message>
+    <message>
+        <source>No Sessions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Save current session</source>
+        <translation type="unfinished">儲存目前瀏覽狀態</translation>
+    </message>
+    <message>
+        <source>Tabs saved</source>
+        <translation type="unfinished">已儲存之分頁</translation>
+    </message>
+    <message>
+        <source>Open</source>
+        <translation type="unfinished">開啟</translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation type="unfinished">編輯</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation type="unfinished">刪除</translation>
+    </message>
+    <message>
+        <source>Deleting session</source>
+        <translation type="unfinished">刪除瀏覽狀態</translation>
+    </message>
+    <message>
+        <source>Loads at startup</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1215,108 +1224,33 @@
     </message>
 </context>
 <context>
-    <name>ShareMenu</name>
+    <name>TabClosedItem</name>
     <message>
-        <source>Share</source>
-        <translation>分享</translation>
+        <source>Open</source>
+        <translation type="unfinished">開啟</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation type="unfinished">刪除</translation>
+    </message>
+    <message>
+        <source>Deleting Tab</source>
+        <translation type="unfinished">刪除分頁</translation>
     </message>
 </context>
 <context>
-    <name>SidebarModel</name>
+    <name>TabsSegment</name>
     <message>
-        <source>General</source>
-        <translation>一般</translation>
-    </message>
-    <message>
-        <source>Favorites</source>
-        <translation>我的最愛</translation>
-    </message>
-    <message>
-        <source>Sessions</source>
-        <translation>瀏覽狀態</translation>
-    </message>
-    <message>
-        <source>Downloads</source>
-        <translation>下載</translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation>下載</translation>
-    </message>
-    <message>
-        <source>Closed Tabs</source>
-        <translation>已關閉的分頁</translation>
-    </message>
-    <message>
-        <source>Closed Tab</source>
-        <translation>已關閉的分頁</translation>
-    </message>
-    <message>
-        <source>Navigation History</source>
-        <translation>瀏覽記錄</translation>
-    </message>
-    <message>
-        <source>Cookies</source>
-        <translation>Cookie</translation>
-    </message>
-    <message>
-        <source>Extensions</source>
-        <translation>擴充程式</translation>
-    </message>
-    <message>
-        <source>Ad Block</source>
-        <translation>廣告封鎖</translation>
-    </message>
-    <message>
-        <source>Night Mode</source>
-        <translation>夜間模式</translation>
+        <source>Tabs</source>
+        <translation type="unfinished">分頁</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation>設定</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Change settings</source>
-        <translation>變更設定</translation>
-    </message>
-    <message>
-        <source>Popup Blocker</source>
-        <translation>封鎖彈出視窗</translation>
-    </message>
-    <message>
-        <source>About Web Pirate</source>
-        <translation>關於 Web Pirate</translation>
-    </message>
-</context>
-<context>
-    <name>TabMenu</name>
-    <message>
-        <source>Duplicate Tab</source>
-        <translation>開啟相同分頁</translation>
-    </message>
-    <message>
-        <source>Duplicate Tab in Background</source>
-        <translation>於背景開啟相同分頁</translation>
-    </message>
-    <message>
-        <source>Save page</source>
-        <translation>儲存頁面</translation>
-    </message>
-    <message>
-        <source>Add to Quick Grid</source>
-        <translation>新增至快速啟動頁</translation>
-    </message>
-    <message>
-        <source>Close Tab</source>
-        <translation>關閉分頁</translation>
-    </message>
-    <message>
-        <source>Close other Tabs</source>
-        <translation>關閉其他分頁</translation>
-    </message>
-    <message>
-        <source>Downloading web page</source>
-        <translation>下載網頁中</translation>
+        <source>New Tab</source>
+        <translation type="unfinished">新分頁</translation>
     </message>
 </context>
 <context>

@@ -12,8 +12,8 @@
 # The name of your application
 TARGET = harbour-webpirate
 
-QT += sql dbus
-CONFIG += sailfishapp
+QT += sql dbus concurrent
+CONFIG += sailfishapp c++11
 PKGCONFIG += libcrypto
 
 # Install D-Bus Service (Currently Disabled)
@@ -60,7 +60,11 @@ SOURCES += src/harbour-webpirate.cpp \
     src/dbus/webpirateinterface.cpp \
     src/downloadmanager/webpagedownloaditem.cpp \
     src/dbus/defaultbrowser.cpp \
-    src/network/proxymanager.cpp
+    src/network/proxymanager.cpp \
+    src/imageproviders/webviewthumbnailer.cpp \
+    src/selector/filesmodel.cpp \
+    src/selector/filesmodelworker.cpp \
+    src/selector/exif/exif.cpp
 
 OTHER_FILES += qml/harbour-webpirate.qml \
     rpm/harbour-webpirate.changes.in \
@@ -70,8 +74,7 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/js/UrlHelper.js \
     qml/js/settings/SearchEngines.js \
     qml/js/settings/Favorites.js \
-    qml/components/browsertab/navigationbar/NavigationBar.qml \
-    qml/components/browsertab/navigationbar/LoadingBar.qml \
+    qml/components/tabview/navigationbar/NavigationBar.qml \
     qml/components/browsertab/views/LoadFailed.qml \
     qml/components/browsertab/BrowserTab.qml \
     qml/pages/MainPage.qml \
@@ -79,25 +82,19 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/js/settings/Database.js \
     qml/models/Settings.qml \
     qml/models/FavoritesModel.qml \
-    qml/components/FavoritesView.qml \
     qml/js/helpers/WebViewHelper.js \
     qml/pages/searchengine/SearchEnginesPage.qml \
-    qml/pages/favorite/FavoritePage.qml \
     qml/pages/searchengine/SearchEnginePage.qml \
     qml/models/SearchEngineModel.qml \
     qml/js/settings/Credentials.js \
-    qml/components/browsertab/menus/LinkMenu.qml \
-    qml/pages/downloadmanager/DownloadsPage.qml \
+    qml/components/tabview/menus/LinkMenu.qml \
     qml/components/items/DownloadListItem.qml \
     qml/components/browsertab/webview/BrowserWebView.qml \
-    qml/components/sidebar/ActionSidebar.qml \
-    qml/pages/favorite/FavoritesPage.qml \
     qml/js/settings/History.js \
-    qml/components/browsertab/menus/HistoryMenu.qml \
+    qml/components/tabview/menus/HistoryMenu.qml \
     qml/components/SettingLabel.qml \
     qml/pages/webview/TextSelectionPage.qml \
     qml/components/tabview/TabView.qml \
-    qml/components/tabview/TabButton.qml \
     qml/components/quickgrid/QuickGrid.qml \
     qml/components/quickgrid/QuickGridItem.qml \
     qml/components/quickgrid/QuickGridButton.qml \
@@ -105,15 +102,12 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/js/settings/QuickGrid.js \
     qml/models/QuickGridModel.qml \
     qml/components/PopupMessage.qml \
-    qml/components/sidebar/SidebarItem.qml \
     qml/pages/AboutPage.qml \
     qml/components/InfoLabel.qml \
     qml/js/youtube/YouTubeGrabber.js \
     qml/components/browsertab/views/browserplayer/mediacomponents/MediaPlayerToolBar.qml \
     qml/components/browsertab/views/browserplayer/mediacomponents/MediaPlayerTitle.qml \
-    qml/components/tabview/TabHeader.qml \
     qml/js/settings/Sessions.js \
-    qml/pages/session/SaveSessionPage.qml \
     qml/components/items/PageItem.qml \
     qml/components/items/cover/CoverMenu.qml \
     qml/models/cover/CoverModel.qml \
@@ -121,34 +115,15 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/js/settings/Cover.js \
     rpm/harbour-webpirate.yaml \
     qml/js/helpers/NightMode.js \
-    qml/components/sidebar/SidebarSwitch.qml \
     qml/js/helpers/ForcePixelRatio.js \
     adblock.css \
     adblock.table \
-    qml/components/browsertab/webview/jsdialogs/ItemSelector.qml \
-    qml/components/browsertab/webview/jsdialogs/AlertDialog.qml \
-    qml/components/browsertab/webview/jsdialogs/WebViewDialog.qml \
-    qml/components/browsertab/dialogs/PopupDialog.qml \
-    qml/components/browsertab/dialogs/CredentialDialog.qml \
-    qml/components/browsertab/dialogs/FormResubmitDialog.qml \
-    qml/components/browsertab/webview/jsdialogs/RequestDialog.qml \
-    qml/components/browsertab/webview/jsdialogs/PromptDialog.qml \
-    qml/components/browsertab/webview/jsdialogs/AuthenticationDialog.qml \
-    qml/pages/picker/FilePickerPage.qml \
-    qml/components/pickers/FilePicker.qml \
-    qml/components/browsertab/webview/jsdialogs/FilePickerDialog.qml \
     qml/components/browsertab/webview/WebViewListener.qml \
-    qml/components/browsertab/webview/jsdialogs/ColorChooserDialog.qml \
-    qml/components/browsertab/navigationbar/tabbars/ActionBar.qml \
-    qml/components/browsertab/navigationbar/BrowserBar.qml \
+    qml/components/tabview/navigationbar/BrowserBar.qml \
     qml/pages/popupblocker/PopupBlockerPage.qml \
-    qml/pages/downloadmanager/NewDownloadPage.qml \
-    qml/pages/history/NavigationHistoryPage.qml \
     qml/models/HistoryModel.qml \
     qml/components/items/NavigationHistoryItem.qml \
     qml/models/ClosedTabsModel.qml \
-    qml/pages/closedtabs/ClosedTabsPage.qml \
-    qml/components/items/ClosedTabItem.qml \
     qml/js/settings/PopupBlocker.js \
     qml/models/BlockedPopupModel.qml \
     qml/models/PopupModel.qml \
@@ -157,8 +132,6 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/components/items/BlockedPopupItem.qml \
     qml/pages/popupblocker/NewPopupRulePage.qml \
     qml/js/helpers/MessageListener.js \
-    qml/components/browsertab/navigationbar/tabbars/QueryBar.qml \
-    qml/components/browsertab/navigationbar/tabbars/SearchBar.qml \
     qml/components/browsertab/ViewStack.qml \
     qml/components/browsertab/views/browserplayer/BrowserPlayer.qml \
     qml/js/helpers/video/YouTubeHelper.js \
@@ -169,22 +142,14 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/js/helpers/GrabberBuilder.js \
     qml/components/browsertab/views/browserplayer/BrowserGrabber.qml \
     qml/components/browsertab/views/browserplayer/mediacomponents/MediaPlayerTimings.qml \
-    qml/components/browsertab/menus/TabMenu.qml \
-    qml/components/browsertab/menus/ShareMenu.qml \
-    qml/pages/session/SessionPage.qml \
-    qml/pages/session/SessionManagerPage.qml \
+    qml/components/tabview/menus/ShareMenu.qml \
     qml/components/browsertab/views/browserplayer/mediacomponents/MediaPlayerCursor.qml \
     qml/components/browsertab/views/browserplayer/mediacomponents/MediaPlayerProgressBar.qml \
-    qml/pages/cookie/CookieManagerPage.qml \
     qml/components/items/cookie/DomainListItem.qml \
-    qml/pages/cookie/CookieListPage.qml \
     qml/components/items/cookie/CookieListItem.qml \
-    qml/pages/cookie/CookiePage.qml \
     qml/components/browsertab/webview/UrlSchemeDelegateHandler.qml \
-    qml/pages/favorite/FavoritesImportPage.qml \
     qml/js/helpers/video/players/JWPlayerHelper.js \
     qml/js/helpers/Notification.js \
-    qml/components/browsertab/dialogs/NotificationDialog.qml \
     qml/js/youtube/YouTubeCipher.js \
     qml/pages/settings/SettingsPage.qml \
     qml/pages/settings/GeneralSettingsPage.qml \
@@ -198,13 +163,39 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/js/helpers/SystemTextField.js \
     qml/pages/webview/TextFieldPage.qml \
     qml/js/helpers/Utils.js \
-    qml/components/tabview/TabCloseButton.qml \
     qml/components/quickgrid/QuickGridBottomPanel.qml \
-    qml/components/tabview/TabIcon.qml \
-    qml/components/GestureArea.qml \
-    qml/models/SidebarModel.qml \
     qml/js/helpers/TOHKBD.js \
-    qml/js/polyfills/canvg.min.js
+    qml/js/polyfills/canvg.min.js \
+    qml/pages/settings/ProxySettingsPage.qml \
+    qml/components/tabview/TabViewDialogs.qml \
+    qml/components/tabview/jsdialogs/AlertDialog.qml \
+    qml/components/tabview/jsdialogs/JavaScriptDialog.qml \
+    qml/components/tabview/TabStack.qml \
+    qml/components/tabview/navigationbar/LoadingBar.qml \
+    qml/components/tabview/navigationbar/NavigationItem.qml \
+    qml/components/tabview/jsdialogs/ItemSelector.qml \
+    qml/components/items/tab/TabListItem.qml \
+    qml/components/items/tab/TabClosedItem.qml \
+    qml/components/segments/SegmentPool.qml \
+    qml/components/segments/TabsSegment.qml \
+    qml/components/segments/ClosedTabsSegment.qml \
+    qml/components/segments/SessionsSegment.qml \
+    qml/components/segments/CookiesSegment.qml \
+    qml/models/SegmentsModel.qml \
+    qml/components/segments/HistorySegment.qml \
+    qml/components/segments/DownloadsSegment.qml \
+    qml/components/segments/FavoritesSegment.qml \
+    qml/components/items/FavoriteItem.qml \
+    qml/menus/FavoritesMenu.qml \
+    qml/pages/segment/SegmentsPage.qml \
+    qml/pages/segment/favorite/FavoritesImportPage.qml \
+    qml/pages/segment/favorite/FavoritePage.qml \
+    qml/pages/selector/SelectorFilesPage.qml \
+    qml/pages/segment/cookie/CookieListPage.qml \
+    qml/pages/segment/cookie/CookiePage.qml \
+    qml/pages/segment/session/SaveSessionPage.qml \
+    qml/pages/segment/session/SessionPage.qml \
+    qml/js/polyfills/es6-collections.min.js
 
 # to disable building translations every time, comment out the
 # following CONFIG line
@@ -263,8 +254,19 @@ HEADERS += \
     src/dbus/webpirateinterface.h \
     src/downloadmanager/webpagedownloaditem.h \
     src/dbus/defaultbrowser.h \
-    src/network/proxymanager.h
+    src/network/proxymanager.h \
+    src/imageproviders/webviewthumbnailer.h \
+    src/selector/filesmodel.h \
+    src/selector/filesmodelworker.h \
+    src/selector/exif/exif.h
 
 DISTFILES += \
-    qml/pages/settings/ProxySettingsPage.qml
-
+    qml/components/tabview/jsdialogs/RequestDialog.qml \
+    qml/components/DialogBackground.qml \
+    qml/components/tabview/jsdialogs/CredentialDialog.qml \
+    qml/components/tabview/jsdialogs/FormResubmitDialog.qml \
+    qml/components/tabview/jsdialogs/NotificationDialog.qml \
+    qml/pages/webview/dialogs/AuthenticationDialog.qml \
+    qml/pages/webview/dialogs/ColorChooserDialog.qml \
+    qml/pages/webview/dialogs/PromptDialog.qml \
+    qml/components/tabview/navigationbar/QueryBar.qml

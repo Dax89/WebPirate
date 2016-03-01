@@ -255,42 +255,35 @@
 <context>
     <name>BrowserWebView</name>
     <message>
-        <source>Accept Certificate from:</source>
-        <translation>Přijmout certifikát od:</translation>
-    </message>
-    <message>
         <source>Downloading</source>
         <translation>Stahuje se</translation>
     </message>
+    <message>
+        <source>Refresh</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>New tab</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Duplicate Tab</source>
+        <translation type="unfinished">Duplikovat Panel</translation>
+    </message>
+    <message>
+        <source>Accept Certificate from: %1 ?</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
-    <name>ClosedTabItem</name>
-    <message>
-        <source>Open</source>
-        <translation>Otevřít</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <translation>Odstranit</translation>
-    </message>
-    <message>
-        <source>Deleting Tab</source>
-        <translation>Odstraňování panelu</translation>
-    </message>
-</context>
-<context>
-    <name>ClosedTabsPage</name>
+    <name>ClosedTabsSegment</name>
     <message>
         <source>Closed Tabs</source>
-        <translation>Zavřené panely</translation>
+        <translation type="unfinished">Zavřené panely</translation>
     </message>
     <message>
         <source>Delete Closed Tabs</source>
-        <translation>Odstranit zavřené panely</translation>
-    </message>
-    <message>
-        <source>Deleting Tabs</source>
-        <translation>Odstraňování panelů</translation>
+        <translation type="unfinished">Odstranit zavřené panely</translation>
     </message>
 </context>
 <context>
@@ -309,29 +302,6 @@
     <message>
         <source>Cookies</source>
         <translation>Cookies</translation>
-    </message>
-    <message>
-        <source>Add Cookie</source>
-        <translation>Přidat Cookie</translation>
-    </message>
-</context>
-<context>
-    <name>CookieManagerPage</name>
-    <message>
-        <source>Cookie Manager</source>
-        <translation>Správce Cookies</translation>
-    </message>
-    <message>
-        <source>Filter</source>
-        <translation>Filtr</translation>
-    </message>
-    <message>
-        <source>Remove All Cookies</source>
-        <translation>Odstranit všechny Cookies</translation>
-    </message>
-    <message>
-        <source>Removing Cookies</source>
-        <translation>Odstraňování Cookie</translation>
     </message>
     <message>
         <source>Add Cookie</source>
@@ -363,6 +333,25 @@
     <message>
         <source>Expires</source>
         <translation>Vyprší</translation>
+    </message>
+</context>
+<context>
+    <name>CookiesSegment</name>
+    <message>
+        <source>Cookie Manager</source>
+        <translation type="unfinished">Správce Cookies</translation>
+    </message>
+    <message>
+        <source>Filter</source>
+        <translation type="unfinished">Filtr</translation>
+    </message>
+    <message>
+        <source>Remove All Cookies</source>
+        <translation type="unfinished">Odstranit všechny Cookies</translation>
+    </message>
+    <message>
+        <source>Add Cookie</source>
+        <translation type="unfinished">Přidat Cookie</translation>
     </message>
 </context>
 <context>
@@ -488,18 +477,22 @@
     </message>
 </context>
 <context>
-    <name>DownloadsPage</name>
-    <message>
-        <source>Download Manager</source>
-        <translation>Správce stahování</translation>
-    </message>
+    <name>DownloadsSegment</name>
     <message>
         <source>Delete completed Downloads</source>
-        <translation>Vymazat dokončená stahování</translation>
+        <translation type="unfinished">Vymazat dokončená stahování</translation>
     </message>
     <message>
-        <source>New Download</source>
-        <translation>Nové stahování</translation>
+        <source>Downloads</source>
+        <translation type="unfinished">Stahování</translation>
+    </message>
+    <message>
+        <source>Download Url</source>
+        <translation type="unfinished">Stáhnout odkaz</translation>
+    </message>
+    <message>
+        <source>Start</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -515,6 +508,33 @@
     <message>
         <source>Use SailfishOS&apos;s editing components instead of WebView&apos;s ones</source>
         <translation>Používat editečný komponenty od SailfishOS místo od WebView</translation>
+    </message>
+</context>
+<context>
+    <name>FavoriteItem</name>
+    <message>
+        <source>Open</source>
+        <translation type="unfinished">Otevřít</translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation type="unfinished">Upravit</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation type="unfinished">Odstranit</translation>
+    </message>
+    <message>
+        <source>Deleting Folder</source>
+        <translation type="unfinished">Odstraňování složky</translation>
+    </message>
+    <message>
+        <source>Deleting Favorite</source>
+        <translation type="unfinished">Odstraňování záložky</translation>
+    </message>
+    <message>
+        <source>Add to Quick Grid</source>
+        <translation type="unfinished">Přidat do rychlé mřížky</translation>
     </message>
 </context>
 <context>
@@ -552,100 +572,57 @@
     </message>
 </context>
 <context>
-    <name>FavoritesPage</name>
-    <message>
-        <source>Add Folder</source>
-        <translation>Přidat složku</translation>
-    </message>
-    <message>
-        <source>Add Favorite</source>
-        <translation>Přidat záložku</translation>
-    </message>
-    <message>
-        <source>Favorites</source>
-        <translation>Záložky</translation>
-    </message>
+    <name>FavoritesMenu</name>
     <message>
         <source>Export</source>
-        <translation>Exportovat</translation>
-    </message>
-    <message>
-        <source>Import</source>
-        <translation>Importovat</translation>
-    </message>
-    <message>
-        <source>Import in</source>
-        <translation>Importovat v</translation>
+        <translation type="unfinished">Exportovat</translation>
     </message>
     <message>
         <source>Exporting favorites</source>
-        <translation>Export záložek</translation>
+        <translation type="unfinished">Export záložek</translation>
+    </message>
+    <message>
+        <source>Favorites</source>
+        <translation type="unfinished">Záložky</translation>
     </message>
     <message>
         <source>Favorites exported successfully</source>
-        <translation>Záložky úspěšně exportovány</translation>
+        <translation type="unfinished">Záložky úspěšně exportovány</translation>
+    </message>
+    <message>
+        <source>Import</source>
+        <translation type="unfinished">Importovat</translation>
+    </message>
+    <message>
+        <source>Import in</source>
+        <translation type="unfinished">Importovat v</translation>
+    </message>
+    <message>
+        <source>Add Folder</source>
+        <translation type="unfinished">Přidat složku</translation>
+    </message>
+    <message>
+        <source>Add Favorite</source>
+        <translation type="unfinished">Přidat záložku</translation>
+    </message>
+</context>
+<context>
+    <name>FavoritesSegment</name>
+    <message>
+        <source>Favorites</source>
+        <translation type="unfinished">Záložky</translation>
+    </message>
+    <message>
+        <source>Back</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Favorites imported successfully</source>
-        <translation>Záložky úspěšně importovány</translation>
-    </message>
-    <message>
-        <source>Delete all Favorites</source>
-        <translation>Vymazat všechny oblíbené</translation>
-    </message>
-    <message>
-        <source>Deleting all favorites</source>
-        <translation>Mažou se všechny oblíbené</translation>
+        <translation type="unfinished">Záložky úspěšně importovány</translation>
     </message>
     <message>
         <source>Cannot import favorites</source>
-        <translation>Není možné importovat záložky</translation>
-    </message>
-</context>
-<context>
-    <name>FavoritesView</name>
-    <message>
-        <source>Edit</source>
-        <translation>Upravit</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <translation>Odstranit</translation>
-    </message>
-    <message>
-        <source>Deleting Favorite</source>
-        <translation>Odstraňování záložky</translation>
-    </message>
-    <message>
-        <source>Deleting Folder</source>
-        <translation>Odstraňování složky</translation>
-    </message>
-    <message>
-        <source>Open</source>
-        <translation>Otevřít</translation>
-    </message>
-    <message>
-        <source>Open in New Tab</source>
-        <translation>Otevřít v novém panelu</translation>
-    </message>
-    <message>
-        <source>Add to Quick Grid</source>
-        <translation>Přidat do rychlé mřížky</translation>
-    </message>
-</context>
-<context>
-    <name>FilePickerPage</name>
-    <message>
-        <source>Root</source>
-        <translation>Root</translation>
-    </message>
-    <message>
-        <source>SD Card</source>
-        <translation>SD Karta</translation>
-    </message>
-    <message>
-        <source>Home</source>
-        <translation>Domov</translation>
+        <translation type="unfinished">Není možné importovat záložky</translation>
     </message>
 </context>
 <context>
@@ -698,18 +675,21 @@
     </message>
 </context>
 <context>
+    <name>HistorySegment</name>
+    <message>
+        <source>History</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Delete History</source>
+        <translation type="unfinished">Smazat historii</translation>
+    </message>
+</context>
+<context>
     <name>LinkMenu</name>
     <message>
         <source>Open New Tab</source>
         <translation>Otevřít nový panel</translation>
-    </message>
-    <message>
-        <source>Remove From Favorites</source>
-        <translation>Odstranit ze záložek</translation>
-    </message>
-    <message>
-        <source>Add To Favorites</source>
-        <translation>Přidat do záložek</translation>
     </message>
     <message>
         <source>Save Link Destination</source>
@@ -732,16 +712,8 @@
         <translation>Stahování odkazu</translation>
     </message>
     <message>
-        <source>Open</source>
-        <translation>Otevřít</translation>
-    </message>
-    <message>
         <source>Link copied to clipboard</source>
         <translation>Odkaz zkopírován do schránky</translation>
-    </message>
-    <message>
-        <source>Open New Tab in Background</source>
-        <translation>Otevřít Nový panel na pozadí</translation>
     </message>
     <message>
         <source>Share</source>
@@ -786,32 +758,6 @@
     </message>
 </context>
 <context>
-    <name>NavigationHistoryPage</name>
-    <message>
-        <source>Delete History</source>
-        <translation>Smazat historii</translation>
-    </message>
-    <message>
-        <source>Deleting History</source>
-        <translation>Mazání historie</translation>
-    </message>
-    <message>
-        <source>Navigation History</source>
-        <translation>Historie navigace</translation>
-    </message>
-</context>
-<context>
-    <name>NewDownloadPage</name>
-    <message>
-        <source>Start Download</source>
-        <translation>Začít stahování</translation>
-    </message>
-    <message>
-        <source>Download Url</source>
-        <translation>Stáhnout odkaz</translation>
-    </message>
-</context>
-<context>
     <name>NewPopupRulePage</name>
     <message>
         <source>Apply Rule</source>
@@ -837,16 +783,16 @@
 <context>
     <name>NotificationDialog</name>
     <message>
-        <source>wants to access System&apos;s Notifications</source>
-        <translation>požaduje přístup k systémovým oznámením</translation>
-    </message>
-    <message>
         <source>Allow</source>
         <translation>Povolit</translation>
     </message>
     <message>
         <source>Deny</source>
         <translation>Zamítnout</translation>
+    </message>
+    <message>
+        <source>&apos;%1&apos; wants to access system&apos;s notifications</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -989,6 +935,10 @@
         <source>Search with</source>
         <translation>Hledat přes</translation>
     </message>
+    <message>
+        <source>Search...</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>QuickGrid</name>
@@ -999,6 +949,10 @@
     <message>
         <source>Long Press to edit</source>
         <translation>Dlouze zmáčkněte pro editaci</translation>
+    </message>
+    <message>
+        <source>New tab</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1073,13 +1027,6 @@
     </message>
 </context>
 <context>
-    <name>SearchBar</name>
-    <message>
-        <source>Search</source>
-        <translation>Hledat</translation>
-    </message>
-</context>
-<context>
     <name>SearchEnginePage</name>
     <message>
         <source>Save</source>
@@ -1122,34 +1069,57 @@
     </message>
 </context>
 <context>
-    <name>SessionManagerPage</name>
+    <name>SegmentsModel</name>
     <message>
-        <source>Session Manager</source>
-        <translation>Správce relací</translation>
+        <source>Tabs</source>
+        <translation type="unfinished">Panely</translation>
     </message>
     <message>
-        <source>Tabs saved</source>
-        <translation>Panely uloženy</translation>
+        <source>Closed Tabs</source>
+        <translation type="unfinished">Zavřené panely</translation>
     </message>
     <message>
-        <source>Open</source>
-        <translation>Otevřít</translation>
+        <source>Sessions</source>
+        <translation type="unfinished">Relace</translation>
     </message>
     <message>
-        <source>Edit</source>
-        <translation>Upravit</translation>
+        <source>Cookie</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Delete</source>
-        <translation>Odstranit</translation>
+        <source>History</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Deleting session</source>
-        <translation>Mažu relaci</translation>
+        <source>Downloads</source>
+        <translation type="unfinished">Stahování</translation>
     </message>
     <message>
-        <source>Save current session</source>
-        <translation>Uložit současné sezení</translation>
+        <source>Favorites</source>
+        <translation type="unfinished">Záložky</translation>
+    </message>
+</context>
+<context>
+    <name>SelectorFilesPage</name>
+    <message>
+        <source>Android storage</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>SD Card</source>
+        <translation type="unfinished">SD Karta</translation>
+    </message>
+    <message>
+        <source>Home</source>
+        <translation type="unfinished">Domov</translation>
+    </message>
+    <message>
+        <source>Send %1 file(s)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Back</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1177,6 +1147,45 @@
     <message>
         <source>Selected</source>
         <translation>Vybrané</translation>
+    </message>
+</context>
+<context>
+    <name>SessionsSegment</name>
+    <message>
+        <source>Sessions</source>
+        <translation type="unfinished">Relace</translation>
+    </message>
+    <message>
+        <source>No Sessions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Save current session</source>
+        <translation type="unfinished">Uložit současné sezení</translation>
+    </message>
+    <message>
+        <source>Tabs saved</source>
+        <translation type="unfinished">Panely uloženy</translation>
+    </message>
+    <message>
+        <source>Open</source>
+        <translation type="unfinished">Otevřít</translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation type="unfinished">Upravit</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation type="unfinished">Odstranit</translation>
+    </message>
+    <message>
+        <source>Deleting session</source>
+        <translation type="unfinished">Mažu relaci</translation>
+    </message>
+    <message>
+        <source>Loads at startup</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1215,108 +1224,33 @@
     </message>
 </context>
 <context>
-    <name>ShareMenu</name>
+    <name>TabClosedItem</name>
     <message>
-        <source>Share</source>
-        <translation>Sdílet</translation>
+        <source>Open</source>
+        <translation type="unfinished">Otevřít</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation type="unfinished">Odstranit</translation>
+    </message>
+    <message>
+        <source>Deleting Tab</source>
+        <translation type="unfinished">Odstraňování panelu</translation>
     </message>
 </context>
 <context>
-    <name>SidebarModel</name>
+    <name>TabsSegment</name>
     <message>
-        <source>General</source>
-        <translation>Základní</translation>
-    </message>
-    <message>
-        <source>Favorites</source>
-        <translation>Záložky</translation>
-    </message>
-    <message>
-        <source>Sessions</source>
-        <translation>Relace</translation>
-    </message>
-    <message>
-        <source>Downloads</source>
-        <translation>Stahování</translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation>Stáhnout</translation>
-    </message>
-    <message>
-        <source>Closed Tabs</source>
-        <translation>Zavřené panely</translation>
-    </message>
-    <message>
-        <source>Closed Tab</source>
-        <translation>Zavřený panel</translation>
-    </message>
-    <message>
-        <source>Navigation History</source>
-        <translation>Historie navigace</translation>
-    </message>
-    <message>
-        <source>Cookies</source>
-        <translation>Cookies</translation>
-    </message>
-    <message>
-        <source>Extensions</source>
-        <translation>Doplňky</translation>
-    </message>
-    <message>
-        <source>Ad Block</source>
-        <translation>Blokování reklam</translation>
-    </message>
-    <message>
-        <source>Night Mode</source>
-        <translation>Noční režim</translation>
+        <source>Tabs</source>
+        <translation type="unfinished">Panely</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation>Nastavení</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Change settings</source>
-        <translation>Změnit nastavení</translation>
-    </message>
-    <message>
-        <source>Popup Blocker</source>
-        <translation>Blokování vyskakujících oken</translation>
-    </message>
-    <message>
-        <source>About Web Pirate</source>
-        <translation>O Web Pirate</translation>
-    </message>
-</context>
-<context>
-    <name>TabMenu</name>
-    <message>
-        <source>Duplicate Tab</source>
-        <translation>Duplikovat Panel</translation>
-    </message>
-    <message>
-        <source>Duplicate Tab in Background</source>
-        <translation>Duplikovat Panel na pozadí</translation>
-    </message>
-    <message>
-        <source>Save page</source>
-        <translation>Uložit stránku</translation>
-    </message>
-    <message>
-        <source>Add to Quick Grid</source>
-        <translation>Přidat do rychlé mřížky</translation>
-    </message>
-    <message>
-        <source>Close Tab</source>
-        <translation>Zavřít Panel</translation>
-    </message>
-    <message>
-        <source>Close other Tabs</source>
-        <translation>Zavřít ostatní Panely</translation>
-    </message>
-    <message>
-        <source>Downloading web page</source>
-        <translation>Stahování Webové stránky</translation>
+        <source>New Tab</source>
+        <translation type="unfinished">Nový panel</translation>
     </message>
 </context>
 <context>

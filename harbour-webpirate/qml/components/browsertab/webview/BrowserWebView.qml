@@ -1,16 +1,11 @@
 import QtQuick 2.1
 import QtWebKit 3.0
 import Sailfish.Silica 1.0
-import "../menus"
-import "../dialogs"
-import "jsdialogs"
 import "../../../js/UrlHelper.js" as UrlHelper
 import "../../../js/settings/Database.js" as Database
-import "../../../js/settings/Favorites.js" as Favorites
 import "../../../js/settings/Credentials.js" as Credentials
 import "../../../js/settings/History.js" as History
 import "../../../js/settings/UserAgents.js" as UserAgents
-import "../../../js/youtube/YouTubeGrabber.js" as YouTubeGrabber
 
 SilicaWebView
 {
@@ -21,7 +16,7 @@ SilicaWebView
 
     function setNightMode(nightmode)
     {
-        if(browsertab.state !== "webbrowser")
+        if(browsertab.state !== "webview")
             return;
 
         experimental.postMessage(nightmode ? "nightmode_enable" : "nightmode_disable");
@@ -33,13 +28,45 @@ SilicaWebView
         webView.lockDownloadAction = "";
     }
 
-    UrlSchemeDelegateHandler{ id: urlschemedelegatehandler }
+    UrlSchemeDelegateHandler { id: urlschemedelegatehandler }
     WebViewListener { id: listener }
+    VerticalScrollDecorator { id: vscrolldecorator; flickable: webview }
 
-    VerticalScrollDecorator
+    PullDownMenu
     {
-        id: vscrolldecorator
-        flickable: webview
+        id: pulldownmenu
+        enabled: webview.visible
+
+        onActiveChanged: {
+            if(!active)
+                return;
+
+            tabView.navigationBar.solidify();
+        }
+
+        MenuItem
+        {
+            text: qsTr("Duplicate Tab")
+
+            onClicked: {
+                if(!selectedTab)
+                    return;
+
+                tabView.addTab(webview.url.toString(), false, tabView.currentIndex + 1);
+            }
+        }
+
+        MenuItem
+        {
+            text: qsTr("Refresh")
+            onClicked: webview.reload()
+        }
+
+        MenuItem
+        {
+            text: qsTr("New tab")
+            onClicked: tabView.addTab(mainwindow.settings.homepage)
+        }
     }
 
     Rectangle /* Night Mode Rectangle */
@@ -66,6 +93,9 @@ SilicaWebView
     }
 
     id: webview
+    implicitWidth: parent.width
+    implicitHeight: parent.height
+    overridePageStackNavigation: true
 
     /* Experimental WebView Features */
     experimental.preferences.webAudioEnabled: true
@@ -88,7 +118,8 @@ SilicaWebView
                                 Qt.resolvedUrl("../../../js/helpers/Utils.js"),
 
                                 /* Polyfills */
-                                Qt.resolvedUrl("../../../js/polyfills/canvg.min.js"), /* SVG Support: From CanVG project: https://github.com/gabelerner/canvg */
+                                Qt.resolvedUrl("../../../js/polyfills/es6-collections.min.js"), /* ES6 Harmony Collections: https://github.com/WebReflection/es6-collections */
+                                Qt.resolvedUrl("../../../js/polyfills/canvg.min.js"),           /* SVG Support: https://github.com/gabelerner/canvg */
 
                                 /* Custom WebView Helpers */
                                 Qt.resolvedUrl("../../../js/helpers/ForcePixelRatio.js"),
@@ -116,27 +147,42 @@ SilicaWebView
                                 Qt.resolvedUrl("../../../js/helpers/TOHKBD.js") ]
 
     experimental.onTextFound: {
-        searchbar.findError = (matchCount <= 0);
+        tabView.navigationBar.queryBar.findError = (matchCount <= 0);
     }
 
-    experimental.certificateVerificationDialog: RequestDialog {
-        title: qsTr("Accept Certificate from:") + " " + webview.url + " ?"
-        onRequestAccepted: model.accept()
-        onRequestRejected: model.reject()
-        onIgnoreDialog: model.reject()
+    experimental.certificateVerificationDialog: Item {
+        Component.onCompleted: {
+            tabView.dialogs.showRequest(model, qsTr("Accept Certificate from: %1 ?").arg(webview.url));
+        }
     }
 
-    experimental.alertDialog: AlertDialog {
-        title: model.message
-        onOkPressed: model.dismiss()
-        onIgnoreDialog: model.dismiss()
+    experimental.alertDialog: Item {
+        Component.onCompleted: {
+            tabView.dialogs.showAlert(model);
+        }
     }
 
-    experimental.confirmDialog: RequestDialog {
-        title: message
-        onRequestAccepted: model.accept()
-        onRequestRejected: model.reject()
-        onIgnoreDialog: model.reject()
+    experimental.confirmDialog: Item {
+        Component.onCompleted: {
+            tabView.dialogs.showRequest(model, message);
+        }
+    }
+
+    experimental.filePicker: Item { /* FilePicker is particular: A dedicated page suits better */
+        Component.onCompleted: {
+            if(pageStack.busy)
+                pageStack.completeAnimation();
+
+            var page = pageStack.push(Qt.resolvedUrl("../../../pages/selector/SelectorFilesPage.qml"));
+
+            page.actionCompleted.connect(function(action, data) {
+                model.accept(data.toString().substring(7)); // Strip "file://"
+            });
+
+            page.rejected.connect(function() {
+                model.reject();
+            });
+        }
     }
 
     experimental.promptDialog: Item { /* PromptDialog is particular: A dedicated page suits better */
@@ -144,7 +190,7 @@ SilicaWebView
             if(pageStack.busy)
                 pageStack.completeAnimation();
 
-            pageStack.push(Qt.resolvedUrl("jsdialogs/PromptDialog.qml"), { "promptModel": model, "title": message, "textField": defaultValue });
+            pageStack.push(Qt.resolvedUrl("../../../pages/webview/dialogs/PromptDialog.qml"), { "promptModel": model, "title": message, "textField": defaultValue });
         }
     }
 
@@ -153,7 +199,7 @@ SilicaWebView
             if(pageStack.busy)
                 pageStack.completeAnimation();
 
-            pageStack.push(Qt.resolvedUrl("jsdialogs/AuthenticationDialog.qml"), { "authenticationModel": model })
+            pageStack.push(Qt.resolvedUrl("../../../pages/webview/dialogs/AuthenticationDialog.qml"), { "authenticationModel": model })
         }
     }
 
@@ -162,18 +208,20 @@ SilicaWebView
             if(pageStack.busy)
                 pageStack.completeAnimation();
 
-            pageStack.push(Qt.resolvedUrl("jsdialogs/ColorChooserDialog.qml"), { "colorModel": model, "color": model.currentColor });
+            pageStack.push(Qt.resolvedUrl("../../../pages/webview/dialogs/ColorChooserDialog.qml"), { "colorModel": model, "color": model.currentColor });
         }
     }
 
-    experimental.filePicker: FilePickerDialog { }
-    experimental.itemSelector: ItemSelector { selectorModel: model }
+    experimental.itemSelector: Item {
+        Component.onCompleted: {
+            tabView.dialogs.showItemSelector(model, browsertab);
+        }
+    }
+
     experimental.onMessageReceived: listener.execute(message)
-    experimental.onPermissionRequested: notificationdialog.show();
+    experimental.onPermissionRequested: tabView.dialogs.showNotification(webview.url.toString(), browsertab)
 
     experimental.onProcessDidCrash: {
-        tabheader.solidify();
-        navigationbar.evaporate(); // Disallow NavigationBar usage
         viewstack.push(Qt.resolvedUrl("../views/LoadFailed.qml"), "loaderror", { "errorString": webview.url, "offline": experimental.offline, "crash": true });
     }
 
@@ -181,15 +229,13 @@ SilicaWebView
         var mime = mainwindow.settings.mimedatabase.mimeFromUrl(downloadItem.url);
         var mimeinfo = mime.split("/");
 
-        if((mimeinfo[0] === "video") || (mimeinfo[0] === "audio") || (webview.lockDownload && (webview.lockDownloadAction === "mediaplayer")))
-        {
+        if((mimeinfo[0] === "video") || (mimeinfo[0] === "audio") || (webview.lockDownload && (webview.lockDownloadAction === "mediaplayer"))) {
             viewstack.push(Qt.resolvedUrl("../views/browserplayer/BrowserPlayer.qml"), "mediaplayer", { "videoTitle": downloadItem.suggestedFilename, "videoSource": downloadItem.url });
             webview.releaseDownloadLock();
             return;
         }
 
-        if(webview.lockDownload)
-        {
+        if(webview.lockDownload) {
             webview.releaseDownloadLock();
             return;
         }
@@ -198,6 +244,27 @@ SilicaWebView
                                function() {
                                    mainwindow.settings.downloadmanager.createDownload(downloadItem);
                                });
+    }
+
+    onUrlChanged: {
+        var stringurl = url.toString();
+
+        if(UrlHelper.isSpecialUrl(stringurl)) {
+            manageSpecialUrl(stringurl);
+            return;
+        }
+
+        browsertab.state = "webview";
+    }
+
+    onVerticalVelocityChanged: {
+        if(!visible || pulldownmenu.active)
+            return;
+
+        if(verticalVelocity < 0)
+            tabView.navigationBar.solidify();
+        else if(verticalVelocity > 0)
+            tabView.navigationBar.evaporate();
     }
 
     onNavigationRequested: {
@@ -216,8 +283,7 @@ SilicaWebView
         if(request.navigationType === WebView.FormResubmittedNavigation)
         {
             request.action = WebView.IgnoreRequest;
-            formresubmitdialog.url = stringurl;
-            formresubmitdialog.show();
+            tabView.dialogs.showFormResubmit(stringurl, browsertab);
             return;
         }
 
@@ -233,34 +299,22 @@ SilicaWebView
             if(browsertab.state === "loaderror")
             {
                 viewstack.pop(); // Pop out error page
-                browsertab.state == "webbrowser";
+                browsertab.state == "webview";
+
             }
 
-            if(visible)
-            {
-                navigationbar.solidify();
-                tabheader.solidify();
-                sidebar.collapse();
-                historymenu.hide();
+            if(visible) {
+                tabView.dialogs.hideAll();
+                tabView.navigationBar.solidify();
+                Qt.inputMethod.hide();
             }
 
             webview.nightModeEnabled = false;
-
-            Qt.inputMethod.hide();
-            actionbar.blockedPopups.clear();
-            actionbar.evaporate();
-            searchbar.evaporate();
-            tabmenu.hide();
-            linkmenu.hide();
-            sharemenu.hide();
-            notificationdialog.hide();
             return;
         }
 
         if(loadRequest.status === WebView.LoadFailedStatus)
         {
-            tabheader.solidify();
-            navigationbar.solidify();
             viewstack.push(Qt.resolvedUrl("../views/LoadFailed.qml"), "loaderror", { "errorString": loadRequest.errorString, "offline": experimental.offline, "crash": false });
             return;
         }
@@ -268,7 +322,6 @@ SilicaWebView
         if(loadRequest.status === WebView.LoadSucceededStatus)
         {
             var stringurl = url.toString();
-            actionbar.favorite = Favorites.contains(stringurl);
 
             if(!UrlHelper.isSpecialUrl(stringurl) && UrlHelper.isUrl(stringurl))
             {
@@ -282,43 +335,6 @@ SilicaWebView
                 Credentials.compile(Database.instance(), stringurl, webview);
                 History.store(stringurl, title);
             }
-        }
-    }
-
-    onUrlChanged: {
-        var stringurl = url.toString();
-        navigationbar.queryBar.url = UrlHelper.printable(stringurl);
-
-        if(UrlHelper.isSpecialUrl(stringurl))
-        {
-            navigationbar.actionButton.enabled = false;
-            manageSpecialUrl(stringurl);
-            return;
-        }
-
-        navigationbar.actionButton.enabled = true;
-        browsertab.state = "webbrowser";
-    }
-
-    onTitleChanged: {
-        navigationbar.queryBar.title = title;
-    }
-
-    onVerticalVelocityChanged: {
-        if(!visible)
-            return;
-
-        if(verticalVelocity < 0)
-        {
-            navigationbar.solidify();
-
-            if((Math.abs(verticalVelocity) > Screen.height) || (contentY <= 0)) // Catch Page's begin and QuickScroll: make TabHeader solid, if needed
-                tabheader.solidify();
-        }
-        else if(verticalVelocity > 0)
-        {
-            navigationbar.evaporate();
-            tabheader.evaporate();
         }
     }
 }

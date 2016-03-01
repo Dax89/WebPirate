@@ -16,7 +16,7 @@ ListModel
             var row = sqlrows[i];
             var date = new Date(row.lastvisit);
 
-            historyModel.append({ "date": date.toDateString(), "time": date.toTimeString(), "title": row.title, "url": row.url })
+            historymodel.append({ "date": date.toDateString(), "time": date.toTimeString(), "title": row.title, "url": row.url })
         }
 
         historymodel.busy = false;

@@ -8,7 +8,7 @@ CoverActionList
 
     function getCategoryId()
     {
-        return tabview.pageState === "webbrowser" ? mainwindow.settings.coveractions.webPageCategoryId : mainwindow.settings.coveractions.generalCategoryId;
+        return tabview.pageState === "webview" ? mainwindow.settings.coveractions.webPageCategoryId : mainwindow.settings.coveractions.generalCategoryId;
     }
 
     iconBackground: true

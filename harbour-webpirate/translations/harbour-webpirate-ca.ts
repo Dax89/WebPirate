@@ -255,42 +255,35 @@
 <context>
     <name>BrowserWebView</name>
     <message>
-        <source>Accept Certificate from:</source>
-        <translation>Accepta el certificat de:</translation>
-    </message>
-    <message>
         <source>Downloading</source>
         <translation>S&apos;està descarregant</translation>
     </message>
+    <message>
+        <source>Refresh</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>New tab</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Duplicate Tab</source>
+        <translation type="unfinished">Clona la pestanya</translation>
+    </message>
+    <message>
+        <source>Accept Certificate from: %1 ?</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
-    <name>ClosedTabItem</name>
-    <message>
-        <source>Open</source>
-        <translation>Obre</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <translation>Elimina</translation>
-    </message>
-    <message>
-        <source>Deleting Tab</source>
-        <translation>S&apos;està eliminant la pestanya</translation>
-    </message>
-</context>
-<context>
-    <name>ClosedTabsPage</name>
+    <name>ClosedTabsSegment</name>
     <message>
         <source>Closed Tabs</source>
-        <translation>Pestanyes tancades</translation>
+        <translation type="unfinished">Pestanyes tancades</translation>
     </message>
     <message>
         <source>Delete Closed Tabs</source>
-        <translation>Elimina les pestanyes tancades</translation>
-    </message>
-    <message>
-        <source>Deleting Tabs</source>
-        <translation>S&apos;estan eliminant les pestanyes</translation>
+        <translation type="unfinished">Elimina les pestanyes tancades</translation>
     </message>
 </context>
 <context>
@@ -313,29 +306,6 @@
     <message>
         <source>Add Cookie</source>
         <translation>Afegeix galeta</translation>
-    </message>
-</context>
-<context>
-    <name>CookieManagerPage</name>
-    <message>
-        <source>Cookie Manager</source>
-        <translation>Gestor de galetes</translation>
-    </message>
-    <message>
-        <source>Filter</source>
-        <translation>Filtre</translation>
-    </message>
-    <message>
-        <source>Remove All Cookies</source>
-        <translation>Elimina totes les galetes</translation>
-    </message>
-    <message>
-        <source>Removing Cookies</source>
-        <translation>S&apos;estan eliminant les galetes</translation>
-    </message>
-    <message>
-        <source>Add Cookie</source>
-        <translation>Afegeix una galeta</translation>
     </message>
 </context>
 <context>
@@ -363,6 +333,25 @@
     <message>
         <source>Expires</source>
         <translation>Venciment</translation>
+    </message>
+</context>
+<context>
+    <name>CookiesSegment</name>
+    <message>
+        <source>Cookie Manager</source>
+        <translation type="unfinished">Gestor de galetes</translation>
+    </message>
+    <message>
+        <source>Filter</source>
+        <translation type="unfinished">Filtra</translation>
+    </message>
+    <message>
+        <source>Remove All Cookies</source>
+        <translation type="unfinished">Elimina totes les galetes</translation>
+    </message>
+    <message>
+        <source>Add Cookie</source>
+        <translation type="unfinished">Afegeix galeta</translation>
     </message>
 </context>
 <context>
@@ -488,18 +477,22 @@
     </message>
 </context>
 <context>
-    <name>DownloadsPage</name>
-    <message>
-        <source>Download Manager</source>
-        <translation>Gestor de descàrregues</translation>
-    </message>
+    <name>DownloadsSegment</name>
     <message>
         <source>Delete completed Downloads</source>
-        <translation>Elimina les descàrregues completades</translation>
+        <translation type="unfinished">Elimina les descàrregues completades</translation>
     </message>
     <message>
-        <source>New Download</source>
-        <translation>Nova descàrrega</translation>
+        <source>Downloads</source>
+        <translation type="unfinished">Descàrregues</translation>
+    </message>
+    <message>
+        <source>Download Url</source>
+        <translation type="unfinished">Descarrega l&apos;Url</translation>
+    </message>
+    <message>
+        <source>Start</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -515,6 +508,33 @@
     <message>
         <source>Use SailfishOS&apos;s editing components instead of WebView&apos;s ones</source>
         <translation>Utilitza els components d&apos;edició de SailfishOS en lloc dels de WebView</translation>
+    </message>
+</context>
+<context>
+    <name>FavoriteItem</name>
+    <message>
+        <source>Open</source>
+        <translation type="unfinished">Obre</translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation type="unfinished">Edita</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation type="unfinished">Elimina</translation>
+    </message>
+    <message>
+        <source>Deleting Folder</source>
+        <translation type="unfinished">S&apos;està eliminant la carpeta</translation>
+    </message>
+    <message>
+        <source>Deleting Favorite</source>
+        <translation type="unfinished">S&apos;està eliminant el preferit</translation>
+    </message>
+    <message>
+        <source>Add to Quick Grid</source>
+        <translation type="unfinished">Afegeix a la reixeta ràpida</translation>
     </message>
 </context>
 <context>
@@ -552,100 +572,57 @@
     </message>
 </context>
 <context>
-    <name>FavoritesPage</name>
-    <message>
-        <source>Add Folder</source>
-        <translation>Afegeix una carpeta</translation>
-    </message>
-    <message>
-        <source>Add Favorite</source>
-        <translation>Afegeix un preferit</translation>
-    </message>
-    <message>
-        <source>Favorites</source>
-        <translation>Preferits</translation>
-    </message>
+    <name>FavoritesMenu</name>
     <message>
         <source>Export</source>
-        <translation>Exporta</translation>
-    </message>
-    <message>
-        <source>Import</source>
-        <translation>Importa</translation>
-    </message>
-    <message>
-        <source>Import in</source>
-        <translation>Importa a</translation>
+        <translation type="unfinished">Exporta</translation>
     </message>
     <message>
         <source>Exporting favorites</source>
-        <translation>S&apos;estan exportant els preferits</translation>
+        <translation type="unfinished">S&apos;estan exportant els preferits</translation>
+    </message>
+    <message>
+        <source>Favorites</source>
+        <translation type="unfinished">Preferits</translation>
     </message>
     <message>
         <source>Favorites exported successfully</source>
-        <translation>S&apos;han exportat els preferits correctament</translation>
+        <translation type="unfinished">S&apos;han exportat els preferits correctament</translation>
+    </message>
+    <message>
+        <source>Import</source>
+        <translation type="unfinished">Importa</translation>
+    </message>
+    <message>
+        <source>Import in</source>
+        <translation type="unfinished">Importa a</translation>
+    </message>
+    <message>
+        <source>Add Folder</source>
+        <translation type="unfinished">Afegeix una carpeta</translation>
+    </message>
+    <message>
+        <source>Add Favorite</source>
+        <translation type="unfinished">Afegeix un preferit</translation>
+    </message>
+</context>
+<context>
+    <name>FavoritesSegment</name>
+    <message>
+        <source>Favorites</source>
+        <translation type="unfinished">Preferits</translation>
+    </message>
+    <message>
+        <source>Back</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Favorites imported successfully</source>
-        <translation>S&apos;han importat els preferits correctament</translation>
-    </message>
-    <message>
-        <source>Delete all Favorites</source>
-        <translation>Elimina tots els preferits</translation>
-    </message>
-    <message>
-        <source>Deleting all favorites</source>
-        <translation>S&apos;estan eliminant tots els preferits</translation>
+        <translation type="unfinished">S&apos;han importat els preferits correctament</translation>
     </message>
     <message>
         <source>Cannot import favorites</source>
-        <translation>No s&apos;han pogut importar els preferits</translation>
-    </message>
-</context>
-<context>
-    <name>FavoritesView</name>
-    <message>
-        <source>Edit</source>
-        <translation>Edita</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <translation>Elimina</translation>
-    </message>
-    <message>
-        <source>Deleting Favorite</source>
-        <translation>S&apos;està eliminant el preferit</translation>
-    </message>
-    <message>
-        <source>Deleting Folder</source>
-        <translation>S&apos;està eliminant la carpeta</translation>
-    </message>
-    <message>
-        <source>Open</source>
-        <translation>Obre</translation>
-    </message>
-    <message>
-        <source>Open in New Tab</source>
-        <translation>Obre en una pestanya nova</translation>
-    </message>
-    <message>
-        <source>Add to Quick Grid</source>
-        <translation>Afegeix a la reixeta ràpida</translation>
-    </message>
-</context>
-<context>
-    <name>FilePickerPage</name>
-    <message>
-        <source>Root</source>
-        <translation>Root</translation>
-    </message>
-    <message>
-        <source>SD Card</source>
-        <translation>Targeta SD</translation>
-    </message>
-    <message>
-        <source>Home</source>
-        <translation>Pàgina d&apos;inici</translation>
+        <translation type="unfinished">No s&apos;han pogut importar els preferits</translation>
     </message>
 </context>
 <context>
@@ -698,18 +675,21 @@
     </message>
 </context>
 <context>
+    <name>HistorySegment</name>
+    <message>
+        <source>History</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Delete History</source>
+        <translation type="unfinished">Elimina l&apos;historial</translation>
+    </message>
+</context>
+<context>
     <name>LinkMenu</name>
     <message>
         <source>Open New Tab</source>
         <translation>Obre una pestanya nova</translation>
-    </message>
-    <message>
-        <source>Remove From Favorites</source>
-        <translation>Esborra dels preferits</translation>
-    </message>
-    <message>
-        <source>Add To Favorites</source>
-        <translation>Afegeix als preferits</translation>
     </message>
     <message>
         <source>Save Link Destination</source>
@@ -732,16 +712,8 @@
         <translation>S&apos;està descarregant l&apos;enllaç</translation>
     </message>
     <message>
-        <source>Open</source>
-        <translation>Obre</translation>
-    </message>
-    <message>
         <source>Link copied to clipboard</source>
         <translation>S&apos;ha copiat l&apos;enllaç al porta-retalls</translation>
-    </message>
-    <message>
-        <source>Open New Tab in Background</source>
-        <translation>Obre una pestanya en segon pla</translation>
     </message>
     <message>
         <source>Share</source>
@@ -786,32 +758,6 @@
     </message>
 </context>
 <context>
-    <name>NavigationHistoryPage</name>
-    <message>
-        <source>Delete History</source>
-        <translation>Elimina l&apos;historial</translation>
-    </message>
-    <message>
-        <source>Deleting History</source>
-        <translation>S&apos;està eliminant l&apos;historial</translation>
-    </message>
-    <message>
-        <source>Navigation History</source>
-        <translation>Historial de navegació</translation>
-    </message>
-</context>
-<context>
-    <name>NewDownloadPage</name>
-    <message>
-        <source>Start Download</source>
-        <translation>Inicia la descàrrega</translation>
-    </message>
-    <message>
-        <source>Download Url</source>
-        <translation>Descarrega l&apos;Url</translation>
-    </message>
-</context>
-<context>
     <name>NewPopupRulePage</name>
     <message>
         <source>Apply Rule</source>
@@ -837,16 +783,16 @@
 <context>
     <name>NotificationDialog</name>
     <message>
-        <source>wants to access System&apos;s Notifications</source>
-        <translation>sol·licita accés a les Notificacions del Sistema</translation>
-    </message>
-    <message>
         <source>Allow</source>
         <translation>Permet</translation>
     </message>
     <message>
         <source>Deny</source>
         <translation>Denega</translation>
+    </message>
+    <message>
+        <source>&apos;%1&apos; wants to access system&apos;s notifications</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -989,6 +935,10 @@
         <source>Search with</source>
         <translation>Cerca amb</translation>
     </message>
+    <message>
+        <source>Search...</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>QuickGrid</name>
@@ -999,6 +949,10 @@
     <message>
         <source>Long Press to edit</source>
         <translation>Mantingueu premut per editar</translation>
+    </message>
+    <message>
+        <source>New tab</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1073,13 +1027,6 @@
     </message>
 </context>
 <context>
-    <name>SearchBar</name>
-    <message>
-        <source>Search</source>
-        <translation>Cerca</translation>
-    </message>
-</context>
-<context>
     <name>SearchEnginePage</name>
     <message>
         <source>Save</source>
@@ -1122,34 +1069,57 @@
     </message>
 </context>
 <context>
-    <name>SessionManagerPage</name>
+    <name>SegmentsModel</name>
     <message>
-        <source>Session Manager</source>
-        <translation>Gestor de sessions</translation>
+        <source>Tabs</source>
+        <translation type="unfinished">Pestanyes</translation>
     </message>
     <message>
-        <source>Tabs saved</source>
-        <translation>Pestanyes desades</translation>
+        <source>Closed Tabs</source>
+        <translation type="unfinished">Pestanyes tancades</translation>
     </message>
     <message>
-        <source>Open</source>
-        <translation>Obre</translation>
+        <source>Sessions</source>
+        <translation type="unfinished">Sessions</translation>
     </message>
     <message>
-        <source>Edit</source>
-        <translation>Edita</translation>
+        <source>Cookie</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Delete</source>
-        <translation>Elimina</translation>
+        <source>History</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Deleting session</source>
-        <translation>S&apos;està eliminant la sessió</translation>
+        <source>Downloads</source>
+        <translation type="unfinished">Descàrregues</translation>
     </message>
     <message>
-        <source>Save current session</source>
-        <translation>Desa la sessió actual</translation>
+        <source>Favorites</source>
+        <translation type="unfinished">Preferits</translation>
+    </message>
+</context>
+<context>
+    <name>SelectorFilesPage</name>
+    <message>
+        <source>Android storage</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>SD Card</source>
+        <translation type="unfinished">Targeta SD</translation>
+    </message>
+    <message>
+        <source>Home</source>
+        <translation type="unfinished">Pàgina d&apos;inici</translation>
+    </message>
+    <message>
+        <source>Send %1 file(s)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Back</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1177,6 +1147,45 @@
     <message>
         <source>Selected</source>
         <translation>Seleccionat</translation>
+    </message>
+</context>
+<context>
+    <name>SessionsSegment</name>
+    <message>
+        <source>Sessions</source>
+        <translation type="unfinished">Sessions</translation>
+    </message>
+    <message>
+        <source>No Sessions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Save current session</source>
+        <translation type="unfinished">Desa la sessió actual</translation>
+    </message>
+    <message>
+        <source>Tabs saved</source>
+        <translation type="unfinished">Pestanyes desades</translation>
+    </message>
+    <message>
+        <source>Open</source>
+        <translation type="unfinished">Obre</translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation type="unfinished">Edita</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation type="unfinished">Elimina</translation>
+    </message>
+    <message>
+        <source>Deleting session</source>
+        <translation type="unfinished">S&apos;està eliminant la sessió</translation>
+    </message>
+    <message>
+        <source>Loads at startup</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1215,108 +1224,33 @@
     </message>
 </context>
 <context>
-    <name>ShareMenu</name>
+    <name>TabClosedItem</name>
     <message>
-        <source>Share</source>
-        <translation>Comparteix</translation>
+        <source>Open</source>
+        <translation type="unfinished">Obre</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation type="unfinished">Elimina</translation>
+    </message>
+    <message>
+        <source>Deleting Tab</source>
+        <translation type="unfinished">S&apos;està eliminant la pestanya</translation>
     </message>
 </context>
 <context>
-    <name>SidebarModel</name>
+    <name>TabsSegment</name>
     <message>
-        <source>General</source>
-        <translation>General</translation>
-    </message>
-    <message>
-        <source>Favorites</source>
-        <translation>Preferits</translation>
-    </message>
-    <message>
-        <source>Sessions</source>
-        <translation>Sessions</translation>
-    </message>
-    <message>
-        <source>Downloads</source>
-        <translation>Descàrregues</translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation>Descarrega</translation>
-    </message>
-    <message>
-        <source>Closed Tabs</source>
-        <translation>Pestanyes tancades</translation>
-    </message>
-    <message>
-        <source>Closed Tab</source>
-        <translation>Pestanya tancada</translation>
-    </message>
-    <message>
-        <source>Navigation History</source>
-        <translation>Historial de navegació</translation>
-    </message>
-    <message>
-        <source>Cookies</source>
-        <translation>Galetes</translation>
-    </message>
-    <message>
-        <source>Extensions</source>
-        <translation>Extensions</translation>
-    </message>
-    <message>
-        <source>Ad Block</source>
-        <translation>Ad Block</translation>
-    </message>
-    <message>
-        <source>Night Mode</source>
-        <translation>Mode nocturn</translation>
+        <source>Tabs</source>
+        <translation type="unfinished">Pestanyes</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation>Configuració</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Change settings</source>
-        <translation>Canvia la configuració</translation>
-    </message>
-    <message>
-        <source>Popup Blocker</source>
-        <translation>Blocador de finestres emergents</translation>
-    </message>
-    <message>
-        <source>About Web Pirate</source>
-        <translation>Quant a Web Pirate</translation>
-    </message>
-</context>
-<context>
-    <name>TabMenu</name>
-    <message>
-        <source>Duplicate Tab</source>
-        <translation>Clona la pestanya</translation>
-    </message>
-    <message>
-        <source>Duplicate Tab in Background</source>
-        <translation>Clona la pestanya a un segon pla</translation>
-    </message>
-    <message>
-        <source>Save page</source>
-        <translation>Desa la pàgina</translation>
-    </message>
-    <message>
-        <source>Add to Quick Grid</source>
-        <translation>Afegeix a la reixeta ràpida</translation>
-    </message>
-    <message>
-        <source>Close Tab</source>
-        <translation>Tanca la pestanya</translation>
-    </message>
-    <message>
-        <source>Close other Tabs</source>
-        <translation>Tanca les altres pestanyes</translation>
-    </message>
-    <message>
-        <source>Downloading web page</source>
-        <translation>S&apos;està descarregant el web</translation>
+        <source>New Tab</source>
+        <translation type="unfinished">Nova pestanya</translation>
     </message>
 </context>
 <context>

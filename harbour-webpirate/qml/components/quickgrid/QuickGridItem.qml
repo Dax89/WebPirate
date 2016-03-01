@@ -1,4 +1,5 @@
 import QtQuick 2.1
+import QtGraphicalEffects 1.0
 import Sailfish.Silica 1.0
 
 Item
@@ -43,21 +44,12 @@ Item
             alwaysRunToEnd: true
         }
 
-        Rectangle
+        PanelBackground
         {
             id: thumbnail
             anchors { left: parent.left; top: parent.top; right: parent.right; bottom: lbltitle.top }
-            radius: 8
-            border.width: 1
-            border.color: Theme.rgba(Theme.secondaryHighlightColor, 1.0)
-            color: "transparent"
+            border { width: 1; color: Theme.secondaryHighlightColor }
             z: 2
-
-            PanelBackground
-            {
-                anchors.fill: parent
-                z: -1
-            }
 
             Image
             {
@@ -95,7 +87,7 @@ Item
                         return;
                     }
 
-                    tabviewremorse.execute(qsTr("Removing item"), function() {
+                    remorsepopup.execute(qsTr("Removing item"), function() {
                         mainwindow.settings.quickgridmodel.remove(index);
                     });
                 }
@@ -106,9 +98,16 @@ Item
         {
             id: lbltitle
             anchors { left: parent.left; bottom: parent.bottom; right: parent.right }
-            font.pixelSize: Theme.fontSizeExtraSmall
+            font.pixelSize: Theme.fontSizeTiny
             horizontalAlignment: Text.AlignHCenter
             elide: Text.ElideRight
+
+            Rectangle
+            {
+                anchors.fill: parent
+                color: Theme.highlightDimmerColor
+                z: -1
+            }
         }
     }
 }

@@ -1,6 +1,6 @@
 var __wp_utils__ = {
     escape: function(s) {
-        return s.replace(/'/g, "&#39;");
+        return s.replace(/&#39;/g, "'");
     },
 
     unescape: function(s) {
