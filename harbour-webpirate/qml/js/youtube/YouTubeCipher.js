@@ -18,8 +18,13 @@ function grabPlayerJavascript(ytplayer, mediagrabber, urldecoder)
                 return;
             }
 
-            var funcbodyrgx = new RegExp("function " + funcname[1] + "\\(a\\){(.*?)};");
+            var funcbodyrgx = new RegExp("function " + funcname[1] + "\\(a\\){([^]*?)}");
             var funcbody = funcbodyrgx.exec(req.responseText);
+
+            if(!funcbody || !funcbody[1]) { // Try with object assignment
+                funcbodyrgx = new RegExp(funcname[1] + "=function\\(a\\){([^]*?)}");
+                funcbody = funcbodyrgx.exec(req.responseText);
+            }
 
             if(!funcbody || !funcbody[1]) {
                 mediagrabber.grabFailed = true;
@@ -38,7 +43,7 @@ function grabPlayerJavascript(ytplayer, mediagrabber, urldecoder)
             }
 
             /* Escape $ character, if needed (Javascript allows $myvariable identifiers) */
-            var decodeobjrgx = new RegExp(((decodeobjname[1][0] === "$") ? "var \\" : "var ") + decodeobjname[1] + "={(.*?)};");
+            var decodeobjrgx = new RegExp(((decodeobjname[1][0] === "$") ? "var \\" : "var ") + decodeobjname[1] + "={([^]*?)};");
             var decodeobj = decodeobjrgx.exec(req.responseText);
 
             if(!decodeobj || !decodeobj[1]) {
