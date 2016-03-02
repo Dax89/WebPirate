@@ -43,18 +43,12 @@ BrowserBar
             if(!dragging)
                 return;
 
-            if(niback.visible && (contentX < (-niback.width + Theme.paddingSmall))) {
-                console.log("BACK");
+            if(niback.visible && (contentX < (-niback.width + Theme.paddingSmall)))
                 selectedItem = niback;
-            }
-            else if(niforward.visible && ((contentX + width) > ((niforward.x + niforward.width) - Theme.paddingSmall))) {
-                console.log("FORWARD");
+            else if(niforward.visible && ((contentX + width) > ((niforward.x + niforward.width) - Theme.paddingSmall)))
                 selectedItem = niforward;
-            }
-            else {
-                console.log("NOP");
+            else
                 selectedItem = null;
-            }
         }
 
         onDraggingChanged: {
