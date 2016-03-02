@@ -46,7 +46,7 @@ Page
         {
             id: loader
             asynchronous: true
-            anchors { left: parent.left; top: parent.top; right: parent.right; bottom: lvsections.top }
+            anchors { left: parent.left; top: parent.top; right: parent.right; bottom: bottompanel.top }
 
             onItemChanged: {
                 if(!loader.item)
@@ -56,59 +56,72 @@ Page
             }
         }
 
-        SilicaListView
+        PanelBackground
         {
-            PanelBackground {  anchors.fill: parent; z: -1 }
+            readonly property real itemWidth: bottompanel.width / 5
 
-            id: lvsections
+            id: bottompanel
             anchors { left: parent.left; bottom: parent.bottom; right: parent.right }
             height: Theme.itemSizeSmall + Theme.paddingSmall
-            clip: true
-            orientation: ListView.Horizontal
-            currentIndex: 0
-            model: segmentsmodel.elements
 
-            delegate: ListItem {
-                readonly property string text: model.text
+            SilicaListView
+            {
+                id: lvsections
+                anchors { left: parent.left; bottom: selectionrect.bottom; right: parent.right }
+                height: Theme.itemSizeSmall
+                clip: true
+                orientation: ListView.Horizontal
+                currentIndex: 0
+                model: segmentsmodel.elements
 
-                width: lvsections.width / 5
-                contentHeight: Theme.itemSizeSmall + Theme.paddingSmall
+                delegate: ListItem {
+                    readonly property string text: model.text
 
-                onClicked: {
-                    if(loader.item)
-                        loader.item.unload();
+                    width: bottompanel.itemWidth
+                    contentHeight: Theme.itemSizeSmall
 
-                    segmentspage.currentSegment = model.segment;
-                    lvsections.currentIndex = model.index;
+                    onClicked: {
+                        if(loader.item)
+                            loader.item.unload();
+
+                        segmentspage.currentSegment = model.segment;
+                        lvsections.currentIndex = model.index;
+                    }
+
+                    Image {
+                        id: img
+                        source: model.icon
+                        width: Theme.iconSizeSmall
+                        height: Theme.iconSizeSmall
+                        fillMode: Image.PreserveAspectFit
+                        asynchronous: true
+                        anchors { top: parent.top; horizontalCenter: parent.horizontalCenter; topMargin: Theme.paddingSmall }
+                    }
+
+                    Label {
+                        anchors { left: parent.left; right: parent.right; top: img.bottom; bottom: parent.bottom; topMargin: Theme.paddingSmall }
+                        font.pixelSize: Theme.fontSizeTiny
+                        wrapMode: Text.Wrap
+                        verticalAlignment: Text.AlignVCenter
+                        horizontalAlignment: Text.AlignHCenter
+                        elide: Text.ElideRight
+                        text: model.text
+                    }
+                }
+            }
+
+            Rectangle
+            {
+                Behavior on x {
+                    NumberAnimation { duration: lvsections.moving ? 0 : 100; easing.type: Easing.Linear }
                 }
 
-                Image {
-                    id: img
-                    source: model.icon
-                    width: Theme.iconSizeSmall
-                    height: Theme.iconSizeSmall
-                    fillMode: Image.PreserveAspectFit
-                    asynchronous: true
-                    anchors { top: parent.top; horizontalCenter: parent.horizontalCenter; topMargin: Theme.paddingSmall }
-                }
-
-                Label {
-                    anchors { left: parent.left; right: parent.right; top: img.bottom; bottom: selectionrect.top; topMargin: Theme.paddingSmall }
-                    font.pixelSize: Theme.fontSizeTiny
-                    wrapMode: Text.Wrap
-                    verticalAlignment: Text.AlignVCenter
-                    horizontalAlignment: Text.AlignHCenter
-                    elide: Text.ElideRight
-                    text: model.text
-                }
-
-                Rectangle {
-                    id: selectionrect
-                    anchors { left: parent.left; right: parent.right; bottom: parent.bottom }
-                    height: Theme.paddingSmall
-                    color: Theme.highlightColor
-                    visible: model.index === lvsections.currentIndex
-                }
+                id: selectionrect
+                x: lvsections.currentItem ? (lvsections.currentItem.x - lvsections.contentX) : 0
+                anchors.bottom: parent.bottom
+                height: Theme.paddingSmall
+                width: bottompanel.itemWidth
+                color: Theme.highlightColor
             }
         }
     }
