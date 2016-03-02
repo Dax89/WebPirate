@@ -34,25 +34,27 @@ BrowserBar
     {
         property Item selectedItem: null
 
-        function hitTest(item, x) {
-            return item.visible && ((x >= item.x) && (x < (item.x + item.width)));
-        }
-
         id: content
         anchors.fill: parent
         flickableDirection: Flickable.HorizontalFlick
-        boundsBehavior: querybar.searchMode ? Flickable.StopAtBounds : Flickable.DragAndOvershootBounds
+        boundsBehavior: (querybar.searchMode || querybar.editing) ? Flickable.StopAtBounds : Flickable.DragAndOvershootBounds
 
         onContentXChanged: {
             if(!dragging)
                 return;
 
-            if(hitTest(niback, contentX))
+            if(niback.visible && (contentX < (-niback.width + Theme.paddingSmall))) {
+                console.log("BACK");
                 selectedItem = niback;
-            else if(hitTest(niforward, contentX + width))
+            }
+            else if(niforward.visible && ((contentX + width) > ((niforward.x + niforward.width) - Theme.paddingSmall))) {
+                console.log("FORWARD");
                 selectedItem = niforward;
-            else
+            }
+            else {
+                console.log("NOP");
                 selectedItem = null;
+            }
         }
 
         onDraggingChanged: {
@@ -73,7 +75,7 @@ BrowserBar
         {
             id: niback
             anchors { right: row.left; top: parent.top; bottom: parent.bottom }
-            visible: currentTab() ? currentTab().canGoBack : 0
+            visible: currentTab() ? currentTab().canGoBack : false
             width: visible ? parent.height : 0
             highlighted: content.selectedItem === niback
             source: "qrc:///res/back.png"
@@ -213,7 +215,7 @@ BrowserBar
             id: niforward
             anchors { left: row.right; top: parent.top; bottom: parent.bottom }
             anchors { left: niadd.right; top: parent.top; bottom: parent.bottom }
-            visible: currentTab() ? currentTab().canGoForward : 0
+            visible: currentTab() ? currentTab().canGoForward : false
             width: visible ? parent.height : 0
             highlighted: content.selectedItem === niforward
             source: "qrc:///res/forward.png"
