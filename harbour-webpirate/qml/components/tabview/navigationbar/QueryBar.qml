@@ -62,6 +62,13 @@ SearchField
         return qsTr("Search with") + " " + mainwindow.settings.searchengines.get(mainwindow.settings.searchengine).name;
     }
 
+    EnterKey.iconSource: {
+        if(searchMode)
+            return "image://theme/icon-m-search";
+
+        return "image://theme/icon-m-enter-accept";
+    }
+
     EnterKey.onClicked: {
         if(searchMode)
             querybar.searchPressed(text);

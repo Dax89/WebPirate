@@ -259,19 +259,19 @@
         <translation>Stahuje se</translation>
     </message>
     <message>
+        <source>Accept Certificate from: %1 ?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Duplicate Tab</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Refresh</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <source>New tab</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Duplicate Tab</source>
-        <translation type="unfinished">Duplikovat Panel</translation>
-    </message>
-    <message>
-        <source>Accept Certificate from: %1 ?</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

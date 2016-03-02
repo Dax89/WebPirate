@@ -79,7 +79,6 @@ BrowserBar
         {
             id: row
             anchors.fill: parent
-            spacing: Theme.paddingLarge
 
             QueryBar
             {
@@ -88,10 +87,10 @@ BrowserBar
                 anchors.verticalCenter: parent.verticalCenter
 
                 width: {
-                    var w = parent.width - (btntabs.width + (Theme.paddingLarge * 2));
+                    var w = parent.width - btntabs.width;
 
                     if(searchMode)
-                        w -= (btnsearchup.width + btnsearchdown.width) + (Theme.paddingLarge * 2);
+                        w -= (btnsearchup.width + btnsearchdown.width);
 
                     return w;
                 }
@@ -136,13 +135,13 @@ BrowserBar
                 }
             }
 
-            IconButton
+            NavigationItem
             {
                 id: btnsearchup
-                icon.source: "image://theme/icon-m-enter-close"
+                source: "image://theme/icon-m-enter-close"
                 enabled: querybar.searchMode && (querybar.text.length > 0)
-                width: Theme.iconSizeSmall
-                height: Theme.iconSizeSmall
+                width: parent.height
+                height: parent.height
                 anchors.verticalCenter: parent.verticalCenter
                 rotation: 180
                 visible: querybar.searchMode
@@ -152,13 +151,13 @@ BrowserBar
                                                                                  WebViewExperimental.FindWrapsAroundDocument */
             }
 
-            IconButton
+            NavigationItem
             {
                 id: btnsearchdown
-                icon.source: "image://theme/icon-m-enter-close"
+                source: "image://theme/icon-m-enter-close"
                 enabled: querybar.searchMode && (querybar.text.length > 0)
-                width: Theme.iconSizeSmall
-                height: Theme.iconSizeSmall
+                width: parent.height
+                height: parent.height
                 anchors.verticalCenter: parent.verticalCenter
                 visible: querybar.searchMode
 
@@ -166,13 +165,13 @@ BrowserBar
                                                                                  WebViewExperimental.FindWrapsAroundDocument */
             }
 
-            IconButton
+            NavigationItem
             {
                 id: btntabs
-                width: Theme.iconSizeSmall
-                height: Theme.iconSizeSmall
+                width: parent.height
+                height: parent.height
                 anchors.verticalCenter: parent.verticalCenter
-                icon.source: querybar.searchMode ? "image://theme/icon-close-app" : "image://theme/icon-m-tabs"
+                source: querybar.searchMode ? "image://theme/icon-close-app" : "image://theme/icon-m-tabs"
 
                 onClicked: {
                     if(querybar.searchMode) {
@@ -198,7 +197,6 @@ BrowserBar
                     anchors.centerIn: parent
                     font.pixelSize: Theme.fontSizeSmall
                     font.bold: true
-                    color: btntabs.pressed ? btntabs.icon.highlightColor : Theme.primaryColor
                     text: tabview.tabs.count
                     visible: !querybar.searchMode
                     z: -1
@@ -210,7 +208,6 @@ BrowserBar
         {
             id: niforward
             anchors { left: row.right; top: parent.top; bottom: parent.bottom }
-            anchors { left: niadd.right; top: parent.top; bottom: parent.bottom }
             visible: currentTab() ? currentTab().canGoForward : false
             width: visible ? parent.height : 0
             highlighted: content.selectedItem === niforward

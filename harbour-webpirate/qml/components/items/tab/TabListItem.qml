@@ -53,7 +53,7 @@ ListItem
 
         id: content
         x: defaultX
-        width: Screen.width - (2 * Theme.paddingMedium)
+        width: (Screen.width - (2 * Theme.paddingMedium)) - (highlighted ? 0 : Theme.paddingLarge)
         height: parent.height
 
         Behavior on x {
@@ -73,7 +73,6 @@ ListItem
         {
             anchors { fill: parent; topMargin: Theme.paddingSmall }
             source: thumb
-            cached: true
             start: Qt.point(parent.width, 0)
             end: Qt.point(parent.width, parent.height)
 

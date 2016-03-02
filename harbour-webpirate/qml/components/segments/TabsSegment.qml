@@ -32,7 +32,7 @@ SilicaListView
     model: tabView.tabs
 
     remove: Transition {
-        NumberAnimation { property: "x"; duration: 250; to: tabssegment.width * 2; easing.type: Easing.InCubic }
+        NumberAnimation { property: "x"; duration: 250; to: tabssegment.width * 2; easing.type: Easing.OutBack }
     }
 
     removeDisplaced: Transition {

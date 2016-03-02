@@ -47,13 +47,7 @@ SilicaWebView
         MenuItem
         {
             text: qsTr("Duplicate Tab")
-
-            onClicked: {
-                if(!selectedTab)
-                    return;
-
-                tabView.addTab(webview.url.toString(), false, tabView.currentIndex + 1);
-            }
+            onClicked: tabView.addTab(webview.url.toString(), false, tabView.currentIndex + 1);
         }
 
         MenuItem
