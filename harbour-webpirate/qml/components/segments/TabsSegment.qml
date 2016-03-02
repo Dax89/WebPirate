@@ -31,6 +31,14 @@ SilicaListView
     clip: true
     model: tabView.tabs
 
+    remove: Transition {
+        NumberAnimation { property: "x"; duration: 250; to: tabssegment.width * 2; easing.type: Easing.InCubic }
+    }
+
+    removeDisplaced: Transition {
+        NumberAnimation { property: "y"; duration: 250 }
+    }
+
     header: PageHeader {
         id: pageheader
         title: qsTr("Tabs")
