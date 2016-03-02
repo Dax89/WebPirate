@@ -198,6 +198,7 @@ BrowserBar
                     anchors.centerIn: parent
                     font.pixelSize: Theme.fontSizeSmall
                     font.bold: true
+                    color: btntabs.pressed ? btntabs.icon.highlightColor : Theme.primaryColor
                     text: tabview.tabs.count
                     visible: !querybar.searchMode
                 }
