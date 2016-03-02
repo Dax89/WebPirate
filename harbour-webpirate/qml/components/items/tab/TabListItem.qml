@@ -21,6 +21,7 @@ ListItem
     }
 
     id: tabgriditem
+    _showPress: false
 
     onVisibleChanged: {
         if(!visible || !content.refreshNeeded)
@@ -33,7 +34,7 @@ ListItem
     drag.target: content
     drag.axis: Drag.XAxis
     drag.maximumX: content.width
-    drag.minimumX: Theme.paddingMedium
+    drag.minimumX: content.defaultX
 
     drag.onActiveChanged: {
         if(drag.active)
@@ -42,20 +43,21 @@ ListItem
         if(content.x > drag.maximumX / 2)
             closeRequested();
 
-        content.x = Theme.paddingMedium;
+        content.x = content.defaultX;
     }
 
     Item
     {
+        readonly property real defaultX: (parent.width / 2) - (width / 2)
         property bool refreshNeeded: false
 
         id: content
-        x: Theme.paddingMedium
-        width: parent.width - (2 * Theme.paddingMedium)
+        x: defaultX
+        width: Screen.width - (2 * Theme.paddingMedium)
         height: parent.height
 
         Behavior on x {
-            PropertyAnimation { duration: 250; easing.type: Easing.OutBounce }
+            PropertyAnimation { duration: 250; easing.type: Easing.OutBack }
         }
 
         ShaderEffectSource

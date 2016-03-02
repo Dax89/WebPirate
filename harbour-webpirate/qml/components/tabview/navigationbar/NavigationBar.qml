@@ -201,6 +201,7 @@ BrowserBar
                     color: btntabs.pressed ? btntabs.icon.highlightColor : Theme.primaryColor
                     text: tabview.tabs.count
                     visible: !querybar.searchMode
+                    z: -1
                 }
             }
         }
