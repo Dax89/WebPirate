@@ -17,6 +17,8 @@ Item
     property int currentIndex: -1
     property string pageState
 
+    RemorsePopup { id: tabviewremorse }
+
     id: tabview
     Component.onCompleted: renderTab()
     onCurrentIndexChanged: renderTab()
