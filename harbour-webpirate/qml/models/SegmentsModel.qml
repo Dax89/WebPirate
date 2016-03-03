@@ -16,7 +16,7 @@ Item
                                                    readonly property string text: qsTr("Tabs") },
 
                                         QtObject { readonly property int segment: closedTabsSegment
-                                                   readonly property string icon: "image://theme/icon-m-tab"
+                                                   readonly property string icon: "qrc:///res/closedtabs.png"
                                                    readonly property string text: qsTr("Closed Tabs") },
 
                                         QtObject { readonly property int segment: favoritesSegment
