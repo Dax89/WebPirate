@@ -47,6 +47,15 @@ Dialog
                 text: qsTr("Add Filter")
                 onClicked: pageStack.push(Qt.resolvedUrl("AdBlockFilter.qml"), { "adblockeditor": adblockeditor });
             }
+
+            MenuItem
+            {
+                text: settings.adblockmanager.enabled ? qsTr("Disable AdBlock") : qsTr("Enable AdBlock")
+
+                onClicked: {
+                    settings.adblockmanager.enabled = !settings.adblockmanager.enabled;
+                }
+            }
         }
 
         DialogHeader

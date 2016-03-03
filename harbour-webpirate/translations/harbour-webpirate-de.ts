@@ -156,6 +156,14 @@
         <source>Add Filter</source>
         <translation>Filter hinzufügen</translation>
     </message>
+    <message>
+        <source>Disable AdBlock</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Enable AdBlock</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>AlertDialog</name>
