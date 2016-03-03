@@ -126,7 +126,7 @@ Item
         anchors { left: parent.left; right: parent.right; bottom: parent.bottom }
         height: editMode && (mousearea.currentQuickId === -1) ? Theme.itemSizeSmall : 0
 
-        onAddRequested: pageStack.push(Qt.resolvedUrl("../../pages/QuickGridPage.qml"), { "settings": mainwindow.settings })
+        onAddRequested: pageStack.push(Qt.resolvedUrl("../../pages/quickgrid/QuickGridPage.qml"), { "settings": mainwindow.settings })
         onDoneRequested: disableEditMode();
     }
 }

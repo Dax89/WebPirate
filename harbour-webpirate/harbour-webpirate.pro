@@ -95,7 +95,6 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/components/quickgrid/QuickGrid.qml \
     qml/components/quickgrid/QuickGridItem.qml \
     qml/components/quickgrid/QuickGridButton.qml \
-    qml/pages/QuickGridPage.qml \
     qml/js/settings/QuickGrid.js \
     qml/models/QuickGridModel.qml \
     qml/components/PopupMessage.qml \
@@ -267,4 +266,5 @@ DISTFILES += \
     qml/menus/HistoryMenu.qml \
     qml/menus/LinkMenu.qml \
     qml/menus/ShareMenu.qml \
-    qml/pages/settings/AboutPage.qml
+    qml/pages/settings/AboutPage.qml \
+    qml/pages/quickgrid/QuickGridPage.qml

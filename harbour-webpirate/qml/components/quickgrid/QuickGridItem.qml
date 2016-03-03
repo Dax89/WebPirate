@@ -71,7 +71,7 @@ Item
                 anchors { left: parent.left; bottom: parent.bottom; leftMargin: -width / 4; bottomMargin: -height / 4 }
                 icon.source: "image://theme/icon-m-edit"
 
-                onClicked: pageStack.push(Qt.resolvedUrl("../../pages/QuickGridPage.qml"), { "settings": mainwindow.settings, "index": index, "title": lbltitle.text, "url": itemUrl })
+                onClicked: pageStack.push(Qt.resolvedUrl("../../pages/quickgrid/QuickGridPage.qml"), { "settings": mainwindow.settings, "index": index, "title": lbltitle.text, "url": itemUrl })
             }
 
             QuickGridButton
