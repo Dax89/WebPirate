@@ -40,7 +40,6 @@ SOURCES += src/harbour-webpirate.cpp \
     src/adblock/adblockeditor.cpp \
     src/adblock/adblockfilter.cpp \
     src/adblock/adblockdownloader.cpp \
-    src/filepicker/folderlistmodel.cpp \
     src/dbus/client/screenblank.cpp \
     src/security/cryptography/aes256.cpp \
     src/webkitdatabase/cookie/cookiejar.cpp \
@@ -87,11 +86,9 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/pages/searchengine/SearchEnginePage.qml \
     qml/models/SearchEngineModel.qml \
     qml/js/settings/Credentials.js \
-    qml/components/tabview/menus/LinkMenu.qml \
     qml/components/items/DownloadListItem.qml \
     qml/components/browsertab/webview/BrowserWebView.qml \
     qml/js/settings/History.js \
-    qml/components/tabview/menus/HistoryMenu.qml \
     qml/components/SettingLabel.qml \
     qml/pages/webview/TextSelectionPage.qml \
     qml/components/tabview/TabView.qml \
@@ -142,7 +139,6 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/js/helpers/GrabberBuilder.js \
     qml/components/browsertab/views/browserplayer/BrowserGrabber.qml \
     qml/components/browsertab/views/browserplayer/mediacomponents/MediaPlayerTimings.qml \
-    qml/components/tabview/menus/ShareMenu.qml \
     qml/components/browsertab/views/browserplayer/mediacomponents/MediaPlayerCursor.qml \
     qml/components/browsertab/views/browserplayer/mediacomponents/MediaPlayerProgressBar.qml \
     qml/components/items/cookie/DomainListItem.qml \
@@ -234,7 +230,6 @@ HEADERS += \
     src/adblock/adblockeditor.h \
     src/adblock/adblockfilter.h \
     src/adblock/adblockdownloader.h \
-    src/filepicker/folderlistmodel.h \
     src/dbus/client/screenblank.h \
     src/security/cryptography/aes256.h \
     src/webkitdatabase/cookie/cookiejar.h \
@@ -269,4 +264,7 @@ DISTFILES += \
     qml/pages/webview/dialogs/AuthenticationDialog.qml \
     qml/pages/webview/dialogs/ColorChooserDialog.qml \
     qml/pages/webview/dialogs/PromptDialog.qml \
-    qml/components/tabview/navigationbar/QueryBar.qml
+    qml/components/tabview/navigationbar/QueryBar.qml \
+    qml/menus/HistoryMenu.qml \
+    qml/menus/LinkMenu.qml \
+    qml/menus/ShareMenu.qml

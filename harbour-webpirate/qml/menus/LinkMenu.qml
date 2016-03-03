@@ -1,7 +1,7 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
-import "../../"
-import "../../../js/settings/Favorites.js" as Favorites
+import "../components"
+import "../js/settings/Favorites.js" as Favorites
 
 SilicaListView
 {

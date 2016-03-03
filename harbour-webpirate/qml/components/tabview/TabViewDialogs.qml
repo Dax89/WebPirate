@@ -1,8 +1,7 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
-import "menus"
-import "menus"
 import "jsdialogs"
+import "../../menus"
 import "../../js/settings/Favorites.js" as Favorites
 
 Column

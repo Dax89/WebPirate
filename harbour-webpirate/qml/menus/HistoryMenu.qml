@@ -1,8 +1,8 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
-import "../../"
-import "../../items/"
-import "../../../js/settings/History.js" as History
+import "../components"
+import "../components/items/"
+import "../js/settings/History.js" as History
 
 SilicaListView
 {
