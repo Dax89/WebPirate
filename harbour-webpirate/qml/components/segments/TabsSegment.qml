@@ -17,6 +17,15 @@ SilicaListView
 
         MenuItem
         {
+            text: settings.nightmode ? qsTr("Disable Night Mode") : qsTr("Enable Night Mode")
+
+            onClicked: {
+                settings.nightmode = !settings.nightmode;
+            }
+        }
+
+        MenuItem
+        {
             text: qsTr("New Tab")
 
             onClicked: {
