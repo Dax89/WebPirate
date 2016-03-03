@@ -99,7 +99,6 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/js/settings/QuickGrid.js \
     qml/models/QuickGridModel.qml \
     qml/components/PopupMessage.qml \
-    qml/pages/AboutPage.qml \
     qml/components/InfoLabel.qml \
     qml/js/youtube/YouTubeGrabber.js \
     qml/components/browsertab/views/browserplayer/mediacomponents/MediaPlayerToolBar.qml \
@@ -267,4 +266,5 @@ DISTFILES += \
     qml/components/tabview/navigationbar/QueryBar.qml \
     qml/menus/HistoryMenu.qml \
     qml/menus/LinkMenu.qml \
-    qml/menus/ShareMenu.qml
+    qml/menus/ShareMenu.qml \
+    qml/pages/settings/AboutPage.qml

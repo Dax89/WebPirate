@@ -10,6 +10,13 @@ Page
     id: settingspage
     allowedOrientations: defaultAllowedOrientations
 
+    onStatusChanged: {
+        if((status !== PageStatus.Active) || canNavigateForward)
+            return;
+
+        pageStack.pushAttached(Qt.resolvedUrl("AboutPage.qml"), { "settings": settings });
+    }
+
     SilicaFlickable
     {
         anchors.fill: parent
