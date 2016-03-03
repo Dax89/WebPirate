@@ -60,7 +60,6 @@ SOURCES += src/harbour-webpirate.cpp \
     src/downloadmanager/webpagedownloaditem.cpp \
     src/dbus/defaultbrowser.cpp \
     src/network/proxymanager.cpp \
-    src/imageproviders/webviewthumbnailer.cpp \
     src/selector/filesmodel.cpp \
     src/selector/filesmodelworker.cpp \
     src/selector/exif/exif.cpp
@@ -248,7 +247,6 @@ HEADERS += \
     src/downloadmanager/webpagedownloaditem.h \
     src/dbus/defaultbrowser.h \
     src/network/proxymanager.h \
-    src/imageproviders/webviewthumbnailer.h \
     src/selector/filesmodel.h \
     src/selector/filesmodelworker.h \
     src/selector/exif/exif.h

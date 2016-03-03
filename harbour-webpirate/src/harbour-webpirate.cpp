@@ -19,7 +19,6 @@
 #include "webkitdatabase/cookie/cookiejar.h"
 #include "webkitdatabase/webkitdatabase.h"
 #include "imageproviders/faviconprovider.h"
-#include "imageproviders/webviewthumbnailer.h"
 #include "favoritesmanager/favoritesmanager.h"
 #include "downloadmanager/downloadmanager.h"
 #include "selector/filesmodel.h"
@@ -75,9 +74,6 @@ int main(int argc, char *argv[])
     qmlRegisterType<TransferMethodModel>("harbour.webpirate.DBus.TransferEngine", 1, 0, "TransferMethodModel");
     qmlRegisterType<ProxyManager>("harbour.webpirate.Network", 1, 0, "ProxyManager");
 
-    qmlRegisterType<FilesModel>("harbour.webpirate.Selectors", 1, 0, "FilesModel");
-    qmlRegisterType<WebViewThumbnailer>("harbour.webpirate.Thumbnailer", 1, 0, "WebViewThumbnailer");
-
     qmlRegisterType<AdBlockEditor>("harbour.webpirate.AdBlock", 1, 0, "AdBlockEditor");
     qmlRegisterType<AdBlockDownloader>("harbour.webpirate.AdBlock", 1, 0, "AdBlockDownloader");
     qmlRegisterType<AdBlockManager>("harbour.webpirate.AdBlock", 1, 0, "AdBlockManager");
@@ -87,6 +83,7 @@ int main(int argc, char *argv[])
     qmlRegisterType<WebIconDatabase>("harbour.webpirate.WebKit", 1, 0, "WebIconDatabase");
     qmlRegisterType<DownloadManager>("harbour.webpirate.WebKit", 1, 0, "DownloadManager");
 
+    qmlRegisterType<FilesModel>("harbour.webpirate.Selectors", 1, 0, "FilesModel");
     qmlRegisterType<FavoritesManager>("harbour.webpirate.LocalStorage", 1, 0, "FavoritesManager");
 
     QScopedPointer<QQuickView> view(SailfishApp::createView());
