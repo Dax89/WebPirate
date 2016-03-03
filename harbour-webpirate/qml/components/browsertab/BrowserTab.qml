@@ -11,6 +11,7 @@ Item
     property alias webView: webview
     property alias viewStack: viewstack
 
+    property bool thumbUpdated: true
     property TabView tabView
 
     readonly property string title: {
@@ -106,6 +107,27 @@ Item
             webview.url = mainwindow.settings.searchengines.get(mainwindow.settings.searchengine).query + req;
     }
 
+    function calculateMetrics(ignorewidth, ignoreheight) {
+        if(!webview.visible)
+            return;
+
+        if(!ignorewidth)
+            webview.width = tabView.width;
+
+        if(!ignoreheight)
+            webview.height = tabView.height;
+
+        thumbUpdated = !ignorewidth || !ignoreheight;
+    }
+
+    Connections
+    {
+        target: tabView
+
+        onWidthChanged: calculateMetrics(false, true)
+        onHeightChanged: calculateMetrics(true, false)
+    }
+
     id: browsertab
     visible: false
 
@@ -129,6 +151,7 @@ Item
         visible: browsertab.state === "webview"
         width: tabView.width
         height: tabView.height
+        onVisibleChanged: calculateMetrics(false, false)
     }
 
     ViewStack

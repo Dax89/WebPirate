@@ -1247,6 +1247,17 @@
     </message>
 </context>
 <context>
+    <name>TabListItem</name>
+    <message>
+        <source>Quick Grid</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Load error</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>TabsSegment</name>
     <message>
         <source>Tabs</source>
@@ -1259,6 +1270,14 @@
     <message>
         <source>New Tab</source>
         <translation type="unfinished">Nieuw tabblad</translation>
+    </message>
+    <message>
+        <source>Disable Night Mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Enable Night Mode</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

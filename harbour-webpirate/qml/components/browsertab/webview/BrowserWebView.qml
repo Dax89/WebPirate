@@ -309,6 +309,7 @@ SilicaWebView
 
         if(loadRequest.status === WebView.LoadFailedStatus)
         {
+            browsertab.thumbUpdated = true;
             viewstack.push(Qt.resolvedUrl("../views/LoadFailed.qml"), "loaderror", { "errorString": loadRequest.errorString, "offline": experimental.offline, "crash": false });
             return;
         }
@@ -329,6 +330,8 @@ SilicaWebView
                 Credentials.compile(Database.instance(), stringurl, webview);
                 History.store(stringurl, title);
             }
+
+            browsertab.thumbUpdated = true;
         }
     }
 }

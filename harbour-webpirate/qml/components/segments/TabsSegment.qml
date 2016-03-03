@@ -54,13 +54,10 @@ SilicaListView
     }
 
     delegate: TabListItem {
-        property var tab: tabView.tabAt(model.index)
-
         contentWidth: tabssegment.width
         contentHeight: Theme.itemSizeExtraLarge
         highlighted: model.index === tabView.currentIndex
-        webview: tab ? tab.webView : null
-        labelTitle: tab ? tab.title : ""
+        tab: tabView.tabAt(model.index)
 
         onCloseRequested: tabView.removeTab(model.index)
 
