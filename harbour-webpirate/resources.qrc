@@ -1,10 +1,8 @@
 <RCC>
     <qresource prefix="/">
         <file>harbour-webpirate.png</file>
-        <file>res/quickgrid.png</file>
         <file>res/exit-fullscreen.png</file>
         <file>res/enter-fullscreen.png</file>
-        <file>res/googleplus.png</file>
         <file>res/back.png</file>
         <file>res/forward.png</file>
         <file>res/cookies.png</file>
