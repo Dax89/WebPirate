@@ -21,6 +21,7 @@
 #include "imageproviders/faviconprovider.h"
 #include "favoritesmanager/favoritesmanager.h"
 #include "downloadmanager/downloadmanager.h"
+#include "helper/clipboardhelper.h"
 #include "selector/filesmodel.h"
 
 void pluginenv()
@@ -83,6 +84,7 @@ int main(int argc, char *argv[])
     qmlRegisterType<WebIconDatabase>("harbour.webpirate.WebKit", 1, 0, "WebIconDatabase");
     qmlRegisterType<DownloadManager>("harbour.webpirate.WebKit", 1, 0, "DownloadManager");
 
+    qmlRegisterType<ClipboardHelper>("harbour.webpirate.Helpers", 1, 0, "ClipboardHelper");
     qmlRegisterType<FilesModel>("harbour.webpirate.Selectors", 1, 0, "FilesModel");
     qmlRegisterType<FavoritesManager>("harbour.webpirate.LocalStorage", 1, 0, "FavoritesManager");
 

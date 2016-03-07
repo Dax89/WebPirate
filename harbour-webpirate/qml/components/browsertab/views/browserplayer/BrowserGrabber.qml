@@ -178,7 +178,7 @@ Item
 
                                 onClicked: {
                                     popupmessage.show(qsTr("Link copied to clipboard"));
-                                    Clipboard.text = videourl;
+                                    settings.clipboard.copy(videourl);
                                 }
                             }
                         }

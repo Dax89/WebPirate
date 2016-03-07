@@ -47,7 +47,7 @@ SilicaListView
 
         onPressAndHold: {
             popupmessage.show(qsTr("Link copied to clipboard"));
-            Clipboard.text = url;
+            mainwindow.settings.clipboard.copy(url);
         }
     }
 }

@@ -62,7 +62,8 @@ SOURCES += src/harbour-webpirate.cpp \
     src/network/proxymanager.cpp \
     src/selector/filesmodel.cpp \
     src/selector/filesmodelworker.cpp \
-    src/selector/exif/exif.cpp
+    src/selector/exif/exif.cpp \
+    src/helper/clipboardhelper.cpp
 
 OTHER_FILES += qml/harbour-webpirate.qml \
     rpm/harbour-webpirate.changes.in \
@@ -245,7 +246,8 @@ HEADERS += \
     src/network/proxymanager.h \
     src/selector/filesmodel.h \
     src/selector/filesmodelworker.h \
-    src/selector/exif/exif.h
+    src/selector/exif/exif.h \
+    src/helper/clipboardhelper.h
 
 DISTFILES += \
     qml/components/tabview/jsdialogs/RequestDialog.qml \

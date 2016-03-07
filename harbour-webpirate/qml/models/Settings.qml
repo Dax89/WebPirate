@@ -5,6 +5,7 @@ import harbour.webpirate.DBus 1.0
 import harbour.webpirate.DBus.TransferEngine 1.0
 import harbour.webpirate.DBus.Notifications 1.0
 import harbour.webpirate.AdBlock 1.0
+import harbour.webpirate.Helpers 1.0
 import "cover"
 
 QtObject
@@ -26,6 +27,7 @@ QtObject
     property Notifications notifications: Notifications { }
     property UrlComposer urlcomposer: UrlComposer { }
     property CoverModel coveractions: CoverModel { }
+    property ClipboardHelper clipboard: ClipboardHelper { }
 
     property int searchengine        /* Search Engine Index */
     property int useragent           /* User Agent Index */

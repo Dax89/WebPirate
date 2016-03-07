@@ -37,8 +37,8 @@ SilicaListView
 
     id: tabssegment
     spacing: Theme.paddingSmall
-    clip: true
     model: tabView.tabs
+    clip: true
 
     remove: Transition {
         NumberAnimation { property: "x"; duration: 250; to: tabssegment.width * 2; easing.type: Easing.OutBack }
@@ -55,7 +55,7 @@ SilicaListView
 
     delegate: TabListItem {
         contentWidth: tabssegment.width
-        contentHeight: Theme.itemSizeExtraLarge
+        contentHeight: Theme.itemSizeHuge
         highlighted: model.index === tabView.currentIndex
         tab: tabView.tabAt(model.index)
 

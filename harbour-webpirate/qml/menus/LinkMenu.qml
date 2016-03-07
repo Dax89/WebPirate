@@ -17,7 +17,7 @@ SilicaListView
 
                                              QtObject { readonly property string menuText: qsTr("Copy Link")
                                                         function execute() {
-                                                            Clipboard.text = linkmenu.url;
+                                                            mainwindow.settings.clipboard.copy(linkmenu.url);
                                                             popupmessage.show(qsTr("Link copied to clipboard"));
                                                         }
                                                       },

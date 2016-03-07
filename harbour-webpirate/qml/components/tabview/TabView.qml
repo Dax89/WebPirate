@@ -66,7 +66,8 @@ Item
             }
         }
 
-        var tab = tabComponent.createObject(tabstack.stack, { "tabView": tabview,
+        var tab = tabComponent.createObject(tabstack.stack, { "settings": mainwindow.settings,
+                                                              "tabView": tabview,
                                                               "anchors.fill": tabstack.stack,
                                                               "visible": foreground });
 

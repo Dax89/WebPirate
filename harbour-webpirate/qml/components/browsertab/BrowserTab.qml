@@ -14,6 +14,7 @@ Item
 
     property bool thumbUpdated: true
     property BlockedPopupModel popups: BlockedPopupModel { }
+    property Settings settings
     property TabView tabView
 
     readonly property string title: {

@@ -1,8 +1,10 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
+import "../../models"
 
 Dialog
 {
+    property Settings settings
     property alias text: textarea.text
 
     allowedOrientations: defaultAllowedOrientations
@@ -11,7 +13,7 @@ Dialog
 
     onAccepted: {
         if(!textarea.selectedText.length || (!textarea.selectionStart && (textarea.selectionEnd === textarea.text.length)))
-            Clipboard.text = textarea.text;
+            settings.clipboard.copy(textarea.text);
     }
 
     DialogHeader {
