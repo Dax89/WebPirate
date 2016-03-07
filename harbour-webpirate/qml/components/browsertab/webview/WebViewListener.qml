@@ -29,6 +29,7 @@ Item
                                             "play_youtube": playYouTubeVideo,
                                             "play_dailymotion": playDailyMotionVideo,
                                             "play_vimeo": playVimeoVideo,
+                                            "play_facebook": playFacebookVideo,
                                             "play_jwplayer": playJwPlayer }
 
         id: listenerdispatchers
@@ -172,7 +173,13 @@ Item
             }
         }
 
+        function playFacebookVideo(data) {
+            tabView.navigationBar.solidify();
+            viewstack.push(Qt.resolvedUrl("../views/browserplayer/BrowserPlayer.qml"), "mediaplayer", { "videoThumbnail": data.thumbnail, "videoSource": data.url });
+        }
+
         function playJwPlayer(data) {
+            tabView.navigationBar.solidify();
             viewstack.push(Qt.resolvedUrl("../views/browserplayer/BrowserPlayer.qml"), "mediaplayer", { "videoTitle": data.title, "videoSource": data.url });
         }
 

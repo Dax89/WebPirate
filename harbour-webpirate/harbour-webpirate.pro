@@ -266,4 +266,5 @@ DISTFILES += \
     qml/pages/quickgrid/QuickGridPage.qml \
     qml/pages/settings/popup/NewPopupRulePage.qml \
     qml/pages/settings/popup/PopupManagerPage.qml \
-    qml/pages/popup/PopupBlockerPage.qml
+    qml/pages/popup/PopupBlockerPage.qml \
+    qml/js/helpers/video/FacebookHelper.js

@@ -139,6 +139,7 @@ SilicaWebView
                                 Qt.resolvedUrl("../../../js/helpers/video/YouTubeHelper.js"),
                                 Qt.resolvedUrl("../../../js/helpers/video/DailyMotionHelper.js"),
                                 Qt.resolvedUrl("../../../js/helpers/video/VimeoHelper.js"),
+                                Qt.resolvedUrl("../../../js/helpers/video/FacebookHelper.js"),
                                 Qt.resolvedUrl("../../../js/helpers/video/VideoHelper.js"),
 
                                 /* Video Players */
