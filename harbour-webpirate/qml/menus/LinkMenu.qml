@@ -55,7 +55,7 @@ SilicaListView
     model: linkmenuModel
 
     delegate: ListItem {
-        width: parent.width
+        contentWidth: linkmenu.width
         contentHeight: Theme.itemSizeSmall
 
         Label {

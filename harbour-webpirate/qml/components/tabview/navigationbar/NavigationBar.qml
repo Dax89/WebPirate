@@ -54,7 +54,7 @@ Rectangle
         maximumValue: 100
         value: webView ? webView.loadProgress : 0
         barHeight: navigationbar.height
-        barColor: Theme.highlightDimmerColor
+        barColor: Theme.secondaryHighlightColor
         z: 45
     }
 
@@ -119,7 +119,7 @@ Rectangle
                     var w = parent.width - btntabs.width;
 
                     if(searchMode)
-                        w -= (btnsearchup.width + btnsearchdown.width);
+                        w -= (btnsearchup.width + btnsearchdown.width + btnshare.width);
 
                     return w;
                 }
@@ -192,6 +192,24 @@ Rectangle
 
                 onClicked: webView.experimental.findText(querybar.text, 0xC); /* WebViewExperimental.FindHighlightAllOccurrences |
                                                                                  WebViewExperimental.FindWrapsAroundDocument */
+            }
+
+            NavigationItem
+            {
+                id: btnshare
+                source: "image://theme/icon-m-share"
+                enabled: querybar.searchMode
+                width: navigationbar.contentHeight
+                height: parent.height
+                anchors.verticalCenter: parent.verticalCenter
+                visible: querybar.searchMode
+
+                onClicked: {
+                    querybar.searchMode = false;
+
+                    var tab = tabview.currentTab();
+                    tabviewdialogs.showShareMenu(tab.title, tab.webUrl);
+                }
             }
 
             NavigationItem

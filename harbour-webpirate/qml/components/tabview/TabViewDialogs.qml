@@ -35,6 +35,14 @@ Column
         dialogVisible = true;
     }
 
+    function showShareMenu(title, url) {
+        hideAll();
+
+        sharemenu.share(title, url);
+
+        dialogVisible = true;
+    }
+
     function showAlert(model) {
         hideAll();
 
@@ -157,6 +165,7 @@ Column
     {
         id: sharemenu
         width: parent.width
+        height: (count > 0) ? Math.min(sharemenu.contentHeight, tabcontainer.contentHeight) : 0
     }
 }
 
