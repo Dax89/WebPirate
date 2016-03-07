@@ -3,12 +3,11 @@ import Sailfish.Silica 1.0
 
 Rectangle
 {
-    property real extraHeight: 0
     property bool lockHeight: false
-    readonly property real calculatedHeight: Theme.itemSizeSmall + extraHeight
+    readonly property real contentHeight: Theme.itemSizeSmall
 
     function solidify() {
-        height = calculatedHeight;
+        height = contentHeight;
     }
 
     function evaporate() {
@@ -27,9 +26,9 @@ Rectangle
     PanelBackground { anchors.fill: parent }
 
     id: browserbar
-    height: calculatedHeight
+    height: contentHeight
     visible: height > 0
-    color: Theme.rgba(Theme.highlightDimmerColor, 1.0)
+    color: Theme.highlightDimmerColor
     clip: true
     z: 50
 }

@@ -18,7 +18,6 @@ BrowserBar
     property alias queryBar: querybar
 
     id: navigationbar
-    extraHeight: loadingbar.height
     lockHeight: querybar.searchMode
 
     LoadingBar
@@ -28,6 +27,9 @@ BrowserBar
         minimumValue: 0
         maximumValue: 100
         value: webView ? webView.loadProgress : 0
+        barHeight: navigationbar.height
+        barColor: Theme.highlightDimmerColor
+        z: 45
     }
 
     SilicaFlickable
@@ -38,6 +40,7 @@ BrowserBar
         anchors.fill: parent
         flickableDirection: Flickable.HorizontalFlick
         boundsBehavior: (querybar.searchMode || querybar.editing) ? Flickable.StopAtBounds : Flickable.DragAndOvershootBounds
+        z: 50
 
         onContentXChanged: {
             if(!dragging)
