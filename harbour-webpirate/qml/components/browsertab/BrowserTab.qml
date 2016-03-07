@@ -2,6 +2,7 @@ import QtQuick 2.1
 import Sailfish.Silica 1.0
 import "webview"
 import "../tabview"
+import "../../models"
 import "../../js/UrlHelper.js" as UrlHelper
 import "../../js/settings/Database.js" as Database
 import "../../js/settings/Credentials.js" as Credentials
@@ -12,6 +13,7 @@ Item
     property alias viewStack: viewstack
 
     property bool thumbUpdated: true
+    property BlockedPopupModel popups: BlockedPopupModel { }
     property TabView tabView
 
     readonly property string title: {

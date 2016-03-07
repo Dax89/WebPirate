@@ -180,7 +180,7 @@ Item
             var rule = PopupBlocker.getRule(Database.instance(), data.url);
 
             if(rule === PopupBlocker.NoRule)
-                actionbar.blockedPopups.appendPopup(data.url);
+                browsertab.popups.appendPopup(data.url);
             else if(rule === PopupBlocker.AllowRule)
                 tabview.addTab(data.url);
             /* else if(rule === PopupBlocker.BlockRule)

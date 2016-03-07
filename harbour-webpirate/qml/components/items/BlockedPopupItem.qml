@@ -12,17 +12,19 @@ ListItem
     id: blockedpopupitem
 
     menu: ContextMenu {
-        MenuItem {
+        MenuItem
+        {
             text: qsTr("Allow")
             onClicked: allowPopup()
         }
 
-        MenuItem {
+        MenuItem
+        {
             text: qsTr("Delete")
 
             onClicked: {
                 blockedpopupitem.remorseAction(qsTr("Deleting rule"), function() {
-                    deleteRule();
+                        deleteRule();
                 });
             }
         }
@@ -31,8 +33,9 @@ ListItem
     Label
     {
         id: lblurl
-        anchors { fill: parent; leftMargin: Theme.paddingSmall; rightMargin: Theme.paddingSmall }
+        anchors { fill: parent; leftMargin: Theme.paddingMedium; rightMargin: Theme.paddingMedium }
         horizontalAlignment: Text.AlignLeft
         verticalAlignment: Text.AlignVCenter
+        elide: Text.ElideRight
     }
 }

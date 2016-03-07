@@ -1,8 +1,6 @@
 import QtQuick 2.1
 import QtWebKit 3.0
 import Sailfish.Silica 1.0
-import "../../../js/settings/Favorites.js" as Favorites
-import "../../../js/UrlHelper.js" as UrlHelper
 
 Rectangle
 {
@@ -116,7 +114,7 @@ Rectangle
                 anchors.verticalCenter: parent.verticalCenter
 
                 width: {
-                    var w = parent.width - btntabs.width;
+                    var w = parent.width - btntabs.width - (btnpopups.visible ? btnpopups.width : 0);
 
                     if(searchMode)
                         w -= (btnsearchup.width + btnsearchdown.width + btnshare.width);
@@ -198,7 +196,6 @@ Rectangle
             {
                 id: btnshare
                 source: "image://theme/icon-m-share"
-                enabled: querybar.searchMode
                 width: navigationbar.contentHeight
                 height: parent.height
                 anchors.verticalCenter: parent.verticalCenter
@@ -209,6 +206,41 @@ Rectangle
 
                     var tab = tabview.currentTab();
                     tabviewdialogs.showShareMenu(tab.title, tab.webUrl);
+                }
+            }
+
+            NavigationItem
+            {
+                id: btnpopups
+                source: "qrc:///res/popup.png"
+                width: navigationbar.contentHeight
+                height: parent.height
+                anchors.verticalCenter: parent.verticalCenter
+
+                visible: {
+                    if(querybar.searchMode)
+                        return false;
+
+                    var tab = tabview.currentTab();
+
+                    if(!tab)
+                        return false;
+
+                    return tab.popups.count > 0;
+                }
+
+                onPressAndHold: {
+                    var tab = tabview.currentTab();
+
+                    if(!tab)
+                        return;
+
+                    tab.popups.clear();
+                }
+
+                onClicked: {
+                    var tab = tabview.currentTab();
+                    pageStack.push(Qt.resolvedUrl("../../../pages/popupblocker/PopupBlockerPage.qml"), { "popupModel": tab.popups, "tabView": tabview });
                 }
             }
 

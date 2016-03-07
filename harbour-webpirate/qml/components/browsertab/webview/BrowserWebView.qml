@@ -6,10 +6,12 @@ import "../../../js/settings/Database.js" as Database
 import "../../../js/settings/Credentials.js" as Credentials
 import "../../../js/settings/History.js" as History
 import "../../../js/settings/UserAgents.js" as UserAgents
+import "../../../js/settings/Favorites.js" as Favorites
 
 SilicaWebView
 {
     property string lockDownloadAction
+    property bool favorite: false
     property bool nightModeEnabled: false /* Check if Night Mode is visually active      */
     property bool lockDownload: false     /* Manage Download Requests in a different way */
     property int itemSelectorIndex: -1    /* Keeps the selected index of ItemSelector    */
@@ -46,14 +48,25 @@ SilicaWebView
 
         MenuItem
         {
-            text: qsTr("Duplicate Tab")
-            onClicked: tabView.addTab(webview.url.toString(), false, tabView.currentIndex + 1);
+            text: webview.favorite ? qsTr("Remove from Favorites") : qsTr("Add to Favorites")
+            visible: !webview.loading
+
+            onClicked: {
+                if(webview.favorite) {
+                    Favorites.removeFromUrl(browsertab.webUrl);
+                    webview.favorite = false;
+                    return;
+                }
+
+                Favorites.addUrl(browsertab.title, browsertab.webUrl, 0);
+                webview.favorite = true;
+            }
         }
 
         MenuItem
         {
-            text: qsTr("Refresh")
-            onClicked: webview.reload()
+            text: webview.loading ? qsTr("Stop") : qsTr("Refresh")
+            onClicked: webview.loading ? webview.stop() : webview.reload()
         }
 
         MenuItem
@@ -214,10 +227,7 @@ SilicaWebView
 
     experimental.onMessageReceived: listener.execute(message)
     experimental.onPermissionRequested: tabView.dialogs.showNotification(webview.url.toString(), browsertab)
-
-    experimental.onProcessDidCrash: {
-        viewstack.push(Qt.resolvedUrl("../views/LoadFailed.qml"), "loaderror", { "errorString": webview.url, "offline": experimental.offline, "crash": true });
-    }
+    experimental.onProcessDidCrash: viewstack.push(Qt.resolvedUrl("../views/LoadFailed.qml"), "loaderror", { "errorString": webview.url, "offline": experimental.offline, "crash": true });
 
     experimental.onDownloadRequested: {
         var mime = mainwindow.settings.mimedatabase.mimeFromUrl(downloadItem.url);
@@ -265,8 +275,7 @@ SilicaWebView
         var stringurl = request.url.toString();
         var protocol = UrlHelper.protocol(stringurl);
 
-        if(urlschemedelegatehandler.handleProtocol(protocol, request.url))
-        {
+        if(urlschemedelegatehandler.handleProtocol(protocol, request.url)) {
             request.action = WebView.IgnoreRequest;
             return;
         }
@@ -274,8 +283,7 @@ SilicaWebView
         if(((protocol !== "http") && (protocol !== "https")) || UrlHelper.isSpecialUrl(stringurl) || (request.navigationType === WebView.FormSubmittedNavigation))
             return;
 
-        if(request.navigationType === WebView.FormResubmittedNavigation)
-        {
+        if(request.navigationType === WebView.FormResubmittedNavigation) {
             request.action = WebView.IgnoreRequest;
             tabView.dialogs.showFormResubmit(stringurl, browsertab);
             return;
@@ -288,13 +296,10 @@ SilicaWebView
     }
 
     onLoadingChanged: {
-        if(loadRequest.status === WebView.LoadStartedStatus)
-        {
-            if(browsertab.state === "loaderror")
-            {
+        if(loadRequest.status === WebView.LoadStartedStatus) {
+            if(browsertab.state === "loaderror") {
                 viewstack.pop(); // Pop out error page
                 browsertab.state == "webview";
-
             }
 
             if(visible) {
@@ -303,23 +308,22 @@ SilicaWebView
                 Qt.inputMethod.hide();
             }
 
+            browsertab.popups.clear();
             webview.nightModeEnabled = false;
             return;
         }
 
-        if(loadRequest.status === WebView.LoadFailedStatus)
-        {
+        if(loadRequest.status === WebView.LoadFailedStatus) {
             browsertab.thumbUpdated = true;
             viewstack.push(Qt.resolvedUrl("../views/LoadFailed.qml"), "loaderror", { "errorString": loadRequest.errorString, "offline": experimental.offline, "crash": false });
             return;
         }
 
-        if(loadRequest.status === WebView.LoadSucceededStatus)
-        {
+        if(loadRequest.status === WebView.LoadSucceededStatus) {
             var stringurl = url.toString();
+            webview.favorite = Favorites.contains(stringurl);
 
-            if(!UrlHelper.isSpecialUrl(stringurl) && UrlHelper.isUrl(stringurl))
-            {
+            if(!UrlHelper.isSpecialUrl(stringurl) && UrlHelper.isUrl(stringurl)) {
                 experimental.postMessage("forcepixelratio");
                 experimental.postMessage("polish_view");
                 experimental.postMessage("video_get");

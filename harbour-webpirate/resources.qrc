@@ -18,6 +18,6 @@
         <file>res/proxy.png</file>
         <file>res/quickgrid.png</file>
         <file>res/loaderror_white.png</file>
-        <file>res/closedtabs.png</file>
+        <file>res/popup.png</file>
     </qresource>
 </RCC>

@@ -271,15 +271,23 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Duplicate Tab</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Refresh</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <source>New tab</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Remove from Favorites</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Add to Favorites</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Stop</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
