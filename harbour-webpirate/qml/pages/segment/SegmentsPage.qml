@@ -62,13 +62,13 @@ Page
 
             id: bottompanel
             anchors { left: parent.left; bottom: parent.bottom; right: parent.right }
-            height: Theme.itemSizeSmall + Theme.paddingSmall
+            height: (segmentspage.isPortrait ? Theme.itemSizeSmall : Theme.itemSizeExtraSmall) + Theme.paddingSmall
 
             SilicaListView
             {
                 id: lvsections
                 anchors { left: parent.left; bottom: selectionrect.bottom; right: parent.right }
-                height: Theme.itemSizeSmall
+                height: bottompanel.height
                 clip: true
                 orientation: ListView.Horizontal
                 currentIndex: 0
@@ -76,7 +76,7 @@ Page
 
                 delegate: ListItem {
                     width: bottompanel.itemWidth
-                    contentHeight: Theme.itemSizeSmall
+                    contentHeight: bottompanel.height
 
                     onClicked: {
                         if(loader.item)

@@ -49,7 +49,7 @@ ListItem
 
         id: content
         x: defaultX
-        width: (Screen.width - (2 * Theme.paddingMedium)) - (highlighted ? 0 : Theme.paddingLarge * 2)
+        width: Screen.width
         height: parent.height
 
         Behavior on x {
@@ -58,9 +58,10 @@ ListItem
 
         Rectangle
         {
+            id: specialthumb
             anchors { left: parent.left; top: parent.top; right: parent.right; bottom: lbltitle.top }
             visible: tab && (tab.state !== "webview")
-            color: Theme.secondaryHighlightColor
+            color: highlighted ? Theme.secondaryHighlightColor : "gray"
 
             Image
             {
@@ -114,6 +115,15 @@ ListItem
             anchors { left: parent.left; top: parent.top; right: parent.right; bottom: lbltitle.top }
             sourceRect: Qt.rect(0, Theme.paddingSmall, content.width, content.height)
             visible: tab && (tab.state === "webview")
+            recursive: highlighted
+        }
+
+        Desaturate
+        {
+            anchors { left: parent.left; top: parent.top; right: parent.right; bottom: lbltitle.top }
+            source: thumb
+            desaturation: highlighted ? 0.0 : 1.0
+            visible: tab && (tab.state === "webview")
         }
 
         LinearGradient
@@ -136,7 +146,7 @@ ListItem
             verticalAlignment: Text.AlignVCenter
             horizontalAlignment: Text.AlignLeft
             font.family: Theme.fontFamilyHeading
-            font.pixelSize: Theme.fontSizeTiny
+            font.pixelSize: Theme.fontSizeExtraSmall
             color: highlighted ? Theme.highlightColor : Theme.primaryColor
             font.bold: highlighted
             elide: Text.ElideRight

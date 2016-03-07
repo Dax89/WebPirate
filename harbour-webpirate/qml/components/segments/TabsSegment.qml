@@ -36,7 +36,7 @@ SilicaListView
     }
 
     id: tabssegment
-    spacing: Theme.paddingMedium
+    spacing: Theme.paddingSmall
     clip: true
     model: tabView.tabs
 
