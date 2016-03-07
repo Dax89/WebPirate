@@ -3,9 +3,13 @@ var __wp_facebookhelper__ = {
 
     grabVideo: function(fbvideoelement) {
         var videothumb = fbvideoelement.querySelector("i[class*='img']");
+
+        if(!videothumb)
+            return;
+
         var videoobj = JSON.parse(fbvideoelement.getAttribute("data-store"));
 
-        if(!videoobj.hasOwnProperty("videoID") || !videoobj.hasOwnProperty("src"))
+        if(!videothumb || !videoobj.hasOwnProperty("videoID") || !videoobj.hasOwnProperty("src"))
             return;
 
         var fbinfo = new Object;
