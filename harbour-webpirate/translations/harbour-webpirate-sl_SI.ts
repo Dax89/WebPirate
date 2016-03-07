@@ -1077,37 +1077,6 @@
     </message>
 </context>
 <context>
-    <name>SegmentsModel</name>
-    <message>
-        <source>Tabs</source>
-        <translation type="unfinished">Zavihki</translation>
-    </message>
-    <message>
-        <source>Closed Tabs</source>
-        <translation type="unfinished">Zaprti zavihki</translation>
-    </message>
-    <message>
-        <source>Sessions</source>
-        <translation type="unfinished">Seje</translation>
-    </message>
-    <message>
-        <source>Cookie</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>History</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Downloads</source>
-        <translation type="unfinished">Prenosi</translation>
-    </message>
-    <message>
-        <source>Favorites</source>
-        <translation type="unfinished">Zaznamki</translation>
-    </message>
-</context>
-<context>
     <name>SelectorFilesPage</name>
     <message>
         <source>Android storage</source>

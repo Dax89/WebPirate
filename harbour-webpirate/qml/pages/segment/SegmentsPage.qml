@@ -75,8 +75,6 @@ Page
                 model: segmentsmodel.elements
 
                 delegate: ListItem {
-                    readonly property string text: model.text
-
                     width: bottompanel.itemWidth
                     contentHeight: Theme.itemSizeSmall
 
@@ -91,21 +89,11 @@ Page
                     Image {
                         id: img
                         source: model.icon
-                        width: Theme.iconSizeSmall
-                        height: Theme.iconSizeSmall
+                        width: Theme.iconSizeMedium
+                        height: Theme.iconSizeMedium
                         fillMode: Image.PreserveAspectFit
                         asynchronous: true
-                        anchors { top: parent.top; horizontalCenter: parent.horizontalCenter; topMargin: Theme.paddingSmall }
-                    }
-
-                    Label {
-                        anchors { left: parent.left; right: parent.right; top: img.bottom; bottom: parent.bottom; topMargin: Theme.paddingSmall }
-                        font.pixelSize: Theme.fontSizeTiny
-                        wrapMode: Text.Wrap
-                        verticalAlignment: Text.AlignVCenter
-                        horizontalAlignment: Text.AlignHCenter
-                        elide: Text.ElideRight
-                        text: model.text
+                        anchors.centerIn: parent
                     }
                 }
             }

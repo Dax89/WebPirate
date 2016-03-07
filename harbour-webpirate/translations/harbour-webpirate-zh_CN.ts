@@ -1077,37 +1077,6 @@
     </message>
 </context>
 <context>
-    <name>SegmentsModel</name>
-    <message>
-        <source>Tabs</source>
-        <translation type="unfinished">标签</translation>
-    </message>
-    <message>
-        <source>Closed Tabs</source>
-        <translation type="unfinished">已关闭的标签页</translation>
-    </message>
-    <message>
-        <source>Sessions</source>
-        <translation type="unfinished">会话</translation>
-    </message>
-    <message>
-        <source>Cookie</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>History</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Downloads</source>
-        <translation type="unfinished">下载</translation>
-    </message>
-    <message>
-        <source>Favorites</source>
-        <translation type="unfinished">书签</translation>
-    </message>
-</context>
-<context>
     <name>SelectorFilesPage</name>
     <message>
         <source>Android storage</source>

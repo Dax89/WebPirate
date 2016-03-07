@@ -12,30 +12,23 @@ Item
     readonly property int cookieSegment: 6
 
     property list<QtObject> elements: [ QtObject { readonly property int segment: tabsSegment
-                                                   readonly property string icon: "image://theme/icon-m-tabs"
-                                                   readonly property string text: qsTr("Tabs") },
+                                                   readonly property string icon: "image://theme/icon-m-tabs" },
 
                                         QtObject { readonly property int segment: closedTabsSegment
-                                                   readonly property string icon: "qrc:///res/closedtabs.png"
-                                                   readonly property string text: qsTr("Closed Tabs") },
+                                                   readonly property string icon: "image://theme/icon-m-close" },
 
                                         QtObject { readonly property int segment: favoritesSegment
-                                                   readonly property string icon: "image://theme/icon-s-favorite"
-                                                   readonly property string text: qsTr("Favorites") },
+                                                   readonly property string icon: "image://theme/icon-m-favorite-selected" },
 
                                         QtObject { readonly property int segment: downloadsSegment
-                                                   readonly property string icon: "qrc:///res/download.png"
-                                                   readonly property string text: qsTr("Downloads") },
+                                                   readonly property string icon: "image://theme/icon-m-cloud-download" },
 
                                         QtObject { readonly property int segment: sessionsSegment
-                                                   readonly property string icon: "image://theme/icon-s-group-chat"
-                                                   readonly property string text: qsTr("Sessions") },
+                                                   readonly property string icon: "image://theme/icon-m-levels" },
 
                                         QtObject { readonly property int segment: historySegment
-                                                   readonly property string icon: "image://theme/icon-s-time"
-                                                   readonly property string text: qsTr("History") },
+                                                   readonly property string icon: "image://theme/icon-m-time-date" },
 
                                         QtObject { readonly property int segment: cookieSegment
-                                                   readonly property string icon: "qrc:///res/cookies.png"
-                                                   readonly property string text: qsTr("Cookie") } ]
+                                                   readonly property string icon: "qrc:///res/cookies.png" } ]
 }
