@@ -240,7 +240,7 @@ Rectangle
 
                 onClicked: {
                     var tab = tabview.currentTab();
-                    pageStack.push(Qt.resolvedUrl("../../../pages/popupblocker/PopupBlockerPage.qml"), { "popupModel": tab.popups, "tabView": tabview });
+                    pageStack.push(Qt.resolvedUrl("../../../pages/popup/PopupBlockerPage.qml"), { "popupModel": tab.popups, "tabView": tabview });
                 }
             }
 

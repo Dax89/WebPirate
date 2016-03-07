@@ -81,8 +81,8 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/models/Settings.qml \
     qml/models/FavoritesModel.qml \
     qml/js/helpers/WebViewHelper.js \
-    qml/pages/searchengine/SearchEnginesPage.qml \
-    qml/pages/searchengine/SearchEnginePage.qml \
+    qml/pages/settings/searchengine/SearchEnginesPage.qml \
+    qml/pages/settings/searchengine/SearchEnginePage.qml \
     qml/models/SearchEngineModel.qml \
     qml/js/settings/Credentials.js \
     qml/components/items/DownloadListItem.qml \
@@ -113,17 +113,14 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     adblock.css \
     adblock.table \
     qml/components/browsertab/webview/WebViewListener.qml \
-    qml/pages/popupblocker/PopupBlockerPage.qml \
     qml/models/HistoryModel.qml \
     qml/components/items/NavigationHistoryItem.qml \
     qml/models/ClosedTabsModel.qml \
     qml/js/settings/PopupBlocker.js \
     qml/models/BlockedPopupModel.qml \
     qml/models/PopupModel.qml \
-    qml/pages/popupblocker/PopupManagerPage.qml \
     qml/components/items/PopupItem.qml \
     qml/components/items/BlockedPopupItem.qml \
-    qml/pages/popupblocker/NewPopupRulePage.qml \
     qml/js/helpers/MessageListener.js \
     qml/components/browsertab/ViewStack.qml \
     qml/components/browsertab/views/browserplayer/BrowserPlayer.qml \
@@ -264,4 +261,7 @@ DISTFILES += \
     qml/menus/LinkMenu.qml \
     qml/menus/ShareMenu.qml \
     qml/pages/settings/AboutPage.qml \
-    qml/pages/quickgrid/QuickGridPage.qml
+    qml/pages/quickgrid/QuickGridPage.qml \
+    qml/pages/settings/popup/NewPopupRulePage.qml \
+    qml/pages/settings/popup/PopupManagerPage.qml \
+    qml/pages/popup/PopupBlockerPage.qml

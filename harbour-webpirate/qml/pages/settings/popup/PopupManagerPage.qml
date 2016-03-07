@@ -1,10 +1,10 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
-import "../../models"
-import "../../components/items"
-import "../../js/UrlHelper.js" as UrlHelper
-import "../../js/settings/Database.js" as Database
-import "../../js/settings/PopupBlocker.js" as PopupBlocker
+import "../../../models"
+import "../../../components/items"
+import "../../../js/UrlHelper.js" as UrlHelper
+import "../../../js/settings/Database.js" as Database
+import "../../../js/settings/PopupBlocker.js" as PopupBlocker
 
 Page
 {
@@ -12,7 +12,13 @@ Page
 
     id: popupmanagerpage
     allowedOrientations: defaultAllowedOrientations
-    Component.onCompleted: PopupBlocker.fetchAll(Database.instance(), popupmodel)
+
+    onStatusChanged: {
+        if((status !== PageStatus.Active) || popupmodel.count !== 0)
+            return;
+
+        PopupBlocker.fetchAll(Database.instance(), popupmodel);
+    }
 
     RemorsePopup { id: remorsepopup }
 

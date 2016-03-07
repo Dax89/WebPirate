@@ -1208,6 +1208,10 @@
         <source>Proxy</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Popup Blocker</source>
+        <translation type="unfinished">Bloqueador de popup</translation>
+    </message>
 </context>
 <context>
     <name>TabClosedItem</name>

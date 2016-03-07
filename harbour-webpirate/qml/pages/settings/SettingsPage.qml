@@ -81,6 +81,15 @@ Page
             {
                 width: parent.width
                 height: Theme.itemSizeSmall
+                icon: "qrc:///res/popup.png"
+                text: qsTr("Popup Blocker")
+                onActionRequested: pageStack.push(Qt.resolvedUrl("popup/PopupManagerPage.qml"));
+            }
+
+            SettingLabel
+            {
+                width: parent.width
+                height: Theme.itemSizeSmall
                 icon: "qrc:///res/adblock.png"
                 text: qsTr("AdBlock")
                 onActionRequested: pageStack.push(Qt.resolvedUrl("adblock/AdBlockPage.qml"), { "settings": settingspage.settings });
