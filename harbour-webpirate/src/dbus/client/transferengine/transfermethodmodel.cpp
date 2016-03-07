@@ -45,6 +45,8 @@ void TransferMethodModel::updateMethods()
 {
     if(!this->_filter.isEmpty())
     {
+        this->_methods.clear();
+
         QList<TransferMethodInfo> methods = this->_transferengine->transferMethods();
 
         foreach(TransferMethodInfo method, methods)
@@ -58,7 +60,7 @@ void TransferMethodModel::updateMethods()
     else
         this->_methods = this->_transferengine->transferMethods();
 
-    this->beginInsertRows(QModelIndex(), 0, this->_filter.count() - 1);
+    this->beginInsertRows(QModelIndex(), 0, this->_methods.count() - 1);
     this->endInsertRows();
 }
 
