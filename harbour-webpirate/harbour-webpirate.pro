@@ -113,7 +113,6 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     adblock.css \
     adblock.table \
     qml/components/browsertab/webview/WebViewListener.qml \
-    qml/components/tabview/navigationbar/BrowserBar.qml \
     qml/pages/popupblocker/PopupBlockerPage.qml \
     qml/models/HistoryModel.qml \
     qml/components/items/NavigationHistoryItem.qml \

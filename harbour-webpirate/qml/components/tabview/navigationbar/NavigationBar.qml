@@ -4,8 +4,12 @@ import Sailfish.Silica 1.0
 import "../../../js/settings/Favorites.js" as Favorites
 import "../../../js/UrlHelper.js" as UrlHelper
 
-BrowserBar
+Rectangle
 {
+    property alias queryBar: querybar
+    readonly property real contentHeight: Theme.itemSizeSmall
+    readonly property bool lockHeight: querybar.searchMode
+
     readonly property WebView webView: {
         var currenttab = tabview.currentTab();
 
@@ -15,10 +19,32 @@ BrowserBar
         return currenttab.webView;
     }
 
-    property alias queryBar: querybar
+
+    function solidify() {
+        height = contentHeight;
+    }
+
+    function evaporate() {
+        if(lockHeight) { // Disallow evaporation
+            solidify();
+            return;
+        }
+
+        height = 0;
+    }
+
+    Behavior on height {
+        PropertyAnimation { duration: 250; easing.type: Easing.Linear }
+    }
 
     id: navigationbar
-    lockHeight: querybar.searchMode
+    height: contentHeight
+    color: Theme.highlightDimmerColor
+    visible: height > 0
+    clip: true
+    z: 50
+
+    PanelBackground { anchors.fill: parent }
 
     LoadingBar
     {
@@ -143,7 +169,7 @@ BrowserBar
                 id: btnsearchup
                 source: "image://theme/icon-m-enter-close"
                 enabled: querybar.searchMode && (querybar.text.length > 0)
-                width: parent.height
+                width: navigationbar.contentHeight
                 height: parent.height
                 anchors.verticalCenter: parent.verticalCenter
                 rotation: 180
@@ -159,7 +185,7 @@ BrowserBar
                 id: btnsearchdown
                 source: "image://theme/icon-m-enter-close"
                 enabled: querybar.searchMode && (querybar.text.length > 0)
-                width: parent.height
+                width: navigationbar.contentHeight
                 height: parent.height
                 anchors.verticalCenter: parent.verticalCenter
                 visible: querybar.searchMode
@@ -171,7 +197,7 @@ BrowserBar
             NavigationItem
             {
                 id: btntabs
-                width: parent.height
+                width: navigationbar.contentHeight
                 height: parent.height
                 anchors.verticalCenter: parent.verticalCenter
                 source: querybar.searchMode ? "image://theme/icon-close-app" : "image://theme/icon-m-tabs"
