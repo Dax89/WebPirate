@@ -8,11 +8,12 @@ var __wp_grabberbuilder__ = {
         if(!element)
             return null;
 
+        var date = Date.now();
         var rect = element.getBoundingClientRect();
         __wp_grabberbuilder__.cleanElement(element);
 
         var player = document.createElement("DIV");
-        player.id = "__wp_" + playername + "_player__";
+        player.id = "__wp_" + playername + "_player" + date + "__";
 
         if(backgroundimage) {
             player.style.backgroundImage = "url(" + backgroundimage + ")";
@@ -27,7 +28,7 @@ var __wp_grabberbuilder__ = {
         player.style.height = rect.height + "px";
 
         var btnplay = document.createElement("A");
-        btnplay.id = "__wp_" + playername + "_playbutton__";
+        btnplay.id = "__wp_" + playername + "_playbutton" + date + "__";
         btnplay.href = "#";
         btnplay.setAttribute("onclick", clickevent + "; return false;");
         btnplay.style.display = "block";
