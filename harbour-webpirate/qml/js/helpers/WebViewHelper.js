@@ -162,7 +162,7 @@ var __webpirate__ = {
             data.type = "lock_download";
             data.action = "mediaplayer";
         }
-        else if(target.hasAttribute("target") && target.href)
+        else if(target.hasAttribute("target") && (target.getAttribute("target") === "_blank") && target.href)
         {
             data.type = target.hasChildNodes() ? "loadurl" : "newtab";
             data.url = target.href;
