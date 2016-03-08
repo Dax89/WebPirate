@@ -1237,6 +1237,26 @@
         <source>Load error</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Copy link</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Link copied to clipboard</source>
+        <translation type="unfinished">链接已复制到剪贴板</translation>
+    </message>
+    <message>
+        <source>Save page</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Downloading web page</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Duplicate tab</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>TabsSegment</name>

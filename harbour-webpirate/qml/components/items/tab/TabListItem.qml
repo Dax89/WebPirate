@@ -18,8 +18,9 @@ ListItem
         tab.thumbUpdated = false;
     }
 
-    id: tabgriditem
+    id: tablistitem
     _showPress: false
+    showMenuOnPressAndHold: tab && (tab.state === "webview")
     onVisibleChanged: update()
 
     drag.target: content
@@ -35,6 +36,32 @@ ListItem
             closeRequested();
 
         content.x = content.defaultX;
+    }
+
+    menu: ContextMenu {
+        MenuItem {
+            text: qsTr("Copy link")
+
+            onClicked: {
+                popupmessage.show(qsTr("Link copied to clipboard"));
+                settings.clipboard.copy(tab.webUrl);
+            }
+        }
+
+        MenuItem {
+            text: qsTr("Save page")
+
+            onClicked: {
+                tablistitem.remorseAction(qsTr("Downloading web page"), function () {
+                    tab.webView.experimental.evaluateJavaScript("(function() { return document.documentElement.innerHTML; })()",
+                                                                function(result) { settings.downloadmanager.createDownloadFromPage(result); }) });
+            }
+        }
+
+        MenuItem {
+            text: qsTr("Duplicate tab")
+            onClicked: tabView.addTab(tabWebUrl, false, model.index + 1);
+        }
     }
 
     Connections

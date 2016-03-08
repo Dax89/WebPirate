@@ -1,6 +1,7 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
 import "../../models"
+import "../../components"
 import "../../components/tabview"
 import "../../components/segments"
 
@@ -38,79 +39,80 @@ Page
 
     SegmentsModel { id: segmentsmodel }
 
-    Item
+    PopupMessage
     {
-        anchors.fill: parent
+        id: popupmessage
+        anchors { left: parent.left; top: parent.top; right: parent.right }
+    }
 
-        Loader
+    Loader
+    {
+        id: loader
+        asynchronous: true
+        anchors { left: parent.left; top: parent.top; right: parent.right; bottom: bottompanel.top }
+
+        onItemChanged: {
+            if(!loader.item)
+                return;
+
+            loader.item.load();
+        }
+    }
+
+    PanelBackground
+    {
+        readonly property real itemWidth: bottompanel.width / 5
+
+        id: bottompanel
+        anchors { left: parent.left; bottom: parent.bottom; right: parent.right }
+        height: (segmentspage.isPortrait ? Theme.itemSizeSmall : Theme.itemSizeExtraSmall) + Theme.paddingSmall
+
+        SilicaListView
         {
-            id: loader
-            asynchronous: true
-            anchors { left: parent.left; top: parent.top; right: parent.right; bottom: bottompanel.top }
+            id: lvsections
+            anchors { left: parent.left; bottom: selectionrect.bottom; right: parent.right }
+            height: bottompanel.height
+            clip: true
+            orientation: ListView.Horizontal
+            currentIndex: 0
+            model: segmentsmodel.elements
 
-            onItemChanged: {
-                if(!loader.item)
-                    return;
+            delegate: ListItem {
+                width: bottompanel.itemWidth
+                contentHeight: bottompanel.height
 
-                loader.item.load();
+                onClicked: {
+                    if(loader.item)
+                        loader.item.unload();
+
+                    segmentspage.currentSegment = model.segment;
+                    lvsections.currentIndex = model.index;
+                }
+
+                Image {
+                    id: img
+                    source: model.icon
+                    width: Theme.iconSizeMedium
+                    height: Theme.iconSizeMedium
+                    fillMode: Image.PreserveAspectFit
+                    asynchronous: true
+                    anchors.centerIn: parent
+                }
             }
         }
 
-        PanelBackground
+        Rectangle
         {
-            readonly property real itemWidth: bottompanel.width / 5
-
-            id: bottompanel
-            anchors { left: parent.left; bottom: parent.bottom; right: parent.right }
-            height: (segmentspage.isPortrait ? Theme.itemSizeSmall : Theme.itemSizeExtraSmall) + Theme.paddingSmall
-
-            SilicaListView
-            {
-                id: lvsections
-                anchors { left: parent.left; bottom: selectionrect.bottom; right: parent.right }
-                height: bottompanel.height
-                clip: true
-                orientation: ListView.Horizontal
-                currentIndex: 0
-                model: segmentsmodel.elements
-
-                delegate: ListItem {
-                    width: bottompanel.itemWidth
-                    contentHeight: bottompanel.height
-
-                    onClicked: {
-                        if(loader.item)
-                            loader.item.unload();
-
-                        segmentspage.currentSegment = model.segment;
-                        lvsections.currentIndex = model.index;
-                    }
-
-                    Image {
-                        id: img
-                        source: model.icon
-                        width: Theme.iconSizeMedium
-                        height: Theme.iconSizeMedium
-                        fillMode: Image.PreserveAspectFit
-                        asynchronous: true
-                        anchors.centerIn: parent
-                    }
-                }
+            Behavior on x {
+                NumberAnimation { duration: lvsections.moving ? 0 : 100; easing.type: Easing.Linear }
             }
 
-            Rectangle
-            {
-                Behavior on x {
-                    NumberAnimation { duration: lvsections.moving ? 0 : 100; easing.type: Easing.Linear }
-                }
-
-                id: selectionrect
-                x: lvsections.currentItem ? (lvsections.currentItem.x - lvsections.contentX) : 0
-                anchors.bottom: parent.bottom
-                height: Theme.paddingSmall
-                width: bottompanel.itemWidth
-                color: Theme.highlightColor
-            }
+            id: selectionrect
+            x: lvsections.currentItem ? (lvsections.currentItem.x - lvsections.contentX) : 0
+            anchors.bottom: parent.bottom
+            height: Theme.paddingSmall
+            width: bottompanel.itemWidth
+            color: Theme.highlightColor
         }
     }
 }
