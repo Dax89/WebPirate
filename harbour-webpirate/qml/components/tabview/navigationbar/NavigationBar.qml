@@ -58,6 +58,7 @@ Rectangle
 
     SilicaFlickable
     {
+        property QtObject ngfeffect
         property Item selectedItem: null
 
         id: content
@@ -66,16 +67,32 @@ Rectangle
         boundsBehavior: (querybar.searchMode || querybar.editing) ? Flickable.StopAtBounds : Flickable.DragAndOvershootBounds
         z: 50
 
+        Component.onCompleted: {
+            ngfeffect = Qt.createQmlObject("import org.nemomobile.ngf 1.0; NonGraphicalFeedback { event: 'pulldown_highlight' }", content, 'NonGraphicalFeedback');
+        }
+
         onContentXChanged: {
             if(!dragging)
                 return;
 
-            if(niback.visible && (contentX < (-niback.width + Theme.paddingSmall)))
+            if(niback.visible && (contentX < (-niback.width + Theme.paddingSmall))) {
+                if(selectedItem !== niback)
+                    ngfeffect.play();
+
                 selectedItem = niback;
-            else if(niforward.visible && ((contentX + width) > ((niforward.x + niforward.width) - Theme.paddingSmall)))
+            }
+            else if(niforward.visible && ((contentX + width) > ((niforward.x + niforward.width) - Theme.paddingSmall))) {
+                if(selectedItem !== niforward)
+                    ngfeffect.play();
+
                 selectedItem = niforward;
-            else
+            }
+            else {
+                if(selectedItem)
+                    ngfeffect.play();
+
                 selectedItem = null;
+            }
         }
 
         onDraggingChanged: {
