@@ -295,11 +295,11 @@
     <name>ClosedTabsSegment</name>
     <message>
         <source>Closed Tabs</source>
-        <translation type="unfinished">Pestanyes tancades</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete Closed Tabs</source>
-        <translation type="unfinished">Elimina les pestanyes tancades</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -355,7 +355,7 @@
     <name>CookiesSegment</name>
     <message>
         <source>Cookie Manager</source>
-        <translation type="unfinished">Gestor de galetes</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Filter</source>
@@ -363,7 +363,7 @@
     </message>
     <message>
         <source>Remove All Cookies</source>
-        <translation type="unfinished">Elimina totes les galetes</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Add Cookie</source>
@@ -496,15 +496,15 @@
     <name>DownloadsSegment</name>
     <message>
         <source>Delete completed Downloads</source>
-        <translation type="unfinished">Elimina les descàrregues completades</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation type="unfinished">Descàrregues</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Download Url</source>
-        <translation type="unfinished">Descarrega l&apos;Url</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Start</source>
@@ -542,15 +542,15 @@
     </message>
     <message>
         <source>Deleting Folder</source>
-        <translation type="unfinished">S&apos;està eliminant la carpeta</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Deleting Favorite</source>
-        <translation type="unfinished">S&apos;està eliminant el preferit</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Add to Quick Grid</source>
-        <translation type="unfinished">Afegeix a la reixeta ràpida</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -591,42 +591,42 @@
     <name>FavoritesMenu</name>
     <message>
         <source>Export</source>
-        <translation type="unfinished">Exporta</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Exporting favorites</source>
-        <translation type="unfinished">S&apos;estan exportant els preferits</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished">Preferits</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Favorites exported successfully</source>
-        <translation type="unfinished">S&apos;han exportat els preferits correctament</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Import</source>
-        <translation type="unfinished">Importa</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Import in</source>
-        <translation type="unfinished">Importa a</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Add Folder</source>
-        <translation type="unfinished">Afegeix una carpeta</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Add Favorite</source>
-        <translation type="unfinished">Afegeix un preferit</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>FavoritesSegment</name>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished">Preferits</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Back</source>
@@ -634,11 +634,11 @@
     </message>
     <message>
         <source>Favorites imported successfully</source>
-        <translation type="unfinished">S&apos;han importat els preferits correctament</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Cannot import favorites</source>
-        <translation type="unfinished">No s&apos;han pogut importar els preferits</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -698,7 +698,7 @@
     </message>
     <message>
         <source>Delete History</source>
-        <translation type="unfinished">Elimina l&apos;historial</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -922,27 +922,27 @@
     <name>ProxySettingsPage</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Desa</translation>
+        <translation>Desa</translation>
     </message>
     <message>
         <source>Proxy Disabled</source>
-        <translation type="unfinished"></translation>
+        <translation>Proxy deshabilitat</translation>
     </message>
     <message>
         <source>You need to restart WebPirate</source>
-        <translation type="unfinished"></translation>
+        <translation>Cal reiniciar WebPirate</translation>
     </message>
     <message>
         <source>Proxy Settings (Restart needed)</source>
-        <translation type="unfinished"></translation>
+        <translation>Configuració Proxy (requereix reiniciar)</translation>
     </message>
     <message>
         <source>Host or Ip Address</source>
-        <translation type="unfinished"></translation>
+        <translation>Host o adreça IP</translation>
     </message>
     <message>
         <source>Port</source>
-        <translation type="unfinished"></translation>
+        <translation>Port</translation>
     </message>
 </context>
 <context>
@@ -1092,11 +1092,11 @@
     </message>
     <message>
         <source>SD Card</source>
-        <translation type="unfinished">Targeta SD</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Home</source>
-        <translation type="unfinished">Pàgina d&apos;inici</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Send %1 file(s)</source>
@@ -1138,7 +1138,7 @@
     <name>SessionsSegment</name>
     <message>
         <source>Sessions</source>
-        <translation type="unfinished">Sessions</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>No Sessions</source>
@@ -1146,11 +1146,11 @@
     </message>
     <message>
         <source>Save current session</source>
-        <translation type="unfinished">Desa la sessió actual</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Tabs saved</source>
-        <translation type="unfinished">Pestanyes desades</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Open</source>
@@ -1166,7 +1166,7 @@
     </message>
     <message>
         <source>Deleting session</source>
-        <translation type="unfinished">S&apos;està eliminant la sessió</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Loads at startup</source>
@@ -1205,7 +1205,7 @@
     </message>
     <message>
         <source>Proxy</source>
-        <translation type="unfinished"></translation>
+        <translation>Proxy</translation>
     </message>
     <message>
         <source>Popup Blocker</source>
@@ -1224,7 +1224,7 @@
     </message>
     <message>
         <source>Deleting Tab</source>
-        <translation type="unfinished">S&apos;està eliminant la pestanya</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

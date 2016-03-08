@@ -299,7 +299,7 @@
     </message>
     <message>
         <source>Delete Closed Tabs</source>
-        <translation type="unfinished">Poista suljetut välilehdet</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -355,7 +355,7 @@
     <name>CookiesSegment</name>
     <message>
         <source>Cookie Manager</source>
-        <translation type="unfinished">Evästeiden hallinta</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Filter</source>
@@ -363,7 +363,7 @@
     </message>
     <message>
         <source>Remove All Cookies</source>
-        <translation type="unfinished">Poista kaikki evästeet</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Add Cookie</source>
@@ -496,15 +496,15 @@
     <name>DownloadsSegment</name>
     <message>
         <source>Delete completed Downloads</source>
-        <translation type="unfinished">Poista suoritetut lataukset</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation type="unfinished">Latausta</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Download Url</source>
-        <translation type="unfinished">Lataa linkki</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Start</source>
@@ -542,15 +542,15 @@
     </message>
     <message>
         <source>Deleting Folder</source>
-        <translation type="unfinished">Poistetaan kansiota</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Deleting Favorite</source>
-        <translation type="unfinished">Poistetaan suosikkia</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Add to Quick Grid</source>
-        <translation type="unfinished">Lisää pikavalintaan</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -591,42 +591,42 @@
     <name>FavoritesMenu</name>
     <message>
         <source>Export</source>
-        <translation type="unfinished">Vie</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Exporting favorites</source>
-        <translation type="unfinished">Viedään suosikit</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished">Suosikit</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Favorites exported successfully</source>
-        <translation type="unfinished">Suosikit viety onnistuneesti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Import</source>
-        <translation type="unfinished">Tuo</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Import in</source>
-        <translation type="unfinished">Tuo suosikit</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Add Folder</source>
-        <translation type="unfinished">Lisää kansio</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Add Favorite</source>
-        <translation type="unfinished">Lisää suosikki</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>FavoritesSegment</name>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished">Suosikit</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Back</source>
@@ -634,11 +634,11 @@
     </message>
     <message>
         <source>Favorites imported successfully</source>
-        <translation type="unfinished">Suosikit tuotu onnistuneesti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Cannot import favorites</source>
-        <translation type="unfinished">Ei voi tuoda suosikkeja</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -676,11 +676,11 @@
     </message>
     <message>
         <source>User Agent</source>
-        <translation>User Agent</translation>
+        <translation>Selaimen tunniste</translation>
     </message>
     <message>
         <source>Set as default browser</source>
-        <translation type="unfinished"></translation>
+        <translation>Aseta oletusselaimeksi</translation>
     </message>
 </context>
 <context>
@@ -698,7 +698,7 @@
     </message>
     <message>
         <source>Delete History</source>
-        <translation type="unfinished">Poista historia</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -922,27 +922,27 @@
     <name>ProxySettingsPage</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Tallenna</translation>
+        <translation>Tallenna</translation>
     </message>
     <message>
         <source>Proxy Disabled</source>
-        <translation type="unfinished"></translation>
+        <translation>Välityspalvelin pois käytöstä</translation>
     </message>
     <message>
         <source>You need to restart WebPirate</source>
-        <translation type="unfinished"></translation>
+        <translation>Käynnistä WebPirate uudestaan</translation>
     </message>
     <message>
         <source>Proxy Settings (Restart needed)</source>
-        <translation type="unfinished"></translation>
+        <translation>Välityspalvelimen asetukset (Uudelleenkäynnistys tarvitaan)</translation>
     </message>
     <message>
         <source>Host or Ip Address</source>
-        <translation type="unfinished"></translation>
+        <translation>Isäntäpalvelin tai IP-osoite</translation>
     </message>
     <message>
         <source>Port</source>
-        <translation type="unfinished"></translation>
+        <translation>Portti</translation>
     </message>
 </context>
 <context>
@@ -1092,11 +1092,11 @@
     </message>
     <message>
         <source>SD Card</source>
-        <translation type="unfinished">SD -muistikortti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Home</source>
-        <translation type="unfinished">Koti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Send %1 file(s)</source>
@@ -1138,7 +1138,7 @@
     <name>SessionsSegment</name>
     <message>
         <source>Sessions</source>
-        <translation type="unfinished">Istunnot</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>No Sessions</source>
@@ -1146,11 +1146,11 @@
     </message>
     <message>
         <source>Save current session</source>
-        <translation type="unfinished">Tallenna nykyinen istunto</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Tabs saved</source>
-        <translation type="unfinished">Välilehdet tallennettu</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Open</source>
@@ -1166,7 +1166,7 @@
     </message>
     <message>
         <source>Deleting session</source>
-        <translation type="unfinished">Poistetaan istunto</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Loads at startup</source>
@@ -1205,7 +1205,7 @@
     </message>
     <message>
         <source>Proxy</source>
-        <translation type="unfinished"></translation>
+        <translation>Välityspalvelin</translation>
     </message>
     <message>
         <source>Popup Blocker</source>
@@ -1224,7 +1224,7 @@
     </message>
     <message>
         <source>Deleting Tab</source>
-        <translation type="unfinished">Poistetaan välilehteä</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

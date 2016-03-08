@@ -158,11 +158,11 @@
     </message>
     <message>
         <source>Disable AdBlock</source>
-        <translation type="unfinished"></translation>
+        <translation>Désactiver AdBlock</translation>
     </message>
     <message>
         <source>Enable AdBlock</source>
-        <translation type="unfinished"></translation>
+        <translation>Activer AdBlock</translation>
     </message>
 </context>
 <context>
@@ -268,15 +268,15 @@
     </message>
     <message>
         <source>Accept Certificate from: %1 ?</source>
-        <translation type="unfinished"></translation>
+        <translation>Accepter les certificats de : %1 ?</translation>
     </message>
     <message>
         <source>Refresh</source>
-        <translation type="unfinished"></translation>
+        <translation>Rafraichir</translation>
     </message>
     <message>
         <source>New tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Nouvel onglet</translation>
     </message>
     <message>
         <source>Remove from Favorites</source>
@@ -295,11 +295,11 @@
     <name>ClosedTabsSegment</name>
     <message>
         <source>Closed Tabs</source>
-        <translation type="unfinished">Onglets fermés</translation>
+        <translation>Onglets fermés</translation>
     </message>
     <message>
         <source>Delete Closed Tabs</source>
-        <translation type="unfinished">Supprimer les onglets fermés</translation>
+        <translation>Supprimer les onglets fermés</translation>
     </message>
 </context>
 <context>
@@ -310,7 +310,7 @@
     </message>
     <message>
         <source>Deleting Cookie</source>
-        <translation>Supprimer les cookies</translation>
+        <translation>Suppression des cookies</translation>
     </message>
 </context>
 <context>
@@ -355,19 +355,19 @@
     <name>CookiesSegment</name>
     <message>
         <source>Cookie Manager</source>
-        <translation type="unfinished">Gestionnaire de cookies</translation>
+        <translation>Gestionnaire de cookies</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation type="unfinished">Filtrer</translation>
+        <translation>Filtre</translation>
     </message>
     <message>
         <source>Remove All Cookies</source>
-        <translation type="unfinished">Supprimer tous les cookies</translation>
+        <translation>Supprimer les cookies</translation>
     </message>
     <message>
         <source>Add Cookie</source>
-        <translation type="unfinished">Ajouter un cookie</translation>
+        <translation>Ajouter un cookie</translation>
     </message>
 </context>
 <context>
@@ -496,19 +496,19 @@
     <name>DownloadsSegment</name>
     <message>
         <source>Delete completed Downloads</source>
-        <translation type="unfinished">Supprimer les téléchargements terminés</translation>
+        <translation>Supprimer les téléchargements terminés</translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation type="unfinished">Téléchargements</translation>
+        <translation>Téléchargements</translation>
     </message>
     <message>
         <source>Download Url</source>
-        <translation type="unfinished">Télécharger le lien</translation>
+        <translation>Télécharger l&apos;URL</translation>
     </message>
     <message>
         <source>Start</source>
-        <translation type="unfinished"></translation>
+        <translation>Démarrer</translation>
     </message>
 </context>
 <context>
@@ -530,27 +530,27 @@
     <name>FavoriteItem</name>
     <message>
         <source>Open</source>
-        <translation type="unfinished">Ouvrir</translation>
+        <translation>Ouvrir</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="unfinished">Éditer</translation>
+        <translation>Editer</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Supprimer</translation>
+        <translation>Supprimer</translation>
     </message>
     <message>
         <source>Deleting Folder</source>
-        <translation type="unfinished">Suppression du dossier</translation>
+        <translation>  Suppression du dossier</translation>
     </message>
     <message>
         <source>Deleting Favorite</source>
-        <translation type="unfinished">Suppression du  favori</translation>
+        <translation>Suppression des favoris</translation>
     </message>
     <message>
         <source>Add to Quick Grid</source>
-        <translation type="unfinished">Ajouter à la grille d&apos;accès rapide</translation>
+        <translation>Ajouter à la grille d&apos;accès rapide</translation>
     </message>
 </context>
 <context>
@@ -591,54 +591,54 @@
     <name>FavoritesMenu</name>
     <message>
         <source>Export</source>
-        <translation type="unfinished">Exporter</translation>
+        <translation>Exporter</translation>
     </message>
     <message>
         <source>Exporting favorites</source>
-        <translation type="unfinished">Exporter les favoris</translation>
+        <translation>Export des favoris</translation>
     </message>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished">Favoris</translation>
+        <translation>Favoris</translation>
     </message>
     <message>
         <source>Favorites exported successfully</source>
-        <translation type="unfinished">Export des favoris réussi</translation>
+        <translation>Favoris exportés avec succès</translation>
     </message>
     <message>
         <source>Import</source>
-        <translation type="unfinished">Importer</translation>
+        <translation>Importer</translation>
     </message>
     <message>
         <source>Import in</source>
-        <translation type="unfinished">Importer dans</translation>
+        <translation>Importation</translation>
     </message>
     <message>
         <source>Add Folder</source>
-        <translation type="unfinished">Ajouter dossier</translation>
+        <translation>Ajouter dossier</translation>
     </message>
     <message>
         <source>Add Favorite</source>
-        <translation type="unfinished">Ajouter favori</translation>
+        <translation>Ajouter un favori</translation>
     </message>
 </context>
 <context>
     <name>FavoritesSegment</name>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished">Favoris</translation>
+        <translation>Favoris</translation>
     </message>
     <message>
         <source>Back</source>
-        <translation type="unfinished"></translation>
+        <translation>Retour</translation>
     </message>
     <message>
         <source>Favorites imported successfully</source>
-        <translation type="unfinished">Import des favoris réussi</translation>
+        <translation>Favoris importés avec succès</translation>
     </message>
     <message>
         <source>Cannot import favorites</source>
-        <translation type="unfinished">Impossible d&apos;importer les favoris</translation>
+        <translation>Importation de favoris impossible</translation>
     </message>
 </context>
 <context>
@@ -672,7 +672,7 @@
     </message>
     <message>
         <source>Long press to edit</source>
-        <translation>Appui long pour modifier</translation>
+        <translation>Appui long pour éditer</translation>
     </message>
     <message>
         <source>User Agent</source>
@@ -694,11 +694,11 @@
     <name>HistorySegment</name>
     <message>
         <source>History</source>
-        <translation type="unfinished"></translation>
+        <translation>Historique</translation>
     </message>
     <message>
         <source>Delete History</source>
-        <translation type="unfinished">Supprimer l&apos;historique</translation>
+        <translation>Supprimer l&apos;historique</translation>
     </message>
 </context>
 <context>
@@ -808,7 +808,7 @@
     </message>
     <message>
         <source>&apos;%1&apos; wants to access system&apos;s notifications</source>
-        <translation type="unfinished"></translation>
+        <translation>&apos;%1&apos; souhaite accéder au système de notifications</translation>
     </message>
 </context>
 <context>
@@ -922,27 +922,27 @@
     <name>ProxySettingsPage</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Enregistrer</translation>
+        <translation>Enregistrer</translation>
     </message>
     <message>
         <source>Proxy Disabled</source>
-        <translation type="unfinished"></translation>
+        <translation>Proxy désactivé</translation>
     </message>
     <message>
         <source>You need to restart WebPirate</source>
-        <translation type="unfinished"></translation>
+        <translation>Il vous faut redémarer WebPirate</translation>
     </message>
     <message>
         <source>Proxy Settings (Restart needed)</source>
-        <translation type="unfinished"></translation>
+        <translation>Paramètres du Proxy (Redémarrage nécessaire)</translation>
     </message>
     <message>
         <source>Host or Ip Address</source>
-        <translation type="unfinished"></translation>
+        <translation>Adresse Host ou IP</translation>
     </message>
     <message>
         <source>Port</source>
-        <translation type="unfinished"></translation>
+        <translation>Port</translation>
     </message>
 </context>
 <context>
@@ -953,7 +953,7 @@
     </message>
     <message>
         <source>Search...</source>
-        <translation type="unfinished"></translation>
+        <translation>Recherche ...</translation>
     </message>
 </context>
 <context>
@@ -968,7 +968,7 @@
     </message>
     <message>
         <source>New tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Nouvel onglet</translation>
     </message>
 </context>
 <context>
@@ -1088,23 +1088,23 @@
     <name>SelectorFilesPage</name>
     <message>
         <source>Android storage</source>
-        <translation type="unfinished"></translation>
+        <translation>Stockage Android</translation>
     </message>
     <message>
         <source>SD Card</source>
-        <translation type="unfinished">Carte SD</translation>
+        <translation>Carte SD</translation>
     </message>
     <message>
         <source>Home</source>
-        <translation type="unfinished">Page d’accueil</translation>
+        <translation>Page d’accueil</translation>
     </message>
     <message>
         <source>Send %1 file(s)</source>
-        <translation type="unfinished"></translation>
+        <translation>Envoyer %1 fichier(s)</translation>
     </message>
     <message>
         <source>Back</source>
-        <translation type="unfinished"></translation>
+        <translation>Retour</translation>
     </message>
 </context>
 <context>
@@ -1138,39 +1138,39 @@
     <name>SessionsSegment</name>
     <message>
         <source>Sessions</source>
-        <translation type="unfinished">Sessions</translation>
+        <translation>Sessions</translation>
     </message>
     <message>
         <source>No Sessions</source>
-        <translation type="unfinished"></translation>
+        <translation>Aucune session</translation>
     </message>
     <message>
         <source>Save current session</source>
-        <translation type="unfinished">Enregistrer la session actuelle</translation>
+        <translation>Sauvegarder la session actuelle</translation>
     </message>
     <message>
         <source>Tabs saved</source>
-        <translation type="unfinished">Onglets enregistrés</translation>
+        <translation>Onglets sauvegardés</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation type="unfinished">Ouvrir</translation>
+        <translation>Ouvrir</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="unfinished">Éditer</translation>
+        <translation>Éditer</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Supprimer</translation>
+        <translation>Supprimer</translation>
     </message>
     <message>
         <source>Deleting session</source>
-        <translation type="unfinished">Suppression de la session</translation>
+        <translation>Suppression de la session</translation>
     </message>
     <message>
         <source>Loads at startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Charger au démarrage</translation>
     </message>
 </context>
 <context>
@@ -1205,7 +1205,7 @@
     </message>
     <message>
         <source>Proxy</source>
-        <translation type="unfinished"></translation>
+        <translation>Proxy</translation>
     </message>
     <message>
         <source>Popup Blocker</source>
@@ -1216,26 +1216,26 @@
     <name>TabClosedItem</name>
     <message>
         <source>Open</source>
-        <translation type="unfinished">Ouvrir</translation>
+        <translation>Ouvrir</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Supprimer</translation>
+        <translation>Supprimer</translation>
     </message>
     <message>
         <source>Deleting Tab</source>
-        <translation type="unfinished">Supprimer l&apos;onglet</translation>
+        <translation>Suppression des onglets</translation>
     </message>
 </context>
 <context>
     <name>TabListItem</name>
     <message>
         <source>Quick Grid</source>
-        <translation type="unfinished"></translation>
+        <translation>Grille d&apos;accès rapide</translation>
     </message>
     <message>
         <source>Load error</source>
-        <translation type="unfinished"></translation>
+        <translation>Erreur de chargement</translation>
     </message>
     <message>
         <source>Copy link</source>
@@ -1262,23 +1262,23 @@
     <name>TabsSegment</name>
     <message>
         <source>Tabs</source>
-        <translation type="unfinished">Onglets</translation>
+        <translation>Onglets</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>paramètres</translation>
     </message>
     <message>
         <source>New Tab</source>
-        <translation type="unfinished">Nouvel onglet</translation>
+        <translation>Nouvel onglet</translation>
     </message>
     <message>
         <source>Disable Night Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Désactiver le mode nuit</translation>
     </message>
     <message>
         <source>Enable Night Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Activer le mode nuit</translation>
     </message>
 </context>
 <context>

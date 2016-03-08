@@ -299,7 +299,7 @@
     </message>
     <message>
         <source>Delete Closed Tabs</source>
-        <translation type="unfinished">刪除關閉的分頁</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -355,7 +355,7 @@
     <name>CookiesSegment</name>
     <message>
         <source>Cookie Manager</source>
-        <translation type="unfinished">Cookie管理員</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Filter</source>
@@ -363,7 +363,7 @@
     </message>
     <message>
         <source>Remove All Cookies</source>
-        <translation type="unfinished">移除所有Cookie</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Add Cookie</source>
@@ -496,15 +496,15 @@
     <name>DownloadsSegment</name>
     <message>
         <source>Delete completed Downloads</source>
-        <translation type="unfinished">刪除完成的下載</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation type="unfinished">下載</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Download Url</source>
-        <translation type="unfinished">下載網址</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Start</source>
@@ -542,15 +542,15 @@
     </message>
     <message>
         <source>Deleting Folder</source>
-        <translation type="unfinished">刪除資料夾</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Deleting Favorite</source>
-        <translation type="unfinished">刪除我的最愛中</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Add to Quick Grid</source>
-        <translation type="unfinished">新增至快速啟動頁</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -591,42 +591,42 @@
     <name>FavoritesMenu</name>
     <message>
         <source>Export</source>
-        <translation type="unfinished">匯出</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Exporting favorites</source>
-        <translation type="unfinished">匯出我的最愛</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished">我的最愛</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Favorites exported successfully</source>
-        <translation type="unfinished">我的最愛匯出成功</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Import</source>
-        <translation type="unfinished">匯入</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Import in</source>
-        <translation type="unfinished">匯入至</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Add Folder</source>
-        <translation type="unfinished">新增資料夾</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Add Favorite</source>
-        <translation type="unfinished">新增我的最愛</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>FavoritesSegment</name>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished">我的最愛</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Back</source>
@@ -634,11 +634,11 @@
     </message>
     <message>
         <source>Favorites imported successfully</source>
-        <translation type="unfinished">我的最愛匯入成功</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Cannot import favorites</source>
-        <translation type="unfinished">無法匯入我的最愛</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -680,7 +680,7 @@
     </message>
     <message>
         <source>Set as default browser</source>
-        <translation type="unfinished"></translation>
+        <translation>設定為預設瀏覽器</translation>
     </message>
 </context>
 <context>
@@ -698,7 +698,7 @@
     </message>
     <message>
         <source>Delete History</source>
-        <translation type="unfinished">刪除記錄</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -922,27 +922,27 @@
     <name>ProxySettingsPage</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished">儲存</translation>
+        <translation>儲存</translation>
     </message>
     <message>
         <source>Proxy Disabled</source>
-        <translation type="unfinished"></translation>
+        <translation>停用代理伺服器</translation>
     </message>
     <message>
         <source>You need to restart WebPirate</source>
-        <translation type="unfinished"></translation>
+        <translation>您必須重新啟動WebPirate</translation>
     </message>
     <message>
         <source>Proxy Settings (Restart needed)</source>
-        <translation type="unfinished"></translation>
+        <translation>代理伺服器設定(需要重新啟動)</translation>
     </message>
     <message>
         <source>Host or Ip Address</source>
-        <translation type="unfinished"></translation>
+        <translation>主機或IP位址</translation>
     </message>
     <message>
         <source>Port</source>
-        <translation type="unfinished"></translation>
+        <translation>通道</translation>
     </message>
 </context>
 <context>
@@ -1092,11 +1092,11 @@
     </message>
     <message>
         <source>SD Card</source>
-        <translation type="unfinished">SD 卡</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Home</source>
-        <translation type="unfinished">目錄</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Send %1 file(s)</source>
@@ -1138,7 +1138,7 @@
     <name>SessionsSegment</name>
     <message>
         <source>Sessions</source>
-        <translation type="unfinished">瀏覽狀態</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>No Sessions</source>
@@ -1146,11 +1146,11 @@
     </message>
     <message>
         <source>Save current session</source>
-        <translation type="unfinished">儲存目前瀏覽狀態</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Tabs saved</source>
-        <translation type="unfinished">已儲存之分頁</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Open</source>
@@ -1166,7 +1166,7 @@
     </message>
     <message>
         <source>Deleting session</source>
-        <translation type="unfinished">刪除瀏覽狀態</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Loads at startup</source>
@@ -1205,7 +1205,7 @@
     </message>
     <message>
         <source>Proxy</source>
-        <translation type="unfinished"></translation>
+        <translation>代理伺服器</translation>
     </message>
     <message>
         <source>Popup Blocker</source>
@@ -1224,7 +1224,7 @@
     </message>
     <message>
         <source>Deleting Tab</source>
-        <translation type="unfinished">刪除分頁</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

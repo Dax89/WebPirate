@@ -158,11 +158,11 @@
     </message>
     <message>
         <source>Disable AdBlock</source>
-        <translation type="unfinished"></translation>
+        <translation>Выключить AdBlock</translation>
     </message>
     <message>
         <source>Enable AdBlock</source>
-        <translation type="unfinished"></translation>
+        <translation>Включить AdBlock</translation>
     </message>
 </context>
 <context>
@@ -272,11 +272,11 @@
     </message>
     <message>
         <source>Refresh</source>
-        <translation type="unfinished"></translation>
+        <translation>Обновить</translation>
     </message>
     <message>
         <source>New tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Новая вкладка</translation>
     </message>
     <message>
         <source>Remove from Favorites</source>
@@ -295,11 +295,11 @@
     <name>ClosedTabsSegment</name>
     <message>
         <source>Closed Tabs</source>
-        <translation type="unfinished">Закрытые вкладки</translation>
+        <translation>Закрыть вкладку</translation>
     </message>
     <message>
         <source>Delete Closed Tabs</source>
-        <translation type="unfinished">Удалить закрытые вкладки</translation>
+        <translation>Удалить закрытые вкладки</translation>
     </message>
 </context>
 <context>
@@ -355,7 +355,7 @@
     <name>CookiesSegment</name>
     <message>
         <source>Cookie Manager</source>
-        <translation type="unfinished">Cookie менеджер</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Filter</source>
@@ -363,11 +363,11 @@
     </message>
     <message>
         <source>Remove All Cookies</source>
-        <translation type="unfinished">Удалить все Cookies</translation>
+        <translation>Удалить все Cookies</translation>
     </message>
     <message>
         <source>Add Cookie</source>
-        <translation type="unfinished">Добавить Cookie</translation>
+        <translation>Добавить Cookie</translation>
     </message>
 </context>
 <context>
@@ -496,15 +496,15 @@
     <name>DownloadsSegment</name>
     <message>
         <source>Delete completed Downloads</source>
-        <translation type="unfinished">Удалить завершенные загрузки</translation>
+        <translation>Удалить завершенные загрузки</translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation type="unfinished">Загрузки</translation>
+        <translation>Загрузки</translation>
     </message>
     <message>
         <source>Download Url</source>
-        <translation type="unfinished">Скачать Url</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Start</source>
@@ -530,27 +530,27 @@
     <name>FavoriteItem</name>
     <message>
         <source>Open</source>
-        <translation type="unfinished">Открыть</translation>
+        <translation>Открыть</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="unfinished">Править</translation>
+        <translation>Редактировать</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Удалить</translation>
+        <translation>Удалить</translation>
     </message>
     <message>
         <source>Deleting Folder</source>
-        <translation type="unfinished">Удаление папки</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Deleting Favorite</source>
-        <translation type="unfinished">Удаление закладки</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Add to Quick Grid</source>
-        <translation type="unfinished">Добавить в Fast Dial</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -591,54 +591,54 @@
     <name>FavoritesMenu</name>
     <message>
         <source>Export</source>
-        <translation type="unfinished">Экспорт</translation>
+        <translation>Экспорт</translation>
     </message>
     <message>
         <source>Exporting favorites</source>
-        <translation type="unfinished">Экспортирование закладок</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished">Закладки</translation>
+        <translation>Закладки</translation>
     </message>
     <message>
         <source>Favorites exported successfully</source>
-        <translation type="unfinished">Экспорт закладок прошел успешно</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Import</source>
-        <translation type="unfinished">Импорт</translation>
+        <translation>Импорт</translation>
     </message>
     <message>
         <source>Import in</source>
-        <translation type="unfinished">Импорт в </translation>
+        <translation>Импорт в </translation>
     </message>
     <message>
         <source>Add Folder</source>
-        <translation type="unfinished">Добавить папку</translation>
+        <translation>Добавить папку</translation>
     </message>
     <message>
         <source>Add Favorite</source>
-        <translation type="unfinished">Добавить закладку</translation>
+        <translation>Добавить закладку</translation>
     </message>
 </context>
 <context>
     <name>FavoritesSegment</name>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished">Закладки</translation>
+        <translation>Закладки</translation>
     </message>
     <message>
         <source>Back</source>
-        <translation type="unfinished"></translation>
+        <translation>Назад</translation>
     </message>
     <message>
         <source>Favorites imported successfully</source>
-        <translation type="unfinished">Импорт закладок прошел успешно</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Cannot import favorites</source>
-        <translation type="unfinished">Не могу импортировать закладки</translation>
+        <translation>Не могу импортировать закладки</translation>
     </message>
 </context>
 <context>
@@ -698,7 +698,7 @@
     </message>
     <message>
         <source>Delete History</source>
-        <translation type="unfinished">Удалить историю</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -808,7 +808,7 @@
     </message>
     <message>
         <source>&apos;%1&apos; wants to access system&apos;s notifications</source>
-        <translation type="unfinished"></translation>
+        <translation>&apos;%1&apos; хочет получить доступ к системным уведомлениям</translation>
     </message>
 </context>
 <context>
@@ -922,27 +922,27 @@
     <name>ProxySettingsPage</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Сохранить</translation>
+        <translation>Сохранить</translation>
     </message>
     <message>
         <source>Proxy Disabled</source>
-        <translation type="unfinished"></translation>
+        <translation>Прокси отключено</translation>
     </message>
     <message>
         <source>You need to restart WebPirate</source>
-        <translation type="unfinished"></translation>
+        <translation>Вам необходимо перезапустить WebPirate</translation>
     </message>
     <message>
         <source>Proxy Settings (Restart needed)</source>
-        <translation type="unfinished"></translation>
+        <translation>Настройки прокси (Необходим перезапуск)</translation>
     </message>
     <message>
         <source>Host or Ip Address</source>
-        <translation type="unfinished"></translation>
+        <translation>Хост или IP адрес</translation>
     </message>
     <message>
         <source>Port</source>
-        <translation type="unfinished"></translation>
+        <translation>Порт</translation>
     </message>
 </context>
 <context>
@@ -953,7 +953,7 @@
     </message>
     <message>
         <source>Search...</source>
-        <translation type="unfinished"></translation>
+        <translation>Поиск..</translation>
     </message>
 </context>
 <context>
@@ -968,7 +968,7 @@
     </message>
     <message>
         <source>New tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Новая вкладка</translation>
     </message>
 </context>
 <context>
@@ -1092,11 +1092,11 @@
     </message>
     <message>
         <source>SD Card</source>
-        <translation type="unfinished">Карта памяти</translation>
+        <translation>Карта памяти</translation>
     </message>
     <message>
         <source>Home</source>
-        <translation type="unfinished">Домой</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Send %1 file(s)</source>
@@ -1104,7 +1104,7 @@
     </message>
     <message>
         <source>Back</source>
-        <translation type="unfinished"></translation>
+        <translation>Назад</translation>
     </message>
 </context>
 <context>
@@ -1138,7 +1138,7 @@
     <name>SessionsSegment</name>
     <message>
         <source>Sessions</source>
-        <translation type="unfinished">Сессии</translation>
+        <translation>Сессии</translation>
     </message>
     <message>
         <source>No Sessions</source>
@@ -1146,27 +1146,27 @@
     </message>
     <message>
         <source>Save current session</source>
-        <translation type="unfinished">Сохранить текущую сессию</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Tabs saved</source>
-        <translation type="unfinished">Вкладки сохранены</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Open</source>
-        <translation type="unfinished">Открыть</translation>
+        <translation>Открыть</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="unfinished">Править</translation>
+        <translation>Редактировать</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Удалить</translation>
+        <translation>Удалить</translation>
     </message>
     <message>
         <source>Deleting session</source>
-        <translation type="unfinished">Удаление сессии</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Loads at startup</source>
@@ -1205,7 +1205,7 @@
     </message>
     <message>
         <source>Proxy</source>
-        <translation type="unfinished"></translation>
+        <translation>Прокси</translation>
     </message>
     <message>
         <source>Popup Blocker</source>
@@ -1216,15 +1216,15 @@
     <name>TabClosedItem</name>
     <message>
         <source>Open</source>
-        <translation type="unfinished">Открыть</translation>
+        <translation>Открыть</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Удалить</translation>
+        <translation>Удалить</translation>
     </message>
     <message>
         <source>Deleting Tab</source>
-        <translation type="unfinished">Удаление вкладки</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1262,23 +1262,23 @@
     <name>TabsSegment</name>
     <message>
         <source>Tabs</source>
-        <translation type="unfinished">Вкладки</translation>
+        <translation>Вкладки</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Настройки</translation>
     </message>
     <message>
         <source>New Tab</source>
-        <translation type="unfinished">Новая вкладка</translation>
+        <translation>Новая вкладка</translation>
     </message>
     <message>
         <source>Disable Night Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Выключить ночной режим</translation>
     </message>
     <message>
         <source>Enable Night Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Включить ночной режим</translation>
     </message>
 </context>
 <context>

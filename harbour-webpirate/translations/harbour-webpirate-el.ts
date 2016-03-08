@@ -1,567 +1,567 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="es">
+<TS version="2.1" language="el">
 <context>
     <name>AboutPage</name>
     <message>
         <source>About Web Pirate</source>
-        <translation>Acerca de Web Pirate</translation>
+        <translation>Περί το Web Pirate</translation>
     </message>
     <message>
         <source>Catalan</source>
-        <translation>Catalán</translation>
+        <translation>Καταλανικά</translation>
     </message>
     <message>
         <source>Chinese</source>
-        <translation>Chino</translation>
+        <translation>Κινέζικα</translation>
     </message>
     <message>
         <source>Dutch</source>
-        <translation>Holandés</translation>
+        <translation>Ολλανδικά</translation>
     </message>
     <message>
         <source>French</source>
-        <translation>Francés</translation>
+        <translation>Γαλλικά</translation>
     </message>
     <message>
         <source>German</source>
-        <translation>Alemán</translation>
+        <translation>Γερμανικά</translation>
     </message>
     <message>
         <source>Russian</source>
-        <translation>Ruso</translation>
+        <translation>Ρωσικά</translation>
     </message>
     <message>
         <source>Swedish</source>
-        <translation>Sueco</translation>
+        <translation>Σουηδικά</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation>Versión</translation>
+        <translation>Έκδοση</translation>
     </message>
     <message>
         <source>A tabbed Web Browser for SailfishOS based on WebKit</source>
-        <translation>Un navegador Web con pestañas para SailfishOS basado en WebKit</translation>
+        <translation>Ένας περιηγητής διαδικτύου με καρτέλες για το SailfishOS βασισμένος στην WebKit</translation>
     </message>
     <message>
         <source>Developer</source>
-        <translation>Desarrollador</translation>
+        <translation>Προγραμματιστής</translation>
     </message>
     <message>
         <source>GitHub Repository</source>
-        <translation>Repositorio GitHub</translation>
+        <translation>Αποθετήριο GitHub</translation>
     </message>
     <message>
         <source>Translators</source>
-        <translation>Traductores</translation>
+        <translation>Μεταφραστές</translation>
     </message>
     <message>
         <source>Slovenian</source>
-        <translation>Esloveno</translation>
+        <translation>Σλοβένικα</translation>
     </message>
     <message>
         <source>Japanese</source>
-        <translation>Japonés</translation>
+        <translation>Ιαπωνικά</translation>
     </message>
     <message>
         <source>Czech</source>
-        <translation>Checo</translation>
+        <translation>Τσέχικα</translation>
     </message>
     <message>
         <source>Spanish</source>
-        <translation>Español</translation>
+        <translation>Ισπανικά</translation>
     </message>
     <message>
         <source>Italian</source>
-        <translation>Italiano</translation>
+        <translation>Ιταλικά</translation>
     </message>
     <message>
         <source>Finnish</source>
-        <translation>Finlandés</translation>
+        <translation>Φιλανδικά</translation>
     </message>
     <message>
         <source>Icon Designer</source>
-        <translation>Diseñador del icono</translation>
+        <translation>Σχεδιαστής εικονιδίων</translation>
     </message>
     <message>
         <source>Translation Platform</source>
-        <translation>Plataforma de traducción</translation>
+        <translation>Πλατφόρμα μετάφρασης</translation>
     </message>
 </context>
 <context>
     <name>AdBlockDownloaderPage</name>
     <message>
         <source>AdBlock Updater</source>
-        <translation>AdBlock Updater</translation>
+        <translation>Ενημέρωση AdBlock</translation>
     </message>
     <message>
         <source>State</source>
-        <translation>Estado</translation>
+        <translation>Κατάσταση</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation>Descargar</translation>
+        <translation>Λήψη</translation>
     </message>
     <message>
         <source>Ready</source>
-        <translation>Listo</translation>
+        <translation>Έτοιμο</translation>
     </message>
     <message>
         <source>Connecting</source>
-        <translation>Conectando</translation>
+        <translation>Συνδέεται</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Error</translation>
+        <translation>Σφάλμα</translation>
     </message>
     <message>
         <source>Completed</source>
-        <translation>Completado</translation>
+        <translation>Ολοκληρώθηκε</translation>
     </message>
 </context>
 <context>
     <name>AdBlockFilter</name>
     <message>
         <source>Save</source>
-        <translation>Guardar</translation>
+        <translation>Αποθήκευση</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation>Filtro</translation>
+        <translation>Φίλτρο</translation>
     </message>
 </context>
 <context>
     <name>AdBlockPage</name>
     <message>
         <source>Save</source>
-        <translation>Guardar</translation>
+        <translation>Αποθήκευση</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Editar</translation>
+        <translation>Επεξεργασία</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Borrar</translation>
+        <translation>Διαγραφή</translation>
     </message>
     <message>
         <source>Deleting filter</source>
-        <translation>Borrando filtro</translation>
+        <translation>Διαγραφή φίλτρου</translation>
     </message>
     <message>
         <source>Update Filters</source>
-        <translation>Actualizar filtros</translation>
+        <translation>Ενημέρωση φίλτρων</translation>
     </message>
     <message>
         <source>Add Filter</source>
-        <translation>Añadir filtro</translation>
+        <translation>Προσθήκη φίλτρου</translation>
     </message>
     <message>
         <source>Disable AdBlock</source>
-        <translation>Desactivar AdBlock</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Enable AdBlock</source>
-        <translation>Activar AdBlock</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>AlertDialog</name>
     <message>
         <source>Ok</source>
-        <translation>Ok</translation>
+        <translation>Εντάξει</translation>
     </message>
 </context>
 <context>
     <name>AuthenticationDialog</name>
     <message>
         <source>Login</source>
-        <translation>Acceso</translation>
+        <translation>Σύνδεση</translation>
     </message>
     <message>
         <source>Authentication required</source>
-        <translation>Se requiere autenticación</translation>
+        <translation>Απαιτείται ταυτοποίηση</translation>
     </message>
     <message>
         <source>requires authentication</source>
-        <translation>requiere autenticación</translation>
+        <translation>απαιτείται ταυτοποίηση</translation>
     </message>
     <message>
         <source>User</source>
-        <translation>Usuario</translation>
+        <translation>Χρήστης</translation>
     </message>
     <message>
         <source>Password</source>
-        <translation>Contraseña</translation>
+        <translation>Κωδικός πρόσβασης</translation>
     </message>
 </context>
 <context>
     <name>BlockedPopupItem</name>
     <message>
         <source>Allow</source>
-        <translation>Permitir</translation>
+        <translation>Να επιτραπεί</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Borrar</translation>
+        <translation>Διαγραφή</translation>
     </message>
     <message>
         <source>Deleting rule</source>
-        <translation>Borrando regla</translation>
+        <translation>Διαγραφή κανόνα</translation>
     </message>
 </context>
 <context>
     <name>BrowserGrabber</name>
     <message>
         <source>Author</source>
-        <translation>Autor</translation>
+        <translation>Συγγραφέας</translation>
     </message>
     <message>
         <source>Duration</source>
-        <translation>Duración</translation>
+        <translation>Διάρκεια</translation>
     </message>
     <message>
         <source>Title</source>
-        <translation>Título</translation>
+        <translation>Τίτλος</translation>
     </message>
     <message>
         <source>Grabbed URLs</source>
-        <translation>URLs capturadas</translation>
+        <translation>Συλληφθέντα URL</translation>
     </message>
     <message>
         <source>Play</source>
-        <translation>Reproducir</translation>
+        <translation>Αναπαραγωγή</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation>Descargar</translation>
+        <translation>Λήψη</translation>
     </message>
     <message>
         <source>Grabbing video</source>
-        <translation>Capturando vídeo</translation>
+        <translation>Σύλληψη βίντεο</translation>
     </message>
     <message>
         <source>Copy URL</source>
-        <translation>Copiar URL</translation>
+        <translation>Αντιγραφή URL</translation>
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation>Enlace copiado al portapapeles</translation>
+        <translation>Ο σύνδεσμος αντιγράφτηκε στο πρόχειρο</translation>
     </message>
     <message>
         <source>Status</source>
-        <translation>Estado</translation>
+        <translation>Κατάσταση</translation>
     </message>
 </context>
 <context>
     <name>BrowserTab</name>
     <message>
         <source>New Tab</source>
-        <translation>Nueva pestaña</translation>
+        <translation>Νέα καρτέλα</translation>
     </message>
 </context>
 <context>
     <name>BrowserWebView</name>
     <message>
         <source>Downloading</source>
-        <translation>Descargando</translation>
+        <translation>Λήψη</translation>
     </message>
     <message>
         <source>Accept Certificate from: %1 ?</source>
-        <translation>¿Aceptas certificado de: %1?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Refresh</source>
-        <translation>Actualizar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>New tab</source>
-        <translation>Nueva pestaña</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Remove from Favorites</source>
-        <translation>Borrar de Favoritos</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Add to Favorites</source>
-        <translation>Añadir a Favoritos</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation>Parar</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>ClosedTabsSegment</name>
     <message>
         <source>Closed Tabs</source>
-        <translation>Pestañas cerradas</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete Closed Tabs</source>
-        <translation>Borrar pestañas cerradas</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CookieListItem</name>
     <message>
         <source>Delete</source>
-        <translation>Borrar</translation>
+        <translation>Διαγραφή</translation>
     </message>
     <message>
         <source>Deleting Cookie</source>
-        <translation>Borrando cookie</translation>
+        <translation>Διαγραφή του θυμήματος (cookie)</translation>
     </message>
 </context>
 <context>
     <name>CookieListPage</name>
     <message>
         <source>Cookies</source>
-        <translation>Cookies</translation>
+        <translation>Θυμήματα (Cookies)</translation>
     </message>
     <message>
         <source>Add Cookie</source>
-        <translation>Añadir cookie</translation>
+        <translation>Προσθήκη θυμήματος (cookie)</translation>
     </message>
 </context>
 <context>
     <name>CookiePage</name>
     <message>
         <source>Save</source>
-        <translation>Guardar</translation>
+        <translation>Αποθήκευση</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Nombre</translation>
+        <translation>Όνομα</translation>
     </message>
     <message>
         <source>Domain</source>
-        <translation>Dominio</translation>
+        <translation>Τομέας</translation>
     </message>
     <message>
         <source>Path</source>
-        <translation>Ruta</translation>
+        <translation>Διαδρομή</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>Valor</translation>
+        <translation>Τιμή</translation>
     </message>
     <message>
         <source>Expires</source>
-        <translation>Caducidad</translation>
+        <translation>Λήξη</translation>
     </message>
 </context>
 <context>
     <name>CookiesSegment</name>
     <message>
         <source>Cookie Manager</source>
-        <translation>Gestor de cookies</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation>Filtro</translation>
+        <translation type="unfinished">Φίλτρο</translation>
     </message>
     <message>
         <source>Remove All Cookies</source>
-        <translation>Borrar todas las cookies</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Add Cookie</source>
-        <translation>Añadir cookie</translation>
+        <translation type="unfinished">Προσθήκη θυμήματος (cookie)</translation>
     </message>
 </context>
 <context>
     <name>CoverModel</name>
     <message>
         <source>Go to Previous Tab</source>
-        <translation>Ir a la pestaña anterior</translation>
+        <translation>Μετάβαση στην προηγούμενη καρτέλα</translation>
     </message>
     <message>
         <source>Go to Next Tab</source>
-        <translation>Ir a la siguiente pestaña</translation>
+        <translation>Μετάβαση στην επόμενη καρτέλα</translation>
     </message>
     <message>
         <source>Add New Tab</source>
-        <translation>Añadir nueva pestaña</translation>
+        <translation>Προσθήκη νέας καρτέλας</translation>
     </message>
     <message>
         <source>Close Tab</source>
-        <translation>Cerrar pestaña</translation>
+        <translation>Κλείσιμο καρτέλας</translation>
     </message>
     <message>
         <source>Load Homepage</source>
-        <translation>Cargar página de inicio</translation>
+        <translation>Φόρτωση αρχικής σελίδας</translation>
     </message>
     <message>
         <source>Close Browser</source>
-        <translation>Cerrar navegador</translation>
+        <translation>Κλείσιμο του περιηγητή</translation>
     </message>
     <message>
         <source>Reload Current Page</source>
-        <translation>Actualizar página actual</translation>
+        <translation>Επαναφόρτωση της τρέχουσας σελίδας</translation>
     </message>
     <message>
         <source>Wipe personal data</source>
-        <translation>Limpiar datos personales</translation>
+        <translation>Καθαρισμός των προσωπικών δεδομένων</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Buscar</translation>
+        <translation>Αναζήτηση</translation>
     </message>
 </context>
 <context>
     <name>CoverSettingsPage</name>
     <message>
         <source>General Actions</source>
-        <translation>Acciones generales</translation>
+        <translation>Γενικές ενέργειες</translation>
     </message>
     <message>
         <source>Left</source>
-        <translation>Izquierda</translation>
+        <translation>Αριστερά</translation>
     </message>
     <message>
         <source>Right</source>
-        <translation>Derecha</translation>
+        <translation>Δεξιά</translation>
     </message>
     <message>
         <source>Webpage Actions</source>
-        <translation>Acciones página Web</translation>
+        <translation>Ενέργειες ιστοσελίδας</translation>
     </message>
     <message>
         <source>Cover Settings</source>
-        <translation>Ajustes de la cubierta</translation>
+        <translation>Ρυθμίσεις επικάλυψης</translation>
     </message>
 </context>
 <context>
     <name>CredentialDialog</name>
     <message>
         <source>Yes</source>
-        <translation>Sí</translation>
+        <translation>Ναι</translation>
     </message>
     <message>
         <source>No</source>
-        <translation>No</translation>
+        <translation>Όχι</translation>
     </message>
     <message>
         <source>Do you want to store the password?</source>
-        <translation>¿Quieres guardar la contraseña?</translation>
+        <translation>Θέλετε να αποθηκεύσετε τον κωδικό πρόσβασης;</translation>
     </message>
 </context>
 <context>
     <name>DomainListItem</name>
     <message>
         <source>Cookies:</source>
-        <translation>Cookies:</translation>
+        <translation>Θύμημα (Cookie):</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Borrar</translation>
+        <translation>Διαγραφή</translation>
     </message>
     <message>
         <source>Deleting Cookies</source>
-        <translation>Borrando cookies</translation>
+        <translation>Διαγραφή θυμημάτων (Cookie)</translation>
     </message>
 </context>
 <context>
     <name>DownloadItem</name>
     <message>
         <source>Redirect Loop</source>
-        <translation>Bucle de redireccionamiento</translation>
+        <translation>Βρόγχος ανακατεύθυνσης</translation>
     </message>
 </context>
 <context>
     <name>DownloadListItem</name>
     <message>
         <source>Cancel</source>
-        <translation>Cancelar</translation>
+        <translation>Ακύρωση</translation>
     </message>
     <message>
         <source>Completed:</source>
-        <translation>Completado:</translation>
+        <translation>Ολοκληρώθηκε:</translation>
     </message>
     <message>
         <source>Speed:</source>
-        <translation>Velocidad:</translation>
+        <translation>Ταχύτητα:</translation>
     </message>
     <message>
         <source>Completed</source>
-        <translation>Completado</translation>
+        <translation>Ολοκληρώθηκε</translation>
     </message>
     <message>
         <source>Error:</source>
-        <translation>Error:</translation>
+        <translation>Σφάλμα:</translation>
     </message>
 </context>
 <context>
     <name>DownloadsSegment</name>
     <message>
         <source>Delete completed Downloads</source>
-        <translation>Borrar descargas completadas</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation>Descargas</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Download Url</source>
-        <translation>Descargar url</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Start</source>
-        <translation>Iniciar</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>ExperimentalSettingsPage</name>
     <message>
         <source>Save</source>
-        <translation>Guardar</translation>
+        <translation>Αποθήκευση</translation>
     </message>
     <message>
         <source>Override Text Fields</source>
-        <translation>Anular campos de texto</translation>
+        <translation>Αντικατάσταση των πεδίων κειμένου</translation>
     </message>
     <message>
         <source>Use SailfishOS&apos;s editing components instead of WebView&apos;s ones</source>
-        <translation>Utiliza los componentes de edición de SailfishOS en lugar de los de WebView</translation>
+        <translation>Χρήση των λειτουργιών επεξεργασίας του Sailfish OS αντί αυτών του WebView</translation>
     </message>
 </context>
 <context>
     <name>FavoriteItem</name>
     <message>
         <source>Open</source>
-        <translation>Abrir</translation>
+        <translation type="unfinished">Άνοιγμα</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Editar</translation>
+        <translation type="unfinished">Επεξεργασία</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Borrar</translation>
+        <translation type="unfinished">Διαγραφή</translation>
     </message>
     <message>
         <source>Deleting Folder</source>
-        <translation>Borrando carpeta</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Deleting Favorite</source>
-        <translation>Borrando favorito</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Add to Quick Grid</source>
-        <translation>Añadir a la rejilla rápida</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>FavoritePage</name>
     <message>
         <source>Save</source>
-        <translation>Guardar</translation>
+        <translation>Αποθήκευση</translation>
     </message>
     <message>
         <source>Title</source>
-        <translation>Título</translation>
+        <translation>Τίτλος</translation>
     </message>
     <message>
         <source>Url</source>
@@ -572,213 +572,212 @@
     <name>FavoritesImportPage</name>
     <message>
         <source>Import Favorites</source>
-        <translation>Importar Favoritos</translation>
+        <translation>Εισαγωγή σελιδοδεικτών</translation>
     </message>
     <message>
         <source>From HTML File</source>
-        <translation>Desde un fichero HTML</translation>
+        <translation>Από αρχείο HTML</translation>
     </message>
     <message>
         <source>From Sailfish Browser</source>
-        <translation>Desde el Navegador de Sailfish</translation>
+        <translation>Από τον φυλλομετρητή του Sailfish</translation>
     </message>
     <message>
         <source>Imporing Favorites</source>
-        <translation>Importando Favoritos</translation>
+        <translation>Εισαγωγή των σελιδοδεικτών</translation>
     </message>
 </context>
 <context>
     <name>FavoritesMenu</name>
     <message>
         <source>Export</source>
-        <translation>Exportar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Exporting favorites</source>
-        <translation>Exportando favoritos</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Favorites</source>
-        <translation>Favoritos</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Favorites exported successfully</source>
-        <translation>Favoritos exportados con éxito</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Import</source>
-        <translation>Importar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Import in</source>
-        <translation>Importar en</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Add Folder</source>
-        <translation>Añadir carpeta</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Add Favorite</source>
-        <translation>Añadir favorito</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>FavoritesSegment</name>
     <message>
         <source>Favorites</source>
-        <translation>Favoritos</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Back</source>
-        <translation>Volver</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Favorites imported successfully</source>
-        <translation>Favoritos importados con éxito</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Cannot import favorites</source>
-        <translation>No es posible importar favoritos</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>FormResubmitDialog</name>
     <message>
         <source>This page contains information written by you: do you want to resend the data?</source>
-        <translation>Esta página contiene información que has introducido: ¿quieres reenviar esta información?</translation>
+        <translation>Αυτή η σελίδα περιέχει πληροφορίες που έχετε γράψει εσείς: επιθυμείτε την επαναποστολή των δεδομένων;</translation>
     </message>
     <message>
         <source>Yes</source>
-        <translation>Sí</translation>
+        <translation>Ναι</translation>
     </message>
     <message>
         <source>No</source>
-        <translation>No</translation>
+        <translation>Όχι</translation>
     </message>
 </context>
 <context>
     <name>GeneralSettingsPage</name>
     <message>
         <source>Save</source>
-        <translation>Guardar</translation>
+        <translation>Αποθήκευση</translation>
     </message>
     <message>
         <source>Home Page</source>
-        <translation>Página de inicio</translation>
+        <translation>Αρχική σελίδα</translation>
     </message>
     <message>
         <source>Search Engines</source>
-        <translation>Motor de búsqueda</translation>
+        <translation>Μηχανές αναζήτησης</translation>
     </message>
     <message>
         <source>Long press to edit</source>
-        <translation>Mantén pulsado para editar</translation>
+        <translation>Διατηρήστε πιεσμένο για επεξεργασία</translation>
     </message>
     <message>
         <source>User Agent</source>
-        <translation>Agente de usuario</translation>
+        <translation>Πράκτορας χρήστη</translation>
     </message>
     <message>
         <source>Set as default browser</source>
-        <translation>Establecer como navegador predeterminado</translation>
+        <translation>Ορισμός ως ο εξ ορισμού φυλλομετρητής</translation>
     </message>
 </context>
 <context>
     <name>HistoryMenu</name>
     <message>
         <source>Link copied to clipboard</source>
-        <translation>Enlace copiado al portapapeles
-</translation>
+        <translation>Ο σύνδεσμος αντιγράφτηκε στο πρόχειρο</translation>
     </message>
 </context>
 <context>
     <name>HistorySegment</name>
     <message>
         <source>History</source>
-        <translation>Historial</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete History</source>
-        <translation>Borrar historial</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>LinkMenu</name>
     <message>
         <source>Open New Tab</source>
-        <translation>Abrir nueva pestaña</translation>
+        <translation>Άνοιγμα νέας καρτέλας</translation>
     </message>
     <message>
         <source>Save Link Destination</source>
-        <translation>Guardar contenido del enlace</translation>
+        <translation>Αποθήκευση του προορισμού του συνδέσμου</translation>
     </message>
     <message>
         <source>Copy Link</source>
-        <translation>Copiar enlace</translation>
+        <translation>Αντιγραφή συνδέσμου</translation>
     </message>
     <message>
         <source>Save Image</source>
-        <translation>Guardar imagen</translation>
+        <translation>Αποθήκευση εικόνας</translation>
     </message>
     <message>
         <source>Downloading image</source>
-        <translation>Descargando imagen</translation>
+        <translation>Τηλεφόρτωση της εικόνας</translation>
     </message>
     <message>
         <source>Downloading link</source>
-        <translation>Descargando enlace</translation>
+        <translation>Τηλεφόρτωση του συνδέσμου</translation>
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation>Enlace copiado al portapapeles</translation>
+        <translation>Ο σύνδεσμος αντιγράφτηκε στο πρόχειρο</translation>
     </message>
     <message>
         <source>Share</source>
-        <translation>Compartir</translation>
+        <translation>Κοινοποίηση</translation>
     </message>
 </context>
 <context>
     <name>LoadFailed</name>
     <message>
         <source>You are in offline mode</source>
-        <translation>Estás en modo fuera de línea</translation>
+        <translation>Είσαστε σε λειτουργία εκτός σύνδεσης</translation>
     </message>
     <message>
         <source>WebView process has crashed, restarting...</source>
-        <translation>El proceso WebView se ha colgado, reiniciando...</translation>
+        <translation>Η διεργασία WebView κατέρρευσε, γίνεται επανεκκίνηση...</translation>
     </message>
 </context>
 <context>
     <name>MediaPlayerToolBar</name>
     <message>
         <source>Downloading media</source>
-        <translation>Descargando multimedia</translation>
+        <translation>Τηλεφόρτωση μέσου</translation>
     </message>
 </context>
 <context>
     <name>NavigationHistoryItem</name>
     <message>
         <source>Open</source>
-        <translation>Abrir</translation>
+        <translation>Άνοιγμα</translation>
     </message>
     <message>
         <source>Open in New Tab</source>
-        <translation>Abrir en nueva pestaña</translation>
+        <translation>Άνοιγμα σε νέα καρτέλα</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Borrar</translation>
+        <translation>Διαγραφή</translation>
     </message>
     <message>
         <source>Deleting item</source>
-        <translation>Borrando elemento</translation>
+        <translation>Διαγραφή αντικειμένου</translation>
     </message>
 </context>
 <context>
     <name>NewPopupRulePage</name>
     <message>
         <source>Apply Rule</source>
-        <translation>Aplicar regla</translation>
+        <translation>Εφαρμογή του κανόνα</translation>
     </message>
     <message>
         <source>Url</source>
@@ -786,219 +785,219 @@
     </message>
     <message>
         <source>Rule</source>
-        <translation>Regla</translation>
+        <translation>Κανόνας</translation>
     </message>
     <message>
         <source>Allow</source>
-        <translation>Permitir</translation>
+        <translation>Επιτρέπεται</translation>
     </message>
     <message>
         <source>Block</source>
-        <translation>Bloquear</translation>
+        <translation>Φραγή</translation>
     </message>
 </context>
 <context>
     <name>NotificationDialog</name>
     <message>
         <source>Allow</source>
-        <translation>Permitir</translation>
+        <translation>Να επιτραπεί</translation>
     </message>
     <message>
         <source>Deny</source>
-        <translation>Rechazar</translation>
+        <translation>Άρνηση</translation>
     </message>
     <message>
         <source>&apos;%1&apos; wants to access system&apos;s notifications</source>
-        <translation>&apos;%1&apos; quiere acceder a las notificaciones del sistema</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>PopupBlockerPage</name>
     <message>
         <source>Popup Blocker</source>
-        <translation>Bloqueador de popup</translation>
+        <translation>Φραγή αναδυόμενων</translation>
     </message>
     <message>
         <source>Clear popup list</source>
-        <translation>Limpiar lista de popup</translation>
+        <translation>Καθαρισμός της λίστας των αναδυόμενων</translation>
     </message>
 </context>
 <context>
     <name>PopupItem</name>
     <message>
         <source>Rule</source>
-        <translation>Regla</translation>
+        <translation>Κανόνας</translation>
     </message>
     <message>
         <source>Allow</source>
-        <translation>Permitir</translation>
+        <translation>Επιτρέπεται</translation>
     </message>
     <message>
         <source>Block</source>
-        <translation>Bloquear</translation>
+        <translation>Φραγή</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Borrar</translation>
+        <translation>Διαγραφή</translation>
     </message>
     <message>
         <source>Deleting rule</source>
-        <translation>Borrando regla</translation>
+        <translation>Διαγραφή κανόνα</translation>
     </message>
 </context>
 <context>
     <name>PopupManagerPage</name>
     <message>
         <source>Popup Manager</source>
-        <translation>Gestor de popup</translation>
+        <translation>Διαχειριστής αναδυόμενων</translation>
     </message>
     <message>
         <source>Delete Rules</source>
-        <translation>Borrar reglas</translation>
+        <translation>Διαγραφή κανόνων</translation>
     </message>
     <message>
         <source>Deleting rules</source>
-        <translation>Borrando reglas</translation>
+        <translation>Διαγραφή των κανόνων</translation>
     </message>
     <message>
         <source>New Rule</source>
-        <translation>Nueva regla</translation>
+        <translation>Νέος κανόνας</translation>
     </message>
 </context>
 <context>
     <name>PrivacySettingsPage</name>
     <message>
         <source>Wipe Data on Exit</source>
-        <translation>Limpiar datos al salir</translation>
+        <translation>Καθαρισμός δεδομένων κατά την έξοδο</translation>
     </message>
     <message>
         <source>Delete Navigation History</source>
-        <translation>Borrar historial de navegación</translation>
+        <translation>Διαγραφή του ιστορικού πλοήγησης</translation>
     </message>
     <message>
         <source>Removing navigation history</source>
-        <translation>Borrando historial de navegación</translation>
+        <translation>Αφαίρεση του ιστορικού πλοήγησης</translation>
     </message>
     <message>
         <source>Delete Cookies</source>
-        <translation>Borrar cookies</translation>
+        <translation>Διαγραφή θυμημάτων (cookie)</translation>
     </message>
     <message>
         <source>Removing cookies</source>
-        <translation>Borrando cookies</translation>
+        <translation>Αφαίρεση θυμημάτων (cookie)</translation>
     </message>
     <message>
         <source>Delete Personal Data</source>
-        <translation>Borrar datos personales</translation>
+        <translation>Διαγραφή των προσωπικών δεδομένων</translation>
     </message>
     <message>
         <source>Removing personal data</source>
-        <translation>Borrando datos personales</translation>
+        <translation>Αφαίρεση των προσωπικών δεδομένων</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Guardar</translation>
+        <translation>Αποθήκευση</translation>
     </message>
     <message>
         <source>Privacy Options</source>
-        <translation>Opciones de privacidad</translation>
+        <translation>Επιλογές ιδιωτικού απορρήτου</translation>
     </message>
     <message>
         <source>Privacy Management</source>
-        <translation>Gestión de la privacidad</translation>
+        <translation>Διαχείριση ιδιωτικού απορρήτου</translation>
     </message>
     <message>
         <source>Keep Favicons when deleting personal data</source>
-        <translation>Mantener los iconos de Favoritos cuando se borren los datos personales</translation>
+        <translation>Διατήρηση των αγαπημένων εικονιδίων (favicon) κατά την διαγραφή των προσωπικών δεδομένων</translation>
     </message>
 </context>
 <context>
     <name>PromptDialog</name>
     <message>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation>Εντάξει</translation>
     </message>
 </context>
 <context>
     <name>ProxySettingsPage</name>
     <message>
         <source>Save</source>
-        <translation>Guardar</translation>
+        <translation type="unfinished">Αποθήκευση</translation>
     </message>
     <message>
         <source>Proxy Disabled</source>
-        <translation>Proxy desactivado</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>You need to restart WebPirate</source>
-        <translation>Es necesario reiniciar WebPirate</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Proxy Settings (Restart needed)</source>
-        <translation>Ajustes del Proxy (es necesario reiniciar)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Host or Ip Address</source>
-        <translation>Host o dirección IP</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Port</source>
-        <translation>Puerto</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>QueryBar</name>
     <message>
         <source>Search with</source>
-        <translation>Buscar con</translation>
+        <translation>Αναζήτηση με</translation>
     </message>
     <message>
         <source>Search...</source>
-        <translation>Buscar...</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>QuickGrid</name>
     <message>
         <source>The Quick Grid is empty</source>
-        <translation>La rejilla rápida está vacía</translation>
+        <translation>Ο κάνναβος γρήγορης προσπέλασης είναι κενός</translation>
     </message>
     <message>
         <source>Long Press to edit</source>
-        <translation>Mantener pulsado para editar</translation>
+        <translation>Διατηρήστε πιεσμένο για επεξεργασία</translation>
     </message>
     <message>
         <source>New tab</source>
-        <translation>Nueva pestaña</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>QuickGridBottomPanel</name>
     <message>
         <source>Add</source>
-        <translation>Añadir</translation>
+        <translation>Προσθήκη</translation>
     </message>
     <message>
         <source>Done</source>
-        <translation>Hecho</translation>
+        <translation>Έγινε</translation>
     </message>
 </context>
 <context>
     <name>QuickGridItem</name>
     <message>
         <source>Removing item</source>
-        <translation>Borrando elemento</translation>
+        <translation>Αφαίρεση αντικειμένου</translation>
     </message>
 </context>
 <context>
     <name>QuickGridPage</name>
     <message>
         <source>Save</source>
-        <translation>Guardar</translation>
+        <translation>Αποθήκευση</translation>
     </message>
     <message>
         <source>Title</source>
-        <translation>Título</translation>
+        <translation>Τίτλος</translation>
     </message>
     <message>
         <source>Url</source>
@@ -1009,196 +1008,196 @@
     <name>RequestDialog</name>
     <message>
         <source>Yes</source>
-        <translation>Sí</translation>
+        <translation>Ναι</translation>
     </message>
     <message>
         <source>No</source>
-        <translation>No</translation>
+        <translation>Όχι</translation>
     </message>
 </context>
 <context>
     <name>SaveSessionPage</name>
     <message>
         <source>Save Session</source>
-        <translation>Guardar sesión</translation>
+        <translation>Αποθήκευση συνεδρίας</translation>
     </message>
     <message>
         <source>Session name</source>
-        <translation>Nombre de la sesión</translation>
+        <translation>Όνομα συνεδρίας</translation>
     </message>
     <message>
         <source>Load at startup</source>
-        <translation>Cargar al iniciar</translation>
+        <translation>Φόρτωση στη εκκίνηση</translation>
     </message>
     <message>
         <source>Replace current session</source>
-        <translation>Reemplazar sesión actual</translation>
+        <translation>Αντικατάσταση της τρέχουσας συνεδρίας</translation>
     </message>
     <message>
         <source>Opened Tabs</source>
-        <translation>Pestañas abiertas</translation>
+        <translation>Ανοιχτές καρτέλες</translation>
     </message>
     <message>
         <source>Selected</source>
-        <translation>Seleccionado</translation>
+        <translation>Επιλεγμένα</translation>
     </message>
 </context>
 <context>
     <name>SearchEnginePage</name>
     <message>
         <source>Save</source>
-        <translation>Guardar</translation>
+        <translation>Αποθήκευση</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Nombre</translation>
+        <translation>Όνομα</translation>
     </message>
     <message>
         <source>Query</source>
-        <translation>Consulta</translation>
+        <translation>Ερώτημα</translation>
     </message>
 </context>
 <context>
     <name>SearchEnginesPage</name>
     <message>
         <source>Set as Default</source>
-        <translation>Establecer por defecto</translation>
+        <translation>Ορισμός ως προκαθορισμένη</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Borrar</translation>
+        <translation>Διαγραφή</translation>
     </message>
     <message>
         <source>Search Engines</source>
-        <translation>Motor de búsqueda</translation>
+        <translation>Μηχανές αναζήτησης</translation>
     </message>
     <message>
         <source>Add</source>
-        <translation>Añadir</translation>
+        <translation>Προσθήκη</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Editar</translation>
+        <translation>Επεξεργασία</translation>
     </message>
     <message>
         <source>Deleting Search Engine</source>
-        <translation>Borrando motor de búsqueda</translation>
+        <translation>Διαγραφή της μηχανής αναζήτησης</translation>
     </message>
 </context>
 <context>
     <name>SelectorFilesPage</name>
     <message>
         <source>Android storage</source>
-        <translation>Almacenamiento Android</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>SD Card</source>
-        <translation>Tarjeta SD</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Home</source>
-        <translation>Inicio</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Send %1 file(s)</source>
-        <translation>Enviar %1 fichero(s)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Back</source>
-        <translation>Volver</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>SessionPage</name>
     <message>
         <source>Save Session</source>
-        <translation>Guardar sesión</translation>
+        <translation>Αποθήκευση συνεδρίας</translation>
     </message>
     <message>
         <source>Session name</source>
-        <translation>Nombre de la sesión</translation>
+        <translation>Όνομα συνεδρίας</translation>
     </message>
     <message>
         <source>Load at startup</source>
-        <translation>Cargar al iniciar</translation>
+        <translation>Φόρτωση κατά την εκκίνηση</translation>
     </message>
     <message>
         <source>Replace current session</source>
-        <translation>Reemplazar sesión actual</translation>
+        <translation>Αντικατάσταση της τρέχουσας συνεδρίας</translation>
     </message>
     <message>
         <source>Opened Tabs</source>
-        <translation>Pestañas abiertas</translation>
+        <translation>Ανοιχτές καρτέλες</translation>
     </message>
     <message>
         <source>Selected</source>
-        <translation>Seleccionado</translation>
+        <translation>Επιλεγμένο</translation>
     </message>
 </context>
 <context>
     <name>SessionsSegment</name>
     <message>
         <source>Sessions</source>
-        <translation>Sesiones</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>No Sessions</source>
-        <translation>No hay sesiones</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Save current session</source>
-        <translation>Guardar la sesión actual</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Tabs saved</source>
-        <translation>Pestañas guardadas</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Open</source>
-        <translation>Abrir</translation>
+        <translation type="unfinished">Άνοιγμα</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Editar</translation>
+        <translation type="unfinished">Επεξεργασία</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Borrar</translation>
+        <translation type="unfinished">Διαγραφή</translation>
     </message>
     <message>
         <source>Deleting session</source>
-        <translation>Borrando sesión</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Loads at startup</source>
-        <translation>Cargar al iniciar</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>SettingsPage</name>
     <message>
         <source>General</source>
-        <translation>General</translation>
+        <translation>Γενικά</translation>
     </message>
     <message>
         <source>Privacy</source>
-        <translation>Privacidad</translation>
+        <translation>Ιδιωτικό απόρρητο</translation>
     </message>
     <message>
         <source>Browser Settings</source>
-        <translation>Ajustes del navegador</translation>
+        <translation>Ρυθμίσεις φυλλομετρητή</translation>
     </message>
     <message>
         <source>Tabs</source>
-        <translation>Pestañas</translation>
+        <translation>Καρτέλες</translation>
     </message>
     <message>
         <source>Experimental</source>
-        <translation>Experimental</translation>
+        <translation>Πειραματικό</translation>
     </message>
     <message>
         <source>Cover</source>
-        <translation>Cubierta</translation>
+        <translation>Εξώφυλλο</translation>
     </message>
     <message>
         <source>AdBlock</source>
@@ -1206,37 +1205,37 @@
     </message>
     <message>
         <source>Proxy</source>
-        <translation>Proxy</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Popup Blocker</source>
-        <translation>Bloqueador de ventanas emergentes</translation>
+        <translation type="unfinished">Φραγή αναδυόμενων</translation>
     </message>
 </context>
 <context>
     <name>TabClosedItem</name>
     <message>
         <source>Open</source>
-        <translation>Abrir</translation>
+        <translation type="unfinished">Άνοιγμα</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Borrar</translation>
+        <translation type="unfinished">Διαγραφή</translation>
     </message>
     <message>
         <source>Deleting Tab</source>
-        <translation>Borrando pestaña</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>TabListItem</name>
     <message>
         <source>Quick Grid</source>
-        <translation>Rejilla rápida</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Load error</source>
-        <translation>Error de carga</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Copy link</source>
@@ -1244,7 +1243,7 @@
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ο σύνδεσμος αντιγράφτηκε στο πρόχειρο</translation>
     </message>
     <message>
         <source>Save page</source>
@@ -1263,124 +1262,124 @@
     <name>TabsSegment</name>
     <message>
         <source>Tabs</source>
-        <translation>Pestañas</translation>
+        <translation type="unfinished">Καρτέλες</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation>Ajustes</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>New Tab</source>
-        <translation>Nueva pestaña</translation>
+        <translation type="unfinished">Νέα καρτέλα</translation>
     </message>
     <message>
         <source>Disable Night Mode</source>
-        <translation>Desactivar el modo noche</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Enable Night Mode</source>
-        <translation>Activar el modo noche</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>TabsSettingsPage</name>
     <message>
         <source>Restore tabs at Startup</source>
-        <translation>Restaurar pestañas al iniciar</translation>
+        <translation>Επαναφορά των καρτελών κατά την εκκίνηση</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Guardar</translation>
+        <translation>Αποθήκευση</translation>
     </message>
     <message>
         <source>Close last tab</source>
-        <translation>Cerrar la última pestaña</translation>
+        <translation>Κλείσιμο της τελευταίας καρτέλας</translation>
     </message>
 </context>
 <context>
     <name>TextFieldPage</name>
     <message>
         <source>Send</source>
-        <translation>Enviar</translation>
+        <translation>Αποστολή</translation>
     </message>
 </context>
 <context>
     <name>TextSelectionPage</name>
     <message>
         <source>Copy</source>
-        <translation>Copiar</translation>
+        <translation>Αντιγραφή</translation>
     </message>
 </context>
 <context>
     <name>WebViewListener</name>
     <message>
         <source>FAILED</source>
-        <translation>FALLIDO</translation>
+        <translation>ΑΠΕΤΥΧΕ</translation>
     </message>
     <message>
         <source>Codec</source>
-        <translation>Códec</translation>
+        <translation>Codec</translation>
     </message>
 </context>
 <context>
     <name>YouTubeCipher</name>
     <message>
         <source>Downloading Player&apos;s Cipher</source>
-        <translation>Descargando decodificador del reproductor</translation>
+        <translation>Λήψη του αποκωδικοποιητή του αναπαραγωγέα</translation>
     </message>
     <message>
         <source>Cannot find decoding function</source>
-        <translation>No es posible encontrar función de decodificación</translation>
+        <translation>Αδύνατη η εύρεση λειτουργίας αποκωδικοποίησης</translation>
     </message>
     <message>
         <source>Cannot find decoding object</source>
-        <translation>No es posible encontrar objeto de decodificación</translation>
+        <translation>Αδύνατη η εύρεση αντικειμένου αποκωδικοποίησης</translation>
     </message>
     <message>
         <source>Cannot download Video Configuration</source>
-        <translation>No es posible descargar configuración del vídeo</translation>
+        <translation>Αδύνατη η τηλεφόρτωση της διαμόρφωσης βίντεο</translation>
     </message>
     <message>
         <source>Ciphered Video: Downloading WebPage</source>
-        <translation>Vídeo codificado: descargando de página Web</translation>
+        <translation>Κρυπτογραφημένο βίντεο: Λήψη της ιστοσελίδας</translation>
     </message>
 </context>
 <context>
     <name>YouTubeGrabber</name>
     <message>
         <source>Quality</source>
-        <translation>Calidad</translation>
+        <translation>Ποιότητα</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation>Εντάξει</translation>
     </message>
     <message>
         <source>Downloading video info</source>
-        <translation>Descargando info del vídeo</translation>
+        <translation>Λήψη των πληροφοριών του βίντεο</translation>
     </message>
     <message>
         <source>FAILED</source>
-        <translation>FALLIDO</translation>
+        <translation>ΑΠΕΤΥΧΕ</translation>
     </message>
     <message>
         <source>Grabbing %1</source>
-        <translation>Capturando %1</translation>
+        <translation>Σύλληψη του %1</translation>
     </message>
     <message>
         <source>Decoding Signature for %1</source>
-        <translation>Decodificando firma para %1</translation>
+        <translation>Υπογραφή αποκωδικοποίησης για %1</translation>
     </message>
 </context>
 <context>
     <name>harbour-webpirate</name>
     <message>
         <source>Download Completed</source>
-        <translation>Descarga Completada</translation>
+        <translation>Η λήψη ολοκληρώθηκε</translation>
     </message>
     <message>
         <source>Download Failed</source>
-        <translation>Decarga Fallida</translation>
+        <translation>Η λήψη απέτυχε</translation>
     </message>
 </context>
 </TS>

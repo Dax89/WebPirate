@@ -5,7 +5,7 @@
     <name>AboutPage</name>
     <message>
         <source>About Web Pirate</source>
-        <translation>Om </translation>
+        <translation>Om Web Pirate</translation>
     </message>
     <message>
         <source>Catalan</source>
@@ -158,11 +158,11 @@
     </message>
     <message>
         <source>Disable AdBlock</source>
-        <translation type="unfinished"></translation>
+        <translation>Inaktivera AdBlock</translation>
     </message>
     <message>
         <source>Enable AdBlock</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktivera AdBlock</translation>
     </message>
 </context>
 <context>
@@ -268,15 +268,15 @@
     </message>
     <message>
         <source>Accept Certificate from: %1 ?</source>
-        <translation type="unfinished"></translation>
+        <translation>Acceptera certificat från: %1 ?</translation>
     </message>
     <message>
         <source>Refresh</source>
-        <translation type="unfinished"></translation>
+        <translation>Uppdatera</translation>
     </message>
     <message>
         <source>New tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Ny flik</translation>
     </message>
     <message>
         <source>Remove from Favorites</source>
@@ -295,11 +295,11 @@
     <name>ClosedTabsSegment</name>
     <message>
         <source>Closed Tabs</source>
-        <translation type="unfinished">Stängda flikar</translation>
+        <translation>Stängda flikar</translation>
     </message>
     <message>
         <source>Delete Closed Tabs</source>
-        <translation type="unfinished">Ta bort stängda flikar</translation>
+        <translation>Ta bort stängda flikar</translation>
     </message>
 </context>
 <context>
@@ -355,19 +355,19 @@
     <name>CookiesSegment</name>
     <message>
         <source>Cookie Manager</source>
-        <translation type="unfinished">Cookie-hanterare</translation>
+        <translation>Cookie-hanterare</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation type="unfinished">Filter</translation>
+        <translation>Filter</translation>
     </message>
     <message>
         <source>Remove All Cookies</source>
-        <translation type="unfinished">Ta bort alla cookies</translation>
+        <translation>Ta bort alla cookies</translation>
     </message>
     <message>
         <source>Add Cookie</source>
-        <translation type="unfinished">Lägg till cookie</translation>
+        <translation>Lägg till cookie</translation>
     </message>
 </context>
 <context>
@@ -496,19 +496,19 @@
     <name>DownloadsSegment</name>
     <message>
         <source>Delete completed Downloads</source>
-        <translation type="unfinished">Ta bort slutförda nedladdningar</translation>
+        <translation>Ta bort slutförda nedladdningar</translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation type="unfinished">Nedladdningar</translation>
+        <translation>Nedladdningar</translation>
     </message>
     <message>
         <source>Download Url</source>
-        <translation type="unfinished">Nedladdningslänk</translation>
+        <translation>Nedladdningsadress</translation>
     </message>
     <message>
         <source>Start</source>
-        <translation type="unfinished"></translation>
+        <translation>Starta</translation>
     </message>
 </context>
 <context>
@@ -530,27 +530,27 @@
     <name>FavoriteItem</name>
     <message>
         <source>Open</source>
-        <translation type="unfinished">Öppna</translation>
+        <translation>Öppna</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="unfinished">Redigera</translation>
+        <translation>Redigera</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Ta bort</translation>
+        <translation>Ta bort</translation>
     </message>
     <message>
         <source>Deleting Folder</source>
-        <translation type="unfinished">Tar bort mapp</translation>
+        <translation>Tar bort mapp</translation>
     </message>
     <message>
         <source>Deleting Favorite</source>
-        <translation type="unfinished">Tar bort favorit</translation>
+        <translation>Tar bort favorit</translation>
     </message>
     <message>
         <source>Add to Quick Grid</source>
-        <translation type="unfinished">Lägg till i snabbstartfältet</translation>
+        <translation>Lägg till i snabbstartfältet</translation>
     </message>
 </context>
 <context>
@@ -591,54 +591,54 @@
     <name>FavoritesMenu</name>
     <message>
         <source>Export</source>
-        <translation type="unfinished">Exportera</translation>
+        <translation>Exportera</translation>
     </message>
     <message>
         <source>Exporting favorites</source>
-        <translation type="unfinished">Exporterar favoriter</translation>
+        <translation>Exporterar favoriter</translation>
     </message>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished">Favoriter</translation>
+        <translation>Favoriter</translation>
     </message>
     <message>
         <source>Favorites exported successfully</source>
-        <translation type="unfinished">Favoriter exporterades korrekt</translation>
+        <translation>Favoritexport slutförd</translation>
     </message>
     <message>
         <source>Import</source>
-        <translation type="unfinished">Importera</translation>
+        <translation>Importera</translation>
     </message>
     <message>
         <source>Import in</source>
-        <translation type="unfinished">Importera i</translation>
+        <translation>Importera i</translation>
     </message>
     <message>
         <source>Add Folder</source>
-        <translation type="unfinished">Lägg till mapp</translation>
+        <translation>Lägg till mapp</translation>
     </message>
     <message>
         <source>Add Favorite</source>
-        <translation type="unfinished">Lägg till favorit</translation>
+        <translation>Lägg till favorit</translation>
     </message>
 </context>
 <context>
     <name>FavoritesSegment</name>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished">Favoriter</translation>
+        <translation>Favoriter</translation>
     </message>
     <message>
         <source>Back</source>
-        <translation type="unfinished"></translation>
+        <translation>Tillbaka</translation>
     </message>
     <message>
         <source>Favorites imported successfully</source>
-        <translation type="unfinished">Favoriter importerades korrekt</translation>
+        <translation>Favoritimport slutförd</translation>
     </message>
     <message>
         <source>Cannot import favorites</source>
-        <translation type="unfinished">Kan inte importera favoriter</translation>
+        <translation>Kan inte importera favoriter</translation>
     </message>
 </context>
 <context>
@@ -668,7 +668,7 @@
     </message>
     <message>
         <source>Search Engines</source>
-        <translation>Sökmotorer</translation>
+        <translation>Sökmotorer:</translation>
     </message>
     <message>
         <source>Long press to edit</source>
@@ -676,7 +676,7 @@
     </message>
     <message>
         <source>User Agent</source>
-        <translation>Användaragent</translation>
+        <translation>Användaragent:</translation>
     </message>
     <message>
         <source>Set as default browser</source>
@@ -694,11 +694,11 @@
     <name>HistorySegment</name>
     <message>
         <source>History</source>
-        <translation type="unfinished"></translation>
+        <translation>Historik</translation>
     </message>
     <message>
         <source>Delete History</source>
-        <translation type="unfinished">Ta bort historik</translation>
+        <translation>Ta bort historik</translation>
     </message>
 </context>
 <context>
@@ -808,7 +808,7 @@
     </message>
     <message>
         <source>&apos;%1&apos; wants to access system&apos;s notifications</source>
-        <translation type="unfinished"></translation>
+        <translation>&apos;%1&apos; vill få åtkomst till systemets aviseringsfunktion</translation>
     </message>
 </context>
 <context>
@@ -922,27 +922,27 @@
     <name>ProxySettingsPage</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Spara</translation>
+        <translation>Spara</translation>
     </message>
     <message>
         <source>Proxy Disabled</source>
-        <translation type="unfinished"></translation>
+        <translation>Ingen proxy</translation>
     </message>
     <message>
         <source>You need to restart WebPirate</source>
-        <translation type="unfinished"></translation>
+        <translation>Du måste starta om WebPirate</translation>
     </message>
     <message>
         <source>Proxy Settings (Restart needed)</source>
-        <translation type="unfinished"></translation>
+        <translation>Proxyinställningar (Omstart krävs)</translation>
     </message>
     <message>
         <source>Host or Ip Address</source>
-        <translation type="unfinished"></translation>
+        <translation>Värd eller IP-adress</translation>
     </message>
     <message>
         <source>Port</source>
-        <translation type="unfinished"></translation>
+        <translation>Port</translation>
     </message>
 </context>
 <context>
@@ -953,7 +953,7 @@
     </message>
     <message>
         <source>Search...</source>
-        <translation type="unfinished"></translation>
+        <translation>Sök...</translation>
     </message>
 </context>
 <context>
@@ -968,7 +968,7 @@
     </message>
     <message>
         <source>New tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Ny flik</translation>
     </message>
 </context>
 <context>
@@ -1088,23 +1088,23 @@
     <name>SelectorFilesPage</name>
     <message>
         <source>Android storage</source>
-        <translation type="unfinished"></translation>
+        <translation>Android-lagring</translation>
     </message>
     <message>
         <source>SD Card</source>
-        <translation type="unfinished">SD-kort</translation>
+        <translation>SD-kort</translation>
     </message>
     <message>
         <source>Home</source>
-        <translation type="unfinished">Hem</translation>
+        <translation>Hem</translation>
     </message>
     <message>
         <source>Send %1 file(s)</source>
-        <translation type="unfinished"></translation>
+        <translation>Skicka %1 fil(er)</translation>
     </message>
     <message>
         <source>Back</source>
-        <translation type="unfinished"></translation>
+        <translation>Tillbaka</translation>
     </message>
 </context>
 <context>
@@ -1138,39 +1138,39 @@
     <name>SessionsSegment</name>
     <message>
         <source>Sessions</source>
-        <translation type="unfinished">Sessioner</translation>
+        <translation>Sessioner</translation>
     </message>
     <message>
         <source>No Sessions</source>
-        <translation type="unfinished"></translation>
+        <translation>Inga sessioner</translation>
     </message>
     <message>
         <source>Save current session</source>
-        <translation type="unfinished">Spara aktuell session</translation>
+        <translation>Spara aktuell session</translation>
     </message>
     <message>
         <source>Tabs saved</source>
-        <translation type="unfinished">Flikar sparade</translation>
+        <translation>Flikar sparade</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation type="unfinished">Öppna</translation>
+        <translation>Öppna</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="unfinished">Redigera</translation>
+        <translation>Redigera</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Ta bort</translation>
+        <translation>Ta bort</translation>
     </message>
     <message>
         <source>Deleting session</source>
-        <translation type="unfinished">Tar bort session</translation>
+        <translation>Tar bort session</translation>
     </message>
     <message>
         <source>Loads at startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Läses in vid uppstart</translation>
     </message>
 </context>
 <context>
@@ -1205,7 +1205,7 @@
     </message>
     <message>
         <source>Proxy</source>
-        <translation type="unfinished"></translation>
+        <translation>Proxy</translation>
     </message>
     <message>
         <source>Popup Blocker</source>
@@ -1216,26 +1216,26 @@
     <name>TabClosedItem</name>
     <message>
         <source>Open</source>
-        <translation type="unfinished">Öppna</translation>
+        <translation>Öppna</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Ta bort</translation>
+        <translation>Ta bort</translation>
     </message>
     <message>
         <source>Deleting Tab</source>
-        <translation type="unfinished">Tar bort flik</translation>
+        <translation>Tar bort flik</translation>
     </message>
 </context>
 <context>
     <name>TabListItem</name>
     <message>
         <source>Quick Grid</source>
-        <translation type="unfinished"></translation>
+        <translation>Snabbstartfält</translation>
     </message>
     <message>
         <source>Load error</source>
-        <translation type="unfinished"></translation>
+        <translation>Inläsningsfel</translation>
     </message>
     <message>
         <source>Copy link</source>
@@ -1262,23 +1262,23 @@
     <name>TabsSegment</name>
     <message>
         <source>Tabs</source>
-        <translation type="unfinished">Flikar</translation>
+        <translation>Flikar</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Inställningar</translation>
     </message>
     <message>
         <source>New Tab</source>
-        <translation type="unfinished">Ny flik</translation>
+        <translation>Ny flik</translation>
     </message>
     <message>
         <source>Disable Night Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Inaktivera nattläge</translation>
     </message>
     <message>
         <source>Enable Night Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktivera nattläge</translation>
     </message>
 </context>
 <context>

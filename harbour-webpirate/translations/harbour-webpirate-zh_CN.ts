@@ -295,11 +295,11 @@
     <name>ClosedTabsSegment</name>
     <message>
         <source>Closed Tabs</source>
-        <translation type="unfinished">已关闭的标签页</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete Closed Tabs</source>
-        <translation type="unfinished">删除已关闭的标签页</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -355,7 +355,7 @@
     <name>CookiesSegment</name>
     <message>
         <source>Cookie Manager</source>
-        <translation type="unfinished">Cookie管理器</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Filter</source>
@@ -363,7 +363,7 @@
     </message>
     <message>
         <source>Remove All Cookies</source>
-        <translation type="unfinished">删除所有Cookie</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Add Cookie</source>
@@ -496,15 +496,15 @@
     <name>DownloadsSegment</name>
     <message>
         <source>Delete completed Downloads</source>
-        <translation type="unfinished">删除已完成的下载</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation type="unfinished">下载</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Download Url</source>
-        <translation type="unfinished">下载URL</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Start</source>
@@ -542,15 +542,15 @@
     </message>
     <message>
         <source>Deleting Folder</source>
-        <translation type="unfinished">正在删除文件夹</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Deleting Favorite</source>
-        <translation type="unfinished">正在删除书签</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Add to Quick Grid</source>
-        <translation type="unfinished">添加到快速拨号</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -591,42 +591,42 @@
     <name>FavoritesMenu</name>
     <message>
         <source>Export</source>
-        <translation type="unfinished">导出</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Exporting favorites</source>
-        <translation type="unfinished">正在导出书签</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished">书签</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Favorites exported successfully</source>
-        <translation type="unfinished">书签已导出</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Import</source>
-        <translation type="unfinished">导入</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Import in</source>
-        <translation type="unfinished">导入到</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Add Folder</source>
-        <translation type="unfinished">添加文件夹</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Add Favorite</source>
-        <translation type="unfinished">添加书签</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>FavoritesSegment</name>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished">书签</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Back</source>
@@ -634,11 +634,11 @@
     </message>
     <message>
         <source>Favorites imported successfully</source>
-        <translation type="unfinished">书签已导入</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Cannot import favorites</source>
-        <translation type="unfinished">无法导入书签</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -680,7 +680,7 @@
     </message>
     <message>
         <source>Set as default browser</source>
-        <translation type="unfinished"></translation>
+        <translation>设为默认浏览器</translation>
     </message>
 </context>
 <context>
@@ -698,7 +698,7 @@
     </message>
     <message>
         <source>Delete History</source>
-        <translation type="unfinished">删除历史记录</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -922,27 +922,27 @@
     <name>ProxySettingsPage</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished">保存</translation>
+        <translation>保存</translation>
     </message>
     <message>
         <source>Proxy Disabled</source>
-        <translation type="unfinished"></translation>
+        <translation>代理已禁用</translation>
     </message>
     <message>
         <source>You need to restart WebPirate</source>
-        <translation type="unfinished"></translation>
+        <translation>你需要重新启动WebPirate</translation>
     </message>
     <message>
         <source>Proxy Settings (Restart needed)</source>
-        <translation type="unfinished"></translation>
+        <translation>代理设置（需要重启）</translation>
     </message>
     <message>
         <source>Host or Ip Address</source>
-        <translation type="unfinished"></translation>
+        <translation>主机或IP地址</translation>
     </message>
     <message>
         <source>Port</source>
-        <translation type="unfinished"></translation>
+        <translation>端口</translation>
     </message>
 </context>
 <context>
@@ -1092,11 +1092,11 @@
     </message>
     <message>
         <source>SD Card</source>
-        <translation type="unfinished">SD卡</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Home</source>
-        <translation type="unfinished">主页</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Send %1 file(s)</source>
@@ -1138,7 +1138,7 @@
     <name>SessionsSegment</name>
     <message>
         <source>Sessions</source>
-        <translation type="unfinished">会话</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>No Sessions</source>
@@ -1146,11 +1146,11 @@
     </message>
     <message>
         <source>Save current session</source>
-        <translation type="unfinished">保存当前会话</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Tabs saved</source>
-        <translation type="unfinished">标签页已保存</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Open</source>
@@ -1166,7 +1166,7 @@
     </message>
     <message>
         <source>Deleting session</source>
-        <translation type="unfinished">正在删除会话</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Loads at startup</source>
@@ -1205,7 +1205,7 @@
     </message>
     <message>
         <source>Proxy</source>
-        <translation type="unfinished"></translation>
+        <translation>代理</translation>
     </message>
     <message>
         <source>Popup Blocker</source>
@@ -1224,7 +1224,7 @@
     </message>
     <message>
         <source>Deleting Tab</source>
-        <translation type="unfinished">正在删除标签页</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

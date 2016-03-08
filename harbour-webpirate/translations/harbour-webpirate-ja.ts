@@ -295,11 +295,11 @@
     <name>ClosedTabsSegment</name>
     <message>
         <source>Closed Tabs</source>
-        <translation type="unfinished">閉じたタブ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete Closed Tabs</source>
-        <translation type="unfinished">閉じたタブを削除中</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -496,7 +496,7 @@
     <name>DownloadsSegment</name>
     <message>
         <source>Delete completed Downloads</source>
-        <translation type="unfinished">完了ダウンロードを消去する</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Downloads</source>
@@ -504,7 +504,7 @@
     </message>
     <message>
         <source>Download Url</source>
-        <translation type="unfinished">ダウンロードUrl</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Start</source>
@@ -542,11 +542,11 @@
     </message>
     <message>
         <source>Deleting Folder</source>
-        <translation type="unfinished">フォルダーを削除中</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Deleting Favorite</source>
-        <translation type="unfinished">お気に入るを削除中</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Add to Quick Grid</source>
@@ -591,42 +591,42 @@
     <name>FavoritesMenu</name>
     <message>
         <source>Export</source>
-        <translation type="unfinished">エクスポート</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Exporting favorites</source>
-        <translation type="unfinished">お気に入りをエクスポート</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished">お気に入り</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Favorites exported successfully</source>
-        <translation type="unfinished">お気に入りのエクスポート完了</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Import</source>
-        <translation type="unfinished">インポート</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Import in</source>
-        <translation type="unfinished">にインポート</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Add Folder</source>
-        <translation type="unfinished">フォルダーを追加する</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Add Favorite</source>
-        <translation type="unfinished">お気に入りに追加する</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>FavoritesSegment</name>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished">お気に入り</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Back</source>
@@ -634,7 +634,7 @@
     </message>
     <message>
         <source>Favorites imported successfully</source>
-        <translation type="unfinished">お気に入りのインポート完了</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Cannot import favorites</source>
@@ -698,7 +698,7 @@
     </message>
     <message>
         <source>Delete History</source>
-        <translation type="unfinished">履歴を削除する</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1226,7 +1226,7 @@
     </message>
     <message>
         <source>Deleting Tab</source>
-        <translation type="unfinished">タブを削除中</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

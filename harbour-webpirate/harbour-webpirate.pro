@@ -185,7 +185,25 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/pages/segment/cookie/CookiePage.qml \
     qml/pages/segment/session/SaveSessionPage.qml \
     qml/pages/segment/session/SessionPage.qml \
-    qml/js/polyfills/es6-collections.min.js
+    qml/js/polyfills/es6-collections.min.js \
+    qml/components/tabview/jsdialogs/RequestDialog.qml \
+    qml/components/DialogBackground.qml \
+    qml/components/tabview/jsdialogs/CredentialDialog.qml \
+    qml/components/tabview/jsdialogs/FormResubmitDialog.qml \
+    qml/components/tabview/jsdialogs/NotificationDialog.qml \
+    qml/pages/webview/dialogs/AuthenticationDialog.qml \
+    qml/pages/webview/dialogs/ColorChooserDialog.qml \
+    qml/pages/webview/dialogs/PromptDialog.qml \
+    qml/components/tabview/navigationbar/QueryBar.qml \
+    qml/menus/HistoryMenu.qml \
+    qml/menus/LinkMenu.qml \
+    qml/menus/ShareMenu.qml \
+    qml/pages/settings/AboutPage.qml \
+    qml/pages/quickgrid/QuickGridPage.qml \
+    qml/pages/settings/popup/NewPopupRulePage.qml \
+    qml/pages/settings/popup/PopupManagerPage.qml \
+    qml/pages/popup/PopupBlockerPage.qml \
+    qml/js/helpers/video/FacebookHelper.js
 
 # to disable building translations every time, comment out the
 # following CONFIG line
@@ -195,6 +213,7 @@ TRANSLATIONS += translations/harbour-webpirate.ts \
             translations/harbour-webpirate-ca.ts \
             translations/harbour-webpirate-cs_CZ.ts \
             translations/harbour-webpirate-de.ts \
+            translations/harbour-webpirate-el.ts \
             translations/harbour-webpirate-es.ts \
             translations/harbour-webpirate-fi_FI.ts \
             translations/harbour-webpirate-fr.ts \
@@ -248,23 +267,3 @@ HEADERS += \
     src/selector/filesmodelworker.h \
     src/selector/exif/exif.h \
     src/helper/clipboardhelper.h
-
-DISTFILES += \
-    qml/components/tabview/jsdialogs/RequestDialog.qml \
-    qml/components/DialogBackground.qml \
-    qml/components/tabview/jsdialogs/CredentialDialog.qml \
-    qml/components/tabview/jsdialogs/FormResubmitDialog.qml \
-    qml/components/tabview/jsdialogs/NotificationDialog.qml \
-    qml/pages/webview/dialogs/AuthenticationDialog.qml \
-    qml/pages/webview/dialogs/ColorChooserDialog.qml \
-    qml/pages/webview/dialogs/PromptDialog.qml \
-    qml/components/tabview/navigationbar/QueryBar.qml \
-    qml/menus/HistoryMenu.qml \
-    qml/menus/LinkMenu.qml \
-    qml/menus/ShareMenu.qml \
-    qml/pages/settings/AboutPage.qml \
-    qml/pages/quickgrid/QuickGridPage.qml \
-    qml/pages/settings/popup/NewPopupRulePage.qml \
-    qml/pages/settings/popup/PopupManagerPage.qml \
-    qml/pages/popup/PopupBlockerPage.qml \
-    qml/js/helpers/video/FacebookHelper.js

@@ -158,11 +158,11 @@
     </message>
     <message>
         <source>Disable AdBlock</source>
-        <translation type="unfinished"></translation>
+        <translation>Onemogoči AdBlock</translation>
     </message>
     <message>
         <source>Enable AdBlock</source>
-        <translation type="unfinished"></translation>
+        <translation>Omogoči AdBlock</translation>
     </message>
 </context>
 <context>
@@ -268,15 +268,15 @@
     </message>
     <message>
         <source>Accept Certificate from: %1 ?</source>
-        <translation type="unfinished"></translation>
+        <translation>Sprejmem certifikat od: %1 ?</translation>
     </message>
     <message>
         <source>Refresh</source>
-        <translation type="unfinished"></translation>
+        <translation>Osveži</translation>
     </message>
     <message>
         <source>New tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Nov zavihek</translation>
     </message>
     <message>
         <source>Remove from Favorites</source>
@@ -295,11 +295,11 @@
     <name>ClosedTabsSegment</name>
     <message>
         <source>Closed Tabs</source>
-        <translation type="unfinished">Zaprti zavihki</translation>
+        <translation>Zaprti zavihki</translation>
     </message>
     <message>
         <source>Delete Closed Tabs</source>
-        <translation type="unfinished">Izbriši zaprte zavihke</translation>
+        <translation>Izbriši zaprte zavihke</translation>
     </message>
 </context>
 <context>
@@ -355,19 +355,19 @@
     <name>CookiesSegment</name>
     <message>
         <source>Cookie Manager</source>
-        <translation type="unfinished">Upravljanje piškotkov</translation>
+        <translation>Upravljanje piškotkov</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation type="unfinished">Filter</translation>
+        <translation>Filter</translation>
     </message>
     <message>
         <source>Remove All Cookies</source>
-        <translation type="unfinished">Odstrani vse piškotke</translation>
+        <translation>Odstrani vse piškotke</translation>
     </message>
     <message>
         <source>Add Cookie</source>
-        <translation type="unfinished">Dodaj piškotek</translation>
+        <translation>Dodaj piškotek</translation>
     </message>
 </context>
 <context>
@@ -496,19 +496,19 @@
     <name>DownloadsSegment</name>
     <message>
         <source>Delete completed Downloads</source>
-        <translation type="unfinished">Izbriši končane prenose</translation>
+        <translation>Izbriši končane prenose</translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation type="unfinished">Prenosi</translation>
+        <translation>Prenosi</translation>
     </message>
     <message>
         <source>Download Url</source>
-        <translation type="unfinished">URL za prenos</translation>
+        <translation>URL za prenos</translation>
     </message>
     <message>
         <source>Start</source>
-        <translation type="unfinished"></translation>
+        <translation>Start</translation>
     </message>
 </context>
 <context>
@@ -530,27 +530,27 @@
     <name>FavoriteItem</name>
     <message>
         <source>Open</source>
-        <translation type="unfinished">Odpri</translation>
+        <translation>Odpri</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="unfinished">Uredi</translation>
+        <translation>Uredi</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Izbriši</translation>
+        <translation>Izbriši</translation>
     </message>
     <message>
         <source>Deleting Folder</source>
-        <translation type="unfinished">Brisanje mape</translation>
+        <translation>Brisanje mape</translation>
     </message>
     <message>
         <source>Deleting Favorite</source>
-        <translation type="unfinished">Brišem zaznamek</translation>
+        <translation>Brišem zaznamek</translation>
     </message>
     <message>
         <source>Add to Quick Grid</source>
-        <translation type="unfinished">Dodaj na QuickGrid</translation>
+        <translation>Dodaj na QuickGrid</translation>
     </message>
 </context>
 <context>
@@ -591,54 +591,54 @@
     <name>FavoritesMenu</name>
     <message>
         <source>Export</source>
-        <translation type="unfinished">Izvozi</translation>
+        <translation>Izvozi</translation>
     </message>
     <message>
         <source>Exporting favorites</source>
-        <translation type="unfinished">Izvoz zaznamkov</translation>
+        <translation>Izvoz zaznamkov</translation>
     </message>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished">Zaznamki</translation>
+        <translation>Zaznamki</translation>
     </message>
     <message>
         <source>Favorites exported successfully</source>
-        <translation type="unfinished">Izvoz zaznamkov je bil uspešen</translation>
+        <translation>Izvoz zaznamkov je bil uspešen</translation>
     </message>
     <message>
         <source>Import</source>
-        <translation type="unfinished">Uvozi</translation>
+        <translation>Uvozi</translation>
     </message>
     <message>
         <source>Import in</source>
-        <translation type="unfinished">Uvozi v</translation>
+        <translation>Uvozi v</translation>
     </message>
     <message>
         <source>Add Folder</source>
-        <translation type="unfinished">Dodaj mapo</translation>
+        <translation>Dodaj mapo</translation>
     </message>
     <message>
         <source>Add Favorite</source>
-        <translation type="unfinished">Dodaj zaznamek</translation>
+        <translation>Dodaj zaznamek</translation>
     </message>
 </context>
 <context>
     <name>FavoritesSegment</name>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished">Zaznamki</translation>
+        <translation>Zaznamki</translation>
     </message>
     <message>
         <source>Back</source>
-        <translation type="unfinished"></translation>
+        <translation>Nazaj</translation>
     </message>
     <message>
         <source>Favorites imported successfully</source>
-        <translation type="unfinished">Zaznamki uspešno uvoženi</translation>
+        <translation>Zaznamki uspešno uvoženi</translation>
     </message>
     <message>
         <source>Cannot import favorites</source>
-        <translation type="unfinished">Ne morem uvoziti zaznamkov</translation>
+        <translation>Ne morem uvoziti zaznamkov</translation>
     </message>
 </context>
 <context>
@@ -680,7 +680,7 @@
     </message>
     <message>
         <source>Set as default browser</source>
-        <translation type="unfinished"></translation>
+        <translation>Nastavi kot privzeti brskalnik</translation>
     </message>
 </context>
 <context>
@@ -694,11 +694,11 @@
     <name>HistorySegment</name>
     <message>
         <source>History</source>
-        <translation type="unfinished"></translation>
+        <translation>Zgodovina</translation>
     </message>
     <message>
         <source>Delete History</source>
-        <translation type="unfinished">Izbriši zgodovino</translation>
+        <translation>Izbriši zgodovino</translation>
     </message>
 </context>
 <context>
@@ -808,7 +808,7 @@
     </message>
     <message>
         <source>&apos;%1&apos; wants to access system&apos;s notifications</source>
-        <translation type="unfinished"></translation>
+        <translation>&apos;%1&apos; želi dostopati do sistemskih obvestil</translation>
     </message>
 </context>
 <context>
@@ -922,27 +922,27 @@
     <name>ProxySettingsPage</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Shrani</translation>
+        <translation>Shrani</translation>
     </message>
     <message>
         <source>Proxy Disabled</source>
-        <translation type="unfinished"></translation>
+        <translation>Proxi je onemogočen</translation>
     </message>
     <message>
         <source>You need to restart WebPirate</source>
-        <translation type="unfinished"></translation>
+        <translation>Ponovno zaženite WebPirate</translation>
     </message>
     <message>
         <source>Proxy Settings (Restart needed)</source>
-        <translation type="unfinished"></translation>
+        <translation>Nastavitve proxy (potreben je ponoven zgon)</translation>
     </message>
     <message>
         <source>Host or Ip Address</source>
-        <translation type="unfinished"></translation>
+        <translation>Gostitelj ali IP naslov</translation>
     </message>
     <message>
         <source>Port</source>
-        <translation type="unfinished"></translation>
+        <translation>Vrata</translation>
     </message>
 </context>
 <context>
@@ -953,7 +953,7 @@
     </message>
     <message>
         <source>Search...</source>
-        <translation type="unfinished"></translation>
+        <translation>Iskanje ...</translation>
     </message>
 </context>
 <context>
@@ -968,7 +968,7 @@
     </message>
     <message>
         <source>New tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Nov zavihek</translation>
     </message>
 </context>
 <context>
@@ -1088,23 +1088,23 @@
     <name>SelectorFilesPage</name>
     <message>
         <source>Android storage</source>
-        <translation type="unfinished"></translation>
+        <translation>Android shramba</translation>
     </message>
     <message>
         <source>SD Card</source>
-        <translation type="unfinished">SD kartica</translation>
+        <translation>SD kartica</translation>
     </message>
     <message>
         <source>Home</source>
-        <translation type="unfinished">Domov</translation>
+        <translation>Domov</translation>
     </message>
     <message>
         <source>Send %1 file(s)</source>
-        <translation type="unfinished"></translation>
+        <translation>Pošlji datoteke (%1)</translation>
     </message>
     <message>
         <source>Back</source>
-        <translation type="unfinished"></translation>
+        <translation>Nazaj</translation>
     </message>
 </context>
 <context>
@@ -1138,39 +1138,39 @@
     <name>SessionsSegment</name>
     <message>
         <source>Sessions</source>
-        <translation type="unfinished">Seje</translation>
+        <translation>Seje</translation>
     </message>
     <message>
         <source>No Sessions</source>
-        <translation type="unfinished"></translation>
+        <translation>Ni seje</translation>
     </message>
     <message>
         <source>Save current session</source>
-        <translation type="unfinished">Shrani trenutno sejo</translation>
+        <translation>Shrani trenutno sejo</translation>
     </message>
     <message>
         <source>Tabs saved</source>
-        <translation type="unfinished">Zavihki so shranjeni</translation>
+        <translation>Zavihki so shranjeni</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation type="unfinished">Odpri</translation>
+        <translation>Odpri</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="unfinished">Uredi</translation>
+        <translation>Uredi</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Izbriši</translation>
+        <translation>Izbriši</translation>
     </message>
     <message>
         <source>Deleting session</source>
-        <translation type="unfinished">Brisanje seje</translation>
+        <translation>Brisanje seje</translation>
     </message>
     <message>
         <source>Loads at startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Zažene se ob zagonu</translation>
     </message>
 </context>
 <context>
@@ -1205,7 +1205,7 @@
     </message>
     <message>
         <source>Proxy</source>
-        <translation type="unfinished"></translation>
+        <translation>Proxy</translation>
     </message>
     <message>
         <source>Popup Blocker</source>
@@ -1216,26 +1216,26 @@
     <name>TabClosedItem</name>
     <message>
         <source>Open</source>
-        <translation type="unfinished">Odpri</translation>
+        <translation>Odpri</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Izbriši</translation>
+        <translation>Izbriši</translation>
     </message>
     <message>
         <source>Deleting Tab</source>
-        <translation type="unfinished">Brisanje zavihka</translation>
+        <translation>Brisanje zavihka</translation>
     </message>
 </context>
 <context>
     <name>TabListItem</name>
     <message>
         <source>Quick Grid</source>
-        <translation type="unfinished"></translation>
+        <translation>Quick Grid</translation>
     </message>
     <message>
         <source>Load error</source>
-        <translation type="unfinished"></translation>
+        <translation>Napaka pri nalaganju</translation>
     </message>
     <message>
         <source>Copy link</source>
@@ -1262,23 +1262,23 @@
     <name>TabsSegment</name>
     <message>
         <source>Tabs</source>
-        <translation type="unfinished">Zavihki</translation>
+        <translation>Zavihki</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Nastavitve</translation>
     </message>
     <message>
         <source>New Tab</source>
-        <translation type="unfinished">Nov zavihek</translation>
+        <translation>Nov zavihek</translation>
     </message>
     <message>
         <source>Disable Night Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Onemogoči nočni način</translation>
     </message>
     <message>
         <source>Enable Night Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Omogoči nočni način</translation>
     </message>
 </context>
 <context>
