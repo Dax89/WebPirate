@@ -91,10 +91,10 @@ Item
 
             if(mimetype === "inode/directory")
             {
-                var filepicker = pageStack.push(Qt.resolvedUrl("../../pages/picker/FilePickerPage.qml"), { "rootPage": mainpage, "directory": filepath });
+                var filepicker = pageStack.push(Qt.resolvedUrl("../../pages/selector/SelectorFilesPage.qml"));
 
-                filepicker.filePicked.connect(function(file) {
-                    webview.url = file;
+                filepicker.actionCompleted.connect(function(action, data) {
+                    webview.url = data;
                 });
 
                 return;
