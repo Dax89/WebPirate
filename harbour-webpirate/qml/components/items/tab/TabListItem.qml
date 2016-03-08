@@ -60,7 +60,7 @@ ListItem
 
         MenuItem {
             text: qsTr("Duplicate tab")
-            onClicked: tabView.addTab(tabWebUrl, false, model.index + 1);
+            onClicked: tabView.addTab(tab.webUrl, false, model.index + 1);
         }
     }
 
