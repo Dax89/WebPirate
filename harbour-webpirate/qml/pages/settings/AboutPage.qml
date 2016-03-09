@@ -116,7 +116,7 @@ Page
             Item
             {
                 width: parent.width
-                height: Theme.paddingLarge + lbldev.height + lblicondesigner.height + lblrepository.height + lbltranslationplatform.height
+                height: Theme.paddingLarge + lbldev.height + lblcontributors.height + lblicondesigner.height + lblrepository.height + lbltranslationplatform.height
 
                 InfoLabel
                 {
@@ -128,8 +128,16 @@ Page
 
                 InfoLabel
                 {
-                    id: lblicondesigner
+                    id: lblcontributors
                     anchors { left: parent.left; top: lbldev.bottom; right: parent.right; leftMargin: Theme.paddingSmall; rightMargin: Theme.paddingSmall }
+                    title: qsTr("Contributors")
+                    text: "Ferlanero"
+                }
+
+                InfoLabel
+                {
+                    id: lblicondesigner
+                    anchors { left: parent.left; top: lblcontributors.bottom; right: parent.right; leftMargin: Theme.paddingSmall; rightMargin: Theme.paddingSmall }
                     title: qsTr("Icon Designer")
                     text: "Moth"
                 }

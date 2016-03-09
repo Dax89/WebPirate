@@ -87,6 +87,10 @@
         <source>Translation Platform</source>
         <translation>Překladatelská platforma</translation>
     </message>
+    <message>
+        <source>Contributors</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>AdBlockDownloaderPage</name>
