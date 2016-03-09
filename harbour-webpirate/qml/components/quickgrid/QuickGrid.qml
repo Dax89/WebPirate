@@ -35,6 +35,7 @@ Item
 
         PullDownMenu
         {
+            id: pulldownmenu
             enabled: !editMode && quickgridview.visible
 
             MenuItem

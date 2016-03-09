@@ -25,8 +25,8 @@ Item
         width: quickgriditem.width - (quickgridview.spacing * 2) - Theme.paddingSmall
         height: quickgriditem.height - (quickgridview.spacing * 2) - Theme.paddingSmall
 
-        Behavior on x { enabled: !quickgridview.flicking && (state !== "active"); NumberAnimation { duration: 400; easing.type: Easing.OutBack } }
-        Behavior on y { enabled: !quickgridview.flicking && (state !== "active"); NumberAnimation { duration: 400; easing.type: Easing.OutBack } }
+        Behavior on x { enabled: !quickgridview.flicking && (state !== "active"); NumberAnimation { duration: pulldownmenu.active ? 0 : 400; easing.type: Easing.OutBack } }
+        Behavior on y { enabled: !quickgridview.flicking && (state !== "active"); NumberAnimation { duration: pulldownmenu.active ? 0 : 400; easing.type: Easing.OutBack } }
 
         transitions: Transition { NumberAnimation { property: "scale"; duration: 200} }
 
