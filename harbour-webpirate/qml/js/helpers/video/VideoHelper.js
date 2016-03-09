@@ -28,7 +28,6 @@ var __wp_videohelper__ = {
 
     getEmbeddedVideos: function() {
         __wp_youtubehelper__.getEmbeddedVideos();
-        __wp_facebookhelper__.getEmbeddedVideos();
         __wp_jwplayerhelper__.getEmbeddedVideos();
     }
 };
