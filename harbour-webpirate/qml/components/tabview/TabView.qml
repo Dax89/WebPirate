@@ -150,7 +150,7 @@ Item
         TabStack
         {
             id: tabstack
-            anchors { left: parent.left; right: parent.right; top: parent.top; bottom: tabviewdialogs.top; topMargin: Theme.paddingSmall }
+            anchors { left: parent.left; right: parent.right; top: parent.top; bottom: tabviewdialogs.top }
             dialogsVisible: tabviewdialogs.dialogVisible
             onHideAll: tabviewdialogs.hideAll()
         }
