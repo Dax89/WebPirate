@@ -39,5 +39,15 @@ var __wp_utils__ = {
             return null;
 
         return __wp_utils__.hexToColor(hex);
-    }
+    },
+
+    getDomain: function() {
+        var domain = document.location.hostname;
+        var cap = /[www|m]*[0-9]*[\.]*([^$/:]+)/.exec(domain);
+
+        if(cap && cap[1])
+            return cap[1];
+
+        return domain;
+    },
 }

@@ -1,6 +1,4 @@
 var __wp_videohelper__ = {
-    domainregex: /[www|m]*[0-9]*[\.]*([^$/:]+)/,
-
     helpers: { "youtube.com": __wp_youtubehelper__,
                "dailymotion.com": __wp_dailymotionhelper__,
                "vimeo.com": __wp_vimeohelper__ },
@@ -16,7 +14,7 @@ var __wp_videohelper__ = {
     },
 
     getVideo: function() {
-        var helper = __wp_videohelper__.helpers[__wp_videohelper__.getDomain()];
+        var helper = __wp_videohelper__.helpers[__wp_utils__.getDomain()];
 
         setTimeout(function() {
             if(!helper) {
