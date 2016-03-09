@@ -72,6 +72,7 @@ ListItem
 
     Item
     {
+        readonly property bool webviewVisible: tab && (tab.state === "webview")
         readonly property real defaultX: (parent.width / 2) - (width / 2)
 
         id: content
@@ -79,84 +80,37 @@ ListItem
         width: Screen.width
         height: parent.height
 
-        Behavior on x {
-            PropertyAnimation { duration: 250; easing.type: Easing.OutBack }
-        }
+        Behavior on x { PropertyAnimation { duration: 250; easing.type: Easing.OutBack } }
 
-        Rectangle
+        Item
         {
-            id: specialthumb
-            anchors { left: parent.left; top: parent.top; right: parent.right; bottom: lbltitle.top }
-            visible: tab && (tab.state !== "webview")
-            color: highlighted ? Theme.secondaryHighlightColor : "gray"
+            id: effectitem
+            anchors.fill: parent
 
-            Image
+            Rectangle { id: specialthumb; anchors.fill: parent; visible: !content.webviewVisible; color: highlighted ? Theme.secondaryHighlightColor : "gray" }
+
+            ShaderEffectSource
             {
-                id: img
-                anchors { left: parent.left; verticalCenter: parent.verticalCenter; leftMargin: Theme.paddingLarge }
-                width: Theme.iconSizeMedium
-                height: Theme.iconSizeMedium
-                fillMode: Image.PreserveAspectFit
-
-                source: {
-                    if(!tab)
-                        return "";
-
-                    if(tab.state === "newtab")
-                        return "qrc:///res/quickgrid.png";
-
-                    if(tab.state === "loaderror")
-                        return "qrc:///res/loaderror_white.png";
-
-                    return "";
-                }
+                id: thumb
+                anchors.fill: parent
+                live: false
+                sourceItem: tab ? tab.webView.contentItem : null
+                sourceRect: Qt.rect(0, Theme.paddingSmall, content.width, content.height)
+                visible: content.webviewVisible
             }
-
-            Label
-            {
-                anchors { left: img.right; right: parent.right; verticalCenter: img.verticalCenter }
-                verticalAlignment: Text.AlignTop
-                horizontalAlignment: Text.AlignHCenter
-                font { family: Theme.fontFamilyHeading; pixelSize: Theme.fontSizeLarge; bold: true }
-
-                text: {
-                    if(!tab)
-                        return "";
-
-                    if(tab.state === "newtab")
-                        return qsTr("Quick Grid");
-
-                    if(tab.state === "loaderror")
-                        return qsTr("Load error");
-
-                    return "";
-                }
-            }
-        }
-
-        ShaderEffectSource
-        {
-            id: thumb
-            live: false
-            sourceItem: tab ? tab.webView.contentItem : null
-            anchors { left: parent.left; top: parent.top; right: parent.right; bottom: lbltitle.top }
-            sourceRect: Qt.rect(0, Theme.paddingSmall, content.width, content.height)
-            visible: tab && (tab.state === "webview")
-            recursive: highlighted
         }
 
         Desaturate
         {
-            anchors { left: parent.left; top: parent.top; right: parent.right; bottom: lbltitle.top }
-            source: thumb
+            anchors.fill: effectitem
+            source: effectitem
             desaturation: highlighted ? 0.0 : 1.0
-            visible: tab && (tab.state === "webview")
+            visible: content.webviewVisible
         }
 
         LinearGradient
         {
-            anchors { fill: parent; topMargin: Theme.paddingSmall }
-            source: thumb
+            anchors.fill: effectitem
             start: Qt.point(parent.width, 0)
             end: Qt.point(parent.width, parent.height)
 
@@ -166,19 +120,51 @@ ListItem
             }
         }
 
+        Image
+        {
+            id: img
+            anchors { left: parent.left; verticalCenter: parent.verticalCenter; leftMargin: Theme.paddingLarge }
+            width: Theme.iconSizeMedium
+            height: Theme.iconSizeMedium
+            fillMode: Image.PreserveAspectFit
+
+            source: {
+                if(!tab)
+                    return "";
+
+                if(tab.state === "newtab")
+                    return "qrc:///res/quickgrid.png";
+
+                if(tab.state === "loaderror")
+                    return "qrc:///res/loaderror_white.png";
+
+                return "";
+            }
+        }
+
         Label
         {
-            id: lbltitle
-            anchors { bottom: parent.bottom; left: parent.left; right: parent.right; leftMargin: Theme.paddingSmall }
-            verticalAlignment: Text.AlignVCenter
+            anchors { top: parent.top; bottom: parent.bottom; bottomMargin: Theme.paddingMedium }
+            x: Math.max(img.width, parent.width - contentWidth - Theme.paddingMedium)
+            width: parent.width - x
+            font { family: Theme.fontFamilyHeading; pixelSize: Theme.fontSizeMedium }
+            verticalAlignment: Text.AlignBottom
             horizontalAlignment: Text.AlignLeft
-            font.family: Theme.fontFamilyHeading
-            font.pixelSize: Theme.fontSizeExtraSmall
+            truncationMode: TruncationMode.Fade
             color: highlighted ? Theme.highlightColor : Theme.primaryColor
-            font.bold: highlighted
-            elide: Text.ElideRight
-            wrapMode: Text.NoWrap
-            text: tab ? tab.title : ""
+
+            text: {
+                if(!tab)
+                    return "";
+
+                if(tab.state === "newtab")
+                    return qsTr("Quick Grid");
+
+                if(tab.state === "loaderror")
+                    return qsTr("Load error");
+
+                return tab.title;
+            }
         }
     }
 }
