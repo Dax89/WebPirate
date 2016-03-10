@@ -1,7 +1,7 @@
 .pragma library
 
 var defaultuseragents = [ {"type": "Mobile",     "value": "" },
-                          {"type": "Desktop",    "value": "Mozilla/5.0 (Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453 Safari/537.36" },
+                          {"type": "Desktop",    "value": "Mozilla/5.0 (X11; Linux) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453 Safari/537.36" },
                           {"type": "Android",    "value": "Mozilla/5.0 (Linux; Android 4.4; Nexus 4 Build/KRT16H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36" },
                           {"type": "iPhone",     "value": "Mozilla/5.0 (iPhone; CPU iPhone OS 5_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9B179 Safari/7534.48.3" },
                           {"type": "GoogleBot",  "value": "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" } ];
