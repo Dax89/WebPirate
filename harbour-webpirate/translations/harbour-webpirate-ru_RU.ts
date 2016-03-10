@@ -217,44 +217,8 @@
 <context>
     <name>BrowserGrabber</name>
     <message>
-        <source>Author</source>
-        <translation>Автор</translation>
-    </message>
-    <message>
-        <source>Duration</source>
-        <translation>Продолжительность</translation>
-    </message>
-    <message>
-        <source>Title</source>
-        <translation>Название</translation>
-    </message>
-    <message>
-        <source>Grabbed URLs</source>
-        <translation>Захват URL-адреса</translation>
-    </message>
-    <message>
-        <source>Play</source>
-        <translation>Играть</translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation>Скачать</translation>
-    </message>
-    <message>
-        <source>Grabbing video</source>
-        <translation>Захват видео</translation>
-    </message>
-    <message>
-        <source>Copy URL</source>
-        <translation>Копировать ссылку</translation>
-    </message>
-    <message>
-        <source>Link copied to clipboard</source>
-        <translation>Ссылка скопирована</translation>
-    </message>
-    <message>
         <source>Status</source>
-        <translation>Статус</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -685,6 +649,29 @@
     <message>
         <source>Set as default browser</source>
         <translation>Установить браузером по умолчанию.</translation>
+    </message>
+</context>
+<context>
+    <name>GrabberItem</name>
+    <message>
+        <source>Play</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Download</source>
+        <translation type="unfinished">Загрузить</translation>
+    </message>
+    <message>
+        <source>Grabbing video</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy URL</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Link copied to clipboard</source>
+        <translation type="unfinished">Ссылка скопирована</translation>
     </message>
 </context>
 <context>
@@ -1347,6 +1334,14 @@
         <source>Ciphered Video: Downloading WebPage</source>
         <translation>Зашифрованное видео: Загрузка Web-страницы</translation>
     </message>
+    <message>
+        <source>Cannot find decoding function, report to developer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot find decoding object, report to developer</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>YouTubeGrabber</name>
@@ -1355,16 +1350,8 @@
         <translation>Качество</translation>
     </message>
     <message>
-        <source>OK</source>
-        <translation>OK</translation>
-    </message>
-    <message>
         <source>Downloading video info</source>
         <translation>Загрузка информации о видео</translation>
-    </message>
-    <message>
-        <source>FAILED</source>
-        <translation>Ошибка</translation>
     </message>
     <message>
         <source>Grabbing %1</source>
@@ -1373,6 +1360,14 @@
     <message>
         <source>Decoding Signature for %1</source>
         <translation>Расшифровывать подписи для %1</translation>
+    </message>
+    <message>
+        <source>Video grabbed successfully</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot get video, report to developer</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

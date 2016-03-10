@@ -217,44 +217,8 @@
 <context>
     <name>BrowserGrabber</name>
     <message>
-        <source>Author</source>
-        <translation>Avtor</translation>
-    </message>
-    <message>
-        <source>Duration</source>
-        <translation>Trajanje</translation>
-    </message>
-    <message>
-        <source>Title</source>
-        <translation>Naslov</translation>
-    </message>
-    <message>
-        <source>Grabbed URLs</source>
-        <translation>Grabbed URLs</translation>
-    </message>
-    <message>
-        <source>Play</source>
-        <translation>Predvajaj</translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation>Prenos</translation>
-    </message>
-    <message>
-        <source>Grabbing video</source>
-        <translation>Grabbing video</translation>
-    </message>
-    <message>
-        <source>Copy URL</source>
-        <translation>Kopiraj URL</translation>
-    </message>
-    <message>
-        <source>Link copied to clipboard</source>
-        <translation>Povezava shranjena v odložišče</translation>
-    </message>
-    <message>
         <source>Status</source>
-        <translation>Status</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -685,6 +649,29 @@
     <message>
         <source>Set as default browser</source>
         <translation>Nastavi kot privzeti brskalnik</translation>
+    </message>
+</context>
+<context>
+    <name>GrabberItem</name>
+    <message>
+        <source>Play</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Download</source>
+        <translation type="unfinished">Prenos</translation>
+    </message>
+    <message>
+        <source>Grabbing video</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy URL</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Link copied to clipboard</source>
+        <translation type="unfinished">Povezava shranjena v odložišče</translation>
     </message>
 </context>
 <context>
@@ -1347,6 +1334,14 @@
         <source>Ciphered Video: Downloading WebPage</source>
         <translation>Šifriran video: prenašam spletno stran</translation>
     </message>
+    <message>
+        <source>Cannot find decoding function, report to developer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot find decoding object, report to developer</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>YouTubeGrabber</name>
@@ -1355,16 +1350,8 @@
         <translation>Kvaliteta</translation>
     </message>
     <message>
-        <source>OK</source>
-        <translation>OK</translation>
-    </message>
-    <message>
         <source>Downloading video info</source>
         <translation>Prenašanje video informacij</translation>
-    </message>
-    <message>
-        <source>FAILED</source>
-        <translation>NI USPELO&lt;</translation>
     </message>
     <message>
         <source>Grabbing %1</source>
@@ -1373,6 +1360,14 @@
     <message>
         <source>Decoding Signature for %1</source>
         <translation>Dekodiranje podpisa za %1</translation>
+    </message>
+    <message>
+        <source>Video grabbed successfully</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot get video, report to developer</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

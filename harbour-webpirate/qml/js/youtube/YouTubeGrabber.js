@@ -56,7 +56,7 @@ function decodeVideoTypes(videolist, mediagrabber, decodefunc)
                               videoinfo.mime, videoinfo.url);
     }
 
-    mediagrabber.grabStatus = qsTr("OK");
+    mediagrabber.grabStatus = qsTr("Video grabbed successfully");
     mediagrabber.grabFailed = false;
     mediagrabber.grabbing = false;
 }
@@ -80,7 +80,7 @@ function grabVideo(videoid, mediagrabber)
                 if((videoentry[0] === "status") && (videoentry[1] === "fail"))
                 {
                     mediagrabber.grabFailed = true;
-                    mediagrabber.grabStatus = qsTr("FAILED");
+                    mediagrabber.grabStatus = qsTr("Cannot get video, report to developer");
                 }
                 else if(videoentry[0] === "reason")
                     mediagrabber.grabStatus = UrlHelper.decode(videoentry[1]);

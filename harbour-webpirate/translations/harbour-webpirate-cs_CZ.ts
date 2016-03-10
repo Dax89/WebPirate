@@ -217,44 +217,8 @@
 <context>
     <name>BrowserGrabber</name>
     <message>
-        <source>Author</source>
-        <translation>Autor</translation>
-    </message>
-    <message>
-        <source>Duration</source>
-        <translation>Doba trvání</translation>
-    </message>
-    <message>
-        <source>Title</source>
-        <translation>Název</translation>
-    </message>
-    <message>
-        <source>Grabbed URLs</source>
-        <translation>Získané adresy URL</translation>
-    </message>
-    <message>
-        <source>Play</source>
-        <translation>Přehrát</translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation>Stáhnout</translation>
-    </message>
-    <message>
-        <source>Grabbing video</source>
-        <translation>Získávání videa</translation>
-    </message>
-    <message>
-        <source>Copy URL</source>
-        <translation>Kopírovat URL</translation>
-    </message>
-    <message>
-        <source>Link copied to clipboard</source>
-        <translation>Odkaz zkopírován do schránky</translation>
-    </message>
-    <message>
         <source>Status</source>
-        <translation>Stav</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -685,6 +649,29 @@
     <message>
         <source>Set as default browser</source>
         <translation>Nastavit jako výchozí prohlížeč</translation>
+    </message>
+</context>
+<context>
+    <name>GrabberItem</name>
+    <message>
+        <source>Play</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Download</source>
+        <translation type="unfinished">Stáhnout</translation>
+    </message>
+    <message>
+        <source>Grabbing video</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy URL</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Link copied to clipboard</source>
+        <translation type="unfinished">Odkaz zkopírován do schránky</translation>
     </message>
 </context>
 <context>
@@ -1347,6 +1334,14 @@
         <source>Ciphered Video: Downloading WebPage</source>
         <translation>Šifrované video: Stahování webu</translation>
     </message>
+    <message>
+        <source>Cannot find decoding function, report to developer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot find decoding object, report to developer</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>YouTubeGrabber</name>
@@ -1355,16 +1350,8 @@
         <translation>Kvalita</translation>
     </message>
     <message>
-        <source>OK</source>
-        <translation>OK</translation>
-    </message>
-    <message>
         <source>Downloading video info</source>
         <translation>Stahování informací o videu</translation>
-    </message>
-    <message>
-        <source>FAILED</source>
-        <translation>SELHALO</translation>
     </message>
     <message>
         <source>Grabbing %1</source>
@@ -1373,6 +1360,14 @@
     <message>
         <source>Decoding Signature for %1</source>
         <translation>Dekódování signatůry pro %1</translation>
+    </message>
+    <message>
+        <source>Video grabbed successfully</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot get video, report to developer</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

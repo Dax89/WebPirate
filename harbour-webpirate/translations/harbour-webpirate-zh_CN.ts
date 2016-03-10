@@ -217,44 +217,8 @@
 <context>
     <name>BrowserGrabber</name>
     <message>
-        <source>Author</source>
-        <translation>作者</translation>
-    </message>
-    <message>
-        <source>Duration</source>
-        <translation>长度</translation>
-    </message>
-    <message>
-        <source>Title</source>
-        <translation>标题</translation>
-    </message>
-    <message>
-        <source>Grabbed URLs</source>
-        <translation>抓取到的URL</translation>
-    </message>
-    <message>
-        <source>Play</source>
-        <translation>播放</translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation>下载</translation>
-    </message>
-    <message>
-        <source>Grabbing video</source>
-        <translation>正在抓取视频</translation>
-    </message>
-    <message>
-        <source>Copy URL</source>
-        <translation>复制链接</translation>
-    </message>
-    <message>
-        <source>Link copied to clipboard</source>
-        <translation>链接已复制到剪贴板</translation>
-    </message>
-    <message>
         <source>Status</source>
-        <translation>状态</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -685,6 +649,29 @@
     <message>
         <source>Set as default browser</source>
         <translation>设为默认浏览器</translation>
+    </message>
+</context>
+<context>
+    <name>GrabberItem</name>
+    <message>
+        <source>Play</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Download</source>
+        <translation type="unfinished">下载</translation>
+    </message>
+    <message>
+        <source>Grabbing video</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy URL</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Link copied to clipboard</source>
+        <translation type="unfinished">链接已复制到剪贴板</translation>
     </message>
 </context>
 <context>
@@ -1347,6 +1334,14 @@
         <source>Ciphered Video: Downloading WebPage</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Cannot find decoding function, report to developer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot find decoding object, report to developer</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>YouTubeGrabber</name>
@@ -1355,16 +1350,8 @@
         <translation>质量</translation>
     </message>
     <message>
-        <source>OK</source>
-        <translation>确定</translation>
-    </message>
-    <message>
         <source>Downloading video info</source>
         <translation>正在下载视频信息</translation>
-    </message>
-    <message>
-        <source>FAILED</source>
-        <translation>失败</translation>
     </message>
     <message>
         <source>Grabbing %1</source>
@@ -1373,6 +1360,14 @@
     <message>
         <source>Decoding Signature for %1</source>
         <translation>正在解码 %1</translation>
+    </message>
+    <message>
+        <source>Video grabbed successfully</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot get video, report to developer</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

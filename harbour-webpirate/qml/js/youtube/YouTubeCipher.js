@@ -14,7 +14,7 @@ function grabPlayerJavascript(ytplayer, mediagrabber, urldecoder)
             if(!funcname || !funcname[1]) {
                 mediagrabber.grabFailed = true;
                 mediagrabber.grabbing = false;
-                mediagrabber.grabStatus = qsTr("Cannot find decoding function");
+                mediagrabber.grabStatus = qsTr("Cannot find decoding function, report to developer");
                 return;
             }
 
@@ -29,7 +29,7 @@ function grabPlayerJavascript(ytplayer, mediagrabber, urldecoder)
             if(!funcbody || !funcbody[1]) {
                 mediagrabber.grabFailed = true;
                 mediagrabber.grabbing = false;
-                mediagrabber.grabStatus = qsTr("Cannot find decoding function") + " (" + funcname[1] + ")";
+                mediagrabber.grabStatus = qsTr("Cannot find decoding function") + " (" + funcname[1] + "), report to developer";
                 return;
             }
 
@@ -38,7 +38,7 @@ function grabPlayerJavascript(ytplayer, mediagrabber, urldecoder)
             if(!decodeobjname || !decodeobjname[1]) {
                 mediagrabber.grabFailed = true;
                 mediagrabber.grabbing = false;
-                mediagrabber.grabStatus = qsTr("Cannot find decoding object");
+                mediagrabber.grabStatus = qsTr("Cannot find decoding object, report to developer");
                 return;
             }
 
@@ -49,7 +49,7 @@ function grabPlayerJavascript(ytplayer, mediagrabber, urldecoder)
             if(!decodeobj || !decodeobj[1]) {
                 mediagrabber.grabFailed = true;
                 mediagrabber.grabbing = false;
-                mediagrabber.grabStatus = qsTr("Cannot find decoding object") + " (" + decodeobjname[1] + ")";
+                mediagrabber.grabStatus = qsTr("Cannot find decoding object") + " (" + decodeobjname[1] + "), report to developer";
                 return;
             }
 

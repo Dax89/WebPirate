@@ -130,8 +130,6 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/js/helpers/Console.js \
     qml/js/helpers/video/DailyMotionHelper.js \
     qml/js/helpers/GrabberBuilder.js \
-    qml/components/browsertab/views/browserplayer/BrowserGrabber.qml \
-    qml/components/browsertab/views/browserplayer/mediacomponents/MediaPlayerTimings.qml \
     qml/components/browsertab/views/browserplayer/mediacomponents/MediaPlayerCursor.qml \
     qml/components/browsertab/views/browserplayer/mediacomponents/MediaPlayerProgressBar.qml \
     qml/components/items/cookie/DomainListItem.qml \
@@ -268,4 +266,8 @@ HEADERS += \
     src/helper/clipboardhelper.h
 
 DISTFILES += \
-    rpm/harbour-webpirate.changes
+    rpm/harbour-webpirate.changes \
+    qml/components/browsertab/views/browsergrabber/BrowserGrabber.qml \
+    qml/components/browsertab/views/browsergrabber/GrabberThumbnail.qml \
+    qml/components/items/GrabberItem.qml \
+    qml/js/MediaPlayerHelper.js

@@ -217,44 +217,8 @@
 <context>
     <name>BrowserGrabber</name>
     <message>
-        <source>Author</source>
-        <translation>Auteur</translation>
-    </message>
-    <message>
-        <source>Duration</source>
-        <translation>Duur</translation>
-    </message>
-    <message>
-        <source>Title</source>
-        <translation>Titel</translation>
-    </message>
-    <message>
-        <source>Grabbed URLs</source>
-        <translation>Gegrepen URLs</translation>
-    </message>
-    <message>
-        <source>Play</source>
-        <translation>Afspelen</translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation>Downloaden</translation>
-    </message>
-    <message>
-        <source>Grabbing video</source>
-        <translation>Bezig met het grijpen van de video</translation>
-    </message>
-    <message>
-        <source>Copy URL</source>
-        <translation>URL kopiëren</translation>
-    </message>
-    <message>
-        <source>Link copied to clipboard</source>
-        <translation>Link gekopieerd naar klembord</translation>
-    </message>
-    <message>
         <source>Status</source>
-        <translation>Status</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -685,6 +649,29 @@
     <message>
         <source>Set as default browser</source>
         <translation>Instellen als standaard webbrowser</translation>
+    </message>
+</context>
+<context>
+    <name>GrabberItem</name>
+    <message>
+        <source>Play</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Download</source>
+        <translation type="unfinished">Gedownload</translation>
+    </message>
+    <message>
+        <source>Grabbing video</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy URL</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Link copied to clipboard</source>
+        <translation type="unfinished">De link is gekopieerd naar het klembord</translation>
     </message>
 </context>
 <context>
@@ -1247,7 +1234,7 @@
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">De link is gekopieerd naar het klembord</translation>
     </message>
     <message>
         <source>Save page</source>
@@ -1347,6 +1334,14 @@
         <source>Ciphered Video: Downloading WebPage</source>
         <translation>Gecodeerde video: bezig met het downloaden van de webpagina</translation>
     </message>
+    <message>
+        <source>Cannot find decoding function, report to developer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot find decoding object, report to developer</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>YouTubeGrabber</name>
@@ -1355,16 +1350,8 @@
         <translation>Kwaliteit</translation>
     </message>
     <message>
-        <source>OK</source>
-        <translation>Oké</translation>
-    </message>
-    <message>
         <source>Downloading video info</source>
         <translation>Bezig met het downloaden van de video-informatie</translation>
-    </message>
-    <message>
-        <source>FAILED</source>
-        <translation>MISLUKT</translation>
     </message>
     <message>
         <source>Grabbing %1</source>
@@ -1373,6 +1360,14 @@
     <message>
         <source>Decoding Signature for %1</source>
         <translation>Bezig met het ontcijferen van de ondertekening voor %1</translation>
+    </message>
+    <message>
+        <source>Video grabbed successfully</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot get video, report to developer</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

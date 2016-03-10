@@ -217,44 +217,8 @@
 <context>
     <name>BrowserGrabber</name>
     <message>
-        <source>Author</source>
-        <translation>Autor</translation>
-    </message>
-    <message>
-        <source>Duration</source>
-        <translation>Durada</translation>
-    </message>
-    <message>
-        <source>Title</source>
-        <translation>Títol</translation>
-    </message>
-    <message>
-        <source>Grabbed URLs</source>
-        <translation>URLs capturades</translation>
-    </message>
-    <message>
-        <source>Play</source>
-        <translation>Reprodueix</translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation>Descarrega</translation>
-    </message>
-    <message>
-        <source>Grabbing video</source>
-        <translation>S&apos;està capturant el vídeo</translation>
-    </message>
-    <message>
-        <source>Copy URL</source>
-        <translation>Copia la URL</translation>
-    </message>
-    <message>
-        <source>Link copied to clipboard</source>
-        <translation>S&apos;ha copiat l&apos;enllaç al porta-retalls</translation>
-    </message>
-    <message>
         <source>Status</source>
-        <translation>Estat</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -685,6 +649,29 @@
     <message>
         <source>Set as default browser</source>
         <translation>Estableix com a predeterminat</translation>
+    </message>
+</context>
+<context>
+    <name>GrabberItem</name>
+    <message>
+        <source>Play</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Download</source>
+        <translation type="unfinished">Descarrega</translation>
+    </message>
+    <message>
+        <source>Grabbing video</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy URL</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Link copied to clipboard</source>
+        <translation type="unfinished">S&apos;ha copiat l&apos;enllaç al porta-retalls</translation>
     </message>
 </context>
 <context>
@@ -1347,6 +1334,14 @@
         <source>Ciphered Video: Downloading WebPage</source>
         <translation>Vídeo xifrat: s&apos;està descarregat la pàgina web</translation>
     </message>
+    <message>
+        <source>Cannot find decoding function, report to developer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot find decoding object, report to developer</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>YouTubeGrabber</name>
@@ -1355,16 +1350,8 @@
         <translation>Qualitat</translation>
     </message>
     <message>
-        <source>OK</source>
-        <translation>D&apos;acord</translation>
-    </message>
-    <message>
         <source>Downloading video info</source>
         <translation>S&apos;està descarregant la informació del vídeo</translation>
-    </message>
-    <message>
-        <source>FAILED</source>
-        <translation>ERRONI</translation>
     </message>
     <message>
         <source>Grabbing %1</source>
@@ -1373,6 +1360,14 @@
     <message>
         <source>Decoding Signature for %1</source>
         <translation>S&apos;està decodificant la signatura per a %1</translation>
+    </message>
+    <message>
+        <source>Video grabbed successfully</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot get video, report to developer</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

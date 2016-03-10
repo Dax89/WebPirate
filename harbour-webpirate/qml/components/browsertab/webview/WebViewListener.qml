@@ -135,19 +135,19 @@ Item
         function playYouTubeVideo(data) {
             tabView.navigationBar.solidify();
 
-            var grabber = viewStack.push(Qt.resolvedUrl("../views/browserplayer/BrowserGrabber.qml"), "mediagrabber");
+            var grabber = viewStack.push(Qt.resolvedUrl("../views/browsergrabber/BrowserGrabber.qml"), "mediagrabber");
             YouTubeGrabber.grabVideo(data.videoid, grabber);
         }
 
         function playDailyMotionVideo(data) {
             tabView.navigationBar.solidify();
 
-            var grabber = viewStack.push(Qt.resolvedUrl("../views/browserplayer/BrowserGrabber.qml"), "mediagrabber", { "grabFailed": data.videos.length <= 0,
-                                                                                                                        "grabStatus": data.videos.length <= 0 ? qsTr("FAILED") : "OK",
-                                                                                                                        "videoTitle": clearEscape(data.title),
-                                                                                                                        "videoAuthor": clearEscape(data.author),
-                                                                                                                        "videoThumbnail": data.thumbnail,
-                                                                                                                        "videoDuration": data.duration });
+            var grabber = viewStack.push(Qt.resolvedUrl("../views/browsergrabber/BrowserGrabber.qml"), "mediagrabber", { "grabFailed": data.videos.length <= 0,
+                                                                                                                         "grabStatus": data.videos.length <= 0 ? qsTr("FAILED") : "OK",
+                                                                                                                         "videoTitle": clearEscape(data.title),
+                                                                                                                         "videoAuthor": clearEscape(data.author),
+                                                                                                                         "videoThumbnail": data.thumbnail,
+                                                                                                                         "videoDuration": data.duration });
 
             for(var i = 0; i < data.videos.length; i++)
             {
@@ -159,12 +159,12 @@ Item
         function playVimeoVideo(data) {
             tabView.navigationBar.solidify();
 
-            var grabber = viewstack.push(Qt.resolvedUrl("../views/browserplayer/BrowserGrabber.qml"), "mediagrabber", { "grabFailed": data.videos.length <= 0,
-                                                                                                                        "grabStatus": data.videos.length <= 0 ? qsTr("FAILED") : "OK",
-                                                                                                                        "videoTitle": clearEscape(data.title),
-                                                                                                                        "videoAuthor": clearEscape(data.author),
-                                                                                                                        "videoThumbnail": data.thumbnail,
-                                                                                                                        "videoDuration": data.duration });
+            var grabber = viewstack.push(Qt.resolvedUrl("../views/browsergrabber/BrowserGrabber.qml"), "mediagrabber", { "grabFailed": data.videos.length <= 0,
+                                                                                                                         "grabStatus": data.videos.length <= 0 ? qsTr("FAILED") : "OK",
+                                                                                                                         "videoTitle": clearEscape(data.title),
+                                                                                                                         "videoAuthor": clearEscape(data.author),
+                                                                                                                         "videoThumbnail": data.thumbnail,
+                                                                                                                         "videoDuration": data.duration });
 
             for(var i = 0; i < data.videos.length; i++)
             {
@@ -189,7 +189,7 @@ Item
             if(rule === PopupBlocker.NoRule)
                 browsertab.popups.appendPopup(data.url);
             else if(rule === PopupBlocker.AllowRule)
-                tabview.addTab(data.url);
+                tabView.addTab(data.url);
             /* else if(rule === PopupBlocker.BlockRule)
                 Just Ignore It */
         }

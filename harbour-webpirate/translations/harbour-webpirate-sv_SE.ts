@@ -217,44 +217,8 @@
 <context>
     <name>BrowserGrabber</name>
     <message>
-        <source>Author</source>
-        <translation>Upphovsman</translation>
-    </message>
-    <message>
-        <source>Duration</source>
-        <translation>Varaktighet</translation>
-    </message>
-    <message>
-        <source>Title</source>
-        <translation>Namn</translation>
-    </message>
-    <message>
-        <source>Grabbed URLs</source>
-        <translation>Hämtade URL:er</translation>
-    </message>
-    <message>
-        <source>Play</source>
-        <translation>Spela upp</translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation>Ladda ner</translation>
-    </message>
-    <message>
-        <source>Grabbing video</source>
-        <translation>Hämtar video</translation>
-    </message>
-    <message>
-        <source>Copy URL</source>
-        <translation>Kopiera länk</translation>
-    </message>
-    <message>
-        <source>Link copied to clipboard</source>
-        <translation>Länk kopierad till Urklipp</translation>
-    </message>
-    <message>
         <source>Status</source>
-        <translation>Status</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -685,6 +649,29 @@
     <message>
         <source>Set as default browser</source>
         <translation>Ange som standardwebbläsare</translation>
+    </message>
+</context>
+<context>
+    <name>GrabberItem</name>
+    <message>
+        <source>Play</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Download</source>
+        <translation type="unfinished">Ladda ner</translation>
+    </message>
+    <message>
+        <source>Grabbing video</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy URL</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Link copied to clipboard</source>
+        <translation type="unfinished">Länk kopierad till Urklipp</translation>
     </message>
 </context>
 <context>
@@ -1347,6 +1334,14 @@
         <source>Ciphered Video: Downloading WebPage</source>
         <translation>Krypterad video: Laddar ner webbsida</translation>
     </message>
+    <message>
+        <source>Cannot find decoding function, report to developer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot find decoding object, report to developer</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>YouTubeGrabber</name>
@@ -1355,16 +1350,8 @@
         <translation>Kvalitet</translation>
     </message>
     <message>
-        <source>OK</source>
-        <translation>OK</translation>
-    </message>
-    <message>
         <source>Downloading video info</source>
         <translation>Laddar ner videoinfo</translation>
-    </message>
-    <message>
-        <source>FAILED</source>
-        <translation>MISSLYCKADES</translation>
     </message>
     <message>
         <source>Grabbing %1</source>
@@ -1373,6 +1360,14 @@
     <message>
         <source>Decoding Signature for %1</source>
         <translation>Avkodar signaturen för %1</translation>
+    </message>
+    <message>
+        <source>Video grabbed successfully</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot get video, report to developer</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

@@ -217,44 +217,8 @@
 <context>
     <name>BrowserGrabber</name>
     <message>
-        <source>Author</source>
-        <translation>Συγγραφέας</translation>
-    </message>
-    <message>
-        <source>Duration</source>
-        <translation>Διάρκεια</translation>
-    </message>
-    <message>
-        <source>Title</source>
-        <translation>Τίτλος</translation>
-    </message>
-    <message>
-        <source>Grabbed URLs</source>
-        <translation>Συλληφθέντα URL</translation>
-    </message>
-    <message>
-        <source>Play</source>
-        <translation>Αναπαραγωγή</translation>
-    </message>
-    <message>
-        <source>Download</source>
-        <translation>Λήψη</translation>
-    </message>
-    <message>
-        <source>Grabbing video</source>
-        <translation>Σύλληψη βίντεο</translation>
-    </message>
-    <message>
-        <source>Copy URL</source>
-        <translation>Αντιγραφή URL</translation>
-    </message>
-    <message>
-        <source>Link copied to clipboard</source>
-        <translation>Ο σύνδεσμος αντιγράφτηκε στο πρόχειρο</translation>
-    </message>
-    <message>
         <source>Status</source>
-        <translation>Κατάσταση</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -685,6 +649,29 @@
     <message>
         <source>Set as default browser</source>
         <translation>Ορισμός ως ο εξ ορισμού φυλλομετρητής</translation>
+    </message>
+</context>
+<context>
+    <name>GrabberItem</name>
+    <message>
+        <source>Play</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Download</source>
+        <translation type="unfinished">Λήψη</translation>
+    </message>
+    <message>
+        <source>Grabbing video</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy URL</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Link copied to clipboard</source>
+        <translation type="unfinished">Ο σύνδεσμος αντιγράφτηκε στο πρόχειρο</translation>
     </message>
 </context>
 <context>
@@ -1347,6 +1334,14 @@
         <source>Ciphered Video: Downloading WebPage</source>
         <translation>Κρυπτογραφημένο βίντεο: Λήψη της ιστοσελίδας</translation>
     </message>
+    <message>
+        <source>Cannot find decoding function, report to developer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot find decoding object, report to developer</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>YouTubeGrabber</name>
@@ -1355,16 +1350,8 @@
         <translation>Ποιότητα</translation>
     </message>
     <message>
-        <source>OK</source>
-        <translation>Εντάξει</translation>
-    </message>
-    <message>
         <source>Downloading video info</source>
         <translation>Λήψη των πληροφοριών του βίντεο</translation>
-    </message>
-    <message>
-        <source>FAILED</source>
-        <translation>ΑΠΕΤΥΧΕ</translation>
     </message>
     <message>
         <source>Grabbing %1</source>
@@ -1373,6 +1360,14 @@
     <message>
         <source>Decoding Signature for %1</source>
         <translation>Υπογραφή αποκωδικοποίησης για %1</translation>
+    </message>
+    <message>
+        <source>Video grabbed successfully</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot get video, report to developer</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
