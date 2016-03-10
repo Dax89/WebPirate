@@ -18,5 +18,5 @@ function get(idx)
 
 function buildUA(version, wkversion) {
     defaultuseragents[0].value = "Mozilla/5.0 (U; Linux; Maemo; Jolla; Sailfish; like Android 4.3) " +
-                                 "AppleWebKit/" + wkversion + " (KHTML, like Gecko) WebPirate/" + version + " Mobile Safari/" + wkversion;
+                                 "AppleWebKit/" + wkversion + " (KHTML, like Gecko) WebPirate/" + version + " like Mobile Safari/" + wkversion + " (compatible)";
 }
