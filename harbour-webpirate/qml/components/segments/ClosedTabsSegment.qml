@@ -24,6 +24,7 @@ SilicaListView
     function openTab(url, index) {
         tabView.addTab(url);
         tabView.closedtabs.remove(index);
+        pageStack.pop();
     }
 
     header: PageHeader {
