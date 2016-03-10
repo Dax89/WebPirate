@@ -100,8 +100,6 @@ SilicaWebView
     }
 
     id: webview
-    implicitWidth: parent.width
-    implicitHeight: parent.height
     overridePageStackNavigation: true
 
     /* Experimental WebView Features */
