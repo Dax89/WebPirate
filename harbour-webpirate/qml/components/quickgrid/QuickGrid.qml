@@ -25,7 +25,6 @@ Item
     }
 
     id: quickgrid
-    clip: true
 
     RemorsePopup { id: remorsepopup }
 
