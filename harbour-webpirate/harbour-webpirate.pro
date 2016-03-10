@@ -66,7 +66,6 @@ SOURCES += src/harbour-webpirate.cpp \
     src/helper/clipboardhelper.cpp
 
 OTHER_FILES += qml/harbour-webpirate.qml \
-    rpm/harbour-webpirate.changes.in \
     rpm/harbour-webpirate.spec \
     translations/*.ts \
     harbour-webpirate.desktop \
@@ -267,3 +266,6 @@ HEADERS += \
     src/selector/filesmodelworker.h \
     src/selector/exif/exif.h \
     src/helper/clipboardhelper.h
+
+DISTFILES += \
+    rpm/harbour-webpirate.changes

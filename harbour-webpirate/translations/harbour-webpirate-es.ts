@@ -820,11 +820,11 @@
     <name>PopupBlockerPage</name>
     <message>
         <source>Popup Blocker</source>
-        <translation>Bloqueador de popup</translation>
+        <translation>Bloqueador de ventanas emergentes</translation>
     </message>
     <message>
         <source>Clear popup list</source>
-        <translation>Limpiar lista de popup</translation>
+        <translation>Limpiar lista de ventanas emergentes</translation>
     </message>
 </context>
 <context>
@@ -854,7 +854,7 @@
     <name>PopupManagerPage</name>
     <message>
         <source>Popup Manager</source>
-        <translation>Gestor de popup</translation>
+        <translation>Gestor de ventanas emergentes</translation>
     </message>
     <message>
         <source>Delete Rules</source>
@@ -1244,23 +1244,23 @@
     </message>
     <message>
         <source>Copy link</source>
-        <translation type="unfinished"></translation>
+        <translation>Copiar enlace</translation>
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation type="unfinished"></translation>
+        <translation>Enlace copiado al portapapeles</translation>
     </message>
     <message>
         <source>Save page</source>
-        <translation type="unfinished"></translation>
+        <translation>Guardar página</translation>
     </message>
     <message>
         <source>Downloading web page</source>
-        <translation type="unfinished"></translation>
+        <translation>Descargando página Web</translation>
     </message>
     <message>
         <source>Duplicate tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Duplicar pestaña</translation>
     </message>
 </context>
 <context>

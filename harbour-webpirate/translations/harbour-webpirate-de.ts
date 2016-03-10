@@ -284,15 +284,15 @@
     </message>
     <message>
         <source>Remove from Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Aus Favoriten entfernen</translation>
     </message>
     <message>
         <source>Add to Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Zu Favoriten hinzufügen</translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation type="unfinished"></translation>
+        <translation>Stop</translation>
     </message>
 </context>
 <context>
@@ -1213,7 +1213,7 @@
     </message>
     <message>
         <source>Popup Blocker</source>
-        <translation type="unfinished">Popup Blocker</translation>
+        <translation>Popup Blocker</translation>
     </message>
 </context>
 <context>
