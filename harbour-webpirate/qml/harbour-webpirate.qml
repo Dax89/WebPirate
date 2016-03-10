@@ -23,6 +23,7 @@ ApplicationWindow
         downloadmanager.onDownloadFailed: notifications.send(filename, qsTr("Download Failed"), "icon-m-download", false, true);
 
         Component.onCompleted: {
+            UserAgents.buildUA(settings.version, "538.1"); // Create UA dynamically
             Database.load();
             History.load();
             Sessions.createSchema();
