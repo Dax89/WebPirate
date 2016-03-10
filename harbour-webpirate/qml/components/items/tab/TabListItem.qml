@@ -28,6 +28,10 @@ ListItem
     drag.maximumX: content.width
     drag.minimumX: content.defaultX
 
+    onWidthChanged: {
+        content.x = content.defaultX; // Reposition Item
+    }
+
     drag.onActiveChanged: {
         if(drag.active)
             return;
