@@ -19,10 +19,8 @@ var __wp_vimeohelper__ = {
     clickGrab: function(touchevent) {
         var vmvideoelement = touchevent.target;
 
-        if((vmvideoelement.tagName === "DIV") && (vmvideoelement.className.split(" ").indexOf("target") !== -1)) {
+        if((vmvideoelement.tagName === "DIV") && (vmvideoelement.className.split(" ").indexOf("target") !== -1))
             vmvideoelement = vmvideoelement.parentElement;
-            console.log(vmvideoelement.tagName + " " + vmvideoelement.className + " " + vmvideoelement.hasAttribute("data-config-url") + vmvideoelement.id)
-        }
 
         if((vmvideoelement.tagName !== "DIV") || !vmvideoelement.hasAttribute("data-config-url"))
             return;
