@@ -14,8 +14,7 @@ var __webpirate__ = {
     findAnchorAncestor: function(element) {
         var currelement = element
 
-        while(currelement)
-        {
+        while(currelement) {
             if(currelement.tagName === "BODY")
                 return null;
 
@@ -44,30 +43,25 @@ var __webpirate__ = {
 
         var anchorelement = __webpirate__.findAnchorAncestor(target);
 
-        if(anchorelement)
-        {
+        if(anchorelement) {
             data.url = anchorelement.href;
             data.isimage = false;
         }
-        else if(target.tagName === "IMG")
-        {
+        else if(target.tagName === "IMG") {
             data.title = target.alt.length ? target.alt : target.src;
             data.url = target.src;
             data.isimage = true;
         }
-        else if(target.textContent) /* 'textContent' is faster than 'innerText', use for test text presence */
-        {
+        else if(target.textContent)  { // 'textContent' is faster than 'innerText', use for test text presence
             var roottn = __webpirate__.rootTextNode(target);
 
             if(roottn)
                 data.text = __wp_utils__.escape(roottn.innerText.trim());
         }
-        else
-        {
+        else {
             var style = window.getComputedStyle(target, null); // Try to get image from CSS
 
-            if(style.backgroundImage)
-            {
+            if(style.backgroundImage) {
                 data.url = style.backgroundImage.slice(4, -1);
                 data.isimage = true;
             }
@@ -94,28 +88,27 @@ var __webpirate__ = {
     },
 
     polishView: function() {
-        canvg(); /* Convert all SVG Images to canvas objects */
+        canvg();
         __webpirate__.notifyPageStyle();
     },
 
     onTouchStart: function(touchevent) {
         __webpirate__.lastY = touchevent.touches[0].clientY;
 
-        if(touchevent.touches.length > 1) // Ignore Multi Touch
-        {
+        if(touchevent.touches.length > 1) { // Ignore Multi Touch
             touchevent.preventDefault();
             return;
         }
 
         __webpirate__.currtouch = touchevent.touches[0];
+
         __webpirate__.timerid = setTimeout(function() {
             __webpirate__.checkLongPress(__webpirate__.currtouch.clientX, __webpirate__.currtouch.clientY, touchevent.target)
         }, 800);
 
         var data = new Object;
 
-        if(touchevent.target.tagName === "SELECT")
-        {
+        if(touchevent.target.tagName === "SELECT") {
             data.type = "selector_touch";
             data.selectedIndex = touchevent.target.selectedIndex;
         }
@@ -127,8 +120,7 @@ var __webpirate__ = {
 
     onTouchEnd: function(touchevent)
     {
-        if(__webpirate__.islongpress)
-        {
+        if(__webpirate__.islongpress) {
             __webpirate__.islongpress = false;
             touchevent.preventDefault();
         }
@@ -139,8 +131,7 @@ var __webpirate__ = {
     },
 
     onTouchMove: function(touchevent) {
-        if(__webpirate__.islongpress)
-        {
+        if(__webpirate__.islongpress) {
             __webpirate__.islongpress = false;
             touchevent.preventDefault();
         }
@@ -157,18 +148,15 @@ var __webpirate__ = {
 
         var data = new Object;
 
-        if(target.hasAttribute("__wp_video__"))
-        {
+        if(target.hasAttribute("__wp_video__")) {
             data.type = "lock_download";
             data.action = "mediaplayer";
         }
-        else if(target.hasAttribute("target") && (target.getAttribute("target") === "_blank") && target.href)
-        {
+        else if(target.hasAttribute("target") && (target.getAttribute("target") === "_blank") && target.href) {
             data.type = target.hasChildNodes() ? "loadurl" : "newtab";
             data.url = target.href;
         }
-        else if(target.tagName === "VIDEO")
-        {
+        else if(target.tagName === "VIDEO") {
             data.type = "play_video";
             data.url = target.src;
         }
@@ -194,8 +182,7 @@ var __webpirate__ = {
             if((input.id === null && input.name === null) || input.value === null || input.value.length === 0)
                 continue;
 
-            if(input.type === "text" || input.type === "email")
-            {
+            if(input.type === "text" || input.type === "email") {
                 logindata.loginattribute = input.id ? "id" : "name";
                 logindata.loginid = input.id ? input.id : input.name;
                 logindata.login = input.value;
@@ -203,8 +190,7 @@ var __webpirate__ = {
                 if(logindata.password)
                     break;
             }
-            else if(input.type === "password")
-            {
+            else if(input.type === "password") {
                 logindata.passwordattribute = input.id ? "id" : "name";
                 logindata.passwordid = input.id ? input.id : input.name;
                 logindata.password = input.value;
@@ -225,7 +211,7 @@ document.addEventListener("touchend",  __webpirate__.onTouchEnd, true);
 document.addEventListener("click",  __webpirate__.onClick, false); // Process click on 'bubble'
 document.addEventListener("submit",  __webpirate__.onSubmit, true);
 
-window.open = function(url) { /* Popup Blocker */
+window.open = function(url) { // Popup Blocker
     var data = new Object;
     data.type = "window_open";
     data.url = url;
@@ -233,9 +219,9 @@ window.open = function(url) { /* Popup Blocker */
     navigator.qt.postMessage(JSON.stringify(data));
 }
 
-window.onerror = function(errmsg, url, line) { /* Print Javascript Errors */
+window.onerror = function(errmsg, url, line) { // Print Javascript Errors
     if((url !== undefined) && url.length)
         console.log(url + "(" + line + "): " + errmsg);
 
-    return false; /* Ignore other errors */
+    return false; // Ignore other errors
 }

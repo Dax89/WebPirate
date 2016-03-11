@@ -17,7 +17,7 @@ var __wp_systemtextfield__ = {
         if(!target || (target.tagName !== "TEXTAREA"))
             return;
 
-        if(target.readOnly) /* Ignore ReadOnly TextAreas */
+        if(target.readOnly) // Ignore ReadOnly TextAreas
             return;
 
         clickevent.preventDefault();

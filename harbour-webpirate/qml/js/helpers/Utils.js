@@ -17,7 +17,6 @@ var __wp_utils__ = {
     },
 
     hexToColor: function(hex) {
-        // Expand shorthand form (e.g. "03F") to full form (e.g. "0033FF")
         var shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
 
         hex = hex.replace(shorthandRegex, function(m, r, g, b) {
@@ -29,10 +28,9 @@ var __wp_utils__ = {
     },
 
     rgb: function(s) {
-        if(s.slice(0, 1) === "#") // #rrggbb type
+        if(s.slice(0, 1) === "#")
             return __wp_utils__.hexToColor(s);
 
-        // Should be rgb(r,g,b) type
         var hex = __wp_utils__.rgb2hex(s);
 
         if(!hex.length)

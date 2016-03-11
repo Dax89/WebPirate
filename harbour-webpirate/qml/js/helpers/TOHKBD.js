@@ -5,7 +5,7 @@ var __wp_tohkbd__ = {
         if(!target || (target.tagName !== "TEXTAREA"))
             return;
 
-        if(event.keyCode === 13) { /* Return Key */
+        if(event.keyCode === 13) { // Return Key
             event.preventDefault();
 
             var idx = Math.max(target.selectionStart, target.selectionEnd);

@@ -18,8 +18,7 @@ navigator.qt.onmessage = function(message) {
         return;
     }
 
-    try
-    {
+    try {
         var obj = JSON.parse(message.data);
 
         if(obj.type === "textfield_sendedit")
@@ -27,7 +26,7 @@ navigator.qt.onmessage = function(message) {
         else if(obj.type === "textfield_canceledit")
             __wp_systemtextfield__.cancelEdit(obj.id);
     }
-    catch(e) { /* Catch SyntaxError */
+    catch(e) { // Catch SyntaxError
         return;
     }
 }
