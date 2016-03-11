@@ -57,7 +57,7 @@ Rectangle
         Image
         {
             id: imgthumbnail
-            width: Screen.width - (Theme.paddingMedium * 2)
+            sourceSize.width: Screen.width - (Theme.paddingMedium * 2)
             anchors.horizontalCenter: parent.horizontalCenter
         }
 
