@@ -258,6 +258,9 @@ SilicaWebView
         }
 
         browsertab.state = "webview";
+
+        if(!loading)
+            experimental.postMessage("video_get");
     }
 
     onVerticalVelocityChanged: {
@@ -290,8 +293,6 @@ SilicaWebView
 
         if((request.navigationType === WebView.OtherNavigation) && UrlHelper.domainName(url.toString()) !== UrlHelper.domainName(stringurl))
             return; /* Ignore Other Domain Requests */
-
-        experimental.postMessage("video_get");
     }
 
     onLoadingChanged: {
