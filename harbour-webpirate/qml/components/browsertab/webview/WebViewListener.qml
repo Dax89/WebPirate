@@ -143,7 +143,7 @@ Item
             tabView.navigationBar.solidify();
 
             var grabber = viewStack.push(Qt.resolvedUrl("../views/browsergrabber/BrowserGrabber.qml"), "mediagrabber", { "grabFailed": data.videos.length <= 0,
-                                                                                                                         "grabStatus": data.videos.length <= 0 ? qsTr("FAILED") : "OK",
+                                                                                                                         "grabStatus": data.videos.length <= 0 ? qsTr("No videos found, report to developer") : "OK",
                                                                                                                          "videoTitle": clearEscape(data.title),
                                                                                                                          "videoAuthor": clearEscape(data.author),
                                                                                                                          "videoThumbnail": data.thumbnail,
@@ -160,7 +160,7 @@ Item
             tabView.navigationBar.solidify();
 
             var grabber = viewstack.push(Qt.resolvedUrl("../views/browsergrabber/BrowserGrabber.qml"), "mediagrabber", { "grabFailed": data.videos.length <= 0,
-                                                                                                                         "grabStatus": data.videos.length <= 0 ? qsTr("FAILED") : "OK",
+                                                                                                                         "grabStatus": data.videos.length <= 0 ? qsTr("No videos found, report to developer") : "OK",
                                                                                                                          "videoTitle": clearEscape(data.title),
                                                                                                                          "videoAuthor": clearEscape(data.author),
                                                                                                                          "videoThumbnail": data.thumbnail,

@@ -1304,11 +1304,11 @@
 <context>
     <name>WebViewListener</name>
     <message>
-        <source>FAILED</source>
+        <source>Codec</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Codec</source>
+        <source>No videos found, report to developer</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
