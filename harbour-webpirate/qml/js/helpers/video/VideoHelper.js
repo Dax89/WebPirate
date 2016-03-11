@@ -1,17 +1,6 @@
 var __wp_videohelper__ = {
     helpers: { "youtube.com": __wp_youtubehelper__,
-               "dailymotion.com": __wp_dailymotionhelper__,
-               "vimeo.com": __wp_vimeohelper__ },
-
-    getDomain: function() {
-        var domain = document.location.hostname;
-        var cap = __wp_videohelper__.domainregex.exec(domain);
-
-        if(cap && cap[1])
-            return cap[1];
-
-        return domain;
-    },
+               "dailymotion.com": __wp_dailymotionhelper__ },
 
     getVideo: function() {
         var helper = __wp_videohelper__.helpers[__wp_utils__.getDomain()];
