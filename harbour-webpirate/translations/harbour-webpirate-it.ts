@@ -89,7 +89,7 @@
     </message>
     <message>
         <source>Contributors</source>
-        <translation type="unfinished"></translation>
+        <translation>Collaboratori</translation>
     </message>
 </context>
 <context>
@@ -248,15 +248,15 @@
     </message>
     <message>
         <source>Remove from Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Rimuovi dai preferiti</translation>
     </message>
     <message>
         <source>Add to Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Aggiungi ai preferiti</translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation type="unfinished"></translation>
+        <translation>Stop</translation>
     </message>
 </context>
 <context>
@@ -468,11 +468,11 @@
     </message>
     <message>
         <source>Downloads</source>
-        <translation>Scaricamenti</translation>
+        <translation>Downloads</translation>
     </message>
     <message>
         <source>Download Url</source>
-        <translation>Indirizzo scaricamento</translation>
+        <translation>Indirizzo download</translation>
     </message>
     <message>
         <source>Start</source>
@@ -655,23 +655,23 @@
     <name>GrabberItem</name>
     <message>
         <source>Play</source>
-        <translation type="unfinished"></translation>
+        <translation>Play</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished">Scarica</translation>
+        <translation>Download</translation>
     </message>
     <message>
         <source>Grabbing video</source>
-        <translation type="unfinished"></translation>
+        <translation>Download video</translation>
     </message>
     <message>
         <source>Copy URL</source>
-        <translation type="unfinished"></translation>
+        <translation>Copia indirizzo</translation>
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation type="unfinished">Link copiato negli appunti</translation>
+        <translation>Link copiato negli appunti</translation>
     </message>
 </context>
 <context>
@@ -1200,7 +1200,7 @@
     </message>
     <message>
         <source>Popup Blocker</source>
-        <translation type="unfinished">Blocco Popup</translation>
+        <translation>Blocco Popup</translation>
     </message>
 </context>
 <context>
@@ -1230,23 +1230,23 @@
     </message>
     <message>
         <source>Copy link</source>
-        <translation type="unfinished"></translation>
+        <translation>Copia indirizzo</translation>
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation type="unfinished">Link copiato negli appunti</translation>
+        <translation>Link copiato negli appunti</translation>
     </message>
     <message>
         <source>Save page</source>
-        <translation type="unfinished"></translation>
+        <translation>Salva pagina</translation>
     </message>
     <message>
         <source>Downloading web page</source>
-        <translation type="unfinished"></translation>
+        <translation>Download pagina web</translation>
     </message>
     <message>
         <source>Duplicate tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Duplica scheda</translation>
     </message>
     <message>
         <source>Grabber</source>
@@ -1317,11 +1317,11 @@
     </message>
     <message>
         <source>No videos found, report to developer</source>
-        <translation type="unfinished"></translation>
+        <translation>Nessun video trovato, segnala allo sviluppatore</translation>
     </message>
     <message>
         <source>Video grabbed successfully</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Video recuperati con successo</translation>
     </message>
 </context>
 <context>
@@ -1348,11 +1348,11 @@
     </message>
     <message>
         <source>Cannot find decoding function, report to developer</source>
-        <translation type="unfinished"></translation>
+        <translation>Impossibile trovare la funzione di decodifica, segnala allo sviluppatore</translation>
     </message>
     <message>
         <source>Cannot find decoding object, report to developer</source>
-        <translation type="unfinished"></translation>
+        <translation>Impossibile trovare l&apos;oggetto di decodifica, segnala allo  sviluppatore</translation>
     </message>
 </context>
 <context>
@@ -1375,11 +1375,11 @@
     </message>
     <message>
         <source>Video grabbed successfully</source>
-        <translation type="unfinished"></translation>
+        <translation>Video recuperati con successo</translation>
     </message>
     <message>
         <source>Cannot get video, report to developer</source>
-        <translation type="unfinished"></translation>
+        <translation>Impossibile recuperare il video, segnala allo sviluppatore</translation>
     </message>
 </context>
 <context>

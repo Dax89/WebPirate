@@ -89,7 +89,7 @@
     </message>
     <message>
         <source>Contributors</source>
-        <translation type="unfinished"></translation>
+        <translation>Συνεισφέροντες</translation>
     </message>
 </context>
 <context>
@@ -162,11 +162,11 @@
     </message>
     <message>
         <source>Disable AdBlock</source>
-        <translation type="unfinished"></translation>
+        <translation>Απενεργοποίηση του AdBlock</translation>
     </message>
     <message>
         <source>Enable AdBlock</source>
-        <translation type="unfinished"></translation>
+        <translation>Ενεργοποίηση του AdBlock</translation>
     </message>
 </context>
 <context>
@@ -236,38 +236,38 @@
     </message>
     <message>
         <source>Accept Certificate from: %1 ?</source>
-        <translation type="unfinished"></translation>
+        <translation>Αποδοχή του πιστοποιητικού από %1 ;</translation>
     </message>
     <message>
         <source>Refresh</source>
-        <translation type="unfinished"></translation>
+        <translation>Ανανέωση</translation>
     </message>
     <message>
         <source>New tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Νέα καρτέλα</translation>
     </message>
     <message>
         <source>Remove from Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Αφαίρεση από τους σελιδοδείκτες</translation>
     </message>
     <message>
         <source>Add to Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη στους σελιδοδείκτες</translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation type="unfinished"></translation>
+        <translation>Διακοπή</translation>
     </message>
 </context>
 <context>
     <name>ClosedTabsSegment</name>
     <message>
         <source>Closed Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Κλειστές καρτέλες</translation>
     </message>
     <message>
         <source>Delete Closed Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Διαγραφή των κλειστών καρτελών</translation>
     </message>
 </context>
 <context>
@@ -323,19 +323,19 @@
     <name>CookiesSegment</name>
     <message>
         <source>Cookie Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Διαχειριστής θυμημάτων (cookie)</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation type="unfinished">Φίλτρο</translation>
+        <translation>Φίλτρο</translation>
     </message>
     <message>
         <source>Remove All Cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>Αφαίρεση όλων των θυμημάτων (cookie)</translation>
     </message>
     <message>
         <source>Add Cookie</source>
-        <translation type="unfinished">Προσθήκη θυμήματος (cookie)</translation>
+        <translation>Προσθήκη θυμήματος (cookie)</translation>
     </message>
 </context>
 <context>
@@ -464,19 +464,19 @@
     <name>DownloadsSegment</name>
     <message>
         <source>Delete completed Downloads</source>
-        <translation type="unfinished"></translation>
+        <translation>Διαγραφή των ολοκληρωμένων λήψεων</translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation type="unfinished"></translation>
+        <translation>Λήψεις</translation>
     </message>
     <message>
         <source>Download Url</source>
-        <translation type="unfinished"></translation>
+        <translation>Τηλεφόρτωση του Url</translation>
     </message>
     <message>
         <source>Start</source>
-        <translation type="unfinished"></translation>
+        <translation>Εκκίνηση</translation>
     </message>
 </context>
 <context>
@@ -498,27 +498,27 @@
     <name>FavoriteItem</name>
     <message>
         <source>Open</source>
-        <translation type="unfinished">Άνοιγμα</translation>
+        <translation>Άνοιγμα</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="unfinished">Επεξεργασία</translation>
+        <translation>Επεξεργασία</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Διαγραφή</translation>
+        <translation>Διαγραφή</translation>
     </message>
     <message>
         <source>Deleting Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Διαγραφή του φακέλου</translation>
     </message>
     <message>
         <source>Deleting Favorite</source>
-        <translation type="unfinished"></translation>
+        <translation>Διαγραφή σελιδοδείκτη</translation>
     </message>
     <message>
         <source>Add to Quick Grid</source>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη στον κάνναβο γρήγορης προσπέλασης</translation>
     </message>
 </context>
 <context>
@@ -559,54 +559,54 @@
     <name>FavoritesMenu</name>
     <message>
         <source>Export</source>
-        <translation type="unfinished"></translation>
+        <translation>Εξαγωγή</translation>
     </message>
     <message>
         <source>Exporting favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Εξαγωγή σελιδοδεικτών</translation>
     </message>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Σελιδοδείκτες</translation>
     </message>
     <message>
         <source>Favorites exported successfully</source>
-        <translation type="unfinished"></translation>
+        <translation>Οι σελιδοδείκτες εξήχθησαν επιτυχώς</translation>
     </message>
     <message>
         <source>Import</source>
-        <translation type="unfinished"></translation>
+        <translation>Εισαγωγή</translation>
     </message>
     <message>
         <source>Import in</source>
-        <translation type="unfinished"></translation>
+        <translation>Εισαγωγή σε</translation>
     </message>
     <message>
         <source>Add Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη φακέλου</translation>
     </message>
     <message>
         <source>Add Favorite</source>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη σελιδοδείκτη</translation>
     </message>
 </context>
 <context>
     <name>FavoritesSegment</name>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Σελιδοδείκτες</translation>
     </message>
     <message>
         <source>Back</source>
-        <translation type="unfinished"></translation>
+        <translation>Πίσω</translation>
     </message>
     <message>
         <source>Favorites imported successfully</source>
-        <translation type="unfinished"></translation>
+        <translation>Οι σελιδοδείκτες εισήχθησαν επιτυχώς</translation>
     </message>
     <message>
         <source>Cannot import favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Αδύνατη η εισαγωγή των σελιδοδεικτών</translation>
     </message>
 </context>
 <context>
@@ -655,23 +655,23 @@
     <name>GrabberItem</name>
     <message>
         <source>Play</source>
-        <translation type="unfinished"></translation>
+        <translation>Αναπαραγωγή</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished">Λήψη</translation>
+        <translation>Λήψη</translation>
     </message>
     <message>
         <source>Grabbing video</source>
-        <translation type="unfinished"></translation>
+        <translation>Σύλληψη του βίντεο</translation>
     </message>
     <message>
         <source>Copy URL</source>
-        <translation type="unfinished"></translation>
+        <translation>Αντιγραφή URL</translation>
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation type="unfinished">Ο σύνδεσμος αντιγράφτηκε στο πρόχειρο</translation>
+        <translation>Ο σύνδεσμος αντιγράφτηκε στο πρόχειρο</translation>
     </message>
 </context>
 <context>
@@ -685,11 +685,11 @@
     <name>HistorySegment</name>
     <message>
         <source>History</source>
-        <translation type="unfinished"></translation>
+        <translation>Ιστορικό</translation>
     </message>
     <message>
         <source>Delete History</source>
-        <translation type="unfinished"></translation>
+        <translation>Διαγραφή ιστορικού</translation>
     </message>
 </context>
 <context>
@@ -799,7 +799,7 @@
     </message>
     <message>
         <source>&apos;%1&apos; wants to access system&apos;s notifications</source>
-        <translation type="unfinished"></translation>
+        <translation>Το &apos;%1&apos; θέλει να προσπελάσει τις ειδοποιήσεις συστήματος</translation>
     </message>
 </context>
 <context>
@@ -913,27 +913,27 @@
     <name>ProxySettingsPage</name>
     <message>
         <source>Save</source>
-        <translation type="unfinished">Αποθήκευση</translation>
+        <translation>Αποθήκευση</translation>
     </message>
     <message>
         <source>Proxy Disabled</source>
-        <translation type="unfinished"></translation>
+        <translation>Ο διαμεσολαβητής είναι απενεργοποιημένος</translation>
     </message>
     <message>
         <source>You need to restart WebPirate</source>
-        <translation type="unfinished"></translation>
+        <translation>Πρέπει να επανεκκινήσετε το WebPirate</translation>
     </message>
     <message>
         <source>Proxy Settings (Restart needed)</source>
-        <translation type="unfinished"></translation>
+        <translation>Ρυθμίσεις του διαμεσολαβητή (απαιτείται επανεκκίνηση)</translation>
     </message>
     <message>
         <source>Host or Ip Address</source>
-        <translation type="unfinished"></translation>
+        <translation>Διεύθυνση υπολογιστή ή IP</translation>
     </message>
     <message>
         <source>Port</source>
-        <translation type="unfinished"></translation>
+        <translation>Θύρα</translation>
     </message>
 </context>
 <context>
@@ -944,7 +944,7 @@
     </message>
     <message>
         <source>Search...</source>
-        <translation type="unfinished"></translation>
+        <translation>Αναζήτηση...</translation>
     </message>
 </context>
 <context>
@@ -959,7 +959,7 @@
     </message>
     <message>
         <source>New tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Νέα καρτέλα</translation>
     </message>
 </context>
 <context>
@@ -1079,23 +1079,23 @@
     <name>SelectorFilesPage</name>
     <message>
         <source>Android storage</source>
-        <translation type="unfinished"></translation>
+        <translation>Αποθήκευση Android</translation>
     </message>
     <message>
         <source>SD Card</source>
-        <translation type="unfinished"></translation>
+        <translation>Κάρτα SD</translation>
     </message>
     <message>
         <source>Home</source>
-        <translation type="unfinished"></translation>
+        <translation>Αρχική</translation>
     </message>
     <message>
         <source>Send %1 file(s)</source>
-        <translation type="unfinished"></translation>
+        <translation>Αποστολή %1 αρχείου(ων)</translation>
     </message>
     <message>
         <source>Back</source>
-        <translation type="unfinished"></translation>
+        <translation>Πίσω</translation>
     </message>
 </context>
 <context>
@@ -1129,39 +1129,39 @@
     <name>SessionsSegment</name>
     <message>
         <source>Sessions</source>
-        <translation type="unfinished"></translation>
+        <translation>Συνεδρίες</translation>
     </message>
     <message>
         <source>No Sessions</source>
-        <translation type="unfinished"></translation>
+        <translation>Καμιά συνεδρία</translation>
     </message>
     <message>
         <source>Save current session</source>
-        <translation type="unfinished"></translation>
+        <translation>Αποθήκευση της τρέχουσας συνεδρίας</translation>
     </message>
     <message>
         <source>Tabs saved</source>
-        <translation type="unfinished"></translation>
+        <translation>Αποθηκευμένες καρτέλες</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation type="unfinished">Άνοιγμα</translation>
+        <translation>Άνοιγμα</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="unfinished">Επεξεργασία</translation>
+        <translation>Επεξεργασία</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Διαγραφή</translation>
+        <translation>Διαγραφή</translation>
     </message>
     <message>
         <source>Deleting session</source>
-        <translation type="unfinished"></translation>
+        <translation>Διαγραφή της συνεδρίας</translation>
     </message>
     <message>
         <source>Loads at startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Φόρτωση στην εκκίνηση</translation>
     </message>
 </context>
 <context>
@@ -1196,57 +1196,57 @@
     </message>
     <message>
         <source>Proxy</source>
-        <translation type="unfinished"></translation>
+        <translation>Διαμεσολαβητής</translation>
     </message>
     <message>
         <source>Popup Blocker</source>
-        <translation type="unfinished">Φραγή αναδυόμενων</translation>
+        <translation>Φραγή αναδυόμενων</translation>
     </message>
 </context>
 <context>
     <name>TabClosedItem</name>
     <message>
         <source>Open</source>
-        <translation type="unfinished">Άνοιγμα</translation>
+        <translation>Άνοιγμα</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Διαγραφή</translation>
+        <translation>Διαγραφή</translation>
     </message>
     <message>
         <source>Deleting Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Διαγραφή της καρτέλας</translation>
     </message>
 </context>
 <context>
     <name>TabListItem</name>
     <message>
         <source>Quick Grid</source>
-        <translation type="unfinished"></translation>
+        <translation>Κάνναβο γρήγορης προσπέλασης</translation>
     </message>
     <message>
         <source>Load error</source>
-        <translation type="unfinished"></translation>
+        <translation>Σφάλμα φόρτωσης</translation>
     </message>
     <message>
         <source>Copy link</source>
-        <translation type="unfinished"></translation>
+        <translation>Αντιγραφή συνδέσμου</translation>
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation type="unfinished">Ο σύνδεσμος αντιγράφτηκε στο πρόχειρο</translation>
+        <translation>Ο σύνδεσμος αντιγράφτηκε στο πρόχειρο</translation>
     </message>
     <message>
         <source>Save page</source>
-        <translation type="unfinished"></translation>
+        <translation>Αποθήκευση της σελίδας</translation>
     </message>
     <message>
         <source>Downloading web page</source>
-        <translation type="unfinished"></translation>
+        <translation>Τηλεφόρτωση της ιστοσελίδας</translation>
     </message>
     <message>
         <source>Duplicate tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Αντίγραφο καρτέλας</translation>
     </message>
     <message>
         <source>Grabber</source>
@@ -1261,23 +1261,23 @@
     <name>TabsSegment</name>
     <message>
         <source>Tabs</source>
-        <translation type="unfinished">Καρτέλες</translation>
+        <translation>Καρτέλες</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Ρυθμίσεις</translation>
     </message>
     <message>
         <source>New Tab</source>
-        <translation type="unfinished">Νέα καρτέλα</translation>
+        <translation>Νέα καρτέλα</translation>
     </message>
     <message>
         <source>Disable Night Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Απενεργοποίηση της λειτουργίας νυκτός</translation>
     </message>
     <message>
         <source>Enable Night Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Ενεργοποίηση της λειτουργίας νυκτός</translation>
     </message>
 </context>
 <context>
@@ -1317,11 +1317,11 @@
     </message>
     <message>
         <source>No videos found, report to developer</source>
-        <translation type="unfinished"></translation>
+        <translation>Δεν βρέθηκαν βίντεο, αναφέρετέ το στον προγραμματιστή</translation>
     </message>
     <message>
         <source>Video grabbed successfully</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Η σύλληψη του βίντεο ήταν επιτυχής</translation>
     </message>
 </context>
 <context>
@@ -1348,11 +1348,11 @@
     </message>
     <message>
         <source>Cannot find decoding function, report to developer</source>
-        <translation type="unfinished"></translation>
+        <translation>Αδύνατη η εύρεση λειτουργίας αποκωδικοποίησης, αναφέρετέ το στον προγραμματιστή</translation>
     </message>
     <message>
         <source>Cannot find decoding object, report to developer</source>
-        <translation type="unfinished"></translation>
+        <translation>Αδύνατη η εύρεση αντικειμένου αποκωδικοποίησης, αναφέρετέ το στον προγραμματιστή</translation>
     </message>
 </context>
 <context>
@@ -1375,11 +1375,11 @@
     </message>
     <message>
         <source>Video grabbed successfully</source>
-        <translation type="unfinished"></translation>
+        <translation>Η σύλληψη του βίντεο ήταν επιτυχής</translation>
     </message>
     <message>
         <source>Cannot get video, report to developer</source>
-        <translation type="unfinished"></translation>
+        <translation>Αδύνατη η λήψη του βίντεο, αναφέρετέ το στον προγραμματιστή</translation>
     </message>
 </context>
 <context>

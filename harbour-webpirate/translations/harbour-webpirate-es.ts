@@ -655,23 +655,23 @@
     <name>GrabberItem</name>
     <message>
         <source>Play</source>
-        <translation type="unfinished"></translation>
+        <translation>Reproducir</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished">Descargar</translation>
+        <translation>Descargar</translation>
     </message>
     <message>
         <source>Grabbing video</source>
-        <translation type="unfinished"></translation>
+        <translation>Capturando vídeo</translation>
     </message>
     <message>
         <source>Copy URL</source>
-        <translation type="unfinished"></translation>
+        <translation>Copiar URL</translation>
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation type="unfinished"></translation>
+        <translation>Enlace copiado al portapapeles</translation>
     </message>
 </context>
 <context>
@@ -1318,11 +1318,11 @@
     </message>
     <message>
         <source>No videos found, report to developer</source>
-        <translation type="unfinished"></translation>
+        <translation>No se han encontrado vídeos, informa al desarrollador</translation>
     </message>
     <message>
         <source>Video grabbed successfully</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Vídeo capturado con éxito</translation>
     </message>
 </context>
 <context>
@@ -1349,11 +1349,11 @@
     </message>
     <message>
         <source>Cannot find decoding function, report to developer</source>
-        <translation type="unfinished"></translation>
+        <translation>No es posible encontrar la función de decodificación, informa al desarrollador</translation>
     </message>
     <message>
         <source>Cannot find decoding object, report to developer</source>
-        <translation type="unfinished"></translation>
+        <translation>No es posible encontrar el objeto de decodificación, informa al desarrollador</translation>
     </message>
 </context>
 <context>
@@ -1376,11 +1376,11 @@
     </message>
     <message>
         <source>Video grabbed successfully</source>
-        <translation type="unfinished"></translation>
+        <translation>Vídeo capturado con éxito</translation>
     </message>
     <message>
         <source>Cannot get video, report to developer</source>
-        <translation type="unfinished"></translation>
+        <translation>No es posible conseguir el vídeo, informa al desarrollador</translation>
     </message>
 </context>
 <context>
