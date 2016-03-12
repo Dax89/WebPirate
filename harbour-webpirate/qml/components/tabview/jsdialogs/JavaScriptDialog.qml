@@ -36,6 +36,7 @@ DialogBackground
             return;
 
         reject();
+        javascriptdialog.accepted = false; // Reset value
     }
 
     Column
