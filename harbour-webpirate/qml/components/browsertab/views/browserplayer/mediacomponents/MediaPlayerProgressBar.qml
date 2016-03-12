@@ -51,6 +51,7 @@ Item
             anchors.fill: parent
             barColor: reverseRgb(Theme.highlightColor)
             barHeight: mpprogressbar.height
+            visible: true
         }
 
         LoadingBar
@@ -58,6 +59,7 @@ Item
             id: videoprogress
             anchors.fill: parent
             barHeight: mpprogressbar.height
+            visible: true
 
             MediaPlayerCursor
             {
