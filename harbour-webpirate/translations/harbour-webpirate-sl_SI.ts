@@ -742,7 +742,7 @@
     <name>MediaPlayerToolBar</name>
     <message>
         <source>Downloading media</source>
-        <translation>Prenašanje datoteke</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

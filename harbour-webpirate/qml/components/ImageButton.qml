@@ -5,21 +5,20 @@ BackgroundItem
 {
     property string source
 
-    id: navigationitem
+    id: imagebutton
 
     Image
     {
-        id: img
         anchors.centerIn: parent
         width: Theme.iconSizeMedium
         height: Theme.iconSizeMedium
-        opacity: navigationitem.enabled ? 1.0 : 0.4
+        opacity: imagebutton.enabled ? 1.0 : 0.4
 
         source: {
-            if(navigationitem.pressed)
-                return navigationitem.source + "?" + Theme.highlightColor;
+            if(imagebutton.pressed)
+                return imagebutton.source + "?" + Theme.highlightColor;
 
-            return navigationitem.source;
+            return imagebutton.source;
         }
     }
 }

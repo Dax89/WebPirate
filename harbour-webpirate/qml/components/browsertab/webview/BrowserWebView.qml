@@ -16,23 +16,42 @@ SilicaWebView
     property bool lockDownload: false     /* Manage Download Requests in a different way */
     property int itemSelectorIndex: -1    /* Keeps the selected index of ItemSelector    */
 
-    function setNightMode(nightmode)
-    {
+    function setNightMode(nightmode) {
         if(browsertab.state !== "webview")
             return;
 
         experimental.postMessage(nightmode ? "nightmode_enable" : "nightmode_disable");
     }
 
-    function releaseDownloadLock()
-    {
+    function releaseDownloadLock() {
         webView.lockDownload = false;
         webView.lockDownloadAction = "";
+    }
+
+    function calculateMetrics(ignorewidth, ignoreheight) {
+        if(!webview.visible)
+            return;
+
+        if(!ignorewidth)
+            webview.width = tabView.width;
+
+        if(!ignoreheight)
+            webview.height = tabView.height;
+
+        browsertab.thumbUpdated = !ignorewidth || !ignoreheight;
     }
 
     UrlSchemeDelegateHandler { id: urlschemedelegatehandler }
     WebViewListener { id: listener }
     VerticalScrollDecorator { id: vscrolldecorator; flickable: webview }
+
+    Connections
+    {
+        target: tabView
+
+        onWidthChanged: calculateMetrics(false, true)
+        onHeightChanged: calculateMetrics(true, false)
+    }
 
     PullDownMenu
     {
@@ -101,6 +120,7 @@ SilicaWebView
 
     id: webview
     overridePageStackNavigation: true
+    onVisibleChanged: calculateMetrics(false, false)
 
     /* Experimental WebView Features */
     experimental.preferences.webAudioEnabled: true

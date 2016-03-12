@@ -1,6 +1,7 @@
 import QtQuick 2.1
 import QtWebKit 3.0
 import Sailfish.Silica 1.0
+import "../../"
 
 Rectangle
 {
@@ -16,7 +17,6 @@ Rectangle
 
         return currenttab.webView;
     }
-
 
     function solidify() {
         height = contentHeight;
@@ -109,7 +109,7 @@ Rectangle
             selectedItem = null;
         }
 
-        NavigationItem
+        ImageButton
         {
             id: niback
             anchors { right: row.left; top: parent.top; bottom: parent.bottom }
@@ -179,7 +179,7 @@ Rectangle
                 }
             }
 
-            NavigationItem
+            ImageButton
             {
                 id: btnsearchup
                 source: "image://theme/icon-m-enter-close"
@@ -195,7 +195,7 @@ Rectangle
                                                                                  WebViewExperimental.FindWrapsAroundDocument */
             }
 
-            NavigationItem
+            ImageButton
             {
                 id: btnsearchdown
                 source: "image://theme/icon-m-enter-close"
@@ -209,7 +209,7 @@ Rectangle
                                                                                  WebViewExperimental.FindWrapsAroundDocument */
             }
 
-            NavigationItem
+            ImageButton
             {
                 id: btnshare
                 source: "image://theme/icon-m-share"
@@ -226,7 +226,7 @@ Rectangle
                 }
             }
 
-            NavigationItem
+            ImageButton
             {
                 id: btnpopups
                 source: "qrc:///res/popup.png"
@@ -261,7 +261,7 @@ Rectangle
                 }
             }
 
-            NavigationItem
+            ImageButton
             {
                 id: btntabs
                 width: navigationbar.contentHeight
@@ -276,7 +276,7 @@ Rectangle
                         return;
                     }
 
-                    tabstack.toggleTabs();
+                    pageStack.push(Qt.resolvedUrl("../../../pages/segment/SegmentsPage.qml"), { "settings": settings, "tabView": tabview });
                 }
 
                 onPressAndHold: {
@@ -300,7 +300,7 @@ Rectangle
             }
         }
 
-        NavigationItem
+        ImageButton
         {
             id: niforward
             anchors { left: row.right; top: parent.top; bottom: parent.bottom }

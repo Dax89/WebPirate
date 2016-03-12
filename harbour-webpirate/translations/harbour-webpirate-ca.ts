@@ -742,7 +742,7 @@
     <name>MediaPlayerToolBar</name>
     <message>
         <source>Downloading media</source>
-        <translation>S&apos;està descarregant el fitxer multimèdia</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

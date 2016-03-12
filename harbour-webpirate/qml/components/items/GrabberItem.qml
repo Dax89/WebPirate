@@ -10,6 +10,7 @@ ListItem
     property string videoTitle
 
     function playVideo() {
+        tabView.navigationBar.evaporate();
         viewstack.push(Qt.resolvedUrl("../browsertab/views/browserplayer/BrowserPlayer.qml"), "mediaplayer",
                        { "videoTitle": videoTitle, "videoSource": videoUrl, "videoThumbnail": videoThumbnail });
     }

@@ -26,10 +26,17 @@ Item
     onPageStateChanged: {
         mainwindow.settings.screenblank.enabled = (pageState !== "mediaplayer");
 
-        if(pageState === "newtab")
+        if(pageState === "newtab") {
             tabstack.showQuickGrid();
+            navigationbar.solidify();
+        }
         else
             tabstack.hideQuickGrid();
+
+        if(pageState === "mediaplayer")
+            navigationbar.evaporate();
+        else if(pageState === "mediagrabber")
+            navigationbar.solidify();
     }
 
     function renderTab()

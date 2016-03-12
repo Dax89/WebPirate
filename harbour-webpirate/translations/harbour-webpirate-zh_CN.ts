@@ -742,7 +742,7 @@
     <name>MediaPlayerToolBar</name>
     <message>
         <source>Downloading media</source>
-        <translation>正在下载媒体</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

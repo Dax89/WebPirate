@@ -47,14 +47,12 @@ Item
         webview.goForward();
     }
 
-    function loadNewTab()
-    {
+    function loadNewTab() {
         state = "newtab";
         webview.url = "about:newtab";
     }
 
-    function manageSpecialUrl(url)
-    {
+    function manageSpecialUrl(url) {
         var specialurl = UrlHelper.specialUrl(url);
 
         if(specialurl === "config")
@@ -63,8 +61,7 @@ Item
             loadNewTab();
     }
 
-    function load(req)
-    {
+    function load(req) {
         viewstack.clear();
 
         if(!req)
@@ -110,27 +107,6 @@ Item
             webview.url = mainwindow.settings.searchengines.get(mainwindow.settings.searchengine).query + req;
     }
 
-    function calculateMetrics(ignorewidth, ignoreheight) {
-        if(!webview.visible)
-            return;
-
-        if(!ignorewidth)
-            webview.width = tabView.width;
-
-        if(!ignoreheight)
-            webview.height = tabView.height;
-
-        thumbUpdated = !ignorewidth || !ignoreheight;
-    }
-
-    Connections
-    {
-        target: tabView
-
-        onWidthChanged: calculateMetrics(false, true)
-        onHeightChanged: calculateMetrics(true, false)
-    }
-
     id: browsertab
     visible: false
 
@@ -148,18 +124,6 @@ Item
         tabview.pageState = browsertab.state; /* Notify TabView's page state */
     }
 
-    BrowserWebView
-    {
-        id: webview
-        visible: browsertab.state === "webview"
-        width: tabView.width
-        height: tabView.height
-        onVisibleChanged: calculateMetrics(false, false)
-    }
-
-    ViewStack
-    {
-        id: viewstack
-        anchors.fill: parent
-    }
+    BrowserWebView { id: webview; visible: browsertab.state === "webview" }
+    ViewStack { id: viewstack; anchors.fill: parent }
 }

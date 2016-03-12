@@ -10,10 +10,6 @@ Item
 
     signal hideAll()
 
-    function toggleTabs() {
-        pageStack.push(Qt.resolvedUrl("../../pages/segment/SegmentsPage.qml"), { "settings": settings, "tabView": tabview });
-    }
-
     function hideQuickGrid() {
         quickgrid.visible = false;
     }

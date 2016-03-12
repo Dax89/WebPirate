@@ -742,7 +742,7 @@
     <name>MediaPlayerToolBar</name>
     <message>
         <source>Downloading media</source>
-        <translation>Bezig met het downloaden van de media</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

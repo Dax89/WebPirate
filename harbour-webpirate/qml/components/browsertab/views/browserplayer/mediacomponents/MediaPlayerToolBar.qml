@@ -1,14 +1,15 @@
 import QtQuick 2.1
 import QtMultimedia 5.0
 import Sailfish.Silica 1.0
+import "../../../../"
 import "../../../../../js/UrlHelper.js" as UrlHelper
 
 Rectangle
 {
-    function keepVisible(keep)
-    {
-        if(!keep)
-        {
+    readonly property bool canClick: opacity > 0.1
+
+    function keepVisible(keep) {
+        if(!keep) {
             timerdissolve.restart();
             return;
         }
@@ -17,8 +18,7 @@ Rectangle
         toolbar.opacity = 1.0;
     }
 
-    function restoreOpacity()
-    {
+    function restoreOpacity() {
         toolbar.opacity = 1.0;
         timerdissolve.restart();
     }
@@ -29,12 +29,8 @@ Rectangle
     z: 10
 
     Behavior on opacity { NumberAnimation { duration: 800; easing.type: Easing.Linear } }
-
-    MouseArea
-    {
-        anchors.fill: parent
-        onClicked: restoreOpacity()
-    }
+    PanelBackground { anchors.fill: parent }
+    MouseArea { anchors.fill: parent; onClicked: restoreOpacity() }
 
     Timer
     {
@@ -46,53 +42,21 @@ Rectangle
         }
     }
 
-    IconButton
+    ImageButton
     {
-        id: btnplaystop
+        id: btndownload
         width: Theme.itemSizeSmall
-        height: Theme.itemSizeSmall
-        anchors { left: parent.left; verticalCenter: parent.verticalCenter }
-        icon.source: videoplayer.playbackState === MediaPlayer.PlayingState ? "image://theme/icon-m-pause" : "image://theme/icon-m-play"
+        enabled: browserplayer.state !== "error"
+        anchors { left: parent.left; top: parent.top; bottom: parent.bottom }
+        source: "image://theme/icon-m-cloud-download"
         z: 10
 
         onClicked: {
-            restoreOpacity();
-            videoplayer.playbackState === MediaPlayer.PlayingState ? videoplayer.pause() : videoplayer.play();
-        }
-    }
+            if(browserplayer.state !== "error")
+                restoreOpacity();
 
-    MediaPlayerProgressBar
-    {
-        id: pbbuffer
-        anchors { left: btnplaystop.right; right: btndownloaad.left; verticalCenter: parent.verticalCenter }
-        bufferMinimum: 0
-        bufferMaximum: 1.0
-        bufferValue: videoplayer.bufferProgress
-        progressMinimum: 0
-        progressMaximum: videoplayer.duration
-        progressValue: videoplayer.position
-        onDragChanged: keepVisible(dragging)
-
-        onSeekRequested: {
-            restoreOpacity();
-
-            if(videoplayer.seekable)
-                videoplayer.seek(seekpos);
-        }
-    }
-
-
-    IconButton
-    {
-        id: btndownloaad
-        width: Theme.itemSizeSmall
-        height: Theme.itemSizeSmall
-        anchors { right: btnfullscreen.left; verticalCenter: parent.verticalCenter; rightMargin: -Theme.paddingMedium }
-        icon.source: "qrc:///res/download.png"
-        z: 10
-
-        onClicked: {
-            restoreOpacity();
+            if(!canClick)
+                return;
 
             tabviewremorse.execute(qsTr("Downloading media"), function() {
                 if(browserplayer.videoTitle.length > 0) {
@@ -107,18 +71,67 @@ Rectangle
         }
     }
 
-    IconButton
+    MediaPlayerProgressBar
     {
-        id: btnfullscreen
+        id: pbbuffer
+        anchors { left: btndownload.right; right: btntbs.left; verticalCenter: parent.verticalCenter }
+        bufferMinimum: 0
+        bufferMaximum: 1.0
+        bufferValue: videoplayer.bufferProgress
+        progressMinimum: 0
+        progressMaximum: videoplayer.duration
+        progressValue: videoplayer.position
+        onDragChanged: keepVisible(dragging)
+
+        onSeekRequested: {
+            if(browserplayer.state !== "error")
+                restoreOpacity();
+
+            if(!canClick)
+                return;
+
+            if(videoplayer.seekable)
+                videoplayer.seek(seekpos);
+        }
+    }
+
+    ImageButton
+    {
+        id: btntbs
+        anchors { right: btnclose.left; top: parent.top; bottom: parent.bottom; rightMargin: -Theme.paddingMedium }
         width: Theme.itemSizeSmall
-        height: Theme.itemSizeSmall
-        anchors { right: parent.right; rightMargin: Theme.paddingMedium; verticalCenter: parent.verticalCenter }
-        icon.source: browserplayer.fullScreen ? "qrc:///res/exit-fullscreen.png" : "qrc:///res/enter-fullscreen.png"
+        source: "image://theme/icon-m-tabs"
         z: 10
 
         onClicked: {
-            restoreOpacity();
-            browserplayer.switchFullScreen();
+            if(browserplayer.state !== "error")
+                restoreOpacity();
+
+            if(!canClick)
+                return;
+
+            pageStack.push(Qt.resolvedUrl("../../../../../pages/segment/SegmentsPage.qml"), { "settings": mainwindow.settings, "tabView": tabView });
+        }
+
+        Label { anchors.centerIn: parent; font.pixelSize: Theme.fontSizeSmall; font.bold: true; text: tabView.tabs.count; z: -1 }
+    }
+
+    ImageButton
+    {
+        id: btnclose
+        anchors { right: parent.right; top: parent.top; bottom: parent.bottom; rightMargin: Theme.paddingMedium }
+        width: Theme.itemSizeSmall
+        source: "image://theme/icon-close-app"
+        z: 10
+
+        onClicked: {
+            if(browserplayer.state !== "error")
+                restoreOpacity();
+
+            if(!canClick)
+                return;
+
+            viewstack.pop();
         }
     }
 }

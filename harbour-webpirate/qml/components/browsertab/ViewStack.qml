@@ -11,8 +11,7 @@ Item
 
         id: stackobject
 
-        function calculateMetrics()
-        {
+        function calculateMetrics() {
             if(viewstack.empty || !viewstack.visible)
                 return;
 
@@ -21,28 +20,32 @@ Item
             topitem.height = viewstack.height;
         }
 
-        function top()
-        {
+        function top() {
             if(!viewstack.empty)
                 return model.get(0).item;
 
             return null;
         }
 
-        function push(item)
-        {
+        function topTabState() {
+            if(!viewstack.empty)
+                return model.get(0).tabstate;
+
+            return null;
+        }
+
+        function push(item, tabstate) {
             item.width = viewstack.width;
             item.height = viewstack.height;
 
             if(!empty)
                 top().visible = false;
 
-            model.insert(0, { "item": item });
+            model.insert(0, { "item": item, "tabstate": tabstate });
             viewstack.opacity = 1.0;
         }
 
-        function erase(idx)
-        {
+        function erase(idx) {
             var item = model.get(idx).item;
             model.remove(idx);
 
@@ -50,14 +53,13 @@ Item
             item.destroy();
         }
 
-        function pop()
-        {
+        function pop() {
             erase(0);
 
-            if(!empty)
-            {
+            if(!empty) {
                 stackobject.calculateMetrics();
                 stackobject.top().visible = true;
+                browsertab.state = stackobject.topTabState();
             }
         }
     }
@@ -71,8 +73,7 @@ Item
             browsertab.state = stackobject.originalTabState;
     }
 
-    function push(componenturl, tabstate, params)
-    {
+    function push(componenturl, tabstate, params) {
         var component = stackobject.componentCache[componenturl];
 
         if(!component)
@@ -84,7 +85,7 @@ Item
         }
 
         var object = component.createObject(viewstack, params || { });
-        stackobject.push(object);
+        stackobject.push(object, tabstate);
 
         if(tabstate)
             browsertab.state = tabstate;
@@ -92,30 +93,17 @@ Item
         return object;
     }
 
-    function clear()
-    {
+    function clear() {
         while(stackobject.model.count)
             stackobject.erase(0);
     }
 
-    function pop()
-    {
+    function pop() {
         if(!empty)
             stackobject.pop();
 
         if(empty)
             opacity = 0.0;
-    }
-
-    function top()
-    {
-        return stackobject.top();
-    }
-
-    function replace(componenturl, tabstate, params)
-    {
-        stackobject.erase(0);
-        push(componenturl, tabstate, params);
     }
 
     Behavior on opacity {

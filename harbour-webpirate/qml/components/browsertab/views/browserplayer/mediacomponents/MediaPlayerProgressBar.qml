@@ -26,8 +26,9 @@ Item
         seekRequested(seekpos);
     }
 
-    id: mbprogressbar
+    id: mpprogressbar
     height: parent.height / 4
+    opacity: enabled ? 1.0 : 0.4
 
     Label
     {
@@ -49,14 +50,14 @@ Item
             id: bufferprogress
             anchors.fill: parent
             barColor: reverseRgb(Theme.highlightColor)
-            barHeight: mbprogressbar.height
+            barHeight: mpprogressbar.height
         }
 
         LoadingBar
         {
             id: videoprogress
             anchors.fill: parent
-            barHeight: mbprogressbar.height
+            barHeight: mpprogressbar.height
 
             MediaPlayerCursor
             {
@@ -79,9 +80,15 @@ Item
             id: mousearea
             z: 20
             anchors.fill: parent
-            drag { target: mediacursor; axis: Drag.XAxis; minimumX: 0; maximumX: progresscontainer.width }
+            drag { target: mpprogressbar.enabled ? mediacursor : null; axis: Drag.XAxis; minimumX: 0; maximumX: progresscontainer.width }
             drag.onActiveChanged: dragChanged(drag.active)
-            onClicked: seekTo(mouse.x)
+
+            onClicked: {
+                if(!mpprogressbar.enabled)
+                    return;
+
+                seekTo(mouse.x);
+            }
 
             onReleased: {
                 if(drag.active)

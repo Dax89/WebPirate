@@ -133,15 +133,11 @@ Item
         }
 
         function playYouTubeVideo(data) {
-            tabView.navigationBar.solidify();
-
             var grabber = viewStack.push(Qt.resolvedUrl("../views/browsergrabber/BrowserGrabber.qml"), "mediagrabber");
             YouTubeGrabber.grabVideo(data.videoid, grabber);
         }
 
         function playDailyMotionVideo(data) {
-            tabView.navigationBar.solidify();
-
             var grabber = viewStack.push(Qt.resolvedUrl("../views/browsergrabber/BrowserGrabber.qml"), "mediagrabber", { "grabFailed": data.videos.length <= 0,
                                                                                                                          "grabStatus": data.videos.length <= 0 ? qsTr("No videos found, report to developer") : "OK",
                                                                                                                          "videoTitle": clearEscape(data.title),
@@ -149,16 +145,13 @@ Item
                                                                                                                          "videoThumbnail": data.thumbnail,
                                                                                                                          "videoDuration": data.duration });
 
-            for(var i = 0; i < data.videos.length; i++)
-            {
+            for(var i = 0; i < data.videos.length; i++) {
                 var video = data.videos[i];
                 grabber.addVideo(qsTr("Codec") + ": " + video.type, mainwindow.settings.mimedatabase.mimeFromUrl(video.url), video.url);
             }
         }
 
         function playVimeoVideo(data) {
-            tabView.navigationBar.solidify();
-
             var grabber = viewstack.push(Qt.resolvedUrl("../views/browsergrabber/BrowserGrabber.qml"), "mediagrabber", { "grabFailed": data.videos.length <= 0,
                                                                                                                          "grabStatus": data.videos.length <= 0 ? qsTr("No videos found, report to developer") : "OK",
                                                                                                                          "videoTitle": clearEscape(data.title),
@@ -166,20 +159,17 @@ Item
                                                                                                                          "videoThumbnail": data.thumbnail,
                                                                                                                          "videoDuration": data.duration });
 
-            for(var i = 0; i < data.videos.length; i++)
-            {
+            for(var i = 0; i < data.videos.length; i++) {
                 var video = data.videos[i];
                 grabber.addVideo(qsTr("Codec") + ": " + video.type, mainwindow.settings.mimedatabase.mimeFromUrl(video.url), video.url);
             }
         }
 
         function playFacebookVideo(data) {
-            tabView.navigationBar.solidify();
             viewstack.push(Qt.resolvedUrl("../views/browserplayer/BrowserPlayer.qml"), "mediaplayer", { "videoThumbnail": data.thumbnail, "videoSource": data.url });
         }
 
         function playJwPlayer(data) {
-            tabView.navigationBar.solidify();
             viewstack.push(Qt.resolvedUrl("../views/browserplayer/BrowserPlayer.qml"), "mediaplayer", { "videoTitle": data.title, "videoSource": data.url });
         }
 

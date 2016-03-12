@@ -743,7 +743,7 @@
     <name>MediaPlayerToolBar</name>
     <message>
         <source>Downloading media</source>
-        <translation>Descargando multimedia</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

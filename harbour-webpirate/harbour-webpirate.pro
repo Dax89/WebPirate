@@ -159,7 +159,6 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/components/tabview/jsdialogs/JavaScriptDialog.qml \
     qml/components/tabview/TabStack.qml \
     qml/components/tabview/navigationbar/LoadingBar.qml \
-    qml/components/tabview/navigationbar/NavigationItem.qml \
     qml/components/tabview/jsdialogs/ItemSelector.qml \
     qml/components/items/tab/TabListItem.qml \
     qml/components/items/tab/TabClosedItem.qml \
@@ -270,4 +269,8 @@ DISTFILES += \
     qml/components/browsertab/views/browsergrabber/BrowserGrabber.qml \
     qml/components/browsertab/views/browsergrabber/GrabberThumbnail.qml \
     qml/components/items/GrabberItem.qml \
-    qml/js/MediaPlayerHelper.js
+    qml/js/MediaPlayerHelper.js \
+    qml/components/ImageButton.qml \
+    qml/components/browsertab/views/browserplayer/mediacomponents/MediaPlayerError.qml \
+    qml/models/BrowserTabModel.qml \
+    qml/components/browsertab/views/browserplayer/mediacomponents/MediaPlayerPopup.qml
