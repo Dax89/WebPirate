@@ -89,7 +89,7 @@
     </message>
     <message>
         <source>Contributors</source>
-        <translation type="unfinished"></translation>
+        <translation>Mitwirkende</translation>
     </message>
 </context>
 <context>
@@ -218,7 +218,7 @@
     <name>BrowserGrabber</name>
     <message>
         <source>Status</source>
-        <translation type="unfinished"></translation>
+        <translation>Status</translation>
     </message>
 </context>
 <context>
@@ -655,23 +655,23 @@
     <name>GrabberItem</name>
     <message>
         <source>Play</source>
-        <translation type="unfinished"></translation>
+        <translation>Abspielen</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished">Herunterladen</translation>
+        <translation>Herunterladen</translation>
     </message>
     <message>
         <source>Grabbing video</source>
-        <translation type="unfinished"></translation>
+        <translation>Video wird erfasst</translation>
     </message>
     <message>
         <source>Copy URL</source>
-        <translation type="unfinished"></translation>
+        <translation>URL kopieren</translation>
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation type="unfinished">Link in Zwischenablage kopiert</translation>
+        <translation>Link wurde in die Zwischenablage kopiert</translation>
     </message>
 </context>
 <context>
@@ -742,7 +742,7 @@
     <name>MediaPlayerToolBar</name>
     <message>
         <source>Downloading media</source>
-        <translation type="unfinished"></translation>
+        <translation>Material wird heruntergeladen</translation>
     </message>
 </context>
 <context>
@@ -1230,23 +1230,23 @@
     </message>
     <message>
         <source>Copy link</source>
-        <translation type="unfinished"></translation>
+        <translation>Link kopieren</translation>
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation type="unfinished">Link in Zwischenablage kopiert</translation>
+        <translation>Link wurde in die Zwischenablage kopiert</translation>
     </message>
     <message>
         <source>Save page</source>
-        <translation type="unfinished"></translation>
+        <translation>Seite speichern</translation>
     </message>
     <message>
         <source>Downloading web page</source>
-        <translation type="unfinished"></translation>
+        <translation>Webseite wird heruntergeladen</translation>
     </message>
     <message>
         <source>Duplicate tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Tab kopieren</translation>
     </message>
 </context>
 <context>
@@ -1309,11 +1309,11 @@
     </message>
     <message>
         <source>No videos found, report to developer</source>
-        <translation type="unfinished"></translation>
+        <translation>Keine Videos gefunden, Entwickler benachrichtigen</translation>
     </message>
     <message>
         <source>Video grabbed successfully</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Video erfolgreich erfasst</translation>
     </message>
 </context>
 <context>
@@ -1340,11 +1340,11 @@
     </message>
     <message>
         <source>Cannot find decoding function, report to developer</source>
-        <translation type="unfinished"></translation>
+        <translation>Decoder nicht gefunden, Entwickler benachrichtigen</translation>
     </message>
     <message>
         <source>Cannot find decoding object, report to developer</source>
-        <translation type="unfinished"></translation>
+        <translation>Zu dekodierendes Objekt nicht gefunden, Entwickler benachrichtigen</translation>
     </message>
 </context>
 <context>
@@ -1367,11 +1367,11 @@
     </message>
     <message>
         <source>Video grabbed successfully</source>
-        <translation type="unfinished"></translation>
+        <translation>Video erfolgreich erfasst</translation>
     </message>
     <message>
         <source>Cannot get video, report to developer</source>
-        <translation type="unfinished"></translation>
+        <translation>Video kann nicht geladen werden, Entwickler benachrichtigen</translation>
     </message>
 </context>
 <context>

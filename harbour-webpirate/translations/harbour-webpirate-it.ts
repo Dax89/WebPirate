@@ -218,7 +218,7 @@
     <name>BrowserGrabber</name>
     <message>
         <source>Status</source>
-        <translation type="unfinished"></translation>
+        <translation>Stato</translation>
     </message>
 </context>
 <context>
@@ -742,7 +742,7 @@
     <name>MediaPlayerToolBar</name>
     <message>
         <source>Downloading media</source>
-        <translation type="unfinished"></translation>
+        <translation>Download file multimediale</translation>
     </message>
 </context>
 <context>

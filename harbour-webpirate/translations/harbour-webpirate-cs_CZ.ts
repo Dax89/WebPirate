@@ -89,7 +89,7 @@
     </message>
     <message>
         <source>Contributors</source>
-        <translation type="unfinished"></translation>
+        <translation>Přispěvatelé</translation>
     </message>
 </context>
 <context>
@@ -218,7 +218,7 @@
     <name>BrowserGrabber</name>
     <message>
         <source>Status</source>
-        <translation type="unfinished"></translation>
+        <translation>Stav</translation>
     </message>
 </context>
 <context>
@@ -244,30 +244,30 @@
     </message>
     <message>
         <source>New tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Nový panel</translation>
     </message>
     <message>
         <source>Remove from Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Odstranit ze záložek</translation>
     </message>
     <message>
         <source>Add to Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Přidat do záložek</translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation type="unfinished"></translation>
+        <translation>Stop</translation>
     </message>
 </context>
 <context>
     <name>ClosedTabsSegment</name>
     <message>
         <source>Closed Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Zavřené panely</translation>
     </message>
     <message>
         <source>Delete Closed Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Odstranit zavřené panely</translation>
     </message>
 </context>
 <context>
@@ -323,19 +323,19 @@
     <name>CookiesSegment</name>
     <message>
         <source>Cookie Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Správce Cookies</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation type="unfinished">Filtr</translation>
+        <translation>Filtr</translation>
     </message>
     <message>
         <source>Remove All Cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>Odstranit všechny Cookies</translation>
     </message>
     <message>
         <source>Add Cookie</source>
-        <translation type="unfinished">Přidat Cookie</translation>
+        <translation>Přidat Cookie</translation>
     </message>
 </context>
 <context>
@@ -464,15 +464,15 @@
     <name>DownloadsSegment</name>
     <message>
         <source>Delete completed Downloads</source>
-        <translation type="unfinished"></translation>
+        <translation>Vymazat dokončená stahování</translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation type="unfinished"></translation>
+        <translation>Stahování</translation>
     </message>
     <message>
         <source>Download Url</source>
-        <translation type="unfinished"></translation>
+        <translation>Stáhnout odkaz</translation>
     </message>
     <message>
         <source>Start</source>
@@ -498,27 +498,27 @@
     <name>FavoriteItem</name>
     <message>
         <source>Open</source>
-        <translation type="unfinished">Otevřít</translation>
+        <translation>Otevřít</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="unfinished">Upravit</translation>
+        <translation>Upravit</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Odstranit</translation>
+        <translation>Odstranit</translation>
     </message>
     <message>
         <source>Deleting Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Odstraňování složky</translation>
     </message>
     <message>
         <source>Deleting Favorite</source>
-        <translation type="unfinished"></translation>
+        <translation>Odstraňování záložky</translation>
     </message>
     <message>
         <source>Add to Quick Grid</source>
-        <translation type="unfinished"></translation>
+        <translation>Přidat do rychlé mřížky</translation>
     </message>
 </context>
 <context>
@@ -559,54 +559,54 @@
     <name>FavoritesMenu</name>
     <message>
         <source>Export</source>
-        <translation type="unfinished"></translation>
+        <translation>Exportovat</translation>
     </message>
     <message>
         <source>Exporting favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Exportování záložek</translation>
     </message>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Záložky</translation>
     </message>
     <message>
         <source>Favorites exported successfully</source>
-        <translation type="unfinished"></translation>
+        <translation>Záložky úspěšně exportovány</translation>
     </message>
     <message>
         <source>Import</source>
-        <translation type="unfinished"></translation>
+        <translation>Importovat</translation>
     </message>
     <message>
         <source>Import in</source>
-        <translation type="unfinished"></translation>
+        <translation>Importovat v</translation>
     </message>
     <message>
         <source>Add Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Přidat složku</translation>
     </message>
     <message>
         <source>Add Favorite</source>
-        <translation type="unfinished"></translation>
+        <translation>Přidat záložku</translation>
     </message>
 </context>
 <context>
     <name>FavoritesSegment</name>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Záložky</translation>
     </message>
     <message>
         <source>Back</source>
-        <translation type="unfinished"></translation>
+        <translation>Zpět</translation>
     </message>
     <message>
         <source>Favorites imported successfully</source>
-        <translation type="unfinished"></translation>
+        <translation>Záložky úspěšně importovány</translation>
     </message>
     <message>
         <source>Cannot import favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Není možné importovat záložky</translation>
     </message>
 </context>
 <context>
@@ -655,23 +655,23 @@
     <name>GrabberItem</name>
     <message>
         <source>Play</source>
-        <translation type="unfinished"></translation>
+        <translation>Přehrát</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished">Stáhnout</translation>
+        <translation>Stáhnout</translation>
     </message>
     <message>
         <source>Grabbing video</source>
-        <translation type="unfinished"></translation>
+        <translation>Získávání videa</translation>
     </message>
     <message>
         <source>Copy URL</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopírovat odkaz</translation>
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation type="unfinished">Odkaz zkopírován do schránky</translation>
+        <translation>Odkaz zkopírován do schránky</translation>
     </message>
 </context>
 <context>
@@ -685,11 +685,11 @@
     <name>HistorySegment</name>
     <message>
         <source>History</source>
-        <translation type="unfinished"></translation>
+        <translation>Historie</translation>
     </message>
     <message>
         <source>Delete History</source>
-        <translation type="unfinished"></translation>
+        <translation>Smazat historii</translation>
     </message>
 </context>
 <context>
@@ -742,7 +742,7 @@
     <name>MediaPlayerToolBar</name>
     <message>
         <source>Downloading media</source>
-        <translation type="unfinished"></translation>
+        <translation>Stahování média</translation>
     </message>
 </context>
 <context>
@@ -944,7 +944,7 @@
     </message>
     <message>
         <source>Search...</source>
-        <translation type="unfinished"></translation>
+        <translation>Hledat...</translation>
     </message>
 </context>
 <context>
@@ -959,7 +959,7 @@
     </message>
     <message>
         <source>New tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Nový panel</translation>
     </message>
 </context>
 <context>
@@ -1083,11 +1083,11 @@
     </message>
     <message>
         <source>SD Card</source>
-        <translation type="unfinished"></translation>
+        <translation>SD Karta</translation>
     </message>
     <message>
         <source>Home</source>
-        <translation type="unfinished"></translation>
+        <translation>Domov</translation>
     </message>
     <message>
         <source>Send %1 file(s)</source>
@@ -1095,7 +1095,7 @@
     </message>
     <message>
         <source>Back</source>
-        <translation type="unfinished"></translation>
+        <translation>Zpět</translation>
     </message>
 </context>
 <context>
@@ -1129,35 +1129,35 @@
     <name>SessionsSegment</name>
     <message>
         <source>Sessions</source>
-        <translation type="unfinished"></translation>
+        <translation>Relace</translation>
     </message>
     <message>
         <source>No Sessions</source>
-        <translation type="unfinished"></translation>
+        <translation>žádné relace</translation>
     </message>
     <message>
         <source>Save current session</source>
-        <translation type="unfinished"></translation>
+        <translation>Uložit současné sezení</translation>
     </message>
     <message>
         <source>Tabs saved</source>
-        <translation type="unfinished"></translation>
+        <translation>Panely uloženy</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation type="unfinished">Otevřít</translation>
+        <translation>Otevřít</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="unfinished">Upravit</translation>
+        <translation>Upravit</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Odstranit</translation>
+        <translation>Odstranit</translation>
     </message>
     <message>
         <source>Deleting session</source>
-        <translation type="unfinished"></translation>
+        <translation>Odstraňování relace</translation>
     </message>
     <message>
         <source>Loads at startup</source>
@@ -1207,11 +1207,11 @@
     <name>TabClosedItem</name>
     <message>
         <source>Open</source>
-        <translation type="unfinished">Otevřít</translation>
+        <translation>Otevřít</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">Odstranit</translation>
+        <translation>Odstranit</translation>
     </message>
     <message>
         <source>Deleting Tab</source>
@@ -1234,7 +1234,7 @@
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation type="unfinished">Odkaz zkopírován do schránky</translation>
+        <translation>Odkaz zkopírován do schránky</translation>
     </message>
     <message>
         <source>Save page</source>

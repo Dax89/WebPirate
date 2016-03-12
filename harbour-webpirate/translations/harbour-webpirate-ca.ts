@@ -89,7 +89,7 @@
     </message>
     <message>
         <source>Contributors</source>
-        <translation type="unfinished"></translation>
+        <translation>Contribuïdors</translation>
     </message>
 </context>
 <context>
@@ -218,7 +218,7 @@
     <name>BrowserGrabber</name>
     <message>
         <source>Status</source>
-        <translation type="unfinished"></translation>
+        <translation>Estat</translation>
     </message>
 </context>
 <context>
@@ -742,7 +742,7 @@
     <name>MediaPlayerToolBar</name>
     <message>
         <source>Downloading media</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;està descarregant el fitxer multimèdia</translation>
     </message>
 </context>
 <context>
@@ -1230,23 +1230,23 @@
     </message>
     <message>
         <source>Copy link</source>
-        <translation type="unfinished"></translation>
+        <translation>Copia l&apos;enllaç</translation>
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation type="unfinished">S&apos;ha copiat l&apos;enllaç al porta-retalls</translation>
+        <translation>S&apos;ha copiat l&apos;enllaç al porta-retalls</translation>
     </message>
     <message>
         <source>Save page</source>
-        <translation type="unfinished"></translation>
+        <translation>Desa la pàgina</translation>
     </message>
     <message>
         <source>Downloading web page</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;està descarregant la pàgina web</translation>
     </message>
     <message>
         <source>Duplicate tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Pestanya duplicada</translation>
     </message>
 </context>
 <context>
