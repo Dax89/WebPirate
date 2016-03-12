@@ -67,6 +67,7 @@ Column
 
         credentialdialog.url = url;
         credentialdialog.logindata = logindata;
+        credentialdialog.visible = true;
 
         dialogVisible = true;
     }
@@ -76,6 +77,7 @@ Column
 
         formresubmitdialog.tab = tab;
         formresubmitdialog.url = url;
+        formresubmitdialog.visible = true;
 
         dialogVisible = true;
     }
@@ -83,8 +85,9 @@ Column
     function showNotification(url, tab) {
         hideAll();
 
-        formresubmitdialog.tab = tab;
-        formresubmitdialog.url = url;
+        notificationdialog.tab = tab;
+        notificationdialog.url = url;
+        notificationdialog.visible = true;
 
         dialogVisible = true;
     }
