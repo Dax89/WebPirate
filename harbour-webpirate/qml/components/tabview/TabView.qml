@@ -4,7 +4,6 @@ import Sailfish.Silica 1.0
 import ".."
 import "navigationbar"
 import "../../models"
-import "../../components/segments"
 
 Item
 {
