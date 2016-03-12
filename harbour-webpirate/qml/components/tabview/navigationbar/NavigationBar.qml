@@ -67,7 +67,7 @@ Rectangle
         z: 50
 
         boundsBehavior: {
-            if(querybar.searchMode || querybar.editing || (!currentTab().viewStack.empty))
+            if(querybar.searchMode || querybar.editing || (currentTab() && !currentTab().viewStack.empty))
                 return Flickable.StopAtBounds;
 
             return Flickable.DragAndOvershootBounds;
@@ -273,7 +273,7 @@ Rectangle
                 anchors.verticalCenter: parent.verticalCenter
 
                 source: {
-                    if(querybar.searchMode || !currentTab().viewStack.empty)
+                    if(querybar.searchMode || currentTab() && !currentTab().viewStack.empty)
                         return "image://theme/icon-close-app";
 
                     return "image://theme/icon-m-tabs";
@@ -311,7 +311,7 @@ Rectangle
                     font.pixelSize: Theme.fontSizeSmall
                     font.bold: true
                     text: tabview.tabs.count
-                    visible: !querybar.searchMode && currentTab().viewStack.empty
+                    visible: !querybar.searchMode && currentTab() && currentTab().viewStack.empty
                     z: -1
                 }
             }
