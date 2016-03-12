@@ -31,22 +31,6 @@ Item
         return UrlHelper.printable(webview.url.toString());
     }
 
-    readonly property bool canGoBack: webview.canGoBack || !viewstack.empty
-    readonly property bool canGoForward: webview.canGoForward
-
-    function goBack() {
-        if(!viewstack.empty) {
-            viewstack.pop();
-            return;
-        }
-
-        webview.goBack();
-    }
-
-    function goForward() {
-        webview.goForward();
-    }
-
     function loadNewTab() {
         state = "newtab";
         webview.url = "about:newtab";

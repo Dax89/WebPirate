@@ -64,8 +64,14 @@ Rectangle
         id: content
         anchors.fill: parent
         flickableDirection: Flickable.HorizontalFlick
-        boundsBehavior: (querybar.searchMode || querybar.editing) ? Flickable.StopAtBounds : Flickable.DragAndOvershootBounds
         z: 50
+
+        boundsBehavior: {
+            if(querybar.searchMode || querybar.editing || (!currentTab().viewStack.empty))
+                return Flickable.StopAtBounds;
+
+            return Flickable.DragAndOvershootBounds;
+        }
 
         Component.onCompleted: {
             ngfeffect = Qt.createQmlObject("import org.nemomobile.ngf 1.0; NonGraphicalFeedback { event: 'pulldown_highlight' }", content, 'NonGraphicalFeedback');
@@ -96,15 +102,13 @@ Rectangle
         }
 
         onDraggingChanged: {
-            var tab = currentTab();
-
-            if(dragging || !tab)
+            if(dragging || !webView)
                 return;
 
             if(selectedItem === niback)
-                tab.goBack();
+                webView.goBack();
             else if(selectedItem === niforward)
-                tab.goForward();
+                webView.goForward();
 
             selectedItem = null;
         }
@@ -113,7 +117,7 @@ Rectangle
         {
             id: niback
             anchors { right: row.left; top: parent.top; bottom: parent.bottom }
-            visible: currentTab() ? currentTab().canGoBack : false
+            visible: webView ? webView.canGoBack : false
             width: visible ? parent.height : 0
             highlighted: content.selectedItem === niback
             source: "qrc:///res/back.png"
@@ -267,12 +271,25 @@ Rectangle
                 width: navigationbar.contentHeight
                 height: parent.height
                 anchors.verticalCenter: parent.verticalCenter
-                source: querybar.searchMode ? "image://theme/icon-close-app" : "image://theme/icon-m-tabs"
+
+                source: {
+                    if(querybar.searchMode || !currentTab().viewStack.empty)
+                        return "image://theme/icon-close-app";
+
+                    return "image://theme/icon-m-tabs";
+                }
 
                 onClicked: {
                     if(querybar.searchMode) {
                         querybar.searchMode = false;
                         webView.experimental.findText("", 0);
+                        return;
+                    }
+
+                    var tab = currentTab();
+
+                    if(!tab.viewStack.empty) {
+                        tab.viewStack.pop();
                         return;
                     }
 
@@ -294,7 +311,7 @@ Rectangle
                     font.pixelSize: Theme.fontSizeSmall
                     font.bold: true
                     text: tabview.tabs.count
-                    visible: !querybar.searchMode
+                    visible: !querybar.searchMode && currentTab().viewStack.empty
                     z: -1
                 }
             }
@@ -304,7 +321,7 @@ Rectangle
         {
             id: niforward
             anchors { left: row.right; top: parent.top; bottom: parent.bottom }
-            visible: currentTab() ? currentTab().canGoForward : false
+            visible: webView ? webView.canGoForward : false
             width: visible ? parent.height : 0
             highlighted: content.selectedItem === niforward
             source: "qrc:///res/forward.png"
