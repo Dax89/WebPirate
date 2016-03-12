@@ -19,8 +19,8 @@ ApplicationWindow
     {
         id: settings
 
-        downloadmanager.onDownloadCompleted: notifications.send(filename, qsTr("Download Completed"), "icon-m-download", false, true);
-        downloadmanager.onDownloadFailed: notifications.send(filename, qsTr("Download Failed"), "icon-m-download", false, true);
+        downloadmanager.onDownloadCompleted: notifications.send(filename, qsTr("Download Completed"), false, true);
+        downloadmanager.onDownloadFailed: notifications.send(filename, qsTr("Download Failed"), false, true);
 
         Component.onCompleted: {
             UserAgents.buildUA(settings.version, "538.1"); // Create UA dynamically

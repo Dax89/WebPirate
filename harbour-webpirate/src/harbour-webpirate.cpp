@@ -4,9 +4,9 @@
 #include "dbus/client/screenblank.h"
 #include "dbus/client/urlcomposer.h"
 #include "dbus/client/ofono/ofono.h"
-#include "dbus/client/notifications/notifications.h"
 #include "dbus/client/transferengine/transferengine.h"
 #include "dbus/client/transferengine/transfermethodmodel.h"
+#include "dbus/notification/notificationmanager.h"
 #include "dbus/webpirateinterface.h"
 #include "dbus/defaultbrowser.h"
 #include "security/cryptography/aes256.h"
@@ -70,7 +70,7 @@ int main(int argc, char *argv[])
     qmlRegisterType<WebPirateInterface>("harbour.webpirate.DBus", 1, 0, "WebPirateInterface");
     qmlRegisterType<ScreenBlank>("harbour.webpirate.DBus", 1, 0, "ScreenBlank");
     qmlRegisterType<UrlComposer>("harbour.webpirate.DBus", 1, 0, "UrlComposer");
-    qmlRegisterType<Notifications>("harbour.webpirate.DBus.Notifications", 1, 0, "Notifications");
+    qmlRegisterType<NotificationManager>("harbour.webpirate.DBus.Notifications", 1, 0, "Notifications");
     qmlRegisterType<TransferEngine>("harbour.webpirate.DBus.TransferEngine", 1, 0, "TransferEngine");
     qmlRegisterType<TransferMethodModel>("harbour.webpirate.DBus.TransferEngine", 1, 0, "TransferMethodModel");
     qmlRegisterType<ProxyManager>("harbour.webpirate.Network", 1, 0, "ProxyManager");

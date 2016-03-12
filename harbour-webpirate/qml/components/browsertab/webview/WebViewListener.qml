@@ -185,7 +185,7 @@ Item
         }
 
         function onNotificationCreated(data) {
-            mainwindow.settings.notifications.send(data.title, data.options.body, (data.options.icon.length ? data.options.icon : "icon-m-notifications"), true, false);
+            mainwindow.settings.notifications.send(data.title, data.options.body, true, false);
         }
 
         function onNightModeChanged(data) {

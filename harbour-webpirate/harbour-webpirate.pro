@@ -55,7 +55,6 @@ SOURCES += src/harbour-webpirate.cpp \
     src/dbus/client/ofono/ofonoproperty.cpp \
     src/network/networkinterfaces.cpp \
     src/dbus/client/machineid.cpp \
-    src/dbus/client/notifications/notifications.cpp \
     src/dbus/webpirateinterface.cpp \
     src/downloadmanager/webpagedownloaditem.cpp \
     src/dbus/defaultbrowser.cpp \
@@ -63,7 +62,10 @@ SOURCES += src/harbour-webpirate.cpp \
     src/selector/filesmodel.cpp \
     src/selector/filesmodelworker.cpp \
     src/selector/exif/exif.cpp \
-    src/helper/clipboardhelper.cpp
+    src/helper/clipboardhelper.cpp \
+    src/dbus/notification/notification.cpp \
+    src/dbus/notification/notificationmanagerproxy.cpp \
+    src/dbus/notification/notificationmanager.cpp
 
 OTHER_FILES += qml/harbour-webpirate.qml \
     rpm/harbour-webpirate.spec \
@@ -254,7 +256,6 @@ HEADERS += \
     src/dbus/client/ofono/ofonoproperty.h \
     src/network/networkinterfaces.h \
     src/dbus/client/machineid.h \
-    src/dbus/client/notifications/notifications.h \
     src/dbus/webpirateinterface.h \
     src/downloadmanager/webpagedownloaditem.h \
     src/dbus/defaultbrowser.h \
@@ -262,7 +263,10 @@ HEADERS += \
     src/selector/filesmodel.h \
     src/selector/filesmodelworker.h \
     src/selector/exif/exif.h \
-    src/helper/clipboardhelper.h
+    src/helper/clipboardhelper.h \
+    src/dbus/notification/notification.h \
+    src/dbus/notification/notificationmanagerproxy.h \
+    src/dbus/notification/notificationmanager.h
 
 DISTFILES += \
     rpm/harbour-webpirate.changes \
