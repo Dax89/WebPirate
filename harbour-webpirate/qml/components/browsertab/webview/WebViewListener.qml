@@ -139,7 +139,7 @@ Item
 
         function playDailyMotionVideo(data) {
             var grabber = viewStack.push(Qt.resolvedUrl("../views/browsergrabber/BrowserGrabber.qml"), "mediagrabber", { "grabFailed": data.videos.length <= 0,
-                                                                                                                         "grabStatus": data.videos.length <= 0 ? qsTr("No videos found, report to developer") : "OK",
+                                                                                                                         "grabStatus": data.videos.length <= 0 ? qsTr("No videos found, report to developer") : qsTr("Video grabbed successfully"),
                                                                                                                          "videoTitle": clearEscape(data.title),
                                                                                                                          "videoAuthor": clearEscape(data.author),
                                                                                                                          "videoThumbnail": data.thumbnail,
@@ -153,7 +153,7 @@ Item
 
         function playVimeoVideo(data) {
             var grabber = viewstack.push(Qt.resolvedUrl("../views/browsergrabber/BrowserGrabber.qml"), "mediagrabber", { "grabFailed": data.videos.length <= 0,
-                                                                                                                         "grabStatus": data.videos.length <= 0 ? qsTr("No videos found, report to developer") : "OK",
+                                                                                                                         "grabStatus": data.videos.length <= 0 ? qsTr("No videos found, report to developer") : qsTr("Video grabbed successfully"),
                                                                                                                          "videoTitle": clearEscape(data.title),
                                                                                                                          "videoAuthor": clearEscape(data.author),
                                                                                                                          "videoThumbnail": data.thumbnail,

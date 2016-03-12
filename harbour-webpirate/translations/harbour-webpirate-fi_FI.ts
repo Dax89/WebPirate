@@ -1311,6 +1311,10 @@
         <source>No videos found, report to developer</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Video grabbed successfully</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>YouTubeCipher</name>
