@@ -1248,6 +1248,14 @@
         <source>Duplicate tab</source>
         <translation>Monista välilehti</translation>
     </message>
+    <message>
+        <source>Grabber</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Media Player</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>TabsSegment</name>

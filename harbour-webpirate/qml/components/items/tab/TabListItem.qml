@@ -68,11 +68,7 @@ ListItem
         }
     }
 
-    Connections
-    {
-        target: tab
-        onThumbUpdatedChanged: update()
-    }
+    Connections { target: tab; onThumbUpdatedChanged: update() }
 
     Item
     {
@@ -142,6 +138,12 @@ ListItem
                 if(tab.state === "loaderror")
                     return "qrc:///res/loaderror_white.png";
 
+                if(tab.state === "mediagrabber")
+                    return "qrc:///res/grabber.png";
+
+                if(tab.state === "mediaplayer")
+                    return "image://theme/icon-l-play";
+
                 return "";
             }
         }
@@ -166,6 +168,12 @@ ListItem
 
                 if(tab.state === "loaderror")
                     return qsTr("Load error");
+
+                if(tab.state === "mediagrabber")
+                    return qsTr("Grabber");
+
+                if(tab.state === "mediaplayer")
+                    return qsTr("Media Player");
 
                 return tab.title;
             }

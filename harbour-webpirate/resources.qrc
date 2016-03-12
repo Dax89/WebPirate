@@ -19,5 +19,6 @@
         <file>res/quickgrid.png</file>
         <file>res/loaderror_white.png</file>
         <file>res/popup.png</file>
+        <file>res/grabber.png</file>
     </qresource>
 </RCC>
