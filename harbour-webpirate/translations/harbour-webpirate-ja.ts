@@ -1262,6 +1262,10 @@
         <source>Media Player</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Close</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>TabsSegment</name>

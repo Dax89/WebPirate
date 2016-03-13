@@ -20,7 +20,7 @@ ListItem
 
     id: tablistitem
     _showPress: false
-    showMenuOnPressAndHold: tab && (tab.state === "webview")
+    showMenuOnPressAndHold: tab
     onVisibleChanged: update()
 
     drag.target: content
@@ -44,7 +44,13 @@ ListItem
 
     menu: ContextMenu {
         MenuItem {
+            text: qsTr("Close")
+            onClicked: tabView.removeTab(model.index);
+        }
+
+        MenuItem {
             text: qsTr("Copy link")
+            visible: tab && (tab.state === "webview")
 
             onClicked: {
                 popupmessage.show(qsTr("Link copied to clipboard"));
@@ -54,6 +60,7 @@ ListItem
 
         MenuItem {
             text: qsTr("Save page")
+            visible: tab && (tab.state === "webview")
 
             onClicked: {
                 tablistitem.remorseAction(qsTr("Downloading web page"), function () {
