@@ -28,9 +28,7 @@ Item
                                             "play_video": playVideo,
                                             "play_youtube": playYouTubeVideo,
                                             "play_dailymotion": playDailyMotionVideo,
-                                            "play_vimeo": playVimeoVideo,
-                                            "play_facebook": playFacebookVideo,
-                                            "html5_media_play": playHtml5Media }
+                                            "play_vimeo": playVimeoVideo }
 
         id: listenerdispatchers
 
@@ -158,14 +156,6 @@ Item
                 var video = data.videos[i];
                 grabber.addVideo(qsTr("Codec") + ": " + video.type, mainwindow.settings.mimedatabase.mimeFromUrl(video.url), video.url);
             }
-        }
-
-        function playFacebookVideo(data) {
-            viewstack.push(Qt.resolvedUrl("../views/browserplayer/BrowserPlayer.qml"), "mediaplayer", { "videoThumbnail": data.thumbnail, "videoSource": data.url });
-        }
-
-        function playHtml5Media(data) {
-            viewstack.push(Qt.resolvedUrl("../views/browserplayer/BrowserPlayer.qml"), "mediaplayer", { "videoTitle": data.title, "videoSource": data.url });
         }
 
         function onWindowOpen(data) {
