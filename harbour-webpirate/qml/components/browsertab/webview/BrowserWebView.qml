@@ -140,7 +140,7 @@ SilicaWebView
 
                                 /* Polyfills */
                                 Qt.resolvedUrl("../../../js/polyfills/es6-collections.min.js"), // ES6 Harmony Collections: https://github.com/WebReflection/es6-collections
-                                //Qt.resolvedUrl("../../../js/polyfills/canvg.min.js"),           // SVG Support: https://github.com/gabelerner/canvg
+                                Qt.resolvedUrl("../../../js/polyfills/canvg.min.js"),           // SVG Support: https://github.com/gabelerner/canvg
 
                                 // Custom WebView Helpers
                                 Qt.resolvedUrl("../../../js/helpers/ForcePixelRatio.js"),
