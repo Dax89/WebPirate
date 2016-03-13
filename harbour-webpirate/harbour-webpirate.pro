@@ -163,7 +163,6 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/components/tabview/jsdialogs/ItemSelector.qml \
     qml/components/items/tab/TabListItem.qml \
     qml/components/items/tab/TabClosedItem.qml \
-    qml/components/segments/SegmentPool.qml \
     qml/components/segments/TabsSegment.qml \
     qml/components/segments/ClosedTabsSegment.qml \
     qml/components/segments/SessionsSegment.qml \
