@@ -38,6 +38,7 @@ SilicaListView
     }
 
     id: sessionssegment
+    clip: true
     model: ListModel { id: sessionmodel }
 
     header: PageHeader {
