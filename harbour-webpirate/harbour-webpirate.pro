@@ -66,8 +66,6 @@ SOURCES += src/harbour-webpirate.cpp \
     src/dbus/notification/notification.cpp \
     src/dbus/notification/notificationmanagerproxy.cpp \
     src/dbus/notification/notificationmanager.cpp \
-    src/notification/notification.cpp \
-    src/notification/notificationmanagerproxy.cpp
 
 OTHER_FILES += qml/harbour-webpirate.qml \
     rpm/harbour-webpirate.spec \
@@ -267,9 +265,7 @@ HEADERS += \
     src/helper/clipboardhelper.h \
     src/dbus/notification/notification.h \
     src/dbus/notification/notificationmanagerproxy.h \
-    src/dbus/notification/notificationmanager.h \
-    src/notification/notification.h \
-    src/notification/notificationmanagerproxy.h
+    src/dbus/notification/notificationmanager.h
 
 DISTFILES += \
     rpm/harbour-webpirate.changes \
