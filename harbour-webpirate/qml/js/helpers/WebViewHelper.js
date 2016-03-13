@@ -148,17 +148,9 @@ var __webpirate__ = {
 
         var data = new Object;
 
-        if(target.hasAttribute("__wp_video__")) {
-            data.type = "lock_download";
-            data.action = "mediaplayer";
-        }
-        else if(target.hasAttribute("target") && (target.getAttribute("target") === "_blank") && target.href) {
+        if(target.hasAttribute("target") && (target.getAttribute("target") === "_blank") && target.href) {
             data.type = target.hasChildNodes() ? "loadurl" : "newtab";
             data.url = target.href;
-        }
-        else if(target.tagName === "VIDEO") {
-            data.type = "play_video";
-            data.url = target.src;
         }
         else
             return;

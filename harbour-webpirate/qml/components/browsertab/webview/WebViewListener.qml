@@ -8,6 +8,7 @@ import "../../../js/youtube/YouTubeGrabber.js" as YouTubeGrabber
 Item
 {
     property alias dispatchers: listenerdispatchers
+
     id: listener
 
     QtObject
@@ -18,7 +19,6 @@ Item
                                             "submit": onFormSubmit,
                                             "selector_touch": onSelectorTouched,
                                             "textfield_selected": onTextFieldSelected,
-                                            "lock_download": lockDownload,
                                             "webpage_style": webPageStyle,
                                             "loadurl": loadUrlRequested,
                                             "newtab": newTabRequested,
@@ -30,7 +30,7 @@ Item
                                             "play_dailymotion": playDailyMotionVideo,
                                             "play_vimeo": playVimeoVideo,
                                             "play_facebook": playFacebookVideo,
-                                            "play_jwplayer": playJwPlayer }
+                                            "html5_media_play": playHtml5Media }
 
         id: listenerdispatchers
 
@@ -105,11 +105,6 @@ Item
             });
         }
 
-        function lockDownload(data) {
-            webview.lockDownload = true;
-            webview.lockDownloadAction = data.action;
-        }
-
         function webPageStyle(data) {
             if(!data.backgroundcolor) {
                 vscrolldecorator.color = Theme.primaryColor;
@@ -169,7 +164,7 @@ Item
             viewstack.push(Qt.resolvedUrl("../views/browserplayer/BrowserPlayer.qml"), "mediaplayer", { "videoThumbnail": data.thumbnail, "videoSource": data.url });
         }
 
-        function playJwPlayer(data) {
+        function playHtml5Media(data) {
             viewstack.push(Qt.resolvedUrl("../views/browserplayer/BrowserPlayer.qml"), "mediaplayer", { "videoTitle": data.title, "videoSource": data.url });
         }
 

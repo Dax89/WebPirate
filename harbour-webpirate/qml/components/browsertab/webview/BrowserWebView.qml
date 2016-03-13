@@ -10,22 +10,15 @@ import "../../../js/settings/Favorites.js" as Favorites
 
 SilicaWebView
 {
-    property string lockDownloadAction
-    property bool favorite: false
-    property bool nightModeEnabled: false /* Check if Night Mode is visually active      */
-    property bool lockDownload: false     /* Manage Download Requests in a different way */
     property int itemSelectorIndex: -1    /* Keeps the selected index of ItemSelector    */
+    property bool nightModeEnabled: false /* Check if Night Mode is visually active      */
+    property bool favorite: false
 
     function setNightMode(nightmode) {
         if(browsertab.state !== "webview")
             return;
 
         experimental.postMessage(nightmode ? "nightmode_enable" : "nightmode_disable");
-    }
-
-    function releaseDownloadLock() {
-        webView.lockDownload = false;
-        webView.lockDownloadAction = "";
     }
 
     function calculateMetrics(ignorewidth, ignoreheight) {
@@ -136,40 +129,40 @@ SilicaWebView
     experimental.userAgent: UserAgents.get(mainwindow.settings.useragent).value
     experimental.userStyleSheet: mainwindow.settings.adblockmanager.rulesFile
 
-    experimental.userScripts: [ /* Forward 'console' object to Qt's one */
+    experimental.userScripts: [ // Forward 'console' object to Qt's one
                                 Qt.resolvedUrl("../../../js/helpers/Console.js"),
 
-                                /* WebView Utils Functions */
+                                // Tag Overrider
+                                Qt.resolvedUrl("../../../js/helpers/TagOverrider.js"),
+
+                                // WebView Utils Functions
                                 Qt.resolvedUrl("../../../js/helpers/Utils.js"),
 
                                 /* Polyfills */
-                                Qt.resolvedUrl("../../../js/polyfills/es6-collections.min.js"), /* ES6 Harmony Collections: https://github.com/WebReflection/es6-collections */
-                                Qt.resolvedUrl("../../../js/polyfills/canvg.min.js"),           /* SVG Support: https://github.com/gabelerner/canvg */
+                                Qt.resolvedUrl("../../../js/polyfills/es6-collections.min.js"), // ES6 Harmony Collections: https://github.com/WebReflection/es6-collections
+                                //Qt.resolvedUrl("../../../js/polyfills/canvg.min.js"),           // SVG Support: https://github.com/gabelerner/canvg
 
-                                /* Custom WebView Helpers */
+                                // Custom WebView Helpers
                                 Qt.resolvedUrl("../../../js/helpers/ForcePixelRatio.js"),
                                 Qt.resolvedUrl("../../../js/helpers/WebViewHelper.js"),
                                 Qt.resolvedUrl("../../../js/helpers/SystemTextField.js"),
                                 Qt.resolvedUrl("../../../js/helpers/NightMode.js"),
                                 Qt.resolvedUrl("../../../js/helpers/GrabberBuilder.js"),
 
-                                /* Video Helpers */
+                                // Video Helpers
                                 Qt.resolvedUrl("../../../js/helpers/video/YouTubeHelper.js"),
                                 Qt.resolvedUrl("../../../js/helpers/video/DailyMotionHelper.js"),
                                 Qt.resolvedUrl("../../../js/helpers/video/VimeoHelper.js"),
                                 Qt.resolvedUrl("../../../js/helpers/video/FacebookHelper.js"),
                                 Qt.resolvedUrl("../../../js/helpers/video/VideoHelper.js"),
 
-                                /* Video Players */
-                                Qt.resolvedUrl("../../../js/helpers/video/players/JWPlayerHelper.js"),
-
-                                /* Message Listener */
+                                // Message Listener
                                 Qt.resolvedUrl("../../../js/helpers/MessageListener.js"),
 
-                                /* Complete Web Notifications Implementation */
+                                // Complete Web Notifications Implementation
                                 Qt.resolvedUrl("../../../js/helpers/Notification.js"),
 
-                                /* TOHKBD Support (WebView side) */
+                                // TOHKBD Support (WebView side)
                                 Qt.resolvedUrl("../../../js/helpers/TOHKBD.js") ]
 
     experimental.onTextFound: {
@@ -252,14 +245,8 @@ SilicaWebView
         var mime = mainwindow.settings.mimedatabase.mimeFromUrl(downloadItem.url);
         var mimeinfo = mime.split("/");
 
-        if((mimeinfo[0] === "video") || (mimeinfo[0] === "audio") || (webview.lockDownload && (webview.lockDownloadAction === "mediaplayer"))) {
+        if((mimeinfo[0] === "video") || (mimeinfo[0] === "audio")) {
             viewstack.push(Qt.resolvedUrl("../views/browserplayer/BrowserPlayer.qml"), "mediaplayer", { "videoTitle": downloadItem.suggestedFilename, "videoSource": downloadItem.url });
-            webview.releaseDownloadLock();
-            return;
-        }
-
-        if(webview.lockDownload) {
-            webview.releaseDownloadLock();
             return;
         }
 

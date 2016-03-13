@@ -137,7 +137,6 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/components/items/cookie/DomainListItem.qml \
     qml/components/items/cookie/CookieListItem.qml \
     qml/components/browsertab/webview/UrlSchemeDelegateHandler.qml \
-    qml/js/helpers/video/players/JWPlayerHelper.js \
     qml/js/helpers/Notification.js \
     qml/js/youtube/YouTubeCipher.js \
     qml/pages/settings/SettingsPage.qml \
@@ -277,4 +276,5 @@ DISTFILES += \
     qml/components/ImageButton.qml \
     qml/components/browsertab/views/browserplayer/mediacomponents/MediaPlayerError.qml \
     qml/models/BrowserTabModel.qml \
-    qml/components/browsertab/views/browserplayer/mediacomponents/MediaPlayerPopup.qml
+    qml/components/browsertab/views/browserplayer/mediacomponents/MediaPlayerPopup.qml \
+    qml/js/helpers/TagOverrider.js
