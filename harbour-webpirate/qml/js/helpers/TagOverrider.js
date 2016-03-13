@@ -4,7 +4,7 @@ var __wp_tagoverrider_ = {
     supportedmedias: [ "video/mp4", "video/ogg", "audio/mpeg", "audio/ogg", "audio/mp4",
                        "application/vnd.apple.mpegURL", "application/x-mpegURL", "audio/mpegurl" ],
 
-    ignoreplayback: false,
+    ignoreplayback: true,
 
     saveTag: function(touchevent) {
         var element = touchevent.target;
@@ -50,3 +50,5 @@ document.createElement("video").constructor.prototype.canPlayType = function(med
 
     return "";
 }
+
+setTimeout(function() { __wp_tagoverrider_.ignoreplayback = false; }, 500);
