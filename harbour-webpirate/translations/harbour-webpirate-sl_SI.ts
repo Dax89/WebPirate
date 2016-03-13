@@ -91,6 +91,10 @@
         <source>Contributors</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Greek</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>AdBlockDownloaderPage</name>

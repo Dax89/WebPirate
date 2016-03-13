@@ -89,6 +89,10 @@
     </message>
     <message>
         <source>Contributors</source>
+        <translation>Medewerkers</translation>
+    </message>
+    <message>
+        <source>Greek</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -248,15 +252,15 @@
     </message>
     <message>
         <source>Remove from Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Verwijderen uit favorieten</translation>
     </message>
     <message>
         <source>Add to Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Toevoegen aan favorieten</translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation type="unfinished"></translation>
+        <translation>Stoppen</translation>
     </message>
 </context>
 <context>
@@ -655,23 +659,23 @@
     <name>GrabberItem</name>
     <message>
         <source>Play</source>
-        <translation type="unfinished"></translation>
+        <translation>Afspelen</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished">Gedownload</translation>
+        <translation>Downloaden</translation>
     </message>
     <message>
         <source>Grabbing video</source>
-        <translation type="unfinished"></translation>
+        <translation>Bezig met ophalen van video</translation>
     </message>
     <message>
         <source>Copy URL</source>
-        <translation type="unfinished"></translation>
+        <translation>URL kopiëren</translation>
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation type="unfinished">De link is gekopieerd naar het klembord</translation>
+        <translation>Koppeling gekopieerd naar klembord</translation>
     </message>
 </context>
 <context>
@@ -1200,7 +1204,7 @@
     </message>
     <message>
         <source>Popup Blocker</source>
-        <translation type="unfinished">Pop-upblokkering</translation>
+        <translation>Pop-upblokkering</translation>
     </message>
 </context>
 <context>
@@ -1230,31 +1234,31 @@
     </message>
     <message>
         <source>Copy link</source>
-        <translation type="unfinished"></translation>
+        <translation>Koppeling kopiëren</translation>
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation type="unfinished">De link is gekopieerd naar het klembord</translation>
+        <translation>Koppeling gekopieerd naar klembord</translation>
     </message>
     <message>
         <source>Save page</source>
-        <translation type="unfinished"></translation>
+        <translation>Pagina opslaan</translation>
     </message>
     <message>
         <source>Downloading web page</source>
-        <translation type="unfinished"></translation>
+        <translation>Bezig met het downloaden van de webpagina</translation>
     </message>
     <message>
         <source>Duplicate tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Tabblad dupliceren</translation>
     </message>
     <message>
         <source>Grabber</source>
-        <translation type="unfinished"></translation>
+        <translation>Ophaler</translation>
     </message>
     <message>
         <source>Media Player</source>
-        <translation type="unfinished"></translation>
+        <translation>Mediaspeler</translation>
     </message>
 </context>
 <context>
@@ -1317,11 +1321,11 @@
     </message>
     <message>
         <source>No videos found, report to developer</source>
-        <translation type="unfinished"></translation>
+        <translation>Geen video&apos;s gevonden, meld dit aan de ontwikkelaar</translation>
     </message>
     <message>
         <source>Video grabbed successfully</source>
-        <translation type="unfinished"></translation>
+        <translation>De video is succesvol opgehaald</translation>
     </message>
 </context>
 <context>
@@ -1348,11 +1352,11 @@
     </message>
     <message>
         <source>Cannot find decoding function, report to developer</source>
-        <translation type="unfinished"></translation>
+        <translation>Het is niet gelukt om de decodeer-functie te vinden, meld dit aan de ontwikkelaar</translation>
     </message>
     <message>
         <source>Cannot find decoding object, report to developer</source>
-        <translation type="unfinished"></translation>
+        <translation>Het is niet gelukt om het decodeer-object te vinden, meld dit aan de ontwikkelaar</translation>
     </message>
 </context>
 <context>
@@ -1375,11 +1379,11 @@
     </message>
     <message>
         <source>Video grabbed successfully</source>
-        <translation type="unfinished"></translation>
+        <translation>De video is succesvol opgehaald</translation>
     </message>
     <message>
         <source>Cannot get video, report to developer</source>
-        <translation type="unfinished"></translation>
+        <translation>Het is niet gelukt om de video op te halen, meld dit aan de ontwikkelaar</translation>
     </message>
 </context>
 <context>

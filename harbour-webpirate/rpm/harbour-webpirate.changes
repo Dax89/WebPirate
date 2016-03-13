@@ -8,6 +8,21 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Sun Mar 13 2016 Antonio Davide Trogu <trogu.davide@gmail.com> 2.0-1
+- New Gesture Based UI
+- Redesigned integrated Media Player
+- Included SailorGram's file picker
+- Implemented EXPERIMENTAL <video> tag support ( thanks to llelectronics for the code! :) )
+- Video Playback support on Facebook
+- Video Playback support on Instagram
+- Updated YouTube grabber and cipher
+- Reimplemented DailyMotion grabber
+- Reimplemented Vimeo grabber
+- Fine tuning and performance boost
+- Removed legacy 0.x and 1.x source code
+- Minor Fixes
+- Updated localizations.
+
 * Tue Oct 06 2015 Antonio Davide Trogu <trogu.davide@gmail.com> 1.7-4
 - Enabled Landscape mode in session manager
 - REGRESSION FIX: when Web Pirate boots for the first time.

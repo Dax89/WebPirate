@@ -91,6 +91,10 @@
         <source>Contributors</source>
         <translation>Přispěvatelé</translation>
     </message>
+    <message>
+        <source>Greek</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>AdBlockDownloaderPage</name>
@@ -476,7 +480,7 @@
     </message>
     <message>
         <source>Start</source>
-        <translation type="unfinished"></translation>
+        <translation>Start</translation>
     </message>
 </context>
 <context>
@@ -1215,14 +1219,14 @@
     </message>
     <message>
         <source>Deleting Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Odstraňování panelu</translation>
     </message>
 </context>
 <context>
     <name>TabListItem</name>
     <message>
         <source>Quick Grid</source>
-        <translation type="unfinished"></translation>
+        <translation> Rychlý mřížek</translation>
     </message>
     <message>
         <source>Load error</source>
@@ -1230,7 +1234,7 @@
     </message>
     <message>
         <source>Copy link</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopírovat odkaz</translation>
     </message>
     <message>
         <source>Link copied to clipboard</source>
@@ -1238,15 +1242,15 @@
     </message>
     <message>
         <source>Save page</source>
-        <translation type="unfinished"></translation>
+        <translation>Uložit stránku</translation>
     </message>
     <message>
         <source>Downloading web page</source>
-        <translation type="unfinished"></translation>
+        <translation>Stahování Webové stránky</translation>
     </message>
     <message>
         <source>Duplicate tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Duplikovat Panel</translation>
     </message>
     <message>
         <source>Grabber</source>
@@ -1261,15 +1265,15 @@
     <name>TabsSegment</name>
     <message>
         <source>Tabs</source>
-        <translation type="unfinished">Panely</translation>
+        <translation>Panely</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Nastavení</translation>
     </message>
     <message>
         <source>New Tab</source>
-        <translation type="unfinished">Nový panel</translation>
+        <translation>Nový panel</translation>
     </message>
     <message>
         <source>Disable Night Mode</source>
@@ -1352,7 +1356,7 @@
     </message>
     <message>
         <source>Cannot find decoding object, report to developer</source>
-        <translation type="unfinished"></translation>
+        <translation>Nelze nalézt dekódovací objekt, kontaktuj vívojáře</translation>
     </message>
 </context>
 <context>

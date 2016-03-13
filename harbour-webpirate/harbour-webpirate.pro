@@ -210,6 +210,7 @@ TRANSLATIONS += translations/harbour-webpirate.ts \
             translations/harbour-webpirate-cs_CZ.ts \
             translations/harbour-webpirate-de.ts \
             translations/harbour-webpirate-el.ts \
+            translations/harbour-webpirate-el.ts \
             translations/harbour-webpirate-es.ts \
             translations/harbour-webpirate-fi_FI.ts \
             translations/harbour-webpirate-fr.ts \
@@ -220,7 +221,7 @@ TRANSLATIONS += translations/harbour-webpirate.ts \
             translations/harbour-webpirate-sl_SI.ts \
             translations/harbour-webpirate-sv_SE.ts \
             translations/harbour-webpirate-zh_CN.ts \
-            translations/harbour-webpirate-zh_TW.ts
+            translations/harbour-webpirate-zh_TW.ts \
 
 RESOURCES += \
     resources.qrc

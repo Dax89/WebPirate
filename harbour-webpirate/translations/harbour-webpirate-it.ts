@@ -91,6 +91,10 @@
         <source>Contributors</source>
         <translation>Collaboratori</translation>
     </message>
+    <message>
+        <source>Greek</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>AdBlockDownloaderPage</name>
@@ -1250,11 +1254,11 @@
     </message>
     <message>
         <source>Grabber</source>
-        <translation type="unfinished"></translation>
+        <translation>Grabber</translation>
     </message>
     <message>
         <source>Media Player</source>
-        <translation type="unfinished"></translation>
+        <translation>Media Player</translation>
     </message>
 </context>
 <context>
@@ -1321,7 +1325,7 @@
     </message>
     <message>
         <source>Video grabbed successfully</source>
-        <translation type="unfinished">Video recuperati con successo</translation>
+        <translation>Video recuperati con successo</translation>
     </message>
 </context>
 <context>

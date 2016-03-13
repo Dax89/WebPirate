@@ -89,6 +89,10 @@
     </message>
     <message>
         <source>Contributors</source>
+        <translation>Collaborateurs</translation>
+    </message>
+    <message>
+        <source>Greek</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -248,15 +252,15 @@
     </message>
     <message>
         <source>Remove from Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Supprimer des favoris</translation>
     </message>
     <message>
         <source>Add to Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Ajouter aux favoris</translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation type="unfinished"></translation>
+        <translation>Arrêt</translation>
     </message>
 </context>
 <context>
@@ -655,23 +659,23 @@
     <name>GrabberItem</name>
     <message>
         <source>Play</source>
-        <translation type="unfinished"></translation>
+        <translation>Lecture</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished">Télécharger</translation>
+        <translation>Télécharger</translation>
     </message>
     <message>
         <source>Grabbing video</source>
-        <translation type="unfinished"></translation>
+        <translation>Capture vidéo</translation>
     </message>
     <message>
         <source>Copy URL</source>
-        <translation type="unfinished"></translation>
+        <translation>Copier l&apos;URL</translation>
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation type="unfinished">Lien copié dans le presse-papiers</translation>
+        <translation>Lien copié dans le presse-papier</translation>
     </message>
 </context>
 <context>
@@ -1200,7 +1204,7 @@
     </message>
     <message>
         <source>Popup Blocker</source>
-        <translation type="unfinished">Bloqueur de Popup</translation>
+        <translation>Bloqueur pop-up</translation>
     </message>
 </context>
 <context>
@@ -1230,23 +1234,23 @@
     </message>
     <message>
         <source>Copy link</source>
-        <translation type="unfinished"></translation>
+        <translation>Copier le lien</translation>
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation type="unfinished">Lien copié dans le presse-papiers</translation>
+        <translation>Lien copié dans le presse-papier</translation>
     </message>
     <message>
         <source>Save page</source>
-        <translation type="unfinished"></translation>
+        <translation>Enregistrer la page</translation>
     </message>
     <message>
         <source>Downloading web page</source>
-        <translation type="unfinished"></translation>
+        <translation>Téléchargement de la page web</translation>
     </message>
     <message>
         <source>Duplicate tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Dupliquer l&apos;onglet</translation>
     </message>
     <message>
         <source>Grabber</source>
@@ -1317,11 +1321,11 @@
     </message>
     <message>
         <source>No videos found, report to developer</source>
-        <translation type="unfinished"></translation>
+        <translation>Aucune vidéo trouvée, faire rapport au développeur </translation>
     </message>
     <message>
         <source>Video grabbed successfully</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Vidéo capturée avec succès</translation>
     </message>
 </context>
 <context>
@@ -1348,11 +1352,11 @@
     </message>
     <message>
         <source>Cannot find decoding function, report to developer</source>
-        <translation type="unfinished"></translation>
+        <translation>Fonction de décodage introuvable, faire rapport au développeur </translation>
     </message>
     <message>
         <source>Cannot find decoding object, report to developer</source>
-        <translation type="unfinished"></translation>
+        <translation>Objet à décoder introuvable, faire rapport au développeur </translation>
     </message>
 </context>
 <context>
@@ -1375,11 +1379,11 @@
     </message>
     <message>
         <source>Video grabbed successfully</source>
-        <translation type="unfinished"></translation>
+        <translation>Vidéo capturée avec succès</translation>
     </message>
     <message>
         <source>Cannot get video, report to developer</source>
-        <translation type="unfinished"></translation>
+        <translation>Impossible d&apos;obtenir la vidéo, faire rapport au développeur </translation>
     </message>
 </context>
 <context>

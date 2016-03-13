@@ -20,7 +20,7 @@ Page
                                                           readonly property string translators: "Vistaus, pljmn"; },
 
                                                QtObject { readonly property string language: qsTr("Finnish");
-                                                          readonly property string translators: "reviewjolla, ari_jarvio, sakustar, tattuh, oku9000"; },
+                                                          readonly property string translators: "reviewjolla, ari_jarvio, sakustar, tattuh"; },
 
                                                QtObject { readonly property string language: qsTr("French");
                                                           readonly property string translators: "Jordi, pljmn, Nerfiaux, malibu1106"; },
@@ -29,7 +29,7 @@ Page
                                                           readonly property string translators: "Moth, blubdbibub, snowpolloi, PawelSpoon"; },
 
                                                QtObject { readonly property string language: qsTr("Italian");
-                                                          readonly property string translators: "Watchmaker, Dax89"; },
+                                                          readonly property string translators: "Watchmaker, Dax89, tichy"; },
 
                                                QtObject { readonly property string language: qsTr("Russian");
                                                           readonly property string translators: "lewa, Wedmer, akalmykov"; },
@@ -44,7 +44,10 @@ Page
                                                           readonly property string translators: "rrijken"; },
 
                                                QtObject { readonly property string language: qsTr("Spanish");
-                                                          readonly property string translators: "carmenfdezb"; } ]
+                                                          readonly property string translators: "carmenfdezb, ferlanero"; },
+
+                                               QtObject { readonly property string language: qsTr("Greek");
+                                                          readonly property string translators: "dglent"; } ]
 
     signal urlRequested(string url)
 

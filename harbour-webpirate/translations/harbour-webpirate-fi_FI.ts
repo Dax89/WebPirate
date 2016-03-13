@@ -91,6 +91,10 @@
         <source>Contributors</source>
         <translation>Avustajat</translation>
     </message>
+    <message>
+        <source>Greek</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>AdBlockDownloaderPage</name>
@@ -655,23 +659,23 @@
     <name>GrabberItem</name>
     <message>
         <source>Play</source>
-        <translation type="unfinished"></translation>
+        <translation>Toista</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished">Lataa</translation>
+        <translation>Lataa</translation>
     </message>
     <message>
         <source>Grabbing video</source>
-        <translation type="unfinished"></translation>
+        <translation>Kaapataan videota</translation>
     </message>
     <message>
         <source>Copy URL</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopioi linkki</translation>
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation type="unfinished"></translation>
+        <translation>Linkki kopioitu leikepöydälle</translation>
     </message>
 </context>
 <context>
@@ -1317,11 +1321,11 @@
     </message>
     <message>
         <source>No videos found, report to developer</source>
-        <translation type="unfinished"></translation>
+        <translation>Videoita ei löytynyt, lähetä kehittäjälle ilmoitus</translation>
     </message>
     <message>
         <source>Video grabbed successfully</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Videon kaappaus onnistui</translation>
     </message>
 </context>
 <context>
@@ -1348,11 +1352,11 @@
     </message>
     <message>
         <source>Cannot find decoding function, report to developer</source>
-        <translation type="unfinished"></translation>
+        <translation>Purkufunktiota ei löytynyt, lähetä kehittäjälle ilmoitus</translation>
     </message>
     <message>
         <source>Cannot find decoding object, report to developer</source>
-        <translation type="unfinished"></translation>
+        <translation>Purettavaa kohdetta ei löytynyt, lähetä kehittäjälle ilmoitus</translation>
     </message>
 </context>
 <context>
@@ -1375,11 +1379,11 @@
     </message>
     <message>
         <source>Video grabbed successfully</source>
-        <translation type="unfinished"></translation>
+        <translation>Videon kaappaus onnistui</translation>
     </message>
     <message>
         <source>Cannot get video, report to developer</source>
-        <translation type="unfinished"></translation>
+        <translation>Videon haku epäonnistui, lähetä kehittäjälle ilmoitus</translation>
     </message>
 </context>
 <context>

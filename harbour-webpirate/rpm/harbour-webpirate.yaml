@@ -1,7 +1,7 @@
 Name: harbour-webpirate
 Summary: harbour-webpirate
-Version: 1.9
-Release: 3
+Version: 2.0
+Release: 1
 # The contents of the Group field should be one of the groups listed here:
 # https://gitorious.org/meego-developer-tools/spectacle/blobs/master/data/GROUPS
 Group: Qt/Qt
