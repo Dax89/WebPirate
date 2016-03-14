@@ -116,15 +116,12 @@ SilicaWebView
     onVisibleChanged: calculateMetrics(false, false)
 
     /* Experimental WebView Features */
-    experimental.preferences.webAudioEnabled: true
-    experimental.preferences.notificationsEnabled: true
     experimental.preferences.webGLEnabled: true
+    experimental.preferences.notificationsEnabled: true
     experimental.preferences.dnsPrefetchEnabled: true
-    experimental.preferences.pluginsEnabled: true
     experimental.preferences.javascriptEnabled: true
     experimental.preferences.localStorageEnabled: true
     experimental.preferences.navigatorQtObjectEnabled: true
-    experimental.preferences.developerExtrasEnabled: true
     experimental.preferredMinimumContentsWidth: 980 /* "magic" number that proved to work great on the majority of websites */
     experimental.userAgent: UserAgents.get(mainwindow.settings.useragent).value
     experimental.userStyleSheet: mainwindow.settings.adblockmanager.rulesFile
