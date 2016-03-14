@@ -107,10 +107,6 @@
         <translation>Tila</translation>
     </message>
     <message>
-        <source>Download</source>
-        <translation>Lataa</translation>
-    </message>
-    <message>
         <source>Ready</source>
         <translation>Valmis</translation>
     </message>
@@ -125,6 +121,14 @@
     <message>
         <source>Completed</source>
         <translation>Valmis</translation>
+    </message>
+    <message>
+        <source>Download CSS Filters</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Download Hosts BlackList</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

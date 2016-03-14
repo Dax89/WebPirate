@@ -129,11 +129,12 @@ SilicaWebView
     experimental.userScripts: [ // Forward 'console' object to Qt's one
                                 Qt.resolvedUrl("../../../js/helpers/Console.js"),
 
-                                // Tag Overrider
-                                Qt.resolvedUrl("../../../js/helpers/TagOverrider.js"),
-
                                 // WebView Utils Functions
                                 Qt.resolvedUrl("../../../js/helpers/Utils.js"),
+
+                                // Overrides
+                                Qt.resolvedUrl("../../../js/helpers/overrides/AjaxOverrider.js"),
+                                Qt.resolvedUrl("../../../js/helpers/overrides/TagOverrider.js"),
 
                                 /* Polyfills */
                                 Qt.resolvedUrl("../../../js/polyfills/es6-collections.min.js"), // ES6 Harmony Collections: https://github.com/WebReflection/es6-collections
@@ -327,7 +328,10 @@ SilicaWebView
             webview.favorite = Favorites.contains(stringurl);
 
             if(!UrlHelper.isSpecialUrl(stringurl) && UrlHelper.isUrl(stringurl)) {
-                experimental.postMessage("forcepixelratio");
+
+                if(settings.adblockmanager.enabled)
+                    experimental.postMessage(JSON.stringify({ type: "apply_blacklist", blacklist: settings.adblockmanager.hostsBlackList }));
+
                 experimental.postMessage("polish_view");
                 experimental.postMessage("video_get");
                 experimental.postMessage("textfield_override");

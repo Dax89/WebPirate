@@ -3,6 +3,8 @@
 const QString AdBlockManager::ADBLOCK_FOLDER = "AdBlock";
 const QString AdBlockManager::CSS_FILENAME = "adblock.css";
 const QString AdBlockManager::TABLE_FILENAME = "adblock.table";
+const QString AdBlockManager::HOSTS_FILENAME = "hosts.rgx";
+const QString AdBlockManager::HOSTS_FILENAME_TMP = "hosts.tmp";
 
 AdBlockManager::AdBlockManager(QObject *parent): QObject(parent), _enabled(false)
 {
@@ -14,7 +16,12 @@ AdBlockManager::AdBlockManager(QObject *parent): QObject(parent), _enabled(false
     datadir.cd(AdBlockManager::ADBLOCK_FOLDER);
     this->_rulesfile = datadir.filePath(AdBlockManager::CSS_FILENAME);
     this->_tablefile = datadir.filePath(AdBlockManager::TABLE_FILENAME);
+    this->_hostsfile = datadir.filePath(AdBlockManager::HOSTS_FILENAME);
+    this->_hostsfiletmp = datadir.filePath(AdBlockManager::HOSTS_FILENAME_TMP);
     this->_rulefileinstance.setFileName(this->_rulesfile);
+
+    if(QFile::exists(this->_hostsfile))
+        this->updateHostsBlackList();
 
     if(!datadir.exists(AdBlockManager::CSS_FILENAME))
         this->createEmptyRulesFile();
@@ -39,6 +46,14 @@ QString AdBlockManager::rulesFile() const
     return this->_rulesfile;
 }
 
+QString AdBlockManager::hostsBlackList()
+{
+    if(this->_hostsblacklist.isEmpty())
+        this->updateHostsBlackList();
+
+    return this->_hostsblacklist;
+}
+
 const QString& AdBlockManager::cssFile() const
 {
     return this->_rulesfile;
@@ -47,6 +62,16 @@ const QString& AdBlockManager::cssFile() const
 const QString& AdBlockManager::tableFile() const
 {
     return this->_tablefile;
+}
+
+const QString &AdBlockManager::hostsRgxFile() const
+{
+    return this->_hostsfile;
+}
+
+const QString &AdBlockManager::hostsTmpFile() const
+{
+    return this->_hostsfiletmp;
 }
 
 bool AdBlockManager::enabled() const
@@ -64,6 +89,24 @@ void AdBlockManager::setEnabled(bool b)
         emit enabledChanged();
         emit rulesChanged();
     }
+}
+
+bool AdBlockManager::updateHostsBlackList()
+{
+    QFile f(this->_hostsfile);
+
+    if(!f.exists())
+    {
+        emit hostsBlackListChanged();
+        return false;
+    }
+
+    f.open(QFile::ReadOnly);
+    this->_hostsblacklist = f.readAll();
+    f.close();
+
+    emit hostsBlackListChanged();
+    return true;
 }
 
 void AdBlockManager::createEmptyRulesFile()

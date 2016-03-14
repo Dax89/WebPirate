@@ -1,9 +1,11 @@
 #include "adblockdownloader.h"
+#include "adblockhostsparser.h"
 
 const int AdBlockDownloader::FILES_MAX = 2;
 const QString AdBlockDownloader::GITHUB_RAW_URL = "https://raw.githubusercontent.com/Dax89/harbour-webpirate/master";
+const QString AdBlockDownloader::HOSTS_URL = "http://winhelp2002.mvps.org";
 
-AdBlockDownloader::AdBlockDownloader(QObject *parent): QObject(parent), _downloading(false), _filesdownloaded(0), _progressvalue(0), _progresstotal(0), _adblockmanager(NULL), _downloadreply(NULL)
+AdBlockDownloader::AdBlockDownloader(QObject *parent): QObject(parent), _downloading(false), _filesdownloaded(0), _progressvalue(0), _progresstotal(0), _adblockmanager(NULL), _downloadreply(NULL), _downloadtype(DownloadType::Undefined)
 {
     connect(&this->_networkmanager, SIGNAL(finished(QNetworkReply*)), this, SLOT(onDownloadFinished(QNetworkReply*)));
 }
@@ -23,7 +25,7 @@ qint64 AdBlockDownloader::progressTotal() const
     return this->_progresstotal;
 }
 
-void AdBlockDownloader::downloadFile(const QString &filename, const QString& localfile)
+void AdBlockDownloader::downloadFile(const QString& path, const QString &filename, const QString& localfile)
 {
     this->_progressvalue = 0;
     this->_progresstotal = 0;
@@ -34,7 +36,7 @@ void AdBlockDownloader::downloadFile(const QString &filename, const QString& loc
     this->_tempfile.setFileName(localfile);
     this->_tempfile.open(QFile::WriteOnly | QFile::Truncate);
 
-    QUrl url(QString("%1/%2").arg(AdBlockDownloader::GITHUB_RAW_URL, filename));
+    QUrl url(QString("%1/%2").arg(path, filename));
     QNetworkRequest request(url);
 
     this->_downloadreply = this->_networkmanager.get(request);
@@ -49,9 +51,21 @@ void AdBlockDownloader::downloadFilters(AdBlockManager* adblockmanager)
     this->_filesdownloaded = 0;
     this->_errormessage = QString();
     this->_localfile = QString();
+    this->_downloadtype = DownloadType::Filters;
 
     adblockmanager->rulesFileInstance().close();
-    this->downloadFile(AdBlockManager::CSS_FILENAME, adblockmanager->cssFile());
+    this->downloadFile(AdBlockDownloader::GITHUB_RAW_URL, AdBlockManager::CSS_FILENAME, adblockmanager->cssFile());
+}
+
+void AdBlockDownloader::downloadHosts(AdBlockManager *adblockmanager)
+{
+    this->_adblockmanager = adblockmanager;
+    this->_filesdownloaded = 0;
+    this->_errormessage = QString();
+    this->_localfile = QString();
+    this->_downloadtype = DownloadType::Hosts;
+
+    this->downloadFile(AdBlockDownloader::HOSTS_URL, "hosts.txt", adblockmanager->hostsTmpFile());
 }
 
 void AdBlockDownloader::onNetworkReplyReadyRead()
@@ -95,14 +109,27 @@ void AdBlockDownloader::onDownloadFinished(QNetworkReply *reply)
 
     this->_tempfile.close();
 
-    if(this->_filesdownloaded == 1) /* Download the second file */
-        this->downloadFile(AdBlockManager::TABLE_FILENAME, this->_adblockmanager->tableFile());
-    else if(this->_filesdownloaded == AdBlockDownloader::FILES_MAX)
+    if(this->_downloadtype == DownloadType::Filters)
     {
-        this->_downloading = false;
+        if(this->_filesdownloaded == 1) /* Download the second file */
+            this->downloadFile(AdBlockDownloader::GITHUB_RAW_URL, AdBlockManager::TABLE_FILENAME, this->_adblockmanager->tableFile());
+        else if(this->_filesdownloaded == AdBlockDownloader::FILES_MAX)
+        {
+            this->_downloading = false;
+
+            emit downloadingChanged();
+            emit downloadCompleted();
+            emit this->_adblockmanager->rulesChanged();
+        }
+    }
+    else if(this->_downloadtype == DownloadType::Hosts)
+    {
+        AdBlockHostsParser ahp;
+        ahp.parse(this->_adblockmanager->hostsTmpFile(), this->_adblockmanager->hostsRgxFile());
+
+        this->_adblockmanager->updateHostsBlackList();
 
         emit downloadingChanged();
         emit downloadCompleted();
-        emit this->_adblockmanager->rulesChanged();
     }
 }

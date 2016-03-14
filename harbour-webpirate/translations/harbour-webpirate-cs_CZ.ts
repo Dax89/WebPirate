@@ -107,10 +107,6 @@
         <translation>Stav</translation>
     </message>
     <message>
-        <source>Download</source>
-        <translation>Stáhnout</translation>
-    </message>
-    <message>
         <source>Ready</source>
         <translation>Připraveno</translation>
     </message>
@@ -125,6 +121,14 @@
     <message>
         <source>Completed</source>
         <translation>Dokončeno</translation>
+    </message>
+    <message>
+        <source>Download CSS Filters</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Download Hosts BlackList</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

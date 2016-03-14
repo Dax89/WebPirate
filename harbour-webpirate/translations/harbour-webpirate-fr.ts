@@ -107,10 +107,6 @@
         <translation>Etat</translation>
     </message>
     <message>
-        <source>Download</source>
-        <translation>Télécharger</translation>
-    </message>
-    <message>
         <source>Ready</source>
         <translation>Prêt</translation>
     </message>
@@ -125,6 +121,14 @@
     <message>
         <source>Completed</source>
         <translation>Terminé</translation>
+    </message>
+    <message>
+        <source>Download CSS Filters</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Download Hosts BlackList</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

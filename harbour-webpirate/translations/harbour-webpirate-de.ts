@@ -107,10 +107,6 @@
         <translation>Status</translation>
     </message>
     <message>
-        <source>Download</source>
-        <translation>Herunterladen</translation>
-    </message>
-    <message>
         <source>Ready</source>
         <translation>Bereit</translation>
     </message>
@@ -125,6 +121,14 @@
     <message>
         <source>Completed</source>
         <translation>Fertiggestellt</translation>
+    </message>
+    <message>
+        <source>Download CSS Filters</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Download Hosts BlackList</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

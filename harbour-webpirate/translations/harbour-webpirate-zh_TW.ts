@@ -107,10 +107,6 @@
         <translation>狀態</translation>
     </message>
     <message>
-        <source>Download</source>
-        <translation>下載</translation>
-    </message>
-    <message>
         <source>Ready</source>
         <translation>讀取</translation>
     </message>
@@ -125,6 +121,14 @@
     <message>
         <source>Completed</source>
         <translation>完成</translation>
+    </message>
+    <message>
+        <source>Download CSS Filters</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Download Hosts BlackList</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

@@ -1,7 +1,7 @@
 console.log = function(log) {
     var data = new Object;
     data.type = "console_log";
-    data.log = log;
+    data.log = (typeof log === "object") ? log.toString() : log;
 
     navigator.qt.postMessage(JSON.stringify(data));
 }

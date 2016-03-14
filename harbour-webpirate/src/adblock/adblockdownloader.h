@@ -15,6 +15,9 @@ class AdBlockDownloader: public QObject
     Q_PROPERTY(qint64 progressValue READ progressValue NOTIFY progressValueChanged)
     Q_PROPERTY(qint64 progressTotal READ progressTotal NOTIFY progressTotalChanged)
 
+    private:
+        enum DownloadType { Undefined = 0, Filters = 1, Hosts = 2 };
+
     public:
         explicit AdBlockDownloader(QObject *parent = 0);
         bool downloading() const;
@@ -22,7 +25,7 @@ class AdBlockDownloader: public QObject
         qint64 progressTotal() const;
 
     private:
-        void downloadFile(const QString& filename, const QString &localfile);
+        void downloadFile(const QString &path, const QString& filename, const QString &localfile);
 
     signals:
         void progressTotalChanged();
@@ -34,6 +37,7 @@ class AdBlockDownloader: public QObject
 
     public slots:
         void downloadFilters(AdBlockManager* adblockmanager);
+        void downloadHosts(AdBlockManager* adblockmanager);
 
     private slots:
         void onNetworkReplyReadyRead();
@@ -52,10 +56,12 @@ class AdBlockDownloader: public QObject
         QNetworkReply* _downloadreply;
         QNetworkAccessManager _networkmanager;
         QFile _tempfile;
+        DownloadType _downloadtype;
 
     private:
         static const int FILES_MAX;
         static const QString GITHUB_RAW_URL;
+        static const QString HOSTS_URL;
 };
 
 #endif // ADBLOCKDOWNLOADER_H

@@ -66,6 +66,7 @@ SOURCES += src/harbour-webpirate.cpp \
     src/dbus/notification/notification.cpp \
     src/dbus/notification/notificationmanagerproxy.cpp \
     src/dbus/notification/notificationmanager.cpp \
+    src/adblock/adblockhostsparser.cpp
 
 OTHER_FILES += qml/harbour-webpirate.qml \
     rpm/harbour-webpirate.spec \
@@ -264,7 +265,8 @@ HEADERS += \
     src/helper/clipboardhelper.h \
     src/dbus/notification/notification.h \
     src/dbus/notification/notificationmanagerproxy.h \
-    src/dbus/notification/notificationmanager.h
+    src/dbus/notification/notificationmanager.h \
+    src/adblock/adblockhostsparser.h
 
 DISTFILES += \
     rpm/harbour-webpirate.changes \
@@ -276,4 +278,5 @@ DISTFILES += \
     qml/components/browsertab/views/browserplayer/mediacomponents/MediaPlayerError.qml \
     qml/models/BrowserTabModel.qml \
     qml/components/browsertab/views/browserplayer/mediacomponents/MediaPlayerPopup.qml \
-    qml/js/helpers/TagOverrider.js
+    qml/js/helpers/overrides/TagOverrider.js \
+    qml/js/helpers/overrides/AjaxOverrider.js

@@ -1,5 +1,4 @@
 var __wp_messagedispatcher__  = {
-    "forcepixelratio": function() { __wp_forcepixelratio__.adjust(); },
     "polish_view":  function() { __webpirate__.polishView(); },
     "textfield_override": function() { __wp_systemtextfield__.overrideEnabled = true; },
     "nightmode_enable": function() { __wp_nightmode__.switchMode(true); },
@@ -25,6 +24,8 @@ navigator.qt.onmessage = function(message) {
             __wp_systemtextfield__.sendEdit(obj.id, obj.text, obj.selectionstart, obj.selectionend);
         else if(obj.type === "textfield_canceledit")
             __wp_systemtextfield__.cancelEdit(obj.id);
+        else if(obj.type === "apply_blacklist")
+            __wp_ajaxoverrider__.applyBlackList(obj.blacklist);
     }
     catch(e) { // Catch SyntaxError
         return;

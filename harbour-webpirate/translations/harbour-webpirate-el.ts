@@ -107,10 +107,6 @@
         <translation>Κατάσταση</translation>
     </message>
     <message>
-        <source>Download</source>
-        <translation>Λήψη</translation>
-    </message>
-    <message>
         <source>Ready</source>
         <translation>Έτοιμο</translation>
     </message>
@@ -125,6 +121,14 @@
     <message>
         <source>Completed</source>
         <translation>Ολοκληρώθηκε</translation>
+    </message>
+    <message>
+        <source>Download CSS Filters</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Download Hosts BlackList</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

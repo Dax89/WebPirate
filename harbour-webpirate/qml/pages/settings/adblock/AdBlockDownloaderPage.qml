@@ -7,6 +7,7 @@ import "../../../models"
 Page
 {
     property Settings settings
+    property bool downloadingRules: false
 
     signal rulesDownloaded()
 
@@ -23,7 +24,9 @@ Page
 
         onDownloadCompleted: {
             downloadinfo.text = qsTr("Completed");
-            rulesDownloaded();
+
+            if(downloadingRules)
+                rulesDownloaded();
         }
 
         onDownloadError: {
@@ -35,6 +38,31 @@ Page
     {
         anchors.fill: parent
         contentHeight: content.height
+
+        PullDownMenu
+        {
+            MenuItem
+            {
+                text: qsTr("Download CSS Filters")
+                enabled: !adblockdownloader.downloading
+
+                onClicked: {
+                    downloadingRules = true;
+                    adblockdownloader.downloadFilters(settings.adblockmanager)
+                }
+            }
+
+            MenuItem
+            {
+                text: qsTr("Download Hosts BlackList")
+                enabled: !adblockdownloader.downloading
+
+                onClicked: {
+                    downloadingRules = false;
+                    adblockdownloader.downloadHosts(settings.adblockmanager)
+                }
+            }
+        }
 
         Column
         {
@@ -58,14 +86,6 @@ Page
                 minimumValue: 0
                 maximumValue: adblockdownloader.progressTotal
                 value: adblockdownloader.progressValue
-            }
-
-            Button
-            {
-                anchors.horizontalCenter: parent.horizontalCenter
-                text: qsTr("Download")
-                enabled: !adblockdownloader.downloading
-                onClicked: adblockdownloader.downloadFilters(settings.adblockmanager)
             }
         }
     }
