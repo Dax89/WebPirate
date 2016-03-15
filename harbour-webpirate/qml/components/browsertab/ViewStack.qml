@@ -74,6 +74,9 @@ Item
     }
 
     function push(componenturl, tabstate, params) {
+        if(tabstate && (browsertab.state === tabstate)) // Tab states are exclusive
+            return;
+
         var component = stackobject.componentCache[componenturl];
 
         if(!component)
