@@ -49,7 +49,7 @@ Page
     {
         id: loader
         asynchronous: true
-        anchors { left: parent.left; top: parent.top; right: parent.right; bottom: bottompanel.top }
+        anchors { left: parent.left; top: parent.top; right: parent.right; bottom: bottompanel.top; bottomMargin: Theme.paddingSmall }
 
         onItemChanged: {
             if(!loader.item)
