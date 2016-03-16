@@ -19,3 +19,5 @@ var __wp_videohelper__ = {
         __wp_youtubehelper__.getEmbeddedVideos();
     }
 };
+
+__wp_videohelper__.getVideo();

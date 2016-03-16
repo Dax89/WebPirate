@@ -202,3 +202,5 @@ document.addEventListener("touchmove",  __webpirate__.onTouchMove, true);
 document.addEventListener("touchend",  __webpirate__.onTouchEnd, true);
 document.addEventListener("click",  __webpirate__.onClick, false); // Process click on 'bubble'
 document.addEventListener("submit",  __webpirate__.onSubmit, true);
+
+__webpirate__.polishView();

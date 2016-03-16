@@ -331,9 +331,8 @@ SilicaWebView
                 if(settings.adblockmanager.enabled)
                     experimental.postMessage(JSON.stringify({ type: "apply_blacklist", blacklist: settings.adblockmanager.hostsBlackList }));
 
-                experimental.postMessage("polish_view");
-                experimental.postMessage("video_get");
-                experimental.postMessage("textfield_override");
+                if(settings.exp_overridetextfields)
+                    experimental.postMessage("textfield_override");
 
                 webview.setNightMode(mainwindow.settings.nightmode);
 
