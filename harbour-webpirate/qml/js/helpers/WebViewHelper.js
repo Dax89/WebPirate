@@ -202,18 +202,3 @@ document.addEventListener("touchmove",  __webpirate__.onTouchMove, true);
 document.addEventListener("touchend",  __webpirate__.onTouchEnd, true);
 document.addEventListener("click",  __webpirate__.onClick, false); // Process click on 'bubble'
 document.addEventListener("submit",  __webpirate__.onSubmit, true);
-
-window.open = function(url) { // Popup Blocker
-    var data = new Object;
-    data.type = "window_open";
-    data.url = url;
-
-    navigator.qt.postMessage(JSON.stringify(data));
-}
-
-window.onerror = function(errmsg, url, line) { // Print Javascript Errors
-    if((url !== undefined) && url.length)
-        console.log(url + "(" + line + "): " + errmsg);
-
-    return false; // Ignore other errors
-}

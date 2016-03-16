@@ -126,22 +126,21 @@ SilicaWebView
     experimental.userAgent: UserAgents.get(mainwindow.settings.useragent).value
     experimental.userStyleSheet: mainwindow.settings.adblockmanager.rulesFile
 
-    experimental.userScripts: [ // Forward 'console' object to Qt's one
-                                Qt.resolvedUrl("../../../js/helpers/Console.js"),
+    experimental.userScripts: [ Qt.resolvedUrl("../../../js/helpers/ForcePixelRatio.js"), // Pixel Ratio Hack
+
+                                // Overrides
+                                Qt.resolvedUrl("../../../js/helpers/overrides/ObjectOverrider.js"),
+                                Qt.resolvedUrl("../../../js/helpers/overrides/TagOverrider.js"),
+                                Qt.resolvedUrl("../../../js/helpers/overrides/AjaxOverrider.js"),
 
                                 // WebView Utils Functions
                                 Qt.resolvedUrl("../../../js/helpers/Utils.js"),
-
-                                // Overrides
-                                Qt.resolvedUrl("../../../js/helpers/overrides/AjaxOverrider.js"),
-                                Qt.resolvedUrl("../../../js/helpers/overrides/TagOverrider.js"),
 
                                 /* Polyfills */
                                 Qt.resolvedUrl("../../../js/polyfills/es6-collections.min.js"), // ES6 Harmony Collections: https://github.com/WebReflection/es6-collections
                                 Qt.resolvedUrl("../../../js/polyfills/canvg.min.js"),           // SVG Support: https://github.com/gabelerner/canvg
 
                                 // Custom WebView Helpers
-                                Qt.resolvedUrl("../../../js/helpers/ForcePixelRatio.js"),
                                 Qt.resolvedUrl("../../../js/helpers/WebViewHelper.js"),
                                 Qt.resolvedUrl("../../../js/helpers/SystemTextField.js"),
                                 Qt.resolvedUrl("../../../js/helpers/NightMode.js"),

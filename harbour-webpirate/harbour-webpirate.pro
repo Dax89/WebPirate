@@ -130,7 +130,6 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/js/helpers/video/YouTubeHelper.js \
     qml/js/helpers/video/VimeoHelper.js \
     qml/js/helpers/video/VideoHelper.js \
-    qml/js/helpers/Console.js \
     qml/js/helpers/video/DailyMotionHelper.js \
     qml/js/helpers/GrabberBuilder.js \
     qml/components/browsertab/views/browserplayer/mediacomponents/MediaPlayerCursor.qml \
@@ -279,4 +278,5 @@ DISTFILES += \
     qml/models/BrowserTabModel.qml \
     qml/components/browsertab/views/browserplayer/mediacomponents/MediaPlayerPopup.qml \
     qml/js/helpers/overrides/TagOverrider.js \
-    qml/js/helpers/overrides/AjaxOverrider.js
+    qml/js/helpers/overrides/AjaxOverrider.js \
+    qml/js/helpers/overrides/ObjectOverrider.js
