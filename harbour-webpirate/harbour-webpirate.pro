@@ -83,7 +83,6 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/js/settings/Database.js \
     qml/models/Settings.qml \
     qml/models/FavoritesModel.qml \
-    qml/js/helpers/WebViewHelper.js \
     qml/pages/settings/searchengine/SearchEnginesPage.qml \
     qml/pages/settings/searchengine/SearchEnginePage.qml \
     qml/models/SearchEngineModel.qml \
@@ -111,8 +110,6 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/components/items/cover/PageCoverActions.qml \
     qml/js/settings/Cover.js \
     rpm/harbour-webpirate.yaml \
-    qml/js/helpers/NightMode.js \
-    qml/js/helpers/ForcePixelRatio.js \
     adblock.css \
     adblock.table \
     qml/components/browsertab/webview/WebViewListener.qml \
@@ -124,20 +121,13 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/models/PopupModel.qml \
     qml/components/items/PopupItem.qml \
     qml/components/items/BlockedPopupItem.qml \
-    qml/js/helpers/MessageListener.js \
     qml/components/browsertab/ViewStack.qml \
     qml/components/browsertab/views/browserplayer/BrowserPlayer.qml \
-    qml/js/helpers/video/YouTubeHelper.js \
-    qml/js/helpers/video/VimeoHelper.js \
-    qml/js/helpers/video/VideoHelper.js \
-    qml/js/helpers/video/DailyMotionHelper.js \
-    qml/js/helpers/GrabberBuilder.js \
     qml/components/browsertab/views/browserplayer/mediacomponents/MediaPlayerCursor.qml \
     qml/components/browsertab/views/browserplayer/mediacomponents/MediaPlayerProgressBar.qml \
     qml/components/items/cookie/DomainListItem.qml \
     qml/components/items/cookie/CookieListItem.qml \
     qml/components/browsertab/webview/UrlSchemeDelegateHandler.qml \
-    qml/js/helpers/Notification.js \
     qml/js/youtube/YouTubeCipher.js \
     qml/pages/settings/SettingsPage.qml \
     qml/pages/settings/GeneralSettingsPage.qml \
@@ -148,12 +138,8 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/pages/settings/adblock/AdBlockFilter.qml \
     qml/pages/settings/adblock/AdBlockDownloaderPage.qml \
     qml/pages/settings/adblock/AdBlockPage.qml \
-    qml/js/helpers/SystemTextField.js \
     qml/pages/webview/TextFieldPage.qml \
-    qml/js/helpers/Utils.js \
     qml/components/quickgrid/QuickGridBottomPanel.qml \
-    qml/js/helpers/TOHKBD.js \
-    qml/js/polyfills/canvg.min.js \
     qml/pages/settings/ProxySettingsPage.qml \
     qml/components/tabview/TabViewDialogs.qml \
     qml/components/tabview/jsdialogs/AlertDialog.qml \
@@ -181,7 +167,6 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/pages/segment/cookie/CookiePage.qml \
     qml/pages/segment/session/SaveSessionPage.qml \
     qml/pages/segment/session/SessionPage.qml \
-    qml/js/polyfills/es6-collections.min.js \
     qml/components/tabview/jsdialogs/RequestDialog.qml \
     qml/components/DialogBackground.qml \
     qml/components/tabview/jsdialogs/CredentialDialog.qml \
@@ -277,6 +262,23 @@ DISTFILES += \
     qml/components/browsertab/views/browserplayer/mediacomponents/MediaPlayerError.qml \
     qml/models/BrowserTabModel.qml \
     qml/components/browsertab/views/browserplayer/mediacomponents/MediaPlayerPopup.qml \
-    qml/js/helpers/overrides/TagOverrider.js \
-    qml/js/helpers/overrides/AjaxOverrider.js \
-    qml/js/helpers/overrides/ObjectOverrider.js
+    qml/js/webview/lib/Init.js \
+    qml/js/webview/lib/TouchHandler.js \
+    qml/js/webview/lib/WebPirate.js \
+    qml/js/webview/overrides/AjaxOverrider.js \
+    qml/js/webview/overrides/ObjectOverrider.js \
+    qml/js/webview/overrides/TagOverrider.js \
+    qml/js/webview/polyfills/canvg.min.js \
+    qml/js/webview/polyfills/es6-collections.min.js \
+    qml/js/webview/lib/SubmitHandler.js \
+    qml/js/webview/lib/StyleHandler.js \
+    qml/js/webview/lib/Utils.js \
+    qml/js/webview/lib/TextFieldHandler.js \
+    qml/js/webview/lib/NightModeHandler.js \
+    qml/js/webview/lib/PixelRatioHandler.js \
+    qml/js/webview/lib/MessageListener.js \
+    qml/js/webview/lib/grabber/GrabberBuilder.js \
+    qml/js/webview/lib/grabber/YouTubeHandler.js \
+    qml/js/webview/lib/grabber/DailyMotionHandler.js \
+    qml/js/webview/lib/grabber/VimeoHandler.js \
+    qml/js/webview/overrides/NotificationOverrider.js

@@ -8,7 +8,6 @@ const QString NotificationManager::APP_PRETTY_NAME = "WebPirate";
 NotificationManager::NotificationManager(QObject *parent): QObject(parent)
 {
     this->_appicon = qApp->applicationDirPath() + "/../share/icons/hicolor/86x86/apps/" + qApp->applicationName() + ".png";
-    qDebug() << this->_appicon;
 }
 
 void NotificationManager::send(const QString &summary, const QString &body, bool feedback, bool temporary)

@@ -47,9 +47,9 @@ function store(db, url, logindata)
     var key = generateKey();
 
     db.transaction(function(tx) {
-        tx.executeSql("DELETE FROM Credentials WHERE url=? AND loginid=? AND passwordid=?;", [UrlHelper.urlPath(url), logindata.loginid, logindata.passwordid]);
+        tx.executeSql("DELETE FROM Credentials WHERE url=? AND loginid=? AND passwordid=?;", [UrlHelper.urlPath(url), logindata.loginId, logindata.passwordId]);
         tx.executeSql("INSERT INTO Credentials (url, loginattribute, loginid, login, passwordattribute, passwordid, password) VALUES (?, ?, ?, ?, ?, ?, ?);",
-                      [UrlHelper.urlPath(url), logindata.loginattribute, logindata.loginid, Security.AES256.encode(logindata.login, key), logindata.passwordattribute, logindata.passwordid,
+                      [UrlHelper.urlPath(url), logindata.loginAttribute, logindata.loginId, Security.AES256.encode(logindata.login, key), logindata.passwordAttribute, logindata.passwordId,
                        Security.AES256.encode(logindata.password, key)]);
     })
 }
@@ -60,7 +60,7 @@ function needsDialog(db, url, logindata)
     var key = generateKey();
 
     db.transaction(function(tx) {
-        var res = tx.executeSql("SELECT * FROM Credentials WHERE url=? AND loginid=? AND passwordid=?;", [UrlHelper.urlPath(url), logindata.loginid, logindata.passwordid]);
+        var res = tx.executeSql("SELECT * FROM Credentials WHERE url=? AND loginid=? AND passwordid=?;", [UrlHelper.urlPath(url), logindata.loginId, logindata.passwordId]);
 
         if(res.rows.length > 0)
             r = (logindata.login !== Security.AES256.decode(res.rows[0].login, key)) || (logindata.password !== Security.AES256.decode(res.rows[0].password, key));
@@ -83,15 +83,15 @@ function compile(db, url, webview)
         {
             var row = res.rows[i];
 
-            if(row.loginattribute === "name")
-                webview.experimental.evaluateJavaScript("document.getElementsByName('" + row.loginid + "')[0].value = '" + Security.AES256.decode(row.login, k) + "'");
-            else if(row.loginattribute === "id")
-                webview.experimental.evaluateJavaScript("document.getElementById('" + row.loginid + "').value = '" + Security.AES256.decode(row.login, k) + "'");
+            if(row.loginAttribute === "name")
+                webview.experimental.evaluateJavaScript("document.getElementsByName('" + row.loginId + "')[0].value = '" + Security.AES256.decode(row.login, k) + "'");
+            else if(row.loginAttribute === "id")
+                webview.experimental.evaluateJavaScript("document.getElementById('" + row.loginId + "').value = '" + Security.AES256.decode(row.login, k) + "'");
 
-            if(row.passwordattribute === "name")
-                webview.experimental.evaluateJavaScript("document.getElementsByName('" + row.passwordid + "')[0].value = '" + Security.AES256.decode(row.password, k) + "'");
-            else if(row.passwordattribute === "id")
-                webview.experimental.evaluateJavaScript("document.getElementById('" + row.passwordid + "').value = '" + Security.AES256.decode(row.password, k) + "'");
+            if(row.passwordAttribute === "name")
+                webview.experimental.evaluateJavaScript("document.getElementsByName('" + row.passwordId + "')[0].value = '" + Security.AES256.decode(row.password, k) + "'");
+            else if(row.passwordAttribute === "id")
+                webview.experimental.evaluateJavaScript("document.getElementById('" + row.passwordId + "').value = '" + Security.AES256.decode(row.password, k) + "'");
         }
     });
 }

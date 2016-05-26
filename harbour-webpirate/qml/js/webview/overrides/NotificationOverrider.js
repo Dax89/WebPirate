@@ -13,10 +13,8 @@ window.Notification = function(title, options) {
     this.onclick = function() { };
     this.onclose = function() { };
 
-    var data = new Object;
-    data.type = "notification_created";
-    data.title = title;
-    data.options = options;
+    var data = { type: "notification_created",
+                 data: { title: title, options: options } };
 
     navigator.qt.postMessage(JSON.stringify(data));
 }

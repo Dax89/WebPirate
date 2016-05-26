@@ -1,15 +1,21 @@
 console.log = function(msg) {
-    var data = { type: "console_log", log: ((typeof msg === "object") ? msg.toString() : msg) };
+    var data = { type: "console_log",
+                 data: { log: ((typeof msg === "object") ? msg.toString() : msg) } };
+
     navigator.qt.postMessage(JSON.stringify(data));
 }
 
 console.error = function(msg) {
-    var data = { type: "console_error", log: ((typeof msg === "object") ? msg.toString() : msg) };
+    var data = { type: "console_error",
+                 data: { log: ((typeof msg === "object") ? msg.toString() : msg) } };
+
     navigator.qt.postMessage(JSON.stringify(data));
 }
 
 window.open = function(url) { // Popup Blocker
-    var data = { type: "window_open", url: url }
+    var data = { type: "window_open",
+                 data: { url: url } };
+
     navigator.qt.postMessage(JSON.stringify(data));
 }
 

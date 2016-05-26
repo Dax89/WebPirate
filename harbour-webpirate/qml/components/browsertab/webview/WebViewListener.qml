@@ -13,22 +13,22 @@ Item
 
     QtObject
     {
-        readonly property var dispatcher: { "console_log": onConsoleLog,
-                                            "console_error": onConsoleError,
-                                            "longpress": onLongPress,
-                                            "submit": onFormSubmit,
-                                            "selector_touch": onSelectorTouched,
-                                            "textfield_selected": onTextFieldSelected,
-                                            "webpage_style": webPageStyle,
-                                            "loadurl": loadUrlRequested,
-                                            "newtab": newTabRequested,
-                                            "window_open": onWindowOpen,
+        readonly property var dispatcher: { "touchhandler_longpress": onLongPress,
+                                            "touchhandler_select": onSelectorTouched,
+                                            "touchhandler_loadurl": loadUrlRequested,
+                                            "touchhandler_newtab": newTabRequested,
+                                            "submithandler_submit": onFormSubmit,
+                                            "stylehandler_style": webPageStyle,
+                                            "nightmodehandler_changed": onNightModeChanged,
+                                            "textfieldhandler_selected": onTextFieldSelected,
+                                            "youtubehandler_play": playYouTubeVideo,
+                                            "dailymotionhandler_play": playDailyMotionVideo,
+                                            "vimeohandler_play": playVimeoVideo,
+                                            "tagoverrider_play": playVideo,
                                             "notification_created": onNotificationCreated,
-                                            "nightmode_changed": onNightModeChanged,
-                                            "play_video": playVideo,
-                                            "play_youtube": playYouTubeVideo,
-                                            "play_dailymotion": playDailyMotionVideo,
-                                            "play_vimeo": playVimeoVideo }
+                                            "window_open": onWindowOpen,
+                                            "console_error": onConsoleError,
+                                            "console_log": onConsoleLog }
 
         id: listenerdispatchers
 
@@ -50,11 +50,23 @@ Item
 
         function onLongPress(data) {
             tabView.dialogs.hideAll();
+            tabView.dialogs.showLinkMenu(data.url, data.isImage);
 
-            if(data.url)
-                tabView.dialogs.showLinkMenu(data.url, data.isimage);
-            else if(data.text)
+            /* TODO: Remove else if(data.text)
                 pageStack.push(Qt.resolvedUrl("../../../pages/webview/TextSelectionPage.qml"), { "text": clearEscape(data.text) });
+                */
+        }
+
+        function onSelectorTouched(data) {
+            webview.itemSelectorIndex = data.selectedIndex;
+        }
+
+        function loadUrlRequested(data) {
+            browsertab.load(data.url);
+        }
+
+        function newTabRequested(data) {
+            tabView.addTab(data.url);
         }
 
         function onFormSubmit(data) {
@@ -62,16 +74,12 @@ Item
                 tabView.dialogs.showCredential(url.toString(), data);
         }
 
-        function onSelectorTouched(data) {
-            webview.itemSelectorIndex = data.selectedIndex;
-        }
-
         function onTextFieldSelected(data) {
             if(!mainwindow.settings.exp_overridetextfields)
                 return;
 
-            var tfpage = pageStack.push(Qt.resolvedUrl("../../../pages/webview/TextFieldPage.qml"), { "elementId": data.id, "maxLength": data.maxlength,
-                                                                                                      "selectionStart": data.selectionstart, "selectionEnd": data.selectionEnd,
+            var tfpage = pageStack.push(Qt.resolvedUrl("../../../pages/webview/TextFieldPage.qml"), { "elementId": data.id, "maxLength": data.maxLength,
+                                                                                                      "selectionStart": data.selectionStart, "selectionEnd": data.selectionEnd,
                                                                                                       "text": clearEscape(data.text) });
 
             tfpage.accepted.connect(function() {
@@ -113,21 +121,13 @@ Item
             vscrolldecorator.color = "#" + ((1 << 24) + ((255 - color.r) << 16) + ((255 - color.g) << 8) + (255 - color.b)).toString(16).slice(1);
         }
 
-        function loadUrlRequested(data) {
-            browsertab.load(data.url);
-        }
-
-        function newTabRequested(data) {
-            tabView.addTab(data.url);
-        }
-
         function playVideo(data) {
             viewstack.push(Qt.resolvedUrl("../views/browserplayer/BrowserPlayer.qml"), "mediaplayer", { "videoSource": data.url });
         }
 
         function playYouTubeVideo(data) {
             var grabber = viewStack.push(Qt.resolvedUrl("../views/browsergrabber/BrowserGrabber.qml"), "mediagrabber");
-            YouTubeGrabber.grabVideo(data.videoid, grabber);
+            YouTubeGrabber.grabVideo(data.videoId, grabber);
         }
 
         function playDailyMotionVideo(data) {
@@ -180,10 +180,10 @@ Item
 
     function execute(message)
     {
-        var data = JSON.parse(message.data);
-        var eventfn = listenerdispatchers.dispatcher[data.type];
+        var dataobj = JSON.parse(message.data);
+        var eventfn = listenerdispatchers.dispatcher[dataobj.type];
 
         if(eventfn)
-            eventfn(data);
+            eventfn(dataobj.data);
     }
 }

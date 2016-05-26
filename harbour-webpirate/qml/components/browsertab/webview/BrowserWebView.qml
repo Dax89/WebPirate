@@ -10,15 +10,15 @@ import "../../../js/settings/Favorites.js" as Favorites
 
 SilicaWebView
 {
-    property int itemSelectorIndex: -1    /* Keeps the selected index of ItemSelector    */
-    property bool nightModeEnabled: false /* Check if Night Mode is visually active      */
+    property int itemSelectorIndex: -1    // Keeps the selected index of ItemSelector
+    property bool nightModeEnabled: false // Check if Night Mode is visually active
     property bool favorite: false
 
     function setNightMode(nightmode) {
         if(browsertab.state !== "webview")
             return;
 
-        experimental.postMessage(nightmode ? "nightmode_enable" : "nightmode_disable");
+        experimental.postMessage(nightmode ? "nightmodehandler_enable" : "nightmodehandler_disable");
     }
 
     function calculateMetrics(ignorewidth, ignoreheight) {
@@ -126,40 +126,31 @@ SilicaWebView
     experimental.userAgent: UserAgents.get(mainwindow.settings.useragent).value
     experimental.userStyleSheet: mainwindow.settings.adblockmanager.rulesFile
 
-    experimental.userScripts: [ Qt.resolvedUrl("../../../js/helpers/ForcePixelRatio.js"), // Pixel Ratio Hack
+    experimental.userScripts: [ // Overrides
+                                Qt.resolvedUrl("../../../js/webview/overrides/ObjectOverrider.js"),
+                                Qt.resolvedUrl("../../../js/webview/overrides/TagOverrider.js"),
+                                Qt.resolvedUrl("../../../js/webview/overrides/AjaxOverrider.js"),
+                                Qt.resolvedUrl("../../../js/webview/overrides/NotificationOverrider.js"),
 
-                                // Overrides
-                                Qt.resolvedUrl("../../../js/helpers/overrides/ObjectOverrider.js"),
-                                Qt.resolvedUrl("../../../js/helpers/overrides/TagOverrider.js"),
-                                Qt.resolvedUrl("../../../js/helpers/overrides/AjaxOverrider.js"),
+                                // Polyfills
+                                Qt.resolvedUrl("../../../js/webview/polyfills/es6-collections.min.js"), // ES6 Harmony Collections: https://github.com/WebReflection/es6-collections
+                                Qt.resolvedUrl("../../../js/webview/polyfills/canvg.min.js"),           // SVG Support: https://github.com/gabelerner/canvg
 
-                                // WebView Utils Functions
-                                Qt.resolvedUrl("../../../js/helpers/Utils.js"),
-
-                                /* Polyfills */
-                                Qt.resolvedUrl("../../../js/polyfills/es6-collections.min.js"), // ES6 Harmony Collections: https://github.com/WebReflection/es6-collections
-                                Qt.resolvedUrl("../../../js/polyfills/canvg.min.js"),           // SVG Support: https://github.com/gabelerner/canvg
-
-                                // Custom WebView Helpers
-                                Qt.resolvedUrl("../../../js/helpers/WebViewHelper.js"),
-                                Qt.resolvedUrl("../../../js/helpers/SystemTextField.js"),
-                                Qt.resolvedUrl("../../../js/helpers/NightMode.js"),
-                                Qt.resolvedUrl("../../../js/helpers/GrabberBuilder.js"),
-
-                                // Video Helpers
-                                Qt.resolvedUrl("../../../js/helpers/video/YouTubeHelper.js"),
-                                Qt.resolvedUrl("../../../js/helpers/video/DailyMotionHelper.js"),
-                                Qt.resolvedUrl("../../../js/helpers/video/VimeoHelper.js"),
-                                Qt.resolvedUrl("../../../js/helpers/video/VideoHelper.js"),
-
-                                // Message Listener
-                                Qt.resolvedUrl("../../../js/helpers/MessageListener.js"),
-
-                                // Complete Web Notifications Implementation
-                                Qt.resolvedUrl("../../../js/helpers/Notification.js"),
-
-                                // TOHKBD Support (WebView side)
-                                Qt.resolvedUrl("../../../js/helpers/TOHKBD.js") ]
+                                // WebPirate SDK
+                                Qt.resolvedUrl("../../../js/webview/lib/WebPirate.js"),
+                                Qt.resolvedUrl("../../../js/webview/lib/Utils.js"),
+                                Qt.resolvedUrl("../../../js/webview/lib/PixelRatioHandler.js"),
+                                Qt.resolvedUrl("../../../js/webview/lib/NightModeHandler.js"),
+                                Qt.resolvedUrl("../../../js/webview/lib/TouchHandler.js"),
+                                Qt.resolvedUrl("../../../js/webview/lib/SubmitHandler.js"),
+                                Qt.resolvedUrl("../../../js/webview/lib/StyleHandler.js"),
+                                Qt.resolvedUrl("../../../js/webview/lib/TextFieldHandler.js"),
+                                Qt.resolvedUrl("../../../js/webview/lib/MessageListener.js"),
+                                Qt.resolvedUrl("../../../js/webview/lib/grabber/GrabberBuilder.js"),
+                                Qt.resolvedUrl("../../../js/webview/lib/grabber/YouTubeHandler.js"),
+                                Qt.resolvedUrl("../../../js/webview/lib/grabber/DailyMotionHandler.js"),
+                                Qt.resolvedUrl("../../../js/webview/lib/grabber/VimeoHandler.js"),
+                                Qt.resolvedUrl("../../../js/webview/lib/Init.js") ]
 
     experimental.onTextFound: {
         tabView.navigationBar.queryBar.findError = (matchCount <= 0);
