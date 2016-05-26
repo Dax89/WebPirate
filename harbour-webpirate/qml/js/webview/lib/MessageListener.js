@@ -2,9 +2,9 @@ window.WebPirate_MessageListenerObject = function() {
     this.dispatchers = { "textfieldhandler_override"   : function() { WebPirate_TextFieldHandler.overrideenabled = true; },
                          "nightmodehandler_enable"     : function() { WebPirate_NightModeHandler.switchMode(true); },
                          "nightmodehandler_disable"    : function() { WebPirate_NightModeHandler.switchMode(false); },
-                         "notificationhandler_granted" : function() { },
-                         "notificationhandler_denied"  : function() { },
-                         "notificationhandler_default" : function() { } };
+                         "notificationhandler_granted" : function() { window.Notification.permission = window.Notification.__WP_PERMISSION_GRANTED__; },
+                         "notificationhandler_denied"  : function() { window.Notification.permission = window.Notification.__WP_PERMISSION_DENIED__; },
+                         "notificationhandler_default" : function() { window.Notification.permission = window.Notification.__WP_PERMISSION_DEFAULT__; } };
 
     navigator.qt.onmessage = this.onMessage.bind(this);
 };
