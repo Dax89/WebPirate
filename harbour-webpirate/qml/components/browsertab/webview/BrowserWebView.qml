@@ -141,6 +141,7 @@ SilicaWebView
                                 Qt.resolvedUrl("../../../js/webview/lib/Utils.js"),
                                 Qt.resolvedUrl("../../../js/webview/lib/PixelRatioHandler.js"),
                                 Qt.resolvedUrl("../../../js/webview/lib/NightModeHandler.js"),
+                                Qt.resolvedUrl("../../../js/webview/lib/TextSelectorHandler.js"),
                                 Qt.resolvedUrl("../../../js/webview/lib/TouchHandler.js"),
                                 Qt.resolvedUrl("../../../js/webview/lib/SubmitHandler.js"),
                                 Qt.resolvedUrl("../../../js/webview/lib/StyleHandler.js"),

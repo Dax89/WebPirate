@@ -43,9 +43,8 @@ window.WebPirate_TouchHandlerObject.prototype.sendLongPress = function(target) {
         data.url = target.src;
         data.isImage = true;
     }
-    else if(target.nodeType === Node.TEXT_NODE) {
-        //TODO: New Copy/Paste
-
+    else if(target.textContent.length > 0) {
+        WebPirate_TextSelectorHandler.select(this.currenttouch.clientX, this.currenttouch.clientY);
         return;
     }
     else {

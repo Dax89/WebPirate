@@ -281,4 +281,5 @@ DISTFILES += \
     qml/js/webview/lib/grabber/YouTubeHandler.js \
     qml/js/webview/lib/grabber/DailyMotionHandler.js \
     qml/js/webview/lib/grabber/VimeoHandler.js \
-    qml/js/webview/overrides/NotificationOverrider.js
+    qml/js/webview/overrides/NotificationOverrider.js \
+    qml/js/webview/lib/TextSelectorHandler.js
