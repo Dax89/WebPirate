@@ -84,7 +84,7 @@ Item
 
             tfpage.accepted.connect(function() {
                 var data = new Object;
-                data.type = "textfield_sendedit";
+                data.type = "textfieldhandler_sendedit";
                 data.id = tfpage.elementId;
                 data.text = escapeString(tfpage.text);
 
@@ -103,7 +103,7 @@ Item
 
             tfpage.rejected.connect(function() {
                 var data = new Object;
-                data.type = "textfield_canceledit";
+                data.type = "textfieldhandler_canceledit";
                 data.id = tfpage.elementId;
 
                 webview.experimental.postMessage(JSON.stringify(data));

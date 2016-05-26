@@ -320,10 +320,10 @@ SilicaWebView
             if(!UrlHelper.isSpecialUrl(stringurl) && UrlHelper.isUrl(stringurl)) {
 
                 if(settings.adblockmanager.enabled)
-                    experimental.postMessage(JSON.stringify({ type: "apply_blacklist", blacklist: settings.adblockmanager.hostsBlackList }));
+                    experimental.postMessage(JSON.stringify({ type: "ajaxoverrider_applyblacklist", blacklist: settings.adblockmanager.hostsBlackList }));
 
                 if(settings.exp_overridetextfields)
-                    experimental.postMessage("textfield_override");
+                    experimental.postMessage("textfieldhandler_override");
 
                 webview.setNightMode(mainwindow.settings.nightmode);
 
