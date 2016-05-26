@@ -24,8 +24,8 @@ window.WebPirate_MessageListenerObject.prototype.onMessage = function(message) {
             WebPirate_TextFieldHandler.sendEdit(obj.id, obj.text, obj.selectionStart, obj.selectionEnd);
         else if(obj.type === "textfieldhandler_canceledit")
             WebPirate_TextFieldHandler.cancelEdit(obj.id);
-
-        //TODO: Apply BlackList
+        else if(obj.type === "ajaxoverrider_applyblacklist")
+            WebPirate_AjaxOverrider.applyBlacklist(obj.blacklist);
     }
     catch(e) { // Catch SyntaxError
         return;
