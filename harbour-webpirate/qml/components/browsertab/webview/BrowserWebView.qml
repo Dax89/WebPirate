@@ -329,7 +329,6 @@ SilicaWebView
         if(loadRequest.status === WebView.LoadSucceededStatus) {
             var stringurl = url.toString();
             webview.favorite = Favorites.contains(stringurl);
-            webview.initTheme();
 
             if(!UrlHelper.isSpecialUrl(stringurl) && UrlHelper.isUrl(stringurl)) {
 
@@ -339,6 +338,7 @@ SilicaWebView
                 if(settings.exp_overridetextfields)
                     webview.postMessage("textfieldhandler_override");
 
+                webview.initTheme();
                 webview.setNightMode(mainwindow.settings.nightmode);
 
                 Credentials.compile(Database.instance(), stringurl, webview);
