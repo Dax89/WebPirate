@@ -23,7 +23,7 @@ JavaScriptDialog // Not really a JS Dialog, but looks similar
             text: qsTr("Allow")
 
             onClicked: {
-                tab.webView.experimental.postMessage("notificationhandler_granted");
+                tab.webView.postMessage("notificationhandler_granted");
                 accept();
             }
         }
@@ -35,7 +35,7 @@ JavaScriptDialog // Not really a JS Dialog, but looks similar
             text: qsTr("Deny")
 
             onClicked: {
-                tab.webView.experimental.postMessage("notificationhandler_denied");
+                tab.webView.postMessage("notificationhandler_denied");
                 reject();
             }
         }

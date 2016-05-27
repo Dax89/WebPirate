@@ -10,7 +10,8 @@ window.WebPirate_MessageListenerObject = function() {
 };
 
 window.WebPirate_MessageListenerObject.prototype.onMessage = function(message) {
-    var handler = this.dispatchers[message.data];
+    var obj = JSON.parse(message.data);
+    var handler = this.dispatchers[obj.type];
 
     if(typeof handler === "function") {
         handler();
@@ -18,8 +19,6 @@ window.WebPirate_MessageListenerObject.prototype.onMessage = function(message) {
     }
 
     try {
-        var obj = JSON.parse(message.data);
-
         if(obj.type === "textfieldhandler_sendedit")
             WebPirate_TextFieldHandler.sendEdit(obj.id, obj.text, obj.selectionStart, obj.selectionEnd);
         else if(obj.type === "textfieldhandler_canceledit")

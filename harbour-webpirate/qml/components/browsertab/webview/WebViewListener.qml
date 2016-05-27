@@ -83,10 +83,9 @@ Item
                                                                                                       "text": clearEscape(data.text) });
 
             tfpage.accepted.connect(function() {
-                var data = new Object;
-                data.type = "textfieldhandler_sendedit";
-                data.id = tfpage.elementId;
-                data.text = escapeString(tfpage.text);
+                var data = { "id": tfpage.elementId, "text": escapeString(tfpage.text) };
+
+                //TODO: Camel Case
 
                 if(tfpage.selectionStart !== tfpage.selectionEnd) {
                     data.selectionstart = tfpage.selectionStart;
@@ -97,16 +96,12 @@ Item
                     data.selectionend = null;
                 }
 
-                webview.experimental.postMessage(JSON.stringify(data));
+                webview.postMessage("textfieldhandler_sendedit", data);
                 Qt.inputMethod.hide();
             });
 
             tfpage.rejected.connect(function() {
-                var data = new Object;
-                data.type = "textfieldhandler_canceledit";
-                data.id = tfpage.elementId;
-
-                webview.experimental.postMessage(JSON.stringify(data));
+                webview.postMessage("textfieldhandler_canceledit", { "id": tfpage.elementId });
                 Qt.inputMethod.hide();
             });
         }

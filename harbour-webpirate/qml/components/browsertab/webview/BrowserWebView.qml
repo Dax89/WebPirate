@@ -14,11 +14,23 @@ SilicaWebView
     property bool nightModeEnabled: false // Check if Night Mode is visually active
     property bool favorite: false
 
+    function postMessage(message, data) {
+        experimental.postMessage(JSON.stringify({ "type": message, "data": data }));
+    }
+
+    /*
+    function initTheme() {
+        var data = {
+
+        };
+    }
+    */
+
     function setNightMode(nightmode) {
         if(browsertab.state !== "webview")
             return;
 
-        experimental.postMessage(nightmode ? "nightmodehandler_enable" : "nightmodehandler_disable");
+        webview.postMessage(nightmode ? "nightmodehandler_enable" : "nightmodehandler_disable");
     }
 
     function calculateMetrics(ignorewidth, ignoreheight) {
@@ -146,6 +158,7 @@ SilicaWebView
                                 Qt.resolvedUrl("../../../js/webview/lib/SubmitHandler.js"),
                                 Qt.resolvedUrl("../../../js/webview/lib/StyleHandler.js"),
                                 Qt.resolvedUrl("../../../js/webview/lib/TextFieldHandler.js"),
+                                Qt.resolvedUrl("../../../js/webview/lib/Theme.js"),
                                 Qt.resolvedUrl("../../../js/webview/lib/MessageListener.js"),
                                 Qt.resolvedUrl("../../../js/webview/lib/grabber/GrabberBuilder.js"),
                                 Qt.resolvedUrl("../../../js/webview/lib/grabber/YouTubeHandler.js"),
@@ -255,7 +268,7 @@ SilicaWebView
         browsertab.state = "webview";
 
         if(!loading)
-            experimental.postMessage("video_get");
+            webview.postMessage("video_get"); // NOTE: What is this?!?
     }
 
     onVerticalVelocityChanged: {
@@ -317,14 +330,15 @@ SilicaWebView
         if(loadRequest.status === WebView.LoadSucceededStatus) {
             var stringurl = url.toString();
             webview.favorite = Favorites.contains(stringurl);
+            //webview.initTheme();
 
             if(!UrlHelper.isSpecialUrl(stringurl) && UrlHelper.isUrl(stringurl)) {
 
                 if(settings.adblockmanager.enabled)
-                    experimental.postMessage(JSON.stringify({ type: "ajaxoverrider_applyblacklist", blacklist: settings.adblockmanager.hostsBlackList }));
+                    webview.postMessage("ajaxoverrider_applyblacklist", { "blacklist": settings.adblockmanager.hostsBlackList });
 
                 if(settings.exp_overridetextfields)
-                    experimental.postMessage("textfieldhandler_override");
+                    webview.postMessage("textfieldhandler_override");
 
                 webview.setNightMode(mainwindow.settings.nightmode);
 
