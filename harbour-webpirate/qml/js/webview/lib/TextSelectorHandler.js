@@ -228,7 +228,7 @@ window.WebPirate_TextSelectorHandlerObject.prototype.wordRange = function(client
 };
 
 window.WebPirate_TextSelectorHandlerObject.prototype.stopSelect = function() {
-    document.removeEventListener("touchend", this.stopTextSelection.bind(this));
+    document.removeEventListener("touchstart", this.stopTextSelection.bind(this));
     this.hideMarkers();
 }
 
