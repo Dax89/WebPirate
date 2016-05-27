@@ -32,6 +32,10 @@ Item
         return UrlHelper.printable(webview.url.toString());
     }
 
+    function cancelSelection() {
+        webview.postMessage("textselectorhandler_cancel");
+    }
+
     function getSelectedText(callback) {
         if(!pendingRequests)
             pendingRequests = new Object;

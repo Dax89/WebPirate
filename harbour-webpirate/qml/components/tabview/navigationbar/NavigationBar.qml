@@ -56,10 +56,16 @@ Rectangle
 
     onClipboardModeChanged: {
         navigationbar.searchMode = false; // States are exclusive
+
+        if(clipboardMode)
+            solidify();
     }
 
     onSearchModeChanged: {
         navigationbar.clipboardMode = false; // States are exclusive
+
+        if(searchMode)
+            solidify();
     }
 
     PanelBackground { anchors.fill: parent }
@@ -156,7 +162,7 @@ Rectangle
                 visible: !navigationbar.clipboardMode
 
                 width: {
-                    var w = parent.width - btntabs.width - (btnpopups.visible ? btnpopups.width : 0);
+                    var w = parent.width - btntabsorclose.width - (btnpopups.visible ? btnpopups.width : 0);
 
                     if(navigationbar.searchMode)
                         w -= (btnsearchup.width + btnsearchdown.width + btnshareorsearch.width);
@@ -322,7 +328,7 @@ Rectangle
 
             ImageButton
             {
-                id: btntabs
+                id: btntabsorclose
                 width: navigationbar.contentHeight
                 height: parent.height
                 anchors.verticalCenter: parent.verticalCenter
@@ -341,12 +347,13 @@ Rectangle
                         return;
                     }
 
+                    var tab = currentTab();
+
                     if(navigationbar.clipboardMode) {
+                        tab.cancelSelection();
                         navigationbar.clipboardMode = false;
                         return;
                     }
-
-                    var tab = currentTab();
 
                     if(!tab.viewStack.empty) {
                         tab.viewStack.pop();

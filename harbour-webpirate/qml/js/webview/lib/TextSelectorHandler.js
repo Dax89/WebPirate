@@ -21,14 +21,14 @@ window.WebPirate_TextSelectorHandlerObject.prototype.isMarker = function(target)
     return this.isStartMarker(target) || this.isEndMarker(target);
 };
 
-window.WebPirate_TextSelectorHandlerObject.prototype.stopTextSelection = function(touchevent) {
+window.WebPirate_TextSelectorHandlerObject.prototype.cancelTextSelection = function(touchevent) {
     var target = touchevent.target;
 
     if(this.isMarker(target))
         return;
 
     touchevent.preventDefault();
-    this.stopSelect();
+    this.cancelSelect();
 };
 
 window.WebPirate_TextSelectorHandlerObject.prototype.onTouchStart = function(touchevent) {
@@ -122,9 +122,9 @@ window.WebPirate_TextSelectorHandlerObject.prototype.createMarkerStyle = functio
             "box-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);\n" +
             "content: \"\";\n" +
             "display: block;\n" +
-            "height: " + this.SELECTION_HEIGHT + "px;\n" +
             "opacity: 0.95;\n" +
             "position: absolute;\n" +
+            "height: " + this.SELECTION_HEIGHT + "px;\n" +
             "width: " + this.SELECTION_WIDTH + "px;\n" +
             "}";
 
@@ -213,7 +213,7 @@ window.WebPirate_TextSelectorHandlerObject.prototype.getText = function(id, canc
                                                                 "text": WebPirate_Utils.escape(range.toString()) });
 
     if(cancel === true)
-        this.stopSelect();
+        this.cancelSelect();
 }
 
 window.WebPirate_TextSelectorHandlerObject.prototype.wordRange = function(clientx, clienty) {
@@ -238,8 +238,8 @@ window.WebPirate_TextSelectorHandlerObject.prototype.wordRange = function(client
     return range;
 };
 
-window.WebPirate_TextSelectorHandlerObject.prototype.stopSelect = function() {
-    document.removeEventListener("touchstart", this.stopTextSelection.bind(this));
+window.WebPirate_TextSelectorHandlerObject.prototype.cancelSelect = function() {
+    document.removeEventListener("touchstart", this.cancelTextSelection.bind(this));
     WebPirate.postMessage("textselectorhandler_statechanged", { "enabled": false });
 
     this.hideMarkers();
@@ -252,7 +252,7 @@ window.WebPirate_TextSelectorHandlerObject.prototype.select = function(clientx, 
         this.createMarker(this.SELECTION_END_MARKER);
     }
 
-    document.addEventListener("touchstart", this.stopTextSelection.bind(this));
+    document.addEventListener("touchstart", this.cancelTextSelection.bind(this));
 
     var range = this.wordRange(clientx, clienty);
     var selection = window.getSelection();

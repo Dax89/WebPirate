@@ -12,8 +12,8 @@ window.WebPirate_MessageListenerObject.prototype.onMessage = function(message) {
         WebPirate_TextFieldHandler.sendEdit(data.id, data.text, data.selectionStart, data.selectionEnd);
     else if(obj.type === "textfieldhandler_canceledit")
         WebPirate_TextFieldHandler.cancelEdit(data.id);
-    else if(obj.type === "textselectorhandler_stop")
-        WebPirate_TextSelectorHandler.stopSelect();
+    else if(obj.type === "textselectorhandler_cancel")
+        WebPirate_TextSelectorHandler.cancelSelect();
     else if(obj.type === "textselectorhandler_gettext")
         WebPirate_TextSelectorHandler.getText(data.id, data.cancel);
     else if(obj.type === "nightmodehandler_enable")
