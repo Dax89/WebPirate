@@ -6,9 +6,6 @@ window.WebPirate_MessageListenerObject.prototype.onMessage = function(message) {
     var obj = JSON.parse(message.data);
     var data = obj.data;
 
-    console.log(obj.type);
-    WebPirate_Utils.dump(data);
-
     if(obj.type === "textfieldhandler_override")
         WebPirate_TextFieldHandler.overrideenabled = true;
     else if(obj.type === "textfieldhandler_sendedit")
