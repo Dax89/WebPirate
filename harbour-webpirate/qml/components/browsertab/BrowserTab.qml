@@ -16,6 +16,7 @@ Item
     property BlockedPopupModel popups: BlockedPopupModel { }
     property Settings settings
     property TabView tabView
+    property var pendingRequests
 
     readonly property string title: {
         if(webview.title.length > 0)
@@ -29,6 +30,15 @@ Item
             return "about:newtab";
 
         return UrlHelper.printable(webview.url.toString());
+    }
+
+    function getSelectedText(callback) {
+        if(!pendingRequests)
+            pendingRequests = new Object;
+
+        var id = Date.now();
+        pendingRequests[id] = callback;
+        webview.postMessage("textselectorhandler_gettext", { "id": id, "cancel": true });
     }
 
     function loadNewTab() {

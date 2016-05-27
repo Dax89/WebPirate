@@ -205,6 +205,17 @@ window.WebPirate_TextSelectorHandlerObject.prototype.hideMarkers = function() {
     this.selecting = false;
 };
 
+window.WebPirate_TextSelectorHandlerObject.prototype.getText = function(id, cancel) {
+    var selection = window.getSelection();
+    var range = selection.getRangeAt(0);
+
+    WebPirate.postMessage("textselectorhandler_selectedtext", { "id": id,
+                                                                "text": WebPirate_Utils.escape(range.toString()) });
+
+    if(cancel === true)
+        this.stopSelect();
+}
+
 window.WebPirate_TextSelectorHandlerObject.prototype.wordRange = function(clientx, clienty) {
     var range = document.caretRangeFromPoint(clientx, clienty);
     var selstart = range.startContainer;
@@ -229,6 +240,8 @@ window.WebPirate_TextSelectorHandlerObject.prototype.wordRange = function(client
 
 window.WebPirate_TextSelectorHandlerObject.prototype.stopSelect = function() {
     document.removeEventListener("touchstart", this.stopTextSelection.bind(this));
+    WebPirate.postMessage("textselectorhandler_statechanged", { "enabled": false });
+
     this.hideMarkers();
 }
 
@@ -246,7 +259,9 @@ window.WebPirate_TextSelectorHandlerObject.prototype.select = function(clientx, 
 
     selection.removeAllRanges();
     selection.addRange(range);
+
     this.displayMarkers(selection);
+    WebPirate.postMessage("textselectorhandler_statechanged", { "enabled": true });
 };
 
 window.WebPirate_TextSelectorHandler = new window.WebPirate_TextSelectorHandlerObject();

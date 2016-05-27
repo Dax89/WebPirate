@@ -6,8 +6,11 @@ import "../../"
 Rectangle
 {
     property alias queryBar: querybar
+    property alias searchMode: querybar.searchMode
+    property bool clipboardMode: false
+
+    readonly property bool normalMode: !searchMode && !clipboardMode
     readonly property real contentHeight: Theme.itemSizeSmall
-    readonly property bool lockHeight: querybar.searchMode
 
     readonly property WebView webView: {
         var currenttab = tabview.currentTab();
@@ -18,12 +21,21 @@ Rectangle
         return currenttab.webView;
     }
 
+    function search(query) {
+        var currenttab = tabview.currentTab();
+
+        if(!currenttab)
+            return;
+
+        currenttab.load(query);
+    }
+
     function solidify() {
         height = contentHeight;
     }
 
     function evaporate() {
-        if(lockHeight) { // Disallow evaporation
+        if(!normalMode) { // Disallow evaporation
             solidify();
             return;
         }
@@ -41,6 +53,14 @@ Rectangle
     visible: height > 0
     clip: true
     z: 50
+
+    onClipboardModeChanged: {
+        navigationbar.searchMode = false; // States are exclusive
+    }
+
+    onSearchModeChanged: {
+        navigationbar.clipboardMode = false; // States are exclusive
+    }
 
     PanelBackground { anchors.fill: parent }
 
@@ -67,7 +87,7 @@ Rectangle
         z: 50
 
         boundsBehavior: {
-            if(querybar.searchMode || querybar.editing || (currentTab() && !currentTab().viewStack.empty))
+            if(!normalMode || querybar.editing || (currentTab() && !currentTab().viewStack.empty))
                 return Flickable.StopAtBounds;
 
             return Flickable.DragAndOvershootBounds;
@@ -133,12 +153,15 @@ Rectangle
                 id: querybar
                 height: Theme.itemSizeMedium
                 anchors.verticalCenter: parent.verticalCenter
+                visible: !navigationbar.clipboardMode
 
                 width: {
                     var w = parent.width - btntabs.width - (btnpopups.visible ? btnpopups.width : 0);
 
-                    if(searchMode)
-                        w -= (btnsearchup.width + btnsearchdown.width + btnshare.width);
+                    if(navigationbar.searchMode)
+                        w -= (btnsearchup.width + btnsearchdown.width + btnshareorsearch.width);
+                    else if(navigationbar.clipboardMode)
+                        w -= btnshareorsearch.width;
 
                     return w;
                 }
@@ -161,15 +184,7 @@ Rectangle
                     return currenttab.webUrl;
                 }
 
-                onReturnPressed: {
-                    var currenttab = tabview.currentTab();
-
-                    if(!currenttab)
-                        return;
-
-                    currenttab.load(searchquery);
-                }
-
+                onReturnPressed: search(searchquery)
                 onSearchPressed: webView.experimental.findText(querybar.text, 0xC); /* WebViewExperimental.FindHighlightAllOccurrences |
                                                                                        WebViewExperimental.FindWrapsAroundDocument */
 
@@ -185,14 +200,30 @@ Rectangle
 
             ImageButton
             {
+                id: btncopy
+                source: "image://theme/icon-m-clipboard"
+                width: querybar.width
+                height: parent.height
+                anchors.verticalCenter: parent.verticalCenter
+                visible: navigationbar.clipboardMode
+
+                onClicked: {
+                    var tab = tabview.currentTab();
+                    tab.getSelectedText(function(text) { settings.clipboard.copy(text); });
+                    navigationbar.clipboardMode = false;
+                }
+            }
+
+            ImageButton
+            {
                 id: btnsearchup
                 source: "image://theme/icon-m-enter-close"
-                enabled: querybar.searchMode && (querybar.text.length > 0)
+                enabled: navigationbar.searchMode && (querybar.text.length > 0)
                 width: navigationbar.contentHeight
                 height: parent.height
                 anchors.verticalCenter: parent.verticalCenter
                 rotation: 180
-                visible: querybar.searchMode
+                visible: navigationbar.searchMode
 
                 onClicked: webView.experimental.findText(querybar.text, 0xE); /* WebViewExperimental.FindBackward |
                                                                                  WebViewExperimental.FindHighlightAllOccurrences |
@@ -203,11 +234,11 @@ Rectangle
             {
                 id: btnsearchdown
                 source: "image://theme/icon-m-enter-close"
-                enabled: querybar.searchMode && (querybar.text.length > 0)
+                enabled: navigationbar.searchMode && (querybar.text.length > 0)
                 width: navigationbar.contentHeight
                 height: parent.height
                 anchors.verticalCenter: parent.verticalCenter
-                visible: querybar.searchMode
+                visible: navigationbar.searchMode
 
                 onClicked: webView.experimental.findText(querybar.text, 0xC); /* WebViewExperimental.FindHighlightAllOccurrences |
                                                                                  WebViewExperimental.FindWrapsAroundDocument */
@@ -215,18 +246,42 @@ Rectangle
 
             ImageButton
             {
-                id: btnshare
-                source: "image://theme/icon-m-share"
+                id: btnshareorsearch
                 width: navigationbar.contentHeight
                 height: parent.height
                 anchors.verticalCenter: parent.verticalCenter
-                visible: querybar.searchMode
+                visible: navigationbar.searchMode || navigationBar.clipboardMode
+
+                source: {
+                    if(navigationbar.searchMode)
+                        return "image://theme/icon-m-share";
+
+                    if(navigationbar.clipboardMode)
+                        return "image://theme/icon-m-search";
+
+                    return "";
+                }
 
                 onClicked: {
-                    querybar.searchMode = false;
+                    var tab = tabview.currentTab();
+
+                    if(navigationbar.searchMode) // Share
+                        tabviewdialogs.showShareMenu(tab.title, tab.webUrl);
+                    else if(navigationBar.clipboardMode) { // Search in current tab
+                        tab.getSelectedText(function(text) { navigationbar.search(text); });
+
+                        navigationbar.searchMode = false;
+                        navigationbar.clipboardMode = false;
+                    }
+                }
+
+                onPressAndHold: {
+                    if(!navigationbar.clipboardMode)
+                        return;
 
                     var tab = tabview.currentTab();
-                    tabviewdialogs.showShareMenu(tab.title, tab.webUrl);
+                    tab.getSelectedText(function(text) { tabview.addTab(text, true); });
+                    navigationbar.clipboardMode = false;
                 }
             }
 
@@ -239,7 +294,7 @@ Rectangle
                 anchors.verticalCenter: parent.verticalCenter
 
                 visible: {
-                    if(querybar.searchMode)
+                    if(!navigationBar.normalMode)
                         return false;
 
                     var tab = tabview.currentTab();
@@ -273,16 +328,21 @@ Rectangle
                 anchors.verticalCenter: parent.verticalCenter
 
                 source: {
-                    if(querybar.searchMode || currentTab() && !currentTab().viewStack.empty)
+                    if(!navigationBar.normalMode || currentTab() && !currentTab().viewStack.empty)
                         return "image://theme/icon-close-app";
 
                     return "image://theme/icon-m-tabs";
                 }
 
                 onClicked: {
-                    if(querybar.searchMode) {
-                        querybar.searchMode = false;
+                    if(navigationbar.searchMode) {
+                        navigationbar.searchMode = false;
                         webView.experimental.findText("", 0);
+                        return;
+                    }
+
+                    if(navigationbar.clipboardMode) {
+                        navigationbar.clipboardMode = false;
                         return;
                     }
 
@@ -299,10 +359,10 @@ Rectangle
                 onPressAndHold: {
                     var tab = currentTab();
 
-                    if(querybar.searchMode || (tab.state !== "webview"))
+                    if(!navigationbar.normalMode || (tab.state !== "webview"))
                         return;
 
-                    querybar.searchMode = true;
+                    navigationbar.searchMode = true;
                 }
 
                 Label
@@ -311,7 +371,7 @@ Rectangle
                     font.pixelSize: Theme.fontSizeSmall
                     font.bold: true
                     text: tabview.tabs.count
-                    visible: !querybar.searchMode && currentTab() && currentTab().viewStack.empty
+                    visible: navigationbar.normalMode && currentTab() && currentTab().viewStack.empty
                     z: -1
                 }
             }

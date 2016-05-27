@@ -21,6 +21,8 @@ Item
                                             "stylehandler_style": webPageStyle,
                                             "nightmodehandler_changed": onNightModeChanged,
                                             "textfieldhandler_selected": onTextFieldSelected,
+                                            "textselectorhandler_statechanged": onTextSelectorStateChanged,
+                                            "textselectorhandler_selectedtext": onTextSelectorSelectedText,
                                             "youtubehandler_play": playYouTubeVideo,
                                             "dailymotionhandler_play": playDailyMotionVideo,
                                             "vimeohandler_play": playVimeoVideo,
@@ -94,6 +96,20 @@ Item
                 webview.postMessage("textfieldhandler_canceledit", { "id": tfpage.elementId });
                 Qt.inputMethod.hide();
             });
+        }
+
+        function onTextSelectorStateChanged(data) {
+            tabView.navigationBar.clipboardMode = data.enabled;
+        }
+
+        function onTextSelectorSelectedText(data) {
+            if(!browsertab.pendingRequests[data.id])
+                return;
+
+            var callback = browsertab.pendingRequests[data.id];
+            callback(clearEscape(data.text));
+
+            delete browsertab.pendingRequests[data.id];
         }
 
         function webPageStyle(data) {
