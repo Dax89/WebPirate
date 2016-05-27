@@ -268,9 +268,6 @@ SilicaWebView
         }
 
         browsertab.state = "webview";
-
-        if(!loading)
-            webview.postMessage("video_get"); // NOTE: What is this?!?
     }
 
     onVerticalVelocityChanged: {
