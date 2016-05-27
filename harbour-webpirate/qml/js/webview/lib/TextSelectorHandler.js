@@ -28,8 +28,7 @@ window.WebPirate_TextSelectorHandlerObject.prototype.stopTextSelection = functio
         return;
 
     touchevent.preventDefault();
-    document.removeEventListener("touchend", this.stopTextSelection.bind(this));
-    this.hideMarkers();
+    this.stopSelect();
 };
 
 window.WebPirate_TextSelectorHandlerObject.prototype.onTouchStart = function(touchevent) {
@@ -227,6 +226,11 @@ window.WebPirate_TextSelectorHandlerObject.prototype.wordRange = function(client
     range.setEnd(selstart, i + word[0].length);
     return range;
 };
+
+window.WebPirate_TextSelectorHandlerObject.prototype.stopSelect = function() {
+    document.removeEventListener("touchend", this.stopTextSelection.bind(this));
+    this.hideMarkers();
+}
 
 window.WebPirate_TextSelectorHandlerObject.prototype.select = function(clientx, clienty) {
     if(!document.getElementById(this.SELECTION_MARKER)) {

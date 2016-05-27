@@ -2,6 +2,7 @@ window.WebPirate_MessageListenerObject = function() {
     this.dispatchers = { "textfieldhandler_override"   : function() { WebPirate_TextFieldHandler.overrideenabled = true; },
                          "nightmodehandler_enable"     : function() { WebPirate_NightModeHandler.switchMode(true); },
                          "nightmodehandler_disable"    : function() { WebPirate_NightModeHandler.switchMode(false); },
+                         "textselectorhandler_stop"    : function() { WebPirate_TextSelectorHandler.stopSelect(); },
                          "notificationhandler_granted" : function() { window.Notification.permission = window.Notification.__WP_PERMISSION_GRANTED__; },
                          "notificationhandler_denied"  : function() { window.Notification.permission = window.Notification.__WP_PERMISSION_DENIED__; },
                          "notificationhandler_default" : function() { window.Notification.permission = window.Notification.__WP_PERMISSION_DEFAULT__; } };
