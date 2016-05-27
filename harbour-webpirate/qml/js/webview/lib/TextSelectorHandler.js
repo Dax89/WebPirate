@@ -104,8 +104,8 @@ window.WebPirate_TextSelectorHandlerObject.prototype.createMarkerStyle = functio
     markerstyle.id = this.SELECTION_MARKER;
 
     markerstyle.innerHTML = "." + this.SELECTION_MARKER + " {\n" +
-            "background: linear-gradient(#34a727 0, darkgreen 18px);\n" +
-            "background-color: darkgreen;\n" +
+            "background: linear-gradient(" + WebPirate_Theme.secondaryColor + " 0, " + WebPirate_Theme.secondaryHighlightColor + " 18px);\n" +
+            "background-color: " + WebPirate_Theme.secondaryHighlightColor + ";\n" +
             "box-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);\n" +
             "content: \"\";\n" +
             "display: block;\n" +
@@ -208,8 +208,6 @@ window.WebPirate_TextSelectorHandlerObject.prototype.wordRange = function(client
 };
 
 window.WebPirate_TextSelectorHandlerObject.prototype.select = function(clientx, clienty) {
-    console.log(clientx + " " + clienty);
-
     if(!document.getElementById(this.SELECTION_MARKER)) {
         this.createMarkerStyle();
         this.createMarker(this.SELECTION_START_MARKER);

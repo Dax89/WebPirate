@@ -18,13 +18,15 @@ SilicaWebView
         experimental.postMessage(JSON.stringify({ "type": message, "data": data }));
     }
 
-    /*
     function initTheme() {
-        var data = {
+        var theme = { "primaryColor": Theme.primaryColor.toString(),
+                      "secondaryColor": Theme.secondaryColor.toString(),
+                      "highlightColor": Theme.highlightColor.toString(),
+                      "secondaryHighlightColor": Theme.secondaryHighlightColor.toString(),
+                      "highlightDimmerColor": Theme.highlightDimmerColor.toString() };
 
-        };
+        webview.postMessage("theme_set", { "theme": theme });
     }
-    */
 
     function setNightMode(nightmode) {
         if(browsertab.state !== "webview")
@@ -152,13 +154,13 @@ SilicaWebView
                                 Qt.resolvedUrl("../../../js/webview/lib/WebPirate.js"),
                                 Qt.resolvedUrl("../../../js/webview/lib/Utils.js"),
                                 Qt.resolvedUrl("../../../js/webview/lib/PixelRatioHandler.js"),
+                                Qt.resolvedUrl("../../../js/webview/lib/Theme.js"),
                                 Qt.resolvedUrl("../../../js/webview/lib/NightModeHandler.js"),
                                 Qt.resolvedUrl("../../../js/webview/lib/TextSelectorHandler.js"),
                                 Qt.resolvedUrl("../../../js/webview/lib/TouchHandler.js"),
                                 Qt.resolvedUrl("../../../js/webview/lib/SubmitHandler.js"),
                                 Qt.resolvedUrl("../../../js/webview/lib/StyleHandler.js"),
                                 Qt.resolvedUrl("../../../js/webview/lib/TextFieldHandler.js"),
-                                Qt.resolvedUrl("../../../js/webview/lib/Theme.js"),
                                 Qt.resolvedUrl("../../../js/webview/lib/MessageListener.js"),
                                 Qt.resolvedUrl("../../../js/webview/lib/grabber/GrabberBuilder.js"),
                                 Qt.resolvedUrl("../../../js/webview/lib/grabber/YouTubeHandler.js"),
@@ -330,7 +332,7 @@ SilicaWebView
         if(loadRequest.status === WebView.LoadSucceededStatus) {
             var stringurl = url.toString();
             webview.favorite = Favorites.contains(stringurl);
-            //webview.initTheme();
+            webview.initTheme();
 
             if(!UrlHelper.isSpecialUrl(stringurl) && UrlHelper.isUrl(stringurl)) {
 

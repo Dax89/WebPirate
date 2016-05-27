@@ -19,12 +19,16 @@ window.WebPirate_MessageListenerObject.prototype.onMessage = function(message) {
     }
 
     try {
+        var data = obj.data;
+
         if(obj.type === "textfieldhandler_sendedit")
-            WebPirate_TextFieldHandler.sendEdit(obj.id, obj.text, obj.selectionStart, obj.selectionEnd);
+            WebPirate_TextFieldHandler.sendEdit(data.id, data.text, data.selectionStart, data.selectionEnd);
         else if(obj.type === "textfieldhandler_canceledit")
-            WebPirate_TextFieldHandler.cancelEdit(obj.id);
+            WebPirate_TextFieldHandler.cancelEdit(data.id);
         else if(obj.type === "ajaxoverrider_applyblacklist")
-            WebPirate_AjaxOverrider.applyBlacklist(obj.blacklist);
+            WebPirate_AjaxOverrider.applyBlacklist(data.blacklist);
+        else if(obj.type === "theme_set")
+            WebPirate_Theme.set(data.theme);
     }
     catch(e) { // Catch SyntaxError
         return;
