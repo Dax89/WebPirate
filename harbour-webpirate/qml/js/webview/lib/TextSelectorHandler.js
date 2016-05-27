@@ -5,6 +5,7 @@ window.WebPirate_TextSelectorHandlerObject = function() {
     this.SELECTION_WIDTH = 25;
     this.SELECTION_HEIGHT = 40;
     this.SELECTION_PADDING = 20;
+    this.selecting = false;
     this.moving = false;
 };
 
@@ -20,8 +21,20 @@ window.WebPirate_TextSelectorHandlerObject.prototype.isMarker = function(target)
     return this.isStartMarker(target) || this.isEndMarker(target);
 };
 
+window.WebPirate_TextSelectorHandlerObject.prototype.stopTextSelection = function(touchevent) {
+    var target = touchevent.target;
+
+    if(this.isMarker(target))
+        return;
+
+    touchevent.preventDefault();
+    document.removeEventListener("touchend", this.stopTextSelection.bind(this));
+    this.hideMarkers();
+};
+
 window.WebPirate_TextSelectorHandlerObject.prototype.onTouchStart = function(touchevent) {
     touchevent.preventDefault();
+    this.moving = true;
 };
 
 window.WebPirate_TextSelectorHandlerObject.prototype.onTouchMove = function(touchevent) {
@@ -39,6 +52,7 @@ window.WebPirate_TextSelectorHandlerObject.prototype.onTouchMove = function(touc
 
 window.WebPirate_TextSelectorHandlerObject.prototype.onTouchEnd = function(touchevent) {
     touchevent.preventDefault();
+    this.moving = false;
 };
 
 window.WebPirate_TextSelectorHandlerObject.prototype.isReversed = function(oldrange) {
@@ -157,6 +171,8 @@ window.WebPirate_TextSelectorHandlerObject.prototype.displayMarkers = function(s
         return;
     }
 
+    this.selecting = true;
+
     var bodyrect = document.body.getBoundingClientRect();
     var r = selection.getRangeAt(0);
     var rects = r.getClientRects();
@@ -183,6 +199,11 @@ window.WebPirate_TextSelectorHandlerObject.prototype.hideMarkers = function() {
 
     startmarker.style.visibility = "hidden";
     endmarker.style.visibility = "hidden";
+
+    var selection = window.getSelection();
+    selection.removeAllRanges();
+
+    this.selecting = false;
 };
 
 window.WebPirate_TextSelectorHandlerObject.prototype.wordRange = function(clientx, clienty) {
@@ -213,6 +234,8 @@ window.WebPirate_TextSelectorHandlerObject.prototype.select = function(clientx, 
         this.createMarker(this.SELECTION_START_MARKER);
         this.createMarker(this.SELECTION_END_MARKER);
     }
+
+    document.addEventListener("touchstart", this.stopTextSelection.bind(this));
 
     var range = this.wordRange(clientx, clienty);
     var selection = window.getSelection();
