@@ -51,10 +51,6 @@ Item
         function onLongPress(data) {
             tabView.dialogs.hideAll();
             tabView.dialogs.showLinkMenu(data.url, data.isImage);
-
-            /* TODO: Remove else if(data.text)
-                pageStack.push(Qt.resolvedUrl("../../../pages/webview/TextSelectionPage.qml"), { "text": clearEscape(data.text) });
-                */
         }
 
         function onSelectorTouched(data) {
@@ -85,15 +81,9 @@ Item
             tfpage.accepted.connect(function() {
                 var data = { "id": tfpage.elementId, "text": escapeString(tfpage.text) };
 
-                //TODO: Camel Case
-
                 if(tfpage.selectionStart !== tfpage.selectionEnd) {
-                    data.selectionstart = tfpage.selectionStart;
-                    data.selectionend = tfpage.selectionEnd;
-                }
-                else {
-                    data.selectionstart = null;
-                    data.selectionend = null;
+                    data.selectionStart = tfpage.selectionStart;
+                    data.selectionEnd = tfpage.selectionEnd;
                 }
 
                 webview.postMessage("textfieldhandler_sendedit", data);

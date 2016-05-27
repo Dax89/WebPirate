@@ -3,6 +3,7 @@ window.WebPirate_TextFieldHandlerObject = function() {
     this.elementmap = { };
 
     document.addEventListener("keydown", this.onKeyDown.bind(this));
+    document.addEventListener("click", this.checkTextField.bind(this), false);
 };
 
 window.WebPirate_TextFieldHandlerObject.prototype.onKeyDown = function(keydownevent) {
@@ -31,12 +32,9 @@ window.WebPirate_TextFieldHandlerObject.prototype.fakeKeyUpEvent = function(targ
 };
 
 window.WebPirate_TextFieldHandlerObject.prototype.checkTextField = function(clickevent) {
-    if(!this.overrideenabled)
-        return;
-
     var target = clickevent.target;
 
-    if((target !== "TEXTAREA") || target.readOnly)
+    if((target.tagName !== "TEXTAREA") || target.readOnly || !this.overrideenabled)
         return;
 
     clickevent.preventDefault();
@@ -56,7 +54,7 @@ window.WebPirate_TextFieldHandlerObject.prototype.sendEdit = function(id, text, 
         return;
 
     var target = this.elementmap[id];
-    target.value = WebPirate_Utils.unescape(target.value);
+    target.value = WebPirate_Utils.unescape(text);
     this.fakeKeyUpEvent(target); // Facebook needs this
 
     if(startselection !== endselection) {
@@ -66,7 +64,6 @@ window.WebPirate_TextFieldHandlerObject.prototype.sendEdit = function(id, text, 
         if(typeof endselection === "number")
             target.endSelection = endselection;
     }
-
 };
 
 window.WebPirate_TextFieldHandlerObject.prototype.cancelEdit = function(id) {
@@ -76,4 +73,4 @@ window.WebPirate_TextFieldHandlerObject.prototype.cancelEdit = function(id) {
     delete this.elementmap[id];
 };
 
-window.WebPirate_TextFieldHandler = new window.WebPirate_TextFieldHandler();
+window.WebPirate_TextFieldHandler = new window.WebPirate_TextFieldHandlerObject();
