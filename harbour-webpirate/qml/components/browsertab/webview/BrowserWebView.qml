@@ -19,11 +19,11 @@ SilicaWebView
     }
 
     function initTheme() {
-        var theme = { "primaryColor": Theme.primaryColor.toString(),
-                      "secondaryColor": Theme.secondaryColor.toString(),
-                      "highlightColor": Theme.highlightColor.toString(),
-                      "secondaryHighlightColor": Theme.secondaryHighlightColor.toString(),
-                      "highlightDimmerColor": Theme.highlightDimmerColor.toString() };
+        var theme = { "primaryColor": Theme.rgba(Theme.primaryColor, 1.0).toString(),
+                      "secondaryColor": Theme.rgba(Theme.secondaryColor, 1.0).toString(),
+                      "highlightColor": Theme.rgba(Theme.highlightColor, 1.0).toString(),
+                      "secondaryHighlightColor": Theme.rgba(Theme.secondaryHighlightColor, 1.0).toString(),
+                      "highlightDimmerColor": Theme.rgba(Theme.highlightDimmerColor, 1.0).toString() };
 
         webview.postMessage("theme_set", { "theme": theme });
     }
