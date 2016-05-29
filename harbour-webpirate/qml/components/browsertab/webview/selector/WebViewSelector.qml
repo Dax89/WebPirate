@@ -1,4 +1,5 @@
 import QtQuick 2.1
+import QtGraphicalEffects 1.0
 import QtWebKit 3.0
 import Sailfish.Silica 1.0
 
@@ -42,5 +43,27 @@ MouseArea
 
     SelectorHandle { id: selector1; startHandle: true; color: handleColor }
     SelectorHandle { id: selector2; color: handleColor }
+
+    DropShadow
+    {
+        anchors.fill: selector1
+        horizontalOffset: 1
+        verticalOffset: 1
+        radius: 8.0
+        samples: 16
+        color: "black"
+        source: selector1
+    }
+
+    DropShadow
+    {
+        anchors.fill: selector2
+        horizontalOffset: 1
+        verticalOffset: 1
+        radius: 8.0
+        samples: 16
+        color: "black"
+        source: selector2
+    }
 }
 

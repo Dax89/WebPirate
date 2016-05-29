@@ -1,5 +1,5 @@
 window.WebPirate_TextSelectorHandlerObject = function() {
-    this.MARKER_SIZE = 40;
+    this.MARKER_SIZE = 30;
     this.MARKER_SIZE_2 = this.MARKER_SIZE / 2;
     this.MARKER_SIZE_4 = this.MARKER_SIZE / 4;
 };
