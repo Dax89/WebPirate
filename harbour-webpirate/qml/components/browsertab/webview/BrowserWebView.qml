@@ -1,6 +1,7 @@
 import QtQuick 2.1
 import QtWebKit 3.0
 import Sailfish.Silica 1.0
+import "selector"
 import "../../../js/UrlHelper.js" as UrlHelper
 import "../../../js/settings/Database.js" as Database
 import "../../../js/settings/Credentials.js" as Credentials
@@ -10,6 +11,8 @@ import "../../../js/settings/Favorites.js" as Favorites
 
 SilicaWebView
 {
+    readonly property real contentsScale: experimental.test.contentsScale
+    property alias textSelector: selector
     property int itemSelectorIndex: -1    // Keeps the selected index of ItemSelector
     property bool nightModeEnabled: false // Check if Night Mode is visually active
     property bool favorite: false
@@ -48,9 +51,21 @@ SilicaWebView
         browsertab.thumbUpdated = !ignorewidth || !ignoreheight;
     }
 
+    VerticalScrollDecorator { id: vscrolldecorator; flickable: webview }
     UrlSchemeDelegateHandler { id: urlschemedelegatehandler }
     WebViewListener { id: listener }
-    VerticalScrollDecorator { id: vscrolldecorator; flickable: webview }
+
+    WebViewSelector
+    {
+        id: selector
+        anchors.fill: parent
+        webView: webview
+        handleColor: Theme.rgba(Theme.secondaryHighlightColor, 1.0)
+
+        onSelectingChanged: {
+            tabView.navigationBar.clipboardMode = selector.selecting;
+        }
+    }
 
     Connections
     {
@@ -126,6 +141,7 @@ SilicaWebView
     }
 
     id: webview
+    interactive: !selector.moving
     overridePageStackNavigation: true
     onVisibleChanged: calculateMetrics(false, false)
 

@@ -15,7 +15,7 @@ Name:       harbour-webpirate
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 Summary:    harbour-webpirate
 Version:    2.0
-Release:    1
+Release:    10
 Group:      Qt/Qt
 License:    GPL3
 URL:        https://github.com/Dax89/harbour-webpirate
@@ -34,7 +34,6 @@ BuildRequires:  desktop-file-utils
 %description
 A Tabbed WebBrowser for SailfishOS based on WebKit
 
-%define _unpackaged_files_terminate_build 0
 
 %prep
 %setup -q -n %{name}-%{version}
@@ -72,5 +71,6 @@ desktop-file-install --delete-original       \
 %{_datadir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/icons/hicolor/86x86/apps/%{name}.png
+%exclude %{_libdir}/cmake/*
 # >> files
 # << files

@@ -33,7 +33,7 @@ Item
     }
 
     function cancelSelection() {
-        webview.postMessage("textselectorhandler_cancel");
+        webview.textSelector.hide();
     }
 
     function getSelectedText(callback) {

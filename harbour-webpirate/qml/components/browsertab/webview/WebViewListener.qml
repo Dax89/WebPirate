@@ -21,8 +21,9 @@ Item
                                             "stylehandler_style": webPageStyle,
                                             "nightmodehandler_changed": onNightModeChanged,
                                             "textfieldhandler_selected": onTextFieldSelected,
-                                            "textselectorhandler_statechanged": onTextSelectorStateChanged,
                                             "textselectorhandler_selectedtext": onTextSelectorSelectedText,
+                                            "textselectorhandler_displayhandles": onTextSelectorDisplayHandles,
+                                            "textselectorhandler_hidehandles": onTextSelectorHideHandles,
                                             "youtubehandler_play": playYouTubeVideo,
                                             "dailymotionhandler_play": playDailyMotionVideo,
                                             "vimeohandler_play": playVimeoVideo,
@@ -98,10 +99,6 @@ Item
             });
         }
 
-        function onTextSelectorStateChanged(data) {
-            tabView.navigationBar.clipboardMode = data.enabled;
-        }
-
         function onTextSelectorSelectedText(data) {
             if(!browsertab.pendingRequests[data.id])
                 return;
@@ -110,6 +107,14 @@ Item
             callback(clearEscape(data.text));
 
             delete browsertab.pendingRequests[data.id];
+        }
+
+        function onTextSelectorDisplayHandles(data) {
+            selector.select(data);
+        }
+
+        function onTextSelectorHideHandles() {
+            selector.hide();
         }
 
         function webPageStyle(data) {
