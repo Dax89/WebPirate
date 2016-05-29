@@ -15,6 +15,7 @@ SilicaWebView
     property alias textSelector: selector
     property int itemSelectorIndex: -1    // Keeps the selected index of ItemSelector
     property bool nightModeEnabled: false // Check if Night Mode is visually active
+    property bool ambienceBrowsingEnabled: false // Check if Ambience Browsing is visually active
     property bool favorite: false
 
     function postMessage(message, data) {
@@ -117,27 +118,29 @@ SilicaWebView
         }
     }
 
-    Rectangle /* Night Mode Rectangle */
+    Rectangle /* Night Mode/Ambience Browsing Rectangle */
     {
+        readonly property bool needsRectangle: (settings.nightmode && !webview.nightModeEnabled) || (settings.exp_ambiencebrowsing && !webview.ambienceBrowsingEnabled)
+
         x: contentX
-        y: (mainwindow.settings.nightmode && !webview.nightModeEnabled) ? contentY : (webview.contentHeight - 1)
+        y: needsRectangle ? contentY : (webview.contentHeight - 1)
 
         width:{
-            if(mainwindow.settings.nightmode && !webview.nightModeEnabled)
+            if(needsRectangle)
                 return webview.width;
 
             return Math.max(webview.contentWidth, webview._page.width);
         }
 
         height:{
-            if(mainwindow.settings.nightmode && !webview.nightModeEnabled)
+            if(needsRectangle)
                 return webview.height;
 
             return Math.max(webview.contentHeight, webview._page.height);
         }
 
-        color: "#181818" /* Do not use 100% black */
-        visible: mainwindow.settings.nightmode
+        color: settings.nightmode ? "#181818" : Theme.rgba(Theme.highlightDimmerColor, 1.0) /* Do not use 100% black */
+        visible: settings.nightmode || settings.exp_ambiencebrowsing
     }
 
     id: webview
@@ -153,6 +156,7 @@ SilicaWebView
     experimental.preferences.localStorageEnabled: true
     experimental.preferences.navigatorQtObjectEnabled: true
     experimental.preferredMinimumContentsWidth: 980 /* "magic" number that proved to work great on the majority of websites */
+    experimental.transparentBackground: settings.exp_ambiencebrowsing
     experimental.userAgent: UserAgents.get(mainwindow.settings.useragent).value
     experimental.userStyleSheet: mainwindow.settings.adblockmanager.rulesFile
 
@@ -355,7 +359,10 @@ SilicaWebView
                     webview.postMessage("textfieldhandler_override");
 
                 webview.initTheme();
-                webview.setNightMode(mainwindow.settings.nightmode);
+                webview.setNightMode(settings.nightmode);
+
+                if(settings.exp_ambiencebrowsing && !settings.nightmode) // Night mode overrides ambience browsing
+                    webview.postMessage("theme_applyambience");
 
                 Credentials.compile(Database.instance(), stringurl, webview);
                 History.store(stringurl, title);

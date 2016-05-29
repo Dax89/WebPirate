@@ -32,6 +32,8 @@ window.WebPirate_MessageListenerObject.prototype.onMessage = function(message) {
         WebPirate_AjaxOverrider.applyBlacklist(data.blacklist);
     else if(obj.type === "theme_set")
         WebPirate_Theme.set(data.theme);
+    else if(obj.type === "theme_applyambience")
+        WebPirate_Theme.applyAmbience();
 };
 
 window.WebPirate_MessageListener = new window.WebPirate_MessageListenerObject();

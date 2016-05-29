@@ -15,6 +15,7 @@ Dialog
     onAccepted: {
         Database.transaction(function(tx) {
             Database.transactionSet(tx, "overridetextfields", settings.exp_overridetextfields);
+            Database.transactionSet(tx, "ambiencebrowsing", settings.exp_ambiencebrowsing);
         });
     }
 
@@ -46,6 +47,18 @@ Dialog
                 }
             }
 
+            TextSwitch
+            {
+                id: swambieencebrowsing
+                text: qsTr("Ambience Browsing")
+                description: qsTr("WebPirate will try to skin webpages according to ambience settings")
+                width: parent.width
+                checked: settings.exp_ambiencebrowsing
+
+                onCheckedChanged: {
+                    settings.exp_ambiencebrowsing = checked;
+                }
+            }
         }
     }
 }

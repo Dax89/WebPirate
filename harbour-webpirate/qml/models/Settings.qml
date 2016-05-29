@@ -40,4 +40,5 @@ QtObject
 
     /* Experimental Settings */
     property bool exp_overridetextfields /* Overrides WebView's text fields with Sailfish ones */
+    property bool exp_ambiencebrowsing   /* Try to skin webpages to SailfishOS' ambience */
 }

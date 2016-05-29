@@ -64,6 +64,7 @@ ApplicationWindow
 
                 /* Experimental Options */
                 settings.exp_overridetextfields = parseInt(Database.transactionGet(tx, "overridetextfields"));
+                settings.exp_ambiencebrowsing = parseInt(Database.transactionGet(tx, "ambiencebrowsing"));
             });
         }
     }

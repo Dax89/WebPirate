@@ -501,6 +501,14 @@
         <source>Use SailfishOS&apos;s editing components instead of WebView&apos;s ones</source>
         <translation>Za urejanje uporabi SailfishOS komponente</translation>
     </message>
+    <message>
+        <source>Ambience Browsing</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>WebPirate will try to skin webpages according to ambience settings</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>FavoriteItem</name>

@@ -20,6 +20,7 @@ Item
                                             "submithandler_submit": onFormSubmit,
                                             "stylehandler_style": webPageStyle,
                                             "nightmodehandler_changed": onNightModeChanged,
+                                            "theme_ambiencechanged": onThemeAmbienceChanged,
                                             "textfieldhandler_selected": onTextFieldSelected,
                                             "textselectorhandler_selectedtext": onTextSelectorSelectedText,
                                             "textselectorhandler_displayhandles": onTextSelectorDisplayHandles,
@@ -181,6 +182,10 @@ Item
 
         function onNightModeChanged(data) {
             webview.nightModeEnabled = data.enabled;
+        }
+
+        function onThemeAmbienceChanged(data) {
+            webview.ambienceBrowsingEnabled = data.enabled;
         }
     }
 
