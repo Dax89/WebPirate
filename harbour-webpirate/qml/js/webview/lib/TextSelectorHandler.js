@@ -1,4 +1,5 @@
 window.WebPirate_TextSelectorHandlerObject = function() {
+    this.scale = 1.0; // Placeholder Value
 };
 
 window.WebPirate_TextSelectorHandlerObject.prototype.setHandleSize = function(size) {
@@ -61,10 +62,10 @@ window.WebPirate_TextSelectorHandlerObject.prototype.displayHandles = function(s
     var data = { "size": this.MARKER_SIZE };
 
     if((displaystart === undefined) || displaystart === true)
-        data.start = { "x": (firstrect.left - bodyrect.left) - this.MARKER_SIZE_2, "y": (firstrect.bottom  - bodyrect.top) - (firstrect.height / 2) - this.MARKER_SIZE_4 };
+        data.start = { "x": (firstrect.left - bodyrect.left) - (this.MARKER_SIZE / this.scale), "y": (firstrect.bottom  - bodyrect.top) };
 
     if((displayend === undefined) || displayend === true)
-        data.end = { "x": (lastrect.right - bodyrect.left) - this.MARKER_SIZE_4, "y": (lastrect.bottom  - bodyrect.top) - (lastrect.height / 2) - this.MARKER_SIZE_4 };
+        data.end = { "x": (lastrect.right - bodyrect.left), "y": (lastrect.bottom  - bodyrect.top) };
 
     WebPirate.postMessage("textselectorhandler_displayhandles", data);
 };

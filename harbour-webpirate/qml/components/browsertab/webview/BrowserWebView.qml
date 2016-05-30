@@ -157,6 +157,7 @@ SilicaWebView
     experimental.transparentBackground: settings.exp_ambiencebrowsing
     experimental.userAgent: UserAgents.get(mainwindow.settings.useragent).value
     experimental.userStyleSheet: mainwindow.settings.adblockmanager.rulesFile
+    experimental.test.onContentsScaleCommitted: webview.postMessage("textselectorhandler_setscale", { "scale": experimental.test.contentsScale })
 
     experimental.userScripts: [ // Overrides
                                 Qt.resolvedUrl("../../../js/webview/overrides/ObjectOverrider.js"),

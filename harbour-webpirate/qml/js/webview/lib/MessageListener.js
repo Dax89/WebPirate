@@ -18,6 +18,8 @@ window.WebPirate_MessageListenerObject.prototype.onMessage = function(message) {
         WebPirate_TextSelectorHandler.getText(data.id, data.cancel);
     else if(obj.type === "textselectorhandler_updateselection")
         WebPirate_TextSelectorHandler.updateSelection(data.touchdata);
+    else if(obj.type === "textselectorhandler_setscale")
+        WebPirate_TextSelectorHandler.scale = data.scale;
     else if(obj.type === "textselectorhandler_sethandlesize")
         WebPirate_TextSelectorHandler.setHandleSize(data.size);
     else if(obj.type === "nightmodehandler_enable")
