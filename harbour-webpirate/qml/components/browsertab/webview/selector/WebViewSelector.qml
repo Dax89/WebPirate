@@ -12,13 +12,13 @@ Item
 
     function select(selectdata) {
         if(selectdata.start) {
-            selector1.x = selectdata.start.x * scaleFactor;
-            selector1.y = selectdata.start.y * scaleFactor;
+            selector1.x = (selectdata.start.x * scaleFactor) - webView.contentX
+            selector1.y = (selectdata.start.y * scaleFactor) - webView.contentY;
         }
 
         if(selectdata.end) {
-            selector2.x = selectdata.end.x * scaleFactor;
-            selector2.y = selectdata.end.y * scaleFactor;
+            selector2.x = (selectdata.end.x * scaleFactor) - webView.contentX
+            selector2.y = (selectdata.end.y * scaleFactor) - webView.contentY;
         }
 
         visible = selectdata.start || selectdata.end;
@@ -36,14 +36,14 @@ Item
     id: webviewselector
     visible: false
 
-    onWebViewChanged: {
-        console.log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-    }
-
     Flickable
     {
         id: flickable
         anchors.fill: parent
+        contentX: webView.contentX
+        contentY: webView.contentY
+        contentWidth: webView.contentWidth
+        contentHeight: webView.contentHeight
         pixelAligned: true
     }
 
