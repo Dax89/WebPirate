@@ -11,10 +11,9 @@ import "../../../js/settings/Favorites.js" as Favorites
 
 SilicaWebView
 {
-    readonly property real contentsScale: experimental.test.contentsScale
     property alias textSelector: selector
-    property int itemSelectorIndex: -1    // Keeps the selected index of ItemSelector
-    property bool nightModeEnabled: false // Check if Night Mode is visually active
+    property int itemSelectorIndex: -1           // Keeps the selected index of ItemSelector
+    property bool nightModeEnabled: false        // Check if Night Mode is visually active
     property bool ambienceBrowsingEnabled: false // Check if Ambience Browsing is visually active
     property bool favorite: false
 
@@ -61,7 +60,6 @@ SilicaWebView
         id: selector
         anchors.fill: parent
         webView: webview
-        handleColor: Theme.rgba(Theme.secondaryHighlightColor, 1.0)
 
         onSelectingChanged: {
             tabView.navigationBar.clipboardMode = selector.selecting;
@@ -360,6 +358,7 @@ SilicaWebView
 
                 webview.initTheme();
                 webview.setNightMode(settings.nightmode);
+                webview.postMessage("textselectorhandler_sethandlesize", { "size": selector.handleSize });
 
                 if(settings.exp_ambiencebrowsing && !settings.nightmode) // Night mode overrides ambience browsing
                     webview.postMessage("theme_applyambience");

@@ -1,32 +1,18 @@
 import QtQuick 2.1
+import QtWebKit 3.0
 import Sailfish.Silica 1.0
 
 Rectangle
 {
     property bool startHandle: false
-    property alias moving: mousearea.pressed
 
     id: selectorhandle
+    color: Theme.rgba(Theme.secondaryHighlightColor, 1.0)
+    parent: webView
+    width: handleSize
+    height: width
     radius: width * 0.5
-
-    MouseArea
-    {
-        id: mousearea
-        anchors.fill: parent
-        hoverEnabled: true
-
-        onPositionChanged: {
-            if(mouse.button !== Qt.LeftButton)
-                return;
-
-            var mappedpoint = mapToItem(webView, mouse.x, mouse.y);
-
-            var touchdata = { "start": startHandle,
-                              "x": mappedpoint.x / webView.contentsScale,
-                              "y": mappedpoint.y / webView.contentsScale };
-
-            webView.postMessage("textselectorhandler_updateselection", { "touchdata": touchdata });
-        }
-    }
+    smooth: true
+    visible: false
 }
 
