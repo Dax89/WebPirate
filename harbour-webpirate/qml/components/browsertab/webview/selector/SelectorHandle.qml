@@ -4,6 +4,7 @@ import Sailfish.Silica 1.0
 
 Item
 {
+    readonly property int padding: 4 * 1.5
     property bool startHandle: false
     property color color: Theme.rgba(Theme.secondaryHighlightColor, 1.0)
 
@@ -17,7 +18,7 @@ Item
     Rectangle
     {
         id: toppart
-        anchors { fill: parent; leftMargin: startHandle ? 4 * 1.5 : 0; rightMargin: startHandle ? 0 : 4 * 1.5 }
+        anchors { fill: parent; leftMargin: startHandle ? padding : 0; rightMargin: startHandle ? 0 : padding}
         color: selectorhandle.color
         rotation: startHandle ? 45 : -45
     }
@@ -35,4 +36,3 @@ Item
         }
     }
 }
-

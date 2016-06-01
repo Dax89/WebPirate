@@ -11,15 +11,11 @@ Item
     readonly property bool selecting: visible
 
     function select(selectdata) {
-        if(selectdata.start) {
-            selector1.x = (selectdata.start.x * scaleFactor) - webView.contentX
-            selector1.y = (selectdata.start.y * scaleFactor) - webView.contentY;
-        }
-
-        if(selectdata.end) {
-            selector2.x = (selectdata.end.x * scaleFactor) - webView.contentX
-            selector2.y = (selectdata.end.y * scaleFactor) - webView.contentY;
-        }
+        selector1.x = (selectdata.start.x * scaleFactor) - webView.contentX
+        selector1.y = (selectdata.start.y * scaleFactor) - webView.contentY;
+        selector2.x = (selectdata.end.x * scaleFactor) - webView.contentX;
+        selector2.y = (selectdata.end.y * scaleFactor) - webView.contentY;
+        swapSelectors(selectdata.reversed);
 
         visible = selectdata.start || selectdata.end;
         selector1.visible = visible;
@@ -28,9 +24,21 @@ Item
 
     function hide() {
         visible = false;
-        selector1.visible = visible;
-        selector2.visible = visible;
+        selector1.visible = false;
+        selector2.visible = false;
+
+        resetSelectors();
         webView.postMessage("textselectorhandler_cancel");
+    }
+
+    function swapSelectors(reversed) {
+        selector1.startHandle = reversed ? false : true;
+        selector2.startHandle = reversed ? true : false;
+    }
+
+    function resetSelectors() {
+        selector1.startHandle = true;
+        selector2.startHandle = false;
     }
 
     id: webviewselector
@@ -74,8 +82,12 @@ Item
         anchors.fill: parent
 
         onPressed: {
-            startSelection = positionHit(selector1, mouse.x, mouse.y);
-            endSelection = positionHit(selector2, mouse.x, mouse.y);
+            var absoluteX = mouse.x - webView.contentX;
+            var absoluteY = mouse.y - webView.contentY;
+            //startSelection = positionHit(selector1.startHandle ? selector1 : selector2, absoluteX, absoluteY);
+            //endSelection = positionHit(!selector2.startHandle ? selector2 : selector1, absoluteX, absoluteY);
+            startSelection = positionHit(selector1, absoluteX, absoluteY);
+            endSelection = positionHit(selector2, absoluteX, absoluteY);
 
             if(!hasSelection) {
                 webviewselector.hide();
@@ -94,9 +106,13 @@ Item
             if(!hasSelection || !moved(mouse.x, mouse.y))
                 return;
 
+            var absoluteX = mouse.x - webView.contentX;
+            var absoluteY = mouse.y - webView.contentY;
+
             var touchdata = { "start": startSelection,
-                              "x": mouse.x / webviewselector.scaleFactor,
-                              "y": mouse.y / webviewselector.scaleFactor };
+                              "reversed": selector2.startHandle,
+                              "x": absoluteX / webviewselector.scaleFactor,
+                              "y": absoluteY / webviewselector.scaleFactor };
 
             webView.postMessage("textselectorhandler_updateselection", { "touchdata": touchdata });
         }

@@ -4,22 +4,26 @@ window.WebPirate_TextSelectorHandlerObject = function() {
 
 window.WebPirate_TextSelectorHandlerObject.prototype.setHandleSize = function(size) {
     this.MARKER_SIZE = size;
-    this.MARKER_SIZE_2 = this.MARKER_SIZE / 2;
-    this.MARKER_SIZE_4 = this.MARKER_SIZE / 4;
+    this.MARKER_SIZE_HALF = this.MARKER_SIZE / 2;
+    this.MARKER_SIZE_DOUBLE_HALF = this.MARKER_SIZE / 4;
+    this.MARKER_SIZE_DOUBLE = this.MARKER_SIZE * 2;
 };
 
-window.WebPirate_TextSelectorHandlerObject.prototype.isReversed = function(oldrange) {
-    if(oldrange.collapsed)
-        return true;
+window.WebPirate_TextSelectorHandlerObject.prototype.isReversed = function(newrange, oldrange, displaystart) {
+    var newrect = newrange.getBoundingClientRect();
+    var oldrect = oldrange.getBoundingClientRect();
 
-    return false;
+    if(displaystart === true)
+        return (newrange.startOffset >= oldrange.endOffset) && (newrect.top >= oldrect.bottom);
+
+    return (newrange.startOffset <= oldrange.startOffset) && (newrect.top <= oldrect.top);
 };
 
 window.WebPirate_TextSelectorHandlerObject.prototype.updateSelection = function(touchdata) {
     var selection = window.getSelection();
     var oldrange = selection.getRangeAt(0);
-    var reversed = this.isReversed(oldrange);
-    var newrange = document.caretRangeFromPoint(touchdata.x, touchdata.y);
+    var newrange = document.caretRangeFromPoint(touchdata.x, touchdata.y - this.MARKER_SIZE);
+    var reversed = this.isReversed(newrange, oldrange, touchdata.start);
     var range = document.createRange();
 
     if(touchdata.start) {
@@ -46,27 +50,17 @@ window.WebPirate_TextSelectorHandlerObject.prototype.updateSelection = function(
     selection.removeAllRanges();
     selection.addRange(range);
 
-    this.displayHandles(selection, touchdata.start, !touchdata.start);
+    this.displayHandles(range, reversed);
 };
 
-window.WebPirate_TextSelectorHandlerObject.prototype.displayHandles = function(selection, displaystart, displayend) {
-    if(selection.rangeCount <= 0) {
-        this.cancelSelect();
-        return;
-    }
-
+window.WebPirate_TextSelectorHandlerObject.prototype.displayHandles = function(range, reversed) {
     var bodyrect = document.body.getBoundingClientRect();
-    var r = selection.getRangeAt(0);
-    var rects = r.getClientRects();
+    var rects = range.getClientRects();
     var firstrect = rects[0], lastrect = rects[rects.length - 1];
-    var data = { "size": this.MARKER_SIZE };
+    var data = { "reversed": reversed || false };
 
-    if((displaystart === undefined) || displaystart === true)
-        data.start = { "x": (firstrect.left - bodyrect.left) - (this.MARKER_SIZE / this.scale), "y": (firstrect.bottom  - bodyrect.top) };
-
-    if((displayend === undefined) || displayend === true)
-        data.end = { "x": (lastrect.right - bodyrect.left), "y": (lastrect.bottom  - bodyrect.top) };
-
+    data.start = { "x": (firstrect.left - bodyrect.left) - (this.MARKER_SIZE / this.scale), "y": (firstrect.bottom  - bodyrect.top) };
+    data.end = { "x": (lastrect.right - bodyrect.left), "y": (lastrect.bottom  - bodyrect.top) };
     WebPirate.postMessage("textselectorhandler_displayhandles", data);
 };
 
@@ -114,7 +108,7 @@ window.WebPirate_TextSelectorHandlerObject.prototype.select = function(clientx, 
 
     selection.removeAllRanges();
     selection.addRange(range);
-    this.displayHandles(selection);
+    this.displayHandles(range);
     WebPirate.postMessage("textselectorhandler_statechanged", { "enabled": true });
 };
 
