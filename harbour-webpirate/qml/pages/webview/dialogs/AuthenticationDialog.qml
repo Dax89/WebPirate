@@ -60,6 +60,7 @@ Dialog
                 id: tfpassword
                 width: parent.width
                 placeholderText: qsTr("Password")
+                echoMode: TextInput.Password
             }
         }
     }
