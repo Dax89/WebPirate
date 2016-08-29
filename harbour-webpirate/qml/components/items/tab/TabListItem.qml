@@ -127,6 +127,14 @@ ListItem
             }
         }
 
+        Image {
+            id: imgclose
+            source: "image://theme/icon-m-close"
+            anchors { right: parent.right; top: parent.top; rightMargin: Theme.paddingSmall; topMargin: Theme.paddingSmall }
+
+            MouseArea { anchors.fill: parent; onClicked: closeRequested() }
+        }
+
         Image
         {
             id: img
