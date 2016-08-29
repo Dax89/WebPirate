@@ -333,6 +333,26 @@ Rectangle
                 height: parent.height
                 anchors.verticalCenter: parent.verticalCenter
 
+                NumberAnimation on rotation {
+                    from: 0
+                    to: 360
+                    loops: Animation.Infinite
+                    duration: 2500
+                    alwaysRunToEnd: true
+
+                    running: {
+                        if(navigationBar.searchMode || navigationBar.clipboardMode || !navigationBar.webView)
+                            return false;
+
+                        var tab = currentTab();
+
+                        if(!tab || (tab.state !== "webview"))
+                            return false;
+
+                        return navigationBar.webView.loading;
+                    }
+                }
+
                 source: {
                     if(!navigationBar.normalMode || currentTab() && !currentTab().viewStack.empty)
                         return "image://theme/icon-close-app";
@@ -378,7 +398,10 @@ Rectangle
                     font.pixelSize: Theme.fontSizeSmall
                     font.bold: true
                     text: tabview.tabs.count
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
                     visible: navigationbar.normalMode && currentTab() && currentTab().viewStack.empty
+                    rotation: -btntabsorclose.rotation
                     z: -1
                 }
             }
