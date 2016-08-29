@@ -10,7 +10,7 @@ Rectangle
     property bool clipboardMode: false
 
     readonly property bool normalMode: !searchMode && !clipboardMode
-    readonly property real contentHeight: Theme.itemSizeSmall
+    readonly property real contentHeight: Theme.itemSizeMedium
 
     readonly property WebView webView: {
         var currenttab = tabview.currentTab();
