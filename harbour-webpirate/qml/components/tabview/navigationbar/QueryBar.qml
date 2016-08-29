@@ -1,7 +1,7 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
 
-SearchField
+TextField
 {
     property alias findError: querybar.errorHighlight
     property alias editing: querybar.focus
@@ -38,11 +38,30 @@ SearchField
         deselect();
     }
 
+    IconButton {
+        id: clearbutton
+        parent: querybar
+        anchors { right: parent.right; verticalCenter: parent.verticalCenter; rightMargin: Theme.horizontalPageMargin }
+        width: icon.width
+        height: parent.height
+        icon.source: "image://theme/icon-m-clear"
+        enabled: querybar.enabled
+        visible: (querybar.text.length && querybar.focus) > 0 ? 1 : 0
+
+        Behavior on opacity { FadeAnimation { } }
+
+        onClicked: {
+            querybar.text = "";
+            querybar._editor.forceActiveFocus();
+        }
+    }
+
     id: querybar
     font.pixelSize: Theme.fontSizeSmall
     focusOutBehavior: FocusBehavior.ClearItemFocus
     textLeftMargin: Theme.paddingMedium
     textRightMargin: Theme.paddingMedium
+    textTopMargin: height / 2 - _editor.implicitHeight / 2
     labelVisible: false
     background: null
 
