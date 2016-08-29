@@ -15,7 +15,6 @@ Item
         selector1.y = (selectdata.start.y * scaleFactor) - webView.contentY;
         selector2.x = (selectdata.end.x * scaleFactor) - webView.contentX;
         selector2.y = (selectdata.end.y * scaleFactor) - webView.contentY;
-        swapSelectors(selectdata.reversed);
 
         visible = selectdata.start || selectdata.end;
         selector1.visible = visible;
@@ -39,6 +38,19 @@ Item
     function resetSelectors() {
         selector1.startHandle = true;
         selector2.startHandle = false;
+    }
+
+    function isReversed(x, y, startselection) {
+        /* TODO: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        if(startselection) {
+            if(selector1.y === y)
+                return (selector1.x + selector1.width) <= x;
+
+            return (selector.1)
+        }
+
+        return boh;
+        */
     }
 
     id: webviewselector
@@ -84,8 +96,6 @@ Item
         onPressed: {
             var absoluteX = mouse.x - webView.contentX;
             var absoluteY = mouse.y - webView.contentY;
-            //startSelection = positionHit(selector1.startHandle ? selector1 : selector2, absoluteX, absoluteY);
-            //endSelection = positionHit(!selector2.startHandle ? selector2 : selector1, absoluteX, absoluteY);
             startSelection = positionHit(selector1, absoluteX, absoluteY);
             endSelection = positionHit(selector2, absoluteX, absoluteY);
 
@@ -106,11 +116,12 @@ Item
             if(!hasSelection || !moved(mouse.x, mouse.y))
                 return;
 
+            var reversed = isReversed(mouse.x, mouse.y, startSelection);
             var absoluteX = mouse.x - webView.contentX;
             var absoluteY = mouse.y - webView.contentY;
 
             var touchdata = { "start": startSelection,
-                              "reversed": selector2.startHandle,
+                              "reversed": reversed,
                               "x": absoluteX / webviewselector.scaleFactor,
                               "y": absoluteY / webviewselector.scaleFactor };
 

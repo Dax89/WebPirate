@@ -23,7 +23,7 @@ window.WebPirate_TextSelectorHandlerObject.prototype.updateSelection = function(
     var selection = window.getSelection();
     var oldrange = selection.getRangeAt(0);
     var newrange = document.caretRangeFromPoint(touchdata.x, touchdata.y - this.MARKER_SIZE);
-    var reversed = this.isReversed(newrange, oldrange, touchdata.start);
+    var reversed = touchdata.reversed; //this.isReversed(newrange, oldrange, touchdata.start);
     var range = document.createRange();
 
     if(touchdata.start) {
