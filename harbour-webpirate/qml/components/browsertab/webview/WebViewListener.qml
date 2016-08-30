@@ -134,7 +134,7 @@ Item
 
         function playYouTubeVideo(data) {
             var grabber = viewStack.push(Qt.resolvedUrl("../views/browsergrabber/BrowserGrabber.qml"), "mediagrabber");
-            YouTubeGrabber.grabVideo(data.videoId, grabber);
+            YouTubeGrabber.grabVideo(data.videoid, grabber);
         }
 
         function playDailyMotionVideo(data) {
