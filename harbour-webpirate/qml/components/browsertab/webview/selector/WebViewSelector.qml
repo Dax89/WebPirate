@@ -40,19 +40,6 @@ Item
         selector2.startHandle = false;
     }
 
-    function isReversed(x, y, startselection) {
-        /* TODO: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        if(startselection) {
-            if(selector1.y === y)
-                return (selector1.x + selector1.width) <= x;
-
-            return (selector.1)
-        }
-
-        return boh;
-        */
-    }
-
     id: webviewselector
     visible: false
 
@@ -116,12 +103,10 @@ Item
             if(!hasSelection || !moved(mouse.x, mouse.y))
                 return;
 
-            var reversed = isReversed(mouse.x, mouse.y, startSelection);
             var absoluteX = mouse.x - webView.contentX;
             var absoluteY = mouse.y - webView.contentY;
 
             var touchdata = { "start": startSelection,
-                              "reversed": reversed,
                               "x": absoluteX / webviewselector.scaleFactor,
                               "y": absoluteY / webviewselector.scaleFactor };
 
