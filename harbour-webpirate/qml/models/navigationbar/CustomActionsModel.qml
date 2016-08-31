@@ -13,7 +13,12 @@ Item
     signal sessionsRequested();
     signal cookiesRequested();
 
-    function execute(idx) { actionmodel[idx].execute(); }
+    function execute(idx)  {
+        if((idx <= 0) || (idx >= actionmodel.length))
+            return;
+
+        actionmodel[idx].execute();
+    }
 
     id: customactionsmodel
 

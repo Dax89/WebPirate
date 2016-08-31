@@ -258,7 +258,6 @@ DISTFILES += \
     qml/components/browsertab/views/browsergrabber/GrabberThumbnail.qml \
     qml/components/items/GrabberItem.qml \
     qml/js/MediaPlayerHelper.js \
-    qml/components/ImageButton.qml \
     qml/components/browsertab/views/browserplayer/mediacomponents/MediaPlayerError.qml \
     qml/models/BrowserTabModel.qml \
     qml/components/browsertab/views/browserplayer/mediacomponents/MediaPlayerPopup.qml \
@@ -286,4 +285,6 @@ DISTFILES += \
     qml/js/webview/lib/Theme.js \
     qml/components/browsertab/webview/selector/WebViewSelector.qml \
     qml/components/browsertab/webview/selector/SelectorHandle.qml \
-    qml/models/navigationbar/CustomActionsModel.qml
+    qml/models/navigationbar/CustomActionsModel.qml \
+    qml/components/navigationbar/ImageButton.qml \
+    qml/components/navigationbar/ActionButton.qml

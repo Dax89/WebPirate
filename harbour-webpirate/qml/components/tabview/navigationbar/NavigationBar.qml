@@ -2,6 +2,7 @@ import QtQuick 2.1
 import QtWebKit 3.0
 import Sailfish.Silica 1.0
 import "../../"
+import "../../navigationbar"
 import "../../../models"
 import "../../../models/navigationbar"
 
@@ -387,16 +388,15 @@ Rectangle
                 }
             }
 
-            ImageButton
+            ActionButton
             {
                 id: btncustomaction
-                source: settings.presscustomaction > 0 ? customactions.actionmodel[settings.presscustomaction].icon : ""
                 width: navigationbar.contentHeight
                 height: parent.height
                 anchors.verticalCenter: parent.verticalCenter
-                visible: settings.presscustomaction > 0
-                onClicked: customactions.execute(settings.presscustomaction)
-                onPressAndHold: customactions.execute(settings.longpresscustomaction)
+                customActions: customactions
+                pressCustomAction: settings.presscustomaction
+                longPressCustomAction: settings.longpresscustomaction
             }
 
             ImageButton
