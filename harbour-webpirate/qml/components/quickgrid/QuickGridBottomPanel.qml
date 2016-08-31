@@ -1,5 +1,6 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
+import ".."
 
 Item
 {
@@ -13,7 +14,7 @@ Item
         NumberAnimation { duration: 250; easing.type: Easing.InOutQuad }
     }
 
-    PanelBackground { anchors.fill: parent }
+    BackgroundRectangle { anchors.fill: parent }
 
     Row
     {

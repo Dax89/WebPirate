@@ -287,4 +287,5 @@ DISTFILES += \
     qml/components/browsertab/webview/selector/SelectorHandle.qml \
     qml/models/navigationbar/CustomActionsModel.qml \
     qml/components/navigationbar/ImageButton.qml \
-    qml/components/navigationbar/ActionButton.qml
+    qml/components/navigationbar/ActionButton.qml \
+    qml/components/BackgroundRectangle.qml

@@ -1,6 +1,7 @@
 import QtQuick 2.1
 import QtGraphicalEffects 1.0
 import Sailfish.Silica 1.0
+import ".."
 
 Item
 {
@@ -44,7 +45,7 @@ Item
             alwaysRunToEnd: true
         }
 
-        PanelBackground
+        BackgroundRectangle
         {
             id: thumbnail
             anchors { left: parent.left; top: parent.top; right: parent.right; bottom: lbltitle.top }

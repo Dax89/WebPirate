@@ -1,6 +1,7 @@
 import QtQuick 2.1
 import QtMultimedia 5.0
 import Sailfish.Silica 1.0
+import "../../../.."
 import "../../../../navigationbar"
 import "../../../../../js/UrlHelper.js" as UrlHelper
 
@@ -29,7 +30,7 @@ Rectangle
     z: 10
 
     Behavior on opacity { NumberAnimation { duration: 800; easing.type: Easing.Linear } }
-    PanelBackground { anchors.fill: parent }
+    BackgroundRectangle { anchors.fill: parent }
     MouseArea { anchors.fill: parent; onClicked: restoreOpacity() }
 
     Timer

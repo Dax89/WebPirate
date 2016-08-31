@@ -57,7 +57,7 @@ Page
         }
     }
 
-    PanelBackground
+    BackgroundRectangle
     {
         readonly property real itemWidth: bottompanel.width / 5
 

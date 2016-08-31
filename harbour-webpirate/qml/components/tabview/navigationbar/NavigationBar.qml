@@ -126,7 +126,7 @@ Rectangle
         }
     }
 
-    PanelBackground { anchors.fill: parent }
+    BackgroundRectangle { anchors.fill: parent }
 
     LoadingBar
     {
@@ -281,6 +281,7 @@ Rectangle
                     var tab = tabview.currentTab();
                     tab.getSelectedText(function(text) { settings.clipboard.copy(text); });
                     navigationbar.clipboardMode = false;
+                    webView.hideSelectors();
                 }
             }
 

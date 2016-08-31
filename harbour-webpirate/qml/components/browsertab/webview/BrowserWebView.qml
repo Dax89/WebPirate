@@ -51,6 +51,8 @@ SilicaWebView
         browsertab.thumbUpdated = !ignorewidth || !ignoreheight;
     }
 
+    function hideSelectors() { selector.hide(); }
+
     VerticalScrollDecorator { id: vscrolldecorator; flickable: webview }
     UrlSchemeDelegateHandler { id: urlschemedelegatehandler }
     WebViewListener { id: listener }
