@@ -397,6 +397,7 @@ Rectangle
                 customActions: customactions
                 pressCustomAction: settings.presscustomaction
                 longPressCustomAction: settings.longpresscustomaction
+                onFeedbackRequested: content.ngfeffect.play()
             }
 
             ImageButton
