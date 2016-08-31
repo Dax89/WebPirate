@@ -14,7 +14,7 @@ Column
     function hideAll() {
         alertdialog.visible = false;
         requestdialog.visible = false;
-        credentialdialog.visible = false;
+        //credentialdialog.visible = false;
         formresubmitdialog.visible = false;
         notificationdialog.visible = false;
         itemselector.visible = false;
