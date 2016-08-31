@@ -70,6 +70,12 @@ ListItem
         }
 
         MenuItem {
+            text: tab.webView.readerModeEnabled ? qsTr("Enable Reader Mode") : qsTr("Disable Reader Mode")
+            visible: tab && (tab.state === "webview")
+            onClicked: tab.webView.switchReaderMode();
+        }
+
+        MenuItem {
             text: qsTr("Duplicate tab")
             onClicked: tabView.addTab(tab.webUrl, false, model.index + 1);
         }

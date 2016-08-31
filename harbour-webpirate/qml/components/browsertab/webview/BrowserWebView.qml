@@ -13,6 +13,7 @@ SilicaWebView
 {
     property alias textSelector: selector
     property int itemSelectorIndex: -1           // Keeps the selected index of ItemSelector
+    property bool readerModeEnabled: false       // Check if Reader Mode is active
     property bool nightModeEnabled: false        // Check if Night Mode is visually active
     property bool ambienceBrowsingEnabled: false // Check if Ambience Browsing is visually active
     property bool favorite: false
@@ -49,6 +50,11 @@ SilicaWebView
             webview.height = tabView.height;
 
         browsertab.thumbUpdated = !ignorewidth || !ignoreheight;
+    }
+
+    function switchReaderMode() {
+        webview.postMessage(readerModeEnabled ? "readermodehandler_disable" : "readermodehandler_enable");
+        readerModeEnabled = !readerModeEnabled;
     }
 
     function hideSelectors() { selector.hide(); }
@@ -168,8 +174,9 @@ SilicaWebView
                                 Qt.resolvedUrl("../../../js/webview/overrides/NotificationOverrider.js"),
 
                                 // Polyfills
-                                Qt.resolvedUrl("../../../js/webview/polyfills/es6-collections.min.js"), // ES6 Harmony Collections: https://github.com/WebReflection/es6-collections
-                                Qt.resolvedUrl("../../../js/webview/polyfills/canvg.min.js"),           // SVG Support: https://github.com/gabelerner/canvg
+                                Qt.resolvedUrl("../../../js/webview/3rdparty/es6-collections.min.js"), // ES6 Harmony Collections: https://github.com/WebReflection/es6-collections
+                                Qt.resolvedUrl("../../../js/webview/3rdparty/canvg.min.js"),           // SVG Support: https://github.com/gabelerner/canvg
+                                Qt.resolvedUrl("../../../js/webview/3rdparty/readability.min.js"),     // Firefox's Reader Mode
 
                                 // WebPirate SDK
                                 Qt.resolvedUrl("../../../js/webview/lib/WebPirate.js"),
@@ -177,6 +184,7 @@ SilicaWebView
                                 Qt.resolvedUrl("../../../js/webview/lib/PixelRatioHandler.js"),
                                 Qt.resolvedUrl("../../../js/webview/lib/Theme.js"),
                                 Qt.resolvedUrl("../../../js/webview/lib/NightModeHandler.js"),
+                                Qt.resolvedUrl("../../../js/webview/lib/ReaderModeHandler.js"),
                                 Qt.resolvedUrl("../../../js/webview/lib/TextSelectorHandler.js"),
                                 Qt.resolvedUrl("../../../js/webview/lib/TouchHandler.js"),
                                 Qt.resolvedUrl("../../../js/webview/lib/SubmitHandler.js"),
@@ -337,6 +345,7 @@ SilicaWebView
             }
 
             browsertab.popups.clear();
+            webview.readerModeEnabled = false;
             webview.nightModeEnabled = false;
             return;
         }

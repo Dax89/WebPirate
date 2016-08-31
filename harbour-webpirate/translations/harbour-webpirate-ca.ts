@@ -469,6 +469,10 @@
         <source>New Tab</source>
         <translation type="unfinished">Nova pestanya</translation>
     </message>
+    <message>
+        <source>Reader Mode</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>DomainListItem</name>

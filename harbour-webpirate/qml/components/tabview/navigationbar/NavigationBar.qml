@@ -79,6 +79,7 @@ Rectangle
         onHomePageRequested: search(settings.homepage)
         onNewTabRequested: tabview.addTab(settings.homepage)
         onCloseCurrentTabRequested: tabview.removeTab(tabview.currentIndex)
+        onReaderModeRequested: webView.switchReaderMode()
 
         onNightModeRequested: {
             var tab = currentTab();

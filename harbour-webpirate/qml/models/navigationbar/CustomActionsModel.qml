@@ -5,6 +5,7 @@ Item
     property alias actionmodel: customactionsmodel.children
 
     signal homePageRequested();
+    signal readerModeRequested();
     signal nightModeRequested();
     signal newTabRequested();
     signal closeCurrentTabRequested();
@@ -37,6 +38,11 @@ Item
                 Item { readonly property string name: qsTr("Night Mode")
                        readonly property string icon: "qrc:///res/nightmode.png"
                        function execute() { nightModeRequested(); }
+                     },
+
+                Item { readonly property string name: qsTr("Reader Mode")
+                       readonly property string icon: "qrc:///res/reader.png"
+                       function execute() { readerModeRequested(); }
                      },
 
                 Item { readonly property string name: qsTr("New Tab")

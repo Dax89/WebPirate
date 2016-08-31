@@ -26,6 +26,10 @@ window.WebPirate_MessageListenerObject.prototype.onMessage = function(message) {
         WebPirate_NightModeHandler.switchMode(true);
     else if(obj.type === "nightmodehandler_disable")
         WebPirate_NightModeHandler.switchMode(false);
+    else if(obj.type === "readermodehandler_enable")
+        WebPirate_ReaderModeHandler.switchMode(true);
+    else if(obj.type === "readermodehandler_disable")
+        WebPirate_ReaderModeHandler.switchMode(false);
     else if(obj.type === "notificationhandler_granted")
         window.Notification.permission = window.Notification.__WP_PERMISSION_GRANTED__;
     else if(obj.type === "notificationhandler_denied")

@@ -47,7 +47,7 @@ Page
                     return;
                 }
 
-                remorseAction(qsTr("Imporing Favorites"), function() {
+                remorseAction(qsTr("Importing Favorites"), function() {
                     importtypes[index].execute();
                 });
             }

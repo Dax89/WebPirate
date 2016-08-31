@@ -21,5 +21,6 @@
         <file>res/popup.png</file>
         <file>res/grabber.png</file>
         <file>res/nightmode.png</file>
+        <file>res/reader.png</file>
     </qresource>
 </RCC>

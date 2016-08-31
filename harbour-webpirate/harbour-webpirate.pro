@@ -267,8 +267,6 @@ DISTFILES += \
     qml/js/webview/overrides/AjaxOverrider.js \
     qml/js/webview/overrides/ObjectOverrider.js \
     qml/js/webview/overrides/TagOverrider.js \
-    qml/js/webview/polyfills/canvg.min.js \
-    qml/js/webview/polyfills/es6-collections.min.js \
     qml/js/webview/lib/SubmitHandler.js \
     qml/js/webview/lib/StyleHandler.js \
     qml/js/webview/lib/Utils.js \
@@ -288,4 +286,8 @@ DISTFILES += \
     qml/models/navigationbar/CustomActionsModel.qml \
     qml/components/navigationbar/ImageButton.qml \
     qml/components/navigationbar/ActionButton.qml \
-    qml/components/BackgroundRectangle.qml
+    qml/components/BackgroundRectangle.qml \
+    qml/js/webview/3rdparty/es6-collections.min.js \
+    qml/js/webview/3rdparty/canvg.min.js \
+    qml/js/webview/3rdparty/readability.min.js \
+    qml/js/webview/lib/ReaderModeHandler.js
