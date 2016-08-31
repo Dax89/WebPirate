@@ -95,6 +95,34 @@
         <source>Greek</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Report an Issue</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>About WebPirate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>WebPirate is distributed under the GPLv3 license</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>License</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Developers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Translations</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Third Party</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>AdBlockDownloaderPage</name>
@@ -472,6 +500,25 @@
     <message>
         <source>Reader Mode</source>
         <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>DevelopersPage</name>
+    <message>
+        <source>Developers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Author</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Contributor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Icon Designer</source>
+        <translation type="unfinished">Designer de l&apos;icône </translation>
     </message>
 </context>
 <context>
@@ -1398,6 +1445,55 @@
     <message>
         <source>Copy</source>
         <translation>Copier</translation>
+    </message>
+</context>
+<context>
+    <name>ThirdPartyLabel</name>
+    <message>
+        <source>License</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Project Page</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ThirdPartyPage</name>
+    <message>
+        <source>Third Party</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>MIT License</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Apache License</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>TranslationsPage</name>
+    <message>
+        <source>Translation Platform</source>
+        <translation type="unfinished">Plateforme de traduction</translation>
+    </message>
+    <message>
+        <source>Translations</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Coordinators</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Translators</source>
+        <translation type="unfinished">Traducteurs</translation>
+    </message>
+    <message>
+        <source>Reviewers</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

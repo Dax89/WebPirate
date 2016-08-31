@@ -66,7 +66,9 @@ SOURCES += src/harbour-webpirate.cpp \
     src/dbus/notification/notification.cpp \
     src/dbus/notification/notificationmanagerproxy.cpp \
     src/dbus/notification/notificationmanager.cpp \
-    src/adblock/adblockhostsparser.cpp
+    src/adblock/adblockhostsparser.cpp \
+    src/translation/translationinfoitem.cpp \
+    src/translation/translationsmodel.cpp
 
 OTHER_FILES += qml/harbour-webpirate.qml \
     rpm/harbour-webpirate.spec \
@@ -179,7 +181,6 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/menus/HistoryMenu.qml \
     qml/menus/LinkMenu.qml \
     qml/menus/ShareMenu.qml \
-    qml/pages/settings/AboutPage.qml \
     qml/pages/quickgrid/QuickGridPage.qml \
     qml/pages/settings/popup/NewPopupRulePage.qml \
     qml/pages/settings/popup/PopupManagerPage.qml \
@@ -250,7 +251,9 @@ HEADERS += \
     src/dbus/notification/notification.h \
     src/dbus/notification/notificationmanagerproxy.h \
     src/dbus/notification/notificationmanager.h \
-    src/adblock/adblockhostsparser.h
+    src/adblock/adblockhostsparser.h \
+    src/translation/translationinfoitem.h \
+    src/translation/translationsmodel.h
 
 DISTFILES += \
     rpm/harbour-webpirate.changes \
@@ -290,4 +293,10 @@ DISTFILES += \
     qml/js/webview/3rdparty/es6-collections.min.js \
     qml/js/webview/3rdparty/canvg.min.js \
     qml/js/webview/3rdparty/readability.min.js \
-    qml/js/webview/lib/ReaderModeHandler.js
+    qml/js/webview/lib/ReaderModeHandler.js \
+    qml/pages/settings/about/AboutPage.qml \
+    qml/pages/settings/about/DevelopersPage.qml \
+    qml/components/CollaboratorsLabel.qml \
+    qml/pages/settings/about/ThirdPartyPage.qml \
+    qml/pages/settings/about/TranslationsPage.qml \
+    qml/components/ThirdPartyLabel.qml

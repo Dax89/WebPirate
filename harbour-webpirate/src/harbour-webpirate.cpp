@@ -23,6 +23,8 @@
 #include "downloadmanager/downloadmanager.h"
 #include "helper/clipboardhelper.h"
 #include "selector/filesmodel.h"
+#include "translation/translationsmodel.h"
+#include "translation/translationinfoitem.h"
 
 void pluginenv()
 {
@@ -60,6 +62,9 @@ int main(int argc, char *argv[])
     qmlRegisterType<AbstractDownloadItem>("harbour.webpirate.Private", 1, 0, "DownloadItem");
     qmlRegisterType<FavoriteItem>("harbour.webpirate.Private", 1, 0, "FavoriteItem");
     qmlRegisterType<MimeDatabase>("harbour.webpirate.Private", 1, 0, "MimeDatabase");
+
+    qmlRegisterType<TranslationInfoItem>("harbour.webpirate.Translation", 1, 0, "TranslationInfoItem");
+    qmlRegisterType<TranslationsModel>("harbour.webpirate.Translation", 1, 0, "TranslationsModel");
 
     qmlRegisterSingletonType<AES256>("harbour.webpirate.Security", 1, 0, "AES256", &AES256::initialize);
     qmlRegisterSingletonType<NetworkInterfaces>("harbour.webpirate.Network", 1, 0, "NetworkInterfaces", &NetworkInterfaces::initialize);

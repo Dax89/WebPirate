@@ -1,0 +1,177 @@
+[
+    {
+        "coordinators": [
+            "fri666"
+        ], 
+        "language_code": "ca", 
+        "translators": [], 
+        "reviewers": []
+    }, 
+    {
+        "coordinators": [
+            "gexc"
+        ], 
+        "language_code": "zh_CN", 
+        "translators": [], 
+        "reviewers": []
+    }, 
+    {
+        "coordinators": [
+            "hanhsuan"
+        ], 
+        "language_code": "zh_TW", 
+        "translators": [], 
+        "reviewers": []
+    }, 
+    {
+        "coordinators": [
+            "cocovina"
+        ], 
+        "language_code": "cs_CZ", 
+        "translators": [
+            "Bobsikus", 
+            "PawelSpoon", 
+            "nodevel"
+        ], 
+        "reviewers": []
+    }, 
+    {
+        "coordinators": [
+            "Vistaus"
+        ], 
+        "language_code": "nl_NL", 
+        "translators": [], 
+        "reviewers": [
+            "Dude259", 
+            "pljmn"
+        ]
+    }, 
+    {
+        "coordinators": [
+            "ari_jarvio"
+        ], 
+        "language_code": "fi_FI", 
+        "translators": [
+            "sakustar", 
+            "tattuh"
+        ], 
+        "reviewers": [
+            "reviewjolla"
+        ]
+    }, 
+    {
+        "coordinators": [
+            "Dax89", 
+            "Jordi"
+        ], 
+        "language_code": "fr", 
+        "translators": [
+            "pljmn", 
+            "malibu1106", 
+            "Nerfiaux"
+        ], 
+        "reviewers": []
+    }, 
+    {
+        "coordinators": [
+            "Moth", 
+            "Dax89"
+        ], 
+        "language_code": "de", 
+        "translators": [
+            "PawelSpoon", 
+            "blubdbibub", 
+            "snowpolloi"
+        ], 
+        "reviewers": []
+    }, 
+    {
+        "coordinators": [
+            "dglent"
+        ], 
+        "language_code": "el", 
+        "translators": [], 
+        "reviewers": []
+    }, 
+    {
+        "coordinators": [
+            "Dax89"
+        ], 
+        "language_code": "hu", 
+        "translators": [
+            "Headarias"
+        ], 
+        "reviewers": []
+    }, 
+    {
+        "coordinators": [
+            "Dax89"
+        ], 
+        "language_code": "it", 
+        "translators": [
+            "palikao"
+        ], 
+        "reviewers": [
+            "tichy", 
+            "Watchmaker"
+        ]
+    }, 
+    {
+        "coordinators": [
+            "rrijken"
+        ], 
+        "language_code": "ja", 
+        "translators": [], 
+        "reviewers": []
+    }, 
+    {
+        "coordinators": [
+            "Dax89"
+        ], 
+        "language_code": "pl", 
+        "translators": [
+            "mp107"
+        ], 
+        "reviewers": []
+    }, 
+    {
+        "coordinators": [
+            "lewa"
+        ], 
+        "language_code": "ru_RU", 
+        "translators": [
+            "akalmykov", 
+            "Wedmer", 
+            "SYSSTEMS", 
+            "grin.sv", 
+            "gulandval"
+        ], 
+        "reviewers": []
+    }, 
+    {
+        "coordinators": [
+            "sponka"
+        ], 
+        "language_code": "sl_SI", 
+        "translators": [], 
+        "reviewers": []
+    }, 
+    {
+        "coordinators": [
+            "carmenfdezb"
+        ], 
+        "language_code": "es", 
+        "translators": [], 
+        "reviewers": [
+            "ferlanero"
+        ]
+    }, 
+    {
+        "coordinators": [
+            "eson"
+        ], 
+        "language_code": "sv_SE", 
+        "translators": [], 
+        "reviewers": []
+    }
+]

@@ -72,7 +72,7 @@ ListItem
         MenuItem {
             text: tab.webView.readerModeEnabled ? qsTr("Disable Reader Mode") : qsTr("Enable Reader Mode")
             visible: tab && (tab.state === "webview")
-            onClicked: tab.webView.switchReaderMode();
+            onClicked: tab.webView.switchReaderMode()
         }
 
         MenuItem {
