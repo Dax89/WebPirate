@@ -2,6 +2,8 @@ import QtQuick 2.1
 import QtWebKit 3.0
 import Sailfish.Silica 1.0
 import "../../"
+import "../../../models"
+import "../../../models/navigationbar"
 
 Rectangle
 {
@@ -66,6 +68,59 @@ Rectangle
 
         if(searchMode)
             solidify();
+    }
+
+    CustomActionsModel {
+        id: customactions
+
+        SegmentsModel { id: segmentsmodel }
+
+        onHomePageRequested: search(settings.homepage)
+
+        onNightModeRequested: {
+            var tab = currentTab();
+
+            if(!tab)
+                return;
+
+            tab.switchNightMode();
+        }
+
+        onClosedTabsRequested: {
+            pageStack.push(Qt.resolvedUrl("../../../pages/segment/SegmentsPage.qml"), { "settings": settings,
+                                                                                        "tabView": tabview,
+                                                                                        "currentSegment": segmentsmodel.closedTabsSegment });
+        }
+
+        onFavoritesRequested: {
+            pageStack.push(Qt.resolvedUrl("../../../pages/segment/SegmentsPage.qml"), { "settings": settings,
+                                                                                        "tabView": tabview,
+                                                                                        "currentSegment": segmentsmodel.favoritesSegment });
+        }
+
+        onDownloadsRequested: {
+            pageStack.push(Qt.resolvedUrl("../../../pages/segment/SegmentsPage.qml"), { "settings": settings,
+                                                                                        "tabView": tabview,
+                                                                                        "currentSegment": segmentsmodel.downloadsSegment });
+        }
+
+        onNavigationHistoryRequested: {
+            pageStack.push(Qt.resolvedUrl("../../../pages/segment/SegmentsPage.qml"), { "settings": settings,
+                                                                                        "tabView": tabview,
+                                                                                        "currentSegment": segmentsmodel.historySegment });
+        }
+
+        onSessionsRequested: {
+            pageStack.push(Qt.resolvedUrl("../../../pages/segment/SegmentsPage.qml"), { "settings": settings,
+                                                                                        "tabView": tabview,
+                                                                                        "currentSegment": segmentsmodel.sessionsSegment });
+        }
+
+        onCookiesRequested: {
+            pageStack.push(Qt.resolvedUrl("../../../pages/segment/SegmentsPage.qml"), { "settings": settings,
+                                                                                        "tabView": tabview,
+                                                                                        "currentSegment": segmentsmodel.cookieSegment });
+        }
     }
 
     PanelBackground { anchors.fill: parent }
@@ -162,7 +217,13 @@ Rectangle
                 visible: !navigationbar.clipboardMode
 
                 width: {
-                    var w = parent.width - btntabsorclose.width - (btnpopups.visible ? btnpopups.width : 0);
+                    var w = parent.width - btntabsorclose.width;
+
+                    if(btnpopups.visible)
+                        w -= btnpopups.width;
+
+                    if(btncustomaction.visible)
+                        w -= btncustomaction.width;
 
                     if(navigationbar.searchMode)
                         w -= (btnsearchup.width + btnsearchdown.width + btnshareorsearch.width);
@@ -324,6 +385,18 @@ Rectangle
                     var tab = tabview.currentTab();
                     pageStack.push(Qt.resolvedUrl("../../../pages/popup/PopupBlockerPage.qml"), { "popupModel": tab.popups, "tabView": tabview });
                 }
+            }
+
+            ImageButton
+            {
+                id: btncustomaction
+                source: settings.presscustomaction > 0 ? customactions.actionmodel[settings.presscustomaction].icon : ""
+                width: navigationbar.contentHeight
+                height: parent.height
+                anchors.verticalCenter: parent.verticalCenter
+                visible: settings.presscustomaction > 0
+                onClicked: customactions.execute(settings.presscustomaction)
+                onPressAndHold: customactions.execute(settings.longpresscustomaction)
             }
 
             ImageButton

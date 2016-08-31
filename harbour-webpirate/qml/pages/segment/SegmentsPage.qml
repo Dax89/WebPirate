@@ -11,14 +11,7 @@ Page
     property Settings settings
     property TabView tabView
 
-    id: segmentspage
-    allowedOrientations: defaultAllowedOrientations
-
-    Component.onCompleted: {
-        loader.setSource(Qt.resolvedUrl("../../components/segments/TabsSegment.qml")); // Tabs by default
-    }
-
-    onCurrentSegmentChanged: {
+    function loadSegment() {
         if(currentSegment === segmentsmodel.tabsSegment)
             loader.setSource(Qt.resolvedUrl("../../components/segments/TabsSegment.qml"));
         else if(currentSegment === segmentsmodel.closedTabsSegment)
@@ -36,6 +29,11 @@ Page
         else
             loader.sourceComponent = null;
     }
+
+    id: segmentspage
+    allowedOrientations: defaultAllowedOrientations
+    Component.onCompleted: loadSegment()
+    onCurrentSegmentChanged: loadSegment()
 
     SegmentsModel { id: segmentsmodel }
 
@@ -74,7 +72,7 @@ Page
             height: bottompanel.height
             clip: true
             orientation: ListView.Horizontal
-            currentIndex: 0
+            currentIndex: segmentspage.currentSegment
             model: segmentsmodel.elements
 
             delegate: ListItem {
@@ -86,7 +84,6 @@ Page
                         loader.item.unload();
 
                     segmentspage.currentSegment = model.segment;
-                    lvsections.currentIndex = model.index;
                 }
 
                 Image {

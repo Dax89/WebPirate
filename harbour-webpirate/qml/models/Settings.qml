@@ -29,14 +29,16 @@ QtObject
     property CoverModel coveractions: CoverModel { }
     property ClipboardHelper clipboard: ClipboardHelper { }
 
-    property int searchengine        /* Search Engine Index */
-    property int useragent           /* User Agent Index */
-    property string homepage         /* HomePage Url */
-    property bool clearonexit        /* Wipe UserData on exit */
-    property bool keepfavicons       /* Keep Icon Database on data deletion */
-    property bool restoretabs        /* Restore Tabs at Startup */
-    property bool closelasttab       /* Close Last Tab */
-    property bool nightmode          /* Night Mode */
+    property int searchengine            /* Search Engine Index */
+    property int useragent               /* User Agent Index */
+    property int presscustomaction       /* Custom action on Press */
+    property int longpresscustomaction   /* Custom action on Long Press */
+    property string homepage             /* HomePage Url */
+    property bool clearonexit            /* Wipe UserData on exit */
+    property bool keepfavicons           /* Keep Icon Database on data deletion */
+    property bool restoretabs            /* Restore Tabs at Startup */
+    property bool closelasttab           /* Close Last Tab */
+    property bool nightmode              /* Night Mode */
 
     /* Experimental Settings */
     property bool exp_overridetextfields /* Overrides WebView's text fields with Sailfish ones */

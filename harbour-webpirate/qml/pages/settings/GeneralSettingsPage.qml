@@ -1,6 +1,7 @@
 import QtQuick 2.1
 import Sailfish.Silica 1.0
 import "../../models"
+import "../../models/navigationbar"
 import "../../js/UrlHelper.js" as UrlHelper
 import "../../js/settings/Database.js" as Database
 import "../../js/settings/UserAgents.js" as UserAgents
@@ -21,13 +22,19 @@ Dialog
 
         settings.searchengine = cbsearchengines.currentIndex;
         settings.useragent = cbuseragent.currentIndex;
+        settings.presscustomaction = cbcustomactionpress.currentIndex;
+        settings.longpresscustomaction = cbcustomactionlongpress.currentIndex;
 
         Database.transaction(function(tx) {
             Database.transactionSet(tx, "homepage", settings.homepage);
             Database.transactionSet(tx, "searchengine", settings.searchengine);
             Database.transactionSet(tx, "useragent", settings.useragent);
+            Database.transactionSet(tx, "presscustomaction", settings.presscustomaction);
+            Database.transactionSet(tx, "longpresscustomaction", settings.longpresscustomaction);
         });
     }
+
+    CustomActionsModel { id: customactions }
 
     SilicaFlickable
     {
@@ -108,6 +115,45 @@ Dialog
 
                 onCheckedChanged: {
                     settings.defaultbrowser.enabled = checked;
+                }
+            }
+
+            SectionHeader { text: qsTr("Custom action") }
+
+            ComboBox
+            {
+                id: cbcustomactionpress
+                label: qsTr("Pressed")
+                width: parent.width
+                currentIndex: settings.presscustomaction
+
+                menu: ContextMenu {
+                    Repeater {
+                        model: customactions.actionmodel
+
+                        MenuItem {
+                            text: customactions.actionmodel[index].name
+                        }
+                    }
+                }
+            }
+
+            ComboBox
+            {
+                id: cbcustomactionlongpress
+                label: qsTr("Long Pressed")
+                width: parent.width
+                enabled: cbcustomactionpress.currentIndex !== 0
+                currentIndex: settings.longpresscustomaction
+
+                menu: ContextMenu {
+                    Repeater {
+                        model: customactions.actionmodel
+
+                        MenuItem {
+                            text: customactions.actionmodel[index].name
+                        }
+                    }
                 }
             }
         }

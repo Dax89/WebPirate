@@ -424,6 +424,45 @@
     </message>
 </context>
 <context>
+    <name>CustomActionsModel</name>
+    <message>
+        <source>No Action</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Home Page</source>
+        <translation type="unfinished">Page d&apos;acceuil</translation>
+    </message>
+    <message>
+        <source>Night Mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Closed Tabs</source>
+        <translation type="unfinished">Onglets fermés</translation>
+    </message>
+    <message>
+        <source>Favorites</source>
+        <translation type="unfinished">Favoris</translation>
+    </message>
+    <message>
+        <source>Downloads</source>
+        <translation type="unfinished">Téléchargements</translation>
+    </message>
+    <message>
+        <source>Navigation History</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Sessions</source>
+        <translation type="unfinished">Sessions</translation>
+    </message>
+    <message>
+        <source>Cookies</source>
+        <translation type="unfinished">Cookies</translation>
+    </message>
+</context>
+<context>
     <name>DomainListItem</name>
     <message>
         <source>Cookies:</source>
@@ -665,6 +704,18 @@
     <message>
         <source>Set as default browser</source>
         <translation>Définir comme navigateur par défaut</translation>
+    </message>
+    <message>
+        <source>Custom action</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Pressed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Long Pressed</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

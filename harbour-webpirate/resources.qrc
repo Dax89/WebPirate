@@ -20,5 +20,6 @@
         <file>res/loaderror_white.png</file>
         <file>res/popup.png</file>
         <file>res/grabber.png</file>
+        <file>res/nightmode.png</file>
     </qresource>
 </RCC>

@@ -424,6 +424,45 @@
     </message>
 </context>
 <context>
+    <name>CustomActionsModel</name>
+    <message>
+        <source>No Action</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Home Page</source>
+        <translation type="unfinished">Kotisivu</translation>
+    </message>
+    <message>
+        <source>Night Mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Closed Tabs</source>
+        <translation type="unfinished">Suljetut välilehdet</translation>
+    </message>
+    <message>
+        <source>Favorites</source>
+        <translation type="unfinished">Suosikit</translation>
+    </message>
+    <message>
+        <source>Downloads</source>
+        <translation type="unfinished">Lataukset</translation>
+    </message>
+    <message>
+        <source>Navigation History</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Sessions</source>
+        <translation type="unfinished">Istunnot</translation>
+    </message>
+    <message>
+        <source>Cookies</source>
+        <translation type="unfinished">Evästeet</translation>
+    </message>
+</context>
+<context>
     <name>DomainListItem</name>
     <message>
         <source>Cookies:</source>
@@ -665,6 +704,18 @@
     <message>
         <source>Set as default browser</source>
         <translation>Aseta oletusselaimeksi</translation>
+    </message>
+    <message>
+        <source>Custom action</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Pressed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Long Pressed</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

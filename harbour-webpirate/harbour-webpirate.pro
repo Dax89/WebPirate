@@ -285,4 +285,5 @@ DISTFILES += \
     qml/js/webview/lib/TextSelectorHandler.js \
     qml/js/webview/lib/Theme.js \
     qml/components/browsertab/webview/selector/WebViewSelector.qml \
-    qml/components/browsertab/webview/selector/SelectorHandle.qml
+    qml/components/browsertab/webview/selector/SelectorHandle.qml \
+    qml/models/navigationbar/CustomActionsModel.qml

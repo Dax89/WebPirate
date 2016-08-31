@@ -56,6 +56,8 @@ ApplicationWindow
                 settings.useragent = (ua === false ? 0 : ua);
 
                 settings.adblockmanager.enabled = parseInt(Database.transactionGet(tx, "blockads"));
+                settings.presscustomaction = parseInt(Database.transactionGet(tx, "presscustomaction"));
+                settings.longpresscustomaction = parseInt(Database.transactionGet(tx, "longpresscustomaction"));
                 settings.nightmode = parseInt(Database.transactionGet(tx, "nightmode"));
                 settings.keepfavicons = parseInt(Database.transactionGet(tx, "keepfavicons"));
                 settings.clearonexit = parseInt(Database.transactionGet(tx, "clearonexit"));
