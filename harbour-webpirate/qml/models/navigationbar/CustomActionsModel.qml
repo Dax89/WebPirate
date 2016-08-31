@@ -6,6 +6,8 @@ Item
 
     signal homePageRequested();
     signal nightModeRequested();
+    signal newTabRequested();
+    signal closeCurrentTabRequested();
     signal closedTabsRequested();
     signal favoritesRequested();
     signal downloadsRequested();
@@ -35,6 +37,16 @@ Item
                 Item { readonly property string name: qsTr("Night Mode")
                        readonly property string icon: "qrc:///res/nightmode.png"
                        function execute() { nightModeRequested(); }
+                     },
+
+                Item { readonly property string name: qsTr("New Tab")
+                       readonly property string icon: "qrc:///res/add.png"
+                       function execute() { newTabRequested(); }
+                     },
+
+                Item { readonly property string name: qsTr("Close Current Tab")
+                       readonly property string icon: "qrc:///res/close.png"
+                       function execute() { closeCurrentTabRequested(); }
                      },
 
                 Item { readonly property string name: qsTr("Closed Tabs")

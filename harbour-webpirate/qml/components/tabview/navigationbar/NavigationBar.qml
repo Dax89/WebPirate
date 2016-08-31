@@ -77,6 +77,8 @@ Rectangle
         SegmentsModel { id: segmentsmodel }
 
         onHomePageRequested: search(settings.homepage)
+        onNewTabRequested: tabview.addTab(settings.homepage)
+        onCloseCurrentTabRequested: tabview.removeTab(tabview.currentIndex)
 
         onNightModeRequested: {
             var tab = currentTab();

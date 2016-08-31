@@ -461,6 +461,14 @@
         <source>Cookies</source>
         <translation type="unfinished">Cookie</translation>
     </message>
+    <message>
+        <source>Close Current Tab</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>New Tab</source>
+        <translation type="unfinished">Nuova scheda</translation>
+    </message>
 </context>
 <context>
     <name>DomainListItem</name>
