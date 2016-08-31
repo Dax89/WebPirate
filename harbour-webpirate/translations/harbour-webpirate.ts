@@ -618,7 +618,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Imporing Favorites</source>
+        <source>Importing Favorites</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1337,6 +1337,14 @@
     </message>
     <message>
         <source>Close</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Enable Reader Mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Disable Reader Mode</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

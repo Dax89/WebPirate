@@ -398,6 +398,7 @@ Rectangle
                 width: navigationbar.contentHeight
                 height: parent.height
                 anchors.verticalCenter: parent.verticalCenter
+                browserTab: tabview.currentTab()
                 customActions: customactions
                 pressCustomAction: settings.presscustomaction
                 longPressCustomAction: settings.longpresscustomaction
@@ -423,7 +424,7 @@ Rectangle
 
                         var tab = currentTab();
 
-                        if(!tab || (tab.state !== "webview"))
+                        if(!tab || !tab.viewStack.empty || (tab.state !== "webview"))
                             return false;
 
                         return navigationBar.webView.loading;

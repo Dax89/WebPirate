@@ -618,8 +618,8 @@
         <translation>Från Sailfish webbläsare</translation>
     </message>
     <message>
-        <source>Imporing Favorites</source>
-        <translation>Importerar favoriter</translation>
+        <source>Importing Favorites</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1337,6 +1337,14 @@
     </message>
     <message>
         <source>Close</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Enable Reader Mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Disable Reader Mode</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
