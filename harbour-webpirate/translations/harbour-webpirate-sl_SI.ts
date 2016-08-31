@@ -4,38 +4,6 @@
 <context>
     <name>AboutPage</name>
     <message>
-        <source>About Web Pirate</source>
-        <translation>O programu</translation>
-    </message>
-    <message>
-        <source>Catalan</source>
-        <translation>Katalonsko</translation>
-    </message>
-    <message>
-        <source>Chinese</source>
-        <translation>Kitajsko</translation>
-    </message>
-    <message>
-        <source>Dutch</source>
-        <translation>Nizozemsko</translation>
-    </message>
-    <message>
-        <source>French</source>
-        <translation>Francosko</translation>
-    </message>
-    <message>
-        <source>German</source>
-        <translation>Namško</translation>
-    </message>
-    <message>
-        <source>Russian</source>
-        <translation>Rusko</translation>
-    </message>
-    <message>
-        <source>Swedish</source>
-        <translation>Švedsko</translation>
-    </message>
-    <message>
         <source>Version</source>
         <translation>Različica</translation>
     </message>
@@ -44,56 +12,8 @@
         <translation>Spletni brskalnik z zavihki za SailfishOS, temelječ na WebKit</translation>
     </message>
     <message>
-        <source>Developer</source>
-        <translation>Razvijalec</translation>
-    </message>
-    <message>
         <source>GitHub Repository</source>
         <translation>GitHub skladišče</translation>
-    </message>
-    <message>
-        <source>Translators</source>
-        <translation>Prevajalci</translation>
-    </message>
-    <message>
-        <source>Slovenian</source>
-        <translation>Slovensko</translation>
-    </message>
-    <message>
-        <source>Japanese</source>
-        <translation>Japonsko</translation>
-    </message>
-    <message>
-        <source>Czech</source>
-        <translation>Češko</translation>
-    </message>
-    <message>
-        <source>Spanish</source>
-        <translation>Špansko</translation>
-    </message>
-    <message>
-        <source>Italian</source>
-        <translation>Italijansko</translation>
-    </message>
-    <message>
-        <source>Finnish</source>
-        <translation>Finsko</translation>
-    </message>
-    <message>
-        <source>Icon Designer</source>
-        <translation>Oblikovalec ikone</translation>
-    </message>
-    <message>
-        <source>Translation Platform</source>
-        <translation>Platforma za prevajanje</translation>
-    </message>
-    <message>
-        <source>Contributors</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Greek</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Report an Issue</source>

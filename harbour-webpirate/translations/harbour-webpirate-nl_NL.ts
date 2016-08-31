@@ -4,38 +4,6 @@
 <context>
     <name>AboutPage</name>
     <message>
-        <source>About Web Pirate</source>
-        <translation>Over WebPirate</translation>
-    </message>
-    <message>
-        <source>Catalan</source>
-        <translation>Catalaans</translation>
-    </message>
-    <message>
-        <source>Chinese</source>
-        <translation>Chinees</translation>
-    </message>
-    <message>
-        <source>Dutch</source>
-        <translation>Nederlands</translation>
-    </message>
-    <message>
-        <source>French</source>
-        <translation>Frans</translation>
-    </message>
-    <message>
-        <source>German</source>
-        <translation>Duits</translation>
-    </message>
-    <message>
-        <source>Russian</source>
-        <translation>Russisch</translation>
-    </message>
-    <message>
-        <source>Swedish</source>
-        <translation>Zweeds</translation>
-    </message>
-    <message>
         <source>Version</source>
         <translation>Versie</translation>
     </message>
@@ -44,56 +12,8 @@
         <translation>Een webbrowser met tabbladen voor SailfishOS, gebaseerd op WebKit</translation>
     </message>
     <message>
-        <source>Developer</source>
-        <translation>Ontwikkelaar</translation>
-    </message>
-    <message>
         <source>GitHub Repository</source>
         <translation>GitHub-pagina</translation>
-    </message>
-    <message>
-        <source>Translators</source>
-        <translation>Vertalers</translation>
-    </message>
-    <message>
-        <source>Slovenian</source>
-        <translation>Sloveens</translation>
-    </message>
-    <message>
-        <source>Japanese</source>
-        <translation>Japans</translation>
-    </message>
-    <message>
-        <source>Czech</source>
-        <translation>Tsjechisch</translation>
-    </message>
-    <message>
-        <source>Spanish</source>
-        <translation>Spaans</translation>
-    </message>
-    <message>
-        <source>Italian</source>
-        <translation>Italiaans</translation>
-    </message>
-    <message>
-        <source>Finnish</source>
-        <translation>Fins</translation>
-    </message>
-    <message>
-        <source>Icon Designer</source>
-        <translation>Pictogramontwerper</translation>
-    </message>
-    <message>
-        <source>Translation Platform</source>
-        <translation>Vertalingsplatform</translation>
-    </message>
-    <message>
-        <source>Contributors</source>
-        <translation>Medewerkers</translation>
-    </message>
-    <message>
-        <source>Greek</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Report an Issue</source>

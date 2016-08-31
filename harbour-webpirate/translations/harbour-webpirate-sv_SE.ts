@@ -4,38 +4,6 @@
 <context>
     <name>AboutPage</name>
     <message>
-        <source>About Web Pirate</source>
-        <translation>Om Web Pirate</translation>
-    </message>
-    <message>
-        <source>Catalan</source>
-        <translation>Katalanska</translation>
-    </message>
-    <message>
-        <source>Chinese</source>
-        <translation>Kinesiska</translation>
-    </message>
-    <message>
-        <source>Dutch</source>
-        <translation>Holländska</translation>
-    </message>
-    <message>
-        <source>French</source>
-        <translation>Franska</translation>
-    </message>
-    <message>
-        <source>German</source>
-        <translation>Tyska</translation>
-    </message>
-    <message>
-        <source>Russian</source>
-        <translation>Ryska</translation>
-    </message>
-    <message>
-        <source>Swedish</source>
-        <translation>Svenska</translation>
-    </message>
-    <message>
         <source>Version</source>
         <translation>Version</translation>
     </message>
@@ -44,56 +12,8 @@
         <translation>En webbläsare med flikar för SailfishOS, baserad på WebKit</translation>
     </message>
     <message>
-        <source>Developer</source>
-        <translation>Utvecklare</translation>
-    </message>
-    <message>
         <source>GitHub Repository</source>
         <translation>GitHub Repository</translation>
-    </message>
-    <message>
-        <source>Translators</source>
-        <translation>Översättare</translation>
-    </message>
-    <message>
-        <source>Slovenian</source>
-        <translation>Slovakiska</translation>
-    </message>
-    <message>
-        <source>Japanese</source>
-        <translation>Japanska</translation>
-    </message>
-    <message>
-        <source>Czech</source>
-        <translation>Tjeckiska</translation>
-    </message>
-    <message>
-        <source>Spanish</source>
-        <translation>Spanska</translation>
-    </message>
-    <message>
-        <source>Italian</source>
-        <translation>Italienska</translation>
-    </message>
-    <message>
-        <source>Finnish</source>
-        <translation>Finska</translation>
-    </message>
-    <message>
-        <source>Icon Designer</source>
-        <translation>Ikondesigner</translation>
-    </message>
-    <message>
-        <source>Translation Platform</source>
-        <translation>Översättningsplattform</translation>
-    </message>
-    <message>
-        <source>Contributors</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Greek</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Report an Issue</source>

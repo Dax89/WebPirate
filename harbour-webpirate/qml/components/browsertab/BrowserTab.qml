@@ -105,10 +105,6 @@ Item
             webview.url = mainwindow.settings.searchengines.get(mainwindow.settings.searchengine).query + req;
     }
 
-    function switchNightMode() {
-        webview.setNightMode(!webview.nightModeEnabled);
-    }
-
     id: browsertab
     visible: false
 

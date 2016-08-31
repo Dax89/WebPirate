@@ -4,38 +4,6 @@
 <context>
     <name>AboutPage</name>
     <message>
-        <source>About Web Pirate</source>
-        <translation>關於 Web Pirate</translation>
-    </message>
-    <message>
-        <source>Catalan</source>
-        <translation>Catalan</translation>
-    </message>
-    <message>
-        <source>Chinese</source>
-        <translation>簡體中文</translation>
-    </message>
-    <message>
-        <source>Dutch</source>
-        <translation>Dutch</translation>
-    </message>
-    <message>
-        <source>French</source>
-        <translation>French</translation>
-    </message>
-    <message>
-        <source>German</source>
-        <translation>German</translation>
-    </message>
-    <message>
-        <source>Russian</source>
-        <translation>Russian</translation>
-    </message>
-    <message>
-        <source>Swedish</source>
-        <translation>Swedish</translation>
-    </message>
-    <message>
         <source>Version</source>
         <translation>版本</translation>
     </message>
@@ -44,56 +12,8 @@
         <translation>一個基於WebKit的SailfishOS分頁式網路瀏覽器</translation>
     </message>
     <message>
-        <source>Developer</source>
-        <translation>開發者</translation>
-    </message>
-    <message>
         <source>GitHub Repository</source>
         <translation>GitHub網頁</translation>
-    </message>
-    <message>
-        <source>Translators</source>
-        <translation>翻譯者</translation>
-    </message>
-    <message>
-        <source>Slovenian</source>
-        <translation>Slovenian</translation>
-    </message>
-    <message>
-        <source>Japanese</source>
-        <translation>Japanese</translation>
-    </message>
-    <message>
-        <source>Czech</source>
-        <translation>Czech</translation>
-    </message>
-    <message>
-        <source>Spanish</source>
-        <translation>Spanish</translation>
-    </message>
-    <message>
-        <source>Italian</source>
-        <translation>Italian</translation>
-    </message>
-    <message>
-        <source>Finnish</source>
-        <translation>Finnish</translation>
-    </message>
-    <message>
-        <source>Icon Designer</source>
-        <translation>圖示設計者</translation>
-    </message>
-    <message>
-        <source>Translation Platform</source>
-        <translation>翻譯平台</translation>
-    </message>
-    <message>
-        <source>Contributors</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Greek</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Report an Issue</source>

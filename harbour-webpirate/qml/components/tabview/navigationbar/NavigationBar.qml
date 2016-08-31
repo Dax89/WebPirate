@@ -82,12 +82,7 @@ Rectangle
         onReaderModeRequested: webView.switchReaderMode()
 
         onNightModeRequested: {
-            var tab = currentTab();
-
-            if(!tab)
-                return;
-
-            tab.switchNightMode();
+            settings.nightmode = !settings.nightmode;
         }
 
         onClosedTabsRequested: {

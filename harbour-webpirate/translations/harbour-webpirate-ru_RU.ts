@@ -4,38 +4,6 @@
 <context>
     <name>AboutPage</name>
     <message>
-        <source>About Web Pirate</source>
-        <translation>О браузере Web Pirate</translation>
-    </message>
-    <message>
-        <source>Catalan</source>
-        <translation>Каталонский</translation>
-    </message>
-    <message>
-        <source>Chinese</source>
-        <translation>Китайский</translation>
-    </message>
-    <message>
-        <source>Dutch</source>
-        <translation>Голландский</translation>
-    </message>
-    <message>
-        <source>French</source>
-        <translation>Французский</translation>
-    </message>
-    <message>
-        <source>German</source>
-        <translation>Немецкий</translation>
-    </message>
-    <message>
-        <source>Russian</source>
-        <translation>Русский</translation>
-    </message>
-    <message>
-        <source>Swedish</source>
-        <translation>Шведский</translation>
-    </message>
-    <message>
         <source>Version</source>
         <translation>Версия</translation>
     </message>
@@ -44,56 +12,8 @@
         <translation>Браузер с поддержкой вкладок для SailfishOS, основанный на WebKit</translation>
     </message>
     <message>
-        <source>Developer</source>
-        <translation>Разработчик</translation>
-    </message>
-    <message>
         <source>GitHub Repository</source>
         <translation>GitHub Repository</translation>
-    </message>
-    <message>
-        <source>Translators</source>
-        <translation>Переводчики</translation>
-    </message>
-    <message>
-        <source>Slovenian</source>
-        <translation>Словенский</translation>
-    </message>
-    <message>
-        <source>Japanese</source>
-        <translation>Японский</translation>
-    </message>
-    <message>
-        <source>Czech</source>
-        <translation>Чешский</translation>
-    </message>
-    <message>
-        <source>Spanish</source>
-        <translation>Испанский</translation>
-    </message>
-    <message>
-        <source>Italian</source>
-        <translation>Итальянский</translation>
-    </message>
-    <message>
-        <source>Finnish</source>
-        <translation>Финский</translation>
-    </message>
-    <message>
-        <source>Icon Designer</source>
-        <translation>Создатель иконки</translation>
-    </message>
-    <message>
-        <source>Translation Platform</source>
-        <translation>Платформа перевода</translation>
-    </message>
-    <message>
-        <source>Contributors</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Greek</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Report an Issue</source>

@@ -4,38 +4,6 @@
 <context>
     <name>AboutPage</name>
     <message>
-        <source>About Web Pirate</source>
-        <translation>Περί το Web Pirate</translation>
-    </message>
-    <message>
-        <source>Catalan</source>
-        <translation>Καταλανικά</translation>
-    </message>
-    <message>
-        <source>Chinese</source>
-        <translation>Κινέζικα</translation>
-    </message>
-    <message>
-        <source>Dutch</source>
-        <translation>Ολλανδικά</translation>
-    </message>
-    <message>
-        <source>French</source>
-        <translation>Γαλλικά</translation>
-    </message>
-    <message>
-        <source>German</source>
-        <translation>Γερμανικά</translation>
-    </message>
-    <message>
-        <source>Russian</source>
-        <translation>Ρωσικά</translation>
-    </message>
-    <message>
-        <source>Swedish</source>
-        <translation>Σουηδικά</translation>
-    </message>
-    <message>
         <source>Version</source>
         <translation>Έκδοση</translation>
     </message>
@@ -44,56 +12,8 @@
         <translation>Ένας περιηγητής διαδικτύου με καρτέλες για το SailfishOS βασισμένος στην WebKit</translation>
     </message>
     <message>
-        <source>Developer</source>
-        <translation>Προγραμματιστής</translation>
-    </message>
-    <message>
         <source>GitHub Repository</source>
         <translation>Αποθετήριο GitHub</translation>
-    </message>
-    <message>
-        <source>Translators</source>
-        <translation>Μεταφραστές</translation>
-    </message>
-    <message>
-        <source>Slovenian</source>
-        <translation>Σλοβένικα</translation>
-    </message>
-    <message>
-        <source>Japanese</source>
-        <translation>Ιαπωνικά</translation>
-    </message>
-    <message>
-        <source>Czech</source>
-        <translation>Τσέχικα</translation>
-    </message>
-    <message>
-        <source>Spanish</source>
-        <translation>Ισπανικά</translation>
-    </message>
-    <message>
-        <source>Italian</source>
-        <translation>Ιταλικά</translation>
-    </message>
-    <message>
-        <source>Finnish</source>
-        <translation>Φιλανδικά</translation>
-    </message>
-    <message>
-        <source>Icon Designer</source>
-        <translation>Σχεδιαστής εικονιδίων</translation>
-    </message>
-    <message>
-        <source>Translation Platform</source>
-        <translation>Πλατφόρμα μετάφρασης</translation>
-    </message>
-    <message>
-        <source>Contributors</source>
-        <translation>Συνεισφέροντες</translation>
-    </message>
-    <message>
-        <source>Greek</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Report an Issue</source>
