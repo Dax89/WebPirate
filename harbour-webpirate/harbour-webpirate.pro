@@ -195,13 +195,14 @@ TRANSLATIONS += translations/harbour-webpirate.ts \
             translations/harbour-webpirate-cs_CZ.ts \
             translations/harbour-webpirate-de.ts \
             translations/harbour-webpirate-el.ts \
-            translations/harbour-webpirate-el.ts \
             translations/harbour-webpirate-es.ts \
             translations/harbour-webpirate-fi_FI.ts \
             translations/harbour-webpirate-fr.ts \
+            translations/harbour-webpirate-hu.ts \
             translations/harbour-webpirate-it.ts \
             translations/harbour-webpirate-ja.ts \
             translations/harbour-webpirate-nl_NL.ts \
+            translations/harbour-webpirate-pl.ts \
             translations/harbour-webpirate-ru_RU.ts \
             translations/harbour-webpirate-sl_SI.ts \
             translations/harbour-webpirate-sv_SE.ts \

@@ -17,31 +17,31 @@
     </message>
     <message>
         <source>Report an Issue</source>
-        <translation type="unfinished"></translation>
+        <translation>Rapportera ett problem</translation>
     </message>
     <message>
         <source>About WebPirate</source>
-        <translation type="unfinished"></translation>
+        <translation>Om WebPirate</translation>
     </message>
     <message>
         <source>WebPirate is distributed under the GPLv3 license</source>
-        <translation type="unfinished"></translation>
+        <translation>WebPirate distribueras under GPLv3-licens</translation>
     </message>
     <message>
         <source>License</source>
-        <translation type="unfinished"></translation>
+        <translation>Licens</translation>
     </message>
     <message>
         <source>Developers</source>
-        <translation type="unfinished"></translation>
+        <translation>Utvecklare</translation>
     </message>
     <message>
         <source>Translations</source>
-        <translation type="unfinished"></translation>
+        <translation>Översättningar</translation>
     </message>
     <message>
         <source>Third Party</source>
-        <translation type="unfinished"></translation>
+        <translation>Tredje part</translation>
     </message>
 </context>
 <context>
@@ -72,11 +72,11 @@
     </message>
     <message>
         <source>Download CSS Filters</source>
-        <translation type="unfinished"></translation>
+        <translation>Ladda ner CCS-filter</translation>
     </message>
     <message>
         <source>Download Hosts BlackList</source>
-        <translation type="unfinished"></translation>
+        <translation>Ladda ner Hosts BlackList</translation>
     </message>
 </context>
 <context>
@@ -204,15 +204,15 @@
     </message>
     <message>
         <source>Remove from Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Ta bort från Favoriter</translation>
     </message>
     <message>
         <source>Add to Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Lägg till i Favoriter</translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation type="unfinished"></translation>
+        <translation>Stopp</translation>
     </message>
 </context>
 <context>
@@ -375,70 +375,70 @@
     <name>CustomActionsModel</name>
     <message>
         <source>No Action</source>
-        <translation type="unfinished"></translation>
+        <translation>Ingen åtgärd</translation>
     </message>
     <message>
         <source>Home Page</source>
-        <translation type="unfinished">Hemsida</translation>
+        <translation>Hemsida</translation>
     </message>
     <message>
         <source>Night Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Nattläge</translation>
     </message>
     <message>
         <source>Closed Tabs</source>
-        <translation type="unfinished">Stängda flikar</translation>
+        <translation>Stängda flikar</translation>
     </message>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished">Favoriter</translation>
+        <translation>Favoriter</translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation type="unfinished">Nedladdningar</translation>
+        <translation>Nedladdningar</translation>
     </message>
     <message>
         <source>Navigation History</source>
-        <translation type="unfinished"></translation>
+        <translation>Surfhistorik</translation>
     </message>
     <message>
         <source>Sessions</source>
-        <translation type="unfinished">Sessioner</translation>
+        <translation>Sessioner</translation>
     </message>
     <message>
         <source>Cookies</source>
-        <translation type="unfinished">Cookies</translation>
+        <translation>Cookies</translation>
     </message>
     <message>
         <source>Close Current Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Stäng aktuell flik</translation>
     </message>
     <message>
         <source>New Tab</source>
-        <translation type="unfinished">Ny flik</translation>
+        <translation>Ny flik</translation>
     </message>
     <message>
         <source>Reader Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Läsläge</translation>
     </message>
 </context>
 <context>
     <name>DevelopersPage</name>
     <message>
         <source>Developers</source>
-        <translation type="unfinished"></translation>
+        <translation>Utvecklare</translation>
     </message>
     <message>
         <source>Author</source>
-        <translation type="unfinished"></translation>
+        <translation>Upphovsman</translation>
     </message>
     <message>
         <source>Contributor</source>
-        <translation type="unfinished"></translation>
+        <translation>Medverkande</translation>
     </message>
     <message>
         <source>Icon Designer</source>
-        <translation type="unfinished">Ikondesigner</translation>
+        <translation>Ikondesigner</translation>
     </message>
 </context>
 <context>
@@ -521,11 +521,11 @@
     </message>
     <message>
         <source>Ambience Browsing</source>
-        <translation type="unfinished"></translation>
+        <translation>Atmosfär-bläddring</translation>
     </message>
     <message>
         <source>WebPirate will try to skin webpages according to ambience settings</source>
-        <translation type="unfinished"></translation>
+        <translation>WebPirate försöker anpassa webbsidor efter atmosfär-inställningar.</translation>
     </message>
 </context>
 <context>
@@ -586,7 +586,7 @@
     </message>
     <message>
         <source>Importing Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Importerar favoriter</translation>
     </message>
 </context>
 <context>
@@ -685,39 +685,39 @@
         <translation>Ange som standardwebbläsare</translation>
     </message>
     <message>
-        <source>Custom action</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Pressed</source>
-        <translation type="unfinished"></translation>
+        <translation>Tryckt</translation>
     </message>
     <message>
         <source>Long Pressed</source>
-        <translation type="unfinished"></translation>
+        <translation>Långtryckt</translation>
+    </message>
+    <message>
+        <source>Custom actions</source>
+        <translation>Anpassade åtgärder</translation>
     </message>
 </context>
 <context>
     <name>GrabberItem</name>
     <message>
         <source>Play</source>
-        <translation type="unfinished"></translation>
+        <translation>Spela upp</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished">Ladda ner</translation>
+        <translation>Ladda ner</translation>
     </message>
     <message>
         <source>Grabbing video</source>
-        <translation type="unfinished"></translation>
+        <translation>Hämtar video</translation>
     </message>
     <message>
         <source>Copy URL</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopiera länk</translation>
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation type="unfinished">Länk kopierad till Urklipp</translation>
+        <translation>Länk kopierad till urklipp</translation>
     </message>
 </context>
 <context>
@@ -1246,7 +1246,7 @@
     </message>
     <message>
         <source>Popup Blocker</source>
-        <translation type="unfinished">Popup-blockerare</translation>
+        <translation>Popup-blockerare</translation>
     </message>
 </context>
 <context>
@@ -1276,43 +1276,43 @@
     </message>
     <message>
         <source>Copy link</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopiera länk</translation>
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation type="unfinished">Länk kopierad till Urklipp</translation>
+        <translation>Länk kopierad till urklipp</translation>
     </message>
     <message>
         <source>Save page</source>
-        <translation type="unfinished"></translation>
+        <translation>Spara sidan</translation>
     </message>
     <message>
         <source>Downloading web page</source>
-        <translation type="unfinished"></translation>
+        <translation>Laddar ner webbsidan</translation>
     </message>
     <message>
         <source>Duplicate tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopiera flik</translation>
     </message>
     <message>
         <source>Grabber</source>
-        <translation type="unfinished"></translation>
+        <translation>Grabber</translation>
     </message>
     <message>
         <source>Media Player</source>
-        <translation type="unfinished"></translation>
+        <translation>Mediaspelare</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="unfinished"></translation>
+        <translation>Stäng</translation>
     </message>
     <message>
         <source>Enable Reader Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktivera läsläge</translation>
     </message>
     <message>
         <source>Disable Reader Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Inaktivera läsläge</translation>
     </message>
 </context>
 <context>
@@ -1371,49 +1371,49 @@
     <name>ThirdPartyLabel</name>
     <message>
         <source>License</source>
-        <translation type="unfinished"></translation>
+        <translation>Licens</translation>
     </message>
     <message>
         <source>Project Page</source>
-        <translation type="unfinished"></translation>
+        <translation>Projektsida</translation>
     </message>
 </context>
 <context>
     <name>ThirdPartyPage</name>
     <message>
         <source>Third Party</source>
-        <translation type="unfinished"></translation>
+        <translation>Tredje part</translation>
     </message>
     <message>
         <source>MIT License</source>
-        <translation type="unfinished"></translation>
+        <translation>MIT-licens</translation>
     </message>
     <message>
         <source>Apache License</source>
-        <translation type="unfinished"></translation>
+        <translation>Apache-licens</translation>
     </message>
 </context>
 <context>
     <name>TranslationsPage</name>
     <message>
         <source>Translation Platform</source>
-        <translation type="unfinished">Översättningsplattform</translation>
+        <translation>Översättningsplattform</translation>
     </message>
     <message>
         <source>Translations</source>
-        <translation type="unfinished"></translation>
+        <translation>Översättningar</translation>
     </message>
     <message>
         <source>Coordinators</source>
-        <translation type="unfinished"></translation>
+        <translation>Koordinatorer</translation>
     </message>
     <message>
         <source>Translators</source>
-        <translation type="unfinished">Översättare</translation>
+        <translation>Översättare</translation>
     </message>
     <message>
         <source>Reviewers</source>
-        <translation type="unfinished"></translation>
+        <translation>Recensenter</translation>
     </message>
 </context>
 <context>
@@ -1424,11 +1424,11 @@
     </message>
     <message>
         <source>No videos found, report to developer</source>
-        <translation type="unfinished"></translation>
+        <translation>Inga filmer hittade, rapportera till utvecklaren</translation>
     </message>
     <message>
         <source>Video grabbed successfully</source>
-        <translation type="unfinished"></translation>
+        <translation>Filmen hämtad</translation>
     </message>
 </context>
 <context>
@@ -1455,11 +1455,11 @@
     </message>
     <message>
         <source>Cannot find decoding function, report to developer</source>
-        <translation type="unfinished"></translation>
+        <translation>Kan inte hitta avkodningsfunktionen, rapportera till utvecklaren</translation>
     </message>
     <message>
         <source>Cannot find decoding object, report to developer</source>
-        <translation type="unfinished"></translation>
+        <translation>Kan inte hitta avkodningsobjektet, rapportera till utvecklaren</translation>
     </message>
 </context>
 <context>
@@ -1482,11 +1482,11 @@
     </message>
     <message>
         <source>Video grabbed successfully</source>
-        <translation type="unfinished"></translation>
+        <translation>Filmen hämtat</translation>
     </message>
     <message>
         <source>Cannot get video, report to developer</source>
-        <translation type="unfinished"></translation>
+        <translation>Kan inte hämta filmen, rapportera till utvecklaren</translation>
     </message>
 </context>
 <context>

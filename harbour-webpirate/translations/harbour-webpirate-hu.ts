@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="fi_FI">
+<TS version="2.1" language="hu">
 <context>
     <name>AboutPage</name>
     <message>
         <source>Version</source>
-        <translation>Versio</translation>
+        <translation>Verzió</translation>
     </message>
     <message>
         <source>A tabbed Web Browser for SailfishOS based on WebKit</source>
-        <translation>WebKitiin perustuva välilehdellinen webselain SailfishOS:lle</translation>
+        <translation>WebKit alapú böngésző SailfishOS-re</translation>
     </message>
     <message>
         <source>GitHub Repository</source>
-        <translation>GitHub repo</translation>
+        <translation>GitHub Csomagtároló</translation>
     </message>
     <message>
         <source>Report an Issue</source>
@@ -48,81 +48,81 @@
     <name>AdBlockDownloaderPage</name>
     <message>
         <source>AdBlock Updater</source>
-        <translation>Adblock päivittäjä</translation>
+        <translation>AdBlock Frissítő</translation>
     </message>
     <message>
         <source>State</source>
-        <translation>Tila</translation>
+        <translation>Állapot</translation>
     </message>
     <message>
         <source>Ready</source>
-        <translation>Valmis</translation>
+        <translation>Kész</translation>
     </message>
     <message>
         <source>Connecting</source>
-        <translation>Yhdistetään...</translation>
+        <translation>Csatlakozás</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Virhe</translation>
+        <translation>Hiba</translation>
     </message>
     <message>
         <source>Completed</source>
-        <translation>Valmis</translation>
+        <translation>Befejezve</translation>
     </message>
     <message>
         <source>Download CSS Filters</source>
-        <translation>Lataa CSS Suodattimet</translation>
+        <translation>CSS Szűrők Letöltése</translation>
     </message>
     <message>
         <source>Download Hosts BlackList</source>
-        <translation>Lataa Palvelimien Musta lista</translation>
+        <translation>Hostok feketelistájának letöltése</translation>
     </message>
 </context>
 <context>
     <name>AdBlockFilter</name>
     <message>
         <source>Save</source>
-        <translation>Tallenna</translation>
+        <translation>Mentés</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation>Suodatin</translation>
+        <translation>Szűrő</translation>
     </message>
 </context>
 <context>
     <name>AdBlockPage</name>
     <message>
         <source>Save</source>
-        <translation>Tallenna</translation>
+        <translation>Mentés</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Muokkaa</translation>
+        <translation>Szerkesztés</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Poista</translation>
+        <translation>Törlés</translation>
     </message>
     <message>
         <source>Deleting filter</source>
-        <translation>Suodatinta poistetaan</translation>
+        <translation>Szűrő törlése folyamatban</translation>
     </message>
     <message>
         <source>Update Filters</source>
-        <translation>Päivitä suodattimet</translation>
+        <translation>Szűrők Frissítése</translation>
     </message>
     <message>
         <source>Add Filter</source>
-        <translation>Lisää suodatin</translation>
+        <translation>Szűrő hozzáadása</translation>
     </message>
     <message>
         <source>Disable AdBlock</source>
-        <translation>Poista mainoksien esto käytöstä</translation>
+        <translation>AdBlock Letiltása</translation>
     </message>
     <message>
         <source>Enable AdBlock</source>
-        <translation>Ota mainoksien esto käyttöön</translation>
+        <translation>AdBlock Engedélyezése</translation>
     </message>
 </context>
 <context>
@@ -136,239 +136,239 @@
     <name>AuthenticationDialog</name>
     <message>
         <source>Login</source>
-        <translation>Kirjaudu sisään</translation>
+        <translation>Bejelentkezés</translation>
     </message>
     <message>
         <source>Authentication required</source>
-        <translation>Tunnistautuminen vaadittu</translation>
+        <translation>Hitelesítés szükséges</translation>
     </message>
     <message>
         <source>requires authentication</source>
-        <translation>Vaatii tunnistautumisen</translation>
+        <translation>Azonosítást igényel</translation>
     </message>
     <message>
         <source>User</source>
-        <translation>Käyttäjä</translation>
+        <translation>Felhasználó</translation>
     </message>
     <message>
         <source>Password</source>
-        <translation>Salasana</translation>
+        <translation>Jelszó</translation>
     </message>
 </context>
 <context>
     <name>BlockedPopupItem</name>
     <message>
         <source>Allow</source>
-        <translation>Salli</translation>
+        <translation>Engedélyez</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Poista</translation>
+        <translation>Törlés</translation>
     </message>
     <message>
         <source>Deleting rule</source>
-        <translation>Poistetaan sääntöä</translation>
+        <translation>Szabály törlése folyamatban</translation>
     </message>
 </context>
 <context>
     <name>BrowserGrabber</name>
     <message>
         <source>Status</source>
-        <translation>Tila</translation>
+        <translation>Állapot</translation>
     </message>
 </context>
 <context>
     <name>BrowserTab</name>
     <message>
         <source>New Tab</source>
-        <translation>Uusi välilehti</translation>
+        <translation>Új Lap</translation>
     </message>
 </context>
 <context>
     <name>BrowserWebView</name>
     <message>
         <source>Downloading</source>
-        <translation>Lataa...</translation>
+        <translation>Letöltés</translation>
     </message>
     <message>
         <source>Accept Certificate from: %1 ?</source>
-        <translation>Hyväksytkö varmenteen kohteesta: %1 ?</translation>
+        <translation>Tanúsítványok elfogadása innen: %1 ?</translation>
     </message>
     <message>
         <source>Refresh</source>
-        <translation>Päivitä</translation>
+        <translation>Frissítés</translation>
     </message>
     <message>
         <source>New tab</source>
-        <translation>Uusi välilehti</translation>
+        <translation>Új lap</translation>
     </message>
     <message>
         <source>Remove from Favorites</source>
-        <translation>Poista suosikeista</translation>
+        <translation>Törlés a kedvencekből</translation>
     </message>
     <message>
         <source>Add to Favorites</source>
-        <translation>Lisää suosikkeihin</translation>
+        <translation>Hozzáadás a Kedvencekhez</translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation>Pysäytä</translation>
+        <translation>Leállít</translation>
     </message>
 </context>
 <context>
     <name>ClosedTabsSegment</name>
     <message>
         <source>Closed Tabs</source>
-        <translation>Suljetut välilehdet</translation>
+        <translation>Bezárt Lapok</translation>
     </message>
     <message>
         <source>Delete Closed Tabs</source>
-        <translation>Poista suljetut välilehdet</translation>
+        <translation>Bezárt Lapok Törlése</translation>
     </message>
 </context>
 <context>
     <name>CookieListItem</name>
     <message>
         <source>Delete</source>
-        <translation>Poista</translation>
+        <translation>Törlés</translation>
     </message>
     <message>
         <source>Deleting Cookie</source>
-        <translation>Poistetaan eväste</translation>
+        <translation>Süti törlése</translation>
     </message>
 </context>
 <context>
     <name>CookieListPage</name>
     <message>
         <source>Cookies</source>
-        <translation>Evästeet</translation>
+        <translation>Sütik</translation>
     </message>
     <message>
         <source>Add Cookie</source>
-        <translation>Lisää eväste</translation>
+        <translation>Süti hozzáadása</translation>
     </message>
 </context>
 <context>
     <name>CookiePage</name>
     <message>
         <source>Save</source>
-        <translation>Tallenna</translation>
+        <translation>Mentés</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Nimi</translation>
+        <translation>Név</translation>
     </message>
     <message>
         <source>Domain</source>
-        <translation>Piiri</translation>
+        <translation>Domain</translation>
     </message>
     <message>
         <source>Path</source>
-        <translation>Polku</translation>
+        <translation>Útvonal</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>Arvo</translation>
+        <translation>Érték</translation>
     </message>
     <message>
         <source>Expires</source>
-        <translation>Vanhenee</translation>
+        <translation>Lejár</translation>
     </message>
 </context>
 <context>
     <name>CookiesSegment</name>
     <message>
         <source>Cookie Manager</source>
-        <translation>Evästeiden hallinta</translation>
+        <translation>Süti Kezelő</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation>Suodatin</translation>
+        <translation>Szűrő</translation>
     </message>
     <message>
         <source>Remove All Cookies</source>
-        <translation>Poista kaikki evästeet</translation>
+        <translation>Összes süti törlése</translation>
     </message>
     <message>
         <source>Add Cookie</source>
-        <translation>Lisää eväste</translation>
+        <translation>Süti hozzáadása</translation>
     </message>
 </context>
 <context>
     <name>CoverModel</name>
     <message>
         <source>Go to Previous Tab</source>
-        <translation>Siirry edelliseen välilehteen</translation>
+        <translation>Ugrás az Előző Oldalra</translation>
     </message>
     <message>
         <source>Go to Next Tab</source>
-        <translation>Siirry seuraavaan välilehteen</translation>
+        <translation>Ugrás a Következő Oldalra</translation>
     </message>
     <message>
         <source>Add New Tab</source>
-        <translation>Lisää uusi välilehti</translation>
+        <translation>Új Lap Hozzáadása</translation>
     </message>
     <message>
         <source>Close Tab</source>
-        <translation>Sulje välilehti</translation>
+        <translation>Lap Bezárása</translation>
     </message>
     <message>
         <source>Load Homepage</source>
-        <translation>Avaa kotisivu</translation>
+        <translation>Kezdőoldal Betöltése</translation>
     </message>
     <message>
         <source>Close Browser</source>
-        <translation>Sulje selain</translation>
+        <translation>Böngésző Bezárása</translation>
     </message>
     <message>
         <source>Reload Current Page</source>
-        <translation>Lataa sivu uudelleen</translation>
+        <translation>Jelenlegi Oldal Újratöltése</translation>
     </message>
     <message>
         <source>Wipe personal data</source>
-        <translation>Poista henkilökohtaiset tiedot</translation>
+        <translation>Személyes adatok törlése</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Haku</translation>
+        <translation>Keresés</translation>
     </message>
 </context>
 <context>
     <name>CoverSettingsPage</name>
     <message>
         <source>General Actions</source>
-        <translation>Yleiset toiminnot</translation>
+        <translation>Általános Műveletek</translation>
     </message>
     <message>
         <source>Left</source>
-        <translation>Vasen</translation>
+        <translation>Bal</translation>
     </message>
     <message>
         <source>Right</source>
-        <translation>Oikea</translation>
+        <translation>Jobb</translation>
     </message>
     <message>
         <source>Webpage Actions</source>
-        <translation>Web -sivujen toiminnot</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Cover Settings</source>
-        <translation>Kannen asetukset</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CredentialDialog</name>
     <message>
         <source>Yes</source>
-        <translation>Kyllä</translation>
+        <translation>Igen</translation>
     </message>
     <message>
         <source>No</source>
-        <translation>Ei</translation>
+        <translation>Nem</translation>
     </message>
     <message>
         <source>Do you want to store the password?</source>
-        <translation>Haluatko tallentaa salasanan?</translation>
+        <translation>Szeretnéd menteni a jelszót?</translation>
     </message>
 </context>
 <context>
@@ -379,7 +379,7 @@
     </message>
     <message>
         <source>Home Page</source>
-        <translation type="unfinished">Kotisivu</translation>
+        <translation type="unfinished">Kezdőoldal</translation>
     </message>
     <message>
         <source>Night Mode</source>
@@ -387,15 +387,15 @@
     </message>
     <message>
         <source>Closed Tabs</source>
-        <translation type="unfinished">Suljetut välilehdet</translation>
+        <translation type="unfinished">Bezárt Lapok</translation>
     </message>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished">Suosikit</translation>
+        <translation type="unfinished">Kedvencek</translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation type="unfinished">Lataukset</translation>
+        <translation type="unfinished">Letöltések:</translation>
     </message>
     <message>
         <source>Navigation History</source>
@@ -403,11 +403,11 @@
     </message>
     <message>
         <source>Sessions</source>
-        <translation type="unfinished">Istunnot</translation>
+        <translation type="unfinished">Munkafolyamatok</translation>
     </message>
     <message>
         <source>Cookies</source>
-        <translation type="unfinished">Evästeet</translation>
+        <translation type="unfinished">Sütik</translation>
     </message>
     <message>
         <source>Close Current Tab</source>
@@ -415,7 +415,7 @@
     </message>
     <message>
         <source>New Tab</source>
-        <translation type="unfinished">Uusi välilehti</translation>
+        <translation type="unfinished">Új Lap</translation>
     </message>
     <message>
         <source>Reader Mode</source>
@@ -445,83 +445,83 @@
     <name>DomainListItem</name>
     <message>
         <source>Cookies:</source>
-        <translation>Evästeet:</translation>
+        <translation>Sütik:</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Poista</translation>
+        <translation>Törlés</translation>
     </message>
     <message>
         <source>Deleting Cookies</source>
-        <translation>Evästeet poistetaan</translation>
+        <translation>Sütik törlése folyamatban</translation>
     </message>
 </context>
 <context>
     <name>DownloadItem</name>
     <message>
         <source>Redirect Loop</source>
-        <translation>Uudelleenohjaussilmukka</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>DownloadListItem</name>
     <message>
         <source>Cancel</source>
-        <translation>Peruuta</translation>
+        <translation>Mégsem</translation>
     </message>
     <message>
         <source>Completed:</source>
-        <translation>Valmis:</translation>
+        <translation>Befejezve:</translation>
     </message>
     <message>
         <source>Speed:</source>
-        <translation>Nopeus:</translation>
+        <translation>Sebesség:</translation>
     </message>
     <message>
         <source>Completed</source>
-        <translation>Valmis</translation>
+        <translation>Befejezve</translation>
     </message>
     <message>
         <source>Error:</source>
-        <translation>Virhe:</translation>
+        <translation>Hiba:</translation>
     </message>
 </context>
 <context>
     <name>DownloadsSegment</name>
     <message>
         <source>Delete completed Downloads</source>
-        <translation>Poista valmiit lataukset</translation>
+        <translation>Befejezett Letöltések Törlése</translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation>Lataukset</translation>
+        <translation>Letöltések:</translation>
     </message>
     <message>
         <source>Download Url</source>
-        <translation>Lataa linkki</translation>
+        <translation>Url Letöltése</translation>
     </message>
     <message>
         <source>Start</source>
-        <translation>Aloita</translation>
+        <translation>Idítás</translation>
     </message>
 </context>
 <context>
     <name>ExperimentalSettingsPage</name>
     <message>
         <source>Save</source>
-        <translation>Tallenna</translation>
+        <translation>Mentés</translation>
     </message>
     <message>
         <source>Override Text Fields</source>
-        <translation>Ohita tekstikentät</translation>
+        <translation>Szövegmezők felülírása</translation>
     </message>
     <message>
         <source>Use SailfishOS&apos;s editing components instead of WebView&apos;s ones</source>
-        <translation>Käytä TextArean muokkaukseen SailfishOS:n natiivikomponentteja WebViewin tarjoaman editorin sijaan.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ambience Browsing</source>
-        <translation type="unfinished"></translation>
+        <translation>Ambience böngészés</translation>
     </message>
     <message>
         <source>WebPirate will try to skin webpages according to ambience settings</source>
@@ -532,57 +532,57 @@
     <name>FavoriteItem</name>
     <message>
         <source>Open</source>
-        <translation>Avaa</translation>
+        <translation>Megnyitás</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Muokkaa</translation>
+        <translation>Szerkesztés</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Poista</translation>
+        <translation>Törlés</translation>
     </message>
     <message>
         <source>Deleting Folder</source>
-        <translation>Kansio poistetaan</translation>
+        <translation>Mappa törlése folyamatban</translation>
     </message>
     <message>
         <source>Deleting Favorite</source>
-        <translation>Suosikki poistetaan</translation>
+        <translation>Kedvencek törlése folyamatban</translation>
     </message>
     <message>
         <source>Add to Quick Grid</source>
-        <translation>Lisää pikavalintaan</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>FavoritePage</name>
     <message>
         <source>Save</source>
-        <translation>Tallenna</translation>
+        <translation>Mentés</translation>
     </message>
     <message>
         <source>Title</source>
-        <translation>Otsikko</translation>
+        <translation>Cím</translation>
     </message>
     <message>
         <source>Url</source>
-        <translation>URL</translation>
+        <translation>Url</translation>
     </message>
 </context>
 <context>
     <name>FavoritesImportPage</name>
     <message>
         <source>Import Favorites</source>
-        <translation>Tuo suosikit</translation>
+        <translation>Kedvencek Importálása</translation>
     </message>
     <message>
         <source>From HTML File</source>
-        <translation>HTML-tiedostosta</translation>
+        <translation>HTML Fájl-ból</translation>
     </message>
     <message>
         <source>From Sailfish Browser</source>
-        <translation>Sailfish -selaimelta</translation>
+        <translation>Sailfish Böngészőből</translation>
     </message>
     <message>
         <source>Importing Favorites</source>
@@ -593,96 +593,96 @@
     <name>FavoritesMenu</name>
     <message>
         <source>Export</source>
-        <translation>Vie</translation>
+        <translation>Export</translation>
     </message>
     <message>
         <source>Exporting favorites</source>
-        <translation>Viedään suosikit</translation>
+        <translation>Kedvencek exportálása folyamatban</translation>
     </message>
     <message>
         <source>Favorites</source>
-        <translation>Suosikit</translation>
+        <translation>Kedvencek</translation>
     </message>
     <message>
         <source>Favorites exported successfully</source>
-        <translation>Suosikit viety onnistuneesti</translation>
+        <translation>A kedvencek sikeresen exportálva</translation>
     </message>
     <message>
         <source>Import</source>
-        <translation>Tuo</translation>
+        <translation>Import</translation>
     </message>
     <message>
         <source>Import in</source>
-        <translation>Tuo kohteeseen...</translation>
+        <translation>Importálás</translation>
     </message>
     <message>
         <source>Add Folder</source>
-        <translation>Lisää kansio</translation>
+        <translation>Mappa Hozzáadása</translation>
     </message>
     <message>
         <source>Add Favorite</source>
-        <translation>Lisää suosikki</translation>
+        <translation>Kedvenc hozzáadása</translation>
     </message>
 </context>
 <context>
     <name>FavoritesSegment</name>
     <message>
         <source>Favorites</source>
-        <translation>Suosikit</translation>
+        <translation>Kedvencek</translation>
     </message>
     <message>
         <source>Back</source>
-        <translation>Edellinen</translation>
+        <translation>Vissza</translation>
     </message>
     <message>
         <source>Favorites imported successfully</source>
-        <translation>Suosikit tuotu onnistuneesti</translation>
+        <translation>Kedvencek sikeresen importálva</translation>
     </message>
     <message>
         <source>Cannot import favorites</source>
-        <translation>Suosikkeja ei voitu tuoda</translation>
+        <translation>Nem lehet importálni kedvenceket</translation>
     </message>
 </context>
 <context>
     <name>FormResubmitDialog</name>
     <message>
         <source>This page contains information written by you: do you want to resend the data?</source>
-        <translation>Tämä sivu sisältää kirjoittamaasi tietoa; haluatko lähettää tiedot uudelleen?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Yes</source>
-        <translation>Kyllä</translation>
+        <translation>Igen</translation>
     </message>
     <message>
         <source>No</source>
-        <translation>Ei</translation>
+        <translation>Nem</translation>
     </message>
 </context>
 <context>
     <name>GeneralSettingsPage</name>
     <message>
         <source>Save</source>
-        <translation>Tallenna</translation>
+        <translation>Mentés</translation>
     </message>
     <message>
         <source>Home Page</source>
-        <translation>Kotisivu</translation>
+        <translation>Kezdőoldal</translation>
     </message>
     <message>
         <source>Search Engines</source>
-        <translation>Hakukoneet</translation>
+        <translation>Keresőmotorok</translation>
     </message>
     <message>
         <source>Long press to edit</source>
-        <translation>Muokkaa painamalla pitkään</translation>
+        <translation>A szerkesztéshez hosszan nyomd le</translation>
     </message>
     <message>
         <source>User Agent</source>
-        <translation>Selaimen tunniste</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Set as default browser</source>
-        <translation>Aseta oletusselaimeksi</translation>
+        <translation>Beállítás alapértelmezett böngészőnek</translation>
     </message>
     <message>
         <source>Pressed</source>
@@ -701,610 +701,610 @@
     <name>GrabberItem</name>
     <message>
         <source>Play</source>
-        <translation>Toista</translation>
+        <translation>Lejátszás</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation>Lataa</translation>
+        <translation>Letöltés</translation>
     </message>
     <message>
         <source>Grabbing video</source>
-        <translation>Videota siepataan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Copy URL</source>
-        <translation>Kopioi linkki</translation>
+        <translation>URL Másolása</translation>
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation>Linkki kopioitu leikepöydälle</translation>
+        <translation>Link a vágólapra másolva</translation>
     </message>
 </context>
 <context>
     <name>HistoryMenu</name>
     <message>
         <source>Link copied to clipboard</source>
-        <translation>Linkki kopioitu leikepöydälle</translation>
+        <translation>Link a vágólapra másolva</translation>
     </message>
 </context>
 <context>
     <name>HistorySegment</name>
     <message>
         <source>History</source>
-        <translation>Historia</translation>
+        <translation>Előzmények</translation>
     </message>
     <message>
         <source>Delete History</source>
-        <translation>Poista historia</translation>
+        <translation>Előzmények Törlése</translation>
     </message>
 </context>
 <context>
     <name>LinkMenu</name>
     <message>
         <source>Open New Tab</source>
-        <translation>Avaa uusi välilehti</translation>
+        <translation>Megnyitás Új Lapon</translation>
     </message>
     <message>
         <source>Save Link Destination</source>
-        <translation>Tallenna linkin kohde</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Copy Link</source>
-        <translation>Kopioi linkki</translation>
+        <translation>Link másolása</translation>
     </message>
     <message>
         <source>Save Image</source>
-        <translation>Tallenna kuva</translation>
+        <translation>Kép mentése</translation>
     </message>
     <message>
         <source>Downloading image</source>
-        <translation>Ladataan kuvaa...</translation>
+        <translation>Kép letöltése folyamatban</translation>
     </message>
     <message>
         <source>Downloading link</source>
-        <translation>Ladataan linkkiä...</translation>
+        <translation>Link letöltése folyamatban</translation>
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation>Linkki kopioitu leikepöydälle</translation>
+        <translation>Link a vágólapra másolva</translation>
     </message>
     <message>
         <source>Share</source>
-        <translation>Jaa</translation>
+        <translation>Megosztás</translation>
     </message>
 </context>
 <context>
     <name>LoadFailed</name>
     <message>
         <source>You are in offline mode</source>
-        <translation>Olet offline-tilassa</translation>
+        <translation>Offline módban vagy</translation>
     </message>
     <message>
         <source>WebView process has crashed, restarting...</source>
-        <translation>Web -näkymän prosessi kaatui. Käynnistyy uudelleen...</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>MediaPlayerToolBar</name>
     <message>
         <source>Downloading media</source>
-        <translation>Ladataan mediatiedostoa...</translation>
+        <translation>Média letöltése folyamatban</translation>
     </message>
 </context>
 <context>
     <name>NavigationHistoryItem</name>
     <message>
         <source>Open</source>
-        <translation>Avaa</translation>
+        <translation>Megnyitás</translation>
     </message>
     <message>
         <source>Open in New Tab</source>
-        <translation>Avaa uudessa välilehdessä</translation>
+        <translation>Megnyitás Új Lapon</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Poista</translation>
+        <translation>Törlés</translation>
     </message>
     <message>
         <source>Deleting item</source>
-        <translation>Poistetaan kohde</translation>
+        <translation>Elem törlése folyamatban</translation>
     </message>
 </context>
 <context>
     <name>NewPopupRulePage</name>
     <message>
         <source>Apply Rule</source>
-        <translation>Ota sääntö käyttöön</translation>
+        <translation>Szabály alkalmazása</translation>
     </message>
     <message>
         <source>Url</source>
-        <translation>URL</translation>
+        <translation>Url</translation>
     </message>
     <message>
         <source>Rule</source>
-        <translation>Sääntö</translation>
+        <translation>Szabály</translation>
     </message>
     <message>
         <source>Allow</source>
-        <translation>Salli</translation>
+        <translation>Engedélyez</translation>
     </message>
     <message>
         <source>Block</source>
-        <translation>Estä</translation>
+        <translation>Zárol</translation>
     </message>
 </context>
 <context>
     <name>NotificationDialog</name>
     <message>
         <source>Allow</source>
-        <translation>Salli</translation>
+        <translation>Engedélyez</translation>
     </message>
     <message>
         <source>Deny</source>
-        <translation>Kiellä</translation>
+        <translation>Megtagad</translation>
     </message>
     <message>
         <source>&apos;%1&apos; wants to access system&apos;s notifications</source>
-        <translation>&apos;%1&apos; haluaa pääsyn järjestelmän ilmoituksiin</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>PopupBlockerPage</name>
     <message>
         <source>Popup Blocker</source>
-        <translation>Ponnahdusikkunoiden esto</translation>
+        <translation>Popup Blokkoló</translation>
     </message>
     <message>
         <source>Clear popup list</source>
-        <translation>Pyyhi ponnahdusikkunoiden lista</translation>
+        <translation>Felugró ablakok listájának törlése</translation>
     </message>
 </context>
 <context>
     <name>PopupItem</name>
     <message>
         <source>Rule</source>
-        <translation>Sääntö</translation>
+        <translation>Szabály</translation>
     </message>
     <message>
         <source>Allow</source>
-        <translation>Salli</translation>
+        <translation>Engedélyez</translation>
     </message>
     <message>
         <source>Block</source>
-        <translation>Estä</translation>
+        <translation>Zárol</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Poista</translation>
+        <translation>Törlés</translation>
     </message>
     <message>
         <source>Deleting rule</source>
-        <translation>Poistetaan sääntöä</translation>
+        <translation>Szabály törlése</translation>
     </message>
 </context>
 <context>
     <name>PopupManagerPage</name>
     <message>
         <source>Popup Manager</source>
-        <translation>Ponnahdusikkunoiden hallinta</translation>
+        <translation>Felugró ablakok kezelése</translation>
     </message>
     <message>
         <source>Delete Rules</source>
-        <translation>Poista sääntöjä</translation>
+        <translation>Szabályok törlése</translation>
     </message>
     <message>
         <source>Deleting rules</source>
-        <translation>Poistetaan sääntöjä</translation>
+        <translation>Szabályok törlése folyamatban</translation>
     </message>
     <message>
         <source>New Rule</source>
-        <translation>Uusi sääntö</translation>
+        <translation>Új Szabály</translation>
     </message>
 </context>
 <context>
     <name>PrivacySettingsPage</name>
     <message>
         <source>Wipe Data on Exit</source>
-        <translation>Poista selaustiedot suljettaessa</translation>
+        <translation>Adatok törlése kilépéskor</translation>
     </message>
     <message>
         <source>Delete Navigation History</source>
-        <translation>Poista selaushistoria</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Removing navigation history</source>
-        <translation>Selaushistoria poistetaan</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete Cookies</source>
-        <translation>Poista evästeet</translation>
+        <translation>Sütik Törlése</translation>
     </message>
     <message>
         <source>Removing cookies</source>
-        <translation>Poistetaan evästeet...</translation>
+        <translation>Sütik eltávolítása folyamatban</translation>
     </message>
     <message>
         <source>Delete Personal Data</source>
-        <translation>Poista henkilökohtaiset tiedot</translation>
+        <translation>Személyes Adat Törlése</translation>
     </message>
     <message>
         <source>Removing personal data</source>
-        <translation>Poistetaan henkilökohtaiset tiedot...</translation>
+        <translation>Személyes adat eltávolítása folyamatban</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Tallenna</translation>
+        <translation>Mentés</translation>
     </message>
     <message>
         <source>Privacy Options</source>
-        <translation>Tietosuoja-asetukset</translation>
+        <translation>Adatvédelmi Beállítások</translation>
     </message>
     <message>
         <source>Privacy Management</source>
-        <translation>Yksityisyystietojen hallinta</translation>
+        <translation>Adatvédelmi Menedzsment</translation>
     </message>
     <message>
         <source>Keep Favicons when deleting personal data</source>
-        <translation>Säilytä sivustojen kuvakkeet, kun henkilökohtaiset tiedot poistetaan</translation>
+        <translation>Kedvencek megtartása a személyes adatok törlésekor</translation>
     </message>
 </context>
 <context>
     <name>PromptDialog</name>
     <message>
         <source>OK</source>
-        <translation>Ok</translation>
+        <translation>OK</translation>
     </message>
 </context>
 <context>
     <name>ProxySettingsPage</name>
     <message>
         <source>Save</source>
-        <translation>Tallenna</translation>
+        <translation>Mentés</translation>
     </message>
     <message>
         <source>Proxy Disabled</source>
-        <translation>Välityspalvelin pois käytöstä</translation>
+        <translation>Proxy letiltva</translation>
     </message>
     <message>
         <source>You need to restart WebPirate</source>
-        <translation>Käynnistä WebPirate uudestaan</translation>
+        <translation>WebPirate újraindítása szükséges</translation>
     </message>
     <message>
         <source>Proxy Settings (Restart needed)</source>
-        <translation>Välityspalvelimen asetukset (Uudelleenkäynnistys tarvitaan)</translation>
+        <translation>Proxy Beállítások (Újraindítás szükséges)</translation>
     </message>
     <message>
         <source>Host or Ip Address</source>
-        <translation>Isäntäpalvelin tai IP-osoite</translation>
+        <translation>Host vagy Ip cím</translation>
     </message>
     <message>
         <source>Port</source>
-        <translation>Portti</translation>
+        <translation>Port</translation>
     </message>
 </context>
 <context>
     <name>QueryBar</name>
     <message>
         <source>Search with</source>
-        <translation>Etsi käyttäen...</translation>
+        <translation>Keresés ezzel:</translation>
     </message>
     <message>
         <source>Search...</source>
-        <translation>Etsi...</translation>
+        <translation>Keresés...</translation>
     </message>
 </context>
 <context>
     <name>QuickGrid</name>
     <message>
         <source>The Quick Grid is empty</source>
-        <translation>Ei pikavalintoja</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Long Press to edit</source>
-        <translation>Paina pitkään muokataksesi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>New tab</source>
-        <translation>Uusi välilehti</translation>
+        <translation>Új lap</translation>
     </message>
 </context>
 <context>
     <name>QuickGridBottomPanel</name>
     <message>
         <source>Add</source>
-        <translation>Lisää</translation>
+        <translation>Hozzáadás</translation>
     </message>
     <message>
         <source>Done</source>
-        <translation>Valmis</translation>
+        <translation>Kész</translation>
     </message>
 </context>
 <context>
     <name>QuickGridItem</name>
     <message>
         <source>Removing item</source>
-        <translation>Poistetaan kohdetta...</translation>
+        <translation>Elem Eltávolítása folyamatban</translation>
     </message>
 </context>
 <context>
     <name>QuickGridPage</name>
     <message>
         <source>Save</source>
-        <translation>Tallenna</translation>
+        <translation>Mentés</translation>
     </message>
     <message>
         <source>Title</source>
-        <translation>Otsikko</translation>
+        <translation>Cím</translation>
     </message>
     <message>
         <source>Url</source>
-        <translation>URL</translation>
+        <translation>Url</translation>
     </message>
 </context>
 <context>
     <name>RequestDialog</name>
     <message>
         <source>Yes</source>
-        <translation>Kyllä</translation>
+        <translation>Igen</translation>
     </message>
     <message>
         <source>No</source>
-        <translation>Ei</translation>
+        <translation>Nem</translation>
     </message>
 </context>
 <context>
     <name>SaveSessionPage</name>
     <message>
         <source>Save Session</source>
-        <translation>Tallenna istunto</translation>
+        <translation>Munkafolyamat mentése</translation>
     </message>
     <message>
         <source>Session name</source>
-        <translation>Istunnon nimi</translation>
+        <translation>Munkafolyamat neve</translation>
     </message>
     <message>
         <source>Load at startup</source>
-        <translation>Lataa käynnistyksessä</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Replace current session</source>
-        <translation>Korvaa avoinna oleva istunto</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Opened Tabs</source>
-        <translation>Avoimet välilehdet</translation>
+        <translation>Megnyitott Lapok</translation>
     </message>
     <message>
         <source>Selected</source>
-        <translation>Valittu</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>SearchEnginePage</name>
     <message>
         <source>Save</source>
-        <translation>Tallenna</translation>
+        <translation>Mentés</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Nimi</translation>
+        <translation>Név</translation>
     </message>
     <message>
         <source>Query</source>
-        <translation>Kysely</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>SearchEnginesPage</name>
     <message>
         <source>Set as Default</source>
-        <translation>Aseta oletukseksi</translation>
+        <translation>Beállítás alapértelmezettnek</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Poista</translation>
+        <translation>Törlés</translation>
     </message>
     <message>
         <source>Search Engines</source>
-        <translation>Hakukoneet</translation>
+        <translation>Keresőmotorok</translation>
     </message>
     <message>
         <source>Add</source>
-        <translation>Lisää</translation>
+        <translation>Hozzáadás</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Muokkaa</translation>
+        <translation>Szerkesztés</translation>
     </message>
     <message>
         <source>Deleting Search Engine</source>
-        <translation>Poistaa hakukonetta</translation>
+        <translation>Keresőmotor Törlése</translation>
     </message>
 </context>
 <context>
     <name>SelectorFilesPage</name>
     <message>
         <source>Android storage</source>
-        <translation>Android varasto</translation>
+        <translation>Android tárhely</translation>
     </message>
     <message>
         <source>SD Card</source>
-        <translation>SD -muistikortti</translation>
+        <translation>SD Kártya</translation>
     </message>
     <message>
         <source>Home</source>
-        <translation>Koti</translation>
+        <translation>Home</translation>
     </message>
     <message>
         <source>Send %1 file(s)</source>
-        <translation>Lähetä %1 tiedosto(a)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Back</source>
-        <translation>Edellinen</translation>
+        <translation>Vissza</translation>
     </message>
 </context>
 <context>
     <name>SessionPage</name>
     <message>
         <source>Save Session</source>
-        <translation>Tallenna istunto</translation>
+        <translation>Munkafolyamat mentése</translation>
     </message>
     <message>
         <source>Session name</source>
-        <translation>Istunnon nimi</translation>
+        <translation>Munkafolyamat neve</translation>
     </message>
     <message>
         <source>Load at startup</source>
-        <translation>Lataa käynnistyksessä</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Replace current session</source>
-        <translation>Korvaa avoinna oleva istunto</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Opened Tabs</source>
-        <translation>Avoinna olevat välilehdet</translation>
+        <translation>Megnyitott Lapok</translation>
     </message>
     <message>
         <source>Selected</source>
-        <translation>Valittu</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>SessionsSegment</name>
     <message>
         <source>Sessions</source>
-        <translation>Istunnot</translation>
+        <translation>Munkafolyamatok</translation>
     </message>
     <message>
         <source>No Sessions</source>
-        <translation>Ei istuntoja</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Save current session</source>
-        <translation>Tallenna nykyinen istunto</translation>
+        <translation>Munkafolyamat mentése</translation>
     </message>
     <message>
         <source>Tabs saved</source>
-        <translation>Välilehdet tallennettu</translation>
+        <translation>Lapok mentve</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation>Avaa</translation>
+        <translation>Megnyitás</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Muokkaa</translation>
+        <translation>Szerkesztés</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Poista</translation>
+        <translation>Törlés</translation>
     </message>
     <message>
         <source>Deleting session</source>
-        <translation>Istunto poistetaan</translation>
+        <translation>Munkafolyamat törlése </translation>
     </message>
     <message>
         <source>Loads at startup</source>
-        <translation>Istunto latautuu selaimen käynnistyksen yhteydessä</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>SettingsPage</name>
     <message>
         <source>General</source>
-        <translation>Yleistä</translation>
+        <translation>Általános</translation>
     </message>
     <message>
         <source>Privacy</source>
-        <translation>Yksityisyys</translation>
+        <translation>Adatvédelem</translation>
     </message>
     <message>
         <source>Browser Settings</source>
-        <translation>Selainasetukset</translation>
+        <translation>Böngésző Beállítások</translation>
     </message>
     <message>
         <source>Tabs</source>
-        <translation>Välilehdet</translation>
+        <translation>Lapok</translation>
     </message>
     <message>
         <source>Experimental</source>
-        <translation>Kokeelliset ominaisuudet</translation>
+        <translation>Kísérleti</translation>
     </message>
     <message>
         <source>Cover</source>
-        <translation>Kansi</translation>
+        <translation>Címlap</translation>
     </message>
     <message>
         <source>AdBlock</source>
-        <translation>Mainoksien esto</translation>
+        <translation>AdBlock</translation>
     </message>
     <message>
         <source>Proxy</source>
-        <translation>Välityspalvelin</translation>
+        <translation>Proxy</translation>
     </message>
     <message>
         <source>Popup Blocker</source>
-        <translation>Ponnahdusikkunoiden esto</translation>
+        <translation>Popup Blokkoló</translation>
     </message>
 </context>
 <context>
     <name>TabClosedItem</name>
     <message>
         <source>Open</source>
-        <translation>Avaa</translation>
+        <translation>Megnyitás</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Poista</translation>
+        <translation>Törlés</translation>
     </message>
     <message>
         <source>Deleting Tab</source>
-        <translation>Välilehti poistetaan</translation>
+        <translation>Lap Törlése</translation>
     </message>
 </context>
 <context>
     <name>TabListItem</name>
     <message>
         <source>Quick Grid</source>
-        <translation>Pikavalinnat</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Load error</source>
-        <translation>Virhe ladatessa</translation>
+        <translation>Betöltési hiba</translation>
     </message>
     <message>
         <source>Copy link</source>
-        <translation>Kopioi linkki</translation>
+        <translation>Link Másolása</translation>
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation>Linkki on kopioitu leikepöydälle</translation>
+        <translation>Link másolása a vágólapra</translation>
     </message>
     <message>
         <source>Save page</source>
-        <translation>Tallenna sivu</translation>
+        <translation>Oldal Mentése</translation>
     </message>
     <message>
         <source>Downloading web page</source>
-        <translation>Verkkosivu ladataan</translation>
+        <translation>Weboldal Betöltése</translation>
     </message>
     <message>
         <source>Duplicate tab</source>
-        <translation>Monista välilehti</translation>
+        <translation>Lap megkettőzése</translation>
     </message>
     <message>
         <source>Grabber</source>
-        <translation>Sieppari</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Media Player</source>
-        <translation>Mediasoitin</translation>
+        <translation>Média Lejátszó</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Sulje</translation>
+        <translation>Bezárás</translation>
     </message>
     <message>
         <source>Enable Reader Mode</source>
@@ -1319,52 +1319,52 @@
     <name>TabsSegment</name>
     <message>
         <source>Tabs</source>
-        <translation>Välilehdet</translation>
+        <translation>Lapok</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation>Asetukset</translation>
+        <translation>Beállítások</translation>
     </message>
     <message>
         <source>New Tab</source>
-        <translation>Uusi välilehti</translation>
+        <translation>Új Lap</translation>
     </message>
     <message>
         <source>Disable Night Mode</source>
-        <translation>Poista yötila käytöstä</translation>
+        <translation>Éjszakai mód letiltása</translation>
     </message>
     <message>
         <source>Enable Night Mode</source>
-        <translation>Ota yötila käyttöön</translation>
+        <translation>Éjszakai mód engedélyezése</translation>
     </message>
 </context>
 <context>
     <name>TabsSettingsPage</name>
     <message>
         <source>Restore tabs at Startup</source>
-        <translation>Palauta välilehdet, kun selain käynnistetään uudelleen</translation>
+        <translation>Lapok visszaállítása indításkor</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Tallenna</translation>
+        <translation>Mentés</translation>
     </message>
     <message>
         <source>Close last tab</source>
-        <translation>Sulje edellinen välilehti</translation>
+        <translation>Legutóbbi lap bezárása</translation>
     </message>
 </context>
 <context>
     <name>TextFieldPage</name>
     <message>
         <source>Send</source>
-        <translation>Lähetä</translation>
+        <translation>Küldés</translation>
     </message>
 </context>
 <context>
     <name>TextSelectionPage</name>
     <message>
         <source>Copy</source>
-        <translation>Kopioi</translation>
+        <translation>Másolás</translation>
     </message>
 </context>
 <context>
@@ -1420,84 +1420,84 @@
     <name>WebViewListener</name>
     <message>
         <source>Codec</source>
-        <translation>Koodekki</translation>
+        <translation>Kodek</translation>
     </message>
     <message>
         <source>No videos found, report to developer</source>
-        <translation>Videoita ei löytynyt, lähetä kehittäjälle ilmoitus</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Video grabbed successfully</source>
-        <translation>Videon sieppaus onnistui</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>YouTubeCipher</name>
     <message>
         <source>Downloading Player&apos;s Cipher</source>
-        <translation>Ladataan soittimen salakirjoituskoodia</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Cannot find decoding function</source>
-        <translation>Purkufunktiota ei löytynyt</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Cannot find decoding object</source>
-        <translation>Purettavaa kohdetta ei löytynyt</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Cannot download Video Configuration</source>
-        <translation>Videon kokoonpanotietoja ei voitu ladata</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ciphered Video: Downloading WebPage</source>
-        <translation>Salakirjoitettu video: Ladataan nettisivua</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Cannot find decoding function, report to developer</source>
-        <translation>Purkufunktiota ei löytynyt, lähetä kehittäjälle ilmoitus</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Cannot find decoding object, report to developer</source>
-        <translation>Purettavaa kohdetta ei löytynyt, lähetä kehittäjälle ilmoitus</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>YouTubeGrabber</name>
     <message>
         <source>Quality</source>
-        <translation>Laatu</translation>
+        <translation>Minőség</translation>
     </message>
     <message>
         <source>Downloading video info</source>
-        <translation>Ladataan tietoa videosta...</translation>
+        <translation>Videó adatainak letöltése</translation>
     </message>
     <message>
         <source>Grabbing %1</source>
-        <translation>Siepataan %1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Decoding Signature for %1</source>
-        <translation>Tulkitaan allekirjoitusta kohteelle %1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Video grabbed successfully</source>
-        <translation>Videon sieppaus onnistui</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Cannot get video, report to developer</source>
-        <translation>Videon haku epäonnistui, lähetä kehittäjälle ilmoitus</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>harbour-webpirate</name>
     <message>
         <source>Download Completed</source>
-        <translation>Lataus suoritettu</translation>
+        <translation>Sikeres Letöltés</translation>
     </message>
     <message>
         <source>Download Failed</source>
-        <translation>Lataus epäonnistui</translation>
+        <translation>Sikertelen Letöltés</translation>
     </message>
 </context>
 </TS>

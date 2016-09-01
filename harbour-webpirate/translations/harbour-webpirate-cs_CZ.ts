@@ -72,11 +72,11 @@
     </message>
     <message>
         <source>Download CSS Filters</source>
-        <translation type="unfinished"></translation>
+        <translation>Stáhnout CSS filtry</translation>
     </message>
     <message>
         <source>Download Hosts BlackList</source>
-        <translation type="unfinished"></translation>
+        <translation>Stáhnout Blackiist</translation>
     </message>
 </context>
 <context>
@@ -118,11 +118,11 @@
     </message>
     <message>
         <source>Disable AdBlock</source>
-        <translation type="unfinished"></translation>
+        <translation>Vypnout AdBlock</translation>
     </message>
     <message>
         <source>Enable AdBlock</source>
-        <translation type="unfinished"></translation>
+        <translation>Zapnout AdBlock</translation>
     </message>
 </context>
 <context>
@@ -192,11 +192,11 @@
     </message>
     <message>
         <source>Accept Certificate from: %1 ?</source>
-        <translation type="unfinished"></translation>
+        <translation>Akceptovat certifikát od %1 ?</translation>
     </message>
     <message>
         <source>Refresh</source>
-        <translation type="unfinished"></translation>
+        <translation>Obnovit</translation>
     </message>
     <message>
         <source>New tab</source>
@@ -353,7 +353,7 @@
     </message>
     <message>
         <source>Cover Settings</source>
-        <translation>Nastavení obalu</translation>
+        <translation>Nastavení Přebalu</translation>
     </message>
 </context>
 <context>
@@ -438,7 +438,7 @@
     </message>
     <message>
         <source>Icon Designer</source>
-        <translation type="unfinished">Autor designu Ikon</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -517,7 +517,7 @@
     </message>
     <message>
         <source>Use SailfishOS&apos;s editing components instead of WebView&apos;s ones</source>
-        <translation>Používat editečný komponenty od SailfishOS místo od WebView</translation>
+        <translation>Používat komponenty editace od SailfishOS místo od WebView</translation>
     </message>
     <message>
         <source>Ambience Browsing</source>
@@ -552,7 +552,7 @@
     </message>
     <message>
         <source>Add to Quick Grid</source>
-        <translation>Přidat do rychlé mřížky</translation>
+        <translation>Přidat do rychlé volby</translation>
     </message>
 </context>
 <context>
@@ -685,15 +685,15 @@
         <translation>Nastavit jako výchozí prohlížeč</translation>
     </message>
     <message>
-        <source>Custom action</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Pressed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Long Pressed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Custom actions</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -845,7 +845,7 @@
     </message>
     <message>
         <source>&apos;%1&apos; wants to access system&apos;s notifications</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 chce přístup k systémovým notifikacím</translation>
     </message>
 </context>
 <context>
@@ -1068,7 +1068,7 @@
     </message>
     <message>
         <source>Replace current session</source>
-        <translation>Nahradit současné sezení</translation>
+        <translation>Nahradit současné relace</translation>
     </message>
     <message>
         <source>Opened Tabs</source>
@@ -1125,7 +1125,7 @@
     <name>SelectorFilesPage</name>
     <message>
         <source>Android storage</source>
-        <translation type="unfinished"></translation>
+        <translation>Úložiště Android</translation>
     </message>
     <message>
         <source>SD Card</source>
@@ -1133,11 +1133,11 @@
     </message>
     <message>
         <source>Home</source>
-        <translation>Domov</translation>
+        <translation>Domů</translation>
     </message>
     <message>
         <source>Send %1 file(s)</source>
-        <translation type="unfinished"></translation>
+        <translation>Poslat %1 souborů</translation>
     </message>
     <message>
         <source>Back</source>
@@ -1152,7 +1152,7 @@
     </message>
     <message>
         <source>Session name</source>
-        <translation>Název relaci</translation>
+        <translation>Název relace</translation>
     </message>
     <message>
         <source>Load at startup</source>
@@ -1183,7 +1183,7 @@
     </message>
     <message>
         <source>Save current session</source>
-        <translation>Uložit současné sezení</translation>
+        <translation>Uložit současnou relaci</translation>
     </message>
     <message>
         <source>Tabs saved</source>
@@ -1207,7 +1207,7 @@
     </message>
     <message>
         <source>Loads at startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Nabíhá při startu</translation>
     </message>
 </context>
 <context>
@@ -1234,7 +1234,7 @@
     </message>
     <message>
         <source>Cover</source>
-        <translation>Deska</translation>
+        <translation>Přebal</translation>
     </message>
     <message>
         <source>AdBlock</source>
@@ -1246,7 +1246,7 @@
     </message>
     <message>
         <source>Popup Blocker</source>
-        <translation type="unfinished">Blokování vyskakujících oken</translation>
+        <translation>Blokování PopUp oken</translation>
     </message>
 </context>
 <context>
@@ -1268,11 +1268,11 @@
     <name>TabListItem</name>
     <message>
         <source>Quick Grid</source>
-        <translation> Rychlý mřížek</translation>
+        <translation> Rychlá volba</translation>
     </message>
     <message>
         <source>Load error</source>
-        <translation type="unfinished"></translation>
+        <translation>Chyba načtení</translation>
     </message>
     <message>
         <source>Copy link</source>
@@ -1296,15 +1296,15 @@
     </message>
     <message>
         <source>Grabber</source>
-        <translation type="unfinished"></translation>
+        <translation>Grabber</translation>
     </message>
     <message>
         <source>Media Player</source>
-        <translation type="unfinished"></translation>
+        <translation>Přehrávač médií</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="unfinished"></translation>
+        <translation>Zavřít</translation>
     </message>
     <message>
         <source>Enable Reader Mode</source>
@@ -1331,11 +1331,11 @@
     </message>
     <message>
         <source>Disable Night Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Vypnout noční mód</translation>
     </message>
     <message>
         <source>Enable Night Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Zapnout noční mód</translation>
     </message>
 </context>
 <context>
@@ -1397,7 +1397,7 @@
     <name>TranslationsPage</name>
     <message>
         <source>Translation Platform</source>
-        <translation type="unfinished">Překladatelská platforma</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Translations</source>
@@ -1409,7 +1409,7 @@
     </message>
     <message>
         <source>Translators</source>
-        <translation type="unfinished">Překladatelé</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Reviewers</source>
@@ -1424,11 +1424,11 @@
     </message>
     <message>
         <source>No videos found, report to developer</source>
-        <translation type="unfinished"></translation>
+        <translation>Žádná videa nenalezena, nahlašte vývojáři</translation>
     </message>
     <message>
         <source>Video grabbed successfully</source>
-        <translation type="unfinished"></translation>
+        <translation>Video úspěšně staženo</translation>
     </message>
 </context>
 <context>
@@ -1455,11 +1455,11 @@
     </message>
     <message>
         <source>Cannot find decoding function, report to developer</source>
-        <translation type="unfinished"></translation>
+        <translation>Nelze nalézt dekódovací funkci, nahlašte vývojáři</translation>
     </message>
     <message>
         <source>Cannot find decoding object, report to developer</source>
-        <translation>Nelze nalézt dekódovací objekt, kontaktuj vívojáře</translation>
+        <translation>Nelze nalézt dekódovací objekt, nahlašte vývojáři</translation>
     </message>
 </context>
 <context>
@@ -1482,11 +1482,11 @@
     </message>
     <message>
         <source>Video grabbed successfully</source>
-        <translation type="unfinished"></translation>
+        <translation>Video úspěšně staženo</translation>
     </message>
     <message>
         <source>Cannot get video, report to developer</source>
-        <translation type="unfinished"></translation>
+        <translation>Nelze stáhnout video, nahlašte vývojáři</translation>
     </message>
 </context>
 <context>

@@ -72,11 +72,11 @@
     </message>
     <message>
         <source>Download CSS Filters</source>
-        <translation type="unfinished"></translation>
+        <translation>Prenesi CSS filtre</translation>
     </message>
     <message>
         <source>Download Hosts BlackList</source>
-        <translation type="unfinished"></translation>
+        <translation>Prenesi Hosts BlackList</translation>
     </message>
 </context>
 <context>
@@ -204,15 +204,15 @@
     </message>
     <message>
         <source>Remove from Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Odstrani iz zaznamkov</translation>
     </message>
     <message>
         <source>Add to Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Dodaj med zaznamke</translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation type="unfinished"></translation>
+        <translation>Stop</translation>
     </message>
 </context>
 <context>
@@ -438,7 +438,7 @@
     </message>
     <message>
         <source>Icon Designer</source>
-        <translation type="unfinished">Oblikovalec ikone</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -685,10 +685,6 @@
         <translation>Nastavi kot privzeti brskalnik</translation>
     </message>
     <message>
-        <source>Custom action</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Pressed</source>
         <translation type="unfinished"></translation>
     </message>
@@ -696,16 +692,20 @@
         <source>Long Pressed</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Custom actions</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>GrabberItem</name>
     <message>
         <source>Play</source>
-        <translation type="unfinished"></translation>
+        <translation>Predvajaj</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished">Prenos</translation>
+        <translation>Prenesi</translation>
     </message>
     <message>
         <source>Grabbing video</source>
@@ -713,11 +713,11 @@
     </message>
     <message>
         <source>Copy URL</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopiraj URL</translation>
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation type="unfinished">Povezava shranjena v odložišče</translation>
+        <translation>Povezava shranjena v odložišče</translation>
     </message>
 </context>
 <context>
@@ -1246,7 +1246,7 @@
     </message>
     <message>
         <source>Popup Blocker</source>
-        <translation type="unfinished">Blokiranje pojavnih oken</translation>
+        <translation>Blokiranje pojavnih oken</translation>
     </message>
 </context>
 <context>
@@ -1276,23 +1276,23 @@
     </message>
     <message>
         <source>Copy link</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopiraj povezavo</translation>
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation type="unfinished">Povezava shranjena v odložišče</translation>
+        <translation>Povezava shranjena v odložišče</translation>
     </message>
     <message>
         <source>Save page</source>
-        <translation type="unfinished"></translation>
+        <translation>Shrani stran</translation>
     </message>
     <message>
         <source>Downloading web page</source>
-        <translation type="unfinished"></translation>
+        <translation>Shranjevanje spletne strani</translation>
     </message>
     <message>
         <source>Duplicate tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Podvoji zavihek</translation>
     </message>
     <message>
         <source>Grabber</source>
@@ -1300,11 +1300,11 @@
     </message>
     <message>
         <source>Media Player</source>
-        <translation type="unfinished"></translation>
+        <translation>Media Player</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="unfinished"></translation>
+        <translation>Zapri</translation>
     </message>
     <message>
         <source>Enable Reader Mode</source>
@@ -1397,7 +1397,7 @@
     <name>TranslationsPage</name>
     <message>
         <source>Translation Platform</source>
-        <translation type="unfinished">Platforma za prevajanje</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Translations</source>
@@ -1409,7 +1409,7 @@
     </message>
     <message>
         <source>Translators</source>
-        <translation type="unfinished">Prevajalci</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Reviewers</source>

@@ -685,15 +685,15 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Custom action</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Pressed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Long Pressed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Custom actions</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -705,7 +705,7 @@
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished">ダウンロード</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Grabbing video</source>
@@ -1411,7 +1411,7 @@
     </message>
     <message>
         <source>Translators</source>
-        <translation type="unfinished">翻訳者たち</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Reviewers</source>

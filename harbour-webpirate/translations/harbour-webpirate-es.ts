@@ -72,11 +72,11 @@
     </message>
     <message>
         <source>Download CSS Filters</source>
-        <translation type="unfinished"></translation>
+        <translation>Descargar filtros CSS</translation>
     </message>
     <message>
         <source>Download Hosts BlackList</source>
-        <translation type="unfinished"></translation>
+        <translation>Descargar lista negra de Hosts</translation>
     </message>
 </context>
 <context>
@@ -438,7 +438,7 @@
     </message>
     <message>
         <source>Icon Designer</source>
-        <translation type="unfinished">Diseñador del icono</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -521,11 +521,11 @@
     </message>
     <message>
         <source>Ambience Browsing</source>
-        <translation type="unfinished"></translation>
+        <translation>Navegador con ambiente</translation>
     </message>
     <message>
         <source>WebPirate will try to skin webpages according to ambience settings</source>
-        <translation type="unfinished"></translation>
+        <translation>WebPirate intentará mostrar las páginas Web según el ambiente actual</translation>
     </message>
 </context>
 <context>
@@ -685,15 +685,15 @@
         <translation>Establecer como navegador predeterminado</translation>
     </message>
     <message>
-        <source>Custom action</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Pressed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Long Pressed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Custom actions</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1297,15 +1297,15 @@
     </message>
     <message>
         <source>Grabber</source>
-        <translation type="unfinished"></translation>
+        <translation>Capturador</translation>
     </message>
     <message>
         <source>Media Player</source>
-        <translation type="unfinished"></translation>
+        <translation>Reproductor multimedia</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="unfinished"></translation>
+        <translation>Cerrar</translation>
     </message>
     <message>
         <source>Enable Reader Mode</source>
@@ -1398,7 +1398,7 @@
     <name>TranslationsPage</name>
     <message>
         <source>Translation Platform</source>
-        <translation type="unfinished">Plataforma de traducción</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Translations</source>
@@ -1410,7 +1410,7 @@
     </message>
     <message>
         <source>Translators</source>
-        <translation type="unfinished">Traductores</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Reviewers</source>
@@ -1429,7 +1429,7 @@
     </message>
     <message>
         <source>Video grabbed successfully</source>
-        <translation type="unfinished">Vídeo capturado con éxito</translation>
+        <translation>Vídeo capturado con éxito</translation>
     </message>
 </context>
 <context>

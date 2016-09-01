@@ -438,7 +438,7 @@
     </message>
     <message>
         <source>Icon Designer</source>
-        <translation type="unfinished">图标设计</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -685,15 +685,15 @@
         <translation>设为默认浏览器</translation>
     </message>
     <message>
-        <source>Custom action</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Pressed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Long Pressed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Custom actions</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -705,7 +705,7 @@
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished">下载</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Grabbing video</source>
@@ -1397,7 +1397,7 @@
     <name>TranslationsPage</name>
     <message>
         <source>Translation Platform</source>
-        <translation type="unfinished">翻译平台</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Translations</source>
@@ -1409,7 +1409,7 @@
     </message>
     <message>
         <source>Translators</source>
-        <translation type="unfinished">翻译者</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Reviewers</source>

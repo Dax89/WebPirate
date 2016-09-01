@@ -685,15 +685,15 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Custom action</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Pressed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Long Pressed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Custom actions</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

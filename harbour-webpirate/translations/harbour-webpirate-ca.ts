@@ -72,11 +72,11 @@
     </message>
     <message>
         <source>Download CSS Filters</source>
-        <translation type="unfinished"></translation>
+        <translation>Descarrega els filtres CSS</translation>
     </message>
     <message>
         <source>Download Hosts BlackList</source>
-        <translation type="unfinished"></translation>
+        <translation>Descarrega la llista de llocs remots blocats</translation>
     </message>
 </context>
 <context>
@@ -438,7 +438,7 @@
     </message>
     <message>
         <source>Icon Designer</source>
-        <translation type="unfinished">Dissenyador d&apos;icones</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -521,11 +521,11 @@
     </message>
     <message>
         <source>Ambience Browsing</source>
-        <translation type="unfinished"></translation>
+        <translation>Navegació segons ambients</translation>
     </message>
     <message>
         <source>WebPirate will try to skin webpages according to ambience settings</source>
-        <translation type="unfinished"></translation>
+        <translation>WebPirate intentarà mostrar l&apos;aparença dels webs d&apos;acord amb la configuració d&apos;ambients</translation>
     </message>
 </context>
 <context>
@@ -685,10 +685,6 @@
         <translation>Estableix com a predeterminat</translation>
     </message>
     <message>
-        <source>Custom action</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Pressed</source>
         <translation type="unfinished"></translation>
     </message>
@@ -696,28 +692,32 @@
         <source>Long Pressed</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Custom actions</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>GrabberItem</name>
     <message>
         <source>Play</source>
-        <translation type="unfinished"></translation>
+        <translation>Reprodueix</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished">Descarrega</translation>
+        <translation>Descarrega</translation>
     </message>
     <message>
         <source>Grabbing video</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;està capturant el vídeo</translation>
     </message>
     <message>
         <source>Copy URL</source>
-        <translation type="unfinished"></translation>
+        <translation>Copia la URL</translation>
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation type="unfinished">S&apos;ha copiat l&apos;enllaç al porta-retalls</translation>
+        <translation>S&apos;ha copiat l&apos;enllaç al porta-retalls</translation>
     </message>
 </context>
 <context>
@@ -1296,15 +1296,15 @@
     </message>
     <message>
         <source>Grabber</source>
-        <translation type="unfinished"></translation>
+        <translation>Capturado</translation>
     </message>
     <message>
         <source>Media Player</source>
-        <translation type="unfinished"></translation>
+        <translation>Reproductor multimèdia</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="unfinished"></translation>
+        <translation>Tanca</translation>
     </message>
     <message>
         <source>Enable Reader Mode</source>
@@ -1397,7 +1397,7 @@
     <name>TranslationsPage</name>
     <message>
         <source>Translation Platform</source>
-        <translation type="unfinished">Plataforma de traducció</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Translations</source>
@@ -1409,7 +1409,7 @@
     </message>
     <message>
         <source>Translators</source>
-        <translation type="unfinished">Traductors</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Reviewers</source>
@@ -1424,11 +1424,11 @@
     </message>
     <message>
         <source>No videos found, report to developer</source>
-        <translation type="unfinished"></translation>
+        <translation>No s&apos;ha trobat cap vídeo, informeu-ne al desenvolupador</translation>
     </message>
     <message>
         <source>Video grabbed successfully</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;ha capturat el vídeo correctament</translation>
     </message>
 </context>
 <context>
@@ -1455,11 +1455,11 @@
     </message>
     <message>
         <source>Cannot find decoding function, report to developer</source>
-        <translation type="unfinished"></translation>
+        <translation>No s&apos;ha pogut trobar la funció de descodificació, informeu-ne al desenvolupador</translation>
     </message>
     <message>
         <source>Cannot find decoding object, report to developer</source>
-        <translation type="unfinished"></translation>
+        <translation>No s&apos;ha pogut trobar l&apos;objecte  de descodificació, informeu-ne al desenvolupador</translation>
     </message>
 </context>
 <context>
@@ -1482,11 +1482,11 @@
     </message>
     <message>
         <source>Video grabbed successfully</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;ha capturat el vídeo correctament</translation>
     </message>
     <message>
         <source>Cannot get video, report to developer</source>
-        <translation type="unfinished"></translation>
+        <translation>No s&apos;ha pogut obtenir el vídeo, informeu-ne al desenvolupador</translation>
     </message>
 </context>
 <context>

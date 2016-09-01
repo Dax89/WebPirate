@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="fi_FI">
+<TS version="2.1" language="pl">
 <context>
     <name>AboutPage</name>
     <message>
         <source>Version</source>
-        <translation>Versio</translation>
+        <translation>Wersja</translation>
     </message>
     <message>
         <source>A tabbed Web Browser for SailfishOS based on WebKit</source>
-        <translation>WebKitiin perustuva välilehdellinen webselain SailfishOS:lle</translation>
+        <translation>Przeglądarka internetowa dla SailfishOS z obsługą kart bazowana na silniku WebKit</translation>
     </message>
     <message>
         <source>GitHub Repository</source>
-        <translation>GitHub repo</translation>
+        <translation>Repozytorium GitHub</translation>
     </message>
     <message>
         <source>Report an Issue</source>
@@ -48,81 +48,81 @@
     <name>AdBlockDownloaderPage</name>
     <message>
         <source>AdBlock Updater</source>
-        <translation>Adblock päivittäjä</translation>
+        <translation>Narzędzie aktualizacji AdBlock&apos;a</translation>
     </message>
     <message>
         <source>State</source>
-        <translation>Tila</translation>
+        <translation>Stan</translation>
     </message>
     <message>
         <source>Ready</source>
-        <translation>Valmis</translation>
+        <translation>Gotowe</translation>
     </message>
     <message>
         <source>Connecting</source>
-        <translation>Yhdistetään...</translation>
+        <translation>Łączenie</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Virhe</translation>
+        <translation>Błąd</translation>
     </message>
     <message>
         <source>Completed</source>
-        <translation>Valmis</translation>
+        <translation>Zakończone</translation>
     </message>
     <message>
         <source>Download CSS Filters</source>
-        <translation>Lataa CSS Suodattimet</translation>
+        <translation>Pobierz filtry CSS</translation>
     </message>
     <message>
         <source>Download Hosts BlackList</source>
-        <translation>Lataa Palvelimien Musta lista</translation>
+        <translation>Pobierz czarną listę Hosts</translation>
     </message>
 </context>
 <context>
     <name>AdBlockFilter</name>
     <message>
         <source>Save</source>
-        <translation>Tallenna</translation>
+        <translation>Zapisz</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation>Suodatin</translation>
+        <translation>Filtr</translation>
     </message>
 </context>
 <context>
     <name>AdBlockPage</name>
     <message>
         <source>Save</source>
-        <translation>Tallenna</translation>
+        <translation>Zapisz</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Muokkaa</translation>
+        <translation>Edytuj</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Poista</translation>
+        <translation>Usuń</translation>
     </message>
     <message>
         <source>Deleting filter</source>
-        <translation>Suodatinta poistetaan</translation>
+        <translation>Usuwanie filtra</translation>
     </message>
     <message>
         <source>Update Filters</source>
-        <translation>Päivitä suodattimet</translation>
+        <translation>Aktualizuj Filtry</translation>
     </message>
     <message>
         <source>Add Filter</source>
-        <translation>Lisää suodatin</translation>
+        <translation>Dodaj Filtr</translation>
     </message>
     <message>
         <source>Disable AdBlock</source>
-        <translation>Poista mainoksien esto käytöstä</translation>
+        <translation>Wyłącz AdBlock</translation>
     </message>
     <message>
         <source>Enable AdBlock</source>
-        <translation>Ota mainoksien esto käyttöön</translation>
+        <translation>Włącz AdBlock</translation>
     </message>
 </context>
 <context>
@@ -136,239 +136,239 @@
     <name>AuthenticationDialog</name>
     <message>
         <source>Login</source>
-        <translation>Kirjaudu sisään</translation>
+        <translation>Zaloguj isę</translation>
     </message>
     <message>
         <source>Authentication required</source>
-        <translation>Tunnistautuminen vaadittu</translation>
+        <translation>Wymagane uwierzytelnienie</translation>
     </message>
     <message>
         <source>requires authentication</source>
-        <translation>Vaatii tunnistautumisen</translation>
+        <translation>wymaga uwierzytelnienia</translation>
     </message>
     <message>
         <source>User</source>
-        <translation>Käyttäjä</translation>
+        <translation>Użytkownik</translation>
     </message>
     <message>
         <source>Password</source>
-        <translation>Salasana</translation>
+        <translation>Hasło</translation>
     </message>
 </context>
 <context>
     <name>BlockedPopupItem</name>
     <message>
         <source>Allow</source>
-        <translation>Salli</translation>
+        <translation>Zezwól</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Poista</translation>
+        <translation>Usuń</translation>
     </message>
     <message>
         <source>Deleting rule</source>
-        <translation>Poistetaan sääntöä</translation>
+        <translation>Usuwanie reguły</translation>
     </message>
 </context>
 <context>
     <name>BrowserGrabber</name>
     <message>
         <source>Status</source>
-        <translation>Tila</translation>
+        <translation>Status</translation>
     </message>
 </context>
 <context>
     <name>BrowserTab</name>
     <message>
         <source>New Tab</source>
-        <translation>Uusi välilehti</translation>
+        <translation>Nowa Karta</translation>
     </message>
 </context>
 <context>
     <name>BrowserWebView</name>
     <message>
         <source>Downloading</source>
-        <translation>Lataa...</translation>
+        <translation>Pobieranie</translation>
     </message>
     <message>
         <source>Accept Certificate from: %1 ?</source>
-        <translation>Hyväksytkö varmenteen kohteesta: %1 ?</translation>
+        <translation>Zaakceptować certyfikat od: %1 ?</translation>
     </message>
     <message>
         <source>Refresh</source>
-        <translation>Päivitä</translation>
+        <translation>Odśwież</translation>
     </message>
     <message>
         <source>New tab</source>
-        <translation>Uusi välilehti</translation>
+        <translation>Nowa karta</translation>
     </message>
     <message>
         <source>Remove from Favorites</source>
-        <translation>Poista suosikeista</translation>
+        <translation>Usuń z Ulubionych</translation>
     </message>
     <message>
         <source>Add to Favorites</source>
-        <translation>Lisää suosikkeihin</translation>
+        <translation>Dodaj do Ulubionych</translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation>Pysäytä</translation>
+        <translation>Zatrzymaj</translation>
     </message>
 </context>
 <context>
     <name>ClosedTabsSegment</name>
     <message>
         <source>Closed Tabs</source>
-        <translation>Suljetut välilehdet</translation>
+        <translation>Zamknięte Karty</translation>
     </message>
     <message>
         <source>Delete Closed Tabs</source>
-        <translation>Poista suljetut välilehdet</translation>
+        <translation>Usuń Zamknięte Karty</translation>
     </message>
 </context>
 <context>
     <name>CookieListItem</name>
     <message>
         <source>Delete</source>
-        <translation>Poista</translation>
+        <translation>Usuń</translation>
     </message>
     <message>
         <source>Deleting Cookie</source>
-        <translation>Poistetaan eväste</translation>
+        <translation>Usuwanie Ciasteczka</translation>
     </message>
 </context>
 <context>
     <name>CookieListPage</name>
     <message>
         <source>Cookies</source>
-        <translation>Evästeet</translation>
+        <translation>Ciasteczka</translation>
     </message>
     <message>
         <source>Add Cookie</source>
-        <translation>Lisää eväste</translation>
+        <translation>Dodaj Ciasteczko</translation>
     </message>
 </context>
 <context>
     <name>CookiePage</name>
     <message>
         <source>Save</source>
-        <translation>Tallenna</translation>
+        <translation>Zapisz</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Nimi</translation>
+        <translation>Nazwa</translation>
     </message>
     <message>
         <source>Domain</source>
-        <translation>Piiri</translation>
+        <translation>Domena</translation>
     </message>
     <message>
         <source>Path</source>
-        <translation>Polku</translation>
+        <translation>Ścieżka</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>Arvo</translation>
+        <translation>Wartość</translation>
     </message>
     <message>
         <source>Expires</source>
-        <translation>Vanhenee</translation>
+        <translation>Wygada</translation>
     </message>
 </context>
 <context>
     <name>CookiesSegment</name>
     <message>
         <source>Cookie Manager</source>
-        <translation>Evästeiden hallinta</translation>
+        <translation>Menedżer Ciasteczek</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation>Suodatin</translation>
+        <translation>Filtr</translation>
     </message>
     <message>
         <source>Remove All Cookies</source>
-        <translation>Poista kaikki evästeet</translation>
+        <translation>Usuń Wszystkie Ciasteczka</translation>
     </message>
     <message>
         <source>Add Cookie</source>
-        <translation>Lisää eväste</translation>
+        <translation>Dodaj Ciasteczko</translation>
     </message>
 </context>
 <context>
     <name>CoverModel</name>
     <message>
         <source>Go to Previous Tab</source>
-        <translation>Siirry edelliseen välilehteen</translation>
+        <translation>Idź do Poprzedniej Karty</translation>
     </message>
     <message>
         <source>Go to Next Tab</source>
-        <translation>Siirry seuraavaan välilehteen</translation>
+        <translation>Idź do Następnej Karty</translation>
     </message>
     <message>
         <source>Add New Tab</source>
-        <translation>Lisää uusi välilehti</translation>
+        <translation>Dodaj Nową Kartę</translation>
     </message>
     <message>
         <source>Close Tab</source>
-        <translation>Sulje välilehti</translation>
+        <translation>Zamknij Kartę</translation>
     </message>
     <message>
         <source>Load Homepage</source>
-        <translation>Avaa kotisivu</translation>
+        <translation>Ładuj Stronę Główną</translation>
     </message>
     <message>
         <source>Close Browser</source>
-        <translation>Sulje selain</translation>
+        <translation>Zamknij Przeglądarkę</translation>
     </message>
     <message>
         <source>Reload Current Page</source>
-        <translation>Lataa sivu uudelleen</translation>
+        <translation>Odśwież Aktualną Stronę</translation>
     </message>
     <message>
         <source>Wipe personal data</source>
-        <translation>Poista henkilökohtaiset tiedot</translation>
+        <translation>Wyczyść dane osobiste</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Haku</translation>
+        <translation>Szukaj</translation>
     </message>
 </context>
 <context>
     <name>CoverSettingsPage</name>
     <message>
         <source>General Actions</source>
-        <translation>Yleiset toiminnot</translation>
+        <translation>Akcje Ogólne</translation>
     </message>
     <message>
         <source>Left</source>
-        <translation>Vasen</translation>
+        <translation>Lewo</translation>
     </message>
     <message>
         <source>Right</source>
-        <translation>Oikea</translation>
+        <translation>Prawo</translation>
     </message>
     <message>
         <source>Webpage Actions</source>
-        <translation>Web -sivujen toiminnot</translation>
+        <translation>Akcje Strony</translation>
     </message>
     <message>
         <source>Cover Settings</source>
-        <translation>Kannen asetukset</translation>
+        <translation>Ustawienia Okładki</translation>
     </message>
 </context>
 <context>
     <name>CredentialDialog</name>
     <message>
         <source>Yes</source>
-        <translation>Kyllä</translation>
+        <translation>Tak</translation>
     </message>
     <message>
         <source>No</source>
-        <translation>Ei</translation>
+        <translation>Nie</translation>
     </message>
     <message>
         <source>Do you want to store the password?</source>
-        <translation>Haluatko tallentaa salasanan?</translation>
+        <translation>Czy chcesz zapisać hasło?</translation>
     </message>
 </context>
 <context>
@@ -379,7 +379,7 @@
     </message>
     <message>
         <source>Home Page</source>
-        <translation type="unfinished">Kotisivu</translation>
+        <translation type="unfinished">Strona Główna</translation>
     </message>
     <message>
         <source>Night Mode</source>
@@ -387,15 +387,15 @@
     </message>
     <message>
         <source>Closed Tabs</source>
-        <translation type="unfinished">Suljetut välilehdet</translation>
+        <translation type="unfinished">Zamknięte Karty</translation>
     </message>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished">Suosikit</translation>
+        <translation type="unfinished">Ulubione</translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation type="unfinished">Lataukset</translation>
+        <translation type="unfinished">Transfery</translation>
     </message>
     <message>
         <source>Navigation History</source>
@@ -403,11 +403,11 @@
     </message>
     <message>
         <source>Sessions</source>
-        <translation type="unfinished">Istunnot</translation>
+        <translation type="unfinished">Sesje</translation>
     </message>
     <message>
         <source>Cookies</source>
-        <translation type="unfinished">Evästeet</translation>
+        <translation type="unfinished">Ciasteczka</translation>
     </message>
     <message>
         <source>Close Current Tab</source>
@@ -415,7 +415,7 @@
     </message>
     <message>
         <source>New Tab</source>
-        <translation type="unfinished">Uusi välilehti</translation>
+        <translation type="unfinished">Nowa Karta</translation>
     </message>
     <message>
         <source>Reader Mode</source>
@@ -445,144 +445,144 @@
     <name>DomainListItem</name>
     <message>
         <source>Cookies:</source>
-        <translation>Evästeet:</translation>
+        <translation>Ciasteczka:</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Poista</translation>
+        <translation>Usuń</translation>
     </message>
     <message>
         <source>Deleting Cookies</source>
-        <translation>Evästeet poistetaan</translation>
+        <translation>Usuwanie ciasteczek</translation>
     </message>
 </context>
 <context>
     <name>DownloadItem</name>
     <message>
         <source>Redirect Loop</source>
-        <translation>Uudelleenohjaussilmukka</translation>
+        <translation>Pętla przekierowań</translation>
     </message>
 </context>
 <context>
     <name>DownloadListItem</name>
     <message>
         <source>Cancel</source>
-        <translation>Peruuta</translation>
+        <translation>Anuluj</translation>
     </message>
     <message>
         <source>Completed:</source>
-        <translation>Valmis:</translation>
+        <translation>Zakończone:</translation>
     </message>
     <message>
         <source>Speed:</source>
-        <translation>Nopeus:</translation>
+        <translation>Szybkość:</translation>
     </message>
     <message>
         <source>Completed</source>
-        <translation>Valmis</translation>
+        <translation>Zakończone</translation>
     </message>
     <message>
         <source>Error:</source>
-        <translation>Virhe:</translation>
+        <translation>Błąd:</translation>
     </message>
 </context>
 <context>
     <name>DownloadsSegment</name>
     <message>
         <source>Delete completed Downloads</source>
-        <translation>Poista valmiit lataukset</translation>
+        <translation>Usuń zakończone Transfery</translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation>Lataukset</translation>
+        <translation>Transfery</translation>
     </message>
     <message>
         <source>Download Url</source>
-        <translation>Lataa linkki</translation>
+        <translation>Adres Transferu</translation>
     </message>
     <message>
         <source>Start</source>
-        <translation>Aloita</translation>
+        <translation>Start</translation>
     </message>
 </context>
 <context>
     <name>ExperimentalSettingsPage</name>
     <message>
         <source>Save</source>
-        <translation>Tallenna</translation>
+        <translation>Zapisz</translation>
     </message>
     <message>
         <source>Override Text Fields</source>
-        <translation>Ohita tekstikentät</translation>
+        <translation>Nadpisuj Pola Tekstowe</translation>
     </message>
     <message>
         <source>Use SailfishOS&apos;s editing components instead of WebView&apos;s ones</source>
-        <translation>Käytä TextArean muokkaukseen SailfishOS:n natiivikomponentteja WebViewin tarjoaman editorin sijaan.</translation>
+        <translation>Użyj komponentów edycji z systemu SailfishOS zamiast tych z WebView.</translation>
     </message>
     <message>
         <source>Ambience Browsing</source>
-        <translation type="unfinished"></translation>
+        <translation>Przeglądanie Atmosfer</translation>
     </message>
     <message>
         <source>WebPirate will try to skin webpages according to ambience settings</source>
-        <translation type="unfinished"></translation>
+        <translation>WebPirate będzie próbował zmieniać styl stron w zależności od ustawień atmosfery</translation>
     </message>
 </context>
 <context>
     <name>FavoriteItem</name>
     <message>
         <source>Open</source>
-        <translation>Avaa</translation>
+        <translation>Otwórz</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Muokkaa</translation>
+        <translation>Edytuj</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Poista</translation>
+        <translation>Usuń</translation>
     </message>
     <message>
         <source>Deleting Folder</source>
-        <translation>Kansio poistetaan</translation>
+        <translation>Usuwanie Folderu</translation>
     </message>
     <message>
         <source>Deleting Favorite</source>
-        <translation>Suosikki poistetaan</translation>
+        <translation>Usuwanie Ulubionego</translation>
     </message>
     <message>
         <source>Add to Quick Grid</source>
-        <translation>Lisää pikavalintaan</translation>
+        <translation>Dodaj do Szybkiego Wybierania</translation>
     </message>
 </context>
 <context>
     <name>FavoritePage</name>
     <message>
         <source>Save</source>
-        <translation>Tallenna</translation>
+        <translation>Zapisz</translation>
     </message>
     <message>
         <source>Title</source>
-        <translation>Otsikko</translation>
+        <translation>Tytuł</translation>
     </message>
     <message>
         <source>Url</source>
-        <translation>URL</translation>
+        <translation>Adres URL</translation>
     </message>
 </context>
 <context>
     <name>FavoritesImportPage</name>
     <message>
         <source>Import Favorites</source>
-        <translation>Tuo suosikit</translation>
+        <translation>Importuj Ulubione</translation>
     </message>
     <message>
         <source>From HTML File</source>
-        <translation>HTML-tiedostosta</translation>
+        <translation>Z pliku HTML</translation>
     </message>
     <message>
         <source>From Sailfish Browser</source>
-        <translation>Sailfish -selaimelta</translation>
+        <translation>Z Przeglądarki Sailfish</translation>
     </message>
     <message>
         <source>Importing Favorites</source>
@@ -593,96 +593,96 @@
     <name>FavoritesMenu</name>
     <message>
         <source>Export</source>
-        <translation>Vie</translation>
+        <translation>Eksportuj</translation>
     </message>
     <message>
         <source>Exporting favorites</source>
-        <translation>Viedään suosikit</translation>
+        <translation>Eksportuj Ulubione</translation>
     </message>
     <message>
         <source>Favorites</source>
-        <translation>Suosikit</translation>
+        <translation>Ulubione</translation>
     </message>
     <message>
         <source>Favorites exported successfully</source>
-        <translation>Suosikit viety onnistuneesti</translation>
+        <translation>Wyeksportowano Ulubione pomyślnie</translation>
     </message>
     <message>
         <source>Import</source>
-        <translation>Tuo</translation>
+        <translation>Importuj</translation>
     </message>
     <message>
         <source>Import in</source>
-        <translation>Tuo kohteeseen...</translation>
+        <translation>Importuj do</translation>
     </message>
     <message>
         <source>Add Folder</source>
-        <translation>Lisää kansio</translation>
+        <translation>Dodaj Folder</translation>
     </message>
     <message>
         <source>Add Favorite</source>
-        <translation>Lisää suosikki</translation>
+        <translation>Dodaj do Ulubionych</translation>
     </message>
 </context>
 <context>
     <name>FavoritesSegment</name>
     <message>
         <source>Favorites</source>
-        <translation>Suosikit</translation>
+        <translation>Ulubione</translation>
     </message>
     <message>
         <source>Back</source>
-        <translation>Edellinen</translation>
+        <translation>Wstecz</translation>
     </message>
     <message>
         <source>Favorites imported successfully</source>
-        <translation>Suosikit tuotu onnistuneesti</translation>
+        <translation>Zaimportowano Ulubione pomyślnie</translation>
     </message>
     <message>
         <source>Cannot import favorites</source>
-        <translation>Suosikkeja ei voitu tuoda</translation>
+        <translation>Nie można zaimportować ulubionych</translation>
     </message>
 </context>
 <context>
     <name>FormResubmitDialog</name>
     <message>
         <source>This page contains information written by you: do you want to resend the data?</source>
-        <translation>Tämä sivu sisältää kirjoittamaasi tietoa; haluatko lähettää tiedot uudelleen?</translation>
+        <translation>Ta strona zawiera informację napisaną przez Ciebie: czy chcesz wysłać dane ponownie?</translation>
     </message>
     <message>
         <source>Yes</source>
-        <translation>Kyllä</translation>
+        <translation>Tak</translation>
     </message>
     <message>
         <source>No</source>
-        <translation>Ei</translation>
+        <translation>Nie</translation>
     </message>
 </context>
 <context>
     <name>GeneralSettingsPage</name>
     <message>
         <source>Save</source>
-        <translation>Tallenna</translation>
+        <translation>Zapisz</translation>
     </message>
     <message>
         <source>Home Page</source>
-        <translation>Kotisivu</translation>
+        <translation>Strona Główna</translation>
     </message>
     <message>
         <source>Search Engines</source>
-        <translation>Hakukoneet</translation>
+        <translation>Wyszukiwarki</translation>
     </message>
     <message>
         <source>Long press to edit</source>
-        <translation>Muokkaa painamalla pitkään</translation>
+        <translation>Przytrzymaj, aby edytować</translation>
     </message>
     <message>
         <source>User Agent</source>
-        <translation>Selaimen tunniste</translation>
+        <translation>Identyfikacja Przeglądarki</translation>
     </message>
     <message>
         <source>Set as default browser</source>
-        <translation>Aseta oletusselaimeksi</translation>
+        <translation>Ustaw jako przeglądarkę domyślną</translation>
     </message>
     <message>
         <source>Pressed</source>
@@ -701,30 +701,30 @@
     <name>GrabberItem</name>
     <message>
         <source>Play</source>
-        <translation>Toista</translation>
+        <translation>Odtwórz</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation>Lataa</translation>
+        <translation>Pobierz</translation>
     </message>
     <message>
         <source>Grabbing video</source>
-        <translation>Videota siepataan</translation>
+        <translation>Zgrywanie wideo</translation>
     </message>
     <message>
         <source>Copy URL</source>
-        <translation>Kopioi linkki</translation>
+        <translation>Kopiuj adres URL</translation>
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation>Linkki kopioitu leikepöydälle</translation>
+        <translation>Link skopiowany do schowka</translation>
     </message>
 </context>
 <context>
     <name>HistoryMenu</name>
     <message>
         <source>Link copied to clipboard</source>
-        <translation>Linkki kopioitu leikepöydälle</translation>
+        <translation>Link skopiowany do schowka</translation>
     </message>
 </context>
 <context>
@@ -735,576 +735,576 @@
     </message>
     <message>
         <source>Delete History</source>
-        <translation>Poista historia</translation>
+        <translation>Usuń historię</translation>
     </message>
 </context>
 <context>
     <name>LinkMenu</name>
     <message>
         <source>Open New Tab</source>
-        <translation>Avaa uusi välilehti</translation>
+        <translation>Otwórz w Nowej Karcie</translation>
     </message>
     <message>
         <source>Save Link Destination</source>
-        <translation>Tallenna linkin kohde</translation>
+        <translation>Zapisz Element Docelowy</translation>
     </message>
     <message>
         <source>Copy Link</source>
-        <translation>Kopioi linkki</translation>
+        <translation>Kopiuj Link</translation>
     </message>
     <message>
         <source>Save Image</source>
-        <translation>Tallenna kuva</translation>
+        <translation>Zapisz obraz</translation>
     </message>
     <message>
         <source>Downloading image</source>
-        <translation>Ladataan kuvaa...</translation>
+        <translation>Pobieranie obrazu</translation>
     </message>
     <message>
         <source>Downloading link</source>
-        <translation>Ladataan linkkiä...</translation>
+        <translation>Pobieranie linka</translation>
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation>Linkki kopioitu leikepöydälle</translation>
+        <translation>Link skopiowany do schowka</translation>
     </message>
     <message>
         <source>Share</source>
-        <translation>Jaa</translation>
+        <translation>Udostępnij</translation>
     </message>
 </context>
 <context>
     <name>LoadFailed</name>
     <message>
         <source>You are in offline mode</source>
-        <translation>Olet offline-tilassa</translation>
+        <translation>Jesteś w trybie offline</translation>
     </message>
     <message>
         <source>WebView process has crashed, restarting...</source>
-        <translation>Web -näkymän prosessi kaatui. Käynnistyy uudelleen...</translation>
+        <translation>Proces WebView uległ awarii, ponowne uruchamianie...</translation>
     </message>
 </context>
 <context>
     <name>MediaPlayerToolBar</name>
     <message>
         <source>Downloading media</source>
-        <translation>Ladataan mediatiedostoa...</translation>
+        <translation>Pobieranie mediów</translation>
     </message>
 </context>
 <context>
     <name>NavigationHistoryItem</name>
     <message>
         <source>Open</source>
-        <translation>Avaa</translation>
+        <translation>Otwórz</translation>
     </message>
     <message>
         <source>Open in New Tab</source>
-        <translation>Avaa uudessa välilehdessä</translation>
+        <translation>Otwórz w Nowej Karcie</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Poista</translation>
+        <translation>Usuń</translation>
     </message>
     <message>
         <source>Deleting item</source>
-        <translation>Poistetaan kohde</translation>
+        <translation>Usuwanie elementu</translation>
     </message>
 </context>
 <context>
     <name>NewPopupRulePage</name>
     <message>
         <source>Apply Rule</source>
-        <translation>Ota sääntö käyttöön</translation>
+        <translation>Zastosuj Regułę</translation>
     </message>
     <message>
         <source>Url</source>
-        <translation>URL</translation>
+        <translation>Adres URL</translation>
     </message>
     <message>
         <source>Rule</source>
-        <translation>Sääntö</translation>
+        <translation>Reguła</translation>
     </message>
     <message>
         <source>Allow</source>
-        <translation>Salli</translation>
+        <translation>Zezwól</translation>
     </message>
     <message>
         <source>Block</source>
-        <translation>Estä</translation>
+        <translation>Zablokuj</translation>
     </message>
 </context>
 <context>
     <name>NotificationDialog</name>
     <message>
         <source>Allow</source>
-        <translation>Salli</translation>
+        <translation>Zezwól</translation>
     </message>
     <message>
         <source>Deny</source>
-        <translation>Kiellä</translation>
+        <translation>Zablokuj</translation>
     </message>
     <message>
         <source>&apos;%1&apos; wants to access system&apos;s notifications</source>
-        <translation>&apos;%1&apos; haluaa pääsyn järjestelmän ilmoituksiin</translation>
+        <translation>&apos;%1&apos; chce dostępu do powiadomień systemowych</translation>
     </message>
 </context>
 <context>
     <name>PopupBlockerPage</name>
     <message>
         <source>Popup Blocker</source>
-        <translation>Ponnahdusikkunoiden esto</translation>
+        <translation>Blokada Wyskakujących Okien</translation>
     </message>
     <message>
         <source>Clear popup list</source>
-        <translation>Pyyhi ponnahdusikkunoiden lista</translation>
+        <translation>Czyść listę wyskakujących okien</translation>
     </message>
 </context>
 <context>
     <name>PopupItem</name>
     <message>
         <source>Rule</source>
-        <translation>Sääntö</translation>
+        <translation>Reguła</translation>
     </message>
     <message>
         <source>Allow</source>
-        <translation>Salli</translation>
+        <translation>Zezwól</translation>
     </message>
     <message>
         <source>Block</source>
-        <translation>Estä</translation>
+        <translation>Zablokuj</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Poista</translation>
+        <translation>Usuń</translation>
     </message>
     <message>
         <source>Deleting rule</source>
-        <translation>Poistetaan sääntöä</translation>
+        <translation>Usuwanie reguły</translation>
     </message>
 </context>
 <context>
     <name>PopupManagerPage</name>
     <message>
         <source>Popup Manager</source>
-        <translation>Ponnahdusikkunoiden hallinta</translation>
+        <translation>Zarządzanie Wyskakującymi Oknami</translation>
     </message>
     <message>
         <source>Delete Rules</source>
-        <translation>Poista sääntöjä</translation>
+        <translation>Usuń Reguły</translation>
     </message>
     <message>
         <source>Deleting rules</source>
-        <translation>Poistetaan sääntöjä</translation>
+        <translation>Usuwanie regół</translation>
     </message>
     <message>
         <source>New Rule</source>
-        <translation>Uusi sääntö</translation>
+        <translation>Nowa Reguła</translation>
     </message>
 </context>
 <context>
     <name>PrivacySettingsPage</name>
     <message>
         <source>Wipe Data on Exit</source>
-        <translation>Poista selaustiedot suljettaessa</translation>
+        <translation>Czyść Dane przy Wyjściu</translation>
     </message>
     <message>
         <source>Delete Navigation History</source>
-        <translation>Poista selaushistoria</translation>
+        <translation>Usuń Historię Przeglądania</translation>
     </message>
     <message>
         <source>Removing navigation history</source>
-        <translation>Selaushistoria poistetaan</translation>
+        <translation>Usuwanie historii przeglądania</translation>
     </message>
     <message>
         <source>Delete Cookies</source>
-        <translation>Poista evästeet</translation>
+        <translation>Usuń Ciasteczka</translation>
     </message>
     <message>
         <source>Removing cookies</source>
-        <translation>Poistetaan evästeet...</translation>
+        <translation>Usuwanie ciasteczek</translation>
     </message>
     <message>
         <source>Delete Personal Data</source>
-        <translation>Poista henkilökohtaiset tiedot</translation>
+        <translation>Usuń Dane Osobiste</translation>
     </message>
     <message>
         <source>Removing personal data</source>
-        <translation>Poistetaan henkilökohtaiset tiedot...</translation>
+        <translation>Usuwanie danych osobistych</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Tallenna</translation>
+        <translation>Zapisz</translation>
     </message>
     <message>
         <source>Privacy Options</source>
-        <translation>Tietosuoja-asetukset</translation>
+        <translation>Ustawienia Prywatności</translation>
     </message>
     <message>
         <source>Privacy Management</source>
-        <translation>Yksityisyystietojen hallinta</translation>
+        <translation>Zarządzanie Prywatnością</translation>
     </message>
     <message>
         <source>Keep Favicons when deleting personal data</source>
-        <translation>Säilytä sivustojen kuvakkeet, kun henkilökohtaiset tiedot poistetaan</translation>
+        <translation>Zachowaj Favicony podczas usuwania danych osobistych</translation>
     </message>
 </context>
 <context>
     <name>PromptDialog</name>
     <message>
         <source>OK</source>
-        <translation>Ok</translation>
+        <translation>OK</translation>
     </message>
 </context>
 <context>
     <name>ProxySettingsPage</name>
     <message>
         <source>Save</source>
-        <translation>Tallenna</translation>
+        <translation>Zapisz</translation>
     </message>
     <message>
         <source>Proxy Disabled</source>
-        <translation>Välityspalvelin pois käytöstä</translation>
+        <translation>Wyłączone Proxy</translation>
     </message>
     <message>
         <source>You need to restart WebPirate</source>
-        <translation>Käynnistä WebPirate uudestaan</translation>
+        <translation>Musisz uruchomić ponownie WebPirate</translation>
     </message>
     <message>
         <source>Proxy Settings (Restart needed)</source>
-        <translation>Välityspalvelimen asetukset (Uudelleenkäynnistys tarvitaan)</translation>
+        <translation>Uwtawienia Proxy (wymagany restart)</translation>
     </message>
     <message>
         <source>Host or Ip Address</source>
-        <translation>Isäntäpalvelin tai IP-osoite</translation>
+        <translation>Host lub Adres IP</translation>
     </message>
     <message>
         <source>Port</source>
-        <translation>Portti</translation>
+        <translation>Port</translation>
     </message>
 </context>
 <context>
     <name>QueryBar</name>
     <message>
         <source>Search with</source>
-        <translation>Etsi käyttäen...</translation>
+        <translation>Szukaj z</translation>
     </message>
     <message>
         <source>Search...</source>
-        <translation>Etsi...</translation>
+        <translation>Szukaj...</translation>
     </message>
 </context>
 <context>
     <name>QuickGrid</name>
     <message>
         <source>The Quick Grid is empty</source>
-        <translation>Ei pikavalintoja</translation>
+        <translation>Szybkie Wybieranie jest puste</translation>
     </message>
     <message>
         <source>Long Press to edit</source>
-        <translation>Paina pitkään muokataksesi</translation>
+        <translation>Przytrzymaj, aby edytować</translation>
     </message>
     <message>
         <source>New tab</source>
-        <translation>Uusi välilehti</translation>
+        <translation>Nowa Karta</translation>
     </message>
 </context>
 <context>
     <name>QuickGridBottomPanel</name>
     <message>
         <source>Add</source>
-        <translation>Lisää</translation>
+        <translation>Dodaj</translation>
     </message>
     <message>
         <source>Done</source>
-        <translation>Valmis</translation>
+        <translation>Gotowe</translation>
     </message>
 </context>
 <context>
     <name>QuickGridItem</name>
     <message>
         <source>Removing item</source>
-        <translation>Poistetaan kohdetta...</translation>
+        <translation>Usuwanie elementu</translation>
     </message>
 </context>
 <context>
     <name>QuickGridPage</name>
     <message>
         <source>Save</source>
-        <translation>Tallenna</translation>
+        <translation>Zapisz</translation>
     </message>
     <message>
         <source>Title</source>
-        <translation>Otsikko</translation>
+        <translation>Tytuł</translation>
     </message>
     <message>
         <source>Url</source>
-        <translation>URL</translation>
+        <translation>Adres URL</translation>
     </message>
 </context>
 <context>
     <name>RequestDialog</name>
     <message>
         <source>Yes</source>
-        <translation>Kyllä</translation>
+        <translation>Tak</translation>
     </message>
     <message>
         <source>No</source>
-        <translation>Ei</translation>
+        <translation>Nie</translation>
     </message>
 </context>
 <context>
     <name>SaveSessionPage</name>
     <message>
         <source>Save Session</source>
-        <translation>Tallenna istunto</translation>
+        <translation>Zapisz Sesję</translation>
     </message>
     <message>
         <source>Session name</source>
-        <translation>Istunnon nimi</translation>
+        <translation>Nazwa sesji</translation>
     </message>
     <message>
         <source>Load at startup</source>
-        <translation>Lataa käynnistyksessä</translation>
+        <translation>Ładuj przy starcie</translation>
     </message>
     <message>
         <source>Replace current session</source>
-        <translation>Korvaa avoinna oleva istunto</translation>
+        <translation>Zastąp aktualną sesję</translation>
     </message>
     <message>
         <source>Opened Tabs</source>
-        <translation>Avoimet välilehdet</translation>
+        <translation>Otwarte Karty</translation>
     </message>
     <message>
         <source>Selected</source>
-        <translation>Valittu</translation>
+        <translation>Zaznaczone</translation>
     </message>
 </context>
 <context>
     <name>SearchEnginePage</name>
     <message>
         <source>Save</source>
-        <translation>Tallenna</translation>
+        <translation>Zapisz</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Nimi</translation>
+        <translation>Nazwa</translation>
     </message>
     <message>
         <source>Query</source>
-        <translation>Kysely</translation>
+        <translation>Zapytanie</translation>
     </message>
 </context>
 <context>
     <name>SearchEnginesPage</name>
     <message>
         <source>Set as Default</source>
-        <translation>Aseta oletukseksi</translation>
+        <translation>Ustaw jako Domyślną</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Poista</translation>
+        <translation>Usuń</translation>
     </message>
     <message>
         <source>Search Engines</source>
-        <translation>Hakukoneet</translation>
+        <translation>Wyszukiwarki</translation>
     </message>
     <message>
         <source>Add</source>
-        <translation>Lisää</translation>
+        <translation>Dodaj</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Muokkaa</translation>
+        <translation>Edytuj</translation>
     </message>
     <message>
         <source>Deleting Search Engine</source>
-        <translation>Poistaa hakukonetta</translation>
+        <translation>Usuwanie Wyszukiwarki</translation>
     </message>
 </context>
 <context>
     <name>SelectorFilesPage</name>
     <message>
         <source>Android storage</source>
-        <translation>Android varasto</translation>
+        <translation>Pamięć Android</translation>
     </message>
     <message>
         <source>SD Card</source>
-        <translation>SD -muistikortti</translation>
+        <translation>Karta SD</translation>
     </message>
     <message>
         <source>Home</source>
-        <translation>Koti</translation>
+        <translation>Katalog domowy</translation>
     </message>
     <message>
         <source>Send %1 file(s)</source>
-        <translation>Lähetä %1 tiedosto(a)</translation>
+        <translation>Wyślij %1 plik(i)</translation>
     </message>
     <message>
         <source>Back</source>
-        <translation>Edellinen</translation>
+        <translation>Wstecz</translation>
     </message>
 </context>
 <context>
     <name>SessionPage</name>
     <message>
         <source>Save Session</source>
-        <translation>Tallenna istunto</translation>
+        <translation>Zapisz Sesję</translation>
     </message>
     <message>
         <source>Session name</source>
-        <translation>Istunnon nimi</translation>
+        <translation>Nazwa sesji</translation>
     </message>
     <message>
         <source>Load at startup</source>
-        <translation>Lataa käynnistyksessä</translation>
+        <translation>Ładuj przy starcie</translation>
     </message>
     <message>
         <source>Replace current session</source>
-        <translation>Korvaa avoinna oleva istunto</translation>
+        <translation>Zastąp aktualną sesję</translation>
     </message>
     <message>
         <source>Opened Tabs</source>
-        <translation>Avoinna olevat välilehdet</translation>
+        <translation>Otwarte Karty</translation>
     </message>
     <message>
         <source>Selected</source>
-        <translation>Valittu</translation>
+        <translation>Zaznaczone</translation>
     </message>
 </context>
 <context>
     <name>SessionsSegment</name>
     <message>
         <source>Sessions</source>
-        <translation>Istunnot</translation>
+        <translation>Sesje</translation>
     </message>
     <message>
         <source>No Sessions</source>
-        <translation>Ei istuntoja</translation>
+        <translation>Brak Sesji</translation>
     </message>
     <message>
         <source>Save current session</source>
-        <translation>Tallenna nykyinen istunto</translation>
+        <translation>Zapisz aktualną sesję</translation>
     </message>
     <message>
         <source>Tabs saved</source>
-        <translation>Välilehdet tallennettu</translation>
+        <translation>Karty zapisane</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation>Avaa</translation>
+        <translation>Otwórz</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Muokkaa</translation>
+        <translation>Edytuj</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Poista</translation>
+        <translation>Usuń</translation>
     </message>
     <message>
         <source>Deleting session</source>
-        <translation>Istunto poistetaan</translation>
+        <translation>Usuwanie sesji</translation>
     </message>
     <message>
         <source>Loads at startup</source>
-        <translation>Istunto latautuu selaimen käynnistyksen yhteydessä</translation>
+        <translation>Ładuj przy starcie</translation>
     </message>
 </context>
 <context>
     <name>SettingsPage</name>
     <message>
         <source>General</source>
-        <translation>Yleistä</translation>
+        <translation>Ogólne</translation>
     </message>
     <message>
         <source>Privacy</source>
-        <translation>Yksityisyys</translation>
+        <translation>Prywatność</translation>
     </message>
     <message>
         <source>Browser Settings</source>
-        <translation>Selainasetukset</translation>
+        <translation>Ustawienia Przeglądarki</translation>
     </message>
     <message>
         <source>Tabs</source>
-        <translation>Välilehdet</translation>
+        <translation>Karty</translation>
     </message>
     <message>
         <source>Experimental</source>
-        <translation>Kokeelliset ominaisuudet</translation>
+        <translation>Eksperymentalne</translation>
     </message>
     <message>
         <source>Cover</source>
-        <translation>Kansi</translation>
+        <translation>Okładka</translation>
     </message>
     <message>
         <source>AdBlock</source>
-        <translation>Mainoksien esto</translation>
+        <translation>AdBlock</translation>
     </message>
     <message>
         <source>Proxy</source>
-        <translation>Välityspalvelin</translation>
+        <translation>Proxy</translation>
     </message>
     <message>
         <source>Popup Blocker</source>
-        <translation>Ponnahdusikkunoiden esto</translation>
+        <translation>Wyskaujące Okna</translation>
     </message>
 </context>
 <context>
     <name>TabClosedItem</name>
     <message>
         <source>Open</source>
-        <translation>Avaa</translation>
+        <translation>Otwórz</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Poista</translation>
+        <translation>Usuń</translation>
     </message>
     <message>
         <source>Deleting Tab</source>
-        <translation>Välilehti poistetaan</translation>
+        <translation>Usuwanie Karty</translation>
     </message>
 </context>
 <context>
     <name>TabListItem</name>
     <message>
         <source>Quick Grid</source>
-        <translation>Pikavalinnat</translation>
+        <translation>Szybkie Wybieranie</translation>
     </message>
     <message>
         <source>Load error</source>
-        <translation>Virhe ladatessa</translation>
+        <translation>Błąd ładowania</translation>
     </message>
     <message>
         <source>Copy link</source>
-        <translation>Kopioi linkki</translation>
+        <translation>Kopiuj link</translation>
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation>Linkki on kopioitu leikepöydälle</translation>
+        <translation>Link skopiowany do schowka</translation>
     </message>
     <message>
         <source>Save page</source>
-        <translation>Tallenna sivu</translation>
+        <translation>Zapisz stronę</translation>
     </message>
     <message>
         <source>Downloading web page</source>
-        <translation>Verkkosivu ladataan</translation>
+        <translation>Pobieranie strony</translation>
     </message>
     <message>
         <source>Duplicate tab</source>
-        <translation>Monista välilehti</translation>
+        <translation>Duplikuj kartę</translation>
     </message>
     <message>
         <source>Grabber</source>
-        <translation>Sieppari</translation>
+        <translation>Zgrywanie wideo zakończone pomyślnie</translation>
     </message>
     <message>
         <source>Media Player</source>
-        <translation>Mediasoitin</translation>
+        <translation>Odtwarzacz Mediów</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Sulje</translation>
+        <translation>Zamknij</translation>
     </message>
     <message>
         <source>Enable Reader Mode</source>
@@ -1319,52 +1319,52 @@
     <name>TabsSegment</name>
     <message>
         <source>Tabs</source>
-        <translation>Välilehdet</translation>
+        <translation>Karty</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation>Asetukset</translation>
+        <translation>Ustawienia</translation>
     </message>
     <message>
         <source>New Tab</source>
-        <translation>Uusi välilehti</translation>
+        <translation>Nowa Karta</translation>
     </message>
     <message>
         <source>Disable Night Mode</source>
-        <translation>Poista yötila käytöstä</translation>
+        <translation>Wyłącz Tryb Nocny</translation>
     </message>
     <message>
         <source>Enable Night Mode</source>
-        <translation>Ota yötila käyttöön</translation>
+        <translation>Włącz Tryb Nocny</translation>
     </message>
 </context>
 <context>
     <name>TabsSettingsPage</name>
     <message>
         <source>Restore tabs at Startup</source>
-        <translation>Palauta välilehdet, kun selain käynnistetään uudelleen</translation>
+        <translation>Przywróć karty przy starcie</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Tallenna</translation>
+        <translation>Zapisz</translation>
     </message>
     <message>
         <source>Close last tab</source>
-        <translation>Sulje edellinen välilehti</translation>
+        <translation>Zamknij ostatnią kartę</translation>
     </message>
 </context>
 <context>
     <name>TextFieldPage</name>
     <message>
         <source>Send</source>
-        <translation>Lähetä</translation>
+        <translation>Wyślij</translation>
     </message>
 </context>
 <context>
     <name>TextSelectionPage</name>
     <message>
         <source>Copy</source>
-        <translation>Kopioi</translation>
+        <translation>Kopiuj</translation>
     </message>
 </context>
 <context>
@@ -1420,84 +1420,84 @@
     <name>WebViewListener</name>
     <message>
         <source>Codec</source>
-        <translation>Koodekki</translation>
+        <translation>Kodek</translation>
     </message>
     <message>
         <source>No videos found, report to developer</source>
-        <translation>Videoita ei löytynyt, lähetä kehittäjälle ilmoitus</translation>
+        <translation>Nie znaleziono wideo, zgłoś do dewelopera</translation>
     </message>
     <message>
         <source>Video grabbed successfully</source>
-        <translation>Videon sieppaus onnistui</translation>
+        <translation>Narzędzie pobierania mediów</translation>
     </message>
 </context>
 <context>
     <name>YouTubeCipher</name>
     <message>
         <source>Downloading Player&apos;s Cipher</source>
-        <translation>Ladataan soittimen salakirjoituskoodia</translation>
+        <translation>Pobieranie Szyfrowania Odtwarzacza</translation>
     </message>
     <message>
         <source>Cannot find decoding function</source>
-        <translation>Purkufunktiota ei löytynyt</translation>
+        <translation>Nie można znaleźć funkcji dekodowania</translation>
     </message>
     <message>
         <source>Cannot find decoding object</source>
-        <translation>Purettavaa kohdetta ei löytynyt</translation>
+        <translation>Nie można znaleźć dekodowania obiektu</translation>
     </message>
     <message>
         <source>Cannot download Video Configuration</source>
-        <translation>Videon kokoonpanotietoja ei voitu ladata</translation>
+        <translation>Nie można znaleźć Konfiguracji Wideo</translation>
     </message>
     <message>
         <source>Ciphered Video: Downloading WebPage</source>
-        <translation>Salakirjoitettu video: Ladataan nettisivua</translation>
+        <translation>Szyfrowane Wideo: Pobieranie Strony</translation>
     </message>
     <message>
         <source>Cannot find decoding function, report to developer</source>
-        <translation>Purkufunktiota ei löytynyt, lähetä kehittäjälle ilmoitus</translation>
+        <translation>Nie można znaleźć funkcji dekodowania, zgłość do dewelopera</translation>
     </message>
     <message>
         <source>Cannot find decoding object, report to developer</source>
-        <translation>Purettavaa kohdetta ei löytynyt, lähetä kehittäjälle ilmoitus</translation>
+        <translation>Nie można znaleźć dekodowania obiektu, zgłoś do dewelopera</translation>
     </message>
 </context>
 <context>
     <name>YouTubeGrabber</name>
     <message>
         <source>Quality</source>
-        <translation>Laatu</translation>
+        <translation>Jakość</translation>
     </message>
     <message>
         <source>Downloading video info</source>
-        <translation>Ladataan tietoa videosta...</translation>
+        <translation>Pobieranie informacji wideo</translation>
     </message>
     <message>
         <source>Grabbing %1</source>
-        <translation>Siepataan %1</translation>
+        <translation>Zgrywanie %1</translation>
     </message>
     <message>
         <source>Decoding Signature for %1</source>
-        <translation>Tulkitaan allekirjoitusta kohteelle %1</translation>
+        <translation>Dekodowanie Sygnatury dla %1</translation>
     </message>
     <message>
         <source>Video grabbed successfully</source>
-        <translation>Videon sieppaus onnistui</translation>
+        <translation>Wideo zgrane pomyślnie</translation>
     </message>
     <message>
         <source>Cannot get video, report to developer</source>
-        <translation>Videon haku epäonnistui, lähetä kehittäjälle ilmoitus</translation>
+        <translation>Nie można uzyskać wideo, zgłoś do dewelopera</translation>
     </message>
 </context>
 <context>
     <name>harbour-webpirate</name>
     <message>
         <source>Download Completed</source>
-        <translation>Lataus suoritettu</translation>
+        <translation>Transfer Ukończony</translation>
     </message>
     <message>
         <source>Download Failed</source>
-        <translation>Lataus epäonnistui</translation>
+        <translation>Transfer nie powiódł się</translation>
     </message>
 </context>
 </TS>

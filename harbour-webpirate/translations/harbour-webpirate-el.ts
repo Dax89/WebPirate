@@ -72,11 +72,11 @@
     </message>
     <message>
         <source>Download CSS Filters</source>
-        <translation type="unfinished"></translation>
+        <translation>Λήψη φίλτρων CSS</translation>
     </message>
     <message>
         <source>Download Hosts BlackList</source>
-        <translation type="unfinished"></translation>
+        <translation>Λήψη Μαύρου καταλόγου Υπολογιστών</translation>
     </message>
 </context>
 <context>
@@ -438,7 +438,7 @@
     </message>
     <message>
         <source>Icon Designer</source>
-        <translation type="unfinished">Σχεδιαστής εικονιδίων</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -685,15 +685,15 @@
         <translation>Ορισμός ως ο εξ ορισμού φυλλομετρητής</translation>
     </message>
     <message>
-        <source>Custom action</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Pressed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Long Pressed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Custom actions</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1296,15 +1296,15 @@
     </message>
     <message>
         <source>Grabber</source>
-        <translation type="unfinished"></translation>
+        <translation>Τηλεφορτωτής</translation>
     </message>
     <message>
         <source>Media Player</source>
-        <translation type="unfinished"></translation>
+        <translation>Αναπαραγωγέας πολυμέσων</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="unfinished"></translation>
+        <translation>Κλείσιμο</translation>
     </message>
     <message>
         <source>Enable Reader Mode</source>
@@ -1397,7 +1397,7 @@
     <name>TranslationsPage</name>
     <message>
         <source>Translation Platform</source>
-        <translation type="unfinished">Πλατφόρμα μετάφρασης</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Translations</source>
@@ -1409,7 +1409,7 @@
     </message>
     <message>
         <source>Translators</source>
-        <translation type="unfinished">Μεταφραστές</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Reviewers</source>
@@ -1428,7 +1428,7 @@
     </message>
     <message>
         <source>Video grabbed successfully</source>
-        <translation type="unfinished">Η σύλληψη του βίντεο ήταν επιτυχής</translation>
+        <translation>Η τηλεφόρτωση του βίντεο ήταν επιτυχής</translation>
     </message>
 </context>
 <context>

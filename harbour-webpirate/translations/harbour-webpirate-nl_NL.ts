@@ -9,7 +9,7 @@
     </message>
     <message>
         <source>A tabbed Web Browser for SailfishOS based on WebKit</source>
-        <translation>Een webbrowser met tabbladen voor SailfishOS, gebaseerd op WebKit</translation>
+        <translation>Een op WebKit gebaseerde webbrowser met tabbladen voor SailfishOS</translation>
     </message>
     <message>
         <source>GitHub Repository</source>
@@ -17,31 +17,31 @@
     </message>
     <message>
         <source>Report an Issue</source>
-        <translation type="unfinished"></translation>
+        <translation>Meld een probleem</translation>
     </message>
     <message>
         <source>About WebPirate</source>
-        <translation type="unfinished"></translation>
+        <translation>Over WebPirate</translation>
     </message>
     <message>
         <source>WebPirate is distributed under the GPLv3 license</source>
-        <translation type="unfinished"></translation>
+        <translation>WebPirate wordt verspreid onder GPLv3-licentie</translation>
     </message>
     <message>
         <source>License</source>
-        <translation type="unfinished"></translation>
+        <translation>Licentie</translation>
     </message>
     <message>
         <source>Developers</source>
-        <translation type="unfinished"></translation>
+        <translation>Ontwikkelaars</translation>
     </message>
     <message>
         <source>Translations</source>
-        <translation type="unfinished"></translation>
+        <translation>Vertalingen</translation>
     </message>
     <message>
         <source>Third Party</source>
-        <translation type="unfinished"></translation>
+        <translation>Derde partij</translation>
     </message>
 </context>
 <context>
@@ -56,7 +56,7 @@
     </message>
     <message>
         <source>Ready</source>
-        <translation>Afgerond</translation>
+        <translation>Klaar</translation>
     </message>
     <message>
         <source>Connecting</source>
@@ -72,11 +72,11 @@
     </message>
     <message>
         <source>Download CSS Filters</source>
-        <translation type="unfinished"></translation>
+        <translation>CSS-filters downloaden</translation>
     </message>
     <message>
         <source>Download Hosts BlackList</source>
-        <translation type="unfinished"></translation>
+        <translation>Zwarte lijst met Hosts downloaden</translation>
     </message>
 </context>
 <context>
@@ -129,7 +129,7 @@
     <name>AlertDialog</name>
     <message>
         <source>Ok</source>
-        <translation>OK</translation>
+        <translation>Oké</translation>
     </message>
 </context>
 <context>
@@ -192,7 +192,7 @@
     </message>
     <message>
         <source>Accept Certificate from: %1 ?</source>
-        <translation>Het certificaat van: %1 accepteren?</translation>
+        <translation>Wilt u het certificaat accepteren van: %1 ?</translation>
     </message>
     <message>
         <source>Refresh</source>
@@ -318,7 +318,7 @@
     </message>
     <message>
         <source>Close Browser</source>
-        <translation>Browser sluiten</translation>
+        <translation>Webbrowser sluiten</translation>
     </message>
     <message>
         <source>Reload Current Page</source>
@@ -326,7 +326,7 @@
     </message>
     <message>
         <source>Wipe personal data</source>
-        <translation>Persoonlijke gegevens verwijderen</translation>
+        <translation>Persoonlijke gegevens wissen</translation>
     </message>
     <message>
         <source>Search</source>
@@ -375,70 +375,70 @@
     <name>CustomActionsModel</name>
     <message>
         <source>No Action</source>
-        <translation type="unfinished"></translation>
+        <translation>Geen actie</translation>
     </message>
     <message>
         <source>Home Page</source>
-        <translation type="unfinished">Startpagina</translation>
+        <translation>Startpagina</translation>
     </message>
     <message>
         <source>Night Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Nachtmodus</translation>
     </message>
     <message>
         <source>Closed Tabs</source>
-        <translation type="unfinished">Gesloten tabbladen</translation>
+        <translation>Gesloten tabbladen</translation>
     </message>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished">Bladwijzers</translation>
+        <translation>Favorieten</translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation type="unfinished">Downloaden</translation>
+        <translation>Downloads</translation>
     </message>
     <message>
         <source>Navigation History</source>
-        <translation type="unfinished"></translation>
+        <translation>Surfgeschiedenis</translation>
     </message>
     <message>
         <source>Sessions</source>
-        <translation type="unfinished">Sessies</translation>
+        <translation>Sessies</translation>
     </message>
     <message>
         <source>Cookies</source>
-        <translation type="unfinished">Cookies</translation>
+        <translation>Cookies</translation>
     </message>
     <message>
         <source>Close Current Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Huidig tabblad sluiten</translation>
     </message>
     <message>
         <source>New Tab</source>
-        <translation type="unfinished">Nieuw tabblad</translation>
+        <translation>Nieuw tabblad</translation>
     </message>
     <message>
         <source>Reader Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Leesmodus</translation>
     </message>
 </context>
 <context>
     <name>DevelopersPage</name>
     <message>
         <source>Developers</source>
-        <translation type="unfinished"></translation>
+        <translation>Ontwikkelaars</translation>
     </message>
     <message>
         <source>Author</source>
-        <translation type="unfinished"></translation>
+        <translation>Auteur</translation>
     </message>
     <message>
         <source>Contributor</source>
-        <translation type="unfinished"></translation>
+        <translation>Medewerker</translation>
     </message>
     <message>
         <source>Icon Designer</source>
-        <translation type="unfinished">Pictogramontwerper</translation>
+        <translation>Pictogramontwerper</translation>
     </message>
 </context>
 <context>
@@ -471,7 +471,7 @@
     </message>
     <message>
         <source>Completed:</source>
-        <translation>Afgerond:</translation>
+        <translation>Voltooid:</translation>
     </message>
     <message>
         <source>Speed:</source>
@@ -479,7 +479,7 @@
     </message>
     <message>
         <source>Completed</source>
-        <translation>Afgerond</translation>
+        <translation>Voltooid</translation>
     </message>
     <message>
         <source>Error:</source>
@@ -490,7 +490,7 @@
     <name>DownloadsSegment</name>
     <message>
         <source>Delete completed Downloads</source>
-        <translation>Afgeronde downloads verwijderen</translation>
+        <translation>Voltooide downloads verwijderen</translation>
     </message>
     <message>
         <source>Downloads</source>
@@ -521,11 +521,11 @@
     </message>
     <message>
         <source>Ambience Browsing</source>
-        <translation type="unfinished"></translation>
+        <translation>Sfeernavigatie</translation>
     </message>
     <message>
         <source>WebPirate will try to skin webpages according to ambience settings</source>
-        <translation type="unfinished"></translation>
+        <translation>WebPirate zal proberen om webpagina&apos;s te voorzien van de kleuren van uw sfeerinstellingen</translation>
     </message>
 </context>
 <context>
@@ -544,11 +544,11 @@
     </message>
     <message>
         <source>Deleting Folder</source>
-        <translation>Bezig met het verwijderen van de map</translation>
+        <translation>Bezig met verwijderen van map</translation>
     </message>
     <message>
         <source>Deleting Favorite</source>
-        <translation>Bezig met het verwijderen van de bladwijzer</translation>
+        <translation>Bezig met verwijderen van bladwijzer</translation>
     </message>
     <message>
         <source>Add to Quick Grid</source>
@@ -586,7 +586,7 @@
     </message>
     <message>
         <source>Importing Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Bezig met importeren van favorieten</translation>
     </message>
 </context>
 <context>
@@ -597,7 +597,7 @@
     </message>
     <message>
         <source>Exporting favorites</source>
-        <translation>Bezig met het exporteren van de bladwijzers</translation>
+        <translation>Bezig met exporteren van bladwijzers</translation>
     </message>
     <message>
         <source>Favorites</source>
@@ -647,7 +647,7 @@
     <name>FormResubmitDialog</name>
     <message>
         <source>This page contains information written by you: do you want to resend the data?</source>
-        <translation>Deze pagina bevat informatie die door u is ingevoerd: wilt u deze gegevens opnieuw versturen?</translation>
+        <translation>Deze pagina bevat door u ingevoerde informatie: wilt u deze gegevens opnieuw versturen?</translation>
     </message>
     <message>
         <source>Yes</source>
@@ -685,15 +685,15 @@
         <translation>Instellen als standaard webbrowser</translation>
     </message>
     <message>
-        <source>Custom action</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Pressed</source>
-        <translation type="unfinished"></translation>
+        <translation>Ingedrukt</translation>
     </message>
     <message>
         <source>Long Pressed</source>
+        <translation>Lang ingedrukt</translation>
+    </message>
+    <message>
+        <source>Custom actions</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -717,7 +717,7 @@
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation>Koppeling gekopieerd naar klembord</translation>
+        <translation>De link is gekopieerd naar het klembord</translation>
     </message>
 </context>
 <context>
@@ -758,11 +758,11 @@
     </message>
     <message>
         <source>Downloading image</source>
-        <translation>Bezig met het downloaden van de afbeelding</translation>
+        <translation>Bezig met downloaden van afbeelding</translation>
     </message>
     <message>
         <source>Downloading link</source>
-        <translation>Bezig met het downloaden van de link</translation>
+        <translation>Bezig met downloaden van link</translation>
     </message>
     <message>
         <source>Link copied to clipboard</source>
@@ -788,7 +788,7 @@
     <name>MediaPlayerToolBar</name>
     <message>
         <source>Downloading media</source>
-        <translation>Bezig met het downloaden van de media</translation>
+        <translation>Bezig met downloaden van media</translation>
     </message>
 </context>
 <context>
@@ -807,7 +807,7 @@
     </message>
     <message>
         <source>Deleting item</source>
-        <translation>Bezig met het verwijderen van het item</translation>
+        <translation>Bezig met verwijderen van item</translation>
     </message>
 </context>
 <context>
@@ -1304,15 +1304,15 @@
     </message>
     <message>
         <source>Close</source>
-        <translation type="unfinished"></translation>
+        <translation>Sluiten</translation>
     </message>
     <message>
         <source>Enable Reader Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Leesmodus inschakelen</translation>
     </message>
     <message>
         <source>Disable Reader Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Leesmodus uitschakelen</translation>
     </message>
 </context>
 <context>
@@ -1371,49 +1371,49 @@
     <name>ThirdPartyLabel</name>
     <message>
         <source>License</source>
-        <translation type="unfinished"></translation>
+        <translation>Licentie</translation>
     </message>
     <message>
         <source>Project Page</source>
-        <translation type="unfinished"></translation>
+        <translation>Project-website</translation>
     </message>
 </context>
 <context>
     <name>ThirdPartyPage</name>
     <message>
         <source>Third Party</source>
-        <translation type="unfinished"></translation>
+        <translation>Derde partij</translation>
     </message>
     <message>
         <source>MIT License</source>
-        <translation type="unfinished"></translation>
+        <translation>MIT-licentie</translation>
     </message>
     <message>
         <source>Apache License</source>
-        <translation type="unfinished"></translation>
+        <translation>Apache-licentie</translation>
     </message>
 </context>
 <context>
     <name>TranslationsPage</name>
     <message>
         <source>Translation Platform</source>
-        <translation type="unfinished">Vertalingsplatform</translation>
+        <translation>Vertaalplatform</translation>
     </message>
     <message>
         <source>Translations</source>
-        <translation type="unfinished"></translation>
+        <translation>Vertalingen</translation>
     </message>
     <message>
         <source>Coordinators</source>
-        <translation type="unfinished"></translation>
+        <translation>Coördinators</translation>
     </message>
     <message>
         <source>Translators</source>
-        <translation type="unfinished">Vertalers</translation>
+        <translation>Vertalers</translation>
     </message>
     <message>
         <source>Reviewers</source>
-        <translation type="unfinished"></translation>
+        <translation>Nakijkers</translation>
     </message>
 </context>
 <context>

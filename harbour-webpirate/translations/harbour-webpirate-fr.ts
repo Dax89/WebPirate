@@ -72,11 +72,11 @@
     </message>
     <message>
         <source>Download CSS Filters</source>
-        <translation type="unfinished"></translation>
+        <translation>Télécharger les filtres CSS</translation>
     </message>
     <message>
         <source>Download Hosts BlackList</source>
-        <translation type="unfinished"></translation>
+        <translation>Télécharger la BlackList Hosts</translation>
     </message>
 </context>
 <context>
@@ -438,7 +438,7 @@
     </message>
     <message>
         <source>Icon Designer</source>
-        <translation type="unfinished">Designer de l&apos;icône </translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -521,11 +521,11 @@
     </message>
     <message>
         <source>Ambience Browsing</source>
-        <translation type="unfinished"></translation>
+        <translation>Parcourir les ambiances </translation>
     </message>
     <message>
         <source>WebPirate will try to skin webpages according to ambience settings</source>
-        <translation type="unfinished"></translation>
+        <translation>WebPirate présentera les pages internet selon les paramètres de l&apos;ambiance</translation>
     </message>
 </context>
 <context>
@@ -647,7 +647,7 @@
     <name>FormResubmitDialog</name>
     <message>
         <source>This page contains information written by you: do you want to resend the data?</source>
-        <translation>Cette page contient des informations que vous avez écrit: voulez-vous renvoyer les données ?</translation>
+        <translation>Cette page contient des informations que vous avez écrit : voulez-vous renvoyer les données ?</translation>
     </message>
     <message>
         <source>Yes</source>
@@ -685,15 +685,15 @@
         <translation>Définir comme navigateur par défaut</translation>
     </message>
     <message>
-        <source>Custom action</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Pressed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Long Pressed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Custom actions</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1296,15 +1296,15 @@
     </message>
     <message>
         <source>Grabber</source>
-        <translation type="unfinished"></translation>
+        <translation>Outil de capture</translation>
     </message>
     <message>
         <source>Media Player</source>
-        <translation type="unfinished"></translation>
+        <translation>Lecteur multimédia</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="unfinished"></translation>
+        <translation>Fermer</translation>
     </message>
     <message>
         <source>Enable Reader Mode</source>
@@ -1397,7 +1397,7 @@
     <name>TranslationsPage</name>
     <message>
         <source>Translation Platform</source>
-        <translation type="unfinished">Plateforme de traduction</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Translations</source>
@@ -1409,7 +1409,7 @@
     </message>
     <message>
         <source>Translators</source>
-        <translation type="unfinished">Traducteurs</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Reviewers</source>
@@ -1428,7 +1428,7 @@
     </message>
     <message>
         <source>Video grabbed successfully</source>
-        <translation type="unfinished">Vidéo capturée avec succès</translation>
+        <translation>Vidéo capturée avec succès</translation>
     </message>
 </context>
 <context>

@@ -72,7 +72,7 @@
     </message>
     <message>
         <source>Download CSS Filters</source>
-        <translation type="unfinished"></translation>
+        <translation>下載CSS篩選器</translation>
     </message>
     <message>
         <source>Download Hosts BlackList</source>
@@ -118,11 +118,11 @@
     </message>
     <message>
         <source>Disable AdBlock</source>
-        <translation type="unfinished"></translation>
+        <translation>停用AdBlock</translation>
     </message>
     <message>
         <source>Enable AdBlock</source>
-        <translation type="unfinished"></translation>
+        <translation>啟用AdBlock</translation>
     </message>
 </context>
 <context>
@@ -196,34 +196,34 @@
     </message>
     <message>
         <source>Refresh</source>
-        <translation type="unfinished"></translation>
+        <translation>重新整理</translation>
     </message>
     <message>
         <source>New tab</source>
-        <translation type="unfinished"></translation>
+        <translation>新分頁</translation>
     </message>
     <message>
         <source>Remove from Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>從我的最愛中移除</translation>
     </message>
     <message>
         <source>Add to Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>新增至我的最愛</translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation type="unfinished"></translation>
+        <translation>停止</translation>
     </message>
 </context>
 <context>
     <name>ClosedTabsSegment</name>
     <message>
         <source>Closed Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>已關閉的分頁</translation>
     </message>
     <message>
         <source>Delete Closed Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>刪除關閉的分頁</translation>
     </message>
 </context>
 <context>
@@ -279,19 +279,19 @@
     <name>CookiesSegment</name>
     <message>
         <source>Cookie Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Cookie管理員</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation type="unfinished">篩選設定</translation>
+        <translation>篩選</translation>
     </message>
     <message>
         <source>Remove All Cookies</source>
-        <translation type="unfinished"></translation>
+        <translation>移除所有Cookie</translation>
     </message>
     <message>
         <source>Add Cookie</source>
-        <translation type="unfinished">新增Cookie</translation>
+        <translation>新增Cookie</translation>
     </message>
 </context>
 <context>
@@ -387,15 +387,15 @@
     </message>
     <message>
         <source>Closed Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">已關閉的分頁</translation>
     </message>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">我的最愛</translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">下載</translation>
     </message>
     <message>
         <source>Navigation History</source>
@@ -438,7 +438,7 @@
     </message>
     <message>
         <source>Icon Designer</source>
-        <translation type="unfinished">圖示設計者</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -490,19 +490,19 @@
     <name>DownloadsSegment</name>
     <message>
         <source>Delete completed Downloads</source>
-        <translation type="unfinished"></translation>
+        <translation>刪除完成的下載</translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation type="unfinished"></translation>
+        <translation>下載</translation>
     </message>
     <message>
         <source>Download Url</source>
-        <translation type="unfinished"></translation>
+        <translation>下載網址</translation>
     </message>
     <message>
         <source>Start</source>
-        <translation type="unfinished"></translation>
+        <translation>開始</translation>
     </message>
 </context>
 <context>
@@ -532,27 +532,27 @@
     <name>FavoriteItem</name>
     <message>
         <source>Open</source>
-        <translation type="unfinished">開啟</translation>
+        <translation>開啟</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation type="unfinished">編輯</translation>
+        <translation>編輯</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished">刪除</translation>
+        <translation>刪除</translation>
     </message>
     <message>
         <source>Deleting Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>刪除資料夾</translation>
     </message>
     <message>
         <source>Deleting Favorite</source>
-        <translation type="unfinished"></translation>
+        <translation>刪除我的最愛中</translation>
     </message>
     <message>
         <source>Add to Quick Grid</source>
-        <translation type="unfinished"></translation>
+        <translation>新增至快速啟動頁</translation>
     </message>
 </context>
 <context>
@@ -593,54 +593,54 @@
     <name>FavoritesMenu</name>
     <message>
         <source>Export</source>
-        <translation type="unfinished"></translation>
+        <translation>匯出</translation>
     </message>
     <message>
         <source>Exporting favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>匯出我的最愛</translation>
     </message>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>我的最愛</translation>
     </message>
     <message>
         <source>Favorites exported successfully</source>
-        <translation type="unfinished"></translation>
+        <translation>我的最愛匯出成功</translation>
     </message>
     <message>
         <source>Import</source>
-        <translation type="unfinished"></translation>
+        <translation>匯入</translation>
     </message>
     <message>
         <source>Import in</source>
-        <translation type="unfinished"></translation>
+        <translation>匯入至</translation>
     </message>
     <message>
         <source>Add Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>新增資料夾</translation>
     </message>
     <message>
         <source>Add Favorite</source>
-        <translation type="unfinished"></translation>
+        <translation>新增我的最愛</translation>
     </message>
 </context>
 <context>
     <name>FavoritesSegment</name>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>我的最愛</translation>
     </message>
     <message>
         <source>Back</source>
-        <translation type="unfinished"></translation>
+        <translation>上一頁</translation>
     </message>
     <message>
         <source>Favorites imported successfully</source>
-        <translation type="unfinished"></translation>
+        <translation>我的最愛匯入成功</translation>
     </message>
     <message>
         <source>Cannot import favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>無法匯入我的最愛</translation>
     </message>
 </context>
 <context>
@@ -685,10 +685,6 @@
         <translation>設定為預設瀏覽器</translation>
     </message>
     <message>
-        <source>Custom action</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Pressed</source>
         <translation type="unfinished"></translation>
     </message>
@@ -696,28 +692,32 @@
         <source>Long Pressed</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Custom actions</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>GrabberItem</name>
     <message>
         <source>Play</source>
-        <translation type="unfinished"></translation>
+        <translation>播放</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished">下載</translation>
+        <translation>下載</translation>
     </message>
     <message>
         <source>Grabbing video</source>
-        <translation type="unfinished"></translation>
+        <translation>取得影片中</translation>
     </message>
     <message>
         <source>Copy URL</source>
-        <translation type="unfinished"></translation>
+        <translation>複製網址</translation>
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation type="unfinished">將連結複製至剪貼簿</translation>
+        <translation>將連結複製到剪貼簿</translation>
     </message>
 </context>
 <context>
@@ -731,11 +731,11 @@
     <name>HistorySegment</name>
     <message>
         <source>History</source>
-        <translation type="unfinished"></translation>
+        <translation>記錄</translation>
     </message>
     <message>
         <source>Delete History</source>
-        <translation type="unfinished"></translation>
+        <translation>刪除記錄</translation>
     </message>
 </context>
 <context>
@@ -990,7 +990,7 @@
     </message>
     <message>
         <source>Search...</source>
-        <translation type="unfinished"></translation>
+        <translation>搜尋...</translation>
     </message>
 </context>
 <context>
@@ -1005,7 +1005,7 @@
     </message>
     <message>
         <source>New tab</source>
-        <translation type="unfinished"></translation>
+        <translation>新分頁</translation>
     </message>
 </context>
 <context>
@@ -1129,7 +1129,7 @@
     </message>
     <message>
         <source>SD Card</source>
-        <translation type="unfinished"></translation>
+        <translation>SD 卡</translation>
     </message>
     <message>
         <source>Home</source>
@@ -1141,7 +1141,7 @@
     </message>
     <message>
         <source>Back</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">上一頁</translation>
     </message>
 </context>
 <context>
@@ -1280,7 +1280,7 @@
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation type="unfinished">將連結複製至剪貼簿</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Save page</source>
@@ -1397,7 +1397,7 @@
     <name>TranslationsPage</name>
     <message>
         <source>Translation Platform</source>
-        <translation type="unfinished">翻譯平台</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Translations</source>
@@ -1409,7 +1409,7 @@
     </message>
     <message>
         <source>Translators</source>
-        <translation type="unfinished">翻譯者</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Reviewers</source>

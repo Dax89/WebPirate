@@ -13,7 +13,7 @@
     </message>
     <message>
         <source>GitHub Repository</source>
-        <translation>GitHub Repository</translation>
+        <translation>Хранилище GitHub</translation>
     </message>
     <message>
         <source>Report an Issue</source>
@@ -48,7 +48,7 @@
     <name>AdBlockDownloaderPage</name>
     <message>
         <source>AdBlock Updater</source>
-        <translation>Блокировщик рекламы</translation>
+        <translation>Обновление блокировщика рекламы</translation>
     </message>
     <message>
         <source>State</source>
@@ -72,11 +72,11 @@
     </message>
     <message>
         <source>Download CSS Filters</source>
-        <translation type="unfinished"></translation>
+        <translation>Загрузить графические фильтры</translation>
     </message>
     <message>
         <source>Download Hosts BlackList</source>
-        <translation type="unfinished"></translation>
+        <translation>Загрузить &quot;черный список&quot; доменных имен</translation>
     </message>
 </context>
 <context>
@@ -192,7 +192,7 @@
     </message>
     <message>
         <source>Accept Certificate from: %1 ?</source>
-        <translation type="unfinished"></translation>
+        <translation>Принять сертификат из: %1</translation>
     </message>
     <message>
         <source>Refresh</source>
@@ -204,22 +204,22 @@
     </message>
     <message>
         <source>Remove from Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Удалить из избранного</translation>
     </message>
     <message>
         <source>Add to Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить в избранное</translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation type="unfinished"></translation>
+        <translation>Остановить</translation>
     </message>
 </context>
 <context>
     <name>ClosedTabsSegment</name>
     <message>
         <source>Closed Tabs</source>
-        <translation>Закрыть вкладку</translation>
+        <translation>Закрытые вкладки</translation>
     </message>
     <message>
         <source>Delete Closed Tabs</source>
@@ -279,11 +279,11 @@
     <name>CookiesSegment</name>
     <message>
         <source>Cookie Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Управление Cookie</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation type="unfinished">Фильтр</translation>
+        <translation>Фильтр</translation>
     </message>
     <message>
         <source>Remove All Cookies</source>
@@ -387,7 +387,7 @@
     </message>
     <message>
         <source>Closed Tabs</source>
-        <translation type="unfinished">Закрыть вкладку</translation>
+        <translation type="unfinished">Закрытые вкладки</translation>
     </message>
     <message>
         <source>Favorites</source>
@@ -438,7 +438,7 @@
     </message>
     <message>
         <source>Icon Designer</source>
-        <translation type="unfinished">Создатель иконки</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -498,11 +498,11 @@
     </message>
     <message>
         <source>Download Url</source>
-        <translation type="unfinished"></translation>
+        <translation>Загрузить ссылку</translation>
     </message>
     <message>
         <source>Start</source>
-        <translation type="unfinished"></translation>
+        <translation>Начать</translation>
     </message>
 </context>
 <context>
@@ -544,15 +544,15 @@
     </message>
     <message>
         <source>Deleting Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Удаление папки</translation>
     </message>
     <message>
         <source>Deleting Favorite</source>
-        <translation type="unfinished"></translation>
+        <translation>Удаление избранного</translation>
     </message>
     <message>
         <source>Add to Quick Grid</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить на панель быстрого запуска</translation>
     </message>
 </context>
 <context>
@@ -597,7 +597,7 @@
     </message>
     <message>
         <source>Exporting favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Экспорт избранного</translation>
     </message>
     <message>
         <source>Favorites</source>
@@ -605,7 +605,7 @@
     </message>
     <message>
         <source>Favorites exported successfully</source>
-        <translation type="unfinished"></translation>
+        <translation>Избранное успешно экспортировано</translation>
     </message>
     <message>
         <source>Import</source>
@@ -636,7 +636,7 @@
     </message>
     <message>
         <source>Favorites imported successfully</source>
-        <translation type="unfinished"></translation>
+        <translation>Избранное успешно импортировано</translation>
     </message>
     <message>
         <source>Cannot import favorites</source>
@@ -685,10 +685,6 @@
         <translation>Установить браузером по умолчанию.</translation>
     </message>
     <message>
-        <source>Custom action</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Pressed</source>
         <translation type="unfinished"></translation>
     </message>
@@ -696,28 +692,32 @@
         <source>Long Pressed</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Custom actions</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>GrabberItem</name>
     <message>
         <source>Play</source>
-        <translation type="unfinished"></translation>
+        <translation>Воспроизвести</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished">Загрузить</translation>
+        <translation>Загрузить</translation>
     </message>
     <message>
         <source>Grabbing video</source>
-        <translation type="unfinished"></translation>
+        <translation>Загрузка видео</translation>
     </message>
     <message>
         <source>Copy URL</source>
-        <translation type="unfinished"></translation>
+        <translation>Копировать адресную строку</translation>
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation type="unfinished">Ссылка скопирована</translation>
+        <translation>Ссылка скопирована в буфер обмена</translation>
     </message>
 </context>
 <context>
@@ -731,11 +731,11 @@
     <name>HistorySegment</name>
     <message>
         <source>History</source>
-        <translation type="unfinished"></translation>
+        <translation>История</translation>
     </message>
     <message>
         <source>Delete History</source>
-        <translation type="unfinished"></translation>
+        <translation>Удалить историю</translation>
     </message>
 </context>
 <context>
@@ -852,7 +852,7 @@
     <name>PopupBlockerPage</name>
     <message>
         <source>Popup Blocker</source>
-        <translation>Popup Blocker</translation>
+        <translation>Блокирование всплывающих окон</translation>
     </message>
     <message>
         <source>Clear popup list</source>
@@ -913,11 +913,11 @@
     </message>
     <message>
         <source>Removing navigation history</source>
-        <translation>Удаление истории</translation>
+        <translation>Очистка истории</translation>
     </message>
     <message>
         <source>Delete Cookies</source>
-        <translation>Удаленить Cookies</translation>
+        <translation>Удалить Cookies</translation>
     </message>
     <message>
         <source>Removing cookies</source>
@@ -945,7 +945,7 @@
     </message>
     <message>
         <source>Keep Favicons when deleting personal data</source>
-        <translation>Сохранять Fast Dial при удалении личных данных</translation>
+        <translation>Сохранить значки на панели быстрого запуска при удалении личных данных</translation>
     </message>
 </context>
 <context>
@@ -997,7 +997,7 @@
     <name>QuickGrid</name>
     <message>
         <source>The Quick Grid is empty</source>
-        <translation>Fast Dial пустой</translation>
+        <translation>Страница быстрого доступа пустая</translation>
     </message>
     <message>
         <source>Long Press to edit</source>
@@ -1072,7 +1072,7 @@
     </message>
     <message>
         <source>Opened Tabs</source>
-        <translation>Открыть вкладки</translation>
+        <translation>Открытые вкладки</translation>
     </message>
     <message>
         <source>Selected</source>
@@ -1125,7 +1125,7 @@
     <name>SelectorFilesPage</name>
     <message>
         <source>Android storage</source>
-        <translation type="unfinished"></translation>
+        <translation>Каталог Android</translation>
     </message>
     <message>
         <source>SD Card</source>
@@ -1133,11 +1133,11 @@
     </message>
     <message>
         <source>Home</source>
-        <translation type="unfinished"></translation>
+        <translation>Системный каталог</translation>
     </message>
     <message>
         <source>Send %1 file(s)</source>
-        <translation type="unfinished"></translation>
+        <translation>Отправить %1 файл(ы)</translation>
     </message>
     <message>
         <source>Back</source>
@@ -1179,15 +1179,15 @@
     </message>
     <message>
         <source>No Sessions</source>
-        <translation type="unfinished"></translation>
+        <translation>Нет активных сессий</translation>
     </message>
     <message>
         <source>Save current session</source>
-        <translation type="unfinished"></translation>
+        <translation>Сохранить текущую сессию</translation>
     </message>
     <message>
         <source>Tabs saved</source>
-        <translation type="unfinished"></translation>
+        <translation>Вкладки сохранены</translation>
     </message>
     <message>
         <source>Open</source>
@@ -1203,11 +1203,11 @@
     </message>
     <message>
         <source>Deleting session</source>
-        <translation type="unfinished"></translation>
+        <translation>Удалить сессию</translation>
     </message>
     <message>
         <source>Loads at startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Загрузить при запуске</translation>
     </message>
 </context>
 <context>
@@ -1238,7 +1238,7 @@
     </message>
     <message>
         <source>AdBlock</source>
-        <translation>AdBlock</translation>
+        <translation>Блокирование рекламы</translation>
     </message>
     <message>
         <source>Proxy</source>
@@ -1246,7 +1246,7 @@
     </message>
     <message>
         <source>Popup Blocker</source>
-        <translation type="unfinished">Popup Blocker</translation>
+        <translation>Блокирование всплывающих окон</translation>
     </message>
 </context>
 <context>
@@ -1261,50 +1261,50 @@
     </message>
     <message>
         <source>Deleting Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Удалить вкладку</translation>
     </message>
 </context>
 <context>
     <name>TabListItem</name>
     <message>
         <source>Quick Grid</source>
-        <translation type="unfinished"></translation>
+        <translation>Панель быстрого запуска</translation>
     </message>
     <message>
         <source>Load error</source>
-        <translation type="unfinished"></translation>
+        <translation>Ошибка загрузки</translation>
     </message>
     <message>
         <source>Copy link</source>
-        <translation type="unfinished"></translation>
+        <translation>Скопировать ссылку</translation>
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation type="unfinished">Ссылка скопирована</translation>
+        <translation>Ссылка скопирована в буфер обмена</translation>
     </message>
     <message>
         <source>Save page</source>
-        <translation type="unfinished"></translation>
+        <translation>Сохранить страницу</translation>
     </message>
     <message>
         <source>Downloading web page</source>
-        <translation type="unfinished"></translation>
+        <translation>Загрузка Web-страницы</translation>
     </message>
     <message>
         <source>Duplicate tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Дублировать вкладку</translation>
     </message>
     <message>
         <source>Grabber</source>
-        <translation type="unfinished"></translation>
+        <translation>Загрузчик</translation>
     </message>
     <message>
         <source>Media Player</source>
-        <translation type="unfinished"></translation>
+        <translation>Проигрыватель медиа</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation type="unfinished"></translation>
+        <translation>Закрыть</translation>
     </message>
     <message>
         <source>Enable Reader Mode</source>
@@ -1397,7 +1397,7 @@
     <name>TranslationsPage</name>
     <message>
         <source>Translation Platform</source>
-        <translation type="unfinished">Платформа перевода</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Translations</source>
@@ -1409,7 +1409,7 @@
     </message>
     <message>
         <source>Translators</source>
-        <translation type="unfinished">Переводчики</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Reviewers</source>
@@ -1424,11 +1424,11 @@
     </message>
     <message>
         <source>No videos found, report to developer</source>
-        <translation type="unfinished"></translation>
+        <translation>Видео не найдено, сообщить разработчику</translation>
     </message>
     <message>
         <source>Video grabbed successfully</source>
-        <translation type="unfinished"></translation>
+        <translation>Видео успешно загружено</translation>
     </message>
 </context>
 <context>
@@ -1455,11 +1455,11 @@
     </message>
     <message>
         <source>Cannot find decoding function, report to developer</source>
-        <translation type="unfinished"></translation>
+        <translation>Не удается найти подходящий кодек, сообщить разработчику</translation>
     </message>
     <message>
         <source>Cannot find decoding object, report to developer</source>
-        <translation type="unfinished"></translation>
+        <translation>Не удается найти объект декодирования, сообщить разработчику</translation>
     </message>
 </context>
 <context>
@@ -1474,7 +1474,7 @@
     </message>
     <message>
         <source>Grabbing %1</source>
-        <translation>Захват %1</translation>
+        <translation>Загрузка %1</translation>
     </message>
     <message>
         <source>Decoding Signature for %1</source>
@@ -1482,11 +1482,11 @@
     </message>
     <message>
         <source>Video grabbed successfully</source>
-        <translation type="unfinished"></translation>
+        <translation>Видео успешно загружено</translation>
     </message>
     <message>
         <source>Cannot get video, report to developer</source>
-        <translation type="unfinished"></translation>
+        <translation>Не могу получить видео, сообщить разработчику</translation>
     </message>
 </context>
 <context>
