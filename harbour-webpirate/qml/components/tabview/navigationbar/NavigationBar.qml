@@ -216,7 +216,13 @@ Rectangle
                 visible: !navigationbar.clipboardMode
 
                 width: {
-                    var w = parent.width - btntabsorclose.width;
+                    var w = parent.width;
+
+                    if(btntabs.visible)
+                        w -= btntabs.width;
+
+                    if(btnclose.visible)
+                        w -= btnclose.width;
 
                     if(btnpopups.visible)
                         w -= btnpopups.width;
@@ -398,37 +404,56 @@ Rectangle
                 pressCustomAction: settings.presscustomaction
                 longPressCustomAction: settings.longpresscustomaction
                 onFeedbackRequested: content.ngfeffect.play()
+                forceHidden: !navigationbar.normalMode
             }
 
             ImageButton
             {
-                id: btntabsorclose
+                id: btnclose
+                width: navigationbar.contentHeight
+                height: parent.height
+                anchors.verticalCenter: parent.verticalCenter
+                source: "image://theme/icon-close-app"
+
+                visible: {
+                    var tab = currentTab();
+
+                    if(!tab || tab.viewStack.empty)
+                        return false;
+
+                    return true;
+                }
+
+                onClicked: {
+                    var tab = currentTab();
+
+                    if(!tab)
+                        return;
+
+                    tab.viewStack.pop();
+                }
+            }
+
+            ImageButton
+            {
+                id: btntabs
                 width: navigationbar.contentHeight
                 height: parent.height
                 anchors.verticalCenter: parent.verticalCenter
 
-                NumberAnimation on rotation {
-                    from: 0
-                    to: 360
-                    loops: Animation.Infinite
-                    duration: 2500
-                    alwaysRunToEnd: true
+                visible: {
+                    var tab = currentTab();
 
-                    running: {
-                        if(navigationBar.searchMode || navigationBar.clipboardMode || !navigationBar.webView)
-                            return false;
+                    if(!tab || !tab.viewStack.empty)
+                        return false;
 
-                        var tab = currentTab();
-
-                        if(!tab || !tab.viewStack.empty || (tab.state !== "webview"))
-                            return false;
-
-                        return navigationBar.webView.loading;
-                    }
+                    return true;
                 }
 
                 source: {
-                    if(!navigationBar.normalMode || currentTab() && !currentTab().viewStack.empty)
+                    var tab = currentTab();
+
+                    if(!navigationbar.normalMode || (tab && !tab.viewStack.empty))
                         return "image://theme/icon-close-app";
 
                     return "image://theme/icon-m-tabs";
@@ -449,11 +474,6 @@ Rectangle
                         return;
                     }
 
-                    if(!tab.viewStack.empty) {
-                        tab.viewStack.pop();
-                        return;
-                    }
-
                     pageStack.push(Qt.resolvedUrl("../../../pages/segment/SegmentsPage.qml"), { "settings": settings, "tabView": tabview });
                 }
 
@@ -466,6 +486,26 @@ Rectangle
                     navigationbar.searchMode = true;
                 }
 
+                NumberAnimation on rotation {
+                    from: 0
+                    to: 360
+                    loops: Animation.Infinite
+                    duration: 2000
+                    alwaysRunToEnd: true
+
+                    running: {
+                        if(navigationBar.searchMode || navigationBar.clipboardMode || !navigationBar.webView)
+                            return false;
+
+                        var tab = currentTab();
+
+                        if(!tab || !tab.viewStack.empty || (tab.state !== "webview"))
+                            return false;
+
+                        return navigationBar.webView.loading;
+                    }
+                }
+
                 Label
                 {
                     anchors.centerIn: parent
@@ -475,7 +515,7 @@ Rectangle
                     horizontalAlignment: Text.AlignHCenter
                     verticalAlignment: Text.AlignVCenter
                     visible: navigationbar.normalMode && currentTab() && currentTab().viewStack.empty
-                    rotation: -btntabsorclose.rotation
+                    rotation: -btntabs.rotation
                     z: -1
                 }
             }

@@ -5,6 +5,7 @@ import "../../models/navigationbar"
 ImageButton
 {
     property CustomActionsModel customActions
+    property bool forceHidden: false
     property var browserTab
     property int pressCustomAction: 0
     property int longPressCustomAction: 0
@@ -23,6 +24,9 @@ ImageButton
     onPressed: timer.start()
 
     visible: {
+        if(forceHidden)
+            return false;
+
         if((actionbutton.pressCustomAction <= 0) || !actionbutton.browserTab || !customActions)
             return false;
 
