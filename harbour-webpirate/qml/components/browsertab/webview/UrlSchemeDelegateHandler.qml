@@ -11,7 +11,7 @@ QtObject
             if(UrlHelper.domainName(webview.url.toString()).indexOf("youtube.com") !== -1) /* Grab YouTube videos if an RTSP url is requested */
             {
                 var data = new Object;
-                data.videoid = YouTubeGrabber.getVideoId(webview.url.toString());
+                data.videoId = YouTubeGrabber.getVideoId(webview.url.toString());
                 listener.dispatchers.playYouTubeVideo(data);
             }
 
