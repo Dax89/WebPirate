@@ -45,7 +45,7 @@ Item
     {
         id: videoplayer
         anchors.fill: parent
-        autoPlay: true
+        autoPlay: false
 
         onPlaybackStateChanged: {
             var keep = videoplayer.playbackState !== MediaPlayer.PlayingState;
@@ -65,10 +65,15 @@ Item
         }
 
         onStatusChanged: {
-            if((playbackState !== MediaPlayer.PlayingState) && (status === MediaPlayer.Loading || status === MediaPlayer.Buffering || status === MediaPlayer.Stalled)) {
+            if((playbackState !== MediaPlayer.PlayingState) && (status === MediaPlayer.Loading || status === MediaPlayer.Buffering || status === MediaPlayer.Stalled))
                 browserplayer.state = "loading";
+        }
+
+        onBufferProgressChanged: {
+            if((bufferProgress < 1.0) || (status === MediaPlayer.PausedState))
                 return;
-            }
+
+            videoplayer.play();
         }
 
         Image { id: imgthumbnail; fillMode: Image.PreserveAspectFit; anchors.centerIn: parent; visible: !mperror.showError && !videoplayer.hasVideo; z: 2 }
