@@ -127,7 +127,7 @@ void DefaultBrowser::writeLocalOpenUrl() const
     f.write(QString("[Desktop Entry]\n"
                     "Type=Application\n"
                     "Name=Browser\n"
-                    "NotShownIn=X-MeeGo;\n"
+                    "NoDisplay=true\n"
                     "MimeType=text/html;x-maemo-urischeme/http;x-maemo-urischeme/https;\n"
                     "X-Maemo-Service=org.harbour.webpirate\n"
                     "X-Maemo-Method=org.harbour.webpirate.openUrl\n").toUtf8());
