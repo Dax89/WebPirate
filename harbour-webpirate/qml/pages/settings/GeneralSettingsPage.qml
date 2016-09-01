@@ -118,7 +118,7 @@ Dialog
                 }
             }
 
-            SectionHeader { text: qsTr("Custom action") }
+            SectionHeader { text: qsTr("Custom actions") }
 
             ComboBox
             {
