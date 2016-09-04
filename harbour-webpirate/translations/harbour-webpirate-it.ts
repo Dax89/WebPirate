@@ -696,6 +696,10 @@
         <source>Custom actions</source>
         <translation>Azioni personalizzate</translation>
     </message>
+    <message>
+        <source>Left handed mode</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>GrabberItem</name>

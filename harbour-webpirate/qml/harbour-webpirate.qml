@@ -60,6 +60,7 @@ ApplicationWindow
                 settings.longpresscustomaction = parseInt(Database.transactionGet(tx, "longpresscustomaction"));
                 settings.nightmode = parseInt(Database.transactionGet(tx, "nightmode"));
                 settings.keepfavicons = parseInt(Database.transactionGet(tx, "keepfavicons"));
+                settings.lefthanded = parseInt(Database.transactionGet(tx, "lefthanded"));
                 settings.clearonexit = parseInt(Database.transactionGet(tx, "clearonexit"));
                 settings.closelasttab = parseInt(Database.transactionGet(tx, "closelasttab"));
                 settings.restoretabs = parseInt(Database.transactionGet(tx, "restoretabs"));

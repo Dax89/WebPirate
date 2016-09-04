@@ -7,6 +7,7 @@ ListItem
 {
     property var tab
     property bool highlighted: false
+    property bool leftHanded: false
 
     signal closeRequested()
 
@@ -137,6 +138,7 @@ ListItem
             id: imgclose
             source: "image://theme/icon-m-close"
             anchors { right: parent.right; top: parent.top; rightMargin: Theme.paddingSmall; topMargin: Theme.paddingSmall }
+            LayoutMirroring.enabled: tablistitem.leftHanded
 
             MouseArea { anchors.fill: parent; onClicked: closeRequested() }
         }
@@ -148,6 +150,7 @@ ListItem
             width: Theme.iconSizeMedium
             height: Theme.iconSizeMedium
             fillMode: Image.PreserveAspectFit
+            LayoutMirroring.enabled: tablistitem.leftHanded
 
             source: {
                 if(!tab)
@@ -172,8 +175,8 @@ ListItem
         Label
         {
             anchors { top: parent.top; bottom: parent.bottom; bottomMargin: Theme.paddingMedium }
-            x: Math.max(img.width, parent.width - contentWidth - Theme.paddingMedium)
-            width: parent.width - x
+            x: tablistitem.leftHanded ? Theme.paddingMedium : Math.max(img.width, parent.width - contentWidth - Theme.paddingMedium)
+            width: parent.width - (tablistitem.leftHanded ? (x * 2) : x)
             font { family: Theme.fontFamilyHeading; pixelSize: Theme.fontSizeMedium }
             verticalAlignment: Text.AlignBottom
             horizontalAlignment: Text.AlignLeft

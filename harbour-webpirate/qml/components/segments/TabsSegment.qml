@@ -63,6 +63,7 @@ SilicaFlickable
             contentWidth: tabssegment.width
             contentHeight: Theme.itemSizeHuge
             highlighted: model.index === tabView.currentIndex
+            leftHanded: settings.lefthanded
             tab: tabView.tabAt(model.index)
             onCloseRequested: tabView.removeTab(model.index)
 

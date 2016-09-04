@@ -207,6 +207,7 @@ Rectangle
         {
             id: row
             anchors.fill: parent
+            LayoutMirroring.enabled: settings.lefthanded
 
             QueryBar
             {

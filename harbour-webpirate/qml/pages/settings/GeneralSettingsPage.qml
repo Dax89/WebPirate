@@ -24,6 +24,7 @@ Dialog
         settings.useragent = cbuseragent.currentIndex;
         settings.presscustomaction = cbcustomactionpress.currentIndex;
         settings.longpresscustomaction = cbcustomactionlongpress.currentIndex;
+        settings.lefthanded = swlefthandedmode.checked;
 
         Database.transaction(function(tx) {
             Database.transactionSet(tx, "homepage", settings.homepage);
@@ -31,6 +32,7 @@ Dialog
             Database.transactionSet(tx, "useragent", settings.useragent);
             Database.transactionSet(tx, "presscustomaction", settings.presscustomaction);
             Database.transactionSet(tx, "longpresscustomaction", settings.longpresscustomaction);
+            Database.transactionSet(tx, "lefthanded", settings.lefthanded);
         });
     }
 
@@ -103,6 +105,14 @@ Dialog
                         }
                     }
                 }
+            }
+
+            TextSwitch
+            {
+                id: swlefthandedmode
+                text: qsTr("Left handed mode")
+                width: parent.width
+                checked: settings.lefthanded
             }
 
             TextSwitch
