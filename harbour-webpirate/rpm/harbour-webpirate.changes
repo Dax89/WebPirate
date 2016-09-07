@@ -8,20 +8,23 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
-* Thu Sep 01 2016 Antonio Davide Trogu <trogu.davide@gmail.com> 2.1-1
+* Wed Sep 07 2016 Antonio Davide Trogu <trogu.davide@gmail.com> 2.1-2
+- REVISION 2: New Icon!
+- REVISION 2: Implemented "Left handed" mode
+- REVISION 2: Added Close All
+- REVISION 2: Minor Fixes
+- REVISION 2: Updated localizations
 - Improved 2.x UI
 - Implemented Android-like text selection (will be improved in the next versions)
 - Added "ambience browsing" experimental feature
 - Adblocker can now intercept and ignore ads requests
 - Added "user-programmable" button (actions can be defined in settings)
 - Added support up to Sailfish 2.0.3.x
-- Rewrited all WebKit Javascripts (which are parte of LibWebPirate)
+- Rewrited all WebKit Javascripts (which are part of LibWebPirate)
 - Fixed YouTube grabber
 - Added Firefox's Reader Mode
 - Fixed Video Stuttering ( thanks llelectronics :) )
 - Added close button in tab list
-- Minor Fixes
-- Updated localizations.
 
 * Sun Mar 13 2016 Antonio Davide Trogu <trogu.davide@gmail.com> 2.0-1
 - New Gesture Based UI

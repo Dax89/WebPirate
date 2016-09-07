@@ -93,7 +93,6 @@ OTHER_FILES += qml/harbour-webpirate.qml \
     qml/components/browsertab/webview/BrowserWebView.qml \
     qml/js/settings/History.js \
     qml/components/SettingLabel.qml \
-    qml/pages/webview/TextSelectionPage.qml \
     qml/components/tabview/TabView.qml \
     qml/components/quickgrid/QuickGrid.qml \
     qml/components/quickgrid/QuickGridItem.qml \
@@ -215,7 +214,8 @@ RESOURCES += \
 SAILFISHAPP_ICONS = \
     86x86 \
     108x108 \
-    128x128
+    128x128 \
+    256x256
 
 HEADERS += \
     src/webkitdatabase/webkitdatabase.h \

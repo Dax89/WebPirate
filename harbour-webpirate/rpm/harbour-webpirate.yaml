@@ -1,7 +1,7 @@
 Name: harbour-webpirate
 Summary: harbour-webpirate
 Version: 2.1
-Release: 1
+Release: 2
 # The contents of the Group field should be one of the groups listed here:
 # https://gitorious.org/meego-developer-tools/spectacle/blobs/master/data/GROUPS
 Group: Qt/Qt
@@ -43,6 +43,7 @@ Files:
   - '%{_datadir}/%{name}'
   - '%{_datadir}/applications/%{name}.desktop'
   - '%{_datadir}/icons/hicolor/*/apps/%{name}.png'
+  - '%exclude %{_libdir}/cmake/*'
 
   # Not allowed in harbour, keep it disabled
   # - '%{_datadir}/dbus-1/services/*.service'

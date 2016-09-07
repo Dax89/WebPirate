@@ -1365,13 +1365,6 @@
     </message>
 </context>
 <context>
-    <name>TextSelectionPage</name>
-    <message>
-        <source>Copy</source>
-        <translation>Zkopírovat</translation>
-    </message>
-</context>
-<context>
     <name>ThirdPartyLabel</name>
     <message>
         <source>License</source>

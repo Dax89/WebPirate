@@ -694,11 +694,11 @@
     </message>
     <message>
         <source>Custom actions</source>
-        <translation type="unfinished"></translation>
+        <translation>Aangepaste acties</translation>
     </message>
     <message>
         <source>Left handed mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Modus voor linkshandigen</translation>
     </message>
 </context>
 <context>
@@ -883,7 +883,7 @@
     </message>
     <message>
         <source>Deleting rule</source>
-        <translation>Bezig met het verwijderen van de regel</translation>
+        <translation>Bezig met verwijderen van regel</translation>
     </message>
 </context>
 <context>
@@ -898,7 +898,7 @@
     </message>
     <message>
         <source>Deleting rules</source>
-        <translation>Bezig met het verwijderen van de regels</translation>
+        <translation>Bezig met verwijderen van regels</translation>
     </message>
     <message>
         <source>New Rule</source>
@@ -917,7 +917,7 @@
     </message>
     <message>
         <source>Removing navigation history</source>
-        <translation>Bezig met het wissen van de surfgeschiedenis</translation>
+        <translation>Bezig met wissen van surfgeschiedenis</translation>
     </message>
     <message>
         <source>Delete Cookies</source>
@@ -925,7 +925,7 @@
     </message>
     <message>
         <source>Removing cookies</source>
-        <translation>Bezig met het wissen van de cookies</translation>
+        <translation>Bezig met wissen van cookies</translation>
     </message>
     <message>
         <source>Delete Personal Data</source>
@@ -933,7 +933,7 @@
     </message>
     <message>
         <source>Removing personal data</source>
-        <translation>Bezig met het wissen van de persoonlijke gegevens</translation>
+        <translation>Bezig met wissen van persoonlijke gegevens</translation>
     </message>
     <message>
         <source>Save</source>
@@ -956,7 +956,7 @@
     <name>PromptDialog</name>
     <message>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation>Oké</translation>
     </message>
 </context>
 <context>
@@ -1020,14 +1020,14 @@
     </message>
     <message>
         <source>Done</source>
-        <translation>Klaar</translation>
+        <translation>Voltooid</translation>
     </message>
 </context>
 <context>
     <name>QuickGridItem</name>
     <message>
         <source>Removing item</source>
-        <translation>Bezig met het verwijderen van het item</translation>
+        <translation>Bezig met verwijderen van item</translation>
     </message>
 </context>
 <context>
@@ -1122,7 +1122,7 @@
     </message>
     <message>
         <source>Deleting Search Engine</source>
-        <translation>Bezig met het verwijderen van de zoekmachine</translation>
+        <translation>Bezig met verwijderen van zoekmachine</translation>
     </message>
 </context>
 <context>
@@ -1137,7 +1137,7 @@
     </message>
     <message>
         <source>Home</source>
-        <translation>Thuis</translation>
+        <translation>Persoonlijke map</translation>
     </message>
     <message>
         <source>Send %1 file(s)</source>
@@ -1242,7 +1242,7 @@
     </message>
     <message>
         <source>AdBlock</source>
-        <translation>Advertentieblokkeerder</translation>
+        <translation>Advertentieblokkering</translation>
     </message>
     <message>
         <source>Proxy</source>
@@ -1280,11 +1280,11 @@
     </message>
     <message>
         <source>Copy link</source>
-        <translation>Koppeling kopiëren</translation>
+        <translation>Link kopiëren</translation>
     </message>
     <message>
         <source>Link copied to clipboard</source>
-        <translation>Koppeling gekopieerd naar klembord</translation>
+        <translation>De link is gekopieerd naar het klembord</translation>
     </message>
     <message>
         <source>Save page</source>
@@ -1292,7 +1292,7 @@
     </message>
     <message>
         <source>Downloading web page</source>
-        <translation>Bezig met het downloaden van de webpagina</translation>
+        <translation>Bezig met downloaden van webpagina</translation>
     </message>
     <message>
         <source>Duplicate tab</source>
@@ -1365,13 +1365,6 @@
     </message>
 </context>
 <context>
-    <name>TextSelectionPage</name>
-    <message>
-        <source>Copy</source>
-        <translation>Kopiëren</translation>
-    </message>
-</context>
-<context>
     <name>ThirdPartyLabel</name>
     <message>
         <source>License</source>
@@ -1428,7 +1421,7 @@
     </message>
     <message>
         <source>No videos found, report to developer</source>
-        <translation>Geen video&apos;s gevonden, meld dit aan de ontwikkelaar</translation>
+        <translation>Geen video&apos;s gevonden; meld dit aan de ontwikkelaar</translation>
     </message>
     <message>
         <source>Video grabbed successfully</source>
@@ -1439,31 +1432,31 @@
     <name>YouTubeCipher</name>
     <message>
         <source>Downloading Player&apos;s Cipher</source>
-        <translation>Bezig met het downloaden van de spelercodering</translation>
+        <translation>Bezig met downloaden van spelercodering</translation>
     </message>
     <message>
         <source>Cannot find decoding function</source>
-        <translation>Het is niet gelukt om de decodeer-functie te vinden</translation>
+        <translation>Het vinden van de decodeer-functie is mislukt</translation>
     </message>
     <message>
         <source>Cannot find decoding object</source>
-        <translation>Het is niet gelukt om het decodeer-object te vinden</translation>
+        <translation>Het vinden van het decodeer-object is mislukt</translation>
     </message>
     <message>
         <source>Cannot download Video Configuration</source>
-        <translation>Het is niet gelukt om de video-configuratie te downloaden</translation>
+        <translation>Het downloaden van de video-configuratie is mislukt</translation>
     </message>
     <message>
         <source>Ciphered Video: Downloading WebPage</source>
-        <translation>Gecodeerde video: bezig met het downloaden van de webpagina</translation>
+        <translation>Gecodeerde video: bezig met downloaden van webpagina</translation>
     </message>
     <message>
         <source>Cannot find decoding function, report to developer</source>
-        <translation>Het is niet gelukt om de decodeer-functie te vinden, meld dit aan de ontwikkelaar</translation>
+        <translation>Het vinden van de decodeer-functie is mislukt; meld dit aan de ontwikkelaar</translation>
     </message>
     <message>
         <source>Cannot find decoding object, report to developer</source>
-        <translation>Het is niet gelukt om het decodeer-object te vinden, meld dit aan de ontwikkelaar</translation>
+        <translation>Het vinden van het decodeer-object is mislukt; meld dit aan de ontwikkelaar</translation>
     </message>
 </context>
 <context>
@@ -1474,15 +1467,15 @@
     </message>
     <message>
         <source>Downloading video info</source>
-        <translation>Bezig met het downloaden van de video-informatie</translation>
+        <translation>Bezig met downloaden van video-informatie</translation>
     </message>
     <message>
         <source>Grabbing %1</source>
-        <translation>Bezig met het grijpen van %1</translation>
+        <translation>Bezig met ophalen van %1</translation>
     </message>
     <message>
         <source>Decoding Signature for %1</source>
-        <translation>Bezig met het ontcijferen van de ondertekening voor %1</translation>
+        <translation>Bezig met ontcijferen van ondertekening voor %1</translation>
     </message>
     <message>
         <source>Video grabbed successfully</source>
@@ -1490,7 +1483,7 @@
     </message>
     <message>
         <source>Cannot get video, report to developer</source>
-        <translation>Het is niet gelukt om de video op te halen, meld dit aan de ontwikkelaar</translation>
+        <translation>Het ophalen van de video is mislukt; meld dit aan de ontwikkelaar</translation>
     </message>
 </context>
 <context>

@@ -17,31 +17,31 @@
     </message>
     <message>
         <source>Report an Issue</source>
-        <translation type="unfinished"></translation>
+        <translation>Signaler un problème</translation>
     </message>
     <message>
         <source>About WebPirate</source>
-        <translation type="unfinished"></translation>
+        <translation>A propos de WebPirate</translation>
     </message>
     <message>
         <source>WebPirate is distributed under the GPLv3 license</source>
-        <translation type="unfinished"></translation>
+        <translation>WebPirate est distribué sous licence GPLv3</translation>
     </message>
     <message>
         <source>License</source>
-        <translation type="unfinished"></translation>
+        <translation>License</translation>
     </message>
     <message>
         <source>Developers</source>
-        <translation type="unfinished"></translation>
+        <translation>Développeurs</translation>
     </message>
     <message>
         <source>Translations</source>
-        <translation type="unfinished"></translation>
+        <translation>Traductions</translation>
     </message>
     <message>
         <source>Third Party</source>
-        <translation type="unfinished"></translation>
+        <translation>Tierces parties</translation>
     </message>
 </context>
 <context>
@@ -375,66 +375,66 @@
     <name>CustomActionsModel</name>
     <message>
         <source>No Action</source>
-        <translation type="unfinished"></translation>
+        <translation>Aucune action</translation>
     </message>
     <message>
         <source>Home Page</source>
-        <translation type="unfinished">Page d&apos;acceuil</translation>
+        <translation>Page d’accueil </translation>
     </message>
     <message>
         <source>Night Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Mode nuit</translation>
     </message>
     <message>
         <source>Closed Tabs</source>
-        <translation type="unfinished">Onglets fermés</translation>
+        <translation>Onglets fermés</translation>
     </message>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished">Favoris</translation>
+        <translation>Favoris</translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation type="unfinished">Téléchargements</translation>
+        <translation>Téléchargements</translation>
     </message>
     <message>
         <source>Navigation History</source>
-        <translation type="unfinished"></translation>
+        <translation>Historique</translation>
     </message>
     <message>
         <source>Sessions</source>
-        <translation type="unfinished">Sessions</translation>
+        <translation>Sessions</translation>
     </message>
     <message>
         <source>Cookies</source>
-        <translation type="unfinished">Cookies</translation>
+        <translation>Cookies</translation>
     </message>
     <message>
         <source>Close Current Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Fermer l&apos;onglet</translation>
     </message>
     <message>
         <source>New Tab</source>
-        <translation type="unfinished">Nouvel onglet</translation>
+        <translation>Nouvel onglet</translation>
     </message>
     <message>
         <source>Reader Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Mode lecteur</translation>
     </message>
 </context>
 <context>
     <name>DevelopersPage</name>
     <message>
         <source>Developers</source>
-        <translation type="unfinished"></translation>
+        <translation>Développeurs</translation>
     </message>
     <message>
         <source>Author</source>
-        <translation type="unfinished"></translation>
+        <translation>Auteur</translation>
     </message>
     <message>
         <source>Contributor</source>
-        <translation type="unfinished"></translation>
+        <translation>Contributeur</translation>
     </message>
     <message>
         <source>Icon Designers</source>
@@ -586,7 +586,7 @@
     </message>
     <message>
         <source>Importing Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Importer des favoris</translation>
     </message>
 </context>
 <context>
@@ -666,7 +666,7 @@
     </message>
     <message>
         <source>Home Page</source>
-        <translation>Page d&apos;acceuil</translation>
+        <translation>Page d’accueil </translation>
     </message>
     <message>
         <source>Search Engines</source>
@@ -686,19 +686,19 @@
     </message>
     <message>
         <source>Pressed</source>
-        <translation type="unfinished"></translation>
+        <translation>Appui</translation>
     </message>
     <message>
         <source>Long Pressed</source>
-        <translation type="unfinished"></translation>
+        <translation>Appui long</translation>
     </message>
     <message>
         <source>Custom actions</source>
-        <translation type="unfinished"></translation>
+        <translation>Action personnalisée</translation>
     </message>
     <message>
         <source>Left handed mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Mode gaucher</translation>
     </message>
 </context>
 <context>
@@ -1308,11 +1308,11 @@
     </message>
     <message>
         <source>Enable Reader Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Activer le Mode Lecteur</translation>
     </message>
     <message>
         <source>Disable Reader Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Désactiver le Mode Lecteur</translation>
     </message>
     <message>
         <source>Close all</source>
@@ -1365,59 +1365,52 @@
     </message>
 </context>
 <context>
-    <name>TextSelectionPage</name>
-    <message>
-        <source>Copy</source>
-        <translation>Copier</translation>
-    </message>
-</context>
-<context>
     <name>ThirdPartyLabel</name>
     <message>
         <source>License</source>
-        <translation type="unfinished"></translation>
+        <translation>License</translation>
     </message>
     <message>
         <source>Project Page</source>
-        <translation type="unfinished"></translation>
+        <translation>Page du projet</translation>
     </message>
 </context>
 <context>
     <name>ThirdPartyPage</name>
     <message>
         <source>Third Party</source>
-        <translation type="unfinished"></translation>
+        <translation>Tierce partie</translation>
     </message>
     <message>
         <source>MIT License</source>
-        <translation type="unfinished"></translation>
+        <translation>Licence MIT</translation>
     </message>
     <message>
         <source>Apache License</source>
-        <translation type="unfinished"></translation>
+        <translation>Licence Apache</translation>
     </message>
 </context>
 <context>
     <name>TranslationsPage</name>
     <message>
         <source>Translation Platform</source>
-        <translation type="unfinished"></translation>
+        <translation>Plateforme de traduction</translation>
     </message>
     <message>
         <source>Translations</source>
-        <translation type="unfinished"></translation>
+        <translation>Traductions</translation>
     </message>
     <message>
         <source>Coordinators</source>
-        <translation type="unfinished"></translation>
+        <translation>Coordinateurs</translation>
     </message>
     <message>
         <source>Translators</source>
-        <translation type="unfinished"></translation>
+        <translation>Traducteurs</translation>
     </message>
     <message>
         <source>Reviewers</source>
-        <translation type="unfinished"></translation>
+        <translation>Correcteurs</translation>
     </message>
 </context>
 <context>

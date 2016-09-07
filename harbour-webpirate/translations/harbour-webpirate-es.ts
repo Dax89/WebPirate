@@ -17,31 +17,31 @@
     </message>
     <message>
         <source>Report an Issue</source>
-        <translation type="unfinished"></translation>
+        <translation>Informar de una incidencia</translation>
     </message>
     <message>
         <source>About WebPirate</source>
-        <translation type="unfinished"></translation>
+        <translation>Acerca de WebPirate</translation>
     </message>
     <message>
         <source>WebPirate is distributed under the GPLv3 license</source>
-        <translation type="unfinished"></translation>
+        <translation>WebPirate se distribuye bajo la licencia GPLv3</translation>
     </message>
     <message>
         <source>License</source>
-        <translation type="unfinished"></translation>
+        <translation>Licencia</translation>
     </message>
     <message>
         <source>Developers</source>
-        <translation type="unfinished"></translation>
+        <translation>Desarrolladores</translation>
     </message>
     <message>
         <source>Translations</source>
-        <translation type="unfinished"></translation>
+        <translation>Traducciones</translation>
     </message>
     <message>
         <source>Third Party</source>
-        <translation type="unfinished"></translation>
+        <translation>Terceros</translation>
     </message>
 </context>
 <context>
@@ -375,66 +375,66 @@
     <name>CustomActionsModel</name>
     <message>
         <source>No Action</source>
-        <translation type="unfinished"></translation>
+        <translation>Ninguna acción</translation>
     </message>
     <message>
         <source>Home Page</source>
-        <translation type="unfinished">Página de inicio</translation>
+        <translation>Página de inicio</translation>
     </message>
     <message>
         <source>Night Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Modo noche</translation>
     </message>
     <message>
         <source>Closed Tabs</source>
-        <translation type="unfinished">Pestañas cerradas</translation>
+        <translation>Pestañas cerradas</translation>
     </message>
     <message>
         <source>Favorites</source>
-        <translation type="unfinished">Favoritos</translation>
+        <translation>Favoritos</translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation type="unfinished">Descargas</translation>
+        <translation>Descargas</translation>
     </message>
     <message>
         <source>Navigation History</source>
-        <translation type="unfinished"></translation>
+        <translation>Historial de navegación</translation>
     </message>
     <message>
         <source>Sessions</source>
-        <translation type="unfinished">Sesiones</translation>
+        <translation>Sesiones</translation>
     </message>
     <message>
         <source>Cookies</source>
-        <translation type="unfinished">Cookies</translation>
+        <translation>Cookies</translation>
     </message>
     <message>
         <source>Close Current Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Cerrar la pestaña actual</translation>
     </message>
     <message>
         <source>New Tab</source>
-        <translation type="unfinished">Nueva pestaña</translation>
+        <translation>Nueva pestaña</translation>
     </message>
     <message>
         <source>Reader Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Modo lectura</translation>
     </message>
 </context>
 <context>
     <name>DevelopersPage</name>
     <message>
         <source>Developers</source>
-        <translation type="unfinished"></translation>
+        <translation>Desarrolladores</translation>
     </message>
     <message>
         <source>Author</source>
-        <translation type="unfinished"></translation>
+        <translation>Autor</translation>
     </message>
     <message>
         <source>Contributor</source>
-        <translation type="unfinished"></translation>
+        <translation>Colaborador</translation>
     </message>
     <message>
         <source>Icon Designers</source>
@@ -586,7 +586,7 @@
     </message>
     <message>
         <source>Importing Favorites</source>
-        <translation type="unfinished"></translation>
+        <translation>Importando favoritos</translation>
     </message>
 </context>
 <context>
@@ -686,19 +686,19 @@
     </message>
     <message>
         <source>Pressed</source>
-        <translation type="unfinished"></translation>
+        <translation>Pulsar</translation>
     </message>
     <message>
         <source>Long Pressed</source>
-        <translation type="unfinished"></translation>
+        <translation>Mantener pulsado</translation>
     </message>
     <message>
         <source>Custom actions</source>
-        <translation type="unfinished"></translation>
+        <translation>Acciones personalizadas</translation>
     </message>
     <message>
         <source>Left handed mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Modo para zurdos</translation>
     </message>
 </context>
 <context>
@@ -1309,11 +1309,11 @@
     </message>
     <message>
         <source>Enable Reader Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Activar modo lectura</translation>
     </message>
     <message>
         <source>Disable Reader Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Desactivar modo lectura</translation>
     </message>
     <message>
         <source>Close all</source>
@@ -1366,59 +1366,52 @@
     </message>
 </context>
 <context>
-    <name>TextSelectionPage</name>
-    <message>
-        <source>Copy</source>
-        <translation>Copiar</translation>
-    </message>
-</context>
-<context>
     <name>ThirdPartyLabel</name>
     <message>
         <source>License</source>
-        <translation type="unfinished"></translation>
+        <translation>Licencia</translation>
     </message>
     <message>
         <source>Project Page</source>
-        <translation type="unfinished"></translation>
+        <translation>Página del proyecto</translation>
     </message>
 </context>
 <context>
     <name>ThirdPartyPage</name>
     <message>
         <source>Third Party</source>
-        <translation type="unfinished"></translation>
+        <translation>Terceros</translation>
     </message>
     <message>
         <source>MIT License</source>
-        <translation type="unfinished"></translation>
+        <translation>Licencia MIT</translation>
     </message>
     <message>
         <source>Apache License</source>
-        <translation type="unfinished"></translation>
+        <translation>Licencia Apache</translation>
     </message>
 </context>
 <context>
     <name>TranslationsPage</name>
     <message>
         <source>Translation Platform</source>
-        <translation type="unfinished"></translation>
+        <translation>Plataforma de traducción</translation>
     </message>
     <message>
         <source>Translations</source>
-        <translation type="unfinished"></translation>
+        <translation>Traducciones</translation>
     </message>
     <message>
         <source>Coordinators</source>
-        <translation type="unfinished"></translation>
+        <translation>Coordinadores</translation>
     </message>
     <message>
         <source>Translators</source>
-        <translation type="unfinished"></translation>
+        <translation>Traductores</translation>
     </message>
     <message>
         <source>Reviewers</source>
-        <translation type="unfinished"></translation>
+        <translation>Revisores</translation>
     </message>
 </context>
 <context>

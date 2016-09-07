@@ -1367,13 +1367,6 @@
     </message>
 </context>
 <context>
-    <name>TextSelectionPage</name>
-    <message>
-        <source>Copy</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
     <name>ThirdPartyLabel</name>
     <message>
         <source>License</source>

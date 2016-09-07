@@ -698,7 +698,7 @@
     </message>
     <message>
         <source>Left handed mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Vänsterhandsläge</translation>
     </message>
 </context>
 <context>
@@ -1362,13 +1362,6 @@
     <message>
         <source>Send</source>
         <translation>Skicka</translation>
-    </message>
-</context>
-<context>
-    <name>TextSelectionPage</name>
-    <message>
-        <source>Copy</source>
-        <translation>Kopiera</translation>
     </message>
 </context>
 <context>

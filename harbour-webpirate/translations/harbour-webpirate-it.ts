@@ -438,7 +438,7 @@
     </message>
     <message>
         <source>Icon Designers</source>
-        <translation type="unfinished"></translation>
+        <translation>Designer dell&apos;icona</translation>
     </message>
 </context>
 <context>
@@ -698,7 +698,7 @@
     </message>
     <message>
         <source>Left handed mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Modalità per mancini</translation>
     </message>
 </context>
 <context>
@@ -1316,7 +1316,7 @@
     </message>
     <message>
         <source>Close all</source>
-        <translation type="unfinished"></translation>
+        <translation>Chiudi tutto</translation>
     </message>
 </context>
 <context>
@@ -1362,13 +1362,6 @@
     <message>
         <source>Send</source>
         <translation>Invia</translation>
-    </message>
-</context>
-<context>
-    <name>TextSelectionPage</name>
-    <message>
-        <source>Copy</source>
-        <translation>Copia</translation>
     </message>
 </context>
 <context>

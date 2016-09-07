@@ -698,7 +698,7 @@
     </message>
     <message>
         <source>Left handed mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Linkshänder-Modus</translation>
     </message>
 </context>
 <context>
@@ -1362,13 +1362,6 @@
     <message>
         <source>Send</source>
         <translation>Senden</translation>
-    </message>
-</context>
-<context>
-    <name>TextSelectionPage</name>
-    <message>
-        <source>Copy</source>
-        <translation>Kopieren</translation>
     </message>
 </context>
 <context>
