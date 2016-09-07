@@ -8,7 +8,6 @@ window.WebPirate_TouchHandlerObject = function() {
     document.addEventListener("touchstart", this.onTouchStart.bind(this), true);
     document.addEventListener("touchmove",  this.onTouchMove.bind(this), true);
     document.addEventListener("touchend",  this.onTouchEnd.bind(this), true);
-    document.addEventListener("click", this.onClick.bind(this), true);
 };
 
 window.WebPirate_TouchHandlerObject.prototype.findAnchorAncestor = function(element) {
@@ -86,28 +85,30 @@ window.WebPirate_TouchHandlerObject.prototype.onTouchMove = function(touchevent)
     clearTimeout(this.timerid)
     this.lastY = touchevent.touches[0].clientY;
     this.currenttouch = null;
+
 };
 
 window.WebPirate_TouchHandlerObject.prototype.onTouchEnd = function(touchevent) {
-    if(this.islongpress) {
-        this.islongpress = false;
-        touchevent.preventDefault();
-    }
-
     clearTimeout(this.timerid)
     this.currenttouch = null;
-};
 
-window.WebPirate_TouchHandlerObject.prototype.onClick = function(clickevent) {
-    var target = this.findAnchorAncenstor(clickevent.target);
+    if(!this.islongpress) {
+        var target = this.findAnchorAncestor(touchevent.target);
 
-    if(!target || !target.hasAttribute("target"))
+        if(!target || !target.hasAttribute("target"))
+            return;
+
+        var href = target.getAttribute("href");
+
+        if((target.getAttribute("target") === "_blank") && (href.length > 0)) {
+            touchevent.preventDefault();
+            WebPirate.postMessage(target.hasChildNodes() ? "touchhandler_loadurl" : "touchhandler_newtab", { "url": href });
+        }
+
         return;
-
-    if((target.getAttribute("target") === "_blank") && target.href) {
-        clickevent.preventDefault();
-        WebPirate.postMessage(target.hasChildNodes() ? "touchhandler_loadurl" : "touchhandler_newtab", target.href);
     }
+
+    this.islongpress = false;
 };
 
 window.WebPirate_TouchHandler = new window.WebPirate_TouchHandlerObject();
