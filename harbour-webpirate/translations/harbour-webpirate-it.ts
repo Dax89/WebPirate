@@ -1307,16 +1307,16 @@
         <translation>Media Player</translation>
     </message>
     <message>
-        <source>Close</source>
-        <translation>Chiudi</translation>
-    </message>
-    <message>
         <source>Enable Reader Mode</source>
         <translation>Attiva modalità lettura</translation>
     </message>
     <message>
         <source>Disable Reader Mode</source>
         <translation>Disabilita modalità lettura</translation>
+    </message>
+    <message>
+        <source>Close all</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

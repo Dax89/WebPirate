@@ -1307,16 +1307,16 @@
         <translation>Mediaspelare</translation>
     </message>
     <message>
-        <source>Close</source>
-        <translation>Stäng</translation>
-    </message>
-    <message>
         <source>Enable Reader Mode</source>
         <translation>Aktivera läsläge</translation>
     </message>
     <message>
         <source>Disable Reader Mode</source>
         <translation>Inaktivera läsläge</translation>
+    </message>
+    <message>
+        <source>Close all</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

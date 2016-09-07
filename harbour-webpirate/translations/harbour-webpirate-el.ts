@@ -1307,15 +1307,15 @@
         <translation>Αναπαραγωγέας πολυμέσων</translation>
     </message>
     <message>
-        <source>Close</source>
-        <translation>Κλείσιμο</translation>
-    </message>
-    <message>
         <source>Enable Reader Mode</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Disable Reader Mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Close all</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

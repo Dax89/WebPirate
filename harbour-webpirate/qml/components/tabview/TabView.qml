@@ -119,6 +119,8 @@ Item
 
         while(tabs.count)
             removeTab(0, true);
+
+        addTab(mainwindow.settings.homepage);
     }
 
     function tabAt(index)

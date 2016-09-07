@@ -45,8 +45,8 @@ ListItem
 
     menu: ContextMenu {
         MenuItem {
-            text: qsTr("Close")
-            onClicked: tabView.removeTab(model.index);
+            text: qsTr("Close all")
+            onClicked: tabView.removeAllTabs()
         }
 
         MenuItem {
@@ -71,9 +71,15 @@ ListItem
         }
 
         MenuItem {
-            text: tab.webView.readerModeEnabled ? qsTr("Disable Reader Mode") : qsTr("Enable Reader Mode")
             visible: tab && (tab.state === "webview")
             onClicked: tab.webView.switchReaderMode()
+
+            text: {
+                if(!tab)
+                    return "";
+
+                return tab.webView.readerModeEnabled ? qsTr("Disable Reader Mode") : qsTr("Enable Reader Mode");
+            }
         }
 
         MenuItem {

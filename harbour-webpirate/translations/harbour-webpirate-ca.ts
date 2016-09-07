@@ -1307,15 +1307,15 @@
         <translation>Reproductor multimèdia</translation>
     </message>
     <message>
-        <source>Close</source>
-        <translation>Tanca</translation>
-    </message>
-    <message>
         <source>Enable Reader Mode</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Disable Reader Mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Close all</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
