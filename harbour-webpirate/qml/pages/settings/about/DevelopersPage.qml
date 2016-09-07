@@ -20,11 +20,7 @@ Page
             width: parent.width
             spacing: Theme.paddingLarge
 
-            PageHeader
-            {
-                id: pageheader
-                title: qsTr("Developers")
-            }
+            PageHeader { title: qsTr("Developers") }
 
             CollaboratorsLabel {
                 title: qsTr("Author");
@@ -38,7 +34,7 @@ Page
 
             CollaboratorsLabel {
                 title: qsTr("Icon Designers");
-                labeldata: [ "Dax", "geek o NERD" ]
+                labeldata: [ "Dax", "@geekonerd" ]
             }
         }
     }
