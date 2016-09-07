@@ -37,8 +37,8 @@ Page
             }
 
             CollaboratorsLabel {
-                title: qsTr("Icon Designer");
-                labeldata: [ "Moth" ]
+                title: qsTr("Icon Designers");
+                labeldata: [ "Dax", "geek o NERD" ]
             }
         }
     }

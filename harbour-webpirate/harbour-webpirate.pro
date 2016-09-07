@@ -212,6 +212,11 @@ TRANSLATIONS += translations/harbour-webpirate.ts \
 RESOURCES += \
     resources.qrc
 
+SAILFISHAPP_ICONS = \
+    86x86 \
+    108x108 \
+    128x128
+
 HEADERS += \
     src/webkitdatabase/webkitdatabase.h \
     src/downloadmanager/downloadmanager.h \

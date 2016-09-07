@@ -1,6 +1,5 @@
 <RCC>
     <qresource prefix="/">
-        <file>harbour-webpirate.png</file>
         <file>res/exit-fullscreen.png</file>
         <file>res/enter-fullscreen.png</file>
         <file>res/back.png</file>
@@ -23,5 +22,6 @@
         <file>res/nightmode.png</file>
         <file>res/reader.png</file>
         <file>translations/translations.json</file>
+        <file>res/harbour-webpirate.png</file>
     </qresource>
 </RCC>

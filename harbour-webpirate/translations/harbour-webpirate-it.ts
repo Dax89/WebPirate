@@ -437,8 +437,8 @@
         <translation>Collaboratore</translation>
     </message>
     <message>
-        <source>Icon Designer</source>
-        <translation>Designer dell&apos;icona</translation>
+        <source>Icon Designers</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

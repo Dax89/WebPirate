@@ -437,7 +437,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Icon Designer</source>
+        <source>Icon Designers</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

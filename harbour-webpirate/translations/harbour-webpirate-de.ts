@@ -437,8 +437,8 @@
         <translation>Mitwirkender</translation>
     </message>
     <message>
-        <source>Icon Designer</source>
-        <translation>Icon Designer</translation>
+        <source>Icon Designers</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

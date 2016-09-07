@@ -437,8 +437,8 @@
         <translation>Medewerker</translation>
     </message>
     <message>
-        <source>Icon Designer</source>
-        <translation>Pictogramontwerper</translation>
+        <source>Icon Designers</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

@@ -47,7 +47,7 @@ Page
                 fillMode: Image.PreserveAspectFit
                 width: Theme.iconSizeLarge
                 height: Theme.iconSizeLarge
-                source: "qrc:///harbour-webpirate.png"
+                source: "qrc:///res/harbour-webpirate.png"
             }
 
             Column
