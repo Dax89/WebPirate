@@ -1,4 +1,9 @@
+<p align="center">
+<img src="https://github.com/Dax89/harbour-webpirate/blob/master/harbour-webpirate/artwork/cover.png">
+<br><br>
 WebPirate is a Tabbed WebBrowser for SailfishOS based on WebKit
+<br><br>
+</p>
 
 Features
 -----
