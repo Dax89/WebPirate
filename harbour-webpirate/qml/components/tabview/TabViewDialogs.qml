@@ -159,7 +159,7 @@ Column
         width: parent.width
         height: (count > 0) ? Math.min(linkmenu.contentHeight, tabcontainer.contentHeight) : 0
 
-        onOpenTabRequested: tabview.addTab(url, false)
+        onOpenTabRequested: tabview.addTab(url)
         onAddToFavoritesRequested: Favorites.addUrl(url, url)
         onRemoveFromFavoritesRequested: Favorites.removeFromUrl(url)
     }
